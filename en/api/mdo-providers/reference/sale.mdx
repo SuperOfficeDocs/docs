@@ -8,13 +8,12 @@ envir: online
 ---
 
 ## "sale" MDO List
+
 List of sales.
 Skips completed sales SkipCompletedSales userpref is set.
 Skips sales without quotes if AdditionalInfo contains "hasQuoteOnline=1".
 Skips sales without stakeholders if AdditionalInfo contains "stakeholderOnly=1".
 Filter sales according to currency if AdditionalInfo contains "hasCurrency=(currency-id)"
-
-
 
 Implemented by the SaleListProviderOrg class.
 The name of the MDO list is 'sale'.
@@ -29,10 +28,6 @@ The name of the MDO list is 'sale'.
 
 Separator: ;
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -44,6 +39,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("sale", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -77,7 +73,6 @@ foreach (var item in listProvider.RootItems) {
 |23|SalgNDDN (Arne'S Kebab)||SalgNDDN|
 |24|SalgSDDS (Yngve'S Fisk & Vilt)||SalgSDDS|
 |25|SalgYDDY (Yngve'S Fisk & Vilt)||SalgYDDY|
-
 
 ## Related MDO Lists
 

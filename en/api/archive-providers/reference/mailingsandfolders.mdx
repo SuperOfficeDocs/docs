@@ -16,6 +16,7 @@ Combined archive of mailings (s_shipment) and mailing folders
 [EmailFlowsAndFoldersProvider](./emailflowsandfolders).
 
 Unified row schema (after the column-name overrides set up below):
+
 - PrimaryKey      — row's own id
 - mailingFolderId — row's container folder id (for filtering)
 - name            — display label (mailing description on mailings,
@@ -33,12 +34,14 @@ extender columns) so MailingsExtenderBase keeps its native
 EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailingfolder"||
 |"all"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -142,6 +145,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/postAddress/line3| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/postAddress/county| *None* ||  |
@@ -246,6 +250,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/NumberOfActivitiesInPeriod| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/NumberOfNotCompletedActivities| *None* ||  |
@@ -350,6 +355,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/email/emailProtocol| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/email/emailAddress| *None* ||  |
@@ -454,6 +460,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/personAssociate/personEmail| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAssociate/locationAddress| *None* ||  |
@@ -558,6 +565,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |emailFlow/registeredDate| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowAssociate/firstName| *None* ||  |
@@ -662,6 +670,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |project/projectAssociate/isActiveText| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
@@ -717,4 +726,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

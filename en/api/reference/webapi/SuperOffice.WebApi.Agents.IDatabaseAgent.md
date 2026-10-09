@@ -1,7 +1,7 @@
 # Interface IDatabaseAgent {#SuperOffice_WebApi_Agents_IDatabaseAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Database schema queries and changes
 
@@ -11,7 +11,7 @@ public interface IDatabaseAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -55,4 +55,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DictionaryStepInformation](/en/api/reference/webapi/SuperOffice.WebApi.Data.DictionaryStepInformation)\[\]\&gt;
 
 Array of dictionary steps in the database, listing only the highest number for each step
-

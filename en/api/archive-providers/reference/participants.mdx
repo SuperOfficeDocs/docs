@@ -18,10 +18,10 @@ the data. For existing appointments, the appointment_id is used as search criter
 all participants in this appointment, regardless of whether the given appointment is the mother
 or one of the slaves.
 
-
 For appointments under construction, where the data have not yet been saved to the database, the
 caller must specify all data through the use of restrictions - some of which are then used for
 information, and some as keys to fetch actual person or associate/resource records from the database.
+
 | Restriction | Meaning |
 |---|---|
 | `appointmentRestrictionId` | Single appointment id, using the = operator. This restriction is used on its own for fetching information from existing appointment records. The id may be of any appointment in the booking, and all participants will be fetched (limited by entity selection). |
@@ -35,17 +35,16 @@ information, and some as keys to fetch actual person or associate/resource recor
 | `endTimeInformation` | Datetime of appointment end, needed when fetching data through the explicit restrictions (not appointmentRestrictionId) and if you want collision detection. |
 | `ownerAssociateIdInformation` | Operator: =, value: associate id. This is the Id of associate who is the owner of the whole booking. If this is not given, and appointmentRestrictionId is given, the system will look up the associate of the master booking record (mother_id = appointment_id) and use that as the owner. If ownerAssociateIdInformation is given, it overrides (disables) this lookup. If neither are given, then there is no owner associate. The owner associate always comes at the top of the list, and has the 'owner' row style hint. |
 | `inhibitConflictsInformation` | Operator: =, value: boolean. If you provide either an appointmentRestrictionId or startTime/EndTime, then conflicts will be detected. However, if the appointment is of type Free, then no conflict detetction will occur. To force 'free' behaviour on an under-construction appointment that does not have an appointment id, or on an appointment that is being changed, include this restriction with the value true. That will turn off conflict detection. |
+
 If you do not use the appointmentRestrictionId, you can instead specify
 external persons by a list (use the IN operator) of externalPersonRestrictionId,
 internal associates through a list of associateRestrictionId, and resources through resourceRestrictionId.
 All three restrictions can be given simultaneously, with an implied OR operator. In this case no appointment
 records are required or fetched.
 
-
 Conflict detection is provided if the status column is requested. For non-saved data, this also
 requires the presence of startTimeInformation and endTimeInformation restrictions (dates in InvariantCulture format),
 so that the conflicts may be calculated.
-
 
 Finally, the email status (should emails be sent for invitations and changes) is read from the database
 if the appointmentRestrictionId is used; if explicit person or associate restrictions are used, then email
@@ -53,12 +52,12 @@ status information must be passed in through the associateEmailsInformation and 
 restrictions. The value of each restriction is a list of associate resp. person id's who have
 the email flag set. If all this sounds complex - well, it is.
 
-
 Being the tolerant sort, the provider will accept both associates and resources in each of associateRestrictionId
 and resourceRestrictionId, and internally sort out which is which. Similarly, if any of the person id's you happen to pass
 in through the externalPersonRestrictionId are actually associates, then that too will be sorted out.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"associate"||
@@ -67,6 +66,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 |"emailParticipant"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownerAssociateIdInformation|associate||  |
@@ -170,6 +170,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 |whenUpdatedByWorkflow|datetime||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |createdByForm|listAny||  |
@@ -252,4 +253,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

@@ -1,16 +1,13 @@
 ---
 title: mergetags
 keywords: mdoprovider mdo provider mergetags
-description: 
+description:
 generated: true
 content_type: reference
 envir: online
 ---
 
 ## "mergetags" MDO List
-
-
-
 
 Implemented by the MergeTagsProvider class.
 The name of the MDO list is 'mergetags'.
@@ -24,10 +21,6 @@ The name of the MDO list is 'mergetags'.
 |Include our contact variables. Default = true| includeOurContact|True|
 |Include our service contact variables. Default = true| includeOurServiceContact|True|
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -39,6 +32,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("mergetags", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -72,7 +66,6 @@ foreach (var item in listProvider.RootItems) {
 |19|||[[company.business]]|
 |20|||[[company.number2]]|
 |21|||[[company.city]]|
-
 
 ## Related MDO Lists
 

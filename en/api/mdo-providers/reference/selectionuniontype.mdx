@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "selectionuniontype" MDO List
+
 Different ways to combine selections: Union, Intersect, Disjoin, Left or Right Subtraction.
-
-
 
 Implemented by the SelectionUnionTypeList class.
 The name of the MDO list is 'selectionuniontype'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selectionuniontype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -46,7 +43,6 @@ foreach (var item in listProvider.RootItems) {
 |3||||
 |4||||
 |5||||
-
 
 ## Related MDO Lists
 

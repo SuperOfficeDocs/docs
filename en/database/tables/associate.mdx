@@ -42,7 +42,6 @@ Employees, resources and other users - except for External persons
 |userName|Associate user name|String(254)|Yes|
 |waiting\_for\_approval|0 = Approved (default). 1 = Associate/User must be approved by an administrator. User cannot log in while waiting, but can be assigned licenses. Used in Online.|Bool|No|
 
-
 ![associate table relationship diagram](/media/loc/en/database/tables/associate.png)
 
 <Associate />
@@ -425,7 +424,6 @@ Employees, resources and other users - except for External persons
 |[workflow\_trigger](./workflow-trigger)  |A set of triggers related to a workflow. |
 |[workflow\_wait\_for\_action](./workflow-wait-for-action)  |Some steps wait for actions, this is info about those actions |
 
-
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -436,4 +434,3 @@ Employees, resources and other users - except for External persons
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
-

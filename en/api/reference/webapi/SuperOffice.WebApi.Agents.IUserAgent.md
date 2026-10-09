@@ -1,7 +1,7 @@
 # Interface IUserAgent {#SuperOffice_WebApi_Agents_IUserAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 User administration
 &lt;p&gt;&lt;/p&gt;
@@ -13,7 +13,7 @@ public interface IUserAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -827,7 +827,7 @@ Override language/culture codes on this request.
 
 ### FindRolesWithFunctionalRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithFunctionalRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
-Find all roles with a given functional right. The roles matched must contain the specified functional right. 
+Find all roles with a given functional right. The roles matched must contain the specified functional right.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -853,7 +853,7 @@ Roles that contains the given functional right
 
 ### FindRolesWithFunctionalRightsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
 
-Find all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights. 
+Find all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -879,7 +879,7 @@ Role ids that contains your functional rights
 
 ### FindRolesWithoutFunctionalRightsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithoutFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
 
-Find all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights. 
+Find all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -1011,7 +1011,7 @@ The CRUD rights (C, CR, CRU, or CRUD) for each table related to the given role a
 
 ### GetAllFunctionalRightsAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAllFunctionalRightsAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
-Get a list of all functional rights for the given type of role. MDO List name = 'FunctionRights', extra='roleType=0' 
+Get a list of all functional rights for the given type of role. MDO List name = 'FunctionRights', extra='roleType=0'
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -1037,7 +1037,7 @@ FunctionRight items with name and description. Code name for function right is i
 
 ### GetAllRolesAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAllRolesAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
-Get a list of all roles for the given type of role. MDO List name = 'Roles', extra='0' (roleType) 
+Get a list of all roles for the given type of role. MDO List name = 'Roles', extra='0' (roleType)
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -2205,7 +2205,7 @@ Key that can be used to retrieve the tokens
 
 ### SaveRoleEntityAsync\(RoleEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveRoleEntityAsync_SuperOffice_WebApi_Data_RoleEntity_SuperOffice_WebApi_RequestOptions_}
 
-Updates the existing RoleEntity or creates a new RoleEntity if the id parameter is 0. 
+Updates the existing RoleEntity or creates a new RoleEntity if the id parameter is 0.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -2231,7 +2231,7 @@ New or updated RoleEntity
 
 ### SaveServiceAuthAsync\(ServiceAuth, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveServiceAuthAsync_SuperOffice_WebApi_Data_ServiceAuth_SuperOffice_WebApi_RequestOptions_}
 
-Updates the existing ServiceAuth or creates a new ServiceAuth if the id parameter is 0. 
+Updates the existing ServiceAuth or creates a new ServiceAuth if the id parameter is 0.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -2317,7 +2317,7 @@ Override language/culture codes on this request.
 
 ### SaveUserAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
-Updates the existing User or creates a new User if the id parameter is 0. 
+Updates the existing User or creates a new User if the id parameter is 0.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -2505,7 +2505,7 @@ Override language/culture codes on this request.
 
 ### SetFunctionalRightsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetFunctionalRightsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
-Set all functional rights for the given role. Functional rights not specified here will be removed from the role. 
+Set all functional rights for the given role. Functional rights not specified here will be removed from the role.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
@@ -2688,4 +2688,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Error messages tagged by field.
-

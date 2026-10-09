@@ -42,7 +42,6 @@ A set of properties related to the email workflow.
 |reply\_to\_name|Email Reply-To name|String(255)|Yes|
 |main\_message\_id|The main email message, used for thumbnail creation|FK [s_message](./s-message.mdx)|Yes|
 
-
 ![email_flow table relationship diagram](/media/loc/en/database/tables/email_flow.png)
 
 <EmailFlow />
@@ -64,7 +63,6 @@ A set of properties related to the email workflow.
 |[ShipmentType](./shipmenttype)  |Shipment type list table. Classification of a mailing, allowing recipients to subscribe to lists |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
-
 ## Replication Flags
 
 * None
@@ -72,4 +70,3 @@ A set of properties related to the email workflow.
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
-

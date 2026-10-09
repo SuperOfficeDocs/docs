@@ -1,7 +1,7 @@
 # Interface IApiAgent {#SuperOffice_WebApi_Agents_IApiAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Interface for API agents: API info, tenant status, Client library version
 
@@ -11,7 +11,7 @@ public interface IApiAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -38,7 +38,7 @@ Dictionary containing meta-data: "NetServerVersion", "Services", "Version"
 
 ### GetTenantStatusAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
-Returns the tenant status for a given customer, in a given environment. 
+Returns the tenant status for a given customer, in a given environment.
 Does not need base URL to be set.
 
 ```csharp
@@ -64,4 +64,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TenantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TenantStatus)\&gt;
 
 Tenant status
-

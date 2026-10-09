@@ -1,7 +1,7 @@
 # Interface IWebhookAgent {#SuperOffice_WebApi_Agents_IWebhookAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Webhook definitions - webhooks signal other systems about events inside NetServer
 &lt;p&gt;&lt;/p&gt;
@@ -13,7 +13,7 @@ public interface IWebhookAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -151,7 +151,7 @@ Webhook
 
 ### SaveWebhookAsync\(Webhook, RequestOptions\) {#SuperOffice_WebApi_Agents_IWebhookAgent_SaveWebhookAsync_SuperOffice_WebApi_Data_Webhook_SuperOffice_WebApi_RequestOptions_}
 
-Updates the existing Webhook or creates a new Webhook if the id parameter is 0. 
+Updates the existing Webhook or creates a new Webhook if the id parameter is 0.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.
 
@@ -234,4 +234,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebhookResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebhookResult)\&gt;
 
 Result of calling webhook. Sucess=true/false + Error message
-

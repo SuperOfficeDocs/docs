@@ -1,7 +1,7 @@
 # Class AuthorizationUserToken {#SuperOffice_WebApi_AuthorizationUserToken}
 
-Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)
+Assembly: SuperOffice.WebApi.dll
 
 Username and password are used to get an access token from given username and password
 If the access token is invalidated, will try to authenticate with username and password to get a new access token.
@@ -13,7 +13,7 @@ public class AuthorizationUserToken : IAuthorization
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [AuthorizationUserToken](/en/api/reference/webapi/SuperOffice.WebApi.AuthorizationUserToken)
 
 #### Implements
@@ -22,17 +22,18 @@ IAuthorization
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Remarks
 
 If the access token is omitted on construction, the first agent call will result in three requests:
+
 1. The first agent call which will fail
 2. A call to UserAgent.GetCurrentToken with the username and passwor to obtain an access token
 3. The original agent call which should now succeed with the new access token
@@ -84,4 +85,3 @@ public AuthenticationHeaderValue GetAuthorization()
 #### Returns
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
-

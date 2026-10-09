@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "appointmentcautionwarning" MDO List
+
 Appointment.CautionWarning. Appointment and invitation synchronization info
-
-
 
 Implemented by the AppointmentCautionWarningProvider class.
 The name of the MDO list is 'appointmentcautionwarning'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("appointmentcautionwarning", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -47,7 +44,6 @@ foreach (var item in listProvider.RootItems) {
 |3||||
 |4||||
 |5||||
-
 
 ## Related MDO Lists
 

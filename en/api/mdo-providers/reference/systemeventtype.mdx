@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "systemeventtype" MDO List
+
 System event types: NoLogin, NoFreeText, NoTravel, Message-of-the-day
-
-
 
 Implemented by the SystemEventTypeProvider class.
 The name of the MDO list is 'systemeventtype'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("systemeventtype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -45,7 +42,6 @@ foreach (var item in listProvider.RootItems) {
 |2||||
 |3||||
 |4||||
-
 
 ## Related MDO Lists
 

@@ -8,14 +8,13 @@ envir: online
 ---
 
 ## "preferencesection" MDO List
+
 MDO Provider that retrieves a list of preference sections
 
 Preferences are described in the prefdesc table. This provider will retrieve descriptions for all sections.
 
-
 If addidionalInfo contains crmgui and/or admingui, only sections with any of the named access flags are
 returned (default, when neither is given: crmgui OR admingui).
-
 
 Each item contains the programmatic section name in the extraInfo field.
 
@@ -28,10 +27,6 @@ The name of the MDO list is 'preferencesection'.
 |-----|-----|------|
 |Optional ';'-separated tokens: crmgui and/or admingui to restrict to sections that have any of the named GUI access flags (default: both)| |admingui|
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -43,6 +38,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("preferencesection", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -76,7 +72,6 @@ foreach (var item in listProvider.RootItems) {
 |1000332|||notificationEmail|
 |1000340|||notificationSms|
 |1000356|||Person|
-
 
 ## Related MDO Lists
 

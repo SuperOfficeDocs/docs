@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "importnewlistitem" MDO List
+
 Import list items: Add item, use default, use blank
-
-
 
 Implemented by the ImportNewListItemProvider class.
 The name of the MDO list is 'importnewlistitem'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("importnewlistitem", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 |1||||
 |2||||
 |3||||
-
 
 ## Related MDO Lists
 

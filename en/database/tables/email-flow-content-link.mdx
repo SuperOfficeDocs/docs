@@ -27,7 +27,6 @@ Links content to an email workflow
 |form\_id|Web form used in the flow|FK [form](./form.mdx)|Yes|
 |s\_link\_id|Shipment link used in the flow|FK [s_link](./s-link.mdx)|Yes|
 
-
 ![email_flow_content_link table relationship diagram](/media/loc/en/database/tables/email_flow_content_link.png)
 
 <EmailFlowContentLink />
@@ -47,7 +46,6 @@ Links content to an email workflow
 |[s\_link](./s-link)  |Links in messages to measure success rate of a campaign. |
 |[s\_message](./s-message)  |A message used in a shipment. Can be html and/or plain text |
 
-
 ## Replication Flags
 
 * None
@@ -55,4 +53,3 @@ Links content to an email workflow
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
-

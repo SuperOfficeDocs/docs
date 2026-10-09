@@ -8,6 +8,7 @@ envir: online
 ---
 
 ## "associatewithmail" MDO List
+
 Returns associates with their email addresses in the format "Full Name &lt;email&gt;".
 Associates without an e-mail address are returned as "Full Name".
 
@@ -15,9 +16,6 @@ Deleted associates are not returned unless requested using the additional_info "
 
 Implemented by the AssociateWithMailProvider class.
 The name of the MDO list is 'associatewithmail'.
-
-
-
 
 ## Sample Request
 
@@ -30,6 +28,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("associatewithmail", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -63,7 +62,6 @@ foreach (var item in listProvider.RootItems) {
 |86|Johan Jensen||person_id=198&contact_id=0|
 |87|Kjell Jensen||person_id=199&contact_id=0|
 |81|Listadm Listadm||person_id=190&contact_id=0|
-
 
 ## Related MDO Lists
 

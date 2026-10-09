@@ -13,28 +13,26 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Free
 
 Archive provider for freetext search on the Appointment entity (any kind of appointment, phone call, or task).
 
-
 Use the 'searchwords' restriction with one or more words to specify what to search for. The operator is ignored,
 the freetext search will apply the 'begins' operator to each word and 'AND' between them.
-
 
 It is possible to combine freetext search words with other restrictions and criteria native to the entity and
 its standard subproviders. Note however that this is not the same search as provided by the 'Find' providers, since
 they apply various special rules not present here.
 
-
 Freetext search will limit the number of hits to the first 1000. This clipping is applied before any other criteria,
 as well as before any ORDER BY, are applied.
-
 
 Private appointments that are not fully readable will not be shown (they are skipped), as in the Windows client
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -138,6 +136,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 |contact/email/emailAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailDescription|string|| x |
@@ -242,6 +241,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 |contact/contactExtra/x\_contact\_time| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_boolean|bool|| x |
@@ -346,6 +346,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 |person/personPrivate/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personPrivate/description|string|| x |
@@ -450,6 +451,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 |person/personAssociate/simultaneousEjUser|bool||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/ejDisplayName|string|| x |
@@ -554,6 +556,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 |project/projectAssociate/lastName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/middleName|string|| x |
@@ -658,6 +661,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 |sale/stageName| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/saleStatus|listAny|| x |
@@ -762,6 +766,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 |associate/userName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/personEmail|string|| x |
@@ -789,4 +794,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

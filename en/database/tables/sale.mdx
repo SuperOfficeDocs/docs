@@ -1,6 +1,6 @@
 ---
 title: sale table
-description: Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.  
+description: Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.
 generated: true
 content_type: reference
 envir: online
@@ -10,7 +10,7 @@ import Sale from "./includes/sale.mdx";
 
 ## sale Table (13)
 
-Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.  
+Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.
 
 ## Fields
 
@@ -61,7 +61,6 @@ Sales  For every Sale record edited through the SuperOffice GUI, a copy of the c
 |created\_by\_workflow\_id|The workflow this sale was created by|FK [workflow](./workflow.mdx)|Yes|
 |stage\_when\_closed\_id|The stage the sale was in when it was closed (sold or lost)|FK [Prob](./prob.mdx)|Yes|
 |sale\_cycle|Number of days from sale registered until the sale entered its current closed (Sold or Lost) state. 0/empty while the sale is open.|Int|Yes|
-
 
 ![sale table relationship diagram](/media/loc/en/database/tables/sale.png)
 
@@ -120,7 +119,6 @@ Sales  For every Sale record edited through the SuperOffice GUI, a copy of the c
 |[VisibleFor](./visiblefor)  |Visible for rights, who may see this appointment/document, sale,  salehist or selection |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
-
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -132,4 +130,3 @@ Sales  For every Sale record edited through the SuperOffice GUI, a copy of the c
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
 * Visibility controlled via matching [VisibleFor](./visiblefor) row.
-

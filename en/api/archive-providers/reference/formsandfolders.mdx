@@ -16,6 +16,7 @@ Combined archive of forms (the form table) and form folders
 [MailingsAndFoldersProvider](./mailingsandfolders).
 
 Unified row schema (after the column-name overrides set up below):
+
 - PrimaryKey    — row's own id
 - formFolderId  — row's container folder id (for filtering)
 - name          — display label (form name on forms, folder name on
@@ -33,12 +34,14 @@ query the plain Forms provider. Same approach as
 MailingsAndFoldersProvider (mailingDescription / folderName both → name).
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"formfolder"||
 |"form"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -128,4 +131,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

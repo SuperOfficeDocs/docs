@@ -111,6 +111,7 @@ The following represent changes to the SuperOffice.WebApi assembly.
 * Deleted items
 
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.FieldReplication is Deleted
+
 * Modified items
 
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.AI is Modified
@@ -122,36 +123,27 @@ The following represent changes to the SuperOffice.WebApi assembly.
   * Field `.AIMcpAccess`
   * Field `.AIShowAiReplyTool`
 
-
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.Copilot is Modified
 
 * Modified items
   * Field `.CopilotAutoGenerateReply`
   * Field `.CopilotShowAiReplyTool`
 
-
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.Notification is Modified
 
 * New items
   * Field `.NotificationNotifyMention`
-
 
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.Request is Modified
 
 * New items
   * Field `.RequestMergeOldestAsMain`
 
-
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.System is Modified
 
 * Deleted items
   * Field `.SystemReplicateSelection`
 
-
-
 ## Web API Authorization
 
 The following represent changes to the SuperOffice.WebApi.Authorization assembly.
-
-
-

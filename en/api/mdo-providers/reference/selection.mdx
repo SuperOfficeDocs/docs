@@ -8,6 +8,7 @@ envir: online
 ---
 
 ## "selection" MDO List
+
 Provider for selecting a selection.
 Supported additionalInfo:
 kind=static or kind=dynamic to restrict to static or dynamic selections only. Otherwise you'll get both kinds.
@@ -31,10 +32,6 @@ The name of the MDO list is 'selection'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -46,6 +43,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selection", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -79,7 +77,6 @@ foreach (var item in listProvider.RootItems) {
 |28|Øtvøølg-GGTjeAll||static|
 |23|Otvoolg-HHMarGruPri||static|
 |54|Selection for creation of external users||static|
-
 
 ## Related MDO Lists
 

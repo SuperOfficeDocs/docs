@@ -1,7 +1,7 @@
 # Class ProgressListener {#SuperOffice_WebApi_ProgressListener}
 
-Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)
+Assembly: SuperOffice.WebApi.dll
 
 Default ProgressListener implementation with delegates for event callbacks.
 
@@ -11,7 +11,7 @@ public class ProgressListener : IProgressListener
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.ProgressListener)
 
 #### Implements
@@ -20,12 +20,12 @@ public class ProgressListener : IProgressListener
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -111,4 +111,3 @@ URL for the request
 `progress` [float](https://learn.microsoft.com/dotnet/api/system.single)
 
 Complete progress. 0.0 not started, 1.0 finished
-

@@ -27,11 +27,13 @@ irregular query modifiers used by the Add Members dialog.
 * **selectionIdRequest**: If you include the 'selectionIdRequest' restriction, use the '=' operator and give the id of the static selection to attempt to join with. If this is done, then the 'selectionMemberId' will contain a non-null value for those contacts or persons that exist in the given static selection.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -135,6 +137,7 @@ irregular query modifiers used by the Add Members dialog.
 |contactAssociate/fullName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/contactId|int||  |
@@ -239,6 +242,7 @@ irregular query modifiers used by the Add Members dialog.
 |sourceRelation/category|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/categoryGroup|listAny|| x |
@@ -343,6 +347,7 @@ irregular query modifiers used by the Add Members dialog.
 |sale/competitor|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/heading|stringorPK|| x |
@@ -447,6 +452,7 @@ irregular query modifiers used by the Add Members dialog.
 |appointment/appointmentId|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/endDate|date|| x |
@@ -551,6 +557,7 @@ irregular query modifiers used by the Add Members dialog.
 |document/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/documentId|int|| x |
@@ -655,6 +662,7 @@ irregular query modifiers used by the Add Members dialog.
 |personAssociateId|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociateFullName|associate|| x |
@@ -759,6 +767,7 @@ irregular query modifiers used by the Add Members dialog.
 |personSourceRelation/personCountry|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personCountryId|int|| x |
@@ -863,6 +872,7 @@ irregular query modifiers used by the Add Members dialog.
 |personTargetRelation/updatedByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
@@ -967,6 +977,7 @@ irregular query modifiers used by the Add Members dialog.
 |workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
@@ -1071,6 +1082,7 @@ irregular query modifiers used by the Add Members dialog.
 |request/timeSpentQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/timeSpentExternally|timeSpan|| x |
@@ -1175,6 +1187,7 @@ irregular query modifiers used by the Add Members dialog.
 |request/extra/x\_ticket\_timespan|timeSpan|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_short\_text|string|| x |
@@ -1279,6 +1292,7 @@ irregular query modifiers used by the Add Members dialog.
 |projectMembers/LastSale|date||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/LastCompletedSale|date||  |
@@ -1383,6 +1397,7 @@ irregular query modifiers used by the Add Members dialog.
 |personAppointment/associate/userName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/personEmail|string|| x |
@@ -1410,4 +1425,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

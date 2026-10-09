@@ -1,7 +1,7 @@
 # Class AgentBase {#SuperOffice_WebApi_Agents_AgentBase}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Base class for client Agents. Uses a [HttpClient](https://learn.microsoft.com/dotnet/api/system.net.http.httpclient) to call the SuperOffice REST API.
 Will use a default implementation with gzip and progress callbacks if nothing is specified.
@@ -12,85 +12,85 @@ public class AgentBase : IAgentBase, IDisposable
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase)
 
 #### Derived
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent), 
-[ApiAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ApiAgent), 
-[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
-[AssociateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AssociateAgent), 
-[BLOBAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BLOBAgent), 
-[BatchAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BatchAgent), 
-[BulkUpdateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BulkUpdateAgent), 
-[CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent), 
-[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent), 
-[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent), 
-[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent), 
-[CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent), 
-[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent), 
-[DashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashAgent), 
-[DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent), 
-[DatabaseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseAgent), 
-[DatabaseTableAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseTableAgent), 
-[DiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DiagnosticsAgent), 
-[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent), 
-[DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent), 
-[EMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.EMailAgent), 
-[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent), 
-[FavouriteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FavouriteAgent), 
-[FindAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FindAgent), 
-[ForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ForeignSystemAgent), 
-[FreeTextAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FreeTextAgent), 
-[ImportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ImportAgent), 
-[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent), 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent), 
-[MDOAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MDOAgent), 
-[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent), 
-[MentionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MentionAgent), 
-[MessagingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MessagingAgent), 
-[NavigatorAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NavigatorAgent), 
-[NewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NewsFeedAgent), 
-[NumberAllocationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NumberAllocationAgent), 
-[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent), 
-[PhoneListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PhoneListAgent), 
-[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent), 
-[PreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreferenceAgent), 
-[PreviewsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreviewsAgent), 
-[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent), 
-[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent), 
-[RelationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.RelationAgent), 
-[ReportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ReportAgent), 
-[ResourceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ResourceAgent), 
-[SaintAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaintAgent), 
-[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent), 
-[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent), 
-[SentryAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SentryAgent), 
-[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent), 
-[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent), 
-[TimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TimeZoneAgent), 
-[TooltipsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TooltipsAgent), 
-[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent), 
-[UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent), 
-[ViewStateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ViewStateAgent), 
-[WebhookAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WebhookAgent), 
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent),
+[ApiAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ApiAgent),
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent),
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent),
+[AssociateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AssociateAgent),
+[BLOBAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BLOBAgent),
+[BatchAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BatchAgent),
+[BulkUpdateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BulkUpdateAgent),
+[CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent),
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent),
+[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent),
+[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent),
+[CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent),
+[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent),
+[DashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashAgent),
+[DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent),
+[DatabaseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseAgent),
+[DatabaseTableAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseTableAgent),
+[DiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DiagnosticsAgent),
+[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent),
+[DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent),
+[EMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.EMailAgent),
+[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent),
+[FavouriteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FavouriteAgent),
+[FindAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FindAgent),
+[ForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ForeignSystemAgent),
+[FreeTextAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FreeTextAgent),
+[ImportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ImportAgent),
+[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent),
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent),
+[MDOAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MDOAgent),
+[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent),
+[MentionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MentionAgent),
+[MessagingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MessagingAgent),
+[NavigatorAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NavigatorAgent),
+[NewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NewsFeedAgent),
+[NumberAllocationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NumberAllocationAgent),
+[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent),
+[PhoneListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PhoneListAgent),
+[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent),
+[PreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreferenceAgent),
+[PreviewsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreviewsAgent),
+[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent),
+[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent),
+[RelationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.RelationAgent),
+[ReportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ReportAgent),
+[ResourceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ResourceAgent),
+[SaintAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaintAgent),
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent),
+[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent),
+[SentryAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SentryAgent),
+[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent),
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent),
+[TimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TimeZoneAgent),
+[TooltipsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TooltipsAgent),
+[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent),
+[UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent),
+[ViewStateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ViewStateAgent),
+[WebhookAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WebhookAgent),
 [WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Remarks
@@ -408,7 +408,7 @@ protected Task<T> ParseResponse<T>(HttpResponseMessage response)
 
 #### Type Parameters
 
-`T` 
+`T`
 
 ### SendRequest\(HttpRequestMessage, RequestOptions\) {#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_}
 
@@ -489,4 +489,3 @@ protected Task ThrowOnResponseErrorAsync(HttpRequestMessage request, HttpRespons
 #### Returns
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
-

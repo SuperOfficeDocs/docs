@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "saintticketstatus" MDO List
+
 This SoList provider generates the ticket status list for the Saint criteria. This is a simple, hard-coded list, special for this context
-
-
 
 Implemented by the SaintTicketStatusProvider class.
 The name of the MDO list is 'saintticketstatus'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("saintticketstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -43,7 +40,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |-1||||
 |1||||
-
 
 ## Related MDO Lists
 

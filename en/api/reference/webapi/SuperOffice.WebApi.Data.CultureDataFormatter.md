@@ -1,7 +1,7 @@
 # Class CultureDataFormatter {#SuperOffice_WebApi_Data_CultureDataFormatter}
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 This is a helper class designed to encode, parse and reformat culturally sensitive data types between
 an application server without culture knowledge, and a front-end with such knowledge.
@@ -12,17 +12,17 @@ public static class CultureDataFormatter
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Remarks
@@ -30,10 +30,10 @@ public static class CultureDataFormatter
 &lt;p&gt;&lt;/p&gt;
 The problem: The application server does not know the culture of the current client. At the same time,
 we need to be able to include culturally sensitive data (such as a date) as part of a tooltip or other
-server-side generated text. Before displaying this text to the user, culturally sensitive elements need 
+server-side generated text. Before displaying this text to the user, culturally sensitive elements need
 to be parsed and reformatted to the correct culture.
 &lt;p&gt;&lt;/p&gt;
-The methods in this class take care of both sides of this process. The Encode methods, such as 
+The methods in this class take care of both sides of this process. The Encode methods, such as
 [EncodeDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDate_System_DateTime_), take a native data type as input and return a string that contains both
 a specification of what it is (a date) and the value formatted in the invariant culture.
 &lt;p&gt;&lt;/p&gt;
@@ -411,8 +411,8 @@ Encoded date/time
 
 Encode a double (decimal value), with the given number of decimals. Note that the full
 precision is included here, but rounded to the given number of decimals on (re)localization.
-Also note that currency amounts should use the EncodeMoney method, if the cultural settings for 
-money are to be taken into account (though the currency symbol is NOT used in localization, 
+Also note that currency amounts should use the EncodeMoney method, if the cultural settings for
+money are to be taken into account (though the currency symbol is NOT used in localization,
 because we may be displaying non-native currencies, saying $ when it's actually € or NOK is silly).
 
 ```csharp
@@ -439,8 +439,8 @@ Encoded value
 
 Encode a double (decimal value), with the given number of decimals. Note that the full
 precision is included here, but rounded to the given number of decimals on (re)localization.
-Also note that currency amounts should use the EncodeMoney method, if the cultural settings for 
-money are to be taken into account (though the currency symbol is NOT used in localization, 
+Also note that currency amounts should use the EncodeMoney method, if the cultural settings for
+money are to be taken into account (though the currency symbol is NOT used in localization,
 because we may be displaying non-native currencies, saying $ when it's actually € or NOK is silly).
 Optionally skip encoding and return an empty string instead.
 
@@ -473,8 +473,8 @@ Encoded value
 ### EncodeDouble\(double\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_}
 
 Encode a double (decimal value). On localization, the default number of decimal digits will be used.
-Also note that currency amounts should use the EncodeMoney method, if the cultural settings for 
-money are to be taken into account (though the currency symbol is NOT used in localization, 
+Also note that currency amounts should use the EncodeMoney method, if the cultural settings for
+money are to be taken into account (though the currency symbol is NOT used in localization,
 because we may be displaying non-native currencies).
 
 ```csharp
@@ -496,8 +496,8 @@ Encoded value
 ### EncodeDouble\(double, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_System_Boolean_}
 
 Encode a double (decimal value). On localization, the default number of decimal digits will be used.
-Also note that currency amounts should use the EncodeMoney method, if the cultural settings for 
-money are to be taken into account (though the currency symbol is NOT used in localization, 
+Also note that currency amounts should use the EncodeMoney method, if the cultural settings for
+money are to be taken into account (though the currency symbol is NOT used in localization,
 because we may be displaying non-native currencies).
 Optionally skip encoding and return an empty string instead.
 
@@ -1341,7 +1341,7 @@ Parsed resource string.
 
 ### ParseInlineMultiLanguageString\(string, string, int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineMultiLanguageString_System_String_System_String_System_Int32_}
 
-Parses the string for multilang strings and uses [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_)	to translate
+Parses the string for multilang strings and uses [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_) to translate
 the fragment to a culture specific string part
 
 ```csharp
@@ -1555,4 +1555,3 @@ DateTime value, if return value is true; otherwise [MinValue](https://learn.micr
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 true if parsing succeeded
-

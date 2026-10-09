@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "emailfromtype" MDO List
+
 MDO provider for the EmailFromType enum
-
-
 
 Implemented by the EmailFromTypeProvider class.
 The name of the MDO list is 'emailfromtype'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("emailfromtype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 |0||||
 |1||||
 |2||||
-
 
 ## Related MDO Lists
 

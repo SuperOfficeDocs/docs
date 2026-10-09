@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "weekday" MDO List
+
 MDO provider for the hard-coded list of week days.
-
-
 
 Implemented by the WeekdayProvider class.
 The name of the MDO list is 'weekday'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("weekday", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -48,7 +45,6 @@ foreach (var item in listProvider.RootItems) {
 |5|||Friday|
 |6|||Saturday|
 |7|||Sunday|
-
 
 ## Related MDO Lists
 

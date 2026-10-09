@@ -5999,7 +5999,7 @@ Status if this appointment is in the process of being assigned to someone else
 
  [AssociateSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssociateSourceType)
 
-Describes what source the associates should be retrieved from. 
+Describes what source the associates should be retrieved from.
 This Enum consists of flag values that can be combined.
 
  [BadgeType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BadgeType)
@@ -6046,7 +6046,7 @@ This Enum is used by:  Category.category_group
 
  [CategoryUpdateTrigger](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryUpdateTrigger)
 
-Enum for type of change to trigger update of category 
+Enum for type of change to trigger update of category
 This Enum is used by:  AutomatedCategoryUpdate.trigger_type
 
  [ChangePasswordType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChangePasswordType)
@@ -6190,7 +6190,7 @@ This Enum is used by:  ConfigurableScreenDelta.deltaState
 
  [DeltaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaType)
 
-Type and content of delta 
+Type and content of delta
 This Enum is used by:  ConfigurableScreenDelta.deltaType
 
  [DesignType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DesignType)
@@ -6899,4 +6899,3 @@ This Enum is used by:  workflow_trigger.trigger_type
 
 Workflow action type
 This Enum is used by:  workflow_wait_for_action.ActionType
-

@@ -8,11 +8,10 @@ envir: online
 ---
 
 ## "personwithmail" MDO List
+
 List of persons fetched based on provided criteria
 Output is in format: "Person Full Name &lt;person@mail.com&gt;"
 Optional: Get multiple emails pr. person. (getallemails)
-
-
 
 Implemented by the PersonWithMailListProvider class.
 The name of the MDO list is 'personwithmail'.
@@ -22,10 +21,6 @@ The name of the MDO list is 'personwithmail'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Return all e-mails, rather just the first rank=1 mail| getallemails|True|
-
-
-
-
 
 ## Sample Request
 
@@ -38,6 +33,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("personwithmail", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -71,7 +67,6 @@ foreach (var item in listProvider.RootItems) {
 |28|Cidrik Culien &lt;qa5@superoffice.com&gt;||contact_id=8|
 |30|Cigfrid Celetas &lt;qa5@superoffice.com&gt;||contact_id=7|
 |216|Damian Odnem &lt;Damian.fish@mailinator.com&gt;||contact_id=124|
-
 
 ## Related MDO Lists
 

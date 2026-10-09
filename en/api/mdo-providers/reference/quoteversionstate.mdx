@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "quoteversionstate" MDO List
+
 List provider for the [QuoteVersionState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionState) enum
-
-
 
 Implemented by the QuoteVersionStateListProvider class.
 The name of the MDO list is 'quoteversionstate'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("quoteversionstate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -50,7 +47,6 @@ foreach (var item in listProvider.RootItems) {
 |7||||
 |8||||
 |9||||
-
 
 ## Related MDO Lists
 

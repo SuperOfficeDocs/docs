@@ -8,6 +8,7 @@ envir: online
 ---
 
 ## "allpreferencekeys" MDO List
+
 MDO Provider that retrieves all preference keys
 
 All preferences that are not sections are returned, grouped alphabetically.
@@ -25,10 +26,6 @@ The name of the MDO list is 'allpreferencekeys'.
 |-----|-----|------|
 |Optional ';'-separated tokens: OrderBySection to group alphabetically by section; crmgui and/or admingui to restrict to preferences that have any of the named GUI access flags (default: both)| |OrderBySection|
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -40,6 +37,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("allpreferencekeys", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -73,7 +71,6 @@ foreach (var item in listProvider.RootItems) {
 |1000170|||[SR_PD_Mail_NAME]|
 |1000107|||[SR_PD_Functions_NAME]|
 |1000171|||[SR_PD_Mail_NAME]|
-
 
 ## Related MDO Lists
 
