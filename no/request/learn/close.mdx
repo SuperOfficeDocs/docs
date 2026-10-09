@@ -4,8 +4,8 @@ title: Avslutte saker
 description: Hvordan avslutte én eller flere saker i SuperOffice.
 keywords: ['avslutte sak', 'lukke sak', 'sett status til avsluttet', 'lukket', 'masseredigering', 'sak']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -20,6 +20,8 @@ language: no
 ## Avslutte én sak
 
 Etter at du har [svart på saken][3], velger du **Avsluttet** i **Status**-feltet i sidepanelet **Egenskaper for sak**.
+
+På Saksskjermen lukkes fanen til saken automatisk når du setter statusen til **Avsluttet**, hvis du slår på en preferanse. Se [Lukke sakfaner automatisk][8].
 
 <Note>
 Hvis en relasjonsregel gjelder for denne sakstypen, kan lukking være blokkert eller utløse ytterligere meldinger - for eksempel ved å forhindre lukking til alle underordnede saker er løst, eller ved å tilby å lukke [relaterte saker][7] og svare til deres kontakter.
@@ -75,6 +77,7 @@ Du kan raskt avslutte flere saker samtidig ved å sette **Status**-feltet til *A
 [5]: ../admin/status/index
 [6]: ../../search-options/selection/learn/create
 [7]: ./request-relations
+[8]: ./index#auto-close
 
 [img1]: ../../../media/loc/en/request/bulk-update-requests.png
 [img2]: ../../../media/loc/en/request/bulk-update-confirm.png

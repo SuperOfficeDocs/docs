@@ -4,8 +4,8 @@ title: Relatieregels
 description: Leer hoe u relatieregels configureert om het gedrag bij het aanmaken en sluiten van verzoeken te automatiseren op basis van bovenliggende-onderliggende relaties in SuperOffice Service.
 keywords: ['relatieregels', 'verzoekrelatie', 'bovenliggend-onderliggend', 'relatieregel', 'automatisering', 'verzoek sluiten', 'tabblad Relatieregels']
 author: digitaldiina
-date: 04.08.2026
-so_version: 11.12
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: servicepremium
 tier: growth
@@ -67,6 +67,8 @@ De samenvattingsregel onder de voorwaarde bevestigt de volledige reikwijdte van 
 | **Aanbieden om bovenliggende te sluiten als alle onderliggende verzoeken worden gesloten** | Wanneer het laatste onderliggende verzoek wordt gesloten, wordt de agent gevraagd ook het bovenliggende verzoek te sluiten. |
 | **Aanbieden om onderliggende verzoeken te sluiten en bericht te sturen als bovenliggende wordt gesloten** | Wanneer het bovenliggende verzoek wordt gesloten, wordt de agent gevraagd alle open onderliggende verzoeken te sluiten en aan elk een antwoordbericht toe te voegen dat naar hun ontvangers wordt verzonden. |
 
+Op het Verzoekscherm sluiten ook de tabbladen van de verzoeken die op deze manier zijn gesloten. Hiervoor is de voorkeur **Tabblad automatisch sluiten bij wijzigen van de verzoekstatus naar gesloten** nodig. Zie [Verzoektabbladen automatisch sluiten][4].
+
 ## Relatieregel toevoegen
 
 1. Selecteer in **Instellingen en onderhoud** de optie **Verzoeken** in de navigator en ga naar het tabblad **Relatieregels**.
@@ -112,5 +114,6 @@ Een grote servicestoring genereert meerdere individuele probleemmeldingen van ge
 * **Aanbieden om onderliggende verzoeken te sluiten en bericht te sturen als bovenliggende wordt gesloten:** wanneer het incident is opgelost, kan de agent alle resterende onderliggende verzoeken tegelijk sluiten en elke getroffen klant rechtstreeks antwoorden dat het probleem is verholpen.
 
 [3]: ../../customization/screen-designer/admin/index
+[4]: ../learn/index#auto-close
 [img1]: ../../../media/loc/en/request/relation-rules.png
 [img2]: ../../../media/loc/en/request/add-relation-rule.png
