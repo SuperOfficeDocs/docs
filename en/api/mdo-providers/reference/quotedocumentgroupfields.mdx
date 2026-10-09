@@ -12,7 +12,7 @@ Possible choices for fields that you can GROUP BY in quote detail documents.
 
 Candidate fields have to be on the QuoteLine table, and not be numeric (can't group by price, for instance...)
 
-Implemented by the QuoteDocumentGroupFields class.
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.QuoteDocumentGroupFields">QuoteDocumentGroupFields</see> class.
 The name of the MDO list is 'quotedocumentgroupfields'.
 
 
@@ -41,11 +41,11 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|Product category||productCategoryKey|
-|2|Product family||productFamilyKey|
-|3|Product type||productTypeKey|
-|4|Subscription||isSubscription|
-|5|VAT info||vatInfo|
+|1|||productCategoryKey|
+|2|||productFamilyKey|
+|3|||productTypeKey|
+|4|||isSubscription|
+|5|||vatInfo|
 
 
 ## Related MDO Lists

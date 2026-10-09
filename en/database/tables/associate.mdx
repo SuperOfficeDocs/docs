@@ -78,6 +78,7 @@ Employees, resources and other users - except for External persons
 |[AudienceLayout](./audiencelayout)  |One layout (of webparts and other stuff) for an audience instance |
 |[AudienceLayoutLink](./audiencelayoutlink)  |Link between an audience layout and some target grouping table - might be Role or Category |
 |[AudienceVisibility](./audiencevisibility)  |How projects (or whatever) should be made visible in audience |
+|[authentication\_session](./authentication-session)  |One row per authenticated user session: owner, random session id, last activity, the encrypted OIDC tokens received during login, and the expiry of the time-bound NetServer secret (login.ns_secret). Rows are touched at most every five minutes and removed when older than one hour |
 |[AutomatedCategoryUpdate](./automatedcategoryupdate)  |Info on how to autoupdate category when changing sale or leadstatus on person |
 |[available\_fonts](./available-fonts)  |This table contains all fonts selected to be available for external usage |
 |[BaseTZLocation](./basetzlocation)  |Time zone location for the database (how tz-related datetimes should be stored in the database) |
@@ -197,6 +198,7 @@ Employees, resources and other users - except for External persons
 |[LicenseSatlLink](./licensesatllink)  |Link between License and Satellite, for per-database licenses |
 |[LocaleText](./localetext)  |Multi-language text items. Used for user-defined field labels. Must be assigned correct name to match the language they start SuperOffice in.  This table should be viewed in conjunction with FieldLabel. If a row in FieldLable has active = 1 this table will need to contain at least one row with the same resourceId as the FieldLabel row. The language id can be either 0 or one of the Windows language ID&apos;s; SuperOffice will pick the correct language on startup according to the user settings. If a label cannot be found with the given language and also not with language 0, it will not be substituted.  |
 |[MailingDomains](./mailingdomains)  |List of allowed domains used in a Mailing |
+|[mention](./mention)  |A colleague tagged with @ in a request comment |
 |[MergeMoveLog](./mergemovelog)  |Log of merge and move operations (person, contact, project) |
 |[Message](./message)  |Definition of a message, corresponding to the header of a protocol |
 |[MessageHandler](./messagehandler)  |Presence and heartbeat of a message handler, should be updated once a minute. Older records are stale |
@@ -223,7 +225,7 @@ Employees, resources and other users - except for External persons
 |[PersIntGroupLink](./persintgrouplink)  |User group link table for PersInt, for MDO item hiding |
 |[PersIntHeadingLink](./persintheadinglink)  |Heading link table for PersInt, for MDO headers |
 |[person](./person)  |Persons |
-|[personinterest](./personinterest)  |Note: If you add or remove rows in this table, you will need to update the interestCount field in the person table accordingly. This field should always reflect the number of interest records a person has, to enable the correct setting of the interest indicator on the tab in the person dialog.  Replication note: The combination of person_id and pinterest_idx is unique. If a duplicate is made on a replicated database, the system will replace the record in the target database with the one derived from the source database during replication. Therefore, do not assume that a record in this table will retain its ID indefinitely, even if the person keeps the interest. |
+|[personinterest](./personinterest)  |Link-table between person and interests in PersInt. Note: person.activeInterests must be kept in sync with the rows here whose interest in PersInt is not deleted, since that is what sets the interest indicator. Replication note: The combination of person_id and pinterest_idx is unique. If a duplicate is made on a replicated database, the system will replace the record in the target database with the one derived from the source database during replication. Therefore, do not assume that a record in this table will retain its ID indefinitely, even if the person keeps the interest. |
 |[PersPos](./perspos)  |PersPos list table. Contact person position list |
 |[PersPosGroupLink](./persposgrouplink)  |User group link table for PersPos, for MDO item hiding |
 |[PersPosHeadingLink](./persposheadinglink)  |Heading link table for PersPos, for MDO headers |

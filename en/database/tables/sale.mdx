@@ -40,7 +40,7 @@ Sales  For every Sale record edited through the SuperOffice GUI, a copy of the c
 |currency\_id|Currency of sale|FK [Currency](./currency.mdx)|Yes|
 |probability|Actual probability, may differ from the one in the list|UShort|Yes|
 |status|Status: 1 = open, 2 = sold, 3 = lost, 4 = stalled|Enum [SaleStatus](./enums/salestatus.mdx)|Yes|
-|done|Done (0=don&apos;t know, 1 = No, 2=Yes)|Enum [SaleDone](./enums/saledone.mdx)|Yes|
+|done|Done (0=don&apos;t know, 1=No, 2=Yes). Note: SaleEntity.Completed exposes this field as ActivityStatus (Completed=3), not as these values; NetServer maps between the two enums.|Enum [SaleDone](./enums/saledone.mdx)|Yes|
 |number1|Alphanumeric user field|String(49)|Yes|
 |visibility|Obsolete, but still maintained denormalization of visiblefor|UShort|Yes|
 |source|For future integration use; source of record|UShort|Yes|

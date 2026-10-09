@@ -46,7 +46,7 @@ PersInt list table. List of Person interests.
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[PersIntGroupLink](./persintgrouplink)  |User group link table for PersInt, for MDO item hiding |
 |[PersIntHeadingLink](./persintheadinglink)  |Heading link table for PersInt, for MDO headers |
-|[personinterest](./personinterest)  |Note: If you add or remove rows in this table, you will need to update the interestCount field in the person table accordingly. This field should always reflect the number of interest records a person has, to enable the correct setting of the interest indicator on the tab in the person dialog.  Replication note: The combination of person_id and pinterest_idx is unique. If a duplicate is made on a replicated database, the system will replace the record in the target database with the one derived from the source database during replication. Therefore, do not assume that a record in this table will retain its ID indefinitely, even if the person keeps the interest. |
+|[personinterest](./personinterest)  |Link-table between person and interests in PersInt. Note: person.activeInterests must be kept in sync with the rows here whose interest in PersInt is not deleted, since that is what sets the interest indicator. Replication note: The combination of person_id and pinterest_idx is unique. If a duplicate is made on a replicated database, the system will replace the record in the target database with the one derived from the source database during replication. Therefore, do not assume that a record in this table will retain its ID indefinitely, even if the person keeps the interest. |
 |[s\_link](./s-link)  |Links in messages to measure success rate of a campaign. |
 
 

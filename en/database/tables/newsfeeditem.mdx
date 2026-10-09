@@ -8,7 +8,7 @@ envir: online
 
 import Newsfeeditem from "./includes/newsfeeditem.mdx";
 
-## NewsFeedItem Table (506)
+## NewsFeedItem Table (507)
 
 Contains news feed items - published to one or more users, with one or more language descriptions
 
@@ -22,8 +22,8 @@ Contains news feed items - published to one or more users, with one or more lang
 |ImageLink|URL Link to an image associated with the news item.|String(2000)|No|
 |SourceLink|URL Link to the source of the news item, or an SOProtocol link to a SuperOffice item|String(2000)|No|
 |PreviewHint|Preview hint for the news item. e.g. `{contact_id=123}`|String(100)|No|
-|FromName|Name of the instance that published this item. e.g. `Pete the prospector`|String(200)|No|
-|FromCategoryName|Type of the instance that published this item. e.g. `Prospector Agent`|String(200)|No|
+|FromName|Display Name of the instance that published this item. e.g. `Pete the prospector`|String(200)|No|
+|FromCategoryName|Display Type name of the instance that published this item. e.g. `Prospector Agent`. Multi-language string supported: &apos;US:&quot;Duplicate Agent&quot;;NO:&quot;Duplikatagent&quot;&apos;.|String(200)|No|
 |Priority|Importance of the news item. Low to High. Higher priority items may be shown more prominently in the feed.|Enum [EMailPriority](./enums/emailpriority.mdx)|No|
 |ExpiresAt|When the news item expires and should no longer be shown in feeds (UTC)|UtcDateTime|Yes|
 |Status|Indicates if the item is being handled by a CTA. (normal, processing, processed)|Enum [NewsFeedItemStatus](./enums/newsfeeditemstatus.mdx)|No|
@@ -41,6 +41,8 @@ Contains news feed items - published to one or more users, with one or more lang
 |RatingPercent|Rating as percentage (0-100). 0 = undefined. 1-9 = No stars, 10-30 = One star, Two stars = 31-50, 90-100 = Five stars. Client can render rating as stars, pie chart, thumbs up or down, however they want. Default 0 indicates no rating.|Int|No|
 |SourceSoProtocol|SoProtocol to the agent&apos;s chat topic so that start page can open the agent topic directly. e.g. &apos;contact.main?contact_id=1234&apos; or &apos;agents.main?instance_id=6a8&amp;topic_id=534&apos; |String(200)|No|
 |Type|Type identifier for the message type. Optional. To allow clients to filter for specific message types without analyzing the CTAs or message content. e.g. &apos;mergeContact&apos; or &apos;mergeOrphan&apos; |String(40)|No|
+|FromCategoryIdentifier|Language-independent identifier for the agent type. To allow clients to filter for specific agents without worrying about translations. e.g. &apos;lead&apos; or &apos;dataQuality&apos;. Defaults to value based on the FromCategoryName if not set.|String(40)|No|
+|FromIdentifier|Language-independent identifier for the agent. To allow clients to filter for specific agents without worrying about translations. e.g. &apos;xyz123&apos; or &apos;543qew&apos;. Defaults to value based on the FromName if not set.|String(40)|No|
 
 
 ![NewsFeedItem table relationship diagram](/media/loc/en/database/tables/NewsFeedItem.png)

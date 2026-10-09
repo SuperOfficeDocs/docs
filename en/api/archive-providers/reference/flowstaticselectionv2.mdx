@@ -1,0 +1,109 @@
+---
+title: FlowStaticSelectionV2
+description: Static archive provider for a Selection of Flows archive.
+keywords: FlowStaticSelectionV2 archive provider
+generated: true
+content_type: reference
+envir: onsite, online
+---
+
+## "FlowStaticSelectionV2"
+
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
+
+Static archive provider for a Selection of Flows archive.
+
+No shadow counterpart and no combined provider: a flow has no person to shadow onto, and combined selections
+are not offered for the marketing entities (the combined slot in
+<see cref="T:SuperOffice.CRM.Entities.SelectionTypeStore" /> stays empty, as it does for mailings and forms).
+
+## Supported Entities
+| Name | Description |
+| ---- | ----- |
+|"emailflow"||
+
+## Supported Columns
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
+|emailFlowId|int|| x |
+|emailFlowHierarchyId|int|| x |
+|shipmentType|listAny|| x |
+|overrideConsentSubscription|bool|| x |
+|thumbnail| *None* ||  |
+|mediumThumbnail| *None* ||  |
+|workflowId|int|| x |
+|workflowName|string|| x |
+|workflowDescription|string|| x |
+|workflowDefinitionStatus|listAny|| x |
+|workflowDefinitionStatusId|listAny|| x |
+|jumpToFinish|bool|| x |
+|startOnlyOnce|bool|| x |
+|workflowEnrolledCount| *None* ||  |
+|workflowInProgressCount| *None* ||  |
+|workflowCompletedCount| *None* ||  |
+|workflowSucceededCount| *None* ||  |
+|workflowSuccessRate| *None* ||  |
+|updatedBy|associate|| x |
+|updatedDate|date|| x |
+|registeredBy|associate|| x |
+|registeredDate|date|| x |
+|workflowAssociate/firstName|string|| x |
+|workflowAssociate/lastName|string|| x |
+|workflowAssociate/middleName|string|| x |
+|workflowAssociate/fullName|string|| x |
+|workflowAssociate/contactId|int||  |
+|workflowAssociate/personId|int||  |
+|workflowAssociate/mrMrs|string|| x |
+|workflowAssociate/title|string|| x |
+|workflowAssociate/associateDbId|associate|| x |
+|workflowAssociate/contactName|string|| x |
+|workflowAssociate/contactDepartment|string|| x |
+|workflowAssociate/usergroup|userGroup|| x |
+|workflowAssociate/usergroupId|int|| x |
+|workflowAssociate/contactFullName|string|| x |
+|workflowAssociate/contactCategory|listAny|| x |
+|workflowAssociate/role|listAny|| x |
+|workflowAssociate/assocName|associate|| x |
+|workflowAssociate/assocTooltip|string||  |
+|workflowAssociate/assocType|listAny|| x |
+|workflowAssociate/ejUserId|int||  |
+|workflowAssociate/simultaneousEjUser|bool||  |
+|workflowAssociate/ejDisplayName|string|| x |
+|workflowAssociate/ejStatus|int||  |
+|workflowAssociate/credentialType| *None* || x |
+|workflowAssociate/credentialDisplayValue| *None* || x |
+|workflowAssociate/isActive|bool|| x |
+|workflowAssociate/isActiveText|bool|| x |
+|workflowAssociate/portraitThumbnail| *None* ||  |
+|workflowAssociate/otherGroups|userGroup||  |
+|workflowAssociate/userName|string|| x |
+|workflowAssociate/personEmail|string|| x |
+|workflowAssociate/locationAddress|string|| x |
+|workflowAssociate/isLocation|bool|| x |
+|hierarchyId|int|| x |
+|hierarchyFullname|string|| x |
+|hierarchyName|string|| x |
+|hierarchyParentId|int|| x |
+|hierarchyFullpathIds| *None* ||  |
+|selectionId|int||  |
+|selectionMemberId|int||  |
+|rowKind| *None* ||  |
+|targetTableNumber|int|| x |
+|targetRecordId|int|| x |
+|contactId|int|| x |
+|personId|int|| x |
+
+## Sample
+
+```http!
+GET /api/v1/archive/FlowStaticSelectionV2?$select=registeredDate,workflowAssociate/contactDepartment
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: sv
+
+```
+
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

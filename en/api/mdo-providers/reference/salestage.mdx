@@ -15,7 +15,7 @@ Sold(-2) and Lost(-1) items are appended  at the end of the list.
 
 AdditionalInfo "SaleTypeID=123&amp;GetDeletedStages=true&amp;HideOptionalRows=false&amp;GetDeletedStageLinks=true"
 
-Implemented by the SaleStageProvider class.
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleStageProvider">SaleStageProvider</see> class.
 The name of the MDO list is 'salestage'.
 
 ## Additional Attributes
@@ -62,8 +62,8 @@ foreach (var item in listProvider.RootItems) {
 |5|Andre møte||IsDeleted=False&Probability=50&SaleTypeStageLinkId=3&|
 |2|Sluttforhandlinger||IsDeleted=False&Probability=80&SaleTypeStageLinkId=4&|
 |3|Muntlig aksept||IsDeleted=False&Probability=90&SaleTypeStageLinkId=5&|
-|-2|Sold||Probability=100|
-|-1|Lost||Probability=0|
+|-2|||Probability=100|
+|-1|||Probability=0|
 
 
 ## Related MDO Lists

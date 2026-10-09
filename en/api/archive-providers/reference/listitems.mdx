@@ -9,41 +9,41 @@ envir: onsite, online
 
 ## "ListItems"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ListItemsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ListItemsProvider">SuperOffice.CRM.ArchiveLists.ListItemsProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for the list of ListItems
 
 ## Supported Entities
 | Name | Description |
 | ---- | ----- |
-|"all"|All|
-|"deleted"|Deleted|
+|"all"||
+|"deleted"||
 
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|udlistDefinitionId|int|UDListDefinitionId|  |
-|listItemsId|int|ID: ID|  |
-|listItemsName|string|Full name: Name|  |
-|listItemsRank|int|Rank: Rank|  |
-|listItemsTooltip|string|Description: Description|  |
-|listItemsDeleted|int|Deleted: Deleted|  |
-|listItemsLocation|bool|Location: Location|  |
-|listItemsProbability|int|Probability: Probability|  |
-|listItemsRecordType|int|Record type : Shows the record type|  |
-|listItemsEmailTemplateType| *None* |Template type: Shows the template type|  |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
+|udlistDefinitionId|int||  |
+|listItemsId|int||  |
+|listItemsName|string||  |
+|listItemsRank|int||  |
+|listItemsTooltip|string||  |
+|listItemsDeleted|int||  |
+|listItemsLocation|bool||  |
+|listItemsProbability|int||  |
+|listItemsRecordType|int||  |
+|listItemsEmailTemplateType| *None* ||  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ListItems?$select=listItemsId,listItemsName,listItemsTooltip
+GET /api/v1/archive/ListItems?$select=listItemsName,listItemsTooltip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

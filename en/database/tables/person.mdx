@@ -47,7 +47,7 @@ Persons
 |country\_id|Country|FK [country](./country.mdx)|No|
 |userdef2\_id|User defined table record 2|FK [udpersonLarge](./udpersonlarge.mdx)|Yes|
 |retired|1 = the user is retired and should have no rights, not appear in lists, etc.|UShort|Yes|
-|activeInterests|Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true|UShort|Yes|
+|activeInterests|Number of interests visible on this person: rows in pintr whose interest in PersInt is not deleted. Drives the interest indicator in lists and on the person card.|UShort|Yes|
 |updatedCount|Number of times updated|UShort|No|
 |associate\_id|Our contact, if this is a B2C person, otherwise mirror of contact.assoc_id|Id|Yes|
 |group\_id|Our contact&apos;s original group, if this is a B2C person, otherwise mirror of contact.group_id|Id|Yes|
@@ -74,6 +74,9 @@ Persons
 |modified\_by\_workflow\_id|The workflow this person last was modified by|FK [workflow](./workflow.mdx)|Yes|
 |modified\_by\_workflow\_when|When the workflow modified this person|UtcDateTime|Yes|
 |leadstatus\_id|Refinement of categories of lead type. Empty if the category is not a lead type. If this person has a contact, the leadstatus is from the contact and not editable on the person|FK [leadstatus](./leadstatus.mdx)|Yes|
+|sourcedFrom|Name of the source of the data, e.g. CSV filename, agent name, external application name, or CrmScript name, along with possible details like line number or URL for traceability.|String(200)|Yes|
+|linkedinUrl|The LinkedIn URL for the person, used to fetch data from the LinkedIn API.|String(200)|Yes|
+|contextText\_id|Description of what the person does, along with a biographical sketch, for later agent/LLM use|FK [text](./text.mdx)|Yes|
 
 
 ![person table relationship diagram](/media/loc/en/database/tables/person.png)
@@ -136,7 +139,7 @@ Persons
 |[message\_customers](./message-customers)  |This table contains all cutomers who are involved in a message |
 |[NewsFeedItem](./newsfeeditem)  |Contains news feed items - published to one or more users, with one or more language descriptions |
 |[notify](./notify)  |This table contains the pop-up messages displayed for users for various events, such as &amp;apos;new ticket&amp;apos;, etc. |
-|[personinterest](./personinterest)  |Note: If you add or remove rows in this table, you will need to update the interestCount field in the person table accordingly. This field should always reflect the number of interest records a person has, to enable the correct setting of the interest indicator on the tab in the person dialog.  Replication note: The combination of person_id and pinterest_idx is unique. If a duplicate is made on a replicated database, the system will replace the record in the target database with the one derived from the source database during replication. Therefore, do not assume that a record in this table will retain its ID indefinitely, even if the person keeps the interest. |
+|[personinterest](./personinterest)  |Link-table between person and interests in PersInt. Note: person.activeInterests must be kept in sync with the rows here whose interest in PersInt is not deleted, since that is what sets the interest indicator. Replication note: The combination of person_id and pinterest_idx is unique. If a duplicate is made on a replicated database, the system will replace the record in the target database with the one derived from the source database during replication. Therefore, do not assume that a record in this table will retain its ID indefinitely, even if the person keeps the interest. |
 |[PersPos](./perspos)  |PersPos list table. Contact person position list |
 |[phone](./phone)  |Contact and Person phonenumbers (+fax) |
 |[projectmember](./projectmember)  |Project members. Link-table between person and project |

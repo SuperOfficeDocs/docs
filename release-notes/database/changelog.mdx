@@ -1,14 +1,14 @@
 ---
-title: What's new in version 12.4.1514.0
-description: What's new in database version 12.4.1514.0.
-sidebarTitle: "12.4 - database changelog"
+title: What's new in version 12.5.2909.0
+description: What's new in database version 12.5.2909.0.
+sidebarTitle: "12.5 - database changelog"
 generated: true
 keywords: database
 content_type: release-note
 envir: online
 ---
 
-## Released database changes in version 12.4.1514.0
+## Released database changes in version 12.5.2909.0
 
 ## SuperOffice
 
@@ -34,7 +34,7 @@ In addition, this step will give these two rights to all roles with the general 
 
 **Step 14**
 
-**NB: Due to a Merge/RedAlert f...up, the functionality in this step has been moved to the Optimization name; and should properly live there!**
+<b>NB: Due to a Merge/RedAlert f...up, the functionality in this step has been moved to the Optimization name; and should properly live there!</b>
 Modify indexes that have a major impact on performance in Online
 
 
@@ -878,6 +878,51 @@ Add a unique index on SaintConfiguration.ownerTable, so that an owner table can 
 
 * Modify table SaintConfiguration
 
+**Step 155**
+
+Create table authentication_session (per-user authenticated session with encrypted OIDC tokens, last seen and ns_secret expiry) and add a foreign key from login to it
+
+* Add table authentication\_session
+* Modify table login
+authentication\_session\_id
+
+**Step 156**
+
+Repair person.activeInterests and contact.activeInterests where the denormalized counter disagrees with the number of interest link rows whose list item is not deleted, which is what draws the interest indicator in lists. Corrects the descriptions of those fields, which claimed the counter equals the raw number of link rows
+
+Bug 118450 (merging moved the interest link rows at row level without recounting) and Bug 21531 (deleting an
+interest list item left the counters of everyone linked to it untouched) are fixed in code; this repairs the
+rows that have already drifted.
+
+* Modify table person
+activeInterests
+* Modify table contact
+activeInterests
+* Modify table personinterest
+
+**Step 157**
+
+Adding prospecting/enrichment fields to contact and person
+
+* Modify table contact
+numEmployees, yearFounded, revenueYear, revenueBasecurrency, sharecapitalBasecurrency, sourcedFrom, linkedinUrl, contextText\_id
+* Modify table person
+sourcedFrom, linkedinUrl, contextText\_id
+
+**Step 158**
+
+Prime LocaleText resourceIds 26/28/29 (PushNotificationTextResources.TicketRequestIdentity/TicketTakenOverTitle/TicketTakenOverTitleGeneric) for the TicketCustomMessage/TicketTakenOver mobile push notifications added in PR 48936. English (1033) only - resourceId is not scoped per typeid in this table, so a full re-sync of every existing typeid=41 row (not just an incremental Truncate_field on the new resourceIds) is required to avoid deleting unrelated rows that reuse the same resourceId under a different typeid (e.g. 26/28 already exist under typeid 7/11/12). The other 15 languages need translation before the next full re-sync of this typeid.
+
+
+**Step 159**
+
+Add functional right 'Delete externally owned follow-ups'
+
+Adds the 'delete-external-follow-ups' functional right with its name and tooltip; the role admin only lists
+rights that have both. It is not linked to any role: admin-all implies it in AppointmentSentry, and other
+roles get it by assignment in the role admin.
+
+
 ## ai
 
 The `ai_chat_turn` table contains chat history for user's chatbot sessions with GPT. Chats are keyed by the chat_id and associate_id, and ordered by timestamp. Chat Messages are automatically added to the history as the bot generates answers.
@@ -887,6 +932,11 @@ The `ai_chat_turn` table contains chat history for user's chatbot sessions with 
 **Step 2**
 
 Set default values for AI preferences.
+
+
+**Step 3**
+
+Set more default values for AI preferences.
 
 
 ## chat
@@ -1153,7 +1203,6 @@ Make the person_id + consentPurpose_id index unique, this is an important constr
 Make the person_id + consentPurpose_id index unique, this is an important constraint
 
 * Modify table ConsentPerson
-* Modify table ConsentPerson
 * Modify table ShipmentTypeReservation
 * Modify table ConsentPurpose
 * Modify table ConsentSource
@@ -1205,6 +1254,11 @@ name, tooltip, rank, key
 * Modify table ConsentPerson
 consentPurpose\_id
 
+**Step 25**
+
+Add 'Agent' as a GDPR consent source (key AGENT), for data created or enriched by agents
+
+
 ## Copilot
 
 Add tables for Copilot
@@ -1216,6 +1270,11 @@ Add tables for Copilot
 **Step 2**
 
 Add initial Copilot
+
+
+**Step 3**
+
+Add Copilot preference defaults: allow web search
 
 
 ## CRMScript
@@ -2423,6 +2482,12 @@ Add additional fields for form redirects
 * Modify table s\_link
 form\_id, form\_parameters
 
+## Mention
+
+Add table for @-mentions: one row per colleague tagged with @ in a request comment, tracking read state and a text snippet for display.
+
+* Add table mention
+
 ## Metering
 
 Create table for metering service use
@@ -2533,7 +2598,7 @@ ownerTable, ownerRecord, entity\_id
 
 **Step 12**
 
-Bug 105828: migrate the 'Owned by user group' criterion from `'<prefix>/otherGroups'` (matched any group membership via usergrouplink) to `'<prefix>/usergroup'` (the owner's primary group, associate.group_idx) for the associate, contactAssociate, contactSupportAssociate, personAssociate and projectAssociate prefixes. Only the stored criterion column name changes; operators and values are unaffected. Bare 'otherGroups' is not migrated.
+Bug 105828: migrate the 'Owned by user group' criterion from '<prefix>/otherGroups' (matched any group membership via usergrouplink) to '<prefix>/usergroup' (the owner's primary group, associate.group_idx) for the associate, contactAssociate, contactSupportAssociate, personAssociate and projectAssociate prefixes. Only the stored criterion column name changes; operators and values are unaffected. Bare 'otherGroups' is not migrated.
 
 Bug 105828: the "Owned by user group" criterion must filter on the owner's current PRIMARY group.
 It used to be bound to the '.../otherGroups' column, which restricts via the usergrouplink table
@@ -2578,6 +2643,20 @@ Add Type to `NewsFeedItem` so that start page can open filter/count by message t
 
 * Modify table NewsFeedItem
 Type
+
+**Step 5**
+
+Add FromCategoryIdentifier to `NewsFeedItem` so that start page can open filter/count by type without worrying about translation/languages.
+
+* Modify table NewsFeedItem
+FromCategoryIdentifier
+
+**Step 6**
+
+Add FromIdentifier to `NewsFeedItem` so that start page can open filter/count by agent id without worrying about translation/languages.
+
+* Modify table NewsFeedItem
+FromIdentifier
 
 ## Notifications
 
