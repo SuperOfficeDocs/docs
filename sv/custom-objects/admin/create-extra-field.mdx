@@ -4,8 +4,8 @@ title: Lägg till extrafält
 description: Lägg till extrafält
 keywords: ['extrafält', 'anpassa fält']
 author: Bergfrid Dias
-date: 04.09.2024
-so_version: 10.3.4
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: growth
 audience: settings
@@ -46,6 +46,10 @@ När du har skapat en [extratabell][1] måste du skapa fält i tabellen så att 
 1. Klicka på **Starta om NetServer** när du är klar. Om Travel är aktiverat kommer du också att se ett meddelande om att en ny Travel-databas måste skapas.
 
 ## Egenskaper för fält
+
+<Note>
+Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. Om du vill visa URL:er som lagras i fält av typen **Kort text** och **Lång text** som klickbara länkar, se [URL:er i textfält][2].
+</Note>
 
 | Fält | Beskrivning |
 |---|---|
@@ -98,6 +102,7 @@ När du har skapat en [extratabell][1] måste du skapa fält i tabellen så att 
 Till exempel, för att ansluta alla inkommande ärende till en specifik försäljning, kan du lägga till ett extra fält av typen säljrelation till Ärende ([ticket tabellen][4]). För att lista anslutna ärende när du tittar på en försäljning i SuperOffice CRM, behöver du bygga en webbpanel.
 
 [1]: ./create-extra-table
+[2]: ../learn/extra-field#urls
 [4]: ../../../en/database/tables/ticket
 
 [img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png

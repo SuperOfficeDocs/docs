@@ -2,10 +2,10 @@
 uid: help-da-extra-field
 title: Ekstrafelt
 description: Et ekstrafelt er et tilpasset felt som du legger til i en eksisterende SuperOffice-databasetabell i Service.
-keywords: ['ekstrafelt', 'tilpasset felt', 'Service']
+keywords: ['ekstrafelt', 'tilpasset felt', 'Service', 'url', 'klikbart link', 'link i ekstrafelt']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 tier: core
 audience: person
@@ -55,6 +55,22 @@ Desuden har hver enhed en relations type. For eksempel *kontaktrelationen*.
 
 I modsætning til brugerdefinerede felter tilføjes ekstra felter som faktiske felter til databasetabellerne. Der er ingen foruddefinerede pladser, du skal tage hensyn til, og i princippet ingen begrænsninger.
 
+### URL'er i tekstfelter {#urls}
+
+URL'er, der er gemt i ekstra felter af typen **Kort tekst** og **Lang tekst**, vises som klikbare links i læsetilstand. Linket åbnes i en ny fane. I redigeringstilstand er feltet et almindeligt tekstfelt.
+
+Det er nyttigt, når hver post har sin egen URL, for eksempel en ordre eller sag i et andet system. Linkfunktionen i [Skærmdesigner][7] dækker kun en fast URL plus en variabel.
+
+Sådan bruger du en URL som link:
+
+* Det ekstra felt skal være et felt af typen **Kort tekst** eller **Lang tekst** på sager, meddelelser eller kort for brugerdefinerede objekter.
+* Det ekstra felt skal være oprettet i **Systemdesign**. De brugerdefinerede felter på Firma, Person, Projekt og Salg kan ikke bruges til links.
+* URL'en skal begynde med `www.` eller `http(s)://`.
+
+Et ekstra felt med navnet **Ordrelink**, der indeholder `https://erp.example.com/orders/48213`, åbner for eksempel den pågældende ordre i dit ERP-system.
+
+![Sag med en URL i et ekstra felt vist som et klikbart link -screenshot][img3]
+
 ### Relationer (fremmednøgler, FK) {#relation}
 
 Databasetabeller er forbundet med *fremmednøgler* (FK). Disse er felttyper, der slutter på *relation*.
@@ -94,5 +110,7 @@ For at se detaljerne for elementerne på denne liste uden at åbne hver enkelt e
 Ekstra felter kan for eksempel bruges som søgekriterier og kolonner i salg i SuperOffice CRM.
 
 [6]: ./extra-table
+[7]: /da/customization/screen-designer/admin/add-button
 [img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
 [img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img3]: /media/loc/en/request/request-field-with-url-link.png

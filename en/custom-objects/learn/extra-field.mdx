@@ -2,10 +2,10 @@
 uid: help-en-extra-field
 title: Extra fields
 description: An extra field is a custom field that you add to an existing SuperOffice database table in Service.
-keywords: ['extra field', 'custom field', 'field types']
+keywords: ['extra field', 'custom field', 'field types', 'url', 'clickable link', 'link in extra field']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 tier: core
 audience: person
@@ -56,6 +56,22 @@ In addition, each entity has a relation type. For example, the *contact relation
 
 Unlike user-defined fields, extra fields are added as actual fields to the database tables. There are no pre-defined slots you need to take into consideration, and essentially no limitations.
 
+### URLs in text fields {#urls}
+
+URLs stored in **Short text** and **Long text** extra fields are displayed as clickable links in read mode. The link opens in a new tab. In edit mode, the field is a normal text field.
+
+This is useful when each record has its own URL, such as an order or case in another system. The link function in the [Screen Designer][7] only covers a fixed URL plus a variable.
+
+To use a URL as a link:
+
+* The extra field must be a **Short text** or **Long text** field on requests, messages, or custom object cards.
+* The extra field must be created in **System design**. The user-defined fields on Company, Contact, Project, and Sale cannot be used for links.
+* The URL must start with `www.` or `http(s)://`.
+
+For example, an extra field named **Order link** that contains `https://erp.example.com/orders/48213` opens that order in your ERP system.
+
+![Request showing a URL in an extra field displayed as a clickable link -screenshot][img3]
+
 ### Relations (foreign keys) {#relation}
 
 Database tables are connected with *foreign keys* (FK). These are the field types ending in *relation*.
@@ -95,5 +111,7 @@ To view the details of items in this list, without having to open each individua
 Extra fields can for instance be used as search criteria and columns in sales in SuperOffice CRM.
 
 [6]: ./extra-table
+[7]: /en/customization/screen-designer/admin/add-button
 [img1]: /media/loc/en/automation/section-tab-for-relation.png
 [img2]: /media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img3]: /media/loc/en/request/request-field-with-url-link.png

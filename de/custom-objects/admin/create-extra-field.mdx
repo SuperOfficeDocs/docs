@@ -4,8 +4,8 @@ title: Zusatzfelder hinzufügen
 description: Zusatzfelder hinzufügen
 keywords: ['Zusatzfeld', 'Zusatztabelle', 'Datenbankfeld']
 author: Bergfrid Dias
-date: 04.09.2024
-so_version: 10.3.4
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: growth
 audience: settings
@@ -46,6 +46,10 @@ Nachdem Sie eine [Zusatztabelle][1] erstellt haben, müssen Sie Felder in der Ta
 1. Klicken Sie auf **NetServer neu starten**, wenn Sie fertig sind. Wenn Travel aktiviert ist, sehen Sie auch eine Nachricht, dass eine neue Travel-Datenbank generiert werden muss.
 
 ## Eigenschaften des Feldes
+
+<Note>
+Die Eigenschaft **URL** in dieser Tabelle gehört zum Feldtyp **Dynamischer Link**. Wie Sie URLs, die in Feldern vom Typ **Kurzer Text** und **Langer Text** gespeichert sind, als anklickbare Links anzeigen, lesen Sie unter [URLs in Textfeldern][2].
+</Note>
 
 | Feld | Beschreibung |
 |---|---|
@@ -98,6 +102,7 @@ Nachdem Sie eine [Zusatztabelle][1] erstellt haben, müssen Sie Felder in der Ta
 Zum Beispiel, um alle eingehenden Anfragen mit einem bestimmten Verkauf zu verbinden, können Sie ein zusätzliches Feld des Typs Verkaufsbeziehung zu Anfragen hinzufügen ([Tickettabelle][4]). Um verbundene Anfragen beim Ansicht eines Verkaufs in SuperOffice CRM aufzulisten, müssen Sie ein Webpanel erstellen.
 
 [1]: ./create-extra-table
+[2]: ../learn/extra-field#urls
 [4]: ../../../en/database/tables/ticket
 
 [img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png

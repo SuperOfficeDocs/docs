@@ -4,8 +4,8 @@ title: Add extra fields
 description: How to define extra fields in SuperOffice
 keywords: ['extra field', 'custom field', 'field properties']
 author: Bergfrid Dias
-date: 04.09.2024
-so_version: 10.3.4
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: growth
 audience: settings
@@ -46,6 +46,10 @@ After you create an [extra table][1], you must set up fields in the table, to al
 1. Click **Restart NetServer** when you are done. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
 ## Field properties
+
+<Note>
+The **URL** property in this table belongs to the **Dynamic link** field type. To show URLs stored in **Short text** and **Long text** fields as clickable links, see [URLs in text fields][2].
+</Note>
 
 | Property | Description |
 |---|---|
@@ -98,6 +102,7 @@ After you create an [extra table][1], you must set up fields in the table, to al
 For example, to connect all incoming requests to a specific sale, you can add an extra field of type sale relation to requests ([ticket table][4]). To list connected requests when viewing a sale in SuperOffice CRM, you will need to build a web panel.
 
 [1]: ./create-extra-table
+[2]: ../learn/extra-field#urls
 [4]: /en/database/tables/ticket
 
 [img1]: /media/loc/en/custom-objects/create-extra-tables-and-fields.png

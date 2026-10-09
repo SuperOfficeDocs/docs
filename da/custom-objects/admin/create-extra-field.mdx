@@ -4,8 +4,8 @@ title: Tilføj ekstra felter
 description: Definere ekstrafelter
 keywords: ['ekstrafelt', 'tilpasset felt']
 author: Bergfrid Dias
-date: 04.09.2024
-so_version: 10.3.4
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: growth
 audience: settings
@@ -46,6 +46,10 @@ Når du har oprettet en [ekstratabel][1], skal du konfigurere felter i tabellen,
 1. Klik **Genstart NetServer** når du er færdig. Hvis Travel er aktiveret, vil du også se en besked om at en ny Travel-database skal genereres.
 
 ## Egenskaber for felt
+
+<Note>
+Egenskaben **URL** i denne tabel hører til felttypen **Dynamisk link**. Hvis du vil vise URL'er, der er gemt i felter af typen **Kort tekst** og **Lang tekst**, som klikbare links, kan du se [URL'er i tekstfelter][2].
+</Note>
 
 | Felt | Beskrivelse |
 |---|---|
@@ -98,6 +102,7 @@ Når du har oprettet en [ekstratabel][1], skal du konfigurere felter i tabellen,
 For eksempel, for at forbinde alle indgående sager til et bestemt salg, kan du tilføje et ekstra felt af typen salgsrelation til Sag ([ticket tabellen][4]). For at liste tilsluttede sager, når du ser et salg i SuperOffice CRM, skal du bygge et webpanel.
 
 [1]: ./create-extra-table
+[2]: ../learn/extra-field#urls
 [4]: ../../../en/database/tables/ticket
 
 [img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
