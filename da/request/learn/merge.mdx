@@ -2,10 +2,10 @@
 uid: help-da-request-merge
 title: Flet sager
 description: Lær, hvordan du fletter sager i SuperOffice.
-keywords: ['flet sager', 'sag']
+keywords: ['flet sager', 'sag', 'ældste sag', 'hovedsag', 'primær sag']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -42,4 +42,24 @@ Du kan også søge efter og vælge sager, der skal flettes, fra søgeresultater 
 
 De sags-ID'er, der blev overskrevet, vil ikke længere være tilgængelige i foretrukne, historik eller almindelig søgning. Hvis du indtaster et overskrevet sags-ID i søgefeltet, bliver du omdirigeret til den flettede sag.
 
+## Primær sag {#primary-request}
+
+Sagen med den tidligste registreringsdato er automatisk den primære sag, og de andre sager flettes ind i den. Kunder og kolleger henviser til det oprindelige sagsnummer, så på den måde bevares det sagsnummer, de kender.
+
+![Dialogboksen Flet sager, hvor den ældste sag er valgt som primær sag -screenshot][img1]
+
+I dialogboksen **Flet sager** kan du, hvis du fletter præcis to sager, klikke på pilikonet <i class="ph ph-arrows-down-up" aria-label="Vend retning"></i> for at vende retningen, så den nyeste sag bliver den primære sag.
+
+Funktionsmåden styres af præferencen **Brug den ældste sag som hovedsag ved fletning**, som er aktiveret som standard. Sådan ændrer du den:
+
+1. Gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** > **Præferencer**.
+
+1. Vælg **Sag**, og sæt **Brug den ældste sag som hovedsag ved fletning** til **Ja** eller **Nej**.
+
+1. Klik på **Gem** for at anvende dine ændringer.
+
+![Præferencer for sager med indstillingen til at bruge den ældste sag som hovedsag ved fletning -screenshot][img2]
+
 [1]: ./index#open
+[img1]: /media/loc/en/request/request-merge-dialog.png
+[img2]: /media/loc/en/request/preferences-request-merge-keep-oldest.png
