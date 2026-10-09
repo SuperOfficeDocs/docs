@@ -2,7 +2,7 @@
 title: Work with overview pages
 sidebarTitle: "Overview pages"
 description: Overview pages combine a left panel of vertical tabs, selections in list or board view, and the record you are working on.
-keywords: ['overview page', 'sales overview', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'left panel', 'vertical tabs', 'search in tabs', 'sidebar', 'pinned', 'pin', 'unpin', 'selection', 'board view', 'list view', 'filter', 'current', 'recent', 'last-viewed tab', 'active', 'active tab']
+keywords: ['overview page', 'sales overview', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'request screen', 'Overview', 'left panel', 'vertical tabs', 'search in tabs', 'sidebar', 'pinned', 'pin', 'unpin', 'selection', 'board view', 'list view', 'filter', 'current', 'recent', 'last-viewed tab', 'active', 'active tab']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -15,6 +15,7 @@ boost: 1.1
 related:
   - Use board view in selections: /en/search-options/selection/learn/board-view
   - The Navigator: /en/learn/getting-started/main-screen/navigator
+  - Request screen: /en/request/learn/index#request-screen
   - /en/learn/basics/history
 language: en
 ---
@@ -22,7 +23,9 @@ language: en
 An overview page is a screen where you can see your selections, pick a record, and work on it without leaving the page. You can pin the selections and records you work with most as vertical tabs in the left panel and switch between them with one click.
 
 <Note>
-Overview pages are being introduced gradually, starting with the [Sale screen][2]. If you do not see the Sale screen yet, sales open on their own card, without a left panel. You can find a board view of your sales under **Selections**.
+
+Overview pages are being introduced gradually, starting with the [Sale screen][2] and the [Request screen][9]. If you do not see the Sale screen yet, sales open on their own card, without a left panel. You can find a board view of your sales under **Selections**. If you do not see the Request screen yet, you work with several requests in horizontal tabs, without a left panel.
+
 </Note>
 
 ## Available overview pages
@@ -30,10 +33,11 @@ Overview pages are being introduced gradually, starting with the [Sale screen][2
 | Screen | Guide |
 |---|---|
 | Sale | [Sale (User guide)][2] |
+| Request | [Requests and SuperOffice Service][9] |
 
 ## Open an overview page {#open}
 
-* **Select the icon in the Navigator.** The overview page opens with the content you last viewed. The record or selection you last worked with is shown, and its tab is highlighted.
+* **Select the icon in the Navigator.** The overview page opens with the content you last viewed. The record or selection you last worked with is shown, and its tab is highlighted. On the Request screen, if you have nothing open yet, the [**Overview** tab](#overview) opens.
 
 * **Select the name in the Navigator.** The history, favorites, and search options open, as before. Choose a record or a selection, and it opens in the overview page.
 
@@ -41,19 +45,21 @@ Overview pages are being introduced gradually, starting with the [Sale screen][2
 
 * **Click the New button to create a record of the type the screen is for.** The new record opens in the overview page. When you save it, it opens in the last-viewed tab and becomes your current record.
 
+    On the Request screen, a new request opens in a **New request** tab at the top of the **Active** group. You can have only one **New request** tab open at a time, and it cannot be pinned. When you save, the tab becomes the saved request.
+
 ## Overview page layout {#areas}
 
 ![The Sale screen with the left panel (1), the main area (2), and the side panel (3) marked -screenshot][img1]
 
 | Number | Area | Description |
 |:-:|---|---|
-| 1 | **Left panel** | A search field, plus vertical tabs for the selections and records you have open or pinned. The panel is named after the screen, for example **Sales**. |
+| 1 | **Left panel** | A search field, plus vertical tabs for the selections and records you have open or pinned. The panel is named after the screen, for example **Sales** or **Requests**. |
 | 2 | **Main area** | Shows a selection in [board view][4] or list view when a selection is open. Shows the record with its section tabs when a record is open. |
 | 3 | **Side panel** | The [side panel][1] on the right, with a preview of the selected record or the view you have chosen. |
 
 ### The left panel {#left-panel}
 
-The left panel shows your selections and records as vertical tabs. The tabs are organized in groups. On the Sale screen, the groups are **Selections** and **Sales**.
+The left panel shows your selections and records as vertical tabs. The tabs are organized in groups. On the Sale screen, the groups are **Selections** and **Sales**. On the Request screen, **Selections** and **Requests** are sections, and each section has an **Active** and a **Pinned** group.
 
 ![The left panel with the Selections and Sales groups -screenshot][img2]
 
@@ -63,17 +69,29 @@ Pinned tabs are listed under the **Pinned** heading, which shows how many there 
 
 Click a tab name to open it in the main area. The tab for the selection or record shown in the main area is highlighted.
 
+On the Request screen, an **Active** group can hold several tabs instead of a single last-viewed tab. See [Work with the tabs in the left panel][11].
+
 ### Show or hide the left panel {#collapse}
 
 1. Click the toggle button (<i class="ph ph-fill ph-sidebar-simple" aria-label="Sidebar icon"></i>) at the top of the left panel to hide it.
 
 1. Click the toggle button (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) again to show the panel. The panel does not open when you point to it.
 
-When the panel is hidden, click the icon for a group to open its **More options** menu, with a search field and your last-viewed and pinned tabs.
+When the panel is hidden, click the icon for a group to open its **More options** menu, with a search field and your last-viewed and pinned tabs. On the Request screen, the menu lists your active and pinned tabs. The hidden panel also has buttons for the search field, the **Overview** tab, and Find request.
 
 ![The hidden left panel with an icon for the search field and one icon for each group -screenshot][img7]
 
 The side panel also has a button for showing and hiding it, in the upper-right corner of the screen. The same icon is used for the Navigator, the left panel, and the side panel.
+
+## Start from the Overview tab {#overview}
+
+Screens that have an **Overview** tab in the left panel, such as the Request screen, start there. The Sale screen has no **Overview** tab. The **Overview** tab shows your work at a glance, and you open the item you want to work on from there.
+
+1. Click **Overview** in the left panel. The **Overview** tab opens in the main area.
+
+1. Click an item on the **Overview** tab to view it, or double-click it to open it in a tab.
+
+The **Overview** tab also opens when you have nothing open yet, and when you close the last open tab. What the **Overview** tab shows depends on the screen. For requests, see [Get an overview of your requests][10].
 
 ## Find a selection or record {#search}
 
@@ -121,7 +139,7 @@ Pinned tabs are separate from your [favorites][3].
 
 ### Pin a tab {#pin}
 
-1. Point to the last-viewed tab.
+1. Point to the last-viewed tab or an active tab.
 
 1. Select the pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), or click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and then **Pin**.
 
@@ -133,7 +151,7 @@ The tab moves to the top of the pinned list.
 
 1. Select <i class="ph ph-x" aria-label="Close icon"></i>, or click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and choose an option.
 
-    * **Close:** Closes the last-viewed tab.
+    * **Close:** Closes the last-viewed tab. On the Request screen, closes the active tab.
 
     * **Unpin and close:** Closes the pinned tab.
 
@@ -164,7 +182,9 @@ Use the controls in the header to change the view.
 All the board features, such as dragging cards between columns, task menus, and summaries, work as described in [Use board view in selections][4].
 
 <Note>
+
 The **Edit** and **Task** buttons are not available on the overview page. To edit the selection itself, or to use these buttons, point to the selection tab, click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options), and then click **Open in selection panel**. The selection opens in the Selection screen, as if you had selected **Selections** in the [Navigator][7] and chosen the selection.
+
 </Note>
 
 ### Show the dataset of a selection
@@ -190,6 +210,9 @@ Selecting a card to preview it in the side panel does not change the last-viewed
 [6]: /en/learn/basics/history
 [7]: /en/learn/getting-started/main-screen/navigator
 [8]: /en/learn/basics/recent-navigation
+[9]: /en/request/learn/index#request-screen
+[10]: /en/request/learn/index#overview
+[11]: /en/request/learn/index#tabs
 
 [img1]: /media/loc/en/learn/overview-page-areas.png
 [img2]: /media/loc/en/learn/left-panel.png

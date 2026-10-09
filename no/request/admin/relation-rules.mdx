@@ -4,8 +4,8 @@ title: Relasjonsregler
 description: Lær hvordan du konfigurerer relasjonsregler for å automatisere atferd ved opprettelse og lukking av saker basert på overordnet-underordnet-relasjoner i SuperOffice Service.
 keywords: ['relasjonsregler', 'saksrelasjon', 'overordnet-underordnet', 'relasjonsregel', 'automatisering', 'lukke sak', 'fanen Relasjonsregler']
 author: digitaldiina
-date: 04.08.2026
-so_version: 11.12
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: servicepremium
 tier: growth
@@ -57,7 +57,7 @@ Oppsummeringslinjen under betingelsen bekrefter regelens fulle omfang på et kla
 
 | Alternativ | Beskrivelse |
 |---|---|
-| **Forutsetter at overordnet er angitt** | Forhindrer lagring av en ny sak med mindre en overordnet sak er angitt. Gjelder kun hvis feltet **Overordnet** er lagt til i saksskjermbildet i [Screen Designer][3]. |
+| **Forutsetter at overordnet er angitt** | Forhindrer lagring av en ny sak med mindre en overordnet sak er angitt. Gjelder kun hvis feltet **Overordnet** er lagt til på sakskortet i [Screen Designer][3]. |
 
 ### Atferd: Ved lukking
 
@@ -66,6 +66,8 @@ Oppsummeringslinjen under betingelsen bekrefter regelens fulle omfang på et kla
 | **Forhindre at den overordnede saken lukkes før alle underordnede saker er lukket** | Blokkerer den overordnede saken fra å bli lukket mens underordnede saker fortsatt er åpne. |
 | **Tilby å lukke overordnet sak når alle underordnede saker lukkes** | Når den siste underordnede saken lukkes, oppfordres agenten til å lukke den overordnede saken. |
 | **Tilby å lukke underordnede saker og sende melding når overordnet sak lukkes** | Når den overordnede saken lukkes, oppfordres agenten til å lukke alle åpne underordnede saker og legge til et svarmelding i hver, som sendes til mottakerne. |
+
+På Saksskjermen lukkes også fanene til sakene som en relasjonsregel lukker. Dette krever preferansen **Lukk fanen automatisk når du endrer saksstatus til avsluttet**. En festet fane forblir åpen. Se [Lukke saksfaner automatisk][4].
 
 ## Legg til relasjonsregel
 
@@ -112,5 +114,6 @@ Et stort serviceavbrudd genererer flere individuelle problemrapporter fra berør
 * **Tilby å lukke underordnede saker og sende melding når overordnet sak lukkes:** når insidenten er løst, kan agenten lukke alle gjenværende underordnede saker på én gang og svare direkte til hver berørte kunde om at problemet er løst.
 
 [3]: ../../customization/screen-designer/admin/index
+[4]: ../learn/index#auto-close
 [img1]: ../../../media/loc/en/request/relation-rules.png
 [img2]: ../../../media/loc/en/request/add-relation-rule.png

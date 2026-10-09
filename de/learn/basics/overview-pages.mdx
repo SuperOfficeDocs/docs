@@ -2,7 +2,7 @@
 title: Mit Übersichtsseiten arbeiten
 sidebarTitle: "Übersichtsseiten"
 description: Übersichtsseiten kombinieren ein linkes Panel mit vertikalen Registerkarten, Selektionen in der Listen- oder Board-Ansicht und den Datensatz, an dem Sie arbeiten.
-keywords: ['Übersichtsseite', 'Verkaufsübersicht', 'Startseite', 'Sale screen', 'Verkaufsansicht', 'neue Verkaufsansicht', 'linkes Panel', 'vertikale Registerkarten', 'In Registerkarten suchen', 'Seitenleiste', 'angeheftet', 'anheften', 'lösen', 'Selektion', 'Board-Ansicht', 'Listenansicht', 'Filter', 'aktuell', 'zuletzt verwendet', 'zuletzt angezeigte Registerkarte', 'active', 'active tab']
+keywords: ['Übersichtsseite', 'Verkaufsübersicht', 'Startseite', 'Sale screen', 'Verkaufsansicht', 'neue Verkaufsansicht', 'Request screen', 'Anfrageansicht', 'Übersicht', 'linkes Panel', 'vertikale Registerkarten', 'In Registerkarten suchen', 'Seitenleiste', 'angeheftet', 'anheften', 'lösen', 'Selektion', 'Board-Ansicht', 'Listenansicht', 'Filter', 'aktuell', 'zuletzt verwendet', 'zuletzt angezeigte Registerkarte', 'active', 'active tab']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -15,6 +15,7 @@ boost: 1.1
 related:
   - Board-Ansicht in Selektionen verwenden: /de/search-options/selection/learn/board-view
   - Der Navigator: /de/learn/getting-started/main-screen/navigator
+  - Anfrageansicht: /de/request/learn/index#request-screen
   - /de/learn/basics/history
 language: de
 ---
@@ -22,7 +23,9 @@ language: de
 Eine Übersichtsseite ist eine Ansicht, in der Sie Ihre Selektionen sehen, einen Datensatz auswählen und daran arbeiten können, ohne die Seite zu verlassen. Sie können die Selektionen und Datensätze, mit denen Sie am häufigsten arbeiten, als vertikale Registerkarten im linken Panel anheften und mit einem Klick zwischen ihnen wechseln.
 
 <Note>
-Übersichtsseiten werden schrittweise eingeführt, beginnend mit der [Verkaufsansicht][2]. Wenn Sie die Verkaufsansicht noch nicht sehen, werden Verkäufe in einer eigenen Karte ohne linkes Panel geöffnet. Sie finden eine Board-Ansicht Ihrer Verkäufe unter **Selektionen**.
+
+Übersichtsseiten werden schrittweise eingeführt, beginnend mit der [Verkaufsansicht][2] und der [Anfrageansicht][9]. Wenn Sie die Verkaufsansicht noch nicht sehen, werden Verkäufe in einer eigenen Karte ohne linkes Panel geöffnet. Sie finden eine Board-Ansicht Ihrer Verkäufe unter **Selektionen**. Wenn Sie die Anfrageansicht noch nicht sehen, arbeiten Sie mit mehreren Anfragen in horizontalen Registerkarten, ohne linkes Panel.
+
 </Note>
 
 ## Verfügbare Übersichtsseiten
@@ -30,10 +33,11 @@ Eine Übersichtsseite ist eine Ansicht, in der Sie Ihre Selektionen sehen, einen
 | Ansicht | Anleitung |
 |---|---|
 | Verkauf | [Verkauf (Benutzerhandbuch)][2] |
+| Anfrage | [Anfragen und SuperOffice Service][9] |
 
 ## Eine Übersichtsseite öffnen {#open}
 
-* **Klicken Sie auf das Symbol im Navigator.** Die Übersichtsseite wird mit dem Inhalt geöffnet, den Sie zuletzt angezeigt haben. Der Datensatz oder die Selektion, mit dem bzw. der Sie zuletzt gearbeitet haben, wird angezeigt, und die zugehörige Registerkarte ist hervorgehoben.
+* **Klicken Sie auf das Symbol im Navigator.** Die Übersichtsseite wird mit dem Inhalt geöffnet, den Sie zuletzt angezeigt haben. Der Datensatz oder die Selektion, mit dem bzw. der Sie zuletzt gearbeitet haben, wird angezeigt, und die zugehörige Registerkarte ist hervorgehoben. In der Anfrageansicht wird die [Registerkarte **Übersicht**](#overview) geöffnet, wenn noch nichts geöffnet ist.
 
 * **Klicken Sie auf den Namen im Navigator.** Die Optionen für Verlauf, Favoriten und Suche werden wie bisher geöffnet. Wählen Sie einen Datensatz oder eine Selektion aus, und sie wird in der Übersichtsseite geöffnet.
 
@@ -41,19 +45,21 @@ Eine Übersichtsseite ist eine Ansicht, in der Sie Ihre Selektionen sehen, einen
 
 * **Klicken Sie auf die Schaltfläche Neu, um einen Datensatz des Typs zu erstellen, für den die Ansicht gedacht ist.** Der neue Datensatz wird in der Übersichtsseite geöffnet. Wenn Sie ihn speichern, wird er in der zuletzt angezeigten Registerkarte geöffnet und zu Ihrem aktuellen Datensatz.
 
+    In der Anfrageansicht wird eine neue Anfrage in einer Registerkarte **Neue Anfrage** oben in der Gruppe **Aktiv** geöffnet. Sie können jeweils nur eine Registerkarte **Neue Anfrage** geöffnet haben, und sie kann nicht angeheftet werden. Wenn Sie speichern, wird die Registerkarte zur gespeicherten Anfrage.
+
 ## Layout einer Übersichtsseite {#areas}
 
 ![Die Verkaufsansicht mit markiertem linken Panel (1), Hauptbereich (2) und Seitenleiste (3) -screenshot][img1]
 
 | Nummer | Bereich | Beschreibung |
 |:-:|---|---|
-| 1 | **Linkes Panel** | Ein Suchfeld sowie vertikale Registerkarten für die Selektionen und Datensätze, die Sie geöffnet oder angeheftet haben. Das Panel ist nach der Ansicht benannt, z. B. **Verkäufe**. |
+| 1 | **Linkes Panel** | Ein Suchfeld sowie vertikale Registerkarten für die Selektionen und Datensätze, die Sie geöffnet oder angeheftet haben. Das Panel ist nach der Ansicht benannt, z. B. **Verkäufe** oder **Anfragen**. |
 | 2 | **Hauptbereich** | Zeigt eine Selektion in der [Board-Ansicht][4] oder Listenansicht, wenn eine Selektion geöffnet ist. Zeigt den Datensatz mit seinen Bereichsregisterkarten, wenn ein Datensatz geöffnet ist. |
 | 3 | **Seitenleiste** | Die [Seitenleiste][1] auf der rechten Seite mit einer Vorschau des ausgewählten Datensatzes oder der von Ihnen gewählten Ansicht. |
 
 ### Das linke Panel {#left-panel}
 
-Das linke Panel zeigt Ihre Selektionen und Datensätze als vertikale Registerkarten. Die Registerkarten sind in Gruppen organisiert. In der Verkaufsansicht sind das die Gruppen **Selektionen** und **Verkäufe**.
+Das linke Panel zeigt Ihre Selektionen und Datensätze als vertikale Registerkarten. Die Registerkarten sind in Gruppen organisiert. In der Verkaufsansicht sind das die Gruppen **Selektionen** und **Verkäufe**. In der Anfrageansicht sind **Selektionen** und **Anfragen** Abschnitte, und jeder Abschnitt hat eine Gruppe **Aktiv** und eine Gruppe **Angeheftet**.
 
 ![Das linke Panel mit den Gruppen Selektionen und Verkäufe -screenshot][img2]
 
@@ -63,17 +69,29 @@ Angeheftete Registerkarten stehen unter der Überschrift **Angeheftet**, die die
 
 Klicken Sie auf den Namen einer Registerkarte, um sie im Hauptbereich zu öffnen. Die Registerkarte für die Selektion oder den Datensatz, die bzw. der im Hauptbereich angezeigt wird, ist hervorgehoben.
 
+In der Anfrageansicht kann eine Gruppe **Aktiv** mehrere Registerkarten enthalten, statt einer einzelnen zuletzt angezeigten Registerkarte. Siehe [Mit den Registerkarten im linken Panel arbeiten][11].
+
 ### Das linke Panel ein- oder ausblenden {#collapse}
 
 1. Klicken Sie oben im linken Panel auf die Schaltfläche zum Ein- und Ausblenden (<i class="ph ph-fill ph-sidebar-simple" aria-label="Sidebar icon"></i>), um es auszublenden.
 
 1. Klicken Sie erneut auf die Schaltfläche (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>), um das Panel einzublenden. Das Panel wird nicht geöffnet, wenn Sie darauf zeigen.
 
-Wenn das Panel ausgeblendet ist, klicken Sie auf das Symbol einer Gruppe, um das zugehörige Menü **Weitere Optionen** zu öffnen, mit einem Suchfeld und Ihren zuletzt angezeigten und angehefteten Registerkarten.
+Wenn das Panel ausgeblendet ist, klicken Sie auf das Symbol einer Gruppe, um das zugehörige Menü **Weitere Optionen** zu öffnen, mit einem Suchfeld und Ihren zuletzt angezeigten und angehefteten Registerkarten. In der Anfrageansicht listet das Menü Ihre aktiven und angehefteten Registerkarten auf. Das ausgeblendete Panel hat außerdem Schaltflächen für das Suchfeld, die Registerkarte **Übersicht** und Anfrage suchen.
 
 ![Das ausgeblendete linke Panel mit einem Symbol für das Suchfeld und je einem Symbol pro Gruppe -screenshot][img7]
 
 Auch die Seitenleiste hat eine Schaltfläche zum Ein- und Ausblenden, oben rechts auf dem Bildschirm. Dasselbe Symbol wird für den Navigator, das linke Panel und die Seitenleiste verwendet.
+
+## Mit der Registerkarte Übersicht beginnen {#overview}
+
+Ansichten, die im linken Panel eine Registerkarte **Übersicht** haben, wie die Anfrageansicht, beginnen dort. Die Verkaufsansicht hat keine Registerkarte **Übersicht**. Die Registerkarte **Übersicht** zeigt Ihre Arbeit auf einen Blick, und von dort öffnen Sie das Element, an dem Sie arbeiten möchten.
+
+1. Klicken Sie im linken Panel auf **Übersicht**. Die Registerkarte **Übersicht** wird im Hauptbereich geöffnet.
+
+1. Klicken Sie auf ein Element auf der Registerkarte **Übersicht**, um es anzuzeigen, oder doppelklicken Sie darauf, um es in einer Registerkarte zu öffnen.
+
+Die Registerkarte **Übersicht** wird auch geöffnet, wenn noch nichts geöffnet ist und wenn Sie die letzte geöffnete Registerkarte schließen. Was die Registerkarte **Übersicht** zeigt, hängt von der Ansicht ab. Für Anfragen siehe [Einen Überblick über Ihre Anfragen erhalten][10].
 
 ## Eine Selektion oder einen Datensatz finden {#search}
 
@@ -121,7 +139,7 @@ Angeheftete Registerkarten sind von Ihren [Favoriten][3] getrennt.
 
 ### Eine Registerkarte anheften {#pin}
 
-1. Zeigen Sie auf die zuletzt angezeigte Registerkarte.
+1. Zeigen Sie auf die zuletzt angezeigte Registerkarte oder eine aktive Registerkarte.
 
 1. Klicken Sie auf das Pinnsymbol (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), oder klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und dann auf **Anheften**.
 
@@ -133,7 +151,7 @@ Die Registerkarte wird an den Anfang der Liste der angehefteten Registerkarten v
 
 1. Klicken Sie auf <i class="ph ph-x" aria-label="Close icon"></i>, oder klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und wählen Sie eine Option.
 
-    * **Schließen:** Schließt die zuletzt angezeigte Registerkarte.
+    * **Schließen:** Schließt die zuletzt angezeigte Registerkarte. In der Anfrageansicht schließt es die aktive Registerkarte.
 
     * **Lösen und schließen:** Schließt die angeheftete Registerkarte.
 
@@ -164,7 +182,9 @@ Wenn Sie im linken Panel eine Selektion auswählen, wird sie im Hauptbereich in 
 Alle Board-Funktionen, wie das Ziehen von Karten zwischen Spalten, Aufgabenmenüs und Zusammenfassungen, funktionieren wie in [Board-Ansicht in Selektionen verwenden][4] beschrieben.
 
 <Note>
+
 Die Schaltflächen **Bearbeiten** und **Aufgabe** sind in der Übersichtsseite nicht verfügbar. Um die Selektion selbst zu bearbeiten oder diese Schaltflächen zu verwenden, zeigen Sie auf die Selektionsregisterkarte, klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und dann auf **Im Selektionsfenster öffnen**. Die Selektion wird in der Selektion-Ansicht geöffnet, so, als hätten Sie im [Navigator][7] **Selektionen** ausgewählt und dann die Selektion gewählt.
+
 </Note>
 
 ### Den Datensatz einer Selektion anzeigen
@@ -190,6 +210,9 @@ Wenn Sie eine Karte auswählen, um sie in der Seitenleiste in der Vorschau anzuz
 [6]: /de/learn/basics/history
 [7]: /de/learn/getting-started/main-screen/navigator
 [8]: /de/learn/basics/recent-navigation
+[9]: /de/request/learn/index#request-screen
+[10]: /de/request/learn/index#overview
+[11]: /de/request/learn/index#tabs
 
 [img1]: /media/loc/en/learn/overview-page-areas.png
 [img2]: /media/loc/en/learn/left-panel.png

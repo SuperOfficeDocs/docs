@@ -21,7 +21,7 @@ language: no
 
 <Note>
 
-For Salg søker [søkefeltet i venstrepanelet][2] i utvalg og salg samtidig. Søket starter når du har skrevet inn to tegn.
+For Salg og Saker søker [søkefeltet i venstrepanelet][2] i utvalg og poster samtidig. Søket starter når du har skrevet inn to tegn.
 
 </Note>
 

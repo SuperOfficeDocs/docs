@@ -28,6 +28,8 @@ De boardweergave toont je [selectie][2] in een kolomindeling met kaarten. Je kun
 
 Voor verkopen wordt de boardweergave ook getoond in het Verkoopscherm, waar je een selectie kiest in het linkerpaneel. In dat geval staan de filters achter de knop **Filter** in plaats van in het instellingendialoogvenster (<i class="ph ph-gear-six" aria-label="Instellingen"></i>), en zijn de knoppen **Bewerken** en **Taak** voor de selectie niet beschikbaar. Zie [Werken met overzichtspagina's][15].
 
+Voor verzoeken zijn de boardweergave en de lijstweergave ook beschikbaar op het Verzoekscherm, waar je een selectie of een standaardlijst kiest in het linkerpaneel.
+
 De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarten slepen, taakmenu's openen en boardinstellingen aanpassen. De beschikbare velden voor groepering en filtering verschillen afhankelijk van of je werkt met bedrijven, personen, verkopen, projecten of verzoeken.
 
 ![Boardweergave van verkopen gegroepeerd op fase -screenshot][img2]

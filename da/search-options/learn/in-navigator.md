@@ -21,7 +21,7 @@ language: da
 
 <Note>
 
-For Salg søger [søgefeltet i venstrepanelet][2] i udvalg og salg på samme tid. Søgningen starter, når du har indtastet to tegn.
+For Salg og Sager søger [søgefeltet i venstrepanelet][2] i udvalg og poster på samme tid. Søgningen starter, når du har indtastet to tegn.
 
 </Note>
 

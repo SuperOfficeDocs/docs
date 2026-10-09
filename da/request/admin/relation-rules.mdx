@@ -4,8 +4,8 @@ title: Relationsregler
 description: Lær, hvordan du konfigurerer relationsregler for at automatisere adfærd ved oprettelse og lukning af sager baseret på overordnet-underordnet-relationer i SuperOffice Service.
 keywords: ['relationsregler', 'sagsrelation', 'overordnet-underordnet', 'relationsregel', 'automatisering', 'luk sag', 'fanen Relationsregler']
 author: digitaldiina
-date: 04.08.2026
-so_version: 11.12
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: servicepremium
 tier: growth
@@ -57,7 +57,7 @@ Opsummeringslinjen nedenfor betingelsen bekræfter regelens fulde omfang på kla
 
 | Mulighed | Beskrivelse |
 |---|---|
-| **Kræver angivelse af overordnet** | Forhindrer gemning af en ny sag, medmindre en overordnet sag er angivet. Gælder kun, hvis feltet **Overordnet** er tilføjet til sagsskærmbilledet i [Skærmdesigner][3]. |
+| **Kræver angivelse af overordnet** | Forhindrer gemning af en ny sag, medmindre en overordnet sag er angivet. Gælder kun, hvis feltet **Overordnet** er tilføjet til sagskortet i [Skærmdesigner][3]. |
 
 ### Adfærd: Ved lukning
 
@@ -66,6 +66,8 @@ Opsummeringslinjen nedenfor betingelsen bekræfter regelens fulde omfang på kla
 | **Bloker for lukning af overordnet sag, indtil alle underordnede er lukket** | Blokerer den overordnede sag fra at blive lukket, mens der stadig er åbne underordnede sager. |
 | **Tilbyd at lukke overordnet sag, når alle underordnede lukkes** | Når den sidste underordnede sag lukkes, opfordres agenten til også at lukke den overordnede sag. |
 | **Tilbyd at lukke underordnede sager og sende besked, når overordnet lukkes** | Når den overordnede sag lukkes, opfordres agenten til at lukke alle åbne underordnede sager og tilføje et svarbrev til hver, som sendes til modtagerne. |
+
+På Sagsskærmen lukkes også fanerne for de sager, som en relationsregel lukker. Det kræver præferencen **Luk fane automatisk, når sagens status ændres til afsluttet**. En fastgjort fane forbliver åben. Se [Luk sagsfaner automatisk][4].
 
 ## Tilføj relationsregel
 
@@ -112,5 +114,6 @@ Et stort serviceudfald genererer flere individuelle problemrapporter fra berørt
 * **Tilbyd at lukke underordnede sager og sende besked, når overordnet lukkes:** når hændelsen er løst, kan agenten lukke alle resterende underordnede sager på én gang og sende et svar til hver berørt kunde om, at problemet er løst.
 
 [3]: ../../customization/screen-designer/admin/index
+[4]: ../learn/index#auto-close
 [img1]: ../../../media/loc/en/request/relation-rules.png
 [img2]: ../../../media/loc/en/request/add-relation-rule.png

@@ -28,6 +28,8 @@ Die Board-Ansicht zeigt Ihre [Selektion][2] in einem spaltenbasierten Layout mit
 
 Für Verkäufe wird die Board-Ansicht auch in der Verkaufsansicht angezeigt, in der Sie im linken Panel eine Selektion auswählen können. Dort befinden sich die Filter in der Schaltfläche **Filter** statt im Einstellungsdialog (<i class="ph ph-gear-six" aria-label="Einstellungen"></i>), und die Schaltflächen **Bearbeiten** und **Aufgabe** für die Selektion sind nicht verfügbar. Siehe [Mit Übersichtsseiten arbeiten][15].
 
+Für Anfragen sind die Board-Ansicht und die Listenansicht auch in der Anfrageansicht verfügbar, in der Sie im linken Panel eine Selektion oder eine Standardliste auswählen.
+
 Die Funktionalität ist für alle unterstützten Selektionstypen gleich: Sie können Karten ziehen, Aufgabenmenüs öffnen und Board-Einstellungen anpassen. Die verfügbaren Gruppierungs- und Filterfelder unterscheiden sich je nachdem, ob Sie mit Firmen, Personen, Verkäufen, Projekten oder Anfragen arbeiten.
 
 ![Board-Ansicht mit Verkäufen nach Stufe gruppiert -screenshot][img2]

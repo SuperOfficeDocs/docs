@@ -4,8 +4,8 @@ title: Beziehungsregeln
 description: Erfahren Sie, wie Sie Beziehungsregeln konfigurieren, um das Verhalten bei der Erstellung und Schließung von Anfragen auf Basis von übergeordnet-untergeordnet-Beziehungen in SuperOffice Service zu automatisieren.
 keywords: ['Beziehungsregeln', 'Anfragebeziehung', 'übergeordnet-untergeordnet', 'Beziehungsregel', 'Automatisierung', 'Anfrage schließen', 'Registerkarte Beziehungsregeln']
 author: digitaldiina
-date: 04.08.2026
-so_version: 11.12
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: servicepremium
 tier: growth
@@ -57,7 +57,7 @@ Die Zusammenfassungszeile unterhalb der Bedingung bestätigt den vollständigen 
 
 | Option | Beschreibung |
 |---|---|
-| **Erfordert die Angabe eines übergeordneten Objekts** | Verhindert das Speichern einer neuen Anfrage, wenn kein übergeordnetes Objekt angegeben wurde. Gilt nur, wenn das Feld **Übergeordnet** im Anfragebildschirm im [Screen Designer][3] hinzugefügt wurde. |
+| **Erfordert die Angabe eines übergeordneten Objekts** | Verhindert das Speichern einer neuen Anfrage, wenn kein übergeordnetes Objekt angegeben wurde. Gilt nur, wenn das Feld **Übergeordnet** im [Screen Designer][3] zur Anfragekarte hinzugefügt wurde. |
 
 ### Reaktion: Beim Schließen
 
@@ -66,6 +66,8 @@ Die Zusammenfassungszeile unterhalb der Bedingung bestätigt den vollständigen 
 | **Schließen des übergeordneten Objekts verhindern, bis alle untergeordneten Objekte geschlossen sind** | Blockiert das Schließen der übergeordneten Anfrage, solange noch untergeordnete Anfragen offen sind. |
 | **Schließen des übergeordneten Objekts anbieten, wenn alle untergeordneten Objekte (Child) geschlossen werden** | Wenn die letzte untergeordnete Anfrage geschlossen wird, wird der Agent aufgefordert, auch die übergeordnete Anfrage zu schließen. |
 | **Schließen der untergeordneten Objekte (Child) anbieten und Nachricht senden, wenn das übergeordnete Objekt geschlossen wird** | Wenn die übergeordnete Anfrage geschlossen wird, wird der Agent aufgefordert, alle noch offenen untergeordneten Anfragen zu schließen und eine Antwortnachricht zu jeder hinzuzufügen, die an die jeweiligen Empfänger gesendet wird. |
+
+In der Anfrageansicht werden auch die Registerkarten der Anfragen geschlossen, die eine Beziehungsregel schließt. Dafür ist die Einstellung **Registerkarte beim Ändern des Anfragestatus auf Geschlossen automatisch schließen** erforderlich. Eine angeheftete Registerkarte bleibt geöffnet. Siehe [Registerkarten von Anfragen automatisch schließen][4].
 
 ## Beziehungsregel hinzufügen
 
@@ -112,5 +114,6 @@ Ein größerer Dienstausfall generiert mehrere einzelne Problemberichte von betr
 * **Schließen der untergeordneten Objekte (Child) anbieten und Nachricht senden, wenn das übergeordnete Objekt geschlossen wird:** wenn der Vorfall gelöst ist, kann der Agent alle noch offenen untergeordneten Anfragen auf einmal schließen und eine Antwortnachricht zu jeder hinzufügen, die an die jeweiligen Empfänger gesendet wird.
 
 [3]: ../../customization/screen-designer/admin/index
+[4]: ../learn/index#auto-close
 [img1]: ../../../media/loc/en/request/relation-rules.png
 [img2]: ../../../media/loc/en/request/add-relation-rule.png

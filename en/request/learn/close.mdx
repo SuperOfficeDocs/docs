@@ -4,8 +4,8 @@ title: Close requests
 description: How to close one or multiple request in SuperOffice.
 keywords: ['close request', 'set status closed', 'closed', 'bulk update', 'request']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -25,6 +25,8 @@ To close a request means changing its [status][5] to *Closed*.
 ## Close one request
 
 After [responding to the request][3], select **Closed** in the **Status** field in the sidebar properties.
+
+On the Request screen, the tab of the request closes automatically when you set the status to **Closed**, if you turn on a preference. A pinned tab stays open. See [Close request tabs automatically][8].
 
 <Note>
 If a relation rule applies to this request type, closing may be blocked or trigger additional prompts - for example, preventing closure until all child requests are resolved, or offering to close [related requests][7] and reply to their contacts.
@@ -69,5 +71,6 @@ You can quickly close multiple requests by setting the **Status** field to *Clos
 [3]: ./reply
 [5]: ../admin/status/index
 [7]: ./request-relations
+[8]: ./index#auto-close
 [img1]: /media/loc/en/request/bulk-update-requests.png
 [img2]: /media/loc/en/request/bulk-update-confirm.png

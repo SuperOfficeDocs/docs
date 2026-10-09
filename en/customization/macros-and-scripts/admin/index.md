@@ -3,8 +3,8 @@ uid: help-en-crmscript
 title: CRMScript
 description: CRMScript is a feature that allows you to automate tasks in or modify the behavior of SuperOffice.
 author: digitaldiina
-date: 11.26.2025
-so_version: 11.6
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 tier: core
 category: automation
@@ -46,7 +46,7 @@ Macros have multiple functions in SuperOffice. They can be linked to specific [t
 
 For example, you can use macros:
 
-* As a task/function in a menu point (such as in **Task** in the Request screen)
+* As a task/function in a menu point (such as in **Task** on the Request card)
 * When a request is escalated via the warning levels for priority
 * As a planned task
 * When they are activated by an email filter

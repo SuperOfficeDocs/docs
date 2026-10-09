@@ -2,7 +2,7 @@
 title: Werken met overzichtspagina's
 sidebarTitle: "Overzichtspagina's"
 description: Overzichtspagina's combineren een linkerpaneel met verticale tabbladen, selecties in lijst- of boardweergave en het record waarmee u werkt.
-keywords: ['overzichtspagina', 'verkoopoverzicht', 'startpagina', 'Sale screen', 'Verkoopscherm', 'nieuw Verkoopscherm', 'linkerpaneel', 'verticale tabbladen', 'zoeken in tabbladen', 'zijbalk', 'vastgemaakt', 'vastmaken', 'losmaken', 'selectie', 'boardweergave', 'lijstweergave', 'filter', 'huidig', 'recent', 'laatst bekeken tabblad', 'active', 'active tab']
+keywords: ['overzichtspagina', 'verkoopoverzicht', 'startpagina', 'Sale screen', 'Verkoopscherm', 'nieuw Verkoopscherm', 'verzoekscherm', 'Overzicht', 'linkerpaneel', 'verticale tabbladen', 'zoeken in tabbladen', 'zijbalk', 'vastgemaakt', 'vastmaken', 'losmaken', 'selectie', 'boardweergave', 'lijstweergave', 'filter', 'huidig', 'recent', 'laatst bekeken tabblad', 'active', 'active tab']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -15,6 +15,7 @@ boost: 1.1
 related:
   - Boardweergave gebruiken in selecties: /nl/search-options/selection/learn/board-view
   - De Navigator: /nl/learn/getting-started/main-screen/navigator
+  - Verzoekscherm: /nl/request/learn/index#request-screen
   - /nl/learn/basics/history
 language: nl
 ---
@@ -22,7 +23,9 @@ language: nl
 Een overzichtspagina is een scherm waarop u uw selecties kunt bekijken, een record kunt kiezen en hiermee kunt werken zonder de pagina te verlaten. U kunt de selecties en records waarmee u het vaakst werkt vastmaken als verticale tabbladen in het linkerpaneel en er met één klik tussen schakelen.
 
 <Note>
-Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verkoopscherm][2]. Als u het Verkoopscherm nog niet ziet, worden verkopen geopend op hun eigen kaart, zonder linkerpaneel. U vindt een boardweergave van uw verkopen via **Selecties**.
+
+Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verkoopscherm][2] en het [Verzoekscherm][9]. Als u het Verkoopscherm nog niet ziet, worden verkopen geopend op hun eigen kaart, zonder linkerpaneel. U vindt een boardweergave van uw verkopen via **Selecties**. Als u het Verzoekscherm nog niet ziet, werkt u met meerdere verzoeken in horizontale tabbladen, zonder linkerpaneel.
+
 </Note>
 
 ## Beschikbare overzichtspagina's
@@ -30,10 +33,11 @@ Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verk
 | Scherm | Handleiding |
 |---|---|
 | Verkoop | [Verkoop (Gebruikershandleiding)][2] |
+| Verzoek | [Verzoeken en SuperOffice Service][9] |
 
 ## Een overzichtspagina openen {#open}
 
-* **Selecteer het pictogram in de Navigator.** De overzichtspagina wordt geopend met de inhoud die u het laatst hebt bekeken. Het record of de selectie waarmee u het laatst hebt gewerkt, wordt weergegeven en het bijbehorende tabblad is gemarkeerd.
+* **Selecteer het pictogram in de Navigator.** De overzichtspagina wordt geopend met de inhoud die u het laatst hebt bekeken. Het record of de selectie waarmee u het laatst hebt gewerkt, wordt weergegeven en het bijbehorende tabblad is gemarkeerd. Op het Verzoekscherm wordt het [tabblad **Overzicht**](#overview) geopend als u nog niets hebt geopend.
 
 * **Selecteer de naam in de Navigator.** De opties voor historie, favorieten en zoeken worden geopend, zoals voorheen. Kies een record of een selectie en deze wordt geopend in de overzichtspagina.
 
@@ -41,19 +45,21 @@ Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verk
 
 * **Klik op de knop Nieuw om een record te maken van het type waarvoor het scherm is bedoeld.** Het nieuwe record wordt geopend in de overzichtspagina. Wanneer u het opslaat, wordt het geopend in het laatst bekeken tabblad en wordt het uw huidige record.
 
+    Op het Verzoekscherm wordt een nieuw verzoek geopend in een tabblad **Nieuw verzoek** bovenaan de groep **Actief**. U kunt maar één tabblad **Nieuw verzoek** tegelijk open hebben en het kan niet worden vastgemaakt. Wanneer u opslaat, wordt het tabblad het opgeslagen verzoek.
+
 ## Indeling van een overzichtspagina {#areas}
 
 ![Het Verkoopscherm met het linkerpaneel (1), het hoofdgebied (2) en het zijpaneel (3) gemarkeerd -screenshot][img1]
 
 | Nummer | Gebied | Beschrijving |
 |:-:|---|---|
-| 1 | **Linkerpaneel** | Een zoekveld, plus verticale tabbladen voor de selecties en de records die u hebt geopend of vastgemaakt. Het paneel is genoemd naar het scherm, bijvoorbeeld **Verkopen**. |
+| 1 | **Linkerpaneel** | Een zoekveld, plus verticale tabbladen voor de selecties en de records die u hebt geopend of vastgemaakt. Het paneel is genoemd naar het scherm, bijvoorbeeld **Verkopen** of **Verzoeken**. |
 | 2 | **Hoofdgebied** | Toont een selectie in [boardweergave][4] of lijstweergave wanneer een selectie is geopend. Toont het record met de bijbehorende sectietabbladen wanneer een record is geopend. |
 | 3 | **Zijpaneel** | Het [zijpaneel][1] aan de rechterkant, met een voorbeeld van het geselecteerde record of de weergave die u hebt gekozen. |
 
 ### Het linkerpaneel {#left-panel}
 
-Het linkerpaneel toont uw selecties en records als verticale tabbladen. De tabbladen zijn geordend in groepen. Op het Verkoopscherm zijn de groepen **Selecties** en **Verkopen**.
+Het linkerpaneel toont uw selecties en records als verticale tabbladen. De tabbladen zijn geordend in groepen. Op het Verkoopscherm zijn de groepen **Selecties** en **Verkopen**. Op het Verzoekscherm zijn **Selecties** en **Verzoeken** secties en elke sectie heeft een groep **Actief** en een groep **Vastgemaakt**.
 
 ![Het linkerpaneel met de groepen Selecties en Verkopen -screenshot][img2]
 
@@ -63,17 +69,29 @@ Vastgemaakte tabbladen staan onder de kop **Vastgemaakt**, die het aantal toont.
 
 Klik op de naam van een tabblad om het te openen in het hoofdgebied. Het tabblad van de selectie of het record dat in het hoofdgebied wordt getoond, is gemarkeerd.
 
+Op het Verzoekscherm kan een groep **Actief** meerdere tabbladen bevatten, in plaats van één laatst bekeken tabblad. Zie [Werken met de tabbladen in het linkerpaneel][11].
+
 ### Het linkerpaneel tonen of verbergen {#collapse}
 
 1. Klik op de knop (<i class="ph ph-fill ph-sidebar-simple" aria-label="Sidebar icon"></i>) bovenaan het linkerpaneel om het te verbergen.
 
 1. Klik opnieuw op de knop (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) om het paneel te tonen. Het paneel wordt niet geopend wanneer u de muisaanwijzer erop plaatst.
 
-Wanneer het paneel is verborgen, klikt u op het pictogram van een groep om het menu **Meer opties** te openen, met een zoekveld en uw laatst bekeken en vastgemaakte tabbladen.
+Wanneer het paneel is verborgen, klikt u op het pictogram van een groep om het menu **Meer opties** te openen, met een zoekveld en uw laatst bekeken en vastgemaakte tabbladen. Op het Verzoekscherm toont het menu uw actieve en vastgemaakte tabbladen. Het verborgen paneel heeft ook knoppen voor het zoekveld, het tabblad **Overzicht** en Verzoek zoeken.
 
 ![Het verborgen linkerpaneel met een pictogram voor het zoekveld en een pictogram per groep -screenshot][img7]
 
 Het zijpaneel heeft ook een knop om het te tonen of te verbergen, rechtsboven in het scherm. Hetzelfde pictogram wordt gebruikt voor de Navigator, het linkerpaneel en het zijpaneel.
+
+## Beginnen vanuit het tabblad Overzicht {#overview}
+
+Schermen met een tabblad **Overzicht** in het linkerpaneel, zoals het Verzoekscherm, beginnen daar. Het Verkoopscherm heeft geen tabblad **Overzicht**. Het tabblad **Overzicht** toont uw werk in één oogopslag en vanaf daar opent u het item waarmee u wilt werken.
+
+1. Klik op **Overzicht** in het linkerpaneel. Het tabblad **Overzicht** wordt geopend in het hoofdgebied.
+
+1. Klik op een item op het tabblad **Overzicht** om het te bekijken, of dubbelklik erop om het in een tabblad te openen.
+
+Het tabblad **Overzicht** wordt ook geopend wanneer u nog niets hebt geopend en wanneer u het laatste open tabblad sluit. Wat het tabblad **Overzicht** toont, hangt af van het scherm. Zie [Een overzicht van uw verzoeken krijgen][10] voor verzoeken.
 
 ## Een selectie of record zoeken {#search}
 
@@ -121,7 +139,7 @@ Vastgemaakte tabbladen staan los van uw [favorieten][3].
 
 ### Een tabblad vastmaken {#pin}
 
-1. Plaats de muisaanwijzer op het laatst bekeken tabblad.
+1. Plaats de muisaanwijzer op het laatst bekeken tabblad of een actief tabblad.
 
 1. Selecteer het speldpictogram (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), of klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en vervolgens **Vastmaken**.
 
@@ -133,7 +151,7 @@ Het tabblad wordt bovenaan de lijst met vastgemaakte tabbladen geplaatst.
 
 1. Selecteer <i class="ph ph-x" aria-label="Close icon"></i>, of klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en kies een optie.
 
-    * **Sluiten:** Sluit het laatst bekeken tabblad.
+    * **Sluiten:** Sluit het laatst bekeken tabblad. Op het Verzoekscherm sluit dit het actieve tabblad.
 
     * **Losmaken en sluiten:** Sluit het vastgemaakte tabblad.
 
@@ -164,7 +182,9 @@ Gebruik de bedieningselementen in de koptekst om de weergave te wijzigen.
 Alle boardfuncties, zoals het slepen van kaarten tussen kolommen, taakmenu's en samenvattingen, werken zoals beschreven in [Boardweergave gebruiken in selecties][4].
 
 <Note>
+
 De knoppen **Bewerken** en **Taak** zijn niet beschikbaar op de overzichtspagina. Als u de selectie zelf wilt bewerken of deze knoppen wilt gebruiken, plaatst u de muisaanwijzer op het selectietabblad, klikt u op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en vervolgens op **Openen in selectievenster**. De selectie wordt geopend in het Selectiescherm, alsof u **Selecties** had geselecteerd in de [Navigator][7] en de selectie had gekozen.
+
 </Note>
 
 ### De dataset van een selectie weergeven
@@ -190,6 +210,9 @@ Als u een kaart selecteert om een voorbeeld ervan te bekijken in het zijpaneel, 
 [6]: /nl/learn/basics/history
 [7]: /nl/learn/getting-started/main-screen/navigator
 [8]: /nl/learn/basics/recent-navigation
+[9]: /nl/request/learn/index#request-screen
+[10]: /nl/request/learn/index#overview
+[11]: /nl/request/learn/index#tabs
 
 [img1]: /media/loc/en/learn/overview-page-areas.png
 [img2]: /media/loc/en/learn/left-panel.png

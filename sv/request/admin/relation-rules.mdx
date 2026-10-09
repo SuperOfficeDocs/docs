@@ -4,8 +4,8 @@ title: Regler för relation
 description: Lär dig hur du konfigurerar regler för relation för att automatisera beteendet vid skapande och stängning av ärenden baserat på parent-child-relationer i SuperOffice Service.
 keywords: ['regler för relation', 'ärenderelation', 'parent-child', 'relationsregel', 'automatisering', 'stänga ärende', 'fliken Regler för relation']
 author: digitaldiina
-date: 04.08.2026
-so_version: 11.12
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: servicepremium
 tier: growth
@@ -57,7 +57,7 @@ Sammanfattningsraden nedanför villkoret bekräftar regelns fulla omfång på et
 
 | Alternativ | Beskrivning |
 |---|---|
-| **Kräver att parent har angetts** | Förhindrar att ett nytt ärende sparas om inte ett parent-ärende har angetts. Gäller endast om fältet **Parent** har lagts till i ärendeskärmbilden i [Screen Designer][3]. |
+| **Kräver att parent har angetts** | Förhindrar att ett nytt ärende sparas om inte ett parent-ärende har angetts. Gäller endast om fältet **Parent** har lagts till på ärendekortet i [Screen Designer][3]. |
 
 ### Beteende: Vid stängning
 
@@ -66,6 +66,8 @@ Sammanfattningsraden nedanför villkoret bekräftar regelns fulla omfång på et
 | **Förhindra stängning av parent tills alla underordnade ärenden har stängts** | Blockerar parent-ärendet från att stängas medan child-ärenden fortfarande är öppna. |
 | **Erbjudande om att stänga parent när alla underordnade ärenden (child) stängs** | När det sista child-ärendet stängs uppmanas agenten att även stänga parent-ärendet. |
 | **Erbjudande om att stänga underordnade (child) ärenden och skicka meddelande när parent stängs** | När parent-ärendet stängs uppmanas agenten att stänga alla öppna child-ärenden och lägga till ett svarsmeddelande i varje, som skickas till deras mottagare. |
+
+På ärendeskärmen stängs också flikarna för de ärenden som en relationsregel stänger. Det kräver inställningen **Stäng flik automatiskt när ärendets status ändras till stängt**. En fastnålad flik förblir öppen. Se [Stäng ärendeflikar automatiskt][4].
 
 ## Lägg till regel för relation
 
@@ -112,5 +114,6 @@ Ett stort serviceavbrott genererar flera enskilda problemrapporter från berörd
 * **Erbjudande om att stänga underordnade (child) ärenden och skicka meddelande när parent stängs:** när incidenten är löst kan agenten stänga alla återstående child-ärenden på en gång och svara direkt till varje berörd kund om att problemet är åtgärdat.
 
 [3]: ../../customization/screen-designer/admin/index
+[4]: ../learn/index#auto-close
 [img1]: ../../../media/loc/en/request/relation-rules.png
 [img2]: ../../../media/loc/en/request/add-relation-rule.png

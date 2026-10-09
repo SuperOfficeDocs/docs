@@ -2,7 +2,7 @@
 title: Arbejd med oversigtssider
 sidebarTitle: "Oversigtssider"
 description: Oversigtssider kombinerer et venstrepanel med lodrette faner, udvalg i liste- eller tavlevisning og den post, du arbejder med.
-keywords: ['oversigtsside', 'salgsoversigt', 'startside', 'Sale screen', 'salgsskærm', 'ny Salgsskærm', 'venstrepanel', 'lodrette faner', 'søg i faner', 'sidebjælke', 'fastgjort', 'fastgør', 'frigør', 'udvalg', 'tavlevisning', 'listevisning', 'filter', 'aktuel', 'seneste', 'senest viste fane', 'active', 'active tab']
+keywords: ['oversigtsside', 'salgsoversigt', 'startside', 'Sale screen', 'salgsskærm', 'ny Salgsskærm', 'sagsskærmen', 'Oversigt', 'venstrepanel', 'lodrette faner', 'søg i faner', 'sidebjælke', 'fastgjort', 'fastgør', 'frigør', 'udvalg', 'tavlevisning', 'listevisning', 'filter', 'aktuel', 'seneste', 'senest viste fane', 'active', 'active tab']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -15,6 +15,7 @@ boost: 1.1
 related:
   - Brug tavlevisning i udvalg: /da/search-options/selection/learn/board-view
   - Navigatoren: /da/learn/getting-started/main-screen/navigator
+  - Sagsskærmen: /da/request/learn/index#request-screen
   - /da/learn/basics/history
 language: da
 ---
@@ -22,7 +23,9 @@ language: da
 En oversigtsside er et skærmbillede, hvor du kan se dine udvalg, vælge en post og arbejde med den uden at forlade siden. Du kan fastgøre de udvalg og poster, du arbejder mest med, som lodrette faner i venstrepanelet og skifte mellem dem med ét klik.
 
 <Note>
-Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2]. Hvis du endnu ikke kan se Salgsskærmen, åbnes salg på deres eget kort, uden venstrepanel. Du kan finde en tavlevisning af dine salg under **Udvalg**.
+
+Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2] og [Sagsskærmen][9]. Hvis du endnu ikke kan se Salgsskærmen, åbnes salg på deres eget kort, uden venstrepanel. Du kan finde en tavlevisning af dine salg under **Udvalg**. Hvis du endnu ikke kan se Sagsskærmen, arbejder du med flere sager i vandrette faner, uden venstrepanel.
+
 </Note>
 
 ## Tilgængelige oversigtssider
@@ -30,10 +33,11 @@ Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2]. H
 | Skærmbillede | Vejledning |
 |---|---|
 | Salg | [Salg (brugervejledning)][2] |
+| Sag | [Sager og SuperOffice Service][9] |
 
 ## Åbn en oversigtsside {#open}
 
-* **Vælg ikonet i Navigatoren.** Oversigtssiden åbnes med det indhold, du sidst så. Den post eller det udvalg, du sidst arbejdede med, vises, og dens fane er fremhævet.
+* **Vælg ikonet i Navigatoren.** Oversigtssiden åbnes med det indhold, du sidst så. Den post eller det udvalg, du sidst arbejdede med, vises, og dens fane er fremhævet. På Sagsskærmen åbnes [fanen **Oversigt**](#overview), hvis du endnu ikke har noget åbent.
 
 * **Vælg navnet i Navigatoren.** Historik, favoritter og søgemuligheder åbnes som før. Vælg en post eller et udvalg, og det åbnes i oversigtssiden.
 
@@ -41,19 +45,21 @@ Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2]. H
 
 * **Klik på knappen Ny for at oprette en post af den type, skærmbilledet er til.** Den nye post åbnes i oversigtssiden. Når du gemmer den, åbnes den i den senest viste fane og bliver din aktuelle post.
 
+    På Sagsskærmen åbnes en ny sag i fanen **Ny sag** øverst i gruppen **Aktive**. Du kan kun have én fane **Ny sag** åben ad gangen, og den kan ikke fastgøres. Når du gemmer, bliver fanen til den gemte sag.
+
 ## Oversigtssidens layout {#areas}
 
 ![Salgsskærmen med venstrepanelet (1), hovedområdet (2) og sidepanelet (3) markeret -screenshot][img1]
 
 | Nummer | Område | Beskrivelse |
 |:-:|---|---|
-| 1 | **Venstrepanel** | Et søgefelt samt lodrette faner for de udvalg og poster, du har åbnet eller fastgjort. Panelet er opkaldt efter skærmbilledet, f.eks. **Salg**. |
+| 1 | **Venstrepanel** | Et søgefelt samt lodrette faner for de udvalg og poster, du har åbnet eller fastgjort. Panelet er opkaldt efter skærmbilledet, f.eks. **Salg** eller **Sager**. |
 | 2 | **Hovedområde** | Viser et udvalg i [tavlevisning][4] eller listevisning, når et udvalg er åbent. Viser posten med dens detaljefaner, når en post er åben. |
 | 3 | **Sidepanel** | [Sidepanelet][1] til højre med et eksempel på den valgte post eller den visning, du har valgt. |
 
 ### Venstrepanelet {#left-panel}
 
-Venstrepanelet viser dine udvalg og poster som lodrette faner. Fanerne er organiseret i grupper. På salgsskærmen er grupperne **Udvalg** og **Salg**.
+Venstrepanelet viser dine udvalg og poster som lodrette faner. Fanerne er organiseret i grupper. På salgsskærmen er grupperne **Udvalg** og **Salg**. På Sagsskærmen er **Udvalg** og **Sager** sektioner, og hver sektion har en gruppe **Aktive** og en gruppe **Fastgjort**.
 
 ![Venstrepanelet med grupperne Udvalg og Salg -screenshot][img2]
 
@@ -63,17 +69,29 @@ Fastgjorte faner står under overskriften **Fastgjort**, som viser antallet af f
 
 Klik på et fanenavn for at åbne det i hovedområdet. Fanen for det udvalg eller den post, der vises i hovedområdet, er fremhævet.
 
+På Sagsskærmen kan en gruppe **Aktive** rumme flere faner i stedet for en enkelt senest viste fane. Se [Arbejd med fanerne i venstrepanelet][11].
+
 ### Vis eller skjul venstrepanelet {#collapse}
 
 1. Klik på knappen (<i class="ph ph-fill ph-sidebar-simple" aria-label="Sidebar icon"></i>) øverst i venstrepanelet for at skjule det.
 
 1. Klik på knappen (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) igen for at vise panelet. Panelet åbnes ikke, når du peger på det.
 
-Når panelet er skjult, kan du klikke på ikonet for en gruppe for at åbne gruppens menu **Flere valgmuligheder**, med et søgefelt og dine senest viste og fastgjorte faner.
+Når panelet er skjult, kan du klikke på ikonet for en gruppe for at åbne gruppens menu **Flere valgmuligheder**, med et søgefelt og dine senest viste og fastgjorte faner. På Sagsskærmen viser menuen dine aktive og fastgjorte faner. Det skjulte panel har også knapper til søgefeltet, fanen **Oversigt** og Find sag.
 
 ![Det skjulte venstrepanel med et ikon til søgefeltet og ét ikon for hver gruppe -screenshot][img7]
 
 Sidepanelet har også en knap til at vise og skjule det, øverst til højre på skærmen. Det samme ikon bruges til Navigatoren, venstrepanelet og sidepanelet.
+
+## Start fra fanen Oversigt {#overview}
+
+Skærmbilleder, der har en fane **Oversigt** i venstrepanelet, f.eks. Sagsskærmen, starter her. Salgsskærmen har ingen fane Oversigt. Fanen **Oversigt** viser dit arbejde med et enkelt blik, og herfra åbner du det, du vil arbejde med.
+
+1. Klik på **Oversigt** i venstrepanelet. Fanen **Oversigt** åbnes i hovedområdet.
+
+1. Klik på et element på fanen **Oversigt** for at få vist det, eller dobbeltklik på det for at åbne det i en fane.
+
+Fanen **Oversigt** åbnes også, når du endnu ikke har noget åbent, og når du lukker den sidste åbne fane. Hvad fanen **Oversigt** viser, afhænger af skærmbilledet. For sager, se [Få overblik over dine sager][10].
 
 ## Find et udvalg eller en post {#search}
 
@@ -121,7 +139,7 @@ Fastgjorte faner er adskilt fra dine [favoritter][3].
 
 ### Fastgør en fane {#pin}
 
-1. Peg på den senest viste fane.
+1. Peg på den senest viste fane eller en aktiv fane.
 
 1. Vælg nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), eller klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og derefter **Fastgør**.
 
@@ -133,7 +151,7 @@ Fanen flyttes til toppen af listen over fastgjorte faner.
 
 1. Vælg <i class="ph ph-x" aria-label="Close icon"></i>, eller klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og vælg en valgmulighed.
 
-    * **Luk:** Lukker den senest viste fane.
+    * **Luk:** Lukker den senest viste fane. På Sagsskærmen lukker den den aktive fane.
 
     * **Frigør og luk:** Lukker den fastgjorte fane.
 
@@ -164,7 +182,9 @@ Brug knapperne i overskriften til at skifte visning.
 Alle tavlefunktionerne, f.eks. at trække kort mellem kolonner, opgavemenuer og summeringer, fungerer som beskrevet i [Brug tavlevisning i udvalg][4].
 
 <Note>
+
 Knapperne **Rediger** og **Opgave** er ikke tilgængelige på oversigtssiden. Hvis du vil redigere selve udvalget eller bruge disse knapper, skal du pege på udvalgsfanen, klikke på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og derefter klikke på **Åbn i valgpanelet**. Udvalget åbnes i Udvalgsskærmen, som hvis du havde valgt **Udvalg** i [Navigatoren][7] og valgt udvalget.
+
 </Note>
 
 ### Vis datasættet for et udvalg
@@ -190,6 +210,9 @@ Hvis du vælger et kort for at få vist et eksempel i sidepanelet, ændres den s
 [6]: /da/learn/basics/history
 [7]: /da/learn/getting-started/main-screen/navigator
 [8]: /da/learn/basics/recent-navigation
+[9]: /da/request/learn/index#request-screen
+[10]: /da/request/learn/index#overview
+[11]: /da/request/learn/index#tabs
 
 [img1]: /media/loc/en/learn/overview-page-areas.png
 [img2]: /media/loc/en/learn/left-panel.png
