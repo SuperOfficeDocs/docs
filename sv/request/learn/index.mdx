@@ -2,7 +2,7 @@
 uid: help-sv-request
 title: Ärenden och SuperOffice Service
 description: Introduktion till ärenden i SuperOffice
-keywords: ['ärendehantering', 'ärende', 'ticket', 'service']
+keywords: ['ärendehantering', 'ärende', 'ticket', 'service', 'Ärendeskärm', 'Ärendekort', 'Översikt', 'vänsterpanel', 'aktiva flikar', 'fastnålade ärenden', 'förhandsgranskningspanel', 'fasta listor', 'stäng flik automatiskt', 'flera aktiva flikar', 'stäng alla flikar', 'för många flikar', 'osparade ändringar']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -16,6 +16,7 @@ redirect_from:
   - /sv/request/learn/screen/ticket-log
 boost: 1.5
 related:
+  - Arbeta med översiktssidor: /sv/learn/basics/overview-pages
   - /sv/request/learn/create
   - Ta ansvar för ett ärende: /sv/request/learn/accept
   - Svara på ett ärende: /sv/request/learn/reply
@@ -26,31 +27,173 @@ language: sv
 
 Vårt ärendesystem gör att du effektivt kan hantera inkommande ärenden och leverera enastående kundservice varje dag. Den här samlingen med guider hjälper dig att hålla reda på, besvara och analysera alla inkommande frågor och förfrågningar i SuperOffice Service - oavsett om de kommer in via telefon, e-post, chatt, webbformulär eller andra kanaler.
 
-**Ärenden** är en av huvudfunktionerna i SuperOffice. Här hanterar du ärenden och förfrågningar i systemet. Du kan skapa interna och externa ärenden, svara på inkommande frågor och få en översikt över alla ärenden i systemet. Klicka på knappen **Ärenden** (<i class="ph ph-ticket" aria-hidden="true"></i>) för att öppna ärendelistan eller klicka på texten **Ärenden** för att visa navigatoralternativ som sökning, historik och favoriter.
+**Ärenden** är en av huvudfunktionerna i SuperOffice. Här hanterar du ärenden och förfrågningar i systemet. Du kan skapa interna och externa ärenden, svara på inkommande frågor och få en översikt över alla ärenden i systemet. Klicka på knappen **Ärenden** (<i class="ph ph-ticket" aria-hidden="true"></i>) för att öppna Ärendeskärmen eller klicka på texten **Ärenden** för att visa navigatoralternativ som sökning, historik och favoriter.
 
 Varje fråga eller förfrågan kan registreras som ett ärende. Det kan vara supportfrågor, frågor om produkter och tjänster eller frågor om fakturor. När ett ärende kommer in vill du hantera det så snabbt och effektivt som möjligt för att säkerställa professionell kundservice. Genom att förhandsgranska ett ärende från en lista kan du även skicka ett [snabbsvar][28] utan att lämna listan, så att du kan fortsätta arbeta dig igenom en pressad kö.
 
 ![Ärende med lista över otilldelade ärenden och förhandsgranskning -screenshot][img1]
 
+<Note>
+Ärendeskärmen introduceras gradvis. Om du inte ser den ännu arbetar du med flera ärenden på horisontella flikar. Vänsterpanelen, Översikten och Omnämnanden är inte tillgängliga.
+</Note>
+
 ## Var hittar jag ärenden? {#open}
 
 * Detaljkort i fönstren Företag, Kontakt, Försäljning och Projekt
-* [Fördefinierade listor][10]
+* [Fasta listor][10], till exempel **Egna öppna ärenden**
 * [Sökning][12]
 * [Favoriter][18]
 * [Flaggade meddelanden][5]
 
-När du dubbelklickar på en rad i sökresultatet öppnas ärendet i fönstret Ärende.
+När du dubbelklickar på en rad i sökresultatet öppnas ärendet på en flik i Ärendeskärmen.
 
 ### Kontakter {#customers}
 
 Ärenden kopplas till [kontakter][14], som i sin tur kan tillhöra ett [företag][13]. Det betyder att ärenden inte kan kopplas direkt till företag (endast indirekt via kontakter). När nya e-postmeddelanden importeras och registreras som ärenden kopplas de automatiskt till rätt kontakt baserat på e-postadressen. När du visar ett ärende ser du snabbt vem personen är, och genom att klicka på namnet kan du se övriga ärenden som registrerats för samma person. Detta ger en tydlig översikt över tidigare kommunikation.
 
-## Ärendeskärm
+## Ärendeskärmen {#request-screen}
 
-Fönstret Ärende har följande delar:
+I Ärendeskärmen arbetar du med dina ärenden. Den har tre områden:
 
-* Överst på skärmen visas **ärendehuvudet**, vilket innehåller grundläggande information om ärendet, som ID, titel, kontakt och tidsfrist.
+* **Vänsterpanel:** Vertikala flikar för de ärenden och urval du arbetar med, och ett sökfält för att hitta andra. Den har också posterna **Översikt**, **Sök ärende** och **Omnämnanden**. Nåla fast de flikar du använder varje dag. Se [Arbeta med översiktssidor][30] för hur vänsterpanelen fungerar.
+
+* **Huvudområde:** Visar Översikten, ett urval eller en lista med ärenden i tavlevy eller listvy, eller ett ärende som ett ärendekort.
+
+* **Sidopanel:** [Sidopanelen][31] till höger visar företaget och kontakten för ärendet du arbetar med. Den stängs när Översikten visas, och öppnas igen när du lämnar Översikten om den var öppen tidigare.
+
+### Öppna Ärendeskärmen {#open-screen}
+
+* Klicka på ikonen **Ärenden** i [navigatorn][32]. Ärendeskärmen öppnas med den flik du senast använde, eller med Översikten om du inte har några öppna flikar.
+
+* Öppna ett ärende var som helst i SuperOffice CRM, till exempel genom att dubbelklicka på det på [detaljkortet Ärenden][33]. Ärendet öppnas på en ny flik.
+
+* Klicka på **Nytt** > **Ärende** för att [skapa ett ärende][4]. Det nya ärendet öppnas på en flik med namnet **Nytt ärende**.
+
+### Vad du ser första gången {#first-time}
+
+Första gången du öppnar Ärendeskärmen kopieras de ärenden, urval och standardlistor som du hade öppna på flikar till vänsterpanelen. De flikar du hade nålat fast förblir fastnålade. Översikten öppnas om du inte har någon aktiv flik. Dina gamla flikar ändras inte.
+
+## Få en överblick över dina ärenden {#overview}
+
+Översikten visar ditt arbete i upp till fyra kolumner med ärendekort. Som standard är kolumnerna **Otilldelade ärenden**, **Egna öppna ärenden**, **Mina favoriter** och **Senaste ärenden**. Varje kort visar ärendetyp, ärende-ID, titel, företag och status.
+
+1. Klicka på **Översikt** i vänsterpanelen.
+
+1. Använd korten för att hitta de ärenden som behöver din uppmärksamhet. En färgad bricka på ikonen för ärendetyp visar statusen. Röd betyder att tidsfristen har passerat, grön betyder stängt och grå betyder uppskjutet.
+
+1. Klicka på ett kort för att [förhandsgranska och uppdatera ärendet](#slide-in), eller dubbelklicka på det för att öppna det på en flik.
+
+Så här arbetar du med Översikten:
+
+* **Se fler ärenden:** En kolumn visar upp till 20 ärenden. Klicka på **Visa alla ärenden** för att öppna hela listan eller urvalet på en flik.
+
+* **Sortera en kolumn:** Använd sorteringsknappen för att sortera efter ärende-ID, registreringsdatum, ägare, senaste ändring eller prioritet.
+
+* **Öppna en kontakt eller ett företag:** Klicka på namnet på ett kort.
+
+* **Läs in Översikten på nytt:** Klicka på knappen för att läsa in på nytt. En kolumn läses också in på nytt när du ändrar ett av dess ärenden i samma webbläsare. Ändringar som andra användare gör visas inte förrän du läser in på nytt.
+
+### Ändra kolumnerna i Översikten {#edit-overview}
+
+1. Klicka på kugghjulsknappen (<i class="ph ph-gear" aria-label="Gear"></i>) för att öppna **Redigera översikt**.
+
+1. Välj hur många kolumner du vill ha, från en till fyra. Med fyra kolumner kan du visa dem sida vid sida eller som ett 2 × 2-rutnät.
+
+1. Välj vad som fyller varje kolumn. Sök efter ett urval och dra det till en kolumn, eller välj en av listorna. Rensa en kolumn för att lämna den tom.
+
+1. Kontrollera förhandsgranskningen och klicka sedan på **Spara**. Klicka på **Förkasta** för att slänga dina ändringar.
+
+Om du vill gå tillbaka till de kolumner du hade från början klickar du på **Återställ till standard**.
+
+<Note>
+Din Översikt sparas i den webbläsare du använder. Den följer inte med till en annan webbläsare eller enhet.
+</Note>
+
+### Ändra vad korten visar {#edit-fields}
+
+1. Öppna menyn för kolumnen och klicka på **Redigera fält**.
+
+1. Välj rubrik för kortet, och eventuellt en bricka, i listan med fält. Sök i listan för att hitta ett fält.
+
+1. Välj upp till sex fler fält att visa på kortet. Dra fälten för att ändra ordningen.
+
+1. Klicka på **Spara**. Klicka på **Återställ till standard** för att återställa fälten för endast den här kolumnen.
+
+Vänsterpanelen fälls ihop och förhandsgranskningspanelen stängs medan du redigerar.
+
+### Förhandsgranska och uppdatera ett ärende från Översikten {#slide-in}
+
+1. Klicka på ett kort. Ärendet öppnas i en panel till höger, med de senaste meddelandena, ärendedetaljerna och svarsknapparna.
+
+1. Ändra ägare, status, kategori, prioritet eller taggar direkt i panelen.
+
+1. Om du vill fortsätta arbeta med ärendet klickar du på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Fler alternativ) och sedan på **Öppna i helvy**. Välj **Nåla fast ärende** för att lägga till det i gruppen **Fastnålad**.
+
+Dra i panelens kant för att göra den bredare eller smalare. Panelen stängs när du klickar på <i class="ph ph-x" aria-label="Close icon"></i>, när du lämnar Översikten och när du öppnar en redigerare. Sidopanelen visar företaget och kontakten för ärendet i förhandsgranskningspanelen.
+
+## Arbeta med flikarna i vänsterpanelen {#tabs}
+
+På Ärendeskärmen kan du ha många ärenden och urval öppna samtidigt. De listas i gruppen **Aktiva**, och flikarna du nålar fast listas i gruppen **Fastnålad**. En flik är antingen aktiv eller fastnålad, aldrig båda. Dina öppna och fastnålade flikar sparas, så de finns kvar när du kommer tillbaka eller loggar in från en annan webbläsare.
+
+### Öppna en annan flik {#open-tab}
+
+Öppna ett ärende eller ett urval från vänsterpanelen, från sökdialogrutan eller från en länk i SuperOffice CRM. Det öppnas på en ny flik direkt efter fliken du står på. De andra flikarna förblir öppna, och var och en behåller sitt eget osända svar, sitt redigeringsläge och sin rullningsposition.
+
+<Note>
+
+Du kan ha upp till 50 flikar öppna, aktiva och fastnålade flikar medräknade. Om du försöker öppna fler visas dialogrutan **För många flikar** och ingenting öppnas. Stäng de flikar du inte längre behöver och försök igen.
+
+</Note>
+
+### Stäng flera flikar samtidigt {#close-active}
+
+1. Håll muspekaren över fliken och klicka på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Fler alternativ).
+
+1. Välj ett alternativ:
+
+    * **Stäng alla:** Stänger alla aktiva flikar i gruppen.
+
+    * **Stäng alla flikar utom den här:** Stänger alla aktiva flikar i gruppen utom denna.
+
+För fastnålade flikar använder du **Ta bort alla fastnålningar och stäng alla** eller **Ta bort alla fastnålningar och stäng alla fönster utom det här**. När du stänger fliken du står på öppnas fliken bredvid. När du stänger den sista fliken öppnas fliken Översikt.
+
+### Håll reda på osparade ändringar {#unsaved}
+
+En penna (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) i slutet av en flik betyder att ärendet har osparade ändringar. Det kan till exempel vara att du har ett osänt svar eller redigerar ärendet.
+
+När du stänger en flik med osparade ändringar ombeds du bekräfta. Om du bekräftar förkastas ändringarna. Flikar som stängs automatiskt frågar aldrig.
+
+### Se vilka ärenden som behöver dig {#row-status}
+
+Varje ärendeflik visar ID och titel, och kontaktpersonen och företaget under.
+
+Om Live UI är aktiverat i ditt system ersätter en närvaroikon ikonen för ärendetyp när en annan användare visar eller redigerar ett ärende. När en annan användare har ändrat ärendet sedan du öppnade det visas i stället en ikon för ändrat ärende. Peka på ikonen för att se namnen. Om ett urval eller en lista visar ikonen för ändrat ärende med **Arkivet kan vara osynkroniserat**, läs in det på nytt. Markeringen försvinner när du läser in ärendet eller listan på nytt.
+
+### Stäng ärendeflikar automatiskt {#auto-close}
+
+En ärendeflik stängs av sig själv i dessa situationer:
+
+* Ärendet tas bort, markeras som skräppost eller slås ihop med ett annat ärende. Fliken stängs även om den är fastnålad. Om du slår ihop från [ärendekortet][16] öppnas det kvarvarande ärendet i dess ställe.
+
+* Du lägger till ett meddelande i ärendet, eller sätter dess status till **Stängt**, och du har aktiverat motsvarande inställning. Fastnålade flikar förblir öppna.
+
+Så här stänger du flikar automatiskt:
+
+1. Klicka på <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Inställningar**.
+
+1. Välj gruppen **Ärende**.
+
+1. Ställ in **Stäng flik automatiskt när ett meddelande läggs till i ärendet** eller **Stäng flik automatiskt när ärendets status ändras till stängt** på **Ja**.
+
+1. Klicka på **Spara**.
+
+Flikar som stängs automatiskt ber aldrig om bekräftelse.
+
+## Ärendekortet {#request-card}
+
+Ärendekortet visar ett ärende i taget, som en flik i Ärendeskärmen. Det har följande delar:
+
+* Överst på kortet visas **ärendehuvudet**, vilket innehåller grundläggande information om ärendet, som ID, titel, kontakt och tidsfrist.
 * Sidofältet **egenskaper för ärende** innehåller fält för Ägare, Status, Kategori, Prioritet, Åtkomstnivå och Taggar, vilka alla är fält som kan redigeras med knapparna **Spara** och **Avbryt**.
 * Under huvudet finns en rad med knappar som du kan använda för att utföra uppgifter kopplade till ärenden, som Svara, Svara alla, Vidarebefordra och Lägg till kommentar.
 * Fliken **Meddelanden** visar de meddelanden som är kopplade till ärendet.
@@ -60,7 +203,7 @@ Fönstret Ärende har följande delar:
 
 ### Ärendehuvud
 
-Ärendets huvud innehåller de egenskaper som definierades när [ärendet skapades][4]. Huvudet består av ärendetitel, kontakt, tidsfrist och ärende-ID (i fliken). Du kan dessutom klicka på <i class="ph ph-star" aria-label="Star icon"></i> om du vill ange ärendet som en favorit. Ärendet blir då tillgängligt både via **Mina favoriter** på **Ärendehantering** i navigatorn och på panelen **Mina favoriter** på [dashboarden][17].
+Ärendets huvud innehåller de egenskaper som definierades när [ärendet skapades][4]. Huvudet består av ärendetitel, kontakt, tidsfrist och ärende-ID. Du kan dessutom klicka på <i class="ph ph-star" aria-label="Star icon"></i> om du vill ange ärendet som en favorit. Ärendet blir då tillgängligt både via **Mina favoriter** på **Ärendehantering** i navigatorn och på panelen **Mina favoriter** på [dashboarden][17].
 
 ### Fliken Meddelanden
 
@@ -204,6 +347,8 @@ Du kan anpassa ärenden så att de passar ditt arbetsflöde:
     * Antal expanderade meddelanden.
     * Klistra in senaste meddelande automatiskt.
     * Visa bara egna kategorier.
+    * Stäng flik automatiskt när ett meddelande läggs till i ärendet.
+    * Stäng flik automatiskt när ärendets status ändras till stängt.
     * Standardägare, -kategori och -status för nya ärenden.
 
 1. Välj **E-postavisering**, och justera inställningar som:
@@ -272,6 +417,10 @@ Några inställningar som påverkar supportagenter inkluderar:
 [26]: /sv/admin/preferences/service-settings
 [27]: /sv/request/learn/spam
 [28]: /sv/request/learn/reply#quick-reply
+[30]: /sv/learn/basics/overview-pages
+[31]: /sv/learn/getting-started/main-screen/side-panel
+[32]: /sv/learn/getting-started/main-screen/navigator
+[33]: /sv/learn/section-tabs/requests-tab
 [img1]: /media/loc/en/request/request-list-preview.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/service-dashboard.png

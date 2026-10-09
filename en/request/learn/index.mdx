@@ -2,7 +2,7 @@
 uid: help-en-request
 title: Requests and SuperOffice Service
 description: Introduction to requests in SuperOffice
-keywords: ['request management', 'request', 'ticket']
+keywords: ['request management', 'request', 'ticket', 'Request screen', 'Request card', 'Overview', 'left panel', 'active tabs', 'pinned requests', 'slide-in panel', 'fixed lists', 'automatically close tab', 'several active tabs', 'close all tabs', 'too many tabs', 'unsaved changes']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -16,6 +16,7 @@ redirect_from:
   - /en/request/learn/screen/ticket-log
 boost: 1.5
 related:
+  - Work with overview pages: /en/learn/basics/overview-pages
   - Create request: /en/request/learn/create
   - Accept: /en/request/learn/accept
   - Reply: /en/request/learn/reply
@@ -26,31 +27,173 @@ language: en
 
 Our ticketing system allows you to efficiently handle incoming requests and helps you offer outstanding customer service every day. This selection of how-to guides contains guidelines to help you keep track of, answer and analyze all incoming questions and inquiries using SuperOffice Service. No matter whether they come in by phone, email, chat, web form, or other channels.
 
-**Requests** is one of the main features of SuperOffice. Here you manage requests and enquiries that are in the system. You can also create internal and external requests, respond to incoming enquiries and obtain an overview of the statuses of all requests in the system. Click the **Requests** button (<i class="ph ph-ticket" aria-hidden="true"></i>) to open the Requests screen or click the **Requests** text to open the navigator options with search, history and favorites.
+**Requests** is one of the main features of SuperOffice. Here you manage requests and enquiries that are in the system. You can also create internal and external requests, respond to incoming enquiries and obtain an overview of the statuses of all requests in the system. Click the **Requests** button (<i class="ph ph-ticket" aria-hidden="true"></i>) to open the Request screen or click the **Requests** text to open the navigator options with search, history and favorites.
 
 Each question and query can be defined as a request. These questions range from support issues, questions about the product and services, or questions about invoices. Whenever a request comes in, you want to handle them as quickly and efficiently as possible and professional customer service. Previewing a request from a list also lets you send a [quick reply][28] without leaving it, so you can keep moving through a busy queue.
 
 ![Request with Unassigned request list with preview -screenshot][img1]
 
+<Note>
+The Request screen is being introduced gradually. If you do not see it yet, you work with several requests in horizontal tabs. The left panel, the Overview, and Mentions are not available.
+</Note>
+
 ## Where can I access requests? {#open}
 
 * Section tabs in the Company, Contact, Sale, and Project screens.
-* [Pre-defined lists][10]
+* [Fixed lists][10], such as **Own open requests**
 * [Search][12]
-* [Favourites][18]
+* [Favorites][18]
 * [Flagged messages][5]
 
-When you double-click a row in the search results, you are taken to the Request screen.
+When you double-click a row in the search results, the request opens in a tab on the Request screen.
 
 ### Contacts {#customers}
 
 Requests can be linked to [contacts][14], who in turn can belong to a [company][13]. This means that requests cannot be linked directly to companies (only indirectly via contacts). When new emails are imported and saved as requests, the request is automatically linked to the correct contact via the email address. When you view a request, it is easy to see who the contact is, and if you click the contact's name, you can see which other requests are registered for this person. This provides you with a rapid overview of previous communication with this same contact.
 
-## Request screen
+## The Request screen {#request-screen}
 
-The Request screen has the following sections:
+The Request screen is where you work with your requests. It has three areas:
 
-* At the top of the screen, the **request header** contains basic information about the request, like id, title, contact and deadline.
+* **Left panel:** Vertical tabs for the requests and selections you work with, and a search field for finding others. It also has the entries **Overview**, **Find request**, and **Mentions**. Pin the tabs you use every day. See [Work with overview pages][30] for how the left panel works.
+
+* **Main area:** Shows the Overview, a selection or list of requests in board view or list view, or one request as a Request card.
+
+* **Side panel:** The [side panel][31] on the right shows the company and contact of the request you are working on. It closes while the Overview is shown, and opens again when you leave the Overview if it was open before.
+
+### Open the Request screen {#open-screen}
+
+* Click the **Requests** icon in the [Navigator][32]. The Request screen opens with the tab you last used, or with the Overview if you have no open tabs.
+
+* Open a request from anywhere in SuperOffice CRM, for example by double-clicking it in a [Requests section tab][33]. The request opens in a new tab.
+
+* Click **New** > **Request** to [create a request][4]. The new request opens in a **New request** tab.
+
+### What you see the first time {#first-time}
+
+The first time you open the Request screen, the requests, selections, and standard lists you had open in tabs are copied to the left panel. The tabs you pinned stay pinned. The Overview opens if you have no active tab. Your old tabs are not changed.
+
+## Get an overview of your requests {#overview}
+
+The Overview shows your work in up to four columns of request cards. By default, the columns are **Unassigned requests**, **Own open requests**, **My favourites**, and **Last requests**. Each card shows the request type, the request ID, the title, the company, and the status.
+
+1. Click **Overview** in the left panel.
+
+1. Use the cards to find the requests that need your attention. A colored badge on the request type icon shows the status. Red means the deadline has passed, green means closed, and grey means postponed.
+
+1. Click a card to [preview and update the request](#slide-in), or double-click it to open it in a tab.
+
+To work with the Overview:
+
+* **See more requests:** A column shows up to 20 requests. Click **See all requests** to open the full list or selection in a tab.
+
+* **Sort a column:** Use the sort button to sort by request ID, creation date, owner, last change, or priority.
+
+* **Open a contact or company:** Click the name on a card.
+
+* **Reload the Overview:** Click the reload button. A column also reloads when you change one of its requests in the same browser. Changes made by other users do not appear until you reload.
+
+### Change the columns on the Overview {#edit-overview}
+
+1. Click the gear button (<i class="ph ph-gear" aria-label="Gear"></i>) to open **Edit overview**.
+
+1. Choose how many columns you want, from one to four. With four columns, you can show them side by side or as a 2 × 2 grid.
+
+1. Choose what fills each column. Search for a selection and drag it onto a column, or choose one of the lists. Clear a column to leave it empty.
+
+1. Check the preview, and then click **Save**. Click **Discard** to drop your changes.
+
+To go back to the columns you got from the start, click **Revert to default**.
+
+<Note>
+Your Overview setup is saved in the browser you use. It does not follow you to another browser or device.
+</Note>
+
+### Change what the cards show {#edit-fields}
+
+1. Open the menu of the column and click **Edit fields**.
+
+1. Choose the heading of the card, and optionally a badge, from the list of fields. Search the list to find a field.
+
+1. Choose up to six more fields to show on the card. Drag the fields to change their order.
+
+1. Click **Save**. Click **Revert to default** to restore the fields of this column only.
+
+The left panel collapses and the preview panel closes while you edit.
+
+### Preview and update a request from the Overview {#slide-in}
+
+1. Click a card. The request opens in a panel on the right, with the latest messages, the request details, and the reply buttons.
+
+1. Change the owner, status, category, priority, or tags directly in the panel.
+
+1. To keep working on the request, click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and then **Open in full view**. Choose **Pin request** to add it to the **Pinned** group.
+
+Drag the edge of the panel to make it wider or narrower. The panel closes when you click <i class="ph ph-x" aria-label="Close icon"></i>, when you leave the Overview, and when you open an editor. The side panel shows the company and contact of the request in the preview panel.
+
+## Work with the tabs in the left panel {#tabs}
+
+On the Request screen, you can keep many requests and selections open at the same time. They are listed in the **Active** group, and the tabs you pin are listed in the **Pinned** group. A tab is either active or pinned, never both. Your open and pinned tabs are saved, so they are there when you come back or sign in from another browser.
+
+### Open another tab {#open-tab}
+
+Open a request or a selection from the left panel, from the search dialog, or from a link in SuperOffice CRM. It opens in a new tab right after the tab you are on. The other tabs stay open, and each keeps its own unsent reply, edit mode, and scroll position.
+
+<Note>
+
+You can have up to 50 tabs open, counting active and pinned tabs. If you try to open more, the **Too many tabs** dialog appears and nothing is opened. Close the tabs you no longer need, and try again.
+
+</Note>
+
+### Close several tabs at once {#close-active}
+
+1. Point to the tab and click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options).
+
+1. Choose an option:
+
+    * **Close all:** Closes all active tabs in the group.
+
+    * **Close all tabs but this:** Closes all active tabs in the group except this one.
+
+For pinned tabs, use **Unpin and close all** or **Unpin and close all but this**. When you close the tab you are on, the tab next to it opens. When you close the last tab, the Overview tab opens.
+
+### Keep track of unsaved changes {#unsaved}
+
+A pencil (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) at the end of a tab means the request has unsaved changes. For example, you have an unsent reply, or you are editing the request.
+
+When you close a tab with unsaved changes, you are asked to confirm. If you confirm, the changes are discarded. Tabs that close automatically never ask.
+
+### See which requests need you {#row-status}
+
+Each request tab shows the ID and title, and the contact person and company below.
+
+If your system has Live UI turned on, a presence icon replaces the request type icon when another user views or edits a request. When another user has changed the request since you opened it, a changed icon is shown instead. Point to the icon to see the names. If a selection or list shows the changed icon with **The archive might be out of sync**, reload it. The mark disappears when you reload the request or list.
+
+### Close request tabs automatically {#auto-close}
+
+A request tab closes by itself in these situations:
+
+* The request is deleted, marked as spam, or merged into another request. The tab closes even if it is pinned. Merging from the [request card][16] opens the surviving request in its place.
+
+* You add a message to the request, or set its status to **Closed**, and you have turned on the matching preference. Pinned tabs stay open.
+
+To close tabs automatically:
+
+1. Click <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Preferences**.
+
+1. Select the **Request** group.
+
+1. Set **Automatically close tab when adding a message to request** or **Automatically close tab when changing request status to closed** to **Yes**.
+
+1. Click **Save**.
+
+Tabs that close automatically never ask you to confirm.
+
+## The Request card {#request-card}
+
+The Request card shows one request at a time, as a tab on the Request screen. It has the following sections:
+
+* At the top of the card, the **request header** contains basic information about the request, like id, title, contact and deadline.
 * The **request properties** sidebar contains fields for Owner, Status, Category, Priority, Access level and Tags, all fields are editable with **Save** and **Cancel** buttons.
 * Below the header is a row of buttons for performing tasks associated with requests, such as Reply, Reply all, Forward, and Add comment.
 * The **Messages** tab displays the messages related to the request.
@@ -60,7 +203,7 @@ The Request screen has the following sections:
 
 ### Request header
 
-The header of the request contains the properties defined when the [request was created][4]. The header consists of the request title, contact, deadline and request ID (in the tab). In addition, you can click <i class="ph ph-star" aria-label="Star icon"></i> to set the request as a favorite. The request will then be accessible via **My favorites** on **Requests** in the Navigator, and in the **My favorites** tile on a [dashboard][17].
+The header of the request contains the properties defined when the [request was created][4]. The header consists of the request title, contact, deadline and request ID. In addition, you can click <i class="ph ph-star" aria-label="Star icon"></i> to set the request as a favorite. The request will then be accessible via **My favorites** on **Requests** in the Navigator, and in the **My favorites** tile on a [dashboard][17].
 
 ### Messages tab
 
@@ -204,6 +347,8 @@ You can customize requests to suit your workflow:
     * No. of expanded messages.
     * Automatically quote the last message.
     * Show only own categories.
+    * Automatically close tab when adding a message to request.
+    * Automatically close tab when changing request status to closed.
     * Default owner, category, and status for new requests.
 
 1. Select **Notifications via e-mail** and adjust settings such as:
@@ -272,6 +417,10 @@ Some settings that affect support agents include:
 [26]: /en/admin/preferences/service-settings
 [27]: /en/request/learn/spam
 [28]: /en/request/learn/reply#quick-reply
+[30]: /en/learn/basics/overview-pages
+[31]: /en/learn/getting-started/main-screen/side-panel
+[32]: /en/learn/getting-started/main-screen/navigator
+[33]: /en/learn/section-tabs/requests-tab
 [img1]: /media/loc/en/request/request-list-preview.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/service-dashboard.png

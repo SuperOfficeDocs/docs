@@ -2,7 +2,7 @@
 uid: help-de-request
 title: Anfragen und SuperOffice Service
 description: Einführung zu Anfragen in SuperOffice
-keywords: ['Anfragenmanagement', 'Anfrage', 'Ticket', 'Service']
+keywords: ['Anfragenmanagement', 'Anfrage', 'Ticket', 'Service', 'Anfrageansicht', 'Anfragekarte', 'Übersicht', 'linkes Panel', 'aktive Registerkarten', 'angeheftete Anfragen', 'Vorschaupanel', 'feste Listen', 'Registerkarte automatisch schließen', 'mehrere aktive Registerkarten', 'alle Registerkarten schließen', 'zu viele Registerkarten', 'nicht gespeicherte Änderungen']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -16,6 +16,7 @@ redirect_from:
   - /de/request/learn/screen/ticket-log
 boost: 1.5
 related:
+  - Mit Übersichtsseiten arbeiten: /de/learn/basics/overview-pages
   - /de/request/learn/create
   - Anfrage übernehmen: /de/request/learn/accept
   - Antwort an Kunden senden: /de/request/learn/reply
@@ -26,31 +27,173 @@ language: de
 
 Unser Ticketing-System ermöglicht Ihnen eine effiziente Bearbeitung eingehender Anfragen und hilft Ihnen, täglich exzellenten Kundenservice zu leisten. Diese Auswahl an Anleitungen bietet Ihnen Richtlinien, um alle eingehenden Fragen und Anfragen mit SuperOffice Service zu verwalten, zu beantworten und zu analysieren - unabhängig davon, ob sie per Telefon, E-Mail, Chat, Webformular oder über andere Kanäle eingehen.
 
-**Anfragen** sind eine der Hauptfunktionen von SuperOffice. Hier verwalten Sie Anfragen und Anliegen im System. Sie können sowohl interne als auch externe Anfragen erstellen, eingehende Anfragen beantworten und sich einen Überblick über den Status aller Anfragen im System verschaffen. Klicken Sie auf das Symbol **Anfragen** (<i class="ph ph-ticket" aria-hidden="true"></i>), um die Anfragen-Ansicht zu öffnen, oder auf den **Anfragen**-Text, um die Navigator-Optionen wie Suche, Verlauf und Favoriten aufzurufen.
+**Anfragen** sind eine der Hauptfunktionen von SuperOffice. Hier verwalten Sie Anfragen und Anliegen im System. Sie können sowohl interne als auch externe Anfragen erstellen, eingehende Anfragen beantworten und sich einen Überblick über den Status aller Anfragen im System verschaffen. Klicken Sie auf das Symbol **Anfragen** (<i class="ph ph-ticket" aria-hidden="true"></i>), um die Anfrageansicht zu öffnen, oder auf den **Anfragen**-Text, um die Navigator-Optionen wie Suche, Verlauf und Favoriten aufzurufen.
 
 Jede Kundenanfrage kann als Anfrage definiert werden. Diese reichen von Supportanfragen über Produkt- und Serviceanfragen bis hin zu Rechnungsanfragen. Ihr Ziel ist es, jede eingehende Anfrage so schnell, effizient und professionell wie möglich zu bearbeiten. Die Vorschau einer Anfrage aus einer Liste ermöglicht Ihnen außerdem, eine [Schnellantwort][28] zu senden, ohne die Liste zu verlassen, sodass Sie eine stark ausgelastete Warteschlange durcharbeiten können.
 
 ![Ansicht mit einer Liste nicht zugeordneter Anfragen und Vorschau -screenshot][img1]
 
+<Note>
+Die Anfrageansicht wird schrittweise eingeführt. Wenn Sie sie noch nicht sehen, arbeiten Sie mit mehreren Anfragen in horizontalen Registerkarten. Das linke Panel, die Übersicht und Erwähnungen sind nicht verfügbar.
+</Note>
+
 ## Wo finde ich Anfragen? {#open}
 
 * In den Bereichregisterkarten der Firma-, Person-, Verkauf- und Projekt-Ansichten.
-* Über [vordefinierte Listen][10].
+* Über [feste Listen][10], zum Beispiel **Eigene unbearbeitete Anfragen**.
 * Durch die [Suchfunktion][12].
 * In den [Favoriten][18].
 * Über [gekennzeichnete Nachrichten][5].
 
-Wenn Sie in den Suchergebnissen auf eine Anfrage doppelklicken, öffnet sich die Anfragen-Ansicht.
+Wenn Sie in den Suchergebnissen auf eine Anfrage doppelklicken, wird die Anfrage in einer Registerkarte in der Anfrageansicht geöffnet.
 
 ### Personen und Firmen {#customers}
 
 Anfragen können mit [Personen][14] verknüpft werden, die zu einer [Firma][13] gehören. Dies bedeutet, dass Anfragen nicht direkt, sondern nur indirekt über Personen mit Firmen verknüpft werden können. Wenn neue E-Mails importiert und als Anfragen gespeichert werden, wird die Anfrage über die E-Mail-Adresse automatisch mit der richtigen Person verknüpft. Wenn Sie eine Anfrage ansehen , können Sie ganz einfach feststellen, von welcher Person diese Anfrage stammt, und wenn Sie auf den Namen der Person klicken, können Sie sich über die weiteren für diese Person erfassten Anfragen informieren. Dadurch erhalten Sie einen schnellen Überblick über vorherige Kommunikationen mit dieser Person.
 
-## Anfrageansicht
+## Die Anfrageansicht {#request-screen}
 
-Der Ansicht Anfrage enthält folgende Abschnitte:
+Die Anfrageansicht ist der Ort, an dem Sie mit Ihren Anfragen arbeiten. Sie hat drei Bereiche:
 
-* Oben in der Anzeige enthält die **Kopfzeile der Anfrage** grundlegende Informationen über die Anfrage, wie ID, Titel, Person und Bearbeitungsfrist.
+* **Linkes Panel:** Vertikale Registerkarten für die Anfragen und Selektionen, mit denen Sie arbeiten, und ein Suchfeld, um andere zu finden. Es enthält außerdem die Einträge **Übersicht**, **Anfrage suchen** und **Erwähnungen**. Heften Sie die Registerkarten an, die Sie täglich verwenden. Wie das linke Panel funktioniert, finden Sie unter [Mit Übersichtsseiten arbeiten][30].
+
+* **Hauptbereich:** Zeigt die Übersicht, eine Selektion oder Liste von Anfragen in der Board-Ansicht oder Listenansicht oder eine einzelne Anfrage als Anfragekarte.
+
+* **Seitenleiste:** Die [Seitenleiste][31] auf der rechten Seite zeigt die Firma und die Person der Anfrage, an der Sie arbeiten. Sie wird geschlossen, solange die Übersicht angezeigt wird, und wieder geöffnet, wenn Sie die Übersicht verlassen, falls sie vorher geöffnet war.
+
+### Die Anfrageansicht öffnen {#open-screen}
+
+* Klicken Sie im [Navigator][32] auf das Symbol **Anfragen**. Die Anfrageansicht wird mit der Registerkarte geöffnet, die Sie zuletzt verwendet haben, oder mit der Übersicht, wenn Sie keine geöffneten Registerkarten haben.
+
+* Öffnen Sie eine Anfrage von beliebiger Stelle in SuperOffice CRM, zum Beispiel durch Doppelklicken in einer [Bereichsregisterkarte Anfragen][33]. Die Anfrage wird in einer neuen Registerkarte geöffnet.
+
+* Klicken Sie auf **Neu** > **Anfrage**, um eine [Anfrage zu erstellen][4]. Die neue Anfrage wird in einer Registerkarte **Neue Anfrage** geöffnet.
+
+### Was Sie beim ersten Mal sehen {#first-time}
+
+Wenn Sie die Anfrageansicht zum ersten Mal öffnen, werden die Anfragen, Selektionen und Standardlisten, die Sie in Registerkarten geöffnet hatten, in das linke Panel kopiert. Die Registerkarten, die Sie angeheftet hatten, bleiben angeheftet. Die Übersicht wird geöffnet, wenn Sie keine aktive Registerkarte haben. Ihre alten Registerkarten werden nicht geändert.
+
+## Einen Überblick über Ihre Anfragen erhalten {#overview}
+
+Die Übersicht zeigt Ihre Arbeit in bis zu vier Spalten mit Anfragen als Karten. Standardmäßig sind die Spalten **Nicht zugeordnete Anfragen**, **Eigene unbearbeitete Anfragen**, **Meine Favoriten** und **Letzte Anfragen**. Jede Karte zeigt den Anfragetyp, die Anfrage-ID, den Titel, die Firma und den Status.
+
+1. Klicken Sie im linken Panel auf **Übersicht**.
+
+1. Finden Sie mit den Karten die Anfragen, die Ihre Aufmerksamkeit brauchen. Ein farbiges Badge am Symbol des Anfragetyps zeigt den Status. Rot bedeutet, dass die Bearbeitungsfrist abgelaufen ist, grün bedeutet geschlossen, und grau bedeutet auf Termin gelegt.
+
+1. Klicken Sie auf eine Karte, um die [Anfrage in der Vorschau anzuzeigen und zu aktualisieren](#slide-in), oder doppelklicken Sie darauf, um sie in einer Registerkarte zu öffnen.
+
+So arbeiten Sie mit der Übersicht:
+
+* **Mehr Anfragen anzeigen:** Eine Spalte zeigt bis zu 20 Anfragen. Klicken Sie auf **Alle Anfragen anzeigen**, um die vollständige Liste oder Selektion in einer Registerkarte zu öffnen.
+
+* **Eine Spalte sortieren:** Mit der Sortierschaltfläche sortieren Sie nach Anfrage-ID, Erstellungsdatum, Eigentümer, letzter Änderung oder Priorität.
+
+* **Eine Person oder Firma öffnen:** Klicken Sie auf den Namen auf einer Karte.
+
+* **Die Übersicht neu laden:** Klicken Sie auf die Schaltfläche zum Neuladen. Eine Spalte wird auch neu geladen, wenn Sie eine ihrer Anfragen im selben Browser ändern. Änderungen anderer Benutzer werden erst angezeigt, wenn Sie neu laden.
+
+### Die Spalten der Übersicht ändern {#edit-overview}
+
+1. Klicken Sie auf die Zahnradschaltfläche (<i class="ph ph-gear" aria-label="Gear"></i>), um **Übersicht bearbeiten** zu öffnen.
+
+1. Wählen Sie, wie viele Spalten Sie möchten, von einer bis vier. Bei vier Spalten können Sie sie nebeneinander oder als 2 × 2-Raster anzeigen.
+
+1. Wählen Sie, was jede Spalte füllt. Suchen Sie eine Selektion und ziehen Sie sie auf eine Spalte, oder wählen Sie eine der Listen. Leeren Sie eine Spalte, um sie leer zu lassen.
+
+1. Prüfen Sie die Vorschau und klicken Sie dann auf **Speichern**. Klicken Sie auf **Verwerfen**, um Ihre Änderungen zu verwerfen.
+
+Um zu den Spalten zurückzukehren, die Sie anfangs hatten, klicken Sie auf **Auf Standard zurücksetzen**.
+
+<Note>
+Ihr Setup der Übersicht wird in dem Browser gespeichert, den Sie verwenden. Es folgt Ihnen nicht in einen anderen Browser oder auf ein anderes Gerät.
+</Note>
+
+### Ändern, was die Karten anzeigen {#edit-fields}
+
+1. Öffnen Sie das Menü der Spalte und klicken Sie auf **Felder bearbeiten**.
+
+1. Wählen Sie aus der Feldliste die Überschrift der Karte und optional ein Badge. Durchsuchen Sie die Liste, um ein Feld zu finden.
+
+1. Wählen Sie bis zu sechs weitere Felder, die auf der Karte angezeigt werden. Ziehen Sie die Felder, um ihre Reihenfolge zu ändern.
+
+1. Klicken Sie auf **Speichern**. Klicken Sie auf **Auf Standard zurücksetzen**, um nur die Felder dieser Spalte wiederherzustellen.
+
+Das linke Panel wird eingeklappt und das Vorschaupanel geschlossen, während Sie bearbeiten.
+
+### Eine Anfrage in der Übersicht in der Vorschau anzeigen und aktualisieren {#slide-in}
+
+1. Klicken Sie auf eine Karte. Die Anfrage wird in einem Panel auf der rechten Seite geöffnet, mit den neuesten Nachrichten, den Anfragedetails und den Antwortschaltflächen.
+
+1. Ändern Sie Eigentümer, Status, Kategorie, Priorität oder Tags direkt im Panel.
+
+1. Um weiter an der Anfrage zu arbeiten, klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und dann auf **In Vollansicht öffnen**. Wählen Sie **Anfrage anheften**, um sie der Gruppe **Angeheftet** hinzuzufügen.
+
+Ziehen Sie den Rand des Panels, um es breiter oder schmaler zu machen. Das Panel wird geschlossen, wenn Sie auf <i class="ph ph-x" aria-label="Close icon"></i> klicken, wenn Sie die Übersicht verlassen und wenn Sie einen Editor öffnen. Die Seitenleiste zeigt die Firma und die Person der Anfrage im Vorschaupanel.
+
+## Mit den Registerkarten im linken Panel arbeiten {#tabs}
+
+In der Anfrageansicht können Sie viele Anfragen und Selektionen gleichzeitig geöffnet halten. Sie werden in der Gruppe **Aktiv** aufgelistet, und die angehefteten Registerkarten stehen in der Gruppe **Angeheftet**. Eine Registerkarte ist entweder aktiv oder angeheftet, nie beides. Ihre geöffneten und angehefteten Registerkarten werden gespeichert, sodass sie wieder da sind, wenn Sie zurückkehren oder sich in einem anderen Browser anmelden.
+
+### Eine weitere Registerkarte öffnen {#open-tab}
+
+Öffnen Sie eine Anfrage oder eine Selektion im linken Panel, im Suchdialogfeld oder über einen Link in SuperOffice CRM. Sie wird in einer neuen Registerkarte direkt nach der aktuellen Registerkarte geöffnet. Die anderen Registerkarten bleiben geöffnet, und jede behält ihre eigene ungesendete Antwort, ihren Bearbeitungsmodus und ihre Scrollposition.
+
+<Note>
+
+Sie können bis zu 50 Registerkarten gleichzeitig geöffnet haben, aktive und angeheftete zusammengezählt. Wenn Sie versuchen, mehr zu öffnen, wird das Dialogfeld **Zu viele Registerkarten** angezeigt, und es wird nichts geöffnet. Schließen Sie die Registerkarten, die Sie nicht mehr benötigen, und versuchen Sie es erneut.
+
+</Note>
+
+### Mehrere Registerkarten gleichzeitig schließen {#close-active}
+
+1. Zeigen Sie auf die Registerkarte und klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen).
+
+1. Wählen Sie eine Option:
+
+    * **Alle schließen:** Schließt alle aktiven Registerkarten in der Gruppe.
+
+    * **Alle außer diesem schließen:** Schließt alle aktiven Registerkarten in der Gruppe außer dieser.
+
+Für angeheftete Registerkarten verwenden Sie **Alle lösen und schließen** oder **Alle außer diesem lösen und schließen**. Wenn Sie die geöffnete Registerkarte schließen, wird die benachbarte Registerkarte geöffnet. Wenn Sie die letzte Registerkarte schließen, wird die Registerkarte Übersicht geöffnet.
+
+### Nicht gespeicherte Änderungen im Blick behalten {#unsaved}
+
+Ein Stift (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) am Ende einer Registerkarte bedeutet, dass die Anfrage nicht gespeicherte Änderungen hat. Zum Beispiel haben Sie eine ungesendete Antwort, oder Sie bearbeiten die Anfrage.
+
+Wenn Sie eine Registerkarte mit nicht gespeicherten Änderungen schließen, werden Sie um Bestätigung gebeten. Wenn Sie bestätigen, werden die Änderungen verworfen. Registerkarten, die automatisch geschlossen werden, fragen nie nach.
+
+### Sehen, welche Anfragen Sie brauchen {#row-status}
+
+Jede Registerkarte einer Anfrage zeigt die ID und den Titel sowie darunter die Person und die Firma.
+
+Wenn Live UI in Ihrem System aktiviert ist, ersetzt ein Präsenzsymbol das Symbol des Anfragetyps, sobald ein anderer Benutzer eine Anfrage anzeigt oder bearbeitet. Wenn ein anderer Benutzer die Anfrage geändert hat, seit Sie sie geöffnet haben, wird stattdessen ein Symbol für Geändert angezeigt. Zeigen Sie auf das Symbol, um die Namen zu sehen. Wenn eine Selektion oder Liste das Symbol für Geändert mit **Das Archiv ist möglicherweise nicht synchron** anzeigt, laden Sie sie neu. Die Markierung verschwindet, wenn Sie die Anfrage oder Liste neu laden.
+
+### Registerkarten von Anfragen automatisch schließen {#auto-close}
+
+Eine Registerkarte einer Anfrage wird in diesen Situationen automatisch geschlossen:
+
+* Die Anfrage wird gelöscht, als Spam markiert oder mit einer anderen Anfrage zusammengeführt. Die Registerkarte wird auch geschlossen, wenn sie angeheftet ist. Wenn Sie von der [Anfragekarte][16] aus zusammenführen, wird an ihrer Stelle die verbleibende Anfrage geöffnet.
+
+* Sie fügen der Anfrage eine Nachricht hinzu oder setzen ihren Status auf **Geschlossen**, und Sie haben die entsprechende Einstellung aktiviert. Angeheftete Registerkarten bleiben geöffnet.
+
+So schließen Sie Registerkarten automatisch:
+
+1. Klicken Sie auf <i class="ph ph-user-circle" aria-hidden="true"></i> **Persönliche Einstellungen** > **Einstellungen**.
+
+1. Wählen Sie die Gruppe **Anfrage**.
+
+1. Setzen Sie **Registerkarte beim Hinzufügen einer Nachricht zur Anfrage automatisch schließen** oder **Registerkarte beim Ändern des Anfragestatus auf Geschlossen automatisch schließen** auf **Ja**.
+
+1. Klicken Sie auf **Speichern**.
+
+Registerkarten, die automatisch geschlossen werden, fragen nie nach Bestätigung.
+
+## Die Anfragekarte {#request-card}
+
+Die Anfragekarte zeigt jeweils eine Anfrage, als Registerkarte in der Anfrageansicht. Sie enthält folgende Abschnitte:
+
+* Oben auf der Karte enthält die **Kopfzeile der Anfrage** grundlegende Informationen über die Anfrage, wie ID, Titel, Person und Bearbeitungsfrist.
 * Die Seitenleiste der **Anfrageneigenschaften** enthält Felder für Eigentümer, Status, Kategorie, Priorität, Zugriffsebene und Tags. Alle Felder können mit den Schaltflächen **Speichern** und **Abbrechen** bearbeitet werden.
 * Unter der Kopfzeile befindet sich eine Zeile mit Schaltflächen für Aufgaben im Zusammenhang mit Anfragen, wie Antworten, Allen antworten, Weiterleiten und Kommentar hinzufügen.
 * Auf der Registerkarte **Nachrichten** werden die mit der Anfrage verknüpften Nachrichten angezeigt.
@@ -60,7 +203,7 @@ Der Ansicht Anfrage enthält folgende Abschnitte:
 
 ### Kopfzeile der Anfrage
 
-Die Kopfzeile der Anfrage enthält die Eigenschaften, die während des Vorgangs [Anfrage wurde erstellt][4] definiert wurden. Die Kopfzeile umfasst den Titel der Anfrage, die Person, die Bearbeitungsfrist und die Anfrage-ID (in der Registerkarte). Zusätzlich können Sie auf <i class="ph ph-star" aria-label="Star icon"></i> klicken und die Anfrage als Favoriten einstellen. Die Anfrage ist dann im Navigator über **Meine Favoriten** unter **Anfragen** und in der Kachel **Meine Favoriten** im [Dashboard][17] verfügbar.
+Die Kopfzeile der Anfrage enthält die Eigenschaften, die während des Vorgangs [Anfrage wurde erstellt][4] definiert wurden. Die Kopfzeile umfasst den Titel der Anfrage, die Person, die Bearbeitungsfrist und die Anfrage-ID. Zusätzlich können Sie auf <i class="ph ph-star" aria-label="Star icon"></i> klicken und die Anfrage als Favoriten einstellen. Die Anfrage ist dann im Navigator über **Meine Favoriten** unter **Anfragen** und in der Kachel **Meine Favoriten** im [Dashboard][17] verfügbar.
 
 ### Registerkarte Nachrichten
 
@@ -204,6 +347,8 @@ Sie können Anfragen an Ihren Arbeitsablauf anpassen:
     * Anzahl der erweiterten Nachrichten.
     * Letzte Nachricht automatisch einfügen.
     * Nur eigene Kategorien anzeigen.
+    * Registerkarte beim Hinzufügen einer Nachricht zur Anfrage automatisch schließen.
+    * Registerkarte beim Ändern des Anfragestatus auf Geschlossen automatisch schließen.
     * Standardbesitzer, -kategorie und -status für neue Anfragen.
 
 1. Wählen Sie **E-Mail-Benachrichtigungen** und passen Sie Einstellungen an wie:
@@ -272,6 +417,10 @@ Einige Einstellungen, die Support-Agenten betreffen, umfassen:
 [26]: /de/admin/preferences/service-settings
 [27]: /de/request/learn/spam
 [28]: /de/request/learn/reply#quick-reply
+[30]: /de/learn/basics/overview-pages
+[31]: /de/learn/getting-started/main-screen/side-panel
+[32]: /de/learn/getting-started/main-screen/navigator
+[33]: /de/learn/section-tabs/requests-tab
 [img1]: /media/loc/en/request/request-list-preview.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/service-dashboard.png
