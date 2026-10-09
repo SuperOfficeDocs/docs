@@ -4,8 +4,8 @@ title: Händelser du har inbjudits till
 description: Visa händelser du har inbjudits till; Acceptera eller tacka nej till inbjudningar
 keywords: ['kalender', 'händelse', 'förfrågning']
 author: Bergfrid Dias
-date: 02.21.2025
-so_version: 10.5.2
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -34,7 +34,7 @@ Deltagare som har bjudits in till en händelse får ett varningsmeddelande på t
 
 * Om du först accepterar en förfrågan och därefter tar bort händelsen från kalendern räknas det som att du avslår den. Händelsen tas bort från kalendern och ditt namn markeras med ett rött kryss i deltagarlistan.
 
-* Om du accepterar en förfrågan och därefter öppnar dialogrutan **Händelser** kan du bara ändra informationen om händelsen i fälten **Prioritet**, **Slutfört** och **Alarm**. Övriga ändringar kan endast göras av personen som skickade förfrågan. Du kan inte lägga till deltagare. Därmed är knappen **Lägg till** på fliken **Deltagare** inaktiverad.
+* Om du accepterar en förfrågan och därefter öppnar dialogrutan **Händelser** kan du bara ändra informationen om händelsen i fälten **Prioritet**, **Slutfört** och **Alarm**. När ägaren markerar händelsen som slutförd slutförs den också automatiskt för dig. Övriga ändringar kan endast göras av personen som skickade förfrågan. Du kan inte lägga till deltagare. Därmed är knappen **Lägg till** på fliken **Deltagare** inaktiverad.
 
 * Om du tilldelar en händelse till en annan användare (byter ägare) och mottagaren avböjer den tilldelas händelse till dig igen.
 

@@ -2,10 +2,10 @@
 uid: help-da-follow-up-edit
 title: Rediger opfølgning
 description: Sådan åbner, redigerer eller sletter du en opfølgning. Rediger sluttidspunkt for en opfølgning i dagbogen. Rediger eller slet en invitation. Rediger gentagen opfølgning.
-keywords: ['rediger opfølgning', 'opdater opfølgning', 'forlæng møde', 'forkort møde', 'ændr kun denne forekomst', 'slet opfølgning', 'annuller møde', 'dagbog', 'opfølgning', 'aftale', 'møde', 'opgave', 'telefonopkald', 'invitation']
+keywords: ['rediger opfølgning', 'opdater opfølgning', 'forlæng møde', 'forkort møde', 'ændr kun denne forekomst', 'slet opfølgning', 'annuller møde', 'dagbog', 'opfølgning', 'aftale', 'møde', 'opgave', 'telefonopkald', 'invitation', 'eksternt ejet opfølgning', 'slet synkroniseret opfølgning']
 author: digitaldiina
-date: 03.27.2026
-so_version: 11.11
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -38,7 +38,7 @@ Hvis du redigerer tidspunkt, dato eller sted for en opfølgning - eller sletter 
 
     <NoteRepetition />
 
-    **Bruger Synchronizer:** Hvis mødet oprettes i Outlook eller Gmail og synkroniseres til SuperOffice via Synchronizer, er de fleste felter skrivebeskyttede. Du kan kun redigere disse SuperOffice-specifikke felter: **Alarm**, **Type**, **Firma**, **Optaget/Fri**, **Salg**, **Projekt**, **Interne noter**, **Prioritet** og **Udført**. Alt andet forbliver skrivebeskyttet for at undgå, at ændringer overskrives under næste synkronisering.
+    **Bruger Synchronizer:** Hvis mødet oprettes i Outlook eller Gmail og synkroniseres til SuperOffice via Synchronizer, er de fleste felter skrivebeskyttede. Du kan kun redigere disse SuperOffice-specifikke felter: **Alarm**, **Type**, **Firma**, **Optaget/Fri**, **Salg**, **Projekt**, **Interne noter**, **Prioritet** og **Udført**. Alt andet forbliver skrivebeskyttet for at undgå, at ændringer overskrives under næste synkronisering. Brugere med den funktionelle rettighed **Delete externally owned follow-ups** kan slette disse opfølgninger. Læs mere under [Slet en opfølgning i Dagbogen](#delete).
 
 3. Klik på **Gem**.
 
@@ -91,7 +91,10 @@ Hvis du ændrer starttidspunktet for et enkelt møde, påvirkes reglen ikke. Mø
 
 Du kan slette møder oprettet i Outlook eller Gmail i SuperOffice, når de er mere end 7 dage gamle.
 
+Brugere med den [funktionelle rettighed][7] **Delete externally owned follow-ups**, typisk administratorer, kan slette opfølgninger, der er synkroniseret fra en ekstern kalender, f.eks. forældreløse, duplikerede eller forældede opfølgninger, med standardhandlingen **Slet**. Sletningen logføres. Rettigheden giver ikke adgang til at redigere, så disse opfølgninger forbliver skrivebeskyttede. Den eksterne kalender er fortsat den primære kilde: Hvis det oprindelige element stadig findes og ligger inden for synkroniseringens omfang, oprettes opfølgningen igen ved næste synkronisering. Dette gælder for alle understøttede eksterne kalendersystemer.
+
 <TipDeletion />
 
 [3]: ./create-follow-up#fields
+[7]: /da/admin/user-management/role/functional-rights
 [img1]: ../../../media/loc/en/diary/change-repeating-fo.png

@@ -2,10 +2,10 @@
 uid: help-de-follow-up-edit
 title: Folgeaufgabe bearbeiten
 description: So öffnen, bearbeiten oder löschen Sie eine Folgeaufgabe. Ändern Sie die Endzeit einer Folgeaufgabe im Kalender. Einladung bearbeiten oder löschen. Wiederkehrende Folgeaufgabe bearbeiten.
-keywords: ['Folgeaufgabe bearbeiten', 'Folgeaufgabe aktualisieren', 'Meeting verlängern', 'Meeting verkürzen', 'nur diese Instanz ändern', 'Folgeaufgabe löschen', 'Meeting absagen', 'Kalender', 'Folgeaufgabe', 'Termin', 'Meeting', 'Aufgabe', 'To-do', 'Anruf', 'Einladung']
+keywords: ['Folgeaufgabe bearbeiten', 'Folgeaufgabe aktualisieren', 'Meeting verlängern', 'Meeting verkürzen', 'nur diese Instanz ändern', 'Folgeaufgabe löschen', 'Meeting absagen', 'Kalender', 'Folgeaufgabe', 'Termin', 'Meeting', 'Aufgabe', 'To-do', 'Anruf', 'Einladung', 'extern verwaltete Folgeaufgabe', 'synchronisierte Folgeaufgabe löschen']
 author: digitaldiina
-date: 03.27.2026
-so_version: 11.11
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -38,7 +38,7 @@ Wenn Sie die Zeit, das Datum oder den Ort einer Folgeaufgabe ändern - oder eine
 
     <NoteRepetition />
 
-    **Verwendung von Synchronizer:** Wenn die Besprechung in Outlook oder Gmail erstellt und über Synchronizer mit SuperOffice synchronisiert wurde, sind die meisten Felder schreibgeschützt. Sie können nur diese SuperOffice-spezifischen Felder bearbeiten: **Alarm**, **Typ**, **Firma**, **Beschäftigt/Frei**, **Verkauf**, **Projekt**, **Interne Notizen**, **Priorität** und **Abgeschlossen**. Alles andere bleibt schreibgeschützt, um zu vermeiden, dass Änderungen bei der nächsten Synchronisation überschrieben werden.
+    **Verwendung von Synchronizer:** Wenn die Besprechung in Outlook oder Gmail erstellt und über Synchronizer mit SuperOffice synchronisiert wurde, sind die meisten Felder schreibgeschützt. Sie können nur diese SuperOffice-spezifischen Felder bearbeiten: **Alarm**, **Typ**, **Firma**, **Beschäftigt/Frei**, **Verkauf**, **Projekt**, **Interne Notizen**, **Priorität** und **Abgeschlossen**. Alles andere bleibt schreibgeschützt, um zu vermeiden, dass Änderungen bei der nächsten Synchronisation überschrieben werden. Benutzer mit dem Funktionsrecht **Delete externally owned follow-ups** können diese Folgeaufgaben löschen. Weitere Informationen finden Sie unter [Folgeaufgabe aus dem Kalender löschen](#delete).
 
 3. Klicken Sie auf **Speichern**.
 
@@ -91,7 +91,10 @@ Wenn Sie die Startzeit für eine einzelne Instanz ändern, bleibt die Regel unbe
 
 Sie können Besprechungen, die in Outlook oder Gmail erstellt wurden, in SuperOffice löschen, sobald sie älter als 7 Tage sind.
 
+Benutzer mit dem [Funktionsrecht][7] **Delete externally owned follow-ups**, in der Regel Administratoren, können Folgeaufgaben, die aus einem externen Kalender synchronisiert wurden, zum Beispiel verwaiste, doppelte oder veraltete, mit der Standardaktion **Löschen** entfernen. Das Löschen wird protokolliert. Das Recht erlaubt kein Bearbeiten, daher bleiben diese Folgeaufgaben schreibgeschützt. Der externe Kalender bleibt die maßgebliche Quelle: Wenn das ursprüngliche Element noch existiert und im Synchronisationsumfang liegt, wird die Folgeaufgabe bei der nächsten Synchronisation neu erstellt. Dies gilt für alle unterstützten externen Kalendersysteme.
+
 <TipDeletion />
 
 [3]: ./create-follow-up#fields
+[7]: /de/admin/user-management/role/functional-rights
 [img1]: ../../../media/loc/en/diary/change-repeating-fo.png

@@ -4,8 +4,8 @@ title: Follow-ups you are invited to
 description: Show follow-ups you are invited to; accept or decline an invitation
 keywords: ['accept invitation', 'decline invitation', 'Notifications panel', 'diary', 'follow-up', 'invitation']
 author: Bergfrid Dias
-date: 01.13.2025
-so_version: 10.5
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -34,7 +34,7 @@ Attendees who are invited to a follow-up will receive a notification.
 
 * If you first accept an invitation and then delete the follow-up from your diary, it is counted as though you declined it. The follow-up disappears from the diary and your name is marked with a red cross in the list of attendees.
 
-* If you accept an invitation and subsequently open the **Follow-up** dialog, you cannot edit any information about the follow-up except for the **Priority**, **Completed**, and **Alarm** fields. Other changes can be made only by the person who sent the invitation. You cannot add attendee, so the **Add** button is disabled.
+* If you accept an invitation and subsequently open the **Follow-up** dialog, you cannot edit any information about the follow-up except for the **Priority**, **Completed**, and **Alarm** fields. When the owner marks the follow-up as completed, it is completed automatically for you as well. Other changes can be made only by the person who sent the invitation. You cannot add attendee, so the **Add** button is disabled.
 
 * If you assign a follow-up to another user (change owner), and the recipient declines it, the follow-up is re-assigned to you.
 

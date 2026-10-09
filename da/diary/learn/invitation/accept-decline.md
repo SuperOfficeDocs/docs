@@ -4,8 +4,8 @@ title: Opfølgninger du er inviteret til
 description: Visning af opfølgninger, du er inviteret til; Accepter eller afvis invitationer
 keywords: ['dagbog', 'opfølgning', 'invitation']
 author: Bergfrid Dias
-date: 02.21.2025
-so_version: 10.5.2
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -34,7 +34,7 @@ Deltagere, der er blevet inviteret til en opfølgning, modtager en advarsel på 
 
 * Hvis du først accepterer en invitation og derefter sletter opfølgningen fra dagbogen, opfattes det, som om du afviser den. Opfølgningen fjernes derefter fra dagbogen, og dit navn markeres med et rødt kryds i deltagerlisten.
 
-* Hvis du accepterer en invitation og senere åbner dialogboksen **Opfølgning**, har du ikke adgang til at ændre andre oplysninger om den aktuelle opfølgning end dem, der er angivet i felterne **Prioritet**, **Udført** og **Alarm**. Hvad angår andre ændringer, er det eventuelt kun den, som har sendt invitationen, der har adgang til at foretage disse. Du kan ikke tilføje deltagere. Derfor er knappen **Tilføj** på fanen **Deltagere** deaktiveret.
+* Hvis du accepterer en invitation og senere åbner dialogboksen **Opfølgning**, har du ikke adgang til at ændre andre oplysninger om den aktuelle opfølgning end dem, der er angivet i felterne **Prioritet**, **Udført** og **Alarm**. Når ejeren markerer opfølgningen som fuldført, bliver den også automatisk fuldført for dig. Hvad angår andre ændringer, er det eventuelt kun den, som har sendt invitationen, der har adgang til at foretage disse. Du kan ikke tilføje deltagere. Derfor er knappen **Tilføj** på fanen **Deltagere** deaktiveret.
 
 * Hvis du tildeler en opfølgning til en anden bruger (skifter ejer), og modtageren afviser den, tildeles opfølgningen til dig igen.
 
