@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BulkUpdate_GetStoredFieldsRequest"></a> Class BulkUpdate\_GetStoredFieldsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BulkUpdate_GetStoredFieldsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BulkUpdate\_GetStoredFieldsRequest](SuperOffice.WebApi.Data.BulkUpdate\_GetStoredFieldsRequest.md)
+[BulkUpdate\_GetStoredFieldsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BulkUpdate_GetStoredFieldsRequest)
 
 #### Inherited Members
 

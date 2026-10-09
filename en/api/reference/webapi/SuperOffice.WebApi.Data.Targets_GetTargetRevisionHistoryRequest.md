@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Targets_GetTargetRevisionHistoryRequest"></a> Class Targets\_GetTargetRevisionHistoryRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Targets_GetTargetRevisionHistoryRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Targets\_GetTargetRevisionHistoryRequest](SuperOffice.WebApi.Data.Targets\_GetTargetRevisionHistoryRequest.md)
+[Targets\_GetTargetRevisionHistoryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Targets_GetTargetRevisionHistoryRequest)
 
 #### Inherited Members
 

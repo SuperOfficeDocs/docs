@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_DeleteCRMScriptByUniqueIdentifierRequest"></a> Class CRMScript\_DeleteCRMScriptByUniqueIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_DeleteCRMScriptByUniqueIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_DeleteCRMScriptByUniqueIdentifierRequest](SuperOffice.WebApi.Data.CRMScript\_DeleteCRMScriptByUniqueIdentifierRequest.md)
+[CRMScript\_DeleteCRMScriptByUniqueIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_DeleteCRMScriptByUniqueIdentifierRequest)
 
 #### Inherited Members
 

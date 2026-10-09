@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetAttachmentPreviewRequest"></a> Class Ticket\_GetAttachmentPreviewRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetAttachmentPreviewRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetAttachmentPreviewRequest](SuperOffice.WebApi.Data.Ticket\_GetAttachmentPreviewRequest.md)
+[Ticket\_GetAttachmentPreviewRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetAttachmentPreviewRequest)
 
 #### Inherited Members
 

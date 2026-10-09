@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetLegalBasesRequest"></a> Class List\_GetLegalBasesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetLegalBasesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetLegalBasesRequest](SuperOffice.WebApi.Data.List\_GetLegalBasesRequest.md)
+[List\_GetLegalBasesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetLegalBasesRequest)
 
 #### Inherited Members
 

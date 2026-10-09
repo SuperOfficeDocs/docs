@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Saint_SetRankOnStatusMonitorsRequest"></a> Class Saint\_SetRankOnStatusMonitorsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Saint_SetRankOnStatusMonitorsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Saint\_SetRankOnStatusMonitorsRequest](SuperOffice.WebApi.Data.Saint\_SetRankOnStatusMonitorsRequest.md)
+[Saint\_SetRankOnStatusMonitorsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Saint_SetRankOnStatusMonitorsRequest)
 
 #### Inherited Members
 

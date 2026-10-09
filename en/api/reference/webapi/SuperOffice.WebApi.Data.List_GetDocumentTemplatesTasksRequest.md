@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetDocumentTemplatesTasksRequest"></a> Class List\_GetDocumentTemplatesTasksRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetDocumentTemplatesTasksRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetDocumentTemplatesTasksRequest](SuperOffice.WebApi.Data.List\_GetDocumentTemplatesTasksRequest.md)
+[List\_GetDocumentTemplatesTasksRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetDocumentTemplatesTasksRequest)
 
 #### Inherited Members
 

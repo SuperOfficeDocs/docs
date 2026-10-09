@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Mailing"></a> Class UserPreferenceStrings.Mailing
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.Mailing
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Mailing](SuperOffice.WebApi.Data.UserPreferenceStrings.Mailing.md)
+[UserPreferenceStrings.Mailing](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Mailing)
 
 #### Inherited Members
 

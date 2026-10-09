@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_SetLandingPagePinForAssociateRequest"></a> Class Configuration\_SetLandingPagePinForAssociateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_SetLandingPagePinForAssociateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_SetLandingPagePinForAssociateRequest](SuperOffice.WebApi.Data.Configuration\_SetLandingPagePinForAssociateRequest.md)
+[Configuration\_SetLandingPagePinForAssociateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SetLandingPagePinForAssociateRequest)
 
 #### Inherited Members
 

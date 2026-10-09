@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_CleanUpBookingDeletedRequest"></a> Class Appointment\_CleanUpBookingDeletedRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_CleanUpBookingDeletedRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_CleanUpBookingDeletedRequest](SuperOffice.WebApi.Data.Appointment\_CleanUpBookingDeletedRequest.md)
+[Appointment\_CleanUpBookingDeletedRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_CleanUpBookingDeletedRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_DetectUnpublishedChangesRequest"></a> Class UserDefinedFieldInfo\_DetectUnpublishedChangesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_DetectUnpublishedChangesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_DetectUnpublishedChangesRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_DetectUnpublishedChangesRequest.md)
+[UserDefinedFieldInfo\_DetectUnpublishedChangesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_DetectUnpublishedChangesRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public UDefType OwnerType { get; set; }
 
 #### Property Value
 
- [UDefType](SuperOffice.WebApi.Data.UDefType.md)
+ [UDefType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefType)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_GetDashTilesRequest"></a> Class Dash\_GetDashTilesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_GetDashTilesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_GetDashTilesRequest](SuperOffice.WebApi.Data.Dash\_GetDashTilesRequest.md)
+[Dash\_GetDashTilesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_GetDashTilesRequest)
 
 #### Inherited Members
 

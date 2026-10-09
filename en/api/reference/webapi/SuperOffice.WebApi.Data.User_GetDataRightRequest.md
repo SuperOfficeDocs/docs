@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_GetDataRightRequest"></a> Class User\_GetDataRightRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_GetDataRightRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_GetDataRightRequest](SuperOffice.WebApi.Data.User\_GetDataRightRequest.md)
+[User\_GetDataRightRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_GetDataRightRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public RoleRelationToOwner RelationToOwner { get; set; }
 
 #### Property Value
 
- [RoleRelationToOwner](SuperOffice.WebApi.Data.RoleRelationToOwner.md)
+ [RoleRelationToOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleRelationToOwner)
 
 ### <a id="SuperOffice_WebApi_Data_User_GetDataRightRequest_RoleId"></a> RoleId
 

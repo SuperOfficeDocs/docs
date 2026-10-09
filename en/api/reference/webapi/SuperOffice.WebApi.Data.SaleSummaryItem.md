@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SaleSummaryItem"></a> Class SaleSummaryItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SaleSummaryItem.
@@ -13,7 +13,7 @@ public class SaleSummaryItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SaleSummaryItem](SuperOffice.WebApi.Data.SaleSummaryItem.md)
+[SaleSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem)
 
 #### Inherited Members
 
@@ -73,11 +73,11 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
+ [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
 
 #### See Also
 
-[SaleSummaryItem](SuperOffice.WebApi.Data.SaleSummaryItem.md).[Completed\_String](SuperOffice.WebApi.Data.SaleSummaryItem.md\#SuperOffice\_WebApi\_Data\_SaleSummaryItem\_Completed\_String)
+[SaleSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem#SuperOffice_WebApi_Data_SaleSummaryItem_Completed_String)
 
 ### <a id="SuperOffice_WebApi_Data_SaleSummaryItem_Completed_String"></a> Completed\_String
 
@@ -95,7 +95,7 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[SaleSummaryItem](SuperOffice.WebApi.Data.SaleSummaryItem.md).[Completed](SuperOffice.WebApi.Data.SaleSummaryItem.md\#SuperOffice\_WebApi\_Data\_SaleSummaryItem\_Completed)
+[SaleSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem#SuperOffice_WebApi_Data_SaleSummaryItem_Completed)
 
 ### <a id="SuperOffice_WebApi_Data_SaleSummaryItem_Currency"></a> Currency
 
@@ -181,11 +181,11 @@ public SaleStatus? Status { get; set; }
 
 #### Property Value
 
- [SaleStatus](SuperOffice.WebApi.Data.SaleStatus.md)?
+ [SaleStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStatus)?
 
 #### See Also
 
-[SaleSummaryItem](SuperOffice.WebApi.Data.SaleSummaryItem.md).[Status\_String](SuperOffice.WebApi.Data.SaleSummaryItem.md\#SuperOffice\_WebApi\_Data\_SaleSummaryItem\_Status\_String)
+[SaleSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem#SuperOffice_WebApi_Data_SaleSummaryItem_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_SaleSummaryItem_Status_String"></a> Status\_String
 
@@ -203,9 +203,9 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[SaleSummaryItem](SuperOffice.WebApi.Data.SaleSummaryItem.md).[Status](SuperOffice.WebApi.Data.SaleSummaryItem.md\#SuperOffice\_WebApi\_Data\_SaleSummaryItem\_Status)
+[SaleSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem#SuperOffice_WebApi_Data_SaleSummaryItem_Status)
 
 ## See Also
 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)
 

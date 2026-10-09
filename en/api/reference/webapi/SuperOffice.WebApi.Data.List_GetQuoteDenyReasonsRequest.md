@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetQuoteDenyReasonsRequest"></a> Class List\_GetQuoteDenyReasonsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetQuoteDenyReasonsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetQuoteDenyReasonsRequest](SuperOffice.WebApi.Data.List\_GetQuoteDenyReasonsRequest.md)
+[List\_GetQuoteDenyReasonsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetQuoteDenyReasonsRequest)
 
 #### Inherited Members
 

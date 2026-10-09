@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveHeadingsFromListDefinitionRequest"></a> Class List\_SaveHeadingsFromListDefinitionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveHeadingsFromListDefinitionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveHeadingsFromListDefinitionRequest](SuperOffice.WebApi.Data.List\_SaveHeadingsFromListDefinitionRequest.md)
+[List\_SaveHeadingsFromListDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveHeadingsFromListDefinitionRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public HeadingEntity[] Entities { get; set; }
 
 #### Property Value
 
- [HeadingEntity](SuperOffice.WebApi.Data.HeadingEntity.md)\[\]
+ [HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_List_SaveHeadingsFromListDefinitionRequest_Id"></a> Id
 

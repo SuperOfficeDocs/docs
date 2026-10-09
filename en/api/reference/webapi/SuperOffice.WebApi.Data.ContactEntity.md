@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ContactEntity"></a> Class ContactEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ContactEntity.
@@ -13,13 +13,13 @@ public class ContactEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -104,7 +104,7 @@ public virtual Address Address { get; set; }
 
 #### Property Value
 
- [Address](SuperOffice.WebApi.Data.Address.md)
+ [Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_Associate"></a> Associate
 
@@ -117,7 +117,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_BounceEmails"></a> BounceEmails
 
@@ -142,7 +142,7 @@ public virtual Business Business { get; set; }
 
 #### Property Value
 
- [Business](SuperOffice.WebApi.Data.Business.md)
+ [Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_Category"></a> Category
 
@@ -155,7 +155,7 @@ public virtual Category Category { get; set; }
 
 #### Property Value
 
- [Category](SuperOffice.WebApi.Data.Category.md)
+ [Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_ContactId"></a> ContactId
 
@@ -192,7 +192,7 @@ public virtual Country Country { get; set; }
 
 #### Property Value
 
- [Country](SuperOffice.WebApi.Data.Country.md)
+ [Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_CreatedBy"></a> CreatedBy
 
@@ -204,7 +204,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_CreatedDate"></a> CreatedDate
 
@@ -232,7 +232,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -255,7 +255,7 @@ public virtual CustomerLanguage CustomerLanguage { get; set; }
 
 #### Property Value
 
- [CustomerLanguage](SuperOffice.WebApi.Data.CustomerLanguage.md)
+ [CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_DbiAgentId"></a> DbiAgentId
 
@@ -363,7 +363,7 @@ public virtual EntityElement[] Emails { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_ExtraFields"></a> ExtraFields
 
@@ -377,7 +377,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -408,7 +408,7 @@ public virtual EntityElement[] Faxes { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_GroupId"></a> GroupId
 
@@ -433,7 +433,7 @@ public virtual SelectableMDOListItem[] Interests { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
+ [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_Kananame"></a> Kananame
 
@@ -541,7 +541,7 @@ public virtual Person[] Persons { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)\[\]
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_Phones"></a> Phones
 
@@ -553,7 +553,7 @@ public virtual EntityElement[] Phones { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_RevenueBasecurrency"></a> RevenueBasecurrency
 
@@ -625,7 +625,7 @@ public virtual Associate SupportAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_SupportPerson"></a> SupportPerson
 
@@ -635,7 +635,7 @@ public virtual Person SupportPerson { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_TicketPriority"></a> TicketPriority
 
@@ -647,7 +647,7 @@ public virtual TicketPriority TicketPriority { get; set; }
 
 #### Property Value
 
- [TicketPriority](SuperOffice.WebApi.Data.TicketPriority.md)
+ [TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_UpdatedBy"></a> UpdatedBy
 
@@ -659,7 +659,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_UpdatedDate"></a> UpdatedDate
 
@@ -683,7 +683,7 @@ public virtual EntityElement[] Urls { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_UserDefinedFields"></a> UserDefinedFields
 
@@ -698,7 +698,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_UtmParameters"></a> UtmParameters
 
@@ -710,7 +710,7 @@ public virtual SavedUtmParameters UtmParameters { get; set; }
 
 #### Property Value
 
- [SavedUtmParameters](SuperOffice.WebApi.Data.SavedUtmParameters.md)
+ [SavedUtmParameters](/en/api/reference/webapi/SuperOffice.WebApi.Data.SavedUtmParameters)
 
 ### <a id="SuperOffice_WebApi_Data_ContactEntity_Xstop"></a> Xstop
 
@@ -738,7 +738,7 @@ public virtual int YearFounded { get; set; }
 
 ## See Also
 
-[ContactAgent](SuperOffice.WebApi.Agents.ContactAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

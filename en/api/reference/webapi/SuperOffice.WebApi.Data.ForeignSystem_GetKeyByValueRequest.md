@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_GetKeyByValueRequest"></a> Class ForeignSystem\_GetKeyByValueRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_GetKeyByValueRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_GetKeyByValueRequest](SuperOffice.WebApi.Data.ForeignSystem\_GetKeyByValueRequest.md)
+[ForeignSystem\_GetKeyByValueRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_GetKeyByValueRequest)
 
 #### Inherited Members
 

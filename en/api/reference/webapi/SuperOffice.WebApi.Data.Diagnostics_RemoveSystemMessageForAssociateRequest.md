@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_RemoveSystemMessageForAssociateRequest"></a> Class Diagnostics\_RemoveSystemMessageForAssociateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_RemoveSystemMessageForAssociateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_RemoveSystemMessageForAssociateRequest](SuperOffice.WebApi.Data.Diagnostics\_RemoveSystemMessageForAssociateRequest.md)
+[Diagnostics\_RemoveSystemMessageForAssociateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_RemoveSystemMessageForAssociateRequest)
 
 #### Inherited Members
 

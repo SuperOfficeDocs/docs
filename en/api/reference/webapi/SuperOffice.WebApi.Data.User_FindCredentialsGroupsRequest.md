@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_FindCredentialsGroupsRequest"></a> Class User\_FindCredentialsGroupsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_FindCredentialsGroupsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_FindCredentialsGroupsRequest](SuperOffice.WebApi.Data.User\_FindCredentialsGroupsRequest.md)
+[User\_FindCredentialsGroupsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_FindCredentialsGroupsRequest)
 
 #### Inherited Members
 

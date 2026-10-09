@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetSelectionSummariesRequest"></a> Class Selection\_GetSelectionSummariesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetSelectionSummariesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetSelectionSummariesRequest](SuperOffice.WebApi.Data.Selection\_GetSelectionSummariesRequest.md)
+[Selection\_GetSelectionSummariesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetSelectionSummariesRequest)
 
 #### Inherited Members
 

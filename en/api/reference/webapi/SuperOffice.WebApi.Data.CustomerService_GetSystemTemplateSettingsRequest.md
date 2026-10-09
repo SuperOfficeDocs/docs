@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_GetSystemTemplateSettingsRequest"></a> Class CustomerService\_GetSystemTemplateSettingsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_GetSystemTemplateSettingsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_GetSystemTemplateSettingsRequest](SuperOffice.WebApi.Data.CustomerService\_GetSystemTemplateSettingsRequest.md)
+[CustomerService\_GetSystemTemplateSettingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_GetSystemTemplateSettingsRequest)
 
 #### Inherited Members
 

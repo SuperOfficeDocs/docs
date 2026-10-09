@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_CreateDefaultUserFromUserTypeAndCredentialRequest"></a> Class User\_CreateDefaultUserFromUserTypeAndCredentialRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_CreateDefaultUserFromUserTypeAndCredentialRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_CreateDefaultUserFromUserTypeAndCredentialRequest](SuperOffice.WebApi.Data.User\_CreateDefaultUserFromUserTypeAndCredentialRequest.md)
+[User\_CreateDefaultUserFromUserTypeAndCredentialRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_CreateDefaultUserFromUserTypeAndCredentialRequest)
 
 #### Inherited Members
 
@@ -80,5 +80,5 @@ public UserType UserType { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TriggerScriptEntity"></a> Class TriggerScriptEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TriggerScriptEntity.
@@ -13,13 +13,13 @@ public class TriggerScriptEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -124,11 +124,11 @@ public EventHandlerType? ScreenType { get; set; }
 
 #### Property Value
 
- [EventHandlerType](SuperOffice.WebApi.Data.EventHandlerType.md)?
+ [EventHandlerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventHandlerType)?
 
 #### See Also
 
-[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md).[ScreenType\_String](SuperOffice.WebApi.Data.TriggerScriptEntity.md\#SuperOffice\_WebApi\_Data\_TriggerScriptEntity\_ScreenType\_String)
+[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity).[ScreenType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity#SuperOffice_WebApi_Data_TriggerScriptEntity_ScreenType_String)
 
 ### <a id="SuperOffice_WebApi_Data_TriggerScriptEntity_ScreenType_String"></a> ScreenType\_String
 
@@ -146,7 +146,7 @@ public string ScreenType_String { get; set; }
 
 #### See Also
 
-[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md).[ScreenType](SuperOffice.WebApi.Data.TriggerScriptEntity.md\#SuperOffice\_WebApi\_Data\_TriggerScriptEntity\_ScreenType)
+[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity).[ScreenType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity#SuperOffice_WebApi_Data_TriggerScriptEntity_ScreenType)
 
 ### <a id="SuperOffice_WebApi_Data_TriggerScriptEntity_Source"></a> Source
 
@@ -198,7 +198,7 @@ public virtual int UpdatedAssociateId { get; set; }
 
 ## See Also
 
-[CRMScriptAgent](SuperOffice.WebApi.Agents.CRMScriptAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

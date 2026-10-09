@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NotifyChannel"></a> Enum NotifyChannel
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 The different channels to send notifications over

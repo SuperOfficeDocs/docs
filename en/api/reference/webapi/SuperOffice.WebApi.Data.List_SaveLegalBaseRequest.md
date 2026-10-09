@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveLegalBaseRequest"></a> Class List\_SaveLegalBaseRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveLegalBaseRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveLegalBaseRequest](SuperOffice.WebApi.Data.List\_SaveLegalBaseRequest.md)
+[List\_SaveLegalBaseRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveLegalBaseRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public LegalBase LegalBase { get; set; }
 
 #### Property Value
 
- [LegalBase](SuperOffice.WebApi.Data.LegalBase.md)
+ [LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)
 

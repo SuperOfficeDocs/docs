@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RagResult"></a> Class RagResult
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RagResult.
@@ -13,7 +13,7 @@ public class RagResult
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RagResult](SuperOffice.WebApi.Data.RagResult.md)
+[RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult)
 
 #### Inherited Members
 
@@ -71,7 +71,7 @@ public virtual StringObjectDictionary Metadata { get; set; }
 
 #### Property Value
 
- [StringObjectDictionary](SuperOffice.WebApi.Data.StringObjectDictionary.md)
+ [StringObjectDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringObjectDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_RagResult_Score"></a> Score
 
@@ -109,11 +109,11 @@ public RagType? Type { get; set; }
 
 #### Property Value
 
- [RagType](SuperOffice.WebApi.Data.RagType.md)?
+ [RagType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagType)?
 
 #### See Also
 
-[RagResult](SuperOffice.WebApi.Data.RagResult.md).[Type\_String](SuperOffice.WebApi.Data.RagResult.md\#SuperOffice\_WebApi\_Data\_RagResult\_Type\_String)
+[RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult#SuperOffice_WebApi_Data_RagResult_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_RagResult_Type_String"></a> Type\_String
 
@@ -131,9 +131,9 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[RagResult](SuperOffice.WebApi.Data.RagResult.md).[Type](SuperOffice.WebApi.Data.RagResult.md\#SuperOffice\_WebApi\_Data\_RagResult\_Type)
+[RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult#SuperOffice_WebApi_Data_RagResult_Type)
 
 ## See Also
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 

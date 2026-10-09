@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Messaging_SetDeliveryStatusRequest"></a> Class Messaging\_SetDeliveryStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Messaging_SetDeliveryStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Messaging\_SetDeliveryStatusRequest](SuperOffice.WebApi.Data.Messaging\_SetDeliveryStatusRequest.md)
+[Messaging\_SetDeliveryStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Messaging_SetDeliveryStatusRequest)
 
 #### Inherited Members
 

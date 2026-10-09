@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_SetUserDefinedPageOneFieldRequest"></a> Class UserDefinedFieldInfo\_SetUserDefinedPageOneFieldRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_SetUserDefinedPageOneFieldRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_SetUserDefinedPageOneFieldRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_SetUserDefinedPageOneFieldRequest.md)
+[UserDefinedFieldInfo\_SetUserDefinedPageOneFieldRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_SetUserDefinedPageOneFieldRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public UDefType OwnerType { get; set; }
 
 #### Property Value
 
- [UDefType](SuperOffice.WebApi.Data.UDefType.md)
+ [UDefType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefType)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_SetUserDefinedPageOneFieldRequest_UdefFieldId"></a> UdefFieldId
 

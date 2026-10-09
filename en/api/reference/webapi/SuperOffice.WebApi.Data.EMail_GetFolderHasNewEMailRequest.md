@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetFolderHasNewEMailRequest"></a> Class EMail\_GetFolderHasNewEMailRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetFolderHasNewEMailRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetFolderHasNewEMailRequest](SuperOffice.WebApi.Data.EMail\_GetFolderHasNewEMailRequest.md)
+[EMail\_GetFolderHasNewEMailRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetFolderHasNewEMailRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 

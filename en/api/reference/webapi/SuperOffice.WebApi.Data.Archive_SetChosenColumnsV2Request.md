@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_SetChosenColumnsV2Request"></a> Class Archive\_SetChosenColumnsV2Request
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_SetChosenColumnsV2Request
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_SetChosenColumnsV2Request](SuperOffice.WebApi.Data.Archive\_SetChosenColumnsV2Request.md)
+[Archive\_SetChosenColumnsV2Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_SetChosenColumnsV2Request)
 
 #### Inherited Members
 

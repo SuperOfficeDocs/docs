@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_CreateActorLinkRequest"></a> Class ErpSync\_CreateActorLinkRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_CreateActorLinkRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_CreateActorLinkRequest](SuperOffice.WebApi.Data.ErpSync\_CreateActorLinkRequest.md)
+[ErpSync\_CreateActorLinkRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_CreateActorLinkRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public CrmActorType CrmActorType { get; set; }
 
 #### Property Value
 
- [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+ [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_CreateActorLinkRequest_CrmRecordId"></a> CrmRecordId
 
@@ -60,7 +60,7 @@ public ErpActorType ErpActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+ [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_CreateActorLinkRequest_ErpConnectionId"></a> ErpConnectionId
 

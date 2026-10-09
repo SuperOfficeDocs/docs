@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_HasSPFRecordRequest"></a> Class EMail\_HasSPFRecordRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_HasSPFRecordRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_HasSPFRecordRequest](SuperOffice.WebApi.Data.EMail\_HasSPFRecordRequest.md)
+[EMail\_HasSPFRecordRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_HasSPFRecordRequest)
 
 #### Inherited Members
 

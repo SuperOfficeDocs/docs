@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit"></a> Class AuthorizationImplicit
 
-Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Represents a default <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> type, used for pass-through authentication scenarios.
@@ -13,11 +13,11 @@ public class AuthorizationImplicit : IAuthorization
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AuthorizationImplicit](SuperOffice.WebApi.Authorization.AuthorizationImplicit.md)
+[AuthorizationImplicit](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationImplicit)
 
 #### Implements
 
-[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)
+[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)
 
 #### Inherited Members
 
@@ -49,7 +49,7 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\>\>
 
 ## Methods
 

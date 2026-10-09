@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SelectionEntity"></a> Class SelectionEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SelectionEntity.
@@ -12,13 +12,13 @@ public class SelectionEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -61,7 +61,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_ChartKey"></a> ChartKey
 
@@ -109,7 +109,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_CreatedDate"></a> CreatedDate
 
@@ -205,7 +205,7 @@ public virtual Associate LastLoadedByAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_LastMembershipChange"></a> LastMembershipChange
 
@@ -241,7 +241,7 @@ public virtual Associate LastMembershipChangeByAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_LeftSelectionId"></a> LeftSelectionId
 
@@ -374,7 +374,7 @@ public virtual SelectionCategory SelectionCategory { get; set; }
 
 #### Property Value
 
- [SelectionCategory](SuperOffice.WebApi.Data.SelectionCategory.md)
+ [SelectionCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionCategory)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_SelectionId"></a> SelectionId
 
@@ -400,11 +400,11 @@ public SelectionType? SelectionType { get; set; }
 
 #### Property Value
 
- [SelectionType](SuperOffice.WebApi.Data.SelectionType.md)?
+ [SelectionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionType)?
 
 #### See Also
 
-[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md).[SelectionType\_String](SuperOffice.WebApi.Data.SelectionEntity.md\#SuperOffice\_WebApi\_Data\_SelectionEntity\_SelectionType\_String)
+[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity).[SelectionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity#SuperOffice_WebApi_Data_SelectionEntity_SelectionType_String)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_SelectionType_String"></a> SelectionType\_String
 
@@ -422,7 +422,7 @@ public string SelectionType_String { get; set; }
 
 #### See Also
 
-[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md).[SelectionType](SuperOffice.WebApi.Data.SelectionEntity.md\#SuperOffice\_WebApi\_Data\_SelectionEntity\_SelectionType)
+[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity).[SelectionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity#SuperOffice_WebApi_Data_SelectionEntity_SelectionType)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_SelectionUnionType"></a> SelectionUnionType
 
@@ -436,11 +436,11 @@ public SelectionUnionType? SelectionUnionType { get; set; }
 
 #### Property Value
 
- [SelectionUnionType](SuperOffice.WebApi.Data.SelectionUnionType.md)?
+ [SelectionUnionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionUnionType)?
 
 #### See Also
 
-[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md).[SelectionUnionType\_String](SuperOffice.WebApi.Data.SelectionEntity.md\#SuperOffice\_WebApi\_Data\_SelectionEntity\_SelectionUnionType\_String)
+[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity).[SelectionUnionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity#SuperOffice_WebApi_Data_SelectionEntity_SelectionUnionType_String)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_SelectionUnionType_String"></a> SelectionUnionType\_String
 
@@ -458,7 +458,7 @@ public string SelectionUnionType_String { get; set; }
 
 #### See Also
 
-[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md).[SelectionUnionType](SuperOffice.WebApi.Data.SelectionEntity.md\#SuperOffice\_WebApi\_Data\_SelectionEntity\_SelectionUnionType)
+[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity).[SelectionUnionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity#SuperOffice_WebApi_Data_SelectionEntity_SelectionUnionType)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_ShadowProviderName"></a> ShadowProviderName
 
@@ -542,7 +542,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_SelectionEntity_UpdatedCount"></a> UpdatedCount
 
@@ -590,11 +590,11 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
 ## See Also
 
-[SelectionAgent](SuperOffice.WebApi.Agents.SelectionAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

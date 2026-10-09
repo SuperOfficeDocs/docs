@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_SetColumnWidthsRequest"></a> Class Archive\_SetColumnWidthsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_SetColumnWidthsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_SetColumnWidthsRequest](SuperOffice.WebApi.Data.Archive\_SetColumnWidthsRequest.md)
+[Archive\_SetColumnWidthsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_SetColumnWidthsRequest)
 
 #### Inherited Members
 

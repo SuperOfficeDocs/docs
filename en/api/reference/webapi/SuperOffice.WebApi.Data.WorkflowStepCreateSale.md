@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepCreateSale"></a> Class WorkflowStepCreateSale
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepCreateSale.
@@ -13,16 +13,16 @@ public class WorkflowStepCreateSale : WorkflowStepBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md) ← 
-[WorkflowStepCreateSale](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md)
+[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase) ← 
+[WorkflowStepCreateSale](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale)
 
 #### Inherited Members
 
-[WorkflowStepBase.WorkflowStepId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowStepId), 
-[WorkflowStepBase.WorkflowId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowId), 
-[WorkflowStepBase.StepType\_String](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType\_String), 
-[WorkflowStepBase.StepType](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType), 
-[WorkflowStepBase.Rank](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_Rank), 
+[WorkflowStepBase.WorkflowStepId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowStepId), 
+[WorkflowStepBase.WorkflowId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowId), 
+[WorkflowStepBase.StepType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType_String), 
+[WorkflowStepBase.StepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType), 
+[WorkflowStepBase.Rank](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_Rank), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -67,11 +67,11 @@ public WorkflowTimeWaitIntervalType? ActionTimeUnit { get; set; }
 
 #### Property Value
 
- [WorkflowTimeWaitIntervalType](SuperOffice.WebApi.Data.WorkflowTimeWaitIntervalType.md)?
+ [WorkflowTimeWaitIntervalType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowTimeWaitIntervalType)?
 
 #### See Also
 
-[WorkflowStepCreateSale](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md).[ActionTimeUnit\_String](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateSale\_ActionTimeUnit\_String)
+[WorkflowStepCreateSale](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale).[ActionTimeUnit\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale#SuperOffice_WebApi_Data_WorkflowStepCreateSale_ActionTimeUnit_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateSale_ActionTimeUnit_String"></a> ActionTimeUnit\_String
 
@@ -89,7 +89,7 @@ public string ActionTimeUnit_String { get; set; }
 
 #### See Also
 
-[WorkflowStepCreateSale](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md).[ActionTimeUnit](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateSale\_ActionTimeUnit)
+[WorkflowStepCreateSale](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale).[ActionTimeUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale#SuperOffice_WebApi_Data_WorkflowStepCreateSale_ActionTimeUnit)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateSale_ActionType"></a> ActionType
 
@@ -103,11 +103,11 @@ public WorkflowActionType? ActionType { get; set; }
 
 #### Property Value
 
- [WorkflowActionType](SuperOffice.WebApi.Data.WorkflowActionType.md)?
+ [WorkflowActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowActionType)?
 
 #### See Also
 
-[WorkflowStepCreateSale](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md).[ActionType\_String](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateSale\_ActionType\_String)
+[WorkflowStepCreateSale](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale).[ActionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale#SuperOffice_WebApi_Data_WorkflowStepCreateSale_ActionType_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateSale_ActionType_String"></a> ActionType\_String
 
@@ -125,7 +125,7 @@ public string ActionType_String { get; set; }
 
 #### See Also
 
-[WorkflowStepCreateSale](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md).[ActionType](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateSale\_ActionType)
+[WorkflowStepCreateSale](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale).[ActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale#SuperOffice_WebApi_Data_WorkflowStepCreateSale_ActionType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateSale_Amount"></a> Amount
 
@@ -249,5 +249,5 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

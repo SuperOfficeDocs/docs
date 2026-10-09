@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_SendEventRequest"></a> Class Workflow\_SendEventRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_SendEventRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_SendEventRequest](SuperOffice.WebApi.Data.Workflow\_SendEventRequest.md)
+[Workflow\_SendEventRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_SendEventRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public WorkflowEvent WorkflowEvent { get; set; }
 
 #### Property Value
 
- [WorkflowEvent](SuperOffice.WebApi.Data.WorkflowEvent.md)
+ [WorkflowEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowEvent)
 

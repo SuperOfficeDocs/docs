@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ReplyTemplate"></a> Class ReplyTemplate
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ReplyTemplate.
@@ -13,7 +13,7 @@ public class ReplyTemplate
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ReplyTemplate](SuperOffice.WebApi.Data.ReplyTemplate.md)
+[ReplyTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReplyTemplate)
 
 #### Inherited Members
 
@@ -87,5 +87,5 @@ public virtual int ReplyTemplateId { get; set; }
 
 ## See Also
 
-[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
+[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
 

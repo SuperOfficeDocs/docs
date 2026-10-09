@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_GetConsentInfosRequest"></a> Class Person\_GetConsentInfosRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_GetConsentInfosRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_GetConsentInfosRequest](SuperOffice.WebApi.Data.Person\_GetConsentInfosRequest.md)
+[Person\_GetConsentInfosRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_GetConsentInfosRequest)
 
 #### Inherited Members
 

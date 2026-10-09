@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_DeleteRequest"></a> Class Appointment\_DeleteRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_DeleteRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_DeleteRequest](SuperOffice.WebApi.Data.Appointment\_DeleteRequest.md)
+[Appointment\_DeleteRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_DeleteRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public EMailConnectionInfo ImapEMailConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_DeleteRequest_SendEmailToParticipants"></a> SendEmailToParticipants
 
@@ -70,7 +70,7 @@ public EMailConnectionInfo SmtpEMailConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_DeleteRequest_UpdateMode"></a> UpdateMode
 
@@ -80,5 +80,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+ [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 

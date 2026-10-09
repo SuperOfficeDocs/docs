@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_ApproveQuoteVersionRequest"></a> Class Quote\_ApproveQuoteVersionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_ApproveQuoteVersionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_ApproveQuoteVersionRequest](SuperOffice.WebApi.Data.Quote\_ApproveQuoteVersionRequest.md)
+[Quote\_ApproveQuoteVersionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_ApproveQuoteVersionRequest)
 
 #### Inherited Members
 

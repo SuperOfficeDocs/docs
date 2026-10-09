@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ColumnDataDictionary"></a> Class ColumnDataDictionary
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class ColumnDataDictionary : Dictionary<string, ArchiveColumnData>, IDict
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary<string, ArchiveColumnData\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[ColumnDataDictionary](SuperOffice.WebApi.Data.ColumnDataDictionary.md)
+[ColumnDataDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ColumnDataDictionary)
 
 #### Implements
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_GetHistoriesByNamesAndIdsRequest"></a> Class ViewState\_GetHistoriesByNamesAndIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_GetHistoriesByNamesAndIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_GetHistoriesByNamesAndIdsRequest](SuperOffice.WebApi.Data.ViewState\_GetHistoriesByNamesAndIdsRequest.md)
+[ViewState\_GetHistoriesByNamesAndIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_GetHistoriesByNamesAndIdsRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public HistoryRequest[] Requests { get; set; }
 
 #### Property Value
 
- [HistoryRequest](SuperOffice.WebApi.Data.HistoryRequest.md)\[\]
+ [HistoryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.HistoryRequest)\[\]
 

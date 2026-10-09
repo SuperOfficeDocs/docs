@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_RemoveOwnerContactRequest"></a> Class User\_RemoveOwnerContactRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_RemoveOwnerContactRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_RemoveOwnerContactRequest](SuperOffice.WebApi.Data.User\_RemoveOwnerContactRequest.md)
+[User\_RemoveOwnerContactRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_RemoveOwnerContactRequest)
 
 #### Inherited Members
 

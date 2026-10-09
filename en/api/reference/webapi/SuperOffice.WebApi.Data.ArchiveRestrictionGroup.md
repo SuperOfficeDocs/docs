@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ArchiveRestrictionGroup"></a> Class ArchiveRestrictionGroup
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ArchiveRestrictionGroup.
@@ -13,7 +13,7 @@ public class ArchiveRestrictionGroup
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ArchiveRestrictionGroup](SuperOffice.WebApi.Data.ArchiveRestrictionGroup.md)
+[ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)
 
 #### Inherited Members
 
@@ -83,9 +83,9 @@ public virtual ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 ## See Also
 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md)
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent)
 

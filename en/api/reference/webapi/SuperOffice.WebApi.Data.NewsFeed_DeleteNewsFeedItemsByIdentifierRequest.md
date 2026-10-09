@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeed_DeleteNewsFeedItemsByIdentifierRequest"></a> Class NewsFeed\_DeleteNewsFeedItemsByIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class NewsFeed_DeleteNewsFeedItemsByIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeed\_DeleteNewsFeedItemsByIdentifierRequest](SuperOffice.WebApi.Data.NewsFeed\_DeleteNewsFeedItemsByIdentifierRequest.md)
+[NewsFeed\_DeleteNewsFeedItemsByIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_DeleteNewsFeedItemsByIdentifierRequest)
 
 #### Inherited Members
 

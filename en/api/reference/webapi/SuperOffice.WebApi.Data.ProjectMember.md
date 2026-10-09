@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ProjectMember"></a> Class ProjectMember
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ProjectMember.
@@ -13,13 +13,13 @@ public class ProjectMember : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ProjectMember](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMember)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -160,11 +160,11 @@ public ProjectMemberEventParticipantStatus? EventParticipantStatus { get; set; }
 
 #### Property Value
 
- [ProjectMemberEventParticipantStatus](SuperOffice.WebApi.Data.ProjectMemberEventParticipantStatus.md)?
+ [ProjectMemberEventParticipantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMemberEventParticipantStatus)?
 
 #### See Also
 
-[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md).[EventParticipantStatus\_String](SuperOffice.WebApi.Data.ProjectMember.md\#SuperOffice\_WebApi\_Data\_ProjectMember\_EventParticipantStatus\_String)
+[ProjectMember](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMember).[EventParticipantStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMember#SuperOffice_WebApi_Data_ProjectMember_EventParticipantStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectMember_EventParticipantStatus_String"></a> EventParticipantStatus\_String
 
@@ -182,7 +182,7 @@ public string EventParticipantStatus_String { get; set; }
 
 #### See Also
 
-[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md).[EventParticipantStatus](SuperOffice.WebApi.Data.ProjectMember.md\#SuperOffice\_WebApi\_Data\_ProjectMember\_EventParticipantStatus)
+[ProjectMember](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMember).[EventParticipantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMember#SuperOffice_WebApi_Data_ProjectMember_EventParticipantStatus)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectMember_Firstname"></a> Firstname
 
@@ -367,7 +367,7 @@ public virtual DateTime Updated { get; set; }
 
 ## See Also
 
-[ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

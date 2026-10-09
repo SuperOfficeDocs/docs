@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CredentialControlType"></a> Enum CredentialControlType
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Types of control used with user administration work with credentials

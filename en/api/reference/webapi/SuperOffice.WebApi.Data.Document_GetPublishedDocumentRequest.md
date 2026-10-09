@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetPublishedDocumentRequest"></a> Class Document\_GetPublishedDocumentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetPublishedDocumentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetPublishedDocumentRequest](SuperOffice.WebApi.Data.Document\_GetPublishedDocumentRequest.md)
+[Document\_GetPublishedDocumentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetPublishedDocumentRequest)
 
 #### Inherited Members
 

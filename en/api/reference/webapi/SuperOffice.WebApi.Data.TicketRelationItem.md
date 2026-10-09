@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketRelationItem"></a> Class TicketRelationItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketRelationItem.
@@ -13,7 +13,7 @@ public class TicketRelationItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketRelationItem](SuperOffice.WebApi.Data.TicketRelationItem.md)
+[TicketRelationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem)
 
 #### Inherited Members
 
@@ -49,11 +49,11 @@ public TicketBaseStatus? BaseStatus { get; set; }
 
 #### Property Value
 
- [TicketBaseStatus](SuperOffice.WebApi.Data.TicketBaseStatus.md)?
+ [TicketBaseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBaseStatus)?
 
 #### See Also
 
-[TicketRelationItem](SuperOffice.WebApi.Data.TicketRelationItem.md).[BaseStatus\_String](SuperOffice.WebApi.Data.TicketRelationItem.md\#SuperOffice\_WebApi\_Data\_TicketRelationItem\_BaseStatus\_String)
+[TicketRelationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem).[BaseStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem#SuperOffice_WebApi_Data_TicketRelationItem_BaseStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationItem_BaseStatus_String"></a> BaseStatus\_String
 
@@ -71,7 +71,7 @@ public string BaseStatus_String { get; set; }
 
 #### See Also
 
-[TicketRelationItem](SuperOffice.WebApi.Data.TicketRelationItem.md).[BaseStatus](SuperOffice.WebApi.Data.TicketRelationItem.md\#SuperOffice\_WebApi\_Data\_TicketRelationItem\_BaseStatus)
+[TicketRelationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem).[BaseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem#SuperOffice_WebApi_Data_TicketRelationItem_BaseStatus)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationItem_ChildCount"></a> ChildCount
 
@@ -205,11 +205,11 @@ public TicketRelationType? RelationType { get; set; }
 
 #### Property Value
 
- [TicketRelationType](SuperOffice.WebApi.Data.TicketRelationType.md)?
+ [TicketRelationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationType)?
 
 #### See Also
 
-[TicketRelationItem](SuperOffice.WebApi.Data.TicketRelationItem.md).[RelationType\_String](SuperOffice.WebApi.Data.TicketRelationItem.md\#SuperOffice\_WebApi\_Data\_TicketRelationItem\_RelationType\_String)
+[TicketRelationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem).[RelationType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem#SuperOffice_WebApi_Data_TicketRelationItem_RelationType_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationItem_RelationType_String"></a> RelationType\_String
 
@@ -227,7 +227,7 @@ public string RelationType_String { get; set; }
 
 #### See Also
 
-[TicketRelationItem](SuperOffice.WebApi.Data.TicketRelationItem.md).[RelationType](SuperOffice.WebApi.Data.TicketRelationItem.md\#SuperOffice\_WebApi\_Data\_TicketRelationItem\_RelationType)
+[TicketRelationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem).[RelationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem#SuperOffice_WebApi_Data_TicketRelationItem_RelationType)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationItem_TicketCreatedAt"></a> TicketCreatedAt
 
@@ -303,5 +303,5 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
 

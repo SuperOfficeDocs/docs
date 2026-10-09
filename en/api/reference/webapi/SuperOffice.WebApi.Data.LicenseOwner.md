@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_LicenseOwner"></a> Class LicenseOwner
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for LicenseOwner.
@@ -12,13 +12,13 @@ public class LicenseOwner : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[LicenseOwner](SuperOffice.WebApi.Data.LicenseOwner.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -69,7 +69,7 @@ public virtual ModuleLicenseLink[] RestrictedModuleLicenses { get; set; }
 
 #### Property Value
 
- [ModuleLicenseLink](SuperOffice.WebApi.Data.ModuleLicenseLink.md)\[\]
+ [ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_LicenseOwner_UnrestrictedModuleLicenses"></a> UnrestrictedModuleLicenses
 
@@ -81,9 +81,9 @@ public virtual ModuleLicenseLink[] UnrestrictedModuleLicenses { get; set; }
 
 #### Property Value
 
- [ModuleLicenseLink](SuperOffice.WebApi.Data.ModuleLicenseLink.md)\[\]
+ [ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]
 
 ## See Also
 
-[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
+[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
 

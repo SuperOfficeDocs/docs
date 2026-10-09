@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_QuickLaunchBar"></a> Class UserPreferenceStrings.QuickLaunchBar
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Preference keys for QuickLaunchBar settings
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.QuickLaunchBar
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.QuickLaunchBar](SuperOffice.WebApi.Data.UserPreferenceStrings.QuickLaunchBar.md)
+[UserPreferenceStrings.QuickLaunchBar](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.QuickLaunchBar)
 
 #### Inherited Members
 

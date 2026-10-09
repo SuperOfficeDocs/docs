@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AttachmentValidationResult"></a> Class AttachmentValidationResult
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AttachmentValidationResult.
@@ -13,7 +13,7 @@ public class AttachmentValidationResult
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AttachmentValidationResult](SuperOffice.WebApi.Data.AttachmentValidationResult.md)
+[AttachmentValidationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentValidationResult)
 
 #### Inherited Members
 
@@ -75,5 +75,5 @@ public virtual bool IsValid { get; set; }
 
 ## See Also
 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
 

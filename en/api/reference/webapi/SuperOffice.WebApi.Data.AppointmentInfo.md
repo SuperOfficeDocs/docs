@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AppointmentInfo"></a> Class AppointmentInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AppointmentInfo.
@@ -13,13 +13,13 @@ public class AppointmentInfo : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[AppointmentInfo](SuperOffice.WebApi.Data.AppointmentInfo.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[AppointmentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -100,11 +100,11 @@ public ColorIndex? ColorIndex { get; set; }
 
 #### Property Value
 
- [ColorIndex](SuperOffice.WebApi.Data.ColorIndex.md)?
+ [ColorIndex](/en/api/reference/webapi/SuperOffice.WebApi.Data.ColorIndex)?
 
 #### See Also
 
-[AppointmentInfo](SuperOffice.WebApi.Data.AppointmentInfo.md).[ColorIndex\_String](SuperOffice.WebApi.Data.AppointmentInfo.md\#SuperOffice\_WebApi\_Data\_AppointmentInfo\_ColorIndex\_String)
+[AppointmentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo).[ColorIndex\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo#SuperOffice_WebApi_Data_AppointmentInfo_ColorIndex_String)
 
 ### <a id="SuperOffice_WebApi_Data_AppointmentInfo_ColorIndex_String"></a> ColorIndex\_String
 
@@ -122,7 +122,7 @@ public string ColorIndex_String { get; set; }
 
 #### See Also
 
-[AppointmentInfo](SuperOffice.WebApi.Data.AppointmentInfo.md).[ColorIndex](SuperOffice.WebApi.Data.AppointmentInfo.md\#SuperOffice\_WebApi\_Data\_AppointmentInfo\_ColorIndex)
+[AppointmentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo).[ColorIndex](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo#SuperOffice_WebApi_Data_AppointmentInfo_ColorIndex)
 
 ### <a id="SuperOffice_WebApi_Data_AppointmentInfo_ContactName"></a> ContactName
 
@@ -304,11 +304,11 @@ public AppointmentExternalOwner? OwnedExternally { get; set; }
 
 #### Property Value
 
- [AppointmentExternalOwner](SuperOffice.WebApi.Data.AppointmentExternalOwner.md)?
+ [AppointmentExternalOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentExternalOwner)?
 
 #### See Also
 
-[AppointmentInfo](SuperOffice.WebApi.Data.AppointmentInfo.md).[OwnedExternally\_String](SuperOffice.WebApi.Data.AppointmentInfo.md\#SuperOffice\_WebApi\_Data\_AppointmentInfo\_OwnedExternally\_String)
+[AppointmentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo).[OwnedExternally\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo#SuperOffice_WebApi_Data_AppointmentInfo_OwnedExternally_String)
 
 ### <a id="SuperOffice_WebApi_Data_AppointmentInfo_OwnedExternally_String"></a> OwnedExternally\_String
 
@@ -326,7 +326,7 @@ public string OwnedExternally_String { get; set; }
 
 #### See Also
 
-[AppointmentInfo](SuperOffice.WebApi.Data.AppointmentInfo.md).[OwnedExternally](SuperOffice.WebApi.Data.AppointmentInfo.md\#SuperOffice\_WebApi\_Data\_AppointmentInfo\_OwnedExternally)
+[AppointmentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo).[OwnedExternally](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo#SuperOffice_WebApi_Data_AppointmentInfo_OwnedExternally)
 
 ### <a id="SuperOffice_WebApi_Data_AppointmentInfo_PersonName"></a> PersonName
 
@@ -362,7 +362,7 @@ public virtual RecurrenceInfo RecurrenceInfo { get; set; }
 
 #### Property Value
 
- [RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)
+ [RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)
 
 ### <a id="SuperOffice_WebApi_Data_AppointmentInfo_SendEmail"></a> SendEmail
 
@@ -414,5 +414,5 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

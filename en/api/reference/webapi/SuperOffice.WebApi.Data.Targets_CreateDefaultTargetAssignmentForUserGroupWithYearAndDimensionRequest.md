@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Targets_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionRequest"></a> Class Targets\_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Targets_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensi
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Targets\_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionRequest](SuperOffice.WebApi.Data.Targets\_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionRequest.md)
+[Targets\_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Targets_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionRequest)
 
 #### Inherited Members
 

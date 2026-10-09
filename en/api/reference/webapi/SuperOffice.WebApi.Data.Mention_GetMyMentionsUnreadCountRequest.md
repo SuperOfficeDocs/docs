@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Mention_GetMyMentionsUnreadCountRequest"></a> Class Mention\_GetMyMentionsUnreadCountRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Mention_GetMyMentionsUnreadCountRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Mention\_GetMyMentionsUnreadCountRequest](SuperOffice.WebApi.Data.Mention\_GetMyMentionsUnreadCountRequest.md)
+[Mention\_GetMyMentionsUnreadCountRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_GetMyMentionsUnreadCountRequest)
 
 #### Inherited Members
 

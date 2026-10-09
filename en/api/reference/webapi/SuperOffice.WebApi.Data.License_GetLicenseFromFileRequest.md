@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_GetLicenseFromFileRequest"></a> Class License\_GetLicenseFromFileRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_GetLicenseFromFileRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_GetLicenseFromFileRequest](SuperOffice.WebApi.Data.License\_GetLicenseFromFileRequest.md)
+[License\_GetLicenseFromFileRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_GetLicenseFromFileRequest)
 
 #### Inherited Members
 

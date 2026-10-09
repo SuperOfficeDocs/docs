@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GetNextFormDesignCssRequest"></a> Class AI\_GetNextFormDesignCssRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GetNextFormDesignCssRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GetNextFormDesignCssRequest](SuperOffice.WebApi.Data.AI\_GetNextFormDesignCssRequest.md)
+[AI\_GetNextFormDesignCssRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GetNextFormDesignCssRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_ProcessTicketWhenReadRequest"></a> Class Ticket\_ProcessTicketWhenReadRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_ProcessTicketWhenReadRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_ProcessTicketWhenReadRequest](SuperOffice.WebApi.Data.Ticket\_ProcessTicketWhenReadRequest.md)
+[Ticket\_ProcessTicketWhenReadRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_ProcessTicketWhenReadRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BulkUpdate_GetJobResultsFromStorageAsJsonRequest"></a> Class BulkUpdate\_GetJobResultsFromStorageAsJsonRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BulkUpdate_GetJobResultsFromStorageAsJsonRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BulkUpdate\_GetJobResultsFromStorageAsJsonRequest](SuperOffice.WebApi.Data.BulkUpdate\_GetJobResultsFromStorageAsJsonRequest.md)
+[BulkUpdate\_GetJobResultsFromStorageAsJsonRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BulkUpdate_GetJobResultsFromStorageAsJsonRequest)
 
 #### Inherited Members
 

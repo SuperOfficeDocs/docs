@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BlobLinkType"></a> Enum BlobLinkType
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 The link type, often synonymous with the blob type, of a BinaryObjectLink row

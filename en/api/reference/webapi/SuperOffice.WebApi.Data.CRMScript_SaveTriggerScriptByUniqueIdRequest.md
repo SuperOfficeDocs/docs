@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_SaveTriggerScriptByUniqueIdRequest"></a> Class CRMScript\_SaveTriggerScriptByUniqueIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_SaveTriggerScriptByUniqueIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_SaveTriggerScriptByUniqueIdRequest](SuperOffice.WebApi.Data.CRMScript\_SaveTriggerScriptByUniqueIdRequest.md)
+[CRMScript\_SaveTriggerScriptByUniqueIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_SaveTriggerScriptByUniqueIdRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TriggerScriptEntity Entity { get; set; }
 
 #### Property Value
 
- [TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)
+ [TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScript_SaveTriggerScriptByUniqueIdRequest_TriggerScriptUniqueId"></a> TriggerScriptUniqueId
 

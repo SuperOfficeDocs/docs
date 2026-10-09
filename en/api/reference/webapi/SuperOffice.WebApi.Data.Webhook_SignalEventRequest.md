@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Webhook_SignalEventRequest"></a> Class Webhook\_SignalEventRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Webhook_SignalEventRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Webhook\_SignalEventRequest](SuperOffice.WebApi.Data.Webhook\_SignalEventRequest.md)
+[Webhook\_SignalEventRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook_SignalEventRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public StringObjectDictionary Data { get; set; }
 
 #### Property Value
 
- [StringObjectDictionary](SuperOffice.WebApi.Data.StringObjectDictionary.md)
+ [StringObjectDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringObjectDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_SignalEventRequest_EventName"></a> EventName
 

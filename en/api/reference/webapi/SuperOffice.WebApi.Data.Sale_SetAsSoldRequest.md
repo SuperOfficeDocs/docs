@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_SetAsSoldRequest"></a> Class Sale\_SetAsSoldRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_SetAsSoldRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_SetAsSoldRequest](SuperOffice.WebApi.Data.Sale\_SetAsSoldRequest.md)
+[Sale\_SetAsSoldRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_SetAsSoldRequest)
 
 #### Inherited Members
 

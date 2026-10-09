@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SalesActivity"></a> Class SalesActivity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SalesActivity.
@@ -12,13 +12,13 @@ public class SalesActivity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[SalesActivity](SuperOffice.WebApi.Data.SalesActivity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[SalesActivity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SalesActivity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -49,7 +49,7 @@ public virtual Contact[] RequestedContacts { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)\[\]
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_SalesActivity_RequestedPerson"></a> RequestedPerson
 
@@ -61,7 +61,7 @@ public virtual Person RequestedPerson { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### <a id="SuperOffice_WebApi_Data_SalesActivity_SalesRep"></a> SalesRep
 
@@ -73,9 +73,9 @@ public virtual Person SalesRep { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

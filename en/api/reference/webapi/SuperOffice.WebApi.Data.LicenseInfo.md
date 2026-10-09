@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_LicenseInfo"></a> Class LicenseInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for LicenseInfo.
@@ -13,7 +13,7 @@ public class LicenseInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[LicenseInfo](SuperOffice.WebApi.Data.LicenseInfo.md)
+[LicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseInfo)
 
 #### Inherited Members
 
@@ -155,7 +155,7 @@ public virtual ModuleLicense[] ModuleLicenses { get; set; }
 
 #### Property Value
 
- [ModuleLicense](SuperOffice.WebApi.Data.ModuleLicense.md)\[\]
+ [ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_LicenseInfo_NextCheckDate"></a> NextCheckDate
 
@@ -227,7 +227,7 @@ public virtual SignedPublicKey PublicKey { get; set; }
 
 #### Property Value
 
- [SignedPublicKey](SuperOffice.WebApi.Data.SignedPublicKey.md)
+ [SignedPublicKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.SignedPublicKey)
 
 ### <a id="SuperOffice_WebApi_Data_LicenseInfo_SerialNr"></a> SerialNr
 
@@ -255,5 +255,5 @@ public virtual string Signature { get; set; }
 
 ## See Also
 
-[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
+[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
 

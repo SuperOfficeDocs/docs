@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_FindOrderBy2Request"></a> Class Find\_FindOrderBy2Request
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_FindOrderBy2Request
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_FindOrderBy2Request](SuperOffice.WebApi.Data.Find\_FindOrderBy2Request.md)
+[Find\_FindOrderBy2Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_FindOrderBy2Request)
 
 #### Inherited Members
 

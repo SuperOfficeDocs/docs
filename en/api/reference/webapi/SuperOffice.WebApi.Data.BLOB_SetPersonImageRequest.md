@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_SetPersonImageRequest"></a> Class BLOB\_SetPersonImageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_SetPersonImageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_SetPersonImageRequest](SuperOffice.WebApi.Data.BLOB\_SetPersonImageRequest.md)
+[BLOB\_SetPersonImageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_SetPersonImageRequest)
 
 #### Inherited Members
 

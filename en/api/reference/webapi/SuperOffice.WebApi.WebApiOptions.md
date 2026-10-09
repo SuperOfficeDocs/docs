@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_WebApiOptions"></a> Class WebApiOptions
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Configure the WebAPI clients with the right URL, language, timeout, and compression flags.
@@ -13,18 +13,18 @@ public class WebApiOptions : RequestOptions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RequestOptions](SuperOffice.WebApi.RequestOptions.md) ← 
-[WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+[RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions) ← 
+[WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 #### Inherited Members
 
-[RequestOptions.DefaultTimeout](SuperOffice.WebApi.RequestOptions.md\#SuperOffice\_WebApi\_RequestOptions\_DefaultTimeout), 
-[RequestOptions.LanguageCode](SuperOffice.WebApi.RequestOptions.md\#SuperOffice\_WebApi\_RequestOptions\_LanguageCode), 
-[RequestOptions.CultureCode](SuperOffice.WebApi.RequestOptions.md\#SuperOffice\_WebApi\_RequestOptions\_CultureCode), 
-[RequestOptions.Timeout](SuperOffice.WebApi.RequestOptions.md\#SuperOffice\_WebApi\_RequestOptions\_Timeout), 
-[RequestOptions.TimeZone](SuperOffice.WebApi.RequestOptions.md\#SuperOffice\_WebApi\_RequestOptions\_TimeZone), 
-[RequestOptions.TimeZoneIncludeOffset](SuperOffice.WebApi.RequestOptions.md\#SuperOffice\_WebApi\_RequestOptions\_TimeZoneIncludeOffset), 
-[RequestOptions.CustomHeaders](SuperOffice.WebApi.RequestOptions.md\#SuperOffice\_WebApi\_RequestOptions\_CustomHeaders), 
+[RequestOptions.DefaultTimeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_DefaultTimeout), 
+[RequestOptions.LanguageCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_LanguageCode), 
+[RequestOptions.CultureCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CultureCode), 
+[RequestOptions.Timeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_Timeout), 
+[RequestOptions.TimeZone](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZone), 
+[RequestOptions.TimeZoneIncludeOffset](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZoneIncludeOffset), 
+[RequestOptions.CustomHeaders](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CustomHeaders), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -168,7 +168,7 @@ public IProgressListener ProgressListener { get; set; }
 
 #### Property Value
 
- [IProgressListener](SuperOffice.WebApi.IProgressListener.md)
+ [IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
 
 ### <a id="SuperOffice_WebApi_WebApiOptions_UploadProgressListener"></a> UploadProgressListener
 
@@ -181,7 +181,7 @@ public IProgressListener UploadProgressListener { get; set; }
 
 #### Property Value
 
- [IProgressListener](SuperOffice.WebApi.IProgressListener.md)
+ [IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
 
 ### <a id="SuperOffice_WebApi_WebApiOptions_UserAgent"></a> UserAgent
 
@@ -207,7 +207,7 @@ public WebApiOptions Clone()
 
 #### Returns
 
- [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+ [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 A shallow copy of the current WebApiOptions.
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_MoveQuoteLineRequest"></a> Class Quote\_MoveQuoteLineRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_MoveQuoteLineRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_MoveQuoteLineRequest](SuperOffice.WebApi.Data.Quote\_MoveQuoteLineRequest.md)
+[Quote\_MoveQuoteLineRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_MoveQuoteLineRequest)
 
 #### Inherited Members
 

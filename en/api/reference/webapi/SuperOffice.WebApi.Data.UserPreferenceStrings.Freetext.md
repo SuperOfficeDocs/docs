@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Freetext"></a> Class UserPreferenceStrings.Freetext
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Freetext
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Freetext
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Freetext](SuperOffice.WebApi.Data.UserPreferenceStrings.Freetext.md)
+[UserPreferenceStrings.Freetext](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Freetext)
 
 #### Inherited Members
 

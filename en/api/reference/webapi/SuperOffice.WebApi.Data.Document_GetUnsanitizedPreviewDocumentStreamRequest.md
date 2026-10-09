@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetUnsanitizedPreviewDocumentStreamRequest"></a> Class Document\_GetUnsanitizedPreviewDocumentStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetUnsanitizedPreviewDocumentStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetUnsanitizedPreviewDocumentStreamRequest](SuperOffice.WebApi.Data.Document\_GetUnsanitizedPreviewDocumentStreamRequest.md)
+[Document\_GetUnsanitizedPreviewDocumentStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetUnsanitizedPreviewDocumentStreamRequest)
 
 #### Inherited Members
 

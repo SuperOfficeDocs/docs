@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Mention_DeleteMentionsRequest"></a> Class Mention\_DeleteMentionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Mention_DeleteMentionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Mention\_DeleteMentionsRequest](SuperOffice.WebApi.Data.Mention\_DeleteMentionsRequest.md)
+[Mention\_DeleteMentionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_DeleteMentionsRequest)
 
 #### Inherited Members
 

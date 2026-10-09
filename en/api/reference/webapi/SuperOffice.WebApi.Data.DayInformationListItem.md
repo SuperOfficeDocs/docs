@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DayInformationListItem"></a> Class DayInformationListItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DayInformationListItem.
@@ -13,13 +13,13 @@ public class DayInformationListItem : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[DayInformationListItem](SuperOffice.WebApi.Data.DayInformationListItem.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[DayInformationListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.DayInformationListItem)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual ActivitySummary ActivityInformation { get; set; }
 
 #### Property Value
 
- [ActivitySummary](SuperOffice.WebApi.Data.ActivitySummary.md)
+ [ActivitySummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummary)
 
 ### <a id="SuperOffice_WebApi_Data_DayInformationListItem_Date"></a> Date
 
@@ -74,9 +74,9 @@ public virtual RedLetterSummary RedLetterInformation { get; set; }
 
 #### Property Value
 
- [RedLetterSummary](SuperOffice.WebApi.Data.RedLetterSummary.md)
+ [RedLetterSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.RedLetterSummary)
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

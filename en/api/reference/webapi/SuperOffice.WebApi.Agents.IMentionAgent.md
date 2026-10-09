@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Agents_IMentionAgent"></a> Interface IMentionAgent
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent used for getting, marking read, and deleting @-mentions
@@ -11,7 +11,7 @@ public interface IMentionAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,7 +30,7 @@ Task DeleteMentionsAsync(int[] mentionIds, RequestOptions requestOptions = null)
 
 Ids of mention rows to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -50,13 +50,13 @@ Task<Mention[]> GetMentionsCreatedByMeAsync(RequestOptions requestOptions = null
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](SuperOffice.WebApi.Data.Mention.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\>
 
 The current associate's created mentions, most-recent-first
 
@@ -74,13 +74,13 @@ Task<Mention[]> GetMyMentionsAsync(bool unreadOnly, RequestOptions requestOption
 
 When true, only unread mentions are returned
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](SuperOffice.WebApi.Data.Mention.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\>
 
 The current associate's mentions, most-recent-first
 
@@ -94,7 +94,7 @@ Task<int> GetMyMentionsUnreadCountAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -118,7 +118,7 @@ Task MarkMentionsAsReadAsync(int[] mentionIds, RequestOptions requestOptions = n
 
 Ids of the mentions to mark read
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -146,7 +146,7 @@ The message the mentions belong to
 
 The colleagues mentioned in the message's current content
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BulkUpdate_ExecuteByEntityIdsRequest"></a> Class BulkUpdate\_ExecuteByEntityIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BulkUpdate_ExecuteByEntityIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BulkUpdate\_ExecuteByEntityIdsRequest](SuperOffice.WebApi.Data.BulkUpdate\_ExecuteByEntityIdsRequest.md)
+[BulkUpdate\_ExecuteByEntityIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BulkUpdate_ExecuteByEntityIdsRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public FieldValueInfo[] FieldValueInfos { get; set; }
 
 #### Property Value
 
- [FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]
+ [FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_BulkUpdate_ExecuteByEntityIdsRequest_Ids"></a> Ids
 

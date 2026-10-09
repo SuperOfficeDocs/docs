@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_GetAppByNameRequest"></a> Class ForeignSystem\_GetAppByNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_GetAppByNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_GetAppByNameRequest](SuperOffice.WebApi.Data.ForeignSystem\_GetAppByNameRequest.md)
+[ForeignSystem\_GetAppByNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_GetAppByNameRequest)
 
 #### Inherited Members
 

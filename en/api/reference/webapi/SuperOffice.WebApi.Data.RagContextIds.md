@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RagContextIds"></a> Class RagContextIds
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RagContextIds.
@@ -13,7 +13,7 @@ public class RagContextIds
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RagContextIds](SuperOffice.WebApi.Data.RagContextIds.md)
+[RagContextIds](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagContextIds)
 
 #### Inherited Members
 
@@ -135,5 +135,5 @@ public virtual int TicketId { get; set; }
 
 ## See Also
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 

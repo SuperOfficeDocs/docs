@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_SaleFilterDialog"></a> Class UserPreferenceStrings.SaleFilterDialog
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.SaleFilterDialog
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.SaleFilterDialog](SuperOffice.WebApi.Data.UserPreferenceStrings.SaleFilterDialog.md)
+[UserPreferenceStrings.SaleFilterDialog](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.SaleFilterDialog)
 
 #### Inherited Members
 

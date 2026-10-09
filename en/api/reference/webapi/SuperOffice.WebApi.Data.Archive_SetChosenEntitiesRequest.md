@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_SetChosenEntitiesRequest"></a> Class Archive\_SetChosenEntitiesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_SetChosenEntitiesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_SetChosenEntitiesRequest](SuperOffice.WebApi.Data.Archive\_SetChosenEntitiesRequest.md)
+[Archive\_SetChosenEntitiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_SetChosenEntitiesRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_ROU"></a> Class UserPreferenceStrings.ROU
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Preference keys Regeneration of StatusMonitors
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.ROU
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.ROU](SuperOffice.WebApi.Data.UserPreferenceStrings.ROU.md)
+[UserPreferenceStrings.ROU](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ROU)
 
 #### Inherited Members
 

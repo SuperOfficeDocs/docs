@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FormSubmissionEntity"></a> Class FormSubmissionEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FormSubmissionEntity.
@@ -13,13 +13,13 @@ public class FormSubmissionEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[FormSubmissionEntity](SuperOffice.WebApi.Data.FormSubmissionEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[FormSubmissionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -155,11 +155,11 @@ public FormSubmissionStatus? Status { get; set; }
 
 #### Property Value
 
- [FormSubmissionStatus](SuperOffice.WebApi.Data.FormSubmissionStatus.md)?
+ [FormSubmissionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionStatus)?
 
 #### See Also
 
-[FormSubmissionEntity](SuperOffice.WebApi.Data.FormSubmissionEntity.md).[Status\_String](SuperOffice.WebApi.Data.FormSubmissionEntity.md\#SuperOffice\_WebApi\_Data\_FormSubmissionEntity\_Status\_String)
+[FormSubmissionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity#SuperOffice_WebApi_Data_FormSubmissionEntity_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_FormSubmissionEntity_Status_String"></a> Status\_String
 
@@ -177,7 +177,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[FormSubmissionEntity](SuperOffice.WebApi.Data.FormSubmissionEntity.md).[Status](SuperOffice.WebApi.Data.FormSubmissionEntity.md\#SuperOffice\_WebApi\_Data\_FormSubmissionEntity\_Status)
+[FormSubmissionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity#SuperOffice_WebApi_Data_FormSubmissionEntity_Status)
 
 ### <a id="SuperOffice_WebApi_Data_FormSubmissionEntity_WhenSubmitted"></a> WhenSubmitted
 
@@ -193,5 +193,5 @@ public virtual DateTime WhenSubmitted { get; set; }
 
 ## See Also
 
-[MarketingAgent](SuperOffice.WebApi.Agents.MarketingAgent.md)
+[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent)
 

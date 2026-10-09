@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_GetNextTableNumberRequest"></a> Class Diagnostics\_GetNextTableNumberRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_GetNextTableNumberRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_GetNextTableNumberRequest](SuperOffice.WebApi.Data.Diagnostics\_GetNextTableNumberRequest.md)
+[Diagnostics\_GetNextTableNumberRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_GetNextTableNumberRequest)
 
 #### Inherited Members
 

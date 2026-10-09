@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference"></a> Class Preference
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Preference.
@@ -13,13 +13,13 @@ public class Preference : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[Preference](SuperOffice.WebApi.Data.Preference.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[Preference](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public PrefDescValueType? DisplayType { get; set; }
 
 #### Property Value
 
- [PrefDescValueType](SuperOffice.WebApi.Data.PrefDescValueType.md)?
+ [PrefDescValueType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PrefDescValueType)?
 
 #### See Also
 
-[Preference](SuperOffice.WebApi.Data.Preference.md).[DisplayType\_String](SuperOffice.WebApi.Data.Preference.md\#SuperOffice\_WebApi\_Data\_Preference\_DisplayType\_String)
+[Preference](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference).[DisplayType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference#SuperOffice_WebApi_Data_Preference_DisplayType_String)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_DisplayType_String"></a> DisplayType\_String
 
@@ -86,7 +86,7 @@ public string DisplayType_String { get; set; }
 
 #### See Also
 
-[Preference](SuperOffice.WebApi.Data.Preference.md).[DisplayType](SuperOffice.WebApi.Data.Preference.md\#SuperOffice\_WebApi\_Data\_Preference\_DisplayType)
+[Preference](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference).[DisplayType](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference#SuperOffice_WebApi_Data_Preference_DisplayType)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_DisplayValue"></a> DisplayValue
 
@@ -112,11 +112,11 @@ public PreferenceLevel? Level { get; set; }
 
 #### Property Value
 
- [PreferenceLevel](SuperOffice.WebApi.Data.PreferenceLevel.md)?
+ [PreferenceLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceLevel)?
 
 #### See Also
 
-[Preference](SuperOffice.WebApi.Data.Preference.md).[Level\_String](SuperOffice.WebApi.Data.Preference.md\#SuperOffice\_WebApi\_Data\_Preference\_Level\_String)
+[Preference](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference).[Level\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference#SuperOffice_WebApi_Data_Preference_Level_String)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_Level_String"></a> Level\_String
 
@@ -134,7 +134,7 @@ public string Level_String { get; set; }
 
 #### See Also
 
-[Preference](SuperOffice.WebApi.Data.Preference.md).[Level](SuperOffice.WebApi.Data.Preference.md\#SuperOffice\_WebApi\_Data\_Preference\_Level)
+[Preference](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference).[Level](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference#SuperOffice_WebApi_Data_Preference_Level)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_PrefDescId"></a> PrefDescId
 
@@ -170,7 +170,7 @@ public virtual PreferenceSpec Specification { get; set; }
 
 #### Property Value
 
- [PreferenceSpec](SuperOffice.WebApi.Data.PreferenceSpec.md)
+ [PreferenceSpec](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceSpec)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_TabOrder"></a> TabOrder
 
@@ -180,7 +180,7 @@ public virtual TabOrder TabOrder { get; set; }
 
 #### Property Value
 
- [TabOrder](SuperOffice.WebApi.Data.TabOrder.md)
+ [TabOrder](/en/api/reference/webapi/SuperOffice.WebApi.Data.TabOrder)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_TableName"></a> TableName
 
@@ -220,5 +220,5 @@ public virtual int UserPreferenceId { get; set; }
 
 ## See Also
 
-[PreferenceAgent](SuperOffice.WebApi.Agents.PreferenceAgent.md)
+[PreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreferenceAgent)
 

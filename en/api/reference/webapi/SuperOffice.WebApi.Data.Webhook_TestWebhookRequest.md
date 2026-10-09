@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Webhook_TestWebhookRequest"></a> Class Webhook\_TestWebhookRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Webhook_TestWebhookRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Webhook\_TestWebhookRequest](SuperOffice.WebApi.Data.Webhook\_TestWebhookRequest.md)
+[Webhook\_TestWebhookRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook_TestWebhookRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public Webhook Webhook { get; set; }
 
 #### Property Value
 
- [Webhook](SuperOffice.WebApi.Data.Webhook.md)
+ [Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)
 

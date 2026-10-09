@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_GetPreviewEnrichContactRequest"></a> Class Contact\_GetPreviewEnrichContactRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_GetPreviewEnrichContactRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_GetPreviewEnrichContactRequest](SuperOffice.WebApi.Data.Contact\_GetPreviewEnrichContactRequest.md)
+[Contact\_GetPreviewEnrichContactRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_GetPreviewEnrichContactRequest)
 
 #### Inherited Members
 

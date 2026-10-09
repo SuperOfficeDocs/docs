@@ -2,46 +2,46 @@
 
 ### Namespaces
 
- [SuperOffice.WebApi.Authorization.Exceptions](SuperOffice.WebApi.Authorization.Exceptions.md)
+ [SuperOffice.WebApi.Authorization.Exceptions](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions)
 
- [SuperOffice.WebApi.Authorization.Utility](SuperOffice.WebApi.Authorization.Utility.md)
+ [SuperOffice.WebApi.Authorization.Utility](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Utility)
 
 ### Classes
 
- [AuthorizationAccessToken](SuperOffice.WebApi.Authorization.AuthorizationAccessToken.md)
+ [AuthorizationAccessToken](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationAccessToken)
 
 OAuth 2.0 access token (and refresh token) <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref>. 
 With a refresh token, AppToken and AppSecret defined we can automatically 
 refresh access token on expiry.
 
- [AuthorizationImplicit](SuperOffice.WebApi.Authorization.AuthorizationImplicit.md)
+ [AuthorizationImplicit](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationImplicit)
 
 Represents a default <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> type, used for pass-through authentication scenarios.
 Use NTLM/Negotiate protocol to authorize with windows identity.
 
- [AuthorizationSystemUserTicket](SuperOffice.WebApi.Authorization.AuthorizationSystemUserTicket.md)
+ [AuthorizationSystemUserTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationSystemUserTicket)
 
 SOTicket for use with SystemUser tokens in CRM online only. See <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref>.
 
- [AuthorizationTicket](SuperOffice.WebApi.Authorization.AuthorizationTicket.md)
+ [AuthorizationTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationTicket)
 
 SOTicket for use in onsite scenarios. See also <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref>.
 
- [AuthorizationUsernamePassword](SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword.md)
+ [AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword)
 
 Username and password <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> using Basic scheme.
 
- [ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md)
+ [ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs)
 
 Used to contain required types when authorization is refreshed.
 
 ### Interfaces
 
- [IAddHeaders](SuperOffice.WebApi.Authorization.IAddHeaders.md)
+ [IAddHeaders](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAddHeaders)
 
 Used by IAuthorization implementations to add headers for each request.
 
- [IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)
+ [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)
 
 Defines a method to construct the Authorization header scheme and parameter for Http Requests.
 <xref href="SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword" data-throw-if-not-resolved="false"></xref>,

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecurrenceDayPattern"></a> Class RecurrenceDayPattern
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RecurrenceDayPattern.
@@ -13,7 +13,7 @@ public class RecurrenceDayPattern
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RecurrenceDayPattern](SuperOffice.WebApi.Data.RecurrenceDayPattern.md)
+[RecurrenceDayPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDayPattern)
 
 #### Inherited Members
 
@@ -61,11 +61,11 @@ public RecurrenceDailyPattern? Pattern { get; set; }
 
 #### Property Value
 
- [RecurrenceDailyPattern](SuperOffice.WebApi.Data.RecurrenceDailyPattern.md)?
+ [RecurrenceDailyPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDailyPattern)?
 
 #### See Also
 
-[RecurrenceDayPattern](SuperOffice.WebApi.Data.RecurrenceDayPattern.md).[Pattern\_String](SuperOffice.WebApi.Data.RecurrenceDayPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceDayPattern\_Pattern\_String)
+[RecurrenceDayPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDayPattern).[Pattern\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDayPattern#SuperOffice_WebApi_Data_RecurrenceDayPattern_Pattern_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceDayPattern_Pattern_String"></a> Pattern\_String
 
@@ -83,5 +83,5 @@ public string Pattern_String { get; set; }
 
 #### See Also
 
-[RecurrenceDayPattern](SuperOffice.WebApi.Data.RecurrenceDayPattern.md).[Pattern](SuperOffice.WebApi.Data.RecurrenceDayPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceDayPattern\_Pattern)
+[RecurrenceDayPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDayPattern).[Pattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDayPattern#SuperOffice_WebApi_Data_RecurrenceDayPattern_Pattern)
 

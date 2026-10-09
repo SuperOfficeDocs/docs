@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_SaveLandingPageTabsRequest"></a> Class Configuration\_SaveLandingPageTabsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_SaveLandingPageTabsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_SaveLandingPageTabsRequest](SuperOffice.WebApi.Data.Configuration\_SaveLandingPageTabsRequest.md)
+[Configuration\_SaveLandingPageTabsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SaveLandingPageTabsRequest)
 
 #### Inherited Members
 
@@ -60,5 +60,5 @@ public LandingPageTab[] Tabs { get; set; }
 
 #### Property Value
 
- [LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md)\[\]
+ [LandingPageTab](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab)\[\]
 

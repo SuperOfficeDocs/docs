@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_GetAllAvailableQuoteConnectionsWithPriceListsRequest"></a> Class Quote\_GetAllAvailableQuoteConnectionsWithPriceListsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_GetAllAvailableQuoteConnectionsWithPriceListsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_GetAllAvailableQuoteConnectionsWithPriceListsRequest](SuperOffice.WebApi.Data.Quote\_GetAllAvailableQuoteConnectionsWithPriceListsRequest.md)
+[Quote\_GetAllAvailableQuoteConnectionsWithPriceListsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_GetAllAvailableQuoteConnectionsWithPriceListsRequest)
 
 #### Inherited Members
 

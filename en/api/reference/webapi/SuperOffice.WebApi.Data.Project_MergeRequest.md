@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_MergeRequest"></a> Class Project\_MergeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_MergeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_MergeRequest](SuperOffice.WebApi.Data.Project\_MergeRequest.md)
+[Project\_MergeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_MergeRequest)
 
 #### Inherited Members
 

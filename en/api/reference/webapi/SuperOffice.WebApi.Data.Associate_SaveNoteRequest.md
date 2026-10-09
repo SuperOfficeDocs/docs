@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Associate_SaveNoteRequest"></a> Class Associate\_SaveNoteRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Associate_SaveNoteRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Associate\_SaveNoteRequest](SuperOffice.WebApi.Data.Associate\_SaveNoteRequest.md)
+[Associate\_SaveNoteRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate_SaveNoteRequest)
 
 #### Inherited Members
 

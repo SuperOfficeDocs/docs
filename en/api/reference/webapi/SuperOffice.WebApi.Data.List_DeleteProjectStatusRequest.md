@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_DeleteProjectStatusRequest"></a> Class List\_DeleteProjectStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_DeleteProjectStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_DeleteProjectStatusRequest](SuperOffice.WebApi.Data.List\_DeleteProjectStatusRequest.md)
+[List\_DeleteProjectStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_DeleteProjectStatusRequest)
 
 #### Inherited Members
 

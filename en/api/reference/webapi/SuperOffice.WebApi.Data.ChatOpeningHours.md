@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatOpeningHours"></a> Class ChatOpeningHours
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatOpeningHours.
@@ -13,7 +13,7 @@ public class ChatOpeningHours
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ChatOpeningHours](SuperOffice.WebApi.Data.ChatOpeningHours.md)
+[ChatOpeningHours](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatOpeningHours)
 
 #### Inherited Members
 
@@ -287,7 +287,7 @@ public virtual TimeZoneData TzLocation { get; set; }
 
 #### Property Value
 
- [TimeZoneData](SuperOffice.WebApi.Data.TimeZoneData.md)
+ [TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)
 
 ### <a id="SuperOffice_WebApi_Data_ChatOpeningHours_UseLunchHours"></a> UseLunchHours
 
@@ -339,5 +339,5 @@ public virtual TimeSpan WedStop { get; set; }
 
 ## See Also
 
-[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md)
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent)
 

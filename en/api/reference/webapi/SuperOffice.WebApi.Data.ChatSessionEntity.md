@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatSessionEntity"></a> Class ChatSessionEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatSessionEntity.
@@ -13,13 +13,13 @@ public class ChatSessionEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -98,7 +98,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_CustomerAlias"></a> CustomerAlias
 
@@ -208,11 +208,11 @@ public ChatSessionFlags? Flags { get; set; }
 
 #### Property Value
 
- [ChatSessionFlags](SuperOffice.WebApi.Data.ChatSessionFlags.md)?
+ [ChatSessionFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionFlags)?
 
 #### See Also
 
-[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md).[Flags\_String](SuperOffice.WebApi.Data.ChatSessionEntity.md\#SuperOffice\_WebApi\_Data\_ChatSessionEntity\_Flags\_String)
+[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity).[Flags\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity#SuperOffice_WebApi_Data_ChatSessionEntity_Flags_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_Flags_String"></a> Flags\_String
 
@@ -230,7 +230,7 @@ public string Flags_String { get; set; }
 
 #### See Also
 
-[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md).[Flags](SuperOffice.WebApi.Data.ChatSessionEntity.md\#SuperOffice\_WebApi\_Data\_ChatSessionEntity\_Flags)
+[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity).[Flags](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity#SuperOffice_WebApi_Data_ChatSessionEntity_Flags)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_InitialQueuePos"></a> InitialQueuePos
 
@@ -266,7 +266,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_Project"></a> Project
 
@@ -278,7 +278,7 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](SuperOffice.WebApi.Data.Project.md)
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_Rank"></a> Rank
 
@@ -314,7 +314,7 @@ public virtual Sale Sale { get; set; }
 
 #### Property Value
 
- [Sale](SuperOffice.WebApi.Data.Sale.md)
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_SessionKey"></a> SessionKey
 
@@ -340,11 +340,11 @@ public ChatSessionStatus? Status { get; set; }
 
 #### Property Value
 
- [ChatSessionStatus](SuperOffice.WebApi.Data.ChatSessionStatus.md)?
+ [ChatSessionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionStatus)?
 
 #### See Also
 
-[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md).[Status\_String](SuperOffice.WebApi.Data.ChatSessionEntity.md\#SuperOffice\_WebApi\_Data\_ChatSessionEntity\_Status\_String)
+[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity#SuperOffice_WebApi_Data_ChatSessionEntity_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_Status_String"></a> Status\_String
 
@@ -362,7 +362,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md).[Status](SuperOffice.WebApi.Data.ChatSessionEntity.md\#SuperOffice\_WebApi\_Data\_ChatSessionEntity\_Status)
+[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity#SuperOffice_WebApi_Data_ChatSessionEntity_Status)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_Ticket"></a> Ticket
 
@@ -374,7 +374,7 @@ public virtual Ticket Ticket { get; set; }
 
 #### Property Value
 
- [Ticket](SuperOffice.WebApi.Data.Ticket.md)
+ [Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_TopicId"></a> TopicId
 
@@ -398,7 +398,7 @@ public virtual Associate TransferTo { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_User"></a> User
 
@@ -410,7 +410,7 @@ public virtual Associate User { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ChatSessionEntity_WhenEnded"></a> WhenEnded
 
@@ -474,7 +474,7 @@ public virtual DateTime WhenStarted { get; set; }
 
 ## See Also
 
-[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

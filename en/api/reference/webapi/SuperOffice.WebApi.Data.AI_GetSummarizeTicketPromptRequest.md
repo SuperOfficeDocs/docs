@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GetSummarizeTicketPromptRequest"></a> Class AI\_GetSummarizeTicketPromptRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GetSummarizeTicketPromptRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GetSummarizeTicketPromptRequest](SuperOffice.WebApi.Data.AI\_GetSummarizeTicketPromptRequest.md)
+[AI\_GetSummarizeTicketPromptRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GetSummarizeTicketPromptRequest)
 
 #### Inherited Members
 

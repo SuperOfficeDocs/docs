@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TaskType"></a> Enum TaskType
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Value for field 'record_type' in table 'task'. Controls icons used in GUI

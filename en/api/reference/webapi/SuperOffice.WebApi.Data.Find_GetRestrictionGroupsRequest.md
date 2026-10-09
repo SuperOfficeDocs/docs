@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_GetRestrictionGroupsRequest"></a> Class Find\_GetRestrictionGroupsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_GetRestrictionGroupsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_GetRestrictionGroupsRequest](SuperOffice.WebApi.Data.Find\_GetRestrictionGroupsRequest.md)
+[Find\_GetRestrictionGroupsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_GetRestrictionGroupsRequest)
 
 #### Inherited Members
 

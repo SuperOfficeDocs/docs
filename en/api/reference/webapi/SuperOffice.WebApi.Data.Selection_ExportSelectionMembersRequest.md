@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_ExportSelectionMembersRequest"></a> Class Selection\_ExportSelectionMembersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_ExportSelectionMembersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_ExportSelectionMembersRequest](SuperOffice.WebApi.Data.Selection\_ExportSelectionMembersRequest.md)
+[Selection\_ExportSelectionMembersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_ExportSelectionMembersRequest)
 
 #### Inherited Members
 

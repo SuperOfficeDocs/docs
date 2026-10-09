@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SetDocumentPluginForAllDocumentTemplatesRequest"></a> Class List\_SetDocumentPluginForAllDocumentTemplatesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SetDocumentPluginForAllDocumentTemplatesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SetDocumentPluginForAllDocumentTemplatesRequest](SuperOffice.WebApi.Data.List\_SetDocumentPluginForAllDocumentTemplatesRequest.md)
+[List\_SetDocumentPluginForAllDocumentTemplatesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetDocumentPluginForAllDocumentTemplatesRequest)
 
 #### Inherited Members
 

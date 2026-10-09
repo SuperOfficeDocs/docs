@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketSecurityLevel"></a> Enum TicketSecurityLevel
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Indicates if a ticket is external or internal

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DuplicateSystem"></a> Class UserPreferenceStrings.DuplicateSystem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Duplicate system settings
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.DuplicateSystem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.DuplicateSystem](SuperOffice.WebApi.Data.UserPreferenceStrings.DuplicateSystem.md)
+[UserPreferenceStrings.DuplicateSystem](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.DuplicateSystem)
 
 #### Inherited Members
 

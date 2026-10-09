@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SaveUserGroupRequest"></a> Class User\_SaveUserGroupRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SaveUserGroupRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SaveUserGroupRequest](SuperOffice.WebApi.Data.User\_SaveUserGroupRequest.md)
+[User\_SaveUserGroupRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SaveUserGroupRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public UserGroup UserGroup { get; set; }
 
 #### Property Value
 
- [UserGroup](SuperOffice.WebApi.Data.UserGroup.md)
+ [UserGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserGroup)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_CreateSessionRequest"></a> Class CustomerService\_CreateSessionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_CreateSessionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_CreateSessionRequest](SuperOffice.WebApi.Data.CustomerService\_CreateSessionRequest.md)
+[CustomerService\_CreateSessionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_CreateSessionRequest)
 
 #### Inherited Members
 

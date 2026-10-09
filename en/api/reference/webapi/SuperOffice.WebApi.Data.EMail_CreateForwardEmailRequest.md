@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_CreateForwardEmailRequest"></a> Class EMail\_CreateForwardEmailRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_CreateForwardEmailRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_CreateForwardEmailRequest](SuperOffice.WebApi.Data.EMail\_CreateForwardEmailRequest.md)
+[EMail\_CreateForwardEmailRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_CreateForwardEmailRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public EMailEntity Email { get; set; }
 
 #### Property Value
 
- [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+ [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 

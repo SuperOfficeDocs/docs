@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetPublishedAppointmentRequest"></a> Class Appointment\_GetPublishedAppointmentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetPublishedAppointmentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetPublishedAppointmentRequest](SuperOffice.WebApi.Data.Appointment\_GetPublishedAppointmentRequest.md)
+[Appointment\_GetPublishedAppointmentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetPublishedAppointmentRequest)
 
 #### Inherited Members
 
