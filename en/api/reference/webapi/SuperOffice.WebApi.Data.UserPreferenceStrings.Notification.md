@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Notification"></a> Class UserPreferenceStrings.Notification
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 ```csharp
 public static class UserPreferenceStrings.Notification
@@ -9,17 +9,17 @@ public static class UserPreferenceStrings.Notification
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [UserPreferenceStrings.Notification](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Notification)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Fields
@@ -42,6 +42,18 @@ public const string NotifyCustomMessage = "notifyCustomMessage"
 
 ```csharp
 public const string NotifyFavouriteRequest = "notifyFavouriteRequest"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Notification_NotifyMention"></a> NotifyMention
+
+(BOOL) Indicates if the user wants notifications when someone @-mentions them.
+
+```csharp
+public const string NotifyMention = "notifyMention"
 ```
 
 #### Field Value
@@ -117,4 +129,3 @@ public const string Section = "notification"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-

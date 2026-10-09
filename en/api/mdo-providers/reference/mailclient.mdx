@@ -1,7 +1,7 @@
 ---
 title: mailclient
 keywords: mdoprovider mdo provider mailclient
-description: 
+description:
 generated: true
 content_type: reference
 envir: online
@@ -9,14 +9,8 @@ envir: online
 
 ## "mailclient" MDO List
 
-
-
-
 Implemented by the MailClientProvider class.
 The name of the MDO list is 'mailclient'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +23,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("mailclient", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,9 +36,8 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|SuperOffice CRM|||
-|2|Microsoft Outlook|||
-
+|1||||
+|2||||
 
 ## Related MDO Lists
 

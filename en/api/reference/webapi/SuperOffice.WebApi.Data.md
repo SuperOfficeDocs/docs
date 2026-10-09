@@ -929,6 +929,8 @@ This service supports fetching of client interface configuration data. Client co
 
  [Configuration\_ExistsSystemEventRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_ExistsSystemEventRequest)
 
+ [Configuration\_GetActiveFeatureLabsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetActiveFeatureLabsRequest)
+
  [Configuration\_GetAllFeatureTogglesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetAllFeatureTogglesRequest)
 
  [Configuration\_GetAnyConfigurationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetAnyConfigurationRequest)
@@ -2404,10 +2406,6 @@ Class holding properties about a field in the carrier.
 Serializable dictionary.
 This class works as a regular dictionary. The only restriction is that the string is a value type
 
- [UserPreferenceStrings.FieldReplication](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.FieldReplication)
-
-Enables replication of user-defined fields at field level instead of record level. This ensures that field changes for the customer are retained, but may affect the performance of the replication process
-
  [FieldRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldRight)
 
 Carrier object for FieldRight.
@@ -2658,6 +2656,8 @@ Specification for a request for history information, by id. It is possible to as
 
  [UserPreferenceStrings.HugoAI](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.HugoAI)
 
+Preferences for Request AI features - managed through AI admin settings page - not the Preferences page.
+
  [ImportColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportColumnInfo)
 
 Carrier object for ImportColumnInfo.
@@ -2723,14 +2723,14 @@ Carrier object for LanguageInfo.
 
 Carrier object for LegalBase.
 
+ [UserPreferenceStrings.License](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.License)
+
+License counters to track when to upgrade license
+
  [License](/en/api/reference/webapi/SuperOffice.WebApi.Data.License)
 
 Carrier object for License.
 License information, hashed and signed with public keys to prevent tampering. Counts License usage and assignments.
-
- [UserPreferenceStrings.License](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.License)
-
-License counters to track when to upgrade license
 
  [LicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseInfo)
 
@@ -3264,6 +3264,23 @@ Methods for calculating mailing statistics
 Carrier object for MassOperationResult.
 Information about the results of a mass-update operation
 
+ [Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)
+
+Carrier object for Mention.
+Mention carrier.
+
+ [Mention\_DeleteMentionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_DeleteMentionsRequest)
+
+ [Mention\_GetMentionsCreatedByMeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_GetMentionsCreatedByMeRequest)
+
+ [Mention\_GetMyMentionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_GetMyMentionsRequest)
+
+ [Mention\_GetMyMentionsUnreadCountRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_GetMyMentionsUnreadCountRequest)
+
+ [Mention\_MarkMentionsAsReadRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_MarkMentionsAsReadRequest)
+
+ [Mention\_UpdateMentionSnippetsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_UpdateMentionSnippetsRequest)
+
  [MessageDeliveryStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageDeliveryStatus)
 
 Carrier object for MessageDeliveryStatus.
@@ -3338,6 +3355,12 @@ News feed CTAs are created by agents or other services for display on the start 
 Carrier object for NewsFeedItem.
 News feed items are created by agents or other services for display on the start page and other relevant places in the UI.
 
+ [NewsFeed\_DeleteNewsFeedItemsByCategoryIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_DeleteNewsFeedItemsByCategoryIdentifierRequest)
+
+ [NewsFeed\_DeleteNewsFeedItemsByIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_DeleteNewsFeedItemsByIdRequest)
+
+ [NewsFeed\_DeleteNewsFeedItemsByIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_DeleteNewsFeedItemsByIdentifierRequest)
+
  [NewsFeed\_GetNewsFeedItemsByIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_GetNewsFeedItemsByIdRequest)
 
  [NewsFeed\_GetNewsItemsForUserRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_GetNewsItemsForUserRequest)
@@ -3410,13 +3433,13 @@ The built-in payment terms list. Used by the SuperOffice Quote Connector to cate
 Carrier object for PaymentType.
 The built-in payment types list. Used by the SuperOffice Quote Connector in quote versions.
 
- [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
-
-Carrier object for Person.
-
  [UserPreferenceStrings.Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Person)
 
 Person preferences
+
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
+
+Carrier object for Person.
 
  [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
@@ -3798,13 +3821,13 @@ The built-in product family list. Used by the SuperOffice Quote Connector to cat
 Carrier object for ProductType.
 The built-in product type list. Used by the SuperOffice Quote Connector to categorize products.
 
- [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
-
-Carrier object for Project.
-
  [UserPreferenceStrings.Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Project)
 
 Project preferences
+
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
+
+Carrier object for Project.
 
  [ProjectBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectBoardViewSettings)
 
@@ -4429,13 +4452,13 @@ Definition of the three perionds for status monitors and some other settings per
 
  [Saint\_SetRankOnStatusMonitorsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Saint_SetRankOnStatusMonitorsRequest)
 
- [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
-
-Carrier object for Sale.
-
  [UserPreferenceStrings.Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Sale)
 
 Preference keys for sales settings
+
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
+
+Carrier object for Sale.
 
  [SaleBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings)
 
@@ -5976,7 +5999,7 @@ Status if this appointment is in the process of being assigned to someone else
 
  [AssociateSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssociateSourceType)
 
-Describes what source the associates should be retrieved from. 
+Describes what source the associates should be retrieved from.
 This Enum consists of flag values that can be combined.
 
  [BadgeType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BadgeType)
@@ -6023,7 +6046,7 @@ This Enum is used by:  Category.category_group
 
  [CategoryUpdateTrigger](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryUpdateTrigger)
 
-Enum for type of change to trigger update of category 
+Enum for type of change to trigger update of category
 This Enum is used by:  AutomatedCategoryUpdate.trigger_type
 
  [ChangePasswordType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChangePasswordType)
@@ -6167,7 +6190,7 @@ This Enum is used by:  ConfigurableScreenDelta.deltaState
 
  [DeltaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaType)
 
-Type and content of delta 
+Type and content of delta
 This Enum is used by:  ConfigurableScreenDelta.deltaType
 
  [DesignType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DesignType)
@@ -6876,4 +6899,3 @@ This Enum is used by:  workflow_trigger.trigger_type
 
 Workflow action type
 This Enum is used by:  workflow_wait_for_action.ActionType
-

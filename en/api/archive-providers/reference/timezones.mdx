@@ -1,6 +1,6 @@
 ---
 title: TimeZones
-description: 
+description:
 keywords: TimeZones archive provider
 generated: true
 content_type: reference
@@ -12,26 +12,28 @@ envir: onsite, online
 This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.TimeZonesProvider inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
-|"all"|All|
+|"all"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
 |id| *None* ||  |
 |isActive| *None* || x |
 |flag| *None* || x |
-|timeZone|string|Time zone| x |
-|country|string|Country| x |
-|region|string|Region| x |
-|cities|string|Cities| x |
-|offset| *None* |Offset|  |
-|daylight| *None* |Daylight|  |
-|offsetRaw| *None* |Offset|  |
-|daylightRaw| *None* |Daylight|  |
+|timeZone|string|| x |
+|country|string|| x |
+|region|string|| x |
+|cities|string|| x |
+|offset| *None* ||  |
+|daylight| *None* ||  |
+|offsetRaw| *None* ||  |
+|daylightRaw| *None* ||  |
 
 ## Sample
 
@@ -44,4 +46,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

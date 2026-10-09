@@ -17,21 +17,22 @@ This class abstracts the differences between the various selection kinds (contac
 person id. You can give any selectionId to this provider, and it will reply with a list of contact and person ids; either
 pulled from the actual selection (if it's a contact selection) or its shadow.
 
-
 Only the two ID columns are available. The row type is fixed (contact or person), and the column names are also fixed.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
-|"contact"|Contact|
-|"person"|Person|
+|"contact"||
+|"person"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|contactId| *None* |Contact ID: Contact (company) ID|  |
-|personId| *None* |Person ID: Person ID|  |
-|selectionId|int|Selection ID: Selection ID|  |
+|contactId| *None* ||  |
+|personId| *None* ||  |
+|selectionId|int||  |
 
 ## Sample
 
@@ -44,4 +45,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

@@ -18,23 +18,24 @@ this corresponds to the tabs in the freetext search result dialog, and the numbe
 get actual matches for a particular entity, use the corresponding FreetextSearchProvider, for instance,
 the [FreetextContactResultProvider](./freetextcontact).
 
-
 The 'OwnerEntityName' column accepts a restriction in the form of an array of strings or table names. If
 provided, this restriction will limit the entities searched. The FreetextSearchEntityProvider
 is an MDO provider for supported entities.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
-|"freetextcount"|Number of matches|
+|"freetextcount"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|ownerEntityName|listAny|Owner: Owner (type) of freetext match| x |
-|count| *None* |Count: Number of matches for a certain owner entity| x |
-|entityLocalizedName| *None* |Owner: Owner of freetext match| x |
-|searchwords|string|Search word: One or more words to be used in free text search|  |
+|ownerEntityName|listAny|| x |
+|count| *None* || x |
+|entityLocalizedName| *None* || x |
+|searchwords|string||  |
 
 ## Sample
 
@@ -47,4 +48,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

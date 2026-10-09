@@ -8,7 +8,7 @@ envir: online
 
 import WorkflowStepOptionLink from "./includes/workflow-step-option-link.mdx";
 
-## workflow\_step\_option\_link Table (533)
+## workflow\_step\_option\_link Table (534)
 
 Link steps to other steps through step options
 
@@ -25,7 +25,6 @@ Link steps to other steps through step options
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |Rank|Step order|Int|Yes|
-
 
 ![workflow_step_option_link table relationship diagram](/media/loc/en/database/tables/workflow_step_option_link.png)
 
@@ -44,7 +43,6 @@ Link steps to other steps through step options
 |[workflow\_step](./workflow-step)  |A set of steps related to a workflow. |
 |[workflow\_step\_option](./workflow-step-option)  |Some steps can have optional child &apos;flows&apos;, a new series of steps |
 
-
 ## Replication Flags
 
 * None
@@ -52,4 +50,3 @@ Link steps to other steps through step options
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
-

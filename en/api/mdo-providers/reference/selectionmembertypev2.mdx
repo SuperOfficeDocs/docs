@@ -8,18 +8,14 @@ envir: online
 ---
 
 ## "selectionmembertypev2" MDO List
+
 MDO provider for the selection archive providers types.
 The items will be added by scanning ArchiveProviderFactory.KnownArchiveProviders for this pattern;
 [TableName]Selection. If the prefix is a known table, the tablename will be added to list with the
 TableNumber as the ID.
 
-
-
 Implemented by the SelectionMemberTypeListV2 class.
 The name of the MDO list is 'selectionmembertypev2'.
-
-
-
 
 ## Sample Request
 
@@ -32,6 +28,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selectionmembertypev2", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -44,20 +41,20 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|5|Find Company||contact|
-|6|Find Contact||person|
-|9|Find Follow-up||appointment|
-|13|Find Sale||sale|
-|11|Find Project||project|
-|23|Find Selection||selection|
-|10|Find Document||document|
-|127|Find Product||QuoteLine|
-|262|Find Request||ticket|
-|332|Find Chat conversation||chat_session|
-|485|Find Form submission||form_submission|
-|334|Find Mailing||s_shipment|
+|5|||contact|
+|6|||person|
+|9|||appointment|
+|13|||sale|
+|11|||project|
+|23|||selection|
+|10|||document|
+|127|||QuoteLine|
+|262|||ticket|
+|332|||chat_session|
+|485|||form_submission|
+|334|||s_shipment|
 |484|||form|
-
+|529|||email_flow|
 
 ## Related MDO Lists
 

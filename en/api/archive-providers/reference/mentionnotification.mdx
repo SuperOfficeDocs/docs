@@ -1,0 +1,44 @@
+---
+title: MentionNotification
+description:
+keywords: MentionNotification archive provider
+generated: true
+content_type: reference
+envir: onsite, online
+---
+
+## "MentionNotification"
+
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.MentionNotificationSubProvider inside NetServer's SODatabase assembly.
+
+## Supported Entities
+
+| Name | Description |
+| ---- | ----- |
+|"mention"||
+
+## Supported Columns
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
+|id| *None* || x |
+|associateId|associate|| x |
+|ticketId| *None* || x |
+|originatorFullName| *None* ||  |
+|notifyDateTime|datetime|| x |
+|title| *None* ||  |
+|updateType| *None* ||  |
+
+## Sample
+
+```http!
+GET /api/v1/archive/MentionNotification?$select=associateId,ticketId
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: sv
+
+```
+
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

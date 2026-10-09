@@ -8,7 +8,7 @@ envir: online
 
 import Associatehistory from "./includes/associatehistory.mdx";
 
-## AssociateHistory Table (539)
+## AssociateHistory Table (540)
 
 Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database
 
@@ -32,7 +32,6 @@ Historical information about associates that have been deleted. Most references 
 |registered|Registered when|UtcDateTime|No|
 |registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
 
-
 ![AssociateHistory table relationship diagram](/media/loc/en/database/tables/AssociateHistory.png)
 
 <Associatehistory />
@@ -48,7 +47,6 @@ Historical information about associates that have been deleted. Most references 
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
-
 ## Replication Flags
 
 * None
@@ -56,4 +54,3 @@ Historical information about associates that have been deleted. Most references 
 ## Security Flags
 
 * No access control via user's Role.
-

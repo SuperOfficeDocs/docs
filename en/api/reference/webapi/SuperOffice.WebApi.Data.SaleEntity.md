@@ -1,7 +1,7 @@
 # Class SaleEntity {#SuperOffice_WebApi_Data_SaleEntity}
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for SaleEntity.
 The Sale Entity contains the sale amount, currency, and sale members. Sales are linked to contacts, persons, and/or projects.
@@ -12,20 +12,20 @@ public class SaleEntity : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
 [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
@@ -118,7 +118,7 @@ public virtual Associate Associate { get; set; }
 
 ### Competitor {#SuperOffice_WebApi_Data_SaleEntity_Competitor}
 
-List of all possible competitors. 
+List of all possible competitors.
 &lt;p&gt;Use MDO List name "comptr" to get list items.&lt;/p&gt;
 
 ```csharp
@@ -131,7 +131,7 @@ public virtual Competitor Competitor { get; set; }
 
 ### Completed {#SuperOffice_WebApi_Data_SaleEntity_Completed}
 
-The Sale completed state. The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
+The sale's completed state as an ActivityStatus (Completed=3), not the SaleDone enum stored in sale.done. Only Completed marks the sale as done (sale.done=2); any other value, including Started, is stored as not done (sale.done=1).
 NULL if unknown enum value.
 
 ```csharp
@@ -149,7 +149,7 @@ public ActivityStatus? Completed { get; set; }
 
 ### Completed\_String {#SuperOffice_WebApi_Data_SaleEntity_Completed_String}
 
-The Sale completed state. The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
+The sale's completed state as an ActivityStatus (Completed=3), not the SaleDone enum stored in sale.done. Only Completed marks the sale as done (sale.done=2); any other value, including Started, is stored as not done (sale.done=1).
 Raw string enum value.
 
 ```csharp
@@ -231,8 +231,8 @@ public virtual Currency Currency { get; set; }
 ### CustomFields {#SuperOffice_WebApi_Data_SaleEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
-Custom fields combines user defined fields and extra fields into one bucket. 
-The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity#SuperOffice_WebApi_Data_SaleEntity_UserDefinedFields) properties are deprecated in favor of this
+Custom fields combines user defined fields and extra fields into one bucket.
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity#SuperOffice_WebApi_Data_SaleEntity_ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity#SuperOffice_WebApi_Data_SaleEntity_UserDefinedFields) properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -300,15 +300,15 @@ The naming convention of the key string is as follows:
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
-       The device identity is appended directly to the device name if it exists. 
-    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
+       The device identity is appended directly to the device name if it exists.
+    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name,
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
     &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
-       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
+       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary.
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
@@ -680,7 +680,5 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 ## See Also
 
-[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
-
-
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent),
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent),

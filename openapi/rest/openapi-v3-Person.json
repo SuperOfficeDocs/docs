@@ -5487,10 +5487,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
@@ -5631,6 +5631,10 @@
           },
           "Description": {
             "description": "The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases",
+            "type": "string"
+          },
+          "Context": {
+            "description": "Description of what the person does, along with a biographical sketch, for later agent/LLM use",
             "type": "string"
           },
           "IsAssociate": {
@@ -5830,6 +5834,14 @@
             "format": "int32",
             "description": "How many active ERP links are there for this person?",
             "type": "integer"
+          },
+          "SourcedFrom": {
+            "description": "Name of the source of the data, for traceability",
+            "type": "string"
+          },
+          "LinkedInUrl": {
+            "description": "The LinkedIn URL for the person",
+            "type": "string"
           },
           "ShipmentTypes": {
             "description": "The person's available and selected shipment types.",
@@ -6989,6 +7001,10 @@
             "description": "The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases",
             "type": "string"
           },
+          "Context": {
+            "description": "Description of what the person does, along with a biographical sketch, for later agent/LLM use",
+            "type": "string"
+          },
           "IsAssociate": {
             "description": "Checks if the person object is an associate. The property is read-only.",
             "type": "boolean"
@@ -7186,6 +7202,14 @@
             "format": "int32",
             "description": "How many active ERP links are there for this person?",
             "type": "integer"
+          },
+          "SourcedFrom": {
+            "description": "Name of the source of the data, for traceability",
+            "type": "string"
+          },
+          "LinkedInUrl": {
+            "description": "The LinkedIn URL for the person",
+            "type": "string"
           },
           "ShipmentTypes": {
             "description": "The person's available and selected shipment types.",
@@ -7392,7 +7416,7 @@
           },
           "ActiveInterests": {
             "format": "int32",
-            "description": "Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true",
+            "description": "Number of interests visible on this person: rows in pintr whose interest in PersInt is not deleted. Drives the interest indicator in lists and on the person card.",
             "type": "integer"
           },
           "ContactDepartment": {

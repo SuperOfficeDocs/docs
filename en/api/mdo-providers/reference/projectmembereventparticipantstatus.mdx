@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "projectmembereventparticipantstatus" MDO List
+
 List of project member event status fields.
-
-
 
 Implemented by the ProjectMemberEventParticipantStatusProvider class.
 The name of the MDO list is 'projectmembereventparticipantstatus'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("projectmembereventparticipantstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,13 +38,12 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|0|Unknown|||
-|1|Not reacted|||
-|2|Declined|||
-|3|Registered|||
-|4|Attending|||
-|5|No-show|||
-
+|0||||
+|1||||
+|2||||
+|3||||
+|4||||
+|5||||
 
 ## Related MDO Lists
 

@@ -19,22 +19,24 @@ MDO list that backs the folder pickers, and several files in this assembly
 import both namespaces.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
-|"formfolder"|formfolder|
+|"formfolder"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|folderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|parentFolderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|folderName|string|Hierarchy name: The full name/path from table hierarchy| x |
-|formThumbnail| *None* |Thumbnail: Form thumbnail|  |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
+|folderId|int|| x |
+|parentFolderId|int|| x |
+|folderName|string|| x |
+|formThumbnail| *None* ||  |
 |sortGroup| *None* || x |
 |sortName| *None* || x |
-|type| *None* |Type: Displays the type of an activity|  |
+|type| *None* ||  |
 
 ## Sample
 
@@ -47,4 +49,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

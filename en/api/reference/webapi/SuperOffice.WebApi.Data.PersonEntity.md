@@ -1,7 +1,7 @@
 # Class PersonEntity {#SuperOffice_WebApi_Data_PersonEntity}
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for PersonEntity.
 The Person Service. The service implements all services working with the Person object.
@@ -12,20 +12,20 @@ public class PersonEntity : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
 [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
@@ -204,6 +204,18 @@ public virtual Contact Contact { get; set; }
 
  [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
+### Context {#SuperOffice_WebApi_Data_PersonEntity_Context}
+
+Description of what the person does, along with a biographical sketch, for later agent/LLM use
+
+```csharp
+public virtual string Context { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### CorrespondingAssociate {#SuperOffice_WebApi_Data_PersonEntity_CorrespondingAssociate}
 
 The associate corresponding to this person. Will be empty if the person is not a user (internal associate user, external user).
@@ -268,8 +280,8 @@ public virtual DateTime CreatedDate { get; set; }
 ### CustomFields {#SuperOffice_WebApi_Data_PersonEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
-Custom fields combines user defined fields and extra fields into one bucket. 
-The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity#SuperOffice_WebApi_Data_PersonEntity_UserDefinedFields) properties are deprecated in favor of this
+Custom fields combines user defined fields and extra fields into one bucket.
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity#SuperOffice_WebApi_Data_PersonEntity_ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity#SuperOffice_WebApi_Data_PersonEntity_UserDefinedFields) properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -397,15 +409,15 @@ The naming convention of the key string is as follows:
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
-       The device identity is appended directly to the device name if it exists. 
-    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
+       The device identity is appended directly to the device name if it exists.
+    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name,
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
     &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
-       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
+       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary.
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
@@ -551,6 +563,18 @@ public virtual int LeadstatusId { get; set; }
 #### Property Value
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### LinkedInUrl {#SuperOffice_WebApi_Data_PersonEntity_LinkedInUrl}
+
+The LinkedIn URL for the person
+
+```csharp
+public virtual string LinkedInUrl { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### MiddleName {#SuperOffice_WebApi_Data_PersonEntity_MiddleName}
 
@@ -783,6 +807,18 @@ public virtual short Source { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
+### SourcedFrom {#SuperOffice_WebApi_Data_PersonEntity_SourcedFrom}
+
+Name of the source of the data, for traceability
+
+```csharp
+public virtual string SourcedFrom { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### SupportAssociate {#SuperOffice_WebApi_Data_PersonEntity_SupportAssociate}
 
 &lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
@@ -908,7 +944,5 @@ public virtual SavedUtmParameters UtmParameters { get; set; }
 
 ## See Also
 
-[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
-
-
+[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent),
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent),

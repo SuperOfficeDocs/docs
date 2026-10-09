@@ -17,26 +17,28 @@ one for user (associate)-level licences. It does not check codekey or other
 security items.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
-|"systemLicense"|systemLicense|
-|"siteLicense"|siteLicense|
-|"userLicense"|userLicense|
+|"systemLicense"||
+|"siteLicense"||
+|"userLicense"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|moduleLicenseId|int|id| x |
-|moduleName|string|moduleName| x |
-|moduleDesc|string|moduleDesc| x |
-|licenseType|int|licenseType| x |
-|licenseNumber|int|licenseNumber| x |
-|allowedAssocs|int|allowedAssocs| x |
-|extraFlags|int|extraFlags| x |
-|graceTo|date|graceTo| x |
-|maintenanceTo|date|maintenanceTo| x |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
+|moduleLicenseId|int|| x |
+|moduleName|string|| x |
+|moduleDesc|string|| x |
+|licenseType|int|| x |
+|licenseNumber|int|| x |
+|allowedAssocs|int|| x |
+|extraFlags|int|| x |
+|graceTo|date|| x |
+|maintenanceTo|date|| x |
 
 ## Sample
 
@@ -49,4 +51,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

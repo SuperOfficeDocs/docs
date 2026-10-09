@@ -1,7 +1,7 @@
 # Interface INewsFeedAgent {#SuperOffice_WebApi_Agents_INewsFeedAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Posting and reading Newsfeed items, marking them as read or as handled.
 
@@ -11,7 +11,7 @@ public interface INewsFeedAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -58,6 +58,78 @@ Override language/culture codes on this request.
 #### Returns
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+### DeleteNewsFeedItemsByCategoryIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByCategoryIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Deletes items from the newsfeed by FromCategoryIdentifier. Requires the user be an administrator. Deleting an item removes it from all users.
+
+```csharp
+Task DeleteNewsFeedItemsByCategoryIdentifierAsync(string fromCategoryIdentifier, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`fromCategoryIdentifier` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+FromCategoryIdentifier value to remove from the feed.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### DeleteNewsFeedItemsByIdAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+
+Deletes an array of items from the newsfeed by id. If the current user cannot access a particular item, the call fails, unless the user is an administrator. Deleting an item removes it from all users.
+
+```csharp
+Task DeleteNewsFeedItemsByIdAsync(int[] newsFeedItemIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`newsFeedItemIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ids of the news feed items to remove.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### DeleteNewsFeedItemsByIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Deletes items from the newsfeed by FromIdentifier. Requires the user be an administrator. Deleting an item removes it from all users.
+
+```csharp
+Task DeleteNewsFeedItemsByIdentifierAsync(string fromIdentifier, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`fromIdentifier` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+FromIdentifier value to remove from the feed.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
 
 ### GetNewsFeedItemAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -254,4 +326,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Indicates if the news feed item was successfully marked as being handled. False if it was already being handled or was handled.
-

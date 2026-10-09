@@ -1,0 +1,58 @@
+---
+title: authentication_session table
+description: One row per authenticated user session; owner, random session id, last activity, the encrypted OIDC tokens received during login, and the expiry of the time-bound NetServer secret (login.ns_secret). Rows are touched at most every five minutes and removed when older than one hour
+generated: true
+content_type: reference
+envir: online
+---
+
+import AuthenticationSession from "./includes/authentication-session.mdx";
+
+## authentication\_session Table (553)
+
+One row per authenticated user session; owner, random session id, last activity, the encrypted OIDC tokens received during login, and the expiry of the time-bound NetServer secret (login.ns_secret). Rows are touched at most every five minutes and removed when older than one hour
+
+## Fields
+
+| Name | Description | Type | Nullable |
+|------|-------------|------|:----:|
+|authentication\_session\_id|Primary key|PK|No|
+|associate\_id|The associate (user) this authentication session belongs to|FK [associate](./associate.mdx)|No|
+|session\_id|Cryptographically random 20 character string identifying this session|String(20)|No|
+|last\_seen|When this session was last seen (UTC). Updated at most every five minutes; sessions not seen for one hour are removed|UtcDateTime|No|
+|id\_token|Encrypted OIDC id_token received in the authorization code flow. Encrypted by NetServer before it is written; never stored in plaintext|Clob|Yes|
+|access\_token|Encrypted OAuth 2.0 access token received in the authorization code flow. Encrypted by NetServer before it is written; never stored in plaintext|Clob|Yes|
+|refresh\_token|Encrypted OAuth 2.0 refresh token received in the authorization code flow. Encrypted by NetServer before it is written; never stored in plaintext|Clob|Yes|
+|login\_ns\_secret\_expiry|When the time-bound NetServer secret in login.ns_secret expires (UTC). Kept here rather than on login for database performance|UtcDateTime|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
+![authentication_session table relationship diagram](/media/loc/en/database/tables/authentication_session.png)
+
+<AuthenticationSession />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|associate\_id |FK |Index |
+|session\_id |String(20) |Unique |
+|last\_seen |UtcDateTime |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[login](./login)  |This table contains entries for the user sessions.  |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

@@ -1,7 +1,7 @@
 # Interface IAuthorization {#SuperOffice_WebApi_Authorization_IAuthorization}
 
-Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
-Assembly: SuperOffice.WebApi.Authorization.dll  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)
+Assembly: SuperOffice.WebApi.Authorization.dll
 
 Defines a method to construct the Authorization header scheme and parameter for Http Requests.
 [AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword),
@@ -40,4 +40,3 @@ AuthenticationHeaderValue GetAuthorization()
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
 AuthenticationHeaderValue. Containing e.g. "Basic", "Base64encoded=="
-

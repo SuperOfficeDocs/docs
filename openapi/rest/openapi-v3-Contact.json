@@ -5870,10 +5870,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
@@ -6239,6 +6239,10 @@
             "description": "Description of the contact. Usually shown as a postit note.",
             "type": "string"
           },
+          "Context": {
+            "description": "Description of what the company does, for later agent/LLM use",
+            "type": "string"
+          },
           "UpdatedBy": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
           },
@@ -6339,6 +6343,39 @@
             "format": "int32",
             "description": "The number of active erp links",
             "type": "integer"
+          },
+          "NumEmployees": {
+            "format": "int32",
+            "description": "Approximate number of employees working in this company",
+            "type": "integer"
+          },
+          "YearFounded": {
+            "format": "int32",
+            "description": "The year the company was founded",
+            "type": "integer"
+          },
+          "RevenueYear": {
+            "format": "int32",
+            "description": "The year the revenue was recorded",
+            "type": "integer"
+          },
+          "RevenueBasecurrency": {
+            "format": "double",
+            "description": "Revenue converted to base currency",
+            "type": "number"
+          },
+          "SharecapitalBasecurrency": {
+            "format": "double",
+            "description": "Capital invested in the company, in base currency",
+            "type": "number"
+          },
+          "SourcedFrom": {
+            "description": "Name of the source of the data, for traceability",
+            "type": "string"
+          },
+          "LinkedInUrl": {
+            "description": "The LinkedIn URL for the company",
+            "type": "string"
           },
           "BounceEmails": {
             "description": "Email addresses with a positive bounce counter.",
@@ -6757,7 +6794,7 @@
           },
           "ActiveInterests": {
             "format": "int32",
-            "description": "Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true",
+            "description": "Number of interests visible on this person: rows in pintr whose interest in PersInt is not deleted. Drives the interest indicator in lists and on the person card.",
             "type": "integer"
           },
           "ContactDepartment": {
@@ -7232,6 +7269,10 @@
             "description": "Description of the contact. Usually shown as a postit note.",
             "type": "string"
           },
+          "Context": {
+            "description": "Description of what the company does, for later agent/LLM use",
+            "type": "string"
+          },
           "UpdatedBy": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
           },
@@ -7332,6 +7373,39 @@
             "format": "int32",
             "description": "The number of active erp links",
             "type": "integer"
+          },
+          "NumEmployees": {
+            "format": "int32",
+            "description": "Approximate number of employees working in this company",
+            "type": "integer"
+          },
+          "YearFounded": {
+            "format": "int32",
+            "description": "The year the company was founded",
+            "type": "integer"
+          },
+          "RevenueYear": {
+            "format": "int32",
+            "description": "The year the revenue was recorded",
+            "type": "integer"
+          },
+          "RevenueBasecurrency": {
+            "format": "double",
+            "description": "Revenue converted to base currency",
+            "type": "number"
+          },
+          "SharecapitalBasecurrency": {
+            "format": "double",
+            "description": "Capital invested in the company, in base currency",
+            "type": "number"
+          },
+          "SourcedFrom": {
+            "description": "Name of the source of the data, for traceability",
+            "type": "string"
+          },
+          "LinkedInUrl": {
+            "description": "The LinkedIn URL for the company",
+            "type": "string"
           },
           "BounceEmails": {
             "description": "Email addresses with a positive bounce counter.",

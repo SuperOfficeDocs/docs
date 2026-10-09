@@ -1,7 +1,7 @@
 # Interface IFreeTextAgent {#SuperOffice_WebApi_Agents_IFreeTextAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 This agent can be used to manage the free text system
 
@@ -11,7 +11,7 @@ public interface IFreeTextAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -66,7 +66,7 @@ The freetext status
 
 ### RegenerateIndexAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IFreeTextAgent_RegenerateIndexAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
-Wipe and regenerate the freetext index by scanning the database (freetext search will be unavailable while this operation runs
+Regenerate the freetext index by scanning the database. Freetext search may be unavailable while this operation runs, for instance when the index is built from scratch.
 
 ```csharp
 Task<BatchTaskInfo> RegenerateIndexAsync(bool runAsBatch, RequestOptions requestOptions = null)
@@ -159,4 +159,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
 This method has no return value
-

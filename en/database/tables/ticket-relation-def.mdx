@@ -8,7 +8,7 @@ envir: online
 
 import TicketRelationDef from "./includes/ticket-relation-def.mdx";
 
-## ticket\_relation\_def Table (555)
+## ticket\_relation\_def Table (557)
 
 Ticket relation definition
 
@@ -32,7 +32,6 @@ Ticket relation definition
 |updatedCount|Number of updates made to this record|UShort|No|
 |isBuiltIn|Is this row part of SuperOffice priming data|Bool|Yes|
 
-
 ![ticket_relation_def table relationship diagram](/media/loc/en/database/tables/ticket_relation_def.png)
 
 <TicketRelationDef />
@@ -51,7 +50,6 @@ Ticket relation definition
 |[ticket\_rel\_def\_ticket\_type](./ticket-rel-def-ticket-type)  |Link table defining what Ticket types are involved in this relation. Will have M:N rows for a single relation definition |
 |[ticket\_relation](./ticket-relation)  |A relation between 2 tickets |
 
-
 ## Replication Flags
 
 * None
@@ -59,4 +57,3 @@ Ticket relation definition
 ## Security Flags
 
 * No access control via user's Role.
-

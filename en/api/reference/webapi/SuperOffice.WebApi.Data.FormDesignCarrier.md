@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_FormDesignCarrier"></a> Class FormDesignCarrier
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for FormDesignCarrier.
 Forms Design analysis results.
@@ -12,17 +12,17 @@ public class FormDesignCarrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -39,7 +39,7 @@ public FormDesignCarrier()
 
 ### <a id="SuperOffice_WebApi_Data_FormDesignCarrier_Confidence"></a> Confidence
 
-Confidence score (0-1) of the design analysis.
+Not populated; always zero. The design service no longer supplies a confidence score.
 
 ```csharp
 public virtual double Confidence { get; set; }
@@ -63,7 +63,7 @@ public virtual string CssStyles { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_FormDesignCarrier_Notes"></a> Notes
 
-Comments on the analysis
+Not populated. The design service no longer supplies analysis notes.
 
 ```csharp
 public virtual string Notes { get; set; }
@@ -76,4 +76,3 @@ public virtual string Notes { get; set; }
 ## See Also
 
 [AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
-

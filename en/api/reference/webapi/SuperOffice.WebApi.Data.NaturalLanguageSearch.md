@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_NaturalLanguageSearch"></a> Class NaturalLanguageSearch
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for NaturalLanguageSearch.
 Natural language search results.
@@ -12,17 +12,17 @@ public class NaturalLanguageSearch
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [NaturalLanguageSearch](/en/api/reference/webapi/SuperOffice.WebApi.Data.NaturalLanguageSearch)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -97,6 +97,18 @@ public virtual string ResponseMarkdown { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_NaturalLanguageSearch_RestrictionGroups"></a> RestrictionGroups
+
+The same restrictions as criteria groups: restrictions within a group are AND-ed, groups are OR-ed. Pass these to SetDynamicSelectionCriteriaGroups to save them on a selection. When sent back as previousQuery, non-empty RestrictionGroups take precedence over Restrictions.
+
+```csharp
+public virtual ArchiveRestrictionGroup[] RestrictionGroups { get; set; }
+```
+
+#### Property Value
+
+ [ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)\[\]
+
 ### <a id="SuperOffice_WebApi_Data_NaturalLanguageSearch_Restrictions"></a> Restrictions
 
 Archive restrictions for the search query.
@@ -112,4 +124,3 @@ public virtual ArchiveRestrictionInfo[] Restrictions { get; set; }
 ## See Also
 
 [AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
-

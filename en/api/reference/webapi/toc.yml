@@ -96,6 +96,8 @@
     href: SuperOffice.WebApi.Agents.MDOAgent.md
   - name: MarketingAgent
     href: SuperOffice.WebApi.Agents.MarketingAgent.md
+  - name: MentionAgent
+    href: SuperOffice.WebApi.Agents.MentionAgent.md
   - name: MessagingAgent
     href: SuperOffice.WebApi.Agents.MessagingAgent.md
   - name: NavigatorAgent
@@ -217,6 +219,8 @@
     href: SuperOffice.WebApi.Agents.IMDOAgent.md
   - name: IMarketingAgent
     href: SuperOffice.WebApi.Agents.IMarketingAgent.md
+  - name: IMentionAgent
+    href: SuperOffice.WebApi.Agents.IMentionAgent.md
   - name: IMessagingAgent
     href: SuperOffice.WebApi.Agents.IMessagingAgent.md
   - name: INavigatorAgent
@@ -1014,6 +1018,8 @@
     href: SuperOffice.WebApi.Data.Configuration_DeleteWindowPosSizeRequest.md
   - name: Configuration_ExistsSystemEventRequest
     href: SuperOffice.WebApi.Data.Configuration_ExistsSystemEventRequest.md
+  - name: Configuration_GetActiveFeatureLabsRequest
+    href: SuperOffice.WebApi.Data.Configuration_GetActiveFeatureLabsRequest.md
   - name: Configuration_GetAllFeatureTogglesRequest
     href: SuperOffice.WebApi.Data.Configuration_GetAllFeatureTogglesRequest.md
   - name: Configuration_GetAnyConfigurationRequest
@@ -2770,6 +2776,20 @@
     href: SuperOffice.WebApi.Data.Marketing_VerifyGoogleRecaptchaRequest.md
   - name: MassOperationResult
     href: SuperOffice.WebApi.Data.MassOperationResult.md
+  - name: Mention
+    href: SuperOffice.WebApi.Data.Mention.md
+  - name: Mention_DeleteMentionsRequest
+    href: SuperOffice.WebApi.Data.Mention_DeleteMentionsRequest.md
+  - name: Mention_GetMentionsCreatedByMeRequest
+    href: SuperOffice.WebApi.Data.Mention_GetMentionsCreatedByMeRequest.md
+  - name: Mention_GetMyMentionsRequest
+    href: SuperOffice.WebApi.Data.Mention_GetMyMentionsRequest.md
+  - name: Mention_GetMyMentionsUnreadCountRequest
+    href: SuperOffice.WebApi.Data.Mention_GetMyMentionsUnreadCountRequest.md
+  - name: Mention_MarkMentionsAsReadRequest
+    href: SuperOffice.WebApi.Data.Mention_MarkMentionsAsReadRequest.md
+  - name: Mention_UpdateMentionSnippetsRequest
+    href: SuperOffice.WebApi.Data.Mention_UpdateMentionSnippetsRequest.md
   - name: MessageDeliveryStatus
     href: SuperOffice.WebApi.Data.MessageDeliveryStatus.md
   - name: Messaging_CreateMessageRequest
@@ -2806,6 +2826,12 @@
     href: SuperOffice.WebApi.Data.NewsFeedCTA.md
   - name: NewsFeedItem
     href: SuperOffice.WebApi.Data.NewsFeedItem.md
+  - name: NewsFeed_DeleteNewsFeedItemsByCategoryIdentifierRequest
+    href: SuperOffice.WebApi.Data.NewsFeed_DeleteNewsFeedItemsByCategoryIdentifierRequest.md
+  - name: NewsFeed_DeleteNewsFeedItemsByIdRequest
+    href: SuperOffice.WebApi.Data.NewsFeed_DeleteNewsFeedItemsByIdRequest.md
+  - name: NewsFeed_DeleteNewsFeedItemsByIdentifierRequest
+    href: SuperOffice.WebApi.Data.NewsFeed_DeleteNewsFeedItemsByIdentifierRequest.md
   - name: NewsFeed_GetNewsFeedItemsByIdRequest
     href: SuperOffice.WebApi.Data.NewsFeed_GetNewsFeedItemsByIdRequest.md
   - name: NewsFeed_GetNewsItemsForUserRequest
@@ -4244,8 +4270,6 @@
     href: SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields.md
   - name: UserPreferenceStrings.FieldLabels
     href: SuperOffice.WebApi.Data.UserPreferenceStrings.FieldLabels.md
-  - name: UserPreferenceStrings.FieldReplication
-    href: SuperOffice.WebApi.Data.UserPreferenceStrings.FieldReplication.md
   - name: UserPreferenceStrings.Filter
     href: SuperOffice.WebApi.Data.UserPreferenceStrings.Filter.md
   - name: UserPreferenceStrings.FilterDialog

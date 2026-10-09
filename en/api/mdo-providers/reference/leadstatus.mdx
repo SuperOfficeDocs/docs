@@ -8,15 +8,17 @@ envir: online
 ---
 
 ## "leadstatus" MDO List
+
 List provider for LeadStatus
-
-
 
 Implemented by the LeadStatusListProvider class.
 The name of the MDO list is 'leadstatus'.
 
+## Additional Attributes
 
-
+| Description | Name | Example Value |
+|-----|-----|------|
+|Include soft-deleted items, so a value a contact already holds can still be resolved for display| IncludeAll|true|
 
 ## Sample Request
 
@@ -29,6 +31,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("leadstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -46,7 +49,6 @@ foreach (var item in listProvider.RootItems) {
 |3|Disqualified|||
 |4|Re-nurture|||
 |5|Qualified|||
-
 
 ## Related MDO Lists
 

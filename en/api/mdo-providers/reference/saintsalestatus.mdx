@@ -8,16 +8,12 @@ envir: online
 ---
 
 ## "saintsalestatus" MDO List
+
 This SoList provider generates the sale status list for the Saint criteria. This is a simple, hard-coded list corresponding
 to the status field of the Sale table.
 
-
-
 Implemented by the SaintSaleStatusProvider class.
 The name of the MDO list is 'saintsalestatus'.
-
-
-
 
 ## Sample Request
 
@@ -30,6 +26,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("saintsalestatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -42,12 +39,11 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|-1|All|||
-|1|Open|||
-|3|Lost|||
-|2|Sold|||
-|4|Stalled|||
-
+|-1||||
+|1||||
+|3||||
+|2||||
+|4||||
 
 ## Related MDO Lists
 

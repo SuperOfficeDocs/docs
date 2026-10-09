@@ -1,61 +1,32 @@
 ---
 title: emailaddress
 keywords: mdoprovider mdo provider emailaddress
-description: List of e-mail addresses matching the search value Searches e-mail address, person name, company name. E-mail address matches - return e-mail addresses + owner name (person or contact name) Person name matches - return all e-mail addresses for matched persons Company name matches. return all persons + first e-mail address for matched persons. 
+description: List of e-mail addresses matching the search value Searches e-mail address, person name, company name. E-mail address matches - return e-mail addresses + owner name (person or contact name) Person name matches - return all e-mail addresses for matched persons Company name matches. return all persons + first e-mail address for matched persons.
 generated: true
 content_type: reference
 envir: online
 ---
 
 ## "emailaddress" MDO List
+
 List of e-mail addresses matching the search value
 Searches e-mail address, person name, company name.
 
-
-
 E-mail address matches: return e-mail addresses + owner name (person or contact name)
-
-
-
-
 
 Person name matches: return all e-mail addresses for matched persons
 
-
-
-
-
 Company name matches. return all persons + first e-mail address for matched persons.
-
-
-
 
 Returns: list item with
 
-
-
 Id = e-mail address id
-
-
-
-
 
 Name = name + e-mail
 
-
-
-
-
 ExtraInfo = e-mail address
 
-
-
-
-
 Type = "Person" or "Contact"
-
-
-
 
 Implemented by the EmailAddressProvider class.
 The name of the MDO list is 'emailaddress'.
@@ -66,10 +37,6 @@ The name of the MDO list is 'emailaddress'.
 |-----|-----|------|
 |excludeEmailDescription| |false|
 |Operator used for search. Available values: 'contains', 'startsWith'. Default value is 'contains'.| operator|contains|
-
-
-
-
 
 ## Sample Request
 
@@ -82,6 +49,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("emailaddress", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -115,7 +83,6 @@ foreach (var item in listProvider.RootItems) {
 |95|Carl-Oskar Cederström &lt;qa5@superoffice.com&gt;||qa5@superoffice.com|
 |96|Cidrik Culien &lt;qa5@superoffice.com&gt;|nomail|qa5@superoffice.com|
 |97|Cecilie Carlsen &lt;qa5@superoffice.com&gt;||qa5@superoffice.com|
-
 
 ## Related MDO Lists
 

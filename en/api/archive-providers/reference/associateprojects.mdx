@@ -1,6 +1,6 @@
 ---
 title: AssociateProjects
-description: 
+description:
 keywords: AssociateProjects archive provider
 generated: true
 content_type: reference
@@ -12,62 +12,64 @@ envir: onsite, online
 This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.AssociateProjectsProvider inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
-|"project"|Projects|
+|"project"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|completed|bool|Completed: Displays a check mark indicating if the project has been completed.| x |
-|projectId|int|DB ID: Displays the database ID for a project row| x |
-|name|stringorPK|Project name: Displays the Project's name| x |
-|number|string|Number: Displays the project's number| x |
-|type|listAny|Project type: Displays the project's type| x |
-|status|listAny|Status: Displays the project's status| x |
-|statusRank| *None* |Status rank: Rank of the project status in the status list| x |
-|associateId|associate|ID: Displays login ID of the associate who owns the project| x |
-|hasInfoText|bool|Info: Displays an icon indicating if the project has a description text. The text itself will be displayed in a tooltip.| x |
-|icon| *None* |Category: Displays the icon for an activity type| x |
-|text|string|Text: Displays a descriptive text for the item| x |
-|description|string|Description : Description| x |
-|updatedBy|associate|Updated by: The user who last updated the data| x |
-|updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
-|updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
-|registeredBy|associate|Registered by: The user who registered the data| x |
-|registeredByFullName|associate|Registered by - Full name: The user who registered the data| x |
-|registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
-|hasGuide|bool|Guided: Does this sale have a Sales Guide| x |
-|nextMilestone|date|Next milestone: Date of next non-completed activity that is marked as a milestone| x |
-|endDate|date|End date: End date of project| x |
-|imageThumbnail| *None* |Thumbnail: Scaled-down image of project image|  |
-|activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
-|eventId|int|Event ID: Event ID| x |
-|startDate|date|Start date: Project start date| x |
-|projectPublish/isPublished|bool|Published: Displays an icon indicating if the project or sale has been published| x |
-|projectPublish/publishedFrom|date|From date: Start date for publishing. The record will not be visible prior to this date| x |
-|projectPublish/publishedTo|date|To date: End date for publishing. The record will not be visible after this date| x |
-|projectPublish/publishedBy| *None* |Published by: Published by|  |
-|projectEvent/isExternalEvent|bool|Event: Is this an external event| x |
-|projectEvent/eventDate|date|Event date: Event date| x |
-|projectEvent/hasSignOn|bool|Sign On: Does this event have the Sign On function enabled| x |
-|projectEvent/hasSignOff|bool|Sign Off: Does this event have the Sign Off function enabled| x |
-|projectUrl/URLAddress|string|URL| x |
-|projectUrl/URLDescription|string|Description| x |
-|projectUdef/SuperOffice:1|string|projectshorttext| x |
-|projectUdef/SuperOffice:2|string|projectlongtext| x |
-|projectUdef/SuperOffice:3|int|projectnumber| x |
-|projectUdef/SuperOffice:4|date|projectdate| x |
-|projectUdef/SuperOffice:5|unlimitedDate|projectunlimiteddate| x |
-|projectUdef/SuperOffice:6|bool|projectcheckbox| x |
-|projectUdef/SuperOffice:7|listAny|projectdropdownlistbox| x |
-|projectUdef/SuperOffice:8|decimal|projectdecimal| x |
-|projectUdef/SuperOffice:9|int|page1saleandmarketing| x |
-|projectUdef/SuperOffice:10|int|page1saleandadmin| x |
-|project/textId|int|Text ID| x |
-|project/infoText|positiveString|Information: Displays the text entered in the description field| x |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
+|completed|bool|| x |
+|projectId|int|| x |
+|name|stringorPK|| x |
+|number|string|| x |
+|type|listAny|| x |
+|status|listAny|| x |
+|statusRank| *None* || x |
+|associateId|associate|| x |
+|hasInfoText|bool|| x |
+|icon| *None* || x |
+|text|string|| x |
+|description|string|| x |
+|updatedBy|associate|| x |
+|updatedByFullName|associate|| x |
+|updatedDate|date|| x |
+|registeredBy|associate|| x |
+|registeredByFullName|associate|| x |
+|registeredDate|date|| x |
+|hasGuide|bool|| x |
+|nextMilestone|date|| x |
+|endDate|date|| x |
+|imageThumbnail| *None* ||  |
+|activeErpLinks|bool|| x |
+|eventId|int|| x |
+|startDate|date|| x |
+|projectPublish/isPublished|bool|| x |
+|projectPublish/publishedFrom|date|| x |
+|projectPublish/publishedTo|date|| x |
+|projectPublish/publishedBy| *None* ||  |
+|projectEvent/isExternalEvent|bool|| x |
+|projectEvent/eventDate|date|| x |
+|projectEvent/hasSignOn|bool|| x |
+|projectEvent/hasSignOff|bool|| x |
+|projectUrl/URLAddress|string|| x |
+|projectUrl/URLDescription|string|| x |
+|projectUdef/SuperOffice:1|string|| x |
+|projectUdef/SuperOffice:2|string|| x |
+|projectUdef/SuperOffice:3|int|| x |
+|projectUdef/SuperOffice:4|date|| x |
+|projectUdef/SuperOffice:5|unlimitedDate|| x |
+|projectUdef/SuperOffice:6|bool|| x |
+|projectUdef/SuperOffice:7|listAny|| x |
+|projectUdef/SuperOffice:8|decimal|| x |
+|projectUdef/SuperOffice:9|int|| x |
+|projectUdef/SuperOffice:10|int|| x |
+|project/textId|int|| x |
+|project/infoText|positiveString|| x |
 
 ## Sample
 
@@ -80,4 +82,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

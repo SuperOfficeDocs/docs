@@ -8,11 +8,10 @@ envir: online
 ---
 
 ## "dashboardtile" MDO List
+
 MDO list provider for Dashboard tiles
 If the DashboardTileEntityType parameter is given in the ExtraInfo, only this type will be shown in list, so no tree view in that case.
 Example: DashboardTileEntityType=Company
-
-
 
 Implemented by the DashboardTileListProvider class.
 The name of the MDO list is 'dashboardtile'.
@@ -25,10 +24,6 @@ The name of the MDO list is 'dashboardtile'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -40,6 +35,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("dashboardtile", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -52,28 +48,27 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1507|My companies by category|||
-|1514|My companies by category and country|||
-|1518|My companies by business|||
-|1544|My companies by category and business|||
-|1513|Active projects for my group, sorted by owner|||
-|1543|My active projects by type|||
-|1504|My Pipeline - weighted amount|||
-|1506|Last won sales|||
-|1508|Leads won by my group, sorted by source|||
-|1509|Top sales reps this month|||
-|1511|My pipeline - actual amount|||
-|1512|My closing rate|||
-|1515|My lost sales by reason|||
-|1517|Lost sales by my group, sorted by competitor |||
-|1521|Win/loss rate for my group, sorted by source|||
-|1522|Largest upcoming sales|||
-|1523|My forecast|||
-|1524|Group revenue this month|||
-|1526|Sales YTD compared to last year for my group|||
-|1527|My pipeline in numbers|||
-|1528|My sales in numbers|||
-
+|1507||||
+|1514||||
+|1518||||
+|1544||||
+|1513||||
+|1543||||
+|1504||||
+|1506||||
+|1508||||
+|1509||||
+|1511||||
+|1512||||
+|1515||||
+|1517||||
+|1521||||
+|1522||||
+|1523||||
+|1524||||
+|1526||||
+|1527||||
+|1528||||
 
 ## Related MDO Lists
 

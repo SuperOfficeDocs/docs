@@ -1044,7 +1044,7 @@
           "License_Agent"
         ],
         "summary": "Get User And Installation Licence Status",
-        "description": "Get status values for user licenses and installation license that can be used for feedback to the user.\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get status values for user licenses and installation license that can be used for feedback to the user.\n\nNsApiSlow threshold: 500 ms.",
         "operationId": "v1LicenseAgent_GetUserAndInstallationLicenceStatus",
         "parameters": [
           {
@@ -3467,10 +3467,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {

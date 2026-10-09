@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "ofmonth" MDO List
+
 MDO provider for the hard-coded list of "of" months in the recurrence dialog.
-
-
 
 Implemented by the OfMonthProvider class.
 The name of the MDO list is 'ofmonth'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ofmonth", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,19 +38,18 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|of $monthName|replacekey=$monthName|[SR_MONTH_JANUARY]|
-|2|of $monthName|replacekey=$monthName|[SR_MONTH_FEBRUARY]|
-|3|of $monthName|replacekey=$monthName|[SR_MONTH_MARCH]|
-|4|of $monthName|replacekey=$monthName|[SR_MONTH_APRIL]|
-|5|of $monthName|replacekey=$monthName|[SR_MONTH_MAY]|
-|6|of $monthName|replacekey=$monthName|[SR_MONTH_JUNE]|
-|7|of $monthName|replacekey=$monthName|[SR_MONTH_JULY]|
-|8|of $monthName|replacekey=$monthName|[SR_MONTH_AUGUST]|
-|9|of $monthName|replacekey=$monthName|[SR_MONTH_SEPTEMBER]|
-|10|of $monthName|replacekey=$monthName|[SR_MONTH_OCTOBER]|
-|11|of $monthName|replacekey=$monthName|[SR_MONTH_NOVEMBER]|
-|12|of $monthName|replacekey=$monthName|[SR_MONTH_DECEMBER]|
-
+|1||replacekey=$monthName|[SR_MONTH_JANUARY]|
+|2||replacekey=$monthName|[SR_MONTH_FEBRUARY]|
+|3||replacekey=$monthName|[SR_MONTH_MARCH]|
+|4||replacekey=$monthName|[SR_MONTH_APRIL]|
+|5||replacekey=$monthName|[SR_MONTH_MAY]|
+|6||replacekey=$monthName|[SR_MONTH_JUNE]|
+|7||replacekey=$monthName|[SR_MONTH_JULY]|
+|8||replacekey=$monthName|[SR_MONTH_AUGUST]|
+|9||replacekey=$monthName|[SR_MONTH_SEPTEMBER]|
+|10||replacekey=$monthName|[SR_MONTH_OCTOBER]|
+|11||replacekey=$monthName|[SR_MONTH_NOVEMBER]|
+|12||replacekey=$monthName|[SR_MONTH_DECEMBER]|
 
 ## Related MDO Lists
 

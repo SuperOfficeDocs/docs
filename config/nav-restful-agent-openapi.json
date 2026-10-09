@@ -210,6 +210,13 @@
     }
   },
   {
+    "group": "MentionAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-MentionAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
     "group": "MessagingAgent",
     "openapi": {
       "source": "openapi/agent/openapi-v3-MessagingAgent.json",

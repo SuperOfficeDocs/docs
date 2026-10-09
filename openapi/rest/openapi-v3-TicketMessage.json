@@ -1868,10 +1868,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
@@ -2657,7 +2657,7 @@
           },
           "ActiveInterests": {
             "format": "int32",
-            "description": "Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true",
+            "description": "Number of interests visible on this person: rows in pintr whose interest in PersInt is not deleted. Drives the interest indicator in lists and on the person card.",
             "type": "integer"
           },
           "ContactDepartment": {

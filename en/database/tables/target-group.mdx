@@ -8,7 +8,7 @@ envir: online
 
 import TargetGroup from "./includes/target-group.mdx";
 
-## target\_group Table (515)
+## target\_group Table (516)
 
 Info about a set of (sales, project, selection...) targets
 
@@ -26,7 +26,6 @@ Info about a set of (sales, project, selection...) targets
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |target\_dimension\_id|Dimension this target is in|FK [target_dimension](./target-dimension.mdx)|Yes|
-
 
 ![target_group table relationship diagram](/media/loc/en/database/tables/target_group.png)
 
@@ -46,7 +45,6 @@ Info about a set of (sales, project, selection...) targets
 |[target\_period](./target-period)  |A set of periods linked with target amounts for users/usergroups and the target groups/years. |
 |[target\_revision\_history](./target-revision-history)  |Revision history info in case the original target group or assignment info was deleted |
 
-
 ## Replication Flags
 
 * None
@@ -54,4 +52,3 @@ Info about a set of (sales, project, selection...) targets
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
-

@@ -1,7 +1,7 @@
 # Class ContactEntity {#SuperOffice_WebApi_Data_ContactEntity}
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for ContactEntity.
 The Contact Service. The service implements all services working with the Contact object
@@ -12,20 +12,20 @@ public class ContactEntity : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
 [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
@@ -169,6 +169,18 @@ public virtual int ContactId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
+### Context {#SuperOffice_WebApi_Data_ContactEntity_Context}
+
+Description of what the company does, for later agent/LLM use
+
+```csharp
+public virtual string Context { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### Country {#SuperOffice_WebApi_Data_ContactEntity_Country}
 
 The country this contact is located in. The country a contact is saved with, affects the phone number format, and the address layout.
@@ -209,8 +221,8 @@ public virtual DateTime CreatedDate { get; set; }
 ### CustomFields {#SuperOffice_WebApi_Data_ContactEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
-Custom fields combines user defined fields and extra fields into one bucket. 
-The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity#SuperOffice_WebApi_Data_ContactEntity_UserDefinedFields) properties are deprecated in favor of this
+Custom fields combines user defined fields and extra fields into one bucket.
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity#SuperOffice_WebApi_Data_ContactEntity_ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity#SuperOffice_WebApi_Data_ContactEntity_UserDefinedFields) properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -374,15 +386,15 @@ The naming convention of the key string is as follows:
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
-       The device identity is appended directly to the device name if it exists. 
-    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
+       The device identity is appended directly to the device name if it exists.
+    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name,
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
     &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
        &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
-       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
+       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary.
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
@@ -435,6 +447,18 @@ public virtual string Kananame { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### LinkedInUrl {#SuperOffice_WebApi_Data_ContactEntity_LinkedInUrl}
+
+The LinkedIn URL for the company
+
+```csharp
+public virtual string LinkedInUrl { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### Name {#SuperOffice_WebApi_Data_ContactEntity_Name}
 
 Contact name
@@ -458,6 +482,18 @@ public virtual bool NoMailing { get; set; }
 #### Property Value
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### NumEmployees {#SuperOffice_WebApi_Data_ContactEntity_NumEmployees}
+
+Approximate number of employees working in this company
+
+```csharp
+public virtual int NumEmployees { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### Number1 {#SuperOffice_WebApi_Data_ContactEntity_Number1}
 
@@ -519,6 +555,42 @@ public virtual EntityElement[] Phones { get; set; }
 
  [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
+### RevenueBasecurrency {#SuperOffice_WebApi_Data_ContactEntity_RevenueBasecurrency}
+
+Revenue converted to base currency
+
+```csharp
+public virtual double RevenueBasecurrency { get; set; }
+```
+
+#### Property Value
+
+ [double](https://learn.microsoft.com/dotnet/api/system.double)
+
+### RevenueYear {#SuperOffice_WebApi_Data_ContactEntity_RevenueYear}
+
+The year the revenue was recorded
+
+```csharp
+public virtual int RevenueYear { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### SharecapitalBasecurrency {#SuperOffice_WebApi_Data_ContactEntity_SharecapitalBasecurrency}
+
+Capital invested in the company, in base currency
+
+```csharp
+public virtual double SharecapitalBasecurrency { get; set; }
+```
+
+#### Property Value
+
+ [double](https://learn.microsoft.com/dotnet/api/system.double)
+
 ### Source {#SuperOffice_WebApi_Data_ContactEntity_Source}
 
 How did we get this contact? For future integration needs
@@ -530,6 +602,18 @@ public virtual short Source { get; set; }
 #### Property Value
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
+
+### SourcedFrom {#SuperOffice_WebApi_Data_ContactEntity_SourcedFrom}
+
+Name of the source of the data, for traceability
+
+```csharp
+public virtual string SourcedFrom { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### SupportAssociate {#SuperOffice_WebApi_Data_ContactEntity_SupportAssociate}
 
@@ -640,9 +724,19 @@ public virtual bool Xstop { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
+### YearFounded {#SuperOffice_WebApi_Data_ContactEntity_YearFounded}
+
+The year the company was founded
+
+```csharp
+public virtual int YearFounded { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
 ## See Also
 
-[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
-
-
+[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent),
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent),

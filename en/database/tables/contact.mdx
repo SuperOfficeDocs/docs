@@ -39,7 +39,7 @@ Companies and Organizations.
 |soundEx|What the name sounds like, for duplicate detection|String(9)|Yes|
 |source|How did we get this contact? For future integration needs|UShort|Yes|
 |userdef2\_id|User defined table record 2|FK [udcontactLarge](./udcontactlarge.mdx)|Yes|
-|activeInterests|Number of records in cintr table; select count(*) from cintr ci where ci.contact_id = this.contact_id == activeInterests is always true|UShort|Yes|
+|activeInterests|Number of interests visible on this company: rows in cintr whose interest in ContInt is not deleted. Drives the interest indicator in lists and on the company card.|UShort|Yes|
 |updatedCount|Number of times updated|UShort|No|
 |group\_id|Group id of original owning associate, semantics like appnt.grp_id|FK [UserGroup](./usergroup.mdx)|Yes|
 |tzLocationId|Default timezone location for this contact|FK [TZLocation](./tzlocation.mdx)|Yes|
@@ -54,7 +54,14 @@ Companies and Organizations.
 |dbi\_last\_modified|When the entry was last modified.|DateTime|Yes|
 |activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|Yes|
 |DeletedDate|Datetime (utc) when this record was soft-deleted; if this value is set then the record should not be shown|UtcDateTime|Yes|
-
+|numEmployees|Approximate number of employees. When the source provides intervals rather than exact numbers, the agent uses the midpoint of the interval.|Int|Yes|
+|yearFounded|The year the company was founded|Int|Yes|
+|revenueYear|The year the revenue was recorded|Int|Yes|
+|revenueBasecurrency|Revenue converted to base currency. Historical value; not recalculated when the base currency changes.|Double|Yes|
+|sharecapitalBasecurrency|Capital invested in the company, in base currency. Historical value; not recalculated when the base currency changes.|Double|Yes|
+|sourcedFrom|Name of the source of the data, e.g. CSV filename, agent name, external application name, or CrmScript name, along with possible details like line number or URL for traceability.|String(200)|Yes|
+|linkedinUrl|The LinkedIn URL for the company, used to fetch data from the LinkedIn API.|String(200)|Yes|
+|contextText\_id|Description of what the company does, for later agent/LLM use|FK [text](./text.mdx)|Yes|
 
 ![contact table relationship diagram](/media/loc/en/database/tables/contact.png)
 
@@ -134,7 +141,6 @@ Companies and Organizations.
 |[utm\_parameters](./utm-parameters)  |Table for utm parameters collected from visits and formsubmissions |
 |[workflow\_instance](./workflow-instance)  |A set of properties related to the workflow instance of one participant going through the flow |
 
-
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -145,4 +151,3 @@ Companies and Organizations.
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
-

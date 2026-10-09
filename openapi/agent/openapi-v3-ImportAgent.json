@@ -661,10 +661,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
@@ -756,6 +756,11 @@
           "ExternalKey": {
             "description": "Optional external primary key for the row",
             "type": "string"
+          },
+          "SourceLine": {
+            "format": "int32",
+            "description": "1-based line number of this row in the imported source file, if known (0 if not applicable)",
+            "type": "integer"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"

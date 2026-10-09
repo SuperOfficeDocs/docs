@@ -1,7 +1,7 @@
 ---
 title: simplemailingstatus
 keywords: mdoprovider mdo provider simplemailingstatus
-description: 
+description:
 generated: true
 content_type: reference
 envir: online
@@ -9,14 +9,8 @@ envir: online
 
 ## "simplemailingstatus" MDO List
 
-
-
-
 Implemented by the SimpleMailingStatusProvider class.
 The name of the MDO list is 'simplemailingstatus'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +23,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("simplemailingstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,13 +36,12 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|0|Under construction|||
-|1|Finished|||
-|2|Cancelled|||
-|3|Scheduled|||
-|8|Deleted|||
-|13|Too many recipients|||
-
+|0||||
+|1||||
+|2||||
+|3||||
+|8||||
+|13||||
 
 ## Related MDO Lists
 

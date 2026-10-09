@@ -1,16 +1,16 @@
 ---
 title: crmscript
 keywords: mdoprovider mdo provider crmscript
-description: Archive of CRMScripts. Returns script id + name of script as hierarchy.
+description: Archive of CRMScripts. Returns script id + name of script, mirroring the full (arbitrarily nested) CRMScript folder structure.
 generated: true
 content_type: reference
 envir: online
 ---
 
 ## "crmscript" MDO List
-Archive of CRMScripts. Returns script id + name of script as hierarchy.
 
-
+Archive of CRMScripts. Returns script id + name of script, mirroring the full (arbitrarily
+nested) CRMScript folder structure.
 
 Implemented by the CRMScriptProvider class.
 The name of the MDO list is 'crmscript'.
@@ -21,10 +21,6 @@ The name of the MDO list is 'crmscript'.
 |-----|-----|------|
 |Only return scripts that have a non-empty include_id.| onlyWithIncludeId|False|
 |Return include_id instead of unique_identifier in ExtraInfo.| useIncludeId|False|
-
-
-
-
 
 ## Sample Request
 
@@ -37,6 +33,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("crmscript", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -50,6 +47,7 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 |16|Add project member||8682f6ad18a04b90b92ca26284d34a9a|
+|1|Callback script for compact mode||1415c74f7d5c4d79ad98626c59069ee1|
 |15|Create appointment||04a46d0aaa364224a2b6108708f8aa8e|
 |9|Create contact||a5d643cbcd324044832dde812127dd7e|
 |7|Create person||3a5d75a1a20c443f87743d89ce1891a9|
@@ -64,8 +62,6 @@ foreach (var item in listProvider.RootItems) {
 |6|Load request||df9b784015354a6681dff8d227dd543a|
 |5|Send email||9ba99700273d4342ba6ade76ab8c2576|
 |13|Trigger response||a108036d08c547abb1433af8cf4b0e2f|
-|1|Callback script for compact mode||1415c74f7d5c4d79ad98626c59069ee1|
-
 
 ## Related MDO Lists
 

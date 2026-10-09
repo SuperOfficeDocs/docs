@@ -4049,10 +4049,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
@@ -4501,7 +4501,7 @@
           },
           "ActiveInterests": {
             "format": "int32",
-            "description": "Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true",
+            "description": "Number of interests visible on this person: rows in pintr whose interest in PersInt is not deleted. Drives the interest indicator in lists and on the person card.",
             "type": "integer"
           },
           "ContactDepartment": {
@@ -5082,7 +5082,7 @@
             "type": "string"
           },
           "Completed": {
-            "description": "The Sale completed state. The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.",
+            "description": "The sale's completed state as an ActivityStatus (Completed=3), not the SaleDone enum stored in sale.done. Only Completed marks the sale as done (sale.done=2); any other value, including Started, is stored as not done (sale.done=1).",
             "enum": [
               "Unknown",
               "NotStarted",

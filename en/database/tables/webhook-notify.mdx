@@ -8,7 +8,7 @@ envir: online
 
 import WebhookNotify from "./includes/webhook-notify.mdx";
 
-## Webhook\_notify Table (525)
+## Webhook\_notify Table (526)
 
 Notification recipients for webhook failure events. Each row defines one recipient (associate or ad-hoc email) that should be notified when a webhook fails.
 
@@ -25,7 +25,6 @@ Notification recipients for webhook failure events. Each row defines one recipie
 |updated|Last updated when|UtcDateTime|No|
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-
 
 ![Webhook_notify table relationship diagram](/media/loc/en/database/tables/Webhook_notify.png)
 
@@ -45,7 +44,6 @@ Notification recipients for webhook failure events. Each row defines one recipie
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[Webhook](./webhook)  |Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics. |
 
-
 ## Replication Flags
 
 * None
@@ -53,4 +51,3 @@ Notification recipients for webhook failure events. Each row defines one recipie
 ## Security Flags
 
 * No access control via user's Role.
-

@@ -1,7 +1,7 @@
 # Interface IImportAgent {#SuperOffice_WebApi_Agents_IImportAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 This agent can be used to import data into the system
 
@@ -11,7 +11,7 @@ public interface IImportAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -92,7 +92,7 @@ The rows that will be manipulated and according to Import rules
 
 `columnDefinition` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-An array of the columndefinitions, like firstname, lastname, ...
+An array of the columndefinitions, like person.firstname, person.lastname, ... - see ImportColumnDef for names
 
 `culture` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
@@ -100,7 +100,7 @@ The current culture used in the import. Used to match language specific strings
 
 `context` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-Optional context for the import.
+Optional context for the import. (sourcedFrom=yyy&amp;fileName=xxx&amp;pricelistId=123)
 
 `requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
@@ -124,11 +124,11 @@ Task<int[]> SaveImportAsync(ImportLine[] importLines, string[] columnDefinition,
 
 `importLines` [ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]
 
-The rows that will be imported
+The rows that will be imported - only selected rows are saved.
 
 `columnDefinition` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-An array of the columndefinitions, like firstname, lastname, ...
+An array of the columndefinitions, like person.firstname, person.lastname, ... - see ImportColumnDef for names
 
 `createSelection` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
@@ -140,7 +140,7 @@ The current culture used in the import. Used to match language specific strings
 
 `context` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-Optional context for the import.
+Optional context for the import. (sourcedFrom=yyy&amp;fileName=xxx&amp;pricelistId=123)
 
 `requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
@@ -151,4 +151,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
 
 First part: the id of the selection created after the import, 0 if no selection is created. Second part: The number of rows actually imported
-

@@ -143,6 +143,10 @@ MDO Lists, reading, searching, and item lookup.
 
 Agent used for Marketing functions, such as Forms
 
+ [MentionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MentionAgent)
+
+Agent used for getting, marking read, and deleting @-mentions
+
  [MessagingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MessagingAgent)
 
 SMS and other external messaging systems
@@ -399,6 +403,10 @@ MDO Lists, reading, searching, and item lookup.
 
 Agent used for Marketing functions, such as Forms
 
+ [IMentionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IMentionAgent)
+
+Agent used for getting, marking read, and deleting @-mentions
+
  [IMessagingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IMessagingAgent)
 
 SMS and other external messaging systems
@@ -512,4 +520,3 @@ Webhook definitions - webhooks signal other systems about events inside NetServe
  [IWorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IWorkflowAgent)
 
 Agent lets you configure workflow automation
-

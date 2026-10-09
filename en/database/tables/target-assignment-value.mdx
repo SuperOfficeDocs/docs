@@ -8,7 +8,7 @@ envir: online
 
 import TargetAssignmentValue from "./includes/target-assignment-value.mdx";
 
-## target\_assignment\_value Table (518)
+## target\_assignment\_value Table (519)
 
 A set of values linked to assignment info and a period in a target group.
 
@@ -25,7 +25,6 @@ A set of values linked to assignment info and a period in a target group.
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |target\_value|Target value|Double|Yes|
-
 
 ![target_assignment_value table relationship diagram](/media/loc/en/database/tables/target_assignment_value.png)
 
@@ -44,7 +43,6 @@ A set of values linked to assignment info and a period in a target group.
 |[target\_assignment\_info](./target-assignment-info)  |Linking associate, company or user group target and other information with target values |
 |[target\_period](./target-period)  |A set of periods linked with target amounts for users/usergroups and the target groups/years. |
 
-
 ## Replication Flags
 
 * None
@@ -52,4 +50,3 @@ A set of values linked to assignment info and a period in a target group.
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
-

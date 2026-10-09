@@ -8,18 +8,14 @@ envir: online
 ---
 
 ## "freetextsearchentity" MDO List
+
 List provider that returns the entities supported by free text search. The extraInfo field contains the
 programmatic table name, which can be used as input for the OwnerEntityName restriction of the
 [FreetextCountProvider](/en/api/archive-providers/reference/freetextcount). The ID of each item is the table number
 corresponding to the entity, and can also be used as a restriction value.
 
-
-
 Implemented by the FreetextSearchEntityProvider class.
 The name of the MDO list is 'freetextsearchentity'.
-
-
-
 
 ## Sample Request
 
@@ -32,6 +28,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("freetextsearchentity", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -44,14 +41,13 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|5|Company||contact|
-|6|Contact||person|
-|11|Project||project|
-|9|Follow-up||appointment|
-|10|Document||document|
-|13|Sale||sale|
-|23|Selection||selection|
-
+|5|||contact|
+|6|||person|
+|11|||project|
+|9|||appointment|
+|10|||document|
+|13|||sale|
+|23|||selection|
 
 ## Related MDO Lists
 

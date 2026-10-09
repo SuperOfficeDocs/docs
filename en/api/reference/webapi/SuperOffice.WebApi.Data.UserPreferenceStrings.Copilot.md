@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot"></a> Class UserPreferenceStrings.Copilot
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Copilot Hugo AI
 
@@ -11,17 +11,17 @@ public static class UserPreferenceStrings.Copilot
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [UserPreferenceStrings.Copilot](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Copilot)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Fields
@@ -40,9 +40,8 @@ public const string AllowWebAccess = "allowWebAccess"
 
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_AutoGenerateReply"></a> AutoGenerateReply
 
-Automatically generate reply answer to message?
-
 ```csharp
+[Obsolete("Moved to AI section: use UserPreferenceStrings.AI.AutoGenerateReply")]
 public const string AutoGenerateReply = "autoGenerateReply"
 ```
 
@@ -112,13 +111,11 @@ public const string ServiceSystemPrompt = "systemPrompt"
 
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_ShowAiReplyTool"></a> ShowAiReplyTool
 
-Show the AI suggestion in the Reply Tools sidebar?
-
 ```csharp
+[Obsolete("Moved to AI section: use UserPreferenceStrings.AI.ShowAiReplyTool")]
 public const string ShowAiReplyTool = "showAiReplyTool"
 ```
 
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-

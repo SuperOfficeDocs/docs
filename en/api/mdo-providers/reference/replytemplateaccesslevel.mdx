@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "replytemplateaccesslevel" MDO List
+
 MDO provider for the ReplyTemplateAccessLevel enum
-
-
 
 Implemented by the ReplyTemplateAccessLevelProvider class.
 The name of the MDO list is 'replytemplateaccesslevel'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("replytemplateaccesslevel", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,10 +38,9 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|Everyone can read and edit||Full|
-|2|Everyone can read, but only you can edit||Read|
-|3|Only you can read or edit||None|
-
+|1|||Full|
+|2|||Read|
+|3|||None|
 
 ## Related MDO Lists
 

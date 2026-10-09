@@ -1,7 +1,7 @@
 # Interface ICRMScriptAgent {#SuperOffice_WebApi_Agents_ICRMScriptAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Manage and execute CRMScript functions.
 &lt;p&gt;&lt;/p&gt;
@@ -13,7 +13,7 @@ public interface ICRMScriptAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -510,7 +510,7 @@ Information about the CRMScript as saved in the database
 
 ### SaveCRMScriptEntityAsync\(CRMScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveCRMScriptEntityAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_}
 
-Updates the existing CRMScriptEntity or creates a new CRMScriptEntity if the id parameter is 0. 
+Updates the existing CRMScriptEntity or creates a new CRMScriptEntity if the id parameter is 0.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
@@ -592,7 +592,7 @@ Trigger script details and source code.
 
 ### SaveTriggerScriptEntityAsync\(TriggerScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveTriggerScriptEntityAsync_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_}
 
-Updates the existing TriggerScriptEntity or creates a new TriggerScriptEntity if the id parameter is 0. 
+Updates the existing TriggerScriptEntity or creates a new TriggerScriptEntity if the id parameter is 0.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
@@ -771,4 +771,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
 
 True if the syntax is correct
-

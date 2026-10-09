@@ -1,7 +1,7 @@
 ---
 title: taskmenudestination
 keywords: mdoprovider mdo provider taskmenudestination
-description: 
+description:
 generated: true
 content_type: reference
 envir: online
@@ -9,14 +9,8 @@ envir: online
 
 ## "taskmenudestination" MDO List
 
-
-
-
 Implemented by the TaskMenuDestinationProvider class.
 The name of the MDO list is 'taskmenudestination'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +23,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("taskmenudestination", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,16 +36,15 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|Company||contact|
-|2|Contact||person|
-|3|Sale||sale|
-|4|Project||project|
-|5|Follow-up||appointment|
-|6|Document||document|
-|7|Quote||Quote|
-|8|Request||ticket|
-|9|Request - Message||ej_message|
-
+|1|||contact|
+|2|||person|
+|3|||sale|
+|4|||project|
+|5|||appointment|
+|6|||document|
+|7|||Quote|
+|8|||ticket|
+|9|||ej_message|
 
 ## Related MDO Lists
 

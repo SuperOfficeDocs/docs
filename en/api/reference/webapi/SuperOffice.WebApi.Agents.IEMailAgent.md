@@ -1,7 +1,7 @@
 # Interface IEMailAgent {#SuperOffice_WebApi_Agents_IEMailAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Email connection, reading, sending
 &lt;p&gt;&lt;/p&gt;
@@ -13,7 +13,7 @@ public interface IEMailAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -2731,7 +2731,7 @@ The saved e-mail entity
 
 ### SaveEMailAccountAsync\(EMailAccount, RequestOptions\) {#SuperOffice_WebApi_Agents_IEMailAgent_SaveEMailAccountAsync_SuperOffice_WebApi_Data_EMailAccount_SuperOffice_WebApi_RequestOptions_}
 
-Updates the existing EMailAccount or creates a new EMailAccount if the id parameter is 0. 
+Updates the existing EMailAccount or creates a new EMailAccount if the id parameter is 0.
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.
 
@@ -3045,7 +3045,7 @@ A void return
 
 ### TestAuthenticateAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IEMailAgent_TestAuthenticateAsync_SuperOffice_WebApi_RequestOptions_}
 
-Test if logged-in user has a working mail account 
+Test if logged-in user has a working mail account
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.
 
@@ -3092,4 +3092,3 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
 This method has no return value
-

@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "dayofmonth" MDO List
+
 MDO provider for the hard-coded list of day alternatives in the recurrence dialog.
-
-
 
 Implemented by the DayOfMonthProvider class.
 The name of the MDO list is 'dayofmonth'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("dayofmonth", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,28 +38,27 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|Day %d|replacekey=%d|1|
-|2|Day %d|replacekey=%d|2|
-|3|Day %d|replacekey=%d|3|
-|4|Day %d|replacekey=%d|4|
-|5|Day %d|replacekey=%d|5|
-|6|Day %d|replacekey=%d|6|
-|7|Day %d|replacekey=%d|7|
-|8|Day %d|replacekey=%d|8|
-|9|Day %d|replacekey=%d|9|
-|10|Day %d|replacekey=%d|10|
-|11|Day %d|replacekey=%d|11|
-|12|Day %d|replacekey=%d|12|
-|13|Day %d|replacekey=%d|13|
-|14|Day %d|replacekey=%d|14|
-|15|Day %d|replacekey=%d|15|
-|16|Day %d|replacekey=%d|16|
-|17|Day %d|replacekey=%d|17|
-|18|Day %d|replacekey=%d|18|
-|19|Day %d|replacekey=%d|19|
-|20|Day %d|replacekey=%d|20|
-|21|Day %d|replacekey=%d|21|
-
+|1||replacekey=%d|1|
+|2||replacekey=%d|2|
+|3||replacekey=%d|3|
+|4||replacekey=%d|4|
+|5||replacekey=%d|5|
+|6||replacekey=%d|6|
+|7||replacekey=%d|7|
+|8||replacekey=%d|8|
+|9||replacekey=%d|9|
+|10||replacekey=%d|10|
+|11||replacekey=%d|11|
+|12||replacekey=%d|12|
+|13||replacekey=%d|13|
+|14||replacekey=%d|14|
+|15||replacekey=%d|15|
+|16||replacekey=%d|16|
+|17||replacekey=%d|17|
+|18||replacekey=%d|18|
+|19||replacekey=%d|19|
+|20||replacekey=%d|20|
+|21||replacekey=%d|21|
 
 ## Related MDO Lists
 

@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "saletype" MDO List
+
 List of sale types, with default sale duration in minutes in extra info.
-
-
 
 Implemented by the SaleTypeProvider class.
 The name of the MDO list is 'saletype'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("saletype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -42,10 +39,9 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 |1|General sale||43200|
-|2|Guided Sale||43200|
-|4|Staged Sale||43200|
-|3|Stakeholders||131040|
-
+|2|Guided Sale||44640|
+|4|Staged Sale||44640|
+|3|Stakeholders||132480|
 
 ## Related MDO Lists
 

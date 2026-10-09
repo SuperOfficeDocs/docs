@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "workflowgoaltype" MDO List
+
 MDO provider for the WorkflowGoalType enum
-
-
 
 Implemented by the WorkflowGoalTypeProvider class.
 The name of the MDO list is 'workflowgoaltype'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("workflowgoaltype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,17 +38,16 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|Contact updated|||
-|2|Sale created on contact|||
-|3|Sale created on company|||
-|4|Appointment created|||
-|5|Added to project|||
-|6|Added to selection|||
-|7|Form submitted|||
-|8|Had chat|||
-|9|Link clicked|||
-|10|Request created|||
-
+|1||||
+|2||||
+|3||||
+|4||||
+|5||||
+|6||||
+|7||||
+|8||||
+|9||||
+|10||||
 
 ## Related MDO Lists
 

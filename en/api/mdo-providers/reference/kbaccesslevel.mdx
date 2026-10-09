@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "kbaccesslevel" MDO List
+
 MDO provider for the KbAccessLevel enum
-
-
 
 Implemented by the KbAccessLevelProvider class.
 The name of the MDO list is 'kbaccesslevel'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("kbaccesslevel", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,11 +38,10 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1|Private||Private|
-|2|Accessible to internal users||Internal|
-|3|Accessible to registered customers||PublicAuthenticated|
-|4|Accessible to everyone||Public|
-
+|1|||Private|
+|2|||Internal|
+|3|||PublicAuthenticated|
+|4|||Public|
 
 ## Related MDO Lists
 

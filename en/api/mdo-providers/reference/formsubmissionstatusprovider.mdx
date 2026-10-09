@@ -1,7 +1,7 @@
 ---
 title: formsubmissionstatusprovider
 keywords: mdoprovider mdo provider formsubmissionstatusprovider
-description: 
+description:
 generated: true
 content_type: reference
 envir: online
@@ -9,14 +9,8 @@ envir: online
 
 ## "formsubmissionstatusprovider" MDO List
 
-
-
-
 Implemented by the FormSubmissionStatusProvider class.
 The name of the MDO list is 'formsubmissionstatusprovider'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +23,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("formsubmissionstatusprovider", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -41,11 +36,10 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|2|Awaiting confirmation|||
-|3|Submitted|||
-|4|Processed|||
-|32767|Other|||
-
+|2||||
+|3||||
+|4||||
+|32767||||
 
 ## Related MDO Lists
 
