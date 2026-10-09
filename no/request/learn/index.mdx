@@ -2,7 +2,7 @@
 uid: help-no-request
 title: Saker og SuperOffice Service
 description: Introduksjon til saker i SuperOffice
-keywords: ['sak', 'service', 'Saksskjerm', 'Sakskort', 'Oversikt', 'venstrepanel', 'aktive faner', 'festede saker', 'forhåndsvisningspanel', 'faste lister', 'lukke fane automatisk', 'flere aktive faner', 'lukk alle faner', 'for mange faner', 'ulagrede endringer']
+keywords: ['sak', 'service', 'Saksskjerm', 'Sakskort', 'Oversikt', 'venstrepanel', 'aktive faner', 'festede saker', 'forhåndsvisningspanel', 'standardlister', 'lukke fane automatisk', 'flere aktive faner', 'lukk alle faner', 'for mange faner', 'ulagrede endringer']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -17,6 +17,11 @@ redirect_from:
 boost: 1.5
 related:
   - Arbeid med oversiktssider: /no/learn/basics/overview-pages
+  - Opprett sak: /no/request/learn/create
+  - Godta: /no/request/learn/accept
+  - Svar: /no/request/learn/reply
+  - Automatisk tildeling: /no/request/learn/assign
+  - 7 tips for å tilby kundeservice i verdensklasse med SuperOffice Service - blogg: https://community.superoffice.com/en/learning/best-practices-tips/service/7-tips-to-provide-best-in-class-customer-service-with-superoffice-service/
 language: no
 ---
 
@@ -29,13 +34,15 @@ Hvert spørsmål kan defineres som en sak. Det kan være alt fra brukerstøttesp
 ![Sak med liste over ufordelte saker med forhåndsvisning -screenshot][img1]
 
 <Note>
-Saksskjermen innføres gradvis. Hvis du ikke ser den ennå, jobber du med flere saker i horisontale faner. Venstrepanelet, Oversikten og Omtaler er ikke tilgjengelige.
+
+Saksskjermen innføres gradvis. Hvis du ikke ser den ennå, jobber du med flere saker i horisontale faner. Venstrepanelet, fanen Oversikt og Omtaler er ikke tilgjengelige.
+
 </Note>
 
 ## Hvor får jeg tilgang til saker? {#open}
 
 * Arkiver i alle hovedkort, som Firma, Salg, Prosjekt
-* [Faste lister][10], for eksempel **Egne aktive saker**
+* [Standardlister][35], for eksempel **Egne aktive saker**
 * [Søk][12]
 * [Favoritter][18]
 * [Merkede meldinger][5]
@@ -52,13 +59,13 @@ Saksskjermen er stedet der du jobber med sakene dine. Den har tre områder:
 
 * **Venstrepanel:** Vertikale faner for sakene og utvalgene du jobber med, og et søkefelt for å finne andre. Det har også oppføringene **Oversikt**, **Finn sak** og **Omtaler**. Fest fanene du bruker hver dag. Se [Arbeid med oversiktssider][30] for hvordan venstrepanelet fungerer.
 
-* **Hovedområde:** Viser Oversikten, et utvalg eller en liste med saker i tavlevisning eller listevisning, eller én sak som Sakskortet.
+* **Hovedområde:** Viser fanen Oversikt, et utvalg eller en liste med saker i tavlevisning eller listevisning, eller én sak som et sakskort.
 
-* **Sidepanel:** [Sidepanelet][31] til høyre viser firmaet og personen for saken du jobber med. Det lukkes mens Oversikten vises, og åpnes igjen når du forlater Oversikten hvis det var åpent før.
+* **Sidepanel:** [Sidepanelet][31] til høyre viser firmaet og personen for saken du jobber med. Det lukkes mens fanen Oversikt vises, og åpnes igjen når du forlater fanen Oversikt hvis det var åpent før.
 
 ### Åpne Saksskjermen {#open-screen}
 
-* Klikk på ikonet **Saker** i [navigatoren][32]. Saksskjermen åpnes med fanen du brukte sist, eller med Oversikten hvis du ikke har noen åpne faner.
+* Klikk på ikonet **Saker** i [navigatoren][32]. Saksskjermen åpnes med fanen du brukte sist, eller med fanen Oversikt hvis du ikke har noen åpne faner.
 
 * Åpne en sak fra et hvilket som helst sted i SuperOffice CRM, for eksempel ved å dobbeltklikke på den i [detaljkortet Saker][33]. Saken åpnes i en ny fane.
 
@@ -66,11 +73,11 @@ Saksskjermen er stedet der du jobber med sakene dine. Den har tre områder:
 
 ### Hva du ser første gang {#first-time}
 
-Første gang du åpner Saksskjermen, kopieres sakene, utvalgene og standardlistene du hadde åpne i faner, til venstrepanelet. Fanene du festet, forblir festet. Oversikten åpnes hvis du ikke har noen aktiv fane. De gamle fanene dine endres ikke.
+Første gang du åpner Saksskjermen, kopieres de horisontale fanene du hadde åpne, til venstrepanelet. Festede faner forblir festede. Fanen Oversikt åpnes hvis du ikke har noen aktiv fane. De gamle fanene dine endres ikke.
 
 ## Få oversikt over sakene dine {#overview}
 
-Oversikten viser arbeidet ditt i opptil fire kolonner med kort. Som standard er kolonnene **Ufordelte saker**, **Egne aktive saker**, **Mine favoritter** og **Siste saker**. Hvert kort viser sakstype, saks-ID, tittel, firma og status.
+Fanen Oversikt viser arbeidet ditt i opptil fire kolonner med sakskort. Som standard er kolonnene **Ufordelte saker**, **Egne aktive saker**, **Mine favoritter** og **Siste saker**. Hvert kort viser sakstype, saks-ID, tittel, firma og status.
 
 1. Klikk på **Oversikt** i venstrepanelet.
 
@@ -78,17 +85,17 @@ Oversikten viser arbeidet ditt i opptil fire kolonner med kort. Som standard er 
 
 1. Klikk på et kort for å [forhåndsvise og oppdatere saken](#slide-in), eller dobbeltklikk på det for å åpne det i en fane.
 
-Slik jobber du med Oversikten:
+Slik jobber du med fanen Oversikt:
 
 * **Se flere saker:** En kolonne viser opptil 20 saker. Klikk på **Se alle saker** for å åpne hele listen eller utvalget i en fane.
 
-* **Sortere en kolonne:** Bruk sorteringsknappen for å sortere etter saks-ID, opprettelsesdato, eier, siste endring eller prioritet.
+* **Sorter en kolonne:** Bruk sorteringsknappen for å sortere etter saks-ID, opprettelsesdato, eier, siste endring eller prioritet.
 
 * **Åpne en person eller et firma:** Klikk på navnet på et kort.
 
-* **Laste Oversikten på nytt:** Klikk på knappen for å laste på nytt. En kolonne lastes også på nytt når du endrer en av sakene i samme nettleser. Endringer fra andre brukere vises ikke før du laster på nytt.
+* **Last fanen Oversikt på nytt:** Klikk på knappen for å laste på nytt. En kolonne lastes også på nytt når du endrer en av sakene i samme nettleser. Endringer fra andre brukere vises ikke før du laster på nytt.
 
-### Endre kolonnene på Oversikten {#edit-overview}
+### Endre kolonnene på fanen Oversikt {#edit-overview}
 
 1. Klikk på tannhjulknappen (<i class="ph ph-gear" aria-label="Gear"></i>) for å åpne **Rediger oversikt**.
 
@@ -101,7 +108,9 @@ Slik jobber du med Oversikten:
 For å gå tilbake til kolonnene du fikk fra starten, klikker du på **Tilbakestill til standard**.
 
 <Note>
-Oversiktsoppsettet ditt lagres i nettleseren du bruker. Det følger ikke med til en annen nettleser eller enhet.
+
+Oppsettet av fanen Oversikt lagres i nettleseren du bruker. Det følger ikke med til en annen nettleser eller enhet.
+
 </Note>
 
 ### Endre hva kortene viser {#edit-fields}
@@ -114,9 +123,9 @@ Oversiktsoppsettet ditt lagres i nettleseren du bruker. Det følger ikke med til
 
 1. Klikk på **Lagre**. Klikk på **Tilbakestill til standard** for å gjenopprette bare feltene i denne kolonnen.
 
-Venstrepanelet felles sammen og forhåndsvisningspanelet lukkes mens du redigerer.
+Venstrepanelet skjules og forhåndsvisningspanelet lukkes mens du redigerer.
 
-### Forhåndsvise og oppdatere en sak fra Oversikten {#slide-in}
+### Forhåndsvise og oppdatere en sak fra fanen Oversikt {#slide-in}
 
 1. Klikk på et kort. Saken åpnes i et panel til høyre, med de nyeste meldingene, saksdetaljene og svarknappene.
 
@@ -124,15 +133,15 @@ Venstrepanelet felles sammen og forhåndsvisningspanelet lukkes mens du redigere
 
 1. For å fortsette å jobbe med saken klikker du på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og deretter på **Åpne i full visning**. Velg **Fest sak** for å legge den til i gruppen **Festet**.
 
-Dra i kanten av panelet for å gjøre det bredere eller smalere. Panelet lukkes når du klikker på <i class="ph ph-x" aria-label="Close icon"></i>, når du forlater Oversikten og når du åpner en editor. Sidepanelet viser firmaet og personen for saken i forhåndsvisningspanelet.
+Dra i kanten av panelet for å gjøre det bredere eller smalere. Panelet lukkes når du klikker på <i class="ph ph-x" aria-label="Close icon"></i>. Det lukkes også når du forlater fanen Oversikt eller åpner en editor.
 
 ## Arbeid med fanene i venstrepanelet {#tabs}
 
-På Saksskjermen kan du ha mange saker og utvalg åpne samtidig. De vises i gruppen **Aktive**, og fanene du fester, vises i gruppen **Festet**. En fane er enten aktiv eller festet, aldri begge deler. De åpne og festede fanene dine lagres, så de er der når du kommer tilbake eller logger på fra en annen nettleser.
+Hver seksjon i venstrepanelet har en gruppe **Aktive** og en gruppe **Festet**. Du kan ha mange saker og utvalg åpne samtidig i gruppen **Aktive**. En fane er enten aktiv eller festet, aldri begge deler. Fanene dine lagres, så de er der når du logger på fra en annen nettleser.
 
 ### Åpne en annen fane {#open-tab}
 
-Åpne en sak eller et utvalg fra venstrepanelet, fra søkedialogen eller fra en lenke i SuperOffice CRM. Det åpnes i en ny fane rett etter fanen du er på. De andre fanene blir åpne, og hver fane beholder sitt eget usendte svar, sin egen redigeringsmodus og sin egen rulleposisjon.
+Åpne en sak eller et utvalg fra venstrepanelet, fra søkedialogen eller fra en lenke i SuperOffice CRM. Det åpnes i en ny fane rett etter fanen du er på. De andre fanene forblir åpne, og hver fane beholder sitt eget usendte svar, sin egen redigeringsmodus og sin egen rulleposisjon.
 
 <Note>
 
@@ -156,27 +165,27 @@ For festede faner bruker du **Løsne og lukk alle** eller **Løsne og lukk alle 
 
 En blyant (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) på slutten av en fane betyr at saken har ulagrede endringer. For eksempel har du et usendt svar, eller du redigerer saken.
 
-Når du lukker en fane med ulagrede endringer, blir du bedt om å bekrefte. Hvis du bekrefter, forkastes endringene. Faner som lukkes automatisk, spør aldri.
+Når du lukker en fane med ulagrede endringer, blir du bedt om å bekrefte. Hvis du bekrefter, forkastes endringene.
 
-### Se hvilke saker som trenger deg {#row-status}
+### Se saker som andre jobber med eller har endret {#row-status}
 
-Hver sakfane viser ID og tittel, og personen og firmaet under.
+Hver saksfane viser ID og tittel, og personen og firmaet under.
 
-Hvis Live UI er slått på i systemet ditt, erstatter et tilstedeværelsesikon sakstypeikonet når en annen bruker ser på eller redigerer en sak. Når en annen bruker har endret saken siden du åpnet den, vises et endringsikon i stedet. Hold musepekeren over ikonet for å se navnene. Hvis et utvalg eller en liste viser endringsikonet med **Arkivet kan være ute av synk**, laster du det på nytt. Merket forsvinner når du laster saken eller listen på nytt.
+Hvis Live UI er slått på i systemet ditt, kan du se hvem andre som jobber med en sak. Et tilstedeværelsesikon erstatter sakstypeikonet mens en annen bruker ser på eller redigerer saken. Når en annen bruker har endret saken siden du åpnet den, vises et endringsikon i stedet. Hold musepekeren over ikonet for å se navnene. Hvis fanen til et utvalg eller en liste viser endringsikonet med **Arkivet kan være ute av synk**, laster du det på nytt. Merket forsvinner når du laster saken eller listen på nytt.
 
-### Lukke sakfaner automatisk {#auto-close}
+### Lukke saksfaner automatisk {#auto-close}
 
-En sakfane lukkes av seg selv i disse situasjonene:
+En saksfane lukkes av seg selv i disse situasjonene:
 
 * Saken slettes, merkes som spam eller slås sammen med en annen sak. Fanen lukkes selv om den er festet. Hvis du slår sammen fra [sakskortet][16], åpnes den gjenværende saken i stedet.
 
-* Du legger til en melding i saken, eller setter statusen til **Avsluttet**, og du har slått på den tilsvarende preferansen. Festede faner blir åpne.
+* Du legger til en melding i saken, eller setter statusen til **Avsluttet**, og du har slått på den tilsvarende preferansen. Festede faner forblir åpne.
 
 Slik lukker du faner automatisk:
 
 1. Klikk på <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **Preferanser**.
 
-1. Velg gruppen **Sak**.
+1. Klikk på gruppen **Sak**.
 
 1. Sett **Lukk fanen automatisk når du legger til en melding i saken** eller **Lukk fanen automatisk når du endrer saksstatus til avsluttet** til **Ja**.
 
@@ -245,7 +254,9 @@ Fanen **Detaljer** inneholder en oversikt over alle feltene for saken.
 ### Endringslogg {#log}
 
 <Note>
+
 Endringslogg krever en **Service Premium**-lisens eller **Growth**-planen.
+
 </Note>
 
 Dette bildet viser loggen for denne saken. Alle hendelser registreres, inkludert når de oppstod, hva som skjedde, og hvem som var ansvarlig.
@@ -404,6 +415,7 @@ Noen innstillinger som påvirker kundestøtteagenter inkluderer:
 [8]: /no/request/learn/forward
 [9]: /no/request/learn/edit-message
 [10]: /no/request/learn/find
+[35]: /no/request/learn/find#list
 [11]: /no/request/learn/split-request
 [12]: /no/request/learn/find
 [16]: /no/request/learn/merge

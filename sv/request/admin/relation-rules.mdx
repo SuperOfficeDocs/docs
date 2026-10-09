@@ -57,7 +57,7 @@ Sammanfattningsraden nedanför villkoret bekräftar regelns fulla omfång på et
 
 | Alternativ | Beskrivning |
 |---|---|
-| **Kräver att parent har angetts** | Förhindrar att ett nytt ärende sparas om inte ett parent-ärende har angetts. Gäller endast om fältet **Parent** har lagts till i ärendeskärmbilden i [Screen Designer][3]. |
+| **Kräver att parent har angetts** | Förhindrar att ett nytt ärende sparas om inte ett parent-ärende har angetts. Gäller endast om fältet **Parent** har lagts till på ärendekortet i [Screen Designer][3]. |
 
 ### Beteende: Vid stängning
 
@@ -67,7 +67,7 @@ Sammanfattningsraden nedanför villkoret bekräftar regelns fulla omfång på et
 | **Erbjudande om att stänga parent när alla underordnade ärenden (child) stängs** | När det sista child-ärendet stängs uppmanas agenten att även stänga parent-ärendet. |
 | **Erbjudande om att stänga underordnade (child) ärenden och skicka meddelande när parent stängs** | När parent-ärendet stängs uppmanas agenten att stänga alla öppna child-ärenden och lägga till ett svarsmeddelande i varje, som skickas till deras mottagare. |
 
-I Ärendeskärmen stängs också flikarna för de ärenden som stängs på det här sättet. Det kräver inställningen **Stäng flik automatiskt när ärendets status ändras till stängt**. Se [Stäng ärendeflikar automatiskt][4].
+På ärendeskärmen stängs också flikarna för de ärenden som en relationsregel stänger. Det kräver inställningen **Stäng flik automatiskt när ärendets status ändras till stängt**. En fastnålad flik förblir öppen. Se [Stäng ärendeflikar automatiskt][4].
 
 ## Lägg till regel för relation
 
