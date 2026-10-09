@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_IApiAgent"></a> Interface IApiAgent
+# Interface IApiAgent {#SuperOffice_WebApi_Agents_IApiAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IApiAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_"></a> GetApiVersionAsync\(RequestOptions\)
+### GetApiVersionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets version info from base URL.
 
@@ -32,11 +32,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Dictionary containing meta-data: "NetServerVersion", "Services", "Version"
 
-### <a id="SuperOffice_WebApi_Agents_IApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTenantStatusAsync\(string, string, RequestOptions\)
+### GetTenantStatusAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the tenant status for a given customer, in a given environment. 
 Does not need base URL to be set.
@@ -53,7 +53,7 @@ The Online customer id: "Cust1234"
 
 `subdomain` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-"sod", "qastage" or "online". Default "online" (production). See <xref href="SuperOffice.WebApi.SubDomain" data-throw-if-not-resolved="false"></xref>
+"sod", "qastage" or "online". Default "online" (production). See [SubDomain](/en/api/reference/webapi/SuperOffice.WebApi.SubDomain)
 
 `requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
@@ -61,7 +61,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TenantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TenantStatus)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TenantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TenantStatus)\&gt;
 
 Tenant status
 

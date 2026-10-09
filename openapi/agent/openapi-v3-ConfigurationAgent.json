@@ -4418,6 +4418,133 @@
         ]
       }
     },
+    "/api/v1/Agents/Configuration/GetActiveFeatureLabs": {
+      "post": {
+        "tags": [
+          "Configuration_Agent"
+        ],
+        "summary": "Get Active Feature Labs",
+        "description": "Get the names of the Feature Labs (preview programs) currently active for this tenant.\n\nReturns an empty array when the tenant has no active Feature Labs. Intended for the Admin client's License page.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ConfigurationAgent_GetActiveFeatureLabs",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/Configuration/CreateDefaultDiaryViewEntity": {
       "post": {
         "tags": [
@@ -7342,10 +7469,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {

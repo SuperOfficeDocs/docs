@@ -36,7 +36,7 @@ var selectionEntity = agent.GetSelectionEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All SelectionEntity: <pre><code class="lang-csharp">"FindSelection"</code></pre>
 
 ## Constructors

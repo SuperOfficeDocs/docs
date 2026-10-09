@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_AssociateAgent"></a> Class AssociateAgent
+# Class AssociateAgent {#SuperOffice_WebApi_Agents_AssociateAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class AssociateAgent : AgentBase, IAssociateAgent, IAgentBase, IDisposabl
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
 [AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
 [AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
@@ -57,19 +57,19 @@ public class AssociateAgent : AgentBase, IAssociateAgent, IAgentBase, IDisposabl
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (AssociateAgent agent = new AssociateAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent__ctor_System_Net_Http_HttpClient_"></a> AssociateAgent\(HttpClient\)
+### AssociateAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_AssociateAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Associate utilities, notes, not user admininstration
 
@@ -83,7 +83,7 @@ public AssociateAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> AssociateAgent\(WebApiOptions, HttpClient\)
+### AssociateAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_AssociateAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Associate utilities, notes, not user admininstration
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAssociateAsync\(int, RequestOptions\)
+### GetAssociateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Associate object.
 
@@ -123,11 +123,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\&gt;
 
 Associate
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateByPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAssociateByPersonIdAsync\(int, RequestOptions\)
+### GetAssociateByPersonIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateByPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the associate that belongs to this person if the person is an associate.
 
@@ -147,11 +147,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\&gt;
 
 Associate if person is associate
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetAssociateListAsync\(int\[\], RequestOptions\)
+### GetAssociateListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific Associate objects.
 
@@ -171,11 +171,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\[\]\&gt;
 
 Array of Associate objects
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociatesByGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAssociatesByGroupAsync\(int, int, RequestOptions\)
+### GetAssociatesByGroupAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociatesByGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Method that returns a array of associate , based on DiaryGroupType and groupId. The differernt types are, Userdefined, Usergroup and ResourceHeadings
 
@@ -199,11 +199,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\[\]\&gt;
 
 Array of associate
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_GetEncryptionKeyAsync_SuperOffice_WebApi_RequestOptions_"></a> GetEncryptionKeyAsync\(RequestOptions\)
+### GetEncryptionKeyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetEncryptionKeyAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get unique key made from AssociateId and dbTag used for local storage encryption operations.
 
@@ -219,11 +219,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 encryptionKey
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_GetNoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNoteAsync\(int, RequestOptions\)
+### GetNoteAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetNoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an array of strings(notepad pages).
 
@@ -243,11 +243,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
 
 Returns an array of strings(notepad pages).
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_LogOffWindowsUsersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> LogOffWindowsUsersAsync\(int\[\], RequestOptions\)
+### LogOffWindowsUsersAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_LogOffWindowsUsersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Method that logs off associates that are logged on to the win client
 
@@ -271,7 +271,7 @@ Override language/culture codes on this request.
 
 A void return
 
-### <a id="SuperOffice_WebApi_Agents_AssociateAgent_SaveNoteAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> SaveNoteAsync\(int, string\[\], RequestOptions\)
+### SaveNoteAsync\(int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_SaveNoteAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Saves an array of strings(notepad pages).
 

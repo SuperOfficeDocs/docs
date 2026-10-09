@@ -37,7 +37,7 @@ var chatTopicEntity = agent.GetChatTopicEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             Sessions: <pre><code class="lang-csharp">"ChatSession"</code></pre> with restriction <pre><code class="lang-csharp">"chatTopic/chatTopicId eq " + id</code></pre>.
 
 ## Constructors

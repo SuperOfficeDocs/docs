@@ -372,7 +372,7 @@
           "FreeText_Agent"
         ],
         "summary": "Regenerate Index",
-        "description": "Wipe and regenerate the freetext index by scanning the database (freetext search will be unavailable while this operation runs\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Regenerate the freetext index by scanning the database.\n\nFreetext search may be unavailable while this operation runs, for instance when the index is built from scratch.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FreeTextAgent_RegenerateIndex",
         "parameters": [
           {
@@ -606,10 +606,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
@@ -767,7 +767,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FreeTextCarriers.RegenerateIndexRequest": {
-        "description": "RegenerateIndex: Wipe and regenerate the freetext index by scanning the database (freetext search will be unavailable while this operation runs",
+        "description": "RegenerateIndex: Regenerate the freetext index by scanning the database. Freetext search may be unavailable while this operation runs, for instance when the index is built from scratch.",
         "type": "object",
         "properties": {
           "RunAsBatch": {

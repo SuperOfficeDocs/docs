@@ -73,7 +73,7 @@ public SuperOfficeWebApiException(string message)
 
 ### <a id="SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_"></a> SuperOfficeWebApiException\(SerializationInfo, StreamingContext\)
 
-Mandatory constructor to support <xref href="System.SerializableAttribute" data-throw-if-not-resolved="false"></xref> ]
+Mandatory constructor to support [SerializableAttribute](https://learn.microsoft.com/dotnet/api/system.serializableattribute) ]
 
 ```csharp
 public SuperOfficeWebApiException(SerializationInfo info, StreamingContext context)

@@ -1,11 +1,11 @@
-# <a id="SuperOffice_WebApi_Authorization_IAuthorization"></a> Interface IAuthorization
+# Interface IAuthorization {#SuperOffice_WebApi_Authorization_IAuthorization}
 
 Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Defines a method to construct the Authorization header scheme and parameter for Http Requests.
-<xref href="SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword" data-throw-if-not-resolved="false"></xref>,
-<xref href="SuperOffice.WebApi.Authorization.AuthorizationTicket" data-throw-if-not-resolved="false"></xref>, <xref href="SuperOffice.WebApi.Authorization.AuthorizationImplicit" data-throw-if-not-resolved="false"></xref>
+[AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword),
+[AuthorizationTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationTicket), [AuthorizationImplicit](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationImplicit)
 
 ```csharp
 public interface IAuthorization
@@ -13,7 +13,7 @@ public interface IAuthorization
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Authorization_IAuthorization_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_IAuthorization_RefreshAuthorizationAsync}
 
 Delegate called when authentication fails. Use to acquire and return a new authentication header value.
 
@@ -23,11 +23,11 @@ Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get;
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\&gt;\&gt;
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Authorization_IAuthorization_GetAuthorization"></a> GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_IAuthorization_GetAuthorization}
 
 Return the HTTP Authorization scheme and parameters as an AuthenticationHeaderValue.
 

@@ -1,7 +1,7 @@
 ---
 title: Agent API changes in 12.5
 description: Agent API release notes for SuperOffice 12.5
-date: 10.09.2026
+date: 10.13.2026
 so_version: 12.5.2909
 content_type: release-note
 category: api

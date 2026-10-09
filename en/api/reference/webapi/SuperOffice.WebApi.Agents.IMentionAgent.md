@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_IMentionAgent"></a> Interface IMentionAgent
+# Interface IMentionAgent {#SuperOffice_WebApi_Agents_IMentionAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IMentionAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IMentionAgent_DeleteMentionsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteMentionsAsync\(int\[\], RequestOptions\)
+### DeleteMentionsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMentionAgent_DeleteMentionsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Delete mentions by id
 
@@ -40,7 +40,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IMentionAgent_GetMentionsCreatedByMeAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMentionsCreatedByMeAsync\(RequestOptions\)
+### GetMentionsCreatedByMeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMentionAgent_GetMentionsCreatedByMeAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the @-mentions the current associate created (tagged someone else)
 
@@ -56,11 +56,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\&gt;
 
 The current associate's created mentions, most-recent-first
 
-### <a id="SuperOffice_WebApi_Agents_IMentionAgent_GetMyMentionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetMyMentionsAsync\(bool, RequestOptions\)
+### GetMyMentionsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IMentionAgent_GetMyMentionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get the current associate's @-mentions
 
@@ -80,11 +80,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\&gt;
 
 The current associate's mentions, most-recent-first
 
-### <a id="SuperOffice_WebApi_Agents_IMentionAgent_GetMyMentionsUnreadCountAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyMentionsUnreadCountAsync\(RequestOptions\)
+### GetMyMentionsUnreadCountAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMentionAgent_GetMyMentionsUnreadCountAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the current associate's unread @-mention count
 
@@ -100,11 +100,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The current associate's unread mention count
 
-### <a id="SuperOffice_WebApi_Agents_IMentionAgent_MarkMentionsAsReadAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> MarkMentionsAsReadAsync\(int\[\], RequestOptions\)
+### MarkMentionsAsReadAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMentionAgent_MarkMentionsAsReadAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Mark mentions as read
 
@@ -128,7 +128,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IMentionAgent_UpdateMentionSnippetsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> UpdateMentionSnippetsAsync\(int, int\[\], RequestOptions\)
+### UpdateMentionSnippetsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMentionAgent_UpdateMentionSnippetsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Insert-missing and refresh-existing mention rows for a saved message
 

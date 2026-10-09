@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_MentionAgent"></a> Class MentionAgent
+# Class MentionAgent {#SuperOffice_WebApi_Agents_MentionAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class MentionAgent : AgentBase, IMentionAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
 [AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
 [AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
@@ -57,19 +57,19 @@ public class MentionAgent : AgentBase, IMentionAgent, IAgentBase, IDisposable
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (MentionAgent agent = new MentionAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent__ctor_System_Net_Http_HttpClient_"></a> MentionAgent\(HttpClient\)
+### MentionAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_MentionAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for getting, marking read, and deleting @-mentions
 
@@ -83,7 +83,7 @@ public MentionAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> MentionAgent\(WebApiOptions, HttpClient\)
+### MentionAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_MentionAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for getting, marking read, and deleting @-mentions
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent_DeleteMentionsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteMentionsAsync\(int\[\], RequestOptions\)
+### DeleteMentionsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_MentionAgent_DeleteMentionsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Delete mentions by id
 
@@ -127,7 +127,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent_GetMentionsCreatedByMeAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMentionsCreatedByMeAsync\(RequestOptions\)
+### GetMentionsCreatedByMeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_MentionAgent_GetMentionsCreatedByMeAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the @-mentions the current associate created (tagged someone else)
 
@@ -143,11 +143,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\&gt;
 
 The current associate's created mentions, most-recent-first
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent_GetMyMentionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetMyMentionsAsync\(bool, RequestOptions\)
+### GetMyMentionsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_MentionAgent_GetMyMentionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get the current associate's @-mentions
 
@@ -167,11 +167,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Mention](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention)\[\]\&gt;
 
 The current associate's mentions, most-recent-first
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent_GetMyMentionsUnreadCountAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyMentionsUnreadCountAsync\(RequestOptions\)
+### GetMyMentionsUnreadCountAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_MentionAgent_GetMyMentionsUnreadCountAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the current associate's unread @-mention count
 
@@ -187,11 +187,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The current associate's unread mention count
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent_MarkMentionsAsReadAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> MarkMentionsAsReadAsync\(int\[\], RequestOptions\)
+### MarkMentionsAsReadAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_MentionAgent_MarkMentionsAsReadAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Mark mentions as read
 
@@ -215,7 +215,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_MentionAgent_UpdateMentionSnippetsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> UpdateMentionSnippetsAsync\(int, int\[\], RequestOptions\)
+### UpdateMentionSnippetsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_MentionAgent_UpdateMentionSnippetsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Insert-missing and refresh-existing mention rows for a saved message
 

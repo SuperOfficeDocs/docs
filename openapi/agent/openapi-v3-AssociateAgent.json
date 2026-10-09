@@ -136,7 +136,7 @@
           "Associate_Agent"
         ],
         "summary": "Get Associate By Person Id",
-        "description": "Returns the associate that belongs to this person if the person is an associate.\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Returns the associate that belongs to this person if the person is an associate.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1AssociateAgent_GetAssociateByPersonId",
         "parameters": [
           {
@@ -1093,10 +1093,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {

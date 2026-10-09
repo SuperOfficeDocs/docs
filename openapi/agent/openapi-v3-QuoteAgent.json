@@ -13741,10 +13741,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
@@ -14439,7 +14439,7 @@
             "type": "string"
           },
           "Completed": {
-            "description": "The Sale completed state. The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.",
+            "description": "The sale's completed state as an ActivityStatus (Completed=3), not the SaleDone enum stored in sale.done. Only Completed marks the sale as done (sale.done=2); any other value, including Started, is stored as not done (sale.done=1).",
             "enum": [
               "Unknown",
               "NotStarted",

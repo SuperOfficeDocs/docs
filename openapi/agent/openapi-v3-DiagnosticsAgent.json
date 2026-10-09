@@ -2193,7 +2193,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Get Next Table Number",
-        "description": "Increment save and return NextTableNumber, to be used when creating new extra table\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Increment save and return NextTableNumber, to be used when creating new extra table\n\nNsApiSlow threshold: 20000 ms.",
         "operationId": "v1DiagnosticsAgent_GetNextTableNumber",
         "parameters": [
           {
@@ -2308,7 +2308,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Perform Tasks After Upgrade",
-        "description": "After upgrading to a new fileset, there may be tasks that need to be done.\n\nExamples - import new TypicalSearches, if present. Tasks performed here need to be idempotent and independent of the actual upgrade jump (what was the previous version). They should complete in a reasonable time, not more than a few minutes maximum.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "After upgrading to a new fileset, there may be tasks that need to be done.\n\nExamples - import new TypicalSearches, if present. Tasks performed here need to be idempotent and independent of the actual upgrade jump (what was the previous version). They should complete in a reasonable time, not more than a few minutes maximum.\r\nNsApiSlow threshold: 20000 ms.",
         "operationId": "v1DiagnosticsAgent_PerformTasksAfterUpgrade",
         "parameters": [
           {
@@ -2417,7 +2417,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Perform Tasks After Custom Object Table Created",
-        "description": "A temporary method to be used from c++ until CustomObjectsAgent.\n\nCreateTable implemented in NetServer\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "A temporary method to be used from c++ until CustomObjectsAgent.\n\nCreateTable implemented in NetServer\r\nNsApiSlow threshold: 20000 ms.",
         "operationId": "v1DiagnosticsAgent_PerformTasksAfterCustomObjectTableCreated",
         "parameters": [
           {
@@ -2499,7 +2499,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Perform Tasks After Custom Object Table Deleted",
-        "description": "A temporary method to be used from c++ until CustomObjectsAgent.\n\nDeleteTable implemented in NetServer\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "A temporary method to be used from c++ until CustomObjectsAgent.\n\nDeleteTable implemented in NetServer\r\nNsApiSlow threshold: 20000 ms.",
         "operationId": "v1DiagnosticsAgent_PerformTasksAfterCustomObjectTableDeleted",
         "parameters": [
           {
@@ -3065,10 +3065,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:62507"
+      "url": "http://localhost:53294"
     },
     {
-      "url": "https://localhost:62507"
+      "url": "https://localhost:53294"
     }
   ],
   "components": {
