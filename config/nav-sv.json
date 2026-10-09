@@ -40,10 +40,11 @@
         "icon": "graduation-cap",
         "root": "sv/learn/basics/index",
         "pages": [
+          "sv/learn/basics/recent-navigation",
+          "sv/learn/basics/overview-pages",
           "sv/learn/basics/notifications",
           "sv/learn/basics/fav",
           "sv/learn/basics/history",
-          "sv/learn/basics/overview-pages",
           "sv/learn/basics/links",
           "sv/learn/basics/notes",
           "sv/learn/basics/print",
