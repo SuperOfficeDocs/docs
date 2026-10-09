@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment"></a> Class Appointment
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Appointment.
@@ -13,13 +13,13 @@ public class Appointment : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[Appointment](SuperOffice.WebApi.Data.Appointment.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -131,11 +131,11 @@ public AssignmentStatus? AssignmentStatus { get; set; }
 
 #### Property Value
 
- [AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssignmentStatus)?
+ [AssignmentStatus](SuperOffice.WebApi.Data.AssignmentStatus.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[AssignmentStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_AssignmentStatus_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[AssignmentStatus\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_AssignmentStatus\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_AssignmentStatus_String"></a> AssignmentStatus\_String
 
@@ -153,7 +153,7 @@ public string AssignmentStatus_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_AssignmentStatus)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[AssignmentStatus](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_AssignmentStatus)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_AssociateFullName"></a> AssociateFullName
 
@@ -203,11 +203,11 @@ public BookingType? BookingType { get; set; }
 
 #### Property Value
 
- [BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BookingType)?
+ [BookingType](SuperOffice.WebApi.Data.BookingType.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[BookingType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_BookingType_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[BookingType\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_BookingType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_BookingType_String"></a> BookingType\_String
 
@@ -225,7 +225,7 @@ public string BookingType_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_BookingType)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[BookingType](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_BookingType)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_CautionWarning"></a> CautionWarning
 
@@ -239,11 +239,11 @@ public AppointmentCautionWarning? CautionWarning { get; set; }
 
 #### Property Value
 
- [AppointmentCautionWarning](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentCautionWarning)?
+ [AppointmentCautionWarning](SuperOffice.WebApi.Data.AppointmentCautionWarning.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[CautionWarning\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_CautionWarning_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[CautionWarning\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_CautionWarning\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_CautionWarning_String"></a> CautionWarning\_String
 
@@ -261,7 +261,7 @@ public string CautionWarning_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[CautionWarning](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_CautionWarning)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[CautionWarning](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_CautionWarning)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_ColorIndex"></a> ColorIndex
 
@@ -287,11 +287,11 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
+ [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_Completed_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[Completed\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_Completed\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_Completed_String"></a> Completed\_String
 
@@ -309,7 +309,7 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_Completed)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[Completed](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_Completed)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_ContactId"></a> ContactId
 
@@ -443,11 +443,11 @@ public InvitationStatus? InvitationStatus { get; set; }
 
 #### Property Value
 
- [InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.InvitationStatus)?
+ [InvitationStatus](SuperOffice.WebApi.Data.InvitationStatus.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[InvitationStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_InvitationStatus_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[InvitationStatus\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_InvitationStatus\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_InvitationStatus_String"></a> InvitationStatus\_String
 
@@ -465,7 +465,7 @@ public string InvitationStatus_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_InvitationStatus)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[InvitationStatus](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_InvitationStatus)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_IsAlldayEvent"></a> IsAlldayEvent
 
@@ -599,11 +599,11 @@ public AppointmentExternalOwner? OwnedExternally { get; set; }
 
 #### Property Value
 
- [AppointmentExternalOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentExternalOwner)?
+ [AppointmentExternalOwner](SuperOffice.WebApi.Data.AppointmentExternalOwner.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[OwnedExternally\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_OwnedExternally_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[OwnedExternally\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_OwnedExternally\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_OwnedExternally_String"></a> OwnedExternally\_String
 
@@ -621,7 +621,7 @@ public string OwnedExternally_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[OwnedExternally](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_OwnedExternally)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[OwnedExternally](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_OwnedExternally)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_PersonFullName"></a> PersonFullName
 
@@ -695,11 +695,11 @@ public AppointmentPrivate? Private { get; set; }
 
 #### Property Value
 
- [AppointmentPrivate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentPrivate)?
+ [AppointmentPrivate](SuperOffice.WebApi.Data.AppointmentPrivate.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[Private\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_Private_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[Private\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_Private\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_Private_String"></a> Private\_String
 
@@ -717,7 +717,7 @@ public string Private_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[Private](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_Private)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[Private](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_Private)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_ProjectId"></a> ProjectId
 
@@ -764,11 +764,11 @@ public RecurrencePattern? RecurringPattern { get; set; }
 
 #### Property Value
 
- [RecurrencePattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrencePattern)?
+ [RecurrencePattern](SuperOffice.WebApi.Data.RecurrencePattern.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[RecurringPattern\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_RecurringPattern_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[RecurringPattern\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_RecurringPattern\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_RecurringPattern_String"></a> RecurringPattern\_String
 
@@ -785,7 +785,7 @@ public string RecurringPattern_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[RecurringPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_RecurringPattern)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[RecurringPattern](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_RecurringPattern)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_RecurringStartDate"></a> RecurringStartDate
 
@@ -881,11 +881,11 @@ public TaskType? TaskType { get; set; }
 
 #### Property Value
 
- [TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskType)?
+ [TaskType](SuperOffice.WebApi.Data.TaskType.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[TaskType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_TaskType_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[TaskType\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_TaskType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_TaskType_String"></a> TaskType\_String
 
@@ -903,7 +903,7 @@ public string TaskType_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_TaskType)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[TaskType](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_TaskType)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_Title"></a> Title
 
@@ -929,11 +929,11 @@ public AppointmentType? Type { get; set; }
 
 #### Property Value
 
- [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)?
+ [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)?
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_Type_String)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[Type\_String](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_Type_String"></a> Type\_String
 
@@ -951,9 +951,9 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_Type)
+[Appointment](SuperOffice.WebApi.Data.Appointment.md).[Type](SuperOffice.WebApi.Data.Appointment.md\#SuperOffice\_WebApi\_Data\_Appointment\_Type)
 
 ## See Also
 
-[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
+[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
 

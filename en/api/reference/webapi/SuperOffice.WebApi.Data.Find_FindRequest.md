@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_FindRequest"></a> Class Find\_FindRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_FindRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_FindRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_FindRequest)
+[Find\_FindRequest](SuperOffice.WebApi.Data.Find\_FindRequest.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEMailAsStreamFromServerIdentifierRequest"></a> Class EMail\_GetEMailAsStreamFromServerIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEMailAsStreamFromServerIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEMailAsStreamFromServerIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEMailAsStreamFromServerIdentifierRequest)
+[EMail\_GetEMailAsStreamFromServerIdentifierRequest](SuperOffice.WebApi.Data.EMail\_GetEMailAsStreamFromServerIdentifierRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_GetEMailAsStreamFromServerIdentifierRequest_MessageServerId"></a> MessageServerId
 

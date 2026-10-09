@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_GetWebAppUsagesForPeriodRequest"></a> Class Diagnostics\_GetWebAppUsagesForPeriodRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_GetWebAppUsagesForPeriodRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_GetWebAppUsagesForPeriodRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_GetWebAppUsagesForPeriodRequest)
+[Diagnostics\_GetWebAppUsagesForPeriodRequest](SuperOffice.WebApi.Data.Diagnostics\_GetWebAppUsagesForPeriodRequest.md)
 
 #### Inherited Members
 

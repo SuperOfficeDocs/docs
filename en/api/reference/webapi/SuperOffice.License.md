@@ -2,13 +2,13 @@
 
 ### Classes
 
- [SoLicenseNames](/en/api/reference/webapi/SuperOffice.License.SoLicenseNames)
+ [SoLicenseNames](SuperOffice.License.SoLicenseNames.md)
 
 License names for SuperOffice Module Licenses. Use
 SuperOffice.Security.Principal.SoPrincipal.GetLicense and 
 SuperOffice.Security.Principal.SoPrincipal.HasLicense with these constants.
 
- [UserLicenseAttribute](/en/api/reference/webapi/SuperOffice.License.UserLicenseAttribute)
+ [UserLicenseAttribute](SuperOffice.License.UserLicenseAttribute.md)
 
 Mark user licenses, so we can discover them by reflection.
 

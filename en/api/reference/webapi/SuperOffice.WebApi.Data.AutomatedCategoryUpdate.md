@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AutomatedCategoryUpdate"></a> Class AutomatedCategoryUpdate
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AutomatedCategoryUpdate.
@@ -13,13 +13,13 @@ public class AutomatedCategoryUpdate : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[AutomatedCategoryUpdate](SuperOffice.WebApi.Data.AutomatedCategoryUpdate.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -88,11 +88,11 @@ public CategoryUpdateTrigger? TriggerType { get; set; }
 
 #### Property Value
 
- [CategoryUpdateTrigger](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryUpdateTrigger)?
+ [CategoryUpdateTrigger](SuperOffice.WebApi.Data.CategoryUpdateTrigger.md)?
 
 #### See Also
 
-[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate).[TriggerType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate#SuperOffice_WebApi_Data_AutomatedCategoryUpdate_TriggerType_String)
+[AutomatedCategoryUpdate](SuperOffice.WebApi.Data.AutomatedCategoryUpdate.md).[TriggerType\_String](SuperOffice.WebApi.Data.AutomatedCategoryUpdate.md\#SuperOffice\_WebApi\_Data\_AutomatedCategoryUpdate\_TriggerType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_AutomatedCategoryUpdate_TriggerType_String"></a> TriggerType\_String
 
@@ -110,7 +110,7 @@ public string TriggerType_String { get; set; }
 
 #### See Also
 
-[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate).[TriggerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate#SuperOffice_WebApi_Data_AutomatedCategoryUpdate_TriggerType)
+[AutomatedCategoryUpdate](SuperOffice.WebApi.Data.AutomatedCategoryUpdate.md).[TriggerType](SuperOffice.WebApi.Data.AutomatedCategoryUpdate.md\#SuperOffice\_WebApi\_Data\_AutomatedCategoryUpdate\_TriggerType)
 
 ### <a id="SuperOffice_WebApi_Data_AutomatedCategoryUpdate_UserConfirmation"></a> UserConfirmation
 
@@ -126,5 +126,5 @@ public virtual bool UserConfirmation { get; set; }
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

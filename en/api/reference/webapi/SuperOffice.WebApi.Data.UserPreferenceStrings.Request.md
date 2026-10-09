@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request"></a> Class UserPreferenceStrings.Request
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.Request
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Request)
+[UserPreferenceStrings.Request](SuperOffice.WebApi.Data.UserPreferenceStrings.Request.md)
 
 #### Inherited Members
 
@@ -78,6 +78,18 @@ public const string DefaultOwner = "defaultOwner"
 
 ```csharp
 public const string DefaultRequestStatus = "defaultRequestStatus"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request_MergeOldestAsMain"></a> MergeOldestAsMain
+
+(BOOL) When merging requests, use the oldest request as the main (surviving) request
+
+```csharp
+public const string MergeOldestAsMain = "mergeOldestAsMain"
 ```
 
 #### Field Value

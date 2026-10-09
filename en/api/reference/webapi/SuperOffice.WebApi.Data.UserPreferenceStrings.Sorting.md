@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Sorting"></a> Class UserPreferenceStrings.Sorting
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Sorting
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Sorting
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Sorting](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Sorting)
+[UserPreferenceStrings.Sorting](SuperOffice.WebApi.Data.UserPreferenceStrings.Sorting.md)
 
 #### Inherited Members
 

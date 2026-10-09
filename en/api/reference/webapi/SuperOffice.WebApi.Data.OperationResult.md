@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_OperationResult"></a> Class OperationResult
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for OperationResult.
@@ -13,7 +13,7 @@ public class OperationResult
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[OperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.OperationResult)
+[OperationResult](SuperOffice.WebApi.Data.OperationResult.md)
 
 #### Inherited Members
 

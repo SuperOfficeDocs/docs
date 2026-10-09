@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket"></a> Class Ticket
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Ticket.
@@ -13,13 +13,13 @@ public class Ticket : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[Ticket](SuperOffice.WebApi.Data.Ticket.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -107,11 +107,11 @@ public TicketBaseStatus? BaseStatus { get; set; }
 
 #### Property Value
 
- [TicketBaseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBaseStatus)?
+ [TicketBaseStatus](SuperOffice.WebApi.Data.TicketBaseStatus.md)?
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[BaseStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_BaseStatus_String)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[BaseStatus\_String](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_BaseStatus\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_BaseStatus_String"></a> BaseStatus\_String
 
@@ -129,7 +129,7 @@ public string BaseStatus_String { get; set; }
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[BaseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_BaseStatus)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[BaseStatus](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_BaseStatus)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_Category"></a> Category
 
@@ -383,11 +383,11 @@ public TicketOrigin? Origin { get; set; }
 
 #### Property Value
 
- [TicketOrigin](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketOrigin)?
+ [TicketOrigin](SuperOffice.WebApi.Data.TicketOrigin.md)?
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[Origin\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_Origin_String)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[Origin\_String](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_Origin\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_Origin_String"></a> Origin\_String
 
@@ -405,7 +405,7 @@ public string Origin_String { get; set; }
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[Origin](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_Origin)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[Origin](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_Origin)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_OwnedBy"></a> OwnedBy
 
@@ -575,11 +575,11 @@ public TicketReadStatus? ReadStatus { get; set; }
 
 #### Property Value
 
- [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)?
+ [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)?
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[ReadStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_ReadStatus_String)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[ReadStatus\_String](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_ReadStatus\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_ReadStatus_String"></a> ReadStatus\_String
 
@@ -597,7 +597,7 @@ public string ReadStatus_String { get; set; }
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[ReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_ReadStatus)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[ReadStatus](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_ReadStatus)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_RealTimeSpentExternally"></a> RealTimeSpentExternally
 
@@ -731,11 +731,11 @@ public TicketSecurityLevel? Slevel { get; set; }
 
 #### Property Value
 
- [TicketSecurityLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSecurityLevel)?
+ [TicketSecurityLevel](SuperOffice.WebApi.Data.TicketSecurityLevel.md)?
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[Slevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_Slevel_String)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[Slevel\_String](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_Slevel\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_Slevel_String"></a> Slevel\_String
 
@@ -753,7 +753,7 @@ public string Slevel_String { get; set; }
 
 #### See Also
 
-[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket).[Slevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket#SuperOffice_WebApi_Data_Ticket_Slevel)
+[Ticket](SuperOffice.WebApi.Data.Ticket.md).[Slevel](SuperOffice.WebApi.Data.Ticket.md\#SuperOffice\_WebApi\_Data\_Ticket\_Slevel)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_TicketId"></a> TicketId
 
@@ -901,5 +901,5 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
+[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
 

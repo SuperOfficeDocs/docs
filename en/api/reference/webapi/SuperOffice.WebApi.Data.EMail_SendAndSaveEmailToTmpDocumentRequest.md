@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_SendAndSaveEmailToTmpDocumentRequest"></a> Class EMail\_SendAndSaveEmailToTmpDocumentRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_SendAndSaveEmailToTmpDocumentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_SendAndSaveEmailToTmpDocumentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_SendAndSaveEmailToTmpDocumentRequest)
+[EMail\_SendAndSaveEmailToTmpDocumentRequest](SuperOffice.WebApi.Data.EMail\_SendAndSaveEmailToTmpDocumentRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailEntity Email { get; set; }
 
 #### Property Value
 
- [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
+ [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_SendAndSaveEmailToTmpDocumentRequest_StripAttachments"></a> StripAttachments
 

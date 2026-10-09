@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_VideoMeetings"></a> Class UserPreferenceStrings.VideoMeetings
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.VideoMeetings
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.VideoMeetings](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.VideoMeetings)
+[UserPreferenceStrings.VideoMeetings](SuperOffice.WebApi.Data.UserPreferenceStrings.VideoMeetings.md)
 
 #### Inherited Members
 

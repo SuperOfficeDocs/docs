@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_GetNetServicesStatusUrlRequest"></a> Class Preference\_GetNetServicesStatusUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_GetNetServicesStatusUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_GetNetServicesStatusUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_GetNetServicesStatusUrlRequest)
+[Preference\_GetNetServicesStatusUrlRequest](SuperOffice.WebApi.Data.Preference\_GetNetServicesStatusUrlRequest.md)
 
 #### Inherited Members
 

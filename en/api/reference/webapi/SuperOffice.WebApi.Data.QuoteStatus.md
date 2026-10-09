@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteStatus"></a> Enum QuoteStatus
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 The state of a quote-alternative or line: Ok / OkWithInfo / Warn / Error

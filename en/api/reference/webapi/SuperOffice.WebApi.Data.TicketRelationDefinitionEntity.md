@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketRelationDefinitionEntity"></a> Class TicketRelationDefinitionEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketRelationDefinitionEntity.
@@ -13,13 +13,13 @@ public class TicketRelationDefinitionEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TicketRelationDefinitionEntity](SuperOffice.WebApi.Data.TicketRelationDefinitionEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -167,11 +167,11 @@ public TicketRelationType? RelationType { get; set; }
 
 #### Property Value
 
- [TicketRelationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationType)?
+ [TicketRelationType](SuperOffice.WebApi.Data.TicketRelationType.md)?
 
 #### See Also
 
-[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity).[RelationType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity#SuperOffice_WebApi_Data_TicketRelationDefinitionEntity_RelationType_String)
+[TicketRelationDefinitionEntity](SuperOffice.WebApi.Data.TicketRelationDefinitionEntity.md).[RelationType\_String](SuperOffice.WebApi.Data.TicketRelationDefinitionEntity.md\#SuperOffice\_WebApi\_Data\_TicketRelationDefinitionEntity\_RelationType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationDefinitionEntity_RelationType_String"></a> RelationType\_String
 
@@ -189,7 +189,7 @@ public string RelationType_String { get; set; }
 
 #### See Also
 
-[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity).[RelationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity#SuperOffice_WebApi_Data_TicketRelationDefinitionEntity_RelationType)
+[TicketRelationDefinitionEntity](SuperOffice.WebApi.Data.TicketRelationDefinitionEntity.md).[RelationType](SuperOffice.WebApi.Data.TicketRelationDefinitionEntity.md\#SuperOffice\_WebApi\_Data\_TicketRelationDefinitionEntity\_RelationType)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationDefinitionEntity_SourceTicketTypes"></a> SourceTicketTypes
 
@@ -217,5 +217,5 @@ public virtual int TicketRelationDefId { get; set; }
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

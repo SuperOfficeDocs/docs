@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_VerifyGoogleRecaptchaRequest"></a> Class Marketing\_VerifyGoogleRecaptchaRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_VerifyGoogleRecaptchaRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_VerifyGoogleRecaptchaRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_VerifyGoogleRecaptchaRequest)
+[Marketing\_VerifyGoogleRecaptchaRequest](SuperOffice.WebApi.Data.Marketing\_VerifyGoogleRecaptchaRequest.md)
 
 #### Inherited Members
 

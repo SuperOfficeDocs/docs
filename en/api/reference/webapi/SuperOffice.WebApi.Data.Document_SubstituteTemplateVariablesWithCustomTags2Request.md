@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_SubstituteTemplateVariablesWithCustomTags2Request"></a> Class Document\_SubstituteTemplateVariablesWithCustomTags2Request
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_SubstituteTemplateVariablesWithCustomTags2Request
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_SubstituteTemplateVariablesWithCustomTags2Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_SubstituteTemplateVariablesWithCustomTags2Request)
+[Document\_SubstituteTemplateVariablesWithCustomTags2Request](SuperOffice.WebApi.Data.Document\_SubstituteTemplateVariablesWithCustomTags2Request.md)
 
 #### Inherited Members
 
@@ -70,7 +70,7 @@ public StringDictionary CustomTags { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_Document_SubstituteTemplateVariablesWithCustomTags2Request_DocumentId"></a> DocumentId
 
@@ -90,7 +90,7 @@ public GeneratorEncoding GeneratorEncoding { get; set; }
 
 #### Property Value
 
- [GeneratorEncoding](/en/api/reference/webapi/SuperOffice.WebApi.Data.GeneratorEncoding)
+ [GeneratorEncoding](SuperOffice.WebApi.Data.GeneratorEncoding.md)
 
 ### <a id="SuperOffice_WebApi_Data_Document_SubstituteTemplateVariablesWithCustomTags2Request_PersonId"></a> PersonId
 

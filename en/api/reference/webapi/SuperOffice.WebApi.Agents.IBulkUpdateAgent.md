@@ -1,6 +1,6 @@
-# Interface IBulkUpdateAgent {#SuperOffice_WebApi_Agents_IBulkUpdateAgent}
+# <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent"></a> Interface IBulkUpdateAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent used for bulk update methods
@@ -11,12 +11,12 @@ public interface IBulkUpdateAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### ExecuteByEntityIdsAsync\(FieldValueInfo\[\], string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteByEntityIdsAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteByEntityIdsAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> ExecuteByEntityIdsAsync\(FieldValueInfo\[\], string, string, string, RequestOptions\)
 
 Do the batchupdate on selected
 
@@ -26,7 +26,7 @@ Task<int> ExecuteByEntityIdsAsync(FieldValueInfo[] fieldValueInfos, string table
 
 #### Parameters
 
-`fieldValueInfos` [FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]
+`fieldValueInfos` [FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]
 
 The name of the wanted tablename
 
@@ -42,17 +42,17 @@ Where is the function called from
 
 Comma separated string of the ids of the entities to update
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Return batchtaskinfoid
 
-### ExecuteBySelectionIdAsync\(FieldValueInfo\[\], string, string, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteBySelectionIdAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteBySelectionIdAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ExecuteBySelectionIdAsync\(FieldValueInfo\[\], string, string, int, bool, RequestOptions\)
 
 Do the batchupdate on this selection
 
@@ -62,7 +62,7 @@ Task<int> ExecuteBySelectionIdAsync(FieldValueInfo[] fieldValueInfos, string tab
 
 #### Parameters
 
-`fieldValueInfos` [FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]
+`fieldValueInfos` [FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]
 
 The name of the wanted tablename
 
@@ -82,17 +82,17 @@ The id of the selection
 
 Use the shadow selection
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Return batchtaskinfoid
 
-### GetAvailableFieldsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetAvailableFieldsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetAvailableFieldsAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetAvailableFieldsAsync\(string, RequestOptions\)
 
 Get all available fields for a given tablename/entity
 
@@ -106,17 +106,17 @@ Task<FieldValueInfo[]> GetAvailableFieldsAsync(string tablename, RequestOptions 
 
 The name of the wanted tablename
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]\>
 
 Returns array of the available fields for the given entity
 
-### GetJobResultAsJsonFromBinaryObjectIdAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultAsJsonFromBinaryObjectIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultAsJsonFromBinaryObjectIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetJobResultAsJsonFromBinaryObjectIdAsync\(string, int, RequestOptions\)
 
 Get result of the batchupdate job
 
@@ -134,17 +134,17 @@ The name of the table that was updated to show the log from
 
 Which binaryobject id has stored the job result
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 Result of job as json
 
-### GetJobResultsFromStorageAsJsonAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultsFromStorageAsJsonAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultsFromStorageAsJsonAsync_SuperOffice_WebApi_RequestOptions_"></a> GetJobResultsFromStorageAsJsonAsync\(RequestOptions\)
 
 Get result of the batchupdate job
 
@@ -154,17 +154,17 @@ Task<string[]> GetJobResultsFromStorageAsJsonAsync(RequestOptions requestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
 
 Result of job as json
 
-### GetStoredFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetStoredFieldsAsync\(string, string, RequestOptions\)
 
 Get all stored fields for a given tablename/entity and context
 
@@ -182,17 +182,17 @@ The name of the wanted tablename
 
 Where is the function called for
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]\>
 
 Returns array of the stored or default fields for the given entity
 
-### RemoveStoredFieldsAndGetDefaultFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAndGetDefaultFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAndGetDefaultFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveStoredFieldsAndGetDefaultFieldsAsync\(string, string, RequestOptions\)
 
 Remove the stored settings of the bulk update for this table from this context, to get the default settings instead
 
@@ -210,17 +210,17 @@ The name of the table to remove stored settings from
 
 Where is the function called from that we will remove the settings from
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]\>
 
 Returns array of the available fields for the given tablename
 
-### RemoveStoredFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveStoredFieldsAsync\(string, string, RequestOptions\)
 
 Remove the stored settings of the bulk update for this table from this context
 
@@ -238,11 +238,11 @@ The name of the table to remove stored settings from
 
 Where is the function called from that we will remove the settings from
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 

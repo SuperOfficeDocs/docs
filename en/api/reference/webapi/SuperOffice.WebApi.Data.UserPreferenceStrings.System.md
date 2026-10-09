@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_System"></a> Class UserPreferenceStrings.System
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 System
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.System
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.System](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.System)
+[UserPreferenceStrings.System](SuperOffice.WebApi.Data.UserPreferenceStrings.System.md)
 
 #### Inherited Members
 
@@ -398,19 +398,6 @@ Preferred e-mail server name for Lotus Notes
 
 ```csharp
 public const string PreferredNotesMailServer = "PreferredNotesMailServer"
-```
-
-#### Field Value
-
- [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_System_ReplicateSelection"></a> ReplicateSelection
-
-Replicates selection members to Travel and satellite databases. After changing this preference you need to regenerate satellites and create new prototypes. This will reduce performance. Default: No
-<p></p>Control type: Bool, access: Admin, Admin users, Wizard
-
-```csharp
-public const string ReplicateSelection = "ReplicateSelection"
 ```
 
 #### Field Value

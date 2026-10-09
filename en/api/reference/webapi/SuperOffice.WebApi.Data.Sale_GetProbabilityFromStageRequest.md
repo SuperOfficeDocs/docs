@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_GetProbabilityFromStageRequest"></a> Class Sale\_GetProbabilityFromStageRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_GetProbabilityFromStageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_GetProbabilityFromStageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_GetProbabilityFromStageRequest)
+[Sale\_GetProbabilityFromStageRequest](SuperOffice.WebApi.Data.Sale\_GetProbabilityFromStageRequest.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_GetThirdPartyLicenseAssignmentsRequest"></a> Class License\_GetThirdPartyLicenseAssignmentsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_GetThirdPartyLicenseAssignmentsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_GetThirdPartyLicenseAssignmentsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_GetThirdPartyLicenseAssignmentsRequest)
+[License\_GetThirdPartyLicenseAssignmentsRequest](SuperOffice.WebApi.Data.License\_GetThirdPartyLicenseAssignmentsRequest.md)
 
 #### Inherited Members
 

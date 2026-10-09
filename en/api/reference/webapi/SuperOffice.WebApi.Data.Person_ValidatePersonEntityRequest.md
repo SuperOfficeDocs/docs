@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_ValidatePersonEntityRequest"></a> Class Person\_ValidatePersonEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_ValidatePersonEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_ValidatePersonEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_ValidatePersonEntityRequest)
+[Person\_ValidatePersonEntityRequest](SuperOffice.WebApi.Data.Person\_ValidatePersonEntityRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public PersonEntity PersonEntity { get; set; }
 
 #### Property Value
 
- [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
+ [PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)
 

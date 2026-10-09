@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_GetDefaultDesiredColumnsRequest"></a> Class Find\_GetDefaultDesiredColumnsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_GetDefaultDesiredColumnsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_GetDefaultDesiredColumnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_GetDefaultDesiredColumnsRequest)
+[Find\_GetDefaultDesiredColumnsRequest](SuperOffice.WebApi.Data.Find\_GetDefaultDesiredColumnsRequest.md)
 
 #### Inherited Members
 

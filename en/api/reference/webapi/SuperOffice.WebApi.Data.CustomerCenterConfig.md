@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerCenterConfig"></a> Class CustomerCenterConfig
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CustomerCenterConfig.
@@ -13,13 +13,13 @@ public class CustomerCenterConfig : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[CustomerCenterConfig](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerCenterConfig)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -119,11 +119,11 @@ public ConfigType? Type { get; set; }
 
 #### Property Value
 
- [ConfigType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigType)?
+ [ConfigType](SuperOffice.WebApi.Data.ConfigType.md)?
 
 #### See Also
 
-[CustomerCenterConfig](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerCenterConfig).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerCenterConfig#SuperOffice_WebApi_Data_CustomerCenterConfig_Type_String)
+[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md).[Type\_String](SuperOffice.WebApi.Data.CustomerCenterConfig.md\#SuperOffice\_WebApi\_Data\_CustomerCenterConfig\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_CustomerCenterConfig_Type_String"></a> Type\_String
 
@@ -141,7 +141,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[CustomerCenterConfig](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerCenterConfig).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerCenterConfig#SuperOffice_WebApi_Data_CustomerCenterConfig_Type)
+[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md).[Type](SuperOffice.WebApi.Data.CustomerCenterConfig.md\#SuperOffice\_WebApi\_Data\_CustomerCenterConfig\_Type)
 
 ### <a id="SuperOffice_WebApi_Data_CustomerCenterConfig_Updated"></a> Updated
 
@@ -169,5 +169,5 @@ public virtual int UpdatedAssociateId { get; set; }
 
 ## See Also
 
-[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
+[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
 

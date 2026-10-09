@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_CreateTicketFromMailDataRequest"></a> Class CustomerService\_CreateTicketFromMailDataRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_CreateTicketFromMailDataRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_CreateTicketFromMailDataRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_CreateTicketFromMailDataRequest)
+[CustomerService\_CreateTicketFromMailDataRequest](SuperOffice.WebApi.Data.CustomerService\_CreateTicketFromMailDataRequest.md)
 
 #### Inherited Members
 

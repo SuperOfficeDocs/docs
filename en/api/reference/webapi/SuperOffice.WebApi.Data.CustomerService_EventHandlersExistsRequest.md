@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_EventHandlersExistsRequest"></a> Class CustomerService\_EventHandlersExistsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_EventHandlersExistsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_EventHandlersExistsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_EventHandlersExistsRequest)
+[CustomerService\_EventHandlersExistsRequest](SuperOffice.WebApi.Data.CustomerService\_EventHandlersExistsRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public EventHandlerType[] EventHandlerTypes { get; set; }
 
 #### Property Value
 
- [EventHandlerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventHandlerType)\[\]
+ [EventHandlerType](SuperOffice.WebApi.Data.EventHandlerType.md)\[\]
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteVersionValidated"></a> Class QuoteVersionValidated
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuoteVersionValidated.
@@ -13,13 +13,13 @@ public class QuoteVersionValidated : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[QuoteVersionValidated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionValidated)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[QuoteVersionValidated](SuperOffice.WebApi.Data.QuoteVersionValidated.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual Quote ChangedQuote { get; set; }
 
 #### Property Value
 
- [Quote](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote)
+ [Quote](SuperOffice.WebApi.Data.Quote.md)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionValidated_ChangedQuoteAlternatives"></a> ChangedQuoteAlternatives
 
@@ -62,7 +62,7 @@ public virtual QuoteAlternativeRecalculated[] ChangedQuoteAlternatives { get; se
 
 #### Property Value
 
- [QuoteAlternativeRecalculated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternativeRecalculated)\[\]
+ [QuoteAlternativeRecalculated](SuperOffice.WebApi.Data.QuoteAlternativeRecalculated.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionValidated_ChangedQuoteVersion"></a> ChangedQuoteVersion
 
@@ -74,7 +74,7 @@ public virtual QuoteVersion ChangedQuoteVersion { get; set; }
 
 #### Property Value
 
- [QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)
+ [QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionValidated_ChangedSale"></a> ChangedSale
 
@@ -86,7 +86,7 @@ public virtual Sale ChangedSale { get; set; }
 
 #### Property Value
 
- [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
+ [Sale](SuperOffice.WebApi.Data.Sale.md)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionValidated_ErrorCode"></a> ErrorCode
 
@@ -124,11 +124,11 @@ public QuoteStatus? Status { get; set; }
 
 #### Property Value
 
- [QuoteStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteStatus)?
+ [QuoteStatus](SuperOffice.WebApi.Data.QuoteStatus.md)?
 
 #### See Also
 
-[QuoteVersionValidated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionValidated).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionValidated#SuperOffice_WebApi_Data_QuoteVersionValidated_Status_String)
+[QuoteVersionValidated](SuperOffice.WebApi.Data.QuoteVersionValidated.md).[Status\_String](SuperOffice.WebApi.Data.QuoteVersionValidated.md\#SuperOffice\_WebApi\_Data\_QuoteVersionValidated\_Status\_String)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionValidated_Status_String"></a> Status\_String
 
@@ -146,7 +146,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[QuoteVersionValidated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionValidated).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionValidated#SuperOffice_WebApi_Data_QuoteVersionValidated_Status)
+[QuoteVersionValidated](SuperOffice.WebApi.Data.QuoteVersionValidated.md).[Status](SuperOffice.WebApi.Data.QuoteVersionValidated.md\#SuperOffice\_WebApi\_Data\_QuoteVersionValidated\_Status)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionValidated_TechExplanation"></a> TechExplanation
 
@@ -174,5 +174,5 @@ public virtual string UserExplanation { get; set; }
 
 ## See Also
 
-[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
+[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
 

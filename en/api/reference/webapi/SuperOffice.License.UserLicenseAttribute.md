@@ -1,6 +1,6 @@
 # <a id="SuperOffice_License_UserLicenseAttribute"></a> Class UserLicenseAttribute
 
-Namespace: [SuperOffice.License](/en/api/reference/webapi/SuperOffice.License)  
+Namespace: [SuperOffice.License](SuperOffice.License.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Mark user licenses, so we can discover them by reflection.
@@ -13,7 +13,7 @@ public class UserLicenseAttribute : Attribute
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Attribute](https://learn.microsoft.com/dotnet/api/system.attribute) ← 
-[UserLicenseAttribute](/en/api/reference/webapi/SuperOffice.License.UserLicenseAttribute)
+[UserLicenseAttribute](SuperOffice.License.UserLicenseAttribute.md)
 
 #### Inherited Members
 

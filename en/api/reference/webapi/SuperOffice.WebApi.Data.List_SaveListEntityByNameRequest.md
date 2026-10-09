@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveListEntityByNameRequest"></a> Class List\_SaveListEntityByNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveListEntityByNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveListEntityByNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveListEntityByNameRequest)
+[List\_SaveListEntityByNameRequest](SuperOffice.WebApi.Data.List\_SaveListEntityByNameRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ListEntity ListEntity { get; set; }
 
 #### Property Value
 
- [ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)
+ [ListEntity](SuperOffice.WebApi.Data.ListEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_List_SaveListEntityByNameRequest_Name"></a> Name
 

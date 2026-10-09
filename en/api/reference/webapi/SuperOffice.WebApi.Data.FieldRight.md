@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FieldRight"></a> Class FieldRight
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FieldRight.
@@ -13,7 +13,7 @@ public class FieldRight
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FieldRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldRight)
+[FieldRight](SuperOffice.WebApi.Data.FieldRight.md)
 
 #### Inherited Members
 
@@ -49,11 +49,11 @@ public EFieldRight? Mask { get; set; }
 
 #### Property Value
 
- [EFieldRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.EFieldRight)?
+ [EFieldRight](SuperOffice.WebApi.Data.EFieldRight.md)?
 
 #### See Also
 
-[FieldRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldRight).[Mask\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldRight#SuperOffice_WebApi_Data_FieldRight_Mask_String)
+[FieldRight](SuperOffice.WebApi.Data.FieldRight.md).[Mask\_String](SuperOffice.WebApi.Data.FieldRight.md\#SuperOffice\_WebApi\_Data\_FieldRight\_Mask\_String)
 
 ### <a id="SuperOffice_WebApi_Data_FieldRight_Mask_String"></a> Mask\_String
 
@@ -71,7 +71,7 @@ public string Mask_String { get; set; }
 
 #### See Also
 
-[FieldRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldRight).[Mask](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldRight#SuperOffice_WebApi_Data_FieldRight_Mask)
+[FieldRight](SuperOffice.WebApi.Data.FieldRight.md).[Mask](SuperOffice.WebApi.Data.FieldRight.md\#SuperOffice\_WebApi\_Data\_FieldRight\_Mask)
 
 ### <a id="SuperOffice_WebApi_Data_FieldRight_Reason"></a> Reason
 

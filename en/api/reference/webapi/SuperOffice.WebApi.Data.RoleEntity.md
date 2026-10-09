@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RoleEntity"></a> Class RoleEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RoleEntity.
@@ -12,13 +12,13 @@ public class RoleEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[RoleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -36,7 +36,7 @@ var roleEntity = agent.GetRoleEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
+Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
             All RoleEntity: <pre><code class="lang-csharp">"Role"</code></pre>
 
 ## Constructors
@@ -73,7 +73,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_RoleEntity_DataRights"></a> DataRights
 
@@ -85,7 +85,7 @@ public virtual DataRights DataRights { get; set; }
 
 #### Property Value
 
- [DataRights](/en/api/reference/webapi/SuperOffice.WebApi.Data.DataRights)
+ [DataRights](SuperOffice.WebApi.Data.DataRights.md)
 
 ### <a id="SuperOffice_WebApi_Data_RoleEntity_Deleted"></a> Deleted
 
@@ -147,11 +147,11 @@ public RoleType? RoleType { get; set; }
 
 #### Property Value
 
- [RoleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleType)?
+ [RoleType](SuperOffice.WebApi.Data.RoleType.md)?
 
 #### See Also
 
-[RoleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleEntity).[RoleType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleEntity#SuperOffice_WebApi_Data_RoleEntity_RoleType_String)
+[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md).[RoleType\_String](SuperOffice.WebApi.Data.RoleEntity.md\#SuperOffice\_WebApi\_Data\_RoleEntity\_RoleType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_RoleEntity_RoleType_String"></a> RoleType\_String
 
@@ -169,7 +169,7 @@ public string RoleType_String { get; set; }
 
 #### See Also
 
-[RoleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleEntity).[RoleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleEntity#SuperOffice_WebApi_Data_RoleEntity_RoleType)
+[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md).[RoleType](SuperOffice.WebApi.Data.RoleEntity.md\#SuperOffice\_WebApi\_Data\_RoleEntity\_RoleType)
 
 ### <a id="SuperOffice_WebApi_Data_RoleEntity_Tooltip"></a> Tooltip
 
@@ -205,7 +205,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_RoleEntity_UseCategories"></a> UseCategories
 
@@ -221,7 +221,7 @@ public virtual short UseCategories { get; set; }
 
 ## See Also
 
-[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
+[UserAgent](SuperOffice.WebApi.Agents.UserAgent.md), 
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
 
 

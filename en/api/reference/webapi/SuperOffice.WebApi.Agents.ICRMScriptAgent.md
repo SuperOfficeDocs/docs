@@ -1,11 +1,11 @@
-# Interface ICRMScriptAgent {#SuperOffice_WebApi_Agents_ICRMScriptAgent}
+# <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent"></a> Interface ICRMScriptAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Manage and execute CRMScript functions.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; This agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 public interface ICRMScriptAgent : IAgentBase, IDisposable
@@ -13,12 +13,12 @@ public interface ICRMScriptAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### CreateDefaultCRMScriptEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_CreateDefaultCRMScriptEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_CreateDefaultCRMScriptEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCRMScriptEntityAsync\(RequestOptions\)
 
 Set default values into a new CRMScriptEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -29,17 +29,17 @@ Task<CRMScriptEntity> CreateDefaultCRMScriptEntityAsync(RequestOptions requestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\>
 
 A blank CRMScriptEntity
 
-### CreateDefaultTriggerScriptEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_CreateDefaultTriggerScriptEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_CreateDefaultTriggerScriptEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTriggerScriptEntityAsync\(RequestOptions\)
 
 Set default values into a new TriggerScriptEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -50,21 +50,21 @@ Task<TriggerScriptEntity> CreateDefaultTriggerScriptEntityAsync(RequestOptions r
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\>
 
 A blank TriggerScriptEntity
 
-### DeleteCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\)
 
 Delete the CRMScript
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task DeleteCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, RequestOptions requestOptions = null)
@@ -76,7 +76,7 @@ Task DeleteCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, RequestOpti
 
 Global unique reference to script (independent of installation)
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -86,11 +86,11 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteCRMScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteCRMScriptEntityAsync\(int, RequestOptions\)
 
 Deletes the CRMScriptEntity
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task DeleteCRMScriptEntityAsync(int cRMScriptEntityId, RequestOptions requestOptions = null)
@@ -102,7 +102,7 @@ Task DeleteCRMScriptEntityAsync(int cRMScriptEntityId, RequestOptions requestOpt
 
 The identity of the CRMScriptEntity
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -110,11 +110,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteTriggerScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteTriggerScriptByUniqueIdAsync\(string, RequestOptions\)
 
 Delete a trigger CRMScript.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task DeleteTriggerScriptByUniqueIdAsync(string triggerScriptUniqueId, RequestOptions requestOptions = null)
@@ -126,7 +126,7 @@ Task DeleteTriggerScriptByUniqueIdAsync(string triggerScriptUniqueId, RequestOpt
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -136,11 +136,11 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteTriggerScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_DeleteTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTriggerScriptEntityAsync\(int, RequestOptions\)
 
 Deletes the TriggerScriptEntity
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task DeleteTriggerScriptEntityAsync(int triggerScriptEntityId, RequestOptions requestOptions = null)
@@ -152,7 +152,7 @@ Task DeleteTriggerScriptEntityAsync(int triggerScriptEntityId, RequestOptions re
 
 The identity of the TriggerScriptEntity
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -160,11 +160,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### ExecuteScriptAsEventAsync\(int, EventData, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptAsEventAsync_System_Int32_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptAsEventAsync_System_Int32_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"></a> ExecuteScriptAsEventAsync\(int, EventData, RequestOptions\)
 
 Execute a CRMScript with event data as input. Returns event data with output variable values.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<EventData> ExecuteScriptAsEventAsync(int cRMScriptId, EventData eventData, RequestOptions requestOptions = null)
@@ -176,25 +176,25 @@ Task<EventData> ExecuteScriptAsEventAsync(int cRMScriptId, EventData eventData, 
 
 The id of the CRMScript to execute
 
-`eventData` [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
+`eventData` [EventData](SuperOffice.WebApi.Data.EventData.md)
 
 The EventData instance sent to the crmscript with input values
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[EventData](SuperOffice.WebApi.Data.EventData.md)\>
 
 The EventData instance after script execution with output values
 
-### ExecuteScriptAsEventByUniqueIdAsync\(string, EventData, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptAsEventByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptAsEventByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"></a> ExecuteScriptAsEventByUniqueIdAsync\(string, EventData, RequestOptions\)
 
 Execute a CRMScript with event data as input. Returns event data with output variable values.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<EventData> ExecuteScriptAsEventByUniqueIdAsync(string cRMScriptUniqueId, EventData eventData, RequestOptions requestOptions = null)
@@ -206,25 +206,25 @@ Task<EventData> ExecuteScriptAsEventByUniqueIdAsync(string cRMScriptUniqueId, Ev
 
 The unique id of the CRMScript to execute
 
-`eventData` [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
+`eventData` [EventData](SuperOffice.WebApi.Data.EventData.md)
 
 The EventData instance sent to the crmscript with input values
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[EventData](SuperOffice.WebApi.Data.EventData.md)\>
 
 The EventData instance after script execution with output values
 
-### ExecuteScriptAsync\(int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> ExecuteScriptAsync\(int, StringDictionary, RequestOptions\)
 
 Execute a CRMScript with parameters, returning printed output value.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<string> ExecuteScriptAsync(int cRMScriptId, StringDictionary parameters, RequestOptions requestOptions = null)
@@ -236,25 +236,25 @@ Task<string> ExecuteScriptAsync(int cRMScriptId, StringDictionary parameters, Re
 
 The id of the CRMScript to execute
 
-`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 Parameters passed as variables to the CRMScript
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 The output produced by the CRMScript
 
-### ExecuteScriptByIncludeIdAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> ExecuteScriptByIncludeIdAsync\(string, StringDictionary, RequestOptions\)
 
 Execute a CRMScript with parameters, returning printed output value.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<string> ExecuteScriptByIncludeIdAsync(string cRMScriptIncludeId, StringDictionary parameters, RequestOptions requestOptions = null)
@@ -266,25 +266,25 @@ Task<string> ExecuteScriptByIncludeIdAsync(string cRMScriptIncludeId, StringDict
 
 The include id of the CRMScript to validate
 
-`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 Parameters passed as variables to the CRMScript
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 The output produced by the CRMScript
 
-### ExecuteScriptByStringAsync\(string, StringDictionary, EventData, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptByStringAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptByStringAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"></a> ExecuteScriptByStringAsync\(string, StringDictionary, EventData, RequestOptions\)
 
 Execute a CRMScript 2 (JavaScript), returning the printed output value.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptRunResult> ExecuteScriptByStringAsync(string script, StringDictionary parameters, EventData eventData, RequestOptions requestOptions = null)
@@ -296,29 +296,29 @@ Task<CRMScriptRunResult> ExecuteScriptByStringAsync(string script, StringDiction
 
 The script to execute
 
-`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 Parameters passed as variables to the CRMScript
 
-`eventData` [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
+`eventData` [EventData](SuperOffice.WebApi.Data.EventData.md)
 
 The EventData instance sent to the crmscript with input values
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptRunResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptRunResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptRunResult](SuperOffice.WebApi.Data.CRMScriptRunResult.md)\>
 
 The output produced by the CRMScript
 
-### ExecuteScriptByUniqueIdAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ExecuteScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> ExecuteScriptByUniqueIdAsync\(string, StringDictionary, RequestOptions\)
 
 Execute a CRMScript with parameters, returning printed output value.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<string> ExecuteScriptByUniqueIdAsync(string cRMScriptUniqueId, StringDictionary parameters, RequestOptions requestOptions = null)
@@ -330,25 +330,25 @@ Task<string> ExecuteScriptByUniqueIdAsync(string cRMScriptUniqueId, StringDictio
 
 The unique id of the CRMScript to validate
 
-`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 Parameters passed as variables to the CRMScript
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 The output produced by the CRMScript
 
-### GetCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_GetCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_GetCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\)
 
 Get information about a script from a unique identifier
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<Script> GetCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, RequestOptions requestOptions = null)
@@ -360,21 +360,21 @@ Task<Script> GetCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, Reques
 
 Global unique reference to script (independent of installation)
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Script](SuperOffice.WebApi.Data.Script.md)\>
 
 Information about CRMScript
 
-### GetCRMScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_GetCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_GetCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCRMScriptEntityAsync\(int, RequestOptions\)
 
 Gets a specific CRMScriptEntity object.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptEntity> GetCRMScriptEntityAsync(int cRMScriptEntityId, RequestOptions requestOptions = null)
@@ -386,21 +386,21 @@ Task<CRMScriptEntity> GetCRMScriptEntityAsync(int cRMScriptEntityId, RequestOpti
 
 The identifier of the CRMScriptEntity object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\>
 
 CRMScriptEntity
 
-### GetTriggerScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_GetTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_GetTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTriggerScriptByUniqueIdAsync\(string, RequestOptions\)
 
 Get a trigger CRMScript.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<TriggerScriptEntity> GetTriggerScriptByUniqueIdAsync(string triggerScriptUniqueId, RequestOptions requestOptions = null)
@@ -412,21 +412,21 @@ Task<TriggerScriptEntity> GetTriggerScriptByUniqueIdAsync(string triggerScriptUn
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\>
 
 Trigger script details and source code.
 
-### GetTriggerScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_GetTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_GetTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTriggerScriptEntityAsync\(int, RequestOptions\)
 
 Gets a specific TriggerScriptEntity object.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<TriggerScriptEntity> GetTriggerScriptEntityAsync(int triggerScriptEntityId, RequestOptions requestOptions = null)
@@ -438,21 +438,21 @@ Task<TriggerScriptEntity> GetTriggerScriptEntityAsync(int triggerScriptEntityId,
 
 The identifier of the TriggerScriptEntity object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\>
 
 TriggerScriptEntity
 
-### ResolveIncludesAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ResolveIncludesAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ResolveIncludesAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ResolveIncludesAsync\(string, bool, RequestOptions\)
 
 Will resolve all includes for a TypeScript and return an array of the IDs
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<int[]> ResolveIncludesAsync(string script, bool ignoreErrors, RequestOptions requestOptions = null)
@@ -468,21 +468,21 @@ The script to resolve includes for
 
 If true, then missing includes will be ignored
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
 
 The ids of all the included scripts
 
-### SaveCRMScriptByUniqueIdentifierAsync\(string, Script, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_Data_Script_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_Data_Script_SuperOffice_WebApi_RequestOptions_"></a> SaveCRMScriptByUniqueIdentifierAsync\(string, Script, RequestOptions\)
 
 Create or Update the CRMScript information
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<Script> SaveCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, Script crmscript, RequestOptions requestOptions = null)
@@ -494,25 +494,25 @@ Task<Script> SaveCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, Scrip
 
 Global unique reference to script (independent of installation)
 
-`crmscript` [Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)
+`crmscript` [Script](SuperOffice.WebApi.Data.Script.md)
 
 Information about the CRMScript
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Script](SuperOffice.WebApi.Data.Script.md)\>
 
 Information about the CRMScript as saved in the database
 
-### SaveCRMScriptEntityAsync\(CRMScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveCRMScriptEntityAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveCRMScriptEntityAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveCRMScriptEntityAsync\(CRMScriptEntity, RequestOptions\)
 
 Updates the existing CRMScriptEntity or creates a new CRMScriptEntity if the id parameter is 0. 
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptEntity> SaveCRMScriptEntityAsync(CRMScriptEntity cRMScriptEntity, RequestOptions requestOptions = null)
@@ -520,25 +520,25 @@ Task<CRMScriptEntity> SaveCRMScriptEntityAsync(CRMScriptEntity cRMScriptEntity, 
 
 #### Parameters
 
-`cRMScriptEntity` [CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)
+`cRMScriptEntity` [CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)
 
 The CRMScriptEntity that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\>
 
 New or updated CRMScriptEntity
 
-### SaveCRMScriptEntityWithoutCompileAsync\(CRMScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveCRMScriptEntityWithoutCompileAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveCRMScriptEntityWithoutCompileAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveCRMScriptEntityWithoutCompileAsync\(CRMScriptEntity, RequestOptions\)
 
 Save the script directly without compiling TypeScript
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptEntity> SaveCRMScriptEntityWithoutCompileAsync(CRMScriptEntity crmScriptEntity, RequestOptions requestOptions = null)
@@ -546,25 +546,25 @@ Task<CRMScriptEntity> SaveCRMScriptEntityWithoutCompileAsync(CRMScriptEntity crm
 
 #### Parameters
 
-`crmScriptEntity` [CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)
+`crmScriptEntity` [CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)
 
 The entity to save. Source and SourceCode should both be specified
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\>
 
 The saved entity
 
-### SaveTriggerScriptByUniqueIdAsync\(string, TriggerScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTriggerScriptByUniqueIdAsync\(string, TriggerScriptEntity, RequestOptions\)
 
 Validate a CRMScript. This will check that the syntax is correct
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<TriggerScriptEntity> SaveTriggerScriptByUniqueIdAsync(string triggerScriptUniqueId, TriggerScriptEntity entity, RequestOptions requestOptions = null)
@@ -576,25 +576,25 @@ Task<TriggerScriptEntity> SaveTriggerScriptByUniqueIdAsync(string triggerScriptU
 
 The unique id of the CRMScript to validate
 
-`entity` [TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)
+`entity` [TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)
 
 Trigger script details and source code
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\>
 
 Trigger script details and source code.
 
-### SaveTriggerScriptEntityAsync\(TriggerScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveTriggerScriptEntityAsync_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_SaveTriggerScriptEntityAsync_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTriggerScriptEntityAsync\(TriggerScriptEntity, RequestOptions\)
 
 Updates the existing TriggerScriptEntity or creates a new TriggerScriptEntity if the id parameter is 0. 
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<TriggerScriptEntity> SaveTriggerScriptEntityAsync(TriggerScriptEntity triggerScriptEntity, RequestOptions requestOptions = null)
@@ -602,25 +602,25 @@ Task<TriggerScriptEntity> SaveTriggerScriptEntityAsync(TriggerScriptEntity trigg
 
 #### Parameters
 
-`triggerScriptEntity` [TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)
+`triggerScriptEntity` [TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)
 
 The TriggerScriptEntity that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\>
 
 New or updated TriggerScriptEntity
 
-### ValidateScriptAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ValidateScriptAsync\(int, RequestOptions\)
 
 Validate a CRMScript. This will check that the syntax is correct
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptResult> ValidateScriptAsync(int cRMScriptId, RequestOptions requestOptions = null)
@@ -632,21 +632,21 @@ Task<CRMScriptResult> ValidateScriptAsync(int cRMScriptId, RequestOptions reques
 
 The id of the CRMScript to execute
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\>
 
 True if the syntax is correct
 
-### ValidateScriptByIncludeIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> ValidateScriptByIncludeIdAsync\(string, RequestOptions\)
 
 Validate a CRMScript. This will check that the syntax is correct
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptResult> ValidateScriptByIncludeIdAsync(string cRMScriptIncludeId, RequestOptions requestOptions = null)
@@ -658,21 +658,21 @@ Task<CRMScriptResult> ValidateScriptByIncludeIdAsync(string cRMScriptIncludeId, 
 
 The include id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\>
 
 True if the syntax is correct
 
-### ValidateScriptByStringAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptByStringAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptByStringAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> ValidateScriptByStringAsync\(string, RequestOptions\)
 
 Validate a CRMScript 2 (JavaScript). This will check that the syntax is correct
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptResult> ValidateScriptByStringAsync(string script, RequestOptions requestOptions = null)
@@ -684,21 +684,21 @@ Task<CRMScriptResult> ValidateScriptByStringAsync(string script, RequestOptions 
 
 The script to validate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\>
 
 The result of the syntax check
 
-### ValidateScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> ValidateScriptByUniqueIdAsync\(string, RequestOptions\)
 
 Validate a CRMScript. This will check that the syntax is correct
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptResult> ValidateScriptByUniqueIdAsync(string cRMScriptUniqueId, RequestOptions requestOptions = null)
@@ -710,21 +710,21 @@ Task<CRMScriptResult> ValidateScriptByUniqueIdAsync(string cRMScriptUniqueId, Re
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\>
 
 True if the syntax is correct
 
-### ValidateTriggerScriptAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateTriggerScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateTriggerScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ValidateTriggerScriptAsync\(int, RequestOptions\)
 
 Validate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptResult> ValidateTriggerScriptAsync(int triggerScriptId, RequestOptions requestOptions = null)
@@ -736,21 +736,21 @@ Task<CRMScriptResult> ValidateTriggerScriptAsync(int triggerScriptId, RequestOpt
 
 The id of the CRMScript Trigger to validate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\>
 
 True if the syntax is correct
 
-### ValidateTriggerScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ICRMScriptAgent_ValidateTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> ValidateTriggerScriptByUniqueIdAsync\(string, RequestOptions\)
 
 Validate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
+<p></p>
+<b>Online Restricted:</b> The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<CRMScriptResult> ValidateTriggerScriptByUniqueIdAsync(string triggerScriptUniqueId, RequestOptions requestOptions = null)
@@ -762,13 +762,13 @@ Task<CRMScriptResult> ValidateTriggerScriptByUniqueIdAsync(string triggerScriptU
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\>
 
 True if the syntax is correct
 

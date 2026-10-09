@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PocketStartupData"></a> Class PocketStartupData
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PocketStartupData.
@@ -13,13 +13,13 @@ public class PocketStartupData : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[PocketStartupData](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketStartupData)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[PocketStartupData](SuperOffice.WebApi.Data.PocketStartupData.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -48,7 +48,7 @@ public virtual TimeZoneData BaseLocaleTimeZoneData { get; set; }
 
 #### Property Value
 
- [TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)
+ [TimeZoneData](SuperOffice.WebApi.Data.TimeZoneData.md)
 
 ### <a id="SuperOffice_WebApi_Data_PocketStartupData_CustomData"></a> CustomData
 
@@ -106,7 +106,7 @@ public virtual TimeZoneData PhoneLocaleTimeZoneData { get; set; }
 
 #### Property Value
 
- [TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)
+ [TimeZoneData](SuperOffice.WebApi.Data.TimeZoneData.md)
 
 ### <a id="SuperOffice_WebApi_Data_PocketStartupData_PocketPreferences"></a> PocketPreferences
 
@@ -118,7 +118,7 @@ public virtual Preference[] PocketPreferences { get; set; }
 
 #### Property Value
 
- [Preference](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference)\[\]
+ [Preference](SuperOffice.WebApi.Data.Preference.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_PocketStartupData_SystemWebPanels"></a> SystemWebPanels
 
@@ -130,7 +130,7 @@ public virtual WebPanelEntity[] SystemWebPanels { get; set; }
 
 #### Property Value
 
- [WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\[\]
+ [WebPanelEntity](SuperOffice.WebApi.Data.WebPanelEntity.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_PocketStartupData_TableRights"></a> TableRights
 
@@ -144,11 +144,11 @@ public ETableRight?[] TableRights { get; set; }
 
 #### Property Value
 
- [ETableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.ETableRight)?\[\]
+ [ETableRight](SuperOffice.WebApi.Data.ETableRight.md)?\[\]
 
 #### See Also
 
-[PocketStartupData](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketStartupData).[TableRights\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketStartupData#SuperOffice_WebApi_Data_PocketStartupData_TableRights_String)
+[PocketStartupData](SuperOffice.WebApi.Data.PocketStartupData.md).[TableRights\_String](SuperOffice.WebApi.Data.PocketStartupData.md\#SuperOffice\_WebApi\_Data\_PocketStartupData\_TableRights\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PocketStartupData_TableRights_String"></a> TableRights\_String
 
@@ -166,9 +166,9 @@ public string[] TableRights_String { get; set; }
 
 #### See Also
 
-[PocketStartupData](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketStartupData).[TableRights](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketStartupData#SuperOffice_WebApi_Data_PocketStartupData_TableRights)
+[PocketStartupData](SuperOffice.WebApi.Data.PocketStartupData.md).[TableRights](SuperOffice.WebApi.Data.PocketStartupData.md\#SuperOffice\_WebApi\_Data\_PocketStartupData\_TableRights)
 
 ## See Also
 
-[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent)
+[PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md)
 

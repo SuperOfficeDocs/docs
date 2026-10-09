@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Associate_GetEncryptionKeyRequest"></a> Class Associate\_GetEncryptionKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Associate_GetEncryptionKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Associate\_GetEncryptionKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate_GetEncryptionKeyRequest)
+[Associate\_GetEncryptionKeyRequest](SuperOffice.WebApi.Data.Associate\_GetEncryptionKeyRequest.md)
 
 #### Inherited Members
 

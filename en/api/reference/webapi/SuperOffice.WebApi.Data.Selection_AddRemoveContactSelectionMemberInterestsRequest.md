@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_AddRemoveContactSelectionMemberInterestsRequest"></a> Class Selection\_AddRemoveContactSelectionMemberInterestsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_AddRemoveContactSelectionMemberInterestsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_AddRemoveContactSelectionMemberInterestsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_AddRemoveContactSelectionMemberInterestsRequest)
+[Selection\_AddRemoveContactSelectionMemberInterestsRequest](SuperOffice.WebApi.Data.Selection\_AddRemoveContactSelectionMemberInterestsRequest.md)
 
 #### Inherited Members
 

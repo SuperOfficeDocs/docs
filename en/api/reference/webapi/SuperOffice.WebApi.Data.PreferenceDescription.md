@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PreferenceDescription"></a> Class PreferenceDescription
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PreferenceDescription.
@@ -13,13 +13,13 @@ public class PreferenceDescription : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -59,11 +59,11 @@ public PrefDescAccessFlags? AccessFlags { get; set; }
 
 #### Property Value
 
- [PrefDescAccessFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.PrefDescAccessFlags)?
+ [PrefDescAccessFlags](SuperOffice.WebApi.Data.PrefDescAccessFlags.md)?
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[AccessFlags\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_AccessFlags_String)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[AccessFlags\_String](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_AccessFlags\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PreferenceDescription_AccessFlags_String"></a> AccessFlags\_String
 
@@ -81,7 +81,7 @@ public string AccessFlags_String { get; set; }
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[AccessFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_AccessFlags)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[AccessFlags](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_AccessFlags)
 
 ### <a id="SuperOffice_WebApi_Data_PreferenceDescription_Description"></a> Description
 
@@ -131,11 +131,11 @@ public PreferenceLevel? MaxLevel { get; set; }
 
 #### Property Value
 
- [PreferenceLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceLevel)?
+ [PreferenceLevel](SuperOffice.WebApi.Data.PreferenceLevel.md)?
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[MaxLevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_MaxLevel_String)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[MaxLevel\_String](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_MaxLevel\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PreferenceDescription_MaxLevel_String"></a> MaxLevel\_String
 
@@ -153,7 +153,7 @@ public string MaxLevel_String { get; set; }
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[MaxLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_MaxLevel)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[MaxLevel](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_MaxLevel)
 
 ### <a id="SuperOffice_WebApi_Data_PreferenceDescription_MaxValue"></a> MaxValue
 
@@ -275,11 +275,11 @@ public PreferenceLevel? SysMaxLevel { get; set; }
 
 #### Property Value
 
- [PreferenceLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceLevel)?
+ [PreferenceLevel](SuperOffice.WebApi.Data.PreferenceLevel.md)?
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[SysMaxLevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_SysMaxLevel_String)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[SysMaxLevel\_String](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_SysMaxLevel\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PreferenceDescription_SysMaxLevel_String"></a> SysMaxLevel\_String
 
@@ -297,7 +297,7 @@ public string SysMaxLevel_String { get; set; }
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[SysMaxLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_SysMaxLevel)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[SysMaxLevel](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_SysMaxLevel)
 
 ### <a id="SuperOffice_WebApi_Data_PreferenceDescription_TableName"></a> TableName
 
@@ -335,11 +335,11 @@ public PrefDescValueType? ValueType { get; set; }
 
 #### Property Value
 
- [PrefDescValueType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PrefDescValueType)?
+ [PrefDescValueType](SuperOffice.WebApi.Data.PrefDescValueType.md)?
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[ValueType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_ValueType_String)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[ValueType\_String](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_ValueType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PreferenceDescription_ValueType_String"></a> ValueType\_String
 
@@ -357,9 +357,9 @@ public string ValueType_String { get; set; }
 
 #### See Also
 
-[PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription).[ValueType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription#SuperOffice_WebApi_Data_PreferenceDescription_ValueType)
+[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md).[ValueType](SuperOffice.WebApi.Data.PreferenceDescription.md\#SuperOffice\_WebApi\_Data\_PreferenceDescription\_ValueType)
 
 ## See Also
 
-[PreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreferenceAgent)
+[PreferenceAgent](SuperOffice.WebApi.Agents.PreferenceAgent.md)
 

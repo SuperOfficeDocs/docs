@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_GetPreviewMailingHeaderRequest"></a> Class Marketing\_GetPreviewMailingHeaderRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_GetPreviewMailingHeaderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_GetPreviewMailingHeaderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_GetPreviewMailingHeaderRequest)
+[Marketing\_GetPreviewMailingHeaderRequest](SuperOffice.WebApi.Data.Marketing\_GetPreviewMailingHeaderRequest.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_NotifyNewTicketRequest"></a> Class Ticket\_NotifyNewTicketRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_NotifyNewTicketRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_NotifyNewTicketRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_NotifyNewTicketRequest)
+[Ticket\_NotifyNewTicketRequest](SuperOffice.WebApi.Data.Ticket\_NotifyNewTicketRequest.md)
 
 #### Inherited Members
 

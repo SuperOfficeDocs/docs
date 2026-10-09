@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_RemoveSessionRequest"></a> Class CustomerService\_RemoveSessionRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_RemoveSessionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_RemoveSessionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_RemoveSessionRequest)
+[CustomerService\_RemoveSessionRequest](SuperOffice.WebApi.Data.CustomerService\_RemoveSessionRequest.md)
 
 #### Inherited Members
 

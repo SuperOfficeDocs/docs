@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot"></a> Class UserPreferenceStrings.Copilot
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Copilot Hugo AI
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Copilot
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Copilot](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Copilot)
+[UserPreferenceStrings.Copilot](SuperOffice.WebApi.Data.UserPreferenceStrings.Copilot.md)
 
 #### Inherited Members
 
@@ -40,9 +40,8 @@ public const string AllowWebAccess = "allowWebAccess"
 
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_AutoGenerateReply"></a> AutoGenerateReply
 
-Automatically generate reply answer to message?
-
 ```csharp
+[Obsolete("Moved to AI section: use UserPreferenceStrings.AI.AutoGenerateReply")]
 public const string AutoGenerateReply = "autoGenerateReply"
 ```
 
@@ -112,9 +111,8 @@ public const string ServiceSystemPrompt = "systemPrompt"
 
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_ShowAiReplyTool"></a> ShowAiReplyTool
 
-Show the AI suggestion in the Reply Tools sidebar?
-
 ```csharp
+[Obsolete("Moved to AI section: use UserPreferenceStrings.AI.ShowAiReplyTool")]
 public const string ShowAiReplyTool = "showAiReplyTool"
 ```
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetScreenConfigurationDeltaRequest"></a> Class Configuration\_GetScreenConfigurationDeltaRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetScreenConfigurationDeltaRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetScreenConfigurationDeltaRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetScreenConfigurationDeltaRequest)
+[Configuration\_GetScreenConfigurationDeltaRequest](SuperOffice.WebApi.Data.Configuration\_GetScreenConfigurationDeltaRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public DeltaState DeltaState { get; set; }
 
 #### Property Value
 
- [DeltaState](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaState)
+ [DeltaState](SuperOffice.WebApi.Data.DeltaState.md)
 
 ### <a id="SuperOffice_WebApi_Data_Configuration_GetScreenConfigurationDeltaRequest_DeltaType"></a> DeltaType
 
@@ -50,5 +50,5 @@ public DeltaType DeltaType { get; set; }
 
 #### Property Value
 
- [DeltaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaType)
+ [DeltaType](SuperOffice.WebApi.Data.DeltaType.md)
 

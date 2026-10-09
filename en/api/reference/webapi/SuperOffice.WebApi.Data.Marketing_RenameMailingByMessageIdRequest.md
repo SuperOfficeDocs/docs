@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_RenameMailingByMessageIdRequest"></a> Class Marketing\_RenameMailingByMessageIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_RenameMailingByMessageIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_RenameMailingByMessageIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_RenameMailingByMessageIdRequest)
+[Marketing\_RenameMailingByMessageIdRequest](SuperOffice.WebApi.Data.Marketing\_RenameMailingByMessageIdRequest.md)
 
 #### Inherited Members
 

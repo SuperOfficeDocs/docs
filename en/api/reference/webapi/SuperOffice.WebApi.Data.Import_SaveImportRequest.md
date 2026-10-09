@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Import_SaveImportRequest"></a> Class Import\_SaveImportRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Import_SaveImportRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Import\_SaveImportRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Import_SaveImportRequest)
+[Import\_SaveImportRequest](SuperOffice.WebApi.Data.Import\_SaveImportRequest.md)
 
 #### Inherited Members
 
@@ -80,5 +80,5 @@ public ImportLine[] ImportLines { get; set; }
 
 #### Property Value
 
- [ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]
+ [ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]
 

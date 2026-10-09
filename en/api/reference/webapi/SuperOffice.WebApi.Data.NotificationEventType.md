@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NotificationEventType"></a> Enum NotificationEventType
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Types of events that are sent through the Pocket Notification API, where they are paired with an entity id
@@ -71,9 +71,27 @@ public enum NotificationEventType
 
 
 
+`TicketCustomMessage = 12` 
+
+12: Custom message sent to a ticket's followers
+
+
+
 `TicketEscalated = 7` 
 
 7: Ticket escalated
+
+
+
+`TicketFavouriteUpdated = 13` 
+
+13: A favourited ticket was updated
+
+
+
+`TicketTakenOver = 14` 
+
+14: A ticket was taken over by someone else
 
 
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_SaveWithCustomInvitationRequest"></a> Class Appointment\_SaveWithCustomInvitationRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_SaveWithCustomInvitationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_SaveWithCustomInvitationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_SaveWithCustomInvitationRequest)
+[Appointment\_SaveWithCustomInvitationRequest](SuperOffice.WebApi.Data.Appointment\_SaveWithCustomInvitationRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentEntity AppointmentEntity { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
+ [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_SaveWithCustomInvitationRequest_EmailBody"></a> EmailBody
 
@@ -60,7 +60,7 @@ public EMailConnectionInfo ImapEMailConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_SaveWithCustomInvitationRequest_SendEmailToParticipants"></a> SendEmailToParticipants
 
@@ -80,7 +80,7 @@ public EMailConnectionInfo SmtpEMailConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_SaveWithCustomInvitationRequest_Subject"></a> Subject
 
@@ -110,5 +110,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
+ [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
 

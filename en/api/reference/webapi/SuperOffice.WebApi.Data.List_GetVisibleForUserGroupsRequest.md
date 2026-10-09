@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetVisibleForUserGroupsRequest"></a> Class List\_GetVisibleForUserGroupsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetVisibleForUserGroupsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetVisibleForUserGroupsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetVisibleForUserGroupsRequest)
+[List\_GetVisibleForUserGroupsRequest](SuperOffice.WebApi.Data.List\_GetVisibleForUserGroupsRequest.md)
 
 #### Inherited Members
 

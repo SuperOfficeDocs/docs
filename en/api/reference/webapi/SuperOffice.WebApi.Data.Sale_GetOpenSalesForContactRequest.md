@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_GetOpenSalesForContactRequest"></a> Class Sale\_GetOpenSalesForContactRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_GetOpenSalesForContactRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_GetOpenSalesForContactRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_GetOpenSalesForContactRequest)
+[Sale\_GetOpenSalesForContactRequest](SuperOffice.WebApi.Data.Sale\_GetOpenSalesForContactRequest.md)
 
 #### Inherited Members
 

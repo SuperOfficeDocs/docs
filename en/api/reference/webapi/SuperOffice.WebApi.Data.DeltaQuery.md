@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DeltaQuery"></a> Class DeltaQuery
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DeltaQuery.
@@ -13,13 +13,13 @@ public class DeltaQuery : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[DeltaQuery](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[DeltaQuery](SuperOffice.WebApi.Data.DeltaQuery.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public DeltaState?[] DeltaStates { get; set; }
 
 #### Property Value
 
- [DeltaState](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaState)?\[\]
+ [DeltaState](SuperOffice.WebApi.Data.DeltaState.md)?\[\]
 
 #### See Also
 
-[DeltaQuery](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery).[DeltaStates\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery#SuperOffice_WebApi_Data_DeltaQuery_DeltaStates_String)
+[DeltaQuery](SuperOffice.WebApi.Data.DeltaQuery.md).[DeltaStates\_String](SuperOffice.WebApi.Data.DeltaQuery.md\#SuperOffice\_WebApi\_Data\_DeltaQuery\_DeltaStates\_String)
 
 ### <a id="SuperOffice_WebApi_Data_DeltaQuery_DeltaStates_String"></a> DeltaStates\_String
 
@@ -86,7 +86,7 @@ public string[] DeltaStates_String { get; set; }
 
 #### See Also
 
-[DeltaQuery](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery).[DeltaStates](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery#SuperOffice_WebApi_Data_DeltaQuery_DeltaStates)
+[DeltaQuery](SuperOffice.WebApi.Data.DeltaQuery.md).[DeltaStates](SuperOffice.WebApi.Data.DeltaQuery.md\#SuperOffice\_WebApi\_Data\_DeltaQuery\_DeltaStates)
 
 ### <a id="SuperOffice_WebApi_Data_DeltaQuery_DeltaTypes"></a> DeltaTypes
 
@@ -100,11 +100,11 @@ public DeltaType?[] DeltaTypes { get; set; }
 
 #### Property Value
 
- [DeltaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaType)?\[\]
+ [DeltaType](SuperOffice.WebApi.Data.DeltaType.md)?\[\]
 
 #### See Also
 
-[DeltaQuery](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery).[DeltaTypes\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery#SuperOffice_WebApi_Data_DeltaQuery_DeltaTypes_String)
+[DeltaQuery](SuperOffice.WebApi.Data.DeltaQuery.md).[DeltaTypes\_String](SuperOffice.WebApi.Data.DeltaQuery.md\#SuperOffice\_WebApi\_Data\_DeltaQuery\_DeltaTypes\_String)
 
 ### <a id="SuperOffice_WebApi_Data_DeltaQuery_DeltaTypes_String"></a> DeltaTypes\_String
 
@@ -122,7 +122,7 @@ public string[] DeltaTypes_String { get; set; }
 
 #### See Also
 
-[DeltaQuery](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery).[DeltaTypes](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery#SuperOffice_WebApi_Data_DeltaQuery_DeltaTypes)
+[DeltaQuery](SuperOffice.WebApi.Data.DeltaQuery.md).[DeltaTypes](SuperOffice.WebApi.Data.DeltaQuery.md\#SuperOffice\_WebApi\_Data\_DeltaQuery\_DeltaTypes)
 
 ### <a id="SuperOffice_WebApi_Data_DeltaQuery_RecipeId"></a> RecipeId
 
@@ -138,5 +138,5 @@ public virtual string RecipeId { get; set; }
 
 ## See Also
 
-[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent)
+[ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md)
 

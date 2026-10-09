@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetForRmUiRequest"></a> Class Ticket\_GetForRmUiRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetForRmUiRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetForRmUiRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetForRmUiRequest)
+[Ticket\_GetForRmUiRequest](SuperOffice.WebApi.Data.Ticket\_GetForRmUiRequest.md)
 
 #### Inherited Members
 

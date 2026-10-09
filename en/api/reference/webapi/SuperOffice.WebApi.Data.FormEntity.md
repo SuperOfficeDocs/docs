@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FormEntity"></a> Class FormEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FormEntity.
@@ -13,13 +13,13 @@ public class FormEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[FormEntity](SuperOffice.WebApi.Data.FormEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -215,11 +215,11 @@ public FormsRecaptchaMode? RecaptchaMode { get; set; }
 
 #### Property Value
 
- [FormsRecaptchaMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormsRecaptchaMode)?
+ [FormsRecaptchaMode](SuperOffice.WebApi.Data.FormsRecaptchaMode.md)?
 
 #### See Also
 
-[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity).[RecaptchaMode\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity#SuperOffice_WebApi_Data_FormEntity_RecaptchaMode_String)
+[FormEntity](SuperOffice.WebApi.Data.FormEntity.md).[RecaptchaMode\_String](SuperOffice.WebApi.Data.FormEntity.md\#SuperOffice\_WebApi\_Data\_FormEntity\_RecaptchaMode\_String)
 
 ### <a id="SuperOffice_WebApi_Data_FormEntity_RecaptchaMode_String"></a> RecaptchaMode\_String
 
@@ -237,7 +237,7 @@ public string RecaptchaMode_String { get; set; }
 
 #### See Also
 
-[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity).[RecaptchaMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity#SuperOffice_WebApi_Data_FormEntity_RecaptchaMode)
+[FormEntity](SuperOffice.WebApi.Data.FormEntity.md).[RecaptchaMode](SuperOffice.WebApi.Data.FormEntity.md\#SuperOffice\_WebApi\_Data\_FormEntity\_RecaptchaMode)
 
 ### <a id="SuperOffice_WebApi_Data_FormEntity_Recipe"></a> Recipe
 
@@ -311,11 +311,11 @@ public FormType? Type { get; set; }
 
 #### Property Value
 
- [FormType](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormType)?
+ [FormType](SuperOffice.WebApi.Data.FormType.md)?
 
 #### See Also
 
-[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity#SuperOffice_WebApi_Data_FormEntity_Type_String)
+[FormEntity](SuperOffice.WebApi.Data.FormEntity.md).[Type\_String](SuperOffice.WebApi.Data.FormEntity.md\#SuperOffice\_WebApi\_Data\_FormEntity\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_FormEntity_Type_String"></a> Type\_String
 
@@ -333,7 +333,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity#SuperOffice_WebApi_Data_FormEntity_Type)
+[FormEntity](SuperOffice.WebApi.Data.FormEntity.md).[Type](SuperOffice.WebApi.Data.FormEntity.md\#SuperOffice\_WebApi\_Data\_FormEntity\_Type)
 
 ### <a id="SuperOffice_WebApi_Data_FormEntity_Updated"></a> Updated
 
@@ -373,5 +373,5 @@ public virtual short UpdatedCount { get; set; }
 
 ## See Also
 
-[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent)
+[MarketingAgent](SuperOffice.WebApi.Agents.MarketingAgent.md)
 

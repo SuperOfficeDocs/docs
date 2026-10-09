@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_IsPasswordValidRequest"></a> Class User\_IsPasswordValidRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_IsPasswordValidRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_IsPasswordValidRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_IsPasswordValidRequest)
+[User\_IsPasswordValidRequest](SuperOffice.WebApi.Data.User\_IsPasswordValidRequest.md)
 
 #### Inherited Members
 
@@ -70,5 +70,5 @@ public UserType Type { get; set; }
 
 #### Property Value
 
- [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)
+ [UserType](SuperOffice.WebApi.Data.UserType.md)
 

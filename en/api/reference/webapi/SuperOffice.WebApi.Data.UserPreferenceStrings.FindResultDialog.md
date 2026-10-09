@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_FindResultDialog"></a> Class UserPreferenceStrings.FindResultDialog
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Find result dialog
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.FindResultDialog
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.FindResultDialog](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.FindResultDialog)
+[UserPreferenceStrings.FindResultDialog](SuperOffice.WebApi.Data.UserPreferenceStrings.FindResultDialog.md)
 
 #### Inherited Members
 

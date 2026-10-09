@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GenerateNavigationUrlRequest"></a> Class List\_GenerateNavigationUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GenerateNavigationUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GenerateNavigationUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GenerateNavigationUrlRequest)
+[List\_GenerateNavigationUrlRequest](SuperOffice.WebApi.Data.List\_GenerateNavigationUrlRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public Navigation VisibleIn { get; set; }
 
 #### Property Value
 
- [Navigation](/en/api/reference/webapi/SuperOffice.WebApi.Data.Navigation)
+ [Navigation](SuperOffice.WebApi.Data.Navigation.md)
 
 ### <a id="SuperOffice_WebApi_Data_List_GenerateNavigationUrlRequest_WindowName"></a> WindowName
 

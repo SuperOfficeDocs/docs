@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ShowWindowState"></a> Enum ShowWindowState
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Normal = 0, Maximized = 1, Minimized = 2

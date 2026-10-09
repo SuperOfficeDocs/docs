@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetLocalizedTextsRequest"></a> Class List\_GetLocalizedTextsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetLocalizedTextsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetLocalizedTextsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetLocalizedTextsRequest)
+[List\_GetLocalizedTextsRequest](SuperOffice.WebApi.Data.List\_GetLocalizedTextsRequest.md)
 
 #### Inherited Members
 

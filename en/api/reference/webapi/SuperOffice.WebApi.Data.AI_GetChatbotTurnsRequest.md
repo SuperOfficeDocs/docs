@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GetChatbotTurnsRequest"></a> Class AI\_GetChatbotTurnsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GetChatbotTurnsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GetChatbotTurnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GetChatbotTurnsRequest)
+[AI\_GetChatbotTurnsRequest](SuperOffice.WebApi.Data.AI\_GetChatbotTurnsRequest.md)
 
 #### Inherited Members
 

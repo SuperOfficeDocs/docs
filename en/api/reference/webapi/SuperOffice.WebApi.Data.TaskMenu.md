@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TaskMenu"></a> Class TaskMenu
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TaskMenu.
@@ -13,13 +13,13 @@ public class TaskMenu : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -59,11 +59,11 @@ public ArchiveBehaviour? ArchiveBehaviour { get; set; }
 
 #### Property Value
 
- [ArchiveBehaviour](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveBehaviour)?
+ [ArchiveBehaviour](SuperOffice.WebApi.Data.ArchiveBehaviour.md)?
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[ArchiveBehaviour\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_ArchiveBehaviour_String)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[ArchiveBehaviour\_String](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_ArchiveBehaviour\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_ArchiveBehaviour_String"></a> ArchiveBehaviour\_String
 
@@ -81,7 +81,7 @@ public string ArchiveBehaviour_String { get; set; }
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[ArchiveBehaviour](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_ArchiveBehaviour)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[ArchiveBehaviour](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_ArchiveBehaviour)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_Area"></a> Area
 
@@ -131,11 +131,11 @@ public UrlEncoding? Encoding { get; set; }
 
 #### Property Value
 
- [UrlEncoding](/en/api/reference/webapi/SuperOffice.WebApi.Data.UrlEncoding)?
+ [UrlEncoding](SuperOffice.WebApi.Data.UrlEncoding.md)?
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[Encoding\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_Encoding_String)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[Encoding\_String](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_Encoding\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_Encoding_String"></a> Encoding\_String
 
@@ -153,7 +153,7 @@ public string Encoding_String { get; set; }
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[Encoding](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_Encoding)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[Encoding](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_Encoding)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_Name"></a> Name
 
@@ -203,11 +203,11 @@ public ShowTaskItemInClient? ShowInClient { get; set; }
 
 #### Property Value
 
- [ShowTaskItemInClient](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShowTaskItemInClient)?
+ [ShowTaskItemInClient](SuperOffice.WebApi.Data.ShowTaskItemInClient.md)?
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[ShowInClient\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_ShowInClient_String)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[ShowInClient\_String](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_ShowInClient\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_ShowInClient_String"></a> ShowInClient\_String
 
@@ -225,7 +225,7 @@ public string ShowInClient_String { get; set; }
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[ShowInClient](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_ShowInClient)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[ShowInClient](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_ShowInClient)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_TableName"></a> TableName
 
@@ -263,11 +263,11 @@ public TaskListItemType? TaskType { get; set; }
 
 #### Property Value
 
- [TaskListItemType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItemType)?
+ [TaskListItemType](SuperOffice.WebApi.Data.TaskListItemType.md)?
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[TaskType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_TaskType_String)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[TaskType\_String](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_TaskType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_TaskType_String"></a> TaskType\_String
 
@@ -285,7 +285,7 @@ public string TaskType_String { get; set; }
 
 #### See Also
 
-[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu).[TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu#SuperOffice_WebApi_Data_TaskMenu_TaskType)
+[TaskMenu](SuperOffice.WebApi.Data.TaskMenu.md).[TaskType](SuperOffice.WebApi.Data.TaskMenu.md\#SuperOffice\_WebApi\_Data\_TaskMenu\_TaskType)
 
 ### <a id="SuperOffice_WebApi_Data_TaskMenu_Tooltip"></a> Tooltip
 
@@ -313,5 +313,5 @@ public virtual string UrlOrSoprotocol { get; set; }
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

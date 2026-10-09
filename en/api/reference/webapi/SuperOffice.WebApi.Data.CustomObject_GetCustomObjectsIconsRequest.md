@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_GetCustomObjectsIconsRequest"></a> Class CustomObject\_GetCustomObjectsIconsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_GetCustomObjectsIconsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_GetCustomObjectsIconsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_GetCustomObjectsIconsRequest)
+[CustomObject\_GetCustomObjectsIconsRequest](SuperOffice.WebApi.Data.CustomObject\_GetCustomObjectsIconsRequest.md)
 
 #### Inherited Members
 

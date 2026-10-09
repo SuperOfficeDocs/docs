@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteVersionButtonState"></a> Class QuoteVersionButtonState
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuoteVersionButtonState.
@@ -13,13 +13,13 @@ public class QuoteVersionButtonState : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[QuoteVersionButtonState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonState)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[QuoteVersionButtonState](SuperOffice.WebApi.Data.QuoteVersionButtonState.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -52,11 +52,11 @@ public QuoteVersionButtonAction? Action { get; set; }
 
 #### Property Value
 
- [QuoteVersionButtonAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonAction)?
+ [QuoteVersionButtonAction](SuperOffice.WebApi.Data.QuoteVersionButtonAction.md)?
 
 #### See Also
 
-[QuoteVersionButtonState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonState).[Action\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonState#SuperOffice_WebApi_Data_QuoteVersionButtonState_Action_String)
+[QuoteVersionButtonState](SuperOffice.WebApi.Data.QuoteVersionButtonState.md).[Action\_String](SuperOffice.WebApi.Data.QuoteVersionButtonState.md\#SuperOffice\_WebApi\_Data\_QuoteVersionButtonState\_Action\_String)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionButtonState_Action_String"></a> Action\_String
 
@@ -74,7 +74,7 @@ public string Action_String { get; set; }
 
 #### See Also
 
-[QuoteVersionButtonState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonState).[Action](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonState#SuperOffice_WebApi_Data_QuoteVersionButtonState_Action)
+[QuoteVersionButtonState](SuperOffice.WebApi.Data.QuoteVersionButtonState.md).[Action](SuperOffice.WebApi.Data.QuoteVersionButtonState.md\#SuperOffice\_WebApi\_Data\_QuoteVersionButtonState\_Action)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersionButtonState_DisplayText"></a> DisplayText
 
@@ -126,5 +126,5 @@ public virtual string TooltipText { get; set; }
 
 ## See Also
 
-[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
+[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
 

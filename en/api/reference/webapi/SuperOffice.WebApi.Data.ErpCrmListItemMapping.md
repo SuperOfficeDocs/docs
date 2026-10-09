@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpCrmListItemMapping"></a> Class ErpCrmListItemMapping
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ErpCrmListItemMapping.
@@ -13,13 +13,13 @@ public class ErpCrmListItemMapping : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ErpCrmListItemMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpCrmListItemMapping)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ErpCrmListItemMapping](SuperOffice.WebApi.Data.ErpCrmListItemMapping.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual MDOListItem CrmListItem { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)
 
 ### <a id="SuperOffice_WebApi_Data_ErpCrmListItemMapping_ErpListItemId"></a> ErpListItemId
 
@@ -78,5 +78,5 @@ public virtual string ErpListItemName { get; set; }
 
 ## See Also
 
-[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
+[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
 

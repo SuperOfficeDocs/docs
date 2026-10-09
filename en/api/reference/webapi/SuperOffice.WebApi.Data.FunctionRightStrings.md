@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FunctionRightStrings"></a> Class FunctionRightStrings
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class FunctionRightStrings
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FunctionRightStrings](/en/api/reference/webapi/SuperOffice.WebApi.Data.FunctionRightStrings)
+[FunctionRightStrings](SuperOffice.WebApi.Data.FunctionRightStrings.md)
 
 #### Inherited Members
 
@@ -654,6 +654,18 @@ Can define new tags directly from user interface (as opposed to having to use Li
 
 ```csharp
 public const string DefineNewTags = "define-new-tags"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_FunctionRightStrings_DeleteExternalFollowUps"></a> DeleteExternalFollowUps
+
+Allows users to delete follow-ups that originate from an external calendar system. Does not grant permission to edit externally owned follow-ups.
+
+```csharp
+public const string DeleteExternalFollowUps = "delete-external-follow-ups"
 ```
 
 #### Field Value

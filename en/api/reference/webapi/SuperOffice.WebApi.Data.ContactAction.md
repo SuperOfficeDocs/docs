@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ContactAction"></a> Enum ContactAction
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Describes what type of activity/action there has been on a contact

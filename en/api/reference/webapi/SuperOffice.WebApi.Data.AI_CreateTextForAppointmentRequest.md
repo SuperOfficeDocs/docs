@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_CreateTextForAppointmentRequest"></a> Class AI\_CreateTextForAppointmentRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_CreateTextForAppointmentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_CreateTextForAppointmentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_CreateTextForAppointmentRequest)
+[AI\_CreateTextForAppointmentRequest](SuperOffice.WebApi.Data.AI\_CreateTextForAppointmentRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentEntity Appointment { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
+ [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_AI_CreateTextForAppointmentRequest_IsoLangCode"></a> IsoLangCode
 

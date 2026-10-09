@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_GetLicenseStatusFromLicenseServerRequest"></a> Class License\_GetLicenseStatusFromLicenseServerRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_GetLicenseStatusFromLicenseServerRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_GetLicenseStatusFromLicenseServerRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_GetLicenseStatusFromLicenseServerRequest)
+[License\_GetLicenseStatusFromLicenseServerRequest](SuperOffice.WebApi.Data.License\_GetLicenseStatusFromLicenseServerRequest.md)
 
 #### Inherited Members
 

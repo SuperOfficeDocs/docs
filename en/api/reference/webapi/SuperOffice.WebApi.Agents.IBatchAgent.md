@@ -1,6 +1,6 @@
-# Interface IBatchAgent {#SuperOffice_WebApi_Agents_IBatchAgent}
+# <a id="SuperOffice_WebApi_Agents_IBatchAgent"></a> Interface IBatchAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Start, stop and monitor predefined batch tasks
@@ -11,12 +11,12 @@ public interface IBatchAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### DeleteBatchTaskAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_DeleteBatchTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_DeleteBatchTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteBatchTaskAsync\(int, RequestOptions\)
 
 Delete a batch task from the database.
 
@@ -30,7 +30,7 @@ Task DeleteBatchTaskAsync(int batchTaskId, RequestOptions requestOptions = null)
 
 The batchTask id to delete.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -38,7 +38,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteBatchTasksAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_DeleteBatchTasksAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_DeleteBatchTasksAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteBatchTasksAsync\(int\[\], RequestOptions\)
 
 Delete batch tasks from the database.
 
@@ -52,7 +52,7 @@ Task DeleteBatchTasksAsync(int[] batchTaskIds, RequestOptions requestOptions = n
 
 Array of batchTask ids to delete.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -60,7 +60,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### GetAllBatchTaskInfosByNameAndStateAsync\(string, BatchTaskState, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetAllBatchTaskInfosByNameAndStateAsync_System_String_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetAllBatchTaskInfosByNameAndStateAsync_System_String_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_"></a> GetAllBatchTaskInfosByNameAndStateAsync\(string, BatchTaskState, RequestOptions\)
 
 Get an array of system and user BatchTaskInfo for the provided task name and state.
 
@@ -74,21 +74,21 @@ Task<BatchTaskInfo[]> GetAllBatchTaskInfosByNameAndStateAsync(string taskName, B
 
 A task name, NULL or blank to get all tasks
 
-`state` [BatchTaskState](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskState)
+`state` [BatchTaskState](SuperOffice.WebApi.Data.BatchTaskState.md)
 
 The BatchTaskState to get batch tasks for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of user and system BatchTaskInfos.
 
-### GetAllBatchTaskInfosByNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetAllBatchTaskInfosByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetAllBatchTaskInfosByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetAllBatchTaskInfosByNameAsync\(string, RequestOptions\)
 
 Get an array of system and user BatchTaskInfo for the provided task name.
 
@@ -102,17 +102,17 @@ Task<BatchTaskInfo[]> GetAllBatchTaskInfosByNameAsync(string taskName, RequestOp
 
 A task name, NULL or blank to get all tasks
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of user and system BatchTaskInfos.
 
-### GetBatchTaskInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBatchTaskInfoAsync\(int, RequestOptions\)
 
 Get a single BatchTaskInfo based on Id.
 
@@ -126,17 +126,17 @@ Task<BatchTaskInfo> GetBatchTaskInfoAsync(int id, RequestOptions requestOptions 
 
 Id of the BatchTaskInfo to get.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\>
 
 Returns a BatchTaskInfo.
 
-### GetBatchTaskInfosByAssociatesAndStateAsync\(int\[\], BatchTaskState, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByAssociatesAndStateAsync_System_Int32___SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByAssociatesAndStateAsync_System_Int32___SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_"></a> GetBatchTaskInfosByAssociatesAndStateAsync\(int\[\], BatchTaskState, RequestOptions\)
 
 Get an array of BatchTaskInfo for the provided associate id's and batch task state.
 
@@ -150,21 +150,21 @@ Task<BatchTaskInfo[]> GetBatchTaskInfosByAssociatesAndStateAsync(int[] associate
 
 Array of associate id's. Empty array for all. 0 for system tasks, -1 for all users, or specific user ids.
 
-`state` [BatchTaskState](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskState)
+`state` [BatchTaskState](SuperOffice.WebApi.Data.BatchTaskState.md)
 
 The BatchTaskState to get batch tasks for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of BatchTaskInfo.
 
-### GetBatchTaskInfosByAssociatesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByAssociatesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByAssociatesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetBatchTaskInfosByAssociatesAsync\(int\[\], RequestOptions\)
 
 Get an array of BatchTaskInfo for the provided associate id's.
 
@@ -178,17 +178,17 @@ Task<BatchTaskInfo[]> GetBatchTaskInfosByAssociatesAsync(int[] associateIds, Req
 
 Array of associate id's. empty array = all tasks, 0 = system tasks, -1 = all user tasks.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of user's BatchTaskInfo.
 
-### GetBatchTaskInfosByNameAndAssociatesAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByNameAndAssociatesAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByNameAndAssociatesAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetBatchTaskInfosByNameAndAssociatesAsync\(string, int\[\], RequestOptions\)
 
 Get an array of BatchTaskInfo for the provided associate id's and batch task definition name.
 
@@ -206,17 +206,17 @@ Batchtask definition name. Blank for all tasks.
 
 Array of associate id's. Empty array for all. 0 for system tasks, -1 for all users, or specific user ids.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of BatchTaskInfo.
 
-### GetBatchTaskInfosByNameAndStateAsync\(string, BatchTaskState, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByNameAndStateAsync_System_String_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByNameAndStateAsync_System_String_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_"></a> GetBatchTaskInfosByNameAndStateAsync\(string, BatchTaskState, RequestOptions\)
 
 Gets an array of user BatchTaskInfo with state defined by a BatchTaskState and the batchtask definition name.
 
@@ -230,21 +230,21 @@ Task<BatchTaskInfo[]> GetBatchTaskInfosByNameAndStateAsync(string name, BatchTas
 
 Batchtask definition name. Blank for all tasks.
 
-`state` [BatchTaskState](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskState)
+`state` [BatchTaskState](SuperOffice.WebApi.Data.BatchTaskState.md)
 
 The BatchTaskState to get batch tasks for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of user BatchTaskInfo. System tasks are excluded.
 
-### GetBatchTaskInfosByStateAsync\(BatchTaskState, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByStateAsync_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetBatchTaskInfosByStateAsync_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_"></a> GetBatchTaskInfosByStateAsync\(BatchTaskState, RequestOptions\)
 
 Gets an array of user BatchTaskInfo with state defined by a BatchTaskState.
 
@@ -254,21 +254,21 @@ Task<BatchTaskInfo[]> GetBatchTaskInfosByStateAsync(BatchTaskState state, Reques
 
 #### Parameters
 
-`state` [BatchTaskState](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskState)
+`state` [BatchTaskState](SuperOffice.WebApi.Data.BatchTaskState.md)
 
 The BatchTaskState to get batch tasks for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of user BatchTaskInfo. System tasks are excluded.
 
-### GetSystemBatchTaskInfosByNameAndStateAsync\(string, BatchTaskState, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetSystemBatchTaskInfosByNameAndStateAsync_System_String_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetSystemBatchTaskInfosByNameAndStateAsync_System_String_SuperOffice_WebApi_Data_BatchTaskState_SuperOffice_WebApi_RequestOptions_"></a> GetSystemBatchTaskInfosByNameAndStateAsync\(string, BatchTaskState, RequestOptions\)
 
 Get an array of system BatchTaskInfo for the provided task name and state.
 
@@ -282,21 +282,21 @@ Task<BatchTaskInfo[]> GetSystemBatchTaskInfosByNameAndStateAsync(string taskName
 
 A task name, NULL or blank to get all tasks
 
-`state` [BatchTaskState](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskState)
+`state` [BatchTaskState](SuperOffice.WebApi.Data.BatchTaskState.md)
 
 The BatchTaskState to get batch tasks for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of system BatchTaskInfos.
 
-### GetSystemBatchTaskInfosByNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_GetSystemBatchTaskInfosByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_GetSystemBatchTaskInfosByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSystemBatchTaskInfosByNameAsync\(string, RequestOptions\)
 
 Get an array of system BatchTaskInfo for the provided task name.
 
@@ -310,17 +310,17 @@ Task<BatchTaskInfo[]> GetSystemBatchTaskInfosByNameAsync(string taskName, Reques
 
 A task name, NULL or blank to get all tasks
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\[\]\>
 
 Returns an array of system BatchTaskInfos.
 
-### StartBatchJobAsync\(BatchTaskInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_StartBatchJobAsync_SuperOffice_WebApi_Data_BatchTaskInfo_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_StartBatchJobAsync_SuperOffice_WebApi_Data_BatchTaskInfo_SuperOffice_WebApi_RequestOptions_"></a> StartBatchJobAsync\(BatchTaskInfo, RequestOptions\)
 
 Start a batch job based on BatchTaskInfo.
 
@@ -330,21 +330,21 @@ Task<int> StartBatchJobAsync(BatchTaskInfo batchTaskInfo, RequestOptions request
 
 #### Parameters
 
-`batchTaskInfo` [BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)
+`batchTaskInfo` [BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)
 
 Use BatchTaskInfo to describe the new batch job.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Returns the id of the created batch job.
 
-### StopBatchJobAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_StopBatchJobAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_StopBatchJobAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> StopBatchJobAsync\(int, RequestOptions\)
 
 Stop a batch job based on Id.
 
@@ -358,17 +358,17 @@ Task<bool> StopBatchJobAsync(int id, RequestOptions requestOptions = null)
 
 Id of the batch job to stop.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if the job was stopped successfully.
 
-### UpdateBatchTaskAsync\(BatchTaskInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_IBatchAgent_UpdateBatchTaskAsync_SuperOffice_WebApi_Data_BatchTaskInfo_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IBatchAgent_UpdateBatchTaskAsync_SuperOffice_WebApi_Data_BatchTaskInfo_SuperOffice_WebApi_RequestOptions_"></a> UpdateBatchTaskAsync\(BatchTaskInfo, RequestOptions\)
 
 Update information about a BatchTask. Only the following properties can be updated: State, Description, Response and Request.
 
@@ -378,17 +378,17 @@ Task<BatchTaskInfo> UpdateBatchTaskAsync(BatchTaskInfo batchTaskInfo, RequestOpt
 
 #### Parameters
 
-`batchTaskInfo` [BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)
+`batchTaskInfo` [BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)
 
 The updated information to save.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\>
 
 The updated BatchTaskInfo
 

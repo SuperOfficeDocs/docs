@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_SaveConnectionListMappingsRequest"></a> Class ErpSync\_SaveConnectionListMappingsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_SaveConnectionListMappingsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_SaveConnectionListMappingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_SaveConnectionListMappingsRequest)
+[ErpSync\_SaveConnectionListMappingsRequest](SuperOffice.WebApi.Data.ErpSync\_SaveConnectionListMappingsRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ErpConnectionListMappingContainer ListMapping { get; set; }
 
 #### Property Value
 
- [ErpConnectionListMappingContainer](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionListMappingContainer)
+ [ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)
 

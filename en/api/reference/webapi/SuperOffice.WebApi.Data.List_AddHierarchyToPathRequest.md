@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_AddHierarchyToPathRequest"></a> Class List\_AddHierarchyToPathRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_AddHierarchyToPathRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_AddHierarchyToPathRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_AddHierarchyToPathRequest)
+[List\_AddHierarchyToPathRequest](SuperOffice.WebApi.Data.List\_AddHierarchyToPathRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public Domain Domain { get; set; }
 
 #### Property Value
 
- [Domain](/en/api/reference/webapi/SuperOffice.WebApi.Data.Domain)
+ [Domain](SuperOffice.WebApi.Data.Domain.md)
 
 ### <a id="SuperOffice_WebApi_Data_List_AddHierarchyToPathRequest_Name"></a> Name
 

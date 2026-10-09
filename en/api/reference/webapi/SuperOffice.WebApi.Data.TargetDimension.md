@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TargetDimension"></a> Class TargetDimension
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TargetDimension.
@@ -13,13 +13,13 @@ public class TargetDimension : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -59,11 +59,11 @@ public TargetAssignementLevel? AssignmentLevel { get; set; }
 
 #### Property Value
 
- [TargetAssignementLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignementLevel)?
+ [TargetAssignementLevel](SuperOffice.WebApi.Data.TargetAssignementLevel.md)?
 
 #### See Also
 
-[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension).[AssignmentLevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension#SuperOffice_WebApi_Data_TargetDimension_AssignmentLevel_String)
+[TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md).[AssignmentLevel\_String](SuperOffice.WebApi.Data.TargetDimension.md\#SuperOffice\_WebApi\_Data\_TargetDimension\_AssignmentLevel\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TargetDimension_AssignmentLevel_String"></a> AssignmentLevel\_String
 
@@ -81,7 +81,7 @@ public string AssignmentLevel_String { get; set; }
 
 #### See Also
 
-[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension).[AssignmentLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension#SuperOffice_WebApi_Data_TargetDimension_AssignmentLevel)
+[TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md).[AssignmentLevel](SuperOffice.WebApi.Data.TargetDimension.md\#SuperOffice\_WebApi\_Data\_TargetDimension\_AssignmentLevel)
 
 ### <a id="SuperOffice_WebApi_Data_TargetDimension_DimensionListField"></a> DimensionListField
 
@@ -143,11 +143,11 @@ public TargetEntityType? EntityType { get; set; }
 
 #### Property Value
 
- [TargetEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetEntityType)?
+ [TargetEntityType](SuperOffice.WebApi.Data.TargetEntityType.md)?
 
 #### See Also
 
-[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension).[EntityType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension#SuperOffice_WebApi_Data_TargetDimension_EntityType_String)
+[TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md).[EntityType\_String](SuperOffice.WebApi.Data.TargetDimension.md\#SuperOffice\_WebApi\_Data\_TargetDimension\_EntityType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TargetDimension_EntityType_String"></a> EntityType\_String
 
@@ -165,7 +165,7 @@ public string EntityType_String { get; set; }
 
 #### See Also
 
-[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension).[EntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension#SuperOffice_WebApi_Data_TargetDimension_EntityType)
+[TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md).[EntityType](SuperOffice.WebApi.Data.TargetDimension.md\#SuperOffice\_WebApi\_Data\_TargetDimension\_EntityType)
 
 ### <a id="SuperOffice_WebApi_Data_TargetDimension_MeasurementUnit"></a> MeasurementUnit
 
@@ -179,11 +179,11 @@ public TargetMeasurementUnit? MeasurementUnit { get; set; }
 
 #### Property Value
 
- [TargetMeasurementUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetMeasurementUnit)?
+ [TargetMeasurementUnit](SuperOffice.WebApi.Data.TargetMeasurementUnit.md)?
 
 #### See Also
 
-[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension).[MeasurementUnit\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension#SuperOffice_WebApi_Data_TargetDimension_MeasurementUnit_String)
+[TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md).[MeasurementUnit\_String](SuperOffice.WebApi.Data.TargetDimension.md\#SuperOffice\_WebApi\_Data\_TargetDimension\_MeasurementUnit\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TargetDimension_MeasurementUnit_String"></a> MeasurementUnit\_String
 
@@ -201,7 +201,7 @@ public string MeasurementUnit_String { get; set; }
 
 #### See Also
 
-[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension).[MeasurementUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension#SuperOffice_WebApi_Data_TargetDimension_MeasurementUnit)
+[TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md).[MeasurementUnit](SuperOffice.WebApi.Data.TargetDimension.md\#SuperOffice\_WebApi\_Data\_TargetDimension\_MeasurementUnit)
 
 ### <a id="SuperOffice_WebApi_Data_TargetDimension_SelectedDimensions"></a> SelectedDimensions
 
@@ -229,5 +229,5 @@ public virtual int TargetDimensionId { get; set; }
 
 ## See Also
 
-[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent)
+[TargetsAgent](SuperOffice.WebApi.Agents.TargetsAgent.md)
 

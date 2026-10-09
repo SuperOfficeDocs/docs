@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEMailEnvelopesFromServerIdsRequest"></a> Class EMail\_GetEMailEnvelopesFromServerIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEMailEnvelopesFromServerIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEMailEnvelopesFromServerIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEMailEnvelopesFromServerIdsRequest)
+[EMail\_GetEMailEnvelopesFromServerIdsRequest](SuperOffice.WebApi.Data.EMail\_GetEMailEnvelopesFromServerIdsRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_GetEMailEnvelopesFromServerIdsRequest_MessageServerIds"></a> MessageServerIds
 

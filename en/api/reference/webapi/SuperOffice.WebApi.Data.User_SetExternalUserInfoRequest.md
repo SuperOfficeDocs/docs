@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SetExternalUserInfoRequest"></a> Class User\_SetExternalUserInfoRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SetExternalUserInfoRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SetExternalUserInfoRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SetExternalUserInfoRequest)
+[User\_SetExternalUserInfoRequest](SuperOffice.WebApi.Data.User\_SetExternalUserInfoRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public ExternalUserInfoModification ExternalUserInfoModification { get; set; }
 
 #### Property Value
 
- [ExternalUserInfoModification](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExternalUserInfoModification)
+ [ExternalUserInfoModification](SuperOffice.WebApi.Data.ExternalUserInfoModification.md)
 
 ### <a id="SuperOffice_WebApi_Data_User_SetExternalUserInfoRequest_IsActive"></a> IsActive
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_ValidateSaleEntityRequest"></a> Class Sale\_ValidateSaleEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_ValidateSaleEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_ValidateSaleEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_ValidateSaleEntityRequest)
+[Sale\_ValidateSaleEntityRequest](SuperOffice.WebApi.Data.Sale\_ValidateSaleEntityRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public SaleEntity SaleEntity { get; set; }
 
 #### Property Value
 
- [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
+ [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
 

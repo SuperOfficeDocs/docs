@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_AddPersonRequest"></a> Class Contact\_AddPersonRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_AddPersonRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_AddPersonRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_AddPersonRequest)
+[Contact\_AddPersonRequest](SuperOffice.WebApi.Data.Contact\_AddPersonRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public PersonEntity NewPersonEntity { get; set; }
 
 #### Property Value
 
- [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
+ [PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)
 

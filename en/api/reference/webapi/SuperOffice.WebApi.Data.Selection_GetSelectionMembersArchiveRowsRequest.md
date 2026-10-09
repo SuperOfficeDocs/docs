@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetSelectionMembersArchiveRowsRequest"></a> Class Selection\_GetSelectionMembersArchiveRowsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetSelectionMembersArchiveRowsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetSelectionMembersArchiveRowsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetSelectionMembersArchiveRowsRequest)
+[Selection\_GetSelectionMembersArchiveRowsRequest](SuperOffice.WebApi.Data.Selection\_GetSelectionMembersArchiveRowsRequest.md)
 
 #### Inherited Members
 

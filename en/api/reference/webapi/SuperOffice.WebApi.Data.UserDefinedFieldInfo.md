@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo"></a> Class UserDefinedFieldInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for UserDefinedFieldInfo.
@@ -13,13 +13,13 @@ public class UserDefinedFieldInfo : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -131,11 +131,11 @@ public UDefFieldType? FieldType { get; set; }
 
 #### Property Value
 
- [UDefFieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefFieldType)?
+ [UDefFieldType](SuperOffice.WebApi.Data.UDefFieldType.md)?
 
 #### See Also
 
-[UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo).[FieldType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo#SuperOffice_WebApi_Data_UserDefinedFieldInfo_FieldType_String)
+[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md).[FieldType\_String](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md\#SuperOffice\_WebApi\_Data\_UserDefinedFieldInfo\_FieldType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_FieldType_String"></a> FieldType\_String
 
@@ -153,7 +153,7 @@ public string FieldType_String { get; set; }
 
 #### See Also
 
-[UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo).[FieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo#SuperOffice_WebApi_Data_UserDefinedFieldInfo_FieldType)
+[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md).[FieldType](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md\#SuperOffice\_WebApi\_Data\_UserDefinedFieldInfo\_FieldType)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_FieldWidth"></a> FieldWidth
 
@@ -251,11 +251,11 @@ public UdefJustification? Justification { get; set; }
 
 #### Property Value
 
- [UdefJustification](/en/api/reference/webapi/SuperOffice.WebApi.Data.UdefJustification)?
+ [UdefJustification](SuperOffice.WebApi.Data.UdefJustification.md)?
 
 #### See Also
 
-[UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo).[Justification\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo#SuperOffice_WebApi_Data_UserDefinedFieldInfo_Justification_String)
+[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md).[Justification\_String](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md\#SuperOffice\_WebApi\_Data\_UserDefinedFieldInfo\_Justification\_String)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_Justification_String"></a> Justification\_String
 
@@ -273,7 +273,7 @@ public string Justification_String { get; set; }
 
 #### See Also
 
-[UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo).[Justification](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo#SuperOffice_WebApi_Data_UserDefinedFieldInfo_Justification)
+[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md).[Justification](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md\#SuperOffice\_WebApi\_Data\_UserDefinedFieldInfo\_Justification)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_LabelHeight"></a> LabelHeight
 
@@ -455,11 +455,11 @@ public UDefType? Type { get; set; }
 
 #### Property Value
 
- [UDefType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefType)?
+ [UDefType](SuperOffice.WebApi.Data.UDefType.md)?
 
 #### See Also
 
-[UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo#SuperOffice_WebApi_Data_UserDefinedFieldInfo_Type_String)
+[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md).[Type\_String](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md\#SuperOffice\_WebApi\_Data\_UserDefinedFieldInfo\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_Type_String"></a> Type\_String
 
@@ -477,7 +477,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo#SuperOffice_WebApi_Data_UserDefinedFieldInfo_Type)
+[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md).[Type](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md\#SuperOffice\_WebApi\_Data\_UserDefinedFieldInfo\_Type)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_UDListDefinitionId"></a> UDListDefinitionId
 
@@ -529,5 +529,5 @@ public virtual short Version { get; set; }
 
 ## See Also
 
-[UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent)
+[UserDefinedFieldInfoAgent](SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent.md)
 

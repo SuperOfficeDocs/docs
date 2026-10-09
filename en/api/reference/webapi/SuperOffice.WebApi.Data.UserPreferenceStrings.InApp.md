@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_InApp"></a> Class UserPreferenceStrings.InApp
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 In-App
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.InApp
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.InApp](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.InApp)
+[UserPreferenceStrings.InApp](SuperOffice.WebApi.Data.UserPreferenceStrings.InApp.md)
 
 #### Inherited Members
 

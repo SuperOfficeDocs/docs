@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_FlushCachesByNameRequest"></a> Class Diagnostics\_FlushCachesByNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_FlushCachesByNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_FlushCachesByNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_FlushCachesByNameRequest)
+[Diagnostics\_FlushCachesByNameRequest](SuperOffice.WebApi.Data.Diagnostics\_FlushCachesByNameRequest.md)
 
 #### Inherited Members
 

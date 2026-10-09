@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ReportLabelLayoutEntity"></a> Class ReportLabelLayoutEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ReportLabelLayoutEntity.
@@ -12,13 +12,13 @@ public class ReportLabelLayoutEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ReportLabelLayoutEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ReportLabelLayoutEntity](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -130,11 +130,11 @@ public ReportPaperOrientation? Orientation { get; set; }
 
 #### Property Value
 
- [ReportPaperOrientation](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportPaperOrientation)?
+ [ReportPaperOrientation](SuperOffice.WebApi.Data.ReportPaperOrientation.md)?
 
 #### See Also
 
-[ReportLabelLayoutEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity).[Orientation\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity#SuperOffice_WebApi_Data_ReportLabelLayoutEntity_Orientation_String)
+[ReportLabelLayoutEntity](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md).[Orientation\_String](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md\#SuperOffice\_WebApi\_Data\_ReportLabelLayoutEntity\_Orientation\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ReportLabelLayoutEntity_Orientation_String"></a> Orientation\_String
 
@@ -152,7 +152,7 @@ public string Orientation_String { get; set; }
 
 #### See Also
 
-[ReportLabelLayoutEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity).[Orientation](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity#SuperOffice_WebApi_Data_ReportLabelLayoutEntity_Orientation)
+[ReportLabelLayoutEntity](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md).[Orientation](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md\#SuperOffice\_WebApi\_Data\_ReportLabelLayoutEntity\_Orientation)
 
 ### <a id="SuperOffice_WebApi_Data_ReportLabelLayoutEntity_PaperHeight"></a> PaperHeight
 
@@ -216,5 +216,5 @@ public virtual uint TopMargin { get; set; }
 
 ## See Also
 
-[ReportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ReportAgent)
+[ReportAgent](SuperOffice.WebApi.Agents.ReportAgent.md)
 

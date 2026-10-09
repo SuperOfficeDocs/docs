@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_ValidateDaysRequest"></a> Class Appointment\_ValidateDaysRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_ValidateDaysRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_ValidateDaysRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_ValidateDaysRequest)
+[Appointment\_ValidateDaysRequest](SuperOffice.WebApi.Data.Appointment\_ValidateDaysRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentEntity AppointmentEntity { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
+ [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_ValidateDaysRequest_Dates"></a> Dates
 

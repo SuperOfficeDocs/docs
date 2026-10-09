@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_ValidateContactEntityRequest"></a> Class Contact\_ValidateContactEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_ValidateContactEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_ValidateContactEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_ValidateContactEntityRequest)
+[Contact\_ValidateContactEntityRequest](SuperOffice.WebApi.Data.Contact\_ValidateContactEntityRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ContactEntity ContactEntity { get; set; }
 
 #### Property Value
 
- [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
+ [ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
 

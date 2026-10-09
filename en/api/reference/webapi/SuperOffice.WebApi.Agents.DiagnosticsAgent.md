@@ -1,6 +1,6 @@
-# Class DiagnosticsAgent {#SuperOffice_WebApi_Agents_DiagnosticsAgent}
+# <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent"></a> Class DiagnosticsAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Diagnostics, usage data collection, caches and flushing
@@ -12,41 +12,41 @@ public class DiagnosticsAgent : AgentBase, IDiagnosticsAgent, IAgentBase, IDispo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
-[DiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DiagnosticsAgent)
+[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
+[DiagnosticsAgent](SuperOffice.WebApi.Agents.DiagnosticsAgent.md)
 
 #### Implements
 
-[IDiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDiagnosticsAgent), 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IDiagnosticsAgent](SuperOffice.WebApi.Agents.IDiagnosticsAgent.md), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
-[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
-[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
-[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
-[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
-[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
-[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
-[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
-[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
-[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
+[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
+[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
+[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
+[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
+[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
+[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
+[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
+[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
+[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
+[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -57,19 +57,19 @@ public class DiagnosticsAgent : AgentBase, IDiagnosticsAgent, IAgentBase, IDispo
 
 ## Examples
 
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
+<pre><code class="lang-csharp">using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (DiagnosticsAgent agent = new DiagnosticsAgent(mySession))
-\{
+{
       // call methods on agent here...
-\}&lt;/code&gt;&lt;/pre&gt;
+}</code></pre>
 
 ## Constructors
 
-### DiagnosticsAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent__ctor_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent__ctor_System_Net_Http_HttpClient_"></a> DiagnosticsAgent\(HttpClient\)
 
 Constructor: Diagnostics, usage data collection, caches and flushing
 
@@ -83,7 +83,7 @@ public DiagnosticsAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### DiagnosticsAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> DiagnosticsAgent\(WebApiOptions, HttpClient\)
 
 Constructor: Diagnostics, usage data collection, caches and flushing
 
@@ -93,7 +93,7 @@ public DiagnosticsAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
+`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
 Base URL and authentication values.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### AddWebAppUsageAsync\(WebAppUsage\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_AddWebAppUsageAsync_SuperOffice_WebApi_Data_WebAppUsage___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_AddWebAppUsageAsync_SuperOffice_WebApi_Data_WebAppUsage___SuperOffice_WebApi_RequestOptions_"></a> AddWebAppUsageAsync\(WebAppUsage\[\], RequestOptions\)
 
 Adds WebApp usage to existing log
 
@@ -113,11 +113,11 @@ public Task AddWebAppUsageAsync(WebAppUsage[] webAppUsages, RequestOptions reque
 
 #### Parameters
 
-`webAppUsages` [WebAppUsage](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebAppUsage)\[\]
+`webAppUsages` [WebAppUsage](SuperOffice.WebApi.Data.WebAppUsage.md)\[\]
 
 Web app usage.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -125,7 +125,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### ChangeLogSettingsAsync\(bool, bool, bool, bool, bool, bool, bool, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_ChangeLogSettingsAsync_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_ChangeLogSettingsAsync_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ChangeLogSettingsAsync\(bool, bool, bool, bool, bool, bool, bool, bool, RequestOptions\)
 
 Change NetServer log settings.
 
@@ -167,7 +167,7 @@ Log to file
 
 Log to trace
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -175,7 +175,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### CollectDataAdditionsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectDataAdditionsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectDataAdditionsAsync_SuperOffice_WebApi_RequestOptions_"></a> CollectDataAdditionsAsync\(RequestOptions\)
 
 Collect and transmit usage statistics: Database Additions. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
 
@@ -185,7 +185,7 @@ public Task CollectDataAdditionsAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -195,7 +195,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### CollectTableSizesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectTableSizesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectTableSizesAsync_SuperOffice_WebApi_RequestOptions_"></a> CollectTableSizesAsync\(RequestOptions\)
 
 Collect and transmit usage statistics: Table Sizes. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
 
@@ -205,7 +205,7 @@ public Task CollectTableSizesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -215,7 +215,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### CollectWebUsageAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectWebUsageAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectWebUsageAsync_SuperOffice_WebApi_RequestOptions_"></a> CollectWebUsageAsync\(RequestOptions\)
 
 Collect and transmit usage statistics: Web-based clients Usage. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
 
@@ -225,7 +225,7 @@ public Task CollectWebUsageAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -235,7 +235,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### CollectWinUsageAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectWinUsageAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectWinUsageAsync_SuperOffice_WebApi_RequestOptions_"></a> CollectWinUsageAsync\(RequestOptions\)
 
 Collect and transmit usage statistics: Windows CRM Client Usage. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
 
@@ -245,7 +245,7 @@ public Task CollectWinUsageAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -255,7 +255,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### FlushCachesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_FlushCachesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_FlushCachesAsync_SuperOffice_WebApi_RequestOptions_"></a> FlushCachesAsync\(RequestOptions\)
 
 Flushes all NetServer caches
 
@@ -265,7 +265,7 @@ public Task FlushCachesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -273,7 +273,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### FlushCachesByNameAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_FlushCachesByNameAsync_System_String___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_FlushCachesByNameAsync_System_String___SuperOffice_WebApi_RequestOptions_"></a> FlushCachesByNameAsync\(string\[\], RequestOptions\)
 
 Flushes all NetServer caches named
 
@@ -287,7 +287,7 @@ public Task FlushCachesByNameAsync(string[] cacheNames, RequestOptions requestOp
 
 Name of the cachnes to flush
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -297,7 +297,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### GetAnalyticsDataAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetAnalyticsDataAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetAnalyticsDataAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAnalyticsDataAsync\(RequestOptions\)
 
 Retrieve analytics properties to be included in usage tracking.
 
@@ -307,17 +307,17 @@ public Task<AnalyticsData> GetAnalyticsDataAsync(RequestOptions requestOptions =
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AnalyticsData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AnalyticsData)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AnalyticsData](SuperOffice.WebApi.Data.AnalyticsData.md)\>
 
 Description Analytics Data
 
-### GetCacheInvalidationGenerationsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetCacheInvalidationGenerationsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetCacheInvalidationGenerationsAsync_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetCacheInvalidationGenerationsAsync\(string\[\], RequestOptions\)
 
 Get generation for provided names
 
@@ -331,17 +331,17 @@ public Task<CacheInvalidation[]> GetCacheInvalidationGenerationsAsync(string[] n
 
 Name of caches
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CacheInvalidation](/en/api/reference/webapi/SuperOffice.WebApi.Data.CacheInvalidation)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CacheInvalidation](SuperOffice.WebApi.Data.CacheInvalidation.md)\[\]\>
 
 Array of caches with generation number
 
-### GetCacheNamesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetCacheNamesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetCacheNamesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCacheNamesAsync\(RequestOptions\)
 
 Get the name of the caches that can be flushed
 
@@ -351,17 +351,17 @@ public Task<string[]> GetCacheNamesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
 
 Name of the caches that can be flusehd
 
-### GetCacheStateAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetCacheStateAsync_System_String___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetCacheStateAsync_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetCacheStateAsync\(string\[\], RequestOptions\)
 
 Get the current generation value of the named caches. State is opaque.
 
@@ -375,17 +375,17 @@ public Task<string> GetCacheStateAsync(string[] cacheNames, RequestOptions reque
 
 Names of the caches to check
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 Current state of the caches named. If not the same as previous value, then it is time to flush
 
-### GetEntityCountsForAllUsersAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetEntityCountsForAllUsersAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetEntityCountsForAllUsersAsync_SuperOffice_WebApi_RequestOptions_"></a> GetEntityCountsForAllUsersAsync\(RequestOptions\)
 
 Get an array of entities and number of entities created for all associates.
 
@@ -395,17 +395,17 @@ public Task<EntityCounts[]> GetEntityCountsForAllUsersAsync(RequestOptions reque
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EntityCounts](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityCounts)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[EntityCounts](SuperOffice.WebApi.Data.EntityCounts.md)\[\]\>
 
 Array of EntityCounts[] for all the users
 
-### GetEntityCountsForCurrentUserAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetEntityCountsForCurrentUserAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetEntityCountsForCurrentUserAsync_SuperOffice_WebApi_RequestOptions_"></a> GetEntityCountsForCurrentUserAsync\(RequestOptions\)
 
 Get an array of entities and number of entities created for the current associate
 
@@ -415,17 +415,17 @@ public Task<EntityCounts[]> GetEntityCountsForCurrentUserAsync(RequestOptions re
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EntityCounts](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityCounts)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[EntityCounts](SuperOffice.WebApi.Data.EntityCounts.md)\[\]\>
 
 Array of EntityCounts[] for the current associate
 
-### GetNextTableNumberAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetNextTableNumberAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetNextTableNumberAsync_SuperOffice_WebApi_RequestOptions_"></a> GetNextTableNumberAsync\(RequestOptions\)
 
 Increment save and return NextTableNumber, to be used when creating new extra table
 
@@ -435,17 +435,17 @@ public Task<int> GetNextTableNumberAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 NextTableNumber of DatabaseModel
 
-### GetSystemInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetSystemInfoAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetSystemInfoAsync_SuperOffice_WebApi_RequestOptions_"></a> GetSystemInfoAsync\(RequestOptions\)
 
 Get system information
 
@@ -455,17 +455,17 @@ public Task<SoSystemInfoCarrier> GetSystemInfoAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoSystemInfoCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoSystemInfoCarrier)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SoSystemInfoCarrier](SuperOffice.WebApi.Data.SoSystemInfoCarrier.md)\>
 
 License and configuration information.
 
-### GetSystemMessagesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetSystemMessagesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetSystemMessagesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSystemMessagesAsync\(int, RequestOptions\)
 
 Retrieves a list of system messages for a specific associate.
 
@@ -479,17 +479,17 @@ public Task<SystemMessage[]> GetSystemMessagesAsync(int associateId, RequestOpti
 
 The associateId of the message target.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemMessage)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SystemMessage](SuperOffice.WebApi.Data.SystemMessage.md)\[\]\>
 
 List of SystemMessages for desired associate
 
-### GetWebAppUsagesForPeriodAsync\(DateTime, DateTime, string, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetWebAppUsagesForPeriodAsync_System_DateTime_System_DateTime_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_GetWebAppUsagesForPeriodAsync_System_DateTime_System_DateTime_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetWebAppUsagesForPeriodAsync\(DateTime, DateTime, string, RequestOptions\)
 
 Get all WebAppUsages for a given period, that match an optional search term
 
@@ -507,15 +507,15 @@ public Task<WebAppUsage[]> GetWebAppUsagesForPeriodAsync(DateTime fromDate, Date
 
 ViewState search term. '%' is the wildcard character, for example 'Pocket%' will match all viewstates starting with 'Pocket'. If empty, all viewstates will be matched
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebAppUsage](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebAppUsage)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WebAppUsage](SuperOffice.WebApi.Data.WebAppUsage.md)\[\]\>
 
-### LogViewStateAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_LogViewStateAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_LogViewStateAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> LogViewStateAsync\(string, RequestOptions\)
 
 Log a change in view state. The granularity of the logging depends on the current configuration. This call returns asynchronously, leaving the server to finish processing later on.
 
@@ -529,7 +529,7 @@ public Task LogViewStateAsync(string viewState, RequestOptions requestOptions = 
 
 Current view state to be logged
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -537,7 +537,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### PerformTasksAfterCustomObjectTableCreatedAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_PerformTasksAfterCustomObjectTableCreatedAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_PerformTasksAfterCustomObjectTableCreatedAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> PerformTasksAfterCustomObjectTableCreatedAsync\(string, RequestOptions\)
 
 A temporary method to be used from c++ until CustomObjectsAgent.CreateTable implemented in NetServer
 
@@ -551,7 +551,7 @@ public Task PerformTasksAfterCustomObjectTableCreatedAsync(string tableName, Req
 
 Name of DB table of the custom object that was created. E.g., 'y_car'
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -561,7 +561,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### PerformTasksAfterCustomObjectTableDeletedAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_PerformTasksAfterCustomObjectTableDeletedAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_PerformTasksAfterCustomObjectTableDeletedAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> PerformTasksAfterCustomObjectTableDeletedAsync\(string, RequestOptions\)
 
 A temporary method to be used from c++ until CustomObjectsAgent.DeleteTable implemented in NetServer
 
@@ -575,7 +575,7 @@ public Task PerformTasksAfterCustomObjectTableDeletedAsync(string tableName, Req
 
 Name of DB table of the custom object that was deleted. E.g., 'y_car'
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -585,7 +585,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### PerformTasksAfterUpgradeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_PerformTasksAfterUpgradeAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_PerformTasksAfterUpgradeAsync_SuperOffice_WebApi_RequestOptions_"></a> PerformTasksAfterUpgradeAsync\(RequestOptions\)
 
 After upgrading to a new fileset, there may be tasks that need to be done. Examples - import new TypicalSearches, if present. Tasks performed here need to be idempotent and independent of the actual upgrade jump (what was the previous version). They should complete in a reasonable time, not more than a few minutes maximum.
 
@@ -595,17 +595,17 @@ public Task<string> PerformTasksAfterUpgradeAsync(RequestOptions requestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 Message that can be shown to the user, summarizing what has been done, if anything.
 
-### RegisterClosedTicketsUsageAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_RegisterClosedTicketsUsageAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_RegisterClosedTicketsUsageAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> RegisterClosedTicketsUsageAsync\(int\[\], RequestOptions\)
 
 Logs and registers resolved ticket count to the metering service
 
@@ -619,7 +619,7 @@ public Task RegisterClosedTicketsUsageAsync(int[] ticketIds, RequestOptions requ
 
 IDs of closed tickets
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -629,7 +629,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### RemoveExpiredSystemMessagesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_RemoveExpiredSystemMessagesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_RemoveExpiredSystemMessagesAsync_SuperOffice_WebApi_RequestOptions_"></a> RemoveExpiredSystemMessagesAsync\(RequestOptions\)
 
 Deletes expired system messages.
 
@@ -639,7 +639,7 @@ public Task RemoveExpiredSystemMessagesAsync(RequestOptions requestOptions = nul
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -647,7 +647,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### RemoveSystemMessageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_RemoveSystemMessageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_RemoveSystemMessageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveSystemMessageAsync\(int, string, RequestOptions\)
 
 Removes a system message for current associate
 
@@ -665,7 +665,7 @@ Id of the online app that owns this message
 
 Message identifier, used for message  removal
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -673,7 +673,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### RemoveSystemMessageForAssociateAsync\(int, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_RemoveSystemMessageForAssociateAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_RemoveSystemMessageForAssociateAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveSystemMessageForAssociateAsync\(int, string, int, RequestOptions\)
 
 Removes a system message for specific associate.
 
@@ -695,7 +695,7 @@ Message identifier, used for message update or removal
 
 The associateId of the message target.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -703,7 +703,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### ResyncUsersAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_ResyncUsersAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_ResyncUsersAsync_SuperOffice_WebApi_RequestOptions_"></a> ResyncUsersAsync\(RequestOptions\)
 
 Resynchronize user information with SuperOffice Community, if opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
 
@@ -713,7 +713,7 @@ public Task ResyncUsersAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -723,7 +723,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SendSystemMessageAsync\(string, int, string, DateTime, SystemMessageType, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_SendSystemMessageAsync_System_String_System_Int32_System_String_System_DateTime_SuperOffice_WebApi_Data_SystemMessageType_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_SendSystemMessageAsync_System_String_System_Int32_System_String_System_DateTime_SuperOffice_WebApi_Data_SystemMessageType_SuperOffice_WebApi_RequestOptions_"></a> SendSystemMessageAsync\(string, int, string, DateTime, SystemMessageType, RequestOptions\)
 
 Adds a system message for a specific associate.
 
@@ -749,11 +749,11 @@ Markdown message to be displayed to the user
 
 When the message will no longer be available
 
-`type` [SystemMessageType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemMessageType)
+`type` [SystemMessageType](SuperOffice.WebApi.Data.SystemMessageType.md)
 
 Type of message, example: info, warning, error
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -761,7 +761,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### TrackEventAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_TrackEventAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_TrackEventAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> TrackEventAsync\(string, StringDictionary, RequestOptions\)
 
 Sends events to Amplitude and Userflow.
 
@@ -775,21 +775,21 @@ public Task<long> TrackEventAsync(string trackEventName, StringDictionary eventP
 
 "Sale Completed" or "Sale Sold" etc. See the TrackEventNames class for suitable string constants.
 
-`eventProperties` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+`eventProperties` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 key-value pairs of event properties. client is set from the application token. Special keys: app_version, platform, os_name, os_version, device_brand, device_manufacturer
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[long](https://learn.microsoft.com/dotnet/api/system.int64)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[long](https://learn.microsoft.com/dotnet/api/system.int64)\>
 
 Amplitude Session id used to track the event. May be the same as passed in SO-AMPLITUDE header or ampSess cookie, or a fresh one if none defined.
 
-### TrackUserAsync\(StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_TrackUserAsync_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_TrackUserAsync_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> TrackUserAsync\(StringDictionary, RequestOptions\)
 
 Sends user identification to Amplitude and Userflow. Sets current rights, user licenses automatically. Additional properties can be specified in userProperties.
 
@@ -799,21 +799,21 @@ public Task<long> TrackUserAsync(StringDictionary userProperties, RequestOptions
 
 #### Parameters
 
-`userProperties` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+`userProperties` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 Optional: Additional key-value pairs of user properties to set on the user. Special keys: app_version, platform, os_name, os_version, device_brand, device_manufacturer
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[long](https://learn.microsoft.com/dotnet/api/system.int64)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[long](https://learn.microsoft.com/dotnet/api/system.int64)\>
 
 Amplitude Session id used to track the user. May be the same as passed in SO-AMPLITUDE header or ampSess cookie, or a fresh one if none defined.
 
-### WebAppUsageExistsInPeriodAsync\(int, string, DateTime, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_WebAppUsageExistsInPeriodAsync_System_Int32_System_String_System_DateTime_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_DiagnosticsAgent_WebAppUsageExistsInPeriodAsync_System_Int32_System_String_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> WebAppUsageExistsInPeriodAsync\(int, string, DateTime, RequestOptions\)
 
 Returns true if viewState has been clicked at least once since FromDate, if asscoiateId &lt; 0 or FromDate is DateTime.MinValue no restriction given for those parameters
 
@@ -835,13 +835,13 @@ The viewState to search for
 
 The datetime to restrict webapp usage on
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if viewState has been clicked at least once since FromDate
 

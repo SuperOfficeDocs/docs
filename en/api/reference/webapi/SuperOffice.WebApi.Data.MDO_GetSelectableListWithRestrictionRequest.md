@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MDO_GetSelectableListWithRestrictionRequest"></a> Class MDO\_GetSelectableListWithRestrictionRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class MDO_GetSelectableListWithRestrictionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[MDO\_GetSelectableListWithRestrictionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDO_GetSelectableListWithRestrictionRequest)
+[MDO\_GetSelectableListWithRestrictionRequest](SuperOffice.WebApi.Data.MDO\_GetSelectableListWithRestrictionRequest.md)
 
 #### Inherited Members
 

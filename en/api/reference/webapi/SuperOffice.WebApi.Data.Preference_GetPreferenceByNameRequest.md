@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_GetPreferenceByNameRequest"></a> Class Preference\_GetPreferenceByNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_GetPreferenceByNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_GetPreferenceByNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_GetPreferenceByNameRequest)
+[Preference\_GetPreferenceByNameRequest](SuperOffice.WebApi.Data.Preference\_GetPreferenceByNameRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public PreferenceLevel PrefLevel { get; set; }
 
 #### Property Value
 
- [PreferenceLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceLevel)
+ [PreferenceLevel](SuperOffice.WebApi.Data.PreferenceLevel.md)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_GetPreferenceByNameRequest_PrefSection"></a> PrefSection
 

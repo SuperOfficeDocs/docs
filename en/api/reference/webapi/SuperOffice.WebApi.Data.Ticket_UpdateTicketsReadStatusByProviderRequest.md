@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_UpdateTicketsReadStatusByProviderRequest"></a> Class Ticket\_UpdateTicketsReadStatusByProviderRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_UpdateTicketsReadStatusByProviderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_UpdateTicketsReadStatusByProviderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_UpdateTicketsReadStatusByProviderRequest)
+[Ticket\_UpdateTicketsReadStatusByProviderRequest](SuperOffice.WebApi.Data.Ticket\_UpdateTicketsReadStatusByProviderRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TicketReadStatus NewStatus { get; set; }
 
 #### Property Value
 
- [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)
+ [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_UpdateTicketsReadStatusByProviderRequest_Provider"></a> Provider
 
@@ -60,5 +60,5 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+ [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 

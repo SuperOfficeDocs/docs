@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_AssignToRequest"></a> Class Appointment\_AssignToRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_AssignToRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_AssignToRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_AssignToRequest)
+[Appointment\_AssignToRequest](SuperOffice.WebApi.Data.Appointment\_AssignToRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public ParticipantInfo Participant { get; set; }
 
 #### Property Value
 
- [ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo)
+ [ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_AssignToRequest_UpdateMode"></a> UpdateMode
 
@@ -60,5 +60,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
+ [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
 

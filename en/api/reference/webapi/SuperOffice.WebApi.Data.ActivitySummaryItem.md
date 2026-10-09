@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ActivitySummaryItem"></a> Class ActivitySummaryItem
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ActivitySummaryItem.
@@ -13,7 +13,7 @@ public class ActivitySummaryItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ActivitySummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummaryItem)
+[ActivitySummaryItem](SuperOffice.WebApi.Data.ActivitySummaryItem.md)
 
 #### Inherited Members
 
@@ -61,11 +61,11 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
+ [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
 
 #### See Also
 
-[ActivitySummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummaryItem).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummaryItem#SuperOffice_WebApi_Data_ActivitySummaryItem_Completed_String)
+[ActivitySummaryItem](SuperOffice.WebApi.Data.ActivitySummaryItem.md).[Completed\_String](SuperOffice.WebApi.Data.ActivitySummaryItem.md\#SuperOffice\_WebApi\_Data\_ActivitySummaryItem\_Completed\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ActivitySummaryItem_Completed_String"></a> Completed\_String
 
@@ -83,7 +83,7 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[ActivitySummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummaryItem).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummaryItem#SuperOffice_WebApi_Data_ActivitySummaryItem_Completed)
+[ActivitySummaryItem](SuperOffice.WebApi.Data.ActivitySummaryItem.md).[Completed](SuperOffice.WebApi.Data.ActivitySummaryItem.md\#SuperOffice\_WebApi\_Data\_ActivitySummaryItem\_Completed)
 
 ### <a id="SuperOffice_WebApi_Data_ActivitySummaryItem_Date"></a> Date
 
@@ -135,5 +135,5 @@ public virtual DateTime Registered { get; set; }
 
 ## See Also
 
-[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
+[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
 

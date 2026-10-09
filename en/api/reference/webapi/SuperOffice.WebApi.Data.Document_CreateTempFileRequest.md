@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_CreateTempFileRequest"></a> Class Document\_CreateTempFileRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_CreateTempFileRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_CreateTempFileRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_CreateTempFileRequest)
+[Document\_CreateTempFileRequest](SuperOffice.WebApi.Data.Document\_CreateTempFileRequest.md)
 
 #### Inherited Members
 

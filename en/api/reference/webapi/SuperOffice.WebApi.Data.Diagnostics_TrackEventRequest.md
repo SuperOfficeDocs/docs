@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_TrackEventRequest"></a> Class Diagnostics\_TrackEventRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_TrackEventRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_TrackEventRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_TrackEventRequest)
+[Diagnostics\_TrackEventRequest](SuperOffice.WebApi.Data.Diagnostics\_TrackEventRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public StringDictionary EventProperties { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_Diagnostics_TrackEventRequest_TrackEventName"></a> TrackEventName
 

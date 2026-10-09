@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_RejectWithEmailConfirmationRequest"></a> Class Appointment\_RejectWithEmailConfirmationRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_RejectWithEmailConfirmationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_RejectWithEmailConfirmationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_RejectWithEmailConfirmationRequest)
+[Appointment\_RejectWithEmailConfirmationRequest](SuperOffice.WebApi.Data.Appointment\_RejectWithEmailConfirmationRequest.md)
 
 #### Inherited Members
 
@@ -60,5 +60,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
+ [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_LocalizedText"></a> Class LocalizedText
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for LocalizedText.
@@ -12,13 +12,13 @@ public class LocalizedText : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[LocalizedText](SuperOffice.WebApi.Data.LocalizedText.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -118,11 +118,11 @@ public LocalizedTextType? Type { get; set; }
 
 #### Property Value
 
- [LocalizedTextType](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedTextType)?
+ [LocalizedTextType](SuperOffice.WebApi.Data.LocalizedTextType.md)?
 
 #### See Also
 
-[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText#SuperOffice_WebApi_Data_LocalizedText_Type_String)
+[LocalizedText](SuperOffice.WebApi.Data.LocalizedText.md).[Type\_String](SuperOffice.WebApi.Data.LocalizedText.md\#SuperOffice\_WebApi\_Data\_LocalizedText\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_LocalizedText_Type_String"></a> Type\_String
 
@@ -140,9 +140,9 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText#SuperOffice_WebApi_Data_LocalizedText_Type)
+[LocalizedText](SuperOffice.WebApi.Data.LocalizedText.md).[Type](SuperOffice.WebApi.Data.LocalizedText.md\#SuperOffice\_WebApi\_Data\_LocalizedText\_Type)
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_GetDefaultAssociateUserNameRequest"></a> Class User\_GetDefaultAssociateUserNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_GetDefaultAssociateUserNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_GetDefaultAssociateUserNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_GetDefaultAssociateUserNameRequest)
+[User\_GetDefaultAssociateUserNameRequest](SuperOffice.WebApi.Data.User\_GetDefaultAssociateUserNameRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public User User { get; set; }
 
 #### Property Value
 
- [User](/en/api/reference/webapi/SuperOffice.WebApi.Data.User)
+ [User](SuperOffice.WebApi.Data.User.md)
 

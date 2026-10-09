@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TargetRevision"></a> Class TargetRevision
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TargetRevision.
@@ -13,13 +13,13 @@ public class TargetRevision : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TargetRevision](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TargetRevision](SuperOffice.WebApi.Data.TargetRevision.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual TargetChange[] Changes { get; set; }
 
 #### Property Value
 
- [TargetChange](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetChange)\[\]
+ [TargetChange](SuperOffice.WebApi.Data.TargetChange.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TargetRevision_LogEvent"></a> LogEvent
 
@@ -64,11 +64,11 @@ public LogEvent? LogEvent { get; set; }
 
 #### Property Value
 
- [LogEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.LogEvent)?
+ [LogEvent](SuperOffice.WebApi.Data.LogEvent.md)?
 
 #### See Also
 
-[TargetRevision](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision).[LogEvent\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision#SuperOffice_WebApi_Data_TargetRevision_LogEvent_String)
+[TargetRevision](SuperOffice.WebApi.Data.TargetRevision.md).[LogEvent\_String](SuperOffice.WebApi.Data.TargetRevision.md\#SuperOffice\_WebApi\_Data\_TargetRevision\_LogEvent\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TargetRevision_LogEvent_String"></a> LogEvent\_String
 
@@ -86,7 +86,7 @@ public string LogEvent_String { get; set; }
 
 #### See Also
 
-[TargetRevision](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision).[LogEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision#SuperOffice_WebApi_Data_TargetRevision_LogEvent)
+[TargetRevision](SuperOffice.WebApi.Data.TargetRevision.md).[LogEvent](SuperOffice.WebApi.Data.TargetRevision.md\#SuperOffice\_WebApi\_Data\_TargetRevision\_LogEvent)
 
 ### <a id="SuperOffice_WebApi_Data_TargetRevision_When"></a> When
 
@@ -110,9 +110,9 @@ public virtual Associate Who { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ## See Also
 
-[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent)
+[TargetsAgent](SuperOffice.WebApi.Agents.TargetsAgent.md)
 

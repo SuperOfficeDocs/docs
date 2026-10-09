@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketVersionInfo"></a> Class TicketVersionInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketVersionInfo.
@@ -13,7 +13,7 @@ public class TicketVersionInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketVersionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketVersionInfo)
+[TicketVersionInfo](SuperOffice.WebApi.Data.TicketVersionInfo.md)
 
 #### Inherited Members
 

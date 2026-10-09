@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_UpdateProjectMemberRequest"></a> Class Project\_UpdateProjectMemberRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_UpdateProjectMemberRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_UpdateProjectMemberRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_UpdateProjectMemberRequest)
+[Project\_UpdateProjectMemberRequest](SuperOffice.WebApi.Data.Project\_UpdateProjectMemberRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ProjectMember ProjectMember { get; set; }
 
 #### Property Value
 
- [ProjectMember](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMember)
+ [ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)
 

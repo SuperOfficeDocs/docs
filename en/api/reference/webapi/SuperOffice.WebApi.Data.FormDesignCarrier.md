@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FormDesignCarrier"></a> Class FormDesignCarrier
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FormDesignCarrier.
@@ -13,7 +13,7 @@ public class FormDesignCarrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)
+[FormDesignCarrier](SuperOffice.WebApi.Data.FormDesignCarrier.md)
 
 #### Inherited Members
 
@@ -39,7 +39,7 @@ public FormDesignCarrier()
 
 ### <a id="SuperOffice_WebApi_Data_FormDesignCarrier_Confidence"></a> Confidence
 
-Confidence score (0-1) of the design analysis.
+Not populated; always zero. The design service no longer supplies a confidence score.
 
 ```csharp
 public virtual double Confidence { get; set; }
@@ -63,7 +63,7 @@ public virtual string CssStyles { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_FormDesignCarrier_Notes"></a> Notes
 
-Comments on the analysis
+Not populated. The design service no longer supplies analysis notes.
 
 ```csharp
 public virtual string Notes { get; set; }
@@ -75,5 +75,5 @@ public virtual string Notes { get; set; }
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 
