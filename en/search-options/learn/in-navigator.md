@@ -23,7 +23,7 @@ language: en
 
 <Note>
 
-For Sale, the [search field in the left panel][2] searches selections and sales at the same time. It starts after you enter two characters.
+For Sale and Requests, the [search field in the left panel][2] searches selections and records at the same time. It starts after you enter two characters.
 
 </Note>
 

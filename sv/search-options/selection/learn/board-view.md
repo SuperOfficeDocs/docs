@@ -28,6 +28,8 @@ Tavlevy visar ditt [urval][2] i ett kolumnbaserat layout med kort. Du kan gruppe
 
 För försäljningar visas tavlevy också i Försäljningsskärmen, där du kan välja ett urval i vänsterpanelen. I så fall finns filtren under knappen **Filter** i stället för i inställningsdialogrutan (<i class="ph ph-gear-six" aria-label="Inställningar"></i>), och knapparna **Redigera** och **Uppgift** för urvalet är inte tillgängliga. Se [Arbeta med översiktssidor][15].
 
+För ärenden är tavlevy och listvy också tillgängliga i Ärendeskärmen, där du väljer ett urval eller en standardlista i vänsterpanelen.
+
 Funktionen är densamma för alla stödda urvalstyper: Du kan dra kort, öppna uppgiftsmenyer och justera tavleinställningar. De tillgängliga grupperings- och filterfälten varierar beroende på om du arbetar med företag, kontakt, försäljning, projekt eller ärenden.
 
 ![Tavlevy som visar försäljningar grupperade efter fas -screenshot][img2]

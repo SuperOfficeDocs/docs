@@ -21,7 +21,7 @@ language: de
 
 <Note>
 
-Für Verkauf durchsucht das [Suchfeld im linken Panel][2] Selektionen und Verkäufe gleichzeitig. Die Suche startet, nachdem Sie zwei Zeichen eingegeben haben.
+Für Verkauf und Anfragen durchsucht das [Suchfeld im linken Panel][2] Selektionen und Datensätze gleichzeitig. Die Suche startet, nachdem Sie zwei Zeichen eingegeben haben.
 
 </Note>
 

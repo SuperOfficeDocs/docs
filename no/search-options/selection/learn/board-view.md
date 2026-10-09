@@ -28,6 +28,8 @@ Tavlevisning viser ditt [utvalg][2] i et kolonnebasert oppsett med kort. Du kan 
 
 For salg vises tavlevisning også i Salgsskjermen, der du kan velge et utvalg i venstrepanelet. I så fall ligger filtrene i **Filter**-knappen i stedet for i innstillingsdialogboksen (<i class="ph ph-gear-six" aria-label="Innstillinger"></i>), og knappene **Rediger** og **Oppgave** for utvalget er ikke tilgjengelige. Se [Arbeid med oversiktssider][15].
 
+For saker er tavlevisning og listevisning også tilgjengelige på Saksskjermen, der du velger et utvalg eller en standardliste i venstrepanelet.
+
 Funksjonaliteten er lik på tvers av støttede posttyper: Du kan dra kort, åpne oppgavemenyer og justere tavleinnstillinger. Tilgjengelige grupperings- og filterfelter varierer avhengig av om du jobber med firma, personm, salg, prosjekter eller saker.
 
 ![Tavlevisning som viser salg gruppert etter fase -screenshot][img2]

@@ -21,7 +21,7 @@ language: sv
 
 <Note>
 
-För Försäljning söker [sökfältet i vänsterpanelen][2] i urval och försäljningar samtidigt. Sökningen startar när du har angett två tecken.
+För Försäljning och Ärenden söker [sökfältet i vänsterpanelen][2] i urval och poster samtidigt. Sökningen startar när du har angett två tecken.
 
 </Note>
 

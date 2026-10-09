@@ -28,6 +28,8 @@ Tavlevisning viser dit [udvalg][2] i et kolonnebaseret layout med kort. Du kan g
 
 For salg vises tavlevisning også på Salgsskærmen, hvor du kan vælge et udvalg i venstrepanelet. I så fald findes filtrene under knappen **Filter** i stedet for i indstillingsdialogen (<i class="ph ph-gear-six" aria-label="Indstillinger"></i>), og knapperne **Rediger** og **Opgave** til udvalget er ikke tilgængelige. Se [Arbejd med oversigtssider][15].
 
+For sager er tavlevisning og listevisning også tilgængelige på Sagsskærmen, hvor du vælger et udvalg eller en standardliste i venstrepanelet.
+
 Funktionaliteten er den samme på tværs af understøttede poster: Du kan trække kort, åbne opgavemenuer og justere tavleindstillinger. De tilgængelige grupperings- og filterfelter varierer afhængigt af, om du arbejder med firma, person, salg, projekter eller sager.
 
 ![Tavlevisning, der viser salg grupperet efter fase -screenshot][img2]

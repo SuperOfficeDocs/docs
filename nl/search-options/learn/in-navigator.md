@@ -21,7 +21,7 @@ language: nl
 
 <Note>
 
-Voor Verkoop doorzoekt het [zoekveld in het linkerpaneel][2] selecties en verkopen tegelijk. Het zoeken begint nadat u twee tekens hebt ingevoerd.
+Voor Verkoop en Verzoeken doorzoekt het [zoekveld in het linkerpaneel][2] selecties en records tegelijk. Het zoeken begint nadat u twee tekens hebt ingevoerd.
 
 </Note>
 
