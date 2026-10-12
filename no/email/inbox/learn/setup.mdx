@@ -1,17 +1,18 @@
 ---
 uid: help-no-email-inbox-setup
 title: Konfigurer SuperOffice-innboksen
-description: Lær hvordan du konfigurerer og logger på SuperOffice-innboksen. Denne funksjonen er et alternativ til WebTools for å koble e-postkontoen din til SuperOffice CRM.
-keywords: ['SuperOffice-innboks', 'konfigurer innboks', 'e-postoppsett', 'IMAP', 'e-posttilkobling', 'apppassord']
-author: Bergfrid Dias
-date: 09.17.2026
-so_version: 10.5
+description: Lær hvordan du konfigurerer og logger på SuperOffice-innboksen, ved å bruke enten Microsoft Graph eller manuelle IMAP/SMTP-innstillinger. Denne funksjonen er et alternativ til SuperOffice for Outlook eller SuperOffice Gmail Link for å koble e-postkontoen din til SuperOffice CRM.
+keywords: ['SuperOffice-innboks', 'konfigurer innboks', 'e-postoppsett', 'IMAP', 'SMTP', 'e-posttilkobling', 'apppassord', 'Microsoft Graph', 'lokal Exchange-server']
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
+  - Koble til kontoene dine: /no/learn/getting-started/connect-your-accounts
   - Hvordan aktivere IMAP for Office 365-konto - FAQ: https://learn.microsoft.com/en-au/exchange/troubleshoot/user-and-shared-mailboxes/pop3-imap-owa-activesync-office-365
   - Hvordan generere et Google-app-passord for å bruke totrinnsbekreftelse med SuperOffice-innboksen - FAQ: https://community.superoffice.com/en/support-faqs/faq/how-do-i-generate-a-googleapp-password-to-use-2-step-verification-with-superoffice-inbox/
   - Opprette og bruke apppassord i Gmail - Google Support: https://support.google.com/mail/answer/185833?hl=en
@@ -22,82 +23,99 @@ related:
 language: no
 ---
 
-SuperOffice-innboksen er en alternativ måte å koble e-postkontoen din til SuperOffice CRM. Den er laget for brukere som ikke kan bruke [WebTools][9]. Innboksen støtter kun IMAP-kontoer.
+SuperOffice-innboksen er en alternativ måte å koble e-postkontoen din til SuperOffice CRM. Den er laget for brukere som ikke kan installere [SuperOffice for Outlook][9] (Microsoft 365) eller [SuperOffice Gmail Link][13] (Google Workspace) på enheten sin.
+
+SuperOffice-innboksen kobler til e-postkontoen din på én av to måter, avhengig av leverandøren din:
+
+* **Microsoft Graph (Microsoft 365):** Hvis e-postadressen din allerede er autorisert for Microsoft Graph, setter SuperOffice opp kontoen automatisk. For å hindre at SuperOffice setter opp kontoen automatisk ved pålogging, kan en administrator sette **Deaktiver automatisk pålogging til e-postkontoen ved pålogging i SuperOffice** til **Ja** under **Innstillinger og vedlikehold** > **Preferanser** > **Globale preferanser** > **E-post**.
+* **IMAP og SMTP (Gmail, en lokal Exchange-server eller en annen leverandør):** Du logger på med passordet ditt, eller skriver inn serverinnstillingene manuelt under **Avanserte innstillinger**.
+
+Du starter på samme måte for begge. Du kan også koble til fra trinn 2 i [veiviseren Brukeroppsett][10].
 
 <Note>
-SuperOffice-innboksen støtter kun **én** e-postkonto per bruker. Hvis WebTools er installert og tilkoblet e-posten din, er ikke innboksfunksjonen tilgjengelig.
+SuperOffice-innboksen støtter kun **én** e-postkonto per bruker.
 </Note>
 
 ## Før du begynner
 
 * Kontroller at **SuperOffice CRM** er valgt som din [foretrukne e-postklient][8] i **Lokale innstillinger**.
 
-* Sørg for at **IMAP er aktivert** i e-postklienten din.
+* Hvis du kobler til med IMAP, må du sørge for at **IMAP er aktivert** i e-postklienten din.
 
 * Kontroller at **e-postadressen** du ønsker å bruke samsvarer med primæradressen som er registrert på [personkortet][1] ditt i SuperOffice.
 
-## Koble til e-postkontoen din
+## Koble til e-postkontoen din {#connect-your-email-account}
 
 1. Klikk på <i class="ph ph-at" aria-hidden="true"></i> **Innboks** i navigatoren.
 
-    Første gang du åpner innboksen, vises dialogboksen **Konfigurer e-postkonto**.
+    Hvis ingen e-postkonto er tilkoblet, vises skjermbildet **Koble til e-posten din**.
 
-    ![Dialogboksen for konfigurasjon av e-postkonto med e-postfelt og Neste-knapp -screenshot][img1]
+    ![Skjermbildet Koble til e-posten din med Koble til-knappen -screenshot][img1]
 
-1. I feltet **E-postkonto** skriver du inn e-postadressen du vil bruke.
+1. Klikk på **Koble til**.
 
-1. Klikk på **Neste**.
+    Vinduet **E-postoppsett** åpnes.
 
-    * SuperOffice prøver å oppdage e-postleverandøren din og omdirigerer deg til pålogging.
-    * Hvis passordet ditt er lagret, kan godkjenningen fullføres automatisk.
-    * Hvis ikke, blir du bedt om å skrive inn passordet direkte hos leverandøren (for eksempel Microsoft eller Google).
-    * Når autentiseringen er vellykket, returneres du til SuperOffice og innboksen åpnes.
+    ![Vinduet E-postoppsett med e-postadressefeltet og Neste-knappen -screenshot][img2]
 
-1. Hvis autentisering mislykkes eller leverandøren ikke blir gjenkjent, vises dialogboksen **Avanserte innstillinger**. Du kan da skrive inn serverinnstillingene manuelt.
+1. Skriv inn e-postadressen din og klikk på **Neste**.
+
+    * Hvis e-postadressen din allerede er autorisert for Microsoft Graph, settes kontoen opp automatisk og innboksen åpnes.
+    * Hvis leverandøren din bruker IMAP, for eksempel Gmail, blir du bedt om passordet ditt. Skriv det inn og klikk på **Logg på**. For Gmail bruker du et app-passord i stedet for det vanlige passordet. Se [Opprette og bruke apppassord i Gmail][11].
+
+1. Hvis autentisering mislykkes eller leverandøren din ikke blir gjenkjent, klikker du på **Avanserte innstillinger** for å skrive inn serverinnstillingene manuelt.
 
 ## Konfigurer avanserte innstillinger
 
 Hvis automatisk oppsett mislykkes, må du legge inn serverinnstillingene manuelt. Alle obligatoriske felt må fylles ut for at e-post skal kunne sendes og mottas via SuperOffice-innboksen.
 
-1. Skriv inn innstillinger for innkommende e-post:
+1. Klikk på **Avanserte innstillinger** i vinduet **E-postoppsett**.
 
-    * **Innkommende e-postserver:** Adressen til IMAP-serveren din
-    * **Brukernavn:** Vanligvis hele e-postadressen
-    * **Passord:** Passordet til e-postkontoen
-    * **SSL:** På eller av, avhengig av leverandørens krav
+1. Kontroller at e-postadressen er riktig i feltet **E-postadresse**.
 
-1. Skriv inn innstillinger for utgående e-post:
+1. Skriv inn innstillinger for innkommende e-post (IMAP):
 
-    * **Utgående e-postserver:** Adressen til SMTP-serveren din
-    * **Brukernavn**, **Passord** og **SSL**: tilsvarende innkommende.
+    * **Server:** IMAP-serveradressen din.
+    * **Standardport:** La stå tomt for å bruke leverandørens standardport, eller angi en egendefinert port hvis leverandøren krever det.
+    * **Brukernavn:** Vanligvis hele e-postadressen din.
+    * **Passord:** Passordet til e-postkontoen.
+    * **Bruk SSL/TLS (anbefalt):** La denne være på, med mindre leverandøren sier noe annet.
+
+1. Skriv inn innstillinger for utgående e-post (SMTP):
+
+    * **Server**, **Standardport**, **Brukernavn**, **Passord** og **Bruk SSL/TLS (anbefalt)**: tilsvarende innkommende.
 
 1. Klikk på **Lagre** for å koble til kontoen.
 
+    For å gå tilbake til forrige skjermbilde uten å lagre, klikker du på **Tilbake**.
+
 ![Avanserte innstillinger for e-postkonto -screenshot][img4]
+
+Disse innstillingene finner du i e-postleverandørens dokumentasjon. For Gmail, se [Opprette og bruke apppassord i Gmail][11] (som bruker) og [Aktivere eller deaktivere POP og IMAP for brukere][12] (som administrator). Hvis du behøver mer hjelp, kontakt IT-administratoren din.
 
 ## Koble fra eller endre e-postkontoen
 
-Du kan koble fra den nåværende e-postkontoen og eventuelt oppdatere den ved å koble til på nytt.
+Banneret øverst i **E-postalternativer** viser om en e-postkonto er tilkoblet.
 
-1. Klikk på <i class="ph ph-user-circle" aria-label="Personal settings"></i> øverst og velg **E-postalternativer**.
+1. Klikk på **Personlige innstillinger** (<i class="ph ph-user-circle" aria-hidden="true"></i>) øverst, og velg deretter **E-postalternativer**.
 
-1. Gå til fanen **E-postkonto**.
+1. Se på banneret øverst i dialogboksen **E-postalternativer**. Når en konto er tilkoblet, vises **Logget på med** og e-postadressen din.
 
-    ![E-postkonto-fane med Rediger/fjern-knapp -screenshot][img6]
+    ![E-postalternativer med innlogget konto og Logg av-lenken -screenshot][img6]
 
-1. Klikk på **Rediger/fjern** for å koble fra gjeldende e-postkonto.
+1. Klikk på **Logg av** for å koble fra den gjeldende e-postkontoen.
 
-    * Dette åpner samme dialog som ved førstegangsoppsett.
-    * For å fjerne tilkoblingen, lukk dialogboksen.
-    * For å koble til på nytt, skriv inn en ny e-postadresse og følg oppsettet.
+1. For å koble til på nytt klikker du på **Koble til** i banneret og følger trinnene i [Koble til e-postkontoen din][2].
+
+    ![E-postalternativer med banneret Koble til din foretrukne e-posttjeneste -screenshot][img7]
 
 <Note>
-Fjerning av e-postkontoen sletter **ikke** den faktiske kontoen din (for eksempel Gmail eller Outlook). Den kobles bare fra SuperOffice.
+Utlogging sletter **ikke** den faktiske kontoen din (for eksempel Gmail eller Outlook). Den kobles bare fra SuperOffice.
 </Note>
 
 ## Feilsøkingstips
 
-* SuperOffice-innboksen støtter ikke **POP3**-kontoer. Kun IMAP er støttet.
+* SuperOffice-innboksen støtter **IMAP** og **Microsoft Graph**. **POP3**-kontoer støttes ikke.
 
 * Hvis innboksen ikke oppdateres, kan det være at e-postleverandøren blokkerer tilkoblingen.
   * Sjekk e-posten for melding om blokkert eller uautorisert påloggingsforsøk.
@@ -108,12 +126,19 @@ Fjerning av e-postkontoen sletter **ikke** den faktiske kontoen din (for eksempe
 * **Microsoft 365-brukere:** Hvis innboksen kobler til uten problemer, men e-post ikke kan sendes, be administratoren aktivere **Authenticated SMTP** for postboksen din i Microsoft 365 admin-senter. Dette er en innstilling Microsoft kan ha deaktivert som standard.
 
 <Tip>
-For å tilpasse utseende, skrift eller oppførsel for meldinger, gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **E-postalternativer** > fanen **Generelt**.
+For å tilpasse utseende, skrift eller oppførsel for meldinger, gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **E-postalternativer**.
 </Tip>
 
 [1]: ../../../contact/learn/index
+[2]: #connect-your-email-account
 [8]: ../../learn/change-default-mail-client
-[9]: ../../../../../integrations/webtools/index
-[img1]: ../../../../media/loc/en/email/inbox-setup-dialog.png
+[9]: ../../../../../integrations/superoffice-for-outlook/index
+[10]: ../../../learn/getting-started/connect-your-accounts#email
+[11]: https://support.google.com/mail/answer/185833?hl=en
+[12]: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
+[13]: ../../../../../integrations/gmail-link/index
+[img1]: ../../../../media/loc/en/email/inbox-connect-your-email.png
+[img2]: ../../../../media/loc/en/email/inbox-email-setup-popup.png
 [img4]: ../../../../media/loc/en/email/so-inbox-advanced-settings.png
-[img6]: ../../../../media/loc/en/email/email-options-account.png
+[img6]: ../../../../media/loc/en/email/email-options-general.png
+[img7]: ../../../../media/loc/en/email/email-options-not-connected.png

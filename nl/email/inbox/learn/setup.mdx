@@ -1,17 +1,18 @@
 ---
 uid: help-nl-email-inbox-setup
 title: SuperOffice Postvak IN instellen
-description: Leer hoe u SuperOffice Postvak IN instelt en inlogt. Deze functie is een alternatief voor WebTools om uw e-mailaccount te koppelen aan SuperOffice CRM.
-keywords: ['SuperOffice Postvak IN', 'postvak instellen', 'e-mailinstellingen', 'IMAP', 'e-mailverbinding', 'app-wachtwoorden']
-author: Bergfrid Dias
-date: 09.17.2026
-so_version: 10.5
+description: Leer hoe u SuperOffice Postvak IN instelt en inlogt, met Microsoft Graph of handmatige IMAP/SMTP-instellingen. Deze functie is een alternatief voor SuperOffice voor Outlook of SuperOffice Gmail Link om uw e-mailaccount te koppelen aan SuperOffice CRM.
+keywords: ['SuperOffice Postvak IN', 'postvak instellen', 'e-mailinstellingen', 'IMAP', 'SMTP', 'e-mailverbinding', 'app-wachtwoorden', 'Microsoft Graph', 'on-premise Exchange-server']
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
+  - Accounts koppelen: /nl/learn/getting-started/connect-your-accounts
   - IMAP inschakelen op een Office 365-account - FAQ: https://learn.microsoft.com/en-au/exchange/troubleshoot/user-and-shared-mailboxes/pop3-imap-owa-activesync-office-365
   - Een Google app-wachtwoord genereren voor gebruik met SuperOffice Postvak IN - FAQ: https://community.superoffice.com/en/support-faqs/faq/how-do-i-generate-a-googleapp-password-to-use-2-step-verification-with-superoffice-inbox/
   - App-wachtwoorden maken en gebruiken in Gmail - Google Support: https://support.google.com/mail/answer/185833?hl=en
@@ -22,82 +23,99 @@ related:
 language: nl
 ---
 
-SuperOffice Postvak IN is een alternatief voor het koppelen van uw e-mailaccount aan SuperOffice CRM. Deze functie is bedoeld voor gebruikers die geen gebruik kunnen maken van [WebTools][9]. Alleen IMAP-accounts worden ondersteund.
+SuperOffice Postvak IN is een alternatieve methode om uw e-mailaccount te koppelen aan SuperOffice CRM. Deze functie is bedoeld voor gebruikers die [SuperOffice voor Outlook][9] (Microsoft 365) of [SuperOffice Gmail Link][13] (Google Workspace) niet op hun apparaat kunnen installeren.
+
+SuperOffice Postvak IN maakt op een van twee manieren verbinding met uw e-mailaccount, afhankelijk van uw provider:
+
+* **Microsoft Graph (Microsoft 365):** Als uw e-mailadres al is geautoriseerd voor Microsoft Graph, stelt SuperOffice het account automatisch in. Om te voorkomen dat SuperOffice het account bij het inloggen automatisch instelt, kan een beheerder **Schakel het automatisch inloggen via e-mail uit bij het inloggen op SuperOffice** onder **Instellingen en onderhoud** > **Voorkeuren** > **Globale voorkeuren** > **E-mail** op **Ja** zetten.
+* **IMAP en SMTP (Gmail, een on-premise Exchange-server of een andere provider):** U meldt zich aan met uw wachtwoord of voert de serverinstellingen handmatig in onder **Geavanceerde instellingen**.
+
+U begint voor beide op dezelfde manier. U kunt ook koppelen via stap 2 van de [wizard Gebruikersinstellingen][10].
 
 <Note>
-SuperOffice Postvak IN ondersteunt slechts **één** e-mailaccount per gebruiker. Als WebTools is geïnstalleerd en verbonden met uw e-mail, is Postvak IN niet beschikbaar.
+SuperOffice Postvak IN ondersteunt slechts **één** e-mailaccount per gebruiker.
 </Note>
 
 ## Voordat u begint
 
 * Controleer of **SuperOffice CRM** is geselecteerd als uw [standaard e-mailclient][8] onder **Lokale instellingen**.
 
-* Zorg ervoor dat **IMAP is ingeschakeld** in uw e-mailclient.
+* Als u verbinding maakt via IMAP, zorg er dan voor dat **IMAP is ingeschakeld** in uw e-mailclient.
 
 * Bevestig dat het **e-mailadres** dat u wilt gebruiken overeenkomt met het primaire e-mailadres dat op uw [persoonskaart][1] in SuperOffice is geregistreerd.
 
-## Uw e-mailaccount koppelen
+## Uw e-mailaccount koppelen {#connect-your-email-account}
 
 1. Klik op <i class="ph ph-at" aria-hidden="true"></i> **Postvak IN** in de navigator.
 
-    De eerste keer dat u het postvak opent, verschijnt het scherm **E-mailaccount instellen**.
+    Als er geen e-mailaccount is gekoppeld, verschijnt het scherm **Koppel uw e-mail**.
 
-    ![Scherm E-mailaccount instellen met e-mailadresveld en knop Volgende -screenshot][img1]
+    ![Scherm Koppel uw e-mail met de knop Koppelen -screenshot][img1]
 
-1. Voer in het veld **E-mailaccount** het e-mailadres in dat u wilt gebruiken.
+1. Klik op **Koppelen**.
 
-1. Klik op **Volgende**.
+    Het venster **E-mail instellen** wordt geopend.
 
-    * SuperOffice probeert uw e-mailprovider te detecteren en stuurt u door om in te loggen.
-    * Als uw wachtwoord al bij de provider is opgeslagen, wordt u mogelijk automatisch geverifieerd.
-    * Anders wordt u gevraagd uw wachtwoord rechtstreeks in te voeren bij uw provider (bijvoorbeeld Microsoft of Google).
-    * Na succesvolle verificatie keert u terug naar SuperOffice en wordt het postvak geopend.
+    ![Venster E-mail instellen met e-mailadresveld en knop Volgende -screenshot][img2]
 
-1. Als verificatie mislukt of de provider niet wordt herkend, verschijnt het scherm **Geavanceerde instellingen**. Voer dan handmatig de serverinstellingen in.
+1. Voer uw e-mailadres in en klik op **Volgende**.
+
+    * Als uw e-mailadres al is geautoriseerd voor Microsoft Graph, wordt het account automatisch ingesteld en wordt het postvak geopend.
+    * Als uw provider IMAP gebruikt, bijvoorbeeld Gmail, wordt u om uw wachtwoord gevraagd. Voer dit in en klik op **Aanmelden**. Gebruik voor Gmail een app-wachtwoord in plaats van uw gewone wachtwoord. Zie [App-wachtwoorden maken en gebruiken in Gmail][11].
+
+1. Als verificatie mislukt of uw provider niet wordt herkend, klik dan op **Geavanceerde instellingen** om de serverinstellingen handmatig in te voeren.
 
 ## Geavanceerde instellingen configureren
 
 Als automatische configuratie mislukt, moet u handmatig de e-mailservergegevens invoeren. Alle verplichte velden moeten worden ingevuld zodat e-mail verzonden en ontvangen kan worden via SuperOffice Postvak IN.
 
-1. Voer instellingen voor inkomende e-mail in:
+1. Klik op **Geavanceerde instellingen** in het venster **E-mail instellen**.
 
-    * **Server voor inkomende e-mail:** Uw IMAP-serveradres
-    * **Gebruikersnaam:** Meestal uw volledige e-mailadres
-    * **Wachtwoord:** Het wachtwoord van uw e-mailaccount
-    * **SSL:** In- of uitschakelen volgens de vereisten van uw provider
+1. Controleer of uw e-mailadres juist is in het veld **E-mailadres**.
 
-1. Voer instellingen voor uitgaande e-mail in:
+1. Voer instellingen voor inkomende e-mail (IMAP) in:
 
-    * **Server voor uitgaande e-mail:** Uw SMTP-serveradres
-    * **Gebruikersnaam**, **Wachtwoord** en **SSL**: gelijk aan inkomend
+    * **Server:** Uw IMAP-serveradres.
+    * **Standaardpoort:** Laat dit veld leeg om de standaardpoort van uw provider te gebruiken, of voer een aangepaste poort in als uw provider dat vereist.
+    * **Gebruikersnaam:** Meestal uw volledige e-mailadres.
+    * **Wachtwoord:** Het wachtwoord van uw e-mailaccount.
+    * **SSL/TLS gebruiken (Aanbevolen):** Laat dit ingeschakeld, tenzij uw provider anders aangeeft.
+
+1. Voer instellingen voor uitgaande e-mail (SMTP) in:
+
+    * **Server**, **Standaardpoort**, **Gebruikersnaam**, **Wachtwoord** en **SSL/TLS gebruiken (Aanbevolen)**: gelijk aan inkomend.
 
 1. Klik op **Opslaan** om uw account te koppelen.
 
+    Klik op **Terug** om zonder opslaan naar het vorige scherm terug te keren.
+
 ![Geavanceerde instellingen voor e-mailaccount -screenshot][img4]
+
+Deze instellingen zijn te vinden in de documentatie van uw e-mailprovider. Voor Gmail, zie [App-wachtwoorden maken en gebruiken in Gmail][11] (als gebruiker) en [POP en IMAP in- of uitschakelen voor gebruikers][12] (als beheerder). Als u meer hulp nodig hebt, neem dan contact op met uw IT-beheerder.
 
 ## Uw e-mailaccount wijzigen of verwijderen
 
-U kunt uw huidige e-mailaccount ontkoppelen en eventueel vervangen door opnieuw te koppelen.
+De banner boven aan **E-mailopties** laat zien of er een e-mailaccount is gekoppeld.
 
-1. Klik op <i class="ph ph-user-circle" aria-label="Persoonlijke instellingen"></i> in de bovenste balk en kies **E-mailopties**.
+1. Klik in de bovenste balk op **Persoonlijke instellingen** (<i class="ph ph-user-circle" aria-hidden="true"></i>) en kies vervolgens **E-mailopties**.
 
-1. Ga naar het tabblad **E-mailaccount**.
+1. Bekijk de banner boven aan het dialoogvenster **E-mailopties**. Als er een account is gekoppeld, ziet u **Aangemeld met** en uw e-mailadres.
 
-    ![Tabblad E-mailaccount met knop Bewerken/verwijderen -screenshot][img6]
+    ![E-mailopties met het aangemelde account en de koppeling Afmelden -screenshot][img6]
 
-1. Klik op **Bewerken/verwijderen** om het huidige e-mailaccount te ontkoppelen.
+1. Klik op **Afmelden** om het huidige e-mailaccount te ontkoppelen.
 
-    * Dit opent hetzelfde dialoogvenster als bij het eerste instellen van uw account.
-    * Sluit het venster om de koppeling te verwijderen.
-    * Voer een nieuw e-mailadres in en volg de stappen om opnieuw te koppelen.
+1. Om opnieuw te koppelen, klikt u in de banner op **Koppelen** en volgt u de stappen in [Uw e-mailaccount koppelen][2].
+
+    ![E-mailopties met de banner Koppel uw voorkeurse-mailservice -screenshot][img7]
 
 <Note>
-Het verwijderen van het e-mailaccount verwijdert **niet** uw eigenlijke e-mailaccount (zoals Gmail of Outlook). Het verbreekt alleen de koppeling met SuperOffice.
+Afmelden verwijdert **niet** uw eigenlijke e-mailaccount (zoals Gmail of Outlook). Het verbreekt alleen de koppeling met SuperOffice.
 </Note>
 
 ## Tips voor probleemoplossing
 
-* SuperOffice Postvak IN ondersteunt **geen POP3**-accounts. Alleen IMAP wordt ondersteund.
+* SuperOffice Postvak IN ondersteunt **IMAP** en **Microsoft Graph**. **POP3**-accounts worden niet ondersteund.
 
 * Als het postvak niet wordt bijgewerkt, blokkeert uw e-mailprovider mogelijk de verbinding.
   * Controleer uw e-mailaccount op berichten over een geblokkeerde of ongeautoriseerde aanmeldpoging.
@@ -108,12 +126,19 @@ Het verwijderen van het e-mailaccount verwijdert **niet** uw eigenlijke e-mailac
 * **Microsoft 365-gebruikers:** Als uw postvak zonder problemen verbinding maakt, maar er geen e-mail kan worden verzonden, vraag dan uw beheerder om **Authenticated SMTP** in te schakelen voor uw mailbox in het Microsoft 365-beheercentrum. Dit is een instelling die Microsoft standaard kan hebben uitgeschakeld.
 
 <Tip>
-Ga naar <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **E-mailopties** > tabblad **Algemeen** om de lay-out, het lettertype of gedrag van berichten aan te passen.
+Ga naar <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **E-mailopties** om de lay-out, het lettertype of gedrag van berichten aan te passen.
 </Tip>
 
 [1]: ../../../contact/learn/index
+[2]: #connect-your-email-account
 [8]: ../../learn/change-default-mail-client
-[9]: ../../../../../integrations/webtools/index
-[img1]: ../../../../media/loc/en/email/inbox-setup-dialog.png
+[9]: ../../../../../integrations/superoffice-for-outlook/index
+[10]: ../../../learn/getting-started/connect-your-accounts#email
+[11]: https://support.google.com/mail/answer/185833?hl=en
+[12]: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
+[13]: ../../../../../integrations/gmail-link/index
+[img1]: ../../../../media/loc/en/email/inbox-connect-your-email.png
+[img2]: ../../../../media/loc/en/email/inbox-email-setup-popup.png
 [img4]: ../../../../media/loc/en/email/so-inbox-advanced-settings.png
-[img6]: ../../../../media/loc/en/email/email-options-account.png
+[img6]: ../../../../media/loc/en/email/email-options-general.png
+[img7]: ../../../../media/loc/en/email/email-options-not-connected.png

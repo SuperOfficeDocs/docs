@@ -3,9 +3,9 @@ uid: help-no-email-inbox
 title: SuperOffice-innboks
 description: Lær hvordan du bruker SuperOffice-innboksen til å lese, sende og administrere e-post i SuperOffice CRM
 keywords: ['SuperOffice-innboks', 'lese e-post', 'sende e-post', 'e-postklient', 'innboks', 'e-post']
-author: Bergfrid Dias
-date: 05.04.2026
-so_version: 11.13
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -25,11 +25,26 @@ language: no
 
 SuperOffice-innboksen er en innebygd e-postklient som lar deg administrere e-post direkte i SuperOffice CRM. Du kan håndtere meldinger, vedlegg og kalenderinvitasjoner, og koble e-poster til personer, salg, prosjekter eller saker - alt på ett sted.
 
+For en Microsoft 365-konto kan SuperOffice-innboksen kobles til med det moderne Microsoft Graph-grensesnittet i stedet for IMAP/SMTP. Se [Konfigurer SuperOffice-innboksen][2] for å velge en tilkoblingsmetode.
+
 ![Forhåndsvisning av e-post med valgt melding og tilgjengelige handlinger -screenshot][img1]
 
 ## Åpne innboksen
 
 Velg **Innboks** <i class="ph ph-at" aria-hidden="true"></i> i navigatoren for å åpne SuperOffice-innboksen.
+
+Hvis du ikke ser **Innboks**, må du først [vise innboksen][4].
+
+## Vis innboksen {#show-the-inbox}
+
+Knappen **Innboks** er skjult i navigatoren som standard. Slik viser du den:
+
+1. Velg <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **Preferanser**.
+1. Velg **E-post** fra listen til venstre.
+1. Sett **Vis e-postene mine i SuperOffice** til **Ja**.
+1. Klikk på **Lagre**.
+
+Hvis preferansen er satt til **Nei**, laster SuperOffice bare ned og lagrer invitasjoner og andre kalenderrelaterte e-poster, og knappen **Innboks** vises ikke.
 
 ## Innbokslayout
 
@@ -56,5 +71,7 @@ Innboks-skjermbildet er delt inn i to ruter:
 Selv om en mappe er abonnert på og oppdatert, vises bare de nyeste e-postene. Som standard lastes e-poster fra de siste 30 dagene ned. Kontakt kundestøtte for å endre denne grensen hvis nødvendig.
 </Note>
 
+[2]: /no/email/inbox/learn/setup
 [3]: /no/email/inbox/learn/compose
+[4]: #show-the-inbox
 [img1]: /media/loc/en/email/inbox-preview-message.png
