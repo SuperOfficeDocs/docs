@@ -1,0 +1,62 @@
+---
+uid: sofo-pin-add-in
+title: Pin SuperOffice for Outlook
+description: Keep the SuperOffice for Outlook panel open while you read and write emails.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'pin', 'unpin', 'panel closes', 'sidebar', 'calendar event', 'SOFO']
+author: schildea
+date: 10.13.2026
+version_sofo: 2026.6.4
+content_type: howto
+category: integration
+topic: SuperOffice for Outlook
+deployment: online
+platform: web
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /integrations/superoffice-for-outlook/get
+  - /integrations/superoffice-for-outlook/archive-email
+  - /integrations/superoffice-for-outlook/add-crm-data-to-calendar-event
+  - /release-notes/integrations/sofo
+language: en
+userflow_index: true
+---
+
+Pin SuperOffice for Outlook to keep the panel open as you move between emails. We recommend pinning it.
+
+<Note>
+Selecting the **X** in the panel doesn't just close SuperOffice for Outlook, it also unpins it. This is Microsoft's default behavior for Outlook add-ins, and SuperOffice can't change it. To get the panel back after you've selected **X**, [open the add-in][1] and pin it again.
+</Note>
+
+## Pin while reading an email {#pin-reading}
+
+1. [Open SuperOffice for Outlook][1].
+
+1. Select the **Pin** icon in the SuperOffice panel.
+
+    The panel stays open when you read other emails.
+
+![SuperOffice for Outlook, pin add-in -screenshot][img1]
+
+## Pin while writing an email {#pin-composing}
+
+Pinning keeps the panel open while you write, so you can review the archiving details before you send.
+
+1. Select **New mail** in Outlook.
+
+1. [Open SuperOffice for Outlook][1].
+
+1. Select the **Pin** icon in the SuperOffice panel.
+
+## Calendar events {#pin-event}
+
+Outlook doesn't let you pin add-ins in calendar events. This is a Microsoft limitation. When you [add CRM data to a calendar event][2], open SuperOffice for Outlook from the event each time.
+
+## Unpin SuperOffice for Outlook {#unpin}
+
+Select the **Pin** icon again. Selecting the **X** in the panel also unpins the add-in.
+
+[1]: ./get#open
+[2]: ./add-crm-data-to-calendar-event
+
+[img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-pin.png

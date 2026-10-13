@@ -18818,7 +18818,11 @@
   },
   {
     "source": "/integrations/superoffice-for-outlook/add-crm-data-to-event.html",
-    "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+    "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-calendar-event"
+  },
+  {
+    "source": "/integrations/superoffice-for-outlook/add-crm-data-to-event",
+    "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-calendar-event"
   },
   {
     "source": "/integrations/superoffice-for-outlook/archive-email.html",
@@ -18830,7 +18834,11 @@
   },
   {
     "source": "/integrations/superoffice-for-outlook/create-follow-up.html",
-    "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    "destination": "/integrations/superoffice-for-outlook/create-task-or-appointment"
+  },
+  {
+    "source": "/integrations/superoffice-for-outlook/create-follow-up",
+    "destination": "/integrations/superoffice-for-outlook/create-task-or-appointment"
   },
   {
     "source": "/integrations/superoffice-for-outlook/create-request.html",
