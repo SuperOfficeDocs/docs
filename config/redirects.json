@@ -18834,7 +18834,11 @@
   },
   {
     "source": "/integrations/superoffice-for-outlook/create-follow-up.html",
-    "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    "destination": "/integrations/superoffice-for-outlook/create-task-or-appointment"
+  },
+  {
+    "source": "/integrations/superoffice-for-outlook/create-follow-up",
+    "destination": "/integrations/superoffice-for-outlook/create-task-or-appointment"
   },
   {
     "source": "/integrations/superoffice-for-outlook/create-request.html",
