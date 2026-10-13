@@ -1,0 +1,88 @@
+---
+uid: sofo-add-crm-data-to-calendar-event
+title: Add CRM data to calendar events
+description: Link a meeting you're scheduling, or an existing calendar event, to SuperOffice contacts and companies so Synchronizer writes it to SuperOffice.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'calendar', 'meeting', 'event', 'appointment', 'CRM data', 'Synchronizer', 'auto save', 'SOFO']
+author: Erik Lebiko, digitaldiina, schildea
+date: 10.13.2026
+version_sofo: 2026.6.4
+content_type: howto
+category: integration
+topic: SuperOffice for Outlook
+deployment: online
+platform: web
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /integrations/superoffice-for-outlook/pin-add-in
+  - /integrations/superoffice-for-outlook/view-contact-details
+  - /integrations/superoffice-for-outlook/archive-reminder
+  - /integrations/superoffice-for-outlook/shared-mailboxes
+  - /release-notes/integrations/sofo
+language: en
+userflow_index: true
+redirect_from:
+  - /en/email/superoffice-for-outlook/learn/add-crm-data-to-event
+  - /da/email/superoffice-for-outlook/learn/add-crm-data-to-event
+  - /de/email/superoffice-for-outlook/learn/add-crm-data-to-event
+  - /nl/email/superoffice-for-outlook/learn/add-crm-data-to-event
+  - /no/email/superoffice-for-outlook/learn/add-crm-data-to-event
+  - /sv/email/superoffice-for-outlook/learn/add-crm-data-to-event
+---
+
+Link a calendar event in Outlook to the right companies and contacts in SuperOffice. You can do this while you schedule a new meeting, or later on an event that's already in your calendar. SuperOffice for Outlook saves your changes automatically, and Synchronizer for SuperOffice then writes the event with its CRM data to SuperOffice.
+
+In this article, **event** means any calendar item in Outlook, matching the **New event** button. Microsoft defines a meeting as an event where you invite other people or reserve resources.
+
+## Before you start {#prerequisites}
+
+You need a license for [Synchronizer for SuperOffice][2]. Without it, you can't add CRM data to calendar events.
+
+## Add CRM data to a new event {#new-event}
+
+1. Select **New event** in Outlook.
+
+1. [Open SuperOffice for Outlook][1].
+
+1. Add people to the **Invite attendees** field in Outlook.
+
+    ![SuperOffice for Outlook, add CRM data to event -screenshot][img1]
+
+    * If an attendee is stored in SuperOffice, their details appear, and the **Company** and **Contact** fields are filled in automatically.
+    * If a contact is found but the **Contact** field isn't filled in, several contacts in SuperOffice share the same email address. Click **Select Contact** and choose the right one.
+    * If no contact is found, select **Click to add new contact** and enter the required details.
+
+1. Adjust the event details as needed, then send or save the event in Outlook.
+
+## Add CRM data to an existing event {#existing-event}
+
+1. Open the event in Outlook.
+
+1. [Open SuperOffice for Outlook][1].
+
+1. Review the CRM data shown for the attendees. If there's none, the add-in tries to find the organizer in SuperOffice.
+
+1. Select a contact, or add a new one, as described for a new event.
+
+## Event type {#type}
+
+Use the **Type** field to set the type of the meeting. The value is saved with the event and synchronized to SuperOffice, where you can use it for reporting and filtering.
+
+## Shared mailbox calendars {#shared-mailbox-calendars}
+
+You can add CRM data to events in a shared mailbox calendar the same way. Open the event from the shared mailbox, open SuperOffice for Outlook, and add or update the CRM data. See [Work with shared mailboxes][3].
+
+## Events created in SuperOffice {#from-superoffice}
+
+Events created in SuperOffice and synchronized to Outlook are view-only in Outlook. Edit or delete them in SuperOffice. Their CRM information is still available in the panel.
+
+<Tip>
+Pin SuperOffice for Outlook so it stays open while you work. See [Pin SuperOffice for Outlook][4].
+</Tip>
+
+[1]: ./get#open
+[2]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
+[3]: ./shared-mailboxes
+[4]: ./pin-add-in
+
+[img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-calendar-event.png
