@@ -91,6 +91,7 @@
     "pages": [
       "integrations/superoffice-for-outlook/requirements",
       "integrations/superoffice-for-outlook/get",
+      "integrations/superoffice-for-outlook/pin-add-in",
       "integrations/superoffice-for-outlook/deploy",
       "integrations/superoffice-for-outlook/settings",
       "integrations/superoffice-for-outlook/add-contact-to-superoffice",
@@ -105,7 +106,7 @@
           "integrations/superoffice-for-outlook/email-archive-status"
         ]
       },
-      "integrations/superoffice-for-outlook/add-crm-data-to-event",
+      "integrations/superoffice-for-outlook/add-crm-data-to-calendar-event",
       "integrations/superoffice-for-outlook/archive-reminder",
       "integrations/superoffice-for-outlook/create-follow-up",
       "integrations/superoffice-for-outlook/create-request",
