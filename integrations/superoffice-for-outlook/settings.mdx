@@ -2,9 +2,9 @@
 uid: sofo-settings
 title: Settings
 description: How to open and configure the settings menu in SuperOffice for Outlook.
-keywords: ['SuperOffice for Outlook', 'Outlook', 'settings', 'archive reminder', 'SOFO', 'email archive status', 'category']
+keywords: ['SuperOffice for Outlook', 'Outlook', 'settings', 'default email type', 'archive reminder', 'SOFO', 'email archive status', 'category']
 author: schildea
-date: 09.30.2026
+date: 10.20.2026
 version_sofo: 2026.6.4
 content_type: reference
 category: integration
@@ -23,7 +23,7 @@ language: en
 userflow_index: true
 ---
 
-The Settings menu lets you personalize how SuperOffice for Outlook behaves for you. From here you can review your profile, manage archiving preferences, and control when you are reminded to archive emails and meetings.
+The Settings menu lets you personalize how SuperOffice for Outlook behaves for you. From here you can review your profile, manage archiving preferences, choose your default email type, and control when you are reminded to archive emails and meetings.
 
 ## Open settings
 
@@ -45,8 +45,40 @@ The Settings menu opens and shows:
 |---|---|
 | Show contextual projects and sales | Displays projects and sales registered to the selected company or contact. |
 | Remove from inbox | Moves the email to deleted items after archiving. |
+| Default e-mail type | Sets the email type preselected when you archive incoming and outgoing emails. See [Default e-mail type](#email-type) below. |
 | Archive reminder | Controls when you are reminded to archive before sending an email or meeting. See [Archive reminder](#archive-reminder) below. |
 | E-mail archive status | Adds the **Archived in SuperOffice** category to archived emails in your Outlook message list. See [E-mail archive status](#archive-status) below. |
+
+## Default e-mail type {#email-type}
+
+The **Default e-mail type** section lets you choose which email type SuperOffice for Outlook preselects in the **Type** field when you archive an email. You no longer need to open SuperOffice to change it.
+
+![Default e-mail type settings showing the Incoming e-mail and Outgoing e-mail fields -screenshot][img3]
+
+| Sub-setting | Default | Description |
+|---|---|---|
+| Incoming e-mail | Your SuperOffice preference | The type preselected when you archive an email you've received. |
+| Outgoing e-mail | Your SuperOffice preference | The type preselected when you archive an email you send, for example with [Send and archive][2]. |
+
+The lists show the same email types, in the same order, as the **Type** field when you archive an email.
+
+### Saved automatically
+
+When you pick a type, it's saved right away. A status next to the field shows **Saving…**, then **Saved**. If the change can't be saved, you'll see **Not saved.** with a **Retry** link. The field keeps the type you picked until you retry.
+
+The new default applies the next time you archive an email. You don't need to reload SuperOffice for Outlook.
+
+### Synchronized with SuperOffice
+
+These two fields are the same preferences as **Outgoing e-mail template** and **Incoming e-mail template** under **E-mail options** in your SuperOffice personal settings. A change in either place shows in the other.
+
+![E-mail options in SuperOffice personal settings with the incoming and outgoing email template fields highlighted -screenshot][img4]
+
+Your administrator can set a default type for the whole system, database, or user group. The type you choose yourself always takes priority.
+
+### Change the type for one email
+
+The default is only the preselected value. When you archive an email, you can pick another type in the **Type** field. That change applies to that email only and doesn't change your default.
 
 ## Archive reminder {#archive-reminder}
 
@@ -117,6 +149,9 @@ Your settings are saved automatically and synchronized across all your devices.
 See [Email archive status in your mailbox][1] for how the feature works and how to set it up for a shared mailbox.
 
 [1]: ./email-archive-status
+[2]: ./send-and-archive
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-settings-archive-reminder.png
 [img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-settings-email-archive-status.png
+[img3]: /media/loc/en/integrations/superoffice-for-outlook/outlook-settings-default-email-type.png
+[img4]: /media/loc/en/integrations/superoffice-for-outlook/superoffice-email-options-email-type.png
