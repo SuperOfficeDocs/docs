@@ -5,7 +5,7 @@ sidebarTitle: Email archive status in mailbox
 description: See which emails are already archived to SuperOffice directly in your Outlook message list, using the Archived in SuperOffice category.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'archive status', 'category', 'Archived in SuperOffice', 'already archived', 'shared mailbox', 'conversation view', 'SOFO']
 author: schildea
-date: 09.30.2026
+date: 10.12.2026
 version_sofo: 2026.6.4
 content_type: howto
 category: integration
@@ -86,7 +86,7 @@ See [Settings - E-mail archive status][1] for a full description of each option.
 
 ## Using archive status in a shared mailbox {#shared-mailbox}
 
-To use archive status in a shared mailbox, a category named exactly **Archived in SuperOffice** needs to be created in that mailbox first. This is done once per shared mailbox by a user with permission to manage categories there. Once the category exists, SuperOffice for Outlook starts adding it as people open and archive emails there.
+To use archive status in a shared mailbox, a category named exactly **Archived in SuperOffice** needs to be created in that mailbox first. This is done once per shared mailbox by someone with Full Access permission to that mailbox. Once the category exists, SuperOffice for Outlook starts adding it as people open and archive emails there.
 
 ### Create the category in the shared mailbox
 
@@ -96,16 +96,14 @@ Create a category named **Archived in SuperOffice** and choose a color. Both app
 The category name must be exactly **Archived in SuperOffice**. SuperOffice for Outlook looks for this name to apply the archive status. If the name doesn't match, archiving still works as usual, but the category won't be added to emails in the shared mailbox.
 </Warning>
 
-Where you create the category depends on your Outlook version:
+Where you create the category depends on your Outlook version. In all versions, you need Full Access permission to the shared mailbox.
 
-| Your Outlook version | How to reach the shared mailbox's categories |
+| Your Outlook version | How to create the category in the shared mailbox |
 |---|---|
-| Classic Outlook for Windows | Select any email in the shared mailbox, then go to **Home** > **Categorize** > **All Categories**. |
-| New Outlook for Windows | First add the shared mailbox as an account: **Settings** > **Accounts** > **Shared with me**, then **Convert** (or **+ Add**). Then go to **Settings** > **Accounts** > **Categories** and select the shared mailbox. |
-| Outlook on the web | Open the shared mailbox in its own browser window: select your profile picture, then **Open another mailbox**. In that window, open **Settings** and go to **Categories**. |
-| Outlook for Mac | Microsoft reports a [known issue with categories in shared mailboxes in Outlook for Mac][3]. Use Outlook on the web or Outlook for Windows to create the category. |
-
-Once you're in the shared mailbox's category list, create the category and choose a color.
+| Classic Outlook for Windows | Select any email in the shared mailbox, then create the category as described in [Create and assign color categories in Outlook][4] (classic Outlook tab). |
+| New Outlook for Windows | Add the shared mailbox as an account, then select it when you manage categories. See [Manage shared mailbox settings in new Outlook][3]. This option isn't available in all versions of new Outlook yet. If you don't see it, use Outlook on the web. |
+| Outlook on the web | Open the shared mailbox in its own browser window as described in [Open and use a shared mailbox in Outlook][5] (Outlook on the web tab). Then create the category as described in [Create and assign color categories in Outlook][4]. |
+| Outlook for Mac | Make sure the shared mailbox is added to Outlook. See [Open a shared Mail, Calendar or People folder in Outlook for Mac][6]. Then go to **Tools** > **Accounts** > **Categories**, select the shared mailbox under **Account**, and select **+** to add the category. |
 
 <Note>
 Make sure you're managing the shared mailbox's categories, not your own. A category created in your personal mailbox isn't visible to the other users of the shared mailbox.
@@ -119,7 +117,7 @@ This setting controls only what your own actions add. The category is stored on 
 
 ### Remove archive status from a shared mailbox
 
-To remove it for everyone with access to the shared mailbox, delete the **Archived in SuperOffice** category from that mailbox. You need permission to manage categories to do this. Since it affects everyone, coordinate with the other mailbox users first.
+To remove it for everyone with access to the shared mailbox, delete the **Archived in SuperOffice** category from that mailbox. You need Full Access permission to the shared mailbox to do this. Since it affects everyone, coordinate with the other mailbox users first.
 
 ## Emails in conversation threads
 
@@ -135,7 +133,10 @@ See [Troubleshooting SuperOffice for Outlook][2] for solutions to common issues 
 
 [1]: ./settings#archive-status
 [2]: ./troubleshooting#archive-status
-[3]: https://support.microsoft.com/en-us/office/unable-to-assign-categories-to-items-in-shared-and-delegated-mailboxes-in-outlook-for-mac-5898ad9c-8705-4e0a-b376-aeb5e75fa278
+[3]: https://support.microsoft.com/office/manage-shared-mailbox-settings-in-new-outlook-f6929a97-4fc6-4a52-b77d-5e596c6322b4
+[4]: https://support.microsoft.com/office/create-and-assign-color-categories-in-outlook-a1fde97e-15e1-4179-a1a0-8a91ef89b8dc
+[5]: https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd
+[6]: https://support.microsoft.com/outlook/open-a-shared-mail-calendar-or-people-folder-in-outlook-for-mac-1
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-email-archive-status-message-list.png
 
