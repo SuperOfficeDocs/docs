@@ -1,10 +1,10 @@
 ---
 uid: sofo-archive-email
 title: Archive email to SuperOffice
-description: Archive emails from Outlook to SuperOffice using the SuperOffice for Outlook add-in, with an optional comment or AI summary.
-keywords: ['SuperOffice for Outlook', 'Outlook', 'archive email', 'email', 'save to SuperOffice', 'comment', 'AI summary', 'SOFO']
+description: Archive emails from Outlook to SuperOffice using the SuperOffice for Outlook add-in, with attachments and an optional comment or AI summary.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'archive email', 'email', 'save to SuperOffice', 'comment', 'AI summary', 'attachments', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 10.14.2026
+date: 10.20.2026
 version_sofo: 2026.6.4
 content_type: howto
 category: integration
@@ -14,7 +14,7 @@ platform: web
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - /integrations/superoffice-for-outlook/comment-and-ai-summary
+  - /integrations/superoffice-for-outlook/save-attachments
   - /integrations/superoffice-for-outlook/email-archive-status
   - /integrations/superoffice-for-outlook/archive-reminder
   - /integrations/superoffice-for-outlook/shared-mailboxes
@@ -33,15 +33,13 @@ To archive information from an email in Outlook and save it to SuperOffice:
 
 1. Make any necessary changes to the fields.
 
-1. Optionally, add a [comment or AI summary][5].
+1. Optionally, add a [comment or AI summary][6].
+
+1. If the email has attachments and you don't want to save them, select **Do not archive attachments**.
 
 1. Click **Save** to archive the email.
 
-![SuperOffice for Outlook, archive email -screenshot][img1]
-
-## Comment and AI summary {#comment}
-
-Use the **Comment** field to add context to the archived email. If your organization has an AI license, select **Generate** to create an AI summary of the email that you can review and edit before you save. See [Add a comment and AI summary][5].
+![SuperOffice for Outlook, Save to SuperOffice panel with the Comment field and Generate button -screenshot][img1]
 
 <Note>
 The **Visible for** drop-down is only available to users whose administrator has enabled the required license.
@@ -52,10 +50,64 @@ For more details, see [**Admin - User Management - Visibility**][2].
 Turn on [email archive status][4] to see the **Archived in SuperOffice** category on archived emails directly in your message list.
 </Tip>
 
+## Attachments {#attachments}
+
+If the email contains attachments, they're saved with the email by default. Select **Do not archive attachments** if you prefer not to save them.
+
+To save only selected attachments, see [Save attachments][5].
+
+## Add a comment or AI summary {#comment}
+
+Use the **Comment** field to save a note with the email. The comment is searchable in SuperOffice and available to any AI agents.
+
+Type what helps you find the email later or see what it's about at a glance:
+
+* Keywords you'd search for, such as customer, project, or product names.
+* The outcome or the next step of the conversation.
+
+### Generate an AI summary {#ai-summary}
+
+If your plan includes AI features, a **Generate** button appears next to the **Comment** label. Without AI features, you see a plain **Comment** field.
+
+The summary is only created when you click **Generate**. It's never created automatically when you open the panel.
+
+1. Click **Generate**.
+
+    If the **Comment** field already contains text, **Generate** has a drop-down arrow. Choose how to add the summary:
+
+    * **Replace**: overwrites the text in the field.
+    * **Append**: adds the summary below your text.
+
+    After either action, an **Undo** link appears for a few seconds. Click it to revert the change.
+
+1. Review the summary and edit it if needed.
+
+1. Click **Save**.
+
+<Tip>
+A summary gives context when an email has a long back-and-forth thread. Add specific keywords to the summary to make the email easier to find later.
+</Tip>
+
+### What the summary contains {#summary-content}
+
+* Short bullet points with the key points of the email.
+* The recipients of the email.
+
+The summary is based on the text of the email you're saving. Earlier messages quoted in the email are used only as background. The summary doesn't include the rest of the conversation in Outlook, and attachments aren't analyzed.
+
+### Find the comment in SuperOffice {#find-comment}
+
+1. After you save, click **View in CRM** in the SuperOffice for Outlook panel.
+
+1. On the **Activities** tab of the company or contact you saved the email to, find the email.
+
+1. Right-click the row and select **Document** to see the details, including your comment.
+
 [1]: ./get#open
 [2]: /en/admin/user-management/index#visible
 [3]: ./get#pin
 [4]: ./email-archive-status
-[5]: ./comment-and-ai-summary
+[5]: ./save-attachments
+[6]: #comment
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-save-to-superoffice.png
