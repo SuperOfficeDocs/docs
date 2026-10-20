@@ -92,6 +92,7 @@
       "integrations/superoffice-for-outlook/requirements",
       "integrations/superoffice-for-outlook/get",
       "integrations/superoffice-for-outlook/deploy",
+      "integrations/superoffice-for-outlook/pin-add-in",
       "integrations/superoffice-for-outlook/settings",
       "integrations/superoffice-for-outlook/add-contact-to-superoffice",
       "integrations/superoffice-for-outlook/view-contact-details",

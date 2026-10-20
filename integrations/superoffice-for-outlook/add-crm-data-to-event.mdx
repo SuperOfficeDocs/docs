@@ -1,17 +1,22 @@
 ---
 uid: sofo-add-crm-data-to-event
-title: Add CRM data to Outlook event
-description: How to add CRM data to meetings and appointments in Outlook using SuperOffice for Outlook
-keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'event', 'calendar', 'CRM data', 'SOFO']
-author: Erik Lebiko, digitaldiina, Andrea Schilde
-date: 06.16.2026
-version_sofo: 2026.6.3
+title: Add CRM data to calendar events
+sidebarTitle: Add CRM data to events
+description: Link a meeting you're scheduling, or an existing calendar event, to SuperOffice contacts and companies so Synchronizer writes it to SuperOffice.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'calendar', 'meeting', 'event', 'appointment', 'CRM data', 'Synchronizer', 'auto save', 'SOFO']
+author: Erik Lebiko, digitaldiina, schildea
+date: 10.20.2026
+version_sofo: 2026.6.4
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
+deployment: online
+platform: web
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
+  - /integrations/superoffice-for-outlook/view-contact-details
+  - /integrations/superoffice-for-outlook/shared-mailboxes
   - /release-notes/integrations/sofo
 language: en
 userflow_index: true
@@ -24,100 +29,56 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/add-crm-data-to-event
 ---
 
-Use SuperOffice for Outlook to add CRM data to meetings and appointments in Outlook.
+Link a calendar event in Outlook to the right companies and contacts in SuperOffice. You can do this while you schedule a new meeting, or later on an event that's already in your calendar. SuperOffice for Outlook saves each field automatically as you fill it in, so there's no **Save** button. Synchronizer for SuperOffice then writes the event with its CRM data to SuperOffice.
 
-<Note>
-You need [Synchronizer for SuperOffice][2] for this functionality.
+In this article, **event** means any calendar item in Outlook, matching the **New event** button. Microsoft defines a meeting as an event where you invite other people or reserve resources.
 
-Microsoft defines a meeting as a calendar item where you invite other people or reserve resources. This article uses **event** as the general term for calendar items in Outlook, matching the **New event** button.
-</Note>
+## Before you start {#prerequisites}
 
-## New event
+You need a license for [Synchronizer for SuperOffice][2]. Without it, you can't add CRM data to calendar events.
+
+## Add CRM data to a new event {#new-event}
 
 1. Select **New event** in Outlook.
 
 1. [Open SuperOffice for Outlook][1].
 
-1. Add persons to the **Invite attendees** field in Outlook.
+1. Add people to the **Invite attendees** field in Outlook.
 
     ![SuperOffice for Outlook, add CRM data to event -screenshot][img1]
 
-    * If the email or contact is stored in SuperOffice, their contact information will appear, and the **Company** and **Contact** fields will auto-fill.
-    * If a contact is found but the **Contact** field is not auto-filled, multiple contacts with the same email exist in SuperOffice. Click **Select Contact** and choose the correct contact.
-    * If no contact is found, you can add a new contact to SuperOffice: Select **Click to add new contact** and enter the required details.
+    * If an attendee is stored in SuperOffice, their details appear, and the **Company** and **Contact** fields are filled in automatically.
+    * If a contact is found but the **Contact** field isn't filled in, several contacts in SuperOffice share the same email address. Click **Select Contact** and choose the right one.
+    * If no contact is found, select **Click to add new contact** and enter the required details.
 
-1. Adjust the event details as needed.
+1. Adjust the event details as needed, then send or save the event in Outlook.
 
-1. Press **Save** to finalize the event.
+    Changes in SuperOffice for Outlook are saved as you make them.
 
-<Note>
-You must press **Save** in SuperOffice for Outlook to save the CRM data to the event. If you send the event without pressing **Save**, the CRM data is not saved to SuperOffice.
-</Note>
+## Add CRM data to an existing event {#existing-event}
 
-## Existing event
-
-1. Open an existing event in Outlook.
+1. Open the event in Outlook.
 
 1. [Open SuperOffice for Outlook][1].
 
-1. If SuperOffice CRM data exists for the attendees, it is displayed.
+1. Review the CRM data shown for the attendees. If there's none, the add-in tries to find the organizer in SuperOffice.
 
-    * If a contact is found but the **Contact** field is not auto-filled, multiple contacts with the same email exist in SuperOffice. Click **Select Contact** and choose the correct contact.
-    * If no contact is found, you can add a new contact to SuperOffice: Select **Click to add new contact** and enter the required details.
+1. Select a contact, or add a new one, as described for a new event.
 
-1. If no data exists, the add-in attempts to find the organizer in SuperOffice CRM.
+## Event type {#type}
 
-1. Follow the same steps as for a new event to modify or save the event.
+Use the **Type** field to set the type of the meeting. The value is saved with the event and synchronized to SuperOffice, where you can use it for reporting and filtering.
 
-<Note>
-You must press **Save** in SuperOffice for Outlook to save the CRM data to the event. If you send the event without pressing **Save**, the CRM data is not saved to SuperOffice.
-</Note>
+## Shared mailbox calendars {#shared-mailbox-calendars}
 
-## Additional information
+You can add CRM data to events in a shared mailbox calendar the same way. Open the event from the shared mailbox, open SuperOffice for Outlook, and add or update the CRM data. See [Work with shared mailboxes][3].
 
-### View contact details
+## Events created in SuperOffice {#from-superoffice}
 
-To view additional CRM data:
-
-1. In the SuperOffice panel, locate the contact.
-1. Hover over the contact and select **Open in CRM**.
-
-SuperOffice CRM opens with detailed information about the contact.
-
-### Meetings created in SuperOffice
-
-Calendar events created in SuperOffice and synchronized to Outlook are view-only in Outlook.
-
-* These events may contain information indicating they originate from SuperOffice.
-* Editing or deleting must be done in SuperOffice.
-* You do not need to press **Save**, as the event is already stored in SuperOffice.
-
-### Shared mailbox calendars
-
-You can also work with calendar events from shared mailboxes in Outlook.
-
-1. Open the event from the shared mailbox.
-1. [Open SuperOffice for Outlook][1].
-1. Add or update CRM data.
-1. Press **Save**.
-
-<Note>
-You must press **Save** in SuperOffice for Outlook to save the CRM data to the event. If you send the event without pressing **Save**, the CRM data is not saved to SuperOffice.
-</Note>
-
-### Type
-
-You can use the **Type** field to set the meeting type.
-
-* This value is saved with the event and synchronized to SuperOffice.
-* It can be used to categorize meetings for reporting and filtering.
-
-### Notes
-
-* Calendar events synchronized from SuperOffice are view-only in Outlook, but CRM information is still available.
-* Contact matching is based on participants and organizer.
+Events created in SuperOffice and synchronized to Outlook are view-only in Outlook. Edit or delete them in SuperOffice. Their CRM information is still available in the panel.
 
 [1]: ./get#open
 [2]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
+[3]: ./shared-mailboxes
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-calendar-event.png
