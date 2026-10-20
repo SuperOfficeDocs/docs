@@ -107,10 +107,10 @@
           "integrations/superoffice-for-outlook/archive-reminder"
         ]
       },
-      "integrations/superoffice-for-outlook/create-task-or-appointment",
+      "integrations/superoffice-for-outlook/create-follow-up",
       "integrations/superoffice-for-outlook/create-request",
       "integrations/superoffice-for-outlook/create-sale",
-      "integrations/superoffice-for-outlook/add-crm-data-to-calendar-event",
+      "integrations/superoffice-for-outlook/add-crm-data-to-event",
       "integrations/superoffice-for-outlook/troubleshooting"
     ]
   },
