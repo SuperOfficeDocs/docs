@@ -4,7 +4,7 @@ title: Pin SuperOffice for Outlook
 description: Keep the SuperOffice for Outlook panel open while you read and write emails.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'pin', 'unpin', 'panel closes', 'sidebar', 'calendar event', 'SOFO']
 author: schildea
-date: 10.13.2026
+date: 10.20.2026
 version_sofo: 2026.6.4
 content_type: howto
 category: integration
@@ -24,6 +24,12 @@ userflow_index: true
 
 Pin SuperOffice for Outlook to keep the panel open as you move between emails. We recommend pinning it.
 
+You can pin the panel when you take action on a received email from your inbox, and when you write an email. You can't pin it in calendar events.
+
+<Note>
+Pinning is a per-panel action. Pinning the panel for a received email doesn't pin the panel when you write an email, and the other way around. Pin each panel separately.
+</Note>
+
 <Note>
 Selecting the **X** in the panel doesn't just close SuperOffice for Outlook, it also unpins it. This is Microsoft's default behavior for Outlook add-ins, and SuperOffice can't change it. To get the panel back after you've selected **X**, [open the add-in][1] and pin it again.
 </Note>
@@ -34,7 +40,7 @@ Selecting the **X** in the panel doesn't just close SuperOffice for Outlook, it 
 
 1. Select the **Pin** icon in the SuperOffice panel.
 
-    The panel stays open when you read other emails.
+    The panel stays open when you read other emails. It doesn't stay open when you write an email. [Pin that panel separately](#pin-composing).
 
 ![SuperOffice for Outlook, pin add-in -screenshot][img1]
 
@@ -47,6 +53,8 @@ Pinning keeps the panel open while you write, so you can review the archiving de
 1. [Open SuperOffice for Outlook][1].
 
 1. Select the **Pin** icon in the SuperOffice panel.
+
+    The panel stays open while you write this email. It isn't pinned for received emails. [Pin that panel separately](#pin-reading).
 
 ## Calendar events {#pin-event}
 
