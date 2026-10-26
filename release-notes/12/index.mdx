@@ -27,6 +27,12 @@ From this version, all feature updates are available to SuperOffice Online custo
 
 <Accordion title="Features released in Version 12">
 
+* Version 12.6
+  * Search and selection - Criteria for externally owned follow-ups
+  * Sale - Copy sale
+  * Project - Copy project
+  * Knowledge base - Clear the bounce flag for Blocked e-mail addresses
+  * System design - Icon picker for custom objects - Settings and maintenance
 * Version 12.5
   * Navigation - Recent navigation
   * Follow-ups - Automatic complete of attendees' follow-ups when owner completes
@@ -54,6 +60,71 @@ From this version, all feature updates are available to SuperOffice Online custo
 </Accordion>
 
 ## Feature updates
+
+<Update label="12.6 " description="11.03.2026" tags={["Sale", "Marketing", "Service", "Settings and maintenance"]}>
+<a id="12.6"></a>
+
+### Search and selection - Find follow-ups by where they were created
+
+Separate follow-ups synced from Outlook or Google Calendar from those created in SuperOffice, and review or clean up synced follow-ups in bulk.
+
+Follow-ups created in an external calendar are kept in sync by the Synchronizer, and can only be edited or deleted there. Administrators often need to locate them in large numbers, for example after a Synchronizer migration or when recovering from synchronisation issues, without opening each follow-up one by one.
+
+The **Created in** criterion is available in **Find**, in selections and in activity archives. You can also show it as a column in follow-up lists.
+
+![Search criteria with Created in selected for follow-ups -screen][img24]
+
+Choose **Created in** to list only follow-ups from a specific calendar, or exclude them to see only the follow-ups created in SuperOffice. For example, an administrator can find all follow-ups created in Outlook for a group of users, and review them together.
+
+### Project - Copy project
+
+Copy project
+
+Set up a new project from an existing one and reuse the structure you already know works. It is ideal for recurring projects, such as yearly events, campaigns or customer onboarding.
+
+Projects of the same kind often share a type, description, web links and members, and recreating them each time is repetitive.
+
+Select **Copy project** from the **Task** menu on the Project card, or right-click a project in any project archive.
+
+![Copy project dialog showing the From section, the To section and the Copy Options switches -screen][img25]
+
+The dialog shows the original project under **From**. Under **To**, you name the copy and choose its owner. The copy is an independent, active project with its own number. It keeps the project type, description, web links and custom fields. The status starts at the first status of the project type, and the end date is calculated from the type's duration. Activities, documents and guide progress stay with the original. Under **Copy Options**, you can also bring along the **Project members**, **Note**, **Links** and **Image**. For example, copy last year's conference project with its members, and plan this year's edition from there.
+
+### Sales - Copy sale <Badge icon="dollar" color="yellow">Sales</Badge>
+
+Create a sale from an existing one in seconds, without retyping what the two have in common. It is ideal for renewals, upsells, repeat orders, and the same opportunity for another company.
+
+Similar opportunities often share the same company, contact, project and sale type, and entering them again takes time.
+
+Select **Copy sale** from the **Task** menu on the Sale card, or right-click a sale in any sale archive.
+
+![Copy sale dialog showing the From section, the To – New Sale section and the Copy Options switches -screen][img26]
+
+The dialog shows the original sale under **From**. Under **To – New Sale**, you name the copy and, if needed, change the company, contact and project. The copy is an independent, open sale with its own number, starting at the first stage of its sale type, with you as the owner. Amount, earnings and profit percentage start at zero, and activities, documents and history stay with the original. Under **Copy Options**, you can also bring along the **Quote**, **Stakeholders**, **Note** and **Links**. For example, when a customer renews, copy last year's sale with its quote, and adjust the details.
+
+### Knowledge base - Clear the bounce flag in list for Blocked e-mail addresses <Badge icon="ticket" color="green">Service</Badge>
+
+Get a contact's e-mail address back in use without leaving SuperOffice. Service sets the bounce flag automatically when a reply to a request bounces, and Service users may not have access to Marketing or a licence for it. The list of blocked e-mail addresses is therefore available directly in SuperOffice CRM.
+
+Find it from the Main menu (☰) > **Knowledge base** > **Blocked e-mail addresses**. Go to the tab for Blocked e-mail addresses, select the address(es) and choose **Actions** > **Clear bounce-flag**. You will get a confirmation dialog to clear the bounce flag. Remember it's a good idea to multiselect in your list to do any of the actions available.
+
+![Knowledge base and Blocked e-mail addresses gives you an option to clear the bounce-flag -screen][img27]
+
+You need the functional right **General Administrator**, **Service administration** or **Knowledge Base**, in addition to access to Service.
+
+### System design - Icon picker for custom objects <Badge icon="gear" color="orange">Settings and maintenance</Badge>
+
+**Give each custom object a recognisable icon, without sourcing icon files yourself.** Icons make custom objects easy to spot, so users find the right one quickly.
+
+Custom objects are included from the CRM Suite Growth plan (or extra licence for Development Tools). Customers on legacy licensing can use custom objects behind the feature toggle **CustomObjects** (pilot).
+
+Go to **Settings and maintenance** > **System design** > **Tables**, open the custom object and select **Icon**. The **Select icon** dialog has three tabs: **Default icons** with 54 curated icons, **Full icon library** with search and categories, and **Custom icons** where you upload your own SVG file (up to 50 KB). Select **Apply icon** to save your choice, or **Remove icon** to return to the default icon. The icon is shown in the navigator, the custom objects list, context menus, the webhook event list and the screen designer.
+
+![Knowledge base and Blocked e-mail addresses gives you an option to clear the bounce-flag -screen][img28]
+
+Read more about [Custom objects in Docs][21].
+
+</Update>
 
 <Update label="12.5" description="10.13.2026" tags={["Marketing", "Service", "Settings and maintenance"]}>
 <a id="12.5"></a>
@@ -375,6 +446,7 @@ Some features are available to selected customers as part of ongoing pilots. See
 [18]: /en/email/learn/index#preview
 [19]: /en/document/learn/edit#download
 [20]: /en/marketing/forms/learn/create#thank-you-page
+[21]: /en/custom-objects/learn/index
 
 [img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
 [img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
@@ -399,3 +471,8 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img21]: /media/loc/en/request/preferences-request-merge-keep-oldest.png
 [img22]: /media/loc/en/request/request-field-with-url-link.png
 [img23]: /media/loc/en/admin/admin-licences-my-apps.png
+[img24]: /media/loc/en/search-options/find-criteria-follow-up-created-in.png
+[img25]: /media/loc/en/project/project-copy-project-dialog.png
+[img26]: /media/loc/en/sale/sale-copy-sale-dialog.png
+[img27]: /media/loc/en/request/knowledge-base-blocked-email-addresses-clear-bounce-flag.png
+[img28]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
