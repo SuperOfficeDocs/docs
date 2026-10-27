@@ -4,7 +4,7 @@ title: SharePoint documents
 description: SharePoint document integration for SuperOffice
 keywords: ['SharePoint', 'document', 'Microsoft Entra domain', 'ME-ID', 'AAD']
 author: Frode Berntsen, schildea
-date: 09.03.2026
+date: 10.27.2026
 so_version:
 content_type: concept
 category: integration
@@ -119,7 +119,7 @@ You can also check out our [webinar about the SharePoint integration][1].
 
 3. Set up SuperOffice
     1. [Run Configuration wizard][8].
-    2. [Enable system user][9] for storing documents in SharePoint, use the Microsoft Entra service account.
+    2. [Enable the system user][9] for storing documents in SharePoint, and authorize it with the Microsoft Entra service account. It's required if you migrate documents or use apps, integrations, CRMScript, or automation that work with documents. We recommend it for all setups. See [When you need the system user][15].
 
 ### If using Visible for (Confidential activities)
 
@@ -166,7 +166,7 @@ You can also check out our [webinar about the SharePoint integration][1].
 
 3. Set up SuperOffice
     1. [Run Configuration wizard][8].
-    2. [Enable system user][9] for storing documents in SharePoint, use the Microsoft Entra service account.
+    2. [Enable the system user][9] for storing documents in SharePoint, and authorize it with the Microsoft Entra service account. It's required for *Visible for*. See [When you need the system user][15].
     3. [Map your SuperOffice user groups to corresponding Microsoft Entra domain groups][10].
 
 [1]: https://youtu.be/8mIo3Yac2QI?t=589
@@ -185,5 +185,6 @@ You can also check out our [webinar about the SharePoint integration][1].
 [12]: /integrations/sharepoint-documents/configure-permissions-templates#step-3a
 [13]: /integrations/sharepoint-documents/configure-permissions-templates#step-3b
 [14]: /integrations/sharepoint-documents/configure-permissions-templates#step-4
+[15]: /integrations/sharepoint-documents/requirements#system-user
 
 [20]: https://social.technet.microsoft.com/Forums/en-US/1906d6db-94ea-42dd-9d4d-9c50205bdeac/do-we-have-to-backup-our-sharepoint-online-sites-or-this-is-been-managed-for-us?forum=onlineservicessharepoint
