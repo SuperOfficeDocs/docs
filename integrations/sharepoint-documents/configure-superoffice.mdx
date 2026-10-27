@@ -4,7 +4,7 @@ title: How to configure settings in SuperOffice Settings and maintenance
 description: How to configure document templates for SharePoint Documents
 keywords: ['SharePoint', 'document', 'template']
 author: Frode Berntsen, schildea
-date: 09.03.2026
+date: 10.27.2026
 content_type: howto
 category: integration
 topic: SharePoint documents
@@ -122,7 +122,7 @@ To to set permissions on documents in SharePoint, the app needs to have *Read Wr
 
 ### Apps for SuperOffice (system user) {#apps}
 
-To use any app for SuperOffice that interacts with documents (to use *Visible for*, to migrate documents, or have a third-party app that creates documents in SuperOffice), you need to [enable a system user][2]. We recommend you keep this on and go through the authorization.
+The system user is required if you use *Visible for*, migrate documents, or use apps, integrations, CRMScript, or automation that work with documents. For details, see [When you need the system user][4]. We recommend you keep it enabled and go through the authorization.
 
 ### Authorize
 
@@ -157,8 +157,8 @@ After you have confirmed, **you will not be able to change the Site in SharePoin
 </Warning>
 
 [1]: ./permissions-in-sharepoint
-[2]: ./permissions-app
 [3]: ./permissions-in-sharepoint#visible-for
+[4]: ./requirements#system-user
 
 [img2]: /media/loc/en/integrations/sharepoint-documents/template-location.png
 [img3]: /media/loc/en/integrations/sharepoint-documents/compatibility-check.png
