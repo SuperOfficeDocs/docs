@@ -5,7 +5,7 @@ sidebarTitle: "SuperOffice for Outlook"
 description: Release notes for the SuperOffice for Outlook integration.
 keywords: ['Outlook add-in', 'sofo']
 author: SuperOffice AS - Product and Engineering, schildea
-date: 10.01.2026
+date: 10.13.2026
 so_version: 6.4
 content_type: release-note
 category: email
@@ -33,11 +33,29 @@ language: en
 
 <Update label="6.4" description="10.01.2026">
 
-## SuperOffice for Outlook 6.4.7
+## SuperOffice for Outlook 6.4.9
+
+### Add CRM data to calendar events - changes save automatically
+
+When you add CRM data to a new or existing calendar event, SuperOffice for Outlook now saves each field as you fill it in, whether you or the add-in filled it in. There's no **Save** button to remember, so the CRM data is on the event when you send it. Synchronizer for SuperOffice then writes the event to SuperOffice.
+
+[Learn more about adding CRM data to calendar events][10]
+
+### Default e-mail type - set it in SuperOffice for Outlook
+
+You can now set your default incoming and outgoing email type directly in SuperOffice for Outlook, without opening SuperOffice CRM. The type is preselected when you archive an email, and you can still change it for a single email.
+
+You'll find the setting under **SuperOffice for Outlook** > **Settings** > **Default e-mail type**. It's shared with your email preferences in SuperOffice CRM, so a change in either place applies in both.
+
+[Learn more about the default email type][9]
+
+## SuperOffice for Outlook 6.4.8
 
 ### Email archive status - See which emails are already archived directly in your mailbox
 
 When you work through a busy inbox, it's hard to tell which emails are already in SuperOffice without opening each one. With **Email archive status**, SuperOffice for Outlook adds an **Archived in SuperOffice** category to archived emails, so you can see at a glance in your Outlook message list what's done and what still needs attention.
+
+Email archive status is now available to all users, and no update or administrator action is needed. To start using it, turn on **Show archive category in Outlook** in settings.
 
 The category is added as you open and archive emails, whether you or a colleague archived them. It also works in shared mailboxes, so everyone on the team can see what's already archived. For a shared mailbox, someone with permission to manage its categories creates the category once.
 
@@ -226,6 +244,8 @@ With the add-in, you can:
 [6]: https://appsource.microsoft.com/en/product/office/wa200001597?tab=overview
 [7]: /integrations/superoffice-for-outlook/archive-reminder
 [8]: /integrations/superoffice-for-outlook/email-archive-status
+[9]: /integrations/superoffice-for-outlook/settings#email-type
+[10]: /integrations/superoffice-for-outlook/add-crm-data-to-event
 
 [img1]: /media/loc/en/release-notes/integrations/email-sofo-pin-contact-company-field.png
 [img2]: /media/loc/en/release-notes/integrations/sofo-install-online-onsite.png
