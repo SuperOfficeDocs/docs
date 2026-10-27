@@ -4,7 +4,7 @@ title: Requirements
 description: Requirements for SharePoint Documents
 keywords: ['SharePoint', 'document', 'Microsoft Entra', 'ME-ID', 'AAD', 'IDP']
 author: digitaldiina, fbhub, schildea
-date: 10.01.2026
+date: 10.20.2026
 content_type: reference
 category: integration
 topic: SharePoint documents
@@ -56,15 +56,17 @@ If your tenant doesn't allow users to approve apps themselves, a Global Administ
 
 ### When you need the system user {#system-user}
 
-The system user lets SuperOffice work with documents in the selected site without a signed-in user. Access is limited to that one site (`Sites.Selected`). See [Permissions for SuperOffice Document Library integration (app)][5].
+The system user lets SuperOffice work with documents in the selected site **without a signed-in Microsoft user**. Access is limited to that one site (`Sites.Selected`). See [Permissions for SuperOffice Document Library integration (app)][5].
+
+Documents are normally created and edited with the signed-in user's own Microsoft account. The system user is used when SuperOffice itself works with documents, that is, anything that runs as the SuperOffice system user and not as a person.
 
 The system user is **required** if you:
 
 * Use *Visible for*.
 * Migrate existing documents to SharePoint.
-* Use apps or integrations that create or update documents in SuperOffice.
+* Use apps, integrations, CRMScript, or automation (for example triggers, scheduled tasks, or workflows) that create, open, or update documents.
 
-We recommend you enable it even if you don't use *Visible for* now. You can then start using these features later without needing a Global Administrator again.
+If only people work with documents in SuperOffice, the system user isn't used. We still recommend enabling it, so you can start using these features later without needing a Global Administrator again.
 
 ### Additional requirements for Visible for {#visible-for}
 
