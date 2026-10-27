@@ -5,7 +5,7 @@ sidebarTitle: Add CRM data to events
 description: Link a meeting you're scheduling, or an existing calendar event, to SuperOffice contacts and companies so Synchronizer writes it to SuperOffice.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'calendar', 'meeting', 'event', 'appointment', 'CRM data', 'Synchronizer', 'auto save', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 10.20.2026
+date: 10.27.2026
 version_sofo: 2026.6.4
 content_type: howto
 category: integration
@@ -29,13 +29,23 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/add-crm-data-to-event
 ---
 
-Link a calendar event in Outlook to the right companies and contacts in SuperOffice. You can do this while you schedule a new meeting, or later on an event that's already in your calendar. SuperOffice for Outlook saves each field automatically as you fill it in, so there's no **Save** button. Synchronizer for SuperOffice then writes the event with its CRM data to SuperOffice.
+Link a calendar event in Outlook to the right companies and contacts in SuperOffice. You can do this while you schedule a new meeting, or later on an event that's already in your calendar. Your changes [save automatically][4], and Synchronizer for SuperOffice writes the event with its CRM data to SuperOffice.
 
 In this article, **event** means any calendar item in Outlook, matching the **New event** button. Microsoft defines a meeting as an event where you invite other people or reserve resources.
 
 ## Before you start {#prerequisites}
 
 You need a license for [Synchronizer for SuperOffice][2]. Without it, you can't add CRM data to calendar events.
+
+## Your changes save automatically {#auto-save}
+
+SuperOffice for Outlook saves the CRM data on the event field by field, so you don't need to remember to save before you send. This works the same for new and existing events, and there's no **Save** button.
+
+When you select a value in a field, a spinner appears, and then **Saved** shows above the field for a couple of seconds to confirm the change.
+
+* Values filled in automatically from the attendees are saved too, without the **Saved** confirmation.
+* The data is saved on the Outlook event. SuperOffice is updated when Synchronizer for SuperOffice synchronizes the event.
+* To change a value, select a different one. There's no undo.
 
 ## Add CRM data to a new event {#new-event}
 
@@ -47,13 +57,13 @@ You need a license for [Synchronizer for SuperOffice][2]. Without it, you can't 
 
     ![SuperOffice for Outlook, add CRM data to event -screenshot][img1]
 
-    * If an attendee is stored in SuperOffice, their details appear, and the **Company** and **Contact** fields are filled in automatically.
-    * If a contact is found but the **Contact** field isn't filled in, several contacts in SuperOffice share the same email address. Click **Select Contact** and choose the right one.
+    * If an attendee is stored in SuperOffice, their details appear, and **Contact or Company** is filled in automatically.
+    * If a contact is found but **Contact or Company** isn't filled in, several contacts in SuperOffice share the same email address. Click **Select Contact** and choose the right one.
     * If no contact is found, select **Click to add new contact** and enter the required details.
 
-1. Adjust the event details as needed, then send or save the event in Outlook.
+1. To link the event to a different company or contact, type part of the name in **Contact or Company** to narrow the list, then select the company or contact.
 
-    Changes in SuperOffice for Outlook are saved as you make them.
+1. Send the event in Outlook, or save it if you're not inviting anyone. You don't need to save anything in SuperOffice for Outlook.
 
 ## Add CRM data to an existing event {#existing-event}
 
@@ -64,6 +74,8 @@ You need a license for [Synchronizer for SuperOffice][2]. Without it, you can't 
 1. Review the CRM data shown for the attendees. If there's none, the add-in tries to find the organizer in SuperOffice.
 
 1. Select a contact, or add a new one, as described for a new event.
+
+1. Close the event when you're done. Your changes are already saved to the event.
 
 ## Event type {#type}
 
@@ -80,5 +92,6 @@ Events created in SuperOffice and synchronized to Outlook are view-only in Outlo
 [1]: ./get#open
 [2]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
 [3]: ./shared-mailboxes
+[4]: #auto-save
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-calendar-event.png
