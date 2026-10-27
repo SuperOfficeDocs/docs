@@ -3,7 +3,7 @@ title: User contexts
 uid: user-context
 description: "Learn the difference of and requirements for an interactive user session and non-interactive background services."
 author: Bergfrid Dias
-date: 09.14.2023
+date: 10.27.2026
 keywords: ['user context', 'session', 'application user', 'system user']
 content_type: concept
 deployment: online
@@ -86,7 +86,7 @@ System users have unlimited access to the database and are not subject to any se
 
 Applications that use OAuth2/OpenID Connect to authenticate users via the [Authorization Code flow][4], or Native App Flow, do receive a refresh token. The refresh token is (as of this writing) good for as long as the user is authorized to access the application, and can be securely stored on behalf of that user for subsequent API interaction.
 
-To use a refresh token, the application must issue a POST request to the **tokens** endpoint with the following details:
+To use a refresh token, the application must issue a POST request to the **tokens** endpoint, with the following details in the request body:
 
 * Client ID
 * Client secret
@@ -97,15 +97,12 @@ To use a refresh token, the application must issue a POST request to the **token
 An example POST request:
 
 ```http
-POST Request (can be tested in a client such as Postman or Fiddler)
+# can be tested in a client such as Postman or Fiddler
+
+POST https://sod.superoffice.com/login/common/oauth/tokens
 Content-Type: application/x-www-form-urlencoded
 
-https://sod.superoffice.com/login/common/oauth/tokens?
-client_id=f123b7d98f3c496fb5aaa4b1f54cawe6&
-client_secret=09d5f3bdf0afbc3bv9d0682e9b86lk89&
-redirect_uri=http://partner-app/callback&
-grant_type=refresh_token&
-refresh_token=t6XaHSHkTbB1234abcxyzExample
+client_id=f123b7d98f3c496fb5aaa4b1f54cawe6&client_secret=09d5f3bdf0afbc3bv9d0682e9b86lk89&redirect_uri=http://partner-app/callback&grant_type=refresh_token&refresh_token=t6XaHSHkTbB1234abcxyzExample
 ```
 
 The response contains the `access_token` necessary to issue in subsequent REST or SOAP requests.
