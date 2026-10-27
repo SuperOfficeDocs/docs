@@ -71,6 +71,7 @@ Current version: For the latest version numbers and release details for all prod
 See all the [new or updated apps][2]
 
 * [InZynk for SuperOffice][65] from InZynk (12.10.2026)
+* [SuperOffice for Trello][75] from SuperOffice AS (01.10.2026)
 * [Teams Notify][74] from SuperOffice AS (01.10.2026)
 * [SuperOffice for WordPress][70] from SuperOffice AS (01.10.2026)
 * [Zapier Integration][71] from SuperOffice AS (01.10.2026)
@@ -166,3 +167,4 @@ See all the [new or updated apps][2]
 [72]: https://appstore.superoffice.com/maestro-soft-as/send-to-signant
 [73]: https://appstore.superoffice.com/superoffice-as/places-for-superoffice
 [74]: https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams
+[75]: https://appstore.superoffice.com/superoffice-as/superoffice-for-trello
