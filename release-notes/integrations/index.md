@@ -45,7 +45,7 @@ Current version: For the latest version numbers and release details for all prod
 | ConnectERP | 163.0 | 05.10.2026 |
 | DataBridge | 163.0 | 05.10.2026 |
 | Panels | 73.0 | 14.09.2026 |
-| SharePoint Documents | 3.10 | 01.10.2026 |
+| SharePoint Documents | 3.11 | 27.10.2026 |
 | Slack Notify | 14.0 | 01.10.2026 |
 | SuperOffice AI Agents | 1.1.0 | 28.08.2026 |
 | SuperOffice AI Platform | 1.6 | 02.09.2026 |
