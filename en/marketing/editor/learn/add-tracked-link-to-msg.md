@@ -35,8 +35,8 @@ By setting up links that direct readers to various content on your website you c
 3. Select the text, image, or button that the recipient has to click.
 
 4. Add the tracked link.
-    * Text: Click <i class="ph ph-link" aria-label="Insert/edit link"></i> in the toolbar, select **Special links** > **Tracked links**, and select a link.
-    * Image or button: In the side-panel (under **Action**), select **Special links** > **Tracked links**, and select a link.
+    * Text: Click <i class="ph ph-link" aria-label="Insert/edit link"></i> in the toolbar. In the **Insert/Edit Link** dialog, select **Special Links** > **Tracked links**, and select a link.
+    * Image or button: In the side-panel (under **Action**), select **Special Links** > **Tracked links**, and select a link.
 
 5. Click **Save**. The link is inserted in the message.
 
