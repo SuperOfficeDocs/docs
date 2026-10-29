@@ -52,7 +52,7 @@ Current version: For the latest version numbers and release details for all prod
 | SuperOffice Copilot | 2.0 | 02.09.2026 |
 | SuperOffice for Gmail | 3.0 | 24.02.2026 |
 | SuperOffice for Mailchimp | 14.0 | 01.10.2026 |
-| SuperOffice for Outlook | 6.4.10 | 23.10.2026 |
+| SuperOffice for Outlook | 6.4.11 | 29.10.2026 |
 | SuperOffice for Teams | 1.0.2 | 01.10.2026 |
 | SuperOffice for Trello | 15.0 | 01.10.2026 |
 | SuperOffice for Wordpress | 14.0 | 01.10.2026 |
