@@ -3,8 +3,8 @@ uid: eol
 title: End-of-life notifications
 description: This section provides crucial notifications and information about products reaching their end-of-life stage. Stay informed about the status of services, features, and products as they transition or are phased out.
 keywords: ['end-of-life', 'EOL', 'phased out', 'discontinued', 'deprecated', 'legacy']
-author: digitaldiina
-date: 10.13.2026
+author: digitaldiina, kirstiaa
+date: 11.03.2026
 so_version: 12.2
 content_type: release-note
 language: en
@@ -30,14 +30,17 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
 | Exchange Online Synchronizer (Onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
+| SuperOffice MailLink | Phase-out initiated | 1 February, 2027 | Switch to [SuperOffice for Outlook][29]. |
 | [Places for SuperOffice][7] | Phase-out initiated | 31 March, 2027 | Company Insight, included in CRM Suite Growth, helps you create companies. See [Company Insight][8]. |
+| WebTools for Windows | Phase-out initiated | 1 May, 2027 | All versions from 12 and lower are discontinued. Make sure to update your [webtools][30] to the latest version before the mentioned date. |
+| WebTools for Mac | Phase-out initiated | 1 May, 2027 | All versions from 12 and lower are discontinued. Make sure to update your [webtools][30] to the latest version before the mentioned date. |
 | [SOAP proxy client and web service endpoints][13] | Phase-out initiated | Version 13 | Switch to [SuperOffice.WebApi][23] (REST). |
-| Business Card Scanner for Mobile CRM (onsite) | Phase-out initiated | September 1, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in Mobile CRM Online. |
 
 ## Archived end-of-life notices
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
+| Business Card Scanner for Mobile CRM (onsite) | Deprecated | 1 September, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in [Mobile CRM][28] Online. |
 | [Reporter Studio and reports][15] | Deprecated | Not supported from December 4, 2024 | Switch to [dashboards][26] and [selections][27]. |
 | [Microsoft 365 Document Integration (Sharepoint v1.0)][14] | Deprecated | Not supported from September 1, 2024 | Switch to [Super ID][24] and [SharePoint Documents][25]. |
 | [Lotus Notes Link][11] | Deprecated | Not supported from January 1, 2024 | Switch to [SuperOffice Inbox][21]. |
@@ -73,3 +76,6 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 [25]: /integrations/sharepoint-documents/migrate/index
 [26]: /en/search-options/selection/learn/index
 [27]: /en/dashboard/learn/index
+[28]: /en/mobile
+[29]: /integrations/superoffice-for-outlook/index
+[30]: /integrations/webtools/index
