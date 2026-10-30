@@ -32,8 +32,8 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 | Exchange Online Synchronizer (Onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
 | SuperOffice MailLink | Phase-out initiated | 1 February, 2027 | Switch to [SuperOffice for Outlook][29]. |
 | [Places for SuperOffice][7] | Phase-out initiated | 31 March, 2027 | Company Insight, included in CRM Suite Growth, helps you create companies. See [Company Insight][8]. |
-| WebTools for Windows | Phase-out initiated | 1 May, 2027 | All versions from 12 and down are discontinued. Make sure to update your [webtools][30] to the latest version before the mentioned date. |
-| WebTools for Mac | Phase-out initiated | 1 May, 2027 | All versions from 12 and down are discontinued. Make sure to update your [webtools][30] to the latest version before the mentioned date. |
+| WebTools for Windows | Phase-out initiated | 1 May, 2027 | All versions from 12 and lower are discontinued. Make sure to update your [webtools][30] to the latest version before the mentioned date. |
+| WebTools for Mac | Phase-out initiated | 1 May, 2027 | All versions from 12 and lower are discontinued. Make sure to update your [webtools][30] to the latest version before the mentioned date. |
 | [SOAP proxy client and web service endpoints][13] | Phase-out initiated | Version 13 | Switch to [SuperOffice.WebApi][23] (REST). |
 
 ## Archived end-of-life notices
