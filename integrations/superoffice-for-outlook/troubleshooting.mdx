@@ -30,11 +30,18 @@ userflow_index: true
 
 Some features require approval from your IT administrator in the [Microsoft Admin portal][1]. Once approved, it can take up to 72 hours before the add-in or feature becomes available in Outlook, and some users may see it earlier than others. If you still don't see it after 72 hours, contact your IT administrator. See [Centralized deployment][2].
 
-### A new feature is missing after an update {#missing-feature}
+### A new feature doesn't appear, such as the archive reminder or shared mailbox support {#missing-feature}
 
-Some new features require an updated add-in manifest, for example features that react when you send an email or that need additional Microsoft permissions. If your organization deployed SuperOffice for Outlook centrally from AppSource, the update isn't applied until your IT administrator accepts the updated manifest in the [Microsoft Admin portal][1]. If your organization uploaded the manifest itself (a custom install), the update doesn't arrive until your administrator uploads the latest manifest. In both cases the add-in looks up to date, but features that depend on the new manifest, such as shared mailboxes, don't work. Users who installed the add-in themselves from AppSource receive the update automatically.
+The feature needs a manifest update that hasn't reached you yet. Some features require an updated add-in manifest, for example features that react when you send an email or that need additional Microsoft permissions. The version number in **Settings** doesn't show this: it shows that you have the latest release, but the feature stays hidden until the manifest update reaches you.
 
-Ask your IT administrator to check for a pending update of SuperOffice for Outlook. For a custom install, ask them to apply the latest manifest, or to switch to the AppSource install. Once the update is accepted, allow up to 72 hours before the feature appears for everyone. See [Centralized deployment][8].
+Ask your Microsoft 365 administrator to check the following:
+
+* The update is approved in the [Microsoft 365 admin center][1]. After approval, it can take up to 72 hours to reach all users.
+* If your organization installed the add-in with its own manifest file or URL, the latest manifest is applied.
+
+Users who installed the add-in themselves from AppSource receive the update automatically.
+
+For details, see [Centralized deployment][8].
 
 ### You're asked to approve additional Microsoft permissions in a shared mailbox
 
