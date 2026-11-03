@@ -4,8 +4,8 @@ title: Archive reminder
 description: How the archive reminder works in SuperOffice for Outlook and what to do when the reminder appears.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'archive reminder', 'Smart Alerts', 'archive email', 'archive appointment', 'SOFO']
 author: schildea
-date: 08.27.2026
-version_sofo: 2026.6.3
+date: 10.27.2026
+version_sofo: 2026.6.4
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -58,7 +58,7 @@ You have three options:
 
 When you click **Send** on a meeting invitation and the required SuperOffice information is missing, an archive reminder appears.
 The reminder helps ensure that the meeting is connected to the correct company, contact, project, sale, or other SuperOffice records before it is sent.
-To continue, open SuperOffice for Outlook, complete the required information, and click **Save** before sending the meeting invitation.
+To continue, open SuperOffice for Outlook and complete the required information before sending the meeting invitation. Your changes save automatically.
 
 The dialog reads:
 
@@ -69,11 +69,11 @@ You have three options:
 | Option | What happens |
 |---|---|
 | **Don't send** | Sending is cancelled so you can review or update the meeting invite. SuperOffice for Outlook will not open automatically. |
-| **Open SuperOffice for Outlook** | SuperOffice for Outlook opens so you can select the company, contact, sale, project and other information before sending the meeting invite. Ensure to click **Save** in SuperOffice for Outlook, before sending the meeting invite. |
+| **Open SuperOffice for Outlook** | SuperOffice for Outlook opens so you can select the company, contact, sale, project and other information before sending the meeting invite. Your changes save automatically. |
 | **Send anyway** | The meeting invitation is sent without adding the missing SuperOffice information. |
 
 <Note>
-For meeting invites, SuperOffice information is first stored on the Outlook appointment when you click **Save** in SuperOffice for Outlook. Synchronizer then synchronizes this information to SuperOffice.
+For meeting invites, SuperOffice information is stored on the Outlook appointment as you fill it in. Synchronizer then synchronizes this information to SuperOffice. See [Your changes save automatically][3].
 </Note>
 
 ## When the archive reminder appears
@@ -107,5 +107,6 @@ See [Settings - Archive reminder][2] for a full description of each option.
 
 [1]: ./settings
 [2]: ./settings#archive-reminder
+[3]: ./add-crm-data-to-event#auto-save
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-email-archive-reminder-dialog.png
