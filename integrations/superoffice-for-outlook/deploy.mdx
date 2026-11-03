@@ -37,7 +37,7 @@ You can add SuperOffice for Outlook for your organization in two ways:
 | From Microsoft AppSource (recommended) | New features and fixes reach your users automatically. When an update needs new permissions, Microsoft notifies you in the Microsoft 365 admin center, and you approve it. |
 | Custom install (you upload the manifest file or add it from a URL) | New features and fixes reach your users automatically. Manifest updates aren't guaranteed to reach them. Apply each new manifest yourself. |
 
-The manifest is the file that tells Outlook what the add-in can do and which permissions it needs. SuperOffice updates it only occasionally, for example when a new feature needs new permissions. If your organization doesn't apply a manifest update, features that depend on it don't work, even though the add-in looks up to date. Shared mailbox support is one example.
+The manifest is the file that tells Outlook what the add-in can do and which permissions it needs. SuperOffice updates it only occasionally, when a new feature needs it. Until your organization applies the update, that feature doesn't appear for your users, even though the version number in SuperOffice for Outlook shows the latest release. For example, [shared mailbox support][21] and the [archive reminder][14] both needed a manifest update.
 
 {/* VERIFY-RAMUNAS V5: Where does an admin with a custom install get the latest manifest (published URL or file)? Add a sentence or link here. */}
 
@@ -91,3 +91,5 @@ For full step-by-step instructions, see [SuperOffice for Outlook: Authorization 
 [3]: https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide
 [5]: ./get
 [6]: https://community.superoffice.com/en/support-faqs/faq/superoffice-for-outlook-authorisation-guide/
+[14]: ./archive-reminder
+[21]: ./shared-mailboxes
