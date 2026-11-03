@@ -4,7 +4,7 @@ title: Add or update release notes
 description: How to add and update release notes across major versions, mobile, EOL announcements, and generated API and database notes.
 keywords: ['release notes', 'update component', 'anchors', 'mobile CRM', 'eol']
 author: digitaldiina
-date: 09.14.2026
+date: 11.03.2026
 content_type: howto
 related: false
 language: en
@@ -41,6 +41,12 @@ When stepping to a new major version:
 Use the release-notes-major-version [template][3].
 </Tip>
 
+### Set the date on each update
+
+The `description` on an `<Update>` is the release date readers see. Write it as `DD.MM.YYYY`, for example `04.11.2026` for 4 November 2026. This is how Norwegian readers expect to see dates. Use the same format on every Update component in *release-notes/*, including mobile, integrations, API, and database notes.
+
+The `date` in the page frontmatter is a different value. It's the date the file was last modified, written as `MM.DD.YYYY`. Don't convert one format to match the other.
+
 ### Badge map for feature headings
 
 Do not use a **Core CRM** badge or tag in SuperOffice 12 and newer, because it is easily confused with the CRM Suite Core tier. Features that don't belong to a module badge below get a plain heading.
@@ -57,7 +63,7 @@ Do not use a **Core CRM** badge or tag in SuperOffice 12 and newer, because it i
 Each minor update needs a persistent anchor:
 
 ```mdx
-<Update label="12.1" description="MM.DD.YYYY" tags={["Settings and maintenance"]}>
+<Update label="12.1" description="DD.MM.YYYY" tags={["Settings and maintenance"]}>
 <a id="12.1"></a>
 ```
 
@@ -84,7 +90,7 @@ For Mobile CRM:
 * Give the update a stable anchor the same way as SuperOffice 12 and newer:
 
   ```mdx
-  <Update label="11.2.0" description="MM.DD.YYYY" tags={["Diary"]}>
+  <Update label="11.2.0" description="DD.MM.YYYY" tags={["Diary"]}>
   <a id="11.2.0"></a>
   ```
 
