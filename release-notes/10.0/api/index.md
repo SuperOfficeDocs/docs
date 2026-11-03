@@ -4,7 +4,7 @@ title: API changes
 description: API changes released across the SuperOffice 10.0 update, including CRMScript triggers for quote approval, TicketAgent notifications, and a webhook fix for bulk updates.
 keywords: ['API changes']
 author: SuperOffice AS - Product and Engineering
-date: 03.14.2022
+date: 11.03.2026
 so_version: 10.0.7
 content_type: release-note
 category: api
@@ -18,7 +18,7 @@ noindex: true
 language: en
 ---
 
-<Update label="10.0.7" description="03.14.2022">
+<Update label="10.0.7" description="14.03.2022">
 
 ## API - CRMScript triggers for quote approval
 
@@ -33,7 +33,7 @@ New triggers in CRMScript called before/after saving a quote approval.
 
 </Update>
 
-<Update label="10.0.6" description="02.22.2022">
+<Update label="10.0.6" description="22.02.2022">
 
 ## API - SuperOffice.WebApi Agent with better testability
 
@@ -54,7 +54,7 @@ Password validation towards password policy has been added for change of passwor
 
 </Update>
 
-<Update label="10.0.5" description="01.25.2022">
+<Update label="10.0.5" description="25.01.2022">
 
 ## API - Webhooks sent for Bulk update changes
 
@@ -66,7 +66,7 @@ This change fixed a bug and now webhooks are sent by actions performed by Bulk u
 
 </Update>
 
-<Update label="10.0.1" description="10.20.2021">
+<Update label="10.0.1" description="20.10.2021">
 
 ## API - New license structure
 

@@ -5,7 +5,7 @@ sidebarTitle: "10.1.1-10.1.4"
 description: Release notes. What's new in SuperOffice 10.1
 keywords: ['API changes']
 author: SuperOffice AS - Product and Engineering
-date: 05.04.2022
+date: 11.03.2026
 so_version: 10.1.5
 content_type: release-note
 category: api
@@ -19,7 +19,7 @@ noindex: true
 language: en
 ---
 
-<Update label="10.1.5" description="09.02.2022">
+<Update label="10.1.5" description="02.09.2022">
 
 ## API - Quote Connector for Approval/Rejection
 
@@ -36,7 +36,7 @@ QuoteConnector plugins must implement new [IQuoteConnector2][1] interface to add
 
 </Update>
 
-<Update label="10.1.4" description="06.15.2022">
+<Update label="10.1.4" description="15.06.2022">
 
 ## API - CRMScript
 
@@ -61,7 +61,7 @@ Improvements to CRMScript:
 
 </Update>
 
-<Update label="10.1.3" description="06.15.2022">
+<Update label="10.1.3" description="15.06.2022">
 
 ## Breaking changes on Web.Api
 
@@ -78,7 +78,7 @@ SuperOffice.WebApi 10.1.3 breaking changes:
 
 </Update>
 
-<Update label="10.1.2" description="05.04.2022">
+<Update label="10.1.2" description="04.05.2022">
 
 ## API - Support for RSA encryption and decryption in CRMScript
 
