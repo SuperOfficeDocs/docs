@@ -18,7 +18,7 @@ language: en
 * [SuperOffice for Outlook][3] - 6.4.11 (29.10.2026)
   * Contact's sales and projects first - If **Show contextual projects and sales** is turned on in your SuperOffice for Outlook settings, the **Sale** and **Project** lists show the selected contact's sales and projects first, followed by the company's other sales and projects.
   * Former employees in the contact list - The contact list when archiving follows your SuperOffice CRM preference **Skip former employees**.
-* [SuperOffice for Outlook][3]- 6.4.9 (13.10.2026)
+* [SuperOffice for Outlook][3] - 6.4.9 (13.10.2026)
   * Calendar events save CRM data automatically - No separate save step when you add CRM data to a calendar event.
   * Default email type - Set your default incoming and outgoing email type in SuperOffice for Outlook, without opening SuperOffice CRM.
 * [SuperOffice for Outlook][3] - 6.4.8 (01.10.2026)
