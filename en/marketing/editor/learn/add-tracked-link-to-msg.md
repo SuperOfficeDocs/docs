@@ -30,19 +30,19 @@ By setting up links that direct readers to various content on your website you c
 
 1. Go to the **Content** screen in the mailing, or open a template for editing.
 
-2. If the tracked link doesn't exist yet, [create it][5]: click **Create new tracked link** at the bottom of the screen, fill in the **Link properties** dialog, and click **Save**. This adds the link to the list of tracked links. It doesn't add the link to the message.
+2. If the tracked link does not exist yet, [create it][5]. Select **Create new tracked link** in the footer of the editor, complete the **Link properties** dialog, and select **Save**. The link is now in the list of tracked links, but it is not yet added to the message.
 
 3. Select the text, image, or button that the recipient has to click.
 
 4. Add the tracked link.
-    * Text: Click <i class="ph ph-link" aria-label="Insert/edit link"></i> in the toolbar. In the **Insert/Edit Link** dialog, select **Special Links** > **Tracked links**, and select a link.
+    * Text: Select <i class="ph ph-link" aria-label="Insert/edit link"></i> in the toolbar. In the **Insert/Edit Link** dialog, select **Special Links** > **Tracked links**, select a link, and select **Save**.
     * Image or button: In the side-panel (under **Action**), select **Special Links** > **Tracked links**, and select a link.
 
-5. Click **Save**. The link is inserted in the message.
+    The link is inserted in the message.
 
 ## Tips
 
-After you add a tracked link, the **URL** field shows a code, for example `[[spmLink494]]`, instead of the web address. This is expected. The code points to the tracked link, and the recipient gets the correct web address.
+After you add a tracked link, the **URL** field shows a code, for example `[[spmLink494]]`, instead of a web address. This is expected. The code refers to the tracked link, and recipients are sent to the correct web address.
 
 You can add regular (untracked) links. For text links, click <i class="ph ph-link" aria-label="Link"></i> in the toolbar. For image links, use the **Image URL** field in the side-panel.
 
