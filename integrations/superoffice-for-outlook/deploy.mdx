@@ -3,8 +3,8 @@ uid: sofo-deploy
 title: Centralized deployment
 description: How to deploy SuperOffice for Outlook through the Microsoft 365 Admin Center or PowerShell.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'deploy', 'add-in', 'PowerShell', 'Microsoft 365 Admin Center', 'SOFO']
-author: Frode B, Martin Pavlas, Andrea Schilde
-date: 05.05.2026
+author: Frode B, Martin Pavlas, schildea
+date: 11.03.2026
 version_sofo: 6.3.0
 content_type: howto
 category: integration
@@ -28,6 +28,50 @@ You can perform centralized deployment through the Microsoft 365 Admin Center.
 Install for a single user instead? [Go to the user guide][5].
 </Tip>
 
+## Choose how to install {#install-options}
+
+You can add SuperOffice for Outlook for your organization in two ways:
+
+| Install method | How updates reach your users |
+| --- | --- |
+| From Microsoft AppSource (recommended) | New features and fixes reach your users automatically. When an update needs new permissions, Microsoft notifies you in the Microsoft 365 admin center, and you approve it. |
+| Custom install (you upload the manifest yourself) | New features and fixes reach your users automatically. Manifest updates don't. You must upload each new manifest yourself. |
+
+{/* VERIFY-RAMUNAS V4: Does a custom install via manifest URL also miss manifest updates, or only a file upload? Adjust the row text. */}
+
+The manifest is the file that tells Outlook what the add-in can do and which permissions it needs. SuperOffice updates it only occasionally, for example when a new feature needs new permissions. If your organization doesn't apply a manifest update, features that depend on it don't work, even though the add-in looks up to date. Shared mailbox support is one example.
+
+{/* VERIFY-RAMUNAS V5: Where does an admin with a custom install get the latest manifest (published URL or file)? Add a sentence or link here. */}
+
+## Approve manifest updates {#approve-updates}
+
+When a manifest update needs new permissions, a Microsoft 365 administrator must approve it before it reaches your users.
+
+1. Sign in to the Microsoft 365 admin center.
+1. Go to **Settings** > **Integrated apps**.
+1. Select **SuperOffice for Outlook** and accept the update.
+
+After you accept the update, it can take up to 72 hours to reach all users. Some users get it before others. This is expected.
+
+{/* VERIFY-RAMUNAS V7: 72 hours comes from the internal support guide; Ramunas said 24 to 72. Check against the Microsoft Learn figure and cite it in a reference link. Also verify the admin center labels against Learn. */}
+
+## Switch from a custom install to AppSource {#switch-to-appsource}
+
+If your organization uploaded the manifest itself, switch to the AppSource install so manifest updates reach you automatically.
+
+1. Note which users and groups have access to the add-in.
+1. In the Microsoft 365 admin center, remove the custom-installed SuperOffice for Outlook add-in.
+1. Deploy SuperOffice for Outlook from AppSource to the same users and groups. See [Microsoft's documentation][3].
+1. Allow up to 72 hours for the add-in to reach all users.
+
+<Tip>
+Make the switch outside working hours, for example before a weekend, so users aren't left without the add-in during the workday.
+</Tip>
+
+{/* VERIFY-RAMUNAS V1: Do user settings (archive preferences, reminder settings) survive the switch? Pending test by Karl Martin and Ramunas. Candidate text if yes: "Your users keep their SuperOffice for Outlook settings." If no: add a step telling admins to warn users to re-check their settings. */}
+{/* VERIFY-RAMUNAS V2: Is installing AppSource alongside the custom install blocked (same add-in ID)? If not blocked, document install-first-then-remove instead. */}
+{/* VERIFY-RAMUNAS V3: Does the admin center hide the AppSource listing while the custom install exists? Candidate text if yes: "If you can't find SuperOffice for Outlook in AppSource, remove the custom install first." */}
+
 ## Deploy via Microsoft 365 admin center
 
 To deploy SuperOffice for Outlook using the Microsoft 365 admin center, see [Microsoft's documentation][3].
@@ -45,10 +89,6 @@ Consent can be granted in three ways:
 If a user does not have admin rights, they can select **Return to the application without granting consent** in the dialog, then copy a link to share with their Microsoft 365 Global Administrator.
 
 For full step-by-step instructions, see [SuperOffice for Outlook: Authorization guide][6].
-
-<Note>
-When an update to an add-in increases the scope of data access, Microsoft may require the update to be re-approved before it is deployed.
-</Note>
 
 [3]: https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide
 [5]: ./get
