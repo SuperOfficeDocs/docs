@@ -15,11 +15,20 @@ language: en
 
 ## Product integrations updates
 
-* [SuperOffice for Outlook][3] - 6.4.7 (01.10.2026)
-  * Email archive status
+* [SuperOffice for Outlook][3] - 6.4.11 (29.10.2026)
+  * Contact's sales and projects first - If **Show contextual projects and sales** is turned on in your SuperOffice for Outlook settings, the **Sale** and **Project** lists show the selected contact's sales and projects first, followed by the company's other sales and projects.
+  * Former employees in the contact list - The contact list when archiving follows your SuperOffice CRM preference **Skip former employees**.
+* [SuperOffice for Outlook][3]- 6.4.9 (13.10.2026)
+  * Calendar events save CRM data automatically - No separate save step when you add CRM data to a calendar event.
+  * Default email type - Set your default incoming and outgoing email type in SuperOffice for Outlook, without opening SuperOffice CRM.
+* [SuperOffice for Outlook][3] - 6.4.8 (01.10.2026)
+  * Email archive status - See which emails are already archived directly in your mailbox
+* [SuperOffice for Outlook][3] - 6.4.6 (17.09.2026)
+  * Duplicate contact warning - Get a warning when more than one contact in SuperOffice has the same email address.
 * [SuperOffice for Outlook][3] - 6.4.4 (20.08.2026)
   * Stay informed with in-app announcements
-* [SuperOffice for Outlook][3] - 6.4.2 (19.08.2026)
+  * Calendar guidance for meeting attendees - Get a message when the selected contact or company doesn't match the meeting attendee.
+* [SuperOffice for Outlook][3] - 6.4.2 (18.08.2026)
   * Archive reminder when sending email
 * [SuperOffice for Outlook][3] - 6.3.5 (23.06.2026)
   * Search in the same field for company and contact
