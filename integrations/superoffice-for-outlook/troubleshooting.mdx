@@ -5,7 +5,7 @@ sidebarTitle: Troubleshooting
 description: Solutions to common issues in SuperOffice for Outlook.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'troubleshooting', 'add-in missing', 'permissions', 'consent', 'category missing', 'archive status not showing', 'shared mailbox category', 'SOFO']
 author: schildea
-date: 09.30.2026
+date: 11.03.2026
 version_sofo: 2026.6.4
 content_type: reference
 category: integration
@@ -32,9 +32,9 @@ Some features require approval from your IT administrator in the [Microsoft Admi
 
 ### A new feature is missing after an update {#missing-feature}
 
-Some new features require an updated add-in manifest, for example features that react when you send an email or that need additional Microsoft permissions. If your organization deployed SuperOffice for Outlook centrally, the update isn't applied until your IT administrator accepts the updated manifest in the [Microsoft Admin portal][1]. Users who installed the add-in themselves from AppSource receive the update automatically.
+Some new features require an updated add-in manifest, for example features that react when you send an email or that need additional Microsoft permissions. If your organization deployed SuperOffice for Outlook centrally from AppSource, the update isn't applied until your IT administrator accepts the updated manifest in the [Microsoft Admin portal][1]. If your organization uploaded the manifest itself (a custom install), the update doesn't arrive until your administrator uploads the latest manifest. In both cases the add-in looks up to date, but features that depend on the new manifest, such as shared mailboxes, don't work. Users who installed the add-in themselves from AppSource receive the update automatically.
 
-Ask your IT administrator to check for a pending update of SuperOffice for Outlook. Once accepted, allow up to 72 hours before the feature appears for everyone. See [Centralized deployment][2].
+Ask your IT administrator to check for a pending update of SuperOffice for Outlook. For a custom install, ask them to apply the latest manifest, or to switch to the AppSource install. Once the update is accepted, allow up to 72 hours before the feature appears for everyone. See [Centralized deployment][8].
 
 ### You're asked to approve additional Microsoft permissions in a shared mailbox
 
@@ -100,3 +100,4 @@ To use archive status again, recreate the category with the exact name **Archive
 [5]: ./settings#archive-reminder
 [6]: ./email-archive-status
 [7]: ./email-archive-status#shared-mailbox
+[8]: ./deploy#install-options
