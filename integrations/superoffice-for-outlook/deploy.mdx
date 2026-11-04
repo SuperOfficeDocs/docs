@@ -57,7 +57,7 @@ If your organization uploaded the manifest itself, switch to the AppSource insta
 
 1. Note which users and groups have access to the add-in.
 1. In the Microsoft 365 admin center, remove the custom-installed SuperOffice for Outlook add-in. You can't have both installed at the same time, because they use the same add-in ID.
-1. Deploy SuperOffice for Outlook from AppSource to the same users and groups. See [Microsoft's documentation][3].
+1. Deploy SuperOffice for Outlook from AppSource to the same users and groups. See [Deploy via Microsoft 365 admin center][10].
 1. Allow up to 72 hours for the add-in to reach all users.
 
 Your users keep their SuperOffice for Outlook settings.
@@ -66,9 +66,20 @@ Your users keep their SuperOffice for Outlook settings.
 Make the switch outside working hours, for example before a weekend, so users aren't left without the add-in during the workday.
 </Tip>
 
-## Deploy via Microsoft 365 admin center
+## Deploy via Microsoft 365 admin center {#deploy-admin-center}
 
-To deploy SuperOffice for Outlook using the Microsoft 365 admin center, see [Microsoft's documentation][3].
+1. Sign in to the Microsoft 365 admin center.
+1. Go to **Settings** > **Integrated apps**.
+1. Select the **Add-ins** link near the top of the page.
+1. Select **Deploy Add-In**.
+1. Under **Deploy from the Store**, select **Choose from the Store**.
+1. Search for SuperOffice for Outlook and follow the steps to deploy it.
+
+<Note>
+The **Add-ins** link is small and easy to miss. Don't use the **Get apps** button on the **Integrated apps** page: it doesn't list SuperOffice for Outlook.
+</Note>
+
+For more details, see [Microsoft's documentation][3].
 
 ## Approve shared mailbox permissions for users
 
@@ -87,5 +98,6 @@ For full step-by-step instructions, see [SuperOffice for Outlook: Authorization 
 [3]: https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide
 [5]: ./get
 [6]: https://community.superoffice.com/en/support-faqs/faq/superoffice-for-outlook-authorisation-guide/
+[10]: #deploy-admin-center
 [14]: ./archive-reminder
 [21]: ./shared-mailboxes
