@@ -2,10 +2,10 @@
 uid: help-de-mailing-add-tracked-link
 title: Überwachte Links zu einer Mitteilung hinzufügen
 sidebarTitle: "Überwachte Links"
-description: Es gibt zwei Möglichkeiten, Ihre Links einzurichten. Sie können entweder einen voreingestellten nachverfolgten Link verwenden, um Klicks über mehrere Kampagnen nachzuverfolgen, oder einen neuen Link einrichten, der nur in dieser Kampagne verfügbar ist. In dieser Anleitung lernen Sie, wie Sie einen überwachten Link hinzufügen.
-keywords: ['Marketing']
-author: SuperOffice Product and Engineering
-date: 09.26.2025
+description: Erfahren Sie, wie Sie einer Kampagne einen überwachten Link hinzufügen. Verwenden Sie entweder einen voreingestellten überwachten Link, um Klicks über mehrere Kampagnen hinweg zu verfolgen, oder richten Sie einen neuen Link ein, der nur in dieser Kampagne verfügbar ist.
+keywords: ['Marketing', 'Kampagne', 'überwachter Link', 'besonderer Link']
+author: digitaldiina, jeanettess
+date: 11.04.2026
 so_version: 10.5
 content_type: howto
 license: marketingessentials
@@ -15,10 +15,10 @@ audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /de/marketing/tracked-links/learn/add-tracked-link-to-msg
 related:
-  - /de/marketing/tracked-links/learn/create-links
+  - Überwachte Links erstellen: /de/marketing/tracked-links/learn/create-links
   - Verknüpfungsaktionen definieren: /de/marketing/tracked-links/learn/define-link-actions
-  - Die Mitteilung im Browser anzuzeigen: /de/marketing/editor/learn/add-link-to-display-message-in-browser
-  - /de/marketing/recipients/learn/manage-email-subscriptions
+  - Link zum Anzeigen der Nachricht im Browser: /de/marketing/editor/learn/add-link-to-display-message-in-browser
+  - Abonnements verwalten: /de/marketing/recipients/learn/manage-email-subscriptions
   - Abmeldelink (DSGVO): /de/marketing/editor/learn/add-unsubscribe-link
 language: de
 ---
@@ -31,24 +31,23 @@ Durch das Einrichten von Links, die Leser zu verschiedenen Inhalten auf Ihrer We
 
 1. Gehen Sie zum Schritt **Inhalt** in der Kampagne oder öffnen Sie eine Vorlage zum Bearbeiten.
 
-2. Wählen Sie den Text oder das Bild aus, worauf der Empfänger klicken muss.
+1. Falls der überwachte Link noch nicht existiert, [erstellen Sie ihn][5]. Klicken Sie unten im Editor auf **Neuen überwachten Link erstellen**, füllen Sie das Dialogfeld **Linkeigenschaften** aus, und klicken Sie auf **Speichern**. Der Link steht nun in der Liste der überwachten Links, wurde aber noch nicht zur Nachricht hinzugefügt.
 
-3. Link hinzyfügen:
+1. Wählen Sie den Text, das Bild oder die Schaltfläche aus, worauf der Empfänger klicken muss.
 
-    * So fügen Sie einen bestehenden überwachten Link hinzu:
+1. Fügen Sie den überwachten Link hinzu.
+    * Text: Klicken Sie in der Werkzeugleiste auf <i class="ph ph-link" aria-label="Insert/edit link"></i>. Wählen Sie im Dialogfeld **Link einfügen/bearbeiten** die Optionen **Besondere Links** > **Überwachte Links** und dann einen Link aus. Klicken Sie auf **Speichern**.
+    * Bild oder Schaltfläche: Wählen Sie in der Seitenleiste (unter **Aktion**) **Besondere Links** > **Überwachte Links** und dann einen Link aus.
 
-      * Text: Klicken Sie auf <i class="ph ph-link" aria-label="Insert/edit link"></i> > **Überwachte Links** und einen Link aus.
-      * Bild: In der Seitenleiste (unter **Aktion**) wählen Sie **Besondere Links** > **Überwachte Links** und einen Link aus.
-
-    * Klicken Sie unten in der Ansicht auf [Neuen überwachten Link erstellen][5], damit Sie einen **neuen überwachten Link erstellen** können. Das Dialogfeld **Linkeigenschaften** wird geöffnet.
-
-4. Klicken Sie auf **Speichern**. Der Link wird in die Nachricht eingefügt.
+    Der Link wird in die Nachricht eingefügt.
 
 ## Tipps
 
-Sie können reguläre (nicht überwachte) Links hinzufügen. Für Textlinks klicken Sie auf <i class="ph ph-link" aria-label="Insert/edit link"></i> Feld **Bild-URL** in der Seitenleiste.
+Nachdem Sie einen überwachten Link hinzugefügt haben, zeigt das Feld **URL** einen Code, zum Beispiel `[[spmLink494]]`, anstelle einer Webadresse. Das ist normal. Der Code verweist auf den überwachten Link, und die Empfänger werden zur richtigen Webadresse weitergeleitet.
 
-Wenn Sie später feststellen, diese Links ebenfalls überwachen, wählen Sie die Option **Alle Links überwachen** unter **überwachen** im Schritt 1: Einstellungen. Diese Links werden jedoch nur für die entsprechende Kampagne überwacht und sind nicht für andere Kampagnen verfügbar oder in Flows.
+Sie können reguläre (nicht überwachte) Links hinzufügen. Für Textlinks klicken Sie in der Werkzeugleiste auf <i class="ph ph-link" aria-label="Insert/edit link"></i>. Für Bildlinks verwenden Sie das Feld **Bild-URL** in der Seitenleiste.
+
+Wenn Sie später entscheiden, diese Links ebenfalls zu überwachen, wählen Sie unter **Tracking** im Schritt 1: Einstellungen die Option **Alle Links überwachen**. Diese Links werden jedoch nur für die entsprechende Kampagne überwacht und sind nicht für andere Kampagnen verfügbar oder in Flows.
 
 [5]: ../../tracked-links/learn/create-links
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png

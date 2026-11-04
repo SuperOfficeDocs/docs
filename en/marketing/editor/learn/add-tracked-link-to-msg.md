@@ -3,8 +3,8 @@ uid: help-en-mailing-add-tracked-link
 title: Add tracked links to message
 description: Learn how to add a tracked link to a mailing. Either use a preset tracked link to track clicks across several mailings or set up a new link only available in this mailing.
 keywords: ['Marketing', 'mailing', 'tracked link', 'special link']
-author: SuperOffice Product and Engineering, jeanettess
-date: 10.29.2026
+author: digitaldiina, jeanettess
+date: 11.04.2026
 so_version: 10.5
 content_type: howto
 license: marketingessentials
@@ -30,11 +30,11 @@ By setting up links that direct readers to various content on your website you c
 
 1. Go to the **Content** screen in the mailing, or open a template for editing.
 
-2. If the tracked link does not exist yet, [create it][5]. Select **Create new tracked link** in the footer of the editor, complete the **Link properties** dialog, and select **Save**. The link is now in the list of tracked links, but it is not yet added to the message.
+1. If the tracked link does not exist yet, [create it][5]. Select **Create new tracked link** in the footer of the editor, complete the **Link properties** dialog, and select **Save**. The link is now in the list of tracked links, but it is not yet added to the message.
 
-3. Select the text, image, or button that the recipient has to click.
+1. Select the text, image, or button that the recipient has to click.
 
-4. Add the tracked link.
+1. Add the tracked link.
     * Text: Select <i class="ph ph-link" aria-label="Insert/edit link"></i> in the toolbar. In the **Insert/Edit Link** dialog, select **Special Links** > **Tracked links**, select a link, and select **Save**.
     * Image or button: In the side-panel (under **Action**), select **Special Links** > **Tracked links**, and select a link.
 
