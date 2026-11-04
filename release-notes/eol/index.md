@@ -20,27 +20,27 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 ## Current end-of-life notices
 
-| Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
-|---|---|---|---|
-| [SuperOffice Service CompactMode][16] | No longer supported | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM][17]. |
-| [Pagebuilder][12] | No longer supported | The last supported version is 10.2.9 | Switch to [Screen Designer][22]. |
+| Announced | Product/Feature | EOL date | Relevant details |
+| --- | --- | --- | --- |
+| Nov 1, 2026 | [SOAP proxy client and web service endpoints][13] | Jan 31, 2027 | Applies to version 13. Switch to [SuperOffice.WebApi][23] (REST). |
+| Jul 1, 2026 | [Places for SuperOffice][7] | Mar 31, 2027 | Company Insight, included in CRM Suite Growth, helps you create companies. See [Company Insight][8]. |
 
 ## Upcoming end-of-life notices
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
-| Exchange Online Synchronizer (Onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
-| [Places for SuperOffice][7] | Phase-out initiated | 31 March, 2027 | Company Insight, included in CRM Suite Growth, helps you create companies. See [Company Insight][8]. |
-| [SOAP proxy client and web service endpoints][13] | Phase-out initiated | Version 13 | Switch to [SuperOffice.WebApi][23] (REST). |
+| Exchange Online Synchronizer (Onsite) | Phase-out initiated | December 31, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
 | Business Card Scanner for Mobile CRM (onsite) | Phase-out initiated | September 1, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in Mobile CRM Online. |
 
 ## Archived end-of-life notices
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
+| [SuperOffice Service CompactMode][16] | Deprecated | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM][17]. |
 | [Reporter Studio and reports][15] | Deprecated | Not supported from December 4, 2024 | Switch to [dashboards][26] and [selections][27]. |
 | [Microsoft 365 Document Integration (Sharepoint v1.0)][14] | Deprecated | Not supported from September 1, 2024 | Switch to [Super ID][24] and [SharePoint Documents][25]. |
 | [Lotus Notes Link][11] | Deprecated | Not supported from January 1, 2024 | Switch to [SuperOffice Inbox][21]. |
+| [Pagebuilder][12] | Deprecated | The last supported version is 10.2.9 | Switch to [Screen Designer][22]. |
 | Pagebuilder extensibility | Deprecated | Not supported on SuperOffice 10.x and newer. | [WebCustomizations breaking changes][5] |
 | SOAP interface of SuperOffice Service | Deprecated | Not supported in SuperOffice Online version 10.x and newer. | Switch to [SuperOffice.WebApi][23] (REST). |
 
