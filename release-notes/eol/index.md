@@ -38,6 +38,8 @@ _These are planned end-of-life notices to provide you with an early warning of f
 
 ## Archived end-of-life notices
 
+_These are past end-of-life notices for features and products that are no longer supported, along with recommended alternatives._
+
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
 | [SuperOffice Service CompactMode][16] | Deprecated | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM][17]. |
