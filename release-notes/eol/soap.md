@@ -34,13 +34,13 @@ Our SOAP offering comprises two key components: the [SOAP proxy client][3] and t
 
 Our [SuperOffice.NetServer.Services package][6], which includes the SOAP proxy client for communication with SuperOffice WCF-based SOAP web services, has played a vital role in our journey thus far.
 
-However, we have observed a significant decline in its usage since the introduction of the \[RESTful-based proxy client\]\[5\], SuperOffice.WebApi. These two clients offer nearly identical functionality, with SuperOffice.WebApi adopting a RESTful protocol approach. While there are some nuanced differences, detailed information is available in our \[SuperOffice Docs\]\[2\].
+However, we have observed a significant decline in its usage since the introduction of the [RESTful-based proxy client](/en/api/web-services/endpoints/rest-webapi/index), SuperOffice.WebApi. These two clients offer nearly identical functionality, with SuperOffice.WebApi adopting a RESTful protocol approach. While there are some nuanced differences, detailed information is available in our [SuperOffice Docs](/en/api/web-services/index).
 
 ## SOAP interface of SuperOffice Service module
 
-The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to \[SuperOffice.WebApi\]\[5\] (REST).
+The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to [SuperOffice.WebApi](/en/api/web-services/endpoints/rest-webapi/index) (REST).
 
-We encourage you to \[share your thoughts, concerns, and suggestions with us\]\[1\]. Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
+We encourage you to [share your thoughts, concerns, and suggestions with us](https://community.superoffice.com/en/technical/forums/general-forums/announcements/future-of-superoffice.netserver.services-package-and-soap-web-services/). Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
 
 Thank you for your continued trust and partnership with SuperOffice. Together, we can embrace this evolution in our technology stack and continue to deliver exceptional solutions to our customers.
 
