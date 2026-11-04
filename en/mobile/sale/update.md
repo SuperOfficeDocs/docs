@@ -2,7 +2,7 @@
 uid: mobile-crm-sale-update
 title: Update sale
 description: How to update a sale in SuperOffice Mobile CRM.
-keywords: ['open', 'sold', 'lost', 'stalled', 'stage', 'stakeholders', 'edit stakeholder', 'delete stakeholder']
+keywords: ['open', 'sold', 'lost', 'stalled', 'stage', 'stakeholder']
 author: digitaldiina
 date: 11.04.2026
 so_version: 11.1.19
@@ -58,20 +58,19 @@ When changing a sale's status, you can update additional information in the **De
 
 1. Tap **Save** to apply the changes.
 
-## <a id="manage-stakeholders"></a>Manage stakeholders on a sale
+## Manage stakeholders on a sale {#manage-stakeholders}
 
 Stakeholders are the people involved in a sale. Keep them up to date when someone joins the deal, leaves, or changes role.
 
 1. Open the sale.
-1. Tap the person symbol to display the stakeholders.
+1. Tap <i class="ph ph-user-circle" aria-label="Contact icon"></i> to display the stakeholders.
 
     ![Mobile CRM: Edit stakeholder -app-screen][img3]
 
 1. Do one of the following:
-    * To add a stakeholder, add a new stakeholder and select the person.
-    * To edit a stakeholder, tap the stakeholder and change the details.
-    * To delete a stakeholder, tap the stakeholder and delete it.
-1. Tap **Save**.
+    * To add a stakeholder, tap (+) and select the company and contact. Tap **Save**.
+    * To edit a stakeholder, swipe left on the stakeholder and tap <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>. Change the details and tap **Save**.
+    * To delete a stakeholder, swipe left on the stakeholder and tap <i class="ph ph-trash" aria-label="Trash icon"></i>.
 
 ## Link to an incoming request **Not yet available**
 
