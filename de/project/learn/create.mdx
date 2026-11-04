@@ -2,10 +2,10 @@
 uid: help-de-project-create
 title: Ein neues Projekt erstellen
 description: Wie man ein Projekt erstellt und bei der Arbeit noch besser organisiert ist.
-keywords: ['Projekt erstellen', 'neues Projekt', 'Projekt hinzufügen', 'Registerkarte Projekt', 'Projekt']
+keywords: ['Projekt erstellen', 'neues Projekt', 'Projekt hinzufügen', 'Registerkarte Projekt', 'Projekt', 'Projekt kopieren']
 author: Bergfrid Dias
-date: 02.11.2025
-so_version: 10.5.2
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
@@ -66,6 +66,32 @@ import MoreUdef from "../../learn/snippets/more-udef.md";
 
 1. Klicken Sie auf **Speichern**, um die Projektdetails zu speichern. Sie können nun [Projektmitglieder hinzufügen][5].
 
+## Vorhandenes Projekt kopieren {#copy}
+
+Sie können ein Projekt auch erstellen, indem Sie ein vorhandenes Projekt kopieren. Das ist nützlich für wiederkehrende Projekte, wie jährliche Veranstaltungen, Kampagnen oder das Onboarding von Kunden.
+
+1. Öffnen Sie das Projekt, das Sie kopieren möchten.
+
+1. Wählen Sie die Schaltfläche **Aufgabe** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) in der oberen rechten Ecke der Projektkarte und wählen Sie **Projekt kopieren**.
+
+    Sie können auch in einem Projektarchiv mit der rechten Maustaste auf ein Projekt klicken und **Projekt kopieren** wählen.
+
+1. Prüfen Sie das ursprüngliche Projekt unter **Von**. Diese Felder sind schreibgeschützt.
+
+    ![Dialogfeld Projekt kopieren mit den Bereichen Von, An und Kopieroptionen -screenshot][img2]
+
+1. Geben Sie unter **An** einen Namen für das neue Projekt ein. Der Projekttyp ist derselbe wie beim ursprünglichen Projekt und kann hier nicht geändert werden.
+
+1. Wählen Sie den **Verantwortlichen** für das neue Projekt aus.
+
+1. Aktivieren Sie unter **Kopieroptionen** die Elemente, die Sie kopieren möchten: **Projektmitglieder**, **Notiz**, **Verknüpfungen** und **Bild**.
+
+1. Wählen Sie **Kopieren**.
+
+Das neue Projekt übernimmt Projekttyp, Beschreibung, Weblinks und benutzerdefinierte Felder des ursprünglichen Projekts. Der Status beginnt beim ersten Status des Projekttyps, und das Enddatum wird aus der Dauer des Typs berechnet. Folgeaufgaben, Dokumente und der Fortschritt im Leitfaden bleiben beim ursprünglichen Projekt. Das Feld **Nicht in dieser Kopie enthalten** im Dialogfeld listet diese Angaben auf.
+
+Um weitere Angaben zu ändern, [bearbeiten Sie das neue Projekt][14], nachdem Sie es kopiert haben.
+
 ## Wichtige Felder erklärt {#fields}
 
 Die folgenden Felder sind auf der Projektkarte verfügbar. Einige Felder werden automatisch ausgefüllt, während andere manuell eingetragen werden müssen.
@@ -98,4 +124,6 @@ Falls der Projektname mit einem bestehenden Eintrag übereinstimmt oder diesem �
 [11]: ../../learn/basics/notes
 [12]: ../../custom-objects/learn/more-tab
 [13]: ../../customization/screen-designer/admin/index
+[14]: ./edit
 [img1]: ../../../media/loc/en/project/create-project.png
+[img2]: /media/loc/en/project/project-copy-project-dialog.png

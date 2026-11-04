@@ -2,10 +2,10 @@
 uid: help-no-sale-create
 title: Registrer et salg
 description: Registrer salg i SuperOffice Salg for å ha alle muligheter og kundeinformasjon på ett sted. Denne veiledningen viser deg hvordan du registrerer salg.
-keywords: ['opprett salg', 'nytt salg', 'legg til salg', 'registrer salg', 'salg']
+keywords: ['opprett salg', 'nytt salg', 'legg til salg', 'registrer salg', 'salg', 'kopier salg']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials
 tier: starter
@@ -53,6 +53,36 @@ Du kan opprette et salg i SuperOffice CRM ved å bruke **Ny**-knappen i topprade
     * Gå til fanen **Koblinger** for å [knytte aktiviteter, dokumenter eller nettsider][10] til salget.
 
 1. Klikk på **Lagre** for å lagre salget. Salgskortet er nå opprettet.
+
+## Kopier et eksisterende salg {#copy}
+
+Du kan også opprette et salg ved å kopiere et eksisterende salg. Dette sparer tid ved fornyelser, gjentatte ordrer og den samme salgsmuligheten for et annet firma.
+
+1. Åpne salget du vil kopiere.
+
+1. Velg **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) øverst til høyre på salgskortet, og velg **Kopier salg**.
+
+    Du kan også høyreklikke på et salg i en salgsliste og velge **Kopier salg**.
+
+1. Se gjennom det opprinnelige salget under **Fra**. Disse feltene er skrivebeskyttet.
+
+    ![Dialogboksen Kopier salg med det opprinnelige salget under Fra og det nye salget under Til – Nytt salg -screenshot][img2]
+
+1. Under **Til – Nytt salg** kan du endre navnet på det nye salget. Som standard legges COPY til på slutten av det opprinnelige navnet.
+
+1. (Valgfritt) Endre **Firma**, **Person** eller **Prosjekt**. Hvis du endrer firma, fjernes personen.
+
+1. Under **Kopieringsalternativer** slår du på elementene du vil kopiere: **Tilbud**, **Interessenter**, **Notat** og **Koblinger**. Alle alternativene er slått av som standard, og bare elementer som det opprinnelige salget har, vises. Et element som ikke kan kopieres, vises som **Ikke tilgjengelig**, med årsaken.
+
+1. Velg **Kopier**.
+
+    Hvis et element du har valgt, ikke lenger kan kopieres, velger du **Kopier likevel** eller **Tilbake**.
+
+    Hvis et element ikke kunne kopieres, blir det nye salget likevel opprettet. Velg **Behold salg** eller **Avbryt og slett salg**.
+
+Det nye salget er et åpent salg i den første fasen av salgstypen, med deg som eier. Beløp, inntjening og fortjeneste starter på null, med mindre du kopierer tilbudet. Aktiviteter, dokumenter og salgshistorikk blir værende på det opprinnelige salget. Boksen **Ikke inkludert i denne kopien** i dialogboksen viser disse opplysningene.
+
+Hvis du vil endre eier, salgstype, valuta eller dato, kan du [oppdatere det nye salget][13] etter at du har kopiert det.
 
 ## Viktige felter forklart {#fields}
 
@@ -103,4 +133,6 @@ Verdier for *Konkurrent* og *Kreditert* defineres i Innstillinger og vedlikehold
 [10]: ../../learn/basics/links
 [11]: ../../learn/basics/notes
 [12]: ../../custom-objects/learn/more-tab
+[13]: ./update
 [img1]: ../../../media/loc/en/sale/create-sale.png
+[img2]: /media/loc/en/sale/sale-copy-sale-dialog.png

@@ -2,10 +2,10 @@
 uid: help-sv-sale-create
 title: Registrera en försäljning
 description: Registrera försäljningar i SuperOffice Sales för att samla alla affärsmöjligheter och kunduppgifter på ett ställe. Den här guiden visar hur du registrerar en försäljning.
-keywords: ['skapa försäljning', 'ny försäljning', 'lägg till försäljning', 'registrera försäljning', 'försäljning']
+keywords: ['skapa försäljning', 'ny försäljning', 'lägg till försäljning', 'registrera försäljning', 'försäljning', 'kopiera försäljning']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials
 tier: starter
@@ -53,6 +53,36 @@ Du kan skapa en försäljning i SuperOffice CRM med hjälp av knappen **Nytt** i
     * Gå till fliken **Länkar** för att [koppla aktiviteter, dokument eller webbplatser][10] till försäljningen.
 
 1. Klicka på **Spara** för att lagra försäljningen. Försäljningskortet är nu skapat.
+
+## Kopiera en befintlig försäljning {#copy}
+
+Du kan också skapa en försäljning genom att kopiera en befintlig försäljning. Det sparar tid vid förnyelser, återkommande order och samma affärsmöjlighet för ett annat företag.
+
+1. Öppna försäljningen som du vill kopiera.
+
+1. Välj knappen **Uppgift** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) i det övre högra hörnet av försäljningskortet och välj **Kopiera försäljning**.
+
+    Du kan också högerklicka på en försäljning i en försäljningslista och välja **Kopiera försäljning**.
+
+1. Granska den ursprungliga försäljningen under **Från**. De här fälten är skrivskyddade.
+
+    ![Dialogrutan Kopiera försäljning med den ursprungliga försäljningen under Från och den nya försäljningen under Till – Ny försäljning -screenshot][img2]
+
+1. Under **Till – Ny försäljning** kan du ändra namnet på den nya försäljningen. Som standard läggs COPY till i slutet av det ursprungliga namnet.
+
+1. *(Valfritt)* Ändra **Företag**, **Kontakt** eller **Projekt**. Om du ändrar företag rensas kontakten.
+
+1. Under **Kopieringsalternativ** aktiverar du de objekt som du vill kopiera: **Offert**, **Intressenter**, **Anteckning** och **Länkar**. Alla alternativ är avstängda som standard, och endast objekt som den ursprungliga försäljningen har visas. Ett objekt som inte kan kopieras visas som **Inte tillgänglig**, med orsaken.
+
+1. Välj **Kopiera**.
+
+    Om ett objekt som du har valt inte längre kan kopieras väljer du **Kopiera ändå** eller **Tillbaka**.
+
+    Om ett objekt inte kunde kopieras skapas den nya försäljningen ändå. Välj **Behåll försäljning** eller **Avbryt och ta bort försäljning**.
+
+Den nya försäljningen är en öppen försäljning i den första fasen av försäljningstypen, med dig som ägare. Belopp, intäkt och vinst börjar på noll, om du inte kopierar offerten. Aktiviteter, dokument och försäljningshistorik stannar kvar på den ursprungliga försäljningen. Rutan **Ingår inte i den här kopian** i dialogrutan visar dessa uppgifter.
+
+Om du vill ändra ägare, försäljningstyp, valuta eller datum kan du [uppdatera den nya försäljningen][13] när du har kopierat den.
 
 ## Viktiga fält förklarade {#fields}
 
@@ -103,4 +133,6 @@ Värden för *Konkurrent* och *Tillfaller* definieras i Inställningar och under
 [10]: ../../learn/basics/links
 [11]: ../../learn/basics/notes
 [12]: ../../custom-objects/learn/more-tab
+[13]: ./update
 [img1]: ../../../media/loc/en/sale/create-sale.png
+[img2]: /media/loc/en/sale/sale-copy-sale-dialog.png
