@@ -2,10 +2,10 @@
 uid: help-nl-sale-create
 title: Een verkoop registreren
 description: Registreer verkopen in SuperOffice Sales om al uw verkoopkansen en klantinformatie op één plek te beheren. Deze gids laat u zien hoe u verkopen kunt registreren.
-keywords: ['verkoop aanmaken', 'nieuwe verkoop', 'verkoop toevoegen', 'verkoop registreren', 'verkoop']
+keywords: ['verkoop aanmaken', 'nieuwe verkoop', 'verkoop toevoegen', 'verkoop kopiëren']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials
 tier: starter
@@ -53,6 +53,36 @@ U kunt een verkoop registreren in SuperOffice CRM met de knop **Nieuw** in de bo
     * Ga naar het tabblad **Koppelingen** om [activiteiten, documenten of websites][10] te koppelen aan de verkoop.
 
 1. Klik op **Opslaan** om de verkoop op te slaan. De verkoopkaart is nu aangemaakt.
+
+## Een bestaande verkoop kopiëren {#copy}
+
+U kunt een verkoop ook maken door een bestaande verkoop te kopiëren. Dit bespaart tijd bij verlengingen, herhaalorders en dezelfde verkoopkans voor een ander bedrijf.
+
+1. Open de verkoop die u wilt kopiëren.
+
+1. Klik op de **Taak**-knop (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) in de rechterbovenhoek van de verkoopkaart en selecteer **Verkoop kopiëren**.
+
+    U kunt ook met de rechtermuisknop op een verkoop in een verkooplijst klikken en **Verkoop kopiëren** selecteren.
+
+1. Controleer de oorspronkelijke verkoop onder **Van**. Deze velden zijn alleen-lezen.
+
+    ![Het dialoogvenster Verkoop kopiëren met de oorspronkelijke verkoop onder Van en de nieuwe verkoop onder Naar – Nieuwe verkoop -screenshot][img2]
+
+1. Wijzig onder **Naar – Nieuwe verkoop** zo nodig de naam van de nieuwe verkoop. Standaard wordt COPY aan het einde van de oorspronkelijke naam toegevoegd.
+
+1. **Optioneel:** Wijzig het **Bedrijf**, de **Contactpersoon** of het **Project**. Als u het bedrijf wijzigt, wordt de contactpersoon gewist.
+
+1. Selecteer onder **Kopieeropties** de items die u wilt kopiëren: **Offerte**, **Belanghebbenden**, **Opmerking** en **Koppelingen**. Alle opties staan standaard uit, en alleen items die de oorspronkelijke verkoop heeft, worden weergegeven. Een item dat niet kan worden gekopieerd, wordt weergegeven als **Niet beschikbaar**, met de reden.
+
+1. Klik op **Kopiëren**.
+
+    Als een gekozen item niet meer kan worden gekopieerd, selecteert u **Toch kopiëren** of **Terug**.
+
+    Als een item niet kon worden gekopieerd, wordt de nieuwe verkoop toch aangemaakt. Selecteer **Verkoop behouden** of **Annuleren en verkoop verwijderen**.
+
+De nieuwe verkoop is een open verkoop in de eerste fase van het verkooptype, met u als eigenaar. Bedrag, opbrengst en winst beginnen bij nul, tenzij u de offerte kopieert. Activiteiten, documenten en verkoopgeschiedenis blijven bij de oorspronkelijke verkoop. Het vak **Niet opgenomen in deze kopie** in het dialoogvenster toont deze gegevens.
+
+Als u de eigenaar, het verkooptype, de valuta of de datum wilt wijzigen, [werkt u de nieuwe verkoop bij][13] nadat u deze hebt gekopieerd.
 
 ## Belangrijke velden uitgelegd {#fields}
 
@@ -103,4 +133,6 @@ De waarden voor *Concurrent* en *Gecrediteerd* worden gedefinieerd in Instelling
 [10]: ../../learn/basics/links
 [11]: ../../learn/basics/notes
 [12]: ../../custom-objects/learn/more-tab
+[13]: ./update
 [img1]: ../../../media/loc/en/sale/create-sale.png
+[img2]: /media/loc/en/sale/sale-copy-sale-dialog.png

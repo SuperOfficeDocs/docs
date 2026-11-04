@@ -2,10 +2,10 @@
 uid: help-en-project-create
 title: Create a new project
 description: How to create a project and be even more organized in your work.
-keywords: ['add project']
-author: Bergfrid Dias
-date: 01.03.2025
-so_version: 10
+keywords: ['add project', 'create project', 'copy project']
+author: digitaldiina
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
@@ -66,6 +66,32 @@ import MoreUdef from "../../learn/snippets/more-udef.md";
 
 1. Click **Save** to store the project details. You are now ready to [add project members][5].
 
+## Copy an existing project {#copy}
+
+You can also create a project by copying an existing one. This is useful for recurring projects, such as yearly events, campaigns, or customer onboarding.
+
+1. Open the project you want to copy.
+
+1. Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) in the upper-right corner of the Project card, and select **Copy project**.
+
+    You can also right-click a project in the [**Projects** section tab][15] and select **Copy project**.
+
+1. Review the original project under **From**. These fields are read-only.
+
+    ![The Copy project dialog with the From, To, and Copy Options sections -screenshot][img2]
+
+1. Under **To**, enter a name for the new project. The project type is the same as the original and cannot be changed here.
+
+1. Select who is **Responsible** for the new project.
+
+1. Under **Copy Options**, select the items you want to copy: **Project members**, **Note**, **Links**, and **Image**.
+
+1. Click **Copy**.
+
+The new project keeps the project type, description, web links, and custom fields of the original. The status starts at the first status of the project type, and the end date is calculated from the duration of the type. Activities, documents, and guide progress stay with the original project. The **Not included in this copy** box in the dialog lists these details.
+
+To change other details, [edit the new project][14] after you copy it.
+
 ## Key fields explained {#fields}
 
 The following fields are available in the Project card. Some fields are filled automatically, while others require input.
@@ -98,4 +124,7 @@ If the project name matches or is similar to an existing record, the  **Duplicat
 [11]: ../../learn/basics/notes
 [12]: ../../custom-objects/learn/more-tab
 [13]: ../../customization/screen-designer/admin/index
+[14]: ./edit
+[15]: ../../learn/section-tabs/projects-tab
 [img1]: /media/loc/en/project/create-project.png
+[img2]: /media/loc/en/project/project-copy-project-dialog.png

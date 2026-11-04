@@ -2,10 +2,10 @@
 uid: help-da-project-create
 title: Opret et nyt projekt
 description: Sådan opretter du et projekt, så du kan holde endnu bedre styr på tingene.
-keywords: ['opret projekt', 'nyt projekt', 'tilføj projekt', 'projekt']
-author: Bergfrid Dias
-date: 03.07.2025
-so_version: 10.5.2
+keywords: ['tilføj projekt', 'opret projekt', 'kopiér projekt']
+author: digitaldiina
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
@@ -66,6 +66,32 @@ import MoreUdef from "../../learn/snippets/more-udef.md";
 
 1. Klik på **Gem** for at gemme projektoplysningerne. Du er nu klar til at [tilføje projektdeltagere][5].
 
+## Kopiér et eksisterende projekt {#copy}
+
+Du kan også oprette et projekt ved at kopiere et eksisterende projekt. Det er nyttigt til tilbagevendende projekter, såsom årlige arrangementer, kampagner eller onboarding af kunder.
+
+1. Åbn det projekt, du vil kopiere.
+
+1. Klik på **Opgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) øverst til højre på projektkortet, og vælg **Kopiér projekt**.
+
+    Du kan også højreklikke på et projekt i [detaljekortet **Projekter**][15] og vælge **Kopiér projekt**.
+
+1. Gennemse det oprindelige projekt under **Fra**. Disse felter er skrivebeskyttede.
+
+    ![Dialogboksen Kopiér projekt med sektionerne Fra, Til og Kopieringsindstillinger -screenshot][img2]
+
+1. Under **Til** skal du indtaste et navn til det nye projekt. Projekttypen er den samme som i det oprindelige projekt og kan ikke ændres her.
+
+1. Vælg, hvem der er **Ansvarlig** for det nye projekt.
+
+1. Under **Kopieringsindstillinger** skal du vælge de elementer, du vil kopiere: **Projektdeltagere**, **Bemærkning**, **Links** og **Billede**.
+
+1. Klik på **Kopiér**.
+
+Det nye projekt beholder projekttypen, beskrivelsen, weblinks og brugerdefinerede felter fra det oprindelige projekt. Status starter ved den første status for projekttypen, og slutdatoen beregnes ud fra typens varighed. Aktiviteter, dokumenter og fremskridt i guiden forbliver på det oprindelige projekt. Boksen **Ikke inkluderet i denne kopi** i dialogboksen viser disse oplysninger.
+
+Hvis du vil ændre andre oplysninger, skal du [redigere det nye projekt][14], når du har kopieret det.
+
 ## Vigtige felter forklaret {#fields}
 
 Følgende felter findes på projektkortet. Nogle felter udfyldes automatisk, mens andre kræver input.
@@ -98,4 +124,7 @@ Hvis projektnavnet matcher eller ligner en eksisterende post, vises dialogboksen
 [11]: ../../learn/basics/notes
 [12]: ../../custom-objects/learn/more-tab
 [13]: ../../customization/screen-designer/admin/index
+[14]: ./edit
+[15]: ../../learn/section-tabs/projects-tab
 [img1]: ../../../media/loc/en/project/create-project.png
+[img2]: /media/loc/en/project/project-copy-project-dialog.png

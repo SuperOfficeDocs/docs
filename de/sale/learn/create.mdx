@@ -2,10 +2,10 @@
 uid: help-de-sale-create
 title: Verkauf erfassen
 description: Erfassen Sie Verkäufe in SuperOffice Sales, um alle Verkaufschancen und Kundeninformationen an einem Ort zu speichern. Diese Anleitung zeigt Ihnen, wie Sie Verkäufe erfassen.
-keywords: ['Verkauf erstellen', 'neuer Verkauf', 'Verkauf hinzufügen', 'Verkauf erfassen', 'Verkauf']
+keywords: ['Verkauf erstellen', 'neuer Verkauf', 'Verkauf hinzufügen', 'Verkauf kopieren']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials
 tier: starter
@@ -13,7 +13,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - /de/sale/learn/quote/create
-  - Verkauf aktualisieren: /de/sale/learn/update
+  - /de/sale/learn/update
   - Mit Verkaufsleitfäden arbeiten: /de/sale/learn/sales-guides
 language: de
 ---
@@ -53,6 +53,36 @@ Sie können einen Verkauf in SuperOffice CRM über die Schaltfläche **Neu** in 
     * Wechseln Sie zur Registerkarte **Verknüpfungen**, um [Folgeaufgaben, Dokumente oder Webseiten mit dem Verkauf zu verknüpfen][10].
 
 1. Klicken Sie auf **Speichern**, um den Verkauf zu speichern. Die Verkaufskarte ist nun erstellt.
+
+## Vorhandenen Verkauf kopieren {#copy}
+
+Sie können einen Verkauf auch erstellen, indem Sie einen vorhandenen Verkauf kopieren. Das spart Zeit bei Verlängerungen, Folgeaufträgen und derselben Verkaufschance für eine andere Firma.
+
+1. Öffnen Sie den Verkauf, den Sie kopieren möchten.
+
+1. Klicken Sie auf die Schaltfläche **Aufgabe** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) in der oberen rechten Ecke der Verkaufskarte und wählen Sie **Verkauf kopieren**.
+
+    Sie können auch in einer Verkaufsliste mit der rechten Maustaste auf einen Verkauf klicken und **Verkauf kopieren** wählen.
+
+1. Prüfen Sie den ursprünglichen Verkauf unter **Von**. Diese Felder sind schreibgeschützt.
+
+    ![Dialogfeld Verkauf kopieren mit dem ursprünglichen Verkauf unter Von und dem neuen Verkauf unter An – Neuer Verkauf -screenshot][img2]
+
+1. Ändern Sie unter **An – Neuer Verkauf** bei Bedarf den Namen des neuen Verkaufs. Standardmäßig wird COPY an das Ende des ursprünglichen Namens angehängt.
+
+1. *(Optional)* Ändern Sie **Firma**, **Person** oder **Projekt**. Wenn Sie die Firma ändern, wird die Person entfernt.
+
+1. Wählen Sie unter **Kopieroptionen** die Elemente aus, die Sie kopieren möchten: **Angebot**, **Beteiligte**, **Notiz** und **Verknüpfungen**. Alle Optionen sind standardmäßig deaktiviert, und es werden nur Elemente angezeigt, die der ursprüngliche Verkauf enthält. Ein Element, das nicht kopiert werden kann, wird als **Nicht verfügbar** mit dem Grund angezeigt.
+
+1. Klicken Sie auf **Kopieren**.
+
+    Wenn ein ausgewähltes Element nicht mehr kopiert werden kann, wählen Sie **Trotzdem kopieren** oder **Zurück**.
+
+    Wenn ein Element nicht kopiert werden konnte, wird der neue Verkauf trotzdem erstellt. Wählen Sie **Verkauf behalten** oder **Abbrechen und Verkauf löschen**.
+
+Der neue Verkauf ist ein offener Verkauf in der ersten Stufe seines Verkaufstyps, und Sie sind der Eigentümer. Betrag, Ertrag und Gewinn beginnen bei null, es sei denn, Sie kopieren das Angebot. Folgeaufgaben, Dokumente und Verkaufsverlauf bleiben beim ursprünglichen Verkauf. Das Feld **Nicht in dieser Kopie enthalten** im Dialogfeld listet diese Angaben auf.
+
+Um Eigentümer, Verkaufstyp, Währung oder Datum zu ändern, [aktualisieren Sie den neuen Verkauf][13], nachdem Sie ihn kopiert haben.
 
 ## Wichtige Felder erklärt {#fields}
 
@@ -107,4 +137,6 @@ Werte für *Wettbewerber* und *Gutschrift* werden in Einstellungen und Verwaltun
 [10]: ../../learn/basics/links
 [11]: ../../learn/basics/notes
 [12]: ../../custom-objects/learn/more-tab
+[13]: ./update
 [img1]: ../../../media/loc/en/sale/create-sale.png
+[img2]: /media/loc/en/sale/sale-copy-sale-dialog.png
