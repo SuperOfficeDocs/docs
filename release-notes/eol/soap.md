@@ -48,6 +48,10 @@ Should you have any questions or require further information, please do not hesi
 
 You can read and comment on the [additional community post][1] in the SuperOffice technical forum.
 
+## Related topics
+
+- [End-of-life notifications](/release-notes/eol/index)
+
 [1]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/future-of-superoffice.netserver.services-package-and-soap-web-services/
 
 [2]: /en/api/web-services/index
