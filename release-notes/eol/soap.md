@@ -34,29 +34,31 @@ Our SOAP offering comprises two key components: the [SOAP proxy client][3] and t
 
 Our [SuperOffice.NetServer.Services package][6], which includes the SOAP proxy client for communication with SuperOffice WCF-based SOAP web services, has played a vital role in our journey thus far.
 
-However, we have observed a significant decline in its usage since the introduction of the \[RESTful-based proxy client\]\[5\], SuperOffice.WebApi. These two clients offer nearly identical functionality, with SuperOffice.WebApi adopting a RESTful protocol approach. While there are some nuanced differences, detailed information is available in our \[SuperOffice Docs\]\[2\].
+However, we have observed a significant decline in its usage since the introduction of the [RESTful-based proxy client][5], SuperOffice.WebApi. These two clients offer nearly identical functionality, with SuperOffice.WebApi adopting a RESTful protocol approach. While there are some nuanced differences, detailed information is available in our [SuperOffice Docs][2].
 
-## SOAP interface of SuperOffice Service
+<Accordion title="Previous early announcement details">
+  ## SOAP interface of SuperOffice Service
 
-The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to \[SuperOffice.WebApi\]\[5\] (REST).
+  The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to [SuperOffice.WebApi][5] (REST).
 
-## Migration status
+  ## Migration status
 
-We are pleased to inform you that all SuperOffice applications have either completed their migration away from using the assemblies within the SuperOffice.NetServer.Services package or are currently in the process of doing so. This transition has also involved the move from .NET Framework to .NET Standard 2.0, where we replaced legacy NETFramework 4.8 WCF dependencies with CoreWCF.
+  We are pleased to inform you that all SuperOffice applications have either completed their migration away from using the assemblies within the SuperOffice.NetServer.Services package or are currently in the process of doing so. This transition has also involved the move from .NET Framework to .NET Standard 2.0, where we replaced legacy NETFramework 4.8 WCF dependencies with CoreWCF.
 
-## Eliminating SOAP support
+  ## Eliminating SOAP support
 
-As part of our ongoing efforts, we have a strong **desire to completely eliminate our SOAP offering when SuperOffice reaches version 13**. While we acknowledge that this transition may not be immediate for all partners and integration customers, it represents our vision for the future of our platform where we would like to offer services in alignment with current trends.
+  As part of our ongoing efforts, we have a strong **desire to completely eliminate our SOAP offering when SuperOffice reaches version 13**. While we acknowledge that this transition may not be immediate for all partners and integration customers, it represents our vision for the future of our platform where we would like to offer services in alignment with current trends.
 
-Your input and feedback are of great importance to us, and we believe in fostering a collaborative environment where your insights help shape our decisions. We understand that change can be challenging, and we are committed to supporting you throughout this transition.
+  Your input and feedback are of great importance to us, and we believe in fostering a collaborative environment where your insights help shape our decisions. We understand that change can be challenging, and we are committed to supporting you throughout this transition.
 
-We encourage you to \[share your thoughts, concerns, and suggestions with us\]\[1\]. Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
+  We encourage you to [share your thoughts, concerns, and suggestions with us][1]. Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
+</Accordion>
 
 Thank you for your continued trust and partnership with SuperOffice. Together, we can embrace this evolution in our technology stack and continue to deliver exceptional solutions to our customers.
 
 Should you have any questions or require further information, please do not hesitate to reach out to us.
 
-You can read and comment on the \[additional community post\]\[1\] in the SuperOffice technical forum.
+You can read and comment on the [additional community post][1] in the SuperOffice technical forum.
 
 [1]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/future-of-superoffice.netserver.services-package-and-soap-web-services/
 
