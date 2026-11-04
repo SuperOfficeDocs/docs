@@ -2,21 +2,12 @@
 mode: "custom"
 title: "SuperOffice Docs"
 recent_pages:
-  - path: "/release-notes/12"
+  - path: /release-notes/12
     pinned: true
-    since: "08.27.2026"
-  - path: "/en/marketing"
-    since: "08.24.2026"
-    title: "Marketing landing page"
-  - path: "/en/automation/webhook"
-    since: "06.15.2026"
-    title: "Webhooks administration"
-  - path: "/en/marketing/forms/admin/form-field-restrictions"
-    since: "06.15.2026"
-  - path: "/en/request/admin/relation-rules"
-    since: "06.15.2026"
-  - path: "/en/request/learn/request-relations"
-    since: "06.15.2026"
+    since: 08.27.2026
+  - path: /en/marketing
+    since: 08.24.2026
+    title: Marketing landing page
 ---
 
 import CustomFooter from '/components/custom-mode-footer.mdx'
@@ -122,17 +113,10 @@ import RecentPages from '/components/recent-pages.jsx'
   <div id="home-whats-new" className="my-12">
     <Columns cols={2}>
       <Card title="New content">
-        <RecentPages
-          items={[
-{ path: "/release-notes/12", title: "What's new in SuperOffice 12", since: "09.18.2026", pinned: true },
-{ path: "/en/ai/learn/data-quality-agent", title: "Data Quality Agent", since: "09.30.2026" },
-{ path: "/en/ai/learn/duplicate-agent", title: "Duplicate Agent", since: "09.30.2026" },
-{ path: "/en/ai/admin", title: "Set up AI services", since: "09.30.2026" },
-{ path: "/en/ai/learn/lead-agent", title: "Lead Agent", since: "09.30.2026" },
-{ path: "/en/ai/learn/set-up-ai-agents", title: "Set up AI agents", since: "09.30.2026" },
-{ path: "/en/lead/learn/set-up-lead-agent", title: "Set up Lead Agent", since: "09.30.2026" },
-]}
-        />
+        <RecentPages items={[
+  { path: "/release-notes/12", title: "What's new in SuperOffice 12", since: "08.27.2026", pinned: true },
+  { path: "/en/marketing", title: "Marketing landing page", since: "08.24.2026" },
+]} />
       </Card>
 
       <div id="home-team-photo">
