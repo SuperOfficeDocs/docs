@@ -26,7 +26,7 @@ _These are the active upcoming sunsetting announcements._
 | --- | --- | --- | --- |
 | Nov 1, 2026 | [SOAP proxy client and web service endpoints][13] | Jan 31, 2027 | Applies to version 13. Switch to [SuperOffice.WebApi][23] (REST). |
 | Jul 1, 2026 | [Places for SuperOffice][7] | Mar 31, 2027 | Company Insight, included in CRM Suite Growth, helps you create companies. See [Company Insight][8]. |
-|  | Exchange Online Synchronizer (Onsite) | Dec 31, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
+| Apr 1, 2026 | Exchange Online Synchronizer (Onsite) | Dec 31, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
 
 ## Upcoming end-of-life notices
 
