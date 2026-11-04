@@ -2,10 +2,10 @@
 uid: help-sv-follow-up-edit
 title: Redigera händelse
 description: Hur du öppnar, redigerar eller tar bort en händelse. Ändra sluttid för en händelse i kalendern. Redigera eller ta bort en inbjudan. Redigera återkommande händelse.
-keywords: ['redigera händelse', 'uppdatera händelse', 'förläng möte', 'förkorta möte', 'ändra endast denna förekomst', 'ta bort händelse', 'avboka möte', 'kalender', 'händelse', 'bokning', 'möte', 'uppgift', 'att göra', 'samtal', 'telefon', 'inbjudan', 'externt ägd händelse', 'ta bort synkroniserad händelse']
+keywords: ['redigera händelse', 'uppdatera händelse', 'förläng möte', 'förkorta möte', 'ändra endast denna förekomst', 'ta bort händelse', 'avboka möte', 'kalender', 'händelse', 'bokning', 'möte', 'uppgift', 'att göra', 'samtal', 'telefon', 'inbjudan', 'externt ägd händelse', 'ta bort synkroniserad händelse', 'skapad i', 'synkroniserad händelse']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -94,6 +94,10 @@ Du kan ta bort möten som skapats i Outlook eller Gmail i SuperOffice när de ä
 Användare med den [funktionella behörigheten][7] **Delete externally owned follow-ups**, vanligtvis administratörer, kan ta bort händelser som har synkroniserats från en extern kalender, till exempel överblivna, dubbla eller föråldrade händelser, med standardåtgärden **Ta bort**. Borttagningen loggas. Behörigheten ger inte möjlighet att redigera, så dessa händelser förblir skrivskyddade. Den externa kalendern är fortfarande den styrande källan: Om det ursprungliga objektet fortfarande finns och ligger inom synkroniseringens omfattning skapas händelsen på nytt vid nästa synkronisering. Detta gäller för alla externa kalendersystem som stöds.
 
 <TipDeletion />
+
+<Tip>
+Använd sökkriteriet **Created in** i **Sök**, i urval eller i detaljkortet **Aktiviteter** för att hitta synkroniserade händelser. Välj var händelserna har skapats, till exempel Outlook eller Google Calendar, eller exkludera dem för att bara se händelser som har skapats i SuperOffice. Spara resultaten som ett urval och ta bort dem samlat. Du kan också visa **Created in** som en kolumn i händelselistor.
+</Tip>
 
 [3]: ./create-follow-up#fields
 [7]: /sv/admin/user-management/role/functional-rights

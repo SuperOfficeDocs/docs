@@ -2,10 +2,10 @@
 uid: help-nl-follow-up-edit
 title: Vervolgactiviteit bewerken
 description: Openen, bewerken of verwijderen van een vervolgactiviteit; de eindtijd van een vervolgactiviteit in de agenda wijzigen; uitnodiging bewerken of verwijderen; herhalende vervolgactiviteit bewerken
-keywords: ['vervolgactiviteit bewerken', 'afspraak bijwerken', 'vergadering verlengen', 'vergadering inkorten', 'alleen deze instantie wijzigen', 'vervolgactiviteit verwijderen', 'vergadering annuleren', 'agenda', 'vervolgactiviteit', 'afspraak', 'vergadering', 'taak', 'takenlijst', 'telefoongesprek', 'uitnodiging', 'extern beheerde vervolgactiviteit', 'gesynchroniseerde vervolgactiviteit verwijderen']
+keywords: ['vervolgactiviteit bewerken', 'afspraak bijwerken', 'vergadering verlengen', 'vergadering inkorten', 'alleen deze instantie wijzigen', 'vervolgactiviteit verwijderen', 'vergadering annuleren', 'agenda', 'vervolgactiviteit', 'afspraak', 'vergadering', 'taak', 'takenlijst', 'telefoongesprek', 'uitnodiging', 'extern beheerde vervolgactiviteit', 'gesynchroniseerde vervolgactiviteit verwijderen', 'aangemaakt in', 'gesynchroniseerde vervolgactiviteit']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -94,6 +94,10 @@ U kunt vergaderingen die zijn gemaakt in Outlook of Gmail in SuperOffice verwijd
 Gebruikers met het [functionele recht][7] **Delete externally owned follow-ups**, meestal beheerders, kunnen vervolgactiviteiten die zijn gesynchroniseerd vanuit een externe agenda, bijvoorbeeld verweesde, dubbele of verouderde, verwijderen met de standaardactie **Verwijderen**. De verwijdering wordt vastgelegd in het logboek. Het recht staat bewerken niet toe, dus deze vervolgactiviteiten blijven alleen-lezen. De externe agenda blijft de leidende bron: als het oorspronkelijke item nog bestaat en binnen het synchronisatiebereik valt, wordt de vervolgactiviteit bij de volgende synchronisatie opnieuw aangemaakt. Dit werkt voor alle ondersteunde externe agendasystemen.
 
 <TipDeletion />
+
+<Tip>
+Gebruik het zoekcriterium **Created in** in **Zoeken**, in selecties of op het sectietabblad **Activiteiten** om gesynchroniseerde vervolgactiviteiten te vinden. Kies waar de vervolgactiviteiten zijn aangemaakt, bijvoorbeeld Outlook of Google Calendar, of sluit ze uit om alleen vervolgactiviteiten te zien die in SuperOffice zijn aangemaakt. Sla de resultaten op als selectie en verwijder ze in bulk. U kunt **Created in** ook als kolom weergeven in lijsten met vervolgactiviteiten.
+</Tip>
 
 [3]: ./create-follow-up#fields
 [7]: /nl/admin/user-management/role/functional-rights

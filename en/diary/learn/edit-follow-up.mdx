@@ -2,10 +2,10 @@
 uid: help-en-follow-up-edit
 title: Edit follow-up
 description: How to open, edit, or delete a follow-up; Change the end time for a follow-up in the Diary; Edit or delete invitation; Edit repeating follow-up
-keywords: ['update follow-up', 'extend meeting', 'shorten meeting', 'change only this instance', 'delete follow-up', 'cancel meeting', 'diary', 'appointment', 'meeting', 'task', 'to-do', 'call', 'phone', 'invitation', 'externally owned follow-up', 'delete synchronized follow-up']
+keywords: ['update follow-up', 'extend meeting', 'shorten meeting', 'change only this instance', 'delete follow-up', 'cancel meeting', 'diary', 'appointment', 'meeting', 'task', 'to-do', 'call', 'phone', 'invitation', 'externally owned follow-up', 'delete synchronized follow-up', 'created in', 'synchronized follow-up']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -94,6 +94,10 @@ You can delete meetings created in Outlook or Gmail in SuperOffice once they are
 Users with the [functional right][7] **Delete externally owned follow-ups**, typically administrators, can delete follow-ups synchronized from an external calendar, for example orphaned, duplicate, or obsolete ones, with the standard **Delete** action. The deletion is logged. The right does not allow editing, so these follow-ups remain read-only. The external calendar remains the source of truth: if the original item still exists and is within the synchronization scope, the follow-up is recreated at the next synchronization. This works for all supported external calendar systems.
 
 <TipDeletion />
+
+<Tip>
+To find synchronized follow-ups, use the **Created in** search criterion in **Find**, in selections, or in the **Activities** section tab. Choose where the follow-ups were created, for example Outlook or Google Calendar, or exclude them to see only follow-ups created in SuperOffice. Save the results as a selection, then delete them in bulk. You can also show **Created in** as a column in follow-up lists.
+</Tip>
 
 [3]: ./create-follow-up#fields
 [7]: /en/admin/user-management/role/functional-rights
