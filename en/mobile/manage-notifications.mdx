@@ -2,10 +2,10 @@
 uid: mobile-crm-notifications
 title: Manage notifications
 description: How to manage notifications in SuperOffice Mobile CRM.
-keywords: ['notification on mobile', 'mobile notifications', 'push notification', 'notification settings', 'notification']
+keywords: ['notification on mobile', 'mobile notifications', 'push notification', 'notification settings', 'notification', 'notification list', 'unseen notifications', 'quote notifications']
 author: digitaldiina
-date: 06.10.2026
-so_version: 11.1
+date: 11.04.2026
+so_version: 11.1.19
 content_type: howto
 tier: core
 platform: mobile
@@ -16,7 +16,21 @@ related:
 language: en
 ---
 
-Control which push notifications you receive from Mobile CRM, such as meeting invites, alarms, or request updates.
+See all your notifications in one list, and choose which push notifications you receive from Mobile CRM, such as meeting invites, alarms, or request updates.
+
+## View your notifications
+
+The notification list shows all your notifications in one place, the same way as in SuperOffice CRM. Open it from any main screen.
+
+1. Tap <i class="ph ph-bell" aria-label="Bell icon"></i> in the upper-right corner of the screen. A red dot on the bell means you have unseen notifications.
+1. Review your notifications in the list.
+1. Tap a notification to open the item it refers to.
+
+Quote notifications have their own **Quote** tab. The tab appears only when you have notifications about quotes.
+
+![Mobile CRM: Notification list -app-screen][img4]
+
+Push notifications appear on your device even when the app is closed. Tap a push notification to open the item. You can find it in the notification list later.
 
 <Note>
 These settings affect **push notifications** on your device. Filters selected from the **Task** menu only affect the items you see inside the app.
@@ -39,13 +53,13 @@ You can choose to receive push notifications for:
 * Meeting invitations
 * Meeting changes
 * Invitation rejections
-* Appointments with alarm (only those where you've set a reminder)
-* All appointments, regardless of alarm status
+* Follow-ups with alarm (only those where you've set a reminder)
+* All follow-ups, regardless of alarm status
 
 You can also customize:
 
 * Reminder time (for example, 10 minutes before the event)
-* Exceptions - exclude specific types of appointments (such as Private)
+* Exceptions - exclude specific types of follow-ups (such as Private)
 
 ### Add exceptions for appointment types
 
@@ -66,9 +80,20 @@ Enable or disable push alerts for different events on a request:
 * New message on request
 * Request activated
 * Request escalated
+* Request transferred
+* Favorite request updated
 
 Each toggle can be adjusted individually.
+
+## Other notifications
+
+You can also choose to receive push notifications for:
+
+* **Custom message:** Messages sent to you from SuperOffice CRM.
+* **Quote approval requests:** A colleague asks you to approve a quote.
+* **Quote approval responses:** A colleague approves or rejects a quote you sent for approval.
 
 [img1]: /media/loc/en/mobile/push-notification-settings.png
 [img2]: /media/loc/en/mobile/select-type-for-exception.png
 [img3]: /media/loc/en/mobile/except-private.png
+[img4]: /media/loc/en/mobile/mobile-crm-notifications-screen.png
