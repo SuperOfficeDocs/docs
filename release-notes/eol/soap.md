@@ -59,5 +59,3 @@ You can read and comment on the [additional community post][1] in the SuperOffic
 [5]: /en/api/web-services/endpoints/rest-webapi/index
 
 [6]: https://www.nuget.org/packages/SuperOffice.NetServer.Services
-
-[7]: https://docs.superoffice.com/release-notes/eol/index
