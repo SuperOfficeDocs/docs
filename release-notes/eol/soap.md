@@ -50,13 +50,13 @@ As part of our ongoing efforts, we have a strong **desire to completely eliminat
 
 Your input and feedback are of great importance to us, and we believe in fostering a collaborative environment where your insights help shape our decisions. We understand that change can be challenging, and we are committed to supporting you throughout this transition.
 
-We encourage you to [share your thoughts, concerns, and suggestions with us][1]. Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
+We encourage you to \[share your thoughts, concerns, and suggestions with us\]\[1\]. Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
 
 Thank you for your continued trust and partnership with SuperOffice. Together, we can embrace this evolution in our technology stack and continue to deliver exceptional solutions to our customers.
 
 Should you have any questions or require further information, please do not hesitate to reach out to us.
 
-You can read and comment on the [original post][1] in the SuperOffice technical forum.
+You can read and comment on the \[original community post\]\[1\] in the SuperOffice technical forum.
 
 [1]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/future-of-superoffice.netserver.services-package-and-soap-web-services/
 
