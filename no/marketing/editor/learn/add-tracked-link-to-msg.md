@@ -3,8 +3,8 @@ uid: help-no-mailing-add-tracked-link
 title: Legge til sporede koblinger i meldinger
 description: Finn ut hvordan du legger til en sporet kobling i en utsendelse. Bruk enten en forhåndsinnstilt sporet kobling til å spore klikk på tvers av flere utsendelser, eller sett opp en ny kobling som bare er tilgjengelig i denne utsendelsen.
 keywords: ['Markedsføring', 'utsendelse', 'sporet kobling', 'spesiell kobling']
-author: SuperOffice Product and Engineering, jeanettess
-date: 11.03.2026
+author: digitaldiina, jeanettess
+date: 11.04.2026
 so_version: 10.5
 content_type: howto
 license: marketingessentials
@@ -30,11 +30,11 @@ Ved å sette opp koblinger som leder leserne til forskjellig innhold på webside
 
 1. Gå til trinnet **Innhold** i utsendelsen eller åpne en mal for redigering.
 
-2. Hvis den sporede koblingen ikke finnes ennå, må du [opprette den][5]. Klikk på **Opprett ny sporet kobling** nederst i redigeringsprogrammet, fyll ut dialogboksen **Egenskaper kobling**, og klikk på **Lagre**. Koblingen er nå i listen over sporede koblinger, men er ikke lagt til i meldingen ennå.
+1. Hvis den sporede koblingen ikke finnes ennå, må du [opprette den][5]. Klikk på **Opprett ny sporet kobling** nederst i redigeringsprogrammet, fyll ut dialogboksen **Egenskaper kobling**, og klikk på **Lagre**. Koblingen er nå i listen over sporede koblinger, men er ikke lagt til i meldingen ennå.
 
-3. Merk teksten, bildet eller knappen som mottakeren må klikke på.
+1. Merk teksten, bildet eller knappen som mottakeren må klikke på.
 
-4. Legg til den sporede koblingen.
+1. Legg til den sporede koblingen.
     * Tekst: Klikk på <i class="ph ph-link" aria-label="Insert/edit link"></i> på verktøylinjen. I dialogboksen **Sett inn/rediger kobling** velger du **Spesielle koblinger** > **Sporede koblinger**, velger en kobling og klikker på **Lagre**.
     * Bilde eller knapp: I sidepanelet (under **Handling**) velger du **Spesielle koblinger** > **Sporede koblinger** og velger en kobling.
 

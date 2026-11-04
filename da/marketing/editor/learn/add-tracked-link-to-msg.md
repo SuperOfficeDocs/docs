@@ -3,8 +3,8 @@ uid: help-da-mailing-add-tracked-link
 title: Indsætte sporede links i en meddelelse
 description: Få at vide, hvordan du tilføjer et sporet link til en udsendelse. Brug enten et forudindstillet sporet link til at spore klik på tværs af flere udsendelser, eller opret et nyt link, der kun er tilgængeligt i denne udsendelse.
 keywords: ['Marketing', 'mailudsendelse', 'sporet link', 'særligt link']
-author: SuperOffice Product and Engineering, jeanettess
-date: 11.03.2026
+author: digitaldiina, jeanettess
+date: 11.04.2026
 so_version: 10.5
 content_type: howto
 license: marketingessentials
@@ -30,11 +30,11 @@ Ved at oprette links, der leder læserne til forskelligt indhold på dit websted
 
 1. Gå til trin **Indhold** i udsendelsen, eller åbn en skabelon til redigering.
 
-2. Hvis det sporede link ikke findes endnu, skal du [oprette det][5]. Klik på **Opret nyt sporet link** nederst i editoren, udfyld dialogboksen **Linkegenskaber**, og klik på **Gem**. Linket er nu på listen over sporede links, men det er endnu ikke føjet til meddelelsen.
+1. Hvis det sporede link ikke findes endnu, skal du [oprette det][5]. Klik på **Opret nyt sporet link** nederst i editoren, udfyld dialogboksen **Linkegenskaber**, og klik på **Gem**. Linket er nu på listen over sporede links, men det er endnu ikke føjet til meddelelsen.
 
-3. Markér den tekst, det billede eller den knap, som modtageren skal klikke på.
+1. Markér den tekst, det billede eller den knap, som modtageren skal klikke på.
 
-4. Tilføj det sporede link.
+1. Tilføj det sporede link.
     * Tekst: Klik på <i class="ph ph-link" aria-label="Insert/edit link"></i> i værktøjslinjen. I dialogboksen **Indsæt/rediger link** skal du vælge **Særlige links** > **Sporede links**, vælge et link og klikke på **Gem**.
     * Billede eller knap: I sidepanelet (under **Handling**) skal du vælge **Særlige links** > **Sporede links** og vælge et link.
 

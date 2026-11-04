@@ -4,8 +4,8 @@ title: Überwachte Links zu einer Mitteilung hinzufügen
 sidebarTitle: "Überwachte Links"
 description: Erfahren Sie, wie Sie einer Kampagne einen überwachten Link hinzufügen. Verwenden Sie entweder einen voreingestellten überwachten Link, um Klicks über mehrere Kampagnen hinweg zu verfolgen, oder richten Sie einen neuen Link ein, der nur in dieser Kampagne verfügbar ist.
 keywords: ['Marketing', 'Kampagne', 'überwachter Link', 'besonderer Link']
-author: SuperOffice Product and Engineering, jeanettess
-date: 11.03.2026
+author: digitaldiina, jeanettess
+date: 11.04.2026
 so_version: 10.5
 content_type: howto
 license: marketingessentials
@@ -31,11 +31,11 @@ Durch das Einrichten von Links, die Leser zu verschiedenen Inhalten auf Ihrer We
 
 1. Gehen Sie zum Schritt **Inhalt** in der Kampagne oder öffnen Sie eine Vorlage zum Bearbeiten.
 
-2. Falls der überwachte Link noch nicht existiert, [erstellen Sie ihn][5]. Klicken Sie unten im Editor auf **Neuen überwachten Link erstellen**, füllen Sie das Dialogfeld **Linkeigenschaften** aus, und klicken Sie auf **Speichern**. Der Link steht nun in der Liste der überwachten Links, wurde aber noch nicht zur Nachricht hinzugefügt.
+1. Falls der überwachte Link noch nicht existiert, [erstellen Sie ihn][5]. Klicken Sie unten im Editor auf **Neuen überwachten Link erstellen**, füllen Sie das Dialogfeld **Linkeigenschaften** aus, und klicken Sie auf **Speichern**. Der Link steht nun in der Liste der überwachten Links, wurde aber noch nicht zur Nachricht hinzugefügt.
 
-3. Wählen Sie den Text, das Bild oder die Schaltfläche aus, worauf der Empfänger klicken muss.
+1. Wählen Sie den Text, das Bild oder die Schaltfläche aus, worauf der Empfänger klicken muss.
 
-4. Fügen Sie den überwachten Link hinzu.
+1. Fügen Sie den überwachten Link hinzu.
     * Text: Klicken Sie in der Werkzeugleiste auf <i class="ph ph-link" aria-label="Insert/edit link"></i>. Wählen Sie im Dialogfeld **Link einfügen/bearbeiten** die Optionen **Besondere Links** > **Überwachte Links** und dann einen Link aus. Klicken Sie auf **Speichern**.
     * Bild oder Schaltfläche: Wählen Sie in der Seitenleiste (unter **Aktion**) **Besondere Links** > **Überwachte Links** und dann einen Link aus.
 

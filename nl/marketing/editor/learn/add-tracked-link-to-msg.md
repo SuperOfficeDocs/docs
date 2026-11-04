@@ -4,8 +4,8 @@ title: Gevolgde koppelingen toevoegen aan een bericht
 sidebarTitle: "Gevolgde koppelingen"
 description: Leer hoe u een gevolgde link aan een mailing toevoegt. Gebruik een vooraf ingestelde gevolgde link om klikken in meerdere mailings te volgen, of stel een nieuwe link in die alleen in deze mailing beschikbaar is.
 keywords: ['Marketing', 'mailing', 'gevolgde link', 'speciale link']
-author: SuperOffice Product and Engineering, jeanettess
-date: 11.03.2026
+author: digitaldiina, jeanettess
+date: 11.04.2026
 so_version: 10.5
 content_type: howto
 license: marketingessentials
@@ -31,11 +31,11 @@ Door koppelingen in te stellen die lezers naar verschillende inhoud op uw websit
 
 1. Ga naar de stap **Inhoud** in de mailing of open een sjabloon voor bewerking.
 
-2. Als de gevolgde link nog niet bestaat, [maakt u deze aan][5]. Klik onderaan de editor op **Een nieuwe gevolgde link maken**, vul het dialoogvenster **Link-eigenschappen** in en klik op **Opslaan**. De link staat nu in de lijst met gevolgde links, maar is nog niet aan het bericht toegevoegd.
+1. Als de gevolgde link nog niet bestaat, [maakt u deze aan][5]. Klik onderaan de editor op **Een nieuwe gevolgde link maken**, vul het dialoogvenster **Link-eigenschappen** in en klik op **Opslaan**. De link staat nu in de lijst met gevolgde links, maar is nog niet aan het bericht toegevoegd.
 
-3. Selecteer de tekst, afbeelding of knop waarop de ontvanger moet klikken.
+1. Selecteer de tekst, afbeelding of knop waarop de ontvanger moet klikken.
 
-4. Voeg de gevolgde link toe.
+1. Voeg de gevolgde link toe.
     * Tekst: Klik op <i class="ph ph-link" aria-label="Insert/edit link"></i> op de werkbalk. Selecteer in het dialoogvenster **Koppeling invoegen/bewerken** achtereenvolgens **Speciale links** > **Gevolgde links**, selecteer een link en klik op **Opslaan**.
     * Afbeelding of knop: Selecteer in het zijpaneel (onder **Actie**) **Speciale links** > **Gevolgde links** en selecteer een link.
 
