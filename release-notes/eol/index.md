@@ -29,6 +29,8 @@ _These are the active upcoming sunsetting announcements._
 
 ## Upcoming end-of-life notices
 
+_These are planned end-of-life notices to provide you with an early warning of features or products that we are planning to sunset but where no date is set._
+
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
 | Exchange Online Synchronizer (Onsite) | Phase-out initiated | December 31, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
