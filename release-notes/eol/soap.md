@@ -19,8 +19,10 @@ As part of the continued modernisation of the SuperOffice platform and APIs, we 
   SuperOffice's inbound SOAP support will reach end of life on **31 January 2027**.
 </Warning>
 
+After this date, integrations should no longer rely on the inbound SuperOffice SOAP/WCF API endpoints.
+
 <Accordion title="Previous early announcement">
-  While we understand that not all of our existing partners and integration customers will be able to make an immediate shift away from SOAP, we want to share our desire to gradually eliminate SOAP support within the **next few years**. This transition is part of our ongoing efforts to modernize our platform and enhance the overall experience for our users.
+  Early 2023 we made this announcememnt: While we understand that not all of our existing partners and integration customers will be able to make an immediate shift away from SOAP, we want to share our desire to gradually eliminate SOAP support within the **next few years**. This transition is part of our ongoing efforts to modernize our platform and enhance the overall experience for our users.
 </Accordion>
 
 Our SOAP offering comprises two key components: the [SOAP proxy client][3] and the [web service endpoints][4].
