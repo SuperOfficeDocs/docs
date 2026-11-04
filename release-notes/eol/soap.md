@@ -41,10 +41,6 @@ However, we have observed a significant decline in its usage since the introduct
 
   The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to \[SuperOffice.WebApi\]\[5\] (REST).
 
-  ## Migration status
-
-  We are pleased to inform you that all SuperOffice applications have either completed their migration away from using the assemblies within the SuperOffice.NetServer.Services package or are currently in the process of doing so. This transition has also involved the move from .NET Framework to .NET Standard 2.0, where we replaced legacy NETFramework 4.8 WCF dependencies with CoreWCF.
-
   ## Eliminating SOAP support
 
   As part of our ongoing efforts, we have a strong **desire to completely eliminate our SOAP offering when SuperOffice reaches version 13**. While we acknowledge that this transition may not be immediate for all partners and integration customers, it represents our vision for the future of our platform where we would like to offer services in alignment with current trends.
