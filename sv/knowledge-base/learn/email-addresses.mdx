@@ -2,10 +2,10 @@
 uid: help-sv-kb-aliases
 title: Arbeta med e-postadresser
 description: Arbeta med e-postadresser
-keywords: ['kunskapsbas']
-author: SuperOffice Product and Engineering
-date: 06.10.2026
-so_version: 12.0
+keywords: ['e-postadress', 'blockerad e-postadress', 'bounce-flagga']
+author: digitaldiina
+date: 11.04.2026
+so_version: 12.6
 content_type: concept
 functional_right: knowledge-base
 license: servicepremium
@@ -17,6 +17,8 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /sv/email/service/learn/kb-aliases/index
   - /sv/email/service/learn/kb-aliases/add-email-address
+related:
+  - Administrera mappar med e-postadresser: /sv/knowledge-base/learn/manage-folders
 language: sv
 ---
 
@@ -55,8 +57,27 @@ Om du vill ha detaljerad information om registrerade e-postadresser går du till
 * Om du vill **ändra** på en befintlig e-postadress klickar du på namnet i listan.
 * Om du vill **ta bort** en e-postadress klickar du på namnet i listan och sedan på **Ta bort** i fönstret **Egenskaper för e-postadress**.
 
+## Rensa bounce-flaggan för blockerade e-postadresser
+
+När ett svar på ett ärende studsar sätter Service en bounce-flagga på e-postadressen. Dessa adresser visas som blockerade e-postadresser. När problemet är löst kan du rensa bounce-flaggan.
+
+För att rensa bounce-flaggan behöver du den funktionella behörigheten **Allmän administratör**, **Service-administration** eller **Kunskapsbas**, utöver åtkomst till Service.
+
+1. Gå till <i class="ph ph-list" aria-hidden="true"></i> **Huvudmenyn** i det övre fältet och välj **Kunskapsbas** > **Blockerade e-postadresser**.
+
+1. Gå till fliken **Blockerade e-postadresser**.
+
+1. Markera de e-postadresser som du vill rensa. Du kan markera flera adresser samtidigt.
+
+1. Välj **Åtgärder** > **Rensa bounce-flagga**.
+
+    ![Listen Blockerade e-postadresser med åtgärden Rensa bounce-flagga -screenshot][img1]
+
+1. Bekräfta i dialogrutan att du vill rensa bounce-flaggan.
+
 ## Vad vill du göra nu?
 
 * [Administrera mappar med e-postadresser][3]
 
 [3]: ./manage-folders
+[img1]: /media/loc/en/request/knowledge-base-blocked-email-addresses-clear-bounce-flag.png
