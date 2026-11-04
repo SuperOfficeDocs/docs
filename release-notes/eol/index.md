@@ -34,7 +34,6 @@ _These are planned end-of-life notices to provide you with an early warning of f
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
 | Exchange Online Synchronizer (Onsite) | Phase-out initiated | December 31, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
-| Business Card Scanner for Mobile CRM (onsite) | Phase-out initiated | September 1, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in Mobile CRM Online. |
 
 ## Archived end-of-life notices
 
@@ -42,6 +41,7 @@ _These are past end-of-life notices for features and products that are no longer
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
+| Business Card Scanner for Mobile CRM (onsite) | Deprecated | September 1, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in Mobile CRM Online. |
 | [SuperOffice Service CompactMode][16] | Deprecated | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM][17]. |
 | [Reporter Studio and reports][15] | Deprecated | Not supported from December 4, 2024 | Switch to [dashboards][26] and [selections][27]. |
 | [Microsoft 365 Document Integration (Sharepoint v1.0)][14] | Deprecated | Not supported from September 1, 2024 | Switch to [Super ID][24] and [SharePoint Documents][25]. |
