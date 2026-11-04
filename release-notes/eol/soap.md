@@ -39,7 +39,7 @@ However, we have observed a significant decline in its usage since the introduct
 <Accordion title="Previous early announcement details">
   ## SOAP interface of SuperOffice Service
 
-  The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to [SuperOffice.WebApi][5] (REST).
+  The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to \[SuperOffice.WebApi\]\[5\] (REST).
 
   ## Migration status
 
@@ -51,7 +51,7 @@ However, we have observed a significant decline in its usage since the introduct
 
   Your input and feedback are of great importance to us, and we believe in fostering a collaborative environment where your insights help shape our decisions. We understand that change can be challenging, and we are committed to supporting you throughout this transition.
 
-  We encourage you to [share your thoughts, concerns, and suggestions with us][1]. Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
+  We encourage you to \[share your thoughts, concerns, and suggestions with us\]\[1\]. Your feedback will be instrumental in ensuring a smooth and effective transition away from SOAP.
 </Accordion>
 
 Thank you for your continued trust and partnership with SuperOffice. Together, we can embrace this evolution in our technology stack and continue to deliver exceptional solutions to our customers.
