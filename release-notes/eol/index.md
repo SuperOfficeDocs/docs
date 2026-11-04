@@ -48,13 +48,13 @@ _These are past end-of-life notices for features and products that are no longer
 | Product/Feature | EOL status | EOL date | Relevant details |
 | --- | --- | --- | --- |
 | Business Card Scanner for Mobile CRM (onsite) | Deprecated | September 1, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in Mobile CRM Online. |
-| \[SuperOffice Service CompactMode\]\[16\] | Deprecated | January 13, 2026 (11.8) | Switch to \[SuperOffice Mobile CRM\]\[17\]. |
-| \[Reporter Studio and reports\]\[15\] | Deprecated | Not supported from December 4, 2024 | Switch to \[dashboards\]\[26\] and \[selections\]\[27\]. |
-| \[Microsoft 365 Document Integration (Sharepoint v1.0)\]\[14\] | Deprecated | Not supported from September 1, 2024 | Switch to \[Super ID\]\[24\] and \[SharePoint Documents\]\[25\]. |
-| \[Lotus Notes Link\]\[11\] | Deprecated | Not supported from January 1, 2024 | Switch to \[SuperOffice Inbox\]\[21\]. |
-| \[Pagebuilder\]\[12\] | Deprecated | The last supported version is 10.2.9 | Switch to \[Screen Designer\]\[22\]. |
-| Pagebuilder extensibility | Deprecated | Not supported on SuperOffice 10.x and newer. | \[WebCustomizations breaking changes\]\[5\] |
-| SOAP interface of SuperOffice Service | Deprecated | Not supported in SuperOffice Online version 10.x and newer. | Switch to \[SuperOffice.WebApi\]\[23\] (REST). |
+| [SuperOffice Service CompactMode](/release-notes/eol/service-compact-mode) | Deprecated | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM](https://appstore.superoffice.com/superoffice-as/superoffice-mobile-crm). |
+| [Reporter Studio and reports](/release-notes/eol/reports) | Deprecated | Not supported from December 4, 2024 | Switch to [dashboards](/en/dashboard/learn/index) and [selections](/en/search-options/selection/learn/index). |
+| [Microsoft 365 Document Integration (Sharepoint v1.0)](/release-notes/eol/sharepoint-app) | Deprecated | Not supported from September 1, 2024 | Switch to [Super ID](/en/online/identity/superid/sign-in-services) and [SharePoint Documents](/integrations/sharepoint-documents/migrate/index). |
+| [Lotus Notes Link](/release-notes/eol/lotus) | Deprecated | Not supported from January 1, 2024 | Switch to [SuperOffice Inbox](/en/email/inbox/learn/index). |
+| [Pagebuilder](/release-notes/eol/pagebuilder) | Deprecated | The last supported version is 10.2.9 | Switch to [Screen Designer](/en/customization/screen-designer/admin/index). |
+| Pagebuilder extensibility | Deprecated | Not supported on SuperOffice 10.x and newer. | [WebCustomizations breaking changes](https://community.superoffice.com/en/technical/forums/general-forums/announcements/-have-you-created-web-customizations-breaking-changes-ahead/) |
+| SOAP interface of SuperOffice Service | Deprecated | Not supported in SuperOffice Online version 10.x and newer. | Switch to [SuperOffice.WebApi](/en/api/web-services/endpoints/rest-webapi/index) (REST). |
 
 ## Resources and support
 
@@ -71,38 +71,12 @@ _These are past end-of-life notices for features and products that are no longer
 
 [4]: https://community.superoffice.com/en/support-faqs/
 
-[5]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/-have-you-created-web-customizations-breaking-changes-ahead/
-
 [6]: https://appstore.superoffice.com/superoffice-as/synchronizer-for-superoffice
 
 [7]: https://appstore.superoffice.com/superoffice-as/places-for-superoffice
 
 [8]: /en/company/learn/create#company-insight
 
-[11]: /release-notes/eol/lotus
-
-[12]: /release-notes/eol/pagebuilder
-
 [13]: /release-notes/eol/soap
 
-[14]: /release-notes/eol/sharepoint-app
-
-[15]: /release-notes/eol/reports
-
-[16]: /release-notes/eol/service-compact-mode
-
-[17]: https://appstore.superoffice.com/superoffice-as/superoffice-mobile-crm
-
-[21]: /en/email/inbox/learn/index
-
-[22]: /en/customization/screen-designer/admin/index
-
 [23]: /en/api/web-services/endpoints/rest-webapi/index
-
-[24]: /en/online/identity/superid/sign-in-services
-
-[25]: /integrations/sharepoint-documents/migrate/index
-
-[26]: /en/search-options/selection/learn/index
-
-[27]: /en/dashboard/learn/index
