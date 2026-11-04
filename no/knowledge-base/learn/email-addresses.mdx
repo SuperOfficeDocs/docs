@@ -2,10 +2,10 @@
 uid: help-no-kb-aliases
 title: Arbeide med e-postadresser
 description: Arbeide med e-postadresser
-keywords: ['Kunnskapsbase']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+keywords: ['e-postadresse', 'blokkert e-postadresse', 'retur']
+author: digitaldiina
+date: 11.04.2026
+so_version: 12.6
 content_type: concept
 functional_right: knowledge-base
 license: servicepremium
@@ -17,6 +17,8 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /no/email/service/learn/kb-aliases/index
   - /no/email/service/learn/kb-aliases/add-email-address
+related:
+  - Administrere e-postadressemapper: /no/knowledge-base/learn/manage-folders
 language: no
 ---
 
@@ -55,8 +57,23 @@ Hvis du vil ha detaljer om de registrerte e-postadressene, går du til <i class=
 * Hvis du vil **redigere** en eksisterende e-postadresse, klikker du på navnet i listen.
 * Hvis du vil **slette** en e-postadresse, klikker du på navnet i listen og klikker **Slett** i skjermbildet **Egenskaper for e-postadresse**.
 
-## Hva vil du gjøre nå?
+## Fjern returmerkingen for blokkerte e-postadresser {#bounce}
 
-* [Administrere e-postadressemapper][3]
+Når et svar på en sak ikke kan leveres, setter SuperOffice en returmerking på e-postadressen. Disse adressene vises som blokkerte e-postadresser. Når problemet er løst, kan du fjerne returmerkingen.
+
+For å fjerne returmerkingen må du ha den funksjonelle rettigheten **Generell administrator**, **Service-administrasjon** eller **Kunnskapsbase**.
+
+1. Gå til <i class="ph ph-list" aria-hidden="true"></i> **Hovedmeny** i toppraden og velg **Kunnskapsbase** > **Blokkerte e-postadresser**.
+
+1. Gå til fanen **Blokkerte e-postadresser**.
+
+1. Velg e-postadressene du vil fjerne returmerkingen for. Du kan velge flere adresser samtidig.
+
+1. Klikk på **Handlinger** og velg **Fjern returmerking**.
+
+    ![Listen Blokkerte e-postadresser med handlingen Fjern returmerking -screenshot][img1]
+
+1. Bekreft i dialogboksen at du vil fjerne returmerkingen.
 
 [3]: ./manage-folders
+[img1]: /media/loc/en/request/knowledge-base-blocked-email-addresses-clear-bounce-flag.png
