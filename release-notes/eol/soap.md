@@ -15,6 +15,10 @@ At SuperOffice, we greatly value our ongoing partnership and collaboration with 
 
 As part of the continued modernisation of the SuperOffice platform and APIs, we are completing the transition away from our legacy inbound SOAP support.
 
+<Warning>
+  SuperOffice's inbound SOAP/WCF APIs will reach end of life on **31 January 2027**.
+</Warning>
+
 <Accordion title="Previous early announcement">
   While we understand that not all of our existing partners and integration customers will be able to make an immediate shift away from SOAP, we want to share our desire to gradually eliminate SOAP support within the **next few years**. This transition is part of our ongoing efforts to modernize our platform and enhance the overall experience for our users.
 </Accordion>
