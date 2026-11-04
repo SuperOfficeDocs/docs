@@ -2,10 +2,10 @@
 uid: help-nl-mailing-add-tracked-link
 title: Gevolgde koppelingen toevoegen aan een bericht
 sidebarTitle: "Gevolgde koppelingen"
-description: Er zijn twee manieren om uw links in te stellen. U kunt een vooraf ingestelde bijgehouden koppeling gebruiken om klikken in verschillende mailings bij te houden of een nieuwe koppeling instellen die alleen beschikbaar is in deze mailing. Meer informatie over het toevoegen van een bijgehouden koppeling vindt u in deze handleiding.
-keywords: ['Marketing', 'mailing', 'gevolgde koppelingen']
-author: SuperOffice Product and Engineering
-date: 09.26.2025
+description: Leer hoe u een gevolgde link aan een mailing toevoegt. Gebruik een vooraf ingestelde gevolgde link om klikken in meerdere mailings te volgen, of stel een nieuwe link in die alleen in deze mailing beschikbaar is.
+keywords: ['Marketing', 'mailing', 'gevolgde link', 'speciale link']
+author: digitaldiina, jeanettess
+date: 11.04.2026
 so_version: 10.5
 content_type: howto
 license: marketingessentials
@@ -15,10 +15,10 @@ audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /nl/marketing/tracked-links/learn/add-tracked-link-to-msg
 related:
-  - /nl/marketing/tracked-links/learn/create-links
+  - Gevolgde links maken: /nl/marketing/tracked-links/learn/create-links
   - Linkacties definiëren: /nl/marketing/tracked-links/learn/define-link-actions
-  - Bericht in browser weer te geven: /nl/marketing/editor/learn/add-link-to-display-message-in-browser
-  - /nl/marketing/recipients/learn/manage-email-subscriptions
+  - Link om het bericht in de browser weer te geven: /nl/marketing/editor/learn/add-link-to-display-message-in-browser
+  - Abonnementen beheren: /nl/marketing/recipients/learn/manage-email-subscriptions
   - Afmelden: /nl/marketing/editor/learn/add-unsubscribe-link
 language: nl
 ---
@@ -31,20 +31,19 @@ Door koppelingen in te stellen die lezers naar verschillende inhoud op uw websit
 
 1. Ga naar de stap **Inhoud** in de mailing of open een sjabloon voor bewerking.
 
-2. Selecteer de tekst of afbeelding waarop de ontvanger moet klikken.
+1. Als de gevolgde link nog niet bestaat, [maakt u deze aan][5]. Klik onderaan de editor op **Een nieuwe gevolgde link maken**, vul het dialoogvenster **Link-eigenschappen** in en klik op **Opslaan**. De link staat nu in de lijst met gevolgde links, maar is nog niet aan het bericht toegevoegd.
 
-3. Link toevoegen:
+1. Selecteer de tekst, afbeelding of knop waarop de ontvanger moet klikken.
 
-    * U voegt als volgt een gevolgde link toe:
+1. Voeg de gevolgde link toe.
+    * Tekst: Klik op <i class="ph ph-link" aria-label="Insert/edit link"></i> op de werkbalk. Selecteer in het dialoogvenster **Koppeling invoegen/bewerken** achtereenvolgens **Speciale links** > **Gevolgde links**, selecteer een link en klik op **Opslaan**.
+    * Afbeelding of knop: Selecteer in het zijpaneel (onder **Actie**) **Speciale links** > **Gevolgde links** en selecteer een link.
 
-      * Tekst: Klik op <i class="ph ph-link" aria-label="Insert/edit link"></i> op de werkbalk, selecteer **Speciale koppelingen** > **Gevolgde koppelingen** en selecteer een koppeling.
-      * Afbeelding: Selecteer in het zijpaneel (onder **Actie**), **Speciale links** > **Gevolgde links** en selecteer een link.
-
-    * Als u [een nieuwe gevolgde link wilt maken][5], klikt u onder in het scherm op **Een nieuwe gevolgde link** maken. Het dialoogvenster **Link-eigenschappen** wordt geopend.
-
-4. Klik op **Opslaan**. De link wordt in het bericht ingevoegd.
+    De link wordt in het bericht ingevoegd.
 
 ## Tips
+
+Nadat u een gevolgde link hebt toegevoegd, toont het veld **URL** een code, bijvoorbeeld `[[spmLink494]]`, in plaats van een webadres. Dit is normaal. De code verwijst naar de gevolgde link en ontvangers worden naar het juiste webadres geleid.
 
 U kunt gewone (niet-gevolgde) links toevoegen. Voor tekstkoppelingen klikt u op <i class="ph ph-link" aria-label="Insert/edit link"></i> in de werkbalk. Voor afbeeldingskoppelingen gebruikt u het veld **Afbeeldings-URL** in het zijpaneel.
 
