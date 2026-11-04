@@ -5,7 +5,7 @@ sidebarTitle: Troubleshooting
 description: Solutions to common issues in SuperOffice for Outlook.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'troubleshooting', 'add-in missing', 'permissions', 'consent', 'category missing', 'archive status not showing', 'shared mailbox category', 'SOFO']
 author: schildea
-date: 11.03.2026
+date: 11.04.2026
 version_sofo: 2026.6.4
 content_type: reference
 category: integration
@@ -39,9 +39,7 @@ Ask your Microsoft 365 administrator to check the following:
 * The update is approved in the [Microsoft 365 admin center][1]. After approval, it can take up to 72 hours to reach all users.
 * If your organization installed the add-in with its own manifest file or URL, the latest manifest is applied.
 
-Users who installed the add-in themselves from AppSource receive the update automatically.
-
-For details, see [Centralized deployment][8].
+If the add-in was installed from AppSource, manifest updates that don't need new permissions reach users automatically. Updates that need new permissions must be approved by an administrator first. For details, see [Choose how to install][8] and [Approve manifest updates][9].
 
 ### You're asked to approve additional Microsoft permissions in a shared mailbox
 
@@ -108,3 +106,4 @@ To use archive status again, recreate the category with the exact name **Archive
 [6]: ./email-archive-status
 [7]: ./email-archive-status#shared-mailbox
 [8]: ./deploy#install-options
+[9]: ./deploy#approve-updates
