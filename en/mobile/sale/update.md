@@ -2,10 +2,10 @@
 uid: mobile-crm-sale-update
 title: Update sale
 description: How to update a sale in SuperOffice Mobile CRM.
-keywords: ['open', 'sold', 'lost', 'stalled', 'stage']
+keywords: ['open', 'sold', 'lost', 'stalled', 'stage', 'stakeholders', 'edit stakeholder', 'delete stakeholder']
 author: digitaldiina
-date: 09.09.2026
-so_version: 11.1
+date: 11.04.2026
+so_version: 11.1.19
 content_type: howto
 tier: core
 platform: mobile
@@ -18,7 +18,7 @@ related:
 language: en
 ---
 
-You can update sales information, change its status, or link it to other records directly from SuperOffice Mobile CRM. To add or remove stakeholders, open the sale in SuperOffice CRM.
+You can update sales information, change its status, or link it to other records directly from SuperOffice Mobile CRM. You can also add, edit, and delete the stakeholders on a sale.
 
 ## Steps to update a sale
 
@@ -58,6 +58,21 @@ When changing a sale's status, you can update additional information in the **De
 
 1. Tap **Save** to apply the changes.
 
+## <a id="manage-stakeholders"></a>Manage stakeholders on a sale
+
+Stakeholders are the people involved in a sale. Keep them up to date when someone joins the deal, leaves, or changes role.
+
+1. Open the sale.
+1. Tap the person symbol to display the stakeholders.
+
+    ![Mobile CRM: Edit stakeholder -app-screen][img3]
+
+1. Do one of the following:
+    * To add a stakeholder, add a new stakeholder and select the person.
+    * To edit a stakeholder, tap the stakeholder and change the details.
+    * To delete a stakeholder, tap the stakeholder and delete it.
+1. Tap **Save**.
+
 ## Link to an incoming request **Not yet available**
 
 When available, you will be able to link a sale to an **incoming request** for better traceability.
@@ -69,3 +84,4 @@ When available, you will be able to link a sale to an **incoming request** for b
 1. Tap **Save**. The linked request will then appear in the **Requests** tab of that sale.
 
 [img2]: /media/loc/en/mobile/sale-details.png
+[img3]: /media/loc/en/mobile/mobile-crm-sale-edit-stakeholder.png
