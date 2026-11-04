@@ -2,10 +2,10 @@
 uid: help-de-follow-up-edit
 title: Folgeaufgabe bearbeiten
 description: So öffnen, bearbeiten oder löschen Sie eine Folgeaufgabe. Ändern Sie die Endzeit einer Folgeaufgabe im Kalender. Einladung bearbeiten oder löschen. Wiederkehrende Folgeaufgabe bearbeiten.
-keywords: ['Folgeaufgabe bearbeiten', 'Folgeaufgabe aktualisieren', 'Meeting verlängern', 'Meeting verkürzen', 'nur diese Instanz ändern', 'Folgeaufgabe löschen', 'Meeting absagen', 'Kalender', 'Folgeaufgabe', 'Termin', 'Meeting', 'Aufgabe', 'To-do', 'Anruf', 'Einladung', 'extern verwaltete Folgeaufgabe', 'synchronisierte Folgeaufgabe löschen']
+keywords: ['Folgeaufgabe bearbeiten', 'Folgeaufgabe aktualisieren', 'Meeting verlängern', 'Meeting verkürzen', 'nur diese Instanz ändern', 'Folgeaufgabe löschen', 'Meeting absagen', 'Kalender', 'Folgeaufgabe', 'Termin', 'Meeting', 'Aufgabe', 'To-do', 'Anruf', 'Einladung', 'extern verwaltete Folgeaufgabe', 'synchronisierte Folgeaufgabe löschen', 'erstellt in', 'synchronisierte Folgeaufgabe']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.04.2026
+so_version: 12.6
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -94,6 +94,10 @@ Sie können Besprechungen, die in Outlook oder Gmail erstellt wurden, in SuperOf
 Benutzer mit dem [Funktionsrecht][7] **Delete externally owned follow-ups**, in der Regel Administratoren, können Folgeaufgaben, die aus einem externen Kalender synchronisiert wurden, zum Beispiel verwaiste, doppelte oder veraltete, mit der Standardaktion **Löschen** entfernen. Das Löschen wird protokolliert. Das Recht erlaubt kein Bearbeiten, daher bleiben diese Folgeaufgaben schreibgeschützt. Der externe Kalender bleibt die maßgebliche Quelle: Wenn das ursprüngliche Element noch existiert und im Synchronisationsumfang liegt, wird die Folgeaufgabe bei der nächsten Synchronisation neu erstellt. Dies gilt für alle unterstützten externen Kalendersysteme.
 
 <TipDeletion />
+
+<Tip>
+Verwenden Sie das Suchkriterium **Created in** in **Suchen**, in Selektionen oder in Aktivitätsarchiven, um synchronisierte Folgeaufgaben zu finden. Wählen Sie aus, wo die Folgeaufgaben erstellt wurden, zum Beispiel Outlook oder Google Calendar, oder schließen Sie sie aus, um nur in SuperOffice erstellte Folgeaufgaben zu sehen. Erstellen Sie eine Selektion aus den Ergebnissen, und löschen Sie die Folgeaufgaben gesammelt. Sie können **Created in** auch als Spalte in Folgeaufgabenlisten anzeigen.
+</Tip>
 
 [3]: ./create-follow-up#fields
 [7]: /de/admin/user-management/role/functional-rights
