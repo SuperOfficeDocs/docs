@@ -13,7 +13,9 @@ language: en
 
 At SuperOffice, we greatly value our ongoing partnership and collaboration with you. As we move forward on our journey to enhance and streamline our services, we wanted to provide you with an important update regarding our SOAP support.
 
-While we understand that not all of our existing partners and integration customers will be able to make an immediate shift away from SOAP, we want to share our desire to gradually eliminate SOAP support within the **next few years**. This transition is part of our ongoing efforts to modernize our platform and enhance the overall experience for our users.
+<Accordion title="Previous early announcement">
+  While we understand that not all of our existing partners and integration customers will be able to make an immediate shift away from SOAP, we want to share our desire to gradually eliminate SOAP support within the **next few years**. This transition is part of our ongoing efforts to modernize our platform and enhance the overall experience for our users.
+</Accordion>
 
 Our SOAP offering comprises two key components: the [SOAP proxy client][3] and the [web service endpoints][4].
 
