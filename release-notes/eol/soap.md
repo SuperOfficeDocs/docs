@@ -56,7 +56,7 @@ Thank you for your continued trust and partnership with SuperOffice. Together, w
 
 Should you have any questions or require further information, please do not hesitate to reach out to us.
 
-You can read and comment on the \[original community post\]\[1\] in the SuperOffice technical forum.
+You can read and comment on the \[additional community post\]\[1\] in the SuperOffice technical forum.
 
 [1]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/future-of-superoffice.netserver.services-package-and-soap-web-services/
 
