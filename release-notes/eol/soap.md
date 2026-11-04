@@ -34,7 +34,7 @@ Our SOAP offering comprises two key components: the [SOAP proxy client][3] and t
 
 Our [SuperOffice.NetServer.Services package][6], which includes the SOAP proxy client for communication with SuperOffice WCF-based SOAP web services, has played a vital role in our journey thus far.
 
-However, we have observed a significant decline in its usage since the introduction of the [RESTful-based proxy client][5], SuperOffice.WebApi. These two clients offer nearly identical functionality, with SuperOffice.WebApi adopting a RESTful protocol approach. While there are some nuanced differences, detailed information is available in our [SuperOffice Docs][2].
+However, we have observed a significant decline in its usage since the introduction of the \[RESTful-based proxy client\]\[5\], SuperOffice.WebApi. These two clients offer nearly identical functionality, with SuperOffice.WebApi adopting a RESTful protocol approach. While there are some nuanced differences, detailed information is available in our \[SuperOffice Docs\]\[2\].
 
 ## SOAP interface of SuperOffice Service
 
