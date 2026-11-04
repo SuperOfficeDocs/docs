@@ -20,6 +20,8 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 ## Current end-of-life notices
 
+_These are the active upcoming sunsetting announcements._
+
 | Announced | Product/Feature | EOL date | Relevant details |
 | --- | --- | --- | --- |
 | Nov 1, 2026 | [SOAP proxy client and web service endpoints][13] | Jan 31, 2027 | Applies to version 13. Switch to [SuperOffice.WebApi][23] (REST). |
