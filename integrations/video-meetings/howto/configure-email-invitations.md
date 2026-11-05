@@ -5,7 +5,7 @@ sidebarTitle: "Configure email invitations for video meetings"
 description: How to configure video meetings in SuperOffice
 keywords: ['video meetings']
 author: SuperOffice Product and Engineering
-date: 10.16.2025
+date: 11.05.2026
 content_type: howto
 category: integration
 topic: video meetings
@@ -38,7 +38,7 @@ To be able to send and receive email invitations to video meetings (to/from atte
 
 This feature is currently not supported if you use [Synchronizer for SuperOffice][1] - as they don't support this yet.
 
-[1]: https://online.superoffice.com/appstore/infobridge-software-b-v-/synchronizer-for-superoffice
+[1]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
 [2]: /en/email/inbox/learn/index
 [3]: /en/email/admin/add-email-template
 [4]: ../../mail-link/index

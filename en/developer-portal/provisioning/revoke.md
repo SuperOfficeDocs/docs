@@ -3,7 +3,7 @@ title: Revoke access given to standard app
 uid: revoke-app
 description: How to revoke access given to a standard application.
 author: Bergfrid Dias
-date: 09.25.2024
+date: 11.05.2026
 version_devportal: 1.26
 keywords: ['App Store', 'consent']
 content_type: howto
@@ -20,4 +20,4 @@ The revocation must be done by the customer's tenant administrator.
 3. Click **Uninstall** to start the process to remove the app's access to your SuperOffice CRM. Only a tenant user with administrator rights will see this button.
 4. If provided by the partner, use the application's **Uninstall** to remove the configuration (such as user-defined fields and web panels).
 
-[1]: http://online.superoffice.com/appstore
+[1]: https://appstore.superoffice.com
