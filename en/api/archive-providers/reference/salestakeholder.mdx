@@ -455,7 +455,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sale
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleStakeholder?$select=person/title,person/restrictionAddress/county,contact/contactUdef/SuperOffice:4
+GET /api/v1/archive/SaleStakeholder?$select=person/updatedByWorkflow,person/personPager/formattedNumber,contact/restrictionAddress/zip,contact/contactUdef/SuperOffice:6,contact/NumberOfSales
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

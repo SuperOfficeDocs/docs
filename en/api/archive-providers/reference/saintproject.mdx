@@ -275,6 +275,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -331,12 +332,12 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |appointment/associate/userName|string|| x |
 |appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
-|appointment/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
 |appointment/appointment/title|positiveString|| x |
@@ -436,12 +437,12 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/function|listAny|| x |
 |projectMember/hasInfoText|bool|| x |
 |projectMember/registered|datetime|| x |
-|projectMember/updated|datetime|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/updated|datetime|| x |
 |projectMember/textId|int|| x |
 |projectMember/infoText|positiveString|| x |
 |projectMember/firstName|string|| x |
@@ -541,12 +542,12 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/restrictionAddress/county|string|| x |
 |projectMember/restrictionAddress/city|string|| x |
 |projectMember/restrictionAddress/zip|string|| x |
-|projectMember/restrictionAddress/state|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/restrictionAddress/state|string|| x |
 |projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|| x |
 |projectMember/restrictionAddress/formattedAddress| *None* ||  |
@@ -646,12 +647,12 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/correspondingAssociate/credentialType| *None* || x |
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
 |projectMember/correspondingAssociate/isActive|bool|| x |
-|projectMember/correspondingAssociate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/correspondingAssociate/isActiveText|bool|| x |
 |projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 |projectMember/correspondingAssociate/otherGroups|userGroup||  |
 |projectMember/correspondingAssociate/userName|string|| x |
@@ -751,12 +752,12 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/contactAssociate/associateDbId|associate|| x |
 |projectMember/contactAssociate/contactName|string|| x |
 |projectMember/contactAssociate/contactDepartment|string|| x |
-|projectMember/contactAssociate/usergroup|userGroup|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/contactAssociate/usergroup|userGroup|| x |
 |projectMember/contactAssociate/usergroupId|int|| x |
 |projectMember/contactAssociate/contactFullName|string|| x |
 |projectMember/contactAssociate/contactCategory|listAny|| x |
@@ -845,7 +846,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaintProject?$select=sale/currency,sale/amountInBaseCurrency,document/associateId,document/associate/usergroup,projectMember/restrictionAddress/addressId
+GET /api/v1/archive/SaintProject?$select=appointment/associate/usergroup,document/associate/firstName,document/documentUdef/SuperOffice:4,projectMember/contactNoMail,projectMember/streetAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

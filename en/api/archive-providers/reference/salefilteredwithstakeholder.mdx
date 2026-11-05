@@ -1192,7 +1192,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sale
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleFilteredWithStakeholder?$select=person/leadStatus,person/isProjectMember,person/personExtra/x_person_longtext,saleStakeholder/person/email/emailDescription,saleStakeholder/person/personAssociate/credentialType
+GET /api/v1/archive/SaleFilteredWithStakeholder?$select=credited,person/personExtra/x_person_time,person/personAssociate/ejDisplayName,saleStakeholder/person/personUdef/SuperOffice:9,saleStakeholder/person/personAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -753,7 +753,7 @@ Shadow contact provider for the Document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowSelection?$select=person/correspondingAssociate/assocTooltip,contact/postAddress/line3,contact/contactUdef/SuperOffice:3,contact/NumberOfActivitiesInPeriod,contact/NumberOfTickets
+GET /api/v1/archive/DocumentShadowSelection?$select=registeredDate,person/personUrl/URLDescription,person/correspondingAssociate/assocType,contact/orgnr,contact/activeErpLinks
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

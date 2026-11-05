@@ -360,7 +360,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Reci
 ## Sample
 
 ```http!
-GET /api/v1/archive/recipientfavourites?$select=kanaFirstName,category,postAddress/wgs84latitude
+GET /api/v1/archive/recipientfavourites?$select=personExtra/y_rental/x_amount,contactAssociate/contactFullName,restrictionAddress/county
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

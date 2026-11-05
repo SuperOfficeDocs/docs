@@ -1037,6 +1037,7 @@ as well as before any ORDER BY, are applied.
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1076,12 +1077,12 @@ as well as before any ORDER BY, are applied.
 |personAppointment/associate/usergroupId|int|| x |
 |personAppointment/associate/contactFullName|string|| x |
 |personAppointment/associate/contactCategory|listAny|| x |
-|personAppointment/associate/role|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/role|listAny|| x |
 |personAppointment/associate/assocName|associate|| x |
 |personAppointment/associate/assocTooltip|string||  |
 |personAppointment/associate/assocType|listAny|| x |
@@ -1113,7 +1114,7 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextPerson?$select=personTargetRelation/personAssociateId,personContact/url/URLAddress,request/createdBy/lastName,request/createdBy/userName
+GET /api/v1/archive/FreetextPerson?$select=lastName,birthMonth,personTargetRelation/supportAssociate,personTargetRelation/restrictionContactId,personContact/forceCompany
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

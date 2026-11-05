@@ -799,7 +799,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowSelectionCombinedV2?$select=vat,alternative/version/reason,alternative/version/quote/sale/person/rank,alternative/version/quote/sale/person/personExtra/y_rental/x_end,alternative/version/quote/sale/person/personAssociate/simultaneousEjUser
+GET /api/v1/archive/QuoteLineShadowSelectionCombinedV2?$select=alternative/version/quote/sale/person/personPager/description,alternative/version/quote/sale/person/personAddress/county,alternative/version/quote/sale/contact/associateId,alternative/version/quote/sale/contact/updatedBy,alternative/version/quote/sale/contact/activeErpLinks
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

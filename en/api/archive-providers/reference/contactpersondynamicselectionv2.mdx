@@ -456,6 +456,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -542,12 +543,12 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |document/updatedDate|date|| x |
 |document/registeredBy|associate|| x |
 |document/registeredByFullName|associate|| x |
-|document/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/registeredDate|date|| x |
 |document/documentId|int|| x |
 |document/keywords|string|| x |
 |document/ourref|string|| x |
@@ -647,12 +648,12 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |supportLanguage|listAny|| x |
 |supportAssociate|associate|| x |
 |supportAssociateFullName|associate|| x |
-|personAssociateId|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
 |personCategory|listAny|| x |
 |personCategoryGroup|listAny|| x |
@@ -752,12 +753,12 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personSourceRelation/position|listAny|| x |
 |personSourceRelation/personNumber|string|| x |
 |personSourceRelation/title|string|| x |
-|personSourceRelation/personCountry|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personSourceRelation/personCountry|listAny|| x |
 |personSourceRelation/personCountryId|int|| x |
 |personSourceRelation/personNoMail|bool|| x |
 |personSourceRelation/rank|int|| x |
@@ -857,12 +858,12 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personTargetRelation/hasCompany|bool|| x |
 |personTargetRelation/isProjectMember|bool|| x |
 |personTargetRelation/isStakeholder|bool|| x |
-|personTargetRelation/updatedByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personTargetRelation/updatedByWorkflow|listAny|| x |
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
 |personTargetRelation/createdByForm|listAny|| x |
 |personTargetRelation/restrictionContactId|int||  |
@@ -962,12 +963,12 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |workflowInstance/workflowInstanceWaitUntil|date|| x |
 |workflowInstance/workflowInstanceStepStarted|date|| x |
 |workflowInstance/workflowInstanceCurrentStepDescription| *None* ||  |
-|workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
 |workflowInstance/workflowInstanceDropoutReason|string||  |
 |workflowInstance/workflowInstanceLastCommunicationBounceInfo| *None* ||  |
@@ -995,6 +996,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
 |workflowInstance/emailFlow/registeredBy|associate|| x |
@@ -1066,13 +1068,13 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |request/readStatus|listAny|| x |
 |request/realTimeSpentQueue|timeSpan|| x |
 |request/realTimeSpentExternally|timeSpan|| x |
-|request/realTimeSpentInternally|timeSpan|| x |
-|request/timeSpentQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/realTimeSpentInternally|timeSpan|| x |
+|request/timeSpentQueue|timeSpan|| x |
 |request/timeSpentExternally|timeSpan|| x |
 |request/timeSpentInternally|timeSpan|| x |
 |request/timeSpent|timeSpan|| x |
@@ -1171,13 +1173,13 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |request/extra/x\_ticket\_date|date|| x |
 |request/extra/x\_ticket\_datetime|datetime|| x |
 |request/extra/x\_ticket\_time| *None* || x |
-|request/extra/x\_ticket\_boolean|bool|| x |
-|request/extra/x\_ticket\_timespan|timeSpan|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/extra/x\_ticket\_boolean|bool|| x |
+|request/extra/x\_ticket\_timespan|timeSpan|| x |
 |request/extra/x\_ticket\_short\_text|string|| x |
 |request/extra/x\_ticket\_shorttext\_list|listAny|| x |
 |request/extra/x\_ticket\_timestamp|datetime|| x |
@@ -1276,13 +1278,13 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |projectMembers/NumberOfSales|int||  |
 |projectMembers/NumberOfSalesInPeriod|int||  |
 |projectMembers/NumberOfNotCompletedSales|int||  |
-|projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
-|projectMembers/LastSale|date||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
+|projectMembers/LastSale|date||  |
 |projectMembers/LastCompletedSale|date||  |
 |projectMembers/LastDoBySale|date||  |
 |projectMembers/SaintStatus3|saintStatus||  |
@@ -1329,6 +1331,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1380,14 +1383,14 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personAppointment/associate/credentialDisplayValue| *None* || x |
 |personAppointment/associate/isActive|bool|| x |
 |personAppointment/associate/isActiveText|bool|| x |
-|personAppointment/associate/portraitThumbnail| *None* ||  |
-|personAppointment/associate/otherGroups|userGroup||  |
-|personAppointment/associate/userName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/portraitThumbnail| *None* ||  |
+|personAppointment/associate/otherGroups|userGroup||  |
+|personAppointment/associate/userName|string|| x |
 |personAppointment/associate/personEmail|string|| x |
 |personAppointment/associate/locationAddress|string|| x |
 |personAppointment/associate/isLocation|bool|| x |
@@ -1485,14 +1488,14 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/quote/version/alternative/quoteline/earningPercent|decimal|| x |
 |sale/quote/version/alternative/quoteline/updatedBy|associate|| x |
 |sale/quote/version/alternative/quoteline/updatedByFullName|associate|| x |
-|sale/quote/version/alternative/quoteline/updatedDate|date|| x |
-|sale/quote/version/alternative/quoteline/registeredBy|associate|| x |
-|sale/quote/version/alternative/quoteline/registeredByFullName|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/quote/version/alternative/quoteline/updatedDate|date|| x |
+|sale/quote/version/alternative/quoteline/registeredBy|associate|| x |
+|sale/quote/version/alternative/quoteline/registeredByFullName|associate|| x |
 |sale/quote/version/alternative/quoteline/registeredDate|date|| x |
 |sale/quote/version/alternative/quoteline/productCategoryKey|listExternal|| x |
 |sale/quote/version/alternative/quoteline/productFamilyKey|listExternal|| x |
@@ -1506,7 +1509,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonDynamicSelectionV2?$select=postAddress/county,contactAssociate/ejDisplayName,sourceRelation/country,appointment/associate/portraitThumbnail,appointment/appointment/agendaHtml
+GET /api/v1/archive/ContactPersonDynamicSelectionV2?$select=streetAddress/wgs84latitude,NumberOfTickets,SaintStatus1,saintTicketStatus,targetRelation/department
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

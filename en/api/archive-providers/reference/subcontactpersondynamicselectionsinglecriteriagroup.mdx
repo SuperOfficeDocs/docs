@@ -453,6 +453,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -541,12 +542,12 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |document/registeredByFullName|associate|| x |
 |document/registeredDate|date|| x |
 |document/documentId|int|| x |
-|document/keywords|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/keywords|string|| x |
 |document/ourref|string|| x |
 |document/yourref|string|| x |
 |document/attention|string|| x |
@@ -646,12 +647,12 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |supportAssociateFullName|associate|| x |
 |personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
-|personCategory|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personCategory|listAny|| x |
 |personCategoryGroup|listAny|| x |
 |personCategoryRank|int|| x |
 |personBusiness|listAny|| x |
@@ -751,12 +752,12 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personSourceRelation/title|string|| x |
 |personSourceRelation/personCountry|listAny|| x |
 |personSourceRelation/personCountryId|int|| x |
-|personSourceRelation/personNoMail|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personSourceRelation/personNoMail|bool|| x |
 |personSourceRelation/rank|int|| x |
 |personSourceRelation/birthdate| *None* ||  |
 |personSourceRelation/associateType| *None* ||  |
@@ -856,12 +857,12 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personTargetRelation/isStakeholder|bool|| x |
 |personTargetRelation/updatedByWorkflow|listAny|| x |
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
-|personTargetRelation/createdByForm|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personTargetRelation/createdByForm|listAny|| x |
 |personTargetRelation/restrictionContactId|int||  |
 |personTargetRelation/restrictionPersonId|int||  |
 |personTargetRelation/who| *None* || x |
@@ -961,12 +962,12 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |workflowInstance/workflowInstanceCurrentStepDescription| *None* ||  |
 |workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
-|workflowInstance/workflowInstanceDropoutReason|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|workflowInstance/workflowInstanceDropoutReason|string||  |
 |workflowInstance/workflowInstanceLastCommunicationBounceInfo| *None* ||  |
 |workflowInstance/workflowInstanceLastCommunicationTime|datetime|| x |
 |workflowInstance/workflowInstanceLastCommunicationStatus|listAny|| x |
@@ -992,6 +993,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
 |workflowInstance/emailFlow/registeredBy|associate|| x |
@@ -1065,13 +1067,13 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |request/realTimeSpentExternally|timeSpan|| x |
 |request/realTimeSpentInternally|timeSpan|| x |
 |request/timeSpentQueue|timeSpan|| x |
-|request/timeSpentExternally|timeSpan|| x |
-|request/timeSpentInternally|timeSpan|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/timeSpentExternally|timeSpan|| x |
+|request/timeSpentInternally|timeSpan|| x |
 |request/timeSpent|timeSpan|| x |
 |request/timeToReply|timeSpan|| x |
 |request/timeToClose|timeSpan|| x |
@@ -1170,13 +1172,13 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |request/extra/x\_ticket\_time| *None* || x |
 |request/extra/x\_ticket\_boolean|bool|| x |
 |request/extra/x\_ticket\_timespan|timeSpan|| x |
-|request/extra/x\_ticket\_short\_text|string|| x |
-|request/extra/x\_ticket\_shorttext\_list|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/extra/x\_ticket\_short\_text|string|| x |
+|request/extra/x\_ticket\_shorttext\_list|listAny|| x |
 |request/extra/x\_ticket\_timestamp|datetime|| x |
 |request/extra/x\_ticket\_project\_relation|stringorPK|| x |
 |request/extra/x\_ticket\_faq|stringorPK|| x |
@@ -1275,13 +1277,13 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |projectMembers/NumberOfNotCompletedSales|int||  |
 |projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
 |projectMembers/LastSale|date||  |
-|projectMembers/LastCompletedSale|date||  |
-|projectMembers/LastDoBySale|date||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMembers/LastCompletedSale|date||  |
+|projectMembers/LastDoBySale|date||  |
 |projectMembers/SaintStatus3|saintStatus||  |
 |projectMembers/saintSaleStatus|listAny||  |
 |projectMembers/saintAmountClass|listAny||  |
@@ -1326,6 +1328,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1379,14 +1382,14 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personAppointment/associate/isActiveText|bool|| x |
 |personAppointment/associate/portraitThumbnail| *None* ||  |
 |personAppointment/associate/otherGroups|userGroup||  |
-|personAppointment/associate/userName|string|| x |
-|personAppointment/associate/personEmail|string|| x |
-|personAppointment/associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/userName|string|| x |
+|personAppointment/associate/personEmail|string|| x |
+|personAppointment/associate/locationAddress|string|| x |
 |personAppointment/associate/isLocation|bool|| x |
 |personAppointment/appointment/text|positiveString|| x |
 |personAppointment/appointment/description|positiveString|| x |
@@ -1402,7 +1405,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SubContactPersonDynamicSelectionSingleCriteriaGroup?$select=companyCategoryRank,registeredDate,email/emailHasBounced,postAddress/line2,appointment/intention
+GET /api/v1/archive/SubContactPersonDynamicSelectionSingleCriteriaGroup?$select=contactAssociate/contactName,contactUdef/SuperOffice:10,LastDoBySale,sale/saleUdef/SuperOffice:1,appointment/associate/personEmail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -59,6 +59,7 @@ Shadow contact provider for the static appointment provider.
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -121,12 +122,12 @@ Shadow contact provider for the static appointment provider.
 |contact/searchPhone/description|string|| x |
 |contact/email/emailProtocol|string|| x |
 |contact/email/emailAddress|string|| x |
-|contact/email/emailDescription|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/email/emailDescription|string|| x |
 |contact/email/emailId|int|| x |
 |contact/email/emailLastSent|datetime|| x |
 |contact/email/emailBounceCount|int|| x |
@@ -226,12 +227,12 @@ Shadow contact provider for the static appointment provider.
 |contact/contactExtra/x\_contact\_date|date|| x |
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 |contact/contactExtra/x\_contact\_time| *None* || x |
-|contact/contactExtra/x\_contact\_boolean|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_boolean|bool|| x |
 |contact/contactExtra/x\_contact\_timespan|timeSpan|| x |
 |contact/contactExtra/x\_contact\_shorttext|string|| x |
 |contact/contactExtra/x\_contact\_short\_dropdown|listAny|| x |
@@ -331,12 +332,12 @@ Shadow contact provider for the static appointment provider.
 |person/personMobilePhone/formattedNumber|string||  |
 |person/personMobilePhone/description|string|| x |
 |person/personPrivate/formattedNumber|string||  |
-|person/personPrivate/description|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personPrivate/description|string|| x |
 |person/personPager/formattedNumber|string||  |
 |person/personPager/description|string|| x |
 |person/personDirectFax/formattedNumber|string||  |
@@ -436,12 +437,12 @@ Shadow contact provider for the static appointment provider.
 |person/personAssociate/assocType|listAny|| x |
 |person/personAssociate/ejUserId|int||  |
 |person/personAssociate/simultaneousEjUser|bool||  |
-|person/personAssociate/ejDisplayName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/ejDisplayName|string|| x |
 |person/personAssociate/ejStatus|int||  |
 |person/personAssociate/credentialType| *None* || x |
 |person/personAssociate/credentialDisplayValue| *None* || x |
@@ -541,12 +542,12 @@ Shadow contact provider for the static appointment provider.
 |project/projectUrl/URLDescription|string|| x |
 |project/projectAssociate/firstName|string|| x |
 |project/projectAssociate/lastName|string|| x |
-|project/projectAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/middleName|string|| x |
 |project/projectAssociate/fullName|string|| x |
 |project/projectAssociate/contactId|int||  |
 |project/projectAssociate/personId|int||  |
@@ -646,12 +647,12 @@ Shadow contact provider for the static appointment provider.
 |sale/originalStage|listAny|| x |
 |sale/stage|listAny|| x |
 |sale/stageName| *None* || x |
-|sale/saleStatus|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/saleStatus|listAny|| x |
 |sale/stageRank| *None* || x |
 |sale/saleType|listAny|| x |
 |sale/saleTypeId| *None* || x |
@@ -751,12 +752,12 @@ Shadow contact provider for the static appointment provider.
 |associate/portraitThumbnail| *None* ||  |
 |associate/otherGroups|userGroup||  |
 |associate/userName|string|| x |
-|associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/personEmail|string|| x |
 |associate/locationAddress|string|| x |
 |associate/isLocation|bool|| x |
 |appointment/text|positiveString|| x |
@@ -778,7 +779,7 @@ Shadow contact provider for the static appointment provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowStaticSelectionV2?$select=contact/contactId,contact/contactUdef/SuperOffice:3,contact/LastActivity,person/personMobilePhone/formattedNumber,person/correspondingAssociate/userName
+GET /api/v1/archive/AppointmentShadowStaticSelectionV2?$select=person/personRegisteredByFullName,person/personAddress/formattedAddress,sale/associate/simultaneousEjUser
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

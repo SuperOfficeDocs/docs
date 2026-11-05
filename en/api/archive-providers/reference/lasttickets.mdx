@@ -812,7 +812,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 ## Sample
 
 ```http!
-GET /api/v1/archive/LastTickets?$select=connectId,createdBy/usergroup,ownedBy/simultaneousEjUser,person/personHasInterests,person/personPager/description
+GET /api/v1/archive/LastTickets?$select=person/kanaLastName,person/personInterestIds,contact/streetAddress/city,sale/projectId,sale/associate/credentialType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

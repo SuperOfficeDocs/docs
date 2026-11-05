@@ -450,6 +450,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -539,12 +540,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |document/registeredDate|date|| x |
 |document/documentId|int|| x |
 |document/keywords|string|| x |
-|document/ourref|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/ourref|string|| x |
 |document/yourref|string|| x |
 |document/attention|string|| x |
 |document/subject|string|| x |
@@ -607,7 +608,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/DummySelectionContact?$select=updatedDate,postAddress/wgs84longitude,contactInterestIds,contactUdef/SuperOffice:1,sourceRelation/linkedinUrl
+GET /api/v1/archive/DummySelectionContact?$select=targetRelation/yearFounded,sale/lossReason,sale/daysInStage,appointment/appointmentPublish/isPublished
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

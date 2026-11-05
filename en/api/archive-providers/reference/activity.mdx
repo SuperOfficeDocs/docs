@@ -766,6 +766,7 @@ Activity archive provider that performs no filtering. This archive is not presen
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -802,7 +803,7 @@ Activity archive provider that performs no filtering. This archive is not presen
 ## Sample
 
 ```http!
-GET /api/v1/archive/Activity?$select=projectId,person/personUdef/SuperOffice:4,person/correspondingAssociate/credentialDisplayValue,contact/contactExtra/x_contact_float,project/projectUdef/SuperOffice:5
+GET /api/v1/archive/Activity?$select=ourref,person/personAssociate/ejUserId,person/personAssociate/simultaneousEjUser,contact/contactUdef/SuperOffice:9,project/projectAssociate/assocTooltip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

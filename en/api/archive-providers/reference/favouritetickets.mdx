@@ -813,7 +813,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Favo
 ## Sample
 
 ```http!
-GET /api/v1/archive/FavouriteTickets?$select=contact/contactId,contact/contactUdef/SuperOffice:3,person/personExtra/x_person_time
+GET /api/v1/archive/FavouriteTickets?$select=contact/streetAddress/line1,extra/x_ticket_time,extra/x_ticket_shorttext_list,favouriteAssociateId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -95,7 +95,7 @@ public virtual int ActiveStatusMonitorId { get; set; }
 
 ### Associate {#SuperOffice_WebApi_Data_ProjectEntity_Associate}
 
-The person that created the project
+The project owner
 &lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
 
 ```csharp

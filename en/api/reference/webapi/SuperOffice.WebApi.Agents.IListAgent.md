@@ -5516,6 +5516,30 @@ Override language/culture codes on this request.
 
 Array of TicketStatusEntity objects
 
+### GetTicketStatusPostponeOptionsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusPostponeOptionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Returns the postpone options of a Postponed ticket status, in menu order. A status without saved options returns the standard options. Returns an empty array for a status that is not Postponed.
+
+```csharp
+Task<TicketPostponeOption[]> GetTicketStatusPostponeOptionsAsync(int ticketStatusId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketStatusId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Id of the ticket status
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption)\[\]\&gt;
+
+The postpone options, including inactive ones
+
 ### GetTicketStatusesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusesAsync_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
@@ -6861,6 +6885,34 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\&gt;
 
 New or updated TicketStatusEntity
+
+### SaveTicketStatusPostponeOptionsAsync\(int, TicketPostponeOption\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTicketStatusPostponeOptionsAsync_System_Int32_SuperOffice_WebApi_Data_TicketPostponeOption___SuperOffice_WebApi_RequestOptions_}
+
+Replaces the postpone options of a Postponed ticket status. Standard options can only change rank and active state.
+
+```csharp
+Task<TicketPostponeOption[]> SaveTicketStatusPostponeOptionsAsync(int ticketStatusId, TicketPostponeOption[] postponeOptions, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketStatusId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Id of the ticket status
+
+`postponeOptions` [TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption)\[\]
+
+All postpone options of the status, in menu order
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption)\[\]\&gt;
+
+The saved postpone options, in menu order
 
 ### SaveTicketTypeEntityAsync\(TicketTypeEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTicketTypeEntityAsync_SuperOffice_WebApi_Data_TicketTypeEntity_SuperOffice_WebApi_RequestOptions_}
 

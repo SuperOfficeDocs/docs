@@ -177,7 +177,7 @@ Override language/culture codes on this request.
 
 ### CollectDataAdditionsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectDataAdditionsAsync_SuperOffice_WebApi_RequestOptions_}
 
-Collect and transmit usage statistics: Database Additions. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+Deprecated, this call does nothing. Usage statistics (database additions) are collected and transmitted automatically by a NetServer nightly job.
 
 ```csharp
 public Task CollectDataAdditionsAsync(RequestOptions requestOptions = null)
@@ -197,7 +197,7 @@ This method has no return value
 
 ### CollectTableSizesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectTableSizesAsync_SuperOffice_WebApi_RequestOptions_}
 
-Collect and transmit usage statistics: Table Sizes. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+Deprecated, this call does nothing. Usage statistics (table sizes) are collected and transmitted automatically by a NetServer nightly job.
 
 ```csharp
 public Task CollectTableSizesAsync(RequestOptions requestOptions = null)
@@ -217,7 +217,7 @@ This method has no return value
 
 ### CollectWebUsageAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectWebUsageAsync_SuperOffice_WebApi_RequestOptions_}
 
-Collect and transmit usage statistics: Web-based clients Usage. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+Deprecated, this call does nothing. Usage statistics (web-based clients) are collected and transmitted automatically by a NetServer nightly job.
 
 ```csharp
 public Task CollectWebUsageAsync(RequestOptions requestOptions = null)
@@ -237,7 +237,7 @@ This method has no return value
 
 ### CollectWinUsageAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_CollectWinUsageAsync_SuperOffice_WebApi_RequestOptions_}
 
-Collect and transmit usage statistics: Windows CRM Client Usage. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+Deprecated, this call does nothing. Windows CRM client usage statistics are no longer collected.
 
 ```csharp
 public Task CollectWinUsageAsync(RequestOptions requestOptions = null)
@@ -705,7 +705,7 @@ Override language/culture codes on this request.
 
 ### ResyncUsersAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_ResyncUsersAsync_SuperOffice_WebApi_RequestOptions_}
 
-Resynchronize user information with SuperOffice Community, if opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+Deprecated, this call does nothing. User information is no longer resynchronized with SuperOffice Community.
 
 ```csharp
 public Task ResyncUsersAsync(RequestOptions requestOptions = null)

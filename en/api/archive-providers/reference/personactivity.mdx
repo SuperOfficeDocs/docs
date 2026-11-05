@@ -818,6 +818,7 @@ Activity archive provider for the Person card
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -860,12 +861,12 @@ Activity archive provider for the Person card
 |emailFlow/hierarchyName|string|| x |
 |emailFlow/hierarchyParentId|int|| x |
 |emailFlow/hierarchyFullpathIds| *None* ||  |
-|historyRank|int|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|historyRank|int|| x |
 |participating|bool||  |
 |appointmentId|int|| x |
 |endDate|date|| x |
@@ -881,6 +882,7 @@ Activity archive provider for the Person card
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -916,7 +918,7 @@ Activity archive provider for the Person card
 ## Sample
 
 ```http!
-GET /api/v1/archive/PersonActivity?$select=person/correspondingAssociate/contactId,contact/contactDeleted,visibleFor,sale/stage,sale/associate/ejStatus
+GET /api/v1/archive/PersonActivity?$select=contact/phone/formattedNumber,contact/email/emailLastSent,contact/postAddress/line3,contact/streetAddress/city,contact/contactAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

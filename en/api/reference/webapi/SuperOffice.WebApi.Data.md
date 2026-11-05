@@ -965,6 +965,8 @@ This service supports fetching of client interface configuration data. Client co
 
  [Configuration\_GetHelpDispatcherUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetHelpDispatcherUrlRequest)
 
+ [Configuration\_GetLandingPageOverviewSettingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetLandingPageOverviewSettingsRequest)
+
  [Configuration\_GetLandingPageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetLandingPageRequest)
 
  [Configuration\_GetMyWindowPosSizesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetMyWindowPosSizesRequest)
@@ -1008,6 +1010,8 @@ This service supports fetching of client interface configuration data. Client co
  [Configuration\_SaveWindowPosSizesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SaveWindowPosSizesRequest)
 
  [Configuration\_SetAppliesToKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SetAppliesToKeyRequest)
+
+ [Configuration\_SetLandingPageOverviewSettingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SetLandingPageOverviewSettingsRequest)
 
  [Configuration\_SetLandingPagePinForAssociateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SetLandingPagePinForAssociateRequest)
 
@@ -1148,6 +1152,11 @@ Setting for a Copilot data source (key + value)
 
 Carrier object for CopilotEntity.
 Entity for Copilot configuration
+
+ [CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck)
+
+Carrier object for CopyPartCheck.
+Whether one optional part of a copy can be copied, and if not, why. Returned for each part by the copy check operations, such as SaleAgent.CheckSaleEntityCopy and ProjectAgent.CheckProjectEntityCopy.
 
  [Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)
 
@@ -1452,7 +1461,7 @@ Dashboard Tile option
 
  [UserPreferenceStrings.DataCollection](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.DataCollection)
 
-Data collection (usage statistics) - used for status storage and locking, not intended for user interaction
+Data collection (usage statistics) - consent and collection settings, not intended for user interaction
 
  [DataRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.DataRight)
 
@@ -3027,6 +3036,8 @@ The list item entity contains generic list item information
 
  [List\_GetTicketPrioritiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetTicketPrioritiesRequest)
 
+ [List\_GetTicketStatusPostponeOptionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetTicketStatusPostponeOptionsRequest)
+
  [List\_GetTicketStatusesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetTicketStatusesRequest)
 
  [List\_GetTicketTypesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetTicketTypesRequest)
@@ -3088,6 +3099,8 @@ The list item entity contains generic list item information
  [List\_SaveListItemEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveListItemEntityRequest)
 
  [List\_SaveQuickRepliesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveQuickRepliesRequest)
+
+ [List\_SaveTicketStatusPostponeOptionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveTicketStatusPostponeOptionsRequest)
 
  [List\_SetDocumentPluginForAllDocumentTemplatesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetDocumentPluginForAllDocumentTemplatesRequest)
 
@@ -3821,18 +3834,33 @@ The built-in product family list. Used by the SuperOffice Quote Connector to cat
 Carrier object for ProductType.
 The built-in product type list. Used by the SuperOffice Quote Connector to categorize products.
 
- [UserPreferenceStrings.Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Project)
-
-Project preferences
-
  [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
 Carrier object for Project.
+
+ [UserPreferenceStrings.Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Project)
+
+Project preferences
 
  [ProjectBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectBoardViewSettings)
 
 Carrier object for ProjectBoardViewSettings.
 Settings for project selection board view.
+
+ [ProjectCopyCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyCheck)
+
+Carrier object for ProjectCopyCheck.
+Result of checking a project copy before it is saved, for ProjectAgent.CheckProjectEntityCopy: whether each optional part can be copied, and errors in the fields the user can edit.
+
+ [ProjectCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyOptions)
+
+Carrier object for ProjectCopyOptions.
+Which optional parts to copy alongside a project, for ProjectAgent.SaveProjectEntityCopy. Options live here rather than as parameters on the operation, so a new one can be added without changing the signature. Nothing set copies the project alone.
+
+ [ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult)
+
+Carrier object for ProjectCopyResult.
+Result of saving a copied project: the project that was created, and what became of each optional part.
 
  [ProjectEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEntity)
 
@@ -3872,7 +3900,11 @@ Carrier object for ProjectTypeStatusLink.
 
  [Project\_AddProjectMembersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_AddProjectMembersRequest)
 
+ [Project\_CheckProjectEntityCopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_CheckProjectEntityCopyRequest)
+
  [Project\_CreateNewEntryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_CreateNewEntryRequest)
+
+ [Project\_CreateProjectEntityFromExistingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_CreateProjectEntityFromExistingRequest)
 
  [Project\_DeleteProjectEventEntityFromProjectIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_DeleteProjectEventEntityFromProjectIdRequest)
 
@@ -3931,6 +3963,8 @@ Carrier object for ProjectTypeStatusLink.
  [Project\_MergeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_MergeRequest)
 
  [Project\_OfferAutoNextStatusOnApppointmentCompletedRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_OfferAutoNextStatusOnApppointmentCompletedRequest)
+
+ [Project\_SaveProjectEntityCopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_SaveProjectEntityCopyRequest)
 
  [Project\_SaveProjectEntityWithoutMembersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_SaveProjectEntityWithoutMembersRequest)
 
@@ -4452,18 +4486,33 @@ Definition of the three perionds for status monitors and some other settings per
 
  [Saint\_SetRankOnStatusMonitorsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Saint_SetRankOnStatusMonitorsRequest)
 
- [UserPreferenceStrings.Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Sale)
-
-Preference keys for sales settings
-
  [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 Carrier object for Sale.
+
+ [UserPreferenceStrings.Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Sale)
+
+Preference keys for sales settings
 
  [SaleBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings)
 
 Carrier object for SaleBoardViewSettings.
 Settings for sale selection board view.
+
+ [SaleCopyCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyCheck)
+
+Carrier object for SaleCopyCheck.
+Result of checking a sale copy before it is saved, for SaleAgent.CheckSaleEntityCopy: whether each optional part can be copied, and errors in the fields the user can edit.
+
+ [SaleCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyOptions)
+
+Carrier object for SaleCopyOptions.
+Which optional parts to copy alongside a sale, for SaleAgent.SaveSaleEntityCopy. Options live here rather than as parameters on the operation, so a new one can be added without changing the signature. Nothing set copies the sale alone.
+
+ [SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult)
+
+Carrier object for SaleCopyResult.
+Result of saving a copied sale: the sale that was created, and what became of each optional part.
 
  [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
@@ -4506,7 +4555,15 @@ Carrier object for SaleTypeStageLink.
 
  [Sale\_BatchUpdateNextDueDateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_BatchUpdateNextDueDateRequest)
 
+ [Sale\_CheckSaleEntityCopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_CheckSaleEntityCopyRequest)
+
+ [Sale\_CreateDefaultSaleEntityBySaleTypeIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_CreateDefaultSaleEntityBySaleTypeIdRequest)
+
+ [Sale\_CreateSaleEntityFromExistingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_CreateSaleEntityFromExistingRequest)
+
  [Sale\_DeleteSaleStakeholdersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_DeleteSaleStakeholdersRequest)
+
+ [Sale\_GetExpectedSaleDateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_GetExpectedSaleDateRequest)
 
  [Sale\_GetMyOpportunitiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_GetMyOpportunitiesRequest)
 
@@ -4549,6 +4606,8 @@ Carrier object for SaleTypeStageLink.
  [Sale\_OfferAutoNextStageOnApppointmentCompletedRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_OfferAutoNextStageOnApppointmentCompletedRequest)
 
  [Sale\_SaleHasQuoteRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_SaleHasQuoteRequest)
+
+ [Sale\_SaveSaleEntityCopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_SaveSaleEntityCopyRequest)
 
  [Sale\_SetAsLostRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_SetAsLostRequest)
 
@@ -5080,6 +5139,11 @@ The ticket messages are e-mails, SMS or other messages attached to a ticket (aka
 
 Carrier object for TicketMessageHeader.
 Contains information about a header connected to a ticket message
+
+ [TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption)
+
+Carrier object for TicketPostponeOption.
+A postpone option offered on a Postponed ticket status.
 
  [TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)
 
@@ -6118,6 +6182,14 @@ This Enum consists of flag values that can be combined.
 Copilot data source type
 This Enum is used by:  copilot_data_source.copilot_data_source_type
 
+ [CopyPartAvailability](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartAvailability)
+
+Whether one optional part of a copy can be copied, as checked before the copy is saved. Not a stored field: this only travels in the copy check carriers returned by the copy check operations.
+
+ [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)
+
+Outcome of one optional part of a copy operation. Not a stored field: this only ever travels in the copy result objects on carriers returned by copy operations.
+
  [CredentialControlType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CredentialControlType)
 
 Types of control used with user administration work with credentials
@@ -6234,7 +6306,7 @@ Hierarchy domain
  [DurationUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.DurationUnit)
 
 Units of duration - from seconds to centuries
-This Enum is used by:  ProjType.durationUnit; SaleType.durationUnit
+This Enum is used by:  ProjType.durationUnit; SaleType.durationUnit; ticket_status_postpone.unit
 
  [EFieldRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.EFieldRight)
 
@@ -6712,6 +6784,16 @@ This Enum is used by:  ej_message.type
 
 Communication channel leading to ticket being created
 This Enum is used by:  ticket.origin
+
+ [TicketPostponeRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeRule)
+
+How the activation time of a postponed ticket is calculated
+This Enum is used by:  ticket_status_postpone.rule
+
+ [TicketPostponeStandard](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeStandard)
+
+Built-in postpone option a ticket_status_postpone row represents
+This Enum is used by:  ticket_status_postpone.standard_kind
 
  [TicketPriorityEscalateAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateAction)
 

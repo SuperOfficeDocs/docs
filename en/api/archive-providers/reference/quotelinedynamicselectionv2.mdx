@@ -794,7 +794,7 @@ QuoteLine selection archive with OR-able selection groups. Each group is represe
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineDynamicSelectionV2?$select=discountPercent,alternative/vatInfo,alternative/version/quote/sale/contact/restrictionAddress/city,alternative/version/quote/sale/contact/LastDoByActivity,alternative/version/quote/sale/project/description
+GET /api/v1/archive/QuoteLineDynamicSelectionV2?$select=alternative/description,alternative/version/extraField5,alternative/version/quote/sale/person/correspondingAssociate/ejStatus,alternative/version/quote/sale/contact/hasInterests,alternative/version/quote/sale/contact/contactAssociate/assocType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

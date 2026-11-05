@@ -17,8 +17,8 @@ Activity archive provider for the Company card
 
 | Name | Description |
 | ---- | ----- |
-|"chat"||
 |"document"||
+|"chat"||
 |"formSubmission"||
 |"appointment"||
 |"mailing"||
@@ -29,64 +29,44 @@ Activity archive provider for the Company card
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
 |getNoRows|bool||  |
-|chatSessionId|int|| x |
-|firstMessage|string|| x |
-|lastMessage|string|| x |
-|whenRequested|datetime|| x |
-|whenStarted|datetime|| x |
-|whenEnded|datetime|| x |
-|duration|timeSpan||  |
-|timeInQueue|timeSpan|| x |
-|queueLength|int|| x |
-|rating|int|| x |
-|agent|ejUser|| x |
-|status|listAny|| x |
-|icon| *None* || x |
+|completed|bool|| x |
+|icon|listAny|| x |
 |date|date|| x |
+|time| *None* ||  |
 |type|listAny|| x |
+|recordType|string|| x |
 |text|positiveString|| x |
 |associateId|associate|| x |
 |contactId|listAny|| x |
 |personId|listAny|| x |
+|projectId|listAny|| x |
+|saleId|int|| x |
+|userGroup|userGroup|| x |
+|who| *None* ||  |
+|updatedBy|associate|| x |
+|updatedByFullName|associate|| x |
 |updatedDate|date|| x |
+|registeredBy|associate|| x |
+|registeredByFullName|associate|| x |
 |registeredDate|date|| x |
+|documentId|int|| x |
+|keywords|string|| x |
+|ourref|string|| x |
+|yourref|string|| x |
+|attention|string|| x |
+|subject|string|| x |
+|name|string|| x |
+|mailMergeDraft|bool|| x |
+|snum|int|| x |
+|isReport|bool||  |
+|suggestedDocumentId|int|| x |
+|isMail|bool||  |
 |recordTypeText| *None* || x |
-|chatTopic/chatTopicId|int|| x |
-|chatTopic/name|string|| x |
-|chatTopic/description|string|| x |
-|chatTopic/badgeHeader|string|| x |
-|associate/firstName|string|| x |
-|associate/lastName|string|| x |
-|associate/middleName|string|| x |
-|associate/fullName|string|| x |
-|associate/contactId|int||  |
-|associate/personId|int||  |
-|associate/mrMrs|string|| x |
-|associate/title|string|| x |
-|associate/contactName|string|| x |
-|associate/contactDepartment|string|| x |
-|associate/usergroup|userGroup|| x |
-|associate/usergroupId|int|| x |
-|associate/contactFullName|string|| x |
-|associate/contactCategory|listAny|| x |
-|associate/role|listAny|| x |
-|associate/assocName|associate|| x |
-|associate/assocTooltip|string||  |
-|associate/assocType|listAny|| x |
-|associate/ejUserId|int||  |
-|associate/simultaneousEjUser|bool||  |
-|associate/ejDisplayName|string|| x |
-|associate/ejStatus|int||  |
-|associate/credentialType| *None* || x |
-|associate/credentialDisplayValue| *None* || x |
-|associate/isActive|bool|| x |
-|associate/isActiveText|bool|| x |
-|associate/portraitThumbnail| *None* ||  |
-|associate/otherGroups|userGroup||  |
-|associate/userName|string|| x |
-|associate/personEmail|string|| x |
-|associate/locationAddress|string|| x |
-|associate/isLocation|bool|| x |
+|visibleFor|listAny||  |
+|documentPublish/isPublished|bool|| x |
+|documentPublish/publishedFrom|date|| x |
+|documentPublish/publishedTo|date|| x |
+|documentPublish/publishedBy| *None* ||  |
 |person/personId|int|| x |
 |person/firstName|string|| x |
 |person/lastName|string|| x |
@@ -126,11 +106,6 @@ Activity archive provider for the Company card
 |person/personLinkedinUrl|string|| x |
 |person/ticketPriority|listAny|| x |
 |person/supportLanguage|listAny|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |person/supportAssociate|associate|| x |
 |person/supportAssociateFullName|associate|| x |
 |person/personAssociateId|associate|| x |
@@ -151,6 +126,11 @@ Activity archive provider for the Company card
 |person/phone/formattedNumber|string||  |
 |person/personDirectPhone/formattedNumber|string||  |
 |person/personDirectPhone/description|string|| x |
+
+## Supported Columns (cont.)
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
 |person/personMobilePhone/description|string|| x |
 |person/personPrivate/formattedNumber|string||  |
@@ -231,11 +211,6 @@ Activity archive provider for the Company card
 |person/personExtra/y\_rental/x\_end|date|| x |
 |person/personExtra/y\_rental/x\_amount|int|| x |
 |person/personExtra/y\_rental/x\_contact|stringorPK|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/y\_equipment/x\_name|string|| x |
 |person/personExtra/y\_car/id|int|| x |
 |person/personAssociate/firstName|string|| x |
@@ -256,6 +231,11 @@ Activity archive provider for the Company card
 |person/personAssociate/role|listAny|| x |
 |person/personAssociate/assocName|associate|| x |
 |person/personAssociate/assocTooltip|string||  |
+
+## Supported Columns (cont.)
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
 |person/personAssociate/ejUserId|int||  |
 |person/personAssociate/simultaneousEjUser|bool||  |
@@ -336,11 +316,6 @@ Activity archive provider for the Company card
 |contact/updatedByFullName|associate|| x |
 |contact/updatedDate|date|| x |
 |contact/registeredBy|associate|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |contact/registeredByFullName|associate|| x |
 |contact/registeredDate|date|| x |
 |contact/contactSource|listAny|| x |
@@ -361,6 +336,11 @@ Activity archive provider for the Company card
 |contact/contactPhone/description|string|| x |
 |contact/contactFax/formattedNumber|string||  |
 |contact/contactFax/description|string|| x |
+
+## Supported Columns (cont.)
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |contact/searchPhone/formattedNumber|string||  |
 |contact/searchPhone/description|string|| x |
 |contact/email/emailProtocol|string|| x |
@@ -441,11 +421,6 @@ Activity archive provider for the Company card
 |contact/contactAssociate/userName|string|| x |
 |contact/contactAssociate/personEmail|string|| x |
 |contact/contactAssociate/locationAddress|string|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isLocation|bool|| x |
 |contact/contactInterestIds|listInterest||  |
 |contact/contactUdef/SuperOffice:1|string|| x |
@@ -466,6 +441,11 @@ Activity archive provider for the Company card
 |contact/contactExtra/x\_contact\_default\_integer|int|| x |
 |contact/contactExtra/x\_contact\_float|decimal|| x |
 |contact/contactExtra/x\_contact\_longtext|string|| x |
+
+## Supported Columns (cont.)
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 |contact/contactExtra/x\_contact\_date|date|| x |
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
@@ -508,34 +488,6 @@ Activity archive provider for the Company card
 |contact/saintIntention|listAny||  |
 |contact/saintTicketStatus|listAny||  |
 |contact/saintTicketCategory|listAny||  |
-|completed|bool|| x |
-|time| *None* ||  |
-|recordType|string|| x |
-|projectId|listAny|| x |
-|saleId|int|| x |
-|userGroup|userGroup|| x |
-|who| *None* ||  |
-|updatedBy|associate|| x |
-|updatedByFullName|associate|| x |
-|registeredBy|associate|| x |
-|registeredByFullName|associate|| x |
-|documentId|int|| x |
-|keywords|string|| x |
-|ourref|string|| x |
-|yourref|string|| x |
-|attention|string|| x |
-|subject|string|| x |
-|name|string|| x |
-|mailMergeDraft|bool|| x |
-|snum|int|| x |
-|isReport|bool||  |
-|suggestedDocumentId|int|| x |
-|isMail|bool||  |
-|visibleFor|listAny||  |
-|documentPublish/isPublished|bool|| x |
-|documentPublish/publishedFrom|date|| x |
-|documentPublish/publishedTo|date|| x |
-|documentPublish/publishedBy| *None* ||  |
 |project/completed|bool|| x |
 |project/projectId|int|| x |
 |project/name|stringorPK|| x |
@@ -546,11 +498,6 @@ Activity archive provider for the Company card
 |project/associateId|associate|| x |
 |project/hasInfoText|bool|| x |
 |project/icon| *None* || x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |project/text|string|| x |
 |project/description|string|| x |
 |project/updatedBy|associate|| x |
@@ -599,6 +546,11 @@ Activity archive provider for the Company card
 |project/projectAssociate/simultaneousEjUser|bool||  |
 |project/projectAssociate/ejDisplayName|string|| x |
 |project/projectAssociate/ejStatus|int||  |
+
+## Supported Columns (cont.)
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |project/projectAssociate/credentialType| *None* || x |
 |project/projectAssociate/credentialDisplayValue| *None* || x |
 |project/projectAssociate/isActive|bool|| x |
@@ -643,7 +595,39 @@ Activity archive provider for the Company card
 |project/saintTicketCategory|listAny||  |
 |project/project/textId|int|| x |
 |project/project/infoText|positiveString|| x |
+|associate/firstName|string|| x |
+|associate/lastName|string|| x |
+|associate/middleName|string|| x |
+|associate/fullName|string|| x |
+|associate/contactId|int||  |
+|associate/personId|int||  |
+|associate/mrMrs|string|| x |
+|associate/title|string|| x |
 |associate/associateDbId|associate|| x |
+|associate/contactName|string|| x |
+|associate/contactDepartment|string|| x |
+|associate/usergroup|userGroup|| x |
+|associate/usergroupId|int|| x |
+|associate/contactFullName|string|| x |
+|associate/contactCategory|listAny|| x |
+|associate/role|listAny|| x |
+|associate/assocName|associate|| x |
+|associate/assocTooltip|string||  |
+|associate/assocType|listAny|| x |
+|associate/ejUserId|int||  |
+|associate/simultaneousEjUser|bool||  |
+|associate/ejDisplayName|string|| x |
+|associate/ejStatus|int||  |
+|associate/credentialType| *None* || x |
+|associate/credentialDisplayValue| *None* || x |
+|associate/isActive|bool|| x |
+|associate/isActiveText|bool|| x |
+|associate/portraitThumbnail| *None* ||  |
+|associate/otherGroups|userGroup||  |
+|associate/userName|string|| x |
+|associate/personEmail|string|| x |
+|associate/locationAddress|string|| x |
+|associate/isLocation|bool|| x |
 |documentUdef/SuperOffice:1|string|| x |
 |documentUdef/SuperOffice:2|string|| x |
 |documentUdef/SuperOffice:3|int|| x |
@@ -651,11 +635,6 @@ Activity archive provider for the Company card
 |documentUdef/SuperOffice:5|unlimitedDate|| x |
 |documentUdef/SuperOffice:6|bool|| x |
 |documentUdef/SuperOffice:7|listAny|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |documentUdef/SuperOffice:8|decimal|| x |
 |sale/completed|bool|| x |
 |sale/icon|listAny|| x |
@@ -672,6 +651,11 @@ Activity archive provider for the Company card
 |sale/userGroup|userGroup|| x |
 |sale/who| *None* ||  |
 |sale/updatedBy|associate|| x |
+
+## Supported Columns (cont.)
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |sale/updatedByFullName|associate|| x |
 |sale/updatedDate|date|| x |
 |sale/registeredBy|associate|| x |
@@ -756,11 +740,6 @@ Activity archive provider for the Company card
 |sale/associate/isLocation|bool|| x |
 |sale/saleUdef/SuperOffice:1|string|| x |
 |sale/saleUdef/SuperOffice:2|string|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |sale/saleUdef/SuperOffice:3|int|| x |
 |sale/saleUdef/SuperOffice:4|date|| x |
 |sale/saleUdef/SuperOffice:5|unlimitedDate|| x |
@@ -769,6 +748,27 @@ Activity archive provider for the Company card
 |sale/saleUdef/SuperOffice:8|decimal|| x |
 |document/textId|int|| x |
 |document/description|positiveString|| x |
+|chatSessionId|int|| x |
+|firstMessage|string|| x |
+|lastMessage|string|| x |
+|whenRequested|datetime|| x |
+|whenStarted|datetime|| x |
+|whenEnded|datetime|| x |
+|duration|timeSpan||  |
+|timeInQueue|timeSpan|| x |
+
+## Supported Columns (cont.)
+
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|queueLength|int|| x |
+|rating|int|| x |
+|agent|ejUser|| x |
+|status|listAny|| x |
+|chatTopic/chatTopicId|int|| x |
+|chatTopic/name|string|| x |
+|chatTopic/description|string|| x |
+|chatTopic/badgeHeader|string|| x |
 |formSubmissionId|int|| x |
 |formSubmissionFormId|int|| x |
 |formSubmissionName|string|| x |
@@ -789,6 +789,7 @@ Activity archive provider for the Company card
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -860,15 +861,16 @@ Activity archive provider for the Company card
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
 |emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/workflowInProgressCount| *None* ||  |
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -916,7 +918,7 @@ Activity archive provider for the Company card
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactActivity?$select=person/leadStatus,person/personExtra/x_person_date,contact/hasInterests,contact/postAddress/state,contact/contactExtra/x_contact_contact_relation
+GET /api/v1/archive/ContactActivity?$select=updatedDate,person/lastName,person/personAddress/addressId,person/personAddress/state,contact/associateId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

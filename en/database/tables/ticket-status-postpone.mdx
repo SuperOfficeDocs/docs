@@ -1,0 +1,60 @@
+---
+title: ticket_status_postpone table
+description: Postpone options agents can choose when setting a ticket to this Postponed status. A status without rows offers the standard options
+generated: true
+content_type: reference
+envir: online
+---
+
+import TicketStatusPostpone from "./includes/ticket-status-postpone.mdx";
+
+## ticket\_status\_postpone Table (561)
+
+Postpone options agents can choose when setting a ticket to this Postponed status. A status without rows offers the standard options
+
+## Fields
+
+| Name | Description | Type | Nullable |
+|------|-------------|------|:----:|
+|ticket\_status\_postpone\_id|Primary key|PK|No|
+|ticket\_status\_id|The Postponed ticket status the option belongs to|FK [ticket_status](./ticket-status.mdx)|No|
+|rank|Rank order of the option in the postpone menu|UShort|Yes|
+|standard\_kind|Built-in option this row represents, or Custom for options added by an administrator|Enum [TicketPostponeStandard](./enums/ticketpostponestandard.mdx)|No|
+|name|Name of a custom option, shown in the postpone menu. Empty for standard options|String(255)|Yes|
+|rule|How the activation time is calculated|Enum [TicketPostponeRule](./enums/ticketpostponerule.mdx)|No|
+|amount|Number of units for the Interval rule|Int|Yes|
+|unit|Unit of amount for the Interval rule: hours, days, weeks or months|Enum [DurationUnit](./enums/durationunit.mdx)|Yes|
+|weekday|ISO weekday (1 = Monday, 7 = Sunday) for the WeekdayNextWeek rule|Int|Yes|
+|time\_of\_day|Minutes after midnight for the NextWorkingDay and WeekdayNextWeek rules|Int|Yes|
+|working\_time|Skip days and hours outside the opening hours of the ticket priority|Bool|Yes|
+|active|Option is shown in the postpone menu|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
+![ticket_status_postpone table relationship diagram](/media/loc/en/database/tables/ticket_status_postpone.png)
+
+<TicketStatusPostpone />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|ticket\_status\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ticket\_status](./ticket-status)  |This table user defined ticket status values. |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

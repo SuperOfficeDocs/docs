@@ -60,6 +60,7 @@ This is the archive Provider for the Configurable appointment Archive.
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -121,12 +122,12 @@ This is the archive Provider for the Configurable appointment Archive.
 |contact/searchPhone/formattedNumber|string||  |
 |contact/searchPhone/description|string|| x |
 |contact/email/emailProtocol|string|| x |
-|contact/email/emailAddress|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/email/emailAddress|string|| x |
 |contact/email/emailDescription|string|| x |
 |contact/email/emailId|int|| x |
 |contact/email/emailLastSent|datetime|| x |
@@ -226,12 +227,12 @@ This is the archive Provider for the Configurable appointment Archive.
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 |contact/contactExtra/x\_contact\_date|date|| x |
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
-|contact/contactExtra/x\_contact\_time| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_time| *None* || x |
 |contact/contactExtra/x\_contact\_boolean|bool|| x |
 |contact/contactExtra/x\_contact\_timespan|timeSpan|| x |
 |contact/contactExtra/x\_contact\_shorttext|string|| x |
@@ -331,12 +332,12 @@ This is the archive Provider for the Configurable appointment Archive.
 |person/personDirectPhone/description|string|| x |
 |person/personMobilePhone/formattedNumber|string||  |
 |person/personMobilePhone/description|string|| x |
-|person/personPrivate/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personPrivate/formattedNumber|string||  |
 |person/personPrivate/description|string|| x |
 |person/personPager/formattedNumber|string||  |
 |person/personPager/description|string|| x |
@@ -436,12 +437,12 @@ This is the archive Provider for the Configurable appointment Archive.
 |person/personAssociate/assocTooltip|string||  |
 |person/personAssociate/assocType|listAny|| x |
 |person/personAssociate/ejUserId|int||  |
-|person/personAssociate/simultaneousEjUser|bool||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/simultaneousEjUser|bool||  |
 |person/personAssociate/ejDisplayName|string|| x |
 |person/personAssociate/ejStatus|int||  |
 |person/personAssociate/credentialType| *None* || x |
@@ -541,12 +542,12 @@ This is the archive Provider for the Configurable appointment Archive.
 |project/projectUrl/URLAddress|string|| x |
 |project/projectUrl/URLDescription|string|| x |
 |project/projectAssociate/firstName|string|| x |
-|project/projectAssociate/lastName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/lastName|string|| x |
 |project/projectAssociate/middleName|string|| x |
 |project/projectAssociate/fullName|string|| x |
 |project/projectAssociate/contactId|int||  |
@@ -646,12 +647,12 @@ This is the archive Provider for the Configurable appointment Archive.
 |sale/probPercent|int|| x |
 |sale/originalStage|listAny|| x |
 |sale/stage|listAny|| x |
-|sale/stageName| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/stageName| *None* || x |
 |sale/saleStatus|listAny|| x |
 |sale/stageRank| *None* || x |
 |sale/saleType|listAny|| x |
@@ -751,12 +752,12 @@ This is the archive Provider for the Configurable appointment Archive.
 |associate/isActiveText|bool|| x |
 |associate/portraitThumbnail| *None* ||  |
 |associate/otherGroups|userGroup||  |
-|associate/userName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/userName|string|| x |
 |associate/personEmail|string|| x |
 |associate/locationAddress|string|| x |
 |associate/isLocation|bool|| x |
@@ -774,7 +775,7 @@ This is the archive Provider for the Configurable appointment Archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveAppointment?$select=contact/streetAddress/addressId,person/personExtra/x_person_float,person/legalBaseStore,sale/credited,sale/earning
+GET /api/v1/archive/ConfigurableArchiveAppointment?$select=contact/updatedByFullName,contact/streetAddress/formattedMultiLineAddress,contact/contactAssociate/middleName,contact/contactAssociate/locationAddress,contact/LastSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

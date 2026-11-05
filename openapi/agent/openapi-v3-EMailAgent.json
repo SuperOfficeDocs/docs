@@ -14705,10 +14705,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -17300,6 +17300,15 @@
             "format": "int32",
             "description": "Link to task list",
             "type": "integer"
+          },
+          "TicketId": {
+            "format": "int32",
+            "description": "Request this appointment belongs to; 0 or NULL when the appointment is not linked to a request",
+            "type": "integer"
+          },
+          "TicketTitle": {
+            "description": "Title of the request this appointment belongs to. Blank if no request is linked, or the user can't read the request.",
+            "type": "string"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"

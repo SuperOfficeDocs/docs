@@ -501,7 +501,7 @@ Archive provider for listing form submissions
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmission?$select=associate/otherGroups,contact/forceCompany,contact/contactAssociate/ejUserId
+GET /api/v1/archive/FormSubmission?$select=getNoRows,associate/role,person/restrictionAddress/line3,person/personInterestIds,person/personAssociate/isActive
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

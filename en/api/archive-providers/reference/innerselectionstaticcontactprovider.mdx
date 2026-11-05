@@ -453,6 +453,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -539,12 +540,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |document/updatedDate|date|| x |
 |document/registeredBy|associate|| x |
 |document/registeredByFullName|associate|| x |
-|document/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/registeredDate|date|| x |
 |document/documentId|int|| x |
 |document/keywords|string|| x |
 |document/ourref|string|| x |
@@ -644,12 +645,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |supportLanguage|listAny|| x |
 |supportAssociate|associate|| x |
 |supportAssociateFullName|associate|| x |
-|personAssociateId|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
 |personCategory|listAny|| x |
 |personCategoryGroup|listAny|| x |
@@ -715,7 +716,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=contactPhone/description,sale/earningPercent,personCountry
+GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=streetAddress/line1,sourceRelation/countryId,sale/saleType,isStakeholder
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

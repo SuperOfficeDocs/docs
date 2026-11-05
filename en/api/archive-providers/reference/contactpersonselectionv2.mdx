@@ -459,6 +459,7 @@ This is the archive Provider for the Selection contact/person archive.
 |appointment/rawType| *None* || x |
 |appointment/rawStatus| *None* || x |
 |appointment/cautionWarning| *None* || x |
+|appointment/ownedExternally| *None* || x |
 |appointment/visibleInDiary| *None* || x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId| *None* || x |
@@ -544,12 +545,12 @@ This is the archive Provider for the Selection contact/person archive.
 |document/updatedByFullName| *None* || x |
 |document/updatedDate| *None* || x |
 |document/registeredBy| *None* || x |
-|document/registeredByFullName| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/registeredByFullName| *None* || x |
 |document/registeredDate| *None* || x |
 |document/documentId| *None* || x |
 |document/keywords| *None* || x |
@@ -649,12 +650,12 @@ This is the archive Provider for the Selection contact/person archive.
 |ticketPriority|listAny|| x |
 |supportLanguage|listAny|| x |
 |supportAssociate|associate|| x |
-|supportAssociateFullName|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|supportAssociateFullName|associate|| x |
 |personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
 |personCategory|listAny|| x |
@@ -754,12 +755,12 @@ This is the archive Provider for the Selection contact/person archive.
 |personSourceRelation/personId| *None* || x |
 |personSourceRelation/firstName| *None* || x |
 |personSourceRelation/lastName| *None* || x |
-|personSourceRelation/middleName| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personSourceRelation/middleName| *None* || x |
 |personSourceRelation/fullName| *None* || x |
 |personSourceRelation/contactId| *None* || x |
 |personSourceRelation/hasInfoText| *None* || x |
@@ -859,12 +860,12 @@ This is the archive Provider for the Selection contact/person archive.
 |personTargetRelation/supportAssociateFullName| *None* || x |
 |personTargetRelation/personAssociateId| *None* || x |
 |personTargetRelation/personAssociateFullName| *None* || x |
-|personTargetRelation/personCategory| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personTargetRelation/personCategory| *None* || x |
 |personTargetRelation/personCategoryGroup| *None* || x |
 |personTargetRelation/personCategoryRank| *None* || x |
 |personTargetRelation/personBusiness| *None* || x |
@@ -964,12 +965,12 @@ This is the archive Provider for the Selection contact/person archive.
 |request/ticketId| *None* || x |
 |request/title| *None* || x |
 |request/createdAt| *None* || x |
-|request/createdDate| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/createdDate| *None* || x |
 |request/lastChanged| *None* || x |
 |request/author| *None* || x |
 |request/readByOwner| *None* || x |
@@ -1069,12 +1070,12 @@ This is the archive Provider for the Selection contact/person archive.
 |request/ownedBy/isActiveText| *None* || x |
 |request/ownedBy/portraitThumbnail| *None* ||  |
 |request/ownedBy/otherGroups| *None* ||  |
-|request/ownedBy/userName| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/ownedBy/userName| *None* || x |
 |request/ownedBy/personEmail| *None* || x |
 |request/ownedBy/locationAddress| *None* || x |
 |request/ownedBy/isLocation| *None* || x |
@@ -1174,12 +1175,12 @@ This is the archive Provider for the Selection contact/person archive.
 |projectMembers/projectUdef/SuperOffice:2| *None* || x |
 |projectMembers/projectUdef/SuperOffice:3| *None* || x |
 |projectMembers/projectUdef/SuperOffice:4| *None* || x |
-|projectMembers/projectUdef/SuperOffice:5| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMembers/projectUdef/SuperOffice:5| *None* || x |
 |projectMembers/projectUdef/SuperOffice:6| *None* || x |
 |projectMembers/projectUdef/SuperOffice:7| *None* || x |
 |projectMembers/projectUdef/SuperOffice:8| *None* || x |
@@ -1243,6 +1244,7 @@ This is the archive Provider for the Selection contact/person archive.
 |personAppointment/rawType| *None* || x |
 |personAppointment/rawStatus| *None* || x |
 |personAppointment/cautionWarning| *None* || x |
+|personAppointment/ownedExternally| *None* || x |
 |personAppointment/visibleInDiary| *None* || x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId| *None* || x |
@@ -1278,13 +1280,13 @@ This is the archive Provider for the Selection contact/person archive.
 |personAppointment/associate/associateDbId| *None* || x |
 |personAppointment/associate/contactName| *None* || x |
 |personAppointment/associate/contactDepartment| *None* || x |
-|personAppointment/associate/usergroup| *None* || x |
-|personAppointment/associate/usergroupId| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/usergroup| *None* || x |
+|personAppointment/associate/usergroupId| *None* || x |
 |personAppointment/associate/contactFullName| *None* || x |
 |personAppointment/associate/contactCategory| *None* || x |
 |personAppointment/associate/role| *None* || x |
@@ -1370,6 +1372,7 @@ This is the archive Provider for the Selection contact/person archive.
 |workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy| *None* || x |
 |workflowInstance/emailFlow/updatedDate| *None* || x |
 |workflowInstance/emailFlow/registeredBy| *None* || x |
@@ -1382,14 +1385,14 @@ This is the archive Provider for the Selection contact/person archive.
 |chatSession/whenEnded| *None* || x |
 |chatSession/duration| *None* ||  |
 |chatSession/timeInQueue| *None* || x |
-|chatSession/queueLength| *None* || x |
-|chatSession/rating| *None* || x |
-|chatSession/agent| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|chatSession/queueLength| *None* || x |
+|chatSession/rating| *None* || x |
+|chatSession/agent| *None* || x |
 |chatSession/status| *None* || x |
 |chatSession/icon| *None* || x |
 |chatSession/date| *None* || x |
@@ -1487,14 +1490,14 @@ This is the archive Provider for the Selection contact/person archive.
 |sale/quote/version/alternative/quoteline/earningPercent| *None* || x |
 |sale/quote/version/alternative/quoteline/updatedBy| *None* || x |
 |sale/quote/version/alternative/quoteline/updatedByFullName| *None* || x |
-|sale/quote/version/alternative/quoteline/updatedDate| *None* || x |
-|sale/quote/version/alternative/quoteline/registeredBy| *None* || x |
-|sale/quote/version/alternative/quoteline/registeredByFullName| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/quote/version/alternative/quoteline/updatedDate| *None* || x |
+|sale/quote/version/alternative/quoteline/registeredBy| *None* || x |
+|sale/quote/version/alternative/quoteline/registeredByFullName| *None* || x |
 |sale/quote/version/alternative/quoteline/registeredDate| *None* || x |
 |sale/quote/version/alternative/quoteline/productCategoryKey| *None* || x |
 |sale/quote/version/alternative/quoteline/productFamilyKey| *None* || x |
@@ -1508,7 +1511,7 @@ This is the archive Provider for the Selection contact/person archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonSelectionV2?$select=email/emailHasBounced,postAddress/line2,restrictionAddress/state,SaintStatus2,document/ourref
+GET /api/v1/archive/ContactPersonSelectionV2?$select=email/emailHasBounced,targetRelation/csRelation,sale/associateId,sale/hasQuote,appointment/associate/isLocation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

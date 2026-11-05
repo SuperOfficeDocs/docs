@@ -7986,10 +7986,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -8247,6 +8247,10 @@
           },
           "PrivacyStatementUrl": {
             "description": "Url referencing the actual privacy statement",
+            "type": "string"
+          },
+          "ConsentTextImplicit": {
+            "description": "Implicit consent text, used with forms",
             "type": "string"
           },
           "TableRight": {

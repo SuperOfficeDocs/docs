@@ -799,7 +799,7 @@ Shadow contact provider for the static quoteline provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowStaticSelection?$select=description,alternative/version/quote/sale/person/personAssociate/assocType,alternative/version/quote/sale/contact/email/emailBounceCount,alternative/version/quote/sale/contact/streetAddress/wgs84longitude,alternative/version/quote/sale/contact/contactExtra/x_contact_date
+GET /api/v1/archive/QuoteLineShadowStaticSelection?$select=alternative/totalPriceIncVAT,alternative/version/quote/sale/currencyId,alternative/version/quote/sale/person/personLinkedinUrl,alternative/version/quote/sale/person/personDirectPhone/formattedNumber,alternative/version/quote/sale/person/personAddress/zip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

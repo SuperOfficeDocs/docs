@@ -381,7 +381,7 @@ Contact provider for general use
 ## Sample
 
 ```http!
-GET /api/v1/archive/Contact?$select=updatedDate,contactSupportAssociate/ejUserId,contactSupportAssociate/credentialType,contactSupportPerson/personUdef/SuperOffice:8,NumberOfNotCompletedTickets
+GET /api/v1/archive/Contact?$select=postAddress/zip,restrictionPostalAddress/zip,contactAssociate/lastName,LastCompletedSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

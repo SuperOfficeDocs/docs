@@ -55,6 +55,7 @@ Lists all email flow content
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -111,6 +112,7 @@ Lists all email flow content
 |shipment/emailFlow/workflowCompletedCount| *None* ||  |
 |shipment/emailFlow/workflowSucceededCount| *None* ||  |
 |shipment/emailFlow/workflowSuccessRate| *None* ||  |
+|shipment/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |shipment/emailFlow/updatedBy| *None* ||  |
 |shipment/emailFlow/updatedDate| *None* ||  |
 |shipment/emailFlow/registeredBy| *None* ||  |
@@ -122,13 +124,13 @@ Lists all email flow content
 |shipment/emailFlow/workflowAssociate/contactId| *None* ||  |
 |shipment/emailFlow/workflowAssociate/personId| *None* ||  |
 |shipment/emailFlow/workflowAssociate/mrMrs| *None* ||  |
-|shipment/emailFlow/workflowAssociate/title| *None* ||  |
-|shipment/emailFlow/workflowAssociate/associateDbId| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|shipment/emailFlow/workflowAssociate/title| *None* ||  |
+|shipment/emailFlow/workflowAssociate/associateDbId| *None* ||  |
 |shipment/emailFlow/workflowAssociate/contactName| *None* ||  |
 |shipment/emailFlow/workflowAssociate/contactDepartment| *None* ||  |
 |shipment/emailFlow/workflowAssociate/usergroup| *None* ||  |
@@ -227,13 +229,13 @@ Lists all email flow content
 |shipment/project/projectAssociate/locationAddress| *None* ||  |
 |shipment/project/projectAssociate/isLocation| *None* ||  |
 |shipment/project/projectUdef/SuperOffice:1| *None* ||  |
-|shipment/project/projectUdef/SuperOffice:2| *None* ||  |
-|shipment/project/projectUdef/SuperOffice:3| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|shipment/project/projectUdef/SuperOffice:2| *None* ||  |
+|shipment/project/projectUdef/SuperOffice:3| *None* ||  |
 |shipment/project/projectUdef/SuperOffice:4| *None* ||  |
 |shipment/project/projectUdef/SuperOffice:5| *None* ||  |
 |shipment/project/projectUdef/SuperOffice:6| *None* ||  |
@@ -271,6 +273,8 @@ Lists all email flow content
 |formActive| *None* ||  |
 |formType| *None* ||  |
 |formSubmissionCount| *None* ||  |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |registeredByFullName| *None* ||  |
 |associate/firstName| *None* ||  |
 |associate/lastName| *None* ||  |
@@ -312,7 +316,7 @@ Lists all email flow content
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowContent?$select=shipment/project/saintIntention,associate/usergroup,shipment/emailFlow/workflowAssociate/lastName
+GET /api/v1/archive/EmailFlowContent?$select=emailFlow/workflowId,shipment/emailFlow/updatedBy,associate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

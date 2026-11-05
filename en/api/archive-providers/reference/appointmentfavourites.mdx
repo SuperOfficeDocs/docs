@@ -57,6 +57,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Appo
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -119,12 +120,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Appo
 |appointment/text|positiveString|| x |
 |appointment/description|positiveString|| x |
 |appointment/title|positiveString|| x |
-|appointment/titleHtml| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/titleHtml| *None* || x |
 |appointment/agenda|positiveString|| x |
 |appointment/agendaHtml| *None* || x |
 |appointment/isConverted| *None* ||  |
@@ -135,7 +136,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Appo
 ## Sample
 
 ```http!
-GET /api/v1/archive/appointmentfavourites?$select=associate/assocName,associate/assocTooltip,cautionWarning
+GET /api/v1/archive/appointmentfavourites?$select=cautionWarning,appointmentPublish/publishedTo
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

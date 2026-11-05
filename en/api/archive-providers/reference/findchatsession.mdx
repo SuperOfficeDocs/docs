@@ -508,7 +508,7 @@ ChatSession provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindChatSession?$select=person/restrictionAddress/line2,person/legalBaseEmarketing,contact/associateId,contact/updatedDate,contact/sharecapitalBasecurrency
+GET /api/v1/archive/FindChatSession?$select=person/isProjectMember,person/personAssociate/simultaneousEjUser,person/correspondingAssociate/role
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

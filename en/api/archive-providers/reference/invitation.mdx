@@ -70,6 +70,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -131,12 +132,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 |contact/contactFax/formattedNumber|string||  |
 |contact/contactFax/description|string|| x |
 |contact/searchPhone/formattedNumber|string||  |
-|contact/searchPhone/description|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/searchPhone/description|string|| x |
 |contact/email/emailProtocol|string|| x |
 |contact/email/emailAddress|string|| x |
 |contact/email/emailDescription|string|| x |
@@ -236,12 +237,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 |contact/contactExtra/x\_contact\_float|decimal|| x |
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
-|contact/contactExtra/x\_contact\_date|date|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_date|date|| x |
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 |contact/contactExtra/x\_contact\_time| *None* || x |
 |contact/contactExtra/x\_contact\_boolean|bool|| x |
@@ -341,12 +342,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 |person/phone/formattedNumber|string||  |
 |person/personDirectPhone/formattedNumber|string||  |
 |person/personDirectPhone/description|string|| x |
-|person/personMobilePhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personMobilePhone/formattedNumber|string||  |
 |person/personMobilePhone/description|string|| x |
 |person/personPrivate/formattedNumber|string||  |
 |person/personPrivate/description|string|| x |
@@ -446,12 +447,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 |person/personAssociate/role|listAny|| x |
 |person/personAssociate/assocName|associate|| x |
 |person/personAssociate/assocTooltip|string||  |
-|person/personAssociate/assocType|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/assocType|listAny|| x |
 |person/personAssociate/ejUserId|int||  |
 |person/personAssociate/simultaneousEjUser|bool||  |
 |person/personAssociate/ejDisplayName|string|| x |
@@ -551,12 +552,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 |project/projectEvent/hasSignOn|bool|| x |
 |project/projectEvent/hasSignOff|bool|| x |
 |project/projectUrl/URLAddress|string|| x |
-|project/projectUrl/URLDescription|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectUrl/URLDescription|string|| x |
 |project/projectAssociate/firstName|string|| x |
 |project/projectAssociate/lastName|string|| x |
 |project/projectAssociate/middleName|string|| x |
@@ -656,12 +657,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 |sale/earning|decimal|| x |
 |sale/earningPercent|decimal|| x |
 |sale/probPercent|int|| x |
-|sale/originalStage|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/originalStage|listAny|| x |
 |sale/stage|listAny|| x |
 |sale/stageName| *None* || x |
 |sale/saleStatus|listAny|| x |
@@ -761,12 +762,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 |associate/credentialDisplayValue| *None* || x |
 |associate/isActive|bool|| x |
 |associate/isActiveText|bool|| x |
-|associate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/portraitThumbnail| *None* ||  |
 |associate/otherGroups|userGroup||  |
 |associate/userName|string|| x |
 |associate/personEmail|string|| x |
@@ -787,7 +788,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 ## Sample
 
 ```http!
-GET /api/v1/archive/Invitation?$select=appointmentPublish/publishedTo,contact/stop,contact/contactUdef/SuperOffice:9,contact/NumberOfNotCompletedSales,person/personInfo/infoText
+GET /api/v1/archive/Invitation?$select=contact/contactAssociate/isActive,person/personRegisteredDate,person/personAddress/city,person/correspondingAssociate/usergroupId,project/projectPublish/publishedFrom
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

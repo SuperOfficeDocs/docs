@@ -675,6 +675,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Exte
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -746,7 +747,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Exte
 ## Sample
 
 ```http!
-GET /api/v1/archive/ExternalPersons?$select=position,personActiveErpLinks,personExtra/x_person_contact_relation,personAssociate/assocType,correspondingAssociate/ejDisplayName
+GET /api/v1/archive/ExternalPersons?$select=birthYear,personTargetRelation/personCountry,request/createdAt,request/createdDate,request/createdBy/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

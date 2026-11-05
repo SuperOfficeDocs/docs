@@ -454,6 +454,7 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -541,12 +542,12 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |document/registeredBy|associate|| x |
 |document/registeredByFullName|associate|| x |
 |document/registeredDate|date|| x |
-|document/documentId|int|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/documentId|int|| x |
 |document/keywords|string|| x |
 |document/ourref|string|| x |
 |document/yourref|string|| x |
@@ -646,12 +647,12 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |supportAssociate|associate|| x |
 |supportAssociateFullName|associate|| x |
 |personAssociateId|associate|| x |
-|personAssociateFullName|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAssociateFullName|associate|| x |
 |personCategory|listAny|| x |
 |personCategoryGroup|listAny|| x |
 |personCategoryRank|int|| x |
@@ -751,12 +752,12 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |personAssociate/contactFullName|string|| x |
 |personAssociate/contactCategory|listAny|| x |
 |personAssociate/role|listAny|| x |
-|personAssociate/assocName|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAssociate/assocName|associate|| x |
 |personAssociate/assocTooltip|string||  |
 |personAssociate/assocType|listAny|| x |
 |personAssociate/ejUserId|int||  |
@@ -820,7 +821,7 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaintPerson?$select=NumberOfSalesInPeriod,SaintStatus1,sale/currencyId,sale/description,appointment/associate/firstName
+GET /api/v1/archive/SaintPerson?$select=contactAssociate/userName,sourceRelation/contactNoMail,targetRelation/code,appointment/appointmentPublish/publishedTo,document/document/textId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

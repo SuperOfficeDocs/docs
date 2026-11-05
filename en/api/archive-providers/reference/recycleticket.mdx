@@ -811,7 +811,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Recy
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecycleTicket?$select=timeSpentInternally,person/birthdate,person/personAssociateId,person/correspondingAssociate/locationAddress
+GET /api/v1/archive/RecycleTicket?$select=createdBy,person/email/emailBounceCount,person/personAddress/county,contact/email/emailDescription,contact/url/URLAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

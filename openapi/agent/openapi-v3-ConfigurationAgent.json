@@ -11,6 +11,174 @@
     }
   },
   "paths": {
+    "/api/v1/Agents/Configuration/SaveWindowPosSizes": {
+      "post": {
+        "tags": [
+          "Configuration_Agent"
+        ],
+        "summary": "Save Window Pos Sizes",
+        "description": "Saves a set of window and dialog position and size settings.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ConfigurationAgent_SaveWindowPosSizes",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
+              }
+            }
+          },
+          "description": "WindowPosSizes",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/Configuration/CreateDefaultConfigurableScreenDelta": {
       "post": {
         "tags": [
@@ -5731,6 +5899,238 @@
         ]
       }
     },
+    "/api/v1/Agents/Configuration/GetLandingPageOverviewSettings": {
+      "post": {
+        "tags": [
+          "Configuration_Agent"
+        ],
+        "summary": "Get Landing Page Overview Settings",
+        "description": "Get the current associate's overview layout for a landing page, as JSON owned by the client.\n\nReturns an empty string when none is saved, meaning the delivered default.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1ConfigurationAgent_GetLandingPageOverviewSettings",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest"
+              }
+            }
+          },
+          "description": "EntityTableName",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Configuration/SetLandingPageOverviewSettings": {
+      "post": {
+        "tags": [
+          "Configuration_Agent"
+        ],
+        "summary": "Set Landing Page Overview Settings",
+        "description": "Save the current associate's overview layout for a landing page, as JSON owned by the client.\n\nAn empty value resets it to the delivered default. Creates the landing page row if it does not exist.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1ConfigurationAgent_SetLandingPageOverviewSettings",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest"
+              }
+            }
+          },
+          "description": "EntityTableName, OverviewSettings",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/Configuration/CreateDefaultSystemEventEntity": {
       "post": {
         "tags": [
@@ -7292,174 +7692,6 @@
           }
         ]
       }
-    },
-    "/api/v1/Agents/Configuration/SaveWindowPosSizes": {
-      "post": {
-        "tags": [
-          "Configuration_Agent"
-        ],
-        "summary": "Save Window Pos Sizes",
-        "description": "Saves a set of window and dialog position and size settings.\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ConfigurationAgent_SaveWindowPosSizes",
-        "parameters": [
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
-              }
-            },
-            "application/xml": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
-              }
-            },
-            "text/xml": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
-              }
-            },
-            "application/x-www-form-urlencoded": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
-              }
-            },
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
-              }
-            },
-            "application/merge-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest"
-              }
-            }
-          },
-          "description": "WindowPosSizes",
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
-                  }
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
-                  }
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
-                  }
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
-                  }
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SOPassword": [],
-            "SuperId": []
-          }
-        ]
-      }
     }
   },
   "tags": [],
@@ -7469,10 +7701,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -7494,6 +7726,120 @@
       }
     },
     "schemas": {
+      "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest": {
+        "description": "SaveWindowPosSizes: Saves a set of window and dialog position and size settings.",
+        "type": "object",
+        "properties": {
+          "WindowPosSizes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.WindowPosSize": {
+        "type": "object",
+        "properties": {
+          "OwnerWindow": {
+            "type": "string"
+          },
+          "PersonId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "AssociateId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ExtraId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ExtraInfo": {
+            "type": "string"
+          },
+          "Height": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "LeftX": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "State": {
+            "enum": [
+              "Normal",
+              "Maximized",
+              "Minimized"
+            ],
+            "type": "string"
+          },
+          "UpperY": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Width": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "WindowPosSizeId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "description": "Class holding properties like field length, field type about a field in the carrier.",
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "format": "int32",
+            "description": "",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
       "SuperOffice.CRM.Services.ConfigurableScreenDelta": {
         "type": "object",
         "properties": {
@@ -7656,47 +8002,6 @@
             "additionalProperties": {
               "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
             }
-          }
-        }
-      },
-      "SuperOffice.CRM.Security.TableRight": {
-        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted.",
-        "type": "object",
-        "properties": {
-          "Mask": {
-            "type": "string"
-          },
-          "Reason": {
-            "type": "string"
-          }
-        }
-      },
-      "SuperOffice.CRM.Security.FieldProperty": {
-        "description": "Class holding properties like field length, field type about a field in the carrier.",
-        "type": "object",
-        "properties": {
-          "FieldRight": {
-            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
-          },
-          "FieldType": {
-            "type": "string"
-          },
-          "FieldLength": {
-            "format": "int32",
-            "description": "",
-            "type": "integer"
-          }
-        }
-      },
-      "SuperOffice.CRM.Security.FieldRight": {
-        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined.",
-        "type": "object",
-        "properties": {
-          "Mask": {
-            "type": "string"
-          },
-          "Reason": {
-            "type": "string"
           }
         }
       },
@@ -8339,6 +8644,27 @@
           }
         }
       },
+      "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageOverviewSettingsRequest": {
+        "description": "GetLandingPageOverviewSettings: Get the current associate's overview layout for a landing page, as JSON owned by the client. Returns an empty string when none is saved, meaning the delivered default.",
+        "type": "object",
+        "properties": {
+          "EntityTableName": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SetLandingPageOverviewSettingsRequest": {
+        "description": "SetLandingPageOverviewSettings: Save the current associate's overview layout for a landing page, as JSON owned by the client. An empty value resets it to the delivered default. Creates the landing page row if it does not exist.",
+        "type": "object",
+        "properties": {
+          "EntityTableName": {
+            "type": "string"
+          },
+          "OverviewSettings": {
+            "type": "string"
+          }
+        }
+      },
       "SuperOffice.CRM.Services.SystemEventEntity": {
         "type": "object",
         "properties": {
@@ -8406,67 +8732,6 @@
           }
         }
       },
-      "SuperOffice.CRM.Services.WindowPosSize": {
-        "type": "object",
-        "properties": {
-          "OwnerWindow": {
-            "type": "string"
-          },
-          "PersonId": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "AssociateId": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "ExtraId": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "ExtraInfo": {
-            "type": "string"
-          },
-          "Height": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "LeftX": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "State": {
-            "enum": [
-              "Normal",
-              "Maximized",
-              "Minimized"
-            ],
-            "type": "string"
-          },
-          "UpperY": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "Width": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "WindowPosSizeId": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "TableRight": {
-            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
-          },
-          "FieldProperties": {
-            "description": "Field property dictionary mapping field names to field access rights.",
-            "type": "object",
-            "additionalProperties": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
-            }
-          }
-        }
-      },
       "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizeRequest": {
         "description": "SaveWindowPosSize: Saves a window and dialog position and size setting.",
         "type": "object",
@@ -8503,18 +8768,6 @@
           "AssociateId": {
             "format": "int32",
             "type": "integer"
-          }
-        }
-      },
-      "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveWindowPosSizesRequest": {
-        "description": "SaveWindowPosSizes: Saves a set of window and dialog position and size settings.",
-        "type": "object",
-        "properties": {
-          "WindowPosSizes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.WindowPosSize"
-            }
           }
         }
       }

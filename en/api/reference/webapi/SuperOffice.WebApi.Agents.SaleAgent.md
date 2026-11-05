@@ -141,6 +141,34 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
+### CheckSaleEntityCopyAsync\(SaleEntity, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_CheckSaleEntityCopyAsync_SuperOffice_WebApi_Data_SaleEntity_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Check a sale copy before saving it: which of the optional parts of SaveSaleEntityCopy can be copied, and errors in the fields the user can edit. Nothing is saved. SaveSaleEntityCopy refuses an optional part that is reported as not licensed, or as not available for any reason other than the sale type not using stakeholders.
+
+```csharp
+public Task<SaleCopyCheck> CheckSaleEntityCopyAsync(SaleEntity saleEntity, int sourceSaleId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`saleEntity` [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
+
+The prepared copy as the user has edited it. Null checks the copy as CreateSaleEntityFromExisting prepares it.
+
+`sourceSaleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The sale that the copy is prepared from
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleCopyCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyCheck)\&gt;
+
+Whether each optional part can be copied, and errors in the fields the user can edit
+
 ### CreateDefaultSaleEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new SaleEntity.
@@ -161,6 +189,30 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\&gt;
 
 A blank SaleEntity
+
+### CreateDefaultSaleEntityBySaleTypeIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleEntityBySaleTypeIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Create a new SaleEntity with default values for a given sale type, with the expected sale date already derived from that sale type's configured duration. Use this rather than CreateDefaultSaleEntity when the sale type is known up front, so the defaults are consistent with it instead of with whichever sale type happens to be the system default.
+
+```csharp
+public Task<SaleEntity> CreateDefaultSaleEntityBySaleTypeIdAsync(int saleTypeId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`saleTypeId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The sale type to take defaults from
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\&gt;
+
+New SaleEntity carrying defaults for the given sale type
 
 ### CreateDefaultSaleStakeholderAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleStakeholderAsync_SuperOffice_WebApi_RequestOptions_}
 
@@ -203,6 +255,30 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummary)\&gt;
 
 A blank SaleSummary
+
+### CreateSaleEntityFromExistingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_CreateSaleEntityFromExistingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Create an unsaved SaleEntity copy of an existing sale, with the values that must not be carried over already stripped. The returned entity is not persisted - edit the fields the user is allowed to change, then pass it to SaveSaleEntityCopy.
+
+```csharp
+public Task<SaleEntity> CreateSaleEntityFromExistingAsync(int saleId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`saleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the source sale
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\&gt;
+
+Unsaved copy of the source sale, with SaleId = 0
 
 ### DeleteSaleEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_DeleteSaleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -265,6 +341,34 @@ Override language/culture codes on this request.
 #### Returns
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+### GetExpectedSaleDateAsync\(DateTime, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_GetExpectedSaleDateAsync_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Calculate the default expected sale date for a sale type, by applying the sale type's configured duration to a base date. This is the server-side equivalent of what the sale card does with the duration published in the SaleType list's extra info, so callers creating sales outside the GUI get the same date.
+
+```csharp
+public Task<DateTime> GetExpectedSaleDateAsync(DateTime baseDate, int saleTypeId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`baseDate` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
+
+Date to count the duration from, normally today
+
+`saleTypeId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The sale type whose duration to apply
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)\&gt;
+
+The base date advanced by the sale type's expected duration
 
 ### GetMyOpportunitiesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_GetMyOpportunitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -907,6 +1011,38 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\&gt;
 
 New or updated SaleEntity
+
+### SaveSaleEntityCopyAsync\(SaleEntity, int, SaleCopyOptions, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_SaveSaleEntityCopyAsync_SuperOffice_WebApi_Data_SaleEntity_System_Int32_SuperOffice_WebApi_Data_SaleCopyOptions_SuperOffice_WebApi_RequestOptions_}
+
+Save a sale copy prepared by CreateSaleEntityFromExisting, optionally copying parts of the source sale along with it. Those parts are read from the source sale by the server; they are not carried on the passed entity. Pass null options, or options with nothing set, to copy the sale alone.
+
+```csharp
+public Task<SaleCopyResult> SaveSaleEntityCopyAsync(SaleEntity saleEntity, int sourceSaleId, SaleCopyOptions options, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`saleEntity` [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
+
+The prepared copy, with SaleId = 0
+
+`sourceSaleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The sale that the copy was prepared from
+
+`options` [SaleCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyOptions)
+
+Which optional parts to copy alongside the sale. Null copies the sale alone.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult)\&gt;
+
+The new sale id, and what became of each optional part
 
 ### SaveSaleStakeholderAsync\(SaleStakeholder, RequestOptions\) {#SuperOffice_WebApi_Agents_SaleAgent_SaveSaleStakeholderAsync_SuperOffice_WebApi_Data_SaleStakeholder_SuperOffice_WebApi_RequestOptions_}
 

@@ -33,7 +33,6 @@ IAuthorization
 ## Remarks
 
 If the access token is omitted on construction, the first agent call will result in three requests:
-
 1. The first agent call which will fail
 2. A call to UserAgent.GetCurrentToken with the username and passwor to obtain an access token
 3. The original agent call which should now succeed with the new access token

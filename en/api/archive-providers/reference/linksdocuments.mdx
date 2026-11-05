@@ -763,7 +763,7 @@ Link data provider for documents, handles both addressing by source or by destin
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksDocuments?$select=sourceContactRestrictionId,sourceSelectionRestrictionId,person/hasCompany,person/personExtra/x_person_contact_relation,person/personAssociate/ejStatus
+GET /api/v1/archive/LinksDocuments?$select=person/personAssociate/ejStatus,contact/contactExtra/x_contact_integer,project/registeredDate,project/projectAssociate/contactId,sale/salePublish/publishedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

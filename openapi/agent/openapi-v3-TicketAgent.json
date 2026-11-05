@@ -10768,10 +10768,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -11291,7 +11291,9 @@
               "Postponed4Hours",
               "PostponedDay",
               "PostponedWeek",
-              "PostponedMonth"
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
             ],
             "type": "string"
           },
@@ -11433,6 +11435,11 @@
           "NumMessages": {
             "format": "int32",
             "description": "The total number of messages for this request.",
+            "type": "integer"
+          },
+          "NumAppointments": {
+            "format": "int32",
+            "description": "The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.",
             "type": "integer"
           },
           "FromAddress": {
@@ -12015,7 +12022,9 @@
               "Postponed4Hours",
               "PostponedDay",
               "PostponedWeek",
-              "PostponedMonth"
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
             ],
             "type": "string"
           },
@@ -12423,7 +12432,9 @@
               "Postponed4Hours",
               "PostponedDay",
               "PostponedWeek",
-              "PostponedMonth"
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
             ],
             "type": "string"
           },
@@ -12550,6 +12561,11 @@
             "description": "The total number of messages for this request.",
             "type": "integer"
           },
+          "NumAppointments": {
+            "format": "int32",
+            "description": "The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.",
+            "type": "integer"
+          },
           "FromAddress": {
             "description": "The from-address used when this ticket got created, e.g. by email",
             "type": "string"
@@ -12615,6 +12631,11 @@
           "ActiveStatusMonitorId": {
             "format": "int32",
             "description": "Active status monitor identity for related contact. This is a read-only property and is ignored on Save",
+            "type": "integer"
+          },
+          "PostponeOptionId": {
+            "format": "int32",
+            "description": "Postpone option of the ticket status to calculate Activate from on Save. Only used on Save when the status is Postponed; always 0 when read",
             "type": "integer"
           },
           "ExtraFields": {
@@ -12803,7 +12824,9 @@
               "Postponed4Hours",
               "PostponedDay",
               "PostponedWeek",
-              "PostponedMonth"
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
             ],
             "type": "string"
           },

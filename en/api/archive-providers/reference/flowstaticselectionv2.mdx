@@ -47,6 +47,7 @@ SelectionTypeStore stays empty, as it does for mailings and forms).
 |workflowCompletedCount| *None* ||  |
 |workflowSucceededCount| *None* ||  |
 |workflowSuccessRate| *None* ||  |
+|workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -100,7 +101,7 @@ SelectionTypeStore stays empty, as it does for mailings and forms).
 ## Sample
 
 ```http!
-GET /api/v1/archive/FlowStaticSelectionV2?$select=registeredDate,workflowAssociate/contactDepartment
+GET /api/v1/archive/FlowStaticSelectionV2?$select=registeredBy,workflowAssociate/contactDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

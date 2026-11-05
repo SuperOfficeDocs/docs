@@ -58,6 +58,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -119,12 +120,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |contact/contactPhone/description|string|| x |
 |contact/contactFax/formattedNumber|string||  |
 |contact/contactFax/description|string|| x |
-|contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/searchPhone/formattedNumber|string||  |
 |contact/searchPhone/description|string|| x |
 |contact/email/emailProtocol|string|| x |
 |contact/email/emailAddress|string|| x |
@@ -224,12 +225,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |contact/contactExtra/x\_contact\_default\_integer|int|| x |
 |contact/contactExtra/x\_contact\_float|decimal|| x |
 |contact/contactExtra/x\_contact\_longtext|string|| x |
-|contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 |contact/contactExtra/x\_contact\_date|date|| x |
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 |contact/contactExtra/x\_contact\_time| *None* || x |
@@ -329,12 +330,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |person/createdByForm|listAny|| x |
 |person/phone/formattedNumber|string||  |
 |person/personDirectPhone/formattedNumber|string||  |
-|person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personDirectPhone/description|string|| x |
 |person/personMobilePhone/formattedNumber|string||  |
 |person/personMobilePhone/description|string|| x |
 |person/personPrivate/formattedNumber|string||  |
@@ -434,12 +435,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |person/personAssociate/contactCategory|listAny|| x |
 |person/personAssociate/role|listAny|| x |
 |person/personAssociate/assocName|associate|| x |
-|person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/assocTooltip|string||  |
 |person/personAssociate/assocType|listAny|| x |
 |person/personAssociate/ejUserId|int||  |
 |person/personAssociate/simultaneousEjUser|bool||  |
@@ -539,12 +540,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |project/projectEvent/eventDate|date|| x |
 |project/projectEvent/hasSignOn|bool|| x |
 |project/projectEvent/hasSignOff|bool|| x |
-|project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectUrl/URLAddress|string|| x |
 |project/projectUrl/URLDescription|string|| x |
 |project/projectAssociate/firstName|string|| x |
 |project/projectAssociate/lastName|string|| x |
@@ -644,12 +645,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |sale/amountWeighted|decimal|| x |
 |sale/earning|decimal|| x |
 |sale/earningPercent|decimal|| x |
-|sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/probPercent|int|| x |
 |sale/originalStage|listAny|| x |
 |sale/stage|listAny|| x |
 |sale/stageName| *None* || x |
@@ -749,12 +750,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 |associate/credentialType| *None* || x |
 |associate/credentialDisplayValue| *None* || x |
 |associate/isActive|bool|| x |
-|associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/isActiveText|bool|| x |
 |associate/portraitThumbnail| *None* ||  |
 |associate/otherGroups|userGroup||  |
 |associate/userName|string|| x |
@@ -775,7 +776,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 ## Sample
 
 ```http!
-GET /api/v1/archive/ExplicitInvitation?$select=contact/contactExtra/x_contact_contact_relation,person/personAssociate/isActive,project/projectPublish/publishedBy,project/projectAssociate/isActiveText,sale/stageName
+GET /api/v1/archive/ExplicitInvitation?$select=time,location,contact/registeredByFullName,contact/postAddress/line3,contact/LastActivity
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

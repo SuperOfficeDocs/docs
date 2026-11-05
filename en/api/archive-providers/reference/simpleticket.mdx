@@ -811,7 +811,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleTicket?$select=author,createdByWorkflow,createdBy/usergroupId,person/personUdef/SuperOffice:11,person/personExtra/x_person_contact_relation
+GET /api/v1/archive/SimpleTicket?$select=ticketId,createdBy/mrMrs,person/personAddress/state,contact/activeErpLinks,contact/contactUdef/SuperOffice:6
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

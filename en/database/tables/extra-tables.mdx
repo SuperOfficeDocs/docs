@@ -35,7 +35,7 @@ This table contains entries for the extra tables in the system.
 |description|Optional description of what this table is used for|String(2047)|Yes|
 |icon\_id|The id of the binary object entry|FK [BinaryObject](./binaryobject.mdx)|Yes|
 |table\_number|Number of the table|UShort|Yes|
-
+|icon\_name|Name of the Phosphor icon shown for this custom object, e.g. &apos;car&apos;. Takes precedence over icon_id when set|String(60)|Yes|
 
 ![extra_tables table relationship diagram](/media/loc/en/database/tables/extra_tables.png)
 
@@ -65,7 +65,6 @@ This table contains entries for the extra tables in the system.
 |[hierarchy](./hierarchy)  |This table contains folders used to group the extra tables in the system. |
 |[screen\_chooser](./screen-chooser)  |Screen choosers |
 
-
 ## Replication Flags
 
 * None
@@ -73,4 +72,3 @@ This table contains entries for the extra tables in the system.
 ## Security Flags
 
 * No access control via user's Role.
-

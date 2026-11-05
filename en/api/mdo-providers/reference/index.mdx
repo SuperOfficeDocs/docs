@@ -76,6 +76,7 @@ mode: "wide"
 | [Appointmentcategory](./appointmentcategory) ||
 | [Appointmentcautionwarning](./appointmentcautionwarning) |Appointment.CautionWarning. Appointment and invitation synchronization info|
 | [Appointmentcompleted](./appointmentcompleted) |Appointment completed statuses: AppointmentStatus.NotStarted, AppointmentStatus.Completed|
+| [Appointmentexternalowner](./appointmentexternalowner) |Appointment.OwnedExternally. The calendar a follow-up was created in: SuperOffice itself, or an external calenda|
 | [Appointmentfavourite](./appointmentfavourite) |MDO list provider for Favourites|
 | [Appointmentgroup](./appointmentgroup) |Appointment grouping types: TaskType.Appointment, Phone, ToDo|
 | [Appointmentresource](./appointmentresource) ||
@@ -125,6 +126,7 @@ mode: "wide"
 | [Currentudeffields](./currentudeffields) |Get a list of udef fields for a given type. Pass the type as AdditionalInfo|
 | [Customerlanguage](./customerlanguage) |Customer Languages list. From the CustLang table.|
 | [Customobjectfavourite](./customobjectfavourite) ||
+| [Customobjecticon](./customobjecticon) |Custom object icons uploaded as SVG files, whether or not a custom object uses them|
 | [Customobjectlist](./customobjectlist) |CustomObjectListProvider creates tree list of the custom objects|
 | [Customobjectrelation](./customobjectrelation) |MDO list provider for custom object relation|
 | [Dashboard](./dashboard) |MDO list provider for Dashboard, can be used by Navigator.|
@@ -192,7 +194,7 @@ mode: "wide"
 | [Fonttype](./fonttype) |List of font types|
 | [Form](./form) |Get all forms with folder hierarchy|
 | [Formfields](./formfields) |List of customizable fields for forms|
-| [Formfolder](./formfolder) |FormFolderProvider creates a flat or tree list based on the table: s_picture_folder|
+| [Formfolder](./formfolder) |FormFolderProvider creates a flat or tree list of form (or form template) folders based on the table: s_picture_folder|
 | [Formmailings](./formmailings) ||
 | [Formratingdice](./formratingdice) ||
 | [Formratingnps](./formratingnps) ||
@@ -246,6 +248,7 @@ mode: "wide"
 | [Mailingtemplate](./mailingtemplate) |General mailing templates|
 | [Mailingtype](./mailingtype) |Mailing types: Html mail, SMS, Word Document|
 | [Mailtemplate](./mailtemplate) |List provider for the Mailtemplates.|
+| [Marketingfavourite](./marketingfavourite) |The Marketing landing page's favourites, registered as "MarketingFavourite" to match LandingpageProvider'|
 | [Marketing_freetextsearch](./marketing_freetextsearch) |Freetext search across the three real tables backing Marketing entities (mailings, forms, emai|
 | [Mergedocument](./mergedocument) |MDO list provider for documents marked as type MailMergeDraft.|
 | [Mergetags](./mergetags) ||
@@ -403,7 +406,7 @@ mode: "wide"
 | [Sentiment](./sentiment) ||
 | [Serviceassociate](./serviceassociate) |MDO provider for associates that are allowed to approve a quote.|
 | [Shipmentaddrstatusprovider](./shipmentaddrstatusprovider) ||
-| [Shipmentfolder](./shipmentfolder) |ShipmentFolderProvider creates a flat or tree list based on the table: s_picture_folder|
+| [Shipmentfolder](./shipmentfolder) |ShipmentFolderProvider creates a flat or tree list of mailing folders based on the table: s_picture_folder|
 | [Shipmentlinks](./shipmentlinks) |Create a list of specified mailings (flow, form, regular mailing/shipment...), hierarchy optional|
 | [Shipmenttype](./shipmenttype) |MDO list provider for ConsentPurpose|
 | [Simplemailingstatus](./simplemailingstatus) ||

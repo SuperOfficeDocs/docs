@@ -34,6 +34,8 @@ Form selection archive with OR-able selection groups. Each group is represented 
 |formFolderId|int|| x |
 |formActive|bool|| x |
 |formSubmissionCount|int|| x |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -59,6 +61,7 @@ Form selection archive with OR-able selection groups. Each group is represented 
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -101,7 +104,7 @@ Form selection archive with OR-able selection groups. Each group is represented 
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormDynamicSelectionV2?$select=associate/userName,emailFlow/workflowId,emailFlow/updatedDate
+GET /api/v1/archive/FormDynamicSelectionV2?$select=emailFlow/mediumThumbnail,emailFlow/workflowLastTriggeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
