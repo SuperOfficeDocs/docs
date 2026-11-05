@@ -24,6 +24,7 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 | Announced | Product/Feature | EOL date | Relevant details |
 |---|---|---|---|
+| November 5, 2026 | SuperOffice MailLink | May 1, 2027 | Switch to [SuperOffice for Outlook][29]. |
 | November 1, 2026 | [SOAP proxy client and web service endpoints][13] | January 31, 2027 | Applies to version 13. Switch to [SuperOffice.WebApi][23] (REST). |
 | July 1, 2026 | [Places for SuperOffice][7] | March 31, 2027 | Company Insight, included in CRM Suite Growth, helps you create companies. See [Company Insight][8]. |
 | April 1, 2026 | Exchange Online Synchronizer (Onsite) | December 31, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
@@ -32,9 +33,7 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 *These are planned end-of-life notices to provide you with an early warning of features or products that we are planning to sunset but where no date is set.*
 
-| Product/Feature | EOL status | Indicated date for sunsetting | Relevant details |
-|---|---|---|---|
-| SuperOffice MailLink | Phase-out initiated | 2027 (TBD) | Replacement and date to be announced. |
+There are currently no upcoming end-of-life notices.
 
 ## Archived end-of-life notices
 
@@ -80,3 +79,4 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 [25]: /integrations/sharepoint-documents/migrate/index
 [26]: /en/search-options/selection/learn/index
 [27]: /en/dashboard/learn/index
+[29]: /integrations/superoffice-for-outlook/index
