@@ -4,8 +4,8 @@ title: Edit message
 description: How to edit a message in a request in SuperOffice
 keywords: ['edit message properties', 'update message properties', 'change message properties', 'update message', 'request']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.05.2026
+so_version: 12.5
 content_type: howto
 functional_right: general administrator
 license: serviceessentials
@@ -13,6 +13,8 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /en/request/learn/howto/edit-message
+related:
+  - /en/request/learn/mentions
 language: en
 ---
 
