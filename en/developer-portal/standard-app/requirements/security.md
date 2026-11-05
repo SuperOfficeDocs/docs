@@ -4,7 +4,7 @@ title: Security requirements
 description: Security requirements
 keywords: ['certification']
 author: Margrethe Romnes, Tony Yates
-date: 12.04.2025
+date: 11.05.2026
 content_type: reference
 deployment: online
 platform: web
@@ -18,6 +18,7 @@ If needed, we may go back in time to see when and by whom an operation was perfo
 
 * [Standard applications][1] must pass [certification by SuperOffice][2].
 * Standard applications must pass a [security audit by Telenor Cyberdefense][3].
+* The App Store information can't be approved for Production until **Security audit** is enabled on the application configuration published to Production. This also applies to applications that started out as custom applications. [Read more][18].
 * All red flags reported by Telenor Cyberdefense must be fixed before the application is published as a [beta][4].
 * [Custom applications][5] must pass [validation by SuperOffice][6]
 
@@ -78,5 +79,6 @@ If needed, we may go back in time to see when and by whom an operation was perfo
 [10]: ../../getting-started/user-contexts
 [12]: ../../getting-started/app-envir
 [17]: ../../../online/identity/federated-auth
+[18]: ../../create-app/request-to-publish#security-audit
 [13]: https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 [14]: https://www.cisecurity.org/controls/cis-controls-list/

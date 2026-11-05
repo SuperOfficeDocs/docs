@@ -1,12 +1,12 @@
 ---
 uid: dp-new-certificate
 title: New certificate
-description: How to create a new certificate for an app in the SuperOffice Developer Portal.
-keywords: ['Developer Portal', 'app']
-author: Bergfrid Dias
-date: 10.02.2025
+description: How to create a new certificate or renew an existing one for an app in the SuperOffice Developer Portal.
+keywords: ['Developer Portal', 'app', 'renew', 'rotate']
+author: Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
 so_version: 2.0
-version_devportal: 2.0
+version_devportal: 2.19
 content_type: howto
 deployment: online
 related:
@@ -25,7 +25,9 @@ The Developer Portal stores your public key. However, you must store the private
 
 <NoteClearToReplace />
 
-## How to
+## Add a new certificate
+
+Use this when the environment doesn't have a certificate yet.
 
 <GoToAppPage />
 2. Select **Configuration** > **Authentication**.
@@ -38,16 +40,41 @@ The Developer Portal stores your public key. However, you must store the private
 
 4. Enter a description and expiration, and then click **Add**.
 
-    ![Certificates -screenshot][img3]
-
     <NoteExpiration />
 
 5. Store the **private key** somewhere safe! You can't look it up in the Developer Portal later.
 
-6. Click **Save Settings**.
+6. In the **You have unsaved changes** bar in the bottom-right corner, click **Save Settings**.
 
     * If the new certificate is for **SOD only:** No further action is needed.
     * If the certificate is for **stage, production, or all environments:** You must request publishing.
+
+## Renew a certificate
+
+Use this to replace an existing certificate, for example before it expires or if the private key is compromised. You no longer need to delete the old certificate first.
+
+<GoToAppPage />
+2. Select **Configuration** > **Authentication**.
+
+3. On the card of the certificate you want to replace, click the renew icon (<i class="ph ph-arrow-clockwise" aria-label="Renew"></i>), next to the trashcan.
+
+    ![Certificate card with renew and delete icons -screenshot][img3]
+
+4. A renew popup opens with the old description filled in. Update the description and expiration if needed, then click **Renew**.
+
+    <Warning>
+    The current certificate stops working when the new version of the configuration is published.
+    </Warning>
+
+5. A message at the top of the page confirms that a new certificate was generated and that the old one stops working after Publish.
+
+6. Store the new **private key** somewhere safe! You can't look it up in the Developer Portal later.
+
+7. In the **You have unsaved changes** bar in the bottom-right corner, click **Save Settings**.
+
+8. Update your application with the new private key before the new version is published, so that it keeps working when the old certificate stops working.
+
+Renewing works the same way in SOD, Stage, and Production.
 
 <ReadyToPublish />
 

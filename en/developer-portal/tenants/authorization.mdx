@@ -3,8 +3,8 @@ uid: dp-tenant-authorization
 title: Tenant authorization
 description: The Tenant Manager makes it easier to oversee and edit authorization records related to employees and tenants.
 keywords: ['authorize app']
-author: Bergfrid Dias
-date: 07.13.2026
+author: Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
 version_devportal: 2.16
 content_type: concept
 deployment: online
@@ -67,6 +67,10 @@ Open a tenant and go to the **Authorizations** tab to see the status of each ind
 
 Apps require [customer consent][3] to access customer data.
 
+<Tip>
+This is also how you activate a validated custom application on a customer's production tenant. See [First-time activation][6].
+</Tip>
+
 1. Navigate to your partner page in the Developer Portal and select **Tenants**.
 
 1. On the **Tenant listing** page, go to the **Production** tab and click **Request Authorization**.
@@ -79,7 +83,7 @@ Apps require [customer consent][3] to access customer data.
 
 1. Optionally, add additional info.
 
-1. Click **Send**. An email will be sent to the customer for confirmation. Access is granted upon approval.
+1. Click **Send**. An email will be sent to the customer for confirmation. When the customer has confirmed, SuperOffice Online Operations creates the consent and access is granted.
 
 ![Request tenant authorization dialog in SuperOffice Developer portal -screenshot][img1]
 
@@ -117,6 +121,7 @@ Revoking access severs the connection between the application and the tenant's d
 
 [5]: https://dev.superoffice.com/contact-us
 [3]: ../provisioning/consent
+[6]: ../custom-app/activate
 [img1]: /media/loc/en/developer-portal/request-authorization.png
 [img2]: /media/loc/en/developer-portal/edit-authorization.png
 [img3]: /media/loc/en/developer-portal/remove-authorization.png

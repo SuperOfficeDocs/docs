@@ -3,16 +3,17 @@ uid: dp-versioning
 title: Versioning
 description: Introduction to versioned information and configuration in the SuperOffice Online Developer Portal and how it relates to our different environments (SOD, Stage, Production).
 keywords: ['developer', 'Developer Portal', 'apps', 'app-store']
-author: Bergfrid Dias
-date: 02.26.2025
+author: Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
 so_version: 2.0
-version_devportal: 2.0
+version_devportal: 2.19
 content_type: concept
 deployment: online
 ---
 
 import WhatToPublish from "./snippets/what-to-publish.md";
 import ReadyToPublish from "./snippets/ready-to-publish.md";
+import UnsavedChanges from "../snippets/unsaved-changes.mdx";
 
 All applications start in SuperOffice Online Development (SOD) and might eventually go live (via our stage environment).
 
@@ -33,7 +34,7 @@ The initial version is automatically published to SOD. You can then:
 * Publish the new version to SOD yourself
 * Request to publish a version to stage
 
-In SOD, a version is a **draft** and can be edited until you request to publish it to stage. Then it is locked. If we reject it, the version is unlocked and you can update it to fix any issues.
+In SOD, a version is a **draft** and can be edited until you request to publish it to stage. Then it is [locked](#locked-versions). If we reject it, the version is unlocked and you can update it to fix any issues.
 
 <Frame caption="Watch the walk-through">
   <iframe
@@ -57,13 +58,24 @@ In SOD, a version is a **draft** and can be edited until you request to publish 
 | Request pending | yellow | Someone has requested to publish this version to an environment. |
 | Rejected | red | The version was not approved for the requested environment. |
 
+## Locked versions
+
+A version is **locked** as soon as someone requests to publish it to Stage or Production. A locked version can't be edited.
+
+In the version menu (the version selector on the **Configuration** and **App Store information** pages), locked versions are marked with a lock icon (<i class="ph ph-lock" aria-label="Locked"></i>). Hover over the icon to see why the version is locked.
+
+![Locked version with tooltip and Revert button -screenshot][img2]
+
+To make changes to a locked version, either:
+
+* [Create a new version](#create-new-version) and make your changes there, or
+* Click **Revert** on the pending request to publish. This unlocks the version so you can edit it again.
+
 ## Where are my versions?
 
 The **Overview** section of the app page and partner page shows the current state of the app configuration and the App Store information per environment. From this overview, you can click any version to open it.
 
-To see all versions of a section, select that section and click **More versions**
-
-![Versions published, pending, rejected -screenshot][img2]
+To see all versions of a section, select that section and click **More versions**.
 
 ## Edit version
 
@@ -76,8 +88,11 @@ All changes happen in SOD!
 To make changes:
 
 1. Locate the version you want to update either from the **Overview**, **App Store information**, or **Configuration** section.
-2. If it is locked, [create a new version](#create-new-version).
-3. Change the configuration or information you want and click **Save Settings**.
+2. If it is [locked](#locked-versions), [create a new version](#create-new-version) or revert the pending request to publish.
+3. Change the configuration or information you want.
+4. In the **You have unsaved changes** bar in the bottom-right corner, click **Save Settings**.
+
+<UnsavedChanges />
 
 <Note>
 Some settings can be configured per environment. A single configuration will then hold multiple values of that setting. For example, if you have environment-specific certificates you handle this within one configuration and request it published to Stage and Production. Don't confuse settings per environment with versions per environment.

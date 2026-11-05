@@ -4,7 +4,7 @@ sidebarTitle: "Publish a standard app"
 uid: standard-app-publish
 description: Publish standard app in CRM Online environment
 author: Margrethe Romnes
-date: 12.04.2025
+date: 11.05.2026
 keywords: ['App Store']
 content_type: howto
 deployment: online
@@ -16,6 +16,7 @@ Congratulations, your standard application is ready!
 **Pre-requisites:**
 
 * Your standard application has [passed certification][1], including Telenor Cyberdefense's security evaluation.
+* **Security audit** is enabled on the application configuration published to Production. SuperOffice can't approve your App Store information for Production until it is. [Read more][7].
 * Your commercial contact has [completed the application listing][2] for the App Store.
 
 **Process:**
@@ -66,3 +67,4 @@ Customers running the application must be informed about the beta status.
 [3]: ../faq/update-app.md
 [5]: ../provisioning/consent.md
 [6]: ../custom-app/index.md
+[7]: ../create-app/request-to-publish#security-audit

@@ -2,8 +2,9 @@
 title: Get access to the sandbox environment
 uid: sod-get-access
 description: Developer registration - how to get access to SOD (the SuperOffice sandbox environment) and the Developer Portal.
-author: Bergfrid Dias, AnthonyYates
-date: 09.14.2023
+author: Bergfrid Dias, AnthonyYates, Margrethe Romnes
+date: 11.05.2026
+version_devportal: 2.18
 keywords: ['sod', 'form', 'developer registration']
 content_type: howto
 deployment: online
@@ -28,9 +29,17 @@ Your first step to building an application for SuperOffice CRM Online is to regi
 
 1. Submit the [developer account request](#register-now) (form).
     * You will get a confirmation that we have received your request.
-2. We create a new [tenant][2] for you in [SOD][1] and you will receive an email with your account details.
+2. We create a partner for your company in the Developer Portal and a test [tenant][2] for you in [SOD][1].
     * This is normally handled within the next business day.
-3. Sign in to your new SOD account and start getting familiar. Please let us know if you experience any problems with the account.
+    * The test tenant has the **CRM Suite Growth** plan.
+3. You receive two emails:
+    * **Welcome to the SuperOffice Developer Portal - your partner account is ready** - your welcome to the Developer Portal. Everyone added when the partner is created gets one: the administrative contact, the technical contact, and the administrators of the test tenant. Each person gets only one, even if they have more than one role.
+    * **Please activate your SuperOffice CRM Account** - sent from SuperID in SOD. Follow the instructions in this email to activate your user account for the test tenant.
+4. Sign in to your new SOD account and start getting familiar. Please let us know if you experience any problems with the account.
+
+Test tenant administrators who have a SuperID user account are also added as users of your partner in the Developer Portal.
+
+The test tenant has a limited license period. You'll be notified before it expires, so you can [renew it in time][5].
 
 The SOD tenant can be shared by multiple developers within a company. However, you need separate, personal accounts for signing in. You can [create additional users][4] in SuperOffice Settings and maintenance.
 
@@ -48,3 +57,4 @@ Get your own sandbox tenant and login to our developer portal to begin creating 
 [2]: ../getting-started/index#tenant
 [3]: ../create-app/index
 [4]: ../../online/identity/user/add-user-in-admin-client
+[5]: ../tenants/info#expiry
