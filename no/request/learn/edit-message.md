@@ -4,8 +4,8 @@ title: Redigere melding
 description: Slik redigerer du en melding i en sak i SuperOffice
 keywords: ['redigere melding', 'oppdatere melding', 'sak']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.05.2026
+so_version: 12.5
 content_type: howto
 functional_right: general administrator
 license: serviceessentials
@@ -13,10 +13,12 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /no/request/learn/howto/edit-message
+related:
+  - /no/request/learn/mentions
 language: no
 ---
 
-Kun brukere med funksjonsrettigheten **general administrator** kan redigere egenskapene til en melding i en sak. Det er imidlertid ikke mulig å redigere selve teksten i meldingen.
+Du kan endre egenskapene til en melding i en sak hvis du eier saken eller har rett til å redigere andre brukeres saker. For å redigere teksten i en melding må den [globale preferansen][2] **Tillat endring av meldinger** være slått på. Den er av som standard.
 
 1. [Åpne saken][1].
 
@@ -25,11 +27,15 @@ Kun brukere med funksjonsrettigheten **general administrator** kan redigere egen
 1. Klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgave-knappen"></i> og velg **Endre**.
 
 1. Her har du følgende alternativer:
-    * **Forfatter:** Viser navnet på personen som opprettet saken.
+    * **Meldingstekst:** Vises bare når **Tillat endring av meldinger** er slått på. I en kommentar kan du [omtale medarbeidere][3].
+    * **Forfatter:** Viser navnet på personen som opprettet meldingen. Vises bare hvis du har administrasjonsrettigheter for Service.
     * **Medgått tid:** Viser hvor mye tid som er brukt på denne meldingen.
     * **Tilgangsnivå:** Tilgangsnivået for denne meldingen. Du kan velge mellom **Eksternt** og **Internt**.
-    * **Vedlegg:** Hvis meldingen inneholder vedlegg, vises de her. Du kan slette eksisterende vedlegg, men ikke legge til nye.
+    * **Egendefinerte felt:** Eventuelle egendefinerte felt for meldinger.
+    * **Vedlegg:** Hvis meldingen inneholder vedlegg, vises de her. Med administrasjonsrettigheter for Service kan du slette eksisterende vedlegg, men ikke legge til nye.
 
-1. Klikk på **Lagre** når du er ferdig, eller **Avbryt** hvis du vil forkaste endringene. Du kan også slette hele meldingen ved å klikke på **Slett** og deretter **OK**.
+1. Klikk på **Lagre** når du er ferdig, eller **Avbryt** hvis du vil forkaste endringene. Med administrasjonsrettigheter for Service kan du også slette hele meldingen ved å klikke på **Slett** og deretter **OK**.
 
 [1]: ./index#open
+[2]: /no/admin/preferences/service-settings
+[3]: ./mentions#edit

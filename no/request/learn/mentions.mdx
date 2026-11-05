@@ -1,0 +1,112 @@
+---
+title: Omtale en medarbeider i en sak
+sidebarTitle: Omtaler
+description: Omtale en medarbeider med @ i en intern kommentar på en sak, og følg opp sakene der du er omtalt.
+keywords: ['tagge', 'tagge en kollega', 'alfakrøll', 'varsle en kollega', 'spørre en kollega']
+author: digitaldiina
+date: 11.05.2026
+so_version: 12.5
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - Legge til kommentar: /no/request/learn/reply#comment
+  - /no/request/learn/edit-message
+  - /no/learn/basics/notifications
+  - Saksskjermen: /no/request/learn/index#request-screen
+language: no
+---
+
+Omtal en medarbeider i en intern kommentar på en sak når du trenger hjelp fra vedkommende eller vil at vedkommende skal vite om noe. Medarbeideren finner saken i fanen **Omtaler** på [Saksskjermen][1], og i varslingsruten hvis vedkommende har slått på varsler om omtaler.
+
+<Note>
+Du kan bare omtale medarbeidere i kommentarer. Svar og videresendinger kan ikke inneholde omtaler, selv om de er interne.
+</Note>
+
+## Omtale en medarbeider i en kommentar {#mention}
+
+1. [Åpne saken][2].
+
+1. [Legg til en kommentar][3]. Du kan også legge til en intern kommentar fra [forhåndsvisningen av saken][4].
+
+1. Skriv **@**, eller klikk på <i class="ph ph-at" aria-label="Mention"></i> på verktøylinjen under kommentaren. En liste over medarbeidere åpnes. Skriv de første bokstavene i et navn for å begrense listen.
+
+    ![Listen over medarbeidere som åpnes når du skriver alfakrøllen i en kommentar -screenshot][img1]
+
+1. Klikk på medarbeideren du vil omtale. Navnet settes inn som et uthevet **@navn**.
+
+    Slik bruker du tastaturet i stedet:
+    * **Pil opp** og **Pil ned:** Flytter deg gjennom listen.
+    * **Enter** eller **Tab:** Setter inn den uthevede medarbeideren.
+    * **Esc:** Lukker listen uten å sette inn noen.
+
+    ![En kommentar med en uthevet omtale -screenshot][img2]
+
+1. Hvis du vil omtale flere medarbeidere i samme kommentar, skriver du **@** igjen og velger neste medarbeider.
+
+1. Klikk på **Lagre**.
+
+Medarbeiderne du omtaler, ser omtalen neste gang fanen **Omtaler** eller varslene deres oppdateres.
+
+* Hvis du vil fjerne en omtale før du lagrer, plasserer du markøren rett etter navnet og trykker **Backspace**, eller rett foran det og trykker **Delete**. Hele navnet fjernes.
+* Når du svarer med en tidligere melding sitert, ignoreres omtalene i den siterte teksten, slik at de samme medarbeiderne ikke omtales på nytt.
+
+## Endre omtalene i en kommentar {#edit}
+
+Hvis [den globale preferansen][7] **Tillat endring av meldinger** er slått på, kan du [redigere teksten i en kommentar][5] og legge til omtaler på samme måte. Når du lagrer, får hver medarbeider du legger til, en ny omtale, og eksisterende omtaler viser den oppdaterte teksten.
+
+* Hvis du fjerner en omtale fra en kommentar, beholder medarbeideren omtalen i fanen **Omtaler**.
+* Omtaler slettes bare når du sletter hele kommentaren.
+
+## Se hvor du er omtalt {#mentions-tab}
+
+1. På Saksskjermen klikker du på **Omtaler** (<i class="ph ph-at" aria-hidden="true"></i>) i venstrepanelet. Når venstrepanelet er skjult, klikker du på <i class="ph ph-at" aria-label="Mentions"></i>.
+
+    Et merke ved siden av **Omtaler** viser hvor mange uleste omtaler du har.
+
+1. Finn omtalen du vil følge opp. Fanen **Omtaler** viser alle omtaler, de nyeste først. Hver rad viser hvem som omtalte deg, saks-ID og tittel, første setning i kommentaren og datoen. Uleste omtaler er uthevet.
+    * Hvis du bare vil se omtalene du ikke har åpnet ennå, velger du **Unread** i filteret øverst i listen. Velg **All mentions** for å se alle igjen.
+
+    ![Fanen Omtaler med uleste omtaler og filteret All mentions -screenshot][img3]
+
+1. Klikk på en omtale. Saken åpnes i en fane, rullet til kommentaren der du ble omtalt, og omtalen merkes som lest.
+
+Du ser bare omtaler i saker du har tilgang til. Hvis ingen omtaler samsvarer med filteret, viser fanen **All caught up**.
+
+## Feste saken eller slette en omtale {#pin-delete}
+
+1. I fanen **Omtaler** klikker du på <i class="ph ph-dots-three" aria-label="More options"></i> på omtalen.
+
+    ![Menyen for en omtale, med Fest sak og Slett -screenshot][img4]
+
+1. Velg ett av følgende:
+    * **Fest sak:** Fester saken i gruppen **Festet** i venstrepanelet. Raden viser <i class="ph ph-push-pin" aria-label="Pinned"></i>. Velg **Unpin request** for å fjerne festingen.
+    * **Slett:** Fjerner omtalen fra fanen **Omtaler**. Kommentaren og saken endres ikke.
+
+## Bli varslet når du er omtalt {#notification}
+
+Når en medarbeider omtaler deg, vises et varsel i [varslingsruten][6] (<i class="ph ph-bell" aria-label="Notifications"></i>).
+
+![Et varsel om en omtale i varslingsruten -screenshot][img5]
+
+* Klikk på sakskoblingen i varselet for å åpne saken. Saken åpnes øverst, ikke ved kommentaren. Hvis du vil gå rett til kommentaren, åpner du omtalen fra fanen **Omtaler**.
+* Klikk på **Greit** for å fjerne varselet.
+
+Begge deler merker omtalen som lest.
+
+Hvis du vil slutte å få varsler om omtaler, klikker du på <i class="ph ph-gear" aria-label="Gear"></i> i varslingsruten og fjerner merket for **Bli varslet om omtaler**. Omtalene dine vises fortsatt i fanen **Omtaler**.
+
+[1]: ./index#request-screen
+[2]: ./index#open
+[3]: ./reply#comment
+[4]: ./reply#quick-reply
+[5]: ./edit-message
+[6]: /no/learn/basics/notifications
+[7]: /no/admin/preferences/service-settings
+[img1]: /media/loc/en/request/mentions-user-list.png
+[img2]: /media/loc/en/request/mentions-comment.png
+[img3]: /media/loc/en/request/mentions-tab.png
+[img4]: /media/loc/en/request/mentions-row-menu.png
+[img5]: /media/loc/en/request/mentions-notification.png
