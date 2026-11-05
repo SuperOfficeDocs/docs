@@ -562,6 +562,7 @@
           "da/request/learn/transfer",
           "da/request/learn/forward",
           "da/request/learn/reply",
+          "da/request/learn/mentions",
           "da/request/learn/request-relations",
           "da/request/learn/tags",
           "da/request/learn/flag-message",
