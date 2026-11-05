@@ -3190,6 +3190,456 @@
         ]
       }
     },
+    "/api/v1/Agents/Project/CreateProjectEntityFromExisting": {
+      "post": {
+        "tags": [
+          "Project_Agent"
+        ],
+        "summary": "Create Project Entity From Existing",
+        "description": "Create an unsaved ProjectEntity copy of an existing project, with the copy rules already applied: the name gets a copy marker, the current user is the owner (Associate), status, dates and completion start over, and members, note, links, image, number, publishing and history are left out.\n\nThe returned entity is not persisted - let the user change Name and Associate, then pass it to SaveProjectEntityCopy.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1ProjectAgent_CreateProjectEntityFromExisting",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest"
+              }
+            }
+          },
+          "description": "ProjectId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Project/SaveProjectEntityCopy": {
+      "post": {
+        "tags": [
+          "Project_Agent"
+        ],
+        "summary": "Save Project Entity Copy",
+        "description": "Save a project copy prepared by CreateProjectEntityFromExisting, optionally copying members, note, links and image of the source project along with it.\n\nThe server rebuilds the copy from the source project and takes only Name and Associate (the project owner) from the passed entity; every other value on it is ignored. Members, note, links and image are read from the source project, not from the passed entity. Pass null options, or options with nothing set, to copy the project alone.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1ProjectAgent_SaveProjectEntityCopy",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest"
+              }
+            }
+          },
+          "description": "ProjectEntity, SourceProjectId, Options",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Project/CheckProjectEntityCopy": {
+      "post": {
+        "tags": [
+          "Project_Agent"
+        ],
+        "summary": "Check Project Entity Copy",
+        "description": "Check a project copy before saving it: which of the optional parts of SaveProjectEntityCopy can be copied, and errors in the fields the user can edit.\n\nNothing is saved. Call it again when the owner (Associate) changes, as the right to add members follows the project owner. SaveProjectEntityCopy refuses an optional part that is reported as not available or not licensed.\r\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1ProjectAgent_CheckProjectEntityCopy",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest"
+              }
+            }
+          },
+          "description": "ProjectEntity, SourceProjectId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyCheck"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyCheck"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyCheck"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyCheck"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyCheck"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyCheck"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/Project/GetProjectEvent": {
       "post": {
         "tags": [
@@ -7084,10 +7534,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -8327,6 +8777,15 @@
             "description": "Link to task list",
             "type": "integer"
           },
+          "TicketId": {
+            "format": "int32",
+            "description": "Request this appointment belongs to; 0 or NULL when the appointment is not linked to a request",
+            "type": "integer"
+          },
+          "TicketTitle": {
+            "description": "Title of the request this appointment belongs to. Blank if no request is linked, or the user can't read the request.",
+            "type": "string"
+          },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
           },
@@ -8449,6 +8908,174 @@
             "additionalProperties": {
               "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
             }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CreateProjectEntityFromExistingRequest": {
+        "description": "CreateProjectEntityFromExisting: Create an unsaved ProjectEntity copy of an existing project, with the copy rules already applied: the name gets a copy marker, the current user is the owner (Associate), status, dates and completion start over, and members, note, links, image, number, publishing and history are left out. The returned entity is not persisted - let the user change Name and Associate, then pass it to SaveProjectEntityCopy.",
+        "type": "object",
+        "properties": {
+          "ProjectId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ProjectCarriers.SaveProjectEntityCopyRequest": {
+        "description": "SaveProjectEntityCopy: Save a project copy prepared by CreateProjectEntityFromExisting, optionally copying members, note, links and image of the source project along with it. The server rebuilds the copy from the source project and takes only Name and Associate (the project owner) from the passed entity; every other value on it is ignored. Members, note, links and image are read from the source project, not from the passed entity. Pass null options, or options with nothing set, to copy the project alone.",
+        "type": "object",
+        "properties": {
+          "ProjectEntity": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+          },
+          "SourceProjectId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Options": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectCopyOptions"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.ProjectCopyOptions": {
+        "description": "Which optional parts to copy alongside a project, for ProjectAgent.SaveProjectEntityCopy. Options live here rather than as parameters on the operation, so a new one can be added without changing the signature. Nothing set copies the project alone.\r\n<para />\r\nCarrier object for ProjectCopyOptions.\r\nServices for the ProjectCopyOptions Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IProjectAgent\">Project Agent</see>.",
+        "type": "object",
+        "properties": {
+          "CopyMembers": {
+            "description": "Add the source project's members to the new project. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          },
+          "CopyNote": {
+            "description": "Copy the source project's note (post-it text) to the new project. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          },
+          "CopyLinks": {
+            "description": "Copy the source project's links to the new project. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          },
+          "CopyImage": {
+            "description": "Give the new project the source project's image. The two projects then share the image, as projects using the same image from the image library do. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.ProjectCopyResult": {
+        "description": "Result of saving a copied project: the project that was created, and what became of each optional part.\r\n<para />\r\nCarrier object for ProjectCopyResult.\r\nServices for the ProjectCopyResult Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IProjectAgent\">Project Agent</see>.",
+        "type": "object",
+        "properties": {
+          "ProjectId": {
+            "format": "int32",
+            "description": "Id of the project that was created.",
+            "type": "integer"
+          },
+          "MembersResult": {
+            "description": "What became of the members: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "NoteResult": {
+            "description": "What became of the note: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "LinksResult": {
+            "description": "What became of the links: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "ImageResult": {
+            "description": "What became of the image: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "Warnings": {
+            "description": "One localized explanation per optional part that was requested but could not be copied, so a caller can present them separately rather than unpicking one joined string. Empty when everything requested succeeded. The project itself is always created - a failure here never means the project is missing.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ProjectCarriers.CheckProjectEntityCopyRequest": {
+        "description": "CheckProjectEntityCopy: Check a project copy before saving it: which of the optional parts of SaveProjectEntityCopy can be copied, and errors in the fields the user can edit. Nothing is saved. Call it again when the owner (Associate) changes, as the right to add members follows the project owner. SaveProjectEntityCopy refuses an optional part that is reported as not available or not licensed.",
+        "type": "object",
+        "properties": {
+          "ProjectEntity": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+          },
+          "SourceProjectId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.ProjectCopyCheck": {
+        "description": "Result of checking a project copy before it is saved, for ProjectAgent.CheckProjectEntityCopy: whether each optional part can be copied, and errors in the fields the user can edit.\r\n<para />\r\nCarrier object for ProjectCopyCheck.\r\nServices for the ProjectCopyCheck Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IProjectAgent\">Project Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Members": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "Note": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "Links": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "Image": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "FieldErrors": {
+            "description": "Localized error messages for the fields the user can edit in a copy (name, associate), keyed by field name as in ValidateProjectEntity. Empty when there are none. SaveProjectEntityCopy refuses a copy with an owner that is in error.",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CopyPartCheck": {
+        "description": "Whether one optional part of a copy can be copied, and if not, why. Returned for each part by the copy check operations, such as SaleAgent.CheckSaleEntityCopy and ProjectAgent.CheckProjectEntityCopy.\r\n<para />\r\nCarrier object for CopyPartCheck.\r\nServices for the CopyPartCheck Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ISaleAgent\">Sale Agent</see>.",
+        "type": "object",
+        "properties": {
+          "State": {
+            "description": "Whether the part can be copied: available, nothing on the source to copy, not offered to this user, or not available for a reason given in Reason.",
+            "enum": [
+              "Available",
+              "NothingToCopy",
+              "NotLicensed",
+              "NotAvailable"
+            ],
+            "type": "string"
+          },
+          "Reason": {
+            "description": "Localized explanation of why the part can't be copied, written to be shown with the part's option. Empty unless State is NotAvailable or NotLicensed.",
+            "type": "string"
+          },
+          "ShortReason": {
+            "description": "Localized one-line summary naming the part, for a list of what the copy won't include. Empty when Reason is empty.",
+            "type": "string"
           }
         }
       },

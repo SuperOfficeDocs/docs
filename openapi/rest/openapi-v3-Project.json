@@ -2799,6 +2799,116 @@
         ]
       }
     },
+    "/api/v1/Project/{projectId}/CreateFromExisting": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "summary": "Create Project Entity From Existing",
+        "description": "Create an unsaved ProjectEntity copy of an existing project, with the copy rules already applied: the name gets a copy marker, the current user is the owner (Associate), status, dates and completion start over, and members, note, links, image, number, publishing and history are left out.\n\nThe returned entity is not persisted - let the user change Name and Associate, then pass it to SaveProjectEntityCopy.",
+        "operationId": "v1ProjectEntity_CreateProjectEntityFromExisting",
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "description": "The id of the source project",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProjectEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Project/{id}/Simple": {
       "get": {
         "tags": [
@@ -5261,10 +5371,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -6511,6 +6621,15 @@
             "format": "int32",
             "description": "Link to task list",
             "type": "integer"
+          },
+          "TicketId": {
+            "format": "int32",
+            "description": "Request this appointment belongs to; 0 or NULL when the appointment is not linked to a request",
+            "type": "integer"
+          },
+          "TicketTitle": {
+            "description": "Title of the request this appointment belongs to. Blank if no request is linked, or the user can't read the request.",
+            "type": "string"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"

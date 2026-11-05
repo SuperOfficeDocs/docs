@@ -246,10 +246,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -300,6 +300,10 @@
             "format": "int32",
             "description": "Icon binary-object id used in the UI.",
             "type": "integer"
+          },
+          "IconHint": {
+            "description": "Resolved icon hint for the UI: 'ph-<name>' for a Phosphor icon, the table name for an uploaded SVG icon, or 'CustomObject' for the default icon.",
+            "type": "string"
           },
           "Flags": {
             "format": "int32",

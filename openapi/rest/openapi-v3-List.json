@@ -78251,10 +78251,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -79509,6 +79509,10 @@
             "description": "Url referencing the actual privacy statement",
             "type": "string"
           },
+          "ConsentTextImplicit": {
+            "description": "Implicit consent text, used with forms",
+            "type": "string"
+          },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
           },
@@ -80487,7 +80491,9 @@
               "Postponed4Hours",
               "PostponedDay",
               "PostponedWeek",
-              "PostponedMonth"
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
             ],
             "type": "string"
           },

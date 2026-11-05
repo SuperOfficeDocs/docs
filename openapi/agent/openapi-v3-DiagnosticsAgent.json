@@ -1533,7 +1533,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Data Additions",
-        "description": "Collect and transmit usage statistics: Database Additions.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Deprecated, this call does nothing.\n\nUsage statistics (database additions) are collected and transmitted automatically by a NetServer nightly job.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectDataAdditions",
         "parameters": [
           {
@@ -1574,7 +1574,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Win Usage",
-        "description": "Collect and transmit usage statistics: Windows CRM Client Usage.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Deprecated, this call does nothing.\n\nWindows CRM client usage statistics are no longer collected.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectWinUsage",
         "parameters": [
           {
@@ -1615,7 +1615,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Web Usage",
-        "description": "Collect and transmit usage statistics: Web-based clients Usage.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Deprecated, this call does nothing.\n\nUsage statistics (web-based clients) are collected and transmitted automatically by a NetServer nightly job.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectWebUsage",
         "parameters": [
           {
@@ -1656,7 +1656,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Table Sizes",
-        "description": "Collect and transmit usage statistics: Table Sizes.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Deprecated, this call does nothing.\n\nUsage statistics (table sizes) are collected and transmitted automatically by a NetServer nightly job.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectTableSizes",
         "parameters": [
           {
@@ -1697,7 +1697,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Resync Users",
-        "description": "Resynchronize user information with SuperOffice Community, if opted-out then this call does nothing.\n\nThe call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Deprecated, this call does nothing.\n\nUser information is no longer resynchronized with SuperOffice Community.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_ResyncUsers",
         "parameters": [
           {
@@ -3065,10 +3065,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
