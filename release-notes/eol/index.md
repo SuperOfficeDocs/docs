@@ -3,9 +3,9 @@ uid: eol
 title: End-of-life notifications
 description: This section provides crucial notifications and information about products reaching their end-of-life stage. Stay informed about the status of services, features, and products as they transition or are phased out.
 keywords: ['end-of-life', 'EOL', 'phased out', 'discontinued', 'deprecated', 'legacy']
-author: digitaldiina
+author: digitaldiina, kirstiaa
 date: 11.05.2026
-so_version: 12.2
+so_version: 12.6
 content_type: release-note
 language: en
 ---
