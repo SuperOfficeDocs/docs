@@ -4,7 +4,7 @@ title: Google Workspace document integration
 description: Google Workspace document integration
 keywords: ['Google Workspace', 'document integration']
 author: SuperOffice Product and Engineering
-date: 07.12.2024
+date: 11.05.2026
 content_type: concept
 category: integration
 topic: Google Workspace documents
@@ -96,7 +96,7 @@ You may also check the domain name via Google Workspace Toolbox Dig (Google MX r
 
 The **Forgot password** feature is now handled by Google - since Google is activated as the authentication method for this site.
 
-[2]: https://online.superoffice.com/AppStore/superoffice-as/g-suite-integration
+[2]: https://appstore.superoffice.com/superoffice-as/g-suite-integration
 [3]: https://www.google.com/accounts/UpdateAccountRecoveryOptions
 [4]: http://www.google.com/accounts/UpdateAccountRecoveryOptions
 [5]: https://toolbox.googleapps.com/apps/dig/

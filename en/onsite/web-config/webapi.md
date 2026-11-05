@@ -2,7 +2,7 @@
 title: NetServer WebApi element
 uid: ns_config_webapi
 description: NetServer WebApi element
-date: 12.09.2021
+date: 11.05.2026
 author: Bergfrid Dias
 keywords: ['config', 'web.config', 'authentication', 'AuthorizeWithImplicit', 'AuthorizeWithTicket', 'AuthorizeWithUsername', 'CORSEnable', 'CORSOrigin', 'CORS', 'authorize', 'security']
 content_type: reference
@@ -47,4 +47,4 @@ See the [NetServer Core reference][1] for details about handling this programmat
 [2]: ../reference/restful/index
 [3]: ../../onsite/install/netserver/setup-rest#integrated-with-active-directory
 [4]: ../../onsite/install/netserver/setup-rest#configure-basic-authentication-iis
-[9]: https://online.superoffice.com/AppStore/superoffice-as/superoffice-gmail-link
+[9]: https://appstore.superoffice.com/superoffice-as/superoffice-gmail-link
