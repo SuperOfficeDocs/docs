@@ -4,7 +4,7 @@ title: Send and archive
 description: Send an email and automatically archive it to SuperOffice using the SuperOffice for Outlook add-in.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'send and archive', 'archive email', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 10.20.2026
+date: 11.05.2026
 version_sofo: 2026.6.4
 content_type: howto
 category: integration
@@ -22,13 +22,16 @@ language: en
 userflow_index: true
 ---
 
+import StepHoverPreview from "./snippets/step-hover-preview.mdx";
+import NoteVisibility from "./snippets/note-visibility.mdx";
+
 To send an email and automatically archive it to SuperOffice, follow these steps:
 
 1. Select **New mail** in Outlook.
 
 1. [Open SuperOffice for Outlook][1] (if not already [pinned][3]).
 
-1. Ensure the **Archive email in SuperOffice** toggle is enabled.
+1. Ensure the **Archive e-mail in SuperOffice** toggle is enabled.
 
     ![SuperOffice for Outlook, send and archive -screenshot][img2]
 
@@ -36,25 +39,29 @@ To send an email and automatically archive it to SuperOffice, follow these steps
     Bcc to **SuperOffice Mail Archive** is required to ensure the email is archived in SuperOffice.
     </Note>
 
-1. Add recipients to the **To** field. If the first recipient's email is known to SuperOffice, the Company and Contact field will auto-fill.
+1. Add recipients to the **To** field. If the first recipient's email is known to SuperOffice, the **Contact or Company** field fills in automatically.
 
-1. Fill in any missing information or make adjustments as needed.
+1. Review the fields and change what you need:
 
-    The **Type** field is preselected from your [default outgoing email type][5]. Choose another type to change it for this email only.
+    * **Archive e-mail in SuperOffice**: On by default. When it's on, the email you send is also saved to SuperOffice.
+    * **Contact or Company**: Select the contact or company to link the email to.
+
+        <StepHoverPreview />
+
+    * **Sale**: Link the email to a sale.
+    * **Project**: Link the email to a project.
+    * **Type**: Preselected from your [default outgoing email type][5]. Choose another type to change it for this email only.
+    * **Visible for**: Choose who can see the email: everyone, only the owner's primary group, or only the owner.
+
+        <NoteVisibility />
 
 1. Click **Send** to both send the email and archive it to SuperOffice.
-
-<Note>
-The **Visible for** drop-down is only available to users whose administrator has enabled the required license.
-For more details, see [**Admin - User Management - Visibility**][2].
-</Note>
 
 <Tip>
 With [email archive status][4] turned on, the sent email gets the **Archived in SuperOffice** category the next time you view an email with SuperOffice for Outlook open.
 </Tip>
 
 [1]: ./get#open
-[2]: /en/admin/user-management/index#visible
 [3]: ./pin-add-in
 [4]: ./email-archive-status
 [5]: ./settings#email-type
