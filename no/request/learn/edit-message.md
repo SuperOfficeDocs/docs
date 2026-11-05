@@ -37,5 +37,5 @@ Du kan endre egenskapene til en melding i en sak hvis du eier saken eller har re
 1. Klikk på **Lagre** når du er ferdig, eller **Avbryt** hvis du vil forkaste endringene. Med administrasjonsrettigheter for Service kan du også slette hele meldingen ved å klikke på **Slett** og deretter **OK**.
 
 [1]: ./index#open
-[2]: /no/admin/preferences/service-settings
+[2]: ../../admin/preferences/service-settings
 [3]: ./mentions#edit

@@ -34,5 +34,5 @@ Sie können die Eigenschaften einer Nachricht in einer Anfrage ändern, wenn Sie
 1. Klicken Sie auf **Speichern**, wenn Sie fertig sind, oder auf **Abbrechen**, um die Änderungen zu verwerfen. Mit Service-Administrationsrechten können Sie die gesamte Nachricht auch löschen, indem Sie auf **Löschen** und dann auf **OK** klicken.
 
 [1]: ./index#open
-[2]: /de/admin/preferences/service-settings
+[2]: ../../admin/preferences/service-settings
 [3]: ./mentions#edit

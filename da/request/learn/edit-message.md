@@ -34,5 +34,5 @@ Du kan ændre egenskaberne for en meddelelse i en sag, hvis du ejer sagen eller 
 1. Klik på **Gem**, når du er færdig, eller **Afbryd**, hvis du vil annullere ændringerne. Med administratorrettigheder til Service kan du også slette hele meddelelsen ved at klikke på **Slet** og derefter **OK**.
 
 [1]: ./index#open
-[2]: /da/admin/preferences/service-settings
+[2]: ../../admin/preferences/service-settings
 [3]: ./mentions#edit

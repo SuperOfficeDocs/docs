@@ -35,5 +35,5 @@ U kunt de eigenschappen van een bericht in een verzoek wijzigen als u eigenaar b
 1. Klik op **Opslaan** om de wijzigingen op te slaan of op **Annuleren** om ze te negeren. Met Service-beheerrechten kunt u ook het hele bericht verwijderen door op **Verwijderen** en vervolgens op **OK** te klikken.
 
 [1]: ./index#open
-[2]: /nl/admin/preferences/service-settings
+[2]: ../../admin/preferences/service-settings
 [3]: ./mentions#edit

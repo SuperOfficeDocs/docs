@@ -34,5 +34,5 @@ You can change the properties of a message in a request if you own the request o
 1. Click **Save** when you are finished, or **Cancel** if you want to discard the changes. With Service administration rights, you can also delete the entire message by clicking **Delete** and then **OK**.
 
 [1]: ./index#open
-[2]: /en/admin/preferences/service-settings
+[2]: ../../admin/preferences/service-settings
 [3]: ./mentions#edit

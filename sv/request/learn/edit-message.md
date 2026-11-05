@@ -4,8 +4,8 @@ title: Redigera meddelande
 description: Så här redigerar du ett meddelande i ett ärende i SuperOffice
 keywords: ['redigera meddelande', 'uppdatera meddelande', 'ändra meddelande', 'ärende']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.05.2026
+so_version: 12.5
 content_type: howto
 functional_right: general administrator
 license: serviceessentials
@@ -13,6 +13,8 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /sv/request/learn/howto/edit-message
+related:
+  - /sv/request/learn/mentions
 language: sv
 ---
 
@@ -32,5 +34,5 @@ Du kan ändra egenskaperna för ett meddelande i ett ärende om du äger ärende
 1. Klicka på **Spara** när du är klar, eller **Avbryt** om du vill ignorera ändringarna. Med administrationsrättigheter för Service kan du också ta bort hela meddelandet genom att klicka på **Ta bort** och sedan **OK**.
 
 [1]: ./index#open
-[2]: /sv/admin/preferences/service-settings
+[2]: ../../admin/preferences/service-settings
 [3]: ./mentions#edit
