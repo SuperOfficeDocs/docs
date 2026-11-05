@@ -1,6 +1,6 @@
 ---
 title: FormSubmissionShadowDynamicSelectionV2
-description: FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: FormSubmissionShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "FormSubmissionShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the [FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup](./formsubmissionshadowdynamicselectionsinglecriteriagroup).
+FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"formSubmission"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -124,7 +122,6 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |person/personCategory|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personCategoryGroup|listAny|| x |
@@ -229,7 +226,6 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |person/personAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/fullName|string|| x |
@@ -334,7 +330,6 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/phone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/activeErpLinks|bool|| x |
@@ -439,7 +434,6 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/contactUdef/SuperOffice:3|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:4|date|| x |
@@ -503,11 +497,12 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowDynamicSelectionV2?$select=registeredBy,associate/isActive,person/personBusiness,person/email/emailLastBounce,person/personAddress/state
+GET /api/v1/archive/FormSubmissionShadowDynamicSelectionV2?$select=associate/isLocation,person/personRegisteredBy,person/correspondingAssociate/credentialDisplayValue,contact/department,contact/hasInterests
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

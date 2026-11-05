@@ -8,13 +8,12 @@ envir: online
 ---
 
 ## "quotedocumenttype" MDO List
-
 List of quote document types - assumes ExtraInfo is the name of RecordType enum value
 
 AdditionalInfo = "email=Email"
 (DocTmplType enum value)
 
-Implemented by the QuoteDocumentTypeProvider class.
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.QuoteDocumentTypeProvider">QuoteDocumentTypeProvider</see> class.
 The name of the MDO list is 'quotedocumenttype'.
 
 ## Additional Attributes
@@ -22,6 +21,10 @@ The name of the MDO list is 'quotedocumenttype'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |DocTmplType value to filter.| |Email|
+
+
+
+
 
 ## Sample Request
 
@@ -34,7 +37,6 @@ Accept-Language: *
 ```
 
 ## Sample Code
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("quotedocumenttype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -50,6 +52,7 @@ foreach (var item in listProvider.RootItems) {
 |2||||
 |3||||
 |5||||
+
 
 ## Related MDO Lists
 

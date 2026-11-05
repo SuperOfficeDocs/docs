@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "Mail2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EMailItemProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EMailItemProvider">SuperOffice.CRM.ArchiveLists.EMailItemProvider</see> inside NetServer's SODatabase assembly.
 
 Provides populated mail envelope rows as an archive
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"mailitem"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Provides populated mail envelope rows as an archive
 |person/searchPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personInfo/textId|int|| x |
@@ -229,7 +226,6 @@ Provides populated mail envelope rows as an archive
 |person/personAssociate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/otherGroups|userGroup||  |
@@ -334,7 +330,6 @@ Provides populated mail envelope rows as an archive
 |contact/email/emailHasBounced|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/addressId|int|| x |
@@ -439,7 +434,6 @@ Provides populated mail envelope rows as an archive
 |contact/contactExtra/x\_contact\_request\_relation|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_contact|stringorPK|| x |
@@ -511,11 +505,12 @@ Provides populated mail envelope rows as an archive
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mail2?$select=subject,mailfolder,person/restrictionAddress/line1,person/personExtra/x_person_hidden_integer,contact/email/emailLastBounce
+GET /api/v1/archive/Mail2?$select=person/restrictionAddress/wgs84longitude,person/personExtra/x_person_boolean,person/correspondingAssociate/otherGroups
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

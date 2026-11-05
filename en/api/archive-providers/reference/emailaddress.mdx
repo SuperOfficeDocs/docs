@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "EmailAddress"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EMailAddressProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EMailAddressProvider">SuperOffice.CRM.ArchiveLists.EMailAddressProvider</see> inside NetServer's SODatabase assembly.
 
 Special purpose archive provider used to search for email addresses.
 
@@ -17,11 +17,11 @@ This provider combines two subchannels, one for Person and one for Contact relat
 Each channel will match on either the email address itself, or some relevant naming information
 (such as contact name or person name or whatever).
 
+
 The resulting rows will have entity names reflecting the type of match, but the primary key will always be
 the email_id.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"email"||
@@ -29,7 +29,6 @@ the email_id.
 |"contact"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -133,7 +132,6 @@ the email_id.
 |personContact/associateId| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/category| *None* ||  |
@@ -238,7 +236,6 @@ the email_id.
 |linkedinUrl| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |deletedDate| *None* ||  |
@@ -343,7 +340,6 @@ the email_id.
 |contactAssociate/isLocation| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportAssociate/firstName| *None* ||  |
@@ -448,7 +444,6 @@ the email_id.
 |contactSupportPerson/personUdef/SuperOffice:8| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/personUdef/SuperOffice:9| *None* ||  |
@@ -553,7 +548,6 @@ the email_id.
 |saintTicketCategory| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionMemberId| *None* ||  |
@@ -562,11 +556,12 @@ the email_id.
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailAddress?$select=emailLastSent,personAddress/zip,personContact/restrictionAddress/zip,orgnr,updatedDate
+GET /api/v1/archive/EmailAddress?$select=fullName,personContact/code,personContact/restrictionAddress/state,contactSupportPerson/associateType,contactSupportPerson/ticketPriority
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

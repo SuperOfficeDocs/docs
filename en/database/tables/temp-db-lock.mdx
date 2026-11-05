@@ -8,7 +8,7 @@ envir: online
 
 import TempDbLock from "./includes/temp-db-lock.mdx";
 
-## temp\_db\_lock Table (536)
+## temp\_db\_lock Table (537)
 
 Represents a temporary lock on a resource identified by table_id and key
 
@@ -25,6 +25,7 @@ Represents a temporary lock on a resource identified by table_id and key
 |updated|Last updated when|UtcDateTime|No|
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![temp_db_lock table relationship diagram](/media/loc/en/database/tables/temp_db_lock.png)
 
@@ -43,6 +44,7 @@ Represents a temporary lock on a resource identified by table_id and key
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +52,4 @@ Represents a temporary lock on a resource identified by table_id and key
 ## Security Flags
 
 * No access control via user's Role.
+

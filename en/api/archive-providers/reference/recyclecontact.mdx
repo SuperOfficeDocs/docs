@@ -1,6 +1,6 @@
 ---
 title: RecycleContact
-description:
+description: 
 keywords: RecycleContact archive provider
 generated: true
 content_type: reference
@@ -9,17 +9,15 @@ envir: onsite, online
 
 ## "RecycleContact"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RecycleContactsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RecycleContactsProvider">SuperOffice.CRM.ArchiveLists.RecycleContactsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 |"forAllUsers"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -123,7 +121,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Recy
 |contactAssociate/mrMrs|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/title|string|| x |
@@ -217,11 +214,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Recy
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecycleContact?$select=restrictionAddress/city,NumberOfSalesInPeriod,postAddress/wgs84latitude
+GET /api/v1/archive/RecycleContact?$select=contactAssociate/portraitThumbnail,contactExtra/x_contact_float,postAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

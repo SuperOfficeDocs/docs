@@ -74,6 +74,7 @@ Tasks, appointments, followups, phone calls; and documents (document_id != 0). A
 |mother\_associate\_id|Associate/owner of the mother appointment|FK [associate](./associate.mdx)|Yes|
 |owned\_externally|Set if an external system owns this appointment.|Enum [AppointmentExternalOwner](./enums/appointmentexternalowner.mdx)|No|
 |external\_participants|Holds external participant information in JSON format.|Clob|Yes|
+|ticket\_id|Request this appointment belongs to; 0 or NULL when the appointment is not linked to a request|FK [ticket](./ticket.mdx)|Yes|
 
 
 ![appointment table relationship diagram](/media/loc/en/database/tables/appointment.png)
@@ -115,6 +116,7 @@ Tasks, appointments, followups, phone calls; and documents (document_id != 0). A
 |type, activeDate |Enum, DateTime |Index |
 |created\_by\_workflow\_id |FK |Index |
 |associate\_id, status, do\_by, endDate |FK, Enum, DateTime, DateTime |Index |
+|ticket\_id |FK |Index |
 
 ## Relationships
 
@@ -138,6 +140,7 @@ Tasks, appointments, followups, phone calls; and documents (document_id != 0). A
 |[SuggestedDocument](./suggesteddocument)  |Unique owner of a set of licensed modules |
 |[Task](./task)  |Task list table, activity types, like Phone, Meeting |
 |[text](./text)  |Long text fields from all over the system |
+|[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 |[TZLocation](./tzlocation)  |Time zone location |
 |[udappntlarge](./udappntlarge)  |User-defined fields |
 |[udappntsmall](./udappntsmall)  |User-defined fields |

@@ -9,23 +9,21 @@ envir: onsite, online
 
 ## "FormDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Form selection archive using the selectionId as criterionmapping.
 There is no shadow variant, since a form has no person to shadow onto.
 
-The criteria the user gets to pick from are the columns of FormFormExtender - the same
+The criteria the user gets to pick from are the columns of <see cref="T:SuperOffice.CRM.ArchiveLists.FormFormExtender" /> - the same
 ones the Forms pane shows - so a column that should be usable as a criterion needs a restriction type
-on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo) in FormExtenderBase and nothing more here.
+on its <see cref="T:SuperOffice.CRM.ArchiveLists.ArchiveColumnInfo" /> in <see cref="T:SuperOffice.CRM.ArchiveLists.FormExtenderBase" /> and nothing more here.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"form"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -37,6 +35,8 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 |formFolderId|int|| x |
 |formActive|bool|| x |
 |formSubmissionCount|int|| x |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -62,6 +62,7 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -104,11 +105,12 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormDynamicSelectionSingleCriteriaGroup?$select=associate/locationAddress,emailFlow/workflowDescription,emailFlow/registeredBy
+GET /api/v1/archive/FormDynamicSelectionSingleCriteriaGroup?$select=emailFlow/workflowName,emailFlow/updatedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

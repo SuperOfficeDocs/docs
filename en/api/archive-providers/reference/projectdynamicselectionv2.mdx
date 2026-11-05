@@ -1,6 +1,6 @@
 ---
 title: ProjectDynamicSelectionV2
-description: Project selection archive with OR-able selection groups. Each group is represented with the ProjectSelectionDynamicProviderSingleCriteriaGroup.
+description: Project selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: ProjectDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ProjectDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Project selection archive with OR-able selection groups. Each group is represented with the [ProjectSelectionDynamicProviderSingleCriteriaGroup](./projectdynamicselectionsinglecriteriagroup).
+Project selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -124,7 +122,6 @@ Project selection archive with OR-able selection groups. Each group is represent
 |saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintActivityType|listAny||  |
@@ -229,7 +226,6 @@ Project selection archive with OR-able selection groups. Each group is represent
 |sale/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/locationAddress|string|| x |
@@ -276,6 +272,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -331,12 +328,11 @@ Project selection archive with OR-able selection groups. Each group is represent
 |appointment/associate/otherGroups|userGroup||  |
 |appointment/associate/userName|string|| x |
 |appointment/associate/personEmail|string|| x |
-|appointment/associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/locationAddress|string|| x |
 |appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
@@ -436,12 +432,11 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/eventParticipantStatus|listAny|| x |
 |projectMember/function|listAny|| x |
 |projectMember/hasInfoText|bool|| x |
-|projectMember/registered|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/registered|datetime|| x |
 |projectMember/updated|datetime|| x |
 |projectMember/textId|int|| x |
 |projectMember/infoText|positiveString|| x |
@@ -541,12 +536,11 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/restrictionAddress/line3|string|| x |
 |projectMember/restrictionAddress/county|string|| x |
 |projectMember/restrictionAddress/city|string|| x |
-|projectMember/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/restrictionAddress/zip|string|| x |
 |projectMember/restrictionAddress/state|string|| x |
 |projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|| x |
@@ -646,12 +640,11 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/correspondingAssociate/ejStatus|int||  |
 |projectMember/correspondingAssociate/credentialType| *None* || x |
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
-|projectMember/correspondingAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/correspondingAssociate/isActive|bool|| x |
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
 |projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 |projectMember/correspondingAssociate/otherGroups|userGroup||  |
@@ -751,12 +744,11 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/contactAssociate/title|string|| x |
 |projectMember/contactAssociate/associateDbId|associate|| x |
 |projectMember/contactAssociate/contactName|string|| x |
-|projectMember/contactAssociate/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/contactAssociate/contactDepartment|string|| x |
 |projectMember/contactAssociate/usergroup|userGroup|| x |
 |projectMember/contactAssociate/usergroupId|int|| x |
 |projectMember/contactAssociate/contactFullName|string|| x |
@@ -846,11 +838,12 @@ Project selection archive with OR-able selection groups. Each group is represent
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectDynamicSelectionV2?$select=registeredBy,sale/time,sale/hasStakeholders,sale/associate/contactName,projectMember/personAssociate/contactName
+GET /api/v1/archive/ProjectDynamicSelectionV2?$select=projectUrl/URLDescription,projectUdef/SuperOffice:9,sale/salePublish/publishedBy,sale/associate/firstName,appointment/icon
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

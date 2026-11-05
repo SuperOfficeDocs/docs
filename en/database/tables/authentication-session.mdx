@@ -8,7 +8,7 @@ envir: online
 
 import AuthenticationSession from "./includes/authentication-session.mdx";
 
-## authentication\_session Table (553)
+## authentication\_session Table (554)
 
 One row per authenticated user session; owner, random session id, last activity, the encrypted OIDC tokens received during login, and the expiry of the time-bound NetServer secret (login.ns_secret). Rows are touched at most every five minutes and removed when older than one hour
 
@@ -30,6 +30,7 @@ One row per authenticated user session; owner, random session id, last activity,
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
+
 ![authentication_session table relationship diagram](/media/loc/en/database/tables/authentication_session.png)
 
 <AuthenticationSession />
@@ -49,6 +50,7 @@ One row per authenticated user session; owner, random session id, last activity,
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[login](./login)  |This table contains entries for the user sessions.  |
 
+
 ## Replication Flags
 
 * None
@@ -56,3 +58,4 @@ One row per authenticated user session; owner, random session id, last activity,
 ## Security Flags
 
 * No access control via user's Role.
+

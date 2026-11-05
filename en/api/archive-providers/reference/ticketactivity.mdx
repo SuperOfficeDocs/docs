@@ -1,0 +1,777 @@
+---
+title: TicketActivity
+description: Activity archive provider for the Request card - appointments and to-dos linked to a request
+keywords: TicketActivity archive provider
+generated: true
+content_type: reference
+envir: onsite, online
+---
+
+## "TicketActivity"
+
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.TicketActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.TicketActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
+
+Activity archive provider for the Request card: appointments and to-dos linked to a request
+
+## Supported Entities
+| Name | Description |
+| ---- | ----- |
+|"appointment"||
+
+## Supported Columns
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|getAllRows|bool||  |
+|getNoRows|bool||  |
+|participating|bool||  |
+|completed|bool|| x |
+|icon|listAny|| x |
+|date|date|| x |
+|time| *None* ||  |
+|type|listAny|| x |
+|recordType|string|| x |
+|text|positiveString|| x |
+|associateId|associate|| x |
+|contactId|listAny|| x |
+|personId|listAny|| x |
+|projectId|listAny|| x |
+|saleId|int|| x |
+|userGroup|userGroup|| x |
+|who| *None* ||  |
+|updatedBy|associate|| x |
+|updatedByFullName|associate|| x |
+|updatedDate|date|| x |
+|registeredBy|associate|| x |
+|registeredByFullName|associate|| x |
+|registeredDate|date|| x |
+|appointmentId|int|| x |
+|endDate|date|| x |
+|priority|listAny|| x |
+|alarm|bool|| x |
+|isFree|bool|| x |
+|recurring|bool|| x |
+|booking|bool|| x |
+|excludeParticipants|bool||  |
+|intention|listAny|| x |
+|location|string|| x |
+|recurrenceRuleId|int|| x |
+|rawType|int|| x |
+|rawStatus|int|| x |
+|cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
+|visibleInDiary|bool|| x |
+|endTime| *None* ||  |
+|suggestedAppointmentId|int|| x |
+|completedDate|date|| x |
+|isMilestone|bool|| x |
+|invitedPersonId|int|| x |
+|recordTypeText|listAny|| x |
+|joinVideomeetUrl| *None* || x |
+|duration|timeSpan||  |
+|createdByWorkflow|listAny|| x |
+|colorIndex|listAny|| x |
+|visibleFor|listAny||  |
+|appointmentPublish/isPublished|bool|| x |
+|appointmentPublish/publishedFrom|date|| x |
+|appointmentPublish/publishedTo|date|| x |
+|appointmentPublish/publishedBy| *None* ||  |
+|contact/contactId|int|| x |
+|contact/name|stringorPK|| x |
+|contact/department|string|| x |
+|contact/nameDepartment|string|| x |
+|contact/hasInfoText|bool|| x |
+|contact/hasInterests|bool|| x |
+|contact/associateId|associate|| x |
+|contact/category|listAny|| x |
+|contact/categoryGroup|listAny|| x |
+|contact/companyCategoryRank|int|| x |
+|contact/business|listAny|| x |
+|contact/country|listAny|| x |
+|contact/countryId|int|| x |
+|contact/number|string|| x |
+|contact/code|string|| x |
+|contact/orgnr|string|| x |
+|contact/stop|bool|| x |
+|contact/contactNoMail|bool|| x |
+|contact/updatedBy|associate|| x |
+|contact/updatedByFullName|associate|| x |
+|contact/updatedDate|date|| x |
+|contact/registeredBy|associate|| x |
+|contact/registeredByFullName|associate|| x |
+|contact/registeredDate|date|| x |
+|contact/contactSource|listAny|| x |
+|contact/contactDeleted|bool|| x |
+|contact/phone/formattedNumber|string||  |
+|contact/activeErpLinks|bool|| x |
+|contact/numEmployees|int|| x |
+|contact/yearFounded|int|| x |
+|contact/revenueYear|int|| x |
+|contact/revenueBasecurrency|decimal|| x |
+|contact/sharecapitalBasecurrency|decimal|| x |
+|contact/sourcedFrom|string|| x |
+|contact/linkedinUrl|string|| x |
+|contact/deletedDate|datetime||  |
+|contact/mainContact| *None* || x |
+|contact/forceCompany|bool||  |
+|contact/contactPhone/formattedNumber|string||  |
+|contact/contactPhone/description|string|| x |
+|contact/contactFax/formattedNumber|string||  |
+|contact/contactFax/description|string|| x |
+|contact/searchPhone/formattedNumber|string||  |
+|contact/searchPhone/description|string|| x |
+|contact/email/emailProtocol|string|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|contact/email/emailAddress|string|| x |
+|contact/email/emailDescription|string|| x |
+|contact/email/emailId|int|| x |
+|contact/email/emailLastSent|datetime|| x |
+|contact/email/emailBounceCount|int|| x |
+|contact/email/emailLastBounce|datetime|| x |
+|contact/email/emailHasBounced|bool|| x |
+|contact/postAddress/addressId|int|| x |
+|contact/postAddress/line1|string|| x |
+|contact/postAddress/line2|string|| x |
+|contact/postAddress/line3|string|| x |
+|contact/postAddress/county|string|| x |
+|contact/postAddress/city|string|| x |
+|contact/postAddress/zip|string|| x |
+|contact/postAddress/state|string|| x |
+|contact/postAddress/wgs84latitude|decimal|| x |
+|contact/postAddress/wgs84longitude|decimal|| x |
+|contact/postAddress/formattedAddress| *None* ||  |
+|contact/postAddress/formattedMultiLineAddress| *None* ||  |
+|contact/streetAddress/addressId|int|| x |
+|contact/streetAddress/line1|string|| x |
+|contact/streetAddress/line2|string|| x |
+|contact/streetAddress/line3|string|| x |
+|contact/streetAddress/county|string|| x |
+|contact/streetAddress/city|string|| x |
+|contact/streetAddress/zip|string|| x |
+|contact/streetAddress/state|string|| x |
+|contact/streetAddress/wgs84latitude|decimal|| x |
+|contact/streetAddress/wgs84longitude|decimal|| x |
+|contact/streetAddress/formattedAddress| *None* ||  |
+|contact/streetAddress/formattedMultiLineAddress| *None* ||  |
+|contact/restrictionAddress/addressId|int|| x |
+|contact/restrictionAddress/line1|string|| x |
+|contact/restrictionAddress/line2|string|| x |
+|contact/restrictionAddress/line3|string|| x |
+|contact/restrictionAddress/county|string|| x |
+|contact/restrictionAddress/city|string|| x |
+|contact/restrictionAddress/zip|string|| x |
+|contact/restrictionAddress/state|string|| x |
+|contact/restrictionAddress/wgs84latitude|decimal|| x |
+|contact/restrictionAddress/wgs84longitude|decimal|| x |
+|contact/restrictionAddress/formattedAddress| *None* ||  |
+|contact/restrictionAddress/formattedMultiLineAddress| *None* ||  |
+|contact/url/URLAddress|string|| x |
+|contact/url/URLDescription|string|| x |
+|contact/contactAssociate/firstName|string|| x |
+|contact/contactAssociate/lastName|string|| x |
+|contact/contactAssociate/middleName|string|| x |
+|contact/contactAssociate/fullName|string|| x |
+|contact/contactAssociate/contactId|int||  |
+|contact/contactAssociate/personId|int||  |
+|contact/contactAssociate/mrMrs|string|| x |
+|contact/contactAssociate/title|string|| x |
+|contact/contactAssociate/associateDbId|associate|| x |
+|contact/contactAssociate/contactName|string|| x |
+|contact/contactAssociate/contactDepartment|string|| x |
+|contact/contactAssociate/usergroup|userGroup|| x |
+|contact/contactAssociate/usergroupId|int|| x |
+|contact/contactAssociate/contactFullName|string|| x |
+|contact/contactAssociate/contactCategory|listAny|| x |
+|contact/contactAssociate/role|listAny|| x |
+|contact/contactAssociate/assocName|associate|| x |
+|contact/contactAssociate/assocTooltip|string||  |
+|contact/contactAssociate/assocType|listAny|| x |
+|contact/contactAssociate/ejUserId|int||  |
+|contact/contactAssociate/simultaneousEjUser|bool||  |
+|contact/contactAssociate/ejDisplayName|string|| x |
+|contact/contactAssociate/ejStatus|int||  |
+|contact/contactAssociate/credentialType| *None* || x |
+|contact/contactAssociate/credentialDisplayValue| *None* || x |
+|contact/contactAssociate/isActive|bool|| x |
+|contact/contactAssociate/isActiveText|bool|| x |
+|contact/contactAssociate/portraitThumbnail| *None* ||  |
+|contact/contactAssociate/otherGroups|userGroup||  |
+|contact/contactAssociate/userName|string|| x |
+|contact/contactAssociate/personEmail|string|| x |
+|contact/contactAssociate/locationAddress|string|| x |
+|contact/contactAssociate/isLocation|bool|| x |
+|contact/contactInterestIds|listInterest||  |
+|contact/contactUdef/SuperOffice:1|string|| x |
+|contact/contactUdef/SuperOffice:2|string|| x |
+|contact/contactUdef/SuperOffice:3|int|| x |
+|contact/contactUdef/SuperOffice:4|date|| x |
+|contact/contactUdef/SuperOffice:5|unlimitedDate|| x |
+|contact/contactUdef/SuperOffice:6|bool|| x |
+|contact/contactUdef/SuperOffice:7|listAny|| x |
+|contact/contactUdef/SuperOffice:8|decimal|| x |
+|contact/contactUdef/SuperOffice:9|string|| x |
+|contact/contactUdef/SuperOffice:10|string|| x |
+|contact/contactUdef/SuperOffice:11|string|| x |
+|contact/contactUdef/SuperOffice:12|listAny|| x |
+|contact/contactUdef/SuperOffice:13|listAny|| x |
+|contact/contactExtra/x\_contact\_integer|int|| x |
+|contact/contactExtra/x\_contact\_hidden\_integer|int|| x |
+|contact/contactExtra/x\_contact\_default\_integer|int|| x |
+|contact/contactExtra/x\_contact\_float|decimal|| x |
+|contact/contactExtra/x\_contact\_longtext|string|| x |
+|contact/contactExtra/x\_contact\_dropdown|listAny|| x |
+|contact/contactExtra/x\_contact\_date|date|| x |
+|contact/contactExtra/x\_contact\_datetime|datetime|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_time| *None* || x |
+|contact/contactExtra/x\_contact\_boolean|bool|| x |
+|contact/contactExtra/x\_contact\_timespan|timeSpan|| x |
+|contact/contactExtra/x\_contact\_shorttext|string|| x |
+|contact/contactExtra/x\_contact\_short\_dropdown|listAny|| x |
+|contact/contactExtra/x\_contact\_contact\_relation|stringorPK|| x |
+|contact/contactExtra/x\_contact\_request\_relation|stringorPK|| x |
+|contact/contactExtra/x\_contact\_contact|stringorPK|| x |
+|contact/contactExtra/y\_organization/x\_name|string|| x |
+|contact/NumberOfActivities|int||  |
+|contact/NumberOfActivitiesInPeriod|int||  |
+|contact/NumberOfNotCompletedActivities|int||  |
+|contact/NumberOfNotCompletedActivitiesInPeriod|int||  |
+|contact/LastActivity|date||  |
+|contact/LastCompletedActivity|date||  |
+|contact/LastDoByActivity|date||  |
+|contact/NumberOfSales|int||  |
+|contact/NumberOfSalesInPeriod|int||  |
+|contact/NumberOfNotCompletedSales|int||  |
+|contact/NumberOfNotCompletedSalesInPeriod|int||  |
+|contact/LastSale|date||  |
+|contact/LastCompletedSale|date||  |
+|contact/LastDoBySale|date||  |
+|contact/NumberOfTickets|int||  |
+|contact/NumberOfTicketsInPeriod|int||  |
+|contact/NumberOfNotCompletedTickets|int||  |
+|contact/NumberOfNotCompletedTicketsInPeriod|int||  |
+|contact/LastTicket|date||  |
+|contact/LastCompletedTicket|date||  |
+|contact/LastDoByTicket|date||  |
+|contact/SaintStatus1|saintStatus||  |
+|contact/SaintStatus2|saintStatus||  |
+|contact/saintSaleStatus|listAny||  |
+|contact/saintAmountClass|listAny||  |
+|contact/saintActivityType|listAny||  |
+|contact/saintDirection|listAny||  |
+|contact/saintIntention|listAny||  |
+|contact/saintTicketStatus|listAny||  |
+|contact/saintTicketCategory|listAny||  |
+|person/personId|int|| x |
+|person/firstName|string|| x |
+|person/lastName|string|| x |
+|person/middleName|string|| x |
+|person/fullName|string|| x |
+|person/contactId|int|| x |
+|person/hasInfoText|bool|| x |
+|person/hasInterests|bool|| x |
+|person/personHasInterests|bool|| x |
+|person/mrMrs|string|| x |
+|person/position|listAny|| x |
+|person/personNumber|string|| x |
+|person/title|string|| x |
+|person/personCountry|listAny|| x |
+|person/personCountryId|int|| x |
+|person/personNoMail|bool|| x |
+|person/rank|int|| x |
+|person/birthdate| *None* ||  |
+|person/associateType| *None* ||  |
+|person/useAsMailingAddress|bool|| x |
+|person/personSource|listAny|| x |
+|person/retired|bool|| x |
+|person/birthYear|int|| x |
+|person/birthMonth|int|| x |
+|person/birthDay|int|| x |
+|person/kanaFirstName|string|| x |
+|person/kanaLastName|string|| x |
+|person/personUpdatedBy|associate|| x |
+|person/personUpdatedByFullName|associate|| x |
+|person/personUpdatedDate|date|| x |
+|person/personRegisteredBy|associate|| x |
+|person/personRegisteredByFullName|associate|| x |
+|person/personRegisteredDate|date|| x |
+|person/portraitThumbnail| *None* ||  |
+|person/personActiveErpLinks|bool|| x |
+|person/personSourcedFrom|string|| x |
+|person/personLinkedinUrl|string|| x |
+|person/ticketPriority|listAny|| x |
+|person/supportLanguage|listAny|| x |
+|person/supportAssociate|associate|| x |
+|person/supportAssociateFullName|associate|| x |
+|person/personAssociateId|associate|| x |
+|person/personAssociateFullName|associate|| x |
+|person/personCategory|listAny|| x |
+|person/personCategoryGroup|listAny|| x |
+|person/personCategoryRank|int|| x |
+|person/personBusiness|listAny|| x |
+|person/leadStatus|listAny|| x |
+|person/leadstatusRank|int|| x |
+|person/personDeletedDate|datetime||  |
+|person/hasCompany|bool|| x |
+|person/isProjectMember|bool|| x |
+|person/isStakeholder|bool|| x |
+|person/updatedByWorkflow|listAny|| x |
+|person/whenUpdatedByWorkflow|datetime|| x |
+|person/createdByForm|listAny|| x |
+|person/phone/formattedNumber|string||  |
+|person/personDirectPhone/formattedNumber|string||  |
+|person/personDirectPhone/description|string|| x |
+|person/personMobilePhone/formattedNumber|string||  |
+|person/personMobilePhone/description|string|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|person/personPrivate/formattedNumber|string||  |
+|person/personPrivate/description|string|| x |
+|person/personPager/formattedNumber|string||  |
+|person/personPager/description|string|| x |
+|person/personDirectFax/formattedNumber|string||  |
+|person/personDirectFax/description|string|| x |
+|person/searchPhone/formattedNumber|string||  |
+|person/searchPhone/description|string|| x |
+|person/personInfo/textId|int|| x |
+|person/personInfo/infoText|positiveString|| x |
+|person/email/emailProtocol|string|| x |
+|person/email/emailAddress|string|| x |
+|person/email/emailDescription|string|| x |
+|person/email/emailId|int|| x |
+|person/email/emailLastSent|datetime|| x |
+|person/email/emailBounceCount|int|| x |
+|person/email/emailLastBounce|datetime|| x |
+|person/email/emailHasBounced|bool|| x |
+|person/personUrl/URLAddress|string|| x |
+|person/personUrl/URLDescription|string|| x |
+|person/personAddress/addressId|int|| x |
+|person/personAddress/line1|string|| x |
+|person/personAddress/line2|string|| x |
+|person/personAddress/line3|string|| x |
+|person/personAddress/county|string|| x |
+|person/personAddress/city|string|| x |
+|person/personAddress/zip|string|| x |
+|person/personAddress/state|string|| x |
+|person/personAddress/wgs84latitude|decimal|| x |
+|person/personAddress/wgs84longitude|decimal|| x |
+|person/personAddress/formattedAddress| *None* ||  |
+|person/personAddress/formattedMultiLineAddress| *None* ||  |
+|person/restrictionAddress/addressId|int|| x |
+|person/restrictionAddress/line1|string|| x |
+|person/restrictionAddress/line2|string|| x |
+|person/restrictionAddress/line3|string|| x |
+|person/restrictionAddress/county|string|| x |
+|person/restrictionAddress/city|string|| x |
+|person/restrictionAddress/zip|string|| x |
+|person/restrictionAddress/state|string|| x |
+|person/restrictionAddress/wgs84latitude|decimal|| x |
+|person/restrictionAddress/wgs84longitude|decimal|| x |
+|person/restrictionAddress/formattedAddress| *None* ||  |
+|person/restrictionAddress/formattedMultiLineAddress| *None* ||  |
+|person/personInterestIds|listInterest||  |
+|person/personUdef/SuperOffice:1|string|| x |
+|person/personUdef/SuperOffice:2|string|| x |
+|person/personUdef/SuperOffice:3|int|| x |
+|person/personUdef/SuperOffice:4|date|| x |
+|person/personUdef/SuperOffice:5|unlimitedDate|| x |
+|person/personUdef/SuperOffice:6|bool|| x |
+|person/personUdef/SuperOffice:7|listAny|| x |
+|person/personUdef/SuperOffice:8|decimal|| x |
+|person/personUdef/SuperOffice:9|string|| x |
+|person/personUdef/SuperOffice:10|string|| x |
+|person/personUdef/SuperOffice:11|string|| x |
+|person/personExtra/x\_person\_integer|int|| x |
+|person/personExtra/x\_person\_hidden\_integer|int|| x |
+|person/personExtra/x\_person\_float|decimal|| x |
+|person/personExtra/x\_person\_longtext|string|| x |
+|person/personExtra/x\_person\_date|date|| x |
+|person/personExtra/x\_person\_datetime|datetime|| x |
+|person/personExtra/x\_person\_time| *None* || x |
+|person/personExtra/x\_person\_boolean|bool|| x |
+|person/personExtra/x\_person\_timespan|timeSpan|| x |
+|person/personExtra/x\_person\_shorttext|string|| x |
+|person/personExtra/x\_person\_shorttext\_list|listAny|| x |
+|person/personExtra/x\_person\_user\_relation|associate|| x |
+|person/personExtra/x\_person\_category\_relation|listAny|| x |
+|person/personExtra/x\_person\_priority\_relation|listAny|| x |
+|person/personExtra/x\_person\_request\_relation|stringorPK|| x |
+|person/personExtra/x\_person\_appointment\_relation|stringorPK|| x |
+|person/personExtra/x\_person\_contact\_relation|stringorPK|| x |
+|person/personExtra/y\_rental/id|int|| x |
+|person/personExtra/y\_rental/x\_start|date|| x |
+|person/personExtra/y\_rental/x\_end|date|| x |
+|person/personExtra/y\_rental/x\_amount|int|| x |
+|person/personExtra/y\_rental/x\_contact|stringorPK|| x |
+|person/personExtra/y\_rental/y\_equipment/x\_name|string|| x |
+|person/personExtra/y\_car/id|int|| x |
+|person/personAssociate/firstName|string|| x |
+|person/personAssociate/lastName|string|| x |
+|person/personAssociate/middleName|string|| x |
+|person/personAssociate/fullName|string|| x |
+|person/personAssociate/contactId|int||  |
+|person/personAssociate/personId|int||  |
+|person/personAssociate/mrMrs|string|| x |
+|person/personAssociate/title|string|| x |
+|person/personAssociate/associateDbId|associate|| x |
+|person/personAssociate/contactName|string|| x |
+|person/personAssociate/contactDepartment|string|| x |
+|person/personAssociate/usergroup|userGroup|| x |
+|person/personAssociate/usergroupId|int|| x |
+|person/personAssociate/contactFullName|string|| x |
+|person/personAssociate/contactCategory|listAny|| x |
+|person/personAssociate/role|listAny|| x |
+|person/personAssociate/assocName|associate|| x |
+|person/personAssociate/assocTooltip|string||  |
+|person/personAssociate/assocType|listAny|| x |
+|person/personAssociate/ejUserId|int||  |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|person/personAssociate/simultaneousEjUser|bool||  |
+|person/personAssociate/ejDisplayName|string|| x |
+|person/personAssociate/ejStatus|int||  |
+|person/personAssociate/credentialType| *None* || x |
+|person/personAssociate/credentialDisplayValue| *None* || x |
+|person/personAssociate/isActive|bool|| x |
+|person/personAssociate/isActiveText|bool|| x |
+|person/personAssociate/portraitThumbnail| *None* ||  |
+|person/personAssociate/otherGroups|userGroup||  |
+|person/personAssociate/userName|string|| x |
+|person/personAssociate/personEmail|string|| x |
+|person/personAssociate/locationAddress|string|| x |
+|person/personAssociate/isLocation|bool|| x |
+|person/correspondingAssociate/firstName|string|| x |
+|person/correspondingAssociate/lastName|string|| x |
+|person/correspondingAssociate/middleName|string|| x |
+|person/correspondingAssociate/fullName|string|| x |
+|person/correspondingAssociate/contactId|int||  |
+|person/correspondingAssociate/personId|int||  |
+|person/correspondingAssociate/mrMrs|string|| x |
+|person/correspondingAssociate/title|string|| x |
+|person/correspondingAssociate/associateDbId|associate|| x |
+|person/correspondingAssociate/contactName|string|| x |
+|person/correspondingAssociate/contactDepartment|string|| x |
+|person/correspondingAssociate/usergroup|userGroup|| x |
+|person/correspondingAssociate/usergroupId|int|| x |
+|person/correspondingAssociate/contactFullName|string|| x |
+|person/correspondingAssociate/contactCategory|listAny|| x |
+|person/correspondingAssociate/role|listAny|| x |
+|person/correspondingAssociate/assocName|associate|| x |
+|person/correspondingAssociate/assocTooltip|string||  |
+|person/correspondingAssociate/assocType|listAny|| x |
+|person/correspondingAssociate/ejUserId|int||  |
+|person/correspondingAssociate/simultaneousEjUser|bool||  |
+|person/correspondingAssociate/ejDisplayName|string|| x |
+|person/correspondingAssociate/ejStatus|int||  |
+|person/correspondingAssociate/credentialType| *None* || x |
+|person/correspondingAssociate/credentialDisplayValue| *None* || x |
+|person/correspondingAssociate/isActive|bool|| x |
+|person/correspondingAssociate/isActiveText|bool|| x |
+|person/correspondingAssociate/portraitThumbnail| *None* ||  |
+|person/correspondingAssociate/otherGroups|userGroup||  |
+|person/correspondingAssociate/userName|string|| x |
+|person/correspondingAssociate/personEmail|string|| x |
+|person/correspondingAssociate/locationAddress|string|| x |
+|person/correspondingAssociate/isLocation|bool|| x |
+|person/isMailingRecipient|bool|| x |
+|person/hasStoreConsent|bool||  |
+|person/withdrawnStoreConsent|bool||  |
+|person/hasEmarketingConsent|bool||  |
+|person/withdrawnEmarketingConsent|bool||  |
+|person/subscription|listAny|| x |
+|person/legalBaseStore|listAny|| x |
+|person/legalBaseEmarketing|listAny|| x |
+|person/consentSourceStore|listAny|| x |
+|person/consentSourceEmarketing|listAny|| x |
+|appointmentUdef/SuperOffice:1|string|| x |
+|appointmentUdef/SuperOffice:2|string|| x |
+|appointmentUdef/SuperOffice:3|int|| x |
+|appointmentUdef/SuperOffice:4|date|| x |
+|appointmentUdef/SuperOffice:5|unlimitedDate|| x |
+|appointmentUdef/SuperOffice:6|bool|| x |
+|appointmentUdef/SuperOffice:7|listAny|| x |
+|appointmentUdef/SuperOffice:8|decimal|| x |
+|project/completed|bool|| x |
+|project/projectId|int|| x |
+|project/name|stringorPK|| x |
+|project/number|string|| x |
+|project/type|listAny|| x |
+|project/status|listAny|| x |
+|project/statusRank| *None* || x |
+|project/associateId|associate|| x |
+|project/hasInfoText|bool|| x |
+|project/icon| *None* || x |
+|project/text|string|| x |
+|project/description|string|| x |
+|project/updatedBy|associate|| x |
+|project/updatedByFullName|associate|| x |
+|project/updatedDate|date|| x |
+|project/registeredBy|associate|| x |
+|project/registeredByFullName|associate|| x |
+|project/registeredDate|date|| x |
+|project/hasGuide|bool|| x |
+|project/nextMilestone|date|| x |
+|project/endDate|date|| x |
+|project/imageThumbnail| *None* ||  |
+|project/activeErpLinks|bool|| x |
+|project/eventId|int|| x |
+|project/startDate|date|| x |
+|project/projectPublish/isPublished|bool|| x |
+|project/projectPublish/publishedFrom|date|| x |
+|project/projectPublish/publishedTo|date|| x |
+|project/projectPublish/publishedBy| *None* ||  |
+|project/projectEvent/isExternalEvent|bool|| x |
+|project/projectEvent/eventDate|date|| x |
+|project/projectEvent/hasSignOn|bool|| x |
+|project/projectEvent/hasSignOff|bool|| x |
+|project/projectUrl/URLAddress|string|| x |
+|project/projectUrl/URLDescription|string|| x |
+|project/projectAssociate/firstName|string|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|project/projectAssociate/lastName|string|| x |
+|project/projectAssociate/middleName|string|| x |
+|project/projectAssociate/fullName|string|| x |
+|project/projectAssociate/contactId|int||  |
+|project/projectAssociate/personId|int||  |
+|project/projectAssociate/mrMrs|string|| x |
+|project/projectAssociate/title|string|| x |
+|project/projectAssociate/associateDbId|associate|| x |
+|project/projectAssociate/contactName|string|| x |
+|project/projectAssociate/contactDepartment|string|| x |
+|project/projectAssociate/usergroup|userGroup|| x |
+|project/projectAssociate/usergroupId|int|| x |
+|project/projectAssociate/contactFullName|string|| x |
+|project/projectAssociate/contactCategory|listAny|| x |
+|project/projectAssociate/role|listAny|| x |
+|project/projectAssociate/assocName|associate|| x |
+|project/projectAssociate/assocTooltip|string||  |
+|project/projectAssociate/assocType|listAny|| x |
+|project/projectAssociate/ejUserId|int||  |
+|project/projectAssociate/simultaneousEjUser|bool||  |
+|project/projectAssociate/ejDisplayName|string|| x |
+|project/projectAssociate/ejStatus|int||  |
+|project/projectAssociate/credentialType| *None* || x |
+|project/projectAssociate/credentialDisplayValue| *None* || x |
+|project/projectAssociate/isActive|bool|| x |
+|project/projectAssociate/isActiveText|bool|| x |
+|project/projectAssociate/portraitThumbnail| *None* ||  |
+|project/projectAssociate/otherGroups|userGroup||  |
+|project/projectAssociate/userName|string|| x |
+|project/projectAssociate/personEmail|string|| x |
+|project/projectAssociate/locationAddress|string|| x |
+|project/projectAssociate/isLocation|bool|| x |
+|project/projectUdef/SuperOffice:1|string|| x |
+|project/projectUdef/SuperOffice:2|string|| x |
+|project/projectUdef/SuperOffice:3|int|| x |
+|project/projectUdef/SuperOffice:4|date|| x |
+|project/projectUdef/SuperOffice:5|unlimitedDate|| x |
+|project/projectUdef/SuperOffice:6|bool|| x |
+|project/projectUdef/SuperOffice:7|listAny|| x |
+|project/projectUdef/SuperOffice:8|decimal|| x |
+|project/projectUdef/SuperOffice:9|int|| x |
+|project/projectUdef/SuperOffice:10|int|| x |
+|project/NumberOfActivities|int||  |
+|project/NumberOfActivitiesInPeriod|int||  |
+|project/NumberOfNotCompletedActivities|int||  |
+|project/NumberOfNotCompletedActivitiesInPeriod|int||  |
+|project/LastActivity|date||  |
+|project/LastCompletedActivity|date||  |
+|project/LastDoByActivity|date||  |
+|project/NumberOfSales|int||  |
+|project/NumberOfSalesInPeriod|int||  |
+|project/NumberOfNotCompletedSales|int||  |
+|project/NumberOfNotCompletedSalesInPeriod|int||  |
+|project/LastSale|date||  |
+|project/LastCompletedSale|date||  |
+|project/LastDoBySale|date||  |
+|project/SaintStatus3|saintStatus||  |
+|project/saintSaleStatus|listAny||  |
+|project/saintAmountClass|listAny||  |
+|project/saintActivityType|listAny||  |
+|project/saintDirection|listAny||  |
+|project/saintIntention|listAny||  |
+|project/saintTicketStatus|listAny||  |
+|project/saintTicketCategory|listAny||  |
+|project/project/textId|int|| x |
+|project/project/infoText|positiveString|| x |
+|sale/completed|bool|| x |
+|sale/icon|listAny|| x |
+|sale/date|date|| x |
+|sale/time| *None* ||  |
+|sale/type|listAny|| x |
+|sale/recordType|string|| x |
+|sale/text|positiveString|| x |
+|sale/associateId|associate|| x |
+|sale/contactId|listAny|| x |
+|sale/personId|listAny|| x |
+|sale/projectId|listAny|| x |
+|sale/saleId|int|| x |
+|sale/userGroup|userGroup|| x |
+|sale/who| *None* ||  |
+|sale/updatedBy|associate|| x |
+|sale/updatedByFullName|associate|| x |
+|sale/updatedDate|date|| x |
+|sale/registeredBy|associate|| x |
+|sale/registeredByFullName|associate|| x |
+|sale/registeredDate|date|| x |
+|sale/currencyId|int|| x |
+|sale/currency|listAny|| x |
+|sale/credited|listAny|| x |
+|sale/lossReason|listAny|| x |
+|sale/source|listAny|| x |
+|sale/competitor|listAny|| x |
+|sale/heading|stringorPK|| x |
+|sale/amount|decimal|| x |
+|sale/amountWeighted|decimal|| x |
+|sale/earning|decimal|| x |
+|sale/earningPercent|decimal|| x |
+|sale/probPercent|int|| x |
+|sale/originalStage|listAny|| x |
+|sale/stage|listAny|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|sale/stageName| *None* || x |
+|sale/saleStatus|listAny|| x |
+|sale/stageRank| *None* || x |
+|sale/saleType|listAny|| x |
+|sale/saleTypeId| *None* || x |
+|sale/stageId| *None* || x |
+|sale/nextDueDate|date|| x |
+|sale/reopenDate|date|| x |
+|sale/stalledComment|listAny|| x |
+|sale/saleTypeCategory|listAny|| x |
+|sale/soldReason|listAny|| x |
+|sale/saleNumber|string|| x |
+|sale/hasStakeholders|bool|| x |
+|sale/stakeholdersEnabled|bool|| x |
+|sale/hasQuote|bool|| x |
+|sale/hasGuide|bool|| x |
+|sale/description|string||  |
+|sale/activeErpLinks|bool|| x |
+|sale/createdByWorkflow|listAny|| x |
+|sale/amountInBaseCurrency| *None* || x |
+|sale/amountWeightedInBaseCurrency| *None* || x |
+|sale/daysInStage|int|| x |
+|sale/saleCycle|int|| x |
+|sale/visibleFor|listAny||  |
+|sale/sale/textId|int|| x |
+|sale/sale/description|positiveString|| x |
+|sale/salePublish/isPublished|bool|| x |
+|sale/salePublish/publishedFrom|date|| x |
+|sale/salePublish/publishedTo|date|| x |
+|sale/salePublish/publishedBy| *None* ||  |
+|sale/associate/firstName|string|| x |
+|sale/associate/lastName|string|| x |
+|sale/associate/middleName|string|| x |
+|sale/associate/fullName|string|| x |
+|sale/associate/contactId|int||  |
+|sale/associate/personId|int||  |
+|sale/associate/mrMrs|string|| x |
+|sale/associate/title|string|| x |
+|sale/associate/associateDbId|associate|| x |
+|sale/associate/contactName|string|| x |
+|sale/associate/contactDepartment|string|| x |
+|sale/associate/usergroup|userGroup|| x |
+|sale/associate/usergroupId|int|| x |
+|sale/associate/contactFullName|string|| x |
+|sale/associate/contactCategory|listAny|| x |
+|sale/associate/role|listAny|| x |
+|sale/associate/assocName|associate|| x |
+|sale/associate/assocTooltip|string||  |
+|sale/associate/assocType|listAny|| x |
+|sale/associate/ejUserId|int||  |
+|sale/associate/simultaneousEjUser|bool||  |
+|sale/associate/ejDisplayName|string|| x |
+|sale/associate/ejStatus|int||  |
+|sale/associate/credentialType| *None* || x |
+|sale/associate/credentialDisplayValue| *None* || x |
+|sale/associate/isActive|bool|| x |
+|sale/associate/isActiveText|bool|| x |
+|sale/associate/portraitThumbnail| *None* ||  |
+|sale/associate/otherGroups|userGroup||  |
+|sale/associate/userName|string|| x |
+|sale/associate/personEmail|string|| x |
+|sale/associate/locationAddress|string|| x |
+|sale/associate/isLocation|bool|| x |
+|sale/saleUdef/SuperOffice:1|string|| x |
+|sale/saleUdef/SuperOffice:2|string|| x |
+|sale/saleUdef/SuperOffice:3|int|| x |
+|sale/saleUdef/SuperOffice:4|date|| x |
+|sale/saleUdef/SuperOffice:5|unlimitedDate|| x |
+|sale/saleUdef/SuperOffice:6|bool|| x |
+|sale/saleUdef/SuperOffice:7|listAny|| x |
+|sale/saleUdef/SuperOffice:8|decimal|| x |
+|associate/firstName|string|| x |
+|associate/lastName|string|| x |
+|associate/middleName|string|| x |
+|associate/fullName|string|| x |
+|associate/contactId|int||  |
+|associate/personId|int||  |
+|associate/mrMrs|string|| x |
+|associate/title|string|| x |
+|associate/associateDbId|associate|| x |
+|associate/contactName|string|| x |
+|associate/contactDepartment|string|| x |
+|associate/usergroup|userGroup|| x |
+|associate/usergroupId|int|| x |
+|associate/contactFullName|string|| x |
+|associate/contactCategory|listAny|| x |
+|associate/role|listAny|| x |
+|associate/assocName|associate|| x |
+|associate/assocTooltip|string||  |
+|associate/assocType|listAny|| x |
+|associate/ejUserId|int||  |
+|associate/simultaneousEjUser|bool||  |
+|associate/ejDisplayName|string|| x |
+|associate/ejStatus|int||  |
+|associate/credentialType| *None* || x |
+|associate/credentialDisplayValue| *None* || x |
+|associate/isActive|bool|| x |
+|associate/isActiveText|bool|| x |
+|associate/portraitThumbnail| *None* ||  |
+|associate/otherGroups|userGroup||  |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|associate/userName|string|| x |
+|associate/personEmail|string|| x |
+|associate/locationAddress|string|| x |
+|associate/isLocation|bool|| x |
+|appointment/text|positiveString|| x |
+|appointment/description|positiveString|| x |
+|appointment/title|positiveString|| x |
+|appointment/titleHtml| *None* || x |
+|appointment/agenda|positiveString|| x |
+|appointment/agendaHtml| *None* || x |
+|appointment/isConverted| *None* ||  |
+|appointment/textId|int|| x |
+|appointment/internalNotes|positiveString|| x |
+|appointment/internalNotesHtml|positiveString|| x |
+
+## Sample
+
+```http!
+GET /api/v1/archive/TicketActivity?$select=appointmentPublish/publishedBy,contact/streetAddress/formattedAddress,person/personAssociateFullName,project/startDate,project/projectAssociate/assocTooltip
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: sv
+
+```
+
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

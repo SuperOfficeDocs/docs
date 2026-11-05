@@ -1,6 +1,6 @@
 ---
 title: ChatConversationShadowDynamicSelectionV2
-description: ChatConversation shadow selection archive with OR-able selection groups. Each group is represented with the ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: ChatConversation shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: ChatConversationShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ChatConversationShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-ChatConversation shadow selection archive with OR-able selection groups. Each group is represented with the [ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup](./chatconversationshadowdynamicselectionsinglecriteriagroup).
+ChatConversation shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"chatConversations"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -124,7 +122,6 @@ ChatConversation shadow selection archive with OR-able selection groups. Each gr
 |person/personLinkedinUrl|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/ticketPriority|listAny|| x |
@@ -229,7 +226,6 @@ ChatConversation shadow selection archive with OR-able selection groups. Each gr
 |person/personExtra/y\_rental/x\_end|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/x\_amount|int|| x |
@@ -334,7 +330,6 @@ ChatConversation shadow selection archive with OR-able selection groups. Each gr
 |contact/updatedByFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/updatedDate|date|| x |
@@ -439,7 +434,6 @@ ChatConversation shadow selection archive with OR-able selection groups. Each gr
 |contact/contactAssociate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/personEmail|string|| x |
@@ -510,11 +504,12 @@ ChatConversation shadow selection archive with OR-able selection groups. Each gr
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationShadowDynamicSelectionV2?$select=person/fullName,person/personMobilePhone/description,person/personUdef/SuperOffice:7,person/consentSourceStore,contact/postAddress/zip
+GET /api/v1/archive/ChatConversationShadowDynamicSelectionV2?$select=associate/ejStatus,person/personInterestIds,person/correspondingAssociate/portraitThumbnail,contact/yearFounded,contact/contactExtra/x_contact_longtext
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "QuoteLineDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Quoteline selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Quoteline selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/icon|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/date|date|| x |
@@ -229,7 +226,6 @@ Quoteline selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/person/personAssociateId|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personAssociateFullName|associate|| x |
@@ -334,7 +330,6 @@ Quoteline selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/person/personAssociate/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personAssociate/lastName|string|| x |
@@ -439,7 +434,6 @@ Quoteline selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/contact/contactSource|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactDeleted|bool|| x |
@@ -544,7 +538,6 @@ Quoteline selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:1|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:2|string|| x |
@@ -649,7 +642,6 @@ Quoteline selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/saleUdef/SuperOffice:8|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/completed|bool|| x |
@@ -754,7 +746,6 @@ Quoteline selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/project/saintTicketCategory|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/project/textId|int|| x |
@@ -794,11 +785,12 @@ Quoteline selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineDynamicSelection?$select=alternative/version/approvalRegisteredBy,alternative/version/quote/sale/soldReason,alternative/version/quote/sale/person/personUdef/SuperOffice:4,alternative/version/quote/sale/person/personExtra/x_person_timespan,alternative/version/quote/sale/person/personAssociate/usergroup
+GET /api/v1/archive/QuoteLineDynamicSelection?$select=alternative/quoteVersionId,alternative/version/quote/sale/person/personAssociate/contactCategory,alternative/version/quote/sale/contact/contactSource,alternative/version/quote/sale/contact/mainContact,alternative/version/quote/sale/contact/contactExtra/x_contact_hidden_integer
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

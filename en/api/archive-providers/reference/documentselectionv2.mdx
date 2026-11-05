@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "DocumentSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection document archive.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ This is the archive Provider for the Selection document archive.
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -229,7 +226,6 @@ This is the archive Provider for the Selection document archive.
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -334,7 +330,6 @@ This is the archive Provider for the Selection document archive.
 |contact/contactFax/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/formattedNumber|string||  |
@@ -439,7 +434,6 @@ This is the archive Provider for the Selection document archive.
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
@@ -544,7 +538,6 @@ This is the archive Provider for the Selection document archive.
 |project/projectAssociate/ejStatus|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/credentialType| *None* || x |
@@ -649,7 +642,6 @@ This is the archive Provider for the Selection document archive.
 |sale/updatedBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/updatedByFullName|associate|| x |
@@ -753,11 +745,12 @@ This is the archive Provider for the Selection document archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentSelectionV2?$select=contact/email/emailHasBounced,contact/streetAddress/line2,contact/restrictionAddress/formattedMultiLineAddress
+GET /api/v1/archive/DocumentSelectionV2?$select=person/personAssociate/contactDepartment,contact/email/emailBounceCount,contact/restrictionAddress/county,project/updatedBy,project/projectEvent/eventDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -1,6 +1,6 @@
 ---
 title: FormDynamicSelectionV2
-description: Form selection archive with OR-able selection groups. Each group is represented with the FormSelectionDynamicProviderSingleCriteriaGroup.
+description: Form selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: FormDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "FormDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Form selection archive with OR-able selection groups. Each group is represented with the [FormSelectionDynamicProviderSingleCriteriaGroup](./formdynamicselectionsinglecriteriagroup).
+Form selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"form"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -34,6 +32,8 @@ Form selection archive with OR-able selection groups. Each group is represented 
 |formFolderId|int|| x |
 |formActive|bool|| x |
 |formSubmissionCount|int|| x |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -59,6 +59,7 @@ Form selection archive with OR-able selection groups. Each group is represented 
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -101,11 +102,12 @@ Form selection archive with OR-able selection groups. Each group is represented 
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormDynamicSelectionV2?$select=associate/userName,emailFlow/workflowId,emailFlow/updatedDate
+GET /api/v1/archive/FormDynamicSelectionV2?$select=emailFlow/mediumThumbnail,emailFlow/workflowLastTriggeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

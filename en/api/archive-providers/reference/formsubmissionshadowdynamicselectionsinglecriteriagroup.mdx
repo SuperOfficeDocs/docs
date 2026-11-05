@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "FormSubmissionShadowDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic appointmnet provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"formSubmission"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |person/personCategoryRank|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personBusiness|listAny|| x |
@@ -229,7 +226,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |person/personAssociate/contactId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/personId|int||  |
@@ -334,7 +330,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |contact/numEmployees|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/yearFounded|int|| x |
@@ -439,7 +434,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |contact/contactUdef/SuperOffice:5|unlimitedDate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:6|bool|| x |
@@ -501,11 +495,12 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=recordTypeText,associate/portraitThumbnail,person/leadstatusRank,person/personUrl/URLAddress,person/personAddress/wgs84longitude
+GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=person/personAddress/city,person/personExtra/x_person_boolean,contact/mainContact,contact/contactExtra/x_contact_float
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

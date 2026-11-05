@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SaleHistory"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleHistoryProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleHistoryProvider">SuperOffice.CRM.ArchiveLists.SaleHistoryProvider</see> inside NetServer's SODatabase assembly.
 
 Sale histories. Contains all changes to the sale records over time.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Sale histories. Contains all changes to the sale records over time.
 |person/retired|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/birthYear|int|| x |
@@ -229,11 +226,12 @@ Sale histories. Contains all changes to the sale records over time.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleHistory?$select=type,associate/firstName,associate/ejDisplayName
+GET /api/v1/archive/SaleHistory?$select=probPercent,saleStatus,project/endDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

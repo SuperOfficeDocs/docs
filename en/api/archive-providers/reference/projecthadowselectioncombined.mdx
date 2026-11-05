@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ProjecthadowSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Implementation of the provider for the combined selection
 |saintDirection|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintIntention|listAny||  |
@@ -229,7 +226,6 @@ Implementation of the provider for the combined selection
 |sale/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/saleUdef/SuperOffice:1|string|| x |
@@ -274,6 +270,7 @@ Implementation of the provider for the combined selection
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -331,12 +328,11 @@ Implementation of the provider for the combined selection
 |appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
 |appointment/associate/isLocation|bool|| x |
-|appointment/appointment/text|positiveString|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
 |appointment/appointment/title|positiveString|| x |
 |appointment/appointment/titleHtml| *None* || x |
@@ -436,12 +432,11 @@ Implementation of the provider for the combined selection
 |projectMember/hasInfoText|bool|| x |
 |projectMember/registered|datetime|| x |
 |projectMember/updated|datetime|| x |
-|projectMember/textId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/textId|int|| x |
 |projectMember/infoText|positiveString|| x |
 |projectMember/firstName|string|| x |
 |projectMember/lastName|string|| x |
@@ -541,12 +536,11 @@ Implementation of the provider for the combined selection
 |projectMember/restrictionAddress/city|string|| x |
 |projectMember/restrictionAddress/zip|string|| x |
 |projectMember/restrictionAddress/state|string|| x |
-|projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|| x |
 |projectMember/restrictionAddress/formattedAddress| *None* ||  |
 |projectMember/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -646,12 +640,11 @@ Implementation of the provider for the combined selection
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
 |projectMember/correspondingAssociate/isActive|bool|| x |
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
-|projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 |projectMember/correspondingAssociate/otherGroups|userGroup||  |
 |projectMember/correspondingAssociate/userName|string|| x |
 |projectMember/correspondingAssociate/personEmail|string|| x |
@@ -751,12 +744,11 @@ Implementation of the provider for the combined selection
 |projectMember/contactAssociate/assocTooltip|string||  |
 |projectMember/contactAssociate/assocType|listAny|| x |
 |projectMember/contactAssociate/ejUserId|int||  |
-|projectMember/contactAssociate/simultaneousEjUser|bool||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/contactAssociate/simultaneousEjUser|bool||  |
 |projectMember/contactAssociate/ejDisplayName|string|| x |
 |projectMember/contactAssociate/ejStatus|int||  |
 |projectMember/contactAssociate/credentialType| *None* || x |
@@ -843,11 +835,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjecthadowSelectionCombined?$select=sale/registeredByFullName,appointment/duration,appointment/associate/ejStatus,projectMember/restrictionAddress/addressId,projectMember/personExtra/y_car/id
+GET /api/v1/archive/ProjecthadowSelectionCombined?$select=name,imageThumbnail,NumberOfSales,appointment/associate/isActive,document/associate/contactName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

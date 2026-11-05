@@ -1,6 +1,6 @@
 ---
 title: SimplePerson
-description:
+description: 
 keywords: SimplePerson archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "SimplePerson"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SimplePersonsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SimplePersonsProvider">SuperOffice.CRM.ArchiveLists.SimplePersonsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"person"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |restrictionAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/line3|string|| x |
@@ -227,7 +224,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personSourceRelation/whenUpdatedByWorkflow|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/createdByForm|listAny|| x |
@@ -332,7 +328,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personAssociate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/firstName|string|| x |
@@ -437,7 +432,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personContact/restrictionPostalAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/restrictionPostalAddress/line3|string|| x |
@@ -542,7 +536,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personContact/contactSupportAssociate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportAssociate/isLocation|bool|| x |
@@ -647,7 +640,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personContact/contactSupportPerson/withdrawnEmarketingConsent|bool||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportPerson/subscription|listAny|| x |
@@ -752,7 +744,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |request/firstReadByOwner|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/firstReadByUser|datetime|| x |
@@ -857,7 +848,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |request/ticketStatus/ticketStatusId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/ticketStatus/name|string|| x |
@@ -962,7 +952,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |projectMembers/projectUdef/SuperOffice:9|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/projectUdef/SuperOffice:10|int|| x |
@@ -1024,6 +1013,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1064,12 +1054,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personAppointment/associate/contactFullName|string|| x |
 |personAppointment/associate/contactCategory|listAny|| x |
 |personAppointment/associate/role|listAny|| x |
-|personAppointment/associate/assocName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/assocName|associate|| x |
 |personAppointment/associate/assocTooltip|string||  |
 |personAppointment/associate/assocType|listAny|| x |
 |personAppointment/associate/ejUserId|int||  |
@@ -1100,11 +1089,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimplePerson?$select=personUdef/SuperOffice:8,personExtra/x_person_contact_relation,personSourceRelation/personCountry,personSourceRelation/isStakeholder,personContact/contactAssociate/usergroupId
+GET /api/v1/archive/SimplePerson?$select=personAddress/formattedAddress,personUdef/SuperOffice:9,personTargetRelation/position,personContact/contactSupportPerson/personActiveErpLinks,personContact/contactSupportPerson/personUdef/SuperOffice:8
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

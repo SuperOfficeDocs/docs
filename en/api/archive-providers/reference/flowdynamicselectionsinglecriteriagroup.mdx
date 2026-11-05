@@ -9,23 +9,21 @@ envir: onsite, online
 
 ## "FlowDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Flow selection archive using the selectionId as criterionmapping.
 There is no shadow variant, since a flow has no person to shadow onto.
 
-The criteria the user gets to pick from are the columns of EmailFlowEmailFlowExtender - the same
+The criteria the user gets to pick from are the columns of <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowEmailFlowExtender" /> - the same
 ones the Flows pane shows - so a column that should be usable as a criterion needs a restriction type on its
-[ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo) in EmailFlowExtenderBase / WorkflowExtenderBase and nothing more here.
+<see cref="T:SuperOffice.CRM.ArchiveLists.ArchiveColumnInfo" /> in <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowExtenderBase" /> / <see cref="T:SuperOffice.CRM.ArchiveLists.WorkflowExtenderBase" /> and nothing more here.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"emailflow"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -48,6 +46,7 @@ ones the Flows pane shows - so a column that should be usable as a criterion nee
 |workflowCompletedCount| *None* ||  |
 |workflowSucceededCount| *None* ||  |
 |workflowSuccessRate| *None* ||  |
+|workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -94,11 +93,12 @@ ones the Flows pane shows - so a column that should be usable as a criterion nee
 ## Sample
 
 ```http!
-GET /api/v1/archive/FlowDynamicSelectionSingleCriteriaGroup?$select=updatedBy,workflowAssociate/title
+GET /api/v1/archive/FlowDynamicSelectionSingleCriteriaGroup?$select=updatedBy,workflowAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

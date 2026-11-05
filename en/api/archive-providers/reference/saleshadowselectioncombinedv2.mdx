@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SaleShadowSelectionCombinedV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.SaleShadowSelectionCombinedProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleShadowSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.SaleShadowSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Implementation of the provider for the combined selection
 |person/personRegisteredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/portraitThumbnail| *None* ||  |
@@ -229,7 +226,6 @@ Implementation of the provider for the combined selection
 |person/personExtra/x\_person\_appointment\_relation|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_contact\_relation|stringorPK|| x |
@@ -334,7 +330,6 @@ Implementation of the provider for the combined selection
 |contact/orgnr|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/stop|bool|| x |
@@ -439,7 +434,6 @@ Implementation of the provider for the combined selection
 |contact/contactAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isActiveText|bool|| x |
@@ -544,7 +538,6 @@ Implementation of the provider for the combined selection
 |associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/isLocation|bool|| x |
@@ -590,6 +583,7 @@ Implementation of the provider for the combined selection
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -646,12 +640,11 @@ Implementation of the provider for the combined selection
 |appointment/associate/userName|string|| x |
 |appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
-|appointment/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
 |appointment/appointment/title|positiveString|| x |
@@ -751,12 +744,11 @@ Implementation of the provider for the combined selection
 |project/status|listAny|| x |
 |project/statusRank| *None* || x |
 |project/associateId|associate|| x |
-|project/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/hasInfoText|bool|| x |
 |project/icon| *None* || x |
 |project/text|string|| x |
 |project/description|string|| x |
@@ -856,12 +848,11 @@ Implementation of the provider for the combined selection
 |saleStakeholder/salesRoleId|listAny|| x |
 |saleStakeholder/hasInfoText|bool|| x |
 |saleStakeholder/person/personId|int|| x |
-|saleStakeholder/person/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/firstName|string|| x |
 |saleStakeholder/person/lastName|string|| x |
 |saleStakeholder/person/middleName|string|| x |
 |saleStakeholder/person/fullName|string|| x |
@@ -961,12 +952,11 @@ Implementation of the provider for the combined selection
 |saleStakeholder/person/restrictionAddress/city|string|| x |
 |saleStakeholder/person/restrictionAddress/zip|string|| x |
 |saleStakeholder/person/restrictionAddress/state|string|| x |
-|saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/wgs84longitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/formattedAddress| *None* ||  |
 |saleStakeholder/person/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -1066,12 +1056,11 @@ Implementation of the provider for the combined selection
 |saleStakeholder/person/correspondingAssociate/credentialDisplayValue| *None* || x |
 |saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
 |saleStakeholder/person/correspondingAssociate/isActiveText|bool|| x |
-|saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 |saleStakeholder/person/correspondingAssociate/otherGroups|userGroup||  |
 |saleStakeholder/person/correspondingAssociate/userName|string|| x |
 |saleStakeholder/person/correspondingAssociate/personEmail|string|| x |
@@ -1171,12 +1160,11 @@ Implementation of the provider for the combined selection
 |saleStakeholder/contact/restrictionAddress/city|string|| x |
 |saleStakeholder/contact/restrictionAddress/zip|string|| x |
 |saleStakeholder/contact/restrictionAddress/state|string|| x |
-|saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/wgs84longitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/formattedAddress| *None* ||  |
 |saleStakeholder/contact/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -1276,12 +1264,11 @@ Implementation of the provider for the combined selection
 |saleStakeholder/contact/saintIntention|listAny||  |
 |saleStakeholder/contact/saintTicketStatus|listAny||  |
 |saleStakeholder/contact/saintTicketCategory|listAny||  |
-|quote/quoteId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|quote/quoteId|int|| x |
 |quote/poNumber|string|| x |
 |quote/orderComment|string|| x |
 |quote/connectionId|int|| x |
@@ -1383,11 +1370,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowSelectionCombinedV2?$select=person/supportLanguage,person/personInfo/textId,person/restrictionAddress/line3,contact/contactAssociate/fullName,contact/contactAssociate/contactFullName
+GET /api/v1/archive/SaleShadowSelectionCombinedV2?$select=probPercent,person/personId,person/email/emailLastSent,contact/companyCategoryRank,contact/code
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

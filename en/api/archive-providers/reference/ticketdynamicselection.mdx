@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "TicketDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Ticket selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Ticket selection archive using the selectionId as criterionmapping.
 |ownedBy/associateDbId|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/contactName|string|| x |
@@ -229,7 +226,6 @@ Ticket selection archive using the selectionId as criterionmapping.
 |person/personInfo/textId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personInfo/infoText|positiveString|| x |
@@ -334,7 +330,6 @@ Ticket selection archive using the selectionId as criterionmapping.
 |person/personAssociate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/userName|string|| x |
@@ -439,7 +434,6 @@ Ticket selection archive using the selectionId as criterionmapping.
 |contact/postAddress/addressId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line1|string|| x |
@@ -544,7 +538,6 @@ Ticket selection archive using the selectionId as criterionmapping.
 |contact/contactExtra/x\_contact\_contact|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/y\_organization/x\_name|string|| x |
@@ -649,7 +642,6 @@ Ticket selection archive using the selectionId as criterionmapping.
 |sale/createdByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/amountInBaseCurrency| *None* || x |
@@ -754,7 +746,6 @@ Ticket selection archive using the selectionId as criterionmapping.
 |project/projectAssociate/usergroupId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/contactFullName|string|| x |
@@ -815,11 +806,12 @@ Ticket selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketDynamicSelection?$select=saleId,tags,ownedBy/isLocation,sale/associate/middleName
+GET /api/v1/archive/TicketDynamicSelection?$select=person/personInfo/textId,sale/activeErpLinks,project/saintSaleStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

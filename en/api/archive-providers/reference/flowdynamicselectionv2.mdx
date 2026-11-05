@@ -1,6 +1,6 @@
 ---
 title: FlowDynamicSelectionV2
-description: Flow selection archive with OR-able selection groups. Each group is represented with the FlowSelectionDynamicProviderSingleCriteriaGroup.
+description: Flow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: FlowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "FlowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Flow selection archive with OR-able selection groups. Each group is represented with the [FlowSelectionDynamicProviderSingleCriteriaGroup](./flowdynamicselectionsinglecriteriagroup).
+Flow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FlowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"emailflow"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -45,6 +43,7 @@ Flow selection archive with OR-able selection groups. Each group is represented 
 |workflowCompletedCount| *None* ||  |
 |workflowSucceededCount| *None* ||  |
 |workflowSuccessRate| *None* ||  |
+|workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -91,11 +90,12 @@ Flow selection archive with OR-able selection groups. Each group is represented 
 ## Sample
 
 ```http!
-GET /api/v1/archive/FlowDynamicSelectionV2?$select=workflowSuccessRate,workflowAssociate/mrMrs
+GET /api/v1/archive/FlowDynamicSelectionV2?$select=workflowSuccessRate,workflowAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,12 +9,11 @@ envir: onsite, online
 
 ## "DiaryActivity"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.DiaryActivityArchiveProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.DiaryActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.DiaryActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Diary (checklist)
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
@@ -22,7 +21,6 @@ Activity archive provider for the Diary (checklist)
 |"todo"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -126,7 +124,6 @@ Activity archive provider for the Diary (checklist)
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -231,7 +228,6 @@ Activity archive provider for the Diary (checklist)
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -336,7 +332,6 @@ Activity archive provider for the Diary (checklist)
 |contact/contactFax/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/formattedNumber|string||  |
@@ -441,7 +436,6 @@ Activity archive provider for the Diary (checklist)
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
@@ -546,7 +540,6 @@ Activity archive provider for the Diary (checklist)
 |project/projectAssociate/ejStatus|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/credentialType| *None* || x |
@@ -651,7 +644,6 @@ Activity archive provider for the Diary (checklist)
 |sale/updatedBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/updatedByFullName|associate|| x |
@@ -756,7 +748,6 @@ Activity archive provider for the Diary (checklist)
 |booking|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |excludeParticipants|bool||  |
@@ -766,6 +757,7 @@ Activity archive provider for the Diary (checklist)
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -802,11 +794,12 @@ Activity archive provider for the Diary (checklist)
 ## Sample
 
 ```http!
-GET /api/v1/archive/DiaryActivity?$select=projectId,ourref,person/middleName,person/restrictionAddress/wgs84latitude,person/personAssociate/credentialDisplayValue
+GET /api/v1/archive/DiaryActivity?$select=registeredDate,person/email/emailBounceCount,person/correspondingAssociate/isActiveText,contact/streetAddress/wgs84longitude,contact/contactAssociate/contactDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

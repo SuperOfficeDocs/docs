@@ -42,6 +42,7 @@ Employees, resources and other users - except for External persons
 |userName|Associate user name|String(254)|Yes|
 |waiting\_for\_approval|0 = Approved (default). 1 = Associate/User must be approved by an administrator. User cannot log in while waiting, but can be assigned licenses. Used in Online.|Bool|No|
 
+
 ![associate table relationship diagram](/media/loc/en/database/tables/associate.png)
 
 <Associate />
@@ -210,6 +211,7 @@ Employees, resources and other users - except for External persons
 |[navigation\_history](./navigation-history)  |Per-associate navigation state: Current (persisted soprotocol) and Recent navigation entries, keyed by client and key |
 |[NewsFeedItem](./newsfeeditem)  |Contains news feed items - published to one or more users, with one or more language descriptions |
 |[NewsFeedItemRecipient](./newsfeeditemrecipient)  |Recipients of the news feed item. One news feed item may be sent to multiple recipients (users). |
+|[nightly\_job](./nightly-job)  |Lock and scheduling status for NetServer nightly jobs; one row per job, ensuring only one server at a time runs a given job |
 |[notify](./notify)  |This table contains the pop-up messages displayed for users for various events, such as &amp;apos;new ticket&amp;apos;, etc. |
 |[OnlineApp](./onlineapp)  |Echo and track information about Online Apps and their usage |
 |[outgoing\_message](./outgoing-message)  |Delivery of outgoing messages to messageplugins, updated with status asynchroneously |
@@ -381,6 +383,7 @@ Employees, resources and other users - except for External persons
 |[text](./text)  |Long text fields from all over the system |
 |[ticket\_relation](./ticket-relation)  |A relation between 2 tickets |
 |[ticket\_relation\_def](./ticket-relation-def)  |Ticket relation definition |
+|[ticket\_status\_postpone](./ticket-status-postpone)  |Postpone options agents can choose when setting a ticket to this Postponed status. A status without rows offers the standard options |
 |[ticket\_type](./ticket-type)  |A ticket (request) type |
 |[ticket\_type\_priority](./ticket-type-priority)  |Link table defining what Priorities are relevant to a particular Ticket type |
 |[ticket\_type\_status](./ticket-type-status)  |Link table defining what Statuses are relevant to a particular Ticket type |
@@ -424,6 +427,7 @@ Employees, resources and other users - except for External persons
 |[workflow\_trigger](./workflow-trigger)  |A set of triggers related to a workflow. |
 |[workflow\_wait\_for\_action](./workflow-wait-for-action)  |Some steps wait for actions, this is info about those actions |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -434,3 +438,4 @@ Employees, resources and other users - except for External persons
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

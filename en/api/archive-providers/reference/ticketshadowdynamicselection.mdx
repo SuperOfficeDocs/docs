@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "TicketShadowDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic ticket provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the dynamic ticket provider.
 |ownedBy/associateDbId|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/contactName|string|| x |
@@ -229,7 +226,6 @@ Shadow contact provider for the dynamic ticket provider.
 |person/personInfo/textId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personInfo/infoText|positiveString|| x |
@@ -334,7 +330,6 @@ Shadow contact provider for the dynamic ticket provider.
 |person/personAssociate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/userName|string|| x |
@@ -439,7 +434,6 @@ Shadow contact provider for the dynamic ticket provider.
 |contact/postAddress/addressId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line1|string|| x |
@@ -544,7 +538,6 @@ Shadow contact provider for the dynamic ticket provider.
 |contact/contactExtra/x\_contact\_contact|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/y\_organization/x\_name|string|| x |
@@ -649,7 +642,6 @@ Shadow contact provider for the dynamic ticket provider.
 |sale/createdByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/amountInBaseCurrency| *None* || x |
@@ -754,7 +746,6 @@ Shadow contact provider for the dynamic ticket provider.
 |project/projectAssociate/usergroupId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/contactFullName|string|| x |
@@ -815,11 +806,12 @@ Shadow contact provider for the dynamic ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowDynamicSelection?$select=person/personExtra/x_person_user_relation,contact/contactPhone/formattedNumber,contact/restrictionAddress/state,sale/salePublish/publishedTo,project/projectAssociate/associateDbId
+GET /api/v1/archive/TicketShadowDynamicSelection?$select=person/personPager/description,person/personAddress/addressId,person/hasEmarketingConsent,contact/revenueYear,contact/postAddress/line3
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

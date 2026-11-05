@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "QuoteLineShadowStaticSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionStaticProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the static quoteline prov ider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the static quoteline prov ider.
 |alternative/version/quote/poNumber|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/orderComment|string|| x |
@@ -229,7 +226,6 @@ Shadow contact provider for the static quoteline prov ider.
 |alternative/version/quote/sale/person/personLinkedinUrl|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/ticketPriority|listAny|| x |
@@ -334,7 +330,6 @@ Shadow contact provider for the static quoteline prov ider.
 |alternative/version/quote/sale/person/personExtra/y\_rental/x\_end|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personExtra/y\_rental/x\_amount|int|| x |
@@ -439,7 +434,6 @@ Shadow contact provider for the static quoteline prov ider.
 |alternative/version/quote/sale/contact/updatedByFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/updatedDate|date|| x |
@@ -544,7 +538,6 @@ Shadow contact provider for the static quoteline prov ider.
 |alternative/version/quote/sale/contact/contactAssociate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactAssociate/personEmail|string|| x |
@@ -649,7 +642,6 @@ Shadow contact provider for the static quoteline prov ider.
 |alternative/version/quote/sale/saleUdef/SuperOffice:3|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/saleUdef/SuperOffice:4|date|| x |
@@ -754,7 +746,6 @@ Shadow contact provider for the static quoteline prov ider.
 |alternative/version/quote/sale/project/saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/saintActivityType|listAny||  |
@@ -799,11 +790,12 @@ Shadow contact provider for the static quoteline prov ider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowStaticSelectionV2?$select=name,alternative/version/extraField2,alternative/version/quote/sale/sale/textId,alternative/version/quote/sale/person/isStakeholder,alternative/version/quote/sale/person/personAddress/formattedMultiLineAddress
+GET /api/v1/archive/QuoteLineShadowStaticSelectionV2?$select=quoteLineId,alternative/version/quote/connectionId,alternative/version/quote/sale/updatedDate,alternative/version/quote/sale/person/personExtra/x_person_time,alternative/version/quote/sale/person/correspondingAssociate/assocType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

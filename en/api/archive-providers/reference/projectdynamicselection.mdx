@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ProjectDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Project selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Project selection archive using the selectionId as criterionmapping.
 |saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintActivityType|listAny||  |
@@ -229,7 +226,6 @@ Project selection archive using the selectionId as criterionmapping.
 |sale/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/locationAddress|string|| x |
@@ -276,6 +272,7 @@ Project selection archive using the selectionId as criterionmapping.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -331,12 +328,11 @@ Project selection archive using the selectionId as criterionmapping.
 |appointment/associate/otherGroups|userGroup||  |
 |appointment/associate/userName|string|| x |
 |appointment/associate/personEmail|string|| x |
-|appointment/associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/locationAddress|string|| x |
 |appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
@@ -436,12 +432,11 @@ Project selection archive using the selectionId as criterionmapping.
 |projectMember/eventParticipantStatus|listAny|| x |
 |projectMember/function|listAny|| x |
 |projectMember/hasInfoText|bool|| x |
-|projectMember/registered|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/registered|datetime|| x |
 |projectMember/updated|datetime|| x |
 |projectMember/textId|int|| x |
 |projectMember/infoText|positiveString|| x |
@@ -541,12 +536,11 @@ Project selection archive using the selectionId as criterionmapping.
 |projectMember/restrictionAddress/line3|string|| x |
 |projectMember/restrictionAddress/county|string|| x |
 |projectMember/restrictionAddress/city|string|| x |
-|projectMember/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/restrictionAddress/zip|string|| x |
 |projectMember/restrictionAddress/state|string|| x |
 |projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|| x |
@@ -646,12 +640,11 @@ Project selection archive using the selectionId as criterionmapping.
 |projectMember/correspondingAssociate/ejStatus|int||  |
 |projectMember/correspondingAssociate/credentialType| *None* || x |
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
-|projectMember/correspondingAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/correspondingAssociate/isActive|bool|| x |
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
 |projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 |projectMember/correspondingAssociate/otherGroups|userGroup||  |
@@ -751,12 +744,11 @@ Project selection archive using the selectionId as criterionmapping.
 |projectMember/contactAssociate/title|string|| x |
 |projectMember/contactAssociate/associateDbId|associate|| x |
 |projectMember/contactAssociate/contactName|string|| x |
-|projectMember/contactAssociate/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/contactAssociate/contactDepartment|string|| x |
 |projectMember/contactAssociate/usergroup|userGroup|| x |
 |projectMember/contactAssociate/usergroupId|int|| x |
 |projectMember/contactAssociate/contactFullName|string|| x |
@@ -846,11 +838,12 @@ Project selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectDynamicSelection?$select=registeredBy,LastDoBySale,sale/description,sale/associate/assocTooltip,sale/associate/ejUserId
+GET /api/v1/archive/ProjectDynamicSelection?$select=saintTicketCategory,sale/contactId,appointment/location,appointment/appointmentUdef/SuperOffice:1,projectMember/restrictionAddress/zip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

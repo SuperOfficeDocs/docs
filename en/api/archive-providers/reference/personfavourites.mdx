@@ -1,6 +1,6 @@
 ---
 title: personfavourites
-description:
+description: 
 keywords: personfavourites archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "personfavourites"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.PersonFavouritesProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.PersonFavouritesProvider">SuperOffice.CRM.ArchiveLists.PersonFavouritesProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"person"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Pers
 |personAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAddress/wgs84longitude|decimal|| x |
@@ -227,7 +224,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Pers
 |correspondingAssociate/role|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/assocName|associate|| x |
@@ -332,7 +328,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Pers
 |contactAssociate/ejStatus|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/credentialType| *None* || x |
@@ -360,11 +355,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Pers
 ## Sample
 
 ```http!
-GET /api/v1/archive/personfavourites?$select=contactAssociate/associateDbId,restrictionAddress/county,personAssociate/contactDepartment
+GET /api/v1/archive/personfavourites?$select=personAddress/formattedMultiLineAddress,personExtra/x_person_request_relation,personAssociate/firstName,personAssociate/assocType,contactAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

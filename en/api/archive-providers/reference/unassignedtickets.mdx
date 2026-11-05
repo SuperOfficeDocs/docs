@@ -1,6 +1,6 @@
 ---
 title: UnassignedTickets
-description:
+description: 
 keywords: UnassignedTickets archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "UnassignedTickets"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.UnassignedTicketsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.UnassignedTicketsProvider">SuperOffice.CRM.ArchiveLists.UnassignedTicketsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 |ownedBy/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/usergroup|userGroup|| x |
@@ -227,7 +224,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 |person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailAddress|string|| x |
@@ -332,7 +328,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 |person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/locationAddress|string|| x |
@@ -437,7 +432,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 |contact/postAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line3|string|| x |
@@ -542,7 +536,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 |contact/NumberOfActivities|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/NumberOfActivitiesInPeriod|int||  |
@@ -647,7 +640,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 |sale/amountWeightedInBaseCurrency| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/daysInStage|int|| x |
@@ -752,7 +744,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 |project/projectAssociate/contactCategory|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/role|listAny|| x |
@@ -811,11 +802,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 ## Sample
 
 ```http!
-GET /api/v1/archive/UnassignedTickets?$select=author,timeSpentInternally,timeToClose,person/personRegisteredDate,person/personUdef/SuperOffice:1
+GET /api/v1/archive/UnassignedTickets?$select=contact/email/emailHasBounced,project/eventId,project/NumberOfNotCompletedSales
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

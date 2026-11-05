@@ -9,21 +9,19 @@ envir: onsite, online
 
 ## "Person"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.PersonProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.PersonProvider">SuperOffice.CRM.ArchiveLists.PersonProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provide for the Person Archive of the Contact Panel - or to use GUI terminology, the Contact archive of the Company panel.
 It provides two entities, person and retiredPerson, and a large number of columns. Through the constructor one can choose to include Contact
 table data; this will also pull in contact udef and related fields.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"person"||
 |"retiredPerson"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -127,7 +125,6 @@ table data; this will also pull in contact udef and related fields.
 |restrictionAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/line3|string|| x |
@@ -232,7 +229,6 @@ table data; this will also pull in contact udef and related fields.
 |personSourceRelation/whenUpdatedByWorkflow|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/createdByForm|listAny|| x |
@@ -337,7 +333,6 @@ table data; this will also pull in contact udef and related fields.
 |personAssociate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/firstName|string|| x |
@@ -442,7 +437,6 @@ table data; this will also pull in contact udef and related fields.
 |personContact/streetAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/streetAddress/state|string|| x |
@@ -547,7 +541,6 @@ table data; this will also pull in contact udef and related fields.
 |request/realTimeToReply|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/realTimeToClose|timeSpan|| x |
@@ -652,7 +645,6 @@ table data; this will also pull in contact udef and related fields.
 |request/extra/x\_ticket\_category\_relation|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/y\_equipment/x\_name|string|| x |
@@ -757,7 +749,6 @@ table data; this will also pull in contact udef and related fields.
 |projectMembers/saintActivityType|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/saintDirection|listAny||  |
@@ -800,6 +791,7 @@ table data; this will also pull in contact udef and related fields.
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -859,12 +851,11 @@ table data; this will also pull in contact udef and related fields.
 |personAppointment/associate/isLocation|bool|| x |
 |personAppointment/appointment/text|positiveString|| x |
 |personAppointment/appointment/description|positiveString|| x |
-|personAppointment/appointment/title|positiveString|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/appointment/title|positiveString|| x |
 |personAppointment/appointment/titleHtml| *None* || x |
 |personAppointment/appointment/agenda|positiveString|| x |
 |personAppointment/appointment/agendaHtml| *None* || x |
@@ -876,11 +867,12 @@ table data; this will also pull in contact udef and related fields.
 ## Sample
 
 ```http!
-GET /api/v1/archive/Person?$select=personSourceRelation/rank,personSourceRelation/personSource,personTargetRelation/personCountryId,request/ownedBy/fullName,request/ticketPriority/ticketPriorityId
+GET /api/v1/archive/Person?$select=leadstatusRank,email/emailDescription,email/emailId,personExtra/y_rental/x_contact,personContact/streetAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

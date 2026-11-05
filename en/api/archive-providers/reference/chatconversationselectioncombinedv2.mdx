@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ChatConversationSelectionCombinedV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionCombinedProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"chatConversations"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Implementation of the provider for the combined selection
 |person/supportLanguage|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/supportAssociate|associate|| x |
@@ -229,7 +226,6 @@ Implementation of the provider for the combined selection
 |person/personExtra/y\_rental/x\_contact|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/y\_equipment/x\_name|string|| x |
@@ -334,7 +330,6 @@ Implementation of the provider for the combined selection
 |contact/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/registeredByFullName|associate|| x |
@@ -439,7 +434,6 @@ Implementation of the provider for the combined selection
 |contact/contactAssociate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isLocation|bool|| x |
@@ -513,11 +507,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationSelectionCombinedV2?$select=updatedDate,person/correspondingAssociate/contactName,contact/department,contact/contactAssociate/assocTooltip,contact/contactAssociate/ejStatus
+GET /api/v1/archive/ChatConversationSelectionCombinedV2?$select=associate/middleName,person/leadstatusRank,person/correspondingAssociate/contactName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

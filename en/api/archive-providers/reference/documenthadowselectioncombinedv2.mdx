@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "DocumenthadowSelectionCombinedV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionCombinedProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Implementation of the provider for the combined selection
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -229,7 +226,6 @@ Implementation of the provider for the combined selection
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -334,7 +330,6 @@ Implementation of the provider for the combined selection
 |contact/contactFax/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/formattedNumber|string||  |
@@ -439,7 +434,6 @@ Implementation of the provider for the combined selection
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
@@ -544,7 +538,6 @@ Implementation of the provider for the combined selection
 |project/projectAssociate/ejStatus|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/credentialType| *None* || x |
@@ -649,7 +642,6 @@ Implementation of the provider for the combined selection
 |sale/updatedBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/updatedByFullName|associate|| x |
@@ -753,11 +745,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumenthadowSelectionCombinedV2?$select=registeredDate,person/personAssociate/locationAddress,contact/hasInfoText,contact/contactExtra/x_contact_contact_relation,project/NumberOfSales
+GET /api/v1/archive/DocumenthadowSelectionCombinedV2?$select=person/associateType,person/searchPhone/description,person/personExtra/x_person_date,person/personAssociate/ejUserId,contact/updatedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

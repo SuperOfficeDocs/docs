@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "DocumentShadowDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic document provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the dynamic document provider.
 |person/phone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personDirectPhone/formattedNumber|string||  |
@@ -229,7 +226,6 @@ Shadow contact provider for the dynamic document provider.
 |person/personAssociate/role|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocName|associate|| x |
@@ -334,7 +330,6 @@ Shadow contact provider for the dynamic document provider.
 |contact/contactPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactFax/formattedNumber|string||  |
@@ -439,7 +434,6 @@ Shadow contact provider for the dynamic document provider.
 |contact/contactExtra/x\_contact\_default\_integer|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_float|decimal|| x |
@@ -544,7 +538,6 @@ Shadow contact provider for the dynamic document provider.
 |project/projectAssociate/simultaneousEjUser|bool||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/ejDisplayName|string|| x |
@@ -649,7 +642,6 @@ Shadow contact provider for the dynamic document provider.
 |sale/userGroup|userGroup|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/who| *None* ||  |
@@ -750,11 +742,12 @@ Shadow contact provider for the dynamic document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowDynamicSelection?$select=documentPublish/publishedTo,person/hasInfoText,person/personAssociate/usergroupId,person/hasStoreConsent,contact/restrictionAddress/line3
+GET /api/v1/archive/DocumentShadowDynamicSelection?$select=documentPublish/isPublished,person/leadStatus,contact/name,contact/email/emailHasBounced,contact/contactUdef/SuperOffice:2
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

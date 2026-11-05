@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "DocumentShadowSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the Document provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the Document provider.
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -229,7 +226,6 @@ Shadow contact provider for the Document provider.
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -334,7 +330,6 @@ Shadow contact provider for the Document provider.
 |contact/contactFax/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/formattedNumber|string||  |
@@ -439,7 +434,6 @@ Shadow contact provider for the Document provider.
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
@@ -544,7 +538,6 @@ Shadow contact provider for the Document provider.
 |project/projectAssociate/ejStatus|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/credentialType| *None* || x |
@@ -649,7 +642,6 @@ Shadow contact provider for the Document provider.
 |sale/updatedBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/updatedByFullName|associate|| x |
@@ -753,11 +745,12 @@ Shadow contact provider for the Document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowSelection?$select=person/correspondingAssociate/assocTooltip,contact/postAddress/line3,contact/contactUdef/SuperOffice:3,contact/NumberOfActivitiesInPeriod,contact/NumberOfTickets
+GET /api/v1/archive/DocumentShadowSelection?$select=registeredDate,person/personUrl/URLDescription,person/correspondingAssociate/assocType,contact/orgnr,contact/activeErpLinks
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

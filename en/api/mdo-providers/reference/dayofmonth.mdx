@@ -8,11 +8,15 @@ envir: online
 ---
 
 ## "dayofmonth" MDO List
-
 MDO provider for the hard-coded list of day alternatives in the recurrence dialog.
 
-Implemented by the DayOfMonthProvider class.
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.DayOfMonthProvider">DayOfMonthProvider</see> class.
 The name of the MDO list is 'dayofmonth'.
+
+
+
 
 ## Sample Request
 
@@ -25,7 +29,6 @@ Accept-Language: *
 ```
 
 ## Sample Code
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("dayofmonth", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -59,6 +62,7 @@ foreach (var item in listProvider.RootItems) {
 |19||replacekey=%d|19|
 |20||replacekey=%d|20|
 |21||replacekey=%d|21|
+
 
 ## Related MDO Lists
 

@@ -1,6 +1,6 @@
 ---
 title: SimpleAppointment
-description:
+description: 
 keywords: SimpleAppointment archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "SimpleAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SimpleAppointmentsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SimpleAppointmentsProvider">SuperOffice.CRM.ArchiveLists.SimpleAppointmentsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -57,6 +55,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -119,12 +118,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |contact/searchPhone/description|string|| x |
 |contact/email/emailProtocol|string|| x |
 |contact/email/emailAddress|string|| x |
-|contact/email/emailDescription|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/email/emailDescription|string|| x |
 |contact/email/emailId|int|| x |
 |contact/email/emailLastSent|datetime|| x |
 |contact/email/emailBounceCount|int|| x |
@@ -224,12 +222,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |contact/contactExtra/x\_contact\_date|date|| x |
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 |contact/contactExtra/x\_contact\_time| *None* || x |
-|contact/contactExtra/x\_contact\_boolean|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_boolean|bool|| x |
 |contact/contactExtra/x\_contact\_timespan|timeSpan|| x |
 |contact/contactExtra/x\_contact\_shorttext|string|| x |
 |contact/contactExtra/x\_contact\_short\_dropdown|listAny|| x |
@@ -329,12 +326,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |person/personMobilePhone/formattedNumber|string||  |
 |person/personMobilePhone/description|string|| x |
 |person/personPrivate/formattedNumber|string||  |
-|person/personPrivate/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personPrivate/description|string|| x |
 |person/personPager/formattedNumber|string||  |
 |person/personPager/description|string|| x |
 |person/personDirectFax/formattedNumber|string||  |
@@ -434,12 +430,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |person/personAssociate/assocType|listAny|| x |
 |person/personAssociate/ejUserId|int||  |
 |person/personAssociate/simultaneousEjUser|bool||  |
-|person/personAssociate/ejDisplayName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/ejDisplayName|string|| x |
 |person/personAssociate/ejStatus|int||  |
 |person/personAssociate/credentialType| *None* || x |
 |person/personAssociate/credentialDisplayValue| *None* || x |
@@ -539,12 +534,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |project/projectUrl/URLDescription|string|| x |
 |project/projectAssociate/firstName|string|| x |
 |project/projectAssociate/lastName|string|| x |
-|project/projectAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/middleName|string|| x |
 |project/projectAssociate/fullName|string|| x |
 |project/projectAssociate/contactId|int||  |
 |project/projectAssociate/personId|int||  |
@@ -644,12 +638,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |sale/originalStage|listAny|| x |
 |sale/stage|listAny|| x |
 |sale/stageName| *None* || x |
-|sale/saleStatus|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/saleStatus|listAny|| x |
 |sale/stageRank| *None* || x |
 |sale/saleType|listAny|| x |
 |sale/saleTypeId| *None* || x |
@@ -749,12 +742,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |associate/portraitThumbnail| *None* ||  |
 |associate/otherGroups|userGroup||  |
 |associate/userName|string|| x |
-|associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/personEmail|string|| x |
 |associate/locationAddress|string|| x |
 |associate/isLocation|bool|| x |
 |appointment/text|positiveString|| x |
@@ -771,11 +763,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleAppointment?$select=contact/registeredDate,contact/mainContact,contact/postAddress/addressId,contact/contactAssociate/fullName,contact/saintTicketCategory
+GET /api/v1/archive/SimpleAppointment?$select=userGroup,isMilestone,contact/registeredBy,contact/postAddress/line2,person/personExtra/x_person_float
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

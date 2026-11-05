@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "LinksDocuments"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.LinksDocumentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksDocumentProvider">SuperOffice.CRM.ArchiveLists.LinksDocumentProvider</see> inside NetServer's SODatabase assembly.
 
 Link data provider for documents, handles both addressing by source or by destination (not both at the same time!)
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Link data provider for documents, handles both addressing by source or by destin
 |person/personDeletedDate|datetime||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/hasCompany|bool|| x |
@@ -229,7 +226,6 @@ Link data provider for documents, handles both addressing by source or by destin
 |person/personAssociate/associateDbId|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/contactName|string|| x |
@@ -334,7 +330,6 @@ Link data provider for documents, handles both addressing by source or by destin
 |contact/sharecapitalBasecurrency|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/sourcedFrom|string|| x |
@@ -439,7 +434,6 @@ Link data provider for documents, handles both addressing by source or by destin
 |contact/contactUdef/SuperOffice:9|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:10|string|| x |
@@ -544,7 +538,6 @@ Link data provider for documents, handles both addressing by source or by destin
 |project/projectAssociate/contactFullName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/contactCategory|listAny|| x |
@@ -649,7 +642,6 @@ Link data provider for documents, handles both addressing by source or by destin
 |sale/recordType|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/text|positiveString|| x |
@@ -754,7 +746,6 @@ Link data provider for documents, handles both addressing by source or by destin
 |destinationDocumentRestrictionId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/textId|int||  |
@@ -763,11 +754,12 @@ Link data provider for documents, handles both addressing by source or by destin
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksDocuments?$select=sourceContactRestrictionId,sourceSelectionRestrictionId,person/hasCompany,person/personExtra/x_person_contact_relation,person/personAssociate/ejStatus
+GET /api/v1/archive/LinksDocuments?$select=person/personAssociate/ejStatus,contact/contactExtra/x_contact_integer,project/registeredDate,project/projectAssociate/contactId,sale/salePublish/publishedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

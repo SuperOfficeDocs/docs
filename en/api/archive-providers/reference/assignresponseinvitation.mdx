@@ -9,22 +9,20 @@ envir: onsite, online
 
 ## "AssignResponseInvitation"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.AssignResponseInvitationProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.AssignResponseInvitationProvider">SuperOffice.CRM.ArchiveLists.AssignResponseInvitationProvider</see> inside NetServer's SODatabase assembly.
 
 This is the query provider for invitations, of subtype 'Response'
 
-Response invitations are defined as having status declined (BookingDeclined
-or AssignmentDeclined). They also have to be not overdue, i.e., activedate
+Response invitations are defined as having status declined (<see cref="F:SuperOffice.Data.AppointmentStatus.BookingDeclined" />
+or <see cref="F:SuperOffice.Data.AppointmentStatus.AssignmentDeclined" />). They also have to be not overdue, i.e., activedate
 must be &gt;= start of today. This is an optional entity and is fetched if the user checks the corresponding checkbox.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"response"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -64,6 +62,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -125,12 +124,11 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |contact/contactFax/formattedNumber|string||  |
 |contact/contactFax/description|string|| x |
 |contact/searchPhone/formattedNumber|string||  |
-|contact/searchPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/searchPhone/description|string|| x |
 |contact/email/emailProtocol|string|| x |
 |contact/email/emailAddress|string|| x |
 |contact/email/emailDescription|string|| x |
@@ -230,12 +228,11 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |contact/contactExtra/x\_contact\_float|decimal|| x |
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
-|contact/contactExtra/x\_contact\_date|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_date|date|| x |
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 |contact/contactExtra/x\_contact\_time| *None* || x |
 |contact/contactExtra/x\_contact\_boolean|bool|| x |
@@ -335,12 +332,11 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |person/phone/formattedNumber|string||  |
 |person/personDirectPhone/formattedNumber|string||  |
 |person/personDirectPhone/description|string|| x |
-|person/personMobilePhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personMobilePhone/formattedNumber|string||  |
 |person/personMobilePhone/description|string|| x |
 |person/personPrivate/formattedNumber|string||  |
 |person/personPrivate/description|string|| x |
@@ -440,12 +436,11 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |person/personAssociate/role|listAny|| x |
 |person/personAssociate/assocName|associate|| x |
 |person/personAssociate/assocTooltip|string||  |
-|person/personAssociate/assocType|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/assocType|listAny|| x |
 |person/personAssociate/ejUserId|int||  |
 |person/personAssociate/simultaneousEjUser|bool||  |
 |person/personAssociate/ejDisplayName|string|| x |
@@ -545,12 +540,11 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |project/projectEvent/hasSignOn|bool|| x |
 |project/projectEvent/hasSignOff|bool|| x |
 |project/projectUrl/URLAddress|string|| x |
-|project/projectUrl/URLDescription|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectUrl/URLDescription|string|| x |
 |project/projectAssociate/firstName|string|| x |
 |project/projectAssociate/lastName|string|| x |
 |project/projectAssociate/middleName|string|| x |
@@ -650,12 +644,11 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |sale/earning|decimal|| x |
 |sale/earningPercent|decimal|| x |
 |sale/probPercent|int|| x |
-|sale/originalStage|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/originalStage|listAny|| x |
 |sale/stage|listAny|| x |
 |sale/stageName| *None* || x |
 |sale/saleStatus|listAny|| x |
@@ -755,12 +748,11 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |associate/credentialDisplayValue| *None* || x |
 |associate/isActive|bool|| x |
 |associate/isActiveText|bool|| x |
-|associate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/portraitThumbnail| *None* ||  |
 |associate/otherGroups|userGroup||  |
 |associate/userName|string|| x |
 |associate/personEmail|string|| x |
@@ -780,11 +772,12 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 ## Sample
 
 ```http!
-GET /api/v1/archive/AssignResponseInvitation?$select=isFree,appointmentPublish/publishedBy,contact/sourcedFrom,contact/NumberOfTickets,contact/saintDirection
+GET /api/v1/archive/AssignResponseInvitation?$select=contact/restrictionAddress/state,contact/contactExtra/x_contact_longtext,person/supportAssociateFullName,person/restrictionAddress/county,person/personExtra/x_person_category_relation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

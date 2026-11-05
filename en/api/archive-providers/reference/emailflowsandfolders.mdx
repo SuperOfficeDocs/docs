@@ -9,20 +9,18 @@ envir: onsite, online
 
 ## "EmailFlowsAndFolders"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider">SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider</see> inside NetServer's SODatabase assembly.
 
 Archive of EmailFlows and Folders.
 Combines all EmailFlows and EmailFlowFolders in one archive together.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"emailflow"||
 |"emailflowfolder"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -45,6 +43,7 @@ Combines all EmailFlows and EmailFlowFolders in one archive together.
 |workflowCompletedCount| *None* ||  |
 |workflowSucceededCount| *None* ||  |
 |workflowSuccessRate| *None* ||  |
+|workflowLastTriggeredDate| *None* ||  |
 |updatedBy| *None* ||  |
 |updatedDate| *None* ||  |
 |registeredBy| *None* ||  |
@@ -91,11 +90,12 @@ Combines all EmailFlows and EmailFlowFolders in one archive together.
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowsAndFolders?$select=updatedBy,workflowAssociate/title
+GET /api/v1/archive/EmailFlowsAndFolders?$select=workflowAssociate/firstName,updatedBy,workflowAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

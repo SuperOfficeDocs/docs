@@ -9,19 +9,17 @@ envir: onsite, online
 
 ## "SaleActivity"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleActivityArchiveProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.SaleActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Sale card
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -125,7 +123,6 @@ Activity archive provider for the Sale card
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -230,7 +227,6 @@ Activity archive provider for the Sale card
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -335,7 +331,6 @@ Activity archive provider for the Sale card
 |contact/contactFax/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/formattedNumber|string||  |
@@ -440,7 +435,6 @@ Activity archive provider for the Sale card
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
@@ -545,7 +539,6 @@ Activity archive provider for the Sale card
 |project/projectAssociate/ejStatus|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/credentialType| *None* || x |
@@ -650,7 +643,6 @@ Activity archive provider for the Sale card
 |sale/updatedBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/updatedByFullName|associate|| x |
@@ -755,7 +747,6 @@ Activity archive provider for the Sale card
 |booking|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |excludeParticipants|bool||  |
@@ -765,6 +756,7 @@ Activity archive provider for the Sale card
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -801,11 +793,12 @@ Activity archive provider for the Sale card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleActivity?$select=registeredBy,person/personExtra/x_person_shorttext,contact/department,associate/credentialType,booking
+GET /api/v1/archive/SaleActivity?$select=contact/sourcedFrom,contact/restrictionAddress/zip,appointment/internalNotes
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

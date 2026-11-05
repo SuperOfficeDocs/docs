@@ -1,6 +1,6 @@
 ---
 title: MailingsDynamicSelectionV2
-description: Mailings selection archive with OR-able selection groups. Each group is represented with the MailingsSelectionDynamicProviderSingleCriteriaGroup.
+description: Mailings selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: MailingsDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "MailingsDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Mailings selection archive with OR-able selection groups. Each group is represented with the [MailingsSelectionDynamicProviderSingleCriteriaGroup](./mailingsdynamicselectionsinglecriteriagroup).
+Mailings selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"mailings"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -124,7 +122,6 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 |mailingAddr/contact/postAddress/line3|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/postAddress/county|string|| x |
@@ -229,7 +226,6 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 |mailingAddr/contact/NumberOfActivitiesInPeriod|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/NumberOfNotCompletedActivities|int||  |
@@ -334,7 +330,6 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 |mailingAddr/person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/email/emailAddress|string|| x |
@@ -439,7 +434,6 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 |mailingAddr/person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAssociate/locationAddress|string|| x |
@@ -538,15 +532,15 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
-|emailFlow/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/registeredDate|date|| x |
 |emailFlow/workflowAssociate/firstName|string|| x |
 |emailFlow/workflowAssociate/lastName|string|| x |
 |emailFlow/workflowAssociate/middleName|string|| x |
@@ -646,12 +640,11 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 |project/projectAssociate/credentialType| *None* || x |
 |project/projectAssociate/credentialDisplayValue| *None* || x |
 |project/projectAssociate/isActive|bool|| x |
-|project/projectAssociate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/isActiveText|bool|| x |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
 |project/projectAssociate/otherGroups|userGroup||  |
 |project/projectAssociate/userName|string|| x |
@@ -697,11 +690,12 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsDynamicSelectionV2?$select=getAllRows,thumbnail,mailingAddr/contact/category,mailingAddr/contact/restrictionAddress/line2,mailingAddr/contact/contactUdef/SuperOffice:13
+GET /api/v1/archive/MailingsDynamicSelectionV2?$select=mailingAddr/contact/contactExtra/x_contact_boolean,mailingAddr/person/createdByForm,mailingAddr/person/personInfo/textId,mailingAddr/person/personAddress/line1,mailingAddr/person/restrictionAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

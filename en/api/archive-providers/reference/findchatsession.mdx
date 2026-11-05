@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "FindChatSession"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindChatSessionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindChatSessionProvider">SuperOffice.CRM.ArchiveLists.FindChatSessionProvider</see> inside NetServer's SODatabase assembly.
 
 ChatSession provider for Find
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"chatsession"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ ChatSession provider for Find
 |person/supportLanguage|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/supportAssociate|associate|| x |
@@ -229,7 +226,6 @@ ChatSession provider for Find
 |person/personExtra/y\_rental/x\_contact|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/y\_equipment/x\_name|string|| x |
@@ -334,7 +330,6 @@ ChatSession provider for Find
 |contact/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/registeredByFullName|associate|| x |
@@ -439,7 +434,6 @@ ChatSession provider for Find
 |contact/contactAssociate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isLocation|bool|| x |
@@ -508,11 +502,12 @@ ChatSession provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindChatSession?$select=person/restrictionAddress/line2,person/legalBaseEmarketing,contact/associateId,contact/updatedDate,contact/sharecapitalBasecurrency
+GET /api/v1/archive/FindChatSession?$select=person/isProjectMember,person/personAssociate/simultaneousEjUser,person/correspondingAssociate/role
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "Contact"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ContactProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ContactProvider">SuperOffice.CRM.ArchiveLists.ContactProvider</see> inside NetServer's SODatabase assembly.
 
 Contact provider for general use
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Contact provider for general use
 |restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/wgs84longitude|decimal|| x |
@@ -229,7 +226,6 @@ Contact provider for general use
 |contactSupportPerson/personUpdatedByFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/personUpdatedDate|date|| x |
@@ -334,7 +330,6 @@ Contact provider for general use
 |contactExtra/x\_contact\_time| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactExtra/x\_contact\_boolean|bool|| x |
@@ -381,11 +376,12 @@ Contact provider for general use
 ## Sample
 
 ```http!
-GET /api/v1/archive/Contact?$select=updatedDate,contactSupportAssociate/ejUserId,contactSupportAssociate/credentialType,contactSupportPerson/personUdef/SuperOffice:8,NumberOfNotCompletedTickets
+GET /api/v1/archive/Contact?$select=postAddress/zip,restrictionPostalAddress/zip,contactAssociate/lastName,LastCompletedSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -1,6 +1,6 @@
 ---
 title: LastTickets
-description:
+description: 
 keywords: LastTickets archive provider
 generated: true
 content_type: reference
@@ -9,17 +9,15 @@ envir: onsite, online
 
 ## "LastTickets"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.LastTicketsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LastTicketsProvider">SuperOffice.CRM.ArchiveLists.LastTicketsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 |"ticketdisplayclosed"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -123,7 +121,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 |ownedBy/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/usergroup|userGroup|| x |
@@ -228,7 +225,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 |person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailAddress|string|| x |
@@ -333,7 +329,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 |person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/locationAddress|string|| x |
@@ -438,7 +433,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 |contact/postAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line3|string|| x |
@@ -543,7 +537,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 |contact/NumberOfActivities|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/NumberOfActivitiesInPeriod|int||  |
@@ -648,7 +641,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 |sale/amountWeightedInBaseCurrency| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/daysInStage|int|| x |
@@ -753,7 +745,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 |project/projectAssociate/contactCategory|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/role|listAny|| x |
@@ -812,11 +803,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 ## Sample
 
 ```http!
-GET /api/v1/archive/LastTickets?$select=connectId,createdBy/usergroup,ownedBy/simultaneousEjUser,person/personHasInterests,person/personPager/description
+GET /api/v1/archive/LastTickets?$select=person/kanaLastName,person/personInterestIds,contact/streetAddress/city,sale/projectId,sale/associate/credentialType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

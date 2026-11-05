@@ -9,19 +9,17 @@ envir: onsite, online
 
 ## "QuoteConnection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.QuoteConnectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.QuoteConnectionProvider">SuperOffice.CRM.ArchiveLists.QuoteConnectionProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the QuoteConnection Archive in SoAdmin.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"quoteConnection"||
 |"deleted"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -61,11 +59,12 @@ This is the archive Provider for the QuoteConnection Archive in SoAdmin.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteConnection?$select=displayDescription,updatedDate,erpConnection/description
+GET /api/v1/archive/QuoteConnection?$select=updatedDate,erpConnection/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

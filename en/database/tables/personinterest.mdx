@@ -28,6 +28,7 @@ Link-table between person and interests in PersInt. Note; person.activeInterests
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
+
 ![personinterest table relationship diagram](/media/loc/en/database/tables/personinterest.png)
 
 <Personinterest />
@@ -50,6 +51,7 @@ Link-table between person and interests in PersInt. Note; person.activeInterests
 |[PersInt](./persint)  |PersInt list table. List of Person interests. |
 |[person](./person)  |Persons |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -59,3 +61,4 @@ Link-table between person and interests in PersInt. Note; person.activeInterests
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

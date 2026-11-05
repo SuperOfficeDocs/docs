@@ -9,19 +9,17 @@ envir: onsite, online
 
 ## "Webhook"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.WebhookProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.WebhookProvider">SuperOffice.CRM.ArchiveLists.WebhookProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for listing webhooks.
 Lists all webhooks in the Webhook table.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"webhook"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -45,11 +43,12 @@ Lists all webhooks in the Webhook table.
 ## Sample
 
 ```http!
-GET /api/v1/archive/Webhook?$select=events,targetUrl,registeredByFullName
+GET /api/v1/archive/Webhook?$select=targetUrl,registeredByFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

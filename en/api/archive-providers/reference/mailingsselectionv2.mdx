@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "MailingsSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection Mailings archive.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"mailings"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ This is the archive Provider for the Selection Mailings archive.
 |mailingAddr/contact/postAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/postAddress/state|string|| x |
@@ -229,7 +226,6 @@ This is the archive Provider for the Selection Mailings archive.
 |mailingAddr/contact/LastActivity|date||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/LastCompletedActivity|date||  |
@@ -334,7 +330,6 @@ This is the archive Provider for the Selection Mailings archive.
 |mailingAddr/person/email/emailId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/email/emailLastSent|datetime|| x |
@@ -439,7 +434,6 @@ This is the archive Provider for the Selection Mailings archive.
 |mailingAddr/person/correspondingAssociate/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/correspondingAssociate/lastName|string|| x |
@@ -535,18 +529,18 @@ This is the archive Provider for the Selection Mailings archive.
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
 |emailFlow/registeredDate|date|| x |
 |emailFlow/workflowAssociate/firstName|string|| x |
 |emailFlow/workflowAssociate/lastName|string|| x |
-|emailFlow/workflowAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/workflowAssociate/middleName|string|| x |
 |emailFlow/workflowAssociate/fullName|string|| x |
 |emailFlow/workflowAssociate/contactId|int||  |
 |emailFlow/workflowAssociate/personId|int||  |
@@ -646,12 +640,11 @@ This is the archive Provider for the Selection Mailings archive.
 |project/projectAssociate/isActiveText|bool|| x |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
 |project/projectAssociate/otherGroups|userGroup||  |
-|project/projectAssociate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/userName|string|| x |
 |project/projectAssociate/personEmail|string|| x |
 |project/projectAssociate/locationAddress|string|| x |
 |project/projectAssociate/isLocation|bool|| x |
@@ -700,11 +693,12 @@ This is the archive Provider for the Selection Mailings archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsSelectionV2?$select=mailingSentCount,mailingAddr/contact/email/emailAddress,mailingAddr/contact/contactAssociate/firstName,mailingAddr/contact/saintAmountClass,mailingAddr/person/title
+GET /api/v1/archive/MailingsSelectionV2?$select=mailingAddr/contact/department,mailingAddr/contact/NumberOfNotCompletedTicketsInPeriod,mailingAddr/contact/saintSaleStatus,mailingAddr/person/correspondingAssociate/middleName,mailingAddr/person/correspondingAssociate/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

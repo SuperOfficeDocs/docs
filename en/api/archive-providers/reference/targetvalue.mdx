@@ -1,6 +1,6 @@
 ---
 title: TargetValue
-description:
+description: 
 keywords: TargetValue archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "TargetValue"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.TargetValueProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.TargetValueProvider">SuperOffice.CRM.ArchiveLists.TargetValueProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"targetValue"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Targ
 |contact/email/emailLastSent|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailBounceCount|int|| x |
@@ -227,7 +224,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Targ
 |contact/contactSupportAssociate/contactFullName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactSupportAssociate/contactCategory|listAny|| x |
@@ -332,7 +328,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Targ
 |contact/contactSupportPerson/personExtra/x\_person\_shorttext\_list|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactSupportPerson/personExtra/x\_person\_user\_relation|associate|| x |
@@ -427,11 +422,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Targ
 ## Sample
 
 ```http!
-GET /api/v1/archive/TargetValue?$select=contact/contactAssociate/simultaneousEjUser,contact/contactAssociate/ejStatus,contact/contactSupportPerson/personExtra/x_person_appointment_relation,contact/contactExtra/x_contact_boolean
+GET /api/v1/archive/TargetValue?$select=targetValue,contact/contactAssociate/credentialDisplayValue,contact/contactSupportAssociate/assocName,contact/contactSupportPerson/personAssociateFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

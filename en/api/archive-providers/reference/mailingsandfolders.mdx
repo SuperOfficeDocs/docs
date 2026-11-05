@@ -9,14 +9,13 @@ envir: onsite, online
 
 ## "MailingsAndFolders"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.MailingsAndFoldersProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailingsAndFoldersProvider">SuperOffice.CRM.ArchiveLists.MailingsAndFoldersProvider</see> inside NetServer's SODatabase assembly.
 
 Combined archive of mailings (s_shipment) and mailing folders
 (s_picture_folder, folder_type = shipmentFolder) — analogous to
-[EmailFlowsAndFoldersProvider](./emailflowsandfolders).
+<see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider" />.
 
 Unified row schema (after the column-name overrides set up below):
-
 - PrimaryKey      — row's own id
 - mailingFolderId — row's container folder id (for filtering)
 - name            — display label (mailing description on mailings,
@@ -34,14 +33,12 @@ extender columns) so MailingsExtenderBase keeps its native
 EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"mailingfolder"||
 |"all"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -145,7 +142,6 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/postAddress/line3| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/postAddress/county| *None* ||  |
@@ -250,7 +246,6 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/NumberOfActivitiesInPeriod| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/NumberOfNotCompletedActivities| *None* ||  |
@@ -355,7 +350,6 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/email/emailProtocol| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/email/emailAddress| *None* ||  |
@@ -460,7 +454,6 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/personAssociate/personEmail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAssociate/locationAddress| *None* ||  |
@@ -559,15 +552,15 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy| *None* ||  |
 |emailFlow/updatedDate| *None* ||  |
 |emailFlow/registeredBy| *None* ||  |
-|emailFlow/registeredDate| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/registeredDate| *None* ||  |
 |emailFlow/workflowAssociate/firstName| *None* ||  |
 |emailFlow/workflowAssociate/lastName| *None* ||  |
 |emailFlow/workflowAssociate/middleName| *None* ||  |
@@ -667,12 +660,11 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |project/projectAssociate/credentialType| *None* ||  |
 |project/projectAssociate/credentialDisplayValue| *None* ||  |
 |project/projectAssociate/isActive| *None* ||  |
-|project/projectAssociate/isActiveText| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/isActiveText| *None* ||  |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
 |project/projectAssociate/otherGroups| *None* ||  |
 |project/projectAssociate/userName| *None* ||  |
@@ -718,11 +710,12 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsAndFolders?$select=mailingAddr/person/personUpdatedBy,mailingAddr/person/personAddress/county,mailingAddr/person/personExtra/y_rental/id,mailingAddr/person/correspondingAssociate/usergroup,emailFlow/workflowCompletedCount
+GET /api/v1/archive/MailingsAndFolders?$select=mailingAddr/contact/postAddress/line2,mailingAddr/contact/contactAssociate/role,mailingAddr/person/restrictionAddress/line1,mailingAddr/person/correspondingAssociate/simultaneousEjUser,emailFlow/workflowAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

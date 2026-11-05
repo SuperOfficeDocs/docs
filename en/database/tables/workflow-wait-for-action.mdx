@@ -8,7 +8,7 @@ envir: online
 
 import WorkflowWaitForAction from "./includes/workflow-wait-for-action.mdx";
 
-## workflow\_wait\_for\_action Table (537)
+## workflow\_wait\_for\_action Table (538)
 
 Some steps wait for actions, this is info about those actions
 
@@ -26,6 +26,7 @@ Some steps wait for actions, this is info about those actions
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
+
 ![workflow_wait_for_action table relationship diagram](/media/loc/en/database/tables/workflow_wait_for_action.png)
 
 <WorkflowWaitForAction />
@@ -42,6 +43,7 @@ Some steps wait for actions, this is info about those actions
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[workflow\_step](./workflow-step)  |A set of steps related to a workflow. |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +51,4 @@ Some steps wait for actions, this is info about those actions
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

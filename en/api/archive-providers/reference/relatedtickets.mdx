@@ -1,6 +1,6 @@
 ---
 title: RelatedTickets
-description:
+description: 
 keywords: RelatedTickets archive provider
 generated: true
 content_type: reference
@@ -9,17 +9,15 @@ envir: onsite, online
 
 ## "RelatedTickets"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider">SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 |"ticketdisplayclosed"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -123,7 +121,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 |ownedBy/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/usergroup|userGroup|| x |
@@ -228,7 +225,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 |person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailAddress|string|| x |
@@ -333,7 +329,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 |person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/locationAddress|string|| x |
@@ -438,7 +433,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 |contact/postAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line3|string|| x |
@@ -543,7 +537,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 |contact/NumberOfActivities|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/NumberOfActivitiesInPeriod|int||  |
@@ -648,7 +641,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 |sale/amountWeightedInBaseCurrency| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/daysInStage|int|| x |
@@ -753,7 +745,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 |project/projectAssociate/contactCategory|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/role|listAny|| x |
@@ -815,11 +806,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 ## Sample
 
 ```http!
-GET /api/v1/archive/RelatedTickets?$select=person/hasInterests,person/personAssociate/contactId,person/correspondingAssociate/personId,contact/countryId,relationType
+GET /api/v1/archive/RelatedTickets?$select=readStatus,createdBy/ejDisplayName,person/personInfo/infoText,person/personUdef/SuperOffice:1,person/correspondingAssociate/usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

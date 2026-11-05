@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SaleSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection sale archive.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ This is the archive Provider for the Selection sale archive.
 |person/personRegisteredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/portraitThumbnail| *None* ||  |
@@ -229,7 +226,6 @@ This is the archive Provider for the Selection sale archive.
 |person/personExtra/x\_person\_appointment\_relation|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_contact\_relation|stringorPK|| x |
@@ -334,7 +330,6 @@ This is the archive Provider for the Selection sale archive.
 |contact/orgnr|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/stop|bool|| x |
@@ -439,7 +434,6 @@ This is the archive Provider for the Selection sale archive.
 |contact/contactAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isActiveText|bool|| x |
@@ -544,7 +538,6 @@ This is the archive Provider for the Selection sale archive.
 |associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/isLocation|bool|| x |
@@ -590,6 +583,7 @@ This is the archive Provider for the Selection sale archive.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -646,12 +640,11 @@ This is the archive Provider for the Selection sale archive.
 |appointment/associate/userName|string|| x |
 |appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
-|appointment/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
 |appointment/appointment/title|positiveString|| x |
@@ -751,12 +744,11 @@ This is the archive Provider for the Selection sale archive.
 |project/status|listAny|| x |
 |project/statusRank| *None* || x |
 |project/associateId|associate|| x |
-|project/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/hasInfoText|bool|| x |
 |project/icon| *None* || x |
 |project/text|string|| x |
 |project/description|string|| x |
@@ -856,12 +848,11 @@ This is the archive Provider for the Selection sale archive.
 |saleStakeholder/salesRoleId|listAny|| x |
 |saleStakeholder/hasInfoText|bool|| x |
 |saleStakeholder/person/personId|int|| x |
-|saleStakeholder/person/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/firstName|string|| x |
 |saleStakeholder/person/lastName|string|| x |
 |saleStakeholder/person/middleName|string|| x |
 |saleStakeholder/person/fullName|string|| x |
@@ -961,12 +952,11 @@ This is the archive Provider for the Selection sale archive.
 |saleStakeholder/person/restrictionAddress/city|string|| x |
 |saleStakeholder/person/restrictionAddress/zip|string|| x |
 |saleStakeholder/person/restrictionAddress/state|string|| x |
-|saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/wgs84longitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/formattedAddress| *None* ||  |
 |saleStakeholder/person/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -1066,12 +1056,11 @@ This is the archive Provider for the Selection sale archive.
 |saleStakeholder/person/correspondingAssociate/credentialDisplayValue| *None* || x |
 |saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
 |saleStakeholder/person/correspondingAssociate/isActiveText|bool|| x |
-|saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 |saleStakeholder/person/correspondingAssociate/otherGroups|userGroup||  |
 |saleStakeholder/person/correspondingAssociate/userName|string|| x |
 |saleStakeholder/person/correspondingAssociate/personEmail|string|| x |
@@ -1171,12 +1160,11 @@ This is the archive Provider for the Selection sale archive.
 |saleStakeholder/contact/restrictionAddress/city|string|| x |
 |saleStakeholder/contact/restrictionAddress/zip|string|| x |
 |saleStakeholder/contact/restrictionAddress/state|string|| x |
-|saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/wgs84longitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/formattedAddress| *None* ||  |
 |saleStakeholder/contact/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -1276,12 +1264,11 @@ This is the archive Provider for the Selection sale archive.
 |saleStakeholder/contact/saintIntention|listAny||  |
 |saleStakeholder/contact/saintTicketStatus|listAny||  |
 |saleStakeholder/contact/saintTicketCategory|listAny||  |
-|quote/quoteId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|quote/quoteId|int|| x |
 |quote/poNumber|string|| x |
 |quote/orderComment|string|| x |
 |quote/connectionId|int|| x |
@@ -1383,11 +1370,12 @@ This is the archive Provider for the Selection sale archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleSelection?$select=person/personBusiness,person/personUdef/SuperOffice:10,person/personExtra/x_person_category_relation,person/personAssociate/portraitThumbnail,associate/title
+GET /api/v1/archive/SaleSelection?$select=person/birthDay,person/personAssociate/locationAddress,contact/streetAddress/wgs84latitude,contact/LastCompletedActivity,associate/locationAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

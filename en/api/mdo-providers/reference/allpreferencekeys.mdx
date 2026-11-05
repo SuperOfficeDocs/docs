@@ -8,7 +8,6 @@ envir: online
 ---
 
 ## "allpreferencekeys" MDO List
-
 MDO Provider that retrieves all preference keys
 
 All preferences that are not sections are returned, grouped alphabetically.
@@ -17,7 +16,7 @@ If addidionalInfo contains crmgui and/or admingui, only preferences with any of 
 flags are returned (default, when neither is given: crmgui OR admingui).
 Preferences that have list of values are bolded.
 
-Implemented by the AllPreferenceKeysProvider class.
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.AllPreferenceKeysProvider">AllPreferenceKeysProvider</see> class.
 The name of the MDO list is 'allpreferencekeys'.
 
 ## Additional Attributes
@@ -25,6 +24,10 @@ The name of the MDO list is 'allpreferencekeys'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Optional ';'-separated tokens: OrderBySection to group alphabetically by section; crmgui and/or admingui to restrict to preferences that have any of the named GUI access flags (default: both)| |OrderBySection|
+
+
+
+
 
 ## Sample Request
 
@@ -37,7 +40,6 @@ Accept-Language: *
 ```
 
 ## Sample Code
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("allpreferencekeys", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -50,27 +52,28 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|1000105|||[SR_PD_Functions_NAME]|
-|1000522||bold|[SR_PD_Visual_NAME]|
-|1000163||bold|[SR_PD_Mail_NAME]|
-|1000552||bold|[SR_PD_AI_NAME]|
-|1000068|||[SR_PD_DiaryView_NAME]|
-|1000071||bold|[SR_PD_DiaryView_NAME]|
-|1000070||bold|[SR_PD_DiaryView_NAME]|
-|1000549||bold|[SR_PD_AI_NAME]|
-|1000550||bold|[SR_PD_AI_NAME]|
-|1000556||bold|[SR_PD_Copilot_NAME]|
-|1000446|||[SR_PD_serviceSettings_NAME]|
+|1000098|||[SR_PD_Functions_NAME]|
+|1000516||bold|[SR_PD_Visual_NAME]|
+|1000156||bold|[SR_PD_Mail_NAME]|
+|1000546||bold|[SR_PD_AI_NAME]|
+|1000061|||[SR_PD_DiaryView_NAME]|
+|1000064||bold|[SR_PD_DiaryView_NAME]|
+|1000063||bold|[SR_PD_DiaryView_NAME]|
+|1000543||bold|[SR_PD_AI_NAME]|
+|1000544||bold|[SR_PD_AI_NAME]|
+|1000559||bold|[SR_PD_Copilot_NAME]|
+|1000439|||[SR_PD_serviceSettings_NAME]|
+|1000157|||[SR_PD_Mail_NAME]|
+|1000158|||[SR_PD_Mail_NAME]|
+|1000159|||[SR_PD_Mail_NAME]|
+|1000099|||[SR_PD_Functions_NAME]|
+|1000160|||[SR_PD_Mail_NAME]|
+|1000161||bold|[SR_PD_Mail_NAME]|
+|1000162|||[SR_PD_Mail_NAME]|
+|1000163|||[SR_PD_Mail_NAME]|
+|1000100|||[SR_PD_Functions_NAME]|
 |1000164|||[SR_PD_Mail_NAME]|
-|1000165|||[SR_PD_Mail_NAME]|
-|1000166|||[SR_PD_Mail_NAME]|
-|1000106|||[SR_PD_Functions_NAME]|
-|1000167|||[SR_PD_Mail_NAME]|
-|1000168||bold|[SR_PD_Mail_NAME]|
-|1000169|||[SR_PD_Mail_NAME]|
-|1000170|||[SR_PD_Mail_NAME]|
-|1000107|||[SR_PD_Functions_NAME]|
-|1000171|||[SR_PD_Mail_NAME]|
+
 
 ## Related MDO Lists
 

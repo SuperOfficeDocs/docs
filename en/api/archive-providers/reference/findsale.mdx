@@ -1,6 +1,6 @@
 ---
 title: FindSale
-description:
+description: 
 keywords: FindSale archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "FindSale"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindSaleProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindSaleProvider">SuperOffice.CRM.ArchiveLists.FindSaleProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |person/personRegisteredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/portraitThumbnail| *None* ||  |
@@ -227,7 +224,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |person/personExtra/x\_person\_appointment\_relation|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_contact\_relation|stringorPK|| x |
@@ -332,7 +328,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |contact/orgnr|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/stop|bool|| x |
@@ -437,7 +432,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |contact/contactAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isActiveText|bool|| x |
@@ -542,7 +536,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/isLocation|bool|| x |
@@ -588,6 +581,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -644,12 +638,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |appointment/associate/userName|string|| x |
 |appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
-|appointment/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
 |appointment/appointment/title|positiveString|| x |
@@ -749,12 +742,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |project/status|listAny|| x |
 |project/statusRank| *None* || x |
 |project/associateId|associate|| x |
-|project/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/hasInfoText|bool|| x |
 |project/icon| *None* || x |
 |project/text|string|| x |
 |project/description|string|| x |
@@ -854,12 +846,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |saleStakeholder/salesRoleId|listAny|| x |
 |saleStakeholder/hasInfoText|bool|| x |
 |saleStakeholder/person/personId|int|| x |
-|saleStakeholder/person/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/firstName|string|| x |
 |saleStakeholder/person/lastName|string|| x |
 |saleStakeholder/person/middleName|string|| x |
 |saleStakeholder/person/fullName|string|| x |
@@ -959,12 +950,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |saleStakeholder/person/restrictionAddress/city|string|| x |
 |saleStakeholder/person/restrictionAddress/zip|string|| x |
 |saleStakeholder/person/restrictionAddress/state|string|| x |
-|saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/wgs84longitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/formattedAddress| *None* ||  |
 |saleStakeholder/person/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -1064,12 +1054,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |saleStakeholder/person/correspondingAssociate/credentialDisplayValue| *None* || x |
 |saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
 |saleStakeholder/person/correspondingAssociate/isActiveText|bool|| x |
-|saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 |saleStakeholder/person/correspondingAssociate/otherGroups|userGroup||  |
 |saleStakeholder/person/correspondingAssociate/userName|string|| x |
 |saleStakeholder/person/correspondingAssociate/personEmail|string|| x |
@@ -1169,12 +1158,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |saleStakeholder/contact/restrictionAddress/city|string|| x |
 |saleStakeholder/contact/restrictionAddress/zip|string|| x |
 |saleStakeholder/contact/restrictionAddress/state|string|| x |
-|saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/wgs84longitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/formattedAddress| *None* ||  |
 |saleStakeholder/contact/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -1274,12 +1262,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |saleStakeholder/contact/saintIntention|listAny||  |
 |saleStakeholder/contact/saintTicketStatus|listAny||  |
 |saleStakeholder/contact/saintTicketCategory|listAny||  |
-|quote/quoteId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|quote/quoteId|int|| x |
 |quote/poNumber|string|| x |
 |quote/orderComment|string|| x |
 |quote/connectionId|int|| x |
@@ -1376,11 +1363,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindSale?$select=person/title,person/birthdate,person/personAssociate/simultaneousEjUser,person/personAssociate/isActive,contact/stop
+GET /api/v1/archive/FindSale?$select=contact/revenueYear,contact/restrictionAddress/wgs84longitude,appointment/ownedExternally,appointment/visibleInDiary,appointment/appointmentUdef/SuperOffice:7
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

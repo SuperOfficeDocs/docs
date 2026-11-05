@@ -9,19 +9,17 @@ envir: onsite, online
 
 ## "EmailFlowInstances"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EmailFlowInstanceProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowInstanceProvider">SuperOffice.CRM.ArchiveLists.EmailFlowInstanceProvider</see> inside NetServer's SODatabase assembly.
 
 Archive of Email flow Instances.
 Lists all email flow Instances
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"emailflowinstance"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -59,6 +57,7 @@ Lists all email flow Instances
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -122,12 +121,11 @@ Lists all email flow Instances
 |person/associateType| *None* ||  |
 |person/useAsMailingAddress|bool|| x |
 |person/personSource|listAny|| x |
-|person/retired|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/retired|bool|| x |
 |person/birthYear|int|| x |
 |person/birthMonth|int|| x |
 |person/birthDay|int|| x |
@@ -227,12 +225,11 @@ Lists all email flow Instances
 |person/personExtra/x\_person\_hidden\_integer|int|| x |
 |person/personExtra/x\_person\_float|decimal|| x |
 |person/personExtra/x\_person\_longtext|string|| x |
-|person/personExtra/x\_person\_date|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personExtra/x\_person\_date|date|| x |
 |person/personExtra/x\_person\_datetime|datetime|| x |
 |person/personExtra/x\_person\_time| *None* || x |
 |person/personExtra/x\_person\_boolean|bool|| x |
@@ -332,12 +329,11 @@ Lists all email flow Instances
 |contact/name|stringorPK|| x |
 |contact/department|string|| x |
 |contact/nameDepartment|string|| x |
-|contact/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/hasInfoText|bool|| x |
 |contact/hasInterests|bool|| x |
 |contact/associateId|associate|| x |
 |contact/category|listAny|| x |
@@ -437,12 +433,11 @@ Lists all email flow Instances
 |contact/contactAssociate/usergroup|userGroup|| x |
 |contact/contactAssociate/usergroupId|int|| x |
 |contact/contactAssociate/contactFullName|string|| x |
-|contact/contactAssociate/contactCategory|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactAssociate/contactCategory|listAny|| x |
 |contact/contactAssociate/role|listAny|| x |
 |contact/contactAssociate/assocName|associate|| x |
 |contact/contactAssociate/assocTooltip|string||  |
@@ -526,11 +521,12 @@ Lists all email flow Instances
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowInstances?$select=person/restrictionAddress/city,person/personAssociate/associateDbId,person/personAssociate/ejStatus,person/correspondingAssociate/isLocation,contact/email/emailLastSent
+GET /api/v1/archive/EmailFlowInstances?$select=emailFlow/workflowEnrolledCount,person/personRegisteredBy,contact/contactAssociate/locationAddress,contact/NumberOfActivities
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

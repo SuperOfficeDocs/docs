@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "TicketMessage"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.TicketMessageProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.TicketMessageProvider">SuperOffice.CRM.ArchiveLists.TicketMessageProvider</see> inside NetServer's SODatabase assembly.
 
 Messages on support tickets. Messages are typically e-mail messages with attachments, but not always.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticketmessage"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/createdBy/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/createdBy/locationAddress|string|| x |
@@ -229,7 +226,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/person/personMobilePhone/formattedNumber|string||  |
@@ -334,7 +330,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/person/personAssociate/assocType|listAny|| x |
@@ -439,7 +434,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/contact/contactFax/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/contact/searchPhone/formattedNumber|string||  |
@@ -544,7 +538,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/contact/contactExtra/x\_contact\_longtext|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/contact/contactExtra/x\_contact\_dropdown|listAny|| x |
@@ -649,7 +642,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/sale/reopenDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/sale/stalledComment|listAny|| x |
@@ -754,7 +746,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/project/projectAssociate/lastName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/project/projectAssociate/middleName|string|| x |
@@ -859,7 +850,6 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |person/personActiveErpLinks|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personSourcedFrom|string|| x |
@@ -897,11 +887,12 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketMessage?$select=ticket/ticketStatusId,ticket/createdBy/otherGroups,ticket/person/personCategory,ticket/person/personAssociate/isLocation,ticket/person/legalBaseEmarketing
+GET /api/v1/archive/TicketMessage?$select=ticket/ownedBy/ejUserId,ticket/ticketStatus/name,ticket/contact/saintTicketCategory,ticket/project/projectUrl/URLDescription,ticket/project/projectAssociate/personEmail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

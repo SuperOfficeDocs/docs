@@ -9,12 +9,11 @@ envir: onsite, online
 
 ## "ProjectActivity"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ProjectActivityArchiveProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ProjectActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.ProjectActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Project card
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"mailing"||
@@ -22,7 +21,6 @@ Activity archive provider for the Project card
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -126,7 +124,6 @@ Activity archive provider for the Project card
 |contact/postAddress/city|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/zip|string|| x |
@@ -231,7 +228,6 @@ Activity archive provider for the Project card
 |contact/NumberOfNotCompletedActivitiesInPeriod|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/LastActivity|date||  |
@@ -336,7 +332,6 @@ Activity archive provider for the Project card
 |person/email/emailDescription|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailId|int|| x |
@@ -441,7 +436,6 @@ Activity archive provider for the Project card
 |person/personAssociate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/correspondingAssociate/firstName|string|| x |
@@ -538,17 +532,17 @@ Activity archive provider for the Project card
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
 |emailFlow/registeredDate|date|| x |
 |emailFlow/workflowAssociate/firstName|string|| x |
-|emailFlow/workflowAssociate/lastName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/workflowAssociate/lastName|string|| x |
 |emailFlow/workflowAssociate/middleName|string|| x |
 |emailFlow/workflowAssociate/fullName|string|| x |
 |emailFlow/workflowAssociate/contactId|int||  |
@@ -648,12 +642,11 @@ Activity archive provider for the Project card
 |project/projectAssociate/isActive|bool|| x |
 |project/projectAssociate/isActiveText|bool|| x |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
-|project/projectAssociate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/otherGroups|userGroup||  |
 |project/projectAssociate/userName|string|| x |
 |project/projectAssociate/personEmail|string|| x |
 |project/projectAssociate/locationAddress|string|| x |
@@ -753,12 +746,11 @@ Activity archive provider for the Project card
 |sale/source|listAny|| x |
 |sale/competitor|listAny|| x |
 |sale/heading|stringorPK|| x |
-|sale/amount|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/amount|decimal|| x |
 |sale/amountWeighted|decimal|| x |
 |sale/earning|decimal|| x |
 |sale/earningPercent|decimal|| x |
@@ -853,17 +845,17 @@ Activity archive provider for the Project card
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
 |completedDate|date|| x |
-|isMilestone|bool|| x |
-|invitedPersonId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|isMilestone|bool|| x |
+|invitedPersonId|int|| x |
 |joinVideomeetUrl| *None* || x |
 |duration|timeSpan||  |
 |createdByWorkflow|listAny|| x |
@@ -894,11 +886,12 @@ Activity archive provider for the Project card
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectActivity?$select=person/hasInfoText,person/personRegisteredDate,person/correspondingAssociate/ejStatus,emailFlow/workflowDescription,emailFlow/workflowEnrolledCount
+GET /api/v1/archive/ProjectActivity?$select=contact/phone/formattedNumber,contact/postAddress/line3,person/restrictionAddress/zip,person/personUdef/SuperOffice:11,person/personExtra/x_person_shorttext_list
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

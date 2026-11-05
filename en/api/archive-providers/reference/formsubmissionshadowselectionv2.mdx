@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "FormSubmissionShadowSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the FormSubmission provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"formSubmission"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the FormSubmission provider.
 |person/personCategoryRank|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personBusiness|listAny|| x |
@@ -229,7 +226,6 @@ Shadow contact provider for the FormSubmission provider.
 |person/personAssociate/contactId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/personId|int||  |
@@ -334,7 +330,6 @@ Shadow contact provider for the FormSubmission provider.
 |contact/numEmployees|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/yearFounded|int|| x |
@@ -439,7 +434,6 @@ Shadow contact provider for the FormSubmission provider.
 |contact/contactUdef/SuperOffice:5|unlimitedDate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:6|bool|| x |
@@ -506,11 +500,12 @@ Shadow contact provider for the FormSubmission provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowSelectionV2?$select=recordTypeText,associate/lastName,person/hasInfoText,person/restrictionAddress/zip,person/correspondingAssociate/contactCategory
+GET /api/v1/archive/FormSubmissionShadowSelectionV2?$select=person/personAssociate/ejStatus,contact/contactAssociate/lastName,contact/contactAssociate/contactId,contact/contactAssociate/simultaneousEjUser,contact/contactUdef/SuperOffice:4
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

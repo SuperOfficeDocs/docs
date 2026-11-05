@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ModuleLicense"
 
-This provider name is implemented by the class SuperOffice.CRM.ModuleLicenceProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ModuleLicenceProvider">SuperOffice.CRM.ModuleLicenceProvider</see> inside NetServer's SODatabase assembly.
 
 Simple provider for module licences. This provider will return a flat list with
 one entity for system-level licences, one for site (database)-level licences, and
@@ -17,7 +17,6 @@ one for user (associate)-level licences. It does not check codekey or other
 security items.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"systemLicense"||
@@ -25,7 +24,6 @@ security items.
 |"userLicense"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -50,4 +48,5 @@ Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

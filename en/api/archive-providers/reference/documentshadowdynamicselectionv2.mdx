@@ -1,6 +1,6 @@
 ---
 title: DocumentShadowDynamicSelectionV2
-description: Document shadow selection archive with OR-able selection groups. Each group is represented with the DocumentShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Document shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: DocumentShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "DocumentShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Document shadow selection archive with OR-able selection groups. Each group is represented with the [DocumentShadowSelectionDynamicProviderSingleCriteriaGroup](./documentshadowdynamicselectionsinglecriteriagroup).
+Document shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -124,7 +122,6 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 |person/phone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personDirectPhone/formattedNumber|string||  |
@@ -229,7 +226,6 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 |person/personAssociate/role|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocName|associate|| x |
@@ -334,7 +330,6 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 |contact/contactPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactFax/formattedNumber|string||  |
@@ -439,7 +434,6 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 |contact/contactExtra/x\_contact\_default\_integer|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_float|decimal|| x |
@@ -544,7 +538,6 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 |project/projectAssociate/simultaneousEjUser|bool||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/ejDisplayName|string|| x |
@@ -649,7 +642,6 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 |sale/userGroup|userGroup|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/who| *None* ||  |
@@ -750,11 +742,12 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowDynamicSelectionV2?$select=updatedByFullName,person/personMobilePhone/description,person/personAssociate/assocTooltip,person/correspondingAssociate/credentialType,contact/code
+GET /api/v1/archive/DocumentShadowDynamicSelectionV2?$select=attention,person/personInterestIds,person/personAssociate/associateDbId,person/personAssociate/otherGroups,person/correspondingAssociate/contactName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

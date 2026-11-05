@@ -1,0 +1,23 @@
+---
+title: Enum values for TicketPostponeRule
+description: Lists the enum values for TicketPostponeRule.
+generated: true
+keywords: database enum
+content_type: reference
+envir: online
+---
+
+## TicketPostponeRule Enum
+
+How the activation time is calculated
+
+| Name | Value | Description |
+|------|-------|-------------|
+|Unknown|0|Unknown / uninitialized|
+|Interval|1|After an amount of time units|
+|NextWorkingDay|2|The next working day, at a time of day|
+|WeekdayNextWeek|3|A weekday next week, at a time of day|
+
+## Usage
+
+* [ticket_status_postpone](../ticket-status-postpone).rule - Postpone options agents can choose when setting a ticket to this Postponed status. A status without rows offers the standard options

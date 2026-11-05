@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SaleDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Sale selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Sale selection archive using the selectionId as criterionmapping.
 |person/personRegisteredBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personRegisteredByFullName|associate|| x |
@@ -229,7 +226,6 @@ Sale selection archive using the selectionId as criterionmapping.
 |person/personExtra/x\_person\_priority\_relation|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_request\_relation|stringorPK|| x |
@@ -334,7 +330,6 @@ Sale selection archive using the selectionId as criterionmapping.
 |contact/number|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/code|string|| x |
@@ -439,7 +434,6 @@ Sale selection archive using the selectionId as criterionmapping.
 |contact/contactAssociate/credentialType| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/credentialDisplayValue| *None* || x |
@@ -544,7 +538,6 @@ Sale selection archive using the selectionId as criterionmapping.
 |associate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/personEmail|string|| x |
@@ -592,6 +585,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -646,12 +640,11 @@ Sale selection archive using the selectionId as criterionmapping.
 |appointment/associate/portraitThumbnail| *None* ||  |
 |appointment/associate/otherGroups|userGroup||  |
 |appointment/associate/userName|string|| x |
-|appointment/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
 |appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
@@ -751,12 +744,11 @@ Sale selection archive using the selectionId as criterionmapping.
 |project/number|string|| x |
 |project/type|listAny|| x |
 |project/status|listAny|| x |
-|project/statusRank| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/statusRank| *None* || x |
 |project/associateId|associate|| x |
 |project/hasInfoText|bool|| x |
 |project/icon| *None* || x |
@@ -856,12 +848,11 @@ Sale selection archive using the selectionId as criterionmapping.
 |saleStakeholder/saleId|int|| x |
 |saleStakeholder/comment|string|| x |
 |saleStakeholder/salesRoleId|listAny|| x |
-|saleStakeholder/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/hasInfoText|bool|| x |
 |saleStakeholder/person/personId|int|| x |
 |saleStakeholder/person/firstName|string|| x |
 |saleStakeholder/person/lastName|string|| x |
@@ -961,12 +952,11 @@ Sale selection archive using the selectionId as criterionmapping.
 |saleStakeholder/person/restrictionAddress/line3|string|| x |
 |saleStakeholder/person/restrictionAddress/county|string|| x |
 |saleStakeholder/person/restrictionAddress/city|string|| x |
-|saleStakeholder/person/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/restrictionAddress/zip|string|| x |
 |saleStakeholder/person/restrictionAddress/state|string|| x |
 |saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/wgs84longitude|decimal|| x |
@@ -1066,12 +1056,11 @@ Sale selection archive using the selectionId as criterionmapping.
 |saleStakeholder/person/correspondingAssociate/ejStatus|int||  |
 |saleStakeholder/person/correspondingAssociate/credentialType| *None* || x |
 |saleStakeholder/person/correspondingAssociate/credentialDisplayValue| *None* || x |
-|saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
 |saleStakeholder/person/correspondingAssociate/isActiveText|bool|| x |
 |saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 |saleStakeholder/person/correspondingAssociate/otherGroups|userGroup||  |
@@ -1171,12 +1160,11 @@ Sale selection archive using the selectionId as criterionmapping.
 |saleStakeholder/contact/restrictionAddress/line3|string|| x |
 |saleStakeholder/contact/restrictionAddress/county|string|| x |
 |saleStakeholder/contact/restrictionAddress/city|string|| x |
-|saleStakeholder/contact/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/restrictionAddress/zip|string|| x |
 |saleStakeholder/contact/restrictionAddress/state|string|| x |
 |saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/wgs84longitude|decimal|| x |
@@ -1276,12 +1264,11 @@ Sale selection archive using the selectionId as criterionmapping.
 |saleStakeholder/contact/saintActivityType|listAny||  |
 |saleStakeholder/contact/saintDirection|listAny||  |
 |saleStakeholder/contact/saintIntention|listAny||  |
-|saleStakeholder/contact/saintTicketStatus|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/saintTicketStatus|listAny||  |
 |saleStakeholder/contact/saintTicketCategory|listAny||  |
 |quote/quoteId|int|| x |
 |quote/poNumber|string|| x |
@@ -1380,11 +1367,12 @@ Sale selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleDynamicSelection?$select=rowKind,completed,text,description,contact/revenueYear
+GET /api/v1/archive/SaleDynamicSelection?$select=person/position,person/personExtra/x_person_shorttext,contact/url/URLAddress,appointment/type,appointment/excludeParticipants
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

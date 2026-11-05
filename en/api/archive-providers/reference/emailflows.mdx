@@ -9,19 +9,17 @@ envir: onsite, online
 
 ## "EmailFlows"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EmailFlowProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowProvider">SuperOffice.CRM.ArchiveLists.EmailFlowProvider</see> inside NetServer's SODatabase assembly.
 
 Archive of Email flows.
 Lists all email flows
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"emailflow"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -44,6 +42,7 @@ Lists all email flows
 |workflowCompletedCount| *None* ||  |
 |workflowSucceededCount| *None* ||  |
 |workflowSuccessRate| *None* ||  |
+|workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -90,11 +89,12 @@ Lists all email flows
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlows?$select=updatedBy,workflowAssociate/title
+GET /api/v1/archive/EmailFlows?$select=workflowAssociate/firstName,updatedBy,workflowAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

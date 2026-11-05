@@ -9,31 +9,43 @@ envir: onsite, online
 
 ## "SelectionStaticContactAddMembers"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionAddMembersProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionAddMembersProvider">SuperOffice.CRM.ArchiveLists.SelectionAddMembersProvider</see> inside NetServer's SODatabase assembly.
 
 This is the provider used when searching for potential new members of a static selection. It is actually
-just a facade for the [FindContactProvider](./findcontact), but a different name is required to avoid stepping
+just a facade for the <see cref="T:SuperOffice.CRM.ArchiveLists.FindContactProvider" />, but a different name is required to avoid stepping
 on stored findcontact queries for the same user. Before using this provider, please read the Remarks section and
 make sure you understand its special functionality.
 
 There are several 'special' restrictions that are used by this provider in order to implement the various
 irregular query modifiers used by the Add Members dialog.
+<list type="bullet"><item><term>includeContactWithStopRestriction</term><description>If this boolean restriction is included and set to 0,
+then contacts that have the <see cref="P:SuperOffice.CRM.Rows.ContactRow.Xstop" /> property set to a nonzero
+value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.</description></item><item><term>includeContactWithNoDMRestriction</term><description>If this boolean restriction is included and set to 0,
+then contacts that have the <see cref="P:SuperOffice.CRM.Rows.ContactRow.Nomailing" /> property set to a nonzero
+value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.</description></item><item><term>includePersonWithNoDMRestriction</term><description>If this boolean restriction is included and set to 0,
+then persons that have the <see cref="P:SuperOffice.CRM.Rows.PersonRow.Nomailing" /> property set to a nonzero
+value will not NOT be included. If it is set to 1 or not set at all, such persons WILL be included.
 
-* **includeContactWithStopRestriction**: If this boolean restriction is included and set to 0, then contacts that have the Xstop property set to a nonzero value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.
-* **includeContactWithNoDMRestriction**: If this boolean restriction is included and set to 0, then contacts that have the Nomailing property set to a nonzero value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.
-* **includePersonWithNoDMRestriction**: If this boolean restriction is included and set to 0, then persons that have the Nomailing property set to a nonzero value will not NOT be included. If it is set to 1 or not set at all, such persons WILL be included. Note that this restriction will by itself NOT trigger a person search; a genuine person-type restriction has to be present to do that.
-* **includePersonRestriction**: This restriction, if included, can have one of three distinct string values. The strings correspond to the values of the IncludePersonType enumeration (parsing is not case sensitive). The value 'none' means that person records should not be included unless an explicit person criterion has been specified. 'first' means that the lowest-ranked person of each found contact should be included, but the result set still uses the contact_id as the primary key and is not a person search (again, unless other person criteria have been used). The value 'all' indicates that the query is promoted from contact to person type, the primary key becomes the person id, and ALL non-retired persons are included in the result for each contact.
-* **retired**: This is an ordinary display column and restriction. However, in this context it defaults to having a zero restriction value, i.e., unless you explicitly specify this restriction, it will be internally set to 0, thereby eliminating retired persons from the result. If you set it, your value wins, whatever it is.
-* **selectionIdRequest**: If you include the 'selectionIdRequest' restriction, use the '=' operator and give the id of the static selection to attempt to join with. If this is done, then the 'selectionMemberId' will contain a non-null value for those contacts or persons that exist in the given static selection.
+Note that this restriction will by itself NOT trigger a person search; a genuine person-type restriction
+has to be present to do that.</description></item><item><term>includePersonRestriction</term><description>This restriction, if included, can have one of three distinct
+string values. The strings correspond to the values of the
+<see cref="T:SuperOffice.CRM.ArchiveLists.SelectionContactPersonExtender.IncludePersonType" /> enumeration (parsing
+is not case sensitive). The value 'none' means that person records should not be included unless an explicit person criterion
+has been specified. 'first' means that the lowest-ranked person of each found contact should be included, but the
+result set still uses the contact_id as the primary key and is not a person search (again, unless other person
+criteria have been used). The value 'all' indicates that the query is promoted from contact to person type, the primary
+key becomes the person id, and ALL non-retired persons are included in the result for each contact.</description></item><item><term>retired</term><description>This is an ordinary display column and restriction. However, in this context
+it defaults to having a zero restriction value, i.e., unless you explicitly specify this restriction, it will be
+internally set to 0, thereby eliminating retired persons from the result. If you set it, your value wins, whatever it is.</description></item><item><term>selectionIdRequest</term><description>If you include the 'selectionIdRequest' restriction, use the '=' operator and give the id
+of the static selection to attempt to join with. If this is done, then the 'selectionMemberId' will contain
+a non-null value for those contacts or persons that exist in the given static selection.</description></item></list>
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -137,7 +149,6 @@ irregular query modifiers used by the Add Members dialog.
 |contactAssociate/fullName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/contactId|int||  |
@@ -242,7 +253,6 @@ irregular query modifiers used by the Add Members dialog.
 |sourceRelation/category|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/categoryGroup|listAny|| x |
@@ -347,7 +357,6 @@ irregular query modifiers used by the Add Members dialog.
 |sale/competitor|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/heading|stringorPK|| x |
@@ -452,7 +461,6 @@ irregular query modifiers used by the Add Members dialog.
 |appointment/appointmentId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/endDate|date|| x |
@@ -468,6 +476,7 @@ irregular query modifiers used by the Add Members dialog.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -554,12 +563,11 @@ irregular query modifiers used by the Add Members dialog.
 |document/updatedDate|date|| x |
 |document/registeredBy|associate|| x |
 |document/registeredByFullName|associate|| x |
-|document/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/registeredDate|date|| x |
 |document/documentId|int|| x |
 |document/keywords|string|| x |
 |document/ourref|string|| x |
@@ -659,12 +667,11 @@ irregular query modifiers used by the Add Members dialog.
 |supportLanguage|listAny|| x |
 |supportAssociate|associate|| x |
 |supportAssociateFullName|associate|| x |
-|personAssociateId|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
 |personCategory|listAny|| x |
 |personCategoryGroup|listAny|| x |
@@ -764,12 +771,11 @@ irregular query modifiers used by the Add Members dialog.
 |personSourceRelation/position|listAny|| x |
 |personSourceRelation/personNumber|string|| x |
 |personSourceRelation/title|string|| x |
-|personSourceRelation/personCountry|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personSourceRelation/personCountry|listAny|| x |
 |personSourceRelation/personCountryId|int|| x |
 |personSourceRelation/personNoMail|bool|| x |
 |personSourceRelation/rank|int|| x |
@@ -869,12 +875,11 @@ irregular query modifiers used by the Add Members dialog.
 |personTargetRelation/hasCompany|bool|| x |
 |personTargetRelation/isProjectMember|bool|| x |
 |personTargetRelation/isStakeholder|bool|| x |
-|personTargetRelation/updatedByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personTargetRelation/updatedByWorkflow|listAny|| x |
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
 |personTargetRelation/createdByForm|listAny|| x |
 |personTargetRelation/restrictionContactId|int||  |
@@ -974,12 +979,11 @@ irregular query modifiers used by the Add Members dialog.
 |workflowInstance/workflowInstanceWaitUntil|date|| x |
 |workflowInstance/workflowInstanceStepStarted|date|| x |
 |workflowInstance/workflowInstanceCurrentStepDescription| *None* ||  |
-|workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
 |workflowInstance/workflowInstanceDropoutReason|string||  |
 |workflowInstance/workflowInstanceLastCommunicationBounceInfo| *None* ||  |
@@ -1007,6 +1011,7 @@ irregular query modifiers used by the Add Members dialog.
 |workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
 |workflowInstance/emailFlow/registeredBy|associate|| x |
@@ -1078,13 +1083,12 @@ irregular query modifiers used by the Add Members dialog.
 |request/readStatus|listAny|| x |
 |request/realTimeSpentQueue|timeSpan|| x |
 |request/realTimeSpentExternally|timeSpan|| x |
-|request/realTimeSpentInternally|timeSpan|| x |
-|request/timeSpentQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/realTimeSpentInternally|timeSpan|| x |
+|request/timeSpentQueue|timeSpan|| x |
 |request/timeSpentExternally|timeSpan|| x |
 |request/timeSpentInternally|timeSpan|| x |
 |request/timeSpent|timeSpan|| x |
@@ -1183,13 +1187,12 @@ irregular query modifiers used by the Add Members dialog.
 |request/extra/x\_ticket\_date|date|| x |
 |request/extra/x\_ticket\_datetime|datetime|| x |
 |request/extra/x\_ticket\_time| *None* || x |
-|request/extra/x\_ticket\_boolean|bool|| x |
-|request/extra/x\_ticket\_timespan|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/extra/x\_ticket\_boolean|bool|| x |
+|request/extra/x\_ticket\_timespan|timeSpan|| x |
 |request/extra/x\_ticket\_short\_text|string|| x |
 |request/extra/x\_ticket\_shorttext\_list|listAny|| x |
 |request/extra/x\_ticket\_timestamp|datetime|| x |
@@ -1288,13 +1291,12 @@ irregular query modifiers used by the Add Members dialog.
 |projectMembers/NumberOfSales|int||  |
 |projectMembers/NumberOfSalesInPeriod|int||  |
 |projectMembers/NumberOfNotCompletedSales|int||  |
-|projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
-|projectMembers/LastSale|date||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
+|projectMembers/LastSale|date||  |
 |projectMembers/LastCompletedSale|date||  |
 |projectMembers/LastDoBySale|date||  |
 |projectMembers/SaintStatus3|saintStatus||  |
@@ -1341,6 +1343,7 @@ irregular query modifiers used by the Add Members dialog.
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1392,14 +1395,13 @@ irregular query modifiers used by the Add Members dialog.
 |personAppointment/associate/credentialDisplayValue| *None* || x |
 |personAppointment/associate/isActive|bool|| x |
 |personAppointment/associate/isActiveText|bool|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |personAppointment/associate/portraitThumbnail| *None* ||  |
 |personAppointment/associate/otherGroups|userGroup||  |
 |personAppointment/associate/userName|string|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |personAppointment/associate/personEmail|string|| x |
 |personAppointment/associate/locationAddress|string|| x |
 |personAppointment/associate/isLocation|bool|| x |
@@ -1417,11 +1419,12 @@ irregular query modifiers used by the Add Members dialog.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SelectionStaticContactAddMembers?$select=postAddress/formattedAddress,sale/stalledComment,appointment/contactId,appointment/who,document/icon
+GET /api/v1/archive/SelectionStaticContactAddMembers?$select=targetRelation/category,sale/updatedDate,sale/salePublish/publishedFrom,sale/associate/contactCategory,sale/associate/personEmail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

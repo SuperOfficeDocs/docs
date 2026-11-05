@@ -1,6 +1,6 @@
 ---
 title: TicketShadowDynamicSelectionV2
-description: Ticket shadow selection archive with OR-able selection groups. Each group is represented with the TicketShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Ticket shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: TicketShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "TicketShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Ticket shadow selection archive with OR-able selection groups. Each group is represented with the [TicketShadowSelectionDynamicProviderSingleCriteriaGroup](./ticketshadowdynamicselectionsinglecriteriagroup).
+Ticket shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -124,7 +122,6 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 |ownedBy/associateDbId|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/contactName|string|| x |
@@ -229,7 +226,6 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 |person/personInfo/textId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personInfo/infoText|positiveString|| x |
@@ -334,7 +330,6 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 |person/personAssociate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/userName|string|| x |
@@ -439,7 +434,6 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 |contact/postAddress/addressId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line1|string|| x |
@@ -544,7 +538,6 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 |contact/contactExtra/x\_contact\_contact|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/y\_organization/x\_name|string|| x |
@@ -649,7 +642,6 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 |sale/createdByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/amountInBaseCurrency| *None* || x |
@@ -754,7 +746,6 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 |project/projectAssociate/usergroupId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/contactFullName|string|| x |
@@ -815,11 +806,12 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowDynamicSelectionV2?$select=createdBy/ejStatus,ownedBy/contactFullName,ownedBy/locationAddress,contact/postAddress/line3,contact/contactExtra/x_contact_datetime
+GET /api/v1/archive/TicketShadowDynamicSelectionV2?$select=person/lastName,person/personUdef/SuperOffice:11,person/correspondingAssociate/personId,person/correspondingAssociate/otherGroups,person/legalBaseEmarketing
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

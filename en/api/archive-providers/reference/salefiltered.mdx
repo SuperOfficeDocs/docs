@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SaleFiltered"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleFilteredProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleFilteredProvider">SuperOffice.CRM.ArchiveLists.SaleFilteredProvider</see> inside NetServer's SODatabase assembly.
 
 Sale archive provider for the Contact/Project card
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Sale archive provider for the Contact/Project card
 |person/personRegisteredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/portraitThumbnail| *None* ||  |
@@ -229,7 +226,6 @@ Sale archive provider for the Contact/Project card
 |person/personExtra/x\_person\_appointment\_relation|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_contact\_relation|stringorPK|| x |
@@ -334,7 +330,6 @@ Sale archive provider for the Contact/Project card
 |contact/orgnr|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/stop|bool|| x |
@@ -439,7 +434,6 @@ Sale archive provider for the Contact/Project card
 |contact/contactAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isActiveText|bool|| x |
@@ -544,7 +538,6 @@ Sale archive provider for the Contact/Project card
 |associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/isLocation|bool|| x |
@@ -649,7 +642,6 @@ Sale archive provider for the Contact/Project card
 |project/LastCompletedSale|date||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/LastDoBySale|date||  |
@@ -754,7 +746,6 @@ Sale archive provider for the Contact/Project card
 |saleStakeholder/person/personAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personAddress/line3|string|| x |
@@ -859,7 +850,6 @@ Sale archive provider for the Contact/Project card
 |saleStakeholder/person/correspondingAssociate/contactName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/correspondingAssociate/contactDepartment|string|| x |
@@ -964,7 +954,6 @@ Sale archive provider for the Contact/Project card
 |saleStakeholder/contact/streetAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/streetAddress/line3|string|| x |
@@ -1069,7 +1058,6 @@ Sale archive provider for the Contact/Project card
 |saleStakeholder/contact/LastCompletedSale|date||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/LastDoBySale|date||  |
@@ -1174,7 +1162,6 @@ Sale archive provider for the Contact/Project card
 |quote/version/alternative/quoteline/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |quote/version/alternative/quoteline/registeredByFullName|associate|| x |
@@ -1191,11 +1178,12 @@ Sale archive provider for the Contact/Project card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleFiltered?$select=amountWeightedInBaseCurrency,salePublish/isPublished,person/birthDay,person/personCategoryGroup,contact/SaintStatus1
+GET /api/v1/archive/SaleFiltered?$select=getAllRows,person/personAssociateFullName,person/searchPhone/formattedNumber,person/personExtra/x_person_longtext,contact/postAddress/addressId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

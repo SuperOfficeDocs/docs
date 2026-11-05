@@ -9,12 +9,11 @@ envir: onsite, online
 
 ## "PersonActivity"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.PersonActivityArchiveProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.PersonActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.PersonActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Person card
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"chat"||
@@ -24,7 +23,6 @@ Activity archive provider for the Person card
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -128,7 +126,6 @@ Activity archive provider for the Person card
 |person/supportLanguage|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/supportAssociate|associate|| x |
@@ -233,7 +230,6 @@ Activity archive provider for the Person card
 |person/personExtra/y\_rental/x\_contact|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/y\_equipment/x\_name|string|| x |
@@ -338,7 +334,6 @@ Activity archive provider for the Person card
 |contact/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/registeredByFullName|associate|| x |
@@ -443,7 +438,6 @@ Activity archive provider for the Person card
 |contact/contactAssociate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isLocation|bool|| x |
@@ -548,7 +542,6 @@ Activity archive provider for the Person card
 |project/number|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/type|listAny|| x |
@@ -653,7 +646,6 @@ Activity archive provider for the Person card
 |documentUdef/SuperOffice:2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentUdef/SuperOffice:3|int|| x |
@@ -758,7 +750,6 @@ Activity archive provider for the Person card
 |sale/associate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/personEmail|string|| x |
@@ -818,6 +809,7 @@ Activity archive provider for the Person card
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -860,12 +852,11 @@ Activity archive provider for the Person card
 |emailFlow/hierarchyName|string|| x |
 |emailFlow/hierarchyParentId|int|| x |
 |emailFlow/hierarchyFullpathIds| *None* ||  |
-|historyRank|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|historyRank|int|| x |
 |participating|bool||  |
 |appointmentId|int|| x |
 |endDate|date|| x |
@@ -881,6 +872,7 @@ Activity archive provider for the Person card
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -916,11 +908,12 @@ Activity archive provider for the Person card
 ## Sample
 
 ```http!
-GET /api/v1/archive/PersonActivity?$select=person/correspondingAssociate/contactId,contact/contactDeleted,visibleFor,sale/stage,sale/associate/ejStatus
+GET /api/v1/archive/PersonActivity?$select=contact/phone/formattedNumber,contact/email/emailLastSent,contact/postAddress/line3,contact/streetAddress/city,contact/contactAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

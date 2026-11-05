@@ -8,11 +8,15 @@ envir: online
 ---
 
 ## "importfields" MDO List
-
 MDO provider for column headers used in import
 
-Implemented by the ImportFieldsProvider class.
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.ImportFieldsProvider">ImportFieldsProvider</see> class.
 The name of the MDO list is 'importfields'.
+
+
+
 
 ## Sample Request
 
@@ -25,7 +29,6 @@ Accept-Language: *
 ```
 
 ## Sample Code
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("importfields", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -59,6 +62,7 @@ foreach (var item in listProvider.RootItems) {
 |5|: |||
 |6|: ||multiple|
 |7|: ||multiple|
+
 
 ## Related MDO Lists
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SaleGuideAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider">SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider</see> inside NetServer's SODatabase assembly.
 
 Specific provider for Sale Guide Items of type Appointment
 
@@ -17,14 +17,12 @@ This class provides the needed overrides and concrete implementations needed by 
 to drive the sentry calculations, as well as the specialization with the correct root extender
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"suggestedAppointment"||
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -79,6 +77,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/rawType|int|| x |
 |appointmentInstance/rawStatus|int|| x |
 |appointmentInstance/cautionWarning|listAny|| x |
+|appointmentInstance/ownedExternally|listAny|| x |
 |appointmentInstance/visibleInDiary|bool|| x |
 |appointmentInstance/endTime| *None* ||  |
 |appointmentInstance/suggestedAppointmentId|int|| x |
@@ -125,12 +124,11 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/activeErpLinks|bool|| x |
 |appointmentInstance/contact/numEmployees|int|| x |
 |appointmentInstance/contact/yearFounded|int|| x |
-|appointmentInstance/contact/revenueYear|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/contact/revenueYear|int|| x |
 |appointmentInstance/contact/revenueBasecurrency|decimal|| x |
 |appointmentInstance/contact/sharecapitalBasecurrency|decimal|| x |
 |appointmentInstance/contact/sourcedFrom|string|| x |
@@ -230,12 +228,11 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/contactUdef/SuperOffice:4|date|| x |
 |appointmentInstance/contact/contactUdef/SuperOffice:5|unlimitedDate|| x |
 |appointmentInstance/contact/contactUdef/SuperOffice:6|bool|| x |
-|appointmentInstance/contact/contactUdef/SuperOffice:7|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/contact/contactUdef/SuperOffice:7|listAny|| x |
 |appointmentInstance/contact/contactUdef/SuperOffice:8|decimal|| x |
 |appointmentInstance/contact/contactUdef/SuperOffice:9|string|| x |
 |appointmentInstance/contact/contactUdef/SuperOffice:10|string|| x |
@@ -335,12 +332,11 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/personCategory|listAny|| x |
 |appointmentInstance/person/personCategoryGroup|listAny|| x |
 |appointmentInstance/person/personCategoryRank|int|| x |
-|appointmentInstance/person/personBusiness|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/person/personBusiness|listAny|| x |
 |appointmentInstance/person/leadStatus|listAny|| x |
 |appointmentInstance/person/leadstatusRank|int|| x |
 |appointmentInstance/person/personDeletedDate|datetime||  |
@@ -440,12 +436,11 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/personAssociate/middleName|string|| x |
 |appointmentInstance/person/personAssociate/fullName|string|| x |
 |appointmentInstance/person/personAssociate/contactId|int||  |
-|appointmentInstance/person/personAssociate/personId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/person/personAssociate/personId|int||  |
 |appointmentInstance/person/personAssociate/mrMrs|string|| x |
 |appointmentInstance/person/personAssociate/title|string|| x |
 |appointmentInstance/person/personAssociate/associateDbId|associate|| x |
@@ -545,12 +540,11 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/project/hasGuide|bool|| x |
 |appointmentInstance/project/nextMilestone|date|| x |
 |appointmentInstance/project/endDate|date|| x |
-|appointmentInstance/project/imageThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/project/imageThumbnail| *None* ||  |
 |appointmentInstance/project/activeErpLinks|bool|| x |
 |appointmentInstance/project/eventId|int|| x |
 |appointmentInstance/project/startDate|date|| x |
@@ -650,12 +644,11 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/sale/updatedDate|date|| x |
 |appointmentInstance/sale/registeredBy|associate|| x |
 |appointmentInstance/sale/registeredByFullName|associate|| x |
-|appointmentInstance/sale/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/sale/registeredDate|date|| x |
 |appointmentInstance/sale/currencyId|int|| x |
 |appointmentInstance/sale/currency|listAny|| x |
 |appointmentInstance/sale/credited|listAny|| x |
@@ -755,12 +748,11 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/associate/usergroup|userGroup|| x |
 |appointmentInstance/associate/usergroupId|int|| x |
 |appointmentInstance/associate/contactFullName|string|| x |
-|appointmentInstance/associate/contactCategory|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/associate/contactCategory|listAny|| x |
 |appointmentInstance/associate/role|listAny|| x |
 |appointmentInstance/associate/assocName|associate|| x |
 |appointmentInstance/associate/assocTooltip|string||  |
@@ -793,11 +785,12 @@ to drive the sentry calculations, as well as the specialization with the correct
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleGuideAppointment?$select=appointmentInstance/priority,appointmentInstance/contact/nameDepartment,appointmentInstance/sale/associate/isActiveText,appointmentInstance/associate/ejStatus
+GET /api/v1/archive/SaleGuideAppointment?$select=instanceItemId,appointmentInstance/contact/contactUdef/SuperOffice:11,appointmentInstance/contact/NumberOfNotCompletedSalesInPeriod,appointmentInstance/contact/saintIntention,appointmentInstance/person/personNoMail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

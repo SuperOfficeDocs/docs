@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "QuoteLineSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection QuoteLine archive.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ This is the archive Provider for the Selection QuoteLine archive.
 |alternative/version/quote/poNumber|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/orderComment|string|| x |
@@ -229,7 +226,6 @@ This is the archive Provider for the Selection QuoteLine archive.
 |alternative/version/quote/sale/person/personLinkedinUrl|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/ticketPriority|listAny|| x |
@@ -334,7 +330,6 @@ This is the archive Provider for the Selection QuoteLine archive.
 |alternative/version/quote/sale/person/personExtra/y\_rental/x\_end|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personExtra/y\_rental/x\_amount|int|| x |
@@ -439,7 +434,6 @@ This is the archive Provider for the Selection QuoteLine archive.
 |alternative/version/quote/sale/contact/updatedByFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/updatedDate|date|| x |
@@ -544,7 +538,6 @@ This is the archive Provider for the Selection QuoteLine archive.
 |alternative/version/quote/sale/contact/contactAssociate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactAssociate/personEmail|string|| x |
@@ -649,7 +642,6 @@ This is the archive Provider for the Selection QuoteLine archive.
 |alternative/version/quote/sale/saleUdef/SuperOffice:3|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/saleUdef/SuperOffice:4|date|| x |
@@ -754,7 +746,6 @@ This is the archive Provider for the Selection QuoteLine archive.
 |alternative/version/quote/sale/project/saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/saintActivityType|listAny||  |
@@ -799,11 +790,12 @@ This is the archive Provider for the Selection QuoteLine archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineSelection?$select=getNoRows,alternative/version/quote/sale/who,alternative/version/quote/sale/currencyId,alternative/version/quote/sale/heading,alternative/version/quote/sale/associate/simultaneousEjUser
+GET /api/v1/archive/QuoteLineSelection?$select=personId,alternative/version/quote/sale/person/correspondingAssociate/usergroup,alternative/version/quote/sale/contact/email/emailBounceCount,alternative/version/quote/sale/associate/isActive,alternative/version/quote/sale/project/projectAssociate/role
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

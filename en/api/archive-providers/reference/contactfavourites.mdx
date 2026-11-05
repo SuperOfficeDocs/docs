@@ -1,6 +1,6 @@
 ---
 title: contactfavourites
-description:
+description: 
 keywords: contactfavourites archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "contactfavourites"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ContactFavouritesProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ContactFavouritesProvider">SuperOffice.CRM.ArchiveLists.ContactFavouritesProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Cont
 |contactAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/fullName|string|| x |
@@ -220,11 +217,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Cont
 ## Sample
 
 ```http!
-GET /api/v1/archive/contactfavourites?$select=postAddress/city,url/URLDescription
+GET /api/v1/archive/contactfavourites?$select=getAllRows,postAddress/city,url/URLDescription
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

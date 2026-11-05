@@ -8,11 +8,15 @@ envir: online
 ---
 
 ## "visibleintask" MDO List
-
 Visible in list for tasks: places where task button can appear.
 
-Implemented by the VisibleInTaskProvider class.
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.VisibleInTaskProvider">VisibleInTaskProvider</see> class.
 The name of the MDO list is 'visibleintask'.
+
+
+
 
 ## Sample Request
 
@@ -25,7 +29,6 @@ Accept-Language: *
 ```
 
 ## Sample Code
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("visibleintask", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -59,6 +62,7 @@ foreach (var item in listProvider.RootItems) {
 |43||||
 |53||||
 |54||||
+
 
 ## Related MDO Lists
 

@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "QuoteLineSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/poNumber|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/orderComment|string|| x |
@@ -229,7 +226,6 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/person/personLinkedinUrl|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/ticketPriority|listAny|| x |
@@ -334,7 +330,6 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/person/personExtra/y\_rental/x\_end|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personExtra/y\_rental/x\_amount|int|| x |
@@ -439,7 +434,6 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/contact/updatedByFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/updatedDate|date|| x |
@@ -544,7 +538,6 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/contact/contactAssociate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactAssociate/personEmail|string|| x |
@@ -649,7 +642,6 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/saleUdef/SuperOffice:3|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/saleUdef/SuperOffice:4|date|| x |
@@ -754,7 +746,6 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/project/saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/saintActivityType|listAny||  |
@@ -799,11 +790,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineSelectionCombined?$select=earningAmount,alternative/version/quote/sale/amountInBaseCurrency,alternative/version/quote/sale/person/supportAssociate,alternative/version/quote/sale/person/correspondingAssociate/ejUserId,alternative/version/quote/sale/person/correspondingAssociate/locationAddress
+GET /api/v1/archive/QuoteLineSelectionCombined?$select=vatAmount,alternative/version/quote/sale/stage,alternative/version/quote/sale/person/personCountry,alternative/version/quote/sale/person/personAssociate/fullName,alternative/version/quote/sale/contact/contactExtra/x_contact_contact_relation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

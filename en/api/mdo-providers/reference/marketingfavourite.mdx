@@ -1,0 +1,57 @@
+---
+title: marketingfavourite
+keywords: mdoprovider mdo provider marketingfavourite
+description: The Marketing landing page's favourites, registered as "MarketingFavourite" to match LandingpageProvider's "{page}Favourite" convention - favourite mailings and forms, and the favourite selections of both. Flows cannot be favourites yet; add them here (the name comes from their workflow) once they can.
+generated: true
+content_type: reference
+envir: online
+---
+
+## "marketingfavourite" MDO List
+The Marketing landing page's favourites, registered as "MarketingFavourite" to match LandingpageProvider's
+"{page}Favourite" convention: favourite mailings and forms, and the favourite selections of both.
+Flows cannot be favourites yet; add them here (the name comes from their workflow) once they can.
+
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.MarketingFavouriteListProvider">MarketingFavouriteListProvider</see> class.
+The name of the MDO list is 'marketingfavourite'.
+
+
+
+
+## Sample Request
+
+```http!
+GET /api/v1/MDOList/marketingfavourite
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: *
+
+```
+
+## Sample Code
+```cs
+var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("marketingfavourite", forceFlatList: true);
+foreach (var item in listProvider.RootItems) {
+    Console.WriteLine("{0} {1} {2} {3}", 
+         item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
+}
+```
+
+## Sample Output
+
+|Id   | Name  |StyleHint|ExtraInfo |
+| --- | ----- | ------- | -------- |
+| 2 | Example | | |
+
+
+## Related MDO Lists
+
+* "marketingfavouriteheadings"
+* "marketingfavouriteheadingswithallitem"
+* "marketingfavouriteheadingswithallitemwithnoselection"
+* "marketingfavouriteheadingswithnoselection"
+* "marketingfavouritewithallitem"
+* "marketingfavouritewithallitemwithnoselection"
+* "marketingfavouritewithnoselection"

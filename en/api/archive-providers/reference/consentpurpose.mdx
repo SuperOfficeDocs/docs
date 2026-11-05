@@ -9,20 +9,18 @@ envir: onsite, online
 
 ## "ConsentPurpose"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ConsentPurposeProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ConsentPurposeProvider">SuperOffice.CRM.ArchiveLists.ConsentPurposeProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Consent Purpose Provider for GDPR Admin
 and for GDPR relations to person, if you join and restrict on person
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"consentPurpose"||
 |"deletedConsentPurpose"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -126,7 +124,6 @@ and for GDPR relations to person, if you join and restrict on person
 |consentPerson/person/personUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |consentPerson/person/personUrl/URLDescription|string|| x |
@@ -191,11 +188,12 @@ and for GDPR relations to person, if you join and restrict on person
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConsentPurpose?$select=consentPerson/person/personHasInterests,consentPerson/person/mrMrs,consentPerson/person/personRegisteredByFullName
+GET /api/v1/archive/ConsentPurpose?$select=consentPerson/person/personRegisteredByFullName,consentPerson/person/personDirectPhone/formattedNumber
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

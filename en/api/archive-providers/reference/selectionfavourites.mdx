@@ -1,6 +1,6 @@
 ---
 title: selectionfavourites
-description:
+description: 
 keywords: selectionfavourites archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "selectionfavourites"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionFavouritesProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionFavouritesProvider">SuperOffice.CRM.ArchiveLists.SelectionFavouritesProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"selection"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -86,11 +84,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/selectionfavourites?$select=lastMembershipChangeBy,selectionAssociate/middleName
+GET /api/v1/archive/selectionfavourites?$select=text,lastMembershipChangeBy,selectionAssociate/middleName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,28 +9,29 @@ envir: onsite, online
 
 ## "FreetextPerson"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FreetextPersonResultProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextPersonResultProvider">SuperOffice.CRM.ArchiveLists.FreetextPersonResultProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Person entity.
 
+
 Use the 'searchwords' restriction with one or more words to specify what to search for. The operator is ignored,
 the freetext search will apply the 'begins' operator to each word and 'AND' between them.
+
 
 It is possible to combine freetext search words with other restrictions and criteria native to the entity and
 its standard subproviders. Note however that this is not the same search as provided by the 'Find' providers, since
 they apply various special rules not present here.
 
+
 Freetext search will limit the number of hits to the first 1000. This clipping is applied before any other criteria,
 as well as before any ORDER BY, are applied.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"person"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -134,7 +135,6 @@ as well as before any ORDER BY, are applied.
 |restrictionAddress/line1|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/line2|string|| x |
@@ -239,7 +239,6 @@ as well as before any ORDER BY, are applied.
 |personSourceRelation/updatedByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/whenUpdatedByWorkflow|datetime|| x |
@@ -344,7 +343,6 @@ as well as before any ORDER BY, are applied.
 |personAssociate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/isLocation|bool|| x |
@@ -449,7 +447,6 @@ as well as before any ORDER BY, are applied.
 |personContact/restrictionPostalAddress/line1|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/restrictionPostalAddress/line2|string|| x |
@@ -554,7 +551,6 @@ as well as before any ORDER BY, are applied.
 |personContact/contactSupportAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportAssociate/locationAddress|string|| x |
@@ -659,7 +655,6 @@ as well as before any ORDER BY, are applied.
 |personContact/contactSupportPerson/hasEmarketingConsent|bool||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportPerson/withdrawnEmarketingConsent|bool||  |
@@ -764,7 +759,6 @@ as well as before any ORDER BY, are applied.
 |request/readByOwner|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/firstReadByOwner|datetime|| x |
@@ -869,7 +863,6 @@ as well as before any ORDER BY, are applied.
 |request/ownedBy/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/ticketStatus/ticketStatusId|int|| x |
@@ -974,7 +967,6 @@ as well as before any ORDER BY, are applied.
 |projectMembers/projectUdef/SuperOffice:8|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/projectUdef/SuperOffice:9|int|| x |
@@ -1037,6 +1029,7 @@ as well as before any ORDER BY, are applied.
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1076,12 +1069,11 @@ as well as before any ORDER BY, are applied.
 |personAppointment/associate/usergroupId|int|| x |
 |personAppointment/associate/contactFullName|string|| x |
 |personAppointment/associate/contactCategory|listAny|| x |
-|personAppointment/associate/role|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/role|listAny|| x |
 |personAppointment/associate/assocName|associate|| x |
 |personAppointment/associate/assocTooltip|string||  |
 |personAppointment/associate/assocType|listAny|| x |
@@ -1113,11 +1105,12 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextPerson?$select=personTargetRelation/personAssociateId,personContact/url/URLAddress,request/createdBy/lastName,request/createdBy/userName
+GET /api/v1/archive/FreetextPerson?$select=lastName,birthMonth,personTargetRelation/supportAssociate,personTargetRelation/restrictionContactId,personContact/forceCompany
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "QuoteLineShadowDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/time| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/type|listAny|| x |
@@ -229,7 +226,6 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/person/personCategory|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personCategoryGroup|listAny|| x |
@@ -334,7 +330,6 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/person/personAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personAssociate/fullName|string|| x |
@@ -439,7 +434,6 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/contact/phone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/activeErpLinks|bool|| x |
@@ -544,7 +538,6 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:3|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:4|date|| x |
@@ -649,7 +642,6 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/project/projectId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/name|stringorPK|| x |
@@ -754,7 +746,6 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/project/project/infoText|positiveString|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/quoteConnectionId|int|| x |
@@ -792,11 +783,12 @@ Shadow contact provider for the dynamic quoteline provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowDynamicSelectionSingleCriteriaGroup?$select=alternative/erpDiscountPercent,alternative/version/quote/sale/person/personUpdatedByFullName,alternative/version/quote/sale/person/personAddress/state
+GET /api/v1/archive/QuoteLineShadowDynamicSelectionSingleCriteriaGroup?$select=alternative/version/approvalRegisteredBy,alternative/version/quote/sale/contact/sharecapitalBasecurrency,alternative/version/quote/sale/contact/postAddress/zip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

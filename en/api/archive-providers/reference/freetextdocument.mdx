@@ -9,28 +9,29 @@ envir: onsite, online
 
 ## "FreetextDocument"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FreetextDocumentResultProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextDocumentResultProvider">SuperOffice.CRM.ArchiveLists.FreetextDocumentResultProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Document entity (any kind of document).
 
+
 Use the 'searchwords' restriction with one or more words to specify what to search for. The operator is ignored,
 the freetext search will apply the 'begins' operator to each word and 'AND' between them.
+
 
 It is possible to combine freetext search words with other restrictions and criteria native to the entity and
 its standard subproviders. Note however that this is not the same search as provided by the 'Find' providers, since
 they apply various special rules not present here.
 
+
 Freetext search will limit the number of hits to the first 1000. This clipping is applied before any other criteria,
 as well as before any ORDER BY, are applied.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -134,7 +135,6 @@ as well as before any ORDER BY, are applied.
 |person/personDirectPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personDirectPhone/description|string|| x |
@@ -239,7 +239,6 @@ as well as before any ORDER BY, are applied.
 |person/personAssociate/assocName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocTooltip|string||  |
@@ -344,7 +343,6 @@ as well as before any ORDER BY, are applied.
 |contact/contactFax/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactFax/description|string|| x |
@@ -449,7 +447,6 @@ as well as before any ORDER BY, are applied.
 |contact/contactExtra/x\_contact\_float|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_longtext|string|| x |
@@ -554,7 +551,6 @@ as well as before any ORDER BY, are applied.
 |project/projectAssociate/ejDisplayName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/ejStatus|int||  |
@@ -659,7 +655,6 @@ as well as before any ORDER BY, are applied.
 |sale/who| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/updatedBy|associate|| x |
@@ -759,11 +754,12 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextDocument?$select=isReport,documentPublish/publishedFrom,person/personRegisteredBy,contact/contactAssociate/usergroup,contact/contactAssociate/isLocation
+GET /api/v1/archive/FreetextDocument?$select=completed,person/personExtra/x_person_date,person/personExtra/y_rental/x_end,person/personExtra/y_rental/y_equipment/x_name,contact/registeredByFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

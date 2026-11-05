@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SubPersonContactDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.SubPersonContactSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SubPersonContactSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.SubPersonContactSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Person + Contact selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"person"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |updatedDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |registeredBy|associate|| x |
@@ -229,7 +226,6 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personSourceRelation/kanaFirstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/kanaLastName|string|| x |
@@ -334,7 +330,6 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personAssociate/fullName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/contactId|int||  |
@@ -439,7 +434,6 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |restrictionAddress/formattedMultiLineAddress| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |url/URLAddress|string|| x |
@@ -544,7 +538,6 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |workflowInstance/updatedBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |workflowInstance/updatedDate|date|| x |
@@ -568,6 +561,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
 |workflowInstance/emailFlow/registeredBy|associate|| x |
@@ -646,12 +640,11 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |request/timeSpent|timeSpan|| x |
 |request/timeToReply|timeSpan|| x |
 |request/timeToClose|timeSpan|| x |
-|request/realTimeToReply|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/realTimeToReply|timeSpan|| x |
 |request/realTimeToClose|timeSpan|| x |
 |request/repliedAt|datetime|| x |
 |request/closedAt|datetime|| x |
@@ -751,12 +744,11 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |request/extra/x\_ticket\_timestamp|datetime|| x |
 |request/extra/x\_ticket\_project\_relation|stringorPK|| x |
 |request/extra/x\_ticket\_faq|stringorPK|| x |
-|request/extra/x\_ticket\_category\_relation|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/extra/x\_ticket\_category\_relation|listAny|| x |
 |request/extra/y\_equipment/x\_name|string|| x |
 |request/extra/y\_car/id|int|| x |
 |projectMembers/completed|bool|| x |
@@ -856,12 +848,11 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |projectMembers/SaintStatus3|saintStatus||  |
 |projectMembers/saintSaleStatus|listAny||  |
 |projectMembers/saintAmountClass|listAny||  |
-|projectMembers/saintActivityType|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMembers/saintActivityType|listAny||  |
 |projectMembers/saintDirection|listAny||  |
 |projectMembers/saintIntention|listAny||  |
 |projectMembers/saintTicketStatus|listAny||  |
@@ -902,6 +893,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -960,13 +952,12 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personAppointment/associate/locationAddress|string|| x |
 |personAppointment/associate/isLocation|bool|| x |
 |personAppointment/appointment/text|positiveString|| x |
-|personAppointment/appointment/description|positiveString|| x |
-|personAppointment/appointment/title|positiveString|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/appointment/description|positiveString|| x |
+|personAppointment/appointment/title|positiveString|| x |
 |personAppointment/appointment/titleHtml| *None* || x |
 |personAppointment/appointment/agenda|positiveString|| x |
 |personAppointment/appointment/agendaHtml| *None* || x |
@@ -1065,13 +1056,12 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |sale/associate/credentialDisplayValue| *None* || x |
 |sale/associate/isActive|bool|| x |
 |sale/associate/isActiveText|bool|| x |
-|sale/associate/portraitThumbnail| *None* ||  |
-|sale/associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/associate/portraitThumbnail| *None* ||  |
+|sale/associate/otherGroups|userGroup||  |
 |sale/associate/userName|string|| x |
 |sale/associate/personEmail|string|| x |
 |sale/associate/locationAddress|string|| x |
@@ -1170,13 +1160,12 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |sale/quote/version/alternative/quoteline/registeredByFullName|associate|| x |
 |sale/quote/version/alternative/quoteline/registeredDate|date|| x |
 |sale/quote/version/alternative/quoteline/productCategoryKey|listExternal|| x |
-|sale/quote/version/alternative/quoteline/productFamilyKey|listExternal|| x |
-|sale/quote/version/alternative/quoteline/productTypeKey|listExternal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/quote/version/alternative/quoteline/productFamilyKey|listExternal|| x |
+|sale/quote/version/alternative/quoteline/productTypeKey|listExternal|| x |
 |sale/quote/version/alternative/quoteline/status|listAny|| x |
 |sale/quote/version/alternative/quoteline/subTotal|decimal|| x |
 |sale/quote/version/alternative/quoteline/vatAmount|decimal|| x |
@@ -1186,11 +1175,12 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SubPersonContactDynamicSelectionSingleCriteriaGroup?$select=middleName,personNumber,updatedByWorkflow,revenueBasecurrency,personTargetRelation/leadstatusRank
+GET /api/v1/archive/SubPersonContactDynamicSelectionSingleCriteriaGroup?$select=personCategoryGroup,category,categoryGroup,personExtra/x_person_shorttext_list,personAssociate/usergroupId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+
