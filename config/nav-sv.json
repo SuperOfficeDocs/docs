@@ -562,6 +562,7 @@
           "sv/request/learn/transfer",
           "sv/request/learn/forward",
           "sv/request/learn/reply",
+          "sv/request/learn/mentions",
           "sv/request/learn/request-relations",
           "sv/request/learn/tags",
           "sv/request/learn/flag-message",

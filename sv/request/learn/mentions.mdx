@@ -1,0 +1,112 @@
+---
+title: Omnämn en medarbetare i ett ärende
+sidebarTitle: Omnämnanden
+description: Omnämn en medarbetare med @ i en intern kommentar på ett ärende och följ upp de ärenden där du är omnämnd.
+keywords: ['tagga', 'tagga en kollega', 'snabel-a', 'meddela en kollega', 'fråga en kollega']
+author: digitaldiina
+date: 11.05.2026
+so_version: 12.5
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - Lägga till en kommentar: /sv/request/learn/reply#comment
+  - /sv/request/learn/edit-message
+  - /sv/learn/basics/notifications
+  - Ärendeskärmen: /sv/request/learn/index#request-screen
+language: sv
+---
+
+Omnämn en medarbetare i en intern kommentar på ett ärende när du behöver hjälp eller vill att medarbetaren ska känna till något. Medarbetaren hittar ärendet på fliken **Omnämnanden** på [ärendeskärmen][1], och i aviseringspanelen om aviseringar för omnämnanden är aktiverade.
+
+<Note>
+Du kan bara omnämna medarbetare i kommentarer. Svar och vidarebefordringar kan inte innehålla omnämnanden, inte ens när de är interna.
+</Note>
+
+## Omnämn en medarbetare i en kommentar {#mention}
+
+1. [Öppna ärendet][2].
+
+1. [Lägg till en kommentar][3]. Du kan också lägga till en intern kommentar från [förhandsgranskningen av ärendet][4].
+
+1. Skriv **@**, eller klicka på <i class="ph ph-at" aria-label="Omnämn"></i> i verktygsfältet under kommentaren. En lista med medarbetare öppnas. Skriv de första bokstäverna i ett namn för att begränsa listan.
+
+    ![Listan med medarbetare som öppnas när du skriver snabel-a i en kommentar -screenshot][img1]
+
+1. Klicka på den medarbetare du vill omnämna. Namnet infogas som ett markerat **@namn**.
+
+    Om du vill använda tangentbordet i stället:
+    * **Uppil** och **Nedpil:** Flytta i listan.
+    * **Enter** eller **Tab:** Infogar den markerade medarbetaren.
+    * **Esc:** Stänger listan utan att infoga någon.
+
+    ![En kommentar med ett markerat omnämnande -screenshot][img2]
+
+1. Om du vill omnämna fler medarbetare i samma kommentar skriver du **@** igen och väljer nästa medarbetare.
+
+1. Klicka på **Spara**.
+
+De medarbetare du omnämner ser omnämnandet nästa gång deras flik **Omnämnanden** eller aviseringar uppdateras.
+
+* Om du vill ta bort ett omnämnande innan du sparar placerar du markören direkt efter namnet och trycker på **Backsteg**, eller direkt före namnet och trycker på **Delete**. Hela namnet tas bort.
+* När du svarar med ett tidigare meddelande citerat ignoreras omnämnandena i den citerade texten, så att samma medarbetare inte omnämns igen.
+
+## Ändra omnämnandena i en kommentar {#edit}
+
+Om den [globala inställningen][7] **Tillåt ändring av meddelanden** är aktiverad kan du [redigera texten i en kommentar][5] och lägga till omnämnanden på samma sätt. När du sparar får varje medarbetare du lägger till ett nytt omnämnande, och befintliga omnämnanden visar den uppdaterade texten.
+
+* Om du tar bort ett omnämnande från en kommentar behåller medarbetaren omnämnandet på sin flik **Omnämnanden**.
+* Omnämnanden tas bort först när du tar bort hela kommentaren.
+
+## Se var du är omnämnd {#mentions-tab}
+
+1. På ärendeskärmen klickar du på **Omnämnanden** (<i class="ph ph-at" aria-hidden="true"></i>) i vänsterpanelen. När vänsterpanelen är dold klickar du på <i class="ph ph-at" aria-label="Omnämnanden"></i>.
+
+    Ett märke bredvid **Omnämnanden** visar hur många olästa omnämnanden du har.
+
+1. Hitta det omnämnande du vill följa upp. Fliken **Omnämnanden** listar alla omnämnanden, de senaste först. Varje rad visar vem som omnämnde dig, ärendets ID och titel, kommentarens första mening och datumet. Olästa omnämnanden är markerade.
+    * Om du bara vill se de omnämnanden du ännu inte har öppnat väljer du **Unread** i filtret högst upp i listan. Välj **All mentions** för att se alla igen.
+
+    ![Fliken Omnämnanden med olästa omnämnanden och filtret All mentions -screenshot][img3]
+
+1. Klicka på ett omnämnande. Ärendet öppnas på en flik, rullat till den kommentar där du omnämndes, och omnämnandet markeras som läst.
+
+Du ser bara omnämnanden i ärenden som du har åtkomst till. Om inga omnämnanden matchar filtret visar fliken **All caught up**.
+
+## Nåla fast ärendet eller ta bort ett omnämnande {#pin-delete}
+
+1. Klicka på <i class="ph ph-dots-three" aria-label="Fler alternativ"></i> på omnämnandet på fliken **Omnämnanden**.
+
+    ![Menyn för ett omnämnande, med Pin request och Ta bort -screenshot][img4]
+
+1. Välj ett av följande:
+    * **Nåla fast ärende:** Nålar fast ärendet i gruppen **Fastnålad** i vänsterpanelen. Raden visar <i class="ph ph-push-pin" aria-label="Fastnålad"></i>. Välj **Unpin request** för att ta bort fastnålningen.
+    * **Ta bort:** Tar bort omnämnandet från din flik **Omnämnanden**. Kommentaren och ärendet ändras inte.
+
+## Få en avisering när du är omnämnd {#notification}
+
+När en medarbetare omnämner dig visas en avisering i [aviseringspanelen][6] (<i class="ph ph-bell" aria-label="Aviseringar"></i>).
+
+![En avisering om ett omnämnande i aviseringspanelen -screenshot][img5]
+
+* Klicka på ärendelänken i aviseringen för att öppna ärendet. Ärendet öppnas överst, inte vid kommentaren. Om du vill gå direkt till kommentaren öppnar du omnämnandet från fliken **Omnämnanden**.
+* Klicka på **Jag förstår** för att ta bort aviseringen.
+
+Båda markerar omnämnandet som läst.
+
+Om du vill sluta få aviseringar om omnämnanden klickar du på <i class="ph ph-gear" aria-label="Kugghjul"></i> i aviseringspanelen och avmarkerar **Visa aviseringar för omnämnanden**. Dina omnämnanden finns kvar på fliken **Omnämnanden**.
+
+[1]: ./index#request-screen
+[2]: ./index#open
+[3]: ./reply#comment
+[4]: ./reply#quick-reply
+[5]: ./edit-message
+[6]: /sv/learn/basics/notifications
+[7]: /sv/admin/preferences/service-settings
+[img1]: /media/loc/en/request/mentions-user-list.png
+[img2]: /media/loc/en/request/mentions-comment.png
+[img3]: /media/loc/en/request/mentions-tab.png
+[img4]: /media/loc/en/request/mentions-row-menu.png
+[img5]: /media/loc/en/request/mentions-notification.png
