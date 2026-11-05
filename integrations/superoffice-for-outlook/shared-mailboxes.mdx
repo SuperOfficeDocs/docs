@@ -24,6 +24,9 @@ language: en
 userflow_index: true
 ---
 
+import StepContactOrCompanyMatch from "./snippets/step-contact-or-company-match.mdx";
+import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
+
 If you have access to a shared mailbox in Outlook, you can use SuperOffice for Outlook to take the same actions from that mailbox as you would from your personal mailbox.
 
 <Note>
@@ -38,11 +41,15 @@ The shared mailbox must already be available to you in Outlook. Access to shared
 
 1. [Open SuperOffice for Outlook][1] (if not already [pinned][2]).
 
-1. SuperOffice matches the sender to a contact. If the email address matches multiple contacts, select the correct one. The **Contact or Company** field fills in automatically.
+1. SuperOffice matches the sender to a contact.
+
+    <StepContactOrCompanyMatch />
 
 1. Choose Save to SuperOffice in the SuperOffice sidebar.
 
-1. Make any necessary changes to the fields.
+1. Make any necessary changes to the fields. To link the email to a different contact or company, use **Contact or Company**.
+
+    <StepFindContactOrCompany />
 
 1. If you do not want to archive the attachments, select **Do not archive attachments**.
 
