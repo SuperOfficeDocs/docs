@@ -27,7 +27,7 @@ Du kan endre egenskapene til en melding i en sak hvis du eier saken eller har re
 1. Klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgave-knappen"></i> og velg **Endre**.
 
 1. Her har du følgende alternativer:
-    * **Meldingstekst:** Vises bare når **Tillat endring av meldinger** er slått på. I en kommentar kan du [omtale medarbeidere][3].
+    * **Meldingstekst:** Vises bare når **Tillat endring av meldinger** er slått på. I en kommentar kan du [nevne medarbeidere][3].
     * **Forfatter:** Viser navnet på personen som opprettet meldingen. Vises bare hvis du har administrasjonsrettigheter for Service.
     * **Medgått tid:** Viser hvor mye tid som er brukt på denne meldingen.
     * **Tilgangsnivå:** Tilgangsnivået for denne meldingen. Du kan velge mellom **Eksternt** og **Internt**.
