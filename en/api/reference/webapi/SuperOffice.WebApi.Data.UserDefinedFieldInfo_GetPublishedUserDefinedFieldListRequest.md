@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_GetPublishedUserDefinedFieldListRequest"></a> Class UserDefinedFieldInfo\_GetPublishedUserDefinedFieldListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_GetPublishedUserDefinedFieldListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_GetPublishedUserDefinedFieldListRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_GetPublishedUserDefinedFieldListRequest.md)
+[UserDefinedFieldInfo\_GetPublishedUserDefinedFieldListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_GetPublishedUserDefinedFieldListRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public UDefType OwnerType { get; set; }
 
 #### Property Value
 
- [UDefType](SuperOffice.WebApi.Data.UDefType.md)
+ [UDefType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefType)
 

@@ -1,6 +1,6 @@
 ---
 title: RelatedTickets
-description: 
+description:
 keywords: RelatedTickets archive provider
 generated: true
 content_type: reference
@@ -9,15 +9,17 @@ envir: onsite, online
 
 ## "RelatedTickets"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider">SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 |"ticketdisplayclosed"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -121,6 +123,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |ownedBy/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/usergroup|userGroup|| x |
@@ -225,6 +228,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailAddress|string|| x |
@@ -329,6 +333,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/locationAddress|string|| x |
@@ -433,6 +438,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |contact/postAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line3|string|| x |
@@ -537,6 +543,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |contact/NumberOfActivities|int||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/NumberOfActivitiesInPeriod|int||  |
@@ -641,6 +648,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |sale/amountWeightedInBaseCurrency| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/daysInStage|int|| x |
@@ -745,6 +753,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |project/projectAssociate/contactCategory|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/role|listAny|| x |
@@ -813,5 +822,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

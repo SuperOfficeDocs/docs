@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_IImportAgent"></a> Interface IImportAgent
+# Interface IImportAgent {#SuperOffice_WebApi_Agents_IImportAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 This agent can be used to import data into the system
 
@@ -11,12 +11,12 @@ public interface IImportAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_CreateDefaultImportLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultImportLineAsync\(int, RequestOptions\)
+### CreateDefaultImportLineAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_CreateDefaultImportLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Create a new empty import row with x count of values
 
@@ -30,17 +30,17 @@ Task<ImportLine> CreateDefaultImportLineAsync(int countColumns, RequestOptions r
 
 The count of values that will can be filled out
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\&gt;
 
 A new ImportLine
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_CreateErpImportDataAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> CreateErpImportDataAsync\(ArchiveRestrictionInfo\[\], string\[\], int, ErpActorType, RequestOptions\)
+### CreateErpImportDataAsync\(ArchiveRestrictionInfo\[\], string\[\], int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_CreateErpImportDataAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Populates the ImportLines and columnDefs basedfrom erp system
 
@@ -50,7 +50,7 @@ Task<ImportErpData> CreateErpImportDataAsync(ArchiveRestrictionInfo[] restrictio
 
 #### Parameters
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions.
 
@@ -62,21 +62,21 @@ Columns.
 
 Connection id for Erp system
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 Erp Actor type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ImportErpData](SuperOffice.WebApi.Data.ImportErpData.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportErpData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportErpData)\&gt;
 
 The ImportLines and ColumnDefs
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_PreviewImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> PreviewImportAsync\(ImportLine\[\], string\[\], string, string, RequestOptions\)
+### PreviewImportAsync\(ImportLine\[\], string\[\], string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_PreviewImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Preview the import
 
@@ -86,7 +86,7 @@ Task<ImportLine[]> PreviewImportAsync(ImportLine[] importLines, string[] columnD
 
 #### Parameters
 
-`importLines` [ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]
+`importLines` [ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]
 
 The rows that will be manipulated and according to Import rules
 
@@ -102,17 +102,17 @@ The current culture used in the import. Used to match language specific strings
 
 Optional context for the import. (sourcedFrom=yyy&amp;fileName=xxx&amp;pricelistId=123)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]\&gt;
 
 An array of the the rows that can be imported, manipulated according to Import rules given
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_SaveImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> SaveImportAsync\(ImportLine\[\], string\[\], bool, string, string, RequestOptions\)
+### SaveImportAsync\(ImportLine\[\], string\[\], bool, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_SaveImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Do the actual import
 
@@ -122,7 +122,7 @@ Task<int[]> SaveImportAsync(ImportLine[] importLines, string[] columnDefinition,
 
 #### Parameters
 
-`importLines` [ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]
+`importLines` [ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]
 
 The rows that will be imported - only selected rows are saved.
 
@@ -142,13 +142,12 @@ The current culture used in the import. Used to match language specific strings
 
 Optional context for the import. (sourcedFrom=yyy&amp;fileName=xxx&amp;pricelistId=123)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
 
 First part: the id of the selection created after the import, 0 if no selection is created. Second part: The number of rows actually imported
-

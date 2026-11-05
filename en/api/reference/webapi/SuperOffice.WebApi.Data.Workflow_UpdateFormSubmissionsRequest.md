@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_UpdateFormSubmissionsRequest"></a> Class Workflow\_UpdateFormSubmissionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_UpdateFormSubmissionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_UpdateFormSubmissionsRequest](SuperOffice.WebApi.Data.Workflow\_UpdateFormSubmissionsRequest.md)
+[Workflow\_UpdateFormSubmissionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_UpdateFormSubmissionsRequest)
 
 #### Inherited Members
 

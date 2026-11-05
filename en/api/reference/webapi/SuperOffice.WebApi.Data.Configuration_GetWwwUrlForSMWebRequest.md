@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetWwwUrlForSMWebRequest"></a> Class Configuration\_GetWwwUrlForSMWebRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetWwwUrlForSMWebRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetWwwUrlForSMWebRequest](SuperOffice.WebApi.Data.Configuration\_GetWwwUrlForSMWebRequest.md)
+[Configuration\_GetWwwUrlForSMWebRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetWwwUrlForSMWebRequest)
 
 #### Inherited Members
 

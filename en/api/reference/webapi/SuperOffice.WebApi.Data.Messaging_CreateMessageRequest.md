@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Messaging_CreateMessageRequest"></a> Class Messaging\_CreateMessageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Messaging_CreateMessageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Messaging\_CreateMessageRequest](SuperOffice.WebApi.Data.Messaging\_CreateMessageRequest.md)
+[Messaging\_CreateMessageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Messaging_CreateMessageRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public IncomingMessage IncomingMessage { get; set; }
 
 #### Property Value
 
- [IncomingMessage](SuperOffice.WebApi.Data.IncomingMessage.md)
+ [IncomingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.IncomingMessage)
 

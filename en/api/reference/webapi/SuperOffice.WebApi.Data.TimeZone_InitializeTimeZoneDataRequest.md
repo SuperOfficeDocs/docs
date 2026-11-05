@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TimeZone_InitializeTimeZoneDataRequest"></a> Class TimeZone\_InitializeTimeZoneDataRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class TimeZone_InitializeTimeZoneDataRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TimeZone\_InitializeTimeZoneDataRequest](SuperOffice.WebApi.Data.TimeZone\_InitializeTimeZoneDataRequest.md)
+[TimeZone\_InitializeTimeZoneDataRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZone_InitializeTimeZoneDataRequest)
 
 #### Inherited Members
 

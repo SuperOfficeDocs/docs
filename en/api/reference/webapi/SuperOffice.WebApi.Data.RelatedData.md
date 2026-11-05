@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RelatedData"></a> Class RelatedData
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RelatedData.
@@ -13,7 +13,7 @@ public class RelatedData
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RelatedData](SuperOffice.WebApi.Data.RelatedData.md)
+[RelatedData](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelatedData)
 
 #### Inherited Members
 
@@ -59,9 +59,9 @@ public virtual ArchiveColumnData FieldValue { get; set; }
 
 #### Property Value
 
- [ArchiveColumnData](SuperOffice.WebApi.Data.ArchiveColumnData.md)
+ [ArchiveColumnData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnData)
 
 ## See Also
 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md)
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent)
 

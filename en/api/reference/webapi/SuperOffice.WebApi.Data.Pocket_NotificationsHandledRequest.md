@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Pocket_NotificationsHandledRequest"></a> Class Pocket\_NotificationsHandledRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Pocket_NotificationsHandledRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Pocket\_NotificationsHandledRequest](SuperOffice.WebApi.Data.Pocket\_NotificationsHandledRequest.md)
+[Pocket\_NotificationsHandledRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Pocket_NotificationsHandledRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public NotificationEvent[] NotificationEvents { get; set; }
 
 #### Property Value
 
- [NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md)\[\]
+ [NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent)\[\]
 

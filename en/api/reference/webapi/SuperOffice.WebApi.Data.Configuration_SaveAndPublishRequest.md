@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_SaveAndPublishRequest"></a> Class Configuration\_SaveAndPublishRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_SaveAndPublishRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_SaveAndPublishRequest](SuperOffice.WebApi.Data.Configuration\_SaveAndPublishRequest.md)
+[Configuration\_SaveAndPublishRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SaveAndPublishRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ConfigurableScreenDelta ConfigurableScreenDelta { get; set; }
 
 #### Property Value
 
- [ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)
+ [ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)
 

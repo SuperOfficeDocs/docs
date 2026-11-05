@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_FieldLabels"></a> Class UserPreferenceStrings.FieldLabels
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Field labels
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.FieldLabels
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.FieldLabels](SuperOffice.WebApi.Data.UserPreferenceStrings.FieldLabels.md)
+[UserPreferenceStrings.FieldLabels](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.FieldLabels)
 
 #### Inherited Members
 

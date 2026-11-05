@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_SyncEmailAccountRequest"></a> Class EMail\_SyncEmailAccountRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_SyncEmailAccountRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_SyncEmailAccountRequest](SuperOffice.WebApi.Data.EMail\_SyncEmailAccountRequest.md)
+[EMail\_SyncEmailAccountRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_SyncEmailAccountRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public SyncUserAccount SyncUserAccount { get; set; }
 
 #### Property Value
 
- [SyncUserAccount](SuperOffice.WebApi.Data.SyncUserAccount.md)
+ [SyncUserAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.SyncUserAccount)
 

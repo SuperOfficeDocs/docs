@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_IProgressListener"></a> Interface IProgressListener
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Defines callbacks for web-client progress notifications.
@@ -27,7 +27,7 @@ URL being loaded
 
 `errorMessage` [Exception](https://learn.microsoft.com/dotnet/api/system.exception)
 
-Exception that is being thrown. Probably a <xref href="SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException" data-throw-if-not-resolved="false"></xref>.
+Exception that is being thrown. Probably a [SuperOfficeWebApiException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException).
 
 ### <a id="SuperOffice_WebApi_IProgressListener_OnProgress_System_String_System_Single_"></a> OnProgress\(string, float\)
 

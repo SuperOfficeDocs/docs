@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Targets_GetTargetGroupIdsRequest"></a> Class Targets\_GetTargetGroupIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Targets_GetTargetGroupIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Targets\_GetTargetGroupIdsRequest](SuperOffice.WebApi.Data.Targets\_GetTargetGroupIdsRequest.md)
+[Targets\_GetTargetGroupIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Targets_GetTargetGroupIdsRequest)
 
 #### Inherited Members
 

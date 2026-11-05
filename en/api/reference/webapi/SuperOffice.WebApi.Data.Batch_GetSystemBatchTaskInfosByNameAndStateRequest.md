@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Batch_GetSystemBatchTaskInfosByNameAndStateRequest"></a> Class Batch\_GetSystemBatchTaskInfosByNameAndStateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Batch_GetSystemBatchTaskInfosByNameAndStateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Batch\_GetSystemBatchTaskInfosByNameAndStateRequest](SuperOffice.WebApi.Data.Batch\_GetSystemBatchTaskInfosByNameAndStateRequest.md)
+[Batch\_GetSystemBatchTaskInfosByNameAndStateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Batch_GetSystemBatchTaskInfosByNameAndStateRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public BatchTaskState State { get; set; }
 
 #### Property Value
 
- [BatchTaskState](SuperOffice.WebApi.Data.BatchTaskState.md)
+ [BatchTaskState](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskState)
 
 ### <a id="SuperOffice_WebApi_Data_Batch_GetSystemBatchTaskInfosByNameAndStateRequest_TaskName"></a> TaskName
 

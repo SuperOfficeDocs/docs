@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TimeZone_ToggleActiveTimeZoneRowRequest"></a> Class TimeZone\_ToggleActiveTimeZoneRowRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class TimeZone_ToggleActiveTimeZoneRowRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TimeZone\_ToggleActiveTimeZoneRowRequest](SuperOffice.WebApi.Data.TimeZone\_ToggleActiveTimeZoneRowRequest.md)
+[TimeZone\_ToggleActiveTimeZoneRowRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZone_ToggleActiveTimeZoneRowRequest)
 
 #### Inherited Members
 

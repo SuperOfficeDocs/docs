@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_RecalculateQuoteLineRequest"></a> Class Quote\_RecalculateQuoteLineRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_RecalculateQuoteLineRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_RecalculateQuoteLineRequest](SuperOffice.WebApi.Data.Quote\_RecalculateQuoteLineRequest.md)
+[Quote\_RecalculateQuoteLineRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_RecalculateQuoteLineRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public QuoteLine QuoteLine { get; set; }
 
 #### Property Value
 
- [QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)
+ [QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)
 

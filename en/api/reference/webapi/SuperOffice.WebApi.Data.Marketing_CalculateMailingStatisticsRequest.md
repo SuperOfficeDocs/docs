@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_CalculateMailingStatisticsRequest"></a> Class Marketing\_CalculateMailingStatisticsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_CalculateMailingStatisticsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_CalculateMailingStatisticsRequest](SuperOffice.WebApi.Data.Marketing\_CalculateMailingStatisticsRequest.md)
+[Marketing\_CalculateMailingStatisticsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_CalculateMailingStatisticsRequest)
 
 #### Inherited Members
 

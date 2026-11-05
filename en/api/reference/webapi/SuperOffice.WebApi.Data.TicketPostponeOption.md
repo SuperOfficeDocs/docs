@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_TicketPostponeOption"></a> Class TicketPostponeOption
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for TicketPostponeOption.
 A postpone option offered on a Postponed ticket status.
@@ -12,17 +12,17 @@ public class TicketPostponeOption
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md)
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -121,11 +121,11 @@ public TicketPostponeRule? Rule { get; set; }
 
 #### Property Value
 
- [TicketPostponeRule](SuperOffice.WebApi.Data.TicketPostponeRule.md)?
+ [TicketPostponeRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeRule)?
 
 #### See Also
 
-[TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md).[Rule\_String](SuperOffice.WebApi.Data.TicketPostponeOption.md\#SuperOffice\_WebApi\_Data\_TicketPostponeOption\_Rule\_String)
+[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption).[Rule\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption#SuperOffice_WebApi_Data_TicketPostponeOption_Rule_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPostponeOption_Rule_String"></a> Rule\_String
 
@@ -143,7 +143,7 @@ public string Rule_String { get; set; }
 
 #### See Also
 
-[TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md).[Rule](SuperOffice.WebApi.Data.TicketPostponeOption.md\#SuperOffice\_WebApi\_Data\_TicketPostponeOption\_Rule)
+[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption).[Rule](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption#SuperOffice_WebApi_Data_TicketPostponeOption_Rule)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPostponeOption_StandardKind"></a> StandardKind
 
@@ -157,11 +157,11 @@ public TicketPostponeStandard? StandardKind { get; set; }
 
 #### Property Value
 
- [TicketPostponeStandard](SuperOffice.WebApi.Data.TicketPostponeStandard.md)?
+ [TicketPostponeStandard](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeStandard)?
 
 #### See Also
 
-[TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md).[StandardKind\_String](SuperOffice.WebApi.Data.TicketPostponeOption.md\#SuperOffice\_WebApi\_Data\_TicketPostponeOption\_StandardKind\_String)
+[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption).[StandardKind\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption#SuperOffice_WebApi_Data_TicketPostponeOption_StandardKind_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPostponeOption_StandardKind_String"></a> StandardKind\_String
 
@@ -179,7 +179,7 @@ public string StandardKind_String { get; set; }
 
 #### See Also
 
-[TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md).[StandardKind](SuperOffice.WebApi.Data.TicketPostponeOption.md\#SuperOffice\_WebApi\_Data\_TicketPostponeOption\_StandardKind)
+[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption).[StandardKind](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption#SuperOffice_WebApi_Data_TicketPostponeOption_StandardKind)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPostponeOption_TicketStatusId"></a> TicketStatusId
 
@@ -229,11 +229,11 @@ public DurationUnit? Unit { get; set; }
 
 #### Property Value
 
- [DurationUnit](SuperOffice.WebApi.Data.DurationUnit.md)?
+ [DurationUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.DurationUnit)?
 
 #### See Also
 
-[TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md).[Unit\_String](SuperOffice.WebApi.Data.TicketPostponeOption.md\#SuperOffice\_WebApi\_Data\_TicketPostponeOption\_Unit\_String)
+[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption).[Unit\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption#SuperOffice_WebApi_Data_TicketPostponeOption_Unit_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPostponeOption_Unit_String"></a> Unit\_String
 
@@ -251,7 +251,7 @@ public string Unit_String { get; set; }
 
 #### See Also
 
-[TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md).[Unit](SuperOffice.WebApi.Data.TicketPostponeOption.md\#SuperOffice\_WebApi\_Data\_TicketPostponeOption\_Unit)
+[TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption).[Unit](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption#SuperOffice_WebApi_Data_TicketPostponeOption_Unit)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPostponeOption_Weekday"></a> Weekday
 
@@ -279,5 +279,4 @@ public virtual bool WorkingTime { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
-
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)

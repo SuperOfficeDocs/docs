@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetTicketMessageWithEmbeddedDataRequest"></a> Class Ticket\_GetTicketMessageWithEmbeddedDataRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetTicketMessageWithEmbeddedDataRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetTicketMessageWithEmbeddedDataRequest](SuperOffice.WebApi.Data.Ticket\_GetTicketMessageWithEmbeddedDataRequest.md)
+[Ticket\_GetTicketMessageWithEmbeddedDataRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetTicketMessageWithEmbeddedDataRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ImageEmbedType EmbedImages { get; set; }
 
 #### Property Value
 
- [ImageEmbedType](SuperOffice.WebApi.Data.ImageEmbedType.md)
+ [ImageEmbedType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImageEmbedType)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_GetTicketMessageWithEmbeddedDataRequest_Id"></a> Id
 

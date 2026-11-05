@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_SaveRequest"></a> Class Appointment\_SaveRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_SaveRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_SaveRequest](SuperOffice.WebApi.Data.Appointment\_SaveRequest.md)
+[Appointment\_SaveRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_SaveRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentEntity AppointmentEntity { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+ [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_SaveRequest_ImapEMailConnectionInfo"></a> ImapEMailConnectionInfo
 
@@ -50,7 +50,7 @@ public EMailConnectionInfo ImapEMailConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_SaveRequest_SendEmailToParticipants"></a> SendEmailToParticipants
 
@@ -70,7 +70,7 @@ public EMailConnectionInfo SmtpEMailConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_SaveRequest_UpdateMode"></a> UpdateMode
 
@@ -80,5 +80,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+ [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 

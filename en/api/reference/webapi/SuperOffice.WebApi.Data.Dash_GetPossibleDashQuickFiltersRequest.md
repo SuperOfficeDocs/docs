@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_GetPossibleDashQuickFiltersRequest"></a> Class Dash\_GetPossibleDashQuickFiltersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_GetPossibleDashQuickFiltersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_GetPossibleDashQuickFiltersRequest](SuperOffice.WebApi.Data.Dash\_GetPossibleDashQuickFiltersRequest.md)
+[Dash\_GetPossibleDashQuickFiltersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_GetPossibleDashQuickFiltersRequest)
 
 #### Inherited Members
 

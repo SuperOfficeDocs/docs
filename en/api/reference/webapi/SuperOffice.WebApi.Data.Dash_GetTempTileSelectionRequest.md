@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_GetTempTileSelectionRequest"></a> Class Dash\_GetTempTileSelectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_GetTempTileSelectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_GetTempTileSelectionRequest](SuperOffice.WebApi.Data.Dash\_GetTempTileSelectionRequest.md)
+[Dash\_GetTempTileSelectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_GetTempTileSelectionRequest)
 
 #### Inherited Members
 

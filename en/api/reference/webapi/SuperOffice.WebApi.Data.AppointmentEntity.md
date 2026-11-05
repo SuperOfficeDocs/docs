@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Data_AppointmentEntity"></a> Class AppointmentEntity
+# Class AppointmentEntity {#SuperOffice_WebApi_Data_AppointmentEntity}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for AppointmentEntity.
 Appointments appear in the diary, and have links to a Contact/Person and possibly a Project or Sale. They have start and end time+date.
@@ -12,39 +12,39 @@ public class AppointmentEntity : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
 
 Get AppointmentEntity 123 using the WebApi client:
-<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
 var agent = new AppointmentAgent(configuration);
-var appointmentEntity = agent.GetAppointmentEntity( 123 );</code></pre>
+var appointmentEntity = agent.GetAppointmentEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
-            All AppointmentEntity: <pre><code class="lang-csharp">"FindAppointment"</code></pre>
-            Participants: <pre><code class="lang-csharp">"Participants"</code></pre> with restriction <pre><code class="lang-csharp">"appointmentRestrictionId eq " + id</code></pre>.
-            Links: <pre><code class="lang-csharp">"Links"</code></pre> with restriction <pre><code class="lang-csharp">"sourceAppointmentRestrictionId eq " + id</code></pre>.
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
+            All AppointmentEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"FindAppointment"&lt;/code&gt;&lt;/pre&gt;
+            Participants: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Participants"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"appointmentRestrictionId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Links: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Links"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"sourceAppointmentRestrictionId eq " + id&lt;/code&gt;&lt;/pre&gt;.
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity__ctor"></a> AppointmentEntity\(\)
+### AppointmentEntity\(\) {#SuperOffice_WebApi_Data_AppointmentEntity__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -54,7 +54,7 @@ public AppointmentEntity()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_ActiveDate"></a> ActiveDate
+### ActiveDate {#SuperOffice_WebApi_Data_AppointmentEntity_ActiveDate}
 
 The date to be used for searching &amp; showing
 
@@ -66,7 +66,7 @@ public virtual DateTime ActiveDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_ActiveLinks"></a> ActiveLinks
+### ActiveLinks {#SuperOffice_WebApi_Data_AppointmentEntity_ActiveLinks}
 
 Number of active links to sale, document, appointment.
 
@@ -78,7 +78,7 @@ public virtual int ActiveLinks { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Agenda"></a> Agenda
+### Agenda {#SuperOffice_WebApi_Data_AppointmentEntity_Agenda}
 
 The agenda of the appointment.
 
@@ -90,7 +90,7 @@ public virtual string Agenda { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_AlarmLeadTime"></a> AlarmLeadTime
+### AlarmLeadTime {#SuperOffice_WebApi_Data_AppointmentEntity_AlarmLeadTime}
 
 Alarm lead time.
 
@@ -102,7 +102,7 @@ public virtual TimeSpan AlarmLeadTime { get; set; }
 
  [TimeSpan](https://learn.microsoft.com/dotnet/api/system.timespan)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_AppointmentId"></a> AppointmentId
+### AppointmentId {#SuperOffice_WebApi_Data_AppointmentEntity_AppointmentId}
 
 Primary key
 
@@ -114,7 +114,7 @@ public virtual int AppointmentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_AssignedBy"></a> AssignedBy
+### AssignedBy {#SuperOffice_WebApi_Data_AppointmentEntity_AssignedBy}
 
 Who assigned this appointment to this user? Whose diary did the appointment come from?
 
@@ -124,9 +124,9 @@ public virtual Associate AssignedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus"></a> AssignmentStatus
+### AssignmentStatus {#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus}
 
 Status if this appointment is in the process of being assigned to someone else
 NULL if unknown enum value.
@@ -138,13 +138,13 @@ public AssignmentStatus? AssignmentStatus { get; set; }
 
 #### Property Value
 
- [AssignmentStatus](SuperOffice.WebApi.Data.AssignmentStatus.md)?
+ [AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssignmentStatus)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[AssignmentStatus\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_AssignmentStatus\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[AssignmentStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus_String"></a> AssignmentStatus\_String
+### AssignmentStatus\_String {#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus_String}
 
 Status if this appointment is in the process of being assigned to someone else
 Raw string enum value.
@@ -160,12 +160,12 @@ public string AssignmentStatus_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[AssignmentStatus](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_AssignmentStatus)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Associate"></a> Associate
+### Associate {#SuperOffice_WebApi_Data_AppointmentEntity_Associate}
 
 The owner of the appointment - the associate whose diary/checklist the appointment is in.
-<p>Use MDO List name "associate" to get list items.</p>
+&lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Associate Associate { get; set; }
@@ -173,9 +173,9 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_BookingType"></a> BookingType
+### BookingType {#SuperOffice_WebApi_Data_AppointmentEntity_BookingType}
 
 The type of booking the appointment represents
 NULL if unknown enum value.
@@ -187,13 +187,13 @@ public BookingType? BookingType { get; set; }
 
 #### Property Value
 
- [BookingType](SuperOffice.WebApi.Data.BookingType.md)?
+ [BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BookingType)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[BookingType\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_BookingType\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[BookingType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_BookingType_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_BookingType_String"></a> BookingType\_String
+### BookingType\_String {#SuperOffice_WebApi_Data_AppointmentEntity_BookingType_String}
 
 The type of booking the appointment represents
 Raw string enum value.
@@ -209,9 +209,9 @@ public string BookingType_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[BookingType](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_BookingType)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_BookingType)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning"></a> CautionWarning
+### CautionWarning {#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning}
 
 Status field to indicate appointments that have some sort of problem
 NULL if unknown enum value.
@@ -223,13 +223,13 @@ public AppointmentCautionWarning? CautionWarning { get; set; }
 
 #### Property Value
 
- [AppointmentCautionWarning](SuperOffice.WebApi.Data.AppointmentCautionWarning.md)?
+ [AppointmentCautionWarning](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentCautionWarning)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[CautionWarning\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_CautionWarning\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[CautionWarning\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning_String"></a> CautionWarning\_String
+### CautionWarning\_String {#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning_String}
 
 Status field to indicate appointments that have some sort of problem
 Raw string enum value.
@@ -245,9 +245,9 @@ public string CautionWarning_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[CautionWarning](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_CautionWarning)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[CautionWarning](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_CentralserviceVideomeetId"></a> CentralserviceVideomeetId
+### CentralserviceVideomeetId {#SuperOffice_WebApi_Data_AppointmentEntity_CentralserviceVideomeetId}
 
 GUID for video meeting in central services – this is set when we create meetings from SuperOffice. It is blank for incoming meetings created from inbox.
 
@@ -259,7 +259,7 @@ public virtual string CentralserviceVideomeetId { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_ColorIndex"></a> ColorIndex
+### ColorIndex {#SuperOffice_WebApi_Data_AppointmentEntity_ColorIndex}
 
 Appointment colour, used only in Japanese versions. Western versions take colour from Task
 
@@ -271,7 +271,7 @@ public virtual short ColorIndex { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Completed"></a> Completed
+### Completed {#SuperOffice_WebApi_Data_AppointmentEntity_Completed}
 
 Appointment Completed state. This property is the part of the Status property that is the completed state. Could be three state if the three state user preference is set.
 NULL if unknown enum value.
@@ -283,13 +283,13 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
+ [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Completed\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Completed\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Completed_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Completed_String"></a> Completed\_String
+### Completed\_String {#SuperOffice_WebApi_Data_AppointmentEntity_Completed_String}
 
 Appointment Completed state. This property is the part of the Status property that is the completed state. Could be three state if the three state user preference is set.
 Raw string enum value.
@@ -305,12 +305,12 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Completed](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Completed)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Completed)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Contact"></a> Contact
+### Contact {#SuperOffice_WebApi_Data_AppointmentEntity_Contact}
 
 The contact associated with the appointment. It may also be null if no contact is associated with the appointment.
-<p>Use MDO List name "contact_new" to get list items.</p>
+&lt;p&gt;Use MDO List name "contact_new" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Contact Contact { get; set; }
@@ -318,9 +318,9 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_CreatedBy"></a> CreatedBy
+### CreatedBy {#SuperOffice_WebApi_Data_AppointmentEntity_CreatedBy}
 
 The associate that first created the appointment. The property is read-only.
 
@@ -330,9 +330,9 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_CreatedDate"></a> CreatedDate
+### CreatedDate {#SuperOffice_WebApi_Data_AppointmentEntity_CreatedDate}
 
 Registered date
 
@@ -344,11 +344,11 @@ public virtual DateTime CreatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_CustomFields"></a> CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_AppointmentEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
-Custom fields combines user defined fields and extra fields into one bucket. 
-The individual <xref href="SuperOffice.WebApi.Data.AppointmentEntity.ExtraFields" data-throw-if-not-resolved="false"></xref> and <xref href="SuperOffice.WebApi.Data.AppointmentEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"></xref> properties are deprecated in favor of this
+Custom fields combines user defined fields and extra fields into one bucket.
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_UserDefinedFields) properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -358,20 +358,20 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Extra field data</td><td class="description">
-       [Extra field name]<p></p>
-       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
-       </td></tr><tr><td class="term">User defined field data</td><td class="description">
-       [Prog-id name]<p></p>
-    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
-       </td></tr></tbody></table>
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Extra field name]&lt;p&gt;&lt;/p&gt;
+       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Prog-id name]&lt;p&gt;&lt;/p&gt;
+    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Description"></a> Description
+### Description {#SuperOffice_WebApi_Data_AppointmentEntity_Description}
 
 Description of the appointment.
 
@@ -383,7 +383,7 @@ public virtual string Description { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_EndDate"></a> EndDate
+### EndDate {#SuperOffice_WebApi_Data_AppointmentEntity_EndDate}
 
 Date + end time planned
 
@@ -395,9 +395,9 @@ public virtual DateTime EndDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_ExtraFields"></a> ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_AppointmentEntity_ExtraFields}
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.AppointmentEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_CustomFields) instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -407,28 +407,28 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
-       The device identity is appended directly to the device name if it exists. 
-    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
+       The device identity is appended directly to the device name if it exists.
+    This is not commonly used, but the database opens for this as a possibility to have several devices with the same name,
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    </td></tr><tr><td class="term">User defined table data</td><td class="description">
+    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       </td></tr><tr><td class="term">Other</td><td class="description">
-       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
+       Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary.
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       </td></tr></tbody></table>
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_HasAlarm"></a> HasAlarm
+### HasAlarm {#SuperOffice_WebApi_Data_AppointmentEntity_HasAlarm}
 
 Does this appointment have an alarm
 
@@ -440,7 +440,7 @@ public virtual bool HasAlarm { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_HasConflict"></a> HasConflict
+### HasConflict {#SuperOffice_WebApi_Data_AppointmentEntity_HasConflict}
 
 Does the appointment overlap with another appointment in the user's diary?
 
@@ -452,7 +452,7 @@ public virtual bool HasConflict { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_InternalNotes"></a> InternalNotes
+### InternalNotes {#SuperOffice_WebApi_Data_AppointmentEntity_InternalNotes}
 
 Internal notes for the appointment.
 
@@ -464,7 +464,7 @@ public virtual string InternalNotes { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus"></a> InvitationStatus
+### InvitationStatus {#SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus}
 
 Status if this appointment represents an invitation
 NULL if unknown enum value.
@@ -476,13 +476,13 @@ public InvitationStatus? InvitationStatus { get; set; }
 
 #### Property Value
 
- [InvitationStatus](SuperOffice.WebApi.Data.InvitationStatus.md)?
+ [InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.InvitationStatus)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[InvitationStatus\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_InvitationStatus\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[InvitationStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus_String"></a> InvitationStatus\_String
+### InvitationStatus\_String {#SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus_String}
 
 Status if this appointment represents an invitation
 Raw string enum value.
@@ -498,9 +498,9 @@ public string InvitationStatus_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[InvitationStatus](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_InvitationStatus)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_InvitedPerson"></a> InvitedPerson
+### InvitedPerson {#SuperOffice_WebApi_Data_AppointmentEntity_InvitedPerson}
 
 If the appointment is a booking, the invited persons may be your associates, but you are also able to invite contact persons from other companies to join your meeting. They do not receive an invitation, unless you send them one by email, but you can see in the appointment that persons other than your associates have been invited to a meeting. Each invited person will have an appointment slave record.
 
@@ -510,9 +510,9 @@ public virtual Person InvitedPerson { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_IsAlldayEvent"></a> IsAlldayEvent
+### IsAlldayEvent {#SuperOffice_WebApi_Data_AppointmentEntity_IsAlldayEvent}
 
 True if all day event
 
@@ -524,7 +524,7 @@ public virtual bool IsAlldayEvent { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_IsFree"></a> IsFree
+### IsFree {#SuperOffice_WebApi_Data_AppointmentEntity_IsFree}
 
 True if free, false if busy
 
@@ -536,7 +536,7 @@ public virtual bool IsFree { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_IsMileStone"></a> IsMileStone
+### IsMileStone {#SuperOffice_WebApi_Data_AppointmentEntity_IsMileStone}
 
 Is this appointment a milestone?
 
@@ -548,7 +548,7 @@ public virtual bool IsMileStone { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_IsPublished"></a> IsPublished
+### IsPublished {#SuperOffice_WebApi_Data_AppointmentEntity_IsPublished}
 
 Publication is published
 
@@ -560,7 +560,7 @@ public virtual bool IsPublished { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_JoinVideomeetUrl"></a> JoinVideomeetUrl
+### JoinVideomeetUrl {#SuperOffice_WebApi_Data_AppointmentEntity_JoinVideomeetUrl}
 
 Blank when not a video meeting. Filled with Join Meeting URL when created.
 
@@ -572,7 +572,7 @@ public virtual string JoinVideomeetUrl { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_LagTime"></a> LagTime
+### LagTime {#SuperOffice_WebApi_Data_AppointmentEntity_LagTime}
 
 as leadtime, but after the end - time blocked for travel etc.
 
@@ -584,7 +584,7 @@ public virtual TimeSpan LagTime { get; set; }
 
  [TimeSpan](https://learn.microsoft.com/dotnet/api/system.timespan)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_LeadTime"></a> LeadTime
+### LeadTime {#SuperOffice_WebApi_Data_AppointmentEntity_LeadTime}
 
 Time blocked (minutes) BEFORE starttime
 
@@ -596,7 +596,7 @@ public virtual TimeSpan LeadTime { get; set; }
 
  [TimeSpan](https://learn.microsoft.com/dotnet/api/system.timespan)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Links"></a> Links
+### Links {#SuperOffice_WebApi_Data_AppointmentEntity_Links}
 
 List of all elements linked to the appointment.
 
@@ -606,9 +606,9 @@ public virtual Link[] Links { get; set; }
 
 #### Property Value
 
- [Link](SuperOffice.WebApi.Data.Link.md)\[\]
+ [Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Location"></a> Location
+### Location {#SuperOffice_WebApi_Data_AppointmentEntity_Location}
 
 Location for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here
 
@@ -620,7 +620,7 @@ public virtual string Location { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_MotherAssociate"></a> MotherAssociate
+### MotherAssociate {#SuperOffice_WebApi_Data_AppointmentEntity_MotherAssociate}
 
 The owner of the mother appointment - the associate whose diary/checklist the mother appointment is in.  The mother appointment is the one identified by the mother_id. If the mother_id is 0 or the same as this appointment_id, then the master associate will be the same as the 'ordinary' associate.
 
@@ -630,9 +630,9 @@ public virtual Associate MotherAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_MotherId"></a> MotherId
+### MotherId {#SuperOffice_WebApi_Data_AppointmentEntity_MotherId}
 
 ID of mother appointment; self if booking master, master ID if booking slave, 0 if normal appointment. However, if 0 and assoc_id != reg_id then this is an assigned appointment, indicated vt type = kBooking
 
@@ -644,7 +644,7 @@ public virtual int MotherId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally"></a> OwnedExternally
+### OwnedExternally {#SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally}
 
 Set if an external system owns this appointment.
 NULL if unknown enum value.
@@ -656,13 +656,13 @@ public AppointmentExternalOwner? OwnedExternally { get; set; }
 
 #### Property Value
 
- [AppointmentExternalOwner](SuperOffice.WebApi.Data.AppointmentExternalOwner.md)?
+ [AppointmentExternalOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentExternalOwner)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[OwnedExternally\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_OwnedExternally\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[OwnedExternally\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally_String"></a> OwnedExternally\_String
+### OwnedExternally\_String {#SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally_String}
 
 Set if an external system owns this appointment.
 Raw string enum value.
@@ -678,9 +678,9 @@ public string OwnedExternally_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[OwnedExternally](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_OwnedExternally)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[OwnedExternally](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Participants"></a> Participants
+### Participants {#SuperOffice_WebApi_Data_AppointmentEntity_Participants}
 
 List of id's of the participants to this appointment.
 
@@ -690,12 +690,12 @@ public virtual ParticipantInfo[] Participants { get; set; }
 
 #### Property Value
 
- [ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md)\[\]
+ [ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo)\[\]
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Person"></a> Person
+### Person {#SuperOffice_WebApi_Data_AppointmentEntity_Person}
 
 An appointment may also be connected to a person; this must be a contact person registered on the current company. This does not mean however that a person is required.
-<p>Use MDO List name "person" to get list items.</p>
+&lt;p&gt;Use MDO List name "person" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Person Person { get; set; }
@@ -703,9 +703,9 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_PreferredTZLocation"></a> PreferredTZLocation
+### PreferredTZLocation {#SuperOffice_WebApi_Data_AppointmentEntity_PreferredTZLocation}
 
 Appointments preferred timezone location.
 
@@ -717,7 +717,7 @@ public virtual int PreferredTZLocation { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_PreferredTZLocationData"></a> PreferredTZLocationData
+### PreferredTZLocationData {#SuperOffice_WebApi_Data_AppointmentEntity_PreferredTZLocationData}
 
 Read-only timezone data for PreferredTZLocation.
 
@@ -727,12 +727,12 @@ public virtual TimeZoneData PreferredTZLocationData { get; set; }
 
 #### Property Value
 
- [TimeZoneData](SuperOffice.WebApi.Data.TimeZoneData.md)
+ [TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Priority"></a> Priority
+### Priority {#SuperOffice_WebApi_Data_AppointmentEntity_Priority}
 
 It's possible to give appointments different priorities. All the different priority types are saved in the priority table, and edited from the Admin. Client. An appointment does not require a priority.
-<p>Use MDO List name "priority" to get list items.</p>
+&lt;p&gt;Use MDO List name "priority" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Priority Priority { get; set; }
@@ -740,9 +740,9 @@ public virtual Priority Priority { get; set; }
 
 #### Property Value
 
- [Priority](SuperOffice.WebApi.Data.Priority.md)
+ [Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Private"></a> Private
+### Private {#SuperOffice_WebApi_Data_AppointmentEntity_Private}
 
 The confidentiality of appointments is shown as different types of “private” on the appointment. For an updated list of “private” types, see the database manual.
 NULL if unknown enum value.
@@ -754,13 +754,13 @@ public AppointmentPrivate? Private { get; set; }
 
 #### Property Value
 
- [AppointmentPrivate](SuperOffice.WebApi.Data.AppointmentPrivate.md)?
+ [AppointmentPrivate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentPrivate)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Private\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Private\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Private\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Private_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Private_String"></a> Private\_String
+### Private\_String {#SuperOffice_WebApi_Data_AppointmentEntity_Private_String}
 
 The confidentiality of appointments is shown as different types of “private” on the appointment. For an updated list of “private” types, see the database manual.
 Raw string enum value.
@@ -776,12 +776,12 @@ public string Private_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Private](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Private)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Private](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Private)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Project"></a> Project
+### Project {#SuperOffice_WebApi_Data_AppointmentEntity_Project}
 
 An appointment may also be connected to a project, so you see the appointment both on the company card, and on the project card. This does not mean however that a project is required.
-<p>Use MDO List name "project" to get list items.</p>
+&lt;p&gt;Use MDO List name "project" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Project Project { get; set; }
@@ -789,9 +789,9 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](SuperOffice.WebApi.Data.Project.md)
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_PublishEventDate"></a> PublishEventDate
+### PublishEventDate {#SuperOffice_WebApi_Data_AppointmentEntity_PublishEventDate}
 
 Publish event date
 
@@ -803,7 +803,7 @@ public virtual DateTime PublishEventDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_PublishFrom"></a> PublishFrom
+### PublishFrom {#SuperOffice_WebApi_Data_AppointmentEntity_PublishFrom}
 
 Publication valid from (inclusive)
 
@@ -815,7 +815,7 @@ public virtual DateTime PublishFrom { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_PublishTo"></a> PublishTo
+### PublishTo {#SuperOffice_WebApi_Data_AppointmentEntity_PublishTo}
 
 Publication valid to (inclusive)
 
@@ -827,7 +827,7 @@ public virtual DateTime PublishTo { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Recurrence"></a> Recurrence
+### Recurrence {#SuperOffice_WebApi_Data_AppointmentEntity_Recurrence}
 
 The appointment recurrence.
 
@@ -837,9 +837,9 @@ public virtual RecurrenceInfo Recurrence { get; set; }
 
 #### Property Value
 
- [RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)
+ [RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_RejectCounter"></a> RejectCounter
+### RejectCounter {#SuperOffice_WebApi_Data_AppointmentEntity_RejectCounter}
 
 How many invitees have rejected this appointment
 
@@ -851,10 +851,10 @@ public virtual short RejectCounter { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_RejectReason"></a> RejectReason
+### RejectReason {#SuperOffice_WebApi_Data_AppointmentEntity_RejectReason}
 
 Why was this booking or assignment rejected, the RejectReason list is a source of suggestions but you can write anything here
-<p>Use MDO List name "rejectReason" to get list items.</p>
+&lt;p&gt;Use MDO List name "rejectReason" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual string RejectReason { get; set; }
@@ -864,10 +864,10 @@ public virtual string RejectReason { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Sale"></a> Sale
+### Sale {#SuperOffice_WebApi_Data_AppointmentEntity_Sale}
 
 An appointment may also be connected to a sale, so you see the appointment on the company card, on the project card and on the sale card. This does not mean however that a sale is required.
-<p>Use MDO List name "sale" to get list items.</p>
+&lt;p&gt;Use MDO List name "sale" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Sale Sale { get; set; }
@@ -875,9 +875,9 @@ public virtual Sale Sale { get; set; }
 
 #### Property Value
 
- [Sale](SuperOffice.WebApi.Data.Sale.md)
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_StartDate"></a> StartDate
+### StartDate {#SuperOffice_WebApi_Data_AppointmentEntity_StartDate}
 
 date + start time planned
 
@@ -889,7 +889,7 @@ public virtual DateTime StartDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_SuggestedAppointmentId"></a> SuggestedAppointmentId
+### SuggestedAppointmentId {#SuperOffice_WebApi_Data_AppointmentEntity_SuggestedAppointmentId}
 
 Suggested guide item that this appointment is an instance of (Note: NOT VALID for document-type appointments, they have their own link)
 
@@ -901,10 +901,10 @@ public virtual int SuggestedAppointmentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Task"></a> Task
+### Task {#SuperOffice_WebApi_Data_AppointmentEntity_Task}
 
 Task comprises the different types of activities, like “Phone call”, “Meeting” and so on.
-<p>Use MDO List name "task" to get list items.</p>
+&lt;p&gt;Use MDO List name "task" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual TaskListItem Task { get; set; }
@@ -912,9 +912,9 @@ public virtual TaskListItem Task { get; set; }
 
 #### Property Value
 
- [TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)
+ [TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Ticket"></a> Ticket
+### Ticket {#SuperOffice_WebApi_Data_AppointmentEntity_Ticket}
 
 An appointment may also be connected to a request. When the user can't read the request, only TicketId is set and all other fields are empty; null when the request is deleted, merged, spam or no longer exists.
 
@@ -924,9 +924,9 @@ public virtual Ticket Ticket { get; set; }
 
 #### Property Value
 
- [Ticket](SuperOffice.WebApi.Data.Ticket.md)
+ [Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Title"></a> Title
+### Title {#SuperOffice_WebApi_Data_AppointmentEntity_Title}
 
 The title of the appointment.
 
@@ -938,7 +938,7 @@ public virtual string Title { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Type"></a> Type
+### Type {#SuperOffice_WebApi_Data_AppointmentEntity_Type}
 
 The different types of appointment, if the appointment is supposed to be shown in the diary or checklist, or if it's a document. See the different types of appointments in the database manual.
 NULL if unknown enum value.
@@ -950,13 +950,13 @@ public AppointmentType? Type { get; set; }
 
 #### Property Value
 
- [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)?
+ [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Type\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Type\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Type_String)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_Type_String"></a> Type\_String
+### Type\_String {#SuperOffice_WebApi_Data_AppointmentEntity_Type_String}
 
 The different types of appointment, if the appointment is supposed to be shown in the diary or checklist, or if it's a document. See the different types of appointments in the database manual.
 Raw string enum value.
@@ -972,9 +972,9 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Type](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Type)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Type)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_UpdatedBy"></a> UpdatedBy
+### UpdatedBy {#SuperOffice_WebApi_Data_AppointmentEntity_UpdatedBy}
 
 The person that last updated the appointment.
 
@@ -984,9 +984,9 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_UpdatedDate"></a> UpdatedDate
+### UpdatedDate {#SuperOffice_WebApi_Data_AppointmentEntity_UpdatedDate}
 
 Updated date
 
@@ -998,9 +998,9 @@ public virtual DateTime UpdatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_UserDefinedFields"></a> UserDefinedFields
+### UserDefinedFields {#SuperOffice_WebApi_Data_AppointmentEntity_UserDefinedFields}
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.AppointmentEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_CustomFields) instead.
 Dictionary of user defined field data.
 The key string is the ProgId of the UdefField, or if the ProgId is empty it is a string of the format "SuperOffice:[UdefFieldIdentity]", e.g. "SuperOffice:1234"
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
@@ -1011,9 +1011,9 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
-### <a id="SuperOffice_WebApi_Data_AppointmentEntity_VisibleFor"></a> VisibleFor
+### VisibleFor {#SuperOffice_WebApi_Data_AppointmentEntity_VisibleFor}
 
 The set of users or groups the record is visible for
 
@@ -1023,11 +1023,9 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
-
-
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent),
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent),

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_ValidateScriptByIncludeIdRequest"></a> Class CRMScript\_ValidateScriptByIncludeIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_ValidateScriptByIncludeIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_ValidateScriptByIncludeIdRequest](SuperOffice.WebApi.Data.CRMScript\_ValidateScriptByIncludeIdRequest.md)
+[CRMScript\_ValidateScriptByIncludeIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_ValidateScriptByIncludeIdRequest)
 
 #### Inherited Members
 

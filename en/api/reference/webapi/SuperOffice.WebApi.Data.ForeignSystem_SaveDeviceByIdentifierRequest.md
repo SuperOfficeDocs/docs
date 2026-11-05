@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_SaveDeviceByIdentifierRequest"></a> Class ForeignSystem\_SaveDeviceByIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_SaveDeviceByIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_SaveDeviceByIdentifierRequest](SuperOffice.WebApi.Data.ForeignSystem\_SaveDeviceByIdentifierRequest.md)
+[ForeignSystem\_SaveDeviceByIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_SaveDeviceByIdentifierRequest)
 
 #### Inherited Members
 
@@ -70,5 +70,5 @@ public ForeignDevice ForeignDevice { get; set; }
 
 #### Property Value
 
- [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)
+ [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)
 

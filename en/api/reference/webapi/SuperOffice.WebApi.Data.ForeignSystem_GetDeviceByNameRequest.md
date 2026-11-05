@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_GetDeviceByNameRequest"></a> Class ForeignSystem\_GetDeviceByNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_GetDeviceByNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_GetDeviceByNameRequest](SuperOffice.WebApi.Data.ForeignSystem\_GetDeviceByNameRequest.md)
+[ForeignSystem\_GetDeviceByNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_GetDeviceByNameRequest)
 
 #### Inherited Members
 

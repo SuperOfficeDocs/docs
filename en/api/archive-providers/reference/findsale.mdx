@@ -1,6 +1,6 @@
 ---
 title: FindSale
-description: 
+description:
 keywords: FindSale archive provider
 generated: true
 content_type: reference
@@ -9,14 +9,16 @@ envir: onsite, online
 
 ## "FindSale"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindSaleProvider">SuperOffice.CRM.ArchiveLists.FindSaleProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindSaleProvider inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -120,6 +122,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |person/personRegisteredDate|date|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/portraitThumbnail| *None* ||  |
@@ -224,6 +227,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |person/personExtra/x\_person\_appointment\_relation|stringorPK|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_contact\_relation|stringorPK|| x |
@@ -328,6 +332,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |contact/orgnr|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/stop|bool|| x |
@@ -432,6 +437,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |contact/contactAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isActiveText|bool|| x |
@@ -536,6 +542,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/isLocation|bool|| x |
@@ -640,6 +647,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |appointment/associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/associate/isLocation|bool|| x |
@@ -744,6 +752,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |project/associateId|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/hasInfoText|bool|| x |
@@ -848,6 +857,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |saleStakeholder/person/personId|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/firstName|string|| x |
@@ -952,6 +962,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |saleStakeholder/person/restrictionAddress/state|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
@@ -1056,6 +1067,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |saleStakeholder/person/correspondingAssociate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
@@ -1160,6 +1172,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |saleStakeholder/contact/restrictionAddress/state|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
@@ -1264,6 +1277,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |saleStakeholder/contact/saintTicketCategory|listAny||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |quote/quoteId|int|| x |
@@ -1370,5 +1384,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

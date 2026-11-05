@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent"></a> Interface IDatabaseTableAgent
+# Interface IDatabaseTableAgent {#SuperOffice_WebApi_Agents_IDatabaseTableAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Agent used for CRUD operations on database tables. Read, add, update, delete rows in tables.
 
@@ -11,12 +11,12 @@ public interface IDatabaseTableAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteAsync\(string, int\[\], RequestOptions\)
+### DeleteAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Delete rows, by primary key; traveltransactionlog and WebHooks are supported
 
@@ -34,17 +34,17 @@ The name of the table where rows should be deleted
 
 Primary keys of the rows to be deleted
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](SuperOffice.WebApi.Data.MassOperationResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
 
 Summary of results
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteRowAsync\(string, int, RequestOptions\)
+### DeleteRowAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a row from a table
 
@@ -62,7 +62,7 @@ The name of the table to delete from; in the current release this must be an 'ex
 
 The id of the row to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -70,7 +70,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertAsync_System_String_System_String___System_String_____SuperOffice_WebApi_RequestOptions_"></a> InsertAsync\(string, string\[\], string\[\]\[\], RequestOptions\)
+### InsertAsync\(string, string\[\], string\[\]\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertAsync_System_String_System_String___System_String_____SuperOffice_WebApi_RequestOptions_}
 
 Mass-insert rows, with or without primary keys specified. Works on physical tables with no special processing for udef etc.; traveltransactionlog and WebHooks are supported
 
@@ -92,17 +92,17 @@ List of column names, in the same order as in the Data parameter
 
 Outer array = rows, inner = columns in specified order; use CultureDataFormatter to format values that aren't string or int
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](SuperOffice.WebApi.Data.MassOperationResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
 
 Summary of results
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertRowAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> InsertRowAsync\(string, StringDictionary, RequestOptions\)
+### InsertRowAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertRowAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Insert a row into a table
 
@@ -116,21 +116,21 @@ Task<int> InsertRowAsync(string tableName, StringDictionary values, RequestOptio
 
 The name of the table to insert into; in the current release this must be an 'extratable'. Use the database name, on the form y_aTable
 
-`values` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`values` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 A StringDictionary with the values to insert. You do not need to specify all the values in the table. The omitted ones will get default values
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The id of the newly inserted row
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_ReadRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ReadRowAsync\(string, int, RequestOptions\)
+### ReadRowAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_ReadRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Read a row from a table
 
@@ -148,17 +148,17 @@ The name of the table to fetch; in the current release this must be an 'extratab
 
 The id of the row to fetch
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRecord](SuperOffice.WebApi.Data.TableRecord.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRecord](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRecord)\&gt;
 
 The row from the table
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_TruncateAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> TruncateAsync\(string, RequestOptions\)
+### TruncateAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_TruncateAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Drop all rows in a table. This clearance is not individually logged in TravelTransactionlog or Webhook/script calls
 
@@ -172,17 +172,17 @@ Task<MassOperationResult> TruncateAsync(string tableName, RequestOptions request
 
 Name of table to be truncated
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](SuperOffice.WebApi.Data.MassOperationResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
 
 Summary of results
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpdateRowAsync_System_String_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> UpdateRowAsync\(string, int, StringDictionary, RequestOptions\)
+### UpdateRowAsync\(string, int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpdateRowAsync_System_String_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Update a row in a table
 
@@ -200,11 +200,11 @@ The name of the table to update; in the current release this must be an 'extrata
 
 The id of the row to update
 
-`values` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`values` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 A StringDictionary with the values to update. You do not need to specify all the values in the table. The omitted ones will remain unchanged
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -212,7 +212,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpsertAsync_System_String_System_String___System_String___System_String_____SuperOffice_WebApi_Data_UpsertNomatchAction_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> UpsertAsync\(string, string\[\], string\[\], string\[\]\[\], UpsertNomatchAction, bool, RequestOptions\)
+### UpsertAsync\(string, string\[\], string\[\], string\[\]\[\], UpsertNomatchAction, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpsertAsync_System_String_System_String___System_String___System_String_____SuperOffice_WebApi_Data_UpsertNomatchAction_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Insert or update rows, optionally deleting/zeroing 'leftover' rows. Special support for UDEF, as well as optional extensive information return. Traveltransactionlog and WebHooks are supported
 
@@ -238,7 +238,7 @@ List of columns that are to be used as keys, to match any existing rows
 
 Outer array = row, inner = column in specified order; use CultureDataFormatter to format values
 
-`nomatchAction` [UpsertNomatchAction](SuperOffice.WebApi.Data.UpsertNomatchAction.md)
+`nomatchAction` [UpsertNomatchAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertNomatchAction)
 
 Action to take on rows in the target table, that are not matched by any rows in the incoming data. Use the deletion options with care. NEVER use deletion if your Upsert is so large you need to divide it into multiple batches.
 
@@ -246,13 +246,12 @@ Action to take on rows in the target table, that are not matched by any rows in 
 
 If true, then the 'RowStatus' member of the return carrier will be populated with a per-row status, for each incoming row
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](SuperOffice.WebApi.Data.MassOperationResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
 
 Summary of results
-

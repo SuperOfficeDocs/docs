@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_SubstituteMergeDocumentTemplateVariablesRequest"></a> Class Document\_SubstituteMergeDocumentTemplateVariablesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_SubstituteMergeDocumentTemplateVariablesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_SubstituteMergeDocumentTemplateVariablesRequest](SuperOffice.WebApi.Data.Document\_SubstituteMergeDocumentTemplateVariablesRequest.md)
+[Document\_SubstituteMergeDocumentTemplateVariablesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_SubstituteMergeDocumentTemplateVariablesRequest)
 
 #### Inherited Members
 

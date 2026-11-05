@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_ChangeEngineIntervalRequest"></a> Class ErpSync\_ChangeEngineIntervalRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_ChangeEngineIntervalRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_ChangeEngineIntervalRequest](SuperOffice.WebApi.Data.ErpSync\_ChangeEngineIntervalRequest.md)
+[ErpSync\_ChangeEngineIntervalRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_ChangeEngineIntervalRequest)
 
 #### Inherited Members
 

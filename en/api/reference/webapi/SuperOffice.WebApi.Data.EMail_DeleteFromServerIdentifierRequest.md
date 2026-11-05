@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_DeleteFromServerIdentifierRequest"></a> Class EMail\_DeleteFromServerIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_DeleteFromServerIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_DeleteFromServerIdentifierRequest](SuperOffice.WebApi.Data.EMail\_DeleteFromServerIdentifierRequest.md)
+[EMail\_DeleteFromServerIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_DeleteFromServerIdentifierRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_DeleteFromServerIdentifierRequest_MessageServerIds"></a> MessageServerIds
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_GetConfigurationFieldsRequest"></a> Class ErpSync\_GetConfigurationFieldsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_GetConfigurationFieldsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_GetConfigurationFieldsRequest](SuperOffice.WebApi.Data.ErpSync\_GetConfigurationFieldsRequest.md)
+[ErpSync\_GetConfigurationFieldsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_GetConfigurationFieldsRequest)
 
 #### Inherited Members
 

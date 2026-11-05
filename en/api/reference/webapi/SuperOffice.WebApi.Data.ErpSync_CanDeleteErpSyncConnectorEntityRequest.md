@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_CanDeleteErpSyncConnectorEntityRequest"></a> Class ErpSync\_CanDeleteErpSyncConnectorEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_CanDeleteErpSyncConnectorEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_CanDeleteErpSyncConnectorEntityRequest](SuperOffice.WebApi.Data.ErpSync\_CanDeleteErpSyncConnectorEntityRequest.md)
+[ErpSync\_CanDeleteErpSyncConnectorEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_CanDeleteErpSyncConnectorEntityRequest)
 
 #### Inherited Members
 

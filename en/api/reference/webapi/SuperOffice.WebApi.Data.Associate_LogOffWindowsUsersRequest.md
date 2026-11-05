@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Associate_LogOffWindowsUsersRequest"></a> Class Associate\_LogOffWindowsUsersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Associate_LogOffWindowsUsersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Associate\_LogOffWindowsUsersRequest](SuperOffice.WebApi.Data.Associate\_LogOffWindowsUsersRequest.md)
+[Associate\_LogOffWindowsUsersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate_LogOffWindowsUsersRequest)
 
 #### Inherited Members
 

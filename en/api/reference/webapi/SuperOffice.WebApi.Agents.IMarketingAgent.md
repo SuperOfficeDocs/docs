@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_IMarketingAgent"></a> Interface IMarketingAgent
+# Interface IMarketingAgent {#SuperOffice_WebApi_Agents_IMarketingAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Agent used for Marketing functions, such as Forms
 
@@ -11,12 +11,12 @@ public interface IMarketingAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_CalculateMailingStatisticsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CalculateMailingStatisticsAsync\(int, RequestOptions\)
+### CalculateMailingStatisticsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_CalculateMailingStatisticsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Calculate open and click rates for one or more mailings
 
@@ -30,17 +30,17 @@ Task<int> CalculateMailingStatisticsAsync(int shipmentId, RequestOptions request
 
 If 0, calculate rates for all dirty (are_statistics_dirty) shipments
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Number of shipments updated with calculated statistics
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultAvailableFontAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultAvailableFontAsync\(RequestOptions\)
+### CreateDefaultAvailableFontAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultAvailableFontAsync_SuperOffice_WebApi_RequestOptions_}
 
 Create an return an empty font
 
@@ -50,17 +50,17 @@ Task<AvailableFont> CreateDefaultAvailableFontAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AvailableFont](SuperOffice.WebApi.Data.AvailableFont.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AvailableFont](/en/api/reference/webapi/SuperOffice.WebApi.Data.AvailableFont)\&gt;
 
 Returns the created default font
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultFormEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultFormEntityAsync\(RequestOptions\)
+### CreateDefaultFormEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultFormEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new FormEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -71,17 +71,17 @@ Task<FormEntity> CreateDefaultFormEntityAsync(RequestOptions requestOptions = nu
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormEntity](SuperOffice.WebApi.Data.FormEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity)\&gt;
 
 A blank FormEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultFormSubmissionEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultFormSubmissionEntityAsync\(RequestOptions\)
+### CreateDefaultFormSubmissionEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultFormSubmissionEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new FormSubmissionEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -92,17 +92,17 @@ Task<FormSubmissionEntity> CreateDefaultFormSubmissionEntityAsync(RequestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormSubmissionEntity](SuperOffice.WebApi.Data.FormSubmissionEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormSubmissionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity)\&gt;
 
 A blank FormSubmissionEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultMailingEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultMailingEntityAsync\(RequestOptions\)
+### CreateDefaultMailingEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultMailingEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new MailingEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -113,17 +113,17 @@ Task<MailingEntity> CreateDefaultMailingEntityAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MailingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity)\&gt;
 
 A blank MailingEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultShipmentMessageBlockEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultShipmentMessageBlockEntityAsync\(RequestOptions\)
+### CreateDefaultShipmentMessageBlockEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultShipmentMessageBlockEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ShipmentMessageBlockEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -134,17 +134,17 @@ Task<ShipmentMessageBlockEntity> CreateDefaultShipmentMessageBlockEntityAsync(Re
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ShipmentMessageBlockEntity](SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ShipmentMessageBlockEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageBlockEntity)\&gt;
 
 A blank ShipmentMessageBlockEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultShipmentMessageEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultShipmentMessageEntityAsync\(RequestOptions\)
+### CreateDefaultShipmentMessageEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultShipmentMessageEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ShipmentMessageEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -155,17 +155,17 @@ Task<ShipmentMessageEntity> CreateDefaultShipmentMessageEntityAsync(RequestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity)\&gt;
 
 A blank ShipmentMessageEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_DeleteAvailableFontAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteAvailableFontAsync\(int, RequestOptions\)
+### DeleteAvailableFontAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteAvailableFontAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete the font with the provided id
 
@@ -179,17 +179,17 @@ Task<bool> DeleteAvailableFontAsync(int availableFontId, RequestOptions requestO
 
 The id of the font to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if the font was deleted
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_DeleteFormEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteFormEntityAsync\(int, RequestOptions\)
+### DeleteFormEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteFormEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the FormEntity
 
@@ -203,7 +203,7 @@ Task DeleteFormEntityAsync(int formEntityId, RequestOptions requestOptions = nul
 
 The identity of the FormEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -211,7 +211,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_DeleteFormSubmissionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteFormSubmissionEntityAsync\(int, RequestOptions\)
+### DeleteFormSubmissionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteFormSubmissionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the FormSubmissionEntity
 
@@ -225,7 +225,7 @@ Task DeleteFormSubmissionEntityAsync(int formSubmissionEntityId, RequestOptions 
 
 The identity of the FormSubmissionEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -233,7 +233,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_DeleteMailingEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteMailingEntityAsync\(int, RequestOptions\)
+### DeleteMailingEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteMailingEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the MailingEntity
 
@@ -247,7 +247,7 @@ Task DeleteMailingEntityAsync(int mailingEntityId, RequestOptions requestOptions
 
 The identity of the MailingEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -255,7 +255,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_DeleteMessageAndShipmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteMessageAndShipmentAsync\(int, RequestOptions\)
+### DeleteMessageAndShipmentAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteMessageAndShipmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete the message and the shipment the message (MessageId) belongs to
 
@@ -269,7 +269,7 @@ Task DeleteMessageAndShipmentAsync(int messageId, RequestOptions requestOptions 
 
 Message id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -277,7 +277,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_DeleteShipmentMessageBlockEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteShipmentMessageBlockEntityAsync\(int, RequestOptions\)
+### DeleteShipmentMessageBlockEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteShipmentMessageBlockEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ShipmentMessageBlockEntity
 
@@ -291,7 +291,7 @@ Task DeleteShipmentMessageBlockEntityAsync(int shipmentMessageBlockEntityId, Req
 
 The identity of the ShipmentMessageBlockEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -299,7 +299,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_DeleteShipmentMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteShipmentMessageEntityAsync\(int, RequestOptions\)
+### DeleteShipmentMessageEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteShipmentMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ShipmentMessageEntity
 
@@ -313,7 +313,7 @@ Task DeleteShipmentMessageEntityAsync(int shipmentMessageEntityId, RequestOption
 
 The identity of the ShipmentMessageEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -321,7 +321,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetAvailableFontAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAvailableFontAsync\(int, RequestOptions\)
+### GetAvailableFontAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetAvailableFontAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get an available font by id
 
@@ -335,17 +335,17 @@ Task<AvailableFont> GetAvailableFontAsync(int availableFontId, RequestOptions re
 
 The id of the font to retrieve
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AvailableFont](SuperOffice.WebApi.Data.AvailableFont.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AvailableFont](/en/api/reference/webapi/SuperOffice.WebApi.Data.AvailableFont)\&gt;
 
 Returns the requested font or null if it does not exist
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetFormEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetFormEntityAsync\(int, RequestOptions\)
+### GetFormEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetFormEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific FormEntity object.
 
@@ -359,17 +359,17 @@ Task<FormEntity> GetFormEntityAsync(int formEntityId, RequestOptions requestOpti
 
 The identifier of the FormEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormEntity](SuperOffice.WebApi.Data.FormEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity)\&gt;
 
 FormEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetFormSubmissionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetFormSubmissionEntityAsync\(int, RequestOptions\)
+### GetFormSubmissionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetFormSubmissionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific FormSubmissionEntity object.
 
@@ -383,17 +383,17 @@ Task<FormSubmissionEntity> GetFormSubmissionEntityAsync(int formSubmissionEntity
 
 The identifier of the FormSubmissionEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormSubmissionEntity](SuperOffice.WebApi.Data.FormSubmissionEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormSubmissionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity)\&gt;
 
 FormSubmissionEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetFormSubmissionsCountAsync_System_Int32_SuperOffice_WebApi_Data_FormSubmissionStatus_SuperOffice_WebApi_RequestOptions_"></a> GetFormSubmissionsCountAsync\(int, FormSubmissionStatus, RequestOptions\)
+### GetFormSubmissionsCountAsync\(int, FormSubmissionStatus, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetFormSubmissionsCountAsync_System_Int32_SuperOffice_WebApi_Data_FormSubmissionStatus_SuperOffice_WebApi_RequestOptions_}
 
 Get counnt of submissions for given form and status. Count for all forms is returned if negative formId is given
 
@@ -407,21 +407,21 @@ Task<int> GetFormSubmissionsCountAsync(int formId, FormSubmissionStatus status, 
 
 If 0 or less, return count for all forms
 
-`status` [FormSubmissionStatus](SuperOffice.WebApi.Data.FormSubmissionStatus.md)
+`status` [FormSubmissionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionStatus)
 
 Which status the submissions should have. If Unknown, return count of all statuses
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Number of formsubmissions
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetMailingEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetMailingEntityAsync\(int, RequestOptions\)
+### GetMailingEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetMailingEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific MailingEntity object.
 
@@ -435,17 +435,17 @@ Task<MailingEntity> GetMailingEntityAsync(int mailingEntityId, RequestOptions re
 
 The identifier of the MailingEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MailingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity)\&gt;
 
 MailingEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetPreviewMailingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviewMailingAsync\(int, RequestOptions\)
+### GetPreviewMailingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetPreviewMailingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a shipment message from its shipment address id
 
@@ -459,17 +459,17 @@ Task<PreviewMailing> GetPreviewMailingAsync(int shipmentAddrId, RequestOptions r
 
 Shipment address id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreviewMailing](SuperOffice.WebApi.Data.PreviewMailing.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewMailing](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewMailing)\&gt;
 
 PreviewMailing
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetPreviewMailingHeaderAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviewMailingHeaderAsync\(int, RequestOptions\)
+### GetPreviewMailingHeaderAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetPreviewMailingHeaderAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a shipment from its shipment id
 
@@ -483,17 +483,17 @@ Task<PreviewMailingHeader> GetPreviewMailingHeaderAsync(int shipmentId, RequestO
 
 Shipment id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreviewMailingHeader](SuperOffice.WebApi.Data.PreviewMailingHeader.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewMailingHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewMailingHeader)\&gt;
 
 PreviewMailingHeader
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetShipmentMessageBlockEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetShipmentMessageBlockEntityAsync\(int, RequestOptions\)
+### GetShipmentMessageBlockEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetShipmentMessageBlockEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ShipmentMessageBlockEntity object.
 
@@ -507,17 +507,17 @@ Task<ShipmentMessageBlockEntity> GetShipmentMessageBlockEntityAsync(int shipment
 
 The identifier of the ShipmentMessageBlockEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ShipmentMessageBlockEntity](SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ShipmentMessageBlockEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageBlockEntity)\&gt;
 
 ShipmentMessageBlockEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetShipmentMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetShipmentMessageEntityAsync\(int, RequestOptions\)
+### GetShipmentMessageEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetShipmentMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ShipmentMessageEntity object.
 
@@ -531,17 +531,17 @@ Task<ShipmentMessageEntity> GetShipmentMessageEntityAsync(int shipmentMessageEnt
 
 The identifier of the ShipmentMessageEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity)\&gt;
 
 ShipmentMessageEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_GetUserBlocksAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserBlocksAsync\(int, RequestOptions\)
+### GetUserBlocksAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_GetUserBlocksAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the saved user blocks to be used in a shipment/mailing message
 
@@ -555,17 +555,17 @@ Task<ShipmentMessageBlockEntity[]> GetUserBlocksAsync(int associateId, RequestOp
 
 The associate id to get the user blocks. 0 will get all saved blocks
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ShipmentMessageBlockEntity](SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ShipmentMessageBlockEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageBlockEntity)\[\]\&gt;
 
 An array of user blocks
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_MoveFormsToFolderAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MoveFormsToFolderAsync\(int\[\], int, RequestOptions\)
+### MoveFormsToFolderAsync\(int\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_MoveFormsToFolderAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Move one or more forms into the given folder. FolderId -1 = root. Only the folder reference is written - Save would rewrite the whole form, including a re-sanitized Config, and would bump Updated (the thumbnail cache-buster).
 
@@ -583,7 +583,7 @@ Ids of the forms to move (form.form_id)
 
 Target folder id (s_picture_folder.id, formFolder type); -1 = root
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -591,7 +591,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_MoveMailingsToFolderAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MoveMailingsToFolderAsync\(int\[\], int, RequestOptions\)
+### MoveMailingsToFolderAsync\(int\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_MoveMailingsToFolderAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Move one or more mailings (shipments) into the given folder. FolderId -1 = root.
 
@@ -609,7 +609,7 @@ Shipment ids of the mailings to move (s_shipment.id)
 
 Target folder id (s_picture_folder.id, shipmentFolder type); -1 = root
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -617,7 +617,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_ReloadAndSendMailingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ReloadAndSendMailingAsync\(int, RequestOptions\)
+### ReloadAndSendMailingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_ReloadAndSendMailingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Reload and send a mailing
 
@@ -631,17 +631,17 @@ Task<bool> ReloadAndSendMailingAsync(int mailingId, RequestOptions requestOption
 
 Mailing id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Did the operation succeed?
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_RenameMailingByMessageIdAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> RenameMailingByMessageIdAsync\(int, string, RequestOptions\)
+### RenameMailingByMessageIdAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_RenameMailingByMessageIdAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change the mailing name (shipment description) that the given message (MessageId) belongs to
 
@@ -659,7 +659,7 @@ Message id
 
 The new name
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -667,7 +667,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SaveAvailableFontAsync_SuperOffice_WebApi_Data_AvailableFont_SuperOffice_WebApi_RequestOptions_"></a> SaveAvailableFontAsync\(AvailableFont, RequestOptions\)
+### SaveAvailableFontAsync\(AvailableFont, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SaveAvailableFontAsync_SuperOffice_WebApi_Data_AvailableFont_SuperOffice_WebApi_RequestOptions_}
 
 Saves the font and returns it with correct rank
 
@@ -677,21 +677,21 @@ Task<AvailableFont> SaveAvailableFontAsync(AvailableFont font, RequestOptions re
 
 #### Parameters
 
-`font` [AvailableFont](SuperOffice.WebApi.Data.AvailableFont.md)
+`font` [AvailableFont](/en/api/reference/webapi/SuperOffice.WebApi.Data.AvailableFont)
 
 The font to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AvailableFont](SuperOffice.WebApi.Data.AvailableFont.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AvailableFont](/en/api/reference/webapi/SuperOffice.WebApi.Data.AvailableFont)\&gt;
 
 Returns the saved font with correct rank
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SaveFormEntityAsync_SuperOffice_WebApi_Data_FormEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveFormEntityAsync\(FormEntity, RequestOptions\)
+### SaveFormEntityAsync\(FormEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SaveFormEntityAsync_SuperOffice_WebApi_Data_FormEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing FormEntity or creates a new FormEntity if the id parameter is 0.
 
@@ -701,21 +701,21 @@ Task<FormEntity> SaveFormEntityAsync(FormEntity formEntity, RequestOptions reque
 
 #### Parameters
 
-`formEntity` [FormEntity](SuperOffice.WebApi.Data.FormEntity.md)
+`formEntity` [FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity)
 
 The FormEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormEntity](SuperOffice.WebApi.Data.FormEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormEntity)\&gt;
 
 New or updated FormEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SaveFormSubmissionEntityAsync_SuperOffice_WebApi_Data_FormSubmissionEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveFormSubmissionEntityAsync\(FormSubmissionEntity, RequestOptions\)
+### SaveFormSubmissionEntityAsync\(FormSubmissionEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SaveFormSubmissionEntityAsync_SuperOffice_WebApi_Data_FormSubmissionEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing FormSubmissionEntity or creates a new FormSubmissionEntity if the id parameter is 0.
 
@@ -725,21 +725,21 @@ Task<FormSubmissionEntity> SaveFormSubmissionEntityAsync(FormSubmissionEntity fo
 
 #### Parameters
 
-`formSubmissionEntity` [FormSubmissionEntity](SuperOffice.WebApi.Data.FormSubmissionEntity.md)
+`formSubmissionEntity` [FormSubmissionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity)
 
 The FormSubmissionEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormSubmissionEntity](SuperOffice.WebApi.Data.FormSubmissionEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormSubmissionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionEntity)\&gt;
 
 New or updated FormSubmissionEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SaveMailingEntityAsync_SuperOffice_WebApi_Data_MailingEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveMailingEntityAsync\(MailingEntity, RequestOptions\)
+### SaveMailingEntityAsync\(MailingEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SaveMailingEntityAsync_SuperOffice_WebApi_Data_MailingEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing MailingEntity or creates a new MailingEntity if the id parameter is 0.
 
@@ -749,21 +749,21 @@ Task<MailingEntity> SaveMailingEntityAsync(MailingEntity mailingEntity, RequestO
 
 #### Parameters
 
-`mailingEntity` [MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md)
+`mailingEntity` [MailingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity)
 
 The MailingEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MailingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity)\&gt;
 
 New or updated MailingEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SaveShipmentMessageBlockEntityAsync_SuperOffice_WebApi_Data_ShipmentMessageBlockEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveShipmentMessageBlockEntityAsync\(ShipmentMessageBlockEntity, RequestOptions\)
+### SaveShipmentMessageBlockEntityAsync\(ShipmentMessageBlockEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SaveShipmentMessageBlockEntityAsync_SuperOffice_WebApi_Data_ShipmentMessageBlockEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ShipmentMessageBlockEntity or creates a new ShipmentMessageBlockEntity if the id parameter is 0.
 
@@ -773,21 +773,21 @@ Task<ShipmentMessageBlockEntity> SaveShipmentMessageBlockEntityAsync(ShipmentMes
 
 #### Parameters
 
-`shipmentMessageBlockEntity` [ShipmentMessageBlockEntity](SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.md)
+`shipmentMessageBlockEntity` [ShipmentMessageBlockEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageBlockEntity)
 
 The ShipmentMessageBlockEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ShipmentMessageBlockEntity](SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ShipmentMessageBlockEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageBlockEntity)\&gt;
 
 New or updated ShipmentMessageBlockEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SaveShipmentMessageEntityAsync_SuperOffice_WebApi_Data_ShipmentMessageEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveShipmentMessageEntityAsync\(ShipmentMessageEntity, RequestOptions\)
+### SaveShipmentMessageEntityAsync\(ShipmentMessageEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SaveShipmentMessageEntityAsync_SuperOffice_WebApi_Data_ShipmentMessageEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ShipmentMessageEntity or creates a new ShipmentMessageEntity if the id parameter is 0.
 
@@ -797,21 +797,21 @@ Task<ShipmentMessageEntity> SaveShipmentMessageEntityAsync(ShipmentMessageEntity
 
 #### Parameters
 
-`shipmentMessageEntity` [ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md)
+`shipmentMessageEntity` [ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity)
 
 The ShipmentMessageEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity)\&gt;
 
 New or updated ShipmentMessageEntity
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SetAllFormFieldRestrictionsAsync_SuperOffice_WebApi_Data_FormFieldRestriction___SuperOffice_WebApi_RequestOptions_"></a> SetAllFormFieldRestrictionsAsync\(FormFieldRestriction\[\], RequestOptions\)
+### SetAllFormFieldRestrictionsAsync\(FormFieldRestriction\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SetAllFormFieldRestrictionsAsync_SuperOffice_WebApi_Data_FormFieldRestriction___SuperOffice_WebApi_RequestOptions_}
 
 Sets the list of form field restrictions. Note: This list is the conclusion of what should exist in the table. Restrictions that already exists in the table are edited, new ones are added, and if they are not in this list, they will be deleted
 
@@ -821,11 +821,11 @@ Task SetAllFormFieldRestrictionsAsync(FormFieldRestriction[] formFieldRestrictio
 
 #### Parameters
 
-`formFieldRestrictions` [FormFieldRestriction](SuperOffice.WebApi.Data.FormFieldRestriction.md)\[\]
+`formFieldRestrictions` [FormFieldRestriction](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestriction)\[\]
 
 All the restrictions to set. Restrictions not included, will be deleted
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -833,7 +833,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_SetFontRankAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetFontRankAsync\(int, int, RequestOptions\)
+### SetFontRankAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_SetFontRankAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Set the rank on the font and reorder the rest of the fonts accordingly
 
@@ -851,17 +851,17 @@ The id of the available font to set the rank on
 
 The new rank to set on the font
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if the new rank on the font and surrounding reranks went well
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_StopMailingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> StopMailingAsync\(int, RequestOptions\)
+### StopMailingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_StopMailingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Stop a mailing that is queued or currently sending, leaving it in status Canceled
 
@@ -875,17 +875,17 @@ Task<bool> StopMailingAsync(int mailingId, RequestOptions requestOptions = null)
 
 Mailing id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Did the operation succeed?
 
-### <a id="SuperOffice_WebApi_Agents_IMarketingAgent_VerifyGoogleRecaptchaAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> VerifyGoogleRecaptchaAsync\(string, string, RequestOptions\)
+### VerifyGoogleRecaptchaAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMarketingAgent_VerifyGoogleRecaptchaAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 This method will try to verify a Google recaptcha token. The token is gained from the recaptcha frontend component
 
@@ -903,13 +903,12 @@ The token to be verified
 
 Use an optional secret key instead of the system wide
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if the recaptcha token verified successfully
-

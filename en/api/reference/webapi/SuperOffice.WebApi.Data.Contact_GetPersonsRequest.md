@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_GetPersonsRequest"></a> Class Contact\_GetPersonsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_GetPersonsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_GetPersonsRequest](SuperOffice.WebApi.Data.Contact\_GetPersonsRequest.md)
+[Contact\_GetPersonsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_GetPersonsRequest)
 
 #### Inherited Members
 

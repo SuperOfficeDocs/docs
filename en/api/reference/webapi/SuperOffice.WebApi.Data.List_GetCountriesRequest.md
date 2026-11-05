@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetCountriesRequest"></a> Class List\_GetCountriesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetCountriesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetCountriesRequest](SuperOffice.WebApi.Data.List\_GetCountriesRequest.md)
+[List\_GetCountriesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetCountriesRequest)
 
 #### Inherited Members
 

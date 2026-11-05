@@ -9,17 +9,19 @@ envir: onsite, online
 
 ## "FindTicket"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindTicketProvider">SuperOffice.CRM.ArchiveLists.FindTicketProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindTicketProvider inside NetServer's SODatabase assembly.
 
 Ticket provider for Find
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"ticket"||
 |"ticketdisplayclosed"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -123,6 +125,7 @@ Ticket provider for Find
 |ownedBy/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/usergroup|userGroup|| x |
@@ -227,6 +230,7 @@ Ticket provider for Find
 |person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailAddress|string|| x |
@@ -331,6 +335,7 @@ Ticket provider for Find
 |person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/locationAddress|string|| x |
@@ -435,6 +440,7 @@ Ticket provider for Find
 |contact/postAddress/line2|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/line3|string|| x |
@@ -539,6 +545,7 @@ Ticket provider for Find
 |contact/NumberOfActivities|int||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/NumberOfActivitiesInPeriod|int||  |
@@ -643,6 +650,7 @@ Ticket provider for Find
 |sale/amountWeightedInBaseCurrency| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/daysInStage|int|| x |
@@ -747,6 +755,7 @@ Ticket provider for Find
 |project/projectAssociate/contactCategory|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/role|listAny|| x |
@@ -812,5 +821,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

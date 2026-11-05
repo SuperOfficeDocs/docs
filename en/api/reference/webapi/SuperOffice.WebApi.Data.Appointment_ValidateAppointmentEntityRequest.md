@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_ValidateAppointmentEntityRequest"></a> Class Appointment\_ValidateAppointmentEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_ValidateAppointmentEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_ValidateAppointmentEntityRequest](SuperOffice.WebApi.Data.Appointment\_ValidateAppointmentEntityRequest.md)
+[Appointment\_ValidateAppointmentEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_ValidateAppointmentEntityRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public AppointmentEntity AppointmentEntity { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+ [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 

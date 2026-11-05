@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FreeText_FreetextIndexRowsRequest"></a> Class FreeText\_FreetextIndexRowsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class FreeText_FreetextIndexRowsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FreeText\_FreetextIndexRowsRequest](SuperOffice.WebApi.Data.FreeText\_FreetextIndexRowsRequest.md)
+[FreeText\_FreetextIndexRowsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText_FreetextIndexRowsRequest)
 
 #### Inherited Members
 

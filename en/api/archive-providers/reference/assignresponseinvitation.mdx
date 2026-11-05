@@ -9,20 +9,22 @@ envir: onsite, online
 
 ## "AssignResponseInvitation"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.AssignResponseInvitationProvider">SuperOffice.CRM.ArchiveLists.AssignResponseInvitationProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.AssignResponseInvitationProvider inside NetServer's SODatabase assembly.
 
 This is the query provider for invitations, of subtype 'Response'
 
-Response invitations are defined as having status declined (<see cref="F:SuperOffice.Data.AppointmentStatus.BookingDeclined" />
-or <see cref="F:SuperOffice.Data.AppointmentStatus.AssignmentDeclined" />). They also have to be not overdue, i.e., activedate
+Response invitations are defined as having status declined (BookingDeclined
+or AssignmentDeclined). They also have to be not overdue, i.e., activedate
 must be &gt;= start of today. This is an optional entity and is fetched if the user checks the corresponding checkbox.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"response"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -126,6 +128,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/description|string|| x |
@@ -230,6 +233,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_date|date|| x |
@@ -334,6 +338,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -438,6 +443,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -542,6 +548,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUrl/URLDescription|string|| x |
@@ -646,6 +653,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/originalStage|listAny|| x |
@@ -750,6 +758,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 |associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/portraitThumbnail| *None* ||  |
@@ -779,5 +788,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

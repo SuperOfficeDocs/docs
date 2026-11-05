@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_CalculateMessageRecipientsRequest"></a> Class Ticket\_CalculateMessageRecipientsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_CalculateMessageRecipientsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_CalculateMessageRecipientsRequest](SuperOffice.WebApi.Data.Ticket\_CalculateMessageRecipientsRequest.md)
+[Ticket\_CalculateMessageRecipientsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_CalculateMessageRecipientsRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public MessageActionType ActionType { get; set; }
 
 #### Property Value
 
- [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+ [MessageActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageActionType)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_CalculateMessageRecipientsRequest_MessageId"></a> MessageId
 

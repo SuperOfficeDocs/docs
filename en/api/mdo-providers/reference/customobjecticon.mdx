@@ -8,16 +8,12 @@ envir: online
 ---
 
 ## "customobjecticon" MDO List
+
 Custom object icons uploaded as SVG files, whether or not a custom object uses them.
 ExtraInfo holds the number of custom objects using each icon.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.CustomObjectIconProvider">CustomObjectIconProvider</see> class.
+Implemented by the CustomObjectIconProvider class.
 The name of the MDO list is 'customobjecticon'.
-
-
-
 
 ## Sample Request
 
@@ -30,6 +26,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("customobjecticon", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -43,7 +40,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

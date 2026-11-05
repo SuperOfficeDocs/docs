@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FindResults"></a> Class FindResults
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FindResults.
@@ -13,13 +13,13 @@ public class FindResults : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[FindResults](SuperOffice.WebApi.Data.FindResults.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[FindResults](/en/api/reference/webapi/SuperOffice.WebApi.Data.FindResults)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual ArchiveColumnInfo[] ArchiveColumns { get; set; }
 
 #### Property Value
 
- [ArchiveColumnInfo](SuperOffice.WebApi.Data.ArchiveColumnInfo.md)\[\]
+ [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_FindResults_ArchiveRows"></a> ArchiveRows
 
@@ -62,7 +62,7 @@ public virtual ArchiveListItem[] ArchiveRows { get; set; }
 
 #### Property Value
 
- [ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]
+ [ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_FindResults_RowCount"></a> RowCount
 
@@ -78,5 +78,5 @@ public virtual int RowCount { get; set; }
 
 ## See Also
 
-[FindAgent](SuperOffice.WebApi.Agents.FindAgent.md)
+[FindAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FindAgent)
 

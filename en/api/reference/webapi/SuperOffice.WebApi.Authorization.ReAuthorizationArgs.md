@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_ReAuthorizationArgs"></a> Class ReAuthorizationArgs
 
-Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Used to contain required types when authorization is refreshed.
@@ -12,7 +12,7 @@ public class ReAuthorizationArgs
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md)
+[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs)
 
 #### Inherited Members
 
@@ -44,7 +44,7 @@ Originating request.
 
 HttpClient for backchannel communications.
 
-`exception` [SuperOfficeWebApiUnauthorizedException](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException.md)
+`exception` [SuperOfficeWebApiUnauthorizedException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException)
 
 Exception that triggered the refresh event.
 
@@ -88,7 +88,7 @@ public SuperOfficeWebApiUnauthorizedException Exception { get; set; }
 
 #### Property Value
 
- [SuperOfficeWebApiUnauthorizedException](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException.md)
+ [SuperOfficeWebApiUnauthorizedException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException)
 
 ### <a id="SuperOffice_WebApi_Authorization_ReAuthorizationArgs_RequestMessage"></a> RequestMessage
 

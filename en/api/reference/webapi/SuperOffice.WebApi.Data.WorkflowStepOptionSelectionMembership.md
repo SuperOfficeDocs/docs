@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepOptionSelectionMembership"></a> Class WorkflowStepOptionSelectionMembership
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepOptionSelectionMembership.
@@ -13,19 +13,19 @@ public class WorkflowStepOptionSelectionMembership : WorkflowStepOptionBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepOptionBase](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md) ← 
-[WorkflowStepOptionSelectionMembership](SuperOffice.WebApi.Data.WorkflowStepOptionSelectionMembership.md)
+[WorkflowStepOptionBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase) ← 
+[WorkflowStepOptionSelectionMembership](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionSelectionMembership)
 
 #### Inherited Members
 
-[WorkflowStepOptionBase.OptionType\_String](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_OptionType\_String), 
-[WorkflowStepOptionBase.OptionType](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_OptionType), 
-[WorkflowStepOptionBase.WorkflowStepOptionId](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_WorkflowStepOptionId), 
-[WorkflowStepOptionBase.WorkflowStepId](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_WorkflowStepId), 
-[WorkflowStepOptionBase.WorkflowId](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_WorkflowId), 
-[WorkflowStepOptionBase.Name](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_Name), 
-[WorkflowStepOptionBase.Rank](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_Rank), 
-[WorkflowStepOptionBase.Steps](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_Steps), 
+[WorkflowStepOptionBase.OptionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_OptionType_String), 
+[WorkflowStepOptionBase.OptionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_OptionType), 
+[WorkflowStepOptionBase.WorkflowStepOptionId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_WorkflowStepOptionId), 
+[WorkflowStepOptionBase.WorkflowStepId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_WorkflowStepId), 
+[WorkflowStepOptionBase.WorkflowId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_WorkflowId), 
+[WorkflowStepOptionBase.Name](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_Name), 
+[WorkflowStepOptionBase.Rank](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_Rank), 
+[WorkflowStepOptionBase.Steps](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_Steps), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -60,5 +60,5 @@ public virtual int SelectionId { get; set; }
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_AddTileToDashboardRequest"></a> Class Dash\_AddTileToDashboardRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_AddTileToDashboardRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_AddTileToDashboardRequest](SuperOffice.WebApi.Data.Dash\_AddTileToDashboardRequest.md)
+[Dash\_AddTileToDashboardRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_AddTileToDashboardRequest)
 
 #### Inherited Members
 

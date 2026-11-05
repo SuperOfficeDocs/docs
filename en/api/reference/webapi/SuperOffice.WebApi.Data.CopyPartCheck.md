@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_CopyPartCheck"></a> Class CopyPartCheck
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for CopyPartCheck.
 Whether one optional part of a copy can be copied, and if not, why. Returned for each part by the copy check operations, such as SaleAgent.CheckSaleEntityCopy and ProjectAgent.CheckProjectEntityCopy.
@@ -12,17 +12,17 @@ public class CopyPartCheck
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md)
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -73,11 +73,11 @@ public CopyPartAvailability? State { get; set; }
 
 #### Property Value
 
- [CopyPartAvailability](SuperOffice.WebApi.Data.CopyPartAvailability.md)?
+ [CopyPartAvailability](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartAvailability)?
 
 #### See Also
 
-[CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md).[State\_String](SuperOffice.WebApi.Data.CopyPartCheck.md\#SuperOffice\_WebApi\_Data\_CopyPartCheck\_State\_String)
+[CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck).[State\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck#SuperOffice_WebApi_Data_CopyPartCheck_State_String)
 
 ### <a id="SuperOffice_WebApi_Data_CopyPartCheck_State_String"></a> State\_String
 
@@ -95,9 +95,8 @@ public string State_String { get; set; }
 
 #### See Also
 
-[CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md).[State](SuperOffice.WebApi.Data.CopyPartCheck.md\#SuperOffice\_WebApi\_Data\_CopyPartCheck\_State)
+[CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck).[State](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck#SuperOffice_WebApi_Data_CopyPartCheck_State)
 
 ## See Also
 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
-
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)

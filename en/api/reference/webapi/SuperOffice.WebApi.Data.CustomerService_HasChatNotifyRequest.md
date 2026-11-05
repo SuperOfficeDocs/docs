@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_HasChatNotifyRequest"></a> Class CustomerService\_HasChatNotifyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_HasChatNotifyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_HasChatNotifyRequest](SuperOffice.WebApi.Data.CustomerService\_HasChatNotifyRequest.md)
+[CustomerService\_HasChatNotifyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_HasChatNotifyRequest)
 
 #### Inherited Members
 

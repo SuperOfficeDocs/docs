@@ -1,7 +1,7 @@
 ---
 title: Agent API changes in 12.6
 description: Agent API release notes for SuperOffice 12.6
-date: 11.05.2026
+date: 11.04.2026
 so_version: 12.6.1407
 content_type: release-note
 category: api
@@ -162,7 +162,6 @@ The following represent changes to the SuperOffice.WebApi assembly.
   * Field `.AIEnableAgentLead`
   * Field `.AIEnableAgentSalesAssistant`
 
-
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.DataCollection is Modified
 
 * Deleted items
@@ -177,17 +176,11 @@ The following represent changes to the SuperOffice.WebApi assembly.
   * Field `.DataCollectionUsageStats`
   * Field `.DataCollectionWebAppUsage`
 
-
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.Functions is Modified
 
 * New items
   * Field `.FunctionsJoinPilotForStartPage`
 
-
-
 ## Web API Authorization
 
 The following represent changes to the SuperOffice.WebApi.Authorization assembly.
-
-
-

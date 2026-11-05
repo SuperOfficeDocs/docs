@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_IBLOBAgent"></a> Interface IBLOBAgent
+# Interface IBLOBAgent {#SuperOffice_WebApi_Agents_IBLOBAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Collection of all services that works with binary objects (BLOBS), e.g. Images and documents.
 
@@ -11,12 +11,12 @@ public interface IBLOBAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_ChangeContactImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ChangeContactImageAsync\(int, int, RequestOptions\)
+### ChangeContactImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_ChangeContactImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Changes the contact image link. If the Binary object id is 0, any image link is removed from the contact.
 
@@ -34,7 +34,7 @@ The Contact the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the Contact.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -42,7 +42,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_ChangePersonImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ChangePersonImageAsync\(int, int, RequestOptions\)
+### ChangePersonImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_ChangePersonImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 Task ChangePersonImageAsync(int personId, int blobId, RequestOptions requestOptions = null)
@@ -58,7 +58,7 @@ The person the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the person.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -66,7 +66,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_ChangeProductImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ChangeProductImageAsync\(int, int, RequestOptions\)
+### ChangeProductImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_ChangeProductImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 Task ChangeProductImageAsync(int productId, int blobId, RequestOptions requestOptions = null)
@@ -82,7 +82,7 @@ The product the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the product.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -90,7 +90,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_ChangeProjectImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ChangeProjectImageAsync\(int, int, RequestOptions\)
+### ChangeProjectImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_ChangeProjectImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Changes the project image link. If the Binary object id is 0, any image link is removed from the project.
 
@@ -108,7 +108,7 @@ The project the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the project.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -116,7 +116,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_CleanupBatchTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CleanupBatchTaskAsync\(int, RequestOptions\)
+### CleanupBatchTaskAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_CleanupBatchTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Removes the binary objects linked to the batch task, the links themselves and the batch task.
 
@@ -130,7 +130,7 @@ Task CleanupBatchTaskAsync(int batchTaskId, RequestOptions requestOptions = null
 
 The ID of the batchtask that created the output data
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -138,7 +138,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_CreateDefaultBlobEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultBlobEntityAsync\(RequestOptions\)
+### CreateDefaultBlobEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_CreateDefaultBlobEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new BlobEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -149,17 +149,17 @@ Task<BlobEntity> CreateDefaultBlobEntityAsync(RequestOptions requestOptions = nu
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 A blank BlobEntity
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_DeleteBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteBlobEntityAsync\(int, RequestOptions\)
+### DeleteBlobEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_DeleteBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the BlobEntity
 
@@ -173,7 +173,7 @@ Task DeleteBlobEntityAsync(int blobEntityId, RequestOptions requestOptions = nul
 
 The identity of the BlobEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -181,7 +181,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBlobEntityAsync\(int, RequestOptions\)
+### GetBlobEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific BlobEntity object.
 
@@ -195,17 +195,17 @@ Task<BlobEntity> GetBlobEntityAsync(int blobEntityId, RequestOptions requestOpti
 
 The identifier of the BlobEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBlobEntityOnContactAsync\(int, RequestOptions\)
+### GetBlobEntityOnContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the contact image binary object.
 
@@ -219,17 +219,17 @@ Task<BlobEntity> GetBlobEntityOnContactAsync(int contactId, RequestOptions reque
 
 The Contact id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnCountryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBlobEntityOnCountryAsync\(int, RequestOptions\)
+### GetBlobEntityOnCountryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnCountryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the country flag binary object.
 
@@ -243,17 +243,17 @@ Task<BlobEntity> GetBlobEntityOnCountryAsync(int countryId, RequestOptions reque
 
 The country id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBlobEntityOnPersonAsync\(int, RequestOptions\)
+### GetBlobEntityOnPersonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the person image binary object.
 
@@ -267,17 +267,17 @@ Task<BlobEntity> GetBlobEntityOnPersonAsync(int personId, RequestOptions request
 
 The person id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBlobEntityOnProductAsync\(int, RequestOptions\)
+### GetBlobEntityOnProductAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the product image binary object.
 
@@ -291,17 +291,17 @@ Task<BlobEntity> GetBlobEntityOnProductAsync(int productId, RequestOptions reque
 
 The product id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBlobEntityOnProjectAsync\(int, RequestOptions\)
+### GetBlobEntityOnProjectAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobEntityOnProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the project image binary object.
 
@@ -315,17 +315,17 @@ Task<BlobEntity> GetBlobEntityOnProjectAsync(int projectId, RequestOptions reque
 
 The project id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetBlobStreamAsync\(int, string, RequestOptions\)
+### GetBlobStreamAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetBlobStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the binary object as a stream
 
@@ -343,17 +343,17 @@ The ID of the BLOB entity object that refers to the binary data
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The binary object as a Stream
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetChatImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetChatImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetChatImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetChatImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the chat image that is displayed in chat with a specified maximum size.
 
@@ -379,17 +379,17 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The chat image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetContactImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetContactImageAsync\(int, string, RequestOptions\)
+### GetContactImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetContactImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the contact image that is displayed in the CRM application.
 
@@ -407,17 +407,17 @@ The contact id of the contact the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The contact image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetContactImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetContactImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetContactImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetContactImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the contact image that is displayed in the CRM application with a specified maximum size.
 
@@ -443,17 +443,17 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The contact image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetOutputFromBatchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetOutputFromBatchAsync\(int, string, RequestOptions\)
+### GetOutputFromBatchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetOutputFromBatchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the output of a batchtask as a stream
 
@@ -471,17 +471,17 @@ The ID of the batchtask that created the output data
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The binary object as a Stream.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetPersonImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetPersonImageAsync\(int, string, RequestOptions\)
+### GetPersonImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetPersonImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the person image that is displayed in the CRM application.
 
@@ -499,17 +499,17 @@ The person id of the person the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The person image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetPersonImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetPersonImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetPersonImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetPersonImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the person image that is displayed in the CRM application with a specified maximum size.
 
@@ -535,17 +535,17 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The person image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetProductImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetProductImageAsync\(int, string, RequestOptions\)
+### GetProductImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetProductImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the product image (rank=1) that is displayed in the CRM application.
 
@@ -563,17 +563,17 @@ The product id of the product the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The product image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetProductThumbnailAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetProductThumbnailAsync\(int, string, RequestOptions\)
+### GetProductThumbnailAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetProductThumbnailAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the product thumbnail that is displayed in the CRM application.
 
@@ -591,17 +591,17 @@ The product id of the product the thumbnail belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The product thumbnail.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetProjectImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetProjectImageAsync\(int, string, RequestOptions\)
+### GetProjectImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetProjectImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the project image that is displayed in the CRM application.
 
@@ -619,17 +619,17 @@ The project id of the project the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The project image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetProjectImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetProjectImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetProjectImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetProjectImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the project image that is displayed in the CRM application with a specified maximum size.
 
@@ -655,17 +655,17 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The project image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_GetQuoteLineImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetQuoteLineImageAsync\(int, string, RequestOptions\)
+### GetQuoteLineImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_GetQuoteLineImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the quoteline image (rank=1) that is displayed in the CRM application.
 
@@ -683,17 +683,17 @@ The product id of the quoteline the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The quote line image.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SaveBlobEntityAsync_SuperOffice_WebApi_Data_BlobEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveBlobEntityAsync\(BlobEntity, RequestOptions\)
+### SaveBlobEntityAsync\(BlobEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SaveBlobEntityAsync_SuperOffice_WebApi_Data_BlobEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing BlobEntity or creates a new BlobEntity if the id parameter is 0.
 
@@ -703,21 +703,21 @@ Task<BlobEntity> SaveBlobEntityAsync(BlobEntity blobEntity, RequestOptions reque
 
 #### Parameters
 
-`blobEntity` [BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)
+`blobEntity` [BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)
 
 The BlobEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 New or updated BlobEntity
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SaveImageStreamAsync_SuperOffice_WebApi_Data_BlobLinkType_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_"></a> SaveImageStreamAsync\(BlobLinkType, byte\[\], string, RequestOptions\)
+### SaveImageStreamAsync\(BlobLinkType, byte\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SaveImageStreamAsync_SuperOffice_WebApi_Data_BlobLinkType_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Stores an image in the database without linking it to a project or a person. It is possible to ChangePersonImage or ChangeProjectImage to attach image later.
 
@@ -727,7 +727,7 @@ Task<int> SaveImageStreamAsync(BlobLinkType type, byte[] image, string descripti
 
 #### Parameters
 
-`type` [BlobLinkType](SuperOffice.WebApi.Data.BlobLinkType.md)
+`type` [BlobLinkType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobLinkType)
 
 The type of the image.
 
@@ -739,17 +739,17 @@ Image to store.
 
 Image description.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The blob id.
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SaveProjectImageAsync_System_String_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SaveProjectImageAsync\(string, byte\[\], RequestOptions\)
+### SaveProjectImageAsync\(string, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SaveProjectImageAsync_System_String_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Saves a project image that is displayed in the CRM application's project image selection dialog to the database.
 
@@ -767,7 +767,7 @@ Image description. Should be image name (e.g. winter.jpg) for project images.
 
 The project image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -775,7 +775,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SetBlobStreamAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetBlobStreamAsync\(int, byte\[\], RequestOptions\)
+### SetBlobStreamAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SetBlobStreamAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Store a binary object from it's stream
 
@@ -793,7 +793,7 @@ Id of the BLOB entity object that the binary data should be stored to.
 
 The binary object as a Stream
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -801,7 +801,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SetContactImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetContactImageAsync\(int, byte\[\], RequestOptions\)
+### SetContactImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SetContactImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the contact image that is displayed in the CRM application.
 
@@ -819,7 +819,7 @@ The contact id of the contact the image belongs to.
 
 The contact image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -827,7 +827,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SetPersonImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetPersonImageAsync\(int, byte\[\], RequestOptions\)
+### SetPersonImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SetPersonImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the person image that is displayed in the CRM application.
 
@@ -845,7 +845,7 @@ The person id of the person the image belongs to.
 
 The person image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -853,7 +853,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SetProductImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetProductImageAsync\(int, byte\[\], RequestOptions\)
+### SetProductImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SetProductImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the product image that is displayed in the CRM application. The image is scaled down to max 1000x1000. This method operates only the main (rank=1) image; future extensions may support multiple images. A thumbnail of size 75x75 is also automatically set.
 
@@ -871,7 +871,7 @@ The product id of the product the image belongs to.
 
 The product image, scaled down to no more than 1000x1000.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -879,7 +879,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SetProductThumbnailAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetProductThumbnailAsync\(int, byte\[\], RequestOptions\)
+### SetProductThumbnailAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SetProductThumbnailAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the product thumbnail that is displayed in the CRM application. The image is scaled down to max 200x200 pixels.
 
@@ -897,7 +897,7 @@ The product id of the product the image belongs to.
 
 The product thumbnail, scaled down to no more than 200x200.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -905,7 +905,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IBLOBAgent_SetProjectImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetProjectImageAsync\(int, byte\[\], RequestOptions\)
+### SetProjectImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_SetProjectImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the project image that is displayed in the CRM application.
 
@@ -923,11 +923,10 @@ The project id of the project the image belongs to.
 
 The project image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
-

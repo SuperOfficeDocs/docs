@@ -1,6 +1,6 @@
 ---
 title: ProjectDynamicSelectionV2
-description: Project selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup" />.
+description: Project selection archive with OR-able selection groups. Each group is represented with the ProjectSelectionDynamicProviderSingleCriteriaGroup.
 keywords: ProjectDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,18 @@ envir: onsite, online
 
 ## "ProjectDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
 
-Project selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup" />.
+Project selection archive with OR-able selection groups. Each group is represented with the [ProjectSelectionDynamicProviderSingleCriteriaGroup](./projectdynamicselectionsinglecriteriagroup).
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -122,6 +124,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintActivityType|listAny||  |
@@ -226,6 +229,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |sale/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/locationAddress|string|| x |
@@ -330,6 +334,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |appointment/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/associate/locationAddress|string|| x |
@@ -434,6 +439,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/registered|datetime|| x |
@@ -538,6 +544,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/restrictionAddress/city|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/restrictionAddress/zip|string|| x |
@@ -642,6 +649,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/isActive|bool|| x |
@@ -746,6 +754,7 @@ Project selection archive with OR-able selection groups. Each group is represent
 |projectMember/contactAssociate/contactName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/contactDepartment|string|| x |
@@ -845,5 +854,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

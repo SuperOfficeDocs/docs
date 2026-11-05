@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_SaveActorTypeMappingRequest"></a> Class ErpSync\_SaveActorTypeMappingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_SaveActorTypeMappingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_SaveActorTypeMappingRequest](SuperOffice.WebApi.Data.ErpSync\_SaveActorTypeMappingRequest.md)
+[ErpSync\_SaveActorTypeMappingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_SaveActorTypeMappingRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ErpSyncActorTypeMapping Mapping { get; set; }
 
 #### Property Value
 
- [ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)
+ [ErpSyncActorTypeMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorTypeMapping)
 

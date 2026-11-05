@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_ValidateArchiveColumnConfigRequest"></a> Class ErpSync\_ValidateArchiveColumnConfigRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_ValidateArchiveColumnConfigRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_ValidateArchiveColumnConfigRequest](SuperOffice.WebApi.Data.ErpSync\_ValidateArchiveColumnConfigRequest.md)
+[ErpSync\_ValidateArchiveColumnConfigRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_ValidateArchiveColumnConfigRequest)
 
 #### Inherited Members
 

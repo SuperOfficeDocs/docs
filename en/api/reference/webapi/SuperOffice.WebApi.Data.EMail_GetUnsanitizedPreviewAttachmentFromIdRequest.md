@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetUnsanitizedPreviewAttachmentFromIdRequest"></a> Class EMail\_GetUnsanitizedPreviewAttachmentFromIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetUnsanitizedPreviewAttachmentFromIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetUnsanitizedPreviewAttachmentFromIdRequest](SuperOffice.WebApi.Data.EMail\_GetUnsanitizedPreviewAttachmentFromIdRequest.md)
+[EMail\_GetUnsanitizedPreviewAttachmentFromIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetUnsanitizedPreviewAttachmentFromIdRequest)
 
 #### Inherited Members
 

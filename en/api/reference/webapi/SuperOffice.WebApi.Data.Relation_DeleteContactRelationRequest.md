@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Relation_DeleteContactRelationRequest"></a> Class Relation\_DeleteContactRelationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Relation_DeleteContactRelationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Relation\_DeleteContactRelationRequest](SuperOffice.WebApi.Data.Relation\_DeleteContactRelationRequest.md)
+[Relation\_DeleteContactRelationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Relation_DeleteContactRelationRequest)
 
 #### Inherited Members
 

@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_INavigatorAgent"></a> Interface INavigatorAgent
+# Interface INavigatorAgent {#SuperOffice_WebApi_Agents_INavigatorAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Navigator stuff.
 
@@ -11,12 +11,12 @@ public interface INavigatorAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_INavigatorAgent_GetAllNavigatorCompanyAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllNavigatorCompanyAsync\(RequestOptions\)
+### GetAllNavigatorCompanyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_INavigatorAgent_GetAllNavigatorCompanyAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets array of all NavigatorCompany objects.
 
@@ -26,17 +26,17 @@ Task<NavigatorCompany[]> GetAllNavigatorCompanyAsync(RequestOptions requestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NavigatorCompany](SuperOffice.WebApi.Data.NavigatorCompany.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NavigatorCompany](/en/api/reference/webapi/SuperOffice.WebApi.Data.NavigatorCompany)\[\]\&gt;
 
 Array of all NavigatorCompany objects
 
-### <a id="SuperOffice_WebApi_Agents_INavigatorAgent_GetNavigatorCompaniesAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetNavigatorCompaniesAsync\(string, RequestOptions\)
+### GetNavigatorCompaniesAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_INavigatorAgent_GetNavigatorCompaniesAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 Task<NavigatorCompany[]> GetNavigatorCompaniesAsync(string name, RequestOptions requestOptions = null)
@@ -46,15 +46,15 @@ Task<NavigatorCompany[]> GetNavigatorCompaniesAsync(string name, RequestOptions 
 
 `name` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NavigatorCompany](SuperOffice.WebApi.Data.NavigatorCompany.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NavigatorCompany](/en/api/reference/webapi/SuperOffice.WebApi.Data.NavigatorCompany)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_INavigatorAgent_GetNavigatorCompanyListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetNavigatorCompanyListAsync\(int\[\], RequestOptions\)
+### GetNavigatorCompanyListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_INavigatorAgent_GetNavigatorCompanyListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific NavigatorCompany objects.
 
@@ -68,13 +68,12 @@ Task<NavigatorCompany[]> GetNavigatorCompanyListAsync(int[] navigatorCompanyIds,
 
 The identifiers of the NavigatorCompany object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NavigatorCompany](SuperOffice.WebApi.Data.NavigatorCompany.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NavigatorCompany](/en/api/reference/webapi/SuperOffice.WebApi.Data.NavigatorCompany)\[\]\&gt;
 
 Array of NavigatorCompany objects
-

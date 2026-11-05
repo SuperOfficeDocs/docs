@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatWidgetSettings"></a> Class ChatWidgetSettings
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatWidgetSettings.
@@ -13,7 +13,7 @@ public class ChatWidgetSettings
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings)
 
 #### Inherited Members
 
@@ -71,7 +71,7 @@ public virtual KbCategory AutoFaqCategory { get; set; }
 
 #### Property Value
 
- [KbCategory](SuperOffice.WebApi.Data.KbCategory.md)
+ [KbCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.KbCategory)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_AutoFaqEnabled"></a> AutoFaqEnabled
 
@@ -253,11 +253,11 @@ public WidgetRequiredFields? OfflineFields { get; set; }
 
 #### Property Value
 
- [WidgetRequiredFields](SuperOffice.WebApi.Data.WidgetRequiredFields.md)?
+ [WidgetRequiredFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.WidgetRequiredFields)?
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[OfflineFields\_String](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_OfflineFields\_String)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[OfflineFields\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_OfflineFields_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_OfflineFields_String"></a> OfflineFields\_String
 
@@ -275,7 +275,7 @@ public string OfflineFields_String { get; set; }
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[OfflineFields](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_OfflineFields)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[OfflineFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_OfflineFields)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_OfflineHeader"></a> OfflineHeader
 
@@ -385,11 +385,11 @@ public WidgetRequiredFields? RequiredFields { get; set; }
 
 #### Property Value
 
- [WidgetRequiredFields](SuperOffice.WebApi.Data.WidgetRequiredFields.md)?
+ [WidgetRequiredFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.WidgetRequiredFields)?
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[RequiredFields\_String](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_RequiredFields\_String)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[RequiredFields\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_RequiredFields_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_RequiredFields_String"></a> RequiredFields\_String
 
@@ -407,7 +407,7 @@ public string RequiredFields_String { get; set; }
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[RequiredFields](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_RequiredFields)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[RequiredFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_RequiredFields)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_ShowAgentPhoto"></a> ShowAgentPhoto
 
@@ -433,11 +433,11 @@ public ChatWidgetSize? Size { get; set; }
 
 #### Property Value
 
- [ChatWidgetSize](SuperOffice.WebApi.Data.ChatWidgetSize.md)?
+ [ChatWidgetSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSize)?
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[Size\_String](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_Size\_String)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[Size\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_Size_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_Size_String"></a> Size\_String
 
@@ -455,7 +455,7 @@ public string Size_String { get; set; }
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[Size](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_Size)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[Size](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_Size)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_Theme"></a> Theme
 
@@ -469,11 +469,11 @@ public WidgetTheme? Theme { get; set; }
 
 #### Property Value
 
- [WidgetTheme](SuperOffice.WebApi.Data.WidgetTheme.md)?
+ [WidgetTheme](/en/api/reference/webapi/SuperOffice.WebApi.Data.WidgetTheme)?
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[Theme\_String](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_Theme\_String)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[Theme\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_Theme_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_Theme_String"></a> Theme\_String
 
@@ -491,7 +491,7 @@ public string Theme_String { get; set; }
 
 #### See Also
 
-[ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md).[Theme](SuperOffice.WebApi.Data.ChatWidgetSettings.md\#SuperOffice\_WebApi\_Data\_ChatWidgetSettings\_Theme)
+[ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings).[Theme](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings#SuperOffice_WebApi_Data_ChatWidgetSettings_Theme)
 
 ### <a id="SuperOffice_WebApi_Data_ChatWidgetSettings_UseAgentFirstname"></a> UseAgentFirstname
 
@@ -531,5 +531,5 @@ public virtual string WelcomeTitle { get; set; }
 
 ## See Also
 
-[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md)
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent)
 

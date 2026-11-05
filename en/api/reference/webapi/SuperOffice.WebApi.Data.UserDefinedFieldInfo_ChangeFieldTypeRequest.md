@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_ChangeFieldTypeRequest"></a> Class UserDefinedFieldInfo\_ChangeFieldTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_ChangeFieldTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_ChangeFieldTypeRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_ChangeFieldTypeRequest.md)
+[UserDefinedFieldInfo\_ChangeFieldTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_ChangeFieldTypeRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public UDefFieldType FieldType { get; set; }
 
 #### Property Value
 
- [UDefFieldType](SuperOffice.WebApi.Data.UDefFieldType.md)
+ [UDefFieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefFieldType)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_ChangeFieldTypeRequest_Info"></a> Info
 
@@ -50,7 +50,7 @@ public UserDefinedFieldInfo Info { get; set; }
 
 #### Property Value
 
- [UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)
+ [UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_ChangeFieldTypeRequest_IsIndexed"></a> IsIndexed
 

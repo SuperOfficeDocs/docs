@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_GetMailboxesRequest"></a> Class CustomerService\_GetMailboxesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_GetMailboxesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_GetMailboxesRequest](SuperOffice.WebApi.Data.CustomerService\_GetMailboxesRequest.md)
+[CustomerService\_GetMailboxesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_GetMailboxesRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TileData"></a> Class TileData
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TileData.
@@ -13,7 +13,7 @@ public class TileData
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TileData](SuperOffice.WebApi.Data.TileData.md)
+[TileData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TileData)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual ArchiveColumnInfo[] Columns { get; set; }
 
 #### Property Value
 
- [ArchiveColumnInfo](SuperOffice.WebApi.Data.ArchiveColumnInfo.md)\[\]
+ [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TileData_Result"></a> Result
 
@@ -59,9 +59,9 @@ public virtual ArchiveListResult Result { get; set; }
 
 #### Property Value
 
- [ArchiveListResult](SuperOffice.WebApi.Data.ArchiveListResult.md)
+ [ArchiveListResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListResult)
 
 ## See Also
 
-[DashboardAgent](SuperOffice.WebApi.Agents.DashboardAgent.md)
+[DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent)
 

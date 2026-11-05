@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Saint_GetSaintConfigurationsRequest"></a> Class Saint\_GetSaintConfigurationsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Saint_GetSaintConfigurationsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Saint\_GetSaintConfigurationsRequest](SuperOffice.WebApi.Data.Saint\_GetSaintConfigurationsRequest.md)
+[Saint\_GetSaintConfigurationsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Saint_GetSaintConfigurationsRequest)
 
 #### Inherited Members
 

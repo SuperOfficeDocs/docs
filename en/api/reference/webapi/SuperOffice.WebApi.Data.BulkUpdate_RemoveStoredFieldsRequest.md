@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BulkUpdate_RemoveStoredFieldsRequest"></a> Class BulkUpdate\_RemoveStoredFieldsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BulkUpdate_RemoveStoredFieldsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BulkUpdate\_RemoveStoredFieldsRequest](SuperOffice.WebApi.Data.BulkUpdate\_RemoveStoredFieldsRequest.md)
+[BulkUpdate\_RemoveStoredFieldsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BulkUpdate_RemoveStoredFieldsRequest)
 
 #### Inherited Members
 

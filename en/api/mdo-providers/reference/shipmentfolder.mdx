@@ -8,11 +8,10 @@ envir: online
 ---
 
 ## "shipmentfolder" MDO List
+
 ShipmentFolderProvider creates a flat or tree list of mailing folders based on the table: s_picture_folder
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ShipmentFolderProvider">ShipmentFolderProvider</see> class.
+Implemented by the ShipmentFolderProvider class.
 The name of the MDO list is 'shipmentfolder'.
 
 ## Additional Attributes
@@ -22,10 +21,6 @@ The name of the MDO list is 'shipmentfolder'.
 |Use hierarchy| hierarchy|true|
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -38,6 +33,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("shipmentfolder", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -51,7 +47,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 |-1||||
-
 
 ## Related MDO Lists
 

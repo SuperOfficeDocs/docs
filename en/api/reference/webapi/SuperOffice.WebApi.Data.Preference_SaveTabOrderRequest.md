@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_SaveTabOrderRequest"></a> Class Preference\_SaveTabOrderRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_SaveTabOrderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_SaveTabOrderRequest](SuperOffice.WebApi.Data.Preference\_SaveTabOrderRequest.md)
+[Preference\_SaveTabOrderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_SaveTabOrderRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public TabOrder TabOrder { get; set; }
 
 #### Property Value
 
- [TabOrder](SuperOffice.WebApi.Data.TabOrder.md)
+ [TabOrder](/en/api/reference/webapi/SuperOffice.WebApi.Data.TabOrder)
 

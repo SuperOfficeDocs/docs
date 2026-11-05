@@ -9,16 +9,18 @@ envir: onsite, online
 
 ## "SaleShadowDynamicSelection"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleShadowSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.SaleShadowSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.SaleShadowSelectionDynamicProvider inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic sale provider.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,6 +124,7 @@ Shadow contact provider for the dynamic sale provider.
 |person/personRegisteredBy|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personRegisteredByFullName|associate|| x |
@@ -226,6 +229,7 @@ Shadow contact provider for the dynamic sale provider.
 |person/personExtra/x\_person\_priority\_relation|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_request\_relation|stringorPK|| x |
@@ -330,6 +334,7 @@ Shadow contact provider for the dynamic sale provider.
 |contact/number|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/code|string|| x |
@@ -434,6 +439,7 @@ Shadow contact provider for the dynamic sale provider.
 |contact/contactAssociate/credentialType| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/credentialDisplayValue| *None* || x |
@@ -538,6 +544,7 @@ Shadow contact provider for the dynamic sale provider.
 |associate/userName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/personEmail|string|| x |
@@ -642,6 +649,7 @@ Shadow contact provider for the dynamic sale provider.
 |appointment/associate/userName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/associate/personEmail|string|| x |
@@ -746,6 +754,7 @@ Shadow contact provider for the dynamic sale provider.
 |project/status|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/statusRank| *None* || x |
@@ -850,6 +859,7 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/salesRoleId|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/hasInfoText|bool|| x |
@@ -954,6 +964,7 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/person/restrictionAddress/city|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/restrictionAddress/zip|string|| x |
@@ -1058,6 +1069,7 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/person/correspondingAssociate/credentialDisplayValue| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
@@ -1162,6 +1174,7 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/contact/restrictionAddress/city|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/restrictionAddress/zip|string|| x |
@@ -1266,6 +1279,7 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/contact/saintIntention|listAny||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/saintTicketStatus|listAny||  |
@@ -1374,5 +1388,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

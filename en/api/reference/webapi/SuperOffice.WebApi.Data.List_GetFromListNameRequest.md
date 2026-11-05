@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetFromListNameRequest"></a> Class List\_GetFromListNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetFromListNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetFromListNameRequest](SuperOffice.WebApi.Data.List\_GetFromListNameRequest.md)
+[List\_GetFromListNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetFromListNameRequest)
 
 #### Inherited Members
 

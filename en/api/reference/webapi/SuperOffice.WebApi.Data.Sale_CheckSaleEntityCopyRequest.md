@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_Sale_CheckSaleEntityCopyRequest"></a> Class Sale\_CheckSaleEntityCopyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 ```csharp
 public class Sale_CheckSaleEntityCopyRequest
@@ -9,17 +9,17 @@ public class Sale_CheckSaleEntityCopyRequest
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_CheckSaleEntityCopyRequest](SuperOffice.WebApi.Data.Sale\_CheckSaleEntityCopyRequest.md)
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Sale\_CheckSaleEntityCopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_CheckSaleEntityCopyRequest)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -40,7 +40,7 @@ public SaleEntity SaleEntity { get; set; }
 
 #### Property Value
 
- [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
+ [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_CheckSaleEntityCopyRequest_SourceSaleId"></a> SourceSaleId
 
@@ -51,4 +51,3 @@ public int SourceSaleId { get; set; }
 #### Property Value
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
-

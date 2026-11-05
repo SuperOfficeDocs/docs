@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_ChangeCountryRequest"></a> Class Person\_ChangeCountryRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_ChangeCountryRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_ChangeCountryRequest](SuperOffice.WebApi.Data.Person\_ChangeCountryRequest.md)
+[Person\_ChangeCountryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_ChangeCountryRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public PersonEntity PersonEntity { get; set; }
 
 #### Property Value
 
- [PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)
+ [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Person_ChangeCountryRequest_ToCountryId"></a> ToCountryId
 

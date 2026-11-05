@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_RestoreConnectionRequest"></a> Class Quote\_RestoreConnectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_RestoreConnectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_RestoreConnectionRequest](SuperOffice.WebApi.Data.Quote\_RestoreConnectionRequest.md)
+[Quote\_RestoreConnectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_RestoreConnectionRequest)
 
 #### Inherited Members
 

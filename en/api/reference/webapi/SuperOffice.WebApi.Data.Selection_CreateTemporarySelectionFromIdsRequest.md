@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_CreateTemporarySelectionFromIdsRequest"></a> Class Selection\_CreateTemporarySelectionFromIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_CreateTemporarySelectionFromIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_CreateTemporarySelectionFromIdsRequest](SuperOffice.WebApi.Data.Selection\_CreateTemporarySelectionFromIdsRequest.md)
+[Selection\_CreateTemporarySelectionFromIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_CreateTemporarySelectionFromIdsRequest)
 
 #### Inherited Members
 

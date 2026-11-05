@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_LandingPageTab"></a> Class LandingPageTab
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for LandingPageTab.
@@ -13,13 +13,13 @@ public class LandingPageTab : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[LandingPageTab](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -124,11 +124,11 @@ public LandingPageTabType? TabType { get; set; }
 
 #### Property Value
 
- [LandingPageTabType](SuperOffice.WebApi.Data.LandingPageTabType.md)?
+ [LandingPageTabType](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTabType)?
 
 #### See Also
 
-[LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md).[TabType\_String](SuperOffice.WebApi.Data.LandingPageTab.md\#SuperOffice\_WebApi\_Data\_LandingPageTab\_TabType\_String)
+[LandingPageTab](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab).[TabType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab#SuperOffice_WebApi_Data_LandingPageTab_TabType_String)
 
 ### <a id="SuperOffice_WebApi_Data_LandingPageTab_TabType_String"></a> TabType\_String
 
@@ -146,9 +146,9 @@ public string TabType_String { get; set; }
 
 #### See Also
 
-[LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md).[TabType](SuperOffice.WebApi.Data.LandingPageTab.md\#SuperOffice\_WebApi\_Data\_LandingPageTab\_TabType)
+[LandingPageTab](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab).[TabType](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab#SuperOffice_WebApi_Data_LandingPageTab_TabType)
 
 ## See Also
 
-[ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md)
+[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent)
 

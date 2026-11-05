@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MetricPair"></a> Class MetricPair
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for MetricPair.
@@ -13,7 +13,7 @@ public class MetricPair
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[MetricPair](SuperOffice.WebApi.Data.MetricPair.md)
+[MetricPair](/en/api/reference/webapi/SuperOffice.WebApi.Data.MetricPair)
 
 #### Inherited Members
 

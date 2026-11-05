@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GetTrainingStatusRequest"></a> Class AI\_GetTrainingStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GetTrainingStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GetTrainingStatusRequest](SuperOffice.WebApi.Data.AI\_GetTrainingStatusRequest.md)
+[AI\_GetTrainingStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GetTrainingStatusRequest)
 
 #### Inherited Members
 

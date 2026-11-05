@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ETableRight"></a> Enum ETableRight
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Table right is a combination of bits representing permissions on a row.

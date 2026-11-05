@@ -9,19 +9,21 @@ envir: onsite, online
 
 ## "SimpleInvitation"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SimpleInvitationProvider">SuperOffice.CRM.ArchiveLists.SimpleInvitationProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SimpleInvitationProvider inside NetServer's SODatabase assembly.
 
 This is the query provider for invitations, of subtype 'Simple'
 
-A simple invitation is one that is not recurring and has the status <see cref="F:SuperOffice.Data.AppointmentStatus.Booking" />.
+A simple invitation is one that is not recurring and has the status Booking.
 This entity is mandatory. Simple bookings have no 'overdue' checks.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"invitation"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -125,6 +127,7 @@ This entity is mandatory. Simple bookings have no 'overdue' checks.
 |contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/description|string|| x |
@@ -229,6 +232,7 @@ This entity is mandatory. Simple bookings have no 'overdue' checks.
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_date|date|| x |
@@ -333,6 +337,7 @@ This entity is mandatory. Simple bookings have no 'overdue' checks.
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -437,6 +442,7 @@ This entity is mandatory. Simple bookings have no 'overdue' checks.
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -541,6 +547,7 @@ This entity is mandatory. Simple bookings have no 'overdue' checks.
 |project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUrl/URLDescription|string|| x |
@@ -645,6 +652,7 @@ This entity is mandatory. Simple bookings have no 'overdue' checks.
 |sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/originalStage|listAny|| x |
@@ -749,6 +757,7 @@ This entity is mandatory. Simple bookings have no 'overdue' checks.
 |associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/portraitThumbnail| *None* ||  |
@@ -778,5 +787,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

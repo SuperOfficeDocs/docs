@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepBase"></a> Class WorkflowStepBase
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepBase.
@@ -28,25 +28,25 @@ public class WorkflowStepBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md)
+[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase)
 
 #### Derived
 
-[WorkflowStepAddToList](SuperOffice.WebApi.Data.WorkflowStepAddToList.md), 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md), 
-[WorkflowStepCreateRequest](SuperOffice.WebApi.Data.WorkflowStepCreateRequest.md), 
-[WorkflowStepCreateSale](SuperOffice.WebApi.Data.WorkflowStepCreateSale.md), 
-[WorkflowStepDistributeToOwner](SuperOffice.WebApi.Data.WorkflowStepDistributeToOwner.md), 
-[WorkflowStepNotifyByEmail](SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail.md), 
-[WorkflowStepNotifyBySMS](SuperOffice.WebApi.Data.WorkflowStepNotifyBySMS.md), 
-[WorkflowStepRemoveFromList](SuperOffice.WebApi.Data.WorkflowStepRemoveFromList.md), 
-[WorkflowStepRunScript](SuperOffice.WebApi.Data.WorkflowStepRunScript.md), 
-[WorkflowStepSendEmail](SuperOffice.WebApi.Data.WorkflowStepSendEmail.md), 
-[WorkflowStepSendSMS](SuperOffice.WebApi.Data.WorkflowStepSendSMS.md), 
-[WorkflowStepSplit](SuperOffice.WebApi.Data.WorkflowStepSplit.md), 
-[WorkflowStepUpdateParticipant](SuperOffice.WebApi.Data.WorkflowStepUpdateParticipant.md), 
-[WorkflowStepWaitForAction](SuperOffice.WebApi.Data.WorkflowStepWaitForAction.md), 
-[WorkflowStepWaitForTime](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md)
+[WorkflowStepAddToList](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepAddToList), 
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp), 
+[WorkflowStepCreateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateRequest), 
+[WorkflowStepCreateSale](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateSale), 
+[WorkflowStepDistributeToOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepDistributeToOwner), 
+[WorkflowStepNotifyByEmail](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail), 
+[WorkflowStepNotifyBySMS](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepNotifyBySMS), 
+[WorkflowStepRemoveFromList](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepRemoveFromList), 
+[WorkflowStepRunScript](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepRunScript), 
+[WorkflowStepSendEmail](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSendEmail), 
+[WorkflowStepSendSMS](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSendSMS), 
+[WorkflowStepSplit](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSplit), 
+[WorkflowStepUpdateParticipant](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepUpdateParticipant), 
+[WorkflowStepWaitForAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForAction), 
+[WorkflowStepWaitForTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime)
 
 #### Inherited Members
 
@@ -94,11 +94,11 @@ public WorkflowStepType? StepType { get; set; }
 
 #### Property Value
 
- [WorkflowStepType](SuperOffice.WebApi.Data.WorkflowStepType.md)?
+ [WorkflowStepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepType)?
 
 #### See Also
 
-[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md).[StepType\_String](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType\_String)
+[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase).[StepType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepBase_StepType_String"></a> StepType\_String
 
@@ -116,7 +116,7 @@ public string StepType_String { get; set; }
 
 #### See Also
 
-[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md).[StepType](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType)
+[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase).[StepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowId"></a> WorkflowId
 
@@ -144,5 +144,5 @@ public virtual int WorkflowStepId { get; set; }
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

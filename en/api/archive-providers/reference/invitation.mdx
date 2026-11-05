@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "Invitation"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.InvitationProvider">SuperOffice.CRM.ArchiveLists.InvitationProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.InvitationProvider inside NetServer's SODatabase assembly.
 
 Invitation provider multichannel combiner, consisting of simple, cancelled, rejected, repeating and response invitations. You can also
 call up appointments explicitly through the Explicit provider.
@@ -20,6 +20,7 @@ to make sure we get the right order. We also need to filter repeating bookings a
 because someone may explicitly request an instance an a recurring booking, so that all other instances should be suppressed.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"invitation"||
@@ -29,6 +30,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |"repeating"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -132,6 +134,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/description|string|| x |
@@ -236,6 +239,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_date|date|| x |
@@ -340,6 +344,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -444,6 +449,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -548,6 +554,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUrl/URLDescription|string|| x |
@@ -652,6 +659,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/originalStage|listAny|| x |
@@ -756,6 +764,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 |associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/portraitThumbnail| *None* ||  |
@@ -786,5 +795,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

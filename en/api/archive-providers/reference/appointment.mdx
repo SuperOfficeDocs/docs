@@ -9,19 +9,21 @@ envir: onsite, online
 
 ## "Appointment"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.AppointmentProvider">SuperOffice.CRM.ArchiveLists.AppointmentProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.AppointmentProvider inside NetServer's SODatabase assembly.
 
 Activity archive provider which handles appointments
 
-This class instantiates a <see cref="T:SuperOffice.CRM.ArchiveLists.DiaryAppointmentProvider" /> and a <see cref="T:SuperOffice.CRM.ArchiveLists.ChecklistAppointmentProvider" /> as
-subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appointments that are not done, or done today
+This class instantiates a [DiaryAppointmentProvider](./diaryappointment) and a [ChecklistAppointmentProvider](./checklistappointment) as
+subchannels, each split by a DoneNotDoneSplitter to get appointments that are not done, or done today
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -125,6 +127,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 |contact/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailAddress|string|| x |
@@ -229,6 +232,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_time| *None* || x |
@@ -333,6 +337,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 |person/personMobilePhone/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personPrivate/formattedNumber|string||  |
@@ -437,6 +442,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 |person/personAssociate/ejUserId|int||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/simultaneousEjUser|bool||  |
@@ -541,6 +547,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 |project/projectAssociate/firstName|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/lastName|string|| x |
@@ -645,6 +652,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 |sale/stage|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/stageName| *None* || x |
@@ -749,6 +757,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 |associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/userName|string|| x |
@@ -776,5 +785,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

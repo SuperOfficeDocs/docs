@@ -9,13 +9,14 @@ envir: onsite, online
 
 ## "ProjectGuide"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ProjectGuideProvider">SuperOffice.CRM.ArchiveLists.ProjectGuideProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ProjectGuideProvider inside NetServer's SODatabase assembly.
 
 Provider for the Project Guide, common to both Appointment and Document guide items and instances
 
 This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"suggestedAppointment"||
@@ -26,6 +27,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |"document"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -129,6 +131,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/numEmployees| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/yearFounded| *None* ||  |
@@ -233,6 +236,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/contactUdef/SuperOffice:5| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactUdef/SuperOffice:6| *None* ||  |
@@ -337,6 +341,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personCategoryGroup| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personCategoryRank| *None* ||  |
@@ -441,6 +446,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personAssociate/fullName| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personAssociate/contactId| *None* ||  |
@@ -545,6 +551,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/project/nextMilestone| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/project/endDate| *None* ||  |
@@ -649,6 +656,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/sale/registeredBy| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/sale/registeredByFullName| *None* ||  |
@@ -753,6 +761,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/associate/usergroupId| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/associate/contactFullName| *None* ||  |
@@ -857,6 +866,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personRegisteredByFullName| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/personRegisteredDate| *None* ||  |
@@ -961,6 +971,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personExtra/x\_person\_request\_relation| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/personExtra/x\_person\_appointment\_relation| *None* ||  |
@@ -1065,6 +1076,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/code| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/orgnr| *None* ||  |
@@ -1169,6 +1181,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/contactAssociate/credentialDisplayValue| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/contactAssociate/isActive| *None* ||  |
@@ -1273,6 +1286,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/project/projectEvent/eventDate| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/project/projectEvent/hasSignOn| *None* ||  |
@@ -1377,6 +1391,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/associate/otherGroups| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/associate/userName| *None* ||  |
@@ -1481,6 +1496,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/sale/associate/credentialType| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/sale/associate/credentialDisplayValue| *None* ||  |
@@ -1513,5 +1529,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

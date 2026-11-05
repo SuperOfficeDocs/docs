@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MDO_GetListWithRestrictionRequest"></a> Class MDO\_GetListWithRestrictionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class MDO_GetListWithRestrictionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[MDO\_GetListWithRestrictionRequest](SuperOffice.WebApi.Data.MDO\_GetListWithRestrictionRequest.md)
+[MDO\_GetListWithRestrictionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDO_GetListWithRestrictionRequest)
 
 #### Inherited Members
 

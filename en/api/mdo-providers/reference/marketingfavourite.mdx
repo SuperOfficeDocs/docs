@@ -8,17 +8,13 @@ envir: online
 ---
 
 ## "marketingfavourite" MDO List
+
 The Marketing landing page's favourites, registered as "MarketingFavourite" to match LandingpageProvider's
 "{page}Favourite" convention: favourite mailings and forms, and the favourite selections of both.
 Flows cannot be favourites yet; add them here (the name comes from their workflow) once they can.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.MarketingFavouriteListProvider">MarketingFavouriteListProvider</see> class.
+Implemented by the MarketingFavouriteListProvider class.
 The name of the MDO list is 'marketingfavourite'.
-
-
-
 
 ## Sample Request
 
@@ -31,6 +27,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("marketingfavourite", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

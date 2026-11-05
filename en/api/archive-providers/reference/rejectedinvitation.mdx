@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "RejectedInvitation"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RejectedInvitationProvider">SuperOffice.CRM.ArchiveLists.RejectedInvitationProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RejectedInvitationProvider inside NetServer's SODatabase assembly.
 
 This is the query provider for invitations, of subtype 'Rejected'
 
@@ -17,11 +17,13 @@ A rejected invitation is one that has been rejected or deleted by you, and is no
 This is an optional entity and is fetched only if the user checks the corresponding box.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"rejected"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -125,6 +127,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 |contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/description|string|| x |
@@ -229,6 +232,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_date|date|| x |
@@ -333,6 +337,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -437,6 +442,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -541,6 +547,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 |project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUrl/URLDescription|string|| x |
@@ -645,6 +652,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 |sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/originalStage|listAny|| x |
@@ -749,6 +757,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 |associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/portraitThumbnail| *None* ||  |
@@ -778,5 +787,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

@@ -78,7 +78,6 @@ Persons
 |linkedinUrl|The LinkedIn URL for the person, used to fetch data from the LinkedIn API.|String(200)|Yes|
 |contextText\_id|Description of what the person does, along with a biographical sketch, for later agent/LLM use|FK [text](./text.mdx)|Yes|
 
-
 ![person table relationship diagram](/media/loc/en/database/tables/person.png)
 
 <Person />
@@ -170,7 +169,6 @@ Persons
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 |[workflow\_instance](./workflow-instance)  |A set of properties related to the workflow instance of one participant going through the flow |
 
-
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -181,4 +179,3 @@ Persons
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
-

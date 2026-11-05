@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetDefaultMessageContentRequest"></a> Class Ticket\_GetDefaultMessageContentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetDefaultMessageContentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetDefaultMessageContentRequest](SuperOffice.WebApi.Data.Ticket\_GetDefaultMessageContentRequest.md)
+[Ticket\_GetDefaultMessageContentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetDefaultMessageContentRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public MessageActionType MessageActionType { get; set; }
 
 #### Property Value
 
- [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+ [MessageActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageActionType)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_GetDefaultMessageContentRequest_TicketId"></a> TicketId
 

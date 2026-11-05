@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_CopyRequest"></a> Class Contact\_CopyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_CopyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_CopyRequest](SuperOffice.WebApi.Data.Contact\_CopyRequest.md)
+[Contact\_CopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_CopyRequest)
 
 #### Inherited Members
 

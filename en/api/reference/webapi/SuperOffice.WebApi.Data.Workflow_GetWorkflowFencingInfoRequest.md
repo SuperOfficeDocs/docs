@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_GetWorkflowFencingInfoRequest"></a> Class Workflow\_GetWorkflowFencingInfoRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_GetWorkflowFencingInfoRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_GetWorkflowFencingInfoRequest](SuperOffice.WebApi.Data.Workflow\_GetWorkflowFencingInfoRequest.md)
+[Workflow\_GetWorkflowFencingInfoRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_GetWorkflowFencingInfoRequest)
 
 #### Inherited Members
 

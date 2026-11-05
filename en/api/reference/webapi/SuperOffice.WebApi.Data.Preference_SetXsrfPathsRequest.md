@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_SetXsrfPathsRequest"></a> Class Preference\_SetXsrfPathsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_SetXsrfPathsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_SetXsrfPathsRequest](SuperOffice.WebApi.Data.Preference\_SetXsrfPathsRequest.md)
+[Preference\_SetXsrfPathsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_SetXsrfPathsRequest)
 
 #### Inherited Members
 

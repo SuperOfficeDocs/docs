@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_DeleteVideoMeetingReservationRequest"></a> Class Appointment\_DeleteVideoMeetingReservationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_DeleteVideoMeetingReservationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_DeleteVideoMeetingReservationRequest](SuperOffice.WebApi.Data.Appointment\_DeleteVideoMeetingReservationRequest.md)
+[Appointment\_DeleteVideoMeetingReservationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_DeleteVideoMeetingReservationRequest)
 
 #### Inherited Members
 

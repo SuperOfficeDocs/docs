@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_INewsFeedAgent"></a> Interface INewsFeedAgent
+# Interface INewsFeedAgent {#SuperOffice_WebApi_Agents_INewsFeedAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Posting and reading Newsfeed items, marking them as read or as handled.
 
@@ -11,12 +11,12 @@ public interface INewsFeedAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_CreateDefaultNewsFeedItemAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultNewsFeedItemAsync\(RequestOptions\)
+### CreateDefaultNewsFeedItemAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_CreateDefaultNewsFeedItemAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new NewsFeedItem.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -27,17 +27,17 @@ Task<NewsFeedItem> CreateDefaultNewsFeedItemAsync(RequestOptions requestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)\&gt;
 
 A blank NewsFeedItem
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteNewsFeedItemAsync\(int, RequestOptions\)
+### DeleteNewsFeedItemAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the NewsFeedItem
 
@@ -51,7 +51,7 @@ Task DeleteNewsFeedItemAsync(int newsFeedItemId, RequestOptions requestOptions =
 
 The identity of the NewsFeedItem
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -59,7 +59,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByCategoryIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteNewsFeedItemsByCategoryIdentifierAsync\(string, RequestOptions\)
+### DeleteNewsFeedItemsByCategoryIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByCategoryIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Deletes items from the newsfeed by FromCategoryIdentifier. Requires the user be an administrator. Deleting an item removes it from all users.
 
@@ -73,7 +73,7 @@ Task DeleteNewsFeedItemsByCategoryIdentifierAsync(string fromCategoryIdentifier,
 
 FromCategoryIdentifier value to remove from the feed.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -83,7 +83,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteNewsFeedItemsByIdAsync\(int\[\], RequestOptions\)
+### DeleteNewsFeedItemsByIdAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Deletes an array of items from the newsfeed by id. If the current user cannot access a particular item, the call fails, unless the user is an administrator. Deleting an item removes it from all users.
 
@@ -97,7 +97,7 @@ Task DeleteNewsFeedItemsByIdAsync(int[] newsFeedItemIds, RequestOptions requestO
 
 Ids of the news feed items to remove.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -107,7 +107,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteNewsFeedItemsByIdentifierAsync\(string, RequestOptions\)
+### DeleteNewsFeedItemsByIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemsByIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Deletes items from the newsfeed by FromIdentifier. Requires the user be an administrator. Deleting an item removes it from all users.
 
@@ -121,7 +121,7 @@ Task DeleteNewsFeedItemsByIdentifierAsync(string fromIdentifier, RequestOptions 
 
 FromIdentifier value to remove from the feed.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -131,7 +131,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNewsFeedItemAsync\(int, RequestOptions\)
+### GetNewsFeedItemAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific NewsFeedItem object.
 
@@ -145,17 +145,17 @@ Task<NewsFeedItem> GetNewsFeedItemAsync(int newsFeedItemId, RequestOptions reque
 
 The identifier of the NewsFeedItem object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)\&gt;
 
 NewsFeedItem
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetNewsFeedItemsByIdAsync\(int\[\], RequestOptions\)
+### GetNewsFeedItemsByIdAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get an array of items from the newsfeed by id. If the current user cannot access a particular item, it will be excluded from the results.
 
@@ -169,17 +169,17 @@ Task<NewsFeedItem[]> GetNewsFeedItemsByIdAsync(int[] newsFeedItemIds, RequestOpt
 
 Ids of the news feed items to mark as seen for this user.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)\[\]\&gt;
 
 The news feed items that was posted, or null if not found/not accessible by the user.
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsItemsForUserAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNewsItemsForUserAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### GetNewsItemsForUserAsync\(int, DateTime, DateTime, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsItemsForUserAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of newsfeed items for a particular user between two dates. If the current user cannot access a particular item, it will be excluded from the results.
 
@@ -209,17 +209,17 @@ Maximum number of news feed items to return.
 
 Number of news feed items to skip for paging.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)\[\]\&gt;
 
 The news feed items that was posted, or null if not found/not accessible by the user.
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsHandledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MarkAsHandledAsync\(int, RequestOptions\)
+### MarkAsHandledAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsHandledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Marks the news feed item as handled, so it can be removed from the feed.
 
@@ -233,17 +233,17 @@ Task<bool> MarkAsHandledAsync(int newsFeedItemId, RequestOptions requestOptions 
 
 Id of the news feed item to mark as handled for all users.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Indicates if the news feed item was successfully marked as handled. False if it was already handled.
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MarkAsReadAsync\(int, RequestOptions\)
+### MarkAsReadAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Marks the news feed item as read, so it can be un-bolded in the current user's feed.
 
@@ -257,7 +257,7 @@ Task MarkAsReadAsync(int newsFeedItemId, RequestOptions requestOptions = null)
 
 Id of the news feed item to mark as seen for this user.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -267,7 +267,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_PostNewsFeedItemAsync_SuperOffice_WebApi_Data_NewsFeedItem_System_Int32___System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> PostNewsFeedItemAsync\(NewsFeedItem, int\[\], int\[\], bool, RequestOptions\)
+### PostNewsFeedItemAsync\(NewsFeedItem, int\[\], int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_PostNewsFeedItemAsync_SuperOffice_WebApi_Data_NewsFeedItem_System_Int32___System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Saves a new item to the newsfeed, publishing it to the specified users.
 
@@ -277,7 +277,7 @@ Task<NewsFeedItem> PostNewsFeedItemAsync(NewsFeedItem newsFeedItem, int[] toAsso
 
 #### Parameters
 
-`newsFeedItem` [NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)
+`newsFeedItem` [NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)
 
 The news feed item to post. NewsFeedItemId is ignored, as a new id will be generated when posting to the newsfeed.
 
@@ -293,17 +293,17 @@ List of group ids that this news feed item is sent to. This gets resolved to ass
 
 Indicates if this news feed item is sent to all users. Gets resolved into all users when posted.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)\&gt;
 
 The news feed item that was posted, including its new id.
 
-### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_StartHandlingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> StartHandlingAsync\(int, RequestOptions\)
+### StartHandlingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INewsFeedAgent_StartHandlingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Marks the news feed item as being handled, that CTA processing has started. i.e. other users should not start handling it also.
 
@@ -317,13 +317,12 @@ Task<bool> StartHandlingAsync(int newsFeedItemId, RequestOptions requestOptions 
 
 Id of the news feed item to mark as handled for all users.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Indicates if the news feed item was successfully marked as being handled. False if it was already being handled or was handled.
-

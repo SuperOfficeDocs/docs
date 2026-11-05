@@ -9,11 +9,12 @@ envir: onsite, online
 
 ## "ContactActivity"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ContactActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.ContactActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ContactActivityArchiveProvider inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Company card
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"document"||
@@ -23,6 +24,7 @@ Activity archive provider for the Company card
 |"mailing"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -126,6 +128,7 @@ Activity archive provider for the Company card
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -230,6 +233,7 @@ Activity archive provider for the Company card
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -334,6 +338,7 @@ Activity archive provider for the Company card
 |contact/contactFax/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/formattedNumber|string||  |
@@ -438,6 +443,7 @@ Activity archive provider for the Company card
 |contact/contactExtra/x\_contact\_longtext|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
@@ -542,6 +548,7 @@ Activity archive provider for the Company card
 |project/projectAssociate/ejStatus|int||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/credentialType| *None* || x |
@@ -646,6 +653,7 @@ Activity archive provider for the Company card
 |sale/updatedBy|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/updatedByFullName|associate|| x |
@@ -750,6 +758,7 @@ Activity archive provider for the Company card
 |timeInQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |queueLength|int|| x |
@@ -854,6 +863,7 @@ Activity archive provider for the Company card
 |emailFlow/workflowEnrolledCount| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowInProgressCount| *None* ||  |
@@ -915,5 +925,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

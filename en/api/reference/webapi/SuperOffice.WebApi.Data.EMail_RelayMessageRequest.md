@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_RelayMessageRequest"></a> Class EMail\_RelayMessageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_RelayMessageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_RelayMessageRequest](SuperOffice.WebApi.Data.EMail\_RelayMessageRequest.md)
+[EMail\_RelayMessageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_RelayMessageRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfoExtended ConnectionInfoExtended { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+ [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_RelayMessageRequest_From"></a> From
 

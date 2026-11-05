@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_FindContactOrPersonByEmailNameWithLimitRequest"></a> Class EMail\_FindContactOrPersonByEmailNameWithLimitRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_FindContactOrPersonByEmailNameWithLimitRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_FindContactOrPersonByEmailNameWithLimitRequest](SuperOffice.WebApi.Data.EMail\_FindContactOrPersonByEmailNameWithLimitRequest.md)
+[EMail\_FindContactOrPersonByEmailNameWithLimitRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_FindContactOrPersonByEmailNameWithLimitRequest)
 
 #### Inherited Members
 

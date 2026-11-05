@@ -1,6 +1,6 @@
 ---
 title: MailingsShadowDynamicSelectionV2
-description: Mailings shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderSingleCriteriaGroup" />.
+description: Mailings shadow selection archive with OR-able selection groups. Each group is represented with the MailingsShadowSelectionDynamicProviderSingleCriteriaGroup.
 keywords: MailingsShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,18 @@ envir: onsite, online
 
 ## "MailingsShadowDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
 
-Mailings shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderSingleCriteriaGroup" />.
+Mailings shadow selection archive with OR-able selection groups. Each group is represented with the [MailingsShadowSelectionDynamicProviderSingleCriteriaGroup](./mailingsshadowdynamicselectionsinglecriteriagroup).
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailings"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -122,6 +124,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/postAddress/line3|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/postAddress/county|string|| x |
@@ -226,6 +229,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/NumberOfActivitiesInPeriod|int||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/NumberOfNotCompletedActivities|int||  |
@@ -330,6 +334,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/email/emailAddress|string|| x |
@@ -434,6 +439,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAssociate/locationAddress|string|| x |
@@ -538,6 +544,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |emailFlow/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |emailFlow/registeredDate|date|| x |
@@ -642,6 +649,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |project/projectAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/isActiveText|bool|| x |
@@ -697,5 +705,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

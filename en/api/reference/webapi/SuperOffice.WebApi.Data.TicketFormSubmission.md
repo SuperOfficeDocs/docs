@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketFormSubmission"></a> Class TicketFormSubmission
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketFormSubmission.
@@ -13,7 +13,7 @@ public class TicketFormSubmission
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketFormSubmission](SuperOffice.WebApi.Data.TicketFormSubmission.md)
+[TicketFormSubmission](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketFormSubmission)
 
 #### Inherited Members
 
@@ -73,11 +73,11 @@ public FormSubmissionStatus? Status { get; set; }
 
 #### Property Value
 
- [FormSubmissionStatus](SuperOffice.WebApi.Data.FormSubmissionStatus.md)?
+ [FormSubmissionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionStatus)?
 
 #### See Also
 
-[TicketFormSubmission](SuperOffice.WebApi.Data.TicketFormSubmission.md).[Status\_String](SuperOffice.WebApi.Data.TicketFormSubmission.md\#SuperOffice\_WebApi\_Data\_TicketFormSubmission\_Status\_String)
+[TicketFormSubmission](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketFormSubmission).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketFormSubmission#SuperOffice_WebApi_Data_TicketFormSubmission_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketFormSubmission_Status_String"></a> Status\_String
 
@@ -95,5 +95,5 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[TicketFormSubmission](SuperOffice.WebApi.Data.TicketFormSubmission.md).[Status](SuperOffice.WebApi.Data.TicketFormSubmission.md\#SuperOffice\_WebApi\_Data\_TicketFormSubmission\_Status)
+[TicketFormSubmission](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketFormSubmission).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketFormSubmission#SuperOffice_WebApi_Data_TicketFormSubmission_Status)
 

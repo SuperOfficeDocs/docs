@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_GetCriteriaInformationWithContextRequest"></a> Class Find\_GetCriteriaInformationWithContextRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_GetCriteriaInformationWithContextRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_GetCriteriaInformationWithContextRequest](SuperOffice.WebApi.Data.Find\_GetCriteriaInformationWithContextRequest.md)
+[Find\_GetCriteriaInformationWithContextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_GetCriteriaInformationWithContextRequest)
 
 #### Inherited Members
 

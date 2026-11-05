@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_DeletePrefDescLinesByPrefDescIdsRequest"></a> Class Preference\_DeletePrefDescLinesByPrefDescIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_DeletePrefDescLinesByPrefDescIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_DeletePrefDescLinesByPrefDescIdsRequest](SuperOffice.WebApi.Data.Preference\_DeletePrefDescLinesByPrefDescIdsRequest.md)
+[Preference\_DeletePrefDescLinesByPrefDescIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_DeletePrefDescLinesByPrefDescIdsRequest)
 
 #### Inherited Members
 

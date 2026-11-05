@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Pocket_GetMyCallerIDsRequest"></a> Class Pocket\_GetMyCallerIDsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Pocket_GetMyCallerIDsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Pocket\_GetMyCallerIDsRequest](SuperOffice.WebApi.Data.Pocket\_GetMyCallerIDsRequest.md)
+[Pocket\_GetMyCallerIDsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Pocket_GetMyCallerIDsRequest)
 
 #### Inherited Members
 

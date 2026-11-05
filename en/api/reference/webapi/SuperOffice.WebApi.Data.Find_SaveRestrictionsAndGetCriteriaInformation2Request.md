@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_SaveRestrictionsAndGetCriteriaInformation2Request"></a> Class Find\_SaveRestrictionsAndGetCriteriaInformation2Request
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_SaveRestrictionsAndGetCriteriaInformation2Request
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_SaveRestrictionsAndGetCriteriaInformation2Request](SuperOffice.WebApi.Data.Find\_SaveRestrictionsAndGetCriteriaInformation2Request.md)
+[Find\_SaveRestrictionsAndGetCriteriaInformation2Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_SaveRestrictionsAndGetCriteriaInformation2Request)
 
 #### Inherited Members
 

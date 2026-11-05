@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetContactAppointmentsByTaskHeadingRequest"></a> Class Appointment\_GetContactAppointmentsByTaskHeadingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetContactAppointmentsByTaskHeadingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetContactAppointmentsByTaskHeadingRequest](SuperOffice.WebApi.Data.Appointment\_GetContactAppointmentsByTaskHeadingRequest.md)
+[Appointment\_GetContactAppointmentsByTaskHeadingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetContactAppointmentsByTaskHeadingRequest)
 
 #### Inherited Members
 

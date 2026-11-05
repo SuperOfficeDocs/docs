@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetLocalizedTextByTypeRequest"></a> Class List\_GetLocalizedTextByTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetLocalizedTextByTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetLocalizedTextByTypeRequest](SuperOffice.WebApi.Data.List\_GetLocalizedTextByTypeRequest.md)
+[List\_GetLocalizedTextByTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetLocalizedTextByTypeRequest)
 
 #### Inherited Members
 
@@ -60,5 +60,5 @@ public LocalizedTextType TextType { get; set; }
 
 #### Property Value
 
- [LocalizedTextType](SuperOffice.WebApi.Data.LocalizedTextType.md)
+ [LocalizedTextType](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedTextType)
 

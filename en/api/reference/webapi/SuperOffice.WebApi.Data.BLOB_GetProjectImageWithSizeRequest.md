@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_GetProjectImageWithSizeRequest"></a> Class BLOB\_GetProjectImageWithSizeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_GetProjectImageWithSizeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_GetProjectImageWithSizeRequest](SuperOffice.WebApi.Data.BLOB\_GetProjectImageWithSizeRequest.md)
+[BLOB\_GetProjectImageWithSizeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_GetProjectImageWithSizeRequest)
 
 #### Inherited Members
 

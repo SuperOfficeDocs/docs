@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_PublishAndRetrieveUiEventsRequest"></a> Class ViewState\_PublishAndRetrieveUiEventsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_PublishAndRetrieveUiEventsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_PublishAndRetrieveUiEventsRequest](SuperOffice.WebApi.Data.ViewState\_PublishAndRetrieveUiEventsRequest.md)
+[ViewState\_PublishAndRetrieveUiEventsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_PublishAndRetrieveUiEventsRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public MetricPair[] Metrics { get; set; }
 
 #### Property Value
 
- [MetricPair](SuperOffice.WebApi.Data.MetricPair.md)\[\]
+ [MetricPair](/en/api/reference/webapi/SuperOffice.WebApi.Data.MetricPair)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ViewState_PublishAndRetrieveUiEventsRequest_PublishEvents"></a> PublishEvents
 
@@ -60,5 +60,5 @@ public UiEvent[] PublishEvents { get; set; }
 
 #### Property Value
 
- [UiEvent](SuperOffice.WebApi.Data.UiEvent.md)\[\]
+ [UiEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.UiEvent)\[\]
 

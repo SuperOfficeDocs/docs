@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SuggestedAppointmentEntity"></a> Class SuggestedAppointmentEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SuggestedAppointmentEntity.
@@ -12,13 +12,13 @@ public class SuggestedAppointmentEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[SuggestedAppointmentEntity](SuperOffice.WebApi.Data.SuggestedAppointmentEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[SuggestedAppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedAppointmentEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -140,7 +140,7 @@ public virtual ProjectTypeStatusLink ProjectTypeStatusLink { get; set; }
 
 #### Property Value
 
- [ProjectTypeStatusLink](SuperOffice.WebApi.Data.ProjectTypeStatusLink.md)
+ [ProjectTypeStatusLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeStatusLink)
 
 ### <a id="SuperOffice_WebApi_Data_SuggestedAppointmentEntity_Rank"></a> Rank
 
@@ -164,7 +164,7 @@ public virtual SaleTypeStageLink SaleTypeStageLink { get; set; }
 
 #### Property Value
 
- [SaleTypeStageLink](SuperOffice.WebApi.Data.SaleTypeStageLink.md)
+ [SaleTypeStageLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeStageLink)
 
 ### <a id="SuperOffice_WebApi_Data_SuggestedAppointmentEntity_SuggestedAppointmentId"></a> SuggestedAppointmentId
 
@@ -212,9 +212,9 @@ public virtual SoTask Type { get; set; }
 
 #### Property Value
 
- [SoTask](SuperOffice.WebApi.Data.SoTask.md)
+ [SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

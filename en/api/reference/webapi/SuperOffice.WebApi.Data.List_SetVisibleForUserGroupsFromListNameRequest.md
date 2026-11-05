@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SetVisibleForUserGroupsFromListNameRequest"></a> Class List\_SetVisibleForUserGroupsFromListNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SetVisibleForUserGroupsFromListNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SetVisibleForUserGroupsFromListNameRequest](SuperOffice.WebApi.Data.List\_SetVisibleForUserGroupsFromListNameRequest.md)
+[List\_SetVisibleForUserGroupsFromListNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetVisibleForUserGroupsFromListNameRequest)
 
 #### Inherited Members
 
@@ -60,5 +60,5 @@ public SelectableMDOListItem[] UserGroups { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
+ [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
 

@@ -9,23 +9,24 @@ envir: onsite, online
 
 ## "emailcontactaddress"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailContactAddressProvider">SuperOffice.CRM.ArchiveLists.EmailContactAddressProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EmailContactAddressProvider inside NetServer's SODatabase assembly.
 
 Contact subchannel for special purpose archive provider used to search for email addresses.
 
 This channel will match on either the email address itself, or contact.name
 
-
 The resulting rows will have entity name 'contact', but the primary key will always be
 the email_id.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"email"||
 |"contact"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -129,6 +130,7 @@ the email_id.
 |streetAddress/formattedAddress| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |streetAddress/formattedMultiLineAddress| *None* ||  |
@@ -233,6 +235,7 @@ the email_id.
 |contactSupportPerson/associateType| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/useAsMailingAddress|bool|| x |
@@ -337,6 +340,7 @@ the email_id.
 |contactUdef/SuperOffice:12|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactUdef/SuperOffice:13|listAny|| x |
@@ -400,5 +404,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

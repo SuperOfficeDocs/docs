@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_CreateNewPhysicalDocumentFromEmailAttachmentRequest"></a> Class EMail\_CreateNewPhysicalDocumentFromEmailAttachmentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_CreateNewPhysicalDocumentFromEmailAttachmentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_CreateNewPhysicalDocumentFromEmailAttachmentRequest](SuperOffice.WebApi.Data.EMail\_CreateNewPhysicalDocumentFromEmailAttachmentRequest.md)
+[EMail\_CreateNewPhysicalDocumentFromEmailAttachmentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_CreateNewPhysicalDocumentFromEmailAttachmentRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 ---
 title: AppointmentDynamicSelectionV2
-description: Appointment selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderSingleCriteriaGroup" />.
+description: Appointment selection archive with OR-able selection groups. Each group is represented with the AppointmentSelectionDynamicProviderSingleCriteriaGroup.
 keywords: AppointmentDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,18 @@ envir: onsite, online
 
 ## "AppointmentDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
 
-Appointment selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderSingleCriteriaGroup" />.
+Appointment selection archive with OR-able selection groups. Each group is represented with the [AppointmentSelectionDynamicProviderSingleCriteriaGroup](./appointmentdynamicselectionsinglecriteriagroup).
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -122,6 +124,7 @@ Appointment selection archive with OR-able selection groups. Each group is repre
 |contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/description|string|| x |
@@ -226,6 +229,7 @@ Appointment selection archive with OR-able selection groups. Each group is repre
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_date|date|| x |
@@ -330,6 +334,7 @@ Appointment selection archive with OR-able selection groups. Each group is repre
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -434,6 +439,7 @@ Appointment selection archive with OR-able selection groups. Each group is repre
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -538,6 +544,7 @@ Appointment selection archive with OR-able selection groups. Each group is repre
 |project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUrl/URLDescription|string|| x |
@@ -642,6 +649,7 @@ Appointment selection archive with OR-able selection groups. Each group is repre
 |sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/originalStage|listAny|| x |
@@ -746,6 +754,7 @@ Appointment selection archive with OR-able selection groups. Each group is repre
 |associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/portraitThumbnail| *None* ||  |
@@ -775,5 +784,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

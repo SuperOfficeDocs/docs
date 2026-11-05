@@ -9,17 +9,19 @@ envir: onsite, online
 
 ## "ContactPersonDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
 
 Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 |"person"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -123,6 +125,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |contactAssociate/personId|int||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/mrMrs|string|| x |
@@ -227,6 +230,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |sourceRelation/companyCategoryRank|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/business|listAny|| x |
@@ -331,6 +335,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |sale/amount|decimal|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/amountWeighted|decimal|| x |
@@ -435,6 +440,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |appointment/priority|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/alarm|bool|| x |
@@ -539,6 +545,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |document/documentId|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/keywords|string|| x |
@@ -643,6 +650,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personAssociateFullName|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personCategory|listAny|| x |
@@ -747,6 +755,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personSourceRelation/personCountryId|int|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personNoMail|bool|| x |
@@ -851,6 +860,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/createdByForm|listAny|| x |
@@ -955,6 +965,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |workflowInstance/workflowInstanceDropoutReason|string||  |
@@ -1059,6 +1070,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |request/timeSpentQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/timeSpentExternally|timeSpan|| x |
@@ -1163,6 +1175,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |request/extra/x\_ticket\_timespan|timeSpan|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_short\_text|string|| x |
@@ -1267,6 +1280,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |projectMembers/LastSale|date||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/LastCompletedSale|date||  |
@@ -1371,6 +1385,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personAppointment/associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/userName|string|| x |
@@ -1475,6 +1490,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |sale/quote/version/alternative/quoteline/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/quote/version/alternative/quoteline/registeredByFullName|associate|| x |
@@ -1498,5 +1514,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
-
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).

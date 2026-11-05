@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_ToggleSubscriptionRequest"></a> Class EMail\_ToggleSubscriptionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_ToggleSubscriptionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_ToggleSubscriptionRequest](SuperOffice.WebApi.Data.EMail\_ToggleSubscriptionRequest.md)
+[EMail\_ToggleSubscriptionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_ToggleSubscriptionRequest)
 
 #### Inherited Members
 

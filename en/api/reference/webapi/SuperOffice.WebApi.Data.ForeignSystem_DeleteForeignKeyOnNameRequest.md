@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_DeleteForeignKeyOnNameRequest"></a> Class ForeignSystem\_DeleteForeignKeyOnNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_DeleteForeignKeyOnNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_DeleteForeignKeyOnNameRequest](SuperOffice.WebApi.Data.ForeignSystem\_DeleteForeignKeyOnNameRequest.md)
+[ForeignSystem\_DeleteForeignKeyOnNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_DeleteForeignKeyOnNameRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_ClearConfigurationCacheRequest"></a> Class Configuration\_ClearConfigurationCacheRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_ClearConfigurationCacheRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_ClearConfigurationCacheRequest](SuperOffice.WebApi.Data.Configuration\_ClearConfigurationCacheRequest.md)
+[Configuration\_ClearConfigurationCacheRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_ClearConfigurationCacheRequest)
 
 #### Inherited Members
 

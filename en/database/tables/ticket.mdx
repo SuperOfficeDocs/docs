@@ -82,7 +82,6 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 |ticket\_type|Tickettype of the ticket|FK [ticket_type](./ticket-type.mdx)|No|
 |num\_appointments|The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.|Int|No|
 
-
 ![ticket table relationship diagram](/media/loc/en/database/tables/ticket.png)
 
 <Ticket />
@@ -147,7 +146,6 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 |[ticket\_type](./ticket-type)  |A ticket (request) type |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
-
 ## Replication Flags
 
 * None
@@ -155,4 +153,3 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
-

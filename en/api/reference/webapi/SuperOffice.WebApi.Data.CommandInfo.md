@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CommandInfo"></a> Class CommandInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CommandInfo.
@@ -13,7 +13,7 @@ public class CommandInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CommandInfo](SuperOffice.WebApi.Data.CommandInfo.md)
+[CommandInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandInfo)
 
 #### Inherited Members
 
@@ -97,11 +97,11 @@ public ReturnType? ReturnType { get; set; }
 
 #### Property Value
 
- [ReturnType](SuperOffice.WebApi.Data.ReturnType.md)?
+ [ReturnType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReturnType)?
 
 #### See Also
 
-[CommandInfo](SuperOffice.WebApi.Data.CommandInfo.md).[ReturnType\_String](SuperOffice.WebApi.Data.CommandInfo.md\#SuperOffice\_WebApi\_Data\_CommandInfo\_ReturnType\_String)
+[CommandInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandInfo).[ReturnType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandInfo#SuperOffice_WebApi_Data_CommandInfo_ReturnType_String)
 
 ### <a id="SuperOffice_WebApi_Data_CommandInfo_ReturnType_String"></a> ReturnType\_String
 
@@ -119,9 +119,9 @@ public string ReturnType_String { get; set; }
 
 #### See Also
 
-[CommandInfo](SuperOffice.WebApi.Data.CommandInfo.md).[ReturnType](SuperOffice.WebApi.Data.CommandInfo.md\#SuperOffice\_WebApi\_Data\_CommandInfo\_ReturnType)
+[CommandInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandInfo).[ReturnType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandInfo#SuperOffice_WebApi_Data_CommandInfo_ReturnType)
 
 ## See Also
 
-[DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md)
+[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent)
 

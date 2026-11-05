@@ -1,11 +1,11 @@
-# <a id="SuperOffice_WebApi_Agents_IMessagingAgent"></a> Interface IMessagingAgent
+# Interface IMessagingAgent {#SuperOffice_WebApi_Agents_IMessagingAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 SMS and other external messaging systems
-<p></p>
-<b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 public interface IMessagingAgent : IAgentBase, IDisposable
@@ -13,16 +13,16 @@ public interface IMessagingAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IMessagingAgent_CreateMessageAsync_SuperOffice_WebApi_Data_IncomingMessage_SuperOffice_WebApi_RequestOptions_"></a> CreateMessageAsync\(IncomingMessage, RequestOptions\)
+### CreateMessageAsync\(IncomingMessage, RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_CreateMessageAsync_SuperOffice_WebApi_Data_IncomingMessage_SuperOffice_WebApi_RequestOptions_}
 
 Create a new message and insert it in the message queue. (inbox)
-<p></p>
-<b>Online Restricted:</b> The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task CreateMessageAsync(IncomingMessage incomingMessage, RequestOptions requestOptions = null)
@@ -30,9 +30,9 @@ Task CreateMessageAsync(IncomingMessage incomingMessage, RequestOptions requestO
 
 #### Parameters
 
-`incomingMessage` [IncomingMessage](SuperOffice.WebApi.Data.IncomingMessage.md)
+`incomingMessage` [IncomingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.IncomingMessage)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -40,11 +40,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IMessagingAgent_GetDeliveryStatusAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetDeliveryStatusAsync\(int\[\], RequestOptions\)
+### GetDeliveryStatusAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_GetDeliveryStatusAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get delivery status
-<p></p>
-<b>Online Restricted:</b> The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<MessageDeliveryStatus[]> GetDeliveryStatusAsync(int[] messagingIds, RequestOptions requestOptions = null)
@@ -56,18 +56,18 @@ Task<MessageDeliveryStatus[]> GetDeliveryStatusAsync(int[] messagingIds, Request
 
 Array of messaging ids.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MessageDeliveryStatus](SuperOffice.WebApi.Data.MessageDeliveryStatus.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageDeliveryStatus)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IMessagingAgent_GetPluginsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetPluginsAsync\(RequestOptions\)
+### GetPluginsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_GetPluginsAsync_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<ProviderInfo[]> GetPluginsAsync(RequestOptions requestOptions = null)
@@ -75,19 +75,19 @@ Task<ProviderInfo[]> GetPluginsAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProviderInfo](SuperOffice.WebApi.Data.ProviderInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProviderInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProviderInfo)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_RequestOptions_"></a> SendMessagesAsync\(string, OutgoingMessage\[\], RequestOptions\)
+### SendMessagesAsync\(string, OutgoingMessage\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_RequestOptions_}
 
 Send an array of messages
-<p></p>
-<b>Online Restricted:</b> The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<MessageDeliveryStatus[]> SendMessagesAsync(string plugin, OutgoingMessage[] outgoingMessages, RequestOptions requestOptions = null)
@@ -99,25 +99,25 @@ Task<MessageDeliveryStatus[]> SendMessagesAsync(string plugin, OutgoingMessage[]
 
 Name of plugin to use.
 
-`outgoingMessages` [OutgoingMessage](SuperOffice.WebApi.Data.OutgoingMessage.md)\[\]
+`outgoingMessages` [OutgoingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.OutgoingMessage)\[\]
 
 Array of outgoing messages you want to send.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MessageDeliveryStatus](SuperOffice.WebApi.Data.MessageDeliveryStatus.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageDeliveryStatus)\[\]\&gt;
 
 Array of MessageDeliveryStatus. Length of the array is equal to the number of outgoing messages.
 
-### <a id="SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesWithConfigAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> SendMessagesWithConfigAsync\(string, OutgoingMessage\[\], StringDictionary, RequestOptions\)
+### SendMessagesWithConfigAsync\(string, OutgoingMessage\[\], StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesWithConfigAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Send an array of messages using given config
-<p></p>
-<b>Online Restricted:</b> The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task<MessageDeliveryStatus[]> SendMessagesWithConfigAsync(string plugin, OutgoingMessage[] outgoingMessages, StringDictionary config, RequestOptions requestOptions = null)
@@ -129,29 +129,29 @@ Task<MessageDeliveryStatus[]> SendMessagesWithConfigAsync(string plugin, Outgoin
 
 Name of plugin to use.
 
-`outgoingMessages` [OutgoingMessage](SuperOffice.WebApi.Data.OutgoingMessage.md)\[\]
+`outgoingMessages` [OutgoingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.OutgoingMessage)\[\]
 
 Array of outgoing messages you want to send.
 
-`config` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`config` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Config values used by the plugin.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MessageDeliveryStatus](SuperOffice.WebApi.Data.MessageDeliveryStatus.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageDeliveryStatus)\[\]\&gt;
 
 Array of MessageDeliveryStatus. Length of the array is equal to the number of outgoing messages.
 
-### <a id="SuperOffice_WebApi_Agents_IMessagingAgent_SetDeliveryStatusAsync_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetDeliveryStatusAsync\(string, string, int, string, RequestOptions\)
+### SetDeliveryStatusAsync\(string, string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_SetDeliveryStatusAsync_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set or change the delivery status on an outgoing messsage.
-<p></p>
-<b>Online Restricted:</b> The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
 
 ```csharp
 Task SetDeliveryStatusAsync(string plugin, string externalMessageId, int status, string statusDescription, RequestOptions requestOptions = null)
@@ -175,11 +175,10 @@ Delivery status
 
 String describing delivery status.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
-

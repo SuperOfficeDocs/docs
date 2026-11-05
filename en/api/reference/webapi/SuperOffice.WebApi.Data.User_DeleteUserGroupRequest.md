@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_DeleteUserGroupRequest"></a> Class User\_DeleteUserGroupRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_DeleteUserGroupRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_DeleteUserGroupRequest](SuperOffice.WebApi.Data.User\_DeleteUserGroupRequest.md)
+[User\_DeleteUserGroupRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_DeleteUserGroupRequest)
 
 #### Inherited Members
 

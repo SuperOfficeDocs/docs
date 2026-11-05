@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_SaveDashTilesRequest"></a> Class Dash\_SaveDashTilesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_SaveDashTilesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_SaveDashTilesRequest](SuperOffice.WebApi.Data.Dash\_SaveDashTilesRequest.md)
+[Dash\_SaveDashTilesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_SaveDashTilesRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public DashTile[] DashTiles { get; set; }
 
 #### Property Value
 
- [DashTile](SuperOffice.WebApi.Data.DashTile.md)\[\]
+ [DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Dash_SaveDashTilesRequest_DashboardId"></a> DashboardId
 

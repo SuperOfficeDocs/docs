@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecurrenceYearPattern"></a> Class RecurrenceYearPattern
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RecurrenceYearPattern.
@@ -13,7 +13,7 @@ public class RecurrenceYearPattern
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md)
+[RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern)
 
 #### Inherited Members
 
@@ -73,11 +73,11 @@ public RecurrenceYearlyPattern? Pattern { get; set; }
 
 #### Property Value
 
- [RecurrenceYearlyPattern](SuperOffice.WebApi.Data.RecurrenceYearlyPattern.md)?
+ [RecurrenceYearlyPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearlyPattern)?
 
 #### See Also
 
-[RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md).[Pattern\_String](SuperOffice.WebApi.Data.RecurrenceYearPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceYearPattern\_Pattern\_String)
+[RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern).[Pattern\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern#SuperOffice_WebApi_Data_RecurrenceYearPattern_Pattern_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceYearPattern_Pattern_String"></a> Pattern\_String
 
@@ -95,7 +95,7 @@ public string Pattern_String { get; set; }
 
 #### See Also
 
-[RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md).[Pattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceYearPattern\_Pattern)
+[RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern).[Pattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern#SuperOffice_WebApi_Data_RecurrenceYearPattern_Pattern)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceYearPattern_WeekOfMonth"></a> WeekOfMonth
 
@@ -109,11 +109,11 @@ public WeekOfMonth? WeekOfMonth { get; set; }
 
 #### Property Value
 
- [WeekOfMonth](SuperOffice.WebApi.Data.WeekOfMonth.md)?
+ [WeekOfMonth](/en/api/reference/webapi/SuperOffice.WebApi.Data.WeekOfMonth)?
 
 #### See Also
 
-[RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md).[WeekOfMonth\_String](SuperOffice.WebApi.Data.RecurrenceYearPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceYearPattern\_WeekOfMonth\_String)
+[RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern).[WeekOfMonth\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern#SuperOffice_WebApi_Data_RecurrenceYearPattern_WeekOfMonth_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceYearPattern_WeekOfMonth_String"></a> WeekOfMonth\_String
 
@@ -131,7 +131,7 @@ public string WeekOfMonth_String { get; set; }
 
 #### See Also
 
-[RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md).[WeekOfMonth](SuperOffice.WebApi.Data.RecurrenceYearPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceYearPattern\_WeekOfMonth)
+[RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern).[WeekOfMonth](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern#SuperOffice_WebApi_Data_RecurrenceYearPattern_WeekOfMonth)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceYearPattern_Weekday"></a> Weekday
 
@@ -145,11 +145,11 @@ public Weekday? Weekday { get; set; }
 
 #### Property Value
 
- [Weekday](SuperOffice.WebApi.Data.Weekday.md)?
+ [Weekday](/en/api/reference/webapi/SuperOffice.WebApi.Data.Weekday)?
 
 #### See Also
 
-[RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md).[Weekday\_String](SuperOffice.WebApi.Data.RecurrenceYearPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceYearPattern\_Weekday\_String)
+[RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern).[Weekday\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern#SuperOffice_WebApi_Data_RecurrenceYearPattern_Weekday_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceYearPattern_Weekday_String"></a> Weekday\_String
 
@@ -167,5 +167,5 @@ public string Weekday_String { get; set; }
 
 #### See Also
 
-[RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md).[Weekday](SuperOffice.WebApi.Data.RecurrenceYearPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceYearPattern\_Weekday)
+[RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern).[Weekday](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern#SuperOffice_WebApi_Data_RecurrenceYearPattern_Weekday)
 

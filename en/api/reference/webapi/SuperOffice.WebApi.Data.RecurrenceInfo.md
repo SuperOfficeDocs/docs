@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecurrenceInfo"></a> Class RecurrenceInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RecurrenceInfo.
@@ -13,7 +13,7 @@ public class RecurrenceInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)
+[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual RecurrenceDate[] Dates { get; set; }
 
 #### Property Value
 
- [RecurrenceDate](SuperOffice.WebApi.Data.RecurrenceDate.md)\[\]
+ [RecurrenceDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDate)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_DayPattern"></a> DayPattern
 
@@ -59,7 +59,7 @@ public virtual RecurrenceDayPattern DayPattern { get; set; }
 
 #### Property Value
 
- [RecurrenceDayPattern](SuperOffice.WebApi.Data.RecurrenceDayPattern.md)
+ [RecurrenceDayPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDayPattern)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_EndDate"></a> EndDate
 
@@ -95,7 +95,7 @@ public virtual RecurrenceMonthPattern MonthPattern { get; set; }
 
 #### Property Value
 
- [RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md)
+ [RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_Pattern"></a> Pattern
 
@@ -109,11 +109,11 @@ public RecurrencePattern? Pattern { get; set; }
 
 #### Property Value
 
- [RecurrencePattern](SuperOffice.WebApi.Data.RecurrencePattern.md)?
+ [RecurrencePattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrencePattern)?
 
 #### See Also
 
-[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md).[Pattern\_String](SuperOffice.WebApi.Data.RecurrenceInfo.md\#SuperOffice\_WebApi\_Data\_RecurrenceInfo\_Pattern\_String)
+[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo).[Pattern\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo#SuperOffice_WebApi_Data_RecurrenceInfo_Pattern_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_Pattern_String"></a> Pattern\_String
 
@@ -131,7 +131,7 @@ public string Pattern_String { get; set; }
 
 #### See Also
 
-[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md).[Pattern](SuperOffice.WebApi.Data.RecurrenceInfo.md\#SuperOffice\_WebApi\_Data\_RecurrenceInfo\_Pattern)
+[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo).[Pattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo#SuperOffice_WebApi_Data_RecurrenceInfo_Pattern)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_RecurrenceCounter"></a> RecurrenceCounter
 
@@ -155,11 +155,11 @@ public RecurrenceEndType? RecurrenceEndType { get; set; }
 
 #### Property Value
 
- [RecurrenceEndType](SuperOffice.WebApi.Data.RecurrenceEndType.md)?
+ [RecurrenceEndType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceEndType)?
 
 #### See Also
 
-[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md).[RecurrenceEndType\_String](SuperOffice.WebApi.Data.RecurrenceInfo.md\#SuperOffice\_WebApi\_Data\_RecurrenceInfo\_RecurrenceEndType\_String)
+[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo).[RecurrenceEndType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo#SuperOffice_WebApi_Data_RecurrenceInfo_RecurrenceEndType_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_RecurrenceEndType_String"></a> RecurrenceEndType\_String
 
@@ -177,7 +177,7 @@ public string RecurrenceEndType_String { get; set; }
 
 #### See Also
 
-[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md).[RecurrenceEndType](SuperOffice.WebApi.Data.RecurrenceInfo.md\#SuperOffice\_WebApi\_Data\_RecurrenceInfo\_RecurrenceEndType)
+[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo).[RecurrenceEndType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo#SuperOffice_WebApi_Data_RecurrenceInfo_RecurrenceEndType)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_RecurrenceId"></a> RecurrenceId
 
@@ -213,7 +213,7 @@ public virtual RecurrenceWeekPattern WeekPattern { get; set; }
 
 #### Property Value
 
- [RecurrenceWeekPattern](SuperOffice.WebApi.Data.RecurrenceWeekPattern.md)
+ [RecurrenceWeekPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceWeekPattern)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceInfo_YearPattern"></a> YearPattern
 
@@ -225,5 +225,5 @@ public virtual RecurrenceYearPattern YearPattern { get; set; }
 
 #### Property Value
 
- [RecurrenceYearPattern](SuperOffice.WebApi.Data.RecurrenceYearPattern.md)
+ [RecurrenceYearPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceYearPattern)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEmailAppointmentRequest"></a> Class EMail\_GetEmailAppointmentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEmailAppointmentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEmailAppointmentRequest](SuperOffice.WebApi.Data.EMail\_GetEmailAppointmentRequest.md)
+[EMail\_GetEmailAppointmentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEmailAppointmentRequest)
 
 #### Inherited Members
 

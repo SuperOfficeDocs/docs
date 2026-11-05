@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_SystemUserTicket_Exceptions_SystemUserException"></a> Class SystemUserException
 
-Namespace: [SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions](SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions.md)  
+Namespace: [SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions)  
 Assembly: SuperOffice.WebApi.Authorization.SystemUserTicket.dll  
 
 Thrown when exception occurs obtaining a new SystemUser ticket.
@@ -13,7 +13,7 @@ public class SystemUserException : Exception, ISerializable
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Exception](https://learn.microsoft.com/dotnet/api/system.exception) ← 
-[SystemUserException](SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions.SystemUserException.md)
+[SystemUserException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions.SystemUserException)
 
 #### Implements
 

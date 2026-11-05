@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_SaveFromSectionAndKeyRequest"></a> Class Preference\_SaveFromSectionAndKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_SaveFromSectionAndKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_SaveFromSectionAndKeyRequest](SuperOffice.WebApi.Data.Preference\_SaveFromSectionAndKeyRequest.md)
+[Preference\_SaveFromSectionAndKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_SaveFromSectionAndKeyRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public PreferenceDescription PreferenceDescription { get; set; }
 
 #### Property Value
 
- [PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)
+ [PreferenceDescription](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceDescription)
 
 ### <a id="SuperOffice_WebApi_Data_Preference_SaveFromSectionAndKeyRequest_Section"></a> Section
 

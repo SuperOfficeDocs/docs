@@ -46,7 +46,6 @@ This table contains the messages listed under tickets.
 |changed\_by|The id of the user who changed the message.|FK [ejuser](./ejuser.mdx)|Yes|
 |badge|Badge to explicitly determine how a message was generated|Enum [BadgeType](./enums/badgetype.mdx)|No|
 
-
 ![ej_message table relationship diagram](/media/loc/en/database/tables/ej_message.png)
 
 <EjMessage />
@@ -83,7 +82,6 @@ This table contains the messages listed under tickets.
 |[ticket\_log\_action](./ticket-log-action)  |This table contains actions for the tickets. |
 |[ticket\_log\_change](./ticket-log-change)  |This table contains log entries for the tickets. |
 
-
 ## Replication Flags
 
 * None
@@ -91,4 +89,3 @@ This table contains the messages listed under tickets.
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
-

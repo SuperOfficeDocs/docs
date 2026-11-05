@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Chat_GetUserAgentListRequest"></a> Class Chat\_GetUserAgentListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Chat_GetUserAgentListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Chat\_GetUserAgentListRequest](SuperOffice.WebApi.Data.Chat\_GetUserAgentListRequest.md)
+[Chat\_GetUserAgentListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Chat_GetUserAgentListRequest)
 
 #### Inherited Members
 

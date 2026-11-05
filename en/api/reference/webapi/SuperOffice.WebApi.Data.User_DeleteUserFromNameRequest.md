@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_DeleteUserFromNameRequest"></a> Class User\_DeleteUserFromNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_DeleteUserFromNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_DeleteUserFromNameRequest](SuperOffice.WebApi.Data.User\_DeleteUserFromNameRequest.md)
+[User\_DeleteUserFromNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_DeleteUserFromNameRequest)
 
 #### Inherited Members
 

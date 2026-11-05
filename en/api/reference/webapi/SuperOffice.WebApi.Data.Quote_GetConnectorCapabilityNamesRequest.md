@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_GetConnectorCapabilityNamesRequest"></a> Class Quote\_GetConnectorCapabilityNamesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_GetConnectorCapabilityNamesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_GetConnectorCapabilityNamesRequest](SuperOffice.WebApi.Data.Quote\_GetConnectorCapabilityNamesRequest.md)
+[Quote\_GetConnectorCapabilityNamesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_GetConnectorCapabilityNamesRequest)
 
 #### Inherited Members
 

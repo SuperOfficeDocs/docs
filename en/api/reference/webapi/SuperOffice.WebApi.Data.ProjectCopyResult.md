@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_ProjectCopyResult"></a> Class ProjectCopyResult
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for ProjectCopyResult.
 Result of saving a copied project: the project that was created, and what became of each optional part.
@@ -12,17 +12,17 @@ public class ProjectCopyResult
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md)
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -49,11 +49,11 @@ public CopyPartResult? ImageResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
+ [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[ImageResult\_String](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_ImageResult\_String)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[ImageResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_ImageResult_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_ImageResult_String"></a> ImageResult\_String
 
@@ -71,7 +71,7 @@ public string ImageResult_String { get; set; }
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[ImageResult](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_ImageResult)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[ImageResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_ImageResult)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_LinksResult"></a> LinksResult
 
@@ -85,11 +85,11 @@ public CopyPartResult? LinksResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
+ [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[LinksResult\_String](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_LinksResult\_String)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[LinksResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_LinksResult_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_LinksResult_String"></a> LinksResult\_String
 
@@ -107,7 +107,7 @@ public string LinksResult_String { get; set; }
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[LinksResult](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_LinksResult)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[LinksResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_LinksResult)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_MembersResult"></a> MembersResult
 
@@ -121,11 +121,11 @@ public CopyPartResult? MembersResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
+ [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[MembersResult\_String](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_MembersResult\_String)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[MembersResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_MembersResult_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_MembersResult_String"></a> MembersResult\_String
 
@@ -143,7 +143,7 @@ public string MembersResult_String { get; set; }
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[MembersResult](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_MembersResult)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[MembersResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_MembersResult)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_NoteResult"></a> NoteResult
 
@@ -157,11 +157,11 @@ public CopyPartResult? NoteResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
+ [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[NoteResult\_String](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_NoteResult\_String)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[NoteResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_NoteResult_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_NoteResult_String"></a> NoteResult\_String
 
@@ -179,7 +179,7 @@ public string NoteResult_String { get; set; }
 
 #### See Also
 
-[ProjectCopyResult](SuperOffice.WebApi.Data.ProjectCopyResult.md).[NoteResult](SuperOffice.WebApi.Data.ProjectCopyResult.md\#SuperOffice\_WebApi\_Data\_ProjectCopyResult\_NoteResult)
+[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult).[NoteResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult#SuperOffice_WebApi_Data_ProjectCopyResult_NoteResult)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyResult_ProjectId"></a> ProjectId
 
@@ -207,5 +207,4 @@ public virtual string[] Warnings { get; set; }
 
 ## See Also
 
-[ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md)
-
+[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent)

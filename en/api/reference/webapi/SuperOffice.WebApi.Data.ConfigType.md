@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ConfigType"></a> Enum ConfigType
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Value for field 'type' in table 'cust_config'.

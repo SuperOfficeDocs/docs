@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent"></a> Interface ICustomObjectAgent
+# Interface ICustomObjectAgent {#SuperOffice_WebApi_Agents_ICustomObjectAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Agent for working with Custom Objects (extra tables): read schema and full CRUD over rows. Purpose-built replacement for using DatabaseTableAgent against custom objects.
 
@@ -11,12 +11,12 @@ public interface ICustomObjectAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_CreateDefaultCustomObjectAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCustomObjectAsync\(string, RequestOptions\)
+### CreateDefaultCustomObjectAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_CreateDefaultCustomObjectAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns a new Custom Object row pre-populated with the default values declared by the Custom Object Definition. The row is not yet persisted.
 
@@ -30,17 +30,17 @@ Task<CustomObject> CreateDefaultCustomObjectAsync(string definitionName, Request
 
 Database table name of the Custom Object Definition, e.g. 'y_equipment'.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](SuperOffice.WebApi.Data.CustomObject.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)\&gt;
 
 A new Custom Object row pre-populated with default values. Not yet persisted.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_CreateDefaultCustomObjectDefinitionAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCustomObjectDefinitionAsync\(RequestOptions\)
+### CreateDefaultCustomObjectDefinitionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_CreateDefaultCustomObjectDefinitionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CustomObjectDefinition.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -51,17 +51,17 @@ Task<CustomObjectDefinition> CreateDefaultCustomObjectDefinitionAsync(RequestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)\&gt;
 
 A blank CustomObjectDefinition
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_DeleteCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteCustomObjectAsync\(string, int, RequestOptions\)
+### DeleteCustomObjectAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_DeleteCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes a single Custom Object row by primary key.
 
@@ -79,7 +79,7 @@ Database table name of the Custom Object Definition, e.g. 'y_equipment'.
 
 Primary key of the row to delete.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -89,7 +89,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCustomObjectAsync\(string, int, RequestOptions\)
+### GetCustomObjectAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a single Custom Object row by definition name and primary key.
 
@@ -107,17 +107,17 @@ Database table name of the Custom Object Definition, e.g. 'y_equipment'.
 
 Primary key of the row to fetch.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](SuperOffice.WebApi.Data.CustomObject.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)\&gt;
 
 The Custom Object row, or null if no row with that id exists.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectDefinitionAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetCustomObjectDefinitionAsync\(string, RequestOptions\)
+### GetCustomObjectDefinitionAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectDefinitionAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the schema (table + field definitions) for a Custom Object Definition by its database table name.
 
@@ -131,17 +131,17 @@ Task<CustomObjectDefinition> GetCustomObjectDefinitionAsync(string definitionNam
 
 Database table name of the Custom Object Definition, e.g. 'y_equipment'.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)\&gt;
 
 The Custom Object Definition, or null if no definition with that name exists.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectsIconsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCustomObjectsIconsAsync\(RequestOptions\)
+### GetCustomObjectsIconsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectsIconsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns SVG icon data for all Custom Object tables, keyed by table name.
 
@@ -151,17 +151,17 @@ Task<StringDictionary> GetCustomObjectsIconsAsync(RequestOptions requestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Map of table name to SVG icon data URI.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectsMetadataAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCustomObjectsMetadataAsync\(RequestOptions\)
+### GetCustomObjectsMetadataAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_GetCustomObjectsMetadataAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns bootstrap metadata for all Custom Object tables.
 
@@ -171,17 +171,17 @@ Task<CustomObjectMetadata[]> GetCustomObjectsMetadataAsync(RequestOptions reques
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectMetadata](SuperOffice.WebApi.Data.CustomObjectMetadata.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomObjectMetadata](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectMetadata)\[\]\&gt;
 
 Metadata for all custom object tables.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_HasScreenChooserAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> HasScreenChooserAsync\(string, bool, RequestOptions\)
+### HasScreenChooserAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_HasScreenChooserAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Returns true if a screen chooser is configured for the given Custom Object Definition and mode.
 
@@ -199,17 +199,17 @@ Database table name of the Custom Object Definition.
 
 True to check for a custom edit screen; false to check for a custom view screen.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if a screen chooser (view or edit) is configured for this Custom Object.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent_SaveCustomObjectAsync_System_String_SuperOffice_WebApi_Data_CustomObject_SuperOffice_WebApi_RequestOptions_"></a> SaveCustomObjectAsync\(string, CustomObject, RequestOptions\)
+### SaveCustomObjectAsync\(string, CustomObject, RequestOptions\) {#SuperOffice_WebApi_Agents_ICustomObjectAgent_SaveCustomObjectAsync_System_String_SuperOffice_WebApi_Data_CustomObject_SuperOffice_WebApi_RequestOptions_}
 
 Saves a Custom Object row. If the row has a primary key set it will be updated, otherwise a new row is inserted.
 
@@ -223,17 +223,16 @@ Task<CustomObject> SaveCustomObjectAsync(string definitionName, CustomObject row
 
 Database table name of the Custom Object Definition, e.g. 'y_equipment'.
 
-`row` [CustomObject](SuperOffice.WebApi.Data.CustomObject.md)
+`row` [CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)
 
 The Custom Object row to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](SuperOffice.WebApi.Data.CustomObject.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)\&gt;
 
 The saved Custom Object row, with any server-assigned values (e.g. primary key) filled in.
-

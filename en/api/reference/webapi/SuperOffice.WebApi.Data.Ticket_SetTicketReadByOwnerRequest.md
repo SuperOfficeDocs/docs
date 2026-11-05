@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SetTicketReadByOwnerRequest"></a> Class Ticket\_SetTicketReadByOwnerRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SetTicketReadByOwnerRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SetTicketReadByOwnerRequest](SuperOffice.WebApi.Data.Ticket\_SetTicketReadByOwnerRequest.md)
+[Ticket\_SetTicketReadByOwnerRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SetTicketReadByOwnerRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public TicketReadStatus ReadStatus { get; set; }
 
 #### Property Value
 
- [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
+ [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_SetTicketReadByOwnerRequest_TicketEntityId"></a> TicketEntityId
 

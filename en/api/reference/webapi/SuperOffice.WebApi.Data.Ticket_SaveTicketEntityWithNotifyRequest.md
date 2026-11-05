@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SaveTicketEntityWithNotifyRequest"></a> Class Ticket\_SaveTicketEntityWithNotifyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SaveTicketEntityWithNotifyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SaveTicketEntityWithNotifyRequest](SuperOffice.WebApi.Data.Ticket\_SaveTicketEntityWithNotifyRequest.md)
+[Ticket\_SaveTicketEntityWithNotifyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SaveTicketEntityWithNotifyRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TicketEntity NewEntity { get; set; }
 
 #### Property Value
 
- [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+ [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_SaveTicketEntityWithNotifyRequest_Notify"></a> Notify
 

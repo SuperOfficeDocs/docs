@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DatabaseTable_UpsertRequest"></a> Class DatabaseTable\_UpsertRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DatabaseTable_UpsertRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DatabaseTable\_UpsertRequest](SuperOffice.WebApi.Data.DatabaseTable\_UpsertRequest.md)
+[DatabaseTable\_UpsertRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DatabaseTable_UpsertRequest)
 
 #### Inherited Members
 
@@ -70,7 +70,7 @@ public UpsertNomatchAction NomatchAction { get; set; }
 
 #### Property Value
 
- [UpsertNomatchAction](SuperOffice.WebApi.Data.UpsertNomatchAction.md)
+ [UpsertNomatchAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertNomatchAction)
 
 ### <a id="SuperOffice_WebApi_Data_DatabaseTable_UpsertRequest_ReturnRowStatus"></a> ReturnRowStatus
 

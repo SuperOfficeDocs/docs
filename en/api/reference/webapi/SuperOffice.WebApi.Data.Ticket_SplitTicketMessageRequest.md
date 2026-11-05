@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SplitTicketMessageRequest"></a> Class Ticket\_SplitTicketMessageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SplitTicketMessageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SplitTicketMessageRequest](SuperOffice.WebApi.Data.Ticket\_SplitTicketMessageRequest.md)
+[Ticket\_SplitTicketMessageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SplitTicketMessageRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TicketEntity NewTicketEntity { get; set; }
 
 #### Property Value
 
- [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+ [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_SplitTicketMessageRequest_NewTicketMessage"></a> NewTicketMessage
 
@@ -50,7 +50,7 @@ public TicketMessageEntity NewTicketMessage { get; set; }
 
 #### Property Value
 
- [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+ [TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_SplitTicketMessageRequest_SourceTicketMessage"></a> SourceTicketMessage
 
@@ -60,7 +60,7 @@ public TicketMessageEntity SourceTicketMessage { get; set; }
 
 #### Property Value
 
- [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+ [TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_SplitTicketMessageRequest_TransferAttachmentsIds"></a> TransferAttachmentsIds
 

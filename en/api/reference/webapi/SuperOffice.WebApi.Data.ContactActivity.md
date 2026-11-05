@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ContactActivity"></a> Class ContactActivity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ContactActivity.
@@ -12,13 +12,13 @@ public class ContactActivity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ContactActivity](SuperOffice.WebApi.Data.ContactActivity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ContactActivity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactActivity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -51,11 +51,11 @@ public ContactAction? Action { get; set; }
 
 #### Property Value
 
- [ContactAction](SuperOffice.WebApi.Data.ContactAction.md)?
+ [ContactAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactAction)?
 
 #### See Also
 
-[ContactActivity](SuperOffice.WebApi.Data.ContactActivity.md).[Action\_String](SuperOffice.WebApi.Data.ContactActivity.md\#SuperOffice\_WebApi\_Data\_ContactActivity\_Action\_String)
+[ContactActivity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactActivity).[Action\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactActivity#SuperOffice_WebApi_Data_ContactActivity_Action_String)
 
 ### <a id="SuperOffice_WebApi_Data_ContactActivity_ActionId"></a> ActionId
 
@@ -97,7 +97,7 @@ public string Action_String { get; set; }
 
 #### See Also
 
-[ContactActivity](SuperOffice.WebApi.Data.ContactActivity.md).[Action](SuperOffice.WebApi.Data.ContactActivity.md\#SuperOffice\_WebApi\_Data\_ContactActivity\_Action)
+[ContactActivity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactActivity).[Action](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactActivity#SuperOffice_WebApi_Data_ContactActivity_Action)
 
 ### <a id="SuperOffice_WebApi_Data_ContactActivity_ActivityPersonId"></a> ActivityPersonId
 
@@ -233,5 +233,5 @@ public virtual string URL { get; set; }
 
 ## See Also
 
-[ContactAgent](SuperOffice.WebApi.Agents.ContactAgent.md)
+[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent)
 

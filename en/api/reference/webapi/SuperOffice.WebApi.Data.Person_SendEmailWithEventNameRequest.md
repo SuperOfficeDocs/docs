@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_SendEmailWithEventNameRequest"></a> Class Person\_SendEmailWithEventNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_SendEmailWithEventNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_SendEmailWithEventNameRequest](SuperOffice.WebApi.Data.Person\_SendEmailWithEventNameRequest.md)
+[Person\_SendEmailWithEventNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_SendEmailWithEventNameRequest)
 
 #### Inherited Members
 
