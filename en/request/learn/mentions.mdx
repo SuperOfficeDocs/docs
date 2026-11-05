@@ -22,7 +22,7 @@ language: en
 Mention an associate in an internal comment on a request when you need their help or want them to know about something. The associate finds the request on the **Mentions** tab of the [Request screen][1], and in the notifications panel if they have notifications for mentions turned on.
 
 <Note>
-You can mention associates only in internal comments. Messages to customers never contain mentions.
+You can mention associates only in comments. Replies and forwards cannot contain mentions, even when they are internal.
 </Note>
 
 ## Mention an associate in a comment {#mention}
@@ -55,10 +55,10 @@ The associates you mention see the mention the next time their **Mentions** tab 
 
 ## Change the mentions in a comment {#edit}
 
-When you [edit a comment][5], you can add mentions in the same way. Each associate you add receives a new mention.
+If the **Enable editing of messages** [global preference][7] is turned on, you can [edit the text of a comment][5] and add mentions in the same way. When you save, each associate you add receives a new mention, and existing mentions show the updated text.
 
 * If you remove a mention from a comment, the associate keeps the mention on their **Mentions** tab.
-* If you delete a comment, all its mentions are deleted.
+* Mentions are deleted only when you delete the whole comment.
 
 ## See where you are mentioned {#mentions-tab}
 
@@ -104,6 +104,7 @@ To stop notifications for mentions, click <i class="ph ph-gear" aria-label="Gear
 [4]: ./reply#quick-reply
 [5]: ./edit-message
 [6]: /en/learn/basics/notifications
+[7]: /en/admin/preferences/service-settings
 [img1]: /media/loc/en/request/mentions-user-list.png
 [img2]: /media/loc/en/request/mentions-comment.png
 [img3]: /media/loc/en/request/mentions-tab.png

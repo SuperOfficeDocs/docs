@@ -18,17 +18,21 @@ related:
 language: en
 ---
 
-Only users with the *general administrator* functional right can edit the properties of a message in a request. However, it is not possible to edit the text of the message.
+You can change the properties of a message in a request if you own the request or have the right to edit other users' requests. To edit the text of a message, the **Enable editing of messages** [global preference][2] must be turned on. It is off by default.
 
 1. [Open the request][1].
 1. Go to the **Messages** tab.
 1. Click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> and select **Change**.
 1. Here you have the following options:
-    * **Author**: Shows the name of the person who created the request.
+    * **Message text**: Shown only when **Enable editing of messages** is turned on. In a comment, you can [mention associates][3].
+    * **Author**: Shows the name of the person who created the message. Shown only if you have Service administration rights.
     * **Time spent**: Shows the amount of time spent on this message.
     * **Access level**: The access level for this message. You can choose between **External** and **Internal**.
-    * **Attachments**: If the message contains attachments, they are shown in this table. You can delete existing attachments, but you cannot add new ones.
+    * **Custom fields**: Any custom fields for messages.
+    * **Attachments**: If the message contains attachments, they are shown in this table. With Service administration rights, you can delete existing attachments, but you cannot add new ones.
 
-1. Click **Save** when you are finished, or **Cancel** if you want to discard the changes. You can also delete the entire message by clicking **Delete** and then **OK**.
+1. Click **Save** when you are finished, or **Cancel** if you want to discard the changes. With Service administration rights, you can also delete the entire message by clicking **Delete** and then **OK**.
 
 [1]: ./index#open
+[2]: /en/admin/preferences/service-settings
+[3]: ./mentions#edit
