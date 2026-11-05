@@ -5,7 +5,7 @@ sidebarTitle: Troubleshooting
 description: Solutions to common issues in SuperOffice for Outlook.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'troubleshooting', 'add-in missing', 'permissions', 'consent', 'category missing', 'archive status not showing', 'shared mailbox category', 'SOFO']
 author: schildea
-date: 11.04.2026
+date: 11.05.2026
 version_sofo: 2026.6.4
 content_type: reference
 category: integration
@@ -28,7 +28,7 @@ userflow_index: true
 
 ### SuperOffice for Outlook doesn't appear in Outlook after deployment
 
-Some features require approval from your IT administrator in the [Microsoft Admin portal][1]. Once approved, it can take up to 72 hours before the add-in or feature becomes available in Outlook, and some users may see it earlier than others. If you still don't see it after 72 hours, contact your IT administrator. See [Centralized deployment][2].
+Some features require approval from your IT administrator in the [Microsoft Admin portal][1]. Microsoft needs up to 24 hours to show a newly deployed add-in to all users, and up to 72 hours for an approved update. Some users may see it earlier than others. If you still don't see it after that time, contact your IT administrator. See [How long changes take to reach users][10].
 
 ### A new feature doesn't appear, such as the archive reminder or shared mailbox support {#missing-feature}
 
@@ -36,7 +36,7 @@ The feature needs a manifest update that hasn't reached you yet. Some features r
 
 Ask your Microsoft 365 administrator to check the following:
 
-* The update is approved in the [Microsoft 365 admin center][1]. After approval, it can take up to 72 hours to reach all users.
+* The update is approved in the [Microsoft 365 admin center][1]. After approval, it can take up to 72 hours to reach all users. See [How long changes take to reach users][10].
 * If your organization installed the add-in with its own manifest file or URL, the latest manifest is applied.
 
 If the add-in was installed from AppSource, manifest updates that don't need new permissions reach users automatically. Updates that need new permissions must be approved by an administrator first. For details, see [Choose how to install][8] and [Approve manifest updates][9].
@@ -107,3 +107,4 @@ To use archive status again, recreate the category with the exact name **Archive
 [7]: ./email-archive-status#shared-mailbox
 [8]: ./deploy#install-options
 [9]: ./deploy#approve-updates
+[10]: ./deploy#timeframes
