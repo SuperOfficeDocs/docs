@@ -3,9 +3,9 @@ uid: sofo-save-attachments
 title: Save attachments to SuperOffice
 description: Save email attachments directly to SuperOffice using the SuperOffice for Outlook add-in.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'save attachment', 'attachment', 'SOFO']
-author: Erik Lebiko, digitaldiina, Andrea Schilde
-date: 12.18.2025
-version_sofo: 2024.8.12
+author: Erik Lebiko, digitaldiina, schildea
+date: 11.05.2026
+version_sofo: 2026.6.4
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -19,6 +19,10 @@ language: en
 userflow_index: true
 ---
 
+import StepContactOrCompanyMatch from "./snippets/step-contact-or-company-match.mdx";
+import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
+import NoteVisibility from "./snippets/note-visibility.mdx";
+
 You can save email attachments directly to SuperOffice by following these steps:
 
 1. Open the email that contains the attachments.
@@ -27,15 +31,29 @@ You can save email attachments directly to SuperOffice by following these steps:
 
 1. Select the attachment you want to save from the list shown.
 
-1. Fill in the required fields and click **Save**.
+1. Review the fields and change what you need:
 
-1. To save another attachment, repeat steps 1-4.
+    * **Subject**: Filled in with the attachment file name. You can overwrite it before you save.
+    * **Contact or Company**: Select the contact or company to link the attachment to.
+
+        <StepContactOrCompanyMatch />
+
+        <StepFindContactOrCompany />
+
+    * **Sale**: Link the attachment to a sale.
+    * **Project**: Link the attachment to a project.
+    * **Type**: Choose the type for the saved attachment.
+    * **Date**: Set the date for the saved attachment.
+    * **Visible for**: Choose who can see the attachment: everyone, only the owner's primary group, or only the owner.
+
+        <NoteVisibility />
+
+    * **Mark as completed**: Marks the email activity as completed in SuperOffice.
+
+1. Click **Save**.
+
+1. To save another attachment, repeat steps 1-5.
 
 <Note>
-* Previously saved attachments will be marked as "Attachment already saved."
-
-* The **Visible for** drop-down is only available to users whose administrator has enabled the required license.
-For more details, see [**Admin - User Management - Visibility**][2].
+Previously saved attachments are marked as "Attachment already saved."
 </Note>
-
-[2]: /en/admin/user-management/index#visible
