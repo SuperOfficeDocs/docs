@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetAllTasksRequest"></a> Class List\_GetAllTasksRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetAllTasksRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetAllTasksRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetAllTasksRequest)
+[List\_GetAllTasksRequest](SuperOffice.WebApi.Data.List\_GetAllTasksRequest.md)
 
 #### Inherited Members
 

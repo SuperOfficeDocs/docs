@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Saint_GetStatusMonitorPeriodsRequest"></a> Class Saint\_GetStatusMonitorPeriodsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Saint_GetStatusMonitorPeriodsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Saint\_GetStatusMonitorPeriodsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Saint_GetStatusMonitorPeriodsRequest)
+[Saint\_GetStatusMonitorPeriodsRequest](SuperOffice.WebApi.Data.Saint\_GetStatusMonitorPeriodsRequest.md)
 
 #### Inherited Members
 

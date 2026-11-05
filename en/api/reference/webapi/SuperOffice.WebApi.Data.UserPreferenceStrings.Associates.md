@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Associates"></a> Class UserPreferenceStrings.Associates
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Associate preferences like which radiobutton did I select the last time I used this dialog/control
@@ -13,7 +13,7 @@ public static class UserPreferenceStrings.Associates
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Associates](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Associates)
+[UserPreferenceStrings.Associates](SuperOffice.WebApi.Data.UserPreferenceStrings.Associates.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_SetListTableIdAndUDListDefinitionIdFromSelectedListIdRequest"></a> Class UserDefinedFieldInfo\_SetListTableIdAndUDListDefinitionIdFromSelectedListIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_SetListTableIdAndUDListDefinitionIdFromSelecte
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_SetListTableIdAndUDListDefinitionIdFromSelectedListIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_SetListTableIdAndUDListDefinitionIdFromSelectedListIdRequest)
+[UserDefinedFieldInfo\_SetListTableIdAndUDListDefinitionIdFromSelectedListIdRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_SetListTableIdAndUDListDefinitionIdFromSelectedListIdRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public UserDefinedFieldInfo Info { get; set; }
 
 #### Property Value
 
- [UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo)
+ [UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_SetListTableIdAndUDListDefinitionIdFromSelectedListIdRequest_SelectedListId"></a> SelectedListId
 

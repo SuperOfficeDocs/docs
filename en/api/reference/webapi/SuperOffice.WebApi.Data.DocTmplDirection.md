@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocTmplDirection"></a> Enum DocTmplDirection
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Value for field 'direction' in table 'doctmpl'.

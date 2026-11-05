@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ProjectEventEntity"></a> Class ProjectEventEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ProjectEventEntity.
@@ -13,13 +13,13 @@ public class ProjectEventEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ProjectEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEventEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -57,7 +57,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectEventEntity_CreatedDate"></a> CreatedDate
 
@@ -209,11 +209,11 @@ public PublishType? PublishType { get; set; }
 
 #### Property Value
 
- [PublishType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PublishType)?
+ [PublishType](SuperOffice.WebApi.Data.PublishType.md)?
 
 #### See Also
 
-[ProjectEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEventEntity).[PublishType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEventEntity#SuperOffice_WebApi_Data_ProjectEventEntity_PublishType_String)
+[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md).[PublishType\_String](SuperOffice.WebApi.Data.ProjectEventEntity.md\#SuperOffice\_WebApi\_Data\_ProjectEventEntity\_PublishType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectEventEntity_PublishType_String"></a> PublishType\_String
 
@@ -231,7 +231,7 @@ public string PublishType_String { get; set; }
 
 #### See Also
 
-[ProjectEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEventEntity).[PublishType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEventEntity#SuperOffice_WebApi_Data_ProjectEventEntity_PublishType)
+[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md).[PublishType](SuperOffice.WebApi.Data.ProjectEventEntity.md\#SuperOffice\_WebApi\_Data\_ProjectEventEntity\_PublishType)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectEventEntity_SignOff"></a> SignOff
 
@@ -387,7 +387,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectEventEntity_UpdatedDate"></a> UpdatedDate
 
@@ -411,7 +411,7 @@ public virtual MDOListItem[] VisibleForCategories { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ProjectEventEntity_VisibleForPersonInterests"></a> VisibleForPersonInterests
 
@@ -423,9 +423,9 @@ public virtual MDOListItem[] VisibleForPersonInterests { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
 
 ## See Also
 
-[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent)
+[ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_GetChatImageWithSizeRequest"></a> Class BLOB\_GetChatImageWithSizeRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_GetChatImageWithSizeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_GetChatImageWithSizeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_GetChatImageWithSizeRequest)
+[BLOB\_GetChatImageWithSizeRequest](SuperOffice.WebApi.Data.BLOB\_GetChatImageWithSizeRequest.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepSplit"></a> Class WorkflowStepSplit
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepSplit.
@@ -13,16 +13,16 @@ public class WorkflowStepSplit : WorkflowStepBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase) ← 
-[WorkflowStepSplit](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSplit)
+[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md) ← 
+[WorkflowStepSplit](SuperOffice.WebApi.Data.WorkflowStepSplit.md)
 
 #### Inherited Members
 
-[WorkflowStepBase.WorkflowStepId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowStepId), 
-[WorkflowStepBase.WorkflowId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowId), 
-[WorkflowStepBase.StepType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType_String), 
-[WorkflowStepBase.StepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType), 
-[WorkflowStepBase.Rank](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_Rank), 
+[WorkflowStepBase.WorkflowStepId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowStepId), 
+[WorkflowStepBase.WorkflowId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowId), 
+[WorkflowStepBase.StepType\_String](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType\_String), 
+[WorkflowStepBase.StepType](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType), 
+[WorkflowStepBase.Rank](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_Rank), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -89,7 +89,7 @@ public virtual WorkflowStepOptionBase[] Options { get; set; }
 
 #### Property Value
 
- [WorkflowStepOptionBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase)\[\]
+ [WorkflowStepOptionBase](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepSplit_ShipmentId"></a> ShipmentId
 
@@ -127,11 +127,11 @@ public WorkflowSplitOptionType? SplitOptionType { get; set; }
 
 #### Property Value
 
- [WorkflowSplitOptionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowSplitOptionType)?
+ [WorkflowSplitOptionType](SuperOffice.WebApi.Data.WorkflowSplitOptionType.md)?
 
 #### See Also
 
-[WorkflowStepSplit](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSplit).[SplitOptionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSplit#SuperOffice_WebApi_Data_WorkflowStepSplit_SplitOptionType_String)
+[WorkflowStepSplit](SuperOffice.WebApi.Data.WorkflowStepSplit.md).[SplitOptionType\_String](SuperOffice.WebApi.Data.WorkflowStepSplit.md\#SuperOffice\_WebApi\_Data\_WorkflowStepSplit\_SplitOptionType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepSplit_SplitOptionType_String"></a> SplitOptionType\_String
 
@@ -149,9 +149,9 @@ public string SplitOptionType_String { get; set; }
 
 #### See Also
 
-[WorkflowStepSplit](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSplit).[SplitOptionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepSplit#SuperOffice_WebApi_Data_WorkflowStepSplit_SplitOptionType)
+[WorkflowStepSplit](SuperOffice.WebApi.Data.WorkflowStepSplit.md).[SplitOptionType](SuperOffice.WebApi.Data.WorkflowStepSplit.md\#SuperOffice\_WebApi\_Data\_WorkflowStepSplit\_SplitOptionType)
 
 ## See Also
 
-[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
+[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
 

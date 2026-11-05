@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_KbCategory"></a> Class KbCategory
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for KbCategory.
@@ -13,7 +13,7 @@ public class KbCategory
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[KbCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.KbCategory)
+[KbCategory](SuperOffice.WebApi.Data.KbCategory.md)
 
 #### Inherited Members
 
@@ -111,5 +111,5 @@ public virtual int SortOrder { get; set; }
 
 ## See Also
 
-[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
+[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
 

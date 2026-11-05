@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_SetBlobStreamRequest"></a> Class BLOB\_SetBlobStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_SetBlobStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_SetBlobStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_SetBlobStreamRequest)
+[BLOB\_SetBlobStreamRequest](SuperOffice.WebApi.Data.BLOB\_SetBlobStreamRequest.md)
 
 #### Inherited Members
 

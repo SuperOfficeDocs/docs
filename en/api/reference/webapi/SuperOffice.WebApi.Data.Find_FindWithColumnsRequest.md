@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_FindWithColumnsRequest"></a> Class Find\_FindWithColumnsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_FindWithColumnsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_FindWithColumnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_FindWithColumnsRequest)
+[Find\_FindWithColumnsRequest](SuperOffice.WebApi.Data.Find\_FindWithColumnsRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public ArchiveOrderByInfo[] OrderBy { get; set; }
 
 #### Property Value
 
- [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
+ [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Find_FindWithColumnsRequest_PageNumber"></a> PageNumber
 

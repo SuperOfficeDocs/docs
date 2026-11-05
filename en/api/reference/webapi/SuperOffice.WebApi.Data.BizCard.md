@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BizCard"></a> Class BizCard
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for BizCard.
@@ -13,7 +13,7 @@ public class BizCard
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BizCard](/en/api/reference/webapi/SuperOffice.WebApi.Data.BizCard)
+[BizCard](SuperOffice.WebApi.Data.BizCard.md)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual ContactEntity Contact { get; set; }
 
 #### Property Value
 
- [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
+ [ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_BizCard_LogoImage"></a> LogoImage
 
@@ -71,7 +71,7 @@ public virtual PersonEntity Person { get; set; }
 
 #### Property Value
 
- [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
+ [PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_BizCard_PhotoImage"></a> PhotoImage
 
@@ -87,5 +87,5 @@ public virtual string PhotoImage { get; set; }
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

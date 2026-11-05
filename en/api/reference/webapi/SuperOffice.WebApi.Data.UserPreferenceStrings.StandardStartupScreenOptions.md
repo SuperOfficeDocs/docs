@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_StandardStartupScreenOptions"></a> Class UserPreferenceStrings.StandardStartupScreenOptions
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.StandardStartupScreenOptions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.StandardStartupScreenOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.StandardStartupScreenOptions)
+[UserPreferenceStrings.StandardStartupScreenOptions](SuperOffice.WebApi.Data.UserPreferenceStrings.StandardStartupScreenOptions.md)
 
 #### Inherited Members
 

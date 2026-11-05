@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_DeleteHierarchyFromPathRequest"></a> Class List\_DeleteHierarchyFromPathRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_DeleteHierarchyFromPathRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_DeleteHierarchyFromPathRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_DeleteHierarchyFromPathRequest)
+[List\_DeleteHierarchyFromPathRequest](SuperOffice.WebApi.Data.List\_DeleteHierarchyFromPathRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public Domain Domain { get; set; }
 
 #### Property Value
 
- [Domain](/en/api/reference/webapi/SuperOffice.WebApi.Data.Domain)
+ [Domain](SuperOffice.WebApi.Data.Domain.md)
 
 ### <a id="SuperOffice_WebApi_Data_List_DeleteHierarchyFromPathRequest_Path"></a> Path
 

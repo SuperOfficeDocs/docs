@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TimeZoneRule"></a> Class TimeZoneRule
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TimeZoneRule.
@@ -13,7 +13,7 @@ public class TimeZoneRule
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TimeZoneRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneRule)
+[TimeZoneRule](SuperOffice.WebApi.Data.TimeZoneRule.md)
 
 #### Inherited Members
 
@@ -123,5 +123,5 @@ public virtual int TZOffset { get; set; }
 
 ## See Also
 
-[TimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TimeZoneAgent)
+[TimeZoneAgent](SuperOffice.WebApi.Agents.TimeZoneAgent.md)
 

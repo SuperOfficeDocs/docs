@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PocketDeviceInfo"></a> Class PocketDeviceInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PocketDeviceInfo.
@@ -13,7 +13,7 @@ public class PocketDeviceInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PocketDeviceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo)
+[PocketDeviceInfo](SuperOffice.WebApi.Data.PocketDeviceInfo.md)
 
 #### Inherited Members
 
@@ -109,11 +109,11 @@ public NotificationPlatform? Platform { get; set; }
 
 #### Property Value
 
- [NotificationPlatform](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationPlatform)?
+ [NotificationPlatform](SuperOffice.WebApi.Data.NotificationPlatform.md)?
 
 #### See Also
 
-[PocketDeviceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo).[Platform\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo#SuperOffice_WebApi_Data_PocketDeviceInfo_Platform_String)
+[PocketDeviceInfo](SuperOffice.WebApi.Data.PocketDeviceInfo.md).[Platform\_String](SuperOffice.WebApi.Data.PocketDeviceInfo.md\#SuperOffice\_WebApi\_Data\_PocketDeviceInfo\_Platform\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PocketDeviceInfo_Platform_String"></a> Platform\_String
 
@@ -131,7 +131,7 @@ public string Platform_String { get; set; }
 
 #### See Also
 
-[PocketDeviceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo).[Platform](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo#SuperOffice_WebApi_Data_PocketDeviceInfo_Platform)
+[PocketDeviceInfo](SuperOffice.WebApi.Data.PocketDeviceInfo.md).[Platform](SuperOffice.WebApi.Data.PocketDeviceInfo.md\#SuperOffice\_WebApi\_Data\_PocketDeviceInfo\_Platform)
 
 ### <a id="SuperOffice_WebApi_Data_PocketDeviceInfo_PocketVersion"></a> PocketVersion
 
@@ -159,5 +159,5 @@ public virtual int TimeZoneId { get; set; }
 
 ## See Also
 
-[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent)
+[PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md)
 

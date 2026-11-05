@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dashboard"></a> Class Dashboard
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Dashboard.
@@ -13,13 +13,13 @@ public class Dashboard : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[Dashboard](SuperOffice.WebApi.Data.Dashboard.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -95,11 +95,11 @@ public DashboardLayout? Layout { get; set; }
 
 #### Property Value
 
- [DashboardLayout](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardLayout)?
+ [DashboardLayout](SuperOffice.WebApi.Data.DashboardLayout.md)?
 
 #### See Also
 
-[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard).[Layout\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard#SuperOffice_WebApi_Data_Dashboard_Layout_String)
+[Dashboard](SuperOffice.WebApi.Data.Dashboard.md).[Layout\_String](SuperOffice.WebApi.Data.Dashboard.md\#SuperOffice\_WebApi\_Data\_Dashboard\_Layout\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Dashboard_Layout_String"></a> Layout\_String
 
@@ -117,7 +117,7 @@ public string Layout_String { get; set; }
 
 #### See Also
 
-[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard).[Layout](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard#SuperOffice_WebApi_Data_Dashboard_Layout)
+[Dashboard](SuperOffice.WebApi.Data.Dashboard.md).[Layout](SuperOffice.WebApi.Data.Dashboard.md\#SuperOffice\_WebApi\_Data\_Dashboard\_Layout)
 
 ### <a id="SuperOffice_WebApi_Data_Dashboard_Tiles"></a> Tiles
 
@@ -129,9 +129,9 @@ public virtual DashboardTile[] Tiles { get; set; }
 
 #### Property Value
 
- [DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)\[\]
+ [DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)\[\]
 
 ## See Also
 
-[DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent)
+[DashboardAgent](SuperOffice.WebApi.Agents.DashboardAgent.md)
 

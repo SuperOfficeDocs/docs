@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TemplateInfo"></a> Class TemplateInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TemplateInfo.
@@ -13,7 +13,7 @@ public class TemplateInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TemplateInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemplateInfo)
+[TemplateInfo](SuperOffice.WebApi.Data.TemplateInfo.md)
 
 #### Inherited Members
 
@@ -87,5 +87,5 @@ public virtual int PluginId { get; set; }
 
 ## See Also
 
-[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent)
+[DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeed_StartHandlingRequest"></a> Class NewsFeed\_StartHandlingRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class NewsFeed_StartHandlingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeed\_StartHandlingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_StartHandlingRequest)
+[NewsFeed\_StartHandlingRequest](SuperOffice.WebApi.Data.NewsFeed\_StartHandlingRequest.md)
 
 #### Inherited Members
 

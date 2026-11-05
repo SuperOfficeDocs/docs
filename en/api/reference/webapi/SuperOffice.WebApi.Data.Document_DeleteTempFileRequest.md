@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_DeleteTempFileRequest"></a> Class Document\_DeleteTempFileRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_DeleteTempFileRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_DeleteTempFileRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_DeleteTempFileRequest)
+[Document\_DeleteTempFileRequest](SuperOffice.WebApi.Data.Document\_DeleteTempFileRequest.md)
 
 #### Inherited Members
 

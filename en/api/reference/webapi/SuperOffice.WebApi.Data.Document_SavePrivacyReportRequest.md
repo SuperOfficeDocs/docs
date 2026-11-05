@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_SavePrivacyReportRequest"></a> Class Document\_SavePrivacyReportRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_SavePrivacyReportRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_SavePrivacyReportRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_SavePrivacyReportRequest)
+[Document\_SavePrivacyReportRequest](SuperOffice.WebApi.Data.Document\_SavePrivacyReportRequest.md)
 
 #### Inherited Members
 

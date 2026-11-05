@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_ExecuteScriptAsEventByUniqueIdRequest"></a> Class CRMScript\_ExecuteScriptAsEventByUniqueIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_ExecuteScriptAsEventByUniqueIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_ExecuteScriptAsEventByUniqueIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_ExecuteScriptAsEventByUniqueIdRequest)
+[CRMScript\_ExecuteScriptAsEventByUniqueIdRequest](SuperOffice.WebApi.Data.CRMScript\_ExecuteScriptAsEventByUniqueIdRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public EventData EventData { get; set; }
 
 #### Property Value
 
- [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
+ [EventData](SuperOffice.WebApi.Data.EventData.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings"></a> Class UserPreferenceStrings
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Helper class that exposes section and key names for the UserPreference table. The top level
@@ -15,7 +15,7 @@ public static class UserPreferenceStrings
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings)
+[UserPreferenceStrings](SuperOffice.WebApi.Data.UserPreferenceStrings.md)
 
 #### Inherited Members
 

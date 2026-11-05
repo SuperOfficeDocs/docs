@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ImageEmbedType"></a> Enum ImageEmbedType
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Embedded images type

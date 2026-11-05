@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetAttachmentRequest"></a> Class EMail\_GetAttachmentRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetAttachmentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetAttachmentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetAttachmentRequest)
+[EMail\_GetAttachmentRequest](SuperOffice.WebApi.Data.EMail\_GetAttachmentRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_GetAttachmentRequest_MessageServerId"></a> MessageServerId
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatbotTurn"></a> Class ChatbotTurn
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatbotTurn.
@@ -13,7 +13,7 @@ public class ChatbotTurn
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)
+[ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)
 
 #### Inherited Members
 
@@ -59,7 +59,7 @@ public virtual StringDictionary BotActions { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatbotTurn_BotResponse"></a> BotResponse
 
@@ -111,5 +111,5 @@ public virtual string UserPrompt { get; set; }
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

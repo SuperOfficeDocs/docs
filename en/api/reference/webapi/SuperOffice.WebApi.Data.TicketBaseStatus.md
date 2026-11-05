@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketBaseStatus"></a> Enum TicketBaseStatus
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Status of a ticket/request
@@ -75,6 +75,18 @@ public enum TicketBaseStatus : short
 `PostponedMonth = 1008` 
 
 1008: Should only be used for UI, when saved to DB it will be converted to Postponed
+
+
+
+`PostponedNextWeek = 1010` 
+
+1010: Should only be used for UI, when saved to DB it will be converted to Postponed
+
+
+
+`PostponedNextWorkingDay = 1009` 
+
+1009: Should only be used for UI, when saved to DB it will be converted to Postponed
 
 
 

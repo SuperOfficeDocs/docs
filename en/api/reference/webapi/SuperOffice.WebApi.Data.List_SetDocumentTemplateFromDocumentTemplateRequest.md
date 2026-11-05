@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SetDocumentTemplateFromDocumentTemplateRequest"></a> Class List\_SetDocumentTemplateFromDocumentTemplateRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SetDocumentTemplateFromDocumentTemplateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SetDocumentTemplateFromDocumentTemplateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetDocumentTemplateFromDocumentTemplateRequest)
+[List\_SetDocumentTemplateFromDocumentTemplateRequest](SuperOffice.WebApi.Data.List\_SetDocumentTemplateFromDocumentTemplateRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public DocumentTemplateEntity DocumentTemplateEntity { get; set; }
 
 #### Property Value
 
- [DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)
+ [DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_List_SetDocumentTemplateFromDocumentTemplateRequest_SourceDocumentTemplateId"></a> SourceDocumentTemplateId
 

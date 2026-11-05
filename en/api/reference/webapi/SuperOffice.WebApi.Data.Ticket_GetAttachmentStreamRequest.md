@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetAttachmentStreamRequest"></a> Class Ticket\_GetAttachmentStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetAttachmentStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetAttachmentStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetAttachmentStreamRequest)
+[Ticket\_GetAttachmentStreamRequest](SuperOffice.WebApi.Data.Ticket\_GetAttachmentStreamRequest.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_GetFaqForCustomerRequest"></a> Class CustomerService\_GetFaqForCustomerRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_GetFaqForCustomerRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_GetFaqForCustomerRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_GetFaqForCustomerRequest)
+[CustomerService\_GetFaqForCustomerRequest](SuperOffice.WebApi.Data.CustomerService\_GetFaqForCustomerRequest.md)
 
 #### Inherited Members
 

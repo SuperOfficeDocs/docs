@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Targets_GetTargetAssignmentForYearAndDimensionRequest"></a> Class Targets\_GetTargetAssignmentForYearAndDimensionRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Targets_GetTargetAssignmentForYearAndDimensionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Targets\_GetTargetAssignmentForYearAndDimensionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Targets_GetTargetAssignmentForYearAndDimensionRequest)
+[Targets\_GetTargetAssignmentForYearAndDimensionRequest](SuperOffice.WebApi.Data.Targets\_GetTargetAssignmentForYearAndDimensionRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public TargetEntityType EntityType { get; set; }
 
 #### Property Value
 
- [TargetEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetEntityType)
+ [TargetEntityType](SuperOffice.WebApi.Data.TargetEntityType.md)
 
 ### <a id="SuperOffice_WebApi_Data_Targets_GetTargetAssignmentForYearAndDimensionRequest_Id"></a> Id
 
@@ -70,7 +70,7 @@ public TargetLevel TargetLevel { get; set; }
 
 #### Property Value
 
- [TargetLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetLevel)
+ [TargetLevel](SuperOffice.WebApi.Data.TargetLevel.md)
 
 ### <a id="SuperOffice_WebApi_Data_Targets_GetTargetAssignmentForYearAndDimensionRequest_TargetYear"></a> TargetYear
 

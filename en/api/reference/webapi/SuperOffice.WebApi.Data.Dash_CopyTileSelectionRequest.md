@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_CopyTileSelectionRequest"></a> Class Dash\_CopyTileSelectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_CopyTileSelectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_CopyTileSelectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_CopyTileSelectionRequest)
+[Dash\_CopyTileSelectionRequest](SuperOffice.WebApi.Data.Dash\_CopyTileSelectionRequest.md)
 
 #### Inherited Members
 

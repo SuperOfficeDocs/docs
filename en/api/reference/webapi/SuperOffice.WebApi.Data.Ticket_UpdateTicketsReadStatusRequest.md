@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_UpdateTicketsReadStatusRequest"></a> Class Ticket\_UpdateTicketsReadStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_UpdateTicketsReadStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_UpdateTicketsReadStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_UpdateTicketsReadStatusRequest)
+[Ticket\_UpdateTicketsReadStatusRequest](SuperOffice.WebApi.Data.Ticket\_UpdateTicketsReadStatusRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TicketReadStatus NewStatus { get; set; }
 
 #### Property Value
 
- [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)
+ [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_UpdateTicketsReadStatusRequest_TicketIds"></a> TicketIds
 

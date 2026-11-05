@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEMailFromServerIdentifierRequest"></a> Class EMail\_GetEMailFromServerIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEMailFromServerIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEMailFromServerIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEMailFromServerIdentifierRequest)
+[EMail\_GetEMailFromServerIdentifierRequest](SuperOffice.WebApi.Data.EMail\_GetEMailFromServerIdentifierRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_GetEMailFromServerIdentifierRequest_Flags"></a> Flags
 
@@ -50,7 +50,7 @@ public EMailFlags Flags { get; set; }
 
 #### Property Value
 
- [EMailFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFlags)
+ [EMailFlags](SuperOffice.WebApi.Data.EMailFlags.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_GetEMailFromServerIdentifierRequest_IncludeAttachments"></a> IncludeAttachments
 

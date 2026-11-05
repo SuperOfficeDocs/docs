@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_IsAnyPublishEventActiveRequest"></a> Class UserDefinedFieldInfo\_IsAnyPublishEventActiveRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_IsAnyPublishEventActiveRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_IsAnyPublishEventActiveRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_IsAnyPublishEventActiveRequest)
+[UserDefinedFieldInfo\_IsAnyPublishEventActiveRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_IsAnyPublishEventActiveRequest.md)
 
 #### Inherited Members
 

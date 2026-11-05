@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_CreateFolderRequest"></a> Class EMail\_CreateFolderRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_CreateFolderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_CreateFolderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_CreateFolderRequest)
+[EMail\_CreateFolderRequest](SuperOffice.WebApi.Data.EMail\_CreateFolderRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 

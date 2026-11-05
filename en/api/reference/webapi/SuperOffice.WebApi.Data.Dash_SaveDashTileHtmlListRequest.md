@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_SaveDashTileHtmlListRequest"></a> Class Dash\_SaveDashTileHtmlListRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_SaveDashTileHtmlListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_SaveDashTileHtmlListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_SaveDashTileHtmlListRequest)
+[Dash\_SaveDashTileHtmlListRequest](SuperOffice.WebApi.Data.Dash\_SaveDashTileHtmlListRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public DashTileHtml[] Languages { get; set; }
 
 #### Property Value
 
- [DashTileHtml](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileHtml)\[\]
+ [DashTileHtml](SuperOffice.WebApi.Data.DashTileHtml.md)\[\]
 

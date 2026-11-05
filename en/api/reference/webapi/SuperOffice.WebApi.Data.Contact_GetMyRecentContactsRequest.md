@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_GetMyRecentContactsRequest"></a> Class Contact\_GetMyRecentContactsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_GetMyRecentContactsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_GetMyRecentContactsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_GetMyRecentContactsRequest)
+[Contact\_GetMyRecentContactsRequest](SuperOffice.WebApi.Data.Contact\_GetMyRecentContactsRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ContactSourceType SourceType { get; set; }
 
 #### Property Value
 
- [ContactSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactSourceType)
+ [ContactSourceType](SuperOffice.WebApi.Data.ContactSourceType.md)
 

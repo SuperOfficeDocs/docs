@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowEvent"></a> Class WorkflowEvent
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowEvent.
@@ -13,13 +13,13 @@ public class WorkflowEvent : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[WorkflowEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowEvent)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[WorkflowEvent](SuperOffice.WebApi.Data.WorkflowEvent.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public WorkflowEventType? EventType { get; set; }
 
 #### Property Value
 
- [WorkflowEventType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowEventType)?
+ [WorkflowEventType](SuperOffice.WebApi.Data.WorkflowEventType.md)?
 
 #### See Also
 
-[WorkflowEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowEvent).[EventType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowEvent#SuperOffice_WebApi_Data_WorkflowEvent_EventType_String)
+[WorkflowEvent](SuperOffice.WebApi.Data.WorkflowEvent.md).[EventType\_String](SuperOffice.WebApi.Data.WorkflowEvent.md\#SuperOffice\_WebApi\_Data\_WorkflowEvent\_EventType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowEvent_EventType_String"></a> EventType\_String
 
@@ -86,9 +86,9 @@ public string EventType_String { get; set; }
 
 #### See Also
 
-[WorkflowEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowEvent).[EventType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowEvent#SuperOffice_WebApi_Data_WorkflowEvent_EventType)
+[WorkflowEvent](SuperOffice.WebApi.Data.WorkflowEvent.md).[EventType](SuperOffice.WebApi.Data.WorkflowEvent.md\#SuperOffice\_WebApi\_Data\_WorkflowEvent\_EventType)
 
 ## See Also
 
-[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
+[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
 

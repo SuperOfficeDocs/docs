@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Batch_StopBatchJobRequest"></a> Class Batch\_StopBatchJobRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Batch_StopBatchJobRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Batch\_StopBatchJobRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Batch_StopBatchJobRequest)
+[Batch\_StopBatchJobRequest](SuperOffice.WebApi.Data.Batch\_StopBatchJobRequest.md)
 
 #### Inherited Members
 

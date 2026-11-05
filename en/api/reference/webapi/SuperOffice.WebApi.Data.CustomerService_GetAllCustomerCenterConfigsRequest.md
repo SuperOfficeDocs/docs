@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_GetAllCustomerCenterConfigsRequest"></a> Class CustomerService\_GetAllCustomerCenterConfigsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_GetAllCustomerCenterConfigsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_GetAllCustomerCenterConfigsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_GetAllCustomerCenterConfigsRequest)
+[CustomerService\_GetAllCustomerCenterConfigsRequest](SuperOffice.WebApi.Data.CustomerService\_GetAllCustomerCenterConfigsRequest.md)
 
 #### Inherited Members
 

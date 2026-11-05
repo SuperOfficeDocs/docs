@@ -2,7 +2,7 @@
 
 ### Classes
 
- [SystemUserException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions.SystemUserException)
+ [SystemUserException](SuperOffice.WebApi.Authorization.SystemUserTicket.Exceptions.SystemUserException.md)
 
 Thrown when exception occurs obtaining a new SystemUser ticket.
 

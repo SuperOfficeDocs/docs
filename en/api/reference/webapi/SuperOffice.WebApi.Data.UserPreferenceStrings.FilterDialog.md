@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_FilterDialog"></a> Class UserPreferenceStrings.FilterDialog
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Filter dialog settings, editable through SoAdmin
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.FilterDialog
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.FilterDialog](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.FilterDialog)
+[UserPreferenceStrings.FilterDialog](SuperOffice.WebApi.Data.UserPreferenceStrings.FilterDialog.md)
 
 #### Inherited Members
 
@@ -29,7 +29,7 @@ public static class UserPreferenceStrings.FilterDialog
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_FilterDialog_DefaultFilter"></a> DefaultFilter
 
 Default filter behavior: 0 = own data; 1 = primary group; 2 = primary + secondary groups; 3 = all
-<p></p>Control type: List, access: Admin; see SuperOffice.CRM.FilterDialogDataHandler.DefaultFilter enum.
+<p></p>Control type: List, access: Admin; see SuperOffice.CRM.FilterDialogDefaultFilter enum.
 
 ```csharp
 public const string DefaultFilter = "DefaultFilter"

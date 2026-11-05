@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Chat_UpdateChatTopicUserAgentRequest"></a> Class Chat\_UpdateChatTopicUserAgentRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Chat_UpdateChatTopicUserAgentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Chat\_UpdateChatTopicUserAgentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Chat_UpdateChatTopicUserAgentRequest)
+[Chat\_UpdateChatTopicUserAgentRequest](SuperOffice.WebApi.Data.Chat\_UpdateChatTopicUserAgentRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public ChatTopicAgent Useragent { get; set; }
 
 #### Property Value
 
- [ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)
+ [ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)
 
 ### <a id="SuperOffice_WebApi_Data_Chat_UpdateChatTopicUserAgentRequest_Username"></a> Username
 

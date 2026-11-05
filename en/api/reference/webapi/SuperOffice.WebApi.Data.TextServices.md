@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TextServices"></a> Class TextServices
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TextServices.
@@ -13,7 +13,7 @@ public class TextServices
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TextServices](/en/api/reference/webapi/SuperOffice.WebApi.Data.TextServices)
+[TextServices](SuperOffice.WebApi.Data.TextServices.md)
 
 #### Inherited Members
 
@@ -37,5 +37,5 @@ public TextServices()
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

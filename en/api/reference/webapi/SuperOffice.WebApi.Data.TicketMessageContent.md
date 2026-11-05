@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketMessageContent"></a> Class TicketMessageContent
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketMessageContent.
@@ -13,7 +13,7 @@ public class TicketMessageContent
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketMessageContent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageContent)
+[TicketMessageContent](SuperOffice.WebApi.Data.TicketMessageContent.md)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual AttachmentEntity[] AttachmentsInfo { get; set; }
 
 #### Property Value
 
- [AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\[\]
+ [AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessageContent_Body"></a> Body
 
@@ -63,5 +63,5 @@ public virtual string Body { get; set; }
 
 ## See Also
 
-[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
+[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
 

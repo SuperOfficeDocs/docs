@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecurrenceUpdateMode"></a> Enum RecurrenceUpdateMode
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Appointment recurrence change mode: only this, this and forward, stop

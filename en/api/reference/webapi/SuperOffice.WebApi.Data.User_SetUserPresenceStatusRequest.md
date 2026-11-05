@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SetUserPresenceStatusRequest"></a> Class User\_SetUserPresenceStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SetUserPresenceStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SetUserPresenceStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SetUserPresenceStatusRequest)
+[User\_SetUserPresenceStatusRequest](SuperOffice.WebApi.Data.User\_SetUserPresenceStatusRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public UserPresenceStatus UserPresenceStatus { get; set; }
 
 #### Property Value
 
- [UserPresenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPresenceStatus)
+ [UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md)
 

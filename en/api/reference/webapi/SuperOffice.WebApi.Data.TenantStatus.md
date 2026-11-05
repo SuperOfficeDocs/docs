@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TenantStatus"></a> Class TenantStatus
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Online tenant status: Endpoint URL, State, IsRunning
@@ -12,7 +12,7 @@ public class TenantStatus
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TenantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TenantStatus)
+[TenantStatus](SuperOffice.WebApi.Data.TenantStatus.md)
 
 #### Inherited Members
 
@@ -93,7 +93,7 @@ public TenantState State { get; set; }
 
 #### Property Value
 
- [TenantState](/en/api/reference/webapi/SuperOffice.WebApi.Data.TenantState)
+ [TenantState](SuperOffice.WebApi.Data.TenantState.md)
 
 ### <a id="SuperOffice_WebApi_Data_TenantStatus_ValidUntil"></a> ValidUntil
 

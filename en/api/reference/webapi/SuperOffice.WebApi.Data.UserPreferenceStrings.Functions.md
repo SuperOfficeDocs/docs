@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions"></a> Class UserPreferenceStrings.Functions
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Functions
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Functions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Functions](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Functions)
+[UserPreferenceStrings.Functions](SuperOffice.WebApi.Data.UserPreferenceStrings.Functions.md)
 
 #### Inherited Members
 
@@ -347,6 +347,18 @@ Uses the internal CRM browser when clicking a URL within CRM. Default is Yes. If
 
 ```csharp
 public const string InternetUseIntegratedBrowser = "InternetUseIntegratedBrowser"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions_JoinPilotForStartPage"></a> JoinPilotForStartPage
+
+Allow admins to disable the StartPage for individual users. Default is true (on for all users).
+
+```csharp
+public const string JoinPilotForStartPage = "JoinPilotForStartPage"
 ```
 
 #### Field Value

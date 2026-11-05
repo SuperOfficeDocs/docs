@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_WillSendEmailRequest"></a> Class Appointment\_WillSendEmailRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_WillSendEmailRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_WillSendEmailRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_WillSendEmailRequest)
+[Appointment\_WillSendEmailRequest](SuperOffice.WebApi.Data.Appointment\_WillSendEmailRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public AppointmentEntity Appointment { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
+ [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
 

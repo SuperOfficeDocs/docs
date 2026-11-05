@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetHotlistEjUsersRequest"></a> Class Ticket\_GetHotlistEjUsersRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetHotlistEjUsersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetHotlistEjUsersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetHotlistEjUsersRequest)
+[Ticket\_GetHotlistEjUsersRequest](SuperOffice.WebApi.Data.Ticket\_GetHotlistEjUsersRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public NotifyChannel Channel { get; set; }
 
 #### Property Value
 
- [NotifyChannel](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotifyChannel)
+ [NotifyChannel](SuperOffice.WebApi.Data.NotifyChannel.md)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_GetHotlistEjUsersRequest_NotifyType"></a> NotifyType
 
@@ -50,7 +50,7 @@ public NotifyType NotifyType { get; set; }
 
 #### Property Value
 
- [NotifyType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotifyType)
+ [NotifyType](SuperOffice.WebApi.Data.NotifyType.md)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_GetHotlistEjUsersRequest_SkipAssociateIds"></a> SkipAssociateIds
 

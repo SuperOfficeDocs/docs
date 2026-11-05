@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ProductExtraDataField"></a> Class ProductExtraDataField
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ProductExtraDataField.
@@ -13,13 +13,13 @@ public class ProductExtraDataField : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ProductExtraDataField](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductExtraDataField)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ProductExtraDataField](SuperOffice.WebApi.Data.ProductExtraDataField.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public ExtraDataFieldType? Type { get; set; }
 
 #### Property Value
 
- [ExtraDataFieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtraDataFieldType)?
+ [ExtraDataFieldType](SuperOffice.WebApi.Data.ExtraDataFieldType.md)?
 
 #### See Also
 
-[ProductExtraDataField](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductExtraDataField).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductExtraDataField#SuperOffice_WebApi_Data_ProductExtraDataField_Type_String)
+[ProductExtraDataField](SuperOffice.WebApi.Data.ProductExtraDataField.md).[Type\_String](SuperOffice.WebApi.Data.ProductExtraDataField.md\#SuperOffice\_WebApi\_Data\_ProductExtraDataField\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProductExtraDataField_Type_String"></a> Type\_String
 
@@ -86,7 +86,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[ProductExtraDataField](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductExtraDataField).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductExtraDataField#SuperOffice_WebApi_Data_ProductExtraDataField_Type)
+[ProductExtraDataField](SuperOffice.WebApi.Data.ProductExtraDataField.md).[Type](SuperOffice.WebApi.Data.ProductExtraDataField.md\#SuperOffice\_WebApi\_Data\_ProductExtraDataField\_Type)
 
 ### <a id="SuperOffice_WebApi_Data_ProductExtraDataField_Value"></a> Value
 
@@ -102,5 +102,5 @@ public virtual string Value { get; set; }
 
 ## See Also
 
-[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
+[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
 

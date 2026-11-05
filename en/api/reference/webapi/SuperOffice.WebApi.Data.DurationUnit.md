@@ -1,10 +1,10 @@
 # <a id="SuperOffice_WebApi_Data_DurationUnit"></a> Enum DurationUnit
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Units of duration - from seconds to centuries
-This Enum is used by:  ProjType.durationUnit; SaleType.durationUnit
+This Enum is used by:  ProjType.durationUnit; SaleType.durationUnit; ticket_status_postpone.unit
 
 ```csharp
 public enum DurationUnit : short

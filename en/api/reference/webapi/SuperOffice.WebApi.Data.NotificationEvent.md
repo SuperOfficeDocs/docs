@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NotificationEvent"></a> Class NotificationEvent
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for NotificationEvent.
@@ -13,7 +13,7 @@ public class NotificationEvent
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent)
+[NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md)
 
 #### Inherited Members
 
@@ -61,11 +61,11 @@ public NotificationEventType? Type { get; set; }
 
 #### Property Value
 
- [NotificationEventType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEventType)?
+ [NotificationEventType](SuperOffice.WebApi.Data.NotificationEventType.md)?
 
 #### See Also
 
-[NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent#SuperOffice_WebApi_Data_NotificationEvent_Type_String)
+[NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md).[Type\_String](SuperOffice.WebApi.Data.NotificationEvent.md\#SuperOffice\_WebApi\_Data\_NotificationEvent\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_NotificationEvent_Type_String"></a> Type\_String
 
@@ -83,9 +83,9 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent#SuperOffice_WebApi_Data_NotificationEvent_Type)
+[NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md).[Type](SuperOffice.WebApi.Data.NotificationEvent.md\#SuperOffice\_WebApi\_Data\_NotificationEvent\_Type)
 
 ## See Also
 
-[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent)
+[PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketStatusEntity"></a> Class TicketStatusEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketStatusEntity.
@@ -13,13 +13,13 @@ public class TicketStatusEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -95,11 +95,11 @@ public TicketBaseStatus? Status { get; set; }
 
 #### Property Value
 
- [TicketBaseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBaseStatus)?
+ [TicketBaseStatus](SuperOffice.WebApi.Data.TicketBaseStatus.md)?
 
 #### See Also
 
-[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity#SuperOffice_WebApi_Data_TicketStatusEntity_Status_String)
+[TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md).[Status\_String](SuperOffice.WebApi.Data.TicketStatusEntity.md\#SuperOffice\_WebApi\_Data\_TicketStatusEntity\_Status\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketStatusEntity_Status_String"></a> Status\_String
 
@@ -117,7 +117,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity#SuperOffice_WebApi_Data_TicketStatusEntity_Status)
+[TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md).[Status](SuperOffice.WebApi.Data.TicketStatusEntity.md\#SuperOffice\_WebApi\_Data\_TicketStatusEntity\_Status)
 
 ### <a id="SuperOffice_WebApi_Data_TicketStatusEntity_TicketStatusId"></a> TicketStatusId
 
@@ -143,11 +143,11 @@ public TicketStatusTimeCounter? TimeCounter { get; set; }
 
 #### Property Value
 
- [TicketStatusTimeCounter](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusTimeCounter)?
+ [TicketStatusTimeCounter](SuperOffice.WebApi.Data.TicketStatusTimeCounter.md)?
 
 #### See Also
 
-[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity).[TimeCounter\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity#SuperOffice_WebApi_Data_TicketStatusEntity_TimeCounter_String)
+[TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md).[TimeCounter\_String](SuperOffice.WebApi.Data.TicketStatusEntity.md\#SuperOffice\_WebApi\_Data\_TicketStatusEntity\_TimeCounter\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketStatusEntity_TimeCounter_String"></a> TimeCounter\_String
 
@@ -165,7 +165,7 @@ public string TimeCounter_String { get; set; }
 
 #### See Also
 
-[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity).[TimeCounter](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity#SuperOffice_WebApi_Data_TicketStatusEntity_TimeCounter)
+[TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md).[TimeCounter](SuperOffice.WebApi.Data.TicketStatusEntity.md\#SuperOffice\_WebApi\_Data\_TicketStatusEntity\_TimeCounter)
 
 ### <a id="SuperOffice_WebApi_Data_TicketStatusEntity_UsedInQueue"></a> UsedInQueue
 
@@ -181,5 +181,5 @@ public virtual bool UsedInQueue { get; set; }
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

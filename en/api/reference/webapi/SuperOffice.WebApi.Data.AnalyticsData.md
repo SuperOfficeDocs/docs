@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AnalyticsData"></a> Class AnalyticsData
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AnalyticsData.
@@ -12,7 +12,7 @@ public class AnalyticsData
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AnalyticsData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AnalyticsData)
+[AnalyticsData](SuperOffice.WebApi.Data.AnalyticsData.md)
 
 #### Inherited Members
 
@@ -70,7 +70,7 @@ public virtual StringBoolDictionary FeatureToggles { get; set; }
 
 #### Property Value
 
- [StringBoolDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringBoolDictionary)
+ [StringBoolDictionary](SuperOffice.WebApi.Data.StringBoolDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_AnalyticsData_FileVersion"></a> FileVersion
 
@@ -154,7 +154,7 @@ public virtual StringBoolDictionary HasLicensce { get; set; }
 
 #### Property Value
 
- [StringBoolDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringBoolDictionary)
+ [StringBoolDictionary](SuperOffice.WebApi.Data.StringBoolDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_AnalyticsData_LicenseStatus"></a> LicenseStatus
 
@@ -166,7 +166,7 @@ public virtual UserAndInstallationLicenceStatus LicenseStatus { get; set; }
 
 #### Property Value
 
- [UserAndInstallationLicenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserAndInstallationLicenceStatus)
+ [UserAndInstallationLicenceStatus](SuperOffice.WebApi.Data.UserAndInstallationLicenceStatus.md)
 
 ### <a id="SuperOffice_WebApi_Data_AnalyticsData_Name"></a> Name
 
@@ -382,7 +382,7 @@ public virtual StringBoolDictionary Preferences { get; set; }
 
 #### Property Value
 
- [StringBoolDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringBoolDictionary)
+ [StringBoolDictionary](SuperOffice.WebApi.Data.StringBoolDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_AnalyticsData_SystemLicenseNames"></a> SystemLicenseNames
 
@@ -650,5 +650,5 @@ public virtual string UserSignedUpAt { get; set; }
 
 ## See Also
 
-[DiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DiagnosticsAgent)
+[DiagnosticsAgent](SuperOffice.WebApi.Agents.DiagnosticsAgent.md)
 

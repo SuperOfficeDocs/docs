@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_CopyFromCRMDocumentRequest"></a> Class Ticket\_CopyFromCRMDocumentRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_CopyFromCRMDocumentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_CopyFromCRMDocumentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_CopyFromCRMDocumentRequest)
+[Ticket\_CopyFromCRMDocumentRequest](SuperOffice.WebApi.Data.Ticket\_CopyFromCRMDocumentRequest.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketPriorityEscalateAction"></a> Enum TicketPriorityEscalateAction
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 The different types of escalate actions that can be set

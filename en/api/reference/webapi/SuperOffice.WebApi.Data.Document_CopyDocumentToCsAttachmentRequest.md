@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_CopyDocumentToCsAttachmentRequest"></a> Class Document\_CopyDocumentToCsAttachmentRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_CopyDocumentToCsAttachmentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_CopyDocumentToCsAttachmentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_CopyDocumentToCsAttachmentRequest)
+[Document\_CopyDocumentToCsAttachmentRequest](SuperOffice.WebApi.Data.Document\_CopyDocumentToCsAttachmentRequest.md)
 
 #### Inherited Members
 

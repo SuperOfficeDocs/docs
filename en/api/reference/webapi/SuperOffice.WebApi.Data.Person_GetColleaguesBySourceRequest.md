@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_GetColleaguesBySourceRequest"></a> Class Person\_GetColleaguesBySourceRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_GetColleaguesBySourceRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_GetColleaguesBySourceRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_GetColleaguesBySourceRequest)
+[Person\_GetColleaguesBySourceRequest](SuperOffice.WebApi.Data.Person\_GetColleaguesBySourceRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public AssociateSourceType SourceType { get; set; }
 
 #### Property Value
 
- [AssociateSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssociateSourceType)
+ [AssociateSourceType](SuperOffice.WebApi.Data.AssociateSourceType.md)
 

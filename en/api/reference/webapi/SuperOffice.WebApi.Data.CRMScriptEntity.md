@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScriptEntity"></a> Class CRMScriptEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CRMScriptEntity.
@@ -13,13 +13,13 @@ public class CRMScriptEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -37,7 +37,7 @@ var cRMScriptEntity = agent.GetCRMScriptEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
+Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
             All CRMScriptEntity: <pre><code class="lang-csharp">"Ejscripts"</code></pre>
 
 ## Constructors
@@ -76,11 +76,11 @@ public EjScriptVerb? BlockedVerbs { get; set; }
 
 #### Property Value
 
- [EjScriptVerb](/en/api/reference/webapi/SuperOffice.WebApi.Data.EjScriptVerb)?
+ [EjScriptVerb](SuperOffice.WebApi.Data.EjScriptVerb.md)?
 
 #### See Also
 
-[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity).[BlockedVerbs\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity#SuperOffice_WebApi_Data_CRMScriptEntity_BlockedVerbs_String)
+[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md).[BlockedVerbs\_String](SuperOffice.WebApi.Data.CRMScriptEntity.md\#SuperOffice\_WebApi\_Data\_CRMScriptEntity\_BlockedVerbs\_String)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptEntity_BlockedVerbs_String"></a> BlockedVerbs\_String
 
@@ -98,7 +98,7 @@ public string BlockedVerbs_String { get; set; }
 
 #### See Also
 
-[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity).[BlockedVerbs](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity#SuperOffice_WebApi_Data_CRMScriptEntity_BlockedVerbs)
+[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md).[BlockedVerbs](SuperOffice.WebApi.Data.CRMScriptEntity.md\#SuperOffice\_WebApi\_Data\_CRMScriptEntity\_BlockedVerbs)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptEntity_Description"></a> Description
 
@@ -220,11 +220,11 @@ public ScriptType? ScriptType { get; set; }
 
 #### Property Value
 
- [ScriptType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ScriptType)?
+ [ScriptType](SuperOffice.WebApi.Data.ScriptType.md)?
 
 #### See Also
 
-[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity).[ScriptType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity#SuperOffice_WebApi_Data_CRMScriptEntity_ScriptType_String)
+[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md).[ScriptType\_String](SuperOffice.WebApi.Data.CRMScriptEntity.md\#SuperOffice\_WebApi\_Data\_CRMScriptEntity\_ScriptType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptEntity_ScriptType_String"></a> ScriptType\_String
 
@@ -242,7 +242,7 @@ public string ScriptType_String { get; set; }
 
 #### See Also
 
-[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity).[ScriptType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity#SuperOffice_WebApi_Data_CRMScriptEntity_ScriptType)
+[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md).[ScriptType](SuperOffice.WebApi.Data.CRMScriptEntity.md\#SuperOffice\_WebApi\_Data\_CRMScriptEntity\_ScriptType)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptEntity_Source"></a> Source
 
@@ -278,7 +278,7 @@ public virtual CRMScriptSourceMap[] SourceMaps { get; set; }
 
 #### Property Value
 
- [CRMScriptSourceMap](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptSourceMap)\[\]
+ [CRMScriptSourceMap](SuperOffice.WebApi.Data.CRMScriptSourceMap.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptEntity_UniqueIdentifier"></a> UniqueIdentifier
 
@@ -326,11 +326,11 @@ public virtual CRMScriptResult ValidationResult { get; set; }
 
 #### Property Value
 
- [CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)
+ [CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)
 
 ## See Also
 
-[CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
+[CRMScriptAgent](SuperOffice.WebApi.Agents.CRMScriptAgent.md), 
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
 
 

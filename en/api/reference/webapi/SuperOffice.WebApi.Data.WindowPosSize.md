@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WindowPosSize"></a> Class WindowPosSize
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WindowPosSize.
@@ -13,13 +13,13 @@ public class WindowPosSize : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -143,11 +143,11 @@ public ShowWindowState? State { get; set; }
 
 #### Property Value
 
- [ShowWindowState](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShowWindowState)?
+ [ShowWindowState](SuperOffice.WebApi.Data.ShowWindowState.md)?
 
 #### See Also
 
-[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize).[State\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize#SuperOffice_WebApi_Data_WindowPosSize_State_String)
+[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md).[State\_String](SuperOffice.WebApi.Data.WindowPosSize.md\#SuperOffice\_WebApi\_Data\_WindowPosSize\_State\_String)
 
 ### <a id="SuperOffice_WebApi_Data_WindowPosSize_State_String"></a> State\_String
 
@@ -165,7 +165,7 @@ public string State_String { get; set; }
 
 #### See Also
 
-[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize).[State](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize#SuperOffice_WebApi_Data_WindowPosSize_State)
+[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md).[State](SuperOffice.WebApi.Data.WindowPosSize.md\#SuperOffice\_WebApi\_Data\_WindowPosSize\_State)
 
 ### <a id="SuperOffice_WebApi_Data_WindowPosSize_UpperY"></a> UpperY
 
@@ -205,5 +205,5 @@ public virtual int WindowPosSizeId { get; set; }
 
 ## See Also
 
-[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent)
+[ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md)
 

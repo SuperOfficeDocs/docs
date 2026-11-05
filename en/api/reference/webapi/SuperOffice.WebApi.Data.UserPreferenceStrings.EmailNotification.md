@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_EmailNotification"></a> Class UserPreferenceStrings.EmailNotification
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.EmailNotification
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.EmailNotification](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.EmailNotification)
+[UserPreferenceStrings.EmailNotification](SuperOffice.WebApi.Data.UserPreferenceStrings.EmailNotification.md)
 
 #### Inherited Members
 

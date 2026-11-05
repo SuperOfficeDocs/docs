@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatTopicEntity"></a> Class ChatTopicEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatTopicEntity.
@@ -13,13 +13,13 @@ public class ChatTopicEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ChatTopicEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ChatTopicEntity](SuperOffice.WebApi.Data.ChatTopicEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -37,7 +37,7 @@ var chatTopicEntity = agent.GetChatTopicEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
+Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
             Sessions: <pre><code class="lang-csharp">"ChatSession"</code></pre> with restriction <pre><code class="lang-csharp">"chatTopic/chatTopicId eq " + id</code></pre>.
 
 ## Constructors
@@ -74,7 +74,7 @@ public virtual ReplyTemplate AlertTemplate { get; set; }
 
 #### Property Value
 
- [ReplyTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReplyTemplate)
+ [ReplyTemplate](SuperOffice.WebApi.Data.ReplyTemplate.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatTopicEntity_BadgeHeader"></a> BadgeHeader
 
@@ -110,7 +110,7 @@ public virtual ChatBotSettings BotSettings { get; set; }
 
 #### Property Value
 
- [ChatBotSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatBotSettings)
+ [ChatBotSettings](SuperOffice.WebApi.Data.ChatBotSettings.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatTopicEntity_ChatTopicId"></a> ChatTopicId
 
@@ -182,7 +182,7 @@ public virtual CustomerLanguage Language { get; set; }
 
 #### Property Value
 
- [CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)
+ [CustomerLanguage](SuperOffice.WebApi.Data.CustomerLanguage.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatTopicEntity_LastAccept"></a> LastAccept
 
@@ -254,7 +254,7 @@ public virtual ChatOpeningHours OpeningHours { get; set; }
 
 #### Property Value
 
- [ChatOpeningHours](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatOpeningHours)
+ [ChatOpeningHours](SuperOffice.WebApi.Data.ChatOpeningHours.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatTopicEntity_OpeningHoursEnabled"></a> OpeningHoursEnabled
 
@@ -290,7 +290,7 @@ public virtual TicketCategory TicketCategory { get; set; }
 
 #### Property Value
 
- [TicketCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategory)
+ [TicketCategory](SuperOffice.WebApi.Data.TicketCategory.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatTopicEntity_TicketEnabled"></a> TicketEnabled
 
@@ -314,7 +314,7 @@ public virtual TicketPriority TicketPriority { get; set; }
 
 #### Property Value
 
- [TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)
+ [TicketPriority](SuperOffice.WebApi.Data.TicketPriority.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatTopicEntity_UseQueueOfflineForm"></a> UseQueueOfflineForm
 
@@ -398,7 +398,7 @@ public virtual ChatWidgetSettings Widget { get; set; }
 
 #### Property Value
 
- [ChatWidgetSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatWidgetSettings)
+ [ChatWidgetSettings](SuperOffice.WebApi.Data.ChatWidgetSettings.md)
 
 ### <a id="SuperOffice_WebApi_Data_ChatTopicEntity_WidgetEnableRating"></a> WidgetEnableRating
 
@@ -426,7 +426,7 @@ public virtual string WidgetRatingText { get; set; }
 
 ## See Also
 
-[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
+[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md), 
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
 
 

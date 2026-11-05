@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_FindWithExtraRestrictionsRequest"></a> Class Find\_FindWithExtraRestrictionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_FindWithExtraRestrictionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_FindWithExtraRestrictionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_FindWithExtraRestrictionsRequest)
+[Find\_FindWithExtraRestrictionsRequest](SuperOffice.WebApi.Data.Find\_FindWithExtraRestrictionsRequest.md)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public ArchiveRestrictionInfo[] ExtraRestrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+ [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Find_FindWithExtraRestrictionsRequest_OrderBy"></a> OrderBy
 
@@ -60,7 +60,7 @@ public ArchiveOrderByInfo[] OrderBy { get; set; }
 
 #### Property Value
 
- [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
+ [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Find_FindWithExtraRestrictionsRequest_PageNumber"></a> PageNumber
 

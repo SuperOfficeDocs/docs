@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DataRights"></a> Class DataRights
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DataRights.
@@ -12,13 +12,13 @@ public class DataRights : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[DataRights](/en/api/reference/webapi/SuperOffice.WebApi.Data.DataRights)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[DataRights](SuperOffice.WebApi.Data.DataRights.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -47,7 +47,7 @@ public virtual RelationToOwner[] ColumnsInfo { get; set; }
 
 #### Property Value
 
- [RelationToOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationToOwner)\[\]
+ [RelationToOwner](SuperOffice.WebApi.Data.RelationToOwner.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DataRights_Rights"></a> Rights
 
@@ -57,7 +57,7 @@ public virtual DataRight[][] Rights { get; set; }
 
 #### Property Value
 
- [DataRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.DataRight)\[\]\[\]
+ [DataRight](SuperOffice.WebApi.Data.DataRight.md)\[\]\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DataRights_RowsInfo"></a> RowsInfo
 
@@ -67,9 +67,9 @@ public virtual EntityName[] RowsInfo { get; set; }
 
 #### Property Value
 
- [EntityName](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityName)\[\]
+ [EntityName](SuperOffice.WebApi.Data.EntityName.md)\[\]
 
 ## See Also
 
-[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent)
+[UserAgent](SuperOffice.WebApi.Agents.UserAgent.md)
 

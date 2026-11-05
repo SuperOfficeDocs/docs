@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMailEnvelope"></a> Class EMailEnvelope
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for EMailEnvelope.
@@ -13,13 +13,13 @@ public class EMailEnvelope : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual EMailSOInfo EMailSOInfo { get; set; }
 
 #### Property Value
 
- [EMailSOInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailSOInfo)
+ [EMailSOInfo](SuperOffice.WebApi.Data.EMailSOInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMailEnvelope_Flags"></a> Flags
 
@@ -64,11 +64,11 @@ public EMailFlags? Flags { get; set; }
 
 #### Property Value
 
- [EMailFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFlags)?
+ [EMailFlags](SuperOffice.WebApi.Data.EMailFlags.md)?
 
 #### See Also
 
-[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope).[Flags\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope#SuperOffice_WebApi_Data_EMailEnvelope_Flags_String)
+[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md).[Flags\_String](SuperOffice.WebApi.Data.EMailEnvelope.md\#SuperOffice\_WebApi\_Data\_EMailEnvelope\_Flags\_String)
 
 ### <a id="SuperOffice_WebApi_Data_EMailEnvelope_Flags_String"></a> Flags\_String
 
@@ -86,7 +86,7 @@ public string Flags_String { get; set; }
 
 #### See Also
 
-[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope).[Flags](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope#SuperOffice_WebApi_Data_EMailEnvelope_Flags)
+[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md).[Flags](SuperOffice.WebApi.Data.EMailEnvelope.md\#SuperOffice\_WebApi\_Data\_EMailEnvelope\_Flags)
 
 ### <a id="SuperOffice_WebApi_Data_EMailEnvelope_From"></a> From
 
@@ -98,7 +98,7 @@ public virtual EMailAddress From { get; set; }
 
 #### Property Value
 
- [EMailAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAddress)
+ [EMailAddress](SuperOffice.WebApi.Data.EMailAddress.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMailEnvelope_MessageId"></a> MessageId
 
@@ -124,11 +124,11 @@ public EMailPriority? Priority { get; set; }
 
 #### Property Value
 
- [EMailPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailPriority)?
+ [EMailPriority](SuperOffice.WebApi.Data.EMailPriority.md)?
 
 #### See Also
 
-[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope).[Priority\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope#SuperOffice_WebApi_Data_EMailEnvelope_Priority_String)
+[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md).[Priority\_String](SuperOffice.WebApi.Data.EMailEnvelope.md\#SuperOffice\_WebApi\_Data\_EMailEnvelope\_Priority\_String)
 
 ### <a id="SuperOffice_WebApi_Data_EMailEnvelope_Priority_String"></a> Priority\_String
 
@@ -146,7 +146,7 @@ public string Priority_String { get; set; }
 
 #### See Also
 
-[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope).[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope#SuperOffice_WebApi_Data_EMailEnvelope_Priority)
+[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md).[Priority](SuperOffice.WebApi.Data.EMailEnvelope.md\#SuperOffice\_WebApi\_Data\_EMailEnvelope\_Priority)
 
 ### <a id="SuperOffice_WebApi_Data_EMailEnvelope_Sent"></a> Sent
 
@@ -218,9 +218,9 @@ public virtual EMailAddress[] To { get; set; }
 
 #### Property Value
 
- [EMailAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAddress)\[\]
+ [EMailAddress](SuperOffice.WebApi.Data.EMailAddress.md)\[\]
 
 ## See Also
 
-[EMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.EMailAgent)
+[EMailAgent](SuperOffice.WebApi.Agents.EMailAgent.md)
 

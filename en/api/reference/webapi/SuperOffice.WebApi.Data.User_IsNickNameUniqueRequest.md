@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_IsNickNameUniqueRequest"></a> Class User\_IsNickNameUniqueRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_IsNickNameUniqueRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_IsNickNameUniqueRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_IsNickNameUniqueRequest)
+[User\_IsNickNameUniqueRequest](SuperOffice.WebApi.Data.User\_IsNickNameUniqueRequest.md)
 
 #### Inherited Members
 

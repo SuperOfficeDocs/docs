@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMailAppointment"></a> Class EMailAppointment
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for EMailAppointment.
@@ -13,13 +13,13 @@ public class EMailAppointment : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[EMailAppointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAppointment)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[EMailAppointment](SuperOffice.WebApi.Data.EMailAppointment.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual Appointment Appointment { get; set; }
 
 #### Property Value
 
- [Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)
+ [Appointment](SuperOffice.WebApi.Data.Appointment.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMailAppointment_CalMethod"></a> CalMethod
 
@@ -64,11 +64,11 @@ public CalMethod? CalMethod { get; set; }
 
 #### Property Value
 
- [CalMethod](/en/api/reference/webapi/SuperOffice.WebApi.Data.CalMethod)?
+ [CalMethod](SuperOffice.WebApi.Data.CalMethod.md)?
 
 #### See Also
 
-[EMailAppointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAppointment).[CalMethod\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAppointment#SuperOffice_WebApi_Data_EMailAppointment_CalMethod_String)
+[EMailAppointment](SuperOffice.WebApi.Data.EMailAppointment.md).[CalMethod\_String](SuperOffice.WebApi.Data.EMailAppointment.md\#SuperOffice\_WebApi\_Data\_EMailAppointment\_CalMethod\_String)
 
 ### <a id="SuperOffice_WebApi_Data_EMailAppointment_CalMethod_String"></a> CalMethod\_String
 
@@ -86,7 +86,7 @@ public string CalMethod_String { get; set; }
 
 #### See Also
 
-[EMailAppointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAppointment).[CalMethod](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAppointment#SuperOffice_WebApi_Data_EMailAppointment_CalMethod)
+[EMailAppointment](SuperOffice.WebApi.Data.EMailAppointment.md).[CalMethod](SuperOffice.WebApi.Data.EMailAppointment.md\#SuperOffice\_WebApi\_Data\_EMailAppointment\_CalMethod)
 
 ### <a id="SuperOffice_WebApi_Data_EMailAppointment_Comment"></a> Comment
 
@@ -162,5 +162,5 @@ public virtual bool Superseded { get; set; }
 
 ## See Also
 
-[EMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.EMailAgent)
+[EMailAgent](SuperOffice.WebApi.Agents.EMailAgent.md)
 

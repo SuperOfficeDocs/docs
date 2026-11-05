@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_CreateOrUpdateUserCandidateRequest"></a> Class Person\_CreateOrUpdateUserCandidateRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_CreateOrUpdateUserCandidateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_CreateOrUpdateUserCandidateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_CreateOrUpdateUserCandidateRequest)
+[Person\_CreateOrUpdateUserCandidateRequest](SuperOffice.WebApi.Data.Person\_CreateOrUpdateUserCandidateRequest.md)
 
 #### Inherited Members
 
