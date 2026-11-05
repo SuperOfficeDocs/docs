@@ -20,7 +20,7 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 ## Current end-of-life notices
 
-_These are the active upcoming sunsetting announcements._
+*These are the active upcoming sunsetting announcements.*
 
 | Announced | Product/Feature | EOL date | Relevant details |
 |---|---|---|---|
@@ -30,7 +30,7 @@ _These are the active upcoming sunsetting announcements._
 
 ## Upcoming end-of-life notices
 
-_These are planned end-of-life notices to provide you with an early warning of features or products that we are planning to sunset but where no date is set._
+*These are planned end-of-life notices to provide you with an early warning of features or products that we are planning to sunset but where no date is set.*
 
 | Product/Feature | EOL status | Indicated date for sunsetting | Relevant details |
 |---|---|---|---|
@@ -38,7 +38,7 @@ _These are planned end-of-life notices to provide you with an early warning of f
 
 ## Archived end-of-life notices
 
-_These are past end-of-life notices for features and products that are no longer supported, along with recommended alternatives._
+*These are past end-of-life notices for features and products that are no longer supported, along with recommended alternatives.*
 
 | Product/Feature | EOL status | EOL date | Relevant details |
 |---|---|---|---|
