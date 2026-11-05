@@ -4,37 +4,125 @@ title: "SuperOffice Docs"
 recent_pages:
   - path: /release-notes/12
     pinned: true
-    since: 10.09.2026
-  - path: /en/learn/basics/recent-navigation
-    since: 10.13.2026
-  - path: /integrations/superoffice-for-outlook/add-crm-data-to-event
-    since: 10.13.2026
-  - path: /integrations/superoffice-for-outlook/pin-add-in
-    since: 10.13.2026
-  - path: /en/online/mail-services/graph
-    since: 10.12.2026
-  - path: /en/learn/basics/overview-pages
-    since: 10.07.2026
-  - path: /integrations/superoffice-for-outlook/email-archive-status
-    since: 10.01.2026
+    since: 08.27.2026
+  - path: /en/marketing
+    since: 08.24.2026
+    title: Marketing landing page
 ---
 
 import CustomFooter from '/components/custom-mode-footer.mdx'
 import RecentPages from '/components/recent-pages.jsx'
 
 <div id="home-hero" className="relative w-full flex items-center justify-center">
+  <div id="home-hero-bg" className="absolute inset-0 h-full bg-cover bg-center" />
 
-<div id="home-hero-bg" className="absolute inset-0 h-full bg-cover bg-center"></div>
-
-<div id="home-hero-content">
-  <div className="text-5xl text-white font-bold w-full leading-[1.2] tracking-tight">
-   docs.superoffice.com
-  </div>
+  <div id="home-hero-content">
+    <div className="text-5xl text-white font-bold w-full leading-[1.2] tracking-tight">
+      docs.superoffice.com
+    </div>
 
     <p className="text-lg text-white">
-    The official documentation site for the SuperOffice Platform - the leading CRM & Customer Service available.
+      The official documentation site for the SuperOffice Platform - the leading CRM & Customer Service available.
     </p>
+  </div>
+</div>
 
+<div id="home-content">
+  <Columns cols={4}>
+    <Card title="User guides" href="/en/learn" icon="graduation-cap">
+      Product knowledge-base to learn concepts, features and solve issues.
+    </Card>
+
+    <Card title="Sale" href="/en/sale" icon="dollar-sign">
+      Manage your sales pipeline from lead to closed deal.
+    </Card>
+
+    <Card title="Marketing" href="/en/marketing" icon="bullseye">
+      Create mailings, forms, and marketing flows that convert.
+    </Card>
+
+    <Card title="Request management" href="/en/request" icon="ticket">
+      Track and resolve customer requests efficiently.
+    </Card>
+
+    <Card title="Email" href="/en/email" icon="at">
+      Great customer relations start with great communication.
+    </Card>
+
+    <Card title="Document" href="/en/document" icon="file-lines">
+      Store and organize documents alongside your customer data.
+    </Card>
+
+    <Card title="WebTools" href="/integrations/webtools" icon="globe">
+      Connect your website forms and pages to SuperOffice.
+    </Card>
+
+    <Card title="Settings and maintenance" href="/en/admin" icon="gear">
+      Configure and maintain your SuperOffice installation.
+    </Card>
+
+    <Card title="Customization" href="/en/customization" icon="sliders">
+      Tailor SuperOffice to fit how your organization works.
+    </Card>
+
+    <Card title="Automation" href="/en/automation/overview" icon="microchip">
+      Automate workflows with CRMScript, triggers, and webhooks.
+    </Card>
+
+    <Card title="Database Mirroring" href="/en/online/mirroring/overview" icon="database">
+      Keep your on-premise database in sync with the cloud.
+    </Card>
+
+    <Card title="Developer portal" href="/en/developer-portal/about" icon="laptop">
+      Learn how to create online applications.
+    </Card>
+  </Columns>
+
+  <div id="home-hugo-banner">
+    <img src="/media/loc/en/home/hugo-fall-leaves.jpg" alt="Hugo, the SuperOffice mascot, standing among autumn leaves" />
+  </div>
+
+  <div className="my-12">
+    <h2 className="text-4xl font-bold">What type of user are you?</h2>
+  </div>
+
+  <div id="home-user-types">
+    <Columns cols={3}>
+      <Card title="SuperUser" href="/en/admin" cta="LEARN MORE">
+        <img src="/media/loc/en/home/hugo-superuser.png" className="home-user-type-hugo" alt="Hugo wearing a medal, representing the SuperUser role" />
+
+        A person who has system administrative privilege's and special functional and data access rights for managing how SuperOffice behaves. The friend you need to tweak the system!
+      </Card>
+
+      <Card title="Consultant" href="/en/automation/overview" cta="LEARN MORE">
+        <img src="/media/loc/en/home/hugo-consultant.png" className="home-user-type-hugo" alt="Hugo holding a cup of coffee, representing the Consultant role" />
+
+        A person who works with companies to improve their use of SuperOffice to achieve business goals.
+        An expert in all technical aspects of SuperOffice—hired to provide advice, solve problems, and increase efficiency.
+      </Card>
+
+      <Card title="Developer" href="/en/api/overview" cta="LEARN MORE">
+        <img src="/media/loc/en/home/hugo-developer.png" className="home-user-type-hugo" alt="Hugo holding a tablet, representing the Developer role" />
+
+        A software engineer responsible for implementing application or integration requirements,
+        or providing consultancy on how integrations should be built using current industry trends.
+      </Card>
+    </Columns>
+  </div>
+
+  <div id="home-whats-new" className="my-12">
+    <Columns cols={2}>
+      <Card title="New content">
+        <RecentPages items={[
+  { path: "/release-notes/12", title: "What's new in SuperOffice 12", since: "08.27.2026", pinned: true },
+  { path: "/en/marketing", title: "Marketing landing page", since: "08.24.2026" },
+]} />
+      </Card>
+
+      <div id="home-team-photo">
+        <img src="/media/loc/en/home/team-photo.jpg" alt="" />
+      </div>
+    </Columns>
   </div>
 </div>
 
