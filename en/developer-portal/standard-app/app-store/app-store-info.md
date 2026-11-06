@@ -4,7 +4,7 @@ title: App Store information
 description: Updating App Store information in the SuperOffice Developer Portal.
 keywords: ['Developer Portal']
 author: digitaldiina
-date: 12.04.2025
+date: 11.06.2026
 version_devportal: 1.27
 content_type: howto
 deployment: online
