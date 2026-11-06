@@ -4,7 +4,7 @@ title: E-post
 description: Med SuperOffice CRM kan du välja att spara och dela dina e-postmeddelanden på olika sätt som gör att du och ditt team blir mer produktiva.
 keywords: ['e-post', 'inkorg', 'ladda ned']
 author: digitaldiina
-date: 18.09.2026
+date: 11.06.2026
 so_version: 12.2
 content_type: concept
 boost: 1.5
@@ -71,6 +71,12 @@ Klicka på ett e-postmeddelande på [detaljkortet Aktiviteter][14] för att visa
 
 ![E-postförhandsgranskning med markerade alternativ i uppgiftsmenyn -screenshot][img1]
 
+## Ladda ned ett e-postmeddelande {#download}
+
+När du laddar ned ett e-postmeddelande sparas en kopia på din enhet. Öppna e-postmeddelandet i [sidopanelen][15] eller i **E-post**-dialogen, klicka på <i class="ph ph-dots-three-circle-vertical" aria-label="Uppgiftsmeny"></i> och välj **Ladda ned**. Se [Ladda ned ett dokument eller ett e-postmeddelande][16] för fler sätt att ladda ned.
+
+Om du vill öppna nedladdade e-postmeddelanden direkt i e-postappen som är installerad på din dator ändrar du inställningarna i Windows och i webbläsaren. Se [Öppna nedladdade e-postmeddelanden i din e-postapp][17].
+
 [1]: /sv/email/inbox/learn/index
 [2]: /integrations/gmail-link/index
 [3]: /integrations/gmail-link/email-archive-incoming
@@ -85,5 +91,7 @@ Klicka på ett e-postmeddelande på [detaljkortet Aktiviteter][14] för att visa
 [13]: /sv/learn/getting-started/connect-your-accounts
 [14]: /sv/learn/section-tabs/activities-tab
 [15]: /sv/learn/getting-started/main-screen/side-panel
+[16]: /sv/document/learn/edit#download
+[17]: /sv/document/learn/edit#download-open
 
 [img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png

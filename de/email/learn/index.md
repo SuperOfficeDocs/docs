@@ -4,7 +4,7 @@ title: E-Mail
 description: Mit SuperOffice CRM können Sie Ihre E-Mails auf verschiedene Arten speichern und teilen, damit Sie und Ihr Team produktiver arbeiten können.
 keywords: ['E-Mail', 'Posteingang', 'herunterladen']
 author: digitaldiina
-date: 18.09.2026
+date: 11.06.2026
 so_version: 12.2
 content_type: concept
 boost: 1.5
@@ -71,6 +71,12 @@ Klicken Sie auf eine E-Mail in der [Bereichsregisterkarte Aktivitäten][14], um 
 
 ![E-Mail-Vorschau mit hervorgehobenen Aufgabenmenü-Optionen -screenshot][img1]
 
+## E-Mail herunterladen {#download}
+
+Beim Herunterladen einer E-Mail wird eine Kopie auf Ihrem Gerät gespeichert. Öffnen Sie die E-Mail in der [Seitenleiste][15] oder im **E-Mail**-Dialog, klicken Sie auf <i class="ph ph-dots-three-circle-vertical" aria-label="Aufgabenmenü"></i> und wählen Sie **Herunterladen**. Weitere Möglichkeiten finden Sie unter [Dokument oder E-Mail herunterladen][16].
+
+Um heruntergeladene E-Mails direkt in der auf Ihrem PC installierten E-Mail-App zu öffnen, ändern Sie die Einstellungen in Windows und in Ihrem Browser. Siehe [Heruntergeladene E-Mails in Ihrer E-Mail-App öffnen][17].
+
 [1]: /de/email/inbox/learn/index
 [2]: /integrations/gmail-link/index
 [3]: /integrations/gmail-link/email-archive-incoming
@@ -85,5 +91,7 @@ Klicken Sie auf eine E-Mail in der [Bereichsregisterkarte Aktivitäten][14], um 
 [13]: /de/learn/getting-started/connect-your-accounts
 [14]: /de/learn/section-tabs/activities-tab
 [15]: /de/learn/getting-started/main-screen/side-panel
+[16]: /de/document/learn/edit#download
+[17]: /de/document/learn/edit#download-open
 
 [img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png

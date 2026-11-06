@@ -4,7 +4,7 @@ title: E-mail
 description: Met SuperOffice CRM kunt u ervoor kiezen om uw e-mails op verschillende manieren op te slaan en te delen, waardoor u en uw team productiever kunnen werken.
 keywords: ['e-mail', 'postvak IN', 'downloaden']
 author: digitaldiina
-date: 18.09.2026
+date: 11.06.2026
 so_version: 12.2
 content_type: concept
 boost: 1.5
@@ -71,6 +71,12 @@ Klik op een e-mail in het [sectietabblad Activiteiten][14] om de details te beki
 
 ![E-mailvoorbeeld met gemarkeerde taakmenuopties -screenshot][img1]
 
+## Een e-mail downloaden {#download}
+
+Wanneer u een e-mail downloadt, wordt een kopie op uw apparaat opgeslagen. Open de e-mail in het [zijpaneel][15] of in het **E-mail**-dialoogvenster, klik op <i class="ph ph-dots-three-circle-vertical" aria-label="Taakmenu"></i> en selecteer **Downloaden**. Zie [Een document of e-mail downloaden][16] voor meer manieren om te downloaden.
+
+Om gedownloade e-mails rechtstreeks te openen in de e-mailapp die op uw pc is geïnstalleerd, wijzigt u de instellingen in Windows en in uw browser. Zie [Gedownloade e-mails openen in uw e-mailapp][17].
+
 [1]: /nl/email/inbox/learn/index
 [2]: /integrations/gmail-link/index
 [3]: /integrations/gmail-link/email-archive-incoming
@@ -85,5 +91,7 @@ Klik op een e-mail in het [sectietabblad Activiteiten][14] om de details te beki
 [13]: /nl/learn/getting-started/connect-your-accounts
 [14]: /nl/learn/section-tabs/activities-tab
 [15]: /nl/learn/getting-started/main-screen/side-panel
+[16]: /nl/document/learn/edit#download
+[17]: /nl/document/learn/edit#download-open
 
 [img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png

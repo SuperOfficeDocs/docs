@@ -4,7 +4,7 @@ title: E-mail
 description: Med SuperOffice CRM kan du vælge at gemme og dele dine mails på forskellige måder, der får dig og dit team til at arbejde mere produktivt.
 keywords: ['e-mail', 'indbakke', 'download']
 author: digitaldiina
-date: 18.09.2026
+date: 11.06.2026
 so_version: 12.2
 content_type: concept
 boost: 1.5
@@ -71,6 +71,12 @@ Klik på en e-mail i [detaljekortet Aktiviteter][14] for at se dens detaljer i [
 
 ![E-mail forhåndsvisning med opgavemenu muligheder fremhævet -screenshot][img1]
 
+## Download en e-mail {#download}
+
+Når du downloader en e-mail, gemmes en kopi af den på din enhed. Åbn e-mailen i [sidepanelet][15] eller i **E-mail**-dialogboksen, klik på <i class="ph ph-dots-three-circle-vertical" aria-label="Opgavemenu"></i> og vælg **Download**. Se [Download af et dokument eller en e-mail][16] for flere måder at downloade den på.
+
+For at åbne downloadede e-mails direkte i den mailapp, der er installeret på din pc, skal du ændre indstillingerne i Windows og i din browser. Se [Åbn downloadede e-mails i din mailapp][17].
+
 [1]: /da/email/inbox/learn/index
 [2]: /integrations/gmail-link/index
 [3]: /integrations/gmail-link/email-archive-incoming
@@ -85,5 +91,7 @@ Klik på en e-mail i [detaljekortet Aktiviteter][14] for at se dens detaljer i [
 [13]: /da/learn/getting-started/connect-your-accounts
 [14]: /da/learn/section-tabs/activities-tab
 [15]: /da/learn/getting-started/main-screen/side-panel
+[16]: /da/document/learn/edit#download
+[17]: /da/document/learn/edit#download-open
 
 [img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png
