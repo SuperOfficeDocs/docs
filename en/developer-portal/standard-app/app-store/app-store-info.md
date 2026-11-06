@@ -26,7 +26,7 @@ Before a new application gets listed in the App Store:
 **Required info:**
 
 * All fields except *Description - What's new* needs to be filled before first publish to the [SuperOffice App Store][1].
-* Application description and images (see [marketing requirements][2]).
+* Application description and images (see [App Store listing requirements][16]).
 
 **Relevant info:**
 
@@ -63,3 +63,4 @@ Before a new application gets listed in the App Store:
 [10]: ../../create-app/versioning
 [8]: ../../faq/update-app
 [15]: ../../partner/manage-permissions
+[16]: ../requirements/marketing

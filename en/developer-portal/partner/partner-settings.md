@@ -21,8 +21,8 @@ deployment: online
 | Technical contact | The IT contact person for this company. | [Update contact person][3] | [About notifications][11] |
 | Uninstall reporting emails | Where SuperOffice sends requests to uninstall an app. If left blank, these emails go to the partner's administrative contact. | [Get error emails][12] | |
 | Support emails | Where SuperOffice notifies you when a shared customer's app-support request is routed to you in **Messages**. Add each address with **Enter**. | [Update settings][9] | [About Messages][7] |
-| Logo | Company logo, circular | [Update settings][9] | [Marketing requirements][5] |
-| Description | The company blurb. | [Update partner profile][6]| [Marketing requirements][5] |
+| Logo | Company logo, circular | [Update settings][9] | [App Store listing requirements][5] |
+| Description | The company blurb. | [Update partner profile][6]| [App Store listing requirements][5] |
 | Meta description | Description for search engines. | [Update settings][9] | [Improve SEO][10] |
 | Links | One or more URLs with associated ALT text. For example, the website of the company. | [Update settings][9] | |
 
