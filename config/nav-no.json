@@ -562,6 +562,7 @@
           "no/request/learn/transfer",
           "no/request/learn/forward",
           "no/request/learn/reply",
+          "no/request/learn/mentions",
           "no/request/learn/request-relations",
           "no/request/learn/tags",
           "no/request/learn/flag-message",
