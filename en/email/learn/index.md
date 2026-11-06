@@ -4,8 +4,8 @@ title: Email
 description: With SuperOffice CRM you can choose to save and share your emails in various ways that will make you and your team work more productively.
 keywords: ['inbox', 'download']
 author: digitaldiina
-date: 18.09.2026
-so_version: 12.2
+date: 11.06.2026
+so_version: 12.4
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -71,6 +71,12 @@ Click an email in the [Activities section tab][14] to view its details in the [s
 
 ![Email preview with task menu options highlighted -screenshot][img1]
 
+## Download an email {#download}
+
+Downloading an email saves a copy of it to your device. Open the email in the [side panel][15] or the **Email** dialog, click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> and select **Download**. See [Download a document or email][16] for more ways to download it.
+
+To open downloaded emails directly in the email app installed on your PC, change the settings in Windows and in your browser. See [Open downloaded emails in your email app][17].
+
 [1]: /en/email/inbox/learn/index
 [2]: /integrations/gmail-link/index
 [3]: /integrations/gmail-link/email-archive-incoming
@@ -85,5 +91,7 @@ Click an email in the [Activities section tab][14] to view its details in the [s
 [13]: /en/learn/getting-started/connect-your-accounts
 [14]: /en/learn/section-tabs/activities-tab
 [15]: /en/learn/getting-started/main-screen/side-panel
+[16]: /en/document/learn/edit#download
+[17]: /en/document/learn/edit#download-open
 
 [img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png
