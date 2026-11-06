@@ -3,10 +3,10 @@ title: Developer Portal
 uid: developer-portal-overview
 description: Introduction to the SuperOffice Online Developer Portal.
 keywords: ['apps', 'app-store', 'navigation']
-author: AnthonyYates, digitaldiina
-date: 07.07.2026
+author: AnthonyYates, digitaldiina, Margrethe Romnes
+date: 11.05.2026
 so_version: 2.0
-version_devportal: 2.15
+version_devportal: 2.19
 content_type: concept
 ---
 
@@ -14,6 +14,7 @@ import DefApp from "./snippets/def-app.md";
 import StdVsCustomApp from "./snippets/std-vs-custom-app.md";
 import DefDpUser from "./snippets/def-dp-user.md";
 import AppEnvirIntro from "./snippets/app-envir-intro.mdx";
+import UnsavedChanges from "./snippets/unsaved-changes.mdx";
 
 The [SuperOffice Developer Portal][6] contains a set of self-serve tools that developers can use to manage their access to SuperOffice Online APIs.
 
@@ -77,6 +78,12 @@ Other pages have subsections with their own navigator.
 <Note>
 When you click **Save Settings** it applies to all changes on the page, across all subsections. The scope is determined by the left-most Navigator.
 </Note>
+
+<UnsavedChanges />
+
+![The You have unsaved changes bar with Discard and Save Settings buttons -screenshot][img10]
+
+*The client ID in the screenshot is no longer valid.*
 
 ## Key areas and concepts
 
@@ -183,5 +190,6 @@ You can get started using the SuperOffice Online API by [signing up for a develo
 [img4]: /media/loc/en/developer-portal/nav-app.png
 [img5]: /media/loc/en/developer-portal/app-settings.png
 [img7]: /media/loc/en/developer-portal/nav-expand-collapse.png
+[img10]: /media/loc/en/developer-portal/unsaved-changes-bar.png
 [img8]: /media/loc/en/developer-portal/partner-overview-no-standard-apps.png
 [img9]: /media/loc/en/developer-portal/partner-overview-with-standard-apps.png

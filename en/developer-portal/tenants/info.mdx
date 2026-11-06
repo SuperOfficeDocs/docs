@@ -4,8 +4,8 @@ title: Look up tenant info
 description: Look up tenant info
 keywords: ['Developer Portal', 'app', 'customer']
 author: digitaldiina, MargretheR
-date: 06.10.2026
-version_devportal: 2.10.20
+date: 11.05.2026
+version_devportal: 2.18
 content_type: howto
 deployment: online
 related:
@@ -56,9 +56,27 @@ The list of [platform features][6] available to a tenant is shown in the **Tenan
 
 1. Review the **Site licenses** section to see the platform features available to the tenant.
 
-1. Observe the **License Expiry Date** above the list to understand how long the licenses are valid.
+1. Observe the **License expiry date** above the list to understand how long the licenses are valid.
+
+## SOD test tenant expiry {#expiry}
+
+SOD test tenants, such as the [test tenant you got when you registered][7], have a limited license period. When it ends, the tenant is deleted.
+
+To give you time to act, SuperOffice checks every day for SOD test tenants whose license expires within **30 days**. When one is found, your partner is notified with a direct link to the tenant's **Tenant details** page. Depending on how your partner is set up, the notice goes either to your partner's administrative contact or to all users of your partner.
+
+If you still need the tenant, renew it before the license expires:
+
+1. Open the **Tenant details** page, either from the link in the notice or from the **Tenant listing** page.
+
+1. Select the **Overview** tab.
+
+1. Click the renew button (<i class="ph ph-clock-counter-clockwise" aria-label="Renew license by one year"></i>) next to **License expiry date**. The tooltip reads *Renew license by one year*.
+
+![License expiry date with the Renew license by one year button on the Tenant details page -screenshot][img3]
 
 [5]: ../best-practices/tenant-status/index
 [6]: ../../admin/license/index
+[7]: ../getting-started/get-access-to-sod
 [img1]: /media/loc/en/developer-portal/tenants-page.png
 [img2]: /media/loc/en/developer-portal/tenant-details-overview.png
+[img3]: /media/loc/en/developer-portal/renew-license-sod.png

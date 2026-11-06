@@ -2,10 +2,10 @@
 uid: dp-update-app-config
 title: Update app config
 description: Update technical specification for an application
-author: Bergfrid Dias
-date: 02.26.2025
+author: Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
 so_version: 2.0
-version_devportal: 2.0
+version_devportal: 2.19
 content_type: howto
 deployment: online
 platform: web
@@ -18,8 +18,8 @@ The application configuration, also known as the technical specification, consis
 1. [Create a new version.][3]
 1. Go through each tab and change what you need.
 
-    * [Create a new client secret][2]
-    * [Create a new certificate][3]
+    * [Create or renew a client secret][2]
+    * [Create or renew a certificate][9]
     * [Change redirection URLs][5]
     * [Update endpoints][4]
     * [Customer state change notifications][6]
@@ -28,7 +28,7 @@ The application configuration, also known as the technical specification, consis
     For any other changes, send an email to `appdev AT superoffice.com`.
     </Note>
 
-1. Click **Save Settings**.
+1. In the **You have unsaved changes** bar in the lower-right corner, click **Save Settings**.
 1. [Request to publish][1] the configuration. Extensive changes might trigger re-certification.
 
 <Warning>
@@ -37,9 +37,10 @@ If you add database mirroring or webhooks, the tenant administrator must renew t
 
 [1]: ../request-to-publish
 [2]: ./get-client-secret
-[3]: ./new-certificate
+[3]: ../versioning#create-new-version
 [4]: ./update-endpoints
 [5]: ./cors-and-redirection-urls
 [6]: ../../best-practices/tenant-status/index#notify
 [7]: https://dev.superoffice.com/
 [8]: ./app-config
+[9]: ./new-certificate

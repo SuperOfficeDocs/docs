@@ -3,10 +3,10 @@ uid: dp-get-clientid
 title: What is my client ID?
 description: How to find the client ID for an app in the SuperOffice Developer Portal.
 keywords: ['Developer Portal', 'app', 'credentials', 'app ID']
-author: Bergfrid Dias
-date: 09.15.2026
+author: Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
 so_version: 2.0
-version_devportal: 2.16
+version_devportal: 2.19
 content_type: howto
 deployment: online
 ---
@@ -31,8 +31,18 @@ The client ID is assigned automatically and **cannot be edited manually**. Next 
 * <i class="ph ph-arrow-clockwise" aria-hidden="true"></i> **Regenerate** - generate a new client ID for that environment.
 
 <Danger>
-Regenerating changes the identifier your integration uses to authenticate. Update your application with the new client ID afterwards, or sign-in and API calls that rely on the old value will fail.
+Regenerating changes the identifier your integration uses to authenticate. Update your application with the new client ID before the new version of the configuration is published, or sign-in and API calls that rely on the old value will fail.
 </Danger>
+
+After you regenerate, the message *New Client ID generated. The old one stops working after Publish.* appears at the top of the page. The old client ID stays valid until the new version of the configuration is published to that environment. Click **Save Settings** in the **You have unsaved changes** bar to keep the new client ID.
+
+![New Client ID generated message and the unsaved changes bar -screenshot][img3]
+
+*The client ID in the screenshot is no longer valid.*
+
+<Tip>
+Client secrets and certificates can be renewed in the same way. See [Renew a client secret][4] and [Renew a certificate][5].
+</Tip>
 
 ## Client ID must be unique per environment
 
@@ -47,6 +57,9 @@ The portal validates that a client ID is not already used by another application
 * [Application environments][3]
 
 [3]: ../../getting-started/app-envir
+[4]: ./get-client-secret#renew-a-client-secret
+[5]: ./new-certificate#renew-a-certificate
 
 [img1]: /media/loc/en/developer-portal/clientid-per-envir.png
 [img2]: /media/loc/en/developer-portal/clientid-in-use.png
+[img3]: /media/loc/en/developer-portal/unsaved-changes-bar.png
