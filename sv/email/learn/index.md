@@ -5,7 +5,7 @@ description: Med SuperOffice CRM kan du välja att spara och dela dina e-postmed
 keywords: ['e-post', 'inkorg', 'ladda ned']
 author: digitaldiina
 date: 11.06.2026
-so_version: 12.2
+so_version: 12.4
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials

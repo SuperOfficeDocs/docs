@@ -5,7 +5,7 @@ description: With SuperOffice CRM you can choose to save and share your emails i
 keywords: ['inbox', 'download']
 author: digitaldiina
 date: 11.06.2026
-so_version: 12.2
+so_version: 12.4
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
