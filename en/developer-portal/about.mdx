@@ -14,6 +14,7 @@ import DefApp from "./snippets/def-app.md";
 import StdVsCustomApp from "./snippets/std-vs-custom-app.md";
 import DefDpUser from "./snippets/def-dp-user.md";
 import AppEnvirIntro from "./snippets/app-envir-intro.mdx";
+import UnsavedChanges from "./snippets/unsaved-changes.mdx";
 
 The [SuperOffice Developer Portal][6] contains a set of self-serve tools that developers can use to manage their access to SuperOffice Online APIs.
 
@@ -78,7 +79,7 @@ Other pages have subsections with their own navigator.
 When you click **Save Settings** it applies to all changes on the page, across all subsections. The scope is determined by the left-most Navigator.
 </Note>
 
-On the application **Configuration** page and on the application and partner **App Store information** pages, there is no inline **Save Settings** button. Instead, a **You have unsaved changes** bar appears in the bottom-right corner when you edit something, with the buttons **Discard** and **Save Settings**. **Discard** restores the last saved values on all tabs. While you have unsaved changes, you can't request to publish, publish, or reject/revert a version.
+<UnsavedChanges />
 
 ![The You have unsaved changes bar with Discard and Save Settings buttons -screenshot][img10]
 

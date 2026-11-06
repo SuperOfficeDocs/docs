@@ -2,9 +2,9 @@
 title: First-time activation
 uid: custom-app-first-time-activation
 description: How to activate a validated custom application on a customer's production tenant by requesting tenant authorization in the Developer Portal.
-author: Margrethe
+author: Margrethe Romnes
 date: 11.05.2026
-version_devportal: 2.16
+version_devportal: 2.19
 keywords: ['activate', 'consent', 'authorization', 'custom app']
 content_type: howto
 deployment: online

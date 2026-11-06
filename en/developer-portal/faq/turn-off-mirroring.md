@@ -19,7 +19,7 @@ platform: web
 
     ![Database mirroring configuration for application -screenshot][img1]
 
-1. In the **Data mirroring** section, turn off the toggle below the **Endpoint** field. In the **You have unsaved changes** bar in the bottom-right corner, click **Save Settings**.
+1. In the **Data mirroring** section, turn off the toggle below the **Endpoint** field. In the **You have unsaved changes** bar in the lower-right corner, click **Save Settings**.
 
     ![Database mirroring toggle -screenshot][img2]
 

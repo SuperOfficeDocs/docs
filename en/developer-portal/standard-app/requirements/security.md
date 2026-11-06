@@ -5,6 +5,7 @@ description: Security requirements
 keywords: ['certification']
 author: Margrethe Romnes, Tony Yates
 date: 11.05.2026
+version_devportal: 2.19
 content_type: reference
 deployment: online
 platform: web
