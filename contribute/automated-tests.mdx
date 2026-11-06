@@ -2,9 +2,9 @@
 uid: automated-tests
 title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
-keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx', 'docfx', 'see cref', 'xref', 'script injection', 'security', 'restful', 'agent', 'rest']
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx', 'docfx', 'see cref', 'xref', 'script injection', 'security', 'restful', 'agent', 'rest', 'mdx', 'components']
 author: digitaldiina
-date: 09.17.2026
+date: 11.06.2026
 content_type: concept
 related:
   - /contribute/deployment
@@ -33,6 +33,7 @@ This page is the single reference for every automatic check that runs against th
 | Redirect coverage guard | GitHub Action (`.github/workflows/redirect-coverage-guard.yml`) | No - advisory (warns only, labels the PR) | This repo, `tools/ci/check-redirect-coverage.py` |
 | Boost changes guard | GitHub Action (`.github/workflows/boost-changes-guard.yml`) | No - advisory (warns only, comments on the PR) | This repo, `tools/ci/check-boost-changes.py` |
 | Office-format download guard | GitHub Action (`.github/workflows/office-format-download-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-office-format-downloads.py` |
+| Md components guard | GitHub Action (`.github/workflows/md-components-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-md-components.py` |
 | DocFX legacy-tag guard | GitHub Action (`.github/workflows/docfx-legacy-tags-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-new-docfx-see-cref.py` + `check-no-new-docfx-xref.py` + `check-no-new-docfx-list.py` |
 | Workflow script-injection guard | GitHub Action (`.github/workflows/workflow-injection-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-workflow-injection.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
