@@ -4,8 +4,8 @@ title: Uppdatera användare
 description: Redigera medarbetare
 keywords: ['user', 'medarbetare']
 author: digitaldiina
-date: 05.04.2026
-so_version: 11.13
+date: 11.06.2026
+so_version: 12
 content_type: howto
 tier: starter
 category: identity management
@@ -16,6 +16,11 @@ redirect_from:
   - /sv/admin/user-management/learn/delete-user
   - /sv/admin/user-management/learn/update-user
 userflow_index: true
+related:
+  - Lägga till användare: /sv/admin/user-management/add-associate
+  - Användartyper och medarbetare: /sv/admin/user-management/index
+  - Ta bort användargrupp: /sv/admin/user-management/user-groups#delete
+  - Uppdatera roll: /sv/admin/user-management/role/update-role
 language: sv
 ---
 
@@ -41,15 +46,8 @@ För att uppdatera, flytta eller ta bort en användare (anställd) börjar du me
 
 1. Klicka på knappen **Ta bort**. Du kan inte ta bort ditt eget användarnamn, som du använde när du loggade in.
 
-1. Markera ett alternativ i dialogrutan **Ta bort användare**. Klicka på ett alternativ för att visa en beskrivning av vad som händer när du tar bort användaren.
-
-    * Ta bort användarlicenser
-    * Markera medarbetaren som tidigare anställd
-    * Ta bort medarbetare \[login ID\]
-    * Ta bort medarbetare \[login ID\] och kontakt \[full name\]
+1. I dialogrutan **Ta bort användare**, klicka på **Ja** för att bekräfta.
 
     <Note>
-    De här alternativen är rangordnade efter effekt.
+    När du tar bort en användare tas all kontaktinformation och alla referenser till användaren bort från systemet. Data som användaren har skapat finns kvar.
     </Note>
-
-1. Klicka på **OK**.
