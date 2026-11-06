@@ -2,9 +2,9 @@
 title: Einen Mitarbeiter in einer Anfrage erwähnen
 sidebarTitle: Erwähnungen
 description: Erwähnen Sie einen Mitarbeiter mit @ in einem internen Kommentar zu einer Anfrage und verfolgen Sie die Anfragen nach, in denen Sie erwähnt werden.
-keywords: ['markieren', 'Kollegen markieren', 'At-Zeichen', 'Kollegen benachrichtigen', 'Kollegen fragen']
+keywords: ['Mitarbeiter markieren', 'Kollegen markieren', 'At-Zeichen', 'Kollegen benachrichtigen', 'Kollegen fragen']
 author: digitaldiina
-date: 11.05.2026
+date: 11.06.2026
 so_version: 12.5
 content_type: howto
 license: serviceessentials
@@ -22,7 +22,7 @@ language: de
 Erwähnen Sie einen Mitarbeiter in einem internen Kommentar zu einer Anfrage, wenn Sie seine Hilfe benötigen oder möchten, dass er etwas weiß. Der Mitarbeiter findet die Anfrage auf der Registerkarte **Erwähnungen** der [Anfrageansicht][1] und im Benachrichtigungsbildschirm, wenn er Benachrichtigungen für Erwähnungen aktiviert hat.
 
 <Note>
-Sie können Mitarbeiter nur in Kommentaren erwähnen. Antworten und Weiterleitungen können keine Erwähnungen enthalten, auch wenn sie intern sind.
+Sie können Mitarbeiter nur in Kommentaren erwähnen. Antworten und Weiterleitungen können keine Erwähnungen enthalten, auch wenn sie intern sind. Wenn Sie mit einer zitierten früheren Mitteilung antworten, werden die Erwähnungen im zitierten Text ignoriert, damit dieselben Mitarbeiter nicht erneut erwähnt werden.
 </Note>
 
 ## Einen Mitarbeiter in einem Kommentar erwähnen {#mention}
@@ -38,11 +38,14 @@ Sie können Mitarbeiter nur in Kommentaren erwähnen. Antworten und Weiterleitun
 1. Wählen Sie den Mitarbeiter aus, den Sie erwähnen möchten. Der Name wird als hervorgehobener **@Name** eingefügt.
 
     So verwenden Sie stattdessen die Tastatur:
+
     * **Pfeil nach oben** und **Pfeil nach unten:** Navigiert durch die Liste.
     * **Eingabetaste** oder **Tabulatortaste:** Fügt den hervorgehobenen Mitarbeiter ein.
     * **Esc:** Schließt die Liste, ohne jemanden einzufügen.
 
     ![Ein Kommentar mit einer hervorgehobenen Erwähnung -screenshot][img2]
+
+    Um eine Erwähnung vor dem Speichern zu entfernen, setzen Sie den Cursor direkt hinter den Namen und drücken Sie die **Rücktaste**, oder direkt vor den Namen und drücken Sie **Entf**. Der gesamte Name wird entfernt.
 
 1. Um weitere Mitarbeiter im selben Kommentar zu erwähnen, geben Sie erneut **@** ein und wählen Sie den nächsten Mitarbeiter aus.
 
@@ -50,14 +53,11 @@ Sie können Mitarbeiter nur in Kommentaren erwähnen. Antworten und Weiterleitun
 
 Die Mitarbeiter, die Sie erwähnen, sehen die Erwähnung, sobald ihre Registerkarte **Erwähnungen** oder ihre Benachrichtigungen das nächste Mal aktualisiert werden.
 
-* Um eine Erwähnung vor dem Speichern zu entfernen, setzen Sie den Cursor direkt hinter den Namen und drücken Sie die **Rücktaste**, oder direkt vor den Namen und drücken Sie **Entf**. Der gesamte Name wird entfernt.
-* Wenn Sie mit einer zitierten früheren Mitteilung antworten, werden die Erwähnungen im zitierten Text ignoriert, damit dieselben Mitarbeiter nicht erneut erwähnt werden.
-
 ## Die Erwähnungen in einem Kommentar ändern {#edit}
 
 Wenn die [globale Einstellung][7] **Bearbeitung von Nachrichten zulassen** aktiviert ist, können Sie den [Text eines Kommentars bearbeiten][5] und auf dieselbe Weise Erwähnungen hinzufügen. Wenn Sie speichern, erhält jeder Mitarbeiter, den Sie hinzufügen, eine neue Erwähnung, und bestehende Erwähnungen zeigen den aktualisierten Text.
 
-* Wenn Sie eine Erwähnung aus einem Kommentar entfernen, behält der Mitarbeiter die Erwähnung auf seiner Registerkarte **Erwähnungen**.
+* Wenn Sie eine Erwähnung aus einem Kommentar entfernen, bleibt die Erwähnung auf der Registerkarte **Erwähnungen** des Mitarbeiters.
 * Erwähnungen werden nur gelöscht, wenn Sie den gesamten Kommentar löschen.
 
 ## Sehen, wo Sie erwähnt werden {#mentions-tab}
@@ -66,14 +66,13 @@ Wenn die [globale Einstellung][7] **Bearbeitung von Nachrichten zulassen** aktiv
 
     Ein Zähler neben **Erwähnungen** zeigt an, wie viele ungelesene Erwähnungen Sie haben.
 
-1. Suchen Sie die Erwähnung, die Sie nachverfolgen möchten. Die Registerkarte **Erwähnungen** listet alle Erwähnungen auf, die neueste zuerst. Jede Zeile zeigt, wer Sie erwähnt hat, die Anfrage-ID und den Titel, den ersten Satz des Kommentars und das Datum. Ungelesene Erwähnungen sind hervorgehoben.
-    * Um nur die Erwähnungen zu sehen, die Sie noch nicht geöffnet haben, wählen Sie im Filter oben in der Liste **Ungelesen** aus. Wählen Sie **Alle Erwähnungen** aus, um wieder alle anzuzeigen.
+1. Suchen Sie die Erwähnung, die Sie nachverfolgen möchten. Die Registerkarte **Erwähnungen** listet alle Erwähnungen in Anfragen auf, auf die Sie Zugriff haben, die neueste zuerst. Jede Zeile zeigt, wer Sie erwähnt hat, die Anfrage-ID und den Titel, den ersten Satz des Kommentars und das Datum. Ungelesene Erwähnungen sind hervorgehoben.
+
+    * Um nur die Erwähnungen zu sehen, die Sie noch nicht geöffnet haben, wählen Sie im Filter oben in der Liste **Ungelesen** aus. Wählen Sie **Alle Erwähnungen** aus, um wieder alle anzuzeigen. Wenn keine Erwähnungen zum Filter passen, zeigt die Registerkarte **Alles erledigt!** an.
 
     ![Die Registerkarte Erwähnungen mit ungelesenen Erwähnungen und dem Filter Alle Erwähnungen -screenshot][img3]
 
 1. Klicken Sie auf eine Erwähnung. Die Anfrage wird in einer Registerkarte geöffnet und zu dem Kommentar gescrollt, in dem Sie erwähnt wurden. Die Erwähnung wird als gelesen markiert.
-
-Sie sehen nur Erwähnungen in Anfragen, auf die Sie Zugriff haben. Wenn keine Erwähnungen zum Filter passen, zeigt die Registerkarte **Alles erledigt!** an.
 
 ## Die Anfrage anheften oder eine Erwähnung löschen {#pin-delete}
 
@@ -96,7 +95,7 @@ Wenn ein Mitarbeiter Sie erwähnt, wird im [Benachrichtigungsbildschirm][6] (<i 
 
 Beides markiert die Erwähnung als gelesen.
 
-Um die Benachrichtigungen für Erwähnungen zu beenden, klicken Sie im Benachrichtigungsbildschirm auf <i class="ph ph-gear" aria-label="Gear"></i> und deaktivieren Sie **Benachrichtigungen für Erwähnungen anzeigen**. Ihre Erwähnungen werden weiterhin auf der Registerkarte **Erwähnungen** aufgelistet.
+Um die Benachrichtigungen für Erwähnungen zu beenden, klicken Sie im Benachrichtigungsbildschirm auf <i class="ph ph-gear" aria-label="Gear"></i> und deaktivieren Sie **Benachrichtigungen für Erwähnungen anzeigen**. Dadurch werden nur die Benachrichtigungen deaktiviert. Die Registerkarte **Erwähnungen** listet weiterhin alle Ihre Erwähnungen auf.
 
 [1]: ./index#request-screen
 [2]: ./index#open

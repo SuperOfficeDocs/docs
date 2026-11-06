@@ -2,9 +2,9 @@
 title: Nevn en medarbeider i en sak
 sidebarTitle: Nevnelser
 description: Nevn en medarbeider med @ i en intern kommentar på en sak, og følg opp sakene der du er nevnt.
-keywords: ['tagge', 'tagge en kollega', 'alfakrøll', 'varsle en kollega', 'spørre en kollega']
+keywords: ['tagge medarbeider', 'tagge kollega', 'alfakrøll', 'varsle kollega', 'spørre kollega']
 author: digitaldiina
-date: 11.05.2026
+date: 11.06.2026
 so_version: 12.5
 content_type: howto
 license: serviceessentials
@@ -22,7 +22,7 @@ language: no
 Nevn en medarbeider i en intern kommentar på en sak når du trenger hjelp fra vedkommende eller vil at vedkommende skal vite om noe. Medarbeideren finner saken i fanen **Nevnelser** på [Saksskjermen][1], og i varslingsruten hvis vedkommende har slått på varsler om nevnelser.
 
 <Note>
-Du kan bare nevne medarbeidere i kommentarer. Svar og videresendinger kan ikke inneholde nevnelser, selv om de er interne.
+Du kan bare nevne medarbeidere i kommentarer. Svar og videresendinger kan ikke inneholde nevnelser, selv om de er interne. Når du svarer med en tidligere melding sitert, ignoreres nevnelsene i den siterte teksten, slik at de samme medarbeiderne ikke nevnes på nytt.
 </Note>
 
 ## Nevn en medarbeider i en kommentar {#mention}
@@ -38,26 +38,26 @@ Du kan bare nevne medarbeidere i kommentarer. Svar og videresendinger kan ikke i
 1. Velg medarbeideren du vil nevne. Navnet settes inn som et uthevet **@navn**.
 
     Slik bruker du tastaturet i stedet:
+
     * **Pil opp** og **Pil ned:** Flytter deg gjennom listen.
     * **Enter** eller **Tab:** Setter inn den uthevede medarbeideren.
     * **Esc:** Lukker listen uten å sette inn noen.
 
     ![En kommentar med en uthevet nevnelse -screenshot][img2]
 
-1. Hvis du vil nevne flere medarbeidere i samme kommentar, skriver du **@** igjen og velger neste medarbeider.
+    Hvis du vil fjerne en nevnelse før du lagrer, plasserer du markøren rett etter navnet og trykker **Backspace**, eller rett foran det og trykker **Delete**. Hele navnet fjernes.
+
+1. Hvis du vil nevne ytterligere medarbeidere i samme kommentar, skriver du **@** igjen og velger neste medarbeider.
 
 1. Klikk på **Lagre**.
 
 Medarbeiderne du nevner, ser nevnelsen neste gang fanen **Nevnelser** eller varslene deres oppdateres.
 
-* Hvis du vil fjerne en nevnelse før du lagrer, plasserer du markøren rett etter navnet og trykker **Backspace**, eller rett foran det og trykker **Delete**. Hele navnet fjernes.
-* Når du svarer med en tidligere melding sitert, ignoreres nevnelsene i den siterte teksten, slik at de samme medarbeiderne ikke nevnes på nytt.
-
 ## Endre nevnelsene i en kommentar {#edit}
 
 Hvis [den globale preferansen][7] **Tillat endring av meldinger** er slått på, kan du [redigere teksten i en kommentar][5] og legge til nevnelser på samme måte. Når du lagrer, får hver medarbeider du legger til, en ny nevnelse, og eksisterende nevnelser viser den oppdaterte teksten.
 
-* Hvis du fjerner en nevnelse fra en kommentar, beholder medarbeideren nevnelsen i fanen **Nevnelser**.
+* Hvis du fjerner en nevnelse fra en kommentar, blir nevnelsen værende i medarbeiderens fane **Nevnelser**.
 * Nevnelser slettes bare når du sletter hele kommentaren.
 
 ## Se hvor du er nevnt {#mentions-tab}
@@ -66,14 +66,13 @@ Hvis [den globale preferansen][7] **Tillat endring av meldinger** er slått på,
 
     Et merke ved siden av **Nevnelser** viser hvor mange uleste nevnelser du har.
 
-1. Finn nevnelsen du vil følge opp. Fanen **Nevnelser** viser alle nevnelser, de nyeste først. Hver rad viser hvem som nevnte deg, saks-ID og tittel, første setning i kommentaren og datoen. Uleste nevnelser er uthevet.
-    * Hvis du bare vil se nevnelsene du ikke har åpnet ennå, velger du **Uleste** i filteret øverst i listen. Velg **Alle nevnelser** for å se alle igjen.
+1. Finn nevnelsen du vil følge opp. Fanen **Nevnelser** viser alle nevnelser i saker du har tilgang til, de nyeste først. Hver rad viser hvem som nevnte deg, saks-ID og tittel, første setning i kommentaren og datoen. Uleste nevnelser er uthevet.
+
+    * Hvis du bare vil se nevnelsene du ikke har åpnet ennå, velger du **Uleste** i filteret øverst i listen. Velg **Alle nevnelser** for å se alle igjen. Hvis ingen nevnelser samsvarer med filteret, viser fanen **Du er á jour!**.
 
     ![Fanen Nevnelser med uleste nevnelser og filteret Alle nevnelser -screenshot][img3]
 
 1. Klikk på en nevnelse. Saken åpnes i en fane, rullet til kommentaren der du ble nevnt, og nevnelsen merkes som lest.
-
-Du ser bare nevnelser i saker du har tilgang til. Hvis ingen nevnelser samsvarer med filteret, viser fanen **Du er á jour!**.
 
 ## Feste saken eller slette en nevnelse {#pin-delete}
 
@@ -96,7 +95,7 @@ Når en medarbeider nevner deg, vises et varsel i [varslingsruten][6] (<i class=
 
 Begge deler merker nevnelsen som lest.
 
-Hvis du vil slutte å få varsler om nevnelser, klikker du på <i class="ph ph-gear" aria-label="Gear"></i> i varslingsruten og fjerner merket for **Bli varslet om nevnelser**. Nevnelsene dine vises fortsatt i fanen **Nevnelser**.
+Hvis du vil slutte å få varsler om nevnelser, klikker du på <i class="ph ph-gear" aria-label="Gear"></i> i varslingsruten og fjerner merket for **Bli varslet om nevnelser**. Dette slår bare av varslene. Fanen **Nevnelser** viser fortsatt alle nevnelsene dine.
 
 [1]: ./index#request-screen
 [2]: ./index#open

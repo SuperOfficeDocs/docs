@@ -2,9 +2,9 @@
 title: Mention an associate in a request
 sidebarTitle: Mentions
 description: Mention an associate with @ in an internal comment on a request, and follow up on the requests where you are mentioned.
-keywords: ['tag', 'tag a colleague', 'at sign', 'notify a colleague', 'ask a colleague']
+keywords: ['tag associate', 'tag colleague', 'at sign', 'notify colleague', 'ask colleague']
 author: digitaldiina
-date: 11.05.2026
+date: 11.06.2026
 so_version: 12.5
 content_type: howto
 license: serviceessentials
@@ -22,7 +22,7 @@ language: en
 Mention an associate in an internal comment on a request when you need their help or want them to know about something. The associate finds the request on the **Mentions** tab of the [Request screen][1], and in the notifications panel if they have notifications for mentions turned on.
 
 <Note>
-You can mention associates only in comments. Replies and forwards cannot contain mentions, even when they are internal.
+You can mention associates only in comments. Replies and forwards cannot contain mentions, even when they are internal. When you reply with an earlier message quoted, the mentions in the quoted text are ignored, so the same associates are not mentioned again.
 </Note>
 
 ## Mention an associate in a comment {#mention}
@@ -38,26 +38,26 @@ You can mention associates only in comments. Replies and forwards cannot contain
 1. Select the associate you want to mention. The name is inserted as a highlighted **@name**.
 
     To use the keyboard instead:
+
     * **Up arrow** and **Down arrow:** Moves through the list.
     * **Enter** or **Tab:** Inserts the highlighted associate.
     * **Esc:** Closes the list without inserting anyone.
 
     ![A comment with a highlighted mention -screenshot][img2]
 
-1. To mention more associates in the same comment, type **@** again and select the next associate.
+    To remove a mention before you save, place the cursor right after the name and press **Backspace**, or right before it and press **Delete**. The whole name is removed.
+
+1. To mention additional associates in the same comment, type **@** again and select the next associate.
 
 1. Click **Save**.
 
 The associates you mention see the mention the next time their **Mentions** tab or notifications refresh.
 
-* To remove a mention before you save, place the cursor right after the name and press **Backspace**, or right before it and press **Delete**. The whole name is removed.
-* When you reply with an earlier message quoted, the mentions in the quoted text are ignored, so the same associates are not mentioned again.
-
 ## Change the mentions in a comment {#edit}
 
 If the **Enable editing of messages** [global preference][7] is turned on, you can [edit the text of a comment][5] and add mentions in the same way. When you save, each associate you add receives a new mention, and existing mentions show the updated text.
 
-* If you remove a mention from a comment, the associate keeps the mention on their **Mentions** tab.
+* If you remove a mention from a comment, the mention stays on the associate's **Mentions** tab.
 * Mentions are deleted only when you delete the whole comment.
 
 ## See where you are mentioned {#mentions-tab}
@@ -66,14 +66,13 @@ If the **Enable editing of messages** [global preference][7] is turned on, you c
 
     A badge next to **Mentions** shows how many unread mentions you have.
 
-1. Find the mention you want to follow up on. The **Mentions** tab lists every mention, newest first. Each row shows who mentioned you, the request ID and title, the first sentence of the comment, and the date. Unread mentions are highlighted.
-    * To see only the mentions you have not opened yet, select **Unread** in the filter at the top of the list. Select **All mentions** to see them all again.
+1. Find the mention you want to follow up on. The **Mentions** tab lists every mention in requests you have access to, newest first. Each row shows who mentioned you, the request ID and title, the first sentence of the comment, and the date. Unread mentions are highlighted.
+
+    * To see only the mentions you have not opened yet, select **Unread** in the filter at the top of the list. Select **All mentions** to see them all again. If no mentions match the filter, the tab shows **All caught up**.
 
     ![The Mentions tab with unread mentions and the All mentions filter -screenshot][img3]
 
 1. Click a mention. The request opens in a tab, scrolled to the comment you were mentioned in, and the mention is marked as read.
-
-You see mentions only in requests you have access to. If no mentions match the filter, the tab shows **All caught up**.
 
 ## Pin the request or delete a mention {#pin-delete}
 
@@ -96,7 +95,7 @@ When an associate mentions you, a notification appears in the [notifications pan
 
 Both mark the mention as read.
 
-To stop notifications for mentions, click <i class="ph ph-gear" aria-label="Gear"></i> in the notifications panel and clear **Show notifications for mentions**. Your mentions are still listed on the **Mentions** tab.
+To stop notifications for mentions, click <i class="ph ph-gear" aria-label="Gear"></i> in the notifications panel and clear **Show notifications for mentions**. This turns off only the notifications. The **Mentions** tab still lists all your mentions.
 
 [1]: ./index#request-screen
 [2]: ./index#open

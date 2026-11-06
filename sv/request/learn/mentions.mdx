@@ -2,9 +2,9 @@
 title: Omnämn en medarbetare i ett ärende
 sidebarTitle: Omnämnanden
 description: Omnämn en medarbetare med @ i en intern kommentar på ett ärende och följ upp de ärenden där du är omnämnd.
-keywords: ['tagga', 'tagga en kollega', 'snabel-a', 'meddela en kollega', 'fråga en kollega']
+keywords: ['tagga medarbetare', 'tagga kollega', 'snabel-a', 'meddela kollega', 'fråga kollega']
 author: digitaldiina
-date: 11.05.2026
+date: 11.06.2026
 so_version: 12.5
 content_type: howto
 license: serviceessentials
@@ -22,7 +22,7 @@ language: sv
 Omnämn en medarbetare i en intern kommentar på ett ärende när du behöver hjälp eller vill att medarbetaren ska känna till något. Medarbetaren hittar ärendet på fliken **Omnämnanden** på [ärendeskärmen][1], och i aviseringspanelen om aviseringar för omnämnanden är aktiverade.
 
 <Note>
-Du kan bara omnämna medarbetare i kommentarer. Svar och vidarebefordringar kan inte innehålla omnämnanden, inte ens när de är interna.
+Du kan bara omnämna medarbetare i kommentarer. Svar och vidarebefordringar kan inte innehålla omnämnanden, inte ens när de är interna. När du svarar med ett tidigare meddelande citerat ignoreras omnämnandena i den citerade texten, så att samma medarbetare inte omnämns igen.
 </Note>
 
 ## Omnämn en medarbetare i en kommentar {#mention}
@@ -38,26 +38,26 @@ Du kan bara omnämna medarbetare i kommentarer. Svar och vidarebefordringar kan 
 1. Välj den medarbetare du vill omnämna. Namnet infogas som ett markerat **@namn**.
 
     Om du vill använda tangentbordet i stället:
+
     * **Uppil** och **Nedpil:** Flyttar i listan.
     * **Enter** eller **Tab:** Infogar den markerade medarbetaren.
     * **Esc:** Stänger listan utan att infoga någon.
 
     ![En kommentar med ett markerat omnämnande -screenshot][img2]
 
-1. Om du vill omnämna fler medarbetare i samma kommentar skriver du **@** igen och väljer nästa medarbetare.
+    Om du vill ta bort ett omnämnande innan du sparar placerar du markören direkt efter namnet och trycker på **Backsteg**, eller direkt före namnet och trycker på **Delete**. Hela namnet tas bort.
+
+1. Om du vill omnämna ytterligare medarbetare i samma kommentar skriver du **@** igen och väljer nästa medarbetare.
 
 1. Klicka på **Spara**.
 
 De medarbetare du omnämner ser omnämnandet nästa gång deras flik **Omnämnanden** eller aviseringar uppdateras.
 
-* Om du vill ta bort ett omnämnande innan du sparar placerar du markören direkt efter namnet och trycker på **Backsteg**, eller direkt före namnet och trycker på **Delete**. Hela namnet tas bort.
-* När du svarar med ett tidigare meddelande citerat ignoreras omnämnandena i den citerade texten, så att samma medarbetare inte omnämns igen.
-
 ## Ändra omnämnandena i en kommentar {#edit}
 
 Om den [globala inställningen][7] **Tillåt ändring av meddelanden** är aktiverad kan du [redigera texten i en kommentar][5] och lägga till omnämnanden på samma sätt. När du sparar får varje medarbetare du lägger till ett nytt omnämnande, och befintliga omnämnanden visar den uppdaterade texten.
 
-* Om du tar bort ett omnämnande från en kommentar behåller medarbetaren omnämnandet på sin flik **Omnämnanden**.
+* Om du tar bort ett omnämnande från en kommentar ligger omnämnandet kvar på medarbetarens flik **Omnämnanden**.
 * Omnämnanden tas bort först när du tar bort hela kommentaren.
 
 ## Se var du är omnämnd {#mentions-tab}
@@ -66,14 +66,13 @@ Om den [globala inställningen][7] **Tillåt ändring av meddelanden** är aktiv
 
     Ett märke bredvid **Omnämnanden** visar hur många olästa omnämnanden du har.
 
-1. Hitta det omnämnande du vill följa upp. Fliken **Omnämnanden** listar alla omnämnanden, de senaste först. Varje rad visar vem som omnämnde dig, ärendets ID och titel, kommentarens första mening och datumet. Olästa omnämnanden är markerade.
-    * Om du bara vill se de omnämnanden du ännu inte har öppnat väljer du **Olästa** i filtret högst upp i listan. Välj **Alla omnämnanden** för att se alla igen.
+1. Hitta det omnämnande du vill följa upp. Fliken **Omnämnanden** listar alla omnämnanden i ärenden som du har åtkomst till, de senaste först. Varje rad visar vem som omnämnde dig, ärendets ID och titel, kommentarens första mening och datumet. Olästa omnämnanden är markerade.
+
+    * Om du bara vill se de omnämnanden du ännu inte har öppnat väljer du **Olästa** i filtret högst upp i listan. Välj **Alla omnämnanden** för att se alla igen. Om inga omnämnanden matchar filtret visar fliken **Du är nu helt ikapp!**.
 
     ![Fliken Omnämnanden med olästa omnämnanden och filtret Alla omnämnanden -screenshot][img3]
 
 1. Klicka på ett omnämnande. Ärendet öppnas på en flik, rullat till den kommentar där du omnämndes, och omnämnandet markeras som läst.
-
-Du ser bara omnämnanden i ärenden som du har åtkomst till. Om inga omnämnanden matchar filtret visar fliken **Du är nu helt ikapp!**.
 
 ## Nåla fast ärendet eller ta bort ett omnämnande {#pin-delete}
 
@@ -96,7 +95,7 @@ När en medarbetare omnämner dig visas en avisering i [aviseringspanelen][6] (<
 
 Båda markerar omnämnandet som läst.
 
-Om du vill sluta få aviseringar om omnämnanden klickar du på <i class="ph ph-gear" aria-label="Gear"></i> i aviseringspanelen och avmarkerar **Visa aviseringar för omnämnanden**. Dina omnämnanden finns kvar på fliken **Omnämnanden**.
+Om du vill sluta få aviseringar om omnämnanden klickar du på <i class="ph ph-gear" aria-label="Gear"></i> i aviseringspanelen och avmarkerar **Visa aviseringar för omnämnanden**. Det stänger bara av aviseringarna. Fliken **Omnämnanden** visar fortfarande alla dina omnämnanden.
 
 [1]: ./index#request-screen
 [2]: ./index#open

@@ -2,9 +2,9 @@
 title: Omtal en medarbejder i en sag
 sidebarTitle: Omtaler
 description: Omtal en medarbejder med @ i en intern kommentar på en sag, og følg op på de sager, hvor du er omtalt.
-keywords: ['tag', 'tag en kollega', 'snabel-a', 'giv en kollega besked', 'spørg en kollega']
+keywords: ['tag medarbejder', 'tag kollega', 'snabel-a', 'giv kollega besked', 'spørg kollega']
 author: digitaldiina
-date: 11.05.2026
+date: 11.06.2026
 so_version: 12.5
 content_type: howto
 license: serviceessentials
@@ -22,7 +22,7 @@ language: da
 Omtal en medarbejder i en intern kommentar på en sag, når du har brug for vedkommendes hjælp eller vil have, at vedkommende kender til noget. Medarbejderen finder sagen under fanen **Omtaler** på [Sagsskærmen][1], og i beskedpanelet, hvis vedkommende har slået beskeder for omtaler til.
 
 <Note>
-Du kan kun omtale medarbejdere i kommentarer. Svar og videresendelser kan ikke indeholde omtaler, heller ikke når de er interne.
+Du kan kun omtale medarbejdere i kommentarer. Svar og videresendelser kan ikke indeholde omtaler, heller ikke når de er interne. Når du svarer med en tidligere meddelelse citeret, ignoreres omtalerne i den citerede tekst, så de samme medarbejdere ikke omtales igen.
 </Note>
 
 ## Omtal en medarbejder i en kommentar {#mention}
@@ -38,26 +38,26 @@ Du kan kun omtale medarbejdere i kommentarer. Svar og videresendelser kan ikke i
 1. Vælg den medarbejder, du vil omtale. Navnet indsættes som et fremhævet **@navn**.
 
     Sådan bruger du tastaturet i stedet:
+
     * **Pil op** og **Pil ned:** Flytter dig gennem listen.
     * **Enter** eller **Tab:** Indsætter den fremhævede medarbejder.
     * **Esc:** Lukker listen uden at indsætte nogen.
 
     ![En kommentar med en fremhævet omtale -screenshot][img2]
 
-1. Hvis du vil omtale flere medarbejdere i den samme kommentar, skal du skrive **@** igen og vælge den næste medarbejder.
+    Hvis du vil fjerne en omtale, før du gemmer, skal du placere markøren lige efter navnet og trykke på **Backspace**, eller lige før det og trykke på **Delete**. Hele navnet fjernes.
+
+1. Hvis du vil omtale yderligere medarbejdere i den samme kommentar, skal du skrive **@** igen og vælge den næste medarbejder.
 
 1. Klik på **Gem**.
 
 De medarbejdere, du omtaler, ser omtalen, næste gang deres fane **Omtaler** eller beskeder opdateres.
 
-* Hvis du vil fjerne en omtale, før du gemmer, skal du placere markøren lige efter navnet og trykke på **Backspace**, eller lige før det og trykke på **Delete**. Hele navnet fjernes.
-* Når du svarer med en tidligere meddelelse citeret, ignoreres omtalerne i den citerede tekst, så de samme medarbejdere ikke omtales igen.
-
 ## Ændr omtalerne i en kommentar {#edit}
 
 Hvis den [globale præference][7] **Tillad ændring af meddelelser** er slået til, kan du [redigere teksten i en kommentar][5] og tilføje omtaler på samme måde. Når du gemmer, får hver medarbejder, du tilføjer, en ny omtale, og eksisterende omtaler viser den opdaterede tekst.
 
-* Hvis du fjerner en omtale fra en kommentar, beholder medarbejderen omtalen under sin fane **Omtaler**.
+* Hvis du fjerner en omtale fra en kommentar, forbliver omtalen under medarbejderens fane **Omtaler**.
 * Omtaler slettes kun, når du sletter hele kommentaren.
 
 ## Se, hvor du er omtalt {#mentions-tab}
@@ -66,14 +66,13 @@ Hvis den [globale præference][7] **Tillad ændring af meddelelser** er slået t
 
     Et badge ved siden af **Omtaler** viser, hvor mange ulæste omtaler du har.
 
-1. Find den omtale, du vil følge op på. Fanen **Omtaler** viser alle omtaler med den nyeste først. Hver række viser, hvem der omtalte dig, sagens ID og titel, den første sætning i kommentaren og datoen. Ulæste omtaler er fremhævet.
-    * Hvis du kun vil se de omtaler, du endnu ikke har åbnet, skal du vælge **Ulæste** i filteret øverst på listen. Vælg **Alle omtaler** for at se dem alle igen.
+1. Find den omtale, du vil følge op på. Fanen **Omtaler** viser alle omtaler i sager, du har adgang til, med den nyeste først. Hver række viser, hvem der omtalte dig, sagens ID og titel, den første sætning i kommentaren og datoen. Ulæste omtaler er fremhævet.
+
+    * Hvis du kun vil se de omtaler, du endnu ikke har åbnet, skal du vælge **Ulæste** i filteret øverst på listen. Vælg **Alle omtaler** for at se dem alle igen. Hvis ingen omtaler matcher filteret, viser fanen **Du er helt opdateret!**.
 
     ![Fanen Omtaler med ulæste omtaler og filteret Alle omtaler -screenshot][img3]
 
 1. Klik på en omtale. Sagen åbnes i en fane og ruller til den kommentar, hvor du blev omtalt, og omtalen markeres som læst.
-
-Du ser kun omtaler i sager, du har adgang til. Hvis ingen omtaler matcher filteret, viser fanen **Du er helt opdateret!**.
 
 ## Fastgør sagen eller slet en omtale {#pin-delete}
 
@@ -96,7 +95,7 @@ Når en medarbejder omtaler dig, vises en besked i [beskedpanelet][6] (<i class=
 
 Begge dele markerer omtalen som læst.
 
-Hvis du vil stoppe beskeder for omtaler, skal du klikke på <i class="ph ph-gear" aria-label="Gear"></i> i beskedpanelet og fjerne markeringen i **Vis beskeder for omtaler**. Dine omtaler vises stadig under fanen **Omtaler**.
+Hvis du vil stoppe beskeder for omtaler, skal du klikke på <i class="ph ph-gear" aria-label="Gear"></i> i beskedpanelet og fjerne markeringen i **Vis beskeder for omtaler**. Dette slår kun beskederne fra. Fanen **Omtaler** viser stadig alle dine omtaler.
 
 [1]: ./index#request-screen
 [2]: ./index#open
