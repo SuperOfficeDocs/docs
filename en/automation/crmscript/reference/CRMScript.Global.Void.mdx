@@ -2426,8 +2426,8 @@ An exception is thrown if the name is unknown, or the struct is not a struct.
 
 ```crmscript
 struct Person {
-\tString name;
-\tInteger age;
+  String name;
+  Integer age;
 };
 Person person;
 person.age = 42;
@@ -2673,12 +2673,12 @@ Bool typeIsStruct(Generic generic)
 
 ```crmscript
 struct Person {
-\tString name;
-\tInteger age;
+  String name;
+  Integer age;
 };
 Person p;
 if (typeIsStruct(p)) {
-\tprintLine("10-4");
+  printLine("10-4");
 }
 ```
 

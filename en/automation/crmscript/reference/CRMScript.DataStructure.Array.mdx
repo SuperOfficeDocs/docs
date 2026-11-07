@@ -27,10 +27,10 @@ String {instance}.buildString(String delimiter)
 
 ```crmscript
 String[] strings;
-strings.pushBack(\"Alpha\");
-strings.pushBack(\"Beta\");
-strings.pushBack(\"Charlie\");
-String delimitedString = nstrings.buildString(\",\");
+strings.pushBack("Alpha");
+strings.pushBack("Beta");
+strings.pushBack("Charlie");
+String delimitedString = nstrings.buildString(",");
 printLine(delimitedString);
 //prints Alpha,Beta,Charlie
 ```
@@ -47,11 +47,11 @@ Void {instance}.clear()
 
 ```crmscript
 String[] userPlans;
-userPlans.pushBack(\"Standard\");
-userPlans.pushBack(\"Sales\");
-printLine(\"Before clear length: \" + userPlans.length().toString());
+userPlans.pushBack("Standard");
+userPlans.pushBack("Sales");
+printLine("Before clear length: " + userPlans.length().toString());
 userPlans.clear();
-printLine(\"After clear length: \" + userPlans.length().toString());
+printLine("After clear length: " + userPlans.length().toString());
 //prints:
 //Before clear length: 2
 //After clear length: 0
@@ -69,8 +69,8 @@ Returns the first element in the array. Same as [0].
 
 ```crmscript
 String[] userPlans;
-userPlans.pushBack(\"Standard\");
-userPlans.pushBack(\"Sales\");
+userPlans.pushBack("Standard");
+userPlans.pushBack("Sales");
 String first = userPlans.first();
 printLine(first); //prints Standard
 ```
@@ -87,7 +87,7 @@ Void {instance}.fromJsonString(String json)
 
 ```crmscript
 String[] strings;
-strings.fromJsonString('[\"Alpha\", \"Beta\", \"Charlie\"]');
+strings.fromJsonString('["Alpha", "Beta", "Charlie"]');
 ```
 
 ## insert
@@ -102,12 +102,12 @@ Void {instance}.insert(Integer index, {type} value)
 
 ```crmscript
 String[5] userPlans;
-userPlans.pushBack(\"Enterprise\");
-userPlans.pushBack(\"Standard\");
-userPlans.insert(0, \"Marketing\");
-userPlans.insert(1, \"Sales\");
+userPlans.pushBack("Enterprise");
+userPlans.pushBack("Standard");
+userPlans.insert(0, "Marketing");
+userPlans.insert(1, "Sales");
 printLine(userPlans.toJsonString());
-//prints [\"Marketing\",\"Sales\",\"Enterprise\",\"Standard\"]
+//prints ["Marketing","Sales","Enterprise","Standard"]
 ```
 
 ## last
@@ -122,8 +122,8 @@ Returns the last array element, same as [length() -1].
 
 ```crmscript
 String[] userPlans;
-userPlans.pushBack(\"Standard\");
-userPlans.pushBack(\"Sales\");
+userPlans.pushBack("Standard");
+userPlans.pushBack("Sales");
 String last = userPlans.last();
 printLine(last);
 //prints Sales
@@ -141,10 +141,10 @@ Integer {instance}.length()
 
 ```crmscript
 String[] userPlans;
-userPlans.pushBack(\"Standard\");
-userPlans.pushBack(\"Sales\");
+userPlans.pushBack("Standard");
+userPlans.pushBack("Sales");
 Integer arrLength = userPlans.length()
-printLine(\"Array length: \" + userPlans.length().toString());
+printLine("Array length: " + userPlans.length().toString());
 //prints Array length: 2
 ```
 
@@ -160,10 +160,10 @@ Removes and returns the last element from the array.
 
 ```crmscript
 String[4] userPlans;
-userPlans[0] = \"Standard\";
-userPlans[1] = \"Marketing\";
-userPlans[2] = \"Sales\";
-userPlans[3] = \"Service\";
+userPlans[0] = "Standard";
+userPlans[1] = "Marketing";
+userPlans[2] = "Sales";
+userPlans[3] = "Service";
 String plan = userPlans.popBack();
 printLine(plan);
 //prints Service
@@ -181,10 +181,10 @@ Removes and returns the first element in the array.
 
 ```crmscript
 String[4] userPlans;
-userPlans[0] = \"Standard\";
-userPlans[1] = \"Marketing\";
-userPlans[2] = \"Sales\";
-userPlans[3] = \"Service\";
+userPlans[0] = "Standard";
+userPlans[1] = "Marketing";
+userPlans[2] = "Sales";
+userPlans[3] = "Service";
 String plan = userPlans.popFront();
 printLine(plan);
 //prints Standard
@@ -202,13 +202,13 @@ Void {instance}.pushBack()
 
 ```crmscript
 String[4] userPlans;
-userPlans[0] = \"Standard\";
-userPlans[1] = \"Marketing\";
-userPlans[2] = \"Sales\";
-userPlans[3] = \"Service\";
+userPlans[0] = "Standard";
+userPlans[1] = "Marketing";
+userPlans[2] = "Sales";
+userPlans[3] = "Service";
 userPlans.pushBack();
 printLine(userPlans.toJsonString());
-//prints [\"Standard\",\"Marketing\",\"Sales\",\"Service\",\"\"]
+//prints ["Standard","Marketing","Sales","Service",""]
 ```
 
 ## pushBack({type})
@@ -223,13 +223,13 @@ Void {instance}.pushBack({type} value)
 
 ```crmscript
 String[4] userPlans;
-userPlans[0] = \"Standard\";
-userPlans[1] = \"Marketing\";
-userPlans[2] = \"Sales\";
-userPlans[3] = \"Service\";
-userPlans.pushBack(\"Enterprise\");
+userPlans[0] = "Standard";
+userPlans[1] = "Marketing";
+userPlans[2] = "Sales";
+userPlans[3] = "Service";
+userPlans.pushBack("Enterprise");
 printLine(userPlans.toJsonString());
-//prints [\"Standard\",\"Marketing\",\"Sales\",\"Service\",\"Enterprise\"]
+//prints ["Standard","Marketing","Sales","Service","Enterprise"]
 ```
 
 ## pushFront
@@ -244,13 +244,13 @@ Void {instance}.pushFront()
 
 ```crmscript
 String[4] userPlans;
-userPlans[0] = \"Standard\";
-userPlans[1] = \"Marketing\";
-userPlans[2] = \"Sales\";
-userPlans[3] = \"Service\";
+userPlans[0] = "Standard";
+userPlans[1] = "Marketing";
+userPlans[2] = "Sales";
+userPlans[3] = "Service";
 userPlans.pushFront();
 printLine(userPlans.toJsonString());
-//prints [\"\",\"Standard\",\"Marketing\",\"Sales\",\"Service\"]
+//prints ["","Standard","Marketing","Sales","Service"]
 ```
 
 ## pushFront({type})
@@ -265,11 +265,11 @@ Void {instance}.pushFront({type} value)
 
 ```crmscript
 String[4] userPlans;
-userPlans[0] = \"Standard\";
-userPlans[1] = \"Marketing\";
-userPlans[2] = \"Sales\";
-userPlans[3] = \"Service\";
-userPlans.pushFront(\"Enterprise\");printLine(userPlans.buildString(\",\"));
+userPlans[0] = "Standard";
+userPlans[1] = "Marketing";
+userPlans[2] = "Sales";
+userPlans[3] = "Service";
+userPlans.pushFront("Enterprise");printLine(userPlans.buildString(","));
 //prints Enterprise,Standard,Marketing,Sales,Service
 ```
 
@@ -289,7 +289,7 @@ ints.pushBack(8);
 ints.pushBack(2);
 ints.pushBack(4);
 ints.sort();
-printLine(ints.buildString(\",\"));
+printLine(ints.buildString(","));
 //prints 2,4,8
 ```
 
@@ -305,9 +305,9 @@ String {instance}.toJsonString()
 
 ```crmscript
 String[] strings;
-strings.pushBack(\"Alpha\");
-strings.pushBack(\"Beta\");
-strings.pushBack(\"Charlie\");
+strings.pushBack("Alpha");
+strings.pushBack("Beta");
+strings.pushBack("Charlie");
 String json = strings.toJsonString();
-//prints [\"Alpha\",\"Beta\",\"Charlie\"]
+//prints ["Alpha","Beta","Charlie"]
 ```

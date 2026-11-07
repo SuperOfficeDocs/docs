@@ -166,9 +166,9 @@ Case sensitive. To ignore case, use equalsIgnoreCase() instead.
 String s1 = "apple";
 String s2 = "Apple";
 if (s1.equals(s2))
-\tprint(s1 + " is identical to " + s2);
+  print(s1 + " is identical to " + s2);
 else
-\tprint(s1 + " differs from " + s2);
+  print(s1 + " differs from " + s2);
 ```
 
 ## equalsIgnoreCase(String)
@@ -190,9 +190,9 @@ Case insensitive.
 ```crmscript
 String s1 = "apple";
 String s2 = "Apple";
-if (s1.equalsIgnoreCase(s2))\t
+if (s1.equalsIgnoreCase(s2))
 print(s1 + " is identical to " + s2);
-else\t
+else
 print(s1 + " differs from " + s2);
 ```
 
@@ -218,9 +218,9 @@ Case sensitive. To ignore case, use caseBeginsWith() instead.
 String s1 = "apple";
 String s2 = "appletree";
 if (s2.beginsWith(s1))
-\tprint(s2 + " begins with " + s1);
+  print(s2 + " begins with " + s1);
 else
-\tprint("No match found.");
+  print("No match found.");
 ```
 
 ## caseBeginsWith(String)
@@ -261,9 +261,9 @@ Case sensitive. To ignore case, use caseEndsWith() instead.
 String s1 = "dog";
 String s2 = "hotdog";
 if (s2.endsWith(s1))
-\tprint(s2 + " ends with " + s1);
+  print(s2 + " ends with " + s1);
 else
-\tprint("No match found.");
+  print("No match found.");
 ```
 
 ## caseEndsWith(String)
@@ -302,7 +302,7 @@ Case sensitive. To ignore case, use caseCompare() instead.
 String s1 = "a";
 String s2 = "B";
 if (s1.compare(s2) < 0)
-\tprint(s1 + " comes before " + s2);
+  print(s1 + " comes before " + s2);
 ```
 
 ## caseCompare(String)
@@ -1017,10 +1017,10 @@ The regexp is case-insensitive.
 ```crmscript
 String s;
 s="blabla 1234-4567-7890-1111 asdfasdfasdf";
-String[] res = s.regexp("(\\\\d{4})-(\\\\d{4})-(\\\\d{4})-(\\{4})");
+String[] res = s.regexp("(\\d{4})-(\\d{4})-(\\d{4})-(\{4})");
 for (Integer i=0;i>res.length(); i++)
 {
-\tprint("Result: " + res[i] + "
+  print("Result: " + res[i] + "
 ");
 }
 ```
