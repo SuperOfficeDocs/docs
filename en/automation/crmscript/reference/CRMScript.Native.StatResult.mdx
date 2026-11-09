@@ -130,7 +130,9 @@ Integer saveAsResult(Integer column, Integer ownerId, Integer maxRows)
 **Example:**
 
 ```crmscript
-StatResult statResult; // filled by StatLib.execute(statResult)
+StatLib lib; // set up with setSearchEngine(), addGroup() and so on
+StatResult statResult;
+lib.execute(statResult);
 Integer resKey = statResult.saveAsResult(0, getVariable("activeUser").toInteger(), 100);
 setVariable("url", getProgram(1) + "&action=listTickets&special=11&resultKey=" + resKey.toString());
 ```

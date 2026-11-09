@@ -188,9 +188,11 @@ Integer getFlags()
 ```crmscript
 ExtraFieldsInfo extraField;
 extraField.getExtraFields("ticket");
-FHBitSet flags;
-flags.set(extraField.getFlags());
-flags.getBitNo(17);  // returns true if the extra field cannot be empty
+if (!extraField.eof()) {
+  FHBitSet flags;
+  flags.set(extraField.getFlags());
+  flags.getBitNo(17);  // returns true if the extra field cannot be empty
+}
 ```
 
 ## getName()
