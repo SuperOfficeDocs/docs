@@ -2,7 +2,7 @@
 title: Sales Assistant Agent (beta)
 sidebarTitle: Sales Assistant Agent
 description: Get a daily, prioritized next step for the open sales that need attention, with every action approved by you before anything changes in SuperOffice.
-keywords: ['AI agent', 'next step', 'recommendation', 'sales pipeline', 'stalled sale', 'close date', 'beta']
+keywords: ['AI agent', 'next step', 'sales pipeline', 'stalled sale', 'sale date']
 author: digitaldiina
 date: 11.09.2026
 so_version: 12.6
@@ -28,27 +28,27 @@ import SalesAssistantAgentBetaNote from "../../../snippets/ai/sales-assistant-ag
 
 <SalesAssistantAgentBetaNote />
 
-The Sales Assistant Agent watches your own open sales and tells you which ones need attention. Once a day, or whenever you ask about a specific sale, it compares each sale with how similar sales were won in the past. For every sale that needs a decision, it proposes one clear next step, for example a follow-up appointment, a new sale date, or a quote to draft. Nothing is done until you approve it.
+The Sales Assistant Agent watches your own open sales and tells you which ones need attention. Once a day, or whenever you ask about a specific sale, it compares each sale with similar sales that were won. For every sale that needs a decision, it proposes one clear next step, for example a follow-up, a new sale date, or a quote to draft.
 
 ## What the agent does for you
 
-* **Watches your pipeline daily:** surfaces a sale only when something needs a decision: its sale date has passed, it is taking longer than similar sales usually do, it is stalled, its next activity is overdue or missing, or the customer has an open high-priority request.
+* **Watches your pipeline daily:** it raises a sale only when something needs a decision, such as a sale date that has passed, a sale that takes longer than usual, a stalled sale, an overdue or missing next activity, or an open high-priority request for the customer.
 
-* **Learns from real sales:** looks at how sales like this one are usually won, for example how many activities it takes and how soon contact starts, and at common reasons similar sales were lost or stalled.
+* **Learns from real sales:** it looks at how similar sales were won, for example how many activities it took and how soon the first one happened. It also looks at common reasons why similar sales were lost or stalled.
 
-* **Recommends one next step:** a follow-up appointment, rescheduling an overdue activity, adding a stakeholder, drafting a quote, updating a sale date that has passed, or closing the sale as sold or lost. The reasoning is shown alongside.
+* **Recommends one next step:** for example a follow-up, rescheduling an overdue activity, adding a stakeholder, drafting a quote, updating a sale date that has passed, or closing the sale as sold or lost. The reasoning is shown alongside.
 
-* **Remembers your decisions:** a recommendation you approved or rejected does not come back for the same sale unless something material changes or enough time has passed.
+* **Remembers your decisions:** after you approve or reject a recommendation, it does not raise the same sale again until the sale changes or a waiting period has passed.
 
 <Note>
-The agent proposes. You decide. It never contacts a customer: quotes are created empty, and appointments are created for you to confirm and send. The only thing the agent writes on its own is an attention flag on sales that are approaching or past their usual timeline. The flag is not cleared automatically. Everything else waits for your approval. The agent works only from your own SuperOffice data. There is no web search or external enrichment.
+The agent proposes. You decide. It never contacts a customer: quotes are created empty, and follow-ups are created without sending any invitations. The only thing the agent writes on its own is an attention flag on sales that are approaching or past their usual timeline. The flag is not cleared automatically. The agent works only from your own SuperOffice data. There is no web search or external enrichment.
 </Note>
 
 ## Schedule
 
 The agent runs **Daily**, once a day at a system-assigned time. You control how many recommendations it creates each day with **Max tasks per day**.
 
-Each run looks at your 100 most recently registered sales and reviews the open and stalled ones among them, so an older open sale may not be reviewed. If 20 recommendations are already waiting for your decision, the run adds no new ones until you have handled some.
+Each run looks at your 100 most recently registered sales and reviews the open and stalled ones among them. Older sales are not reviewed. If 20 recommendations are already waiting for your decision, the run adds no new ones until you have handled some.
 
 ## Activate the agent {#setup}
 
@@ -80,7 +80,7 @@ Setup is a single step. You are automatically the approver, and you can create o
     | My team's won deals | Your team's won sales. |
     | All won deals | Every won sale in your organization. |
     | The sale guide only | The [sales guide][1] for the sale type. Timing is not compared with past sales. |
-    | My own guidance | A text you write (up to 2,000 characters), for example *Prioritize sales over 100k; always involve a technical contact*. Timing is not compared with past sales. |
+    | My own guidance | A text you write (up to 2000 characters), for example *Prioritize sales over 100k; always involve a technical contact*. Timing is not compared with past sales. |
     | Selection of successful sales | The won sales in one of your own saved selections. |
 
     Reasons why similar sales were lost or stalled are only used with the first three options.
@@ -93,11 +93,11 @@ Setup is a single step. You are automatically the approver, and you can create o
 
 ## How recommendations work {#recommendations}
 
-On each run, the agent scores your open sales against similar won sales, both on total age and on time in the current stage. On-track sales are left alone. It looks at:
+On each run, the agent compares your open sales with similar won sales, both on total age and on time in the current stage. Sales that are on track are left alone. It looks at:
 
-* **Sale age and stage timing:** a sale is approaching its usual time when it is older than 7 in 10 similar won sales, and past it when it is older than 9 in 10. Stages that won sales usually pass in under a week are not checked.
+* **Sale age and stage timing:** a sale is approaching its usual timeline when it has been open longer than 7 out of 10 similar won sales were. It is past its usual timeline when it has been open longer than 9 out of 10. Time in a stage is not checked if won sales usually complete that stage in less than a week.
 
-* **Completed activities:** calls, meetings, and to-dos that actually happened, so it knows when you last made contact and does not suggest something already done.
+* **Completed activities:** calls, meetings, and to-dos that actually happened. This tells the agent when you last reached out to the customer, so it does not suggest something already done.
 
 * **The sale date:** whether it has passed or, with reminders on, is coming up soon.
 
@@ -127,36 +127,40 @@ When more sales need attention than your **Max tasks per day** allows, the highe
 
     * The sale's name, contact, and company.
     * Key facts: **Sale type**, **Amount**, **Stage**, and **Days in stage**.
-    * **Why this deal:** a plain-language reason the sale was picked.
-    * **Recommended actions:** one block per step, listing exactly what will be written to SuperOffice. Sometimes a supporting action, such as booking a follow-up or adding a stakeholder, comes with the main step.
+    * **Why this deal**, a plain-language reason the sale was picked.
+    * **Recommended actions**, one block per step, listing exactly what will be written to SuperOffice. Sometimes a supporting action, such as adding a follow-up or a stakeholder, comes with the main step.
 
 1. Optionally, ask the agent in chat about the recommendation before you decide.
 
 1. Select **Approve** or **Reject**. The buttons apply to every action on the card.
 
-1. If the recommendation books or moves a date, keep the suggested date in the confirmation or pick another day. The time of day stays the same.
+1. If the recommendation sets or changes a date, keep the suggested date in the confirmation or pick another day. The time of day stays the same.
 
     You cannot change the date when you approve several recommendations at once.
 
 ### What approving does
 
+The first column shows the action's title on the recommendation card.
+
 | Recommended action | What happens when you approve |
 |---|---|
-| Create appointment | Creates a phone call, meeting, or to-do on the sale (a suggested email becomes a to-do), in working hours 09:00-17:00, at least five business days out. |
-| Reschedule overdue appointment | Moves the sale's overdue activity to a new date, at least five business days out. No second activity is created. |
-| Add stakeholder | Adds the sale's existing contact to its [stakeholders][2]. The agent never adds a contact that is not already on the sale. |
+| Create appointment | Adds a follow-up to the sale: a phone call, meeting, or to-do (a suggested email becomes a to-do). It is placed in working hours 09:00-17:00, at least five business days ahead. |
+| Reschedule overdue appointment | Moves the sale's overdue follow-up to a new date, at least five business days ahead. No new follow-up is created. |
+| Add stakeholder | Adds the sale's contact to its [stakeholders][2]. The agent never adds a contact that is not already on the sale. |
 | Create draft quote | Creates an empty [quote][3] draft on the sale, for you to price and send. Nothing is added if the sale already has a quote. |
-| Update sale date | Offered when the sale date has passed. Sets the sale date to when similar won sales usually close, at least ten business days out, and books a follow-up at least five business days out. Reopens the sale if it was stalled. |
-| Close as won | Marks the sale as sold, with the date set to the day you approve. |
-| Close as lost | Marks the sale as lost with the suggested reason. If that reason is not in your company's list, the sale is closed without a reason. The date is set to the day you approve. |
+| Update sale date | Offered when the sale date has passed. Sets the sale date to when similar won sales usually close, at least ten business days ahead, and adds a follow-up at least five business days ahead. Reopens the sale if it was stalled. |
+| Close as won | Sets the sale to **Sold**, dated the day you approve. |
+| Close as lost | Sets the sale to **Lost** with the suggested reason, dated the day you approve. If that reason is not in your company's list, the sale is closed without a reason. |
 
 <Warning>
-**Closing a sale cannot be undone from the agent.** The sale leaves your open pipeline as soon as you approve. The agent only proposes this with clear evidence in your CRM history, never just because a sale has gone quiet. To reverse it, [update the sale][4] directly.
+**Closing a sale cannot be undone from the agent.** The agent only suggests this with clear evidence in your CRM history, never just because a sale has gone quiet. To reverse it, [update the sale][4] directly.
 </Warning>
 
 When you approve, the agent confirms in chat what was created, or explains what could not be created so you can add it manually. If a card has two actions and only the first succeeds, the first is kept.
 
-When you reject, nothing is written to SuperOffice. The agent does not suggest anything for that sale again until it falls further behind, moves to another stage, passes its sale date, or 14 days pass.
+When you reject, nothing is written to SuperOffice. The agent does not suggest anything for that sale again until the sale falls further behind, moves to another stage, or passes its sale date, or until 14 days have passed.
+
+After you approve, the sale comes back two days after the follow-up was due, two days after the new sale date, or 14 days after approval if nothing was added. It comes back sooner if the sale changes.
 
 ## Ask about a specific sale
 
@@ -166,9 +170,9 @@ When you reject, nothing is written to SuperOffice. The agent does not suggest a
 
     If something needs attention, the agent creates a recommendation in that sale's own thread, just like the daily run. If the sale is on track, it says so.
 
-Recommendations you ask for count toward **Max tasks per day**. Chat looks at the same 100 most recently registered sales as the daily run, so it may not find an older sale.
+Recommendations you ask for count toward **Max tasks per day**. Chat looks at the same 100 most recently registered sales as the daily run, so it does not find older sales.
 
-You can also ask the agent in chat to create or update a sale, book a follow-up, add a sales guide step, register a request, close a sale as sold or lost, or search for a company. It asks you to confirm each one, but there is no approval card. Looking up a sale's details or asking for a summary of your pipeline creates no task.
+You can also ask the agent in chat to create or update a sale, add a follow-up, add a sales guide step, register a request, close a sale as sold or lost, or search for a company. It asks you to confirm each one, but there is no approval card. Looking up a sale's details or asking for a summary of your pipeline creates no task.
 
 ## The agent workspace {#workspace}
 
@@ -186,15 +190,11 @@ To change the description, language, **Max tasks per day**, what recommendations
 
 ## Tips and troubleshooting
 
-**Will it contact my customers?** No. Quotes are created empty and appointments are created but not sent. You always finish and send anything customer-facing yourself.
-
 **Why do I not see a score?** By design, the card shows the recommended action and its reasoning, not a numeric score or confidence percentage.
 
 **Can I decide on several recommendations at once?** Yes. Select multiple pending recommendations and use **Approve** or **Reject** from the bulk panel.
 
 **What happens to a recommendation I do not get to in time?** A pending recommendation expires after 14 days. Once it is within 5 days of expiring, a countdown banner appears on its thread. Nothing changes in SuperOffice for an expired recommendation, and the agent may suggest the sale again on a later run.
-
-**I approved a recommendation. Why is the sale quiet now?** The sale comes back two days after the follow-up it created was due, two days after the new sale date, or 14 days after approval if nothing was booked. It comes back sooner if the sale's situation changes.
 
 **I deactivated the instance and my pending recommendations are gone.** Deactivating an instance discards any recommendations awaiting approval, as described in [Set up AI agents][5]. Approve or reject what you need first.
 
