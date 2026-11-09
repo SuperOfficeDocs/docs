@@ -5,7 +5,7 @@ sidebarTitle: Add CRM data to events
 description: Link a meeting you're scheduling, or an existing calendar event, to SuperOffice contacts and companies so Synchronizer writes it to SuperOffice.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'calendar', 'meeting', 'event', 'appointment', 'CRM data', 'Synchronizer', 'auto save', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 11.05.2026
+date: 11.09.2026
 version_sofo: 6.4.12
 content_type: howto
 category: integration
@@ -57,9 +57,10 @@ When you select a value in a field, a spinner appears, and then **Saved** shows 
 
 1. Add people to the **Invite attendees** field in Outlook.
 
-    * If an attendee is stored in SuperOffice, their details appear, and **Contact or Company** is filled in automatically.
-    * If a contact is found but **Contact or Company** isn't filled in, several contacts in SuperOffice share the same email address. Click **Select contact** and choose the correct one.
-    * If no contact is found, select **Click to add new contact** and enter the required details.
+    If SuperOffice finds one matching contact, the **Contact or Company** field fills in automatically.
+
+    * If several contacts in SuperOffice share the attendee's email address, click **Select contact** and choose the correct one.
+    * If the attendee isn't in SuperOffice, select **Click to add new contact**. See [Select or add a contact][5].
 
         ![SuperOffice for Outlook, unknown contact -screenshot][img1]
 
@@ -71,7 +72,7 @@ When you select a value in a field, a spinner appears, and then **Saved** shows 
 
     SuperOffice adds the contact to the event.
 
-1. To link the event to a different company or contact, select it in **Contact or Company**.
+1. To link the event to a different contact or company, use **Contact or Company**.
 
     <StepFindContactOrCompany />
 
@@ -107,6 +108,7 @@ Events created in SuperOffice and synchronized to Outlook are view-only in Outlo
 [2]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
 [3]: ./shared-mailboxes
 [4]: #auto-save
+[5]: ./add-contact-to-superoffice
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-unknown-contact.png
 [img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png

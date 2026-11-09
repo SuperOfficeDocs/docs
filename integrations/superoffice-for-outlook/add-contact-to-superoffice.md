@@ -4,7 +4,7 @@ title: Select or add a contact
 description: Check which SuperOffice contact an email's sender is matched to, choose the correct one, or add a new contact.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'add contact', 'select contact', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 11.05.2026
+date: 11.09.2026
 version_sofo: 6.4.12
 content_type: howto
 category: integration
