@@ -46,7 +46,7 @@ Agenten föreslår. Du bestämmer. Den kontaktar aldrig en kund: offerter skapas
 
 ## Schema
 
-Agenten körs **Dagligen**, en gång om dagen vid en systemtilldelad tidpunkt. Du styr hur många rekommendationer den skapar varje dag med **Max uppgifter per dag**.
+Agenten körs **Dagligen**, en gång om dagen vid en systemtilldelad tidpunkt. Du styr hur många rekommendationer den skapar varje dag med **Max antal uppgifter per dag**.
 
 Varje körning tittar på dina 100 senast registrerade försäljningar och granskar de öppna och pausade bland dem. Äldre försäljningar granskas inte. Om 20 rekommendationer redan väntar på ditt beslut lägger körningen inte till några nya förrän du har hanterat några av dem.
 
@@ -70,28 +70,28 @@ Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan sk
 
 1. Ange ett unikt **Namn** för agentinstansen. **Detta kan inte ändras efter aktivering.**
 
-    ![Sales Assistant Agents allmänna inställningar, med Max uppgifter per dag, Base recommendations on och påminnelseinställningarna -screenshot][img2]
+    ![Sales Assistant Agents allmänna inställningar, med Max antal uppgifter per dag, Basera rekommendationerna på och påminnelseinställningarna -screenshot][img2]
 
 1. Redigera vid behov den föreslagna **Beskrivningen** om du vill ha något annat.
 
 1. Välj **Rapporteringsspråk**. Detta påverkar både rekommendationer och chattsvar. Standardvärdet är engelska.
 
-1. Välj hur många rekommendationer agenten skapar per dag (upp till 30). Standardvärdet för **Max uppgifter per dag** är 10.
+1. Välj hur många rekommendationer agenten skapar per dag (upp till 30). Standardvärdet för **Max antal uppgifter per dag** är 10.
 
-1. Välj vad du vill **Base recommendations on**. Standardvärdet är **My own won deals**.
+1. Välj vad du vill **Basera rekommendationerna på**. Standardvärdet är **Mina vunna försäljningar**.
 
     | Alternativ | Vad agenten lär sig av |
     |---|---|
-    | My own won deals | Dina egna vunna försäljningar. |
-    | My team's won deals | Ditt teams vunna försäljningar. |
-    | All won deals (whole organisation) | Alla vunna försäljningar i din organisation. |
-    | The sale guide only | [Säljguiden][1] för försäljningstypen. Tidsåtgången jämförs inte med tidigare försäljningar. |
-    | My own guidance | En text som du skriver (upp till 2000 tecken), till exempel *Prioritera försäljningar över 100 000, involvera alltid en teknisk kontakt*. Tidsåtgången jämförs inte med tidigare försäljningar. |
-    | Selection of successful sales | De vunna försäljningarna i ett av dina egna sparade urval. |
+    | Mina vunna försäljningar | Dina egna vunna försäljningar. |
+    | Min grupps vunna försäljningar | Ditt teams vunna försäljningar. |
+    | Alla vunna försäljningar (hela organisationen) | Alla vunna försäljningar i din organisation. |
+    | Endast säljguiden | [Säljguiden][1] för försäljningstypen. Tidsåtgången jämförs inte med tidigare försäljningar. |
+    | Mina egna riktlinjer (text) | En text som du skriver (upp till 2000 tecken), till exempel *Prioritera försäljningar över 100 000, involvera alltid en teknisk kontakt*. Tidsåtgången jämförs inte med tidigare försäljningar. |
+    | Urval av framgångsrika försäljningar | De vunna försäljningarna i ett av dina egna sparade urval. |
 
     Oavsett vad du väljer tar rekommendationerna också hänsyn till varför liknande försäljningar förlorades eller pausades.
 
-1. Aktivera vid behov **Remind me about approaching dates** för att även flagga en försäljning vars försäljningsdatum närmar sig, även när inget annat är fel. Välj sedan **Remind me this many business days ahead** (1-14). Standardvärdet är 3. Arbetsdagar hoppar över helger, men inte helgdagar.
+1. Aktivera vid behov **Påminn mig om datum som närmar sig** för att även flagga en försäljning vars försäljningsdatum närmar sig, även när inget annat är fel. Välj sedan **Påminn mig så här många arbetsdagar i förväg** (1-14). Standardvärdet är 3. Arbetsdagar hoppar över helger, men inte helgdagar.
 
 1. Klicka på **Spara**.
 
@@ -121,7 +121,7 @@ Ett försäljningsdatum som har passerats flaggas alltid, och prioriteten höjs 
 
 Varje rekommendation har en prioritet: **High**, **Normal** eller **Low**. Större försäljningar flyttas upp en nivå och mindre ner en nivå, jämfört med dina andra öppna försäljningar. En strategisk kund vars försäljning är pausad, har en försenad aktivitet eller har ett öppet ärende med hög prioritet flyttas också upp. Det gör även ett försäljningsdatum som närmar sig när påminnelser är aktiverade.
 
-När fler försäljningar behöver uppmärksamhet än vad **Max uppgifter per dag** tillåter kommer den högsta prioriteten först, därefter det högsta beloppet. Resten väntar på en senare körning.
+När fler försäljningar behöver uppmärksamhet än vad **Max antal uppgifter per dag** tillåter kommer den högsta prioriteten först, därefter det högsta beloppet. Resten väntar på en senare körning.
 
 ## Granska och godkänn rekommendationer {#review}
 
@@ -178,29 +178,29 @@ När du har godkänt kommer försäljningen tillbaka två dagar efter att uppfö
 
     Om något behöver uppmärksamhet skapar agenten en rekommendation i den försäljningens egen tråd, precis som vid den dagliga körningen. Om försäljningen ligger i fas säger den det.
 
-Rekommendationer som du ber om räknas mot **Max uppgifter per dag**. Chatten tittar på samma 100 senast registrerade försäljningar som den dagliga körningen, så den hittar inte äldre försäljningar.
+Rekommendationer som du ber om räknas mot **Max antal uppgifter per dag**. Chatten tittar på samma 100 senast registrerade försäljningar som den dagliga körningen, så den hittar inte äldre försäljningar.
 
 Du kan också be agenten i chatten att skapa eller uppdatera en försäljning, lägga till en uppföljning, lägga till ett steg i säljguiden, registrera ett ärende, avsluta en försäljning som såld eller förlorad, eller söka efter ett företag. Den ber dig bekräfta varje åtgärd, men det finns inget godkännandekort. Att slå upp en försäljnings uppgifter eller be om en sammanfattning av din pipeline skapar ingen uppgift.
 
 ## Agentens arbetsyta {#workspace}
 
-Sales Assistant Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Prestanda**.
+Sales Assistant Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Resultat**.
 
 | Flik | Beskrivning |
 |---|---|
 | Chatt | En **Allmän chatt**-tråd plus en tråd per försäljning som agenten har flaggat. |
 | Historik | En logg i klartext över vad agenten har gjort: hur många öppna försäljningar varje körning granskade, varje rekommendation och om den godkändes, avvisades eller förföll, allt som hoppades över (med orsak) och varje ändring som gjorts via chatten. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. |
-| Prestanda | Föreslagna, godkända, ignorerade och förfallna rekommendationer under de senaste 7, 30 eller 90 dagarna. Godkända rekommendationer räknas som godkända och avvisade som ignorerade. |
+| Resultat | Föreslagna, godkända, ignorerade och förfallna rekommendationer under de senaste 7, 30 eller 90 dagarna. Godkända rekommendationer räknas som godkända och avvisade som ignorerade. |
 
 ![Tråden Allmän chatt, med agentens välkomstmeddelande -screenshot][img4]
 
 ![Fliken Historik, med filtret Period och en slutförd körning -screenshot][img5]
 
-![Fliken Prestanda, med måttet Recommendations Proposed -screenshot][img6]
+![Fliken Resultat, med måttet Recommendations Proposed -screenshot][img6]
 
 Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> för att hämta de senaste posterna.
 
-Om du vill ändra beskrivningen, språket, **Max uppgifter per dag**, vad rekommendationerna baseras på eller påminnelseinställningarna [redigerar du instansen][5]. Namnet och schemat är fasta. Ändringar gäller från nästa körning. Endast instansens ägare kan ändra dess inställningar eller radera den.
+Om du vill ändra beskrivningen, språket, **Max antal uppgifter per dag**, vad rekommendationerna baseras på eller påminnelseinställningarna [redigerar du instansen][5]. Namnet och schemat är fasta. Ändringar gäller från nästa körning. Endast instansens ägare kan ändra dess inställningar eller radera den.
 
 ## Tips och felsökning
 
