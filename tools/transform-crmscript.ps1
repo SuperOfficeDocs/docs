@@ -270,7 +270,7 @@ function ConvertFrom-YamlDoubleQuoted {
             't' { return "`t" }
             'r' { return "`r" }
             '0' { return [string][char]0 }
-            { $_ -in 'x', 'u' } { return [string][char][Convert]::ToInt32($e.Substring(1), 16) }
+            { $_ -cin 'x', 'u' } { return [string][char][Convert]::ToInt32($e.Substring(1), 16) }
             'U' { return [char]::ConvertFromUtf32([Convert]::ToInt32($e.Substring(1), 16)) }
             default { return $e }
         }
