@@ -1,29 +1,37 @@
 ---
 uid: help-en-extra-table-create
-title:  Add extra table
-description: How to define extra tables in SuperOffice
-keywords: ['custom object', '3rd-party table', 'System design']
+title: Add a custom object
+sidebarTitle: Add custom object
+description: Create a custom object (extra table) in Settings and maintenance, choose its icon, and show it in the Navigator.
+keywords: ['custom object', 'extra table', 'third-party table', 'system design', 'icon', 'navigator']
 author: Bergfrid Dias, Eivind Fasting
-date: 12.10.2025
-so_version: 11
+date: 11.09.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/custom-objects/learn/extra-table/create
 userflow_index: true
+related:
+  - Add extra fields: /en/custom-objects/admin/create-extra-field
+  - Set access rights for custom objects: /en/custom-objects/admin/access-rights
+  - Custom objects: /en/custom-objects/learn/extra-table
 language: en
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 
-You can create extra database tables to register different types of data in SuperOffice. After you create the table and [add extra fields][1] to it, you can open the table to add content.
+<ReqGrowthCustomObjects />
+
+A [custom object][3] is a new type of record, such as *Equipment* or *Contract*. In the database, it is an extra table. You create the table, [add fields][1] to it, and decide how users find it.
 
 ## Steps
 
 1. <GotoTables />
 
-1. Click **New table**.
+1. Select **New table**.
 
     ![Create extra table -screenshot][img1]
 
@@ -31,23 +39,55 @@ You can create extra database tables to register different types of data in Supe
 
     * Enter a *name* to be used as the label.
     * Enter a *database table* beginning with **y_** to identify it in the schema.
-    * Optionally set other properties. Se details about the fields below.
+    * Optionally set other properties. See [table properties](#properties).
 
     <Note>
     Some table properties cannot be set until you have added fields.
     </Note>
 
-1. Click **OK** to save the new table (runs `create table y_mynewtable ...`).
+1. Select **OK** to save the new table (runs `create table y_mynewtable ...`).
 
 1. [Add fields to your new table][1].
 
-1. Optionally, adjust table properties such as sort order. (Click the table name in the list to enter edit mode.)
+1. Select the table name in the list to open its properties again, and set the properties that need fields, such as **Sort order** and **Display field**.
 
-1. Click **Restart NetServer**. If Travel is activated, you will also see a message that a new Travel database must be generated.
+1. [Choose an icon](#icon) and [show the custom object in the Navigator](#navigator).
 
-You can now open the table in the UI to add content to it **or** populate it via the APIs.
+1. Select **Restart NetServer**. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
-## Table properties
+1. [Set access rights][4] for the roles that should work with the custom object.
+
+Users can now create records of the custom object. You can also add records through the APIs.
+
+## Choose an icon {#icon}
+
+The icon is shown in the Navigator, the custom objects list, context menus, the webhook event list, and the Screen Designer.
+
+1. Open the table properties and select **Icon**.
+
+1. In the **Select icon** dialog, choose an icon:
+
+    * **Default icons**: a selection of common icons.
+    * **Full icon library**: search the full library, or browse by category.
+    * **Custom icons**: upload your own SVG file, up to 50 KB.
+
+1. Select **Apply icon**.
+
+To go back to the default icon, select **Remove icon**.
+
+![Select icon dialog with the Default icons, Full icon library, and Custom icons tabs -screenshot][img2]
+
+## Show the custom object in the Navigator {#navigator}
+
+TODO(label): name and location of the option.
+
+When this option is selected, the custom object is listed in the Navigator and under **New** in the top bar. Users can search its records, and the records are added to history and favorites like other records.
+
+{/*
+TODO(screenshot): table-properties-navigator.png
+*/}
+
+## Table properties {#properties}
 
 | Property | Description |
 |---|---|
@@ -64,13 +104,23 @@ You can now open the table in the UI to add content to it **or** populate it via
 | Full name |  If this is a hierarchical table, this field can specify a field that is automatically updated with the entry's full name based on the name field for this entry, and all parent entries. |
 | Hide ID field | If selected, the ID field will not be shown when listing entries in the table. |
 | Hide the table | If selected, the table will not be visible from **System design** > **Tables**. |
+| Icon | The icon shown for the custom object. See [choose an icon](#icon). |
 | Enable batch webhook in Service | If selected, batch updates on this table will trigger [webhooks][2]. |
 
-## Show table in a web panel
+## Next steps
 
-In SuperOffice you can create web panels that can contain table information. To set the relevant access rights, the user must belong to a role that has the functional rights **List tables** and **Edit tables**.
+* [Design the layout][5] of the custom object in the Screen Designer.
+* [Pre-fill fields][6] with a trigger when a record is opened.
+
+For extra tables shown in web panels, see [extra tables in web panels][7] in the documentation for version 11.
 
 [1]: ./create-extra-field
 [2]: /en/automation/webhook/dev/index
+[3]: ../learn/extra-table
+[4]: ./access-rights
+[5]: /en/customization/screen-designer/admin/add-layout#custom-objects
+[6]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
+[7]: https://help.superoffice.com/docs/11/en/custom-objects/admin/create-extra-table.html
 
 [img1]: /media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img2]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png

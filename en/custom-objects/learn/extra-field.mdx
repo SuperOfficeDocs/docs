@@ -4,8 +4,8 @@ title: Extra fields
 description: An extra field is a custom field that you add to an existing SuperOffice database table in Service.
 keywords: ['extra field', 'custom field', 'field types', 'url', 'clickable link', 'link in extra field']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.09.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
@@ -30,7 +30,7 @@ An *extra field* is a custom field that you add to an existing SuperOffice datab
 * Message
 * Request
 * User
-* Your [custom tables][6]
+* [Custom objects][6]
 
 <Note>
 Extra fields on company or contact are not the same as user-defined fields on those entities!
@@ -88,21 +88,21 @@ Database tables are connected with *foreign keys* (FK). These are the field type
 * Appointment relation
 * Extra table relation
 
-#### Available in pilot from version 10.3.4
+#### Section tabs for related records {#section-tab}
 
-When a relational field is set to display one-to-many relations, the system automatically adds a section tab in related standard entities. This is not the same as the **Relations** tab in the Company and Contact screens.
+When a relation field has **Show one-to-many relations** selected, the related record gets a section tab that lists the records pointing to it. For example, an **Equipment** custom object with a company relation adds an **Equipment** tab to the company. This tab is not the same as the **Relations** tab in the Company and Contact screens.
 
 ![Section tab with extra field relation -screenshot][img1]
 
-#### Available in pilot from version 10.3.7
+#### Preview related records {#preview}
 
-To view the details of items in this list, without having to open each individual entity:
+To view the details of records in this list without opening each one:
 
 1. Go to the side panel and select the **Preview** view.
-2. Click an item in the relation-based section tab. The side panel displays a preview of the selected entity. In the preview, you can:
+2. Select a record on the section tab. The side panel displays a preview of the selected entity. In the preview, you can:
 
-    * Click a standard entity to go to go to it.
-    * Click a custom objet to open a dialog for viewing or editing additional information.
+    * Select a standard record, such as a company, to go to it.
+    * Select a custom object record to open a dialog where you can view or edit it.
 
 ![Preview extra field relation -screenshot][img2]
 

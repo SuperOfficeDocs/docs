@@ -1,11 +1,11 @@
 ---
 uid: help-en-custom-objects
 title: Custom objects and fields
-description: Introduction to database schema customizations in SuperOffice
+description: Learn the difference between user-defined fields, extra fields, and custom objects, and which plan you need for each.
 keywords: ['custom object', 'table', 'field', 'user-defined field', 'udef', 'custom field', 'extra field', 'extra table']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.09.2026
+so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
@@ -14,42 +14,60 @@ audience_tooltip: SuperOffice CRM
 related:
   - /en/custom-objects/learn/udef
   - /en/custom-objects/learn/extra-field
-  - Extra tables: /en/custom-objects/learn/extra-table
+  - Custom objects: /en/custom-objects/learn/extra-table
 language: en
 ---
 
 import ReqDevToolsTransition from "../../../snippets/license/req-dev-tools-transition.mdx";
+import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 
-All companies and organizations have their own requirements for the information they need to register concerning their contacts, sales, projects, contracts, and so on. Administrators can add fields and tables in SuperOffice to customize the type of information that can be registered.
+Every company has its own needs for what to register about its customers, sales, projects, contracts, and so on. Administrators can add fields and objects in SuperOffice to register this information.
 
-SuperOffice CRM and Service were once two separate applications, with different extensibility options. [**User-defined fields**][1] (udefs for short) belong in SuperOffice CRM, while [**extra tables**][3] (aka 3rd party tables) and [**extra fields**][2] belong in Service. The term **custom field** includes both user-defined fields and extra fields.
+There are two ways to extend SuperOffice:
 
-## Usage
+* **Add fields to existing records.** These fields are called *user-defined fields*. For example, add a "Satisfied customer" field to contacts.
+* **Add new types of records.** These records are called *custom objects*. For example, register the equipment you have installed at each customer as its own type of record.
 
-* A good example of a custom field you can use in the **Contact** screen is a field called "Satisfied customer", where the value of the field is Yes or No. For example, you can send your contacts a mailing (with link actions) where they can state whether they are satisfied with your services. This will give you valuable insight into the general customer satisfaction rate.
+## User-defined fields
 
-* Using the **Find** function, you can search for the information you register in custom fields and create selections. For example, if you register the expiry date of the maintenance agreement that you have with contacts, you can create a dynamic selection that shows the contacts for which the agreement expires in less than one month.
+*User-defined fields* is the umbrella term for fields that you add to the existing SuperOffice records. There are two kinds, depending on the record:
 
-* You can reuse the information from these fields in documents and emails as **template variables**. Each field that you add gets its own unique ID (Prog ID), which can be used in documents to merge contact-specific information. So, if you want to send an email to your contacts that says that their maintenance agreement will expire soon, you can use the template variable for expiry date to show the correct expiry date of their agreement in the message.
+| Kind | Added to | Managed in |
+|---|---|---|
+| [User-defined fields][1] (udefs) | Companies, contacts, sales, projects, follow-ups, and documents | **Settings and maintenance** > **Fields** |
+| [Extra fields][2] | Requests, messages, and other Service records, and custom objects | **Settings and maintenance** > **System design** > **Tables** |
 
-## Requirements
+User-defined fields are shown on the [More tab][12] of the record.
 
 <ReqDevToolsTransition />
 
-<Note>
-**CRM Suite (Growth plan):** Your plan includes a limit on the number of custom objects. When the limit is reached, creating additional ones is blocked. See [Plan limits][13] for details.
-</Note>
+## Custom objects
 
-Fields are automatically displayed on the [More tab][12] once added.
+A [custom object][3] is a new type of record that you define yourself. For example, *Equipment*, *Contract*, or *Car*. You decide which fields the custom object has and how it relates to companies, contacts, requests, and other records.
 
-## Layout (positioning fields)
+Once created, a custom object works like the standard records in SuperOffice. Users can find it in the Navigator, create new records from **New** in the top bar, search for records, create selections and dashboards, and see related records on a tab on the company or contact.
 
-Any custom screen layouts (created in the Screen Designer) may override the settings on individual custom fields.
+<ReqGrowthCustomObjects />
 
-If you do not have a Development Tools license or the **Core** plan, use the rank of the different fields to sort them on the **More** tab.
+Custom objects are created in **Settings and maintenance** > **System design** > **Tables**. In the database, a custom object is an extra table, so you also see the terms *extra table* and *third-party table*.
 
-[13]: /en/admin/license/crm-suite
+The CRM Suite plan sets the number of custom objects you can create. When you reach the limit, you cannot create more. See [plan limits][13].
+
+## Examples
+
+* **Satisfied customer (user-defined field).** Add a Yes/No field to contacts. Send a mailing where contacts state whether they are satisfied, and store the answer in the field.
+
+* **Agreement expiry date (user-defined field).** Register the expiry date of each maintenance agreement on the company. Create a dynamic selection of the companies where the agreement expires within one month. Use the field as a template variable in an email to remind them.
+
+* **Equipment (custom object).** Register each machine you have installed at a customer, with serial number, type, and purchase date. Relate it to the company, so the company card shows an **Equipment** tab. Register each service visit as another custom object related to the equipment and the contact.
+
+## Layout of fields
+
+User-defined fields are shown on the **More** tab, sorted by their rank. With the Screen Designer, you can place fields on any tab and design the layout of custom objects. A layout created in the Screen Designer overrides the position set on individual fields. See [Screen Designer][14].
+
 [1]: /en/custom-objects/learn/udef
 [2]: /en/custom-objects/learn/extra-field
 [3]: /en/custom-objects/learn/extra-table
 [12]: /en/custom-objects/learn/more-tab
+[13]: /en/admin/license/crm-suite
+[14]: /en/customization/screen-designer/admin/index

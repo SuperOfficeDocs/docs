@@ -1,0 +1,60 @@
+---
+uid: help-en-custom-object-access-rights
+title: Set access rights for custom objects
+sidebarTitle: Access rights
+description: Decide per role who can read, create, update, and delete the records of each custom object.
+keywords: ['custom object', 'access rights', 'role', 'data rights', 'extra table']
+author: digitaldiina
+date: 11.09.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: settings
+audience_tooltip: Settings and maintenance
+related:
+  - Set data rights for a role: /en/admin/user-management/role/set-data-rights-for-role
+  - Add a custom object: /en/custom-objects/admin/create-extra-table
+language: en
+---
+
+import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
+import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
+
+<ReqGrowthCustomObjects />
+
+You decide per [role][1] what users can do with the records of each custom object. For example, service technicians can update equipment records, while sales representatives can only read them.
+
+The rights apply to all records of the custom object. They are set separately from the [data rights][2] for companies, contacts, sales, and projects.
+
+## Steps
+
+1. <OpenRoles />
+
+1. Choose the **Associates** tab.
+
+1. Select the role in the **Roles** list.
+
+1. Select the **Custom objects** tab. TODO(label)
+
+1. Next to each custom object, select <i class="ph ph-caret-down" aria-label="Chevron"></i> and choose the right:
+
+    | Right | Users with this role can |
+    |---|---|
+    | None | Not see the custom object or its records |
+    | Read | See records |
+    | Create | See and create records |
+    | Update | See, create, and edit records |
+    | Delete | See, create, edit, and delete records |
+
+    TODO(label): confirm that each right includes the rights above it, and whether changes save automatically.
+
+{/*
+TODO(screenshot): role-custom-object-rights.png
+*/}
+
+<Tip>
+Set the rights as soon as you add a custom object, so the users who need it can start working with it.
+</Tip>
+
+[1]: /en/admin/user-management/role/index
+[2]: /en/admin/user-management/role/set-data-rights-for-role

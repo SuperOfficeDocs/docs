@@ -1,0 +1,69 @@
+---
+uid: help-en-custom-object-update
+title: Update a custom object record
+sidebarTitle: Update record
+description: Open, edit, or delete a record of a custom object, and open links stored in its fields.
+keywords: ['custom object', 'edit record', 'delete record', 'extra table', 'clickable link']
+author: digitaldiina
+date: 11.09.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Create a custom object record: /en/custom-objects/learn/create
+  - Custom objects: /en/custom-objects/learn/extra-table
+language: en
+---
+
+import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
+
+<ReqGrowthCustomObjects />
+
+You can view, edit, and delete records of a custom object. What you can do depends on the rights your role has for the custom object: **Read**, **Update**, or **Delete**. See [access rights for custom objects][1].
+
+## Open a record {#open}
+
+Open a record in one of these ways:
+
+* Select the custom object in the Navigator, search for the record in the list, and select it.
+* Select the record on a section tab of a related company, contact, sale, project, or request.
+* Select the record in your [history][2] or [favorites][3].
+
+To look at a record without leaving the company or contact, select it on the section tab and view it in the **Preview** view of the side panel.
+
+{/*
+TODO(screenshot): equipment-card.png
+*/}
+
+## Edit a record {#edit}
+
+1. Open the record.
+
+1. Select <i class="ph ph-pencil-simple" aria-label="Edit"></i> to enter edit mode. TODO(label)
+
+1. Make your changes. For a relation field, start typing and select the record from the list.
+
+1. Select **Save**.
+
+### Links in text fields {#links}
+
+When a text field contains a URL, the URL is shown as a link in read mode. Select it to open the page in a new tab. For example, a **Product page** field can link to the product in the supplier's web shop. In edit mode, the field is a normal text field. See [URLs in text fields][4].
+
+## Delete a record {#delete}
+
+<Warning>
+You cannot undo a delete. TODO(label): confirm what happens to records that relate to the deleted record.
+</Warning>
+
+1. Open the record, or select it in the list in the custom object's screen.
+
+1. Select **Task** > **Delete**. TODO(label)
+
+1. Confirm that you want to delete the record.
+
+[1]: ../admin/access-rights
+[2]: /en/learn/basics/history
+[3]: /en/learn/basics/fav
+[4]: ./extra-field#urls

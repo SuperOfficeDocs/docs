@@ -4,8 +4,8 @@ title: Add extra fields
 description: How to define extra fields in SuperOffice
 keywords: ['extra field', 'custom field', 'field properties']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.09.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
@@ -17,7 +17,7 @@ language: en
 
 import GotoTables from "./snippets/goto-tables.md";
 
-After you create an [extra table][1], you must set up fields in the table, to allow you to subsequently input data (entries). You can also create extra fields in standard tables.
+After you create a [custom object][1], add the fields users fill in for each record. You can also add extra fields to standard Service tables, such as requests.
 
 ## Steps
 
@@ -33,7 +33,7 @@ After you create an [extra table][1], you must set up fields in the table, to al
 
     * Enter a *name* to be used as the label.
     * Enter a *database field* beginning with **x_** to identify the field in the schema.
-    * Optionally set other properties. The type (specified in step 3) determines what is available. Se details about the fields below.
+    * Optionally set other properties. The type (specified in step 3) determines what is available. See [field properties](#properties).
 
     <Tip>
     To make a field mandatory, select **Cannot be empty**.
@@ -45,7 +45,7 @@ After you create an [extra table][1], you must set up fields in the table, to al
 
 1. Click **Restart NetServer** when you are done. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
-## Field properties
+## Field properties {#properties}
 
 <Note>
 The **URL** property in this table belongs to the **Dynamic link** field type. To show URLs stored in **Short text** and **Long text** fields as clickable links, see [URLs in text fields][2].
@@ -73,7 +73,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Position | Specifies this field's position among the other fields in lists. |
 | Search operator | Which search operator to use for this field. |
 | Show in table | If checked, this field is displayed as a column in screens where several entries are displayed in a table. |
-| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. |
+| Show one-to-many relations | For relation fields. Adds a section tab to the related record that lists the records of this table. For example, a company relation on an Equipment custom object adds an **Equipment** tab to the company. |
 | Table | The table this field belongs to. |
 | Target table | Which table to use. |
 | Text area / Height | The number of lines of the text field. |
@@ -90,16 +90,12 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 
 1. Click **New field**.
 1. Select the relation type for the entity you want to connect to and click **OK**.
-1. Set field properties as described above.
-
-    <Note>
-    Available from version 10.3.4 in pilot: Selecting **Show one-to-many relations** adds a section tab (archive) to related standard entities.
-    </Note>
+1. Set field properties as described above. To show the related records on a tab on the other record, select **Show one-to-many relations**.
 
 1. Click **OK** to save the relation.
 1. Click **Restart NetServer** to apply the changes.
 
-For example, to connect all incoming requests to a specific sale, you can add an extra field of type sale relation to requests ([ticket table][4]). To list connected requests when viewing a sale in SuperOffice CRM, you will need to build a web panel.
+For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With **Show one-to-many relations** selected, the sale shows a tab with its requests. TODO(label): confirm for sales.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
