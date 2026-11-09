@@ -1,0 +1,226 @@
+---
+title: Sales Assistant Agent (Beta)
+sidebarTitle: Sales Assistant Agent
+description: Erhalten Sie täglich einen priorisierten nächsten Schritt für die offenen Verkäufe, die Aufmerksamkeit brauchen, wobei jede Aktion von Ihnen genehmigt wird, bevor sich etwas in SuperOffice ändert.
+keywords: ['KI-Agent', 'nächster Schritt', 'Verkaufspipeline', 'pausierter Verkauf', 'Verkaufsdatum']
+author: digitaldiina
+date: 11.09.2026
+so_version: 12.6
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Agent aktivieren: /de/ai/learn/set-up-ai-agents
+  - Einstellungen bearbeiten: /de/ai/learn/set-up-ai-agents#edit
+  - Einen Verkauf aktualisieren: /de/sale/learn/update
+  - /de/sale/learn/sales-guides
+  - Andere KI-Services: /de/ai/learn/index
+language: de
+---
+
+import SalesAssistantAgentBetaNote from "../../../snippets/ai/de/sales-assistant-agent-beta-note.mdx";
+
+<SalesAssistantAgentBetaNote />
+
+Der Sales Assistant Agent beobachtet Ihre eigenen offenen Verkäufe und zeigt Ihnen, welche davon Aufmerksamkeit brauchen. Einmal am Tag, oder wann immer Sie nach einem bestimmten Verkauf fragen, vergleicht er jeden Verkauf mit ähnlichen gewonnenen Verkäufen. Für jeden Verkauf, der eine Entscheidung braucht, schlägt er einen klaren nächsten Schritt vor, zum Beispiel eine Folgeaufgabe, ein neues Verkaufsdatum oder einen Angebotsentwurf.
+
+## Was der Agent für Sie tut
+
+* **Beobachtet täglich Ihre Pipeline:** er meldet einen Verkauf nur dann, wenn eine Entscheidung nötig ist, etwa bei einem verstrichenen Verkaufsdatum, einem Verkauf, der länger dauert als üblich, einem pausierten Verkauf, einer überfälligen oder fehlenden nächsten Aktivität oder einer offenen Anfrage mit hoher Priorität für den Kunden.
+
+* **Lernt aus echten Verkäufen:** er betrachtet, wie ähnliche Verkäufe gewonnen wurden, zum Beispiel wie viele Aktivitäten nötig waren und wie bald die erste stattfand. Er betrachtet auch häufige Gründe, warum ähnliche Verkäufe verloren gingen oder pausiert wurden.
+
+* **Empfiehlt einen nächsten Schritt:** zum Beispiel eine Folgeaufgabe, das Verschieben einer überfälligen Aktivität, das Hinzufügen eines Beteiligten, das Entwerfen eines Angebots, das Aktualisieren eines verstrichenen Verkaufsdatums oder das Abschließen des Verkaufs als gewonnen oder verloren. Die Begründung wird mitgeliefert.
+
+* **Merkt sich Ihre Entscheidungen:** nachdem Sie eine Empfehlung genehmigt oder abgelehnt haben, meldet er denselben Verkauf nicht erneut, bis sich der Verkauf ändert oder eine Wartezeit verstrichen ist.
+
+<Note>
+Der Agent schlägt vor, Sie entscheiden. Er nimmt nie Kontakt mit einem Kunden auf: Angebote werden leer erstellt, und Folgeaufgaben werden ohne Einladungen erstellt. Das Einzige, was der Agent selbstständig schreibt, ist eine Warnmarkierung bei Verkäufen, die ihren üblichen Zeitrahmen erreichen oder überschritten haben. Die Markierung wird nicht automatisch entfernt. Der Agent arbeitet nur mit Ihren eigenen SuperOffice-Daten. Es gibt keine Websuche und keine externe Anreicherung.
+</Note>
+
+## Zeitplan
+
+Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Zeit. Mit **Maximale Anzahl Aufgaben pro Tag** legen Sie fest, wie viele Empfehlungen er täglich erstellt.
+
+Jeder Lauf betrachtet Ihre 100 zuletzt erfassten Verkäufe und prüft die offenen und pausierten darunter. Ältere Verkäufe werden nicht geprüft. Warten bereits 20 Empfehlungen auf Ihre Entscheidung, fügt der Lauf keine neuen hinzu, bis Sie einige bearbeitet haben.
+
+## Agent aktivieren {#setup}
+
+Die Einrichtung ist ein einziger Schritt. Sie sind automatisch der Genehmiger und können eine Instanz erstellen.
+
+1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
+
+    Beim ersten Zugriff auf die Seite **Agenten** müssen Sie sich anmelden und KI-Agenten in SuperOffice genehmigen.
+
+1. Suchen Sie die Karte **Sales Assistant Agent** in der **Agentenübersicht** und klicken Sie auf **Aktivieren**. Dies öffnet den Einrichtungsassistenten.
+
+    ![Die Agentenübersicht mit der Karte des Sales Assistant Agent, die als Beta gekennzeichnet ist -screenshot][img1]
+
+    <Tip>
+    Sehen Sie die Karte nicht? Klicken Sie auf **Agenten durchsuchen**, um sie zu finden.
+    </Tip>
+
+## Allgemeine Einstellungen {#settings}
+
+1. Geben Sie einen eindeutigen **Namen** für die Agenteninstanz ein. **Dieser kann nach der Aktivierung nicht mehr geändert werden.**
+
+    ![Die allgemeinen Einstellungen des Sales Assistant Agent mit Maximale Anzahl Aufgaben pro Tag, der Grundlage der Empfehlungen und den Erinnerungseinstellungen -screenshot][img2]
+
+1. Optional können Sie die vorgeschlagene **Beschreibung** bearbeiten, wenn Sie etwas anderes möchten.
+
+1. Wählen Sie die **Berichtssprache**. Diese wirkt sich sowohl auf Empfehlungen als auch auf Chat-Antworten aus. Der Standardwert ist Englisch.
+
+1. Wählen Sie, wie viele Empfehlungen der Agent pro Tag erstellt (bis zu 30). Der Standardwert für **Maximale Anzahl Aufgaben pro Tag** ist 10.
+
+1. Wählen Sie, worauf sich die Empfehlungen stützen (**Empfehlungen basieren auf**). Der Standardwert ist **Meine eigenen Geschäftsabschlüsse**.
+
+    | Option | Woraus der Agent lernt |
+    |---|---|
+    | Meine eigenen Geschäftsabschlüsse | Ihre eigenen gewonnenen Verkäufe. |
+    | Geschäftsabschlüsse meines Teams | Die gewonnenen Verkäufe Ihres Teams. |
+    | Alle erfolgreichen Geschäftsabschlüsse (gesamte Organisation) | Jeder gewonnene Verkauf in Ihrer Organisation. |
+    | Nur Verkaufsleitfaden folgen | Der [Verkaufsleitfaden][1] des Verkaufstyps. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
+    | Meine eigenen Orientierungshilfe (Text) | Ein Text, den Sie schreiben (bis zu 2000 Zeichen), zum Beispiel *Verkäufe über 100.000 priorisieren; immer eine technische Person einbeziehen*. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
+    | Selektion erfolgreicher Verkäufe | Die gewonnenen Verkäufe in einer Ihrer eigenen gespeicherten Selektionen. |
+
+    Unabhängig von Ihrer Wahl berücksichtigen die Empfehlungen auch, warum ähnliche Verkäufe verloren gingen oder pausiert wurden.
+
+1. Optional können Sie **An bevorstehende Termine erinnern** aktivieren, um auch einen Verkauf zu melden, dessen Verkaufsdatum näher rückt, auch wenn sonst alles in Ordnung ist. Wählen Sie dann **So viele Werktage im Voraus erinnern** (1-14). Der Standardwert ist 3. Werktage überspringen Wochenenden, aber keine Feiertage.
+
+1. Klicken Sie auf **Speichern**.
+
+    Die Instanz wird aktiviert, erscheint unter **Meine Agenten** in der Agenten-Seitenleiste, begrüßt Sie im **Allgemeinen Chat** und startet sofort ihren ersten Lauf.
+
+    ![Die Bestätigung Agent aktiviert mit der Schaltfläche Zur Instanz -screenshot][img3]
+
+## So funktionieren Empfehlungen {#recommendations}
+
+Bei jedem Lauf vergleicht der Agent Ihre offenen Verkäufe mit ähnlichen gewonnenen Verkäufen, sowohl beim Gesamtalter als auch bei der Zeit in der aktuellen Stufe. Verkäufe, die im Plan liegen, lässt er in Ruhe. Er betrachtet:
+
+* **Alter und Stufendauer des Verkaufs:** ein Verkauf nähert sich seinem üblichen Zeitrahmen, wenn er länger offen ist als 7 von 10 ähnlichen gewonnenen Verkäufen. Er hat seinen üblichen Zeitrahmen überschritten, wenn er länger offen ist als 9 von 10. Die Zeit in einer Stufe wird nicht geprüft, wenn gewonnene Verkäufe diese Stufe üblicherweise in weniger als einer Woche abschließen.
+
+* **Abgeschlossene Aktivitäten:** Anrufe, Besprechungen und Aufgaben, die tatsächlich stattgefunden haben. So weiß der Agent, wann Sie zuletzt Kontakt mit dem Kunden hatten, und schlägt nichts vor, was bereits erledigt ist.
+
+* **Das Verkaufsdatum:** ob es verstrichen ist oder, bei aktivierten Erinnerungen, bald bevorsteht.
+
+* **Offene Anfragen:** ob der Kunde eine offene Anfrage mit hoher Priorität hat. Der Agent teilt Ihnen mit, ob die Anfrage zu diesem Verkauf gehört oder anderswo im Konto des Kunden liegt, wo Sie sie vom Verkauf aus nicht sehen würden.
+
+Der Agent lernt aus den gewonnenen Verkäufen unter den 500 zuletzt erfassten Verkäufen der von Ihnen gewählten Grundlage und braucht mindestens fünf gewonnene Verkäufe zum Vergleich. Bei weniger folgt er stattdessen dem Verkaufsleitfaden oder, falls es keinen gibt, den eigenen Signalen des Verkaufs.
+
+<Tip>
+Ein verstrichenes Verkaufsdatum wird immer gemeldet, und die Priorität wird um eine Prioritätsstufe erhöht, selbst wenn alles andere am Verkauf gesund aussieht. Dies kann nicht deaktiviert werden.
+</Tip>
+
+### Priorität
+
+Jede Empfehlung hat eine Priorität: **Hoch**, **Normal** oder **Niedrig**. Größere Verkäufe steigen eine Prioritätsstufe auf und kleinere sinken, verglichen mit Ihren anderen offenen Verkäufen. Ein strategischer Kunde, dessen Verkauf pausiert ist, eine überfällige Aktivität hat oder eine offene Anfrage mit hoher Priorität hat, steigt ebenfalls auf. Das gilt auch für ein bevorstehendes Verkaufsdatum, wenn Erinnerungen aktiviert sind.
+
+Brauchen mehr Verkäufe Aufmerksamkeit, als **Maximale Anzahl Aufgaben pro Tag** erlaubt, kommt die höchste Priorität zuerst, dann der höchste Betrag. Die übrigen warten auf einen späteren Lauf.
+
+## Empfehlungen prüfen und genehmigen {#review}
+
+1. Wählen Sie die Registerkarte **Chat** aus.
+
+1. Klicken Sie auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend** aus.
+
+1. Wählen Sie einen Verkaufs-Thread (<i class="ph ph-currency-circle-dollar" aria-label="Verkaufs-Symbol"></i>) aus der Liste aus. Threads sind nach Verkauf, Firma und Person benannt.
+
+1. Prüfen Sie die Empfehlungskarte:
+
+    * Name, Person und Firma des Verkaufs.
+    * Wichtige Fakten: **Verkaufstyp**, **Betrag**, **Stufe** und **Tage in Phase**.
+    * **Why this deal**, eine verständliche Begründung, warum der Verkauf ausgewählt wurde.
+    * **Empfohlene Aktionen**, ein Block pro Schritt, der genau auflistet, was in SuperOffice geschrieben wird. Manchmal gehört zum Hauptschritt eine unterstützende Aktion, etwa das Hinzufügen einer Folgeaufgabe oder eines Beteiligten.
+
+1. Optional können Sie den Agenten im Chat zur Empfehlung befragen, bevor Sie entscheiden.
+
+1. Klicken Sie auf **Genehmigen** oder **Ablehnen**. Die Schaltflächen gelten für jede Aktion auf der Karte.
+
+1. Wenn die Empfehlung ein Datum festlegt oder ändert, behalten Sie das vorgeschlagene Datum im Bestätigungsdialog bei oder wählen Sie einen anderen Tag. Die Uhrzeit bleibt gleich.
+
+    Sie können das Datum nicht ändern, wenn Sie mehrere Empfehlungen gleichzeitig genehmigen.
+
+### Was beim Genehmigen passiert
+
+Die erste Spalte zeigt den Titel der Aktion auf der Empfehlungskarte.
+
+| Empfohlene Aktion | Was beim Genehmigen passiert |
+|---|---|
+| Besprechung erstellen | Fügt dem Verkauf eine Folgeaufgabe hinzu: einen Anruf, eine Besprechung oder eine Aufgabe (eine vorgeschlagene E-Mail wird zur Aufgabe). Sie wird in die Arbeitszeit von 09:00-17:00 Uhr gelegt, mindestens fünf Werktage im Voraus. |
+| Überfällige Besprechung verschieben | Verschiebt die überfällige Folgeaufgabe des Verkaufs auf ein neues Datum, mindestens fünf Werktage im Voraus. Es wird keine neue Folgeaufgabe erstellt. |
+| Beteiligten hinzufügen | Fügt die Person des Verkaufs den [Beteiligten][2] hinzu. Der Agent fügt nie eine Person hinzu, die nicht bereits im Verkauf ist. |
+| Angebotsentwurf erstellen | Erstellt einen leeren [Angebotsentwurf][3] für den Verkauf, den Sie bepreisen und versenden. Es wird nichts hinzugefügt, wenn der Verkauf bereits ein Angebot hat. |
+| Verkaufsdatum aktualisieren | Wird angeboten, wenn das Verkaufsdatum verstrichen ist. Setzt das Verkaufsdatum auf den Zeitpunkt, zu dem ähnliche gewonnene Verkäufe üblicherweise abschließen, mindestens zehn Werktage im Voraus, und fügt eine Folgeaufgabe mindestens fünf Werktage im Voraus hinzu. Öffnet den Verkauf wieder, wenn er pausiert war. |
+| Als gewonnen abschließen | Setzt den Verkauf auf **Gewonnen**, datiert auf den Tag, an dem Sie genehmigen. |
+| Als verloren abschließen | Setzt den Verkauf mit dem vorgeschlagenen Grund auf **Verloren**, datiert auf den Tag, an dem Sie genehmigen. Steht dieser Grund nicht in der Liste Ihres Unternehmens, wird der Verkauf ohne Grund abgeschlossen. |
+
+<Warning>
+**Das Abschließen eines Verkaufs kann vom Agenten aus nicht rückgängig gemacht werden.** Der Agent schlägt dies nur bei eindeutigen Belegen in Ihrem CRM-Verlauf vor, nie nur deshalb, weil ein Verkauf ruhig geworden ist. Um es rückgängig zu machen, [aktualisieren Sie den Verkauf][4] direkt.
+</Warning>
+
+Beim Genehmigen bestätigt der Agent im Chat, was erstellt wurde, oder erklärt, was nicht erstellt werden konnte, damit Sie es manuell hinzufügen können. Hat eine Karte zwei Aktionen und nur die erste gelingt, bleibt die erste erhalten.
+
+Beim Ablehnen wird nichts in SuperOffice geschrieben. Der Agent schlägt für diesen Verkauf erst wieder etwas vor, wenn der Verkauf weiter zurückfällt, in eine andere Stufe wechselt oder sein Verkaufsdatum überschreitet, oder wenn 14 Tage vergangen sind.
+
+Nach dem Genehmigen kommt der Verkauf zwei Tage nach Fälligkeit der Folgeaufgabe zurück, zwei Tage nach dem neuen Verkaufsdatum oder 14 Tage nach der Genehmigung, wenn nichts hinzugefügt wurde. Er kommt früher zurück, wenn sich der Verkauf ändert.
+
+## Nach einem bestimmten Verkauf fragen
+
+1. Wählen Sie die Registerkarte **Chat** aus.
+
+1. Fragen Sie im Thread **Allgemeiner Chat** nach einem Verkauf, zum Beispiel *Was soll ich als Nächstes bei Acme Corp tun?*
+
+    Braucht etwas Aufmerksamkeit, erstellt der Agent eine Empfehlung im eigenen Thread dieses Verkaufs, genau wie beim täglichen Lauf. Liegt der Verkauf im Plan, sagt er das.
+
+Empfehlungen, die Sie anfordern, zählen zu **Maximale Anzahl Aufgaben pro Tag**. Der Chat betrachtet dieselben 100 zuletzt erfassten Verkäufe wie der tägliche Lauf und findet daher keine älteren Verkäufe.
+
+Sie können den Agenten im Chat auch bitten, einen Verkauf zu erstellen oder zu aktualisieren, eine Folgeaufgabe hinzuzufügen, einen Schritt des Verkaufsleitfadens hinzuzufügen, eine Anfrage zu erfassen, einen Verkauf als gewonnen oder verloren abzuschließen oder nach einer Firma zu suchen. Er bittet Sie, jede Aktion zu bestätigen, aber es gibt keine Genehmigungskarte. Das Nachschlagen der Details eines Verkaufs oder die Bitte um eine Zusammenfassung Ihrer Pipeline erstellt keine Aufgabe.
+
+## Der Agenten-Arbeitsbereich {#workspace}
+
+Der Arbeitsbereich des Sales Assistant Agent hat drei Registerkarten: **Chat**, **Verlauf** und **Leistung**.
+
+| Registerkarte | Beschreibung |
+|---|---|
+| Chat | Ein **Allgemeiner Chat**-Thread plus ein Thread pro Verkauf, den der Agent gemeldet hat. |
+| Verlauf | Ein verständliches Protokoll dessen, was der Agent getan hat: wie viele offene Verkäufe jeder Lauf geprüft hat, jede Empfehlung und ob sie genehmigt, abgelehnt oder abgelaufen ist, alles Übersprungene (mit Begründung) und jede über den Chat vorgenommene Änderung. Wählen Sie einen **Zeitraum** (letzte 24 Stunden, 7, 30 oder 90 Tage), um ihn einzugrenzen. |
+| Leistung | Vorgeschlagene, angenommene, ignorierte und abgelaufene Empfehlungen in den letzten 7, 30 oder 90 Tagen. Genehmigte Empfehlungen zählen als angenommen und abgelehnte als ignoriert. |
+
+![Der Thread Allgemeiner Chat mit der Willkommensnachricht des Agenten -screenshot][img4]
+
+![Die Registerkarte Verlauf mit dem Zeitraumfilter und einem abgeschlossenen Lauf -screenshot][img5]
+
+![Die Registerkarte Leistung mit der Kennzahl für vorgeschlagene Empfehlungen -screenshot][img6]
+
+Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbol"></i>, um die neuesten Einträge abzurufen.
+
+Um die Beschreibung, die Sprache, **Maximale Anzahl Aufgaben pro Tag**, die Grundlage der Empfehlungen oder die Erinnerungseinstellungen zu ändern, [bearbeiten Sie die Instanz][5]. Name und Zeitplan sind fest. Änderungen gelten ab dem nächsten Lauf. Nur der Eigentümer der Instanz kann ihre Einstellungen ändern oder sie löschen.
+
+## Tipps und Fehlerbehebung
+
+**Warum sehe ich keine Bewertung?** Die Karte zeigt bewusst die empfohlene Aktion und ihre Begründung, keine numerische Bewertung und keinen Konfidenzprozentsatz.
+
+**Kann ich über mehrere Empfehlungen gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Empfehlungen aus und verwenden Sie **Genehmigen** oder **Ablehnen** im Bereich für Sammelaktionen.
+
+**Was passiert mit einer Empfehlung, die ich nicht rechtzeitig bearbeite?** Eine ausstehende Empfehlung läuft nach 14 Tagen ab. Sobald sie innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf ihrem Thread. Für eine abgelaufene Empfehlung ändert sich nichts in SuperOffice, und der Agent kann den Verkauf bei einem späteren Lauf erneut vorschlagen.
+
+**Ich habe die Instanz deaktiviert, und meine ausstehenden Empfehlungen sind weg.** Das Deaktivieren einer Instanz verwirft alle auf Genehmigung wartenden Empfehlungen, wie unter [KI-Agenten einrichten][5] beschrieben. Genehmigen oder lehnen Sie zuerst ab, was Sie behalten möchten.
+
+[1]: /de/sale/learn/sales-guides
+[2]: /de/sale/learn/stakeholders/index
+[3]: /de/sale/learn/quote/index
+[4]: /de/sale/learn/update
+[5]: /de/ai/learn/set-up-ai-agents#edit
+
+[img1]: /media/loc/en/ai/sales-assistant-agent-overview.png
+[img2]: /media/loc/en/ai/sales-assistant-settings.png
+[img3]: /media/loc/en/ai/sales-assistant-activated.png
+[img4]: /media/loc/en/ai/sales-assistant-chat.png
+[img5]: /media/loc/en/ai/sales-assistant-history.png
+[img6]: /media/loc/en/ai/sales-assistant-performance.png
