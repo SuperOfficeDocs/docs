@@ -1,0 +1,226 @@
+---
+title: Sales Assistant Agent (beta)
+sidebarTitle: Sales Assistant Agent
+description: Få varje dag ett prioriterat nästa steg för de öppna försäljningar som behöver uppmärksamhet, där varje åtgärd godkänns av dig innan något ändras i SuperOffice.
+keywords: ['AI-agent', 'nästa steg', 'säljpipeline', 'pausad försäljning', 'försäljningsdatum']
+author: digitaldiina
+date: 11.09.2026
+so_version: 12.6
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Aktivera agent: /sv/ai/learn/set-up-ai-agents
+  - Redigera inställningar: /sv/ai/learn/set-up-ai-agents#edit
+  - Uppdatera en försäljning: /sv/sale/learn/update
+  - /sv/sale/learn/sales-guides
+  - Andra AI-tjänster: /sv/ai/learn/index
+language: sv
+---
+
+import SalesAssistantAgentBetaNote from "../../../snippets/ai/sv/sales-assistant-agent-beta-note.mdx";
+
+<SalesAssistantAgentBetaNote />
+
+Sales Assistant Agent bevakar dina egna öppna försäljningar och talar om vilka som behöver uppmärksamhet. En gång om dagen, eller när du frågar om en specifik försäljning, jämför den varje försäljning med liknande försäljningar som har vunnits. För varje försäljning som kräver ett beslut föreslår den ett tydligt nästa steg, till exempel en uppföljning, ett nytt försäljningsdatum eller en offert att skapa.
+
+## Vad agenten gör för dig
+
+* **Bevakar din pipeline varje dag:** den tar bara upp en försäljning när något kräver ett beslut, till exempel ett försäljningsdatum som har passerats, en försäljning som tar längre tid än vanligt, en pausad försäljning, en försenad eller saknad nästa aktivitet eller ett öppet ärende med hög prioritet för kunden.
+
+* **Lär sig av verkliga försäljningar:** den tittar på hur liknande försäljningar vanns, till exempel hur många aktiviteter som behövdes och hur snart den första ägde rum. Den tittar också på vanliga orsaker till att liknande försäljningar förlorades eller pausades.
+
+* **Rekommenderar ett nästa steg:** till exempel en uppföljning, att flytta en försenad aktivitet, att lägga till en intressent, att skapa en offert, att uppdatera ett försäljningsdatum som har passerats eller att avsluta försäljningen som såld eller förlorad. Resonemanget visas bredvid.
+
+* **Kommer ihåg dina beslut:** när du har godkänt eller avvisat en rekommendation tar den inte upp samma försäljning igen förrän försäljningen ändras eller en väntetid har gått.
+
+<Note>
+Agenten föreslår. Du bestämmer. Den kontaktar aldrig en kund: offerter skapas tomma, och uppföljningar skapas utan att några inbjudningar skickas. Det enda agenten skriver på egen hand är en varningsflagga på försäljningar som närmar sig eller har passerat sin vanliga tidsram. Flaggan tas inte bort automatiskt. Agenten arbetar bara utifrån dina egna SuperOffice-data. Det finns ingen webbsökning eller extern berikning.
+</Note>
+
+## Schema
+
+Agenten körs **Dagligen**, en gång om dagen vid en systemtilldelad tidpunkt. Du styr hur många rekommendationer den skapar varje dag med **Max uppgifter per dag**.
+
+Varje körning tittar på dina 100 senast registrerade försäljningar och granskar de öppna och pausade bland dem. Äldre försäljningar granskas inte. Om 20 rekommendationer redan väntar på ditt beslut lägger körningen inte till några nya förrän du har hanterat några av dem.
+
+## Aktivera agenten {#setup}
+
+Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan skapa en instans.
+
+1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigatorn.
+
+    Första gången du öppnar sidan **Agenter** måste du logga in och godkänna AI-agenter i SuperOffice.
+
+1. Hitta kortet **Sales Assistant Agent** i **Agentöversikt** och klicka på **Aktivera**. Detta öppnar konfigurationsguiden.
+
+    ![Agentöversikten, med kortet Sales Assistant Agent markerat som Beta -screenshot][img1]
+
+    <Tip>
+    Ser du inte kortet? Klicka på **Bläddra bland agenter** för att hitta det.
+    </Tip>
+
+## Allmänna inställningar {#settings}
+
+1. Ange ett unikt **Namn** för agentinstansen. **Detta kan inte ändras efter aktivering.**
+
+    ![Sales Assistant Agents allmänna inställningar, med Max uppgifter per dag, Base recommendations on och påminnelseinställningarna -screenshot][img2]
+
+1. Redigera vid behov den föreslagna **Beskrivningen** om du vill ha något annat.
+
+1. Välj **Rapporteringsspråk**. Detta påverkar både rekommendationer och chattsvar. Standardvärdet är engelska.
+
+1. Välj hur många rekommendationer agenten skapar per dag (upp till 30). Standardvärdet för **Max uppgifter per dag** är 10.
+
+1. Välj vad du vill **Base recommendations on**. Standardvärdet är **My own won deals**.
+
+    | Alternativ | Vad agenten lär sig av |
+    |---|---|
+    | My own won deals | Dina egna vunna försäljningar. |
+    | My team's won deals | Ditt teams vunna försäljningar. |
+    | All won deals (whole organisation) | Alla vunna försäljningar i din organisation. |
+    | The sale guide only | [Säljguiden][1] för försäljningstypen. Tidsåtgången jämförs inte med tidigare försäljningar. |
+    | My own guidance | En text som du skriver (upp till 2000 tecken), till exempel *Prioritera försäljningar över 100 000, involvera alltid en teknisk kontakt*. Tidsåtgången jämförs inte med tidigare försäljningar. |
+    | Selection of successful sales | De vunna försäljningarna i ett av dina egna sparade urval. |
+
+    Oavsett vad du väljer tar rekommendationerna också hänsyn till varför liknande försäljningar förlorades eller pausades.
+
+1. Aktivera vid behov **Remind me about approaching dates** för att även flagga en försäljning vars försäljningsdatum närmar sig, även när inget annat är fel. Välj sedan **Remind me this many business days ahead** (1-14). Standardvärdet är 3. Arbetsdagar hoppar över helger, men inte helgdagar.
+
+1. Klicka på **Spara**.
+
+    Instansen aktiveras, visas under **Mina agenter** i Agenter-sidofältet, hälsar på dig i **Allmän chatt** och startar sin första körning direkt.
+
+    ![Bekräftelsen att agenten har aktiverats, med knappen Gå till instans -screenshot][img3]
+
+## Så fungerar rekommendationerna {#recommendations}
+
+Vid varje körning jämför agenten dina öppna försäljningar med liknande vunna försäljningar, både utifrån total ålder och tid i den aktuella fasen. Försäljningar som ligger i fas lämnas ifred. Agenten tittar på:
+
+* **Försäljningens ålder och fastider:** en försäljning närmar sig sin vanliga tidsram när den har varit öppen längre än 7 av 10 liknande vunna försäljningar. Den har passerat sin vanliga tidsram när den har varit öppen längre än 9 av 10. Tiden i en fas kontrolleras inte om vunna försäljningar vanligtvis slutför den fasen på mindre än en vecka.
+
+* **Slutförda aktiviteter:** samtal, möten och att göra-uppgifter som faktiskt har ägt rum. Det visar agenten när du senast kontaktade kunden, så att den inte föreslår något som redan är gjort.
+
+* **Försäljningsdatumet:** om det har passerats eller, med påminnelser aktiverade, snart närmar sig.
+
+* **Öppna ärenden:** om kunden har ett öppet ärende med hög prioritet. Agenten talar om ifall ärendet gäller den här försäljningen eller någon annanstans på kundens konto, där du inte skulle se det från försäljningen.
+
+Agenten lär sig av de vunna försäljningarna bland de 500 senaste försäljningarna i den historik du har valt, och behöver minst fem vunna försäljningar att jämföra med. Med färre följer den säljguiden i stället, eller försäljningens egna signaler om det inte finns någon guide.
+
+<Tip>
+Ett försäljningsdatum som har passerats flaggas alltid, och prioriteten höjs en nivå, även om allt annat med försäljningen ser bra ut. Detta kan inte stängas av.
+</Tip>
+
+### Prioritet
+
+Varje rekommendation har en prioritet: **High**, **Normal** eller **Low**. Större försäljningar flyttas upp en nivå och mindre ner en nivå, jämfört med dina andra öppna försäljningar. En strategisk kund vars försäljning är pausad, har en försenad aktivitet eller har ett öppet ärende med hög prioritet flyttas också upp. Det gör även ett försäljningsdatum som närmar sig när påminnelser är aktiverade.
+
+När fler försäljningar behöver uppmärksamhet än vad **Max uppgifter per dag** tillåter kommer den högsta prioriteten först, därefter det högsta beloppet. Resten väntar på en senare körning.
+
+## Granska och godkänn rekommendationer {#review}
+
+1. Välj fliken **Chatt**.
+
+1. Klicka på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande**.
+
+1. Välj en försäljningstråd (<i class="ph ph-currency-circle-dollar" aria-label="Försäljning-ikon"></i>) från listan. Trådarna är uppkallade efter försäljningen, företaget och kontakten.
+
+1. Granska rekommendationskortet:
+
+    * Försäljningens namn, kontakt och företag.
+    * Nyckeluppgifter: **Försäljningstyp**, **Belopp**, **Fas** och **Days in stage**.
+    * **Why this deal**, en förklaring i klartext till varför försäljningen valdes.
+    * **Recommended actions**, ett block per steg, som visar exakt vad som skrivs till SuperOffice. Ibland följer en kompletterande åtgärd, till exempel att lägga till en uppföljning eller en intressent, med huvudsteget.
+
+1. Fråga vid behov agenten i chatten om rekommendationen innan du bestämmer dig.
+
+1. Klicka på **Godkänn** eller **Avvisa**. Knapparna gäller alla åtgärder på kortet.
+
+1. Om rekommendationen anger eller ändrar ett datum behåller du det föreslagna datumet i bekräftelsen eller väljer en annan dag. Klockslaget förblir detsamma.
+
+    Du kan inte ändra datumet när du godkänner flera rekommendationer samtidigt.
+
+### Vad som händer när du godkänner
+
+Den första kolumnen visar åtgärdens rubrik på rekommendationskortet.
+
+| Rekommenderad åtgärd | Vad som händer när du godkänner |
+|---|---|
+| Create appointment | Lägger till en uppföljning på försäljningen: ett samtal, ett möte eller en att göra-uppgift (ett föreslaget e-postmeddelande blir en att göra-uppgift). Den placeras inom arbetstid 09:00-17:00, minst fem arbetsdagar framåt. |
+| Reschedule overdue appointment | Flyttar försäljningens försenade uppföljning till ett nytt datum, minst fem arbetsdagar framåt. Ingen ny uppföljning skapas. |
+| Add stakeholder | Lägger till försäljningens kontakt bland dess [intressenter][2]. Agenten lägger aldrig till en kontakt som inte redan finns på försäljningen. |
+| Create draft quote | Skapar ett tomt utkast till en [offert][3] på försäljningen, som du kan prissätta och skicka. Inget läggs till om försäljningen redan har en offert. |
+| Update sale date | Erbjuds när försäljningsdatumet har passerats. Anger försäljningsdatumet till när liknande vunna försäljningar vanligtvis avslutas, minst tio arbetsdagar framåt, och lägger till en uppföljning minst fem arbetsdagar framåt. Öppnar försäljningen igen om den var pausad. |
+| Close as won | Anger försäljningen som **Såld**, med datumet för dagen du godkänner. |
+| Close as lost | Anger försäljningen som **Förlorad** med den föreslagna orsaken, med datumet för dagen du godkänner. Om orsaken inte finns i ditt företags lista avslutas försäljningen utan orsak. |
+
+<Warning>
+**Att avsluta en försäljning kan inte ångras från agenten.** Agenten föreslår detta bara med tydliga belägg i din CRM-historik, aldrig bara för att en försäljning har blivit tyst. Om du vill ångra det [uppdaterar du försäljningen][4] direkt.
+</Warning>
+
+När du godkänner bekräftar agenten i chatten vad som har skapats, eller förklarar vad som inte kunde skapas så att du kan lägga till det manuellt. Om ett kort har två åtgärder och bara den första lyckas behålls den första.
+
+När du avvisar skrivs ingenting till SuperOffice. Agenten föreslår ingenting för den försäljningen igen förrän försäljningen hamnar ännu mer efter, flyttas till en annan fas eller passerar sitt försäljningsdatum, eller förrän 14 dagar har gått.
+
+När du har godkänt kommer försäljningen tillbaka två dagar efter att uppföljningen skulle ha varit klar, två dagar efter det nya försäljningsdatumet, eller 14 dagar efter godkännandet om inget lades till. Den kommer tillbaka tidigare om försäljningen ändras.
+
+## Fråga om en specifik försäljning
+
+1. Välj fliken **Chatt**.
+
+1. I tråden **Allmän chatt** frågar du om en försäljning, till exempel *Vad ska jag göra härnäst med Acme Corp?*
+
+    Om något behöver uppmärksamhet skapar agenten en rekommendation i den försäljningens egen tråd, precis som vid den dagliga körningen. Om försäljningen ligger i fas säger den det.
+
+Rekommendationer som du ber om räknas mot **Max uppgifter per dag**. Chatten tittar på samma 100 senast registrerade försäljningar som den dagliga körningen, så den hittar inte äldre försäljningar.
+
+Du kan också be agenten i chatten att skapa eller uppdatera en försäljning, lägga till en uppföljning, lägga till ett steg i säljguiden, registrera ett ärende, avsluta en försäljning som såld eller förlorad, eller söka efter ett företag. Den ber dig bekräfta varje åtgärd, men det finns inget godkännandekort. Att slå upp en försäljnings uppgifter eller be om en sammanfattning av din pipeline skapar ingen uppgift.
+
+## Agentens arbetsyta {#workspace}
+
+Sales Assistant Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Prestanda**.
+
+| Flik | Beskrivning |
+|---|---|
+| Chatt | En **Allmän chatt**-tråd plus en tråd per försäljning som agenten har flaggat. |
+| Historik | En logg i klartext över vad agenten har gjort: hur många öppna försäljningar varje körning granskade, varje rekommendation och om den godkändes, avvisades eller förföll, allt som hoppades över (med orsak) och varje ändring som gjorts via chatten. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. |
+| Prestanda | Föreslagna, godkända, ignorerade och förfallna rekommendationer under de senaste 7, 30 eller 90 dagarna. Godkända rekommendationer räknas som godkända och avvisade som ignorerade. |
+
+![Tråden Allmän chatt, med agentens välkomstmeddelande -screenshot][img4]
+
+![Fliken Historik, med filtret Period och en slutförd körning -screenshot][img5]
+
+![Fliken Prestanda, med måttet Recommendations Proposed -screenshot][img6]
+
+Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> för att hämta de senaste posterna.
+
+Om du vill ändra beskrivningen, språket, **Max uppgifter per dag**, vad rekommendationerna baseras på eller påminnelseinställningarna [redigerar du instansen][5]. Namnet och schemat är fasta. Ändringar gäller från nästa körning. Endast instansens ägare kan ändra dess inställningar eller radera den.
+
+## Tips och felsökning
+
+**Varför ser jag inget betyg?** Av design visar kortet den rekommenderade åtgärden och dess resonemang, inte ett numeriskt betyg eller en procentuell säkerhet.
+
+**Kan jag besluta om flera rekommendationer samtidigt?** Ja. Markera flera väntande rekommendationer och använd **Godkänn** eller **Avvisa** från panelen för massåtgärder.
+
+**Vad händer med en rekommendation jag inte hinner med i tid?** En väntande rekommendation förfaller efter 14 dagar. Så snart den är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Ingenting ändras i SuperOffice för en förfallen rekommendation, och agenten kan föreslå försäljningen igen vid en senare körning.
+
+**Jag avaktiverade instansen och mina väntande rekommendationer är borta.** Att avaktivera en instans tar bort alla rekommendationer som väntar på godkännande, enligt beskrivningen i [Konfigurera AI-agenter][5]. Godkänn eller avvisa det du behöver först.
+
+[1]: /sv/sale/learn/sales-guides
+[2]: /sv/sale/learn/stakeholders/index
+[3]: /sv/sale/learn/quote/index
+[4]: /sv/sale/learn/update
+[5]: /sv/ai/learn/set-up-ai-agents#edit
+
+[img1]: /media/loc/en/ai/sales-assistant-agent-overview.png
+[img2]: /media/loc/en/ai/sales-assistant-settings.png
+[img3]: /media/loc/en/ai/sales-assistant-activated.png
+[img4]: /media/loc/en/ai/sales-assistant-chat.png
+[img5]: /media/loc/en/ai/sales-assistant-history.png
+[img6]: /media/loc/en/ai/sales-assistant-performance.png
