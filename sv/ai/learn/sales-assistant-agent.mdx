@@ -119,7 +119,7 @@ Ett försäljningsdatum som har passerats flaggas alltid, och prioriteten höjs 
 
 ### Prioritet
 
-Varje rekommendation har en prioritet: **High**, **Normal** eller **Low**. Större försäljningar flyttas upp en nivå och mindre ner en nivå, jämfört med dina andra öppna försäljningar. En strategisk kund vars försäljning är pausad, har en försenad aktivitet eller har ett öppet ärende med hög prioritet flyttas också upp. Det gör även ett försäljningsdatum som närmar sig när påminnelser är aktiverade.
+Varje rekommendation har en prioritet: **Hög**, **Normal** eller **Låg**. Större försäljningar flyttas upp en nivå och mindre ner en nivå, jämfört med dina andra öppna försäljningar. En strategisk kund vars försäljning är pausad, har en försenad aktivitet eller har ett öppet ärende med hög prioritet flyttas också upp. Det gör även ett försäljningsdatum som närmar sig när påminnelser är aktiverade.
 
 När fler försäljningar behöver uppmärksamhet än vad **Max antal uppgifter per dag** tillåter kommer den högsta prioriteten först, därefter det högsta beloppet. Resten väntar på en senare körning.
 
@@ -134,9 +134,9 @@ När fler försäljningar behöver uppmärksamhet än vad **Max antal uppgifter 
 1. Granska rekommendationskortet:
 
     * Försäljningens namn, kontakt och företag.
-    * Nyckeluppgifter: **Försäljningstyp**, **Belopp**, **Fas** och **Days in stage**.
+    * Nyckeluppgifter: **Försäljningstyp**, **Belopp**, **Fas** och **Dagar i fas**.
     * **Why this deal**, en förklaring i klartext till varför försäljningen valdes.
-    * **Recommended actions**, ett block per steg, som visar exakt vad som skrivs till SuperOffice. Ibland följer en kompletterande åtgärd, till exempel att lägga till en uppföljning eller en intressent, med huvudsteget.
+    * **Rekommenderade åtgärder**, ett block per steg, som visar exakt vad som skrivs till SuperOffice. Ibland följer en kompletterande åtgärd, till exempel att lägga till en uppföljning eller en intressent, med huvudsteget.
 
 1. Fråga vid behov agenten i chatten om rekommendationen innan du bestämmer dig.
 
@@ -152,13 +152,13 @@ Den första kolumnen visar åtgärdens rubrik på rekommendationskortet.
 
 | Rekommenderad åtgärd | Vad som händer när du godkänner |
 |---|---|
-| Create appointment | Lägger till en uppföljning på försäljningen: ett samtal, ett möte eller en att göra-uppgift (ett föreslaget e-postmeddelande blir en att göra-uppgift). Den placeras inom arbetstid 09:00-17:00, minst fem arbetsdagar framåt. |
-| Reschedule overdue appointment | Flyttar försäljningens försenade uppföljning till ett nytt datum, minst fem arbetsdagar framåt. Ingen ny uppföljning skapas. |
-| Add stakeholder | Lägger till försäljningens kontakt bland dess [intressenter][2]. Agenten lägger aldrig till en kontakt som inte redan finns på försäljningen. |
-| Create draft quote | Skapar ett tomt utkast till en [offert][3] på försäljningen, som du kan prissätta och skicka. Inget läggs till om försäljningen redan har en offert. |
-| Update sale date | Erbjuds när försäljningsdatumet har passerats. Anger försäljningsdatumet till när liknande vunna försäljningar vanligtvis avslutas, minst tio arbetsdagar framåt, och lägger till en uppföljning minst fem arbetsdagar framåt. Öppnar försäljningen igen om den var pausad. |
-| Close as won | Anger försäljningen som **Såld**, med datumet för dagen du godkänner. |
-| Close as lost | Anger försäljningen som **Förlorad** med den föreslagna orsaken, med datumet för dagen du godkänner. Om orsaken inte finns i ditt företags lista avslutas försäljningen utan orsak. |
+| Skapa bokning | Lägger till en uppföljning på försäljningen: ett samtal, ett möte eller en att göra-uppgift (ett föreslaget e-postmeddelande blir en att göra-uppgift). Den placeras inom arbetstid 09:00-17:00, minst fem arbetsdagar framåt. |
+| Flytta förfallen bokning | Flyttar försäljningens försenade uppföljning till ett nytt datum, minst fem arbetsdagar framåt. Ingen ny uppföljning skapas. |
+| Lägg till intressent | Lägger till försäljningens kontakt bland dess [intressenter][2]. Agenten lägger aldrig till en kontakt som inte redan finns på försäljningen. |
+| Skapa offertutkast | Skapar ett tomt utkast till en [offert][3] på försäljningen, som du kan prissätta och skicka. Inget läggs till om försäljningen redan har en offert. |
+| Uppdatera försäljningsdatum | Erbjuds när försäljningsdatumet har passerats. Anger försäljningsdatumet till när liknande vunna försäljningar vanligtvis avslutas, minst tio arbetsdagar framåt, och lägger till en uppföljning minst fem arbetsdagar framåt. Öppnar försäljningen igen om den var pausad. |
+| Stäng som såld | Anger försäljningen som **Såld**, med datumet för dagen du godkänner. |
+| Stäng som förlorad | Anger försäljningen som **Förlorad** med den föreslagna orsaken, med datumet för dagen du godkänner. Om orsaken inte finns i ditt företags lista avslutas försäljningen utan orsak. |
 
 <Warning>
 **Att avsluta en försäljning kan inte ångras från agenten.** Agenten föreslår detta bara med tydliga belägg i din CRM-historik, aldrig bara för att en försäljning har blivit tyst. Om du vill ångra det [uppdaterar du försäljningen][4] direkt.

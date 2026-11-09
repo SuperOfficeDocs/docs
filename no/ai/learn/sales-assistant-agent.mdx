@@ -119,7 +119,7 @@ En salgsdato som er passert, flagges alltid, og prioriteten økes ett nivå, sel
 
 ### Prioritet
 
-Hver anbefaling har en prioritet: **High**, **Normal** eller **Low**. Større salg flyttes opp ett nivå og mindre salg ned, sammenlignet med dine andre åpne salg. En strategisk kunde hvis salg er utsatt, har en forfalt aktivitet eller har en åpen sak med høy prioritet, flyttes også opp. Det samme gjelder en kommende salgsdato når påminnelser er på.
+Hver anbefaling har en prioritet: **Høy**, **Normal** eller **Lav**. Større salg flyttes opp ett nivå og mindre salg ned, sammenlignet med dine andre åpne salg. En strategisk kunde hvis salg er utsatt, har en forfalt aktivitet eller har en åpen sak med høy prioritet, flyttes også opp. Det samme gjelder en kommende salgsdato når påminnelser er på.
 
 Når flere salg trenger oppmerksomhet enn **Maks antall oppgaver per dag** tillater, kommer høyeste prioritet først, deretter høyeste beløp. Resten venter til en senere kjøring.
 
@@ -134,9 +134,9 @@ Når flere salg trenger oppmerksomhet enn **Maks antall oppgaver per dag** tilla
 1. Gjennomgå anbefalingskortet:
 
     * Salgets navn, person og firma.
-    * Nøkkelfakta: **Salgstype**, **Beløp**, **Fase** og **Days in stage**.
+    * Nøkkelfakta: **Salgstype**, **Beløp**, **Fase** og **Dager i fase**.
     * **Why this deal**, en begrunnelse på vanlig språk for hvorfor salget ble valgt.
-    * **Recommended actions**, én blokk per steg, som viser nøyaktig hva som skrives til SuperOffice. Noen ganger følger en støttehandling, for eksempel å legge til en oppfølging eller en interessent, med hovedsteget.
+    * **Anbefalte handlinger**, én blokk per steg, som viser nøyaktig hva som skrives til SuperOffice. Noen ganger følger en støttehandling, for eksempel å legge til en oppfølging eller en interessent, med hovedsteget.
 
 1. Spør eventuelt agenten i chatten om anbefalingen før du bestemmer deg.
 
@@ -152,13 +152,13 @@ Den første kolonnen viser handlingens tittel på anbefalingskortet.
 
 | Anbefalt handling | Hva som skjer når du godkjenner |
 |---|---|
-| Create appointment | Legger til en oppfølging på salget: en samtale, et møte eller en oppgave (en foreslått e-post blir en oppgave). Den plasseres innenfor arbeidstid 09:00-17:00, minst fem virkedager frem i tid. |
-| Reschedule overdue appointment | Flytter salgets forfalte oppfølging til en ny dato, minst fem virkedager frem i tid. Ingen ny oppfølging opprettes. |
-| Add stakeholder | Legger salgets person til blant [interessentene][2]. Agenten legger aldri til en person som ikke allerede er på salget. |
-| Create draft quote | Oppretter et tomt [tilbud][3] som utkast på salget, som du kan prise og sende. Ingenting legges til hvis salget allerede har et tilbud. |
-| Update sale date | Tilbys når salgsdatoen er passert. Setter salgsdatoen til når lignende vunne salg vanligvis avsluttes, minst ti virkedager frem i tid, og legger til en oppfølging minst fem virkedager frem i tid. Gjenåpner salget hvis det var utsatt. |
-| Close as won | Setter salget til **Solgt**, datert den dagen du godkjenner. |
-| Close as lost | Setter salget til **Tapt** med den foreslåtte årsaken, datert den dagen du godkjenner. Hvis årsaken ikke finnes i firmaets liste, lukkes salget uten årsak. |
+| Opprett avtale | Legger til en oppfølging på salget: en samtale, et møte eller en oppgave (en foreslått e-post blir en oppgave). Den plasseres innenfor arbeidstid 09:00-17:00, minst fem virkedager frem i tid. |
+| Flytt forfalt avtale | Flytter salgets forfalte oppfølging til en ny dato, minst fem virkedager frem i tid. Ingen ny oppfølging opprettes. |
+| Legg til interessent | Legger salgets person til blant [interessentene][2]. Agenten legger aldri til en person som ikke allerede er på salget. |
+| Opprett tilbudsutkast | Oppretter et tomt [tilbud][3] som utkast på salget, som du kan prise og sende. Ingenting legges til hvis salget allerede har et tilbud. |
+| Oppdater salgsdato | Tilbys når salgsdatoen er passert. Setter salgsdatoen til når lignende vunne salg vanligvis avsluttes, minst ti virkedager frem i tid, og legger til en oppfølging minst fem virkedager frem i tid. Gjenåpner salget hvis det var utsatt. |
+| Lukk som vunnet | Setter salget til **Solgt**, datert den dagen du godkjenner. |
+| Lukk som tapt | Setter salget til **Tapt** med den foreslåtte årsaken, datert den dagen du godkjenner. Hvis årsaken ikke finnes i firmaets liste, lukkes salget uten årsak. |
 
 <Warning>
 **Å lukke et salg kan ikke angres fra agenten.** Agenten foreslår dette bare med tydelige bevis i CRM-historikken din, aldri bare fordi et salg har blitt stille. For å reversere det må du [oppdatere salget][4] direkte.
