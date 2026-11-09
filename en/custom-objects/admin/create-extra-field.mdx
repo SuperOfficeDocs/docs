@@ -73,7 +73,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Position | Specifies this field's position among the other fields in lists. |
 | Search operator | Which search operator to use for this field. |
 | Show in table | If checked, this field is displayed as a column in screens where several entries are displayed in a table. |
-| Show one-to-many relations | For relation fields. Adds a section tab to the related record that lists the records of this table. For example, a company relation on an Equipment custom object adds an **Equipment** tab to the company. |
+| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite, the related record in SuperOffice CRM also gets a section tab, for example an **Equipment** tab on the company. |
 | Table | The table this field belongs to. |
 | Target table | Which table to use. |
 | Text area / Height | The number of lines of the text field. |
@@ -95,7 +95,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 1. Click **OK** to save the relation.
 1. Click **Restart NetServer** to apply the changes.
 
-For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With **Show one-to-many relations** selected, the sale shows a tab with its requests. TODO(label): confirm for sales.
+For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With CRM Suite and **Show one-to-many relations** selected, the sale shows a tab with its requests. TODO(label): confirm for sales. With a user-plan based license, build a web panel to list connected requests when viewing a sale in SuperOffice CRM.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls

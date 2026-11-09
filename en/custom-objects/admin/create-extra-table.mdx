@@ -25,6 +25,8 @@ import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-
 
 <ReqGrowthCustomObjects />
 
+With a user-plan based license, you need [Development Tools][8] to add extra tables.
+
 A [custom object][3] is a new type of record, such as *Equipment* or *Contract*. In the database, it is an extra table. You create the table, [add fields][1] to it, and decide how users find it.
 
 ## Steps
@@ -112,7 +114,9 @@ TODO(screenshot): table-properties-navigator.png
 * [Design the layout][5] of the custom object in the Screen Designer.
 * [Pre-fill fields][6] with a trigger when a record is opened.
 
-For extra tables shown in web panels, see [extra tables in web panels][7] in the documentation for version 11.
+## Show table in a web panel {#web-panel}
+
+With a user-plan based license, you show extra tables in SuperOffice CRM through web panels. To set the relevant access rights, the user must belong to a role that has the functional rights **List tables** and **Edit tables**.
 
 [1]: ./create-extra-field
 [2]: /en/automation/webhook/dev/index
@@ -120,7 +124,7 @@ For extra tables shown in web panels, see [extra tables in web panels][7] in the
 [4]: ./access-rights
 [5]: /en/customization/screen-designer/admin/add-layout#custom-objects
 [6]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
-[7]: https://help.superoffice.com/docs/11/en/custom-objects/admin/create-extra-table.html
+[8]: /en/admin/license/expander-services
 
 [img1]: /media/loc/en/custom-objects/create-extra-tables-and-fields.png
 [img2]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
