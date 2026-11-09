@@ -41,7 +41,7 @@ The Sales Assistant Agent watches your own open sales and tells you which ones n
 * **Remembers your decisions:** after you approve or reject a recommendation, it does not raise the same sale again until the sale changes or a waiting period has passed.
 
 <Note>
-The agent proposes. You decide. It never contacts a customer: quotes are created empty, and follow-ups are created without sending any invitations. The only thing the agent writes on its own is an attention flag on sales that are approaching or past their usual timeline. The flag is not cleared automatically. The agent works only from your own SuperOffice data. There is no web search or external enrichment.
+The agent proposes. You decide. It never contacts a customer: quotes are created empty, and follow-ups are created without sending any invitations. The only thing the agent writes on its own is an alert flag on sales that are approaching or past their usual timeline. The flag is not cleared automatically. The agent works only from your own SuperOffice data. There is no web search or external enrichment.
 </Note>
 
 ## Schedule
@@ -58,13 +58,19 @@ Setup is a single step. You are automatically the approver, and you can create o
 
     The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
 
-1. Select **Browse agents** in the upper-right corner of the **Agent overview**.
+1. Locate the **Sales Assistant Agent** card in the **Agent overview** and select **Activate**. This opens the set-up wizard.
 
-1. Locate the **Sales Assistant Agent** card and select **Activate**. This opens the set-up wizard.
+    ![The Agent overview, with the Sales Assistant Agent card marked Beta -screenshot][img1]
+
+    <Tip>
+    Do not see the card? Select **Browse agents** to find it.
+    </Tip>
 
 ## General settings {#settings}
 
 1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
+
+    ![The Sales Assistant Agent's General settings, with Max tasks per day, Base recommendations on, and the reminder settings -screenshot][img2]
 
 1. Optionally, edit the suggested **Description** if you want something different.
 
@@ -78,7 +84,7 @@ Setup is a single step. You are automatically the approver, and you can create o
     |---|---|
     | My own won deals | Your own won sales. |
     | My team's won deals | Your team's won sales. |
-    | All won deals | Every won sale in your organization. |
+    | All won deals (whole organisation) | Every won sale in your organization. |
     | The sale guide only | The [sales guide][1] for the sale type. Timing is not compared with past sales. |
     | My own guidance | A text you write (up to 2000 characters), for example *Prioritize sales over 100k; always involve a technical contact*. Timing is not compared with past sales. |
     | Selection of successful sales | The won sales in one of your own saved selections. |
@@ -90,6 +96,8 @@ Setup is a single step. You are automatically the approver, and you can create o
 1. Select **Save**.
 
     The instance is activated, appears under **My agents** in the Agents sidebar, greets you in **General chat**, and starts its first run straight away.
+
+    ![The Agent activated confirmation, with the Go to instance button -screenshot][img3]
 
 ## How recommendations work {#recommendations}
 
@@ -184,6 +192,10 @@ The Sales Assistant Agent's workspace has three tabs: **Chat**, **History**, and
 | History | A plain-language log of what the agent has done: how many open sales each run reviewed, each recommendation and whether it was approved, rejected, or expired, anything skipped (with the reason), and every change made through chat. Select a **Period** (last 24 hours, 7, 30, or 90 days) to narrow it down. |
 | Performance | Recommendations proposed, accepted, ignored, and expired over the last 7, 30, or 90 days. Approved recommendations count as accepted and rejected ones as ignored. |
 
+![The General chat thread, with the agent's welcome message -screenshot][img4]
+
+![The History tab, with the Period filter and a completed run -screenshot][img5]
+
 Select <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries.
 
 To change the description, language, **Max tasks per day**, what recommendations are based on, or the reminder settings, [edit the instance][5]. The name and schedule are fixed. Changes apply from the next run. Only the instance's owner can change its settings or delete it.
@@ -203,3 +215,9 @@ To change the description, language, **Max tasks per day**, what recommendations
 [3]: /en/sale/learn/quote/index
 [4]: /en/sale/learn/update
 [5]: /en/ai/learn/set-up-ai-agents#edit
+
+[img1]: /media/loc/en/ai/sales-assistant-agent-overview.png
+[img2]: /media/loc/en/ai/sales-assistant-settings.png
+[img3]: /media/loc/en/ai/sales-assistant-activated.png
+[img4]: /media/loc/en/ai/sales-assistant-chat.png
+[img5]: /media/loc/en/ai/sales-assistant-history.png
