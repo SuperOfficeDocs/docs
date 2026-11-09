@@ -1024,6 +1024,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1064,12 +1065,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 |personAppointment/associate/contactFullName|string|| x |
 |personAppointment/associate/contactCategory|listAny|| x |
 |personAppointment/associate/role|listAny|| x |
-|personAppointment/associate/assocName|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/assocName|associate|| x |
 |personAppointment/associate/assocTooltip|string||  |
 |personAppointment/associate/assocType|listAny|| x |
 |personAppointment/associate/ejUserId|int||  |
@@ -1100,7 +1101,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimplePerson?$select=personUdef/SuperOffice:8,personExtra/x_person_contact_relation,personSourceRelation/personCountry,personSourceRelation/isStakeholder,personContact/contactAssociate/usergroupId
+GET /api/v1/archive/SimplePerson?$select=personAddress/formattedAddress,personUdef/SuperOffice:9,personTargetRelation/position,personContact/contactSupportPerson/personActiveErpLinks,personContact/contactSupportPerson/personUdef/SuperOffice:8
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

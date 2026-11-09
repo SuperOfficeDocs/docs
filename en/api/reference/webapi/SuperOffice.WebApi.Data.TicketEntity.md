@@ -390,6 +390,18 @@ public virtual TicketMessage[] Messages { get; set; }
 
  [TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage)\[\]
 
+### NumAppointments {#SuperOffice_WebApi_Data_TicketEntity_NumAppointments}
+
+The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.
+
+```csharp
+public virtual int NumAppointments { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
 ### NumMessages {#SuperOffice_WebApi_Data_TicketEntity_NumMessages}
 
 The total number of messages for this request.
@@ -487,6 +499,18 @@ public virtual Person Person { get; set; }
 #### Property Value
 
  [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
+
+### PostponeOptionId {#SuperOffice_WebApi_Data_TicketEntity_PostponeOptionId}
+
+Postpone option of the ticket status to calculate Activate from on Save. Only used on Save when the status is Postponed; always 0 when read
+
+```csharp
+public virtual int PostponeOptionId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### Priority {#SuperOffice_WebApi_Data_TicketEntity_Priority}
 

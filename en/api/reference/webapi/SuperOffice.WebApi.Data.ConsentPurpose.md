@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_ConsentPurpose"></a> Class ConsentPurpose
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for ConsentPurpose.
 
@@ -11,20 +11,20 @@ public class ConsentPurpose : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
 [ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
@@ -76,6 +76,18 @@ Form text used for the actual checkbox
 
 ```csharp
 public virtual string ConsentText { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_ConsentPurpose_ConsentTextImplicit"></a> ConsentTextImplicit
+
+Implicit consent text, used with forms
+
+```csharp
+public virtual string ConsentTextImplicit { get; set; }
 ```
 
 #### Property Value
@@ -205,4 +217,3 @@ public virtual DateTime UpdatedDate { get; set; }
 ## See Also
 
 [ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
-

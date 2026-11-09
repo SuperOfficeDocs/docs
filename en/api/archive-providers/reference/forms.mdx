@@ -41,6 +41,8 @@ both from this one provider.
 |formActive|bool|| x |
 |formType|int|| x |
 |formSubmissionCount|int|| x |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -66,6 +68,7 @@ both from this one provider.
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -108,7 +111,7 @@ both from this one provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/Forms?$select=emailFlow/workflowName,emailFlow/updatedDate
+GET /api/v1/archive/Forms?$select=emailFlow/workflowId,emailFlow/updatedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

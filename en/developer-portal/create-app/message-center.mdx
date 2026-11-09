@@ -3,9 +3,9 @@ uid: messaging-center
 title: Messages
 description: Read, filter, and reply to support tickets in the SuperOffice Developer Portal Messages area.
 keywords: ['Developer Portal', 'Messaging Center', 'support tickets', 'reply', 'attachments', 'mark as answered', 'return to SuperOffice']
-author: Anthony Yates, Bergfrid Dias
-date: 07.07.2026
-version_devportal: 2.15
+author: Anthony Yates, Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
+version_devportal: 2.19
 content_type: concept
 platform: web
 deployment: online
@@ -20,7 +20,7 @@ It collects messages from:
   * Application configuration
   * App Store information
   * Partner page information
-* Feedback submitted from the App Store **Report a problem** link.
+* Problems reported by customers through the App Store **Report a problem** link. See [Report a problem tickets](#report-a-problem-tickets).
 * Support tickets created from the **Failures** details page.
 * Support requests that SuperOffice routes to you - see [How support requests reach you](#how-support-requests-reach-you).
 * Your emails sent to `appdev@superoffice.com` or `appstore@superoffice.com`.
@@ -144,6 +144,17 @@ When that happens:
 
 > [!IMPORTANT]
 > For these notifications to reach you, your organization must have at least one contact email configured. SuperOffice uses the first available of: the partner **[Support emails][8]**, then the app's **[Error reporting emails][9]**, then the partner **technical contact**.
+
+## Report a problem tickets
+
+When a customer uses **Report a problem** on your app in the App Store:
+
+* A ticket is created in your app support queue, and you're notified in **Messages**. You no longer receive the problem report by email.
+* The details of the problem are on the ticket. Open it in Messages to read them and reply.
+* The customer who reported the problem gets a confirmation by email.
+* The ticket always shows the customer's tenant from the same environment as the App Store the problem was reported from.
+
+Uninstall requests and requests to publish are handled as before.
 
 ## Open a ticket in the SuperOffice Customer Center
 

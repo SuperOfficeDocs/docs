@@ -562,6 +562,7 @@
           "nl/request/learn/transfer",
           "nl/request/learn/forward",
           "nl/request/learn/reply",
+          "nl/request/learn/mentions",
           "nl/request/learn/request-relations",
           "nl/request/learn/tags",
           "nl/request/learn/flag-message",

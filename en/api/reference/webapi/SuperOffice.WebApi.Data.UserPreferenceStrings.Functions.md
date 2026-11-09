@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions"></a> Class UserPreferenceStrings.Functions
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Functions
 
@@ -11,17 +11,17 @@ public static class UserPreferenceStrings.Functions
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [UserPreferenceStrings.Functions](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Functions)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Fields
@@ -353,6 +353,18 @@ public const string InternetUseIntegratedBrowser = "InternetUseIntegratedBrowser
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions_JoinPilotForStartPage"></a> JoinPilotForStartPage
+
+Allow admins to disable the StartPage for individual users. Default is true (on for all users).
+
+```csharp
+public const string JoinPilotForStartPage = "JoinPilotForStartPage"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions_JoinPilotForWebTools"></a> JoinPilotForWebTools
 
 Route all DownloadService requests from PROD to STAGE to allow customers
@@ -639,4 +651,3 @@ public const string UseMiddleName = "UseMiddleName"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-

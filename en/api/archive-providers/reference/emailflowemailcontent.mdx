@@ -54,6 +54,7 @@ Lists all email flow message content
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -113,6 +114,7 @@ Lists all email flow message content
 |shipment/emailFlow/workflowCompletedCount| *None* ||  |
 |shipment/emailFlow/workflowSucceededCount| *None* ||  |
 |shipment/emailFlow/workflowSuccessRate| *None* ||  |
+|shipment/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |shipment/emailFlow/updatedBy|associate|| x |
 |shipment/emailFlow/updatedDate|date|| x |
 |shipment/emailFlow/registeredBy|associate|| x |
@@ -121,13 +123,13 @@ Lists all email flow message content
 |shipment/emailFlow/workflowAssociate/lastName|string|| x |
 |shipment/emailFlow/workflowAssociate/middleName|string|| x |
 |shipment/emailFlow/workflowAssociate/fullName|string|| x |
-|shipment/emailFlow/workflowAssociate/contactId|int||  |
-|shipment/emailFlow/workflowAssociate/personId|int||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|shipment/emailFlow/workflowAssociate/contactId|int||  |
+|shipment/emailFlow/workflowAssociate/personId|int||  |
 |shipment/emailFlow/workflowAssociate/mrMrs|string|| x |
 |shipment/emailFlow/workflowAssociate/title|string|| x |
 |shipment/emailFlow/workflowAssociate/associateDbId|associate|| x |
@@ -226,13 +228,13 @@ Lists all email flow message content
 |shipment/project/projectAssociate/otherGroups|userGroup||  |
 |shipment/project/projectAssociate/userName|string|| x |
 |shipment/project/projectAssociate/personEmail|string|| x |
-|shipment/project/projectAssociate/locationAddress|string|| x |
-|shipment/project/projectAssociate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|shipment/project/projectAssociate/locationAddress|string|| x |
+|shipment/project/projectAssociate/isLocation|bool|| x |
 |shipment/project/projectUdef/SuperOffice:1|string|| x |
 |shipment/project/projectUdef/SuperOffice:2|string|| x |
 |shipment/project/projectUdef/SuperOffice:3|int|| x |
@@ -272,7 +274,7 @@ Lists all email flow message content
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowEmailContent?$select=shipment/project/saintAmountClass,shipment/emailFlow/workflowName,shipment/emailFlow/workflowAssociate/credentialDisplayValue
+GET /api/v1/archive/EmailFlowEmailContent?$select=shipment/emailFlow/thumbnail,shipment/project/projectUdef/SuperOffice:3,shipment/emailFlow/workflowId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

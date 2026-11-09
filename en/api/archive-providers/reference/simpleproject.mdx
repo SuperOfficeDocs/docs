@@ -134,7 +134,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleProject?$select=projectEvent/hasSignOff,projectAssociate/role
+GET /api/v1/archive/SimpleProject?$select=hasInfoText,projectAssociate/fullName,projectEvent/hasSignOff
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1868,10 +1868,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -2226,7 +2226,9 @@
               "Postponed4Hours",
               "PostponedDay",
               "PostponedWeek",
-              "PostponedMonth"
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
             ],
             "type": "string"
           },
@@ -2368,6 +2370,11 @@
           "NumMessages": {
             "format": "int32",
             "description": "The total number of messages for this request.",
+            "type": "integer"
+          },
+          "NumAppointments": {
+            "format": "int32",
+            "description": "The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.",
             "type": "integer"
           },
           "FromAddress": {

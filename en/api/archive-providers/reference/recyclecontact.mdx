@@ -217,7 +217,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Recy
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecycleContact?$select=restrictionAddress/city,NumberOfSalesInPeriod,postAddress/wgs84latitude
+GET /api/v1/archive/RecycleContact?$select=contactAssociate/portraitThumbnail,contactExtra/x_contact_float,postAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

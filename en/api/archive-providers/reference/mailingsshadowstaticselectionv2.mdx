@@ -535,18 +535,19 @@ Shadow contact provider for the static Mailings provider.
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
 |emailFlow/registeredDate|date|| x |
 |emailFlow/workflowAssociate/firstName|string|| x |
 |emailFlow/workflowAssociate/lastName|string|| x |
-|emailFlow/workflowAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/workflowAssociate/middleName|string|| x |
 |emailFlow/workflowAssociate/fullName|string|| x |
 |emailFlow/workflowAssociate/contactId|int||  |
 |emailFlow/workflowAssociate/personId|int||  |
@@ -646,12 +647,12 @@ Shadow contact provider for the static Mailings provider.
 |project/projectAssociate/isActiveText|bool|| x |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
 |project/projectAssociate/otherGroups|userGroup||  |
-|project/projectAssociate/userName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/userName|string|| x |
 |project/projectAssociate/personEmail|string|| x |
 |project/projectAssociate/locationAddress|string|| x |
 |project/projectAssociate/isLocation|bool|| x |
@@ -699,7 +700,7 @@ Shadow contact provider for the static Mailings provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsShadowStaticSelectionV2?$select=mailingAddr/contact/email/emailBounceCount,mailingAddr/contact/contactUdef/SuperOffice:7,mailingAddr/person/personAddress/wgs84latitude,mailingAddr/person/personExtra/y_rental/x_end,emailFlow/mediumThumbnail
+GET /api/v1/archive/MailingsShadowStaticSelectionV2?$select=mailingAddr/contact/revenueBasecurrency,mailingAddr/contact/contactAssociate/contactCategory,mailingAddr/contact/contactUdef/SuperOffice:1,associate/associateDbId,associate/usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

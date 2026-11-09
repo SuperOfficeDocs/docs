@@ -4,7 +4,7 @@ title: Feature toggles
 description: Feature toggles
 keywords: ['feature toggle', 'FeatureToggles', 'feature_toggle', 'web.config', 'SuperOffice.config']
 author: Bergfrid Dias, Frode Berntsen
-date: 06.10.2026
+date: 06.11.2026
 content_type: howto
 deployment: onsite
 platform: web
@@ -143,8 +143,14 @@ for (Integer i = 0; i < featureToggles.length(); i++)
 You can retrieve the `feature_toggle` field value using the dynamic archive provider when using the SuperOffice web services.
 </Tip>
 
+## Retrieve feature toggles using the web services
+
+From version 10.2.11, the `GetAllFeatureToggles` method on the configuration agent returns all feature toggles and whether each one is on or off. See [IConfigurationAgent.GetAllFeatureTogglesAsync][5] in the Web API reference and the [10.2.11 API changes][6].
+
 [1]: ./web-config/featuretoggles
 [2]: ./web-config/index
 [3]: ./install/win-client/souser-ini
 [4]: ./install/win-client/superoffice-config
+[5]: /en/api/reference/webapi/SuperOffice.WebApi.Agents.IConfigurationAgent#SuperOffice_WebApi_Agents_IConfigurationAgent_GetAllFeatureTogglesAsync_SuperOffice_WebApi_RequestOptions_
+[6]: /release-notes/10.2/api
 [img2]: /media/loc/en/onsite/feature-toggle-result.png

@@ -897,6 +897,30 @@ Override language/culture codes on this request.
 
 LandingPageEntity
 
+### GetLandingPageOverviewSettingsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ConfigurationAgent_GetLandingPageOverviewSettingsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Get the current associate's overview layout for a landing page, as JSON owned by the client. Returns an empty string when none is saved, meaning the delivered default.
+
+```csharp
+public Task<string> GetLandingPageOverviewSettingsAsync(string entityTableName, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`entityTableName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Entity table name identifying which landing page (ticket, s_shipment, ...).
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+
+The overview layout JSON, or an empty string.
+
 ### GetMyWindowPosSizesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ConfigurationAgent_GetMyWindowPosSizesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets the window and dialog position and size settings belonging to the currently logged on user
@@ -1568,6 +1592,34 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
 Returns nothing
+
+### SetLandingPageOverviewSettingsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ConfigurationAgent_SetLandingPageOverviewSettingsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Save the current associate's overview layout for a landing page, as JSON owned by the client. An empty value resets it to the delivered default. Creates the landing page row if it does not exist.
+
+```csharp
+public Task SetLandingPageOverviewSettingsAsync(string entityTableName, string overviewSettings, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`entityTableName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Entity table name identifying which landing page (ticket, s_shipment, ...).
+
+`overviewSettings` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The overview layout JSON, at most 65,536 characters. Empty resets to the delivered default.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
 
 ### SetLandingPagePinForAssociateAsync\(bool, int, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ConfigurationAgent_SetLandingPagePinForAssociateAsync_System_Boolean_System_Int32_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 

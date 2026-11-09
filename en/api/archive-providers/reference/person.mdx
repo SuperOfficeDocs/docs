@@ -800,6 +800,7 @@ table data; this will also pull in contact udef and related fields.
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -859,12 +860,12 @@ table data; this will also pull in contact udef and related fields.
 |personAppointment/associate/isLocation|bool|| x |
 |personAppointment/appointment/text|positiveString|| x |
 |personAppointment/appointment/description|positiveString|| x |
-|personAppointment/appointment/title|positiveString|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/appointment/title|positiveString|| x |
 |personAppointment/appointment/titleHtml| *None* || x |
 |personAppointment/appointment/agenda|positiveString|| x |
 |personAppointment/appointment/agendaHtml| *None* || x |
@@ -876,7 +877,7 @@ table data; this will also pull in contact udef and related fields.
 ## Sample
 
 ```http!
-GET /api/v1/archive/Person?$select=personSourceRelation/rank,personSourceRelation/personSource,personTargetRelation/personCountryId,request/ownedBy/fullName,request/ticketPriority/ticketPriorityId
+GET /api/v1/archive/Person?$select=leadstatusRank,email/emailDescription,email/emailId,personExtra/y_rental/x_contact,personContact/streetAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

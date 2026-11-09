@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_Ticket"></a> Class Ticket
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for Ticket.
 The ticket carrier is used for representing a service request.
@@ -12,20 +12,20 @@ public class Ticket : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
 [Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
@@ -346,6 +346,18 @@ public virtual DateTime LastChanged { get; set; }
 #### Property Value
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
+
+### <a id="SuperOffice_WebApi_Data_Ticket_NumAppointments"></a> NumAppointments
+
+The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.
+
+```csharp
+public virtual int NumAppointments { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_NumMessages"></a> NumMessages
 
@@ -902,4 +914,3 @@ public virtual string Title { get; set; }
 ## See Also
 
 [TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
-

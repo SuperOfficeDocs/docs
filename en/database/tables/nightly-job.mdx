@@ -1,0 +1,55 @@
+---
+title: nightly_job table
+description: Lock and scheduling status for NetServer nightly jobs; one row per job, ensuring only one server at a time runs a given job
+generated: true
+content_type: reference
+envir: online
+---
+
+import NightlyJob from "./includes/nightly-job.mdx";
+
+## nightly\_job Table (511)
+
+Lock and scheduling status for NetServer nightly jobs; one row per job, ensuring only one server at a time runs a given job
+
+## Fields
+
+| Name | Description | Type | Nullable |
+|------|-------------|------|:----:|
+|nightly\_job\_id|Primary key|PK|No|
+|name|Unique name of the nightly job|String(64)|No|
+|lock\_count|0 when the job is not running; incremented when a server takes (or breaks a stale) lock, reset to 0 on release|Int|No|
+|locked\_at|When the current lock was taken; locks older than 24 hours are considered stale and may be broken|UtcDateTime|Yes|
+|locked\_by|Machine name of the server that took the current lock, for diagnostics|String(255)|Yes|
+|next\_run|Diagnostic only: when the job asked to be run next, as of its last run; not used for scheduling|UtcDateTime|Yes|
+|last\_exhaustive|When the job last completed an exhaustive run, i.e. processed all available data; or how far a later non-exhaustive run got|UtcDateTime|Yes|
+|last\_point\_in\_time|Job-specific progress marker, such as the last id processed, used to continue from where the previous run stopped|Int|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
+![nightly_job table relationship diagram](/media/loc/en/database/tables/nightly_job.png)
+
+<NightlyJob />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|name |String(64) |Unique |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

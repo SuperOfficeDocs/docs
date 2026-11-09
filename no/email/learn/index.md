@@ -4,8 +4,8 @@ title: E-post
 description: Med SuperOffice CRM kan du velge å lagre og dele e-postene dine på ulike måter som får deg og teamet ditt til å jobbe mer produktivt.
 keywords: ['e-post', 'innboks', 'laste ned']
 author: digitaldiina
-date: 18.09.2026
-so_version: 12.2
+date: 11.06.2026
+so_version: 12.4
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -71,6 +71,12 @@ Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [side
 
 ![E-post forhåndsvisning med uthevede oppgavemenyalternativer -screenshot][img1]
 
+## Last ned en e-post {#download}
+
+Når du laster ned en e-post, lagres en kopi på enheten din. Åpne e-posten i [sidepanelet][15] eller i **E-post**-dialogen, klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgavemeny"></i> og velg **Last ned**. Se [Laste ned et dokument eller en e-post][16] for flere måter å laste ned på.
+
+For å åpne nedlastede e-poster direkte i e-postappen som er installert på PC-en din, endrer du innstillingene i Windows og i nettleseren. Se [Åpne nedlastede e-poster i e-postappen din][17].
+
 [1]: /no/email/inbox/learn/index
 [2]: /integrations/gmail-link/index
 [3]: /integrations/gmail-link/email-archive-incoming
@@ -85,5 +91,7 @@ Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [side
 [13]: /no/learn/getting-started/connect-your-accounts
 [14]: /no/learn/section-tabs/activities-tab
 [15]: /no/learn/getting-started/main-screen/side-panel
+[16]: /no/document/learn/edit#download
+[17]: /no/document/learn/edit#download-open
 
 [img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png

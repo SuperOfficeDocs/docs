@@ -1,0 +1,186 @@
+---
+title: Agent API changes in 12.6
+description: Agent API release notes for SuperOffice 12.6
+date: 11.04.2026
+so_version: 12.6.1407
+content_type: release-note
+category: api
+---
+
+# API changes
+
+Compared versions: v12.5.2909 to v12.6.1407.
+
+## Web API
+
+The following represent changes to the SuperOffice.WebApi assembly.
+
+### Assembly: SuperOffice.WebApi
+
+### New Types
+
+* `SuperOffice.WebApi.Data.Configuration_GetLandingPageOverviewSettingsRequest`
+* `SuperOffice.WebApi.Data.Configuration_SetLandingPageOverviewSettingsRequest`
+* `SuperOffice.WebApi.Data.CopyPartAvailability`
+* `SuperOffice.WebApi.Data.CopyPartCheck`
+* `SuperOffice.WebApi.Data.CopyPartResult`
+* `SuperOffice.WebApi.Data.List_GetTicketStatusPostponeOptionsRequest`
+* `SuperOffice.WebApi.Data.List_SaveTicketStatusPostponeOptionsRequest`
+* `SuperOffice.WebApi.Data.Project_CheckProjectEntityCopyRequest`
+* `SuperOffice.WebApi.Data.Project_CreateProjectEntityFromExistingRequest`
+* `SuperOffice.WebApi.Data.Project_SaveProjectEntityCopyRequest`
+* `SuperOffice.WebApi.Data.ProjectCopyCheck`
+* `SuperOffice.WebApi.Data.ProjectCopyOptions`
+* `SuperOffice.WebApi.Data.ProjectCopyResult`
+* `SuperOffice.WebApi.Data.Sale_CheckSaleEntityCopyRequest`
+* `SuperOffice.WebApi.Data.Sale_CreateDefaultSaleEntityBySaleTypeIdRequest`
+* `SuperOffice.WebApi.Data.Sale_CreateSaleEntityFromExistingRequest`
+* `SuperOffice.WebApi.Data.Sale_GetExpectedSaleDateRequest`
+* `SuperOffice.WebApi.Data.Sale_SaveSaleEntityCopyRequest`
+* `SuperOffice.WebApi.Data.SaleCopyCheck`
+* `SuperOffice.WebApi.Data.SaleCopyOptions`
+* `SuperOffice.WebApi.Data.SaleCopyResult`
+* `SuperOffice.WebApi.Data.TicketPostponeOption`
+* `SuperOffice.WebApi.Data.TicketPostponeRule`
+* `SuperOffice.WebApi.Data.TicketPostponeStandard`
+
+### Modified Types
+
+#### SuperOffice.WebApi.Agents.ConfigurationAgent is Modified
+
+* New items
+  * Method `GetLandingPageOverviewSettingsAsync(String, RequestOptions)`
+  * Method `SetLandingPageOverviewSettingsAsync(String, String, RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.IConfigurationAgent is Modified
+
+* New items
+  * Method `GetLandingPageOverviewSettingsAsync(String, RequestOptions)`
+  * Method `SetLandingPageOverviewSettingsAsync(String, String, RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.IListAgent is Modified
+
+* New items
+  * Method `GetTicketStatusPostponeOptionsAsync(Int32, RequestOptions)`
+  * Method `SaveTicketStatusPostponeOptionsAsync(Int32, TicketPostponeOption[], RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.IProjectAgent is Modified
+
+* New items
+  * Method `CheckProjectEntityCopyAsync(ProjectEntity, Int32, RequestOptions)`
+  * Method `CreateProjectEntityFromExistingAsync(Int32, RequestOptions)`
+  * Method `SaveProjectEntityCopyAsync(ProjectEntity, Int32, ProjectCopyOptions, RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.ISaleAgent is Modified
+
+* New items
+  * Method `CheckSaleEntityCopyAsync(SaleEntity, Int32, RequestOptions)`
+  * Method `CreateDefaultSaleEntityBySaleTypeIdAsync(Int32, RequestOptions)`
+  * Method `CreateSaleEntityFromExistingAsync(Int32, RequestOptions)`
+  * Method `GetExpectedSaleDateAsync(DateTime, Int32, RequestOptions)`
+  * Method `SaveSaleEntityCopyAsync(SaleEntity, Int32, SaleCopyOptions, RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.ListAgent is Modified
+
+* New items
+  * Method `GetTicketStatusPostponeOptionsAsync(Int32, RequestOptions)`
+  * Method `SaveTicketStatusPostponeOptionsAsync(Int32, TicketPostponeOption[], RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.ProjectAgent is Modified
+
+* New items
+  * Method `CheckProjectEntityCopyAsync(ProjectEntity, Int32, RequestOptions)`
+  * Method `CreateProjectEntityFromExistingAsync(Int32, RequestOptions)`
+  * Method `SaveProjectEntityCopyAsync(ProjectEntity, Int32, ProjectCopyOptions, RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.SaleAgent is Modified
+
+* New items
+  * Method `CheckSaleEntityCopyAsync(SaleEntity, Int32, RequestOptions)`
+  * Method `CreateDefaultSaleEntityBySaleTypeIdAsync(Int32, RequestOptions)`
+  * Method `CreateSaleEntityFromExistingAsync(Int32, RequestOptions)`
+  * Method `GetExpectedSaleDateAsync(DateTime, Int32, RequestOptions)`
+  * Method `SaveSaleEntityCopyAsync(SaleEntity, Int32, SaleCopyOptions, RequestOptions)`
+
+#### SuperOffice.WebApi.Data.Appointment is Modified
+
+* New items
+  * Property `TicketId`
+  * Property `TicketTitle`
+
+#### SuperOffice.WebApi.Data.AppointmentEntity is Modified
+
+* New items
+  * Property `Ticket`
+
+#### SuperOffice.WebApi.Data.ConsentPurpose is Modified
+
+* New items
+  * Property `ConsentTextImplicit`
+
+#### SuperOffice.WebApi.Data.CustomObjectDefinition is Modified
+
+* New items
+  * Property `IconHint`
+
+#### SuperOffice.WebApi.Data.FunctionRightStrings is Modified
+
+* New items
+  * Field `FormsOverrideApprovalText`
+
+#### SuperOffice.WebApi.Data.Ticket is Modified
+
+* New items
+  * Property `NumAppointments`
+
+#### SuperOffice.WebApi.Data.TicketBaseStatus is Modified
+
+* New items
+  * Field `PostponedNextWeek`
+  * Field `PostponedNextWorkingDay`
+
+#### SuperOffice.WebApi.Data.TicketEntity is Modified
+
+* New items
+  * Property `NumAppointments`
+  * Property `PostponeOptionId`
+
+#### SuperOffice.WebApi.Data.UserPreferenceStrings is Modified
+
+* Modified items
+
+##### SuperOffice.WebApi.Data.UserPreferenceStrings.AI is Modified
+
+* New items
+  * Field `.AICreditLimitAgentDataQuality`
+  * Field `.AICreditLimitAgentDuplicate`
+  * Field `.AICreditLimitAgentLead`
+  * Field `.AICreditLimitAgentSalesAssistant`
+  * Field `.AICreditLimitLeadFeeder`
+  * Field `.AIEnableAgentDataQuality`
+  * Field `.AIEnableAgentDuplicate`
+  * Field `.AIEnableAgentLead`
+  * Field `.AIEnableAgentSalesAssistant`
+
+##### SuperOffice.WebApi.Data.UserPreferenceStrings.DataCollection is Modified
+
+* Deleted items
+  * Field `.DataCollectionBirthdayAssociateNotifier`
+  * Field `.DataCollectionBirthdayContactNotifier`
+  * Field `.DataCollectionDataAdd`
+  * Field `.DataCollectionDataAddTables`
+  * Field `.DataCollectionNewsfeedCleanup`
+  * Field `.DataCollectionRunning`
+  * Field `.DataCollectionTableSize`
+  * Field `.DataCollectionTimeKeeping`
+  * Field `.DataCollectionUsageStats`
+  * Field `.DataCollectionWebAppUsage`
+
+##### SuperOffice.WebApi.Data.UserPreferenceStrings.Functions is Modified
+
+* New items
+  * Field `.FunctionsJoinPilotForStartPage`
+
+## Web API Authorization
+
+The following represent changes to the SuperOffice.WebApi.Authorization assembly.

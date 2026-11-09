@@ -4,7 +4,7 @@ title: App Store information
 description: Updating App Store information in the SuperOffice Developer Portal.
 keywords: ['Developer Portal']
 author: digitaldiina
-date: 12.04.2025
+date: 11.06.2026
 version_devportal: 1.27
 content_type: howto
 deployment: online
@@ -26,7 +26,7 @@ Before a new application gets listed in the App Store:
 **Required info:**
 
 * All fields except *Description - What's new* needs to be filled before first publish to the [SuperOffice App Store][1].
-* Application description and images (see [marketing requirements][2]).
+* Application description and images (see [App Store listing requirements][16]).
 
 **Relevant info:**
 
@@ -63,3 +63,4 @@ Before a new application gets listed in the App Store:
 [10]: ../../create-app/versioning
 [8]: ../../faq/update-app
 [15]: ../../partner/manage-permissions
+[16]: ../requirements/marketing

@@ -1491,6 +1491,312 @@
         ]
       }
     },
+    "/api/v1/Agents/Sale/GetExpectedSaleDate": {
+      "post": {
+        "tags": [
+          "Sale_Agent"
+        ],
+        "summary": "Get Expected Sale Date",
+        "description": "Calculate the default expected sale date for a sale type, by applying the sale type's configured duration to a base date.\n\nThis is the server-side equivalent of what the sale card does with the duration published in the SaleType list's extra info, so callers creating sales outside the GUI get the same date.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1SaleAgent_GetExpectedSaleDate",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest"
+              }
+            }
+          },
+          "description": "BaseDate, SaleTypeId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sale/CreateDefaultSaleEntityBySaleTypeId": {
+      "post": {
+        "tags": [
+          "Sale_Agent"
+        ],
+        "summary": "Create Default Sale Entity By Sale Type Id",
+        "description": "Create a new SaleEntity with default values for a given sale type, with the expected sale date already derived from that sale type's configured duration.\n\nUse this rather than CreateDefaultSaleEntity when the sale type is known up front, so the defaults are consistent with it instead of with whichever sale type happens to be the system default.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1SaleAgent_CreateDefaultSaleEntityBySaleTypeId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest"
+              }
+            }
+          },
+          "description": "SaleTypeId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/Sale/IsNumberValid": {
       "post": {
         "tags": [
@@ -2260,6 +2566,456 @@
               "application/merge-patch+json": {
                 "schema": {
                   "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sale/CreateSaleEntityFromExisting": {
+      "post": {
+        "tags": [
+          "Sale_Agent"
+        ],
+        "summary": "Create Sale Entity From Existing",
+        "description": "Create an unsaved SaleEntity copy of an existing sale, with the values that must not be carried over already stripped.\n\nThe returned entity is not persisted - edit the fields the user is allowed to change, then pass it to SaveSaleEntityCopy.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1SaleAgent_CreateSaleEntityFromExisting",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest"
+              }
+            }
+          },
+          "description": "SaleId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sale/SaveSaleEntityCopy": {
+      "post": {
+        "tags": [
+          "Sale_Agent"
+        ],
+        "summary": "Save Sale Entity Copy",
+        "description": "Save a sale copy prepared by CreateSaleEntityFromExisting, optionally copying parts of the source sale along with it.\n\nThose parts are read from the source sale by the server; they are not carried on the passed entity. Pass null options, or options with nothing set, to copy the sale alone.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1SaleAgent_SaveSaleEntityCopy",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest"
+              }
+            }
+          },
+          "description": "SaleEntity, SourceSaleId, Options",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sale/CheckSaleEntityCopy": {
+      "post": {
+        "tags": [
+          "Sale_Agent"
+        ],
+        "summary": "Check Sale Entity Copy",
+        "description": "Check a sale copy before saving it: which of the optional parts of SaveSaleEntityCopy can be copied, and errors in the fields the user can edit.\n\nNothing is saved. SaveSaleEntityCopy refuses an optional part that is reported as not licensed, or as not available for any reason other than the sale type not using stakeholders.\r\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1SaleAgent_CheckSaleEntityCopy",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest"
+              }
+            }
+          },
+          "description": "SaleEntity, SourceSaleId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyCheck"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyCheck"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyCheck"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyCheck"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyCheck"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyCheck"
                 }
               }
             }
@@ -5633,10 +6389,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -6396,6 +7152,15 @@
             "format": "int32",
             "description": "Link to task list",
             "type": "integer"
+          },
+          "TicketId": {
+            "format": "int32",
+            "description": "Request this appointment belongs to; 0 or NULL when the appointment is not linked to a request",
+            "type": "integer"
+          },
+          "TicketTitle": {
+            "description": "Title of the request this appointment belongs to. Blank if no request is linked, or the user can't read the request.",
+            "type": "string"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
@@ -7548,6 +8313,30 @@
           }
         }
       },
+      "SuperOffice.WebApi.v1.Carriers.SaleCarriers.GetExpectedSaleDateRequest": {
+        "description": "GetExpectedSaleDate: Calculate the default expected sale date for a sale type, by applying the sale type's configured duration to a base date. This is the server-side equivalent of what the sale card does with the duration published in the SaleType list's extra info, so callers creating sales outside the GUI get the same date.",
+        "type": "object",
+        "properties": {
+          "BaseDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "SaleTypeId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateDefaultSaleEntityBySaleTypeIdRequest": {
+        "description": "CreateDefaultSaleEntityBySaleTypeId: Create a new SaleEntity with default values for a given sale type, with the expected sale date already derived from that sale type's configured duration. Use this rather than CreateDefaultSaleEntity when the sale type is known up front, so the defaults are consistent with it instead of with whichever sale type happens to be the system default.",
+        "type": "object",
+        "properties": {
+          "SaleTypeId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
       "SuperOffice.WebApi.v1.Carriers.SaleCarriers.IsNumberValidRequest": {
         "description": "IsNumberValid: Checks if the number is unique or required.  The setting is configured from admin under system options.",
         "type": "object",
@@ -7616,6 +8405,174 @@
           "SaleId": {
             "format": "int32",
             "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SaleCarriers.CreateSaleEntityFromExistingRequest": {
+        "description": "CreateSaleEntityFromExisting: Create an unsaved SaleEntity copy of an existing sale, with the values that must not be carried over already stripped. The returned entity is not persisted - edit the fields the user is allowed to change, then pass it to SaveSaleEntityCopy.",
+        "type": "object",
+        "properties": {
+          "SaleId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SaleCarriers.SaveSaleEntityCopyRequest": {
+        "description": "SaveSaleEntityCopy: Save a sale copy prepared by CreateSaleEntityFromExisting, optionally copying parts of the source sale along with it. Those parts are read from the source sale by the server; they are not carried on the passed entity. Pass null options, or options with nothing set, to copy the sale alone.",
+        "type": "object",
+        "properties": {
+          "SaleEntity": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+          },
+          "SourceSaleId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Options": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleCopyOptions"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.SaleCopyOptions": {
+        "description": "Which optional parts to copy alongside a sale, for SaleAgent.SaveSaleEntityCopy. Options live here rather than as parameters on the operation, so a new one can be added without changing the signature. Nothing set copies the sale alone.\r\n<para />\r\nCarrier object for SaleCopyOptions.\r\nServices for the SaleCopyOptions Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ISaleAgent\">Sale Agent</see>.",
+        "type": "object",
+        "properties": {
+          "CopyStakeholders": {
+            "description": "Recreate the source sale's stakeholders on the new sale. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          },
+          "CopyQuote": {
+            "description": "Copy the source sale's quote to the new sale. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          },
+          "CopyNotes": {
+            "description": "Copy the source sale's notes to the new sale. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          },
+          "CopyLinks": {
+            "description": "Copy the source sale's links to the new sale. If the source has none, the result reports NothingToCopy for this part.",
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.SaleCopyResult": {
+        "description": "Result of saving a copied sale: the sale that was created, and what became of each optional part.\r\n<para />\r\nCarrier object for SaleCopyResult.\r\nServices for the SaleCopyResult Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ISaleAgent\">Sale Agent</see>.",
+        "type": "object",
+        "properties": {
+          "SaleId": {
+            "format": "int32",
+            "description": "Id of the sale that was created.",
+            "type": "integer"
+          },
+          "StakeholderResult": {
+            "description": "What became of the stakeholders: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "QuoteResult": {
+            "description": "What became of the quote: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "NotesResult": {
+            "description": "What became of the notes: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "LinksResult": {
+            "description": "What became of the links: not requested, copied, nothing on the source to copy, or attempted and failed.",
+            "enum": [
+              "NotRequested",
+              "Success",
+              "Failure",
+              "NothingToCopy"
+            ],
+            "type": "string"
+          },
+          "Warnings": {
+            "description": "One localized explanation per optional part that was requested but could not be copied, so a caller can present them separately rather than unpicking one joined string. Empty when everything requested succeeded. The sale itself is always created - a failure here never means the sale is missing.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SaleCarriers.CheckSaleEntityCopyRequest": {
+        "description": "CheckSaleEntityCopy: Check a sale copy before saving it: which of the optional parts of SaveSaleEntityCopy can be copied, and errors in the fields the user can edit. Nothing is saved. SaveSaleEntityCopy refuses an optional part that is reported as not licensed, or as not available for any reason other than the sale type not using stakeholders.",
+        "type": "object",
+        "properties": {
+          "SaleEntity": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.SaleEntity"
+          },
+          "SourceSaleId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.SaleCopyCheck": {
+        "description": "Result of checking a sale copy before it is saved, for SaleAgent.CheckSaleEntityCopy: whether each optional part can be copied, and errors in the fields the user can edit.\r\n<para />\r\nCarrier object for SaleCopyCheck.\r\nServices for the SaleCopyCheck Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ISaleAgent\">Sale Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Stakeholders": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "Quote": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "Notes": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "Links": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CopyPartCheck"
+          },
+          "FieldErrors": {
+            "description": "Localized error messages for the fields the user can edit in a copy (heading, contact, person, project), keyed by field name as in ValidateSaleEntity. Empty when there are none.",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CopyPartCheck": {
+        "description": "Whether one optional part of a copy can be copied, and if not, why. Returned for each part by the copy check operations, such as SaleAgent.CheckSaleEntityCopy and ProjectAgent.CheckProjectEntityCopy.\r\n<para />\r\nCarrier object for CopyPartCheck.\r\nServices for the CopyPartCheck Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ISaleAgent\">Sale Agent</see>.",
+        "type": "object",
+        "properties": {
+          "State": {
+            "description": "Whether the part can be copied: available, nothing on the source to copy, not offered to this user, or not available for a reason given in Reason.",
+            "enum": [
+              "Available",
+              "NothingToCopy",
+              "NotLicensed",
+              "NotAvailable"
+            ],
+            "type": "string"
+          },
+          "Reason": {
+            "description": "Localized explanation of why the part can't be copied, written to be shown with the part's option. Empty unless State is NotAvailable or NotLicensed.",
+            "type": "string"
+          },
+          "ShortReason": {
+            "description": "Localized one-line summary naming the part, for a list of what the copy won't include. Empty when Reason is empty.",
+            "type": "string"
           }
         }
       },

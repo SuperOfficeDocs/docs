@@ -794,7 +794,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowDynamicSelectionV2?$select=alternative/totalPrice,alternative/version/quote/sale/saleTypeCategory,alternative/version/quote/sale/saleCycle,alternative/version/quote/sale/contact/streetAddress/wgs84longitude,alternative/version/quote/sale/contact/LastDoBySale
+GET /api/v1/archive/QuoteLineShadowDynamicSelectionV2?$select=quantity,subscriptionQuantity,unitMinimumPrice,alternative/version/quote/sale/person/whenUpdatedByWorkflow,alternative/version/quote/sale/contact/linkedinUrl
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

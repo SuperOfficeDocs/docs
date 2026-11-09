@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_CustomObjectDefinition"></a> Class CustomObjectDefinition
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for CustomObjectDefinition.
 Schema definition for a Custom Object: the underlying table and its fields.
@@ -12,20 +12,20 @@ public class CustomObjectDefinition : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
 [CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -88,6 +88,18 @@ public virtual int Flags { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
+### <a id="SuperOffice_WebApi_Data_CustomObjectDefinition_IconHint"></a> IconHint
+
+Resolved icon hint for the UI: 'ph-&lt;name&gt;' for a Phosphor icon, the table name for an uploaded SVG icon, or 'CustomObject' for the default icon.
+
+```csharp
+public virtual string IconHint { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_CustomObjectDefinition_IconId"></a> IconId
 
 Icon binary-object id used in the UI.
@@ -139,4 +151,3 @@ public virtual string Title { get; set; }
 ## See Also
 
 [CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent)
-

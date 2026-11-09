@@ -3,10 +3,10 @@ title: Request to publish
 uid: dp-request-publish
 description: How to request to publish App Store Information and application configuration the SuperOffice Developer Portal.
 keywords: ['Developer Portal']
-author: Bergfrid Dias
-date: 02.26.2025
+author: Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
 so_version: 2.0
-version_devportal: 2.0
+version_devportal: 2.19
 content_type: howto
 deployment: online
 platform: web
@@ -21,7 +21,13 @@ import WhatToPublish from "./snippets/what-to-publish.md";
 
 <WhatToPublish />
 
-In all three cases, after you click the **Request to Publish** button we create a support ticket and follow up with you via email. The workflow is different for standard and custom applications.
+In all three cases, after you click the **Request to Publish** button we create a support ticket and follow up with you. You can follow the request in [Messages][10]. The workflow is different for standard and custom applications.
+
+<Note>
+You can't request to publish while you have unsaved changes. **Request to Publish** is disabled with the hint *You have unsaved changes. Please save your changes before publishing.* Click **Save Settings** or **Discard** in the **You have unsaved changes** bar first.
+</Note>
+
+When a version is requested to publish, it is [locked][11] and can no longer be edited.
 
 <Tip>
 If you don't see the version you want to publish, click **More versions**.
@@ -51,8 +57,8 @@ Confused about versions? [Check out our in-depth guide.][1]
 
 Need to update something?
 
-* [Client secret][4]
-* [Certificate (RSA private key)][5]
+* [Client secret (create or renew)][4]
+* [Certificate (RSA private key, create or renew)][5]
 * [CORS and redirection URLs][6]
 * [Notifications][7]
 * [Mirroring, ERP sync, or quote endpoints][8]
@@ -67,6 +73,16 @@ Need to update something?
 
 Need to update something? [Follow these steps][3].
 
+### Security audit required for Production {#security-audit}
+
+SuperOffice can't approve an application's App Store information for **Production** until **Security audit** is enabled on the application configuration that is published to Production. If it isn't, the approval is blocked with this message:
+
+*Enable Security audit on the production application configuration. The application cannot be published to production until the security audit has been completed.*
+
+This doesn't apply to SOD and Stage.
+
+This is especially relevant if your application started out as a [custom application][12] and you now want to list it in the App Store: it must complete the [security audit][13] first.
+
 ## Partner - App Store information
 
 1. In the Developer Portal, go to your partner page.
@@ -75,6 +91,17 @@ Need to update something? [Follow these steps][3].
 4. The version is now listed as pending. Look for the support email from us.
 
 Need to update something? [Follow these steps][2].
+
+## What happens after approval
+
+When a request to publish to Stage or Production is approved, you get a reply that matches what was published and where. There are separate replies for:
+
+* Custom application configuration
+* Standard application configuration
+* Application App Store information
+* Partner App Store information
+
+Approvals for SOD use a general reply.
 
 [1]: ./versioning
 [2]: ../standard-app/app-store/update-partner-profile
@@ -85,5 +112,9 @@ Need to update something? [Follow these steps][2].
 [8]: ./config/update-endpoints
 [9]: https://dev.superoffice.com/
 [7]: ../best-practices/tenant-status/get-notifications
+[10]: ./message-center
+[11]: ./versioning#locked-versions
+[12]: ../custom-app/index
+[13]: ../standard-app/certification/initial-security-eval
 
 [img1]: /media/loc/en/developer-portal/request-to-publish.png

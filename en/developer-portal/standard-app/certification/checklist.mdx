@@ -3,7 +3,8 @@ title: Certification checklist
 uid: standard-app-checklist
 description: Certification checklist
 author: Margrethe Romnes
-date: 09.07.2023
+date: 11.05.2026
+version_devportal: 2.19
 keywords: ['standard app']
 content_type: reference
 deployment: online
@@ -21,6 +22,7 @@ My application is ready, what should I consider before I ask for a certification
 <SecurityChecklist />
 
 * Absolutely no user credential authentication information is stored in your application
+* You have planned for the [security audit][20]. Your App Store information can't be approved for Production until **Security audit** is enabled on the application configuration published to Production. [Read more][21].
 * [Visibility restrictions][16] are preserved when you copy data. For example, copied documents with private visibility must remain intact.
 
 ## Provisioning
@@ -86,7 +88,7 @@ My application is ready, what should I consider before I ask for a certification
 * [Business][5]
 * [Security][4]
 * [Design][6]
-* [Marketing][7]
+* [App Store listing][7]
 * [Technical][8]
 * [Localization][3]
 
@@ -105,6 +107,8 @@ My application is ready, what should I consider before I ask for a certification
 [17]: ../../provisioning/get-consent
 [18]: ../../provisioning/revoke
 [19]: ../../best-practices/tenant-status/check-status
+[20]: ./initial-security-eval
+[21]: ../../create-app/request-to-publish#security-audit
 
 [16]: ../../../admin/user-management/index#visible
 [11]: ../../../security/privacy/consent-management

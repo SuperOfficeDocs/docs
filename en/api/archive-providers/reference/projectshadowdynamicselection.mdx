@@ -276,6 +276,7 @@ Shadow contact provider for the dynamic Project provider.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -331,12 +332,12 @@ Shadow contact provider for the dynamic Project provider.
 |appointment/associate/otherGroups|userGroup||  |
 |appointment/associate/userName|string|| x |
 |appointment/associate/personEmail|string|| x |
-|appointment/associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/locationAddress|string|| x |
 |appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
@@ -436,12 +437,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/eventParticipantStatus|listAny|| x |
 |projectMember/function|listAny|| x |
 |projectMember/hasInfoText|bool|| x |
-|projectMember/registered|datetime|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/registered|datetime|| x |
 |projectMember/updated|datetime|| x |
 |projectMember/textId|int|| x |
 |projectMember/infoText|positiveString|| x |
@@ -541,12 +542,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/restrictionAddress/line3|string|| x |
 |projectMember/restrictionAddress/county|string|| x |
 |projectMember/restrictionAddress/city|string|| x |
-|projectMember/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/restrictionAddress/zip|string|| x |
 |projectMember/restrictionAddress/state|string|| x |
 |projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|| x |
@@ -646,12 +647,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/correspondingAssociate/ejStatus|int||  |
 |projectMember/correspondingAssociate/credentialType| *None* || x |
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
-|projectMember/correspondingAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/correspondingAssociate/isActive|bool|| x |
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
 |projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 |projectMember/correspondingAssociate/otherGroups|userGroup||  |
@@ -751,12 +752,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/contactAssociate/title|string|| x |
 |projectMember/contactAssociate/associateDbId|associate|| x |
 |projectMember/contactAssociate/contactName|string|| x |
-|projectMember/contactAssociate/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/contactAssociate/contactDepartment|string|| x |
 |projectMember/contactAssociate/usergroup|userGroup|| x |
 |projectMember/contactAssociate/usergroupId|int|| x |
 |projectMember/contactAssociate/contactFullName|string|| x |
@@ -846,7 +847,7 @@ Shadow contact provider for the dynamic Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelection?$select=registeredByFullName,projectUdef/SuperOffice:3,LastActivity,sale/associate/personId,sale/associate/isActiveText
+GET /api/v1/archive/ProjectShadowDynamicSelection?$select=projectAssociate/ejUserId,sale/saleUdef/SuperOffice:6,projectMember/isProjectMember,projectMember/personAssociate/middleName,projectMember/correspondingAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

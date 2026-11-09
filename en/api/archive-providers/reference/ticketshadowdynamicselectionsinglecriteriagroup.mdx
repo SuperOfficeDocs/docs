@@ -813,7 +813,7 @@ Shadow contact provider for the dynamic ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowDynamicSelectionSingleCriteriaGroup?$select=person/isStakeholder,person/personAssociate/usergroup,person/correspondingAssociate/fullName,person/correspondingAssociate/isActive,contact/contactAssociate/assocType
+GET /api/v1/archive/TicketShadowDynamicSelectionSingleCriteriaGroup?$select=person/personAddress/line1,person/personAssociate/contactName,person/personAssociate/personEmail,contact/contactUdef/SuperOffice:13,project/statusRank
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

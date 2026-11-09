@@ -574,7 +574,7 @@ from the result.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectMember?$select=project/NumberOfNotCompletedSales,project/saintSaleStatus,person/personUdef/SuperOffice:3,person/correspondingAssociate/isActive,contact/url/URLAddress
+GET /api/v1/archive/ProjectMember?$select=getNoRows,project/projectAssociate/contactDepartment,project/projectAssociate/locationAddress,person/personCountry,person/searchPhone/formattedNumber
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

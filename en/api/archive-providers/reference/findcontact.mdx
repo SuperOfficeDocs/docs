@@ -451,6 +451,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -539,12 +540,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |document/registeredByFullName|associate|| x |
 |document/registeredDate|date|| x |
 |document/documentId|int|| x |
-|document/keywords|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/keywords|string|| x |
 |document/ourref|string|| x |
 |document/yourref|string|| x |
 |document/attention|string|| x |
@@ -644,12 +645,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |supportAssociateFullName|associate|| x |
 |personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
-|personCategory|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personCategory|listAny|| x |
 |personCategoryGroup|listAny|| x |
 |personCategoryRank|int|| x |
 |personBusiness|listAny|| x |
@@ -749,12 +750,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 |personAssociate/contactCategory|listAny|| x |
 |personAssociate/role|listAny|| x |
 |personAssociate/assocName|associate|| x |
-|personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAssociate/assocTooltip|string||  |
 |personAssociate/assocType|listAny|| x |
 |personAssociate/ejUserId|int||  |
 |personAssociate/simultaneousEjUser|bool||  |
@@ -817,7 +818,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindContact?$select=contactAssociate/lastName,contactAssociate/userName,sourceRelation/orgnr,sale/completed,appointment/icon
+GET /api/v1/archive/FindContact?$select=postAddress/line3,sale/associate/usergroupId,personDirectFax/formattedNumber,personAddress/line1,personUdef/SuperOffice:7
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

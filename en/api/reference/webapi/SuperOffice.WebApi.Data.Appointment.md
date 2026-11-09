@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_Appointment"></a> Class Appointment
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for Appointment.
 Simple read-only appointment data.
@@ -12,20 +12,20 @@ public class Appointment : Carrier
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ←
 [Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight),
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
@@ -277,7 +277,7 @@ public virtual short ColorIndex { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_Completed"></a> Completed
 
-The Completed state. 
+The Completed state.
 NULL if unknown enum value.
 
 ```csharp
@@ -295,7 +295,7 @@ public ActivityStatus? Completed { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_Completed_String"></a> Completed\_String
 
-The Completed state. 
+The Completed state.
 Raw string enum value.
 
 ```csharp
@@ -905,6 +905,30 @@ public string TaskType_String { get; set; }
 
 [Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment).[TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment#SuperOffice_WebApi_Data_Appointment_TaskType)
 
+### <a id="SuperOffice_WebApi_Data_Appointment_TicketId"></a> TicketId
+
+Request this appointment belongs to; 0 or NULL when the appointment is not linked to a request
+
+```csharp
+public virtual int TicketId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="SuperOffice_WebApi_Data_Appointment_TicketTitle"></a> TicketTitle
+
+Title of the request this appointment belongs to. Blank if no request is linked, or the user can't read the request.
+
+```csharp
+public virtual string TicketTitle { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_Appointment_Title"></a> Title
 
 The title of the appointment.
@@ -956,4 +980,3 @@ public string Type_String { get; set; }
 ## See Also
 
 [AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
-

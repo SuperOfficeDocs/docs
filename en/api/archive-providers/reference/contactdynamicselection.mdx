@@ -453,6 +453,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -539,12 +540,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |document/updatedDate|date|| x |
 |document/registeredBy|associate|| x |
 |document/registeredByFullName|associate|| x |
-|document/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/registeredDate|date|| x |
 |document/documentId|int|| x |
 |document/keywords|string|| x |
 |document/ourref|string|| x |
@@ -644,12 +645,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |supportLanguage|listAny|| x |
 |supportAssociate|associate|| x |
 |supportAssociateFullName|associate|| x |
-|personAssociateId|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
 |personCategory|listAny|| x |
 |personCategoryGroup|listAny|| x |
@@ -749,12 +750,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personSourceRelation/position|listAny|| x |
 |personSourceRelation/personNumber|string|| x |
 |personSourceRelation/title|string|| x |
-|personSourceRelation/personCountry|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personSourceRelation/personCountry|listAny|| x |
 |personSourceRelation/personCountryId|int|| x |
 |personSourceRelation/personNoMail|bool|| x |
 |personSourceRelation/rank|int|| x |
@@ -854,12 +855,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personTargetRelation/hasCompany|bool|| x |
 |personTargetRelation/isProjectMember|bool|| x |
 |personTargetRelation/isStakeholder|bool|| x |
-|personTargetRelation/updatedByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personTargetRelation/updatedByWorkflow|listAny|| x |
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
 |personTargetRelation/createdByForm|listAny|| x |
 |personTargetRelation/restrictionContactId|int||  |
@@ -959,12 +960,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |workflowInstance/workflowInstanceWaitUntil|date|| x |
 |workflowInstance/workflowInstanceStepStarted|date|| x |
 |workflowInstance/workflowInstanceCurrentStepDescription| *None* ||  |
-|workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
 |workflowInstance/workflowInstanceDropoutReason|string||  |
 |workflowInstance/workflowInstanceLastCommunicationBounceInfo| *None* ||  |
@@ -992,6 +993,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
 |workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
 |workflowInstance/emailFlow/registeredBy|associate|| x |
@@ -1063,13 +1065,13 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/readStatus|listAny|| x |
 |request/realTimeSpentQueue|timeSpan|| x |
 |request/realTimeSpentExternally|timeSpan|| x |
-|request/realTimeSpentInternally|timeSpan|| x |
-|request/timeSpentQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/realTimeSpentInternally|timeSpan|| x |
+|request/timeSpentQueue|timeSpan|| x |
 |request/timeSpentExternally|timeSpan|| x |
 |request/timeSpentInternally|timeSpan|| x |
 |request/timeSpent|timeSpan|| x |
@@ -1168,13 +1170,13 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/extra/x\_ticket\_date|date|| x |
 |request/extra/x\_ticket\_datetime|datetime|| x |
 |request/extra/x\_ticket\_time| *None* || x |
-|request/extra/x\_ticket\_boolean|bool|| x |
-|request/extra/x\_ticket\_timespan|timeSpan|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/extra/x\_ticket\_boolean|bool|| x |
+|request/extra/x\_ticket\_timespan|timeSpan|| x |
 |request/extra/x\_ticket\_short\_text|string|| x |
 |request/extra/x\_ticket\_shorttext\_list|listAny|| x |
 |request/extra/x\_ticket\_timestamp|datetime|| x |
@@ -1273,13 +1275,13 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |projectMembers/NumberOfSales|int||  |
 |projectMembers/NumberOfSalesInPeriod|int||  |
 |projectMembers/NumberOfNotCompletedSales|int||  |
-|projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
-|projectMembers/LastSale|date||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
+|projectMembers/LastSale|date||  |
 |projectMembers/LastCompletedSale|date||  |
 |projectMembers/LastDoBySale|date||  |
 |projectMembers/SaintStatus3|saintStatus||  |
@@ -1326,6 +1328,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personAppointment/rawType|int|| x |
 |personAppointment/rawStatus|int|| x |
 |personAppointment/cautionWarning|listAny|| x |
+|personAppointment/ownedExternally|listAny|| x |
 |personAppointment/visibleInDiary|bool|| x |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId|int|| x |
@@ -1377,14 +1380,14 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personAppointment/associate/credentialDisplayValue| *None* || x |
 |personAppointment/associate/isActive|bool|| x |
 |personAppointment/associate/isActiveText|bool|| x |
-|personAppointment/associate/portraitThumbnail| *None* ||  |
-|personAppointment/associate/otherGroups|userGroup||  |
-|personAppointment/associate/userName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/portraitThumbnail| *None* ||  |
+|personAppointment/associate/otherGroups|userGroup||  |
+|personAppointment/associate/userName|string|| x |
 |personAppointment/associate/personEmail|string|| x |
 |personAppointment/associate/locationAddress|string|| x |
 |personAppointment/associate/isLocation|bool|| x |
@@ -1402,7 +1405,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactDynamicSelection?$select=LastCompletedTicket,targetRelation/revenueBasecurrency,targetRelation/restrictionContactId,appointment/cautionWarning,personUdef/SuperOffice:2
+GET /api/v1/archive/ContactDynamicSelection?$select=LastTicket,sourceRelation/contactNoMail,targetRelation/hasInterests,document/associate/assocType,correspondingAssociate/userName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -379,7 +379,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleContact?$select=contactAssociate/ejDisplayName,contactUdef/SuperOffice:2,saintTicketCategory
+GET /api/v1/archive/SimpleContact?$select=searchPhone/formattedNumber,postAddress/line2,restrictionPostalAddress/county,contactSupportPerson/personExtra/x_person_datetime,contactSupportPerson/personExtra/x_person_timespan
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -32,7 +32,7 @@ GDPR purpose alternatives
 |updated|Last updated when|UtcDateTime|No|
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-
+|consentTextImplicit|Implicit consent text, used with forms|String(4000)|Yes|
 
 ![ConsentPurpose table relationship diagram](/media/loc/en/database/tables/ConsentPurpose.png)
 
@@ -52,7 +52,6 @@ GDPR purpose alternatives
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[ConsentPerson](./consentperson)  |Link table that defines who has which consents |
 
-
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -62,4 +61,3 @@ GDPR purpose alternatives
 ## Security Flags
 
 * No access control via user's Role.
-

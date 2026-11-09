@@ -506,7 +506,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleChatSession?$select=person/firstName,person/middleName,person/phone/formattedNumber,person/personAssociate/personId,contact/updatedDate
+GET /api/v1/archive/SimpleChatSession?$select=person/birthDay,contact/code,contact/email/emailLastBounce,contact/LastActivity
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

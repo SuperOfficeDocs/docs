@@ -274,6 +274,7 @@ Shadow contact provider for the dynamic Project provider.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -331,12 +332,12 @@ Shadow contact provider for the dynamic Project provider.
 |appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
 |appointment/associate/isLocation|bool|| x |
-|appointment/appointment/text|positiveString|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/appointment/text|positiveString|| x |
 |appointment/appointment/description|positiveString|| x |
 |appointment/appointment/title|positiveString|| x |
 |appointment/appointment/titleHtml| *None* || x |
@@ -436,12 +437,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/hasInfoText|bool|| x |
 |projectMember/registered|datetime|| x |
 |projectMember/updated|datetime|| x |
-|projectMember/textId|int|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/textId|int|| x |
 |projectMember/infoText|positiveString|| x |
 |projectMember/firstName|string|| x |
 |projectMember/lastName|string|| x |
@@ -541,12 +542,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/restrictionAddress/city|string|| x |
 |projectMember/restrictionAddress/zip|string|| x |
 |projectMember/restrictionAddress/state|string|| x |
-|projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/restrictionAddress/wgs84latitude|decimal|| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|| x |
 |projectMember/restrictionAddress/formattedAddress| *None* ||  |
 |projectMember/restrictionAddress/formattedMultiLineAddress| *None* ||  |
@@ -646,12 +647,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
 |projectMember/correspondingAssociate/isActive|bool|| x |
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
-|projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
 |projectMember/correspondingAssociate/otherGroups|userGroup||  |
 |projectMember/correspondingAssociate/userName|string|| x |
 |projectMember/correspondingAssociate/personEmail|string|| x |
@@ -751,12 +752,12 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/contactAssociate/contactName|string|| x |
 |projectMember/contactAssociate/contactDepartment|string|| x |
 |projectMember/contactAssociate/usergroup|userGroup|| x |
-|projectMember/contactAssociate/usergroupId|int|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMember/contactAssociate/usergroupId|int|| x |
 |projectMember/contactAssociate/contactFullName|string|| x |
 |projectMember/contactAssociate/contactCategory|listAny|| x |
 |projectMember/contactAssociate/role|listAny|| x |
@@ -844,7 +845,7 @@ Shadow contact provider for the dynamic Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelectionSingleCriteriaGroup?$select=appointment/associate/title,appointment/associate/isActive,projectMember/SaintStatus2
+GET /api/v1/archive/ProjectShadowDynamicSelectionSingleCriteriaGroup?$select=sale/amount,appointment/associate/contactName,appointment/associate/otherGroups,document/keywords,projectMember/nameDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

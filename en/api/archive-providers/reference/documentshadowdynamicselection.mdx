@@ -750,7 +750,7 @@ Shadow contact provider for the dynamic document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowDynamicSelection?$select=documentPublish/publishedTo,person/hasInfoText,person/personAssociate/usergroupId,person/hasStoreConsent,contact/restrictionAddress/line3
+GET /api/v1/archive/DocumentShadowDynamicSelection?$select=documentPublish/isPublished,person/leadStatus,contact/name,contact/email/emailHasBounced,contact/contactUdef/SuperOffice:2
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

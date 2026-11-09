@@ -37,6 +37,8 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 |formFolderId|int|| x |
 |formActive|bool|| x |
 |formSubmissionCount|int|| x |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -62,6 +64,7 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -104,7 +107,7 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormDynamicSelectionSingleCriteriaGroup?$select=associate/locationAddress,emailFlow/workflowDescription,emailFlow/registeredBy
+GET /api/v1/archive/FormDynamicSelectionSingleCriteriaGroup?$select=emailFlow/workflowName,emailFlow/updatedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

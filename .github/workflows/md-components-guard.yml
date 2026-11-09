@@ -1,0 +1,37 @@
+name: Md components guard
+
+on:
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# Read-only token, and the trigger is `pull_request` (never `pull_request_target`), so a fork PR runs
+# with no secrets and no write access. The script only reads files; it never executes PR content.
+permissions:
+  contents: read
+
+jobs:
+  md-components-guard:
+    name: "Fail when a .md file uses a Mintlify component (must be .mdx)"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # The changed-file list comes from `git diff -z` inside the script, not from a third-party
+      # action or a shell-expanded variable, so a crafted filename never reaches a shell.
+      - name: Check changed .md files for Mintlify components
+        run: python tools/ci/check-md-components.py --base-ref origin/main
+

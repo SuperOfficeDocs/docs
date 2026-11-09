@@ -1054,6 +1054,8 @@
     href: SuperOffice.WebApi.Data.Configuration_GetFilterListRequest.md
   - name: Configuration_GetHelpDispatcherUrlRequest
     href: SuperOffice.WebApi.Data.Configuration_GetHelpDispatcherUrlRequest.md
+  - name: Configuration_GetLandingPageOverviewSettingsRequest
+    href: SuperOffice.WebApi.Data.Configuration_GetLandingPageOverviewSettingsRequest.md
   - name: Configuration_GetLandingPageRequest
     href: SuperOffice.WebApi.Data.Configuration_GetLandingPageRequest.md
   - name: Configuration_GetMyWindowPosSizesRequest
@@ -1098,6 +1100,8 @@
     href: SuperOffice.WebApi.Data.Configuration_SaveWindowPosSizesRequest.md
   - name: Configuration_SetAppliesToKeyRequest
     href: SuperOffice.WebApi.Data.Configuration_SetAppliesToKeyRequest.md
+  - name: Configuration_SetLandingPageOverviewSettingsRequest
+    href: SuperOffice.WebApi.Data.Configuration_SetLandingPageOverviewSettingsRequest.md
   - name: Configuration_SetLandingPagePinForAssociateRequest
     href: SuperOffice.WebApi.Data.Configuration_SetLandingPagePinForAssociateRequest.md
   - name: ConsentInfo
@@ -1192,6 +1196,8 @@
     href: SuperOffice.WebApi.Data.CopilotDataSourceSetting.md
   - name: CopilotEntity
     href: SuperOffice.WebApi.Data.CopilotEntity.md
+  - name: CopyPartCheck
+    href: SuperOffice.WebApi.Data.CopyPartCheck.md
   - name: Country
     href: SuperOffice.WebApi.Data.Country.md
   - name: CreatePhotoBackground
@@ -2580,6 +2586,8 @@
     href: SuperOffice.WebApi.Data.List_GetTicketCategoriesRequest.md
   - name: List_GetTicketPrioritiesRequest
     href: SuperOffice.WebApi.Data.List_GetTicketPrioritiesRequest.md
+  - name: List_GetTicketStatusPostponeOptionsRequest
+    href: SuperOffice.WebApi.Data.List_GetTicketStatusPostponeOptionsRequest.md
   - name: List_GetTicketStatusesRequest
     href: SuperOffice.WebApi.Data.List_GetTicketStatusesRequest.md
   - name: List_GetTicketTypesRequest
@@ -2642,6 +2650,8 @@
     href: SuperOffice.WebApi.Data.List_SaveListItemEntityRequest.md
   - name: List_SaveQuickRepliesRequest
     href: SuperOffice.WebApi.Data.List_SaveQuickRepliesRequest.md
+  - name: List_SaveTicketStatusPostponeOptionsRequest
+    href: SuperOffice.WebApi.Data.List_SaveTicketStatusPostponeOptionsRequest.md
   - name: List_SetDocumentPluginForAllDocumentTemplatesRequest
     href: SuperOffice.WebApi.Data.List_SetDocumentPluginForAllDocumentTemplatesRequest.md
   - name: List_SetDocumentTemplateFromDocumentTemplateRequest
@@ -3154,6 +3164,12 @@
     href: SuperOffice.WebApi.Data.Project.md
   - name: ProjectBoardViewSettings
     href: SuperOffice.WebApi.Data.ProjectBoardViewSettings.md
+  - name: ProjectCopyCheck
+    href: SuperOffice.WebApi.Data.ProjectCopyCheck.md
+  - name: ProjectCopyOptions
+    href: SuperOffice.WebApi.Data.ProjectCopyOptions.md
+  - name: ProjectCopyResult
+    href: SuperOffice.WebApi.Data.ProjectCopyResult.md
   - name: ProjectEntity
     href: SuperOffice.WebApi.Data.ProjectEntity.md
   - name: ProjectEvent
@@ -3172,8 +3188,12 @@
     href: SuperOffice.WebApi.Data.ProjectTypeStatusLink.md
   - name: Project_AddProjectMembersRequest
     href: SuperOffice.WebApi.Data.Project_AddProjectMembersRequest.md
+  - name: Project_CheckProjectEntityCopyRequest
+    href: SuperOffice.WebApi.Data.Project_CheckProjectEntityCopyRequest.md
   - name: Project_CreateNewEntryRequest
     href: SuperOffice.WebApi.Data.Project_CreateNewEntryRequest.md
+  - name: Project_CreateProjectEntityFromExistingRequest
+    href: SuperOffice.WebApi.Data.Project_CreateProjectEntityFromExistingRequest.md
   - name: Project_DeleteProjectEventEntityFromProjectIdRequest
     href: SuperOffice.WebApi.Data.Project_DeleteProjectEventEntityFromProjectIdRequest.md
   - name: Project_DeleteProjectMemberByIdsRequest
@@ -3232,6 +3252,8 @@
     href: SuperOffice.WebApi.Data.Project_MergeRequest.md
   - name: Project_OfferAutoNextStatusOnApppointmentCompletedRequest
     href: SuperOffice.WebApi.Data.Project_OfferAutoNextStatusOnApppointmentCompletedRequest.md
+  - name: Project_SaveProjectEntityCopyRequest
+    href: SuperOffice.WebApi.Data.Project_SaveProjectEntityCopyRequest.md
   - name: Project_SaveProjectEntityWithoutMembersRequest
     href: SuperOffice.WebApi.Data.Project_SaveProjectEntityWithoutMembersRequest.md
   - name: Project_SaveProjectMembersFunctionAndCommentRequest
@@ -3572,6 +3594,12 @@
     href: SuperOffice.WebApi.Data.Sale.md
   - name: SaleBoardViewSettings
     href: SuperOffice.WebApi.Data.SaleBoardViewSettings.md
+  - name: SaleCopyCheck
+    href: SuperOffice.WebApi.Data.SaleCopyCheck.md
+  - name: SaleCopyOptions
+    href: SuperOffice.WebApi.Data.SaleCopyOptions.md
+  - name: SaleCopyResult
+    href: SuperOffice.WebApi.Data.SaleCopyResult.md
   - name: SaleEntity
     href: SuperOffice.WebApi.Data.SaleEntity.md
   - name: SaleStageEntity
@@ -3592,8 +3620,16 @@
     href: SuperOffice.WebApi.Data.Sale_AddSaleStakeholdersRequest.md
   - name: Sale_BatchUpdateNextDueDateRequest
     href: SuperOffice.WebApi.Data.Sale_BatchUpdateNextDueDateRequest.md
+  - name: Sale_CheckSaleEntityCopyRequest
+    href: SuperOffice.WebApi.Data.Sale_CheckSaleEntityCopyRequest.md
+  - name: Sale_CreateDefaultSaleEntityBySaleTypeIdRequest
+    href: SuperOffice.WebApi.Data.Sale_CreateDefaultSaleEntityBySaleTypeIdRequest.md
+  - name: Sale_CreateSaleEntityFromExistingRequest
+    href: SuperOffice.WebApi.Data.Sale_CreateSaleEntityFromExistingRequest.md
   - name: Sale_DeleteSaleStakeholdersRequest
     href: SuperOffice.WebApi.Data.Sale_DeleteSaleStakeholdersRequest.md
+  - name: Sale_GetExpectedSaleDateRequest
+    href: SuperOffice.WebApi.Data.Sale_GetExpectedSaleDateRequest.md
   - name: Sale_GetMyOpportunitiesRequest
     href: SuperOffice.WebApi.Data.Sale_GetMyOpportunitiesRequest.md
   - name: Sale_GetNextDueDateRequest
@@ -3636,6 +3672,8 @@
     href: SuperOffice.WebApi.Data.Sale_OfferAutoNextStageOnApppointmentCompletedRequest.md
   - name: Sale_SaleHasQuoteRequest
     href: SuperOffice.WebApi.Data.Sale_SaleHasQuoteRequest.md
+  - name: Sale_SaveSaleEntityCopyRequest
+    href: SuperOffice.WebApi.Data.Sale_SaveSaleEntityCopyRequest.md
   - name: Sale_SetAsLostRequest
     href: SuperOffice.WebApi.Data.Sale_SetAsLostRequest.md
   - name: Sale_SetAsLostWithReasonRequest
@@ -3942,6 +3980,8 @@
     href: SuperOffice.WebApi.Data.TicketMessageEntity.md
   - name: TicketMessageHeader
     href: SuperOffice.WebApi.Data.TicketMessageHeader.md
+  - name: TicketPostponeOption
+    href: SuperOffice.WebApi.Data.TicketPostponeOption.md
   - name: TicketPriority
     href: SuperOffice.WebApi.Data.TicketPriority.md
   - name: TicketPriorityEntity
@@ -4745,6 +4785,10 @@
     href: SuperOffice.WebApi.Data.ContactSourceType.md
   - name: CopilotDataSourceType
     href: SuperOffice.WebApi.Data.CopilotDataSourceType.md
+  - name: CopyPartAvailability
+    href: SuperOffice.WebApi.Data.CopyPartAvailability.md
+  - name: CopyPartResult
+    href: SuperOffice.WebApi.Data.CopyPartResult.md
   - name: CredentialControlType
     href: SuperOffice.WebApi.Data.CredentialControlType.md
   - name: CrmActorType
@@ -5003,6 +5047,10 @@
     href: SuperOffice.WebApi.Data.TicketMessageType.md
   - name: TicketOrigin
     href: SuperOffice.WebApi.Data.TicketOrigin.md
+  - name: TicketPostponeRule
+    href: SuperOffice.WebApi.Data.TicketPostponeRule.md
+  - name: TicketPostponeStandard
+    href: SuperOffice.WebApi.Data.TicketPostponeStandard.md
   - name: TicketPriorityEscalateAction
     href: SuperOffice.WebApi.Data.TicketPriorityEscalateAction.md
   - name: TicketPriorityEscalateEvent

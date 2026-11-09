@@ -818,7 +818,7 @@ Shadow contact provider for the ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowSelectionV2?$select=createdBy/contactDepartment,createdBy/ejDisplayName,ownedBy/contactFullName,person/personUdef/SuperOffice:7,project/projectUdef/SuperOffice:5
+GET /api/v1/archive/TicketShadowSelectionV2?$select=person/whenUpdatedByWorkflow,person/personExtra/x_person_integer,contact/orgnr,contact/revenueBasecurrency,contact/NumberOfTicketsInPeriod
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

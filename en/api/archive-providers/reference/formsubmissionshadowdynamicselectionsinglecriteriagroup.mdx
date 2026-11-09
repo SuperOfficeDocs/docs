@@ -501,7 +501,7 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=recordTypeText,associate/portraitThumbnail,person/leadstatusRank,person/personUrl/URLAddress,person/personAddress/wgs84longitude
+GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=person/personAddress/city,person/personExtra/x_person_boolean,contact/mainContact,contact/contactExtra/x_contact_float
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

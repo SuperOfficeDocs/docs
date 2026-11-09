@@ -34,6 +34,8 @@ Lists all email flow form content
 |formActive|bool|| x |
 |formType|int|| x |
 |formSubmissionCount|int|| x |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -57,6 +59,7 @@ Lists all email flow form content
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -99,7 +102,7 @@ Lists all email flow form content
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowFormContent?$select=emailFlow/workflowDescription,emailFlow/registeredBy
+GET /api/v1/archive/EmailFlowFormContent?$select=emailFlow/workflowName,emailFlow/updatedDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

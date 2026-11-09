@@ -600,7 +600,7 @@ the up to eight basic sub-providers (CC, PC, PP and CP plus their reversed cousi
 ## Sample
 
 ```http!
-GET /api/v1/archive/Relation?$select=target/activeErpLinks,credentialDisplayValue,source/contactAssociate/assocName
+GET /api/v1/archive/Relation?$select=source/forceCompany,target/contactExtra/x_contact_datetime,target/title,target/birthYear,source/contactAssociate/contactFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

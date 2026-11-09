@@ -1191,7 +1191,7 @@ Sale archive provider for the Contact/Project card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleFiltered?$select=amountWeightedInBaseCurrency,salePublish/isPublished,person/birthDay,person/personCategoryGroup,contact/SaintStatus1
+GET /api/v1/archive/SaleFiltered?$select=getAllRows,person/personAssociateFullName,person/searchPhone/formattedNumber,person/personExtra/x_person_longtext,contact/postAddress/addressId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

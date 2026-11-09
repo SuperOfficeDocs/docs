@@ -5077,6 +5077,342 @@
         ]
       }
     },
+    "/api/v1/Agents/List/GetTicketStatusPostponeOptions": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Ticket Status Postpone Options",
+        "description": "Returns the postpone options of a Postponed ticket status, in menu order.\n\nA status without saved options returns the standard options. Returns an empty array for a status that is not Postponed.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1ListAgent_GetTicketStatusPostponeOptions",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest"
+              }
+            }
+          },
+          "description": "TicketStatusId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/SaveTicketStatusPostponeOptions": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Save Ticket Status Postpone Options",
+        "description": "Replaces the postpone options of a Postponed ticket status.\n\nStandard options can only change rank and active state.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1ListAgent_SaveTicketStatusPostponeOptions",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest"
+              }
+            }
+          },
+          "description": "TicketStatusId, PostponeOptions",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/List/GetTicketStatusList": {
       "post": {
         "tags": [
@@ -41526,10 +41862,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -41980,7 +42316,9 @@
               "Postponed4Hours",
               "PostponedDay",
               "PostponedWeek",
-              "PostponedMonth"
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
             ],
             "type": "string"
           },
@@ -42794,6 +43132,130 @@
           "SortOrder": {
             "format": "int32",
             "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ListCarriers.GetTicketStatusPostponeOptionsRequest": {
+        "description": "GetTicketStatusPostponeOptions: Returns the postpone options of a Postponed ticket status, in menu order. A status without saved options returns the standard options. Returns an empty array for a status that is not Postponed.",
+        "type": "object",
+        "properties": {
+          "TicketStatusId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.TicketPostponeOption": {
+        "description": "A postpone option offered on a Postponed ticket status.\r\n<para />\r\nCarrier object for TicketPostponeOption.\r\nServices for the TicketPostponeOption Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
+        "type": "object",
+        "properties": {
+          "TicketStatusPostponeId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "TicketStatusId": {
+            "format": "int32",
+            "description": "The Postponed ticket status the option belongs to",
+            "type": "integer"
+          },
+          "Rank": {
+            "format": "int32",
+            "description": "Rank order of the option in the postpone menu",
+            "type": "integer"
+          },
+          "StandardKind": {
+            "description": "Built-in option this row represents, or Custom for options added by an administrator",
+            "enum": [
+              "Custom",
+              "OneHour",
+              "TwentyFourHours",
+              "NextWorkingDay",
+              "NextWeek",
+              "OneWeek",
+              "OneMonth"
+            ],
+            "type": "string"
+          },
+          "Name": {
+            "description": "Name of a custom option, shown in the postpone menu. Empty for standard options",
+            "type": "string"
+          },
+          "Rule": {
+            "description": "How the activation time is calculated",
+            "enum": [
+              "Unknown",
+              "Interval",
+              "NextWorkingDay",
+              "WeekdayNextWeek"
+            ],
+            "type": "string"
+          },
+          "Amount": {
+            "format": "int32",
+            "description": "Number of units for the Interval rule",
+            "type": "integer"
+          },
+          "Unit": {
+            "description": "Unit of amount for the Interval rule: hours, days, weeks or months",
+            "enum": [
+              "Unknown",
+              "Second",
+              "Minute",
+              "Hour",
+              "Day",
+              "Week",
+              "Month",
+              "Quarter",
+              "HalfYear",
+              "Year",
+              "Decade",
+              "Century",
+              "Millenium"
+            ],
+            "type": "string"
+          },
+          "Weekday": {
+            "format": "int32",
+            "description": "ISO weekday (1 = Monday, 7 = Sunday) for the WeekdayNextWeek rule",
+            "type": "integer"
+          },
+          "TimeOfDay": {
+            "format": "int32",
+            "description": "Minutes after midnight for the NextWorkingDay and WeekdayNextWeek rules",
+            "type": "integer"
+          },
+          "WorkingTime": {
+            "description": "Skip days and hours outside the opening hours of the ticket priority",
+            "type": "boolean"
+          },
+          "Active": {
+            "description": "Option is shown in the postpone menu",
+            "type": "boolean"
+          },
+          "DisplayName": {
+            "description": "Name shown in the postpone menu. Localized for standard options.",
+            "type": "string"
+          },
+          "DisplayValue": {
+            "description": "Time of activation for the day-based rules, e.g. '08:00' or 'Mon 08:00'. Empty for the Interval rule.",
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ListCarriers.SaveTicketStatusPostponeOptionsRequest": {
+        "description": "SaveTicketStatusPostponeOptions: Replaces the postpone options of a Postponed ticket status. Standard options can only change rank and active state.",
+        "type": "object",
+        "properties": {
+          "TicketStatusId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "PostponeOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketPostponeOption"
+            }
           }
         }
       },
@@ -47007,6 +47469,10 @@
           },
           "PrivacyStatementUrl": {
             "description": "Url referencing the actual privacy statement",
+            "type": "string"
+          },
+          "ConsentTextImplicit": {
+            "description": "Implicit consent text, used with forms",
             "type": "string"
           },
           "TableRight": {

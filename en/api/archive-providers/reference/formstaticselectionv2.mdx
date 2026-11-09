@@ -36,6 +36,8 @@ SelectionTypeStore stays empty, as it does for mailings).
 |formFolderId|int|| x |
 |formActive|bool|| x |
 |formSubmissionCount|int|| x |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -59,6 +61,7 @@ SelectionTypeStore stays empty, as it does for mailings).
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
@@ -108,7 +111,7 @@ SelectionTypeStore stays empty, as it does for mailings).
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormStaticSelectionV2?$select=emailFlow/jumpToFinish,associate/middleName
+GET /api/v1/archive/FormStaticSelectionV2?$select=emailFlow/mediumThumbnail,associate/mrMrs,associate/assocType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -758,13 +758,14 @@ Archive provider for the list of favourites
 |rawType| *None* ||  |
 |rawStatus| *None* ||  |
 |cautionWarning| *None* ||  |
+|ownedExternally| *None* ||  |
 |visibleInDiary| *None* ||  |
-|endTime| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|endTime| *None* ||  |
 |suggestedAppointmentId| *None* ||  |
 |completedDate| *None* ||  |
 |isMilestone| *None* ||  |
@@ -864,12 +865,12 @@ Archive provider for the list of favourites
 |createdBy/ejDisplayName| *None* ||  |
 |createdBy/ejStatus| *None* ||  |
 |createdBy/credentialType| *None* ||  |
-|createdBy/credentialDisplayValue| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|createdBy/credentialDisplayValue| *None* ||  |
 |createdBy/isActive| *None* ||  |
 |createdBy/isActiveText| *None* ||  |
 |createdBy/portraitThumbnail| *None* ||  |
@@ -937,7 +938,7 @@ Archive provider for the list of favourites
 ## Sample
 
 ```http!
-GET /api/v1/archive/Favourites?$select=registeredBy,restrictionAddress/county,url/URLDescription,retired,personPrivate/formattedNumber
+GET /api/v1/archive/Favourites?$select=saleCycle,visibleFor,associate/userName,business,birthdate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

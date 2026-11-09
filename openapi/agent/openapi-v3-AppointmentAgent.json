@@ -16322,10 +16322,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:53294"
+      "url": "http://localhost:65002"
     },
     {
-      "url": "https://localhost:53294"
+      "url": "https://localhost:65002"
     }
   ],
   "components": {
@@ -16699,6 +16699,15 @@
             "format": "int32",
             "description": "Link to task list",
             "type": "integer"
+          },
+          "TicketId": {
+            "format": "int32",
+            "description": "Request this appointment belongs to; 0 or NULL when the appointment is not linked to a request",
+            "type": "integer"
+          },
+          "TicketTitle": {
+            "description": "Title of the request this appointment belongs to. Blank if no request is linked, or the user can't read the request.",
+            "type": "string"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
@@ -20334,6 +20343,9 @@
             "description": "GUID for video meeting in central services – this is set when we create meetings from SuperOffice. It is blank for incoming meetings created from inbox.",
             "type": "string"
           },
+          "Ticket": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Ticket"
+          },
           "UserDefinedFields": {
             "description": "Deprecated: Use {SuperOffice.CRM.Services.AppointmentEntity.CustomFields} instead.\r\nDictionary of user defined field data.\r\nThe key string is the ProgId of the UdefField, or if the ProgId is empty it is a string of the format \"SuperOffice:[UdefFieldIdentity]\", e.g. \"SuperOffice:1234\"",
             "type": "object",
@@ -20843,6 +20855,366 @@
           },
           "Number": {
             "description": "Alphanumeric user field",
+            "type": "string"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.Ticket": {
+        "description": "The ticket carrier is used for representing a service request.\r\n<para />\r\nCarrier object for Ticket.\r\nServices for the Ticket Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ITicketAgent\">Ticket Agent</see>.",
+        "type": "object",
+        "properties": {
+          "TicketId": {
+            "format": "int32",
+            "description": "The primary key (auto-incremented)",
+            "type": "integer"
+          },
+          "Title": {
+            "description": "The title of the ticket.",
+            "type": "string"
+          },
+          "CreatedAt": {
+            "format": "date-time",
+            "description": "When the ticket was created.",
+            "type": "string"
+          },
+          "LastChanged": {
+            "format": "date-time",
+            "description": "The last time the ticket was modified.",
+            "type": "string"
+          },
+          "ReadByOwner": {
+            "format": "date-time",
+            "description": "The datetime for when the ticket last was read by the owner.",
+            "type": "string"
+          },
+          "ReadByCustomer": {
+            "format": "date-time",
+            "description": "The datetime for when the ticket was read by the customer.",
+            "type": "string"
+          },
+          "FirstReadByUser": {
+            "format": "date-time",
+            "description": "The datetime for when the ticket first was read by a user.",
+            "type": "string"
+          },
+          "Activate": {
+            "format": "date-time",
+            "description": "When the ticket should be activated, if it is postponed.",
+            "type": "string"
+          },
+          "ClosedAt": {
+            "format": "date-time",
+            "description": "When the ticket was closed.",
+            "type": "string"
+          },
+          "RepliedAt": {
+            "format": "date-time",
+            "description": "The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.",
+            "type": "string"
+          },
+          "AlertTimeout": {
+            "format": "date-time",
+            "description": "The datetime for when the ticket should jump to the next alert_level.",
+            "type": "string"
+          },
+          "Deadline": {
+            "format": "date-time",
+            "description": "Deadline for ticket.",
+            "type": "string"
+          },
+          "CreatedBy": {
+            "format": "int32",
+            "description": "The id of the user who created the ticket. 1 (system user) if the ticket was created externally",
+            "type": "integer"
+          },
+          "CreatedByName": {
+            "description": "Initials, also login name, possibly database user name",
+            "type": "string"
+          },
+          "Author": {
+            "description": "A string representing the author of the ticket (same as author of first message).",
+            "type": "string"
+          },
+          "OwnedBy": {
+            "format": "int32",
+            "description": "The id of the user who owns the ticket. 1 (system user) if the ticket is unassigned.",
+            "type": "integer"
+          },
+          "OwnedByName": {
+            "description": "Initials, also login name, possibly database user name",
+            "type": "string"
+          },
+          "Category": {
+            "format": "int32",
+            "description": "The id of the category a ticket is in.",
+            "type": "integer"
+          },
+          "CategoryName": {
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
+            "type": "string"
+          },
+          "CategoryFullname": {
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
+            "type": "string"
+          },
+          "Slevel": {
+            "description": "The securitylevel of the ticket.",
+            "enum": [
+              "Unknown",
+              "Internal",
+              "External"
+            ],
+            "type": "string"
+          },
+          "Priority": {
+            "format": "int32",
+            "description": "The reference to the ticket_priority table.",
+            "type": "integer"
+          },
+          "PriorityName": {
+            "description": "The name of the priority.",
+            "type": "string"
+          },
+          "BaseStatus": {
+            "description": "The status of the ticket. I.e. active/closed/postponed/deleted",
+            "enum": [
+              "Unknown",
+              "Active",
+              "Closed",
+              "Postponed",
+              "Deleted",
+              "Merged",
+              "Spam",
+              "PostponedSpecific",
+              "Postponed1Hour",
+              "Postponed2Hours",
+              "Postponed3Hours",
+              "Postponed4Hours",
+              "PostponedDay",
+              "PostponedWeek",
+              "PostponedMonth",
+              "PostponedNextWorkingDay",
+              "PostponedNextWeek"
+            ],
+            "type": "string"
+          },
+          "TicketStatus": {
+            "format": "int32",
+            "description": "User defined ticket status",
+            "type": "integer"
+          },
+          "TicketStatusDisplayValue": {
+            "description": "Get the display name of the ticket status.",
+            "type": "string"
+          },
+          "Origin": {
+            "description": "What is the origin of this ticket",
+            "enum": [
+              "Unknown",
+              "Email",
+              "SMS",
+              "Fax",
+              "Phone",
+              "Facebook",
+              "Twitter",
+              "Internal",
+              "CustomerCentre",
+              "EMarketing",
+              "AutoGenerated",
+              "Chat",
+              "Form",
+              "API",
+              "Flow"
+            ],
+            "type": "string"
+          },
+          "CustId": {
+            "format": "int32",
+            "description": "The reference to the customer. NULL or -1 if ticket is not connected to customer.",
+            "type": "integer"
+          },
+          "PersonFirstname": {
+            "description": "First name",
+            "type": "string"
+          },
+          "PersonMiddleName": {
+            "description": "Middle name or 'van' etc.",
+            "type": "string"
+          },
+          "PersonLastname": {
+            "description": "Last name",
+            "type": "string"
+          },
+          "PersonFullname": {
+            "description": "Get the full name for the primary person (customer)",
+            "type": "string"
+          },
+          "AlertLevel": {
+            "format": "int32",
+            "description": "The alert level for the ticket. Matches the level value of the ticket_alert table.",
+            "type": "integer"
+          },
+          "ConnectId": {
+            "format": "int32",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
+            "type": "integer"
+          },
+          "ReadStatus": {
+            "description": "Whether the owner has read the ticket or not (red, yellow, green).",
+            "enum": [
+              "Unknown",
+              "Green",
+              "Yellow",
+              "Red"
+            ],
+            "type": "string"
+          },
+          "TimeToReply": {
+            "format": "int32",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
+            "type": "integer"
+          },
+          "RealTimeToReply": {
+            "format": "int32",
+            "description": "Same as time_to_reply, but not calculated based on priority.",
+            "type": "integer"
+          },
+          "TimeToClose": {
+            "format": "int32",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
+            "type": "integer"
+          },
+          "RealTimeToClose": {
+            "format": "int32",
+            "description": "Same as time_to_close, but not calculated based on priority.",
+            "type": "integer"
+          },
+          "TimeSpentInternally": {
+            "format": "int32",
+            "description": "The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state",
+            "type": "integer"
+          },
+          "TimeSpentExternally": {
+            "format": "int32",
+            "description": "The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state",
+            "type": "integer"
+          },
+          "TimeSpentQueue": {
+            "format": "int32",
+            "description": "The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state",
+            "type": "integer"
+          },
+          "RealTimeSpentInternally": {
+            "format": "int32",
+            "description": "The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state",
+            "type": "integer"
+          },
+          "RealTimeSpentExternally": {
+            "format": "int32",
+            "description": "The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state",
+            "type": "integer"
+          },
+          "RealTimeSpentQueue": {
+            "format": "int32",
+            "description": "The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state",
+            "type": "integer"
+          },
+          "TimeSpent": {
+            "format": "int32",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
+            "type": "integer"
+          },
+          "HasAttachment": {
+            "description": "Boolean indicating if this ticket has one or more attachments.",
+            "type": "boolean"
+          },
+          "NumReplies": {
+            "format": "int32",
+            "description": "The number of replies (messages) to the customer for this request.",
+            "type": "integer"
+          },
+          "NumMessages": {
+            "format": "int32",
+            "description": "The total number of messages for this request.",
+            "type": "integer"
+          },
+          "NumAppointments": {
+            "format": "int32",
+            "description": "The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.",
+            "type": "integer"
+          },
+          "FromAddress": {
+            "description": "The from-address used when this ticket got created, e.g. by email",
+            "type": "string"
+          },
+          "ContactId": {
+            "format": "int32",
+            "description": "The company of the person in the cust_id field, if that person belongs to a company",
+            "type": "integer"
+          },
+          "ContactName": {
+            "description": "The name of the connected contact",
+            "type": "string"
+          },
+          "OwnedByAssociateId": {
+            "format": "int32",
+            "description": "The associate id of the owner of the ticket.",
+            "type": "integer"
+          },
+          "Language": {
+            "description": "The language of the first external message",
+            "type": "string"
+          },
+          "Sentiment": {
+            "format": "int32",
+            "description": "The sentiment index of the last external message",
+            "type": "integer"
+          },
+          "SentimentConfidence": {
+            "format": "int32",
+            "description": "The sentiment confidence of the last external message",
+            "type": "integer"
+          },
+          "SaleId": {
+            "format": "int32",
+            "description": "Reference to sale table",
+            "type": "integer"
+          },
+          "ProjectId": {
+            "format": "int32",
+            "description": "Reference to project table",
+            "type": "integer"
+          },
+          "SaleHeading": {
+            "description": "The heading of the connected sale",
+            "type": "string"
+          },
+          "ProjectName": {
+            "description": "The name of the connected project",
+            "type": "string"
+          },
+          "FormSubmissionId": {
+            "format": "int32",
+            "description": "If this ticket was created from a form submission, this field will point to that record",
+            "type": "integer"
+          },
+          "TicketTypeId": {
+            "format": "int32",
+            "description": "The id of the Request Type",
+            "type": "integer"
+          },
+          "TicketTypeName": {
+            "description": "The name of the Request Type",
             "type": "string"
           },
           "TableRight": {

@@ -765,6 +765,7 @@ Activity archive provider for the Sale card
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -801,7 +802,7 @@ Activity archive provider for the Sale card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleActivity?$select=registeredBy,person/personExtra/x_person_shorttext,contact/department,associate/credentialType,booking
+GET /api/v1/archive/SaleActivity?$select=contact/sourcedFrom,contact/restrictionAddress/zip,appointment/internalNotes
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

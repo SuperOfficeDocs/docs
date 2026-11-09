@@ -3,28 +3,32 @@ uid: dp-app-config-intro
 title: Application configuration
 description: Overview of application configuration in the SuperOffice Developer Portal.
 keywords: ['Developer Portal', 'app', 'security']
-author: Bergfrid Dias
-date: 02.26.2025
+author: Bergfrid Dias, Margrethe Romnes
+date: 11.05.2026
 so_version: 2.0
-version_devportal: 2.0
+version_devportal: 2.19
 content_type: concept
 deployment: online
 ---
 
 ## Get keys
 
-If you have registered the application but lost the keys, you need to [look up your ID][7] and [create a new secret][8].
+If you have registered the application but lost the keys, you need to [look up your ID][7] and [renew the secret][8].
 
 ## Authentication
 
 * [Check what your client ID is][7]
-* [Create a new client secret][8]
-* [Add a certificate][10]
+* [Create or renew a client secret][8]
+* [Add or renew a certificate][10]
 * [About user contexts][4]
 
 <Warning>
-SuperOffice doesn't store the **client secret and certificate private key** in the database. When you create a new secret or certificate, copy and store this information. You can't go back and look it up in the Developer Portal later.
+SuperOffice stores the **client secret**, but after you save the configuration, the Developer Portal shows only the first characters of it. The **certificate private key** isn't stored at all. When you create or renew a secret or certificate, copy and store this information. You can't go back and look it up in the Developer Portal later.
 </Warning>
+
+<Note>
+When you regenerate a client ID or renew a client secret or certificate, the old value keeps working until the new version of the configuration is **published** to that environment.
+</Note>
 
 <Frame caption="Watch the walk-through">
   <iframe

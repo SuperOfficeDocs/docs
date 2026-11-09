@@ -16,7 +16,6 @@ Combined archive of mailings (s_shipment) and mailing folders
 [EmailFlowsAndFoldersProvider](./emailflowsandfolders).
 
 Unified row schema (after the column-name overrides set up below):
-
 - PrimaryKey      — row's own id
 - mailingFolderId — row's container folder id (for filtering)
 - name            — display label (mailing description on mailings,
@@ -559,15 +558,16 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy| *None* ||  |
 |emailFlow/updatedDate| *None* ||  |
 |emailFlow/registeredBy| *None* ||  |
-|emailFlow/registeredDate| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/registeredDate| *None* ||  |
 |emailFlow/workflowAssociate/firstName| *None* ||  |
 |emailFlow/workflowAssociate/lastName| *None* ||  |
 |emailFlow/workflowAssociate/middleName| *None* ||  |
@@ -667,12 +667,12 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |project/projectAssociate/credentialType| *None* ||  |
 |project/projectAssociate/credentialDisplayValue| *None* ||  |
 |project/projectAssociate/isActive| *None* ||  |
-|project/projectAssociate/isActiveText| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/isActiveText| *None* ||  |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
 |project/projectAssociate/otherGroups| *None* ||  |
 |project/projectAssociate/userName| *None* ||  |
@@ -718,7 +718,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsAndFolders?$select=mailingAddr/person/personUpdatedBy,mailingAddr/person/personAddress/county,mailingAddr/person/personExtra/y_rental/id,mailingAddr/person/correspondingAssociate/usergroup,emailFlow/workflowCompletedCount
+GET /api/v1/archive/MailingsAndFolders?$select=mailingAddr/contact/postAddress/line2,mailingAddr/contact/contactAssociate/role,mailingAddr/person/restrictionAddress/line1,mailingAddr/person/correspondingAssociate/simultaneousEjUser,emailFlow/workflowAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

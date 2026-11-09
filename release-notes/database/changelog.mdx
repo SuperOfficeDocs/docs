@@ -8,6 +8,136 @@ content_type: release-note
 envir: online
 ---
 
+<Update label="12.6" description="04.11.2026">
+
+### SuperOffice
+
+**Step 160**
+
+Remove VisibleFor rows whose record no longer exists, and keep only the newest VisibleFor row for records that have more than one
+
+A record has exactly one VisibleFor row; several rows per record have never been supported. Rows left behind by
+deleted records break that as soon as the id is reused: appointment, sale and selection queries join VisibleFor,
+so the extra row duplicates the record and can hand out the stale row's visibility. Saving and deleting those
+records keeps the rule; this removes the rows already in the database, for every table VisibleFor points at.
+
+**Step 161**
+
+Increase length of login.ns_secret from 2000 to 4000 characters, to fit bearer-token secrets
+
+A bs1: bearer-token secret is the token plus a third for base64, so 2000 leaves too little headroom for access tokens.
+
+* Modify table login
+ns\_secret
+
+**Step 162**
+
+No longer used; appointment.ticket_id is added by step 163
+
+**Step 163**
+
+Add appointment.ticket_id, linking an appointment to a request (one request, many appointments); nullable like sale_id and project_id. Drops the NOT NULL version from step 162 first, if present
+
+* Modify table appointment
+ticket\_id, ticket\_id
+
+**Step 164**
+
+Add functional right 'Can override approval text in forms'
+
+Adds the 'forms-override-approval-text' functional right with its name and tooltip; the role admin only lists
+rights that have both. It is deliberately not linked to any role, not even admin-all: it must be granted
+explicitly per role in the role admin.
+
+**Step 165**
+
+Replace the freetextindex (table_id, record_id) index with one that also covers ownerrecord_id, contact_id and freetextindex_id. Deferred: applied right after a legacy freetext wipe, or at the start of a full merge on a nearly empty index; otherwise pending until a later plain AddIndex/DeleteIndex step
+
+The freetext merge and incremental indexing read index entries by (table_id, record_id); the new index covers every field they
+read, so those reads need no key lookups. Building it on a large freetextindex would hold up an upgrade, so both changes are
+deferred: applied right after a legacy freetext wipe, or at the start of a full merge on a nearly empty index. Otherwise they stay
+pending until a later plain AddIndex/DeleteIndex step.
+
+* Modify table freetextindex
+
+### ai
+
+**Step 4**
+
+Set even more default values for AI preferences.
+
+**Step 5**
+
+Set maxint default values for AI credit limit preferences.
+
+initialize system-wide AI preference defaults and set AI credit limits to `Int32.MaxValue`.
+
+### ConsentManagement
+
+**Step 26**
+
+Adds a new field, consentTextImplicit, to the database. Used for forms where consent is implicit (no checkbox).
+
+* Modify table ConsentPurpose
+consentTextImplicit
+
+### CS
+
+**Step 73**
+
+Add icon_name to extra_tables for storing the Phosphor icon chosen for a custom object; takes precedence over the uploaded SVG in icon_id
+
+* Modify table extra\_tables
+icon\_name
+
+**Step 74**
+
+Create table ticket_status_postpone for the postpone options offered on a Postponed ticket status
+
+* Add table ticket\_status\_postpone
+
+**Step 75**
+
+Add ticket.num_appointments, the number of appointments linked to the request
+
+* Modify table ticket
+num\_appointments
+
+**Step 76**
+
+Add index on ticket.contact_id, used when listing the requests of a company
+
+* Modify table ticket
+
+### LandingPage
+
+**Step 5**
+
+Add overview_settings to landing_page, holding the associate's overview layout for that landing page as JSON.
+
+* Modify table landing\_page
+overview\_settings
+
+### NightlyJob
+
+Create the **nightly_job** table, holding the cross-server lock and the scheduling status of each NetServer nightly job, and move that state out of the **userpreference** table (section DataCollection). Remove obsolete usage statistics preferences and registry entries.
+
+* Add table nightly\_job
+
+### UserPreference
+
+**Step 5**
+
+Set the default value for the Request in diary preference.
+
+**Step 6**
+
+Add default TRUE value for Startpage preference
+
+Add default TRUE value for Startpage preference
+
+</Update>
+
 <Update label="12.5" description="13.10.2026">
 
 ### SuperOffice

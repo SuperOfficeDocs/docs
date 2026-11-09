@@ -83,6 +83,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/rawType| *None* ||  |
 |appointmentInstance/rawStatus| *None* ||  |
 |appointmentInstance/cautionWarning| *None* ||  |
+|appointmentInstance/ownedExternally| *None* ||  |
 |appointmentInstance/visibleInDiary| *None* ||  |
 |appointmentInstance/endTime| *None* ||  |
 |appointmentInstance/suggestedAppointmentId| *None* ||  |
@@ -128,12 +129,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/phone/formattedNumber| *None* ||  |
 |appointmentInstance/contact/activeErpLinks| *None* ||  |
 |appointmentInstance/contact/numEmployees| *None* ||  |
-|appointmentInstance/contact/yearFounded| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/contact/yearFounded| *None* ||  |
 |appointmentInstance/contact/revenueYear| *None* ||  |
 |appointmentInstance/contact/revenueBasecurrency| *None* ||  |
 |appointmentInstance/contact/sharecapitalBasecurrency| *None* ||  |
@@ -233,12 +234,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/contactUdef/SuperOffice:3| *None* ||  |
 |appointmentInstance/contact/contactUdef/SuperOffice:4| *None* ||  |
 |appointmentInstance/contact/contactUdef/SuperOffice:5| *None* ||  |
-|appointmentInstance/contact/contactUdef/SuperOffice:6| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/contact/contactUdef/SuperOffice:6| *None* ||  |
 |appointmentInstance/contact/contactUdef/SuperOffice:7| *None* ||  |
 |appointmentInstance/contact/contactUdef/SuperOffice:8| *None* ||  |
 |appointmentInstance/contact/contactUdef/SuperOffice:9| *None* ||  |
@@ -338,12 +339,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personAssociateFullName| *None* ||  |
 |appointmentInstance/person/personCategory| *None* ||  |
 |appointmentInstance/person/personCategoryGroup| *None* ||  |
-|appointmentInstance/person/personCategoryRank| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/person/personCategoryRank| *None* ||  |
 |appointmentInstance/person/personBusiness| *None* ||  |
 |appointmentInstance/person/leadStatus| *None* ||  |
 |appointmentInstance/person/leadstatusRank| *None* ||  |
@@ -443,12 +444,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personAssociate/lastName| *None* ||  |
 |appointmentInstance/person/personAssociate/middleName| *None* ||  |
 |appointmentInstance/person/personAssociate/fullName| *None* ||  |
-|appointmentInstance/person/personAssociate/contactId| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/person/personAssociate/contactId| *None* ||  |
 |appointmentInstance/person/personAssociate/personId| *None* ||  |
 |appointmentInstance/person/personAssociate/mrMrs| *None* ||  |
 |appointmentInstance/person/personAssociate/title| *None* ||  |
@@ -548,12 +549,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/project/registeredDate| *None* ||  |
 |appointmentInstance/project/hasGuide| *None* ||  |
 |appointmentInstance/project/nextMilestone| *None* ||  |
-|appointmentInstance/project/endDate| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/project/endDate| *None* ||  |
 |appointmentInstance/project/imageThumbnail| *None* ||  |
 |appointmentInstance/project/activeErpLinks| *None* ||  |
 |appointmentInstance/project/eventId| *None* ||  |
@@ -653,12 +654,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/sale/updatedByFullName| *None* ||  |
 |appointmentInstance/sale/updatedDate| *None* ||  |
 |appointmentInstance/sale/registeredBy| *None* ||  |
-|appointmentInstance/sale/registeredByFullName| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/sale/registeredByFullName| *None* ||  |
 |appointmentInstance/sale/registeredDate| *None* ||  |
 |appointmentInstance/sale/currencyId| *None* ||  |
 |appointmentInstance/sale/currency| *None* ||  |
@@ -758,12 +759,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/associate/contactDepartment| *None* ||  |
 |appointmentInstance/associate/usergroup| *None* ||  |
 |appointmentInstance/associate/usergroupId| *None* ||  |
-|appointmentInstance/associate/contactFullName| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointmentInstance/associate/contactFullName| *None* ||  |
 |appointmentInstance/associate/contactCategory| *None* ||  |
 |appointmentInstance/associate/role| *None* ||  |
 |appointmentInstance/associate/assocName| *None* ||  |
@@ -863,12 +864,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personUpdatedDate| *None* ||  |
 |documentInstance/person/personRegisteredBy| *None* ||  |
 |documentInstance/person/personRegisteredByFullName| *None* ||  |
-|documentInstance/person/personRegisteredDate| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|documentInstance/person/personRegisteredDate| *None* ||  |
 |documentInstance/person/portraitThumbnail| *None* ||  |
 |documentInstance/person/personActiveErpLinks| *None* ||  |
 |documentInstance/person/personSourcedFrom| *None* ||  |
@@ -968,12 +969,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personExtra/x\_person\_category\_relation| *None* ||  |
 |documentInstance/person/personExtra/x\_person\_priority\_relation| *None* ||  |
 |documentInstance/person/personExtra/x\_person\_request\_relation| *None* ||  |
-|documentInstance/person/personExtra/x\_person\_appointment\_relation| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|documentInstance/person/personExtra/x\_person\_appointment\_relation| *None* ||  |
 |documentInstance/person/personExtra/x\_person\_contact\_relation| *None* ||  |
 |documentInstance/person/personExtra/y\_rental/id| *None* ||  |
 |documentInstance/person/personExtra/y\_rental/x\_start| *None* ||  |
@@ -1073,12 +1074,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/countryId| *None* ||  |
 |documentInstance/contact/number| *None* ||  |
 |documentInstance/contact/code| *None* ||  |
-|documentInstance/contact/orgnr| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|documentInstance/contact/orgnr| *None* ||  |
 |documentInstance/contact/stop| *None* ||  |
 |documentInstance/contact/contactNoMail| *None* ||  |
 |documentInstance/contact/updatedBy| *None* ||  |
@@ -1178,12 +1179,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/contactAssociate/ejStatus| *None* ||  |
 |documentInstance/contact/contactAssociate/credentialType| *None* ||  |
 |documentInstance/contact/contactAssociate/credentialDisplayValue| *None* ||  |
-|documentInstance/contact/contactAssociate/isActive| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|documentInstance/contact/contactAssociate/isActive| *None* ||  |
 |documentInstance/contact/contactAssociate/isActiveText| *None* ||  |
 |documentInstance/contact/contactAssociate/portraitThumbnail| *None* ||  |
 |documentInstance/contact/contactAssociate/otherGroups| *None* ||  |
@@ -1283,12 +1284,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/project/projectPublish/publishedBy| *None* ||  |
 |documentInstance/project/projectEvent/isExternalEvent| *None* ||  |
 |documentInstance/project/projectEvent/eventDate| *None* ||  |
-|documentInstance/project/projectEvent/hasSignOn| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|documentInstance/project/projectEvent/hasSignOn| *None* ||  |
 |documentInstance/project/projectEvent/hasSignOff| *None* ||  |
 |documentInstance/project/projectUrl/URLAddress| *None* ||  |
 |documentInstance/project/projectUrl/URLDescription| *None* ||  |
@@ -1388,12 +1389,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/associate/isActiveText| *None* ||  |
 |documentInstance/associate/portraitThumbnail| *None* ||  |
 |documentInstance/associate/otherGroups| *None* ||  |
-|documentInstance/associate/userName| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|documentInstance/associate/userName| *None* ||  |
 |documentInstance/associate/personEmail| *None* ||  |
 |documentInstance/associate/locationAddress| *None* ||  |
 |documentInstance/associate/isLocation| *None* ||  |
@@ -1493,12 +1494,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/sale/associate/ejDisplayName| *None* ||  |
 |documentInstance/sale/associate/ejStatus| *None* ||  |
 |documentInstance/sale/associate/credentialType| *None* ||  |
-|documentInstance/sale/associate/credentialDisplayValue| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|documentInstance/sale/associate/credentialDisplayValue| *None* ||  |
 |documentInstance/sale/associate/isActive| *None* ||  |
 |documentInstance/sale/associate/isActiveText| *None* ||  |
 |documentInstance/sale/associate/portraitThumbnail| *None* ||  |
@@ -1521,7 +1522,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectGuide?$select=text,appointmentInstance/priority,appointmentInstance/contact/contactAssociate/mrMrs,appointmentInstance/person/rank,appointmentInstance/project/projectUdef/SuperOffice:9
+GET /api/v1/archive/ProjectGuide?$select=getAllRows,appointmentInstance/registeredBy,appointmentInstance/contact/contactExtra/y_organization/x_name,appointmentInstance/person/personAssociate/personId,appointmentInstance/sale/associate/usergroupId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

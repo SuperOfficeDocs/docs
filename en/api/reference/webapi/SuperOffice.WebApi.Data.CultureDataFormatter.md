@@ -1341,7 +1341,7 @@ Parsed resource string.
 
 ### ParseInlineMultiLanguageString\(string, string, int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineMultiLanguageString_System_String_System_String_System_Int32_}
 
-Parses the string for multilang strings and uses [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_) to translate
+Parses the string for multilang strings and uses [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_)	to translate
 the fragment to a culture specific string part
 
 ```csharp

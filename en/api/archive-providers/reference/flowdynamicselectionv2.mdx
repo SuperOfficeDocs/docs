@@ -45,6 +45,7 @@ Flow selection archive with OR-able selection groups. Each group is represented 
 |workflowCompletedCount| *None* ||  |
 |workflowSucceededCount| *None* ||  |
 |workflowSuccessRate| *None* ||  |
+|workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -91,7 +92,7 @@ Flow selection archive with OR-able selection groups. Each group is represented 
 ## Sample
 
 ```http!
-GET /api/v1/archive/FlowDynamicSelectionV2?$select=workflowSuccessRate,workflowAssociate/mrMrs
+GET /api/v1/archive/FlowDynamicSelectionV2?$select=workflowSuccessRate,workflowAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

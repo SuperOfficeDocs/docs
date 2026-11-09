@@ -536,17 +536,18 @@ Archive provider for the list of mailings
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
 |emailFlow/registeredDate|date|| x |
 |emailFlow/workflowAssociate/firstName|string|| x |
-|emailFlow/workflowAssociate/lastName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/workflowAssociate/lastName|string|| x |
 |emailFlow/workflowAssociate/middleName|string|| x |
 |emailFlow/workflowAssociate/fullName|string|| x |
 |emailFlow/workflowAssociate/contactId|int||  |
@@ -646,12 +647,12 @@ Archive provider for the list of mailings
 |project/projectAssociate/isActive|bool|| x |
 |project/projectAssociate/isActiveText|bool|| x |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
-|project/projectAssociate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/otherGroups|userGroup||  |
 |project/projectAssociate/userName|string|| x |
 |project/projectAssociate/personEmail|string|| x |
 |project/projectAssociate/locationAddress|string|| x |
@@ -695,7 +696,7 @@ Archive provider for the list of mailings
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mailings?$select=mailingAddr/contact/contactAssociate/middleName,mailingAddr/contact/contactExtra/x_contact_short_dropdown,mailingAddr/person/phone/formattedNumber,mailingAddr/person/personExtra/y_rental/id,project/LastActivity
+GET /api/v1/archive/Mailings?$select=mailingAddr/contact/postAddress/county,mailingAddr/contact/contactAssociate/assocTooltip,mailingAddr/person/restrictionAddress/line3,mailingAddr/person/correspondingAssociate/ejStatus,emailFlow/workflowAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

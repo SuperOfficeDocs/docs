@@ -48,6 +48,7 @@ ones the Flows pane shows - so a column that should be usable as a criterion nee
 |workflowCompletedCount| *None* ||  |
 |workflowSucceededCount| *None* ||  |
 |workflowSuccessRate| *None* ||  |
+|workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
 |registeredBy|associate|| x |
@@ -94,7 +95,7 @@ ones the Flows pane shows - so a column that should be usable as a criterion nee
 ## Sample
 
 ```http!
-GET /api/v1/archive/FlowDynamicSelectionSingleCriteriaGroup?$select=updatedBy,workflowAssociate/title
+GET /api/v1/archive/FlowDynamicSelectionSingleCriteriaGroup?$select=updatedBy,workflowAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

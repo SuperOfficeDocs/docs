@@ -575,6 +575,7 @@
       "en/request/learn/transfer",
       "en/request/learn/forward",
       "en/request/learn/reply",
+      "en/request/learn/mentions",
       "en/request/learn/request-relations",
       "en/request/learn/tags",
       "en/request/learn/flag-message",

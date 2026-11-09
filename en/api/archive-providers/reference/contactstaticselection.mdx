@@ -455,6 +455,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |appointment/rawType| *None* ||  |
 |appointment/rawStatus| *None* ||  |
 |appointment/cautionWarning| *None* ||  |
+|appointment/ownedExternally| *None* ||  |
 |appointment/visibleInDiary| *None* ||  |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId| *None* ||  |
@@ -540,12 +541,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |document/updatedByFullName| *None* ||  |
 |document/updatedDate| *None* ||  |
 |document/registeredBy| *None* ||  |
-|document/registeredByFullName| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|document/registeredByFullName| *None* ||  |
 |document/registeredDate| *None* ||  |
 |document/documentId| *None* ||  |
 |document/keywords| *None* ||  |
@@ -645,12 +646,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |ticketPriority|listAny|| x |
 |supportLanguage|listAny|| x |
 |supportAssociate|associate|| x |
-|supportAssociateFullName|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|supportAssociateFullName|associate|| x |
 |personAssociateId|associate|| x |
 |personAssociateFullName|associate|| x |
 |personCategory|listAny|| x |
@@ -750,12 +751,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personSourceRelation/personId| *None* ||  |
 |personSourceRelation/firstName| *None* ||  |
 |personSourceRelation/lastName| *None* ||  |
-|personSourceRelation/middleName| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personSourceRelation/middleName| *None* ||  |
 |personSourceRelation/fullName| *None* ||  |
 |personSourceRelation/contactId| *None* ||  |
 |personSourceRelation/hasInfoText| *None* ||  |
@@ -855,12 +856,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personTargetRelation/supportAssociateFullName| *None* ||  |
 |personTargetRelation/personAssociateId| *None* ||  |
 |personTargetRelation/personAssociateFullName| *None* ||  |
-|personTargetRelation/personCategory| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personTargetRelation/personCategory| *None* ||  |
 |personTargetRelation/personCategoryGroup| *None* ||  |
 |personTargetRelation/personCategoryRank| *None* ||  |
 |personTargetRelation/personBusiness| *None* ||  |
@@ -960,12 +961,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/ticketId| *None* ||  |
 |request/title| *None* ||  |
 |request/createdAt| *None* ||  |
-|request/createdDate| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/createdDate| *None* ||  |
 |request/lastChanged| *None* ||  |
 |request/author| *None* ||  |
 |request/readByOwner| *None* ||  |
@@ -1065,12 +1066,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/ownedBy/isActiveText| *None* ||  |
 |request/ownedBy/portraitThumbnail| *None* ||  |
 |request/ownedBy/otherGroups| *None* ||  |
-|request/ownedBy/userName| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|request/ownedBy/userName| *None* ||  |
 |request/ownedBy/personEmail| *None* ||  |
 |request/ownedBy/locationAddress| *None* ||  |
 |request/ownedBy/isLocation| *None* ||  |
@@ -1170,12 +1171,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |projectMembers/projectUdef/SuperOffice:2| *None* ||  |
 |projectMembers/projectUdef/SuperOffice:3| *None* ||  |
 |projectMembers/projectUdef/SuperOffice:4| *None* ||  |
-|projectMembers/projectUdef/SuperOffice:5| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectMembers/projectUdef/SuperOffice:5| *None* ||  |
 |projectMembers/projectUdef/SuperOffice:6| *None* ||  |
 |projectMembers/projectUdef/SuperOffice:7| *None* ||  |
 |projectMembers/projectUdef/SuperOffice:8| *None* ||  |
@@ -1239,6 +1240,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personAppointment/rawType| *None* ||  |
 |personAppointment/rawStatus| *None* ||  |
 |personAppointment/cautionWarning| *None* ||  |
+|personAppointment/ownedExternally| *None* ||  |
 |personAppointment/visibleInDiary| *None* ||  |
 |personAppointment/endTime| *None* ||  |
 |personAppointment/suggestedAppointmentId| *None* ||  |
@@ -1274,13 +1276,13 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personAppointment/associate/associateDbId| *None* ||  |
 |personAppointment/associate/contactName| *None* ||  |
 |personAppointment/associate/contactDepartment| *None* ||  |
-|personAppointment/associate/usergroup| *None* ||  |
-|personAppointment/associate/usergroupId| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personAppointment/associate/usergroup| *None* ||  |
+|personAppointment/associate/usergroupId| *None* ||  |
 |personAppointment/associate/contactFullName| *None* ||  |
 |personAppointment/associate/contactCategory| *None* ||  |
 |personAppointment/associate/role| *None* ||  |
@@ -1315,7 +1317,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactStaticSelection?$select=getNoRows,companyCategoryRank,NumberOfNotCompletedSales,sale/registeredByFullName,sale/associate/simultaneousEjUser
+GET /api/v1/archive/ContactStaticSelection?$select=deletedDate,contactPhone/formattedNumber,restrictionAddress/county,contactAssociate/assocName,LastTicket
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

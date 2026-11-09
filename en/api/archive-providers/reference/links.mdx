@@ -73,6 +73,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |rawType|int||  |
 |rawStatus|int||  |
 |cautionWarning|listAny||  |
+|ownedExternally|listAny||  |
 |visibleInDiary|bool||  |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int||  |
@@ -126,12 +127,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |contact/linkedinUrl|string||  |
 |contact/deletedDate|datetime||  |
 |contact/mainContact| *None* ||  |
-|contact/forceCompany|bool||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/forceCompany|bool||  |
 |contact/contactPhone/formattedNumber|string||  |
 |contact/contactPhone/description|string||  |
 |contact/contactFax/formattedNumber|string||  |
@@ -231,12 +232,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |contact/contactUdef/SuperOffice:11|string||  |
 |contact/contactUdef/SuperOffice:12|listAny||  |
 |contact/contactUdef/SuperOffice:13|listAny||  |
-|contact/contactExtra/x\_contact\_integer|int||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_integer|int||  |
 |contact/contactExtra/x\_contact\_hidden\_integer|int||  |
 |contact/contactExtra/x\_contact\_default\_integer|int||  |
 |contact/contactExtra/x\_contact\_float|decimal||  |
@@ -336,12 +337,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |person/hasCompany|bool||  |
 |person/isProjectMember|bool||  |
 |person/isStakeholder|bool||  |
-|person/updatedByWorkflow|listAny||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/updatedByWorkflow|listAny||  |
 |person/whenUpdatedByWorkflow|datetime||  |
 |person/createdByForm|listAny||  |
 |person/phone/formattedNumber|string||  |
@@ -441,12 +442,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |person/personAssociate/contactName|string||  |
 |person/personAssociate/contactDepartment|string||  |
 |person/personAssociate/usergroup|userGroup||  |
-|person/personAssociate/usergroupId|int||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/usergroupId|int||  |
 |person/personAssociate/contactFullName|string||  |
 |person/personAssociate/contactCategory|listAny||  |
 |person/personAssociate/role|listAny||  |
@@ -546,12 +547,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |project/projectPublish/isPublished|bool||  |
 |project/projectPublish/publishedFrom|date||  |
 |project/projectPublish/publishedTo|date||  |
-|project/projectPublish/publishedBy| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectPublish/publishedBy| *None* ||  |
 |project/projectEvent/isExternalEvent|bool||  |
 |project/projectEvent/eventDate|date||  |
 |project/projectEvent/hasSignOn|bool||  |
@@ -651,12 +652,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |sale/lossReason|listAny||  |
 |sale/source|listAny||  |
 |sale/competitor|listAny||  |
-|sale/heading|stringorPK||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/heading|stringorPK||  |
 |sale/amount|decimal||  |
 |sale/amountWeighted|decimal||  |
 |sale/earning|decimal||  |
@@ -756,12 +757,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |associate/assocType|listAny||  |
 |associate/ejUserId|int||  |
 |associate/simultaneousEjUser|bool||  |
-|associate/ejDisplayName|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/ejDisplayName|string||  |
 |associate/ejStatus|int||  |
 |associate/credentialType| *None* ||  |
 |associate/credentialDisplayValue| *None* ||  |
@@ -861,12 +862,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |saleStakeholder/person/personSource|listAny||  |
 |saleStakeholder/person/retired|bool||  |
 |saleStakeholder/person/birthYear|int||  |
-|saleStakeholder/person/birthMonth|int||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/birthMonth|int||  |
 |saleStakeholder/person/birthDay|int||  |
 |saleStakeholder/person/kanaFirstName|string||  |
 |saleStakeholder/person/kanaLastName|string||  |
@@ -966,12 +967,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |saleStakeholder/person/personExtra/x\_person\_longtext|string||  |
 |saleStakeholder/person/personExtra/x\_person\_date|date||  |
 |saleStakeholder/person/personExtra/x\_person\_datetime|datetime||  |
-|saleStakeholder/person/personExtra/x\_person\_time| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/personExtra/x\_person\_time| *None* ||  |
 |saleStakeholder/person/personExtra/x\_person\_boolean|bool||  |
 |saleStakeholder/person/personExtra/x\_person\_timespan|timeSpan||  |
 |saleStakeholder/person/personExtra/x\_person\_shorttext|string||  |
@@ -1071,12 +1072,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |saleStakeholder/contact/nameDepartment|string||  |
 |saleStakeholder/contact/hasInfoText|bool||  |
 |saleStakeholder/contact/hasInterests|bool||  |
-|saleStakeholder/contact/associateId|associate||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/associateId|associate||  |
 |saleStakeholder/contact/category|listAny||  |
 |saleStakeholder/contact/categoryGroup|listAny||  |
 |saleStakeholder/contact/companyCategoryRank|int||  |
@@ -1176,12 +1177,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |saleStakeholder/contact/contactAssociate/contactFullName|string||  |
 |saleStakeholder/contact/contactAssociate/contactCategory|listAny||  |
 |saleStakeholder/contact/contactAssociate/role|listAny||  |
-|saleStakeholder/contact/contactAssociate/assocName|associate||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/contactAssociate/assocName|associate||  |
 |saleStakeholder/contact/contactAssociate/assocTooltip|string||  |
 |saleStakeholder/contact/contactAssociate/assocType|listAny||  |
 |saleStakeholder/contact/contactAssociate/ejUserId|int||  |
@@ -1281,12 +1282,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |quote/version/approvedText|string||  |
 |quote/version/approvedDate|date||  |
 |quote/version/extraField1|string||  |
-|quote/version/extraField2|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|quote/version/extraField2|string||  |
 |quote/version/extraField3|string||  |
 |quote/version/extraField4|string||  |
 |quote/version/extraField5|string||  |
@@ -1386,12 +1387,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |projectAssociate/mrMrs|string||  |
 |projectAssociate/title|string||  |
 |projectAssociate/associateDbId|associate||  |
-|projectAssociate/contactName|string||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|projectAssociate/contactName|string||  |
 |projectAssociate/contactDepartment|string||  |
 |projectAssociate/usergroup|userGroup||  |
 |projectAssociate/usergroupId|int||  |
@@ -1491,12 +1492,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 |title|string||  |
 |personCountry|listAny||  |
 |personCountryId|int||  |
-|personNoMail|bool||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|personNoMail|bool||  |
 |rank|int||  |
 |birthdate| *None* ||  |
 |associateType| *None* ||  |
@@ -1580,7 +1581,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 ## Sample
 
 ```http!
-GET /api/v1/archive/Links?$select=contact/contactAssociate/credentialDisplayValue,person/firstName,person/personCountryId,project/updatedDate,sale/heading
+GET /api/v1/archive/Links?$select=visibleInDiary,contact/hasInterests,contact/categoryGroup,contact/contactDeleted,contact/revenueBasecurrency
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

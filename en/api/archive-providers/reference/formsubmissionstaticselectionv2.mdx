@@ -504,7 +504,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionStaticSelectionV2?$select=person/personNumber,person/personUdef/SuperOffice:8,person/personAssociate/fullName,person/personAssociate/contactName,person/personAssociate/credentialDisplayValue
+GET /api/v1/archive/FormSubmissionStaticSelectionV2?$select=person/personSource,person/personDirectPhone/formattedNumber,person/correspondingAssociate/mrMrs,contact/hasInterests,contact/searchPhone/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

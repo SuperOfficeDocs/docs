@@ -129,6 +129,34 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
+### CheckProjectEntityCopyAsync\(ProjectEntity, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ProjectAgent_CheckProjectEntityCopyAsync_SuperOffice_WebApi_Data_ProjectEntity_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Check a project copy before saving it: which of the optional parts of SaveProjectEntityCopy can be copied, and errors in the fields the user can edit. Nothing is saved. Call it again when the owner (Associate) changes, as the right to add members follows the project owner. SaveProjectEntityCopy refuses an optional part that is reported as not available or not licensed.
+
+```csharp
+public Task<ProjectCopyCheck> CheckProjectEntityCopyAsync(ProjectEntity projectEntity, int sourceProjectId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`projectEntity` [ProjectEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEntity)
+
+The prepared copy as the user has edited it. Only Name and Associate (the project owner) are used. Null checks the copy as CreateProjectEntityFromExisting prepares it.
+
+`sourceProjectId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The project that the copy is prepared from
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectCopyCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyCheck)\&gt;
+
+Whether each optional part can be copied, and errors in the fields the user can edit
+
 ### CreateDefaultProjectEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ProjectAgent_CreateDefaultProjectEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ProjectEntity.
@@ -215,6 +243,30 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The database identity of the newly created entry
+
+### CreateProjectEntityFromExistingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ProjectAgent_CreateProjectEntityFromExistingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Create an unsaved ProjectEntity copy of an existing project, with the copy rules already applied: the name gets a copy marker, the current user is the owner (Associate), status, dates and completion start over, and members, note, links, image, number, publishing and history are left out. The returned entity is not persisted - let the user change Name and Associate, then pass it to SaveProjectEntityCopy.
+
+```csharp
+public Task<ProjectEntity> CreateProjectEntityFromExistingAsync(int projectId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`projectId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the source project
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEntity)\&gt;
+
+Unsaved copy of the source project, with ProjectId = 0
 
 ### DeleteProjectEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ProjectAgent_DeleteProjectEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -1145,6 +1197,38 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEntity)\&gt;
 
 New or updated ProjectEntity
+
+### SaveProjectEntityCopyAsync\(ProjectEntity, int, ProjectCopyOptions, RequestOptions\) {#SuperOffice_WebApi_Agents_ProjectAgent_SaveProjectEntityCopyAsync_SuperOffice_WebApi_Data_ProjectEntity_System_Int32_SuperOffice_WebApi_Data_ProjectCopyOptions_SuperOffice_WebApi_RequestOptions_}
+
+Save a project copy prepared by CreateProjectEntityFromExisting, optionally copying members, note, links and image of the source project along with it. The server rebuilds the copy from the source project and takes only Name and Associate (the project owner) from the passed entity; every other value on it is ignored. Members, note, links and image are read from the source project, not from the passed entity. Pass null options, or options with nothing set, to copy the project alone.
+
+```csharp
+public Task<ProjectCopyResult> SaveProjectEntityCopyAsync(ProjectEntity projectEntity, int sourceProjectId, ProjectCopyOptions options, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`projectEntity` [ProjectEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEntity)
+
+The prepared copy. Only Name and Associate (the project owner) are used; every other value, including ProjectId, is ignored.
+
+`sourceProjectId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The project that the copy was prepared from
+
+`options` [ProjectCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyOptions)
+
+Which optional parts to copy alongside the project. Null copies the project alone.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyResult)\&gt;
+
+The new project id, and what became of each optional part
 
 ### SaveProjectEntityWithoutMembersAsync\(ProjectEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ProjectAgent_SaveProjectEntityWithoutMembersAsync_SuperOffice_WebApi_Data_ProjectEntity_SuperOffice_WebApi_RequestOptions_}
 

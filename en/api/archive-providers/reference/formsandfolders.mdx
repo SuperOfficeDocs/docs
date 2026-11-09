@@ -16,7 +16,6 @@ Combined archive of forms (the form table) and form folders
 [MailingsAndFoldersProvider](./mailingsandfolders).
 
 Unified row schema (after the column-name overrides set up below):
-
 - PrimaryKey    — row's own id
 - formFolderId  — row's container folder id (for filtering)
 - name          — display label (form name on forms, folder name on
@@ -58,6 +57,8 @@ MailingsAndFoldersProvider (mailingDescription / folderName both → name).
 |formActive| *None* ||  |
 |formType| *None* ||  |
 |formSubmissionCount| *None* ||  |
+|formTotalSubmissionCount| *None* ||  |
+|formLastSubmissionDate| *None* ||  |
 |updatedBy| *None* ||  |
 |updatedDate| *None* ||  |
 |registeredBy| *None* ||  |
@@ -81,6 +82,7 @@ MailingsAndFoldersProvider (mailingDescription / folderName both → name).
 |emailFlow/workflowCompletedCount| *None* ||  |
 |emailFlow/workflowSucceededCount| *None* ||  |
 |emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy| *None* ||  |
 |emailFlow/updatedDate| *None* ||  |
 |emailFlow/registeredBy| *None* ||  |
@@ -123,7 +125,7 @@ MailingsAndFoldersProvider (mailingDescription / folderName both → name).
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormsAndFolders?$select=emailFlow/workflowId,emailFlow/updatedBy
+GET /api/v1/archive/FormsAndFolders?$select=emailFlow/emailFlowId,associate/lastName,associate/contactFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -914,6 +914,18 @@ public virtual TaskListItem Task { get; set; }
 
  [TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)
 
+### Ticket {#SuperOffice_WebApi_Data_AppointmentEntity_Ticket}
+
+An appointment may also be connected to a request. When the user can't read the request, only TicketId is set and all other fields are empty; null when the request is deleted, merged, spam or no longer exists.
+
+```csharp
+public virtual Ticket Ticket { get; set; }
+```
+
+#### Property Value
+
+ [Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket)
+
 ### Title {#SuperOffice_WebApi_Data_AppointmentEntity_Title}
 
 The title of the appointment.

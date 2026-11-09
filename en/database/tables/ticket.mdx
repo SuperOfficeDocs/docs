@@ -80,7 +80,7 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 |project\_id|Reference to project table|FK [project](./project.mdx)|Yes|
 |time\_spent|The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.|Int|No|
 |ticket\_type|Tickettype of the ticket|FK [ticket_type](./ticket-type.mdx)|No|
-
+|num\_appointments|The number of appointments linked to this request through appointment.ticket_id. A meeting with participants counts once; each occurrence of a recurring appointment counts. Read-only for external use.|Int|No|
 
 ![ticket table relationship diagram](/media/loc/en/database/tables/ticket.png)
 
@@ -111,11 +111,13 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 |tags |FKArray |Full text |
 |created\_by\_workflow\_id |FK |Index |
 |ticket\_type |FK |Index |
+|contact\_id |FK |Index |
 
 ## Relationships
 
 | Table|  Description |
 |------|-------------|
+|[appointment](./appointment)  |Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this.  |
 |[chat\_session](./chat-session)  |This table contains chat sessions. |
 |[contact](./contact)  |Companies and Organizations. |
 |[dbi\_agent](./dbi-agent)  |DBI agent settings |
@@ -144,7 +146,6 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 |[ticket\_type](./ticket-type)  |A ticket (request) type |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
-
 ## Replication Flags
 
 * None
@@ -152,4 +153,3 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
-

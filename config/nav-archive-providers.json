@@ -347,6 +347,7 @@
   "en/api/archive-providers/reference/templatelanguage",
   "en/api/archive-providers/reference/ticket",
   "en/api/archive-providers/reference/ticketactivatednotification",
+  "en/api/archive-providers/reference/ticketactivity",
   "en/api/archive-providers/reference/ticketcustommessagenotification",
   "en/api/archive-providers/reference/ticketdynamicselection",
   "en/api/archive-providers/reference/ticketdynamicselectionsinglecriteriagroup",

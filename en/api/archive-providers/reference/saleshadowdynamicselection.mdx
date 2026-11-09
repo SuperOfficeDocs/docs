@@ -592,6 +592,7 @@ Shadow contact provider for the dynamic sale provider.
 |appointment/rawType|int|| x |
 |appointment/rawStatus|int|| x |
 |appointment/cautionWarning|listAny|| x |
+|appointment/ownedExternally|listAny|| x |
 |appointment/visibleInDiary|bool|| x |
 |appointment/endTime| *None* ||  |
 |appointment/suggestedAppointmentId|int|| x |
@@ -646,12 +647,12 @@ Shadow contact provider for the dynamic sale provider.
 |appointment/associate/portraitThumbnail| *None* ||  |
 |appointment/associate/otherGroups|userGroup||  |
 |appointment/associate/userName|string|| x |
-|appointment/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|appointment/associate/personEmail|string|| x |
 |appointment/associate/locationAddress|string|| x |
 |appointment/associate/isLocation|bool|| x |
 |appointment/appointment/text|positiveString|| x |
@@ -751,12 +752,12 @@ Shadow contact provider for the dynamic sale provider.
 |project/number|string|| x |
 |project/type|listAny|| x |
 |project/status|listAny|| x |
-|project/statusRank| *None* || x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/statusRank| *None* || x |
 |project/associateId|associate|| x |
 |project/hasInfoText|bool|| x |
 |project/icon| *None* || x |
@@ -856,12 +857,12 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/saleId|int|| x |
 |saleStakeholder/comment|string|| x |
 |saleStakeholder/salesRoleId|listAny|| x |
-|saleStakeholder/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/hasInfoText|bool|| x |
 |saleStakeholder/person/personId|int|| x |
 |saleStakeholder/person/firstName|string|| x |
 |saleStakeholder/person/lastName|string|| x |
@@ -961,12 +962,12 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/person/restrictionAddress/line3|string|| x |
 |saleStakeholder/person/restrictionAddress/county|string|| x |
 |saleStakeholder/person/restrictionAddress/city|string|| x |
-|saleStakeholder/person/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/restrictionAddress/zip|string|| x |
 |saleStakeholder/person/restrictionAddress/state|string|| x |
 |saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/person/restrictionAddress/wgs84longitude|decimal|| x |
@@ -1066,12 +1067,12 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/person/correspondingAssociate/ejStatus|int||  |
 |saleStakeholder/person/correspondingAssociate/credentialType| *None* || x |
 |saleStakeholder/person/correspondingAssociate/credentialDisplayValue| *None* || x |
-|saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/person/correspondingAssociate/isActive|bool|| x |
 |saleStakeholder/person/correspondingAssociate/isActiveText|bool|| x |
 |saleStakeholder/person/correspondingAssociate/portraitThumbnail| *None* ||  |
 |saleStakeholder/person/correspondingAssociate/otherGroups|userGroup||  |
@@ -1171,12 +1172,12 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/contact/restrictionAddress/line3|string|| x |
 |saleStakeholder/contact/restrictionAddress/county|string|| x |
 |saleStakeholder/contact/restrictionAddress/city|string|| x |
-|saleStakeholder/contact/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/restrictionAddress/zip|string|| x |
 |saleStakeholder/contact/restrictionAddress/state|string|| x |
 |saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|| x |
 |saleStakeholder/contact/restrictionAddress/wgs84longitude|decimal|| x |
@@ -1276,12 +1277,12 @@ Shadow contact provider for the dynamic sale provider.
 |saleStakeholder/contact/saintActivityType|listAny||  |
 |saleStakeholder/contact/saintDirection|listAny||  |
 |saleStakeholder/contact/saintIntention|listAny||  |
-|saleStakeholder/contact/saintTicketStatus|listAny||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|saleStakeholder/contact/saintTicketStatus|listAny||  |
 |saleStakeholder/contact/saintTicketCategory|listAny||  |
 |quote/quoteId|int|| x |
 |quote/poNumber|string|| x |
@@ -1380,7 +1381,7 @@ Shadow contact provider for the dynamic sale provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowDynamicSelection?$select=stageId,person/personSourcedFrom,person/personLinkedinUrl,person/consentSourceStore,appointment/associate/contactId
+GET /api/v1/archive/SaleShadowDynamicSelection?$select=person/personUdef/SuperOffice:5,contact/contactAssociate/title,contact/NumberOfNotCompletedSalesInPeriod,appointment/associate/firstName,appointment/associate/contactName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

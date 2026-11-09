@@ -511,7 +511,7 @@ Provides populated mail envelope rows as an archive
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mail2?$select=subject,mailfolder,person/restrictionAddress/line1,person/personExtra/x_person_hidden_integer,contact/email/emailLastBounce
+GET /api/v1/archive/Mail2?$select=person/restrictionAddress/wgs84longitude,person/personExtra/x_person_boolean,person/correspondingAssociate/otherGroups
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

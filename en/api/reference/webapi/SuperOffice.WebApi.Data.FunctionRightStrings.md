@@ -752,6 +752,18 @@ public const string ExtUseSameProjectRights = "ext-use-same-project-rights"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_FunctionRightStrings_FormsOverrideApprovalText"></a> FormsOverrideApprovalText
+
+Can change the approval text (form submit) on a single form or form template.
+
+```csharp
+public const string FormsOverrideApprovalText = "forms-override-approval-text"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_FunctionRightStrings_HideCompany"></a> HideCompany
 
 A user who has this right will NOT see the company panel. This supersedes the corresponding 'Cripple' preference

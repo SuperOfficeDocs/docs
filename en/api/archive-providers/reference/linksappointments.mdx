@@ -68,6 +68,7 @@ Link data provider for appointments, handles both addressing by source or by des
 |rawType|int|| x |
 |rawStatus|int|| x |
 |cautionWarning|listAny|| x |
+|ownedExternally|listAny|| x |
 |visibleInDiary|bool|| x |
 |endTime| *None* ||  |
 |suggestedAppointmentId|int|| x |
@@ -121,12 +122,12 @@ Link data provider for appointments, handles both addressing by source or by des
 |contact/linkedinUrl|string|| x |
 |contact/deletedDate|datetime||  |
 |contact/mainContact| *None* || x |
-|contact/forceCompany|bool||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/forceCompany|bool||  |
 |contact/contactPhone/formattedNumber|string||  |
 |contact/contactPhone/description|string|| x |
 |contact/contactFax/formattedNumber|string||  |
@@ -226,12 +227,12 @@ Link data provider for appointments, handles both addressing by source or by des
 |contact/contactUdef/SuperOffice:11|string|| x |
 |contact/contactUdef/SuperOffice:12|listAny|| x |
 |contact/contactUdef/SuperOffice:13|listAny|| x |
-|contact/contactExtra/x\_contact\_integer|int|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contact/contactExtra/x\_contact\_integer|int|| x |
 |contact/contactExtra/x\_contact\_hidden\_integer|int|| x |
 |contact/contactExtra/x\_contact\_default\_integer|int|| x |
 |contact/contactExtra/x\_contact\_float|decimal|| x |
@@ -331,12 +332,12 @@ Link data provider for appointments, handles both addressing by source or by des
 |person/hasCompany|bool|| x |
 |person/isProjectMember|bool|| x |
 |person/isStakeholder|bool|| x |
-|person/updatedByWorkflow|listAny|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/updatedByWorkflow|listAny|| x |
 |person/whenUpdatedByWorkflow|datetime|| x |
 |person/createdByForm|listAny|| x |
 |person/phone/formattedNumber|string||  |
@@ -436,12 +437,12 @@ Link data provider for appointments, handles both addressing by source or by des
 |person/personAssociate/contactName|string|| x |
 |person/personAssociate/contactDepartment|string|| x |
 |person/personAssociate/usergroup|userGroup|| x |
-|person/personAssociate/usergroupId|int|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/personAssociate/usergroupId|int|| x |
 |person/personAssociate/contactFullName|string|| x |
 |person/personAssociate/contactCategory|listAny|| x |
 |person/personAssociate/role|listAny|| x |
@@ -541,12 +542,12 @@ Link data provider for appointments, handles both addressing by source or by des
 |project/projectPublish/isPublished|bool|| x |
 |project/projectPublish/publishedFrom|date|| x |
 |project/projectPublish/publishedTo|date|| x |
-|project/projectPublish/publishedBy| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectPublish/publishedBy| *None* ||  |
 |project/projectEvent/isExternalEvent|bool|| x |
 |project/projectEvent/eventDate|date|| x |
 |project/projectEvent/hasSignOn|bool|| x |
@@ -646,12 +647,12 @@ Link data provider for appointments, handles both addressing by source or by des
 |sale/lossReason|listAny|| x |
 |sale/source|listAny|| x |
 |sale/competitor|listAny|| x |
-|sale/heading|stringorPK|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|sale/heading|stringorPK|| x |
 |sale/amount|decimal|| x |
 |sale/amountWeighted|decimal|| x |
 |sale/earning|decimal|| x |
@@ -751,12 +752,12 @@ Link data provider for appointments, handles both addressing by source or by des
 |associate/assocType|listAny|| x |
 |associate/ejUserId|int||  |
 |associate/simultaneousEjUser|bool||  |
-|associate/ejDisplayName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associate/ejDisplayName|string|| x |
 |associate/ejStatus|int||  |
 |associate/credentialType| *None* || x |
 |associate/credentialDisplayValue| *None* || x |
@@ -783,7 +784,7 @@ Link data provider for appointments, handles both addressing by source or by des
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksAppointments?$select=icon,person/personAssociate/isActiveText,contact/saintActivityType
+GET /api/v1/archive/LinksAppointments?$select=appointmentPublish/isPublished,contact/category,contact/searchPhone/description,contact/restrictionAddress/county,contact/contactAssociate/assocTooltip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
