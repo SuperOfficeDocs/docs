@@ -102,6 +102,7 @@
           "da/ai/learn/data-quality-agent",
           "da/ai/learn/duplicate-agent",
           "da/ai/learn/lead-agent",
+          "da/ai/learn/sales-assistant-agent",
           "da/ai/learn/set-up-ai-agents",
           "da/ai/learn/mcp",
           {
