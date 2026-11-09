@@ -46,7 +46,7 @@ Der Agent schlägt vor, Sie entscheiden. Er nimmt nie Kontakt mit einem Kunden a
 
 ## Zeitplan
 
-Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Zeit. Mit **Max. Aufgaben pro Tag** legen Sie fest, wie viele Empfehlungen er täglich erstellt.
+Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Zeit. Mit **Maximale Anzahl Aufgaben pro Tag** legen Sie fest, wie viele Empfehlungen er täglich erstellt.
 
 Jeder Lauf betrachtet Ihre 100 zuletzt erfassten Verkäufe und prüft die offenen und pausierten darunter. Ältere Verkäufe werden nicht geprüft. Warten bereits 20 Empfehlungen auf Ihre Entscheidung, fügt der Lauf keine neuen hinzu, bis Sie einige bearbeitet haben.
 
@@ -70,28 +70,28 @@ Die Einrichtung ist ein einziger Schritt. Sie sind automatisch der Genehmiger un
 
 1. Geben Sie einen eindeutigen **Namen** für die Agenteninstanz ein. **Dieser kann nach der Aktivierung nicht mehr geändert werden.**
 
-    ![Die allgemeinen Einstellungen des Sales Assistant Agent mit Max. Aufgaben pro Tag, der Grundlage der Empfehlungen und den Erinnerungseinstellungen -screenshot][img2]
+    ![Die allgemeinen Einstellungen des Sales Assistant Agent mit Maximale Anzahl Aufgaben pro Tag, der Grundlage der Empfehlungen und den Erinnerungseinstellungen -screenshot][img2]
 
 1. Optional können Sie die vorgeschlagene **Beschreibung** bearbeiten, wenn Sie etwas anderes möchten.
 
 1. Wählen Sie die **Berichtssprache**. Diese wirkt sich sowohl auf Empfehlungen als auch auf Chat-Antworten aus. Der Standardwert ist Englisch.
 
-1. Wählen Sie, wie viele Empfehlungen der Agent pro Tag erstellt (bis zu 30). Der Standardwert für **Max. Aufgaben pro Tag** ist 10.
+1. Wählen Sie, wie viele Empfehlungen der Agent pro Tag erstellt (bis zu 30). Der Standardwert für **Maximale Anzahl Aufgaben pro Tag** ist 10.
 
-1. Wählen Sie, worauf sich die Empfehlungen stützen (**Base recommendations on**). Der Standardwert ist **My own won deals**.
+1. Wählen Sie, worauf sich die Empfehlungen stützen (**Empfehlungen basieren auf**). Der Standardwert ist **Meine eigenen Geschäftsabschlüsse**.
 
     | Option | Woraus der Agent lernt |
     |---|---|
-    | My own won deals | Ihre eigenen gewonnenen Verkäufe. |
-    | My team's won deals | Die gewonnenen Verkäufe Ihres Teams. |
-    | All won deals (whole organisation) | Jeder gewonnene Verkauf in Ihrer Organisation. |
-    | The sale guide only | Der [Verkaufsleitfaden][1] der Verkaufsart. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
-    | My own guidance | Ein Text, den Sie schreiben (bis zu 2000 Zeichen), zum Beispiel *Verkäufe über 100.000 priorisieren; immer eine technische Person einbeziehen*. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
-    | Selection of successful sales | Die gewonnenen Verkäufe in einer Ihrer eigenen gespeicherten Selektionen. |
+    | Meine eigenen Geschäftsabschlüsse | Ihre eigenen gewonnenen Verkäufe. |
+    | Geschäftsabschlüsse meines Teams | Die gewonnenen Verkäufe Ihres Teams. |
+    | Alle erfolgreichen Geschäftsabschlüsse (gesamte Organisation) | Jeder gewonnene Verkauf in Ihrer Organisation. |
+    | Nur Verkaufsleitfaden folgen | Der [Verkaufsleitfaden][1] der Verkaufsart. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
+    | Meine eigenen Orientierungshilfe (Text) | Ein Text, den Sie schreiben (bis zu 2000 Zeichen), zum Beispiel *Verkäufe über 100.000 priorisieren; immer eine technische Person einbeziehen*. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
+    | Selektion erfolgreicher Verkäufe | Die gewonnenen Verkäufe in einer Ihrer eigenen gespeicherten Selektionen. |
 
     Unabhängig von Ihrer Wahl berücksichtigen die Empfehlungen auch, warum ähnliche Verkäufe verloren gingen oder pausiert wurden.
 
-1. Optional können Sie **Remind me about approaching dates** aktivieren, um auch einen Verkauf zu melden, dessen Verkaufsdatum näher rückt, selbst wenn sonst nichts im Argen liegt. Wählen Sie dann **Remind me this many business days ahead** (1-14). Der Standardwert ist 3. Werktage überspringen Wochenenden, aber keine Feiertage.
+1. Optional können Sie **An bevorstehende Termine erinnern** aktivieren, um auch einen Verkauf zu melden, dessen Verkaufsdatum näher rückt, selbst wenn sonst nichts im Argen liegt. Wählen Sie dann **So viele Werktage im Voraus erinnern** (1-14). Der Standardwert ist 3. Werktage überspringen Wochenenden, aber keine Feiertage.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -121,7 +121,7 @@ Ein verstrichenes Verkaufsdatum wird immer gemeldet, und die Priorität wird um 
 
 Jede Empfehlung hat eine Priorität: **High**, **Normal** oder **Low**. Größere Verkäufe steigen eine Stufe auf und kleinere sinken, verglichen mit Ihren anderen offenen Verkäufen. Ein strategischer Kunde, dessen Verkauf pausiert ist, eine überfällige Aktivität hat oder eine offene Anfrage mit hoher Priorität hat, steigt ebenfalls auf. Das gilt auch für ein bevorstehendes Verkaufsdatum, wenn Erinnerungen aktiviert sind.
 
-Brauchen mehr Verkäufe Aufmerksamkeit, als **Max. Aufgaben pro Tag** erlaubt, kommt die höchste Priorität zuerst, dann der höchste Betrag. Die übrigen warten auf einen späteren Lauf.
+Brauchen mehr Verkäufe Aufmerksamkeit, als **Maximale Anzahl Aufgaben pro Tag** erlaubt, kommt die höchste Priorität zuerst, dann der höchste Betrag. Die übrigen warten auf einen späteren Lauf.
 
 ## Empfehlungen prüfen und genehmigen {#review}
 
@@ -178,7 +178,7 @@ Nach dem Genehmigen kommt der Verkauf zwei Tage nach Fälligkeit der Folgeaufgab
 
     Braucht etwas Aufmerksamkeit, erstellt der Agent eine Empfehlung im eigenen Thread dieses Verkaufs, genau wie beim täglichen Lauf. Liegt der Verkauf im Plan, sagt er das.
 
-Empfehlungen, die Sie anfordern, zählen zu **Max. Aufgaben pro Tag**. Der Chat betrachtet dieselben 100 zuletzt erfassten Verkäufe wie der tägliche Lauf und findet daher keine älteren Verkäufe.
+Empfehlungen, die Sie anfordern, zählen zu **Maximale Anzahl Aufgaben pro Tag**. Der Chat betrachtet dieselben 100 zuletzt erfassten Verkäufe wie der tägliche Lauf und findet daher keine älteren Verkäufe.
 
 Sie können den Agenten im Chat auch bitten, einen Verkauf zu erstellen oder zu aktualisieren, eine Folgeaufgabe hinzuzufügen, einen Schritt des Verkaufsleitfadens hinzuzufügen, eine Anfrage zu erfassen, einen Verkauf als gewonnen oder verloren abzuschließen oder nach einer Firma zu suchen. Er bittet Sie, jede Aktion zu bestätigen, aber es gibt keine Genehmigungskarte. Das Nachschlagen der Details eines Verkaufs oder die Bitte um eine Zusammenfassung Ihrer Pipeline erstellt keine Aufgabe.
 
@@ -200,7 +200,7 @@ Der Arbeitsbereich des Sales Assistant Agent hat drei Registerkarten: **Chat**, 
 
 Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbol"></i>, um die neuesten Einträge abzurufen.
 
-Um die Beschreibung, die Sprache, **Max. Aufgaben pro Tag**, die Grundlage der Empfehlungen oder die Erinnerungseinstellungen zu ändern, [bearbeiten Sie die Instanz][5]. Name und Zeitplan sind fest. Änderungen gelten ab dem nächsten Lauf. Nur der Eigentümer der Instanz kann ihre Einstellungen ändern oder sie löschen.
+Um die Beschreibung, die Sprache, **Maximale Anzahl Aufgaben pro Tag**, die Grundlage der Empfehlungen oder die Erinnerungseinstellungen zu ändern, [bearbeiten Sie die Instanz][5]. Name und Zeitplan sind fest. Änderungen gelten ab dem nächsten Lauf. Nur der Eigentümer der Instanz kann ihre Einstellungen ändern oder sie löschen.
 
 ## Tipps und Fehlerbehebung
 
