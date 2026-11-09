@@ -40,12 +40,12 @@ Person Person(String firstname, String lastname) {
   return p;
 }
 Person[] persons;
-persons.pushBack(Person(\"Jack\", \"Black\"));
-persons.pushBack(Person(\"Mark\", \"Wahlberg\"));
-persons.pushBack(Person(\"Anthony\", \"Hopkins\"));
-printLine(\"Before sort: \" + persons.buildString(\"|\"));
+persons.pushBack(Person("Jack", "Black"));
+persons.pushBack(Person("Mark", "Wahlberg"));
+persons.pushBack(Person("Anthony", "Hopkins"));
+printLine("Before sort: " + persons.buildString("|"));
 persons.sort();
-printLine(\"After sort: \" + persons.buildString(\"|\"));
+printLine("After sort: " + persons.buildString("|"));
 ```
 
 ## fromJsonString
@@ -65,7 +65,7 @@ struct Person {
   Date dob;
 };
 Person p;
-p.fromJsonString('{\"firstname\": \"Jon\", \"lastname\": \"Doe\", \"dob\": \"1984-10-26\"}');
+p.fromJsonString('{"firstname": "Jon", "lastname": "Doe", "dob": "1984-10-26"}');
 printLine(p.toJsonString());
 ```
 
@@ -83,10 +83,10 @@ Void {type}.fromXMLNode(XMLNode node)
 struct Hello {
   String who;
   Void print() {
-    printLine(\"Hello \" + this.who);
+    printLine("Hello " + this.who);
   }
 };
-XMLNode xml = parseXML(\"<root><who>World</who></root>\");
+XMLNode xml = parseXML("<root><who>World</who></root>");
 Hello h;
 h.fromXMLNode(xml);
 h.print();
@@ -110,15 +110,15 @@ struct Hello {
     this.who = who;
   }
   Void print() {
-    printLine(\"Hello \" + this.who);
+    printLine("Hello " + this.who);
   }
 };
 JSONBuilder jsBuilder;
 Hello h;
-h.setWho(\"World\");
+h.setWho("World");
 h.toJson(jsBuilder);
 print(jsBuilder.getString());
-//prints {\"who\": \"World\"}
+//prints {"who": "World"}
 ```
 
 ## toJsonString
@@ -138,11 +138,11 @@ struct Person {
     Date dob;
 };
 Person p;
-p.firstname = \"Jack\";
-p.lastname = \"Black\";
-p.dob = Date(\"1975-11-28\");
+p.firstname = "Jack";
+p.lastname = "Black";
+p.dob = Date("1975-11-28");
 printLine(p.toJsonString());
-//prints {\"firstname\": \"Jack\",\"lastname\": \"Black\",\"dob\": \"1975-11-28\"}
+//prints {"firstname": "Jack","lastname": "Black","dob": "1975-11-28"}
 ```
 
 ## toString
@@ -160,12 +160,12 @@ struct Person {
   String firstname;
   String lastname;
   String toString() {
-    return this.firstname + \" \" + this.lastname;
+    return this.firstname + " " + this.lastname;
   }
 };
 Person p;
-p.firstname = \"Jack\";
-p.lastname = \"Black\";
+p.firstname = "Jack";
+p.lastname = "Black";
 printLine(p.toString());
 //prints Jack Black
 ```

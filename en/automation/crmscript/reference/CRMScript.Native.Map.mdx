@@ -74,9 +74,7 @@ Bool exists(String key)
 **Example:**
 
 ```crmscript
-Map m = Map("height = 25\
-width = 10\
-depth = 7");
+Map m = Map("height = 25\nwidth = 10\ndepth = 7");
 String key = "height";
 printLine(m.exists(key).toString());
 ```
@@ -98,9 +96,7 @@ An empty map has size == 0.
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10\
-depth=7");
+Map m = Map("height=25\nwidth=10\ndepth=7");
 printLine(m.size().toString());
 ```
 
@@ -117,8 +113,7 @@ String get(String key)
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 String key = depth;
 printLine(m.get(key));
 ```
@@ -136,8 +131,7 @@ String getKey()
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 printLine(m.getKey());
 ```
 
@@ -154,8 +148,7 @@ String getVal()
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 printLine(m.getVal());
 ```
 
@@ -172,8 +165,7 @@ String getWithFallback(String key, String fallback)
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 printLine(m.getWithFallback("foo", "bar"));
 ```
 
@@ -194,8 +186,7 @@ You can pass the increment as either Integer or Float.
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 m.increaseValueForKey("height", -5);
 ```
 
@@ -216,8 +207,7 @@ You can pass the increment as either Integer or Float.
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 m.increaseValueForKey("height", 2.5);
 ```
 
@@ -234,8 +224,7 @@ Void remove(String key)
 **Example:**
 
 ```crmscript
-Map m = Map("roses = red\
-violets = blue");
+Map m = Map("roses = red\nviolets = blue");
 m.remove("violets");
 ```
 
@@ -252,8 +241,7 @@ Void clear()
 **Example:**
 
 ```crmscript
-Map m = Map("roses = red\
-violets = blue");
+Map m = Map("roses = red\nviolets = blue");
 m.clear();
 ```
 
@@ -276,7 +264,7 @@ That eof() returns true is not the same as the map is empty. It can be, but it d
 ```crmscript
 Map m;
 if (m.eof()) {
-\tprintLine("You have reached the final frontier");
+  printLine("You have reached the final frontier");
 }
 ```
 
@@ -293,8 +281,7 @@ Bool first()
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 m.first();
 ```
 
@@ -311,8 +298,7 @@ Bool next()
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 m.next();
 ```
 
@@ -329,8 +315,7 @@ String toJson()
 **Example:**
 
 ```crmscript
-Map m = Map("height=25\
-width=10");
+Map m = Map("height=25\nwidth=10");
 printLine(m.toJson());
 ```
 

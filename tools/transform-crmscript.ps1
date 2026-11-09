@@ -258,6 +258,25 @@ function Test-EmptyRawField {
     return ($Text -eq '""') -or ($Text -match '^#?\s*TODO\s*$')
 }
 
+# The hand-rolled parser keeps a double-quoted YAML scalar's raw text, so its escapes (\" \\ \n \t ...) must be
+# decoded before rendering; otherwise example code shows up with literal backslashes.
+function ConvertFrom-YamlDoubleQuoted {
+    param([string]$Text)
+    return [regex]::Replace($Text, '\\(x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8}|[\s\S])', {
+        param($m)
+        $e = $m.Groups[1].Value
+        switch -CaseSensitive ($e.Substring(0, 1)) {
+            'n' { return "`n" }
+            't' { return "`t" }
+            'r' { return "`r" }
+            '0' { return [string][char]0 }
+            { $_ -cin 'x', 'u' } { return [string][char][Convert]::ToInt32($e.Substring(1), 16) }
+            'U' { return [char]::ConvertFromUtf32([Convert]::ToInt32($e.Substring(1), 16)) }
+            default { return $e }
+        }
+    })
+}
+
 # Parse YAML manually (safe line-by-line parsing)
 function Get-YamlItems {
     param([string[]]$Lines)
@@ -372,15 +391,14 @@ function Get-YamlItems {
             # Check if next line starts with a dash (array item with example content)
             if ($j -lt $Lines.Count -and $Lines[$j] -match '^\s*-\s+"(.+)"$') {
                 # Extract the example string value
-                $exampleValue = $matches[1]
+                $exampleValue = ConvertFrom-YamlDoubleQuoted $matches[1]
                 
-                # The example is in a single line with escaped quotes and \n for newlines
                 # Extract content between <pre><code> and </code></pre>
-                if ($exampleValue -match '<pre><code>(.+?)</code></pre>') {
+                if ($exampleValue -match '(?s)<pre><code>(.+?)</code></pre>') {
                     $codeContent = $matches[1]
                     
-                    # Split by \n and clean up each line
-                    $exCode = $codeContent -split '\\n' | Where-Object { $_.Trim() -ne '' }
+                    # Split into lines, drop blank ones; tabs become 2 spaces (markdownlint MD010)
+                    $exCode = $codeContent -split "`r?`n" | ForEach-Object { $_ -replace "`t", '  ' } | Where-Object { $_.Trim() -ne '' }
                     
                     # Decode HTML entities
                     $exCode = $exCode | ForEach-Object {
