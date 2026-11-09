@@ -32,9 +32,9 @@ The Sales Assistant Agent watches your own open sales and tells you which ones n
 
 ## What the agent does for you
 
-* **Watches your pipeline daily:** surfaces a sale only when something needs a decision. Its sale date has passed, it is taking longer than similar sales usually do, it is stalled, its next activity is overdue or missing, or the customer has an open high-priority request.
+* **Watches your pipeline daily:** surfaces a sale only when something needs a decision: its sale date has passed, it is taking longer than similar sales usually do, it is stalled, its next activity is overdue or missing, or the customer has an open high-priority request.
 
-* **Learns from real sales:** looks at how sales like this one are usually won, for example how many touches it takes and how soon contact starts, and at common reasons similar sales were lost or stalled.
+* **Learns from real sales:** looks at how sales like this one are usually won, for example how many activities it takes and how soon contact starts, and at common reasons similar sales were lost or stalled.
 
 * **Recommends one next step:** a follow-up appointment, rescheduling an overdue activity, adding a stakeholder, drafting a quote, updating a sale date that has passed, or closing the sale as sold or lost. The reasoning is shown alongside.
 
@@ -70,7 +70,7 @@ Setup is a single step. You are automatically the approver, and you can create o
 
 1. Choose **Reporting language**. This affects both recommendations and chat replies. The default is English.
 
-1. Select how many recommendations the agent creates per day (1-30). The default **Max tasks per day** is 10.
+1. Select how many recommendations the agent creates per day (up to 30). The default **Max tasks per day** is 10.
 
 1. Choose what to **Base recommendations on**. The default is **My own won deals**.
 
@@ -91,7 +91,7 @@ Setup is a single step. You are automatically the approver, and you can create o
 
     The instance is activated, appears under **My agents** in the Agents sidebar, greets you in **General chat**, and starts its first run straight away.
 
-## How recommendations work {#how}
+## How recommendations work {#recommendations}
 
 On each run, the agent scores your open sales against similar won sales, both on total age and on time in the current stage. On-track sales are left alone. It looks at:
 
@@ -103,7 +103,7 @@ On each run, the agent scores your open sales against similar won sales, both on
 
 * **Open requests:** whether the customer has an open, high-priority request. The agent tells you whether the request is on this sale or elsewhere on the customer's account, where you would not see it from the sale.
 
-The agent learns from the won sales among up to 500 of the most recent sales in the history you chose, and needs at least five won sales to compare. With fewer, it follows the sales guide instead, or the sale's own signals if there is no guide.
+The agent learns from the won sales in the 500 most recent sales of the history you chose, and needs at least five won sales to compare. With fewer, it follows the sales guide instead, or the sale's own signals if there is no guide.
 
 <Tip>
 A sale date that has passed is always flagged, and its priority is raised one level, even if everything else about the sale looks healthy. This cannot be turned off.
@@ -111,7 +111,7 @@ A sale date that has passed is always flagged, and its priority is raised one le
 
 ### Priority
 
-Each recommendation has a priority: **High**, **Normal**, or **Low**. Bigger sales move up a level and smaller ones down, compared with your other open sales. A strategic customer whose sale is stalled, has an overdue activity, or has an open high-priority request also moves up. So does a passed sale date, and an upcoming one when reminders are on.
+Each recommendation has a priority: **High**, **Normal**, or **Low**. Bigger sales move up a level and smaller ones down, compared with your other open sales. A strategic customer whose sale is stalled, has an overdue activity, or has an open high-priority request also moves up. So does an upcoming sale date when reminders are on.
 
 When more sales need attention than your **Max tasks per day** allows, the highest priority comes first, then the highest amount. The rest wait for a later run.
 
@@ -146,9 +146,9 @@ When more sales need attention than your **Max tasks per day** allows, the highe
 | Reschedule overdue appointment | Moves the sale's overdue activity to a new date, at least five business days out. No second activity is created. |
 | Add stakeholder | Adds the sale's existing contact to its [stakeholders][2]. The agent never adds a contact that is not already on the sale. |
 | Create draft quote | Creates an empty [quote][3] draft on the sale, for you to price and send. Nothing is added if the sale already has a quote. |
-| Update sale date | Offered when the sale date has passed. Sets a new sale date, at least ten business days out, and books a follow-up at least five business days out. Reopens the sale if it was stalled. |
+| Update sale date | Offered when the sale date has passed. Sets the sale date to when similar won sales usually close, at least ten business days out, and books a follow-up at least five business days out. Reopens the sale if it was stalled. |
 | Close as won | Marks the sale as sold, with the date set to the day you approve. |
-| Close as lost | Marks the sale as lost, with a reason from your company's list if the suggested reason is on it. The date is set to the day you approve. |
+| Close as lost | Marks the sale as lost with the suggested reason. If that reason is not in your company's list, the sale is closed without a reason. The date is set to the day you approve. |
 
 <Warning>
 **Closing a sale cannot be undone from the agent.** The sale leaves your open pipeline as soon as you approve. The agent only proposes this with clear evidence in your CRM history, never just because a sale has gone quiet. To reverse it, [update the sale][4] directly.
@@ -162,7 +162,7 @@ When you reject, nothing is written to SuperOffice. The agent does not suggest a
 
 1. Select the **Chat** tab.
 
-1. In the **General** chat, ask about a sale, for example *What should I do next with Acme Corp?*
+1. In the **General chat** thread, ask about a sale, for example *What should I do next with Acme Corp?*
 
     If something needs attention, the agent creates a recommendation in that sale's own thread, just like the daily run. If the sale is on track, it says so.
 
