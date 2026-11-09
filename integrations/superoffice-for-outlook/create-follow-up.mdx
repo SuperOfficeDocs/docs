@@ -24,6 +24,7 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/create-follow-up
 ---
 
+import StepCheckContact from "./snippets/step-check-contact.mdx";
 import StepContactOrCompanyMatch from "./snippets/step-contact-or-company-match.mdx";
 import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
 import NoteVisibility from "./snippets/note-visibility.mdx";
@@ -32,13 +33,13 @@ To create a task or appointment in SuperOffice directly from Outlook, select **C
 
 1. Open the email related to the activity.
 
-1. Check the contact at the top of the sidebar. If it shows **Select contact** or **Click to add new contact**, [match the contact][2] first.
+1. <StepCheckContact />
 
-1. In the **SuperOffice** Outlook sidebar, select **Create task** or **Create appointment**.
+1. Select **Create task** or **Create appointment** in the sidebar.
 
 1. Fill in the required fields:
 
-    * **Contact or Company**: Select the contact or company for this task or appointment.
+    * **Contact or Company:** Select the contact or company for this task or appointment.
 
         <StepContactOrCompanyMatch />
 
@@ -46,16 +47,16 @@ To create a task or appointment in SuperOffice directly from Outlook, select **C
 
         ![Contact card shown when you hover over a contact in the Contact or Company list -screenshot][img2]
 
-    * **Sale** (Optional): Link the follow-up to an existing sale if relevant.
-    * **Project** (Optional): Link the follow-up to an ongoing project if applicable.
-    * **Type**: Choose the type of follow-up (such as, Customer complaint, Meeting).
-    * **Date**: Set the date for the task or appointment.
-    * **Time** (appointments only): Set the time for the appointment.
-    * **Visible for**: Choose who can see the appointment or task: **All**, a user group, or only you.
+    * **Sale:** (Optional) Link the follow-up to an existing sale if relevant.
+    * **Project:** (Optional) Link the follow-up to an ongoing project if applicable.
+    * **Type:** Choose the type of follow-up (such as, Customer complaint, Meeting).
+    * **Date:** Set the date for the task or appointment.
+    * **Time:** (Appointments only) Set the time for the appointment.
+    * **Visible for:** Choose who can see the appointment or task: **All**, a user group, or only you.
 
         <NoteVisibility />
 
-    * **Description**: Filled in with the email subject and body text. You can edit the text or add details, such as a case number or other context.
+    * **Description:** Filled in with the email subject and body text. You can edit the text or add details, such as a case number or other context.
 
 1. Once all fields are completed, click **Save**.
 
@@ -64,7 +65,6 @@ To create a task or appointment in SuperOffice directly from Outlook, select **C
 You can also create a sale or request directly from the email. If it is part of an ongoing issue, you can attach the message to a specific request.
 
 [1]: /en/diary/learn/follow-ups
-[2]: ./add-contact-to-superoffice#match-first
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-create-follow-up-new.png
 [img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png

@@ -24,15 +24,17 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/create-request
 ---
 
+import StepCheckContact from "./snippets/step-check-contact.mdx";
+
 You can create a [request][1] in SuperOffice directly from Outlook. If the email relates to an ongoing issue, you can attach the message to a specific request.
 
 ## Create request
 
 1. Open the email related to the request.
 
-1. Check the contact at the top of the sidebar. If it shows **Select contact** or **Click to add new contact**, [match the contact][2] first.
+1. <StepCheckContact />
 
-1. In the **SuperOffice** Outlook sidebar, select **Create request in SuperOffice**.
+1. Select **Create request in SuperOffice** in the sidebar.
 
 1. In **Add request to this queue**, select the queue to create the request in.
 
@@ -40,9 +42,9 @@ You can create a [request][1] in SuperOffice directly from Outlook. If the email
 
 ## Add message
 
-1. Check the contact at the top of the sidebar. If it shows **Select contact** or **Click to add new contact**, [match the contact][2] first.
+1. <StepCheckContact />
 
-1. In the **SuperOffice** Outlook sidebar, select **Add message to request**.
+1. Select **Add message to request** in the sidebar.
 
 1. In **Request**, search for the request by its ID and select it. Search is limited, so the ID is the most reliable way to find the request. SuperOffice adds the email as a message to that request.
 
@@ -53,4 +55,3 @@ You can also create a follow-up or sale directly from the email.
 </Tip>
 
 [1]: /en/request/learn/create
-[2]: ./add-contact-to-superoffice#match-first

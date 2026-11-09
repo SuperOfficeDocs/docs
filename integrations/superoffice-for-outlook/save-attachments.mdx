@@ -19,6 +19,7 @@ language: en
 userflow_index: true
 ---
 
+import StepCheckContact from "./snippets/step-check-contact.mdx";
 import StepContactOrCompanyMatch from "./snippets/step-contact-or-company-match.mdx";
 import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
 import NoteVisibility from "./snippets/note-visibility.mdx";
@@ -27,16 +28,16 @@ You can save email attachments directly to SuperOffice by following these steps:
 
 1. Open the email that contains the attachments.
 
-1. Check the contact at the top of the sidebar. If it shows **Select contact** or **Click to add new contact**, [match the contact][1] first.
+1. <StepCheckContact />
 
-1. Choose **Save attachment in SuperOffice** from the SuperOffice sidebar.
+1. Select **Save attachment in SuperOffice** in the sidebar.
 
 1. Select the attachment you want to save from the list shown.
 
 1. Review the fields and change what you need:
 
-    * **Subject**: Filled in with the attachment file name. You can overwrite it before you save.
-    * **Contact or Company**: Select the contact or company to link the attachment to.
+    * **Subject:** Filled in with the attachment file name. You can overwrite it before you save.
+    * **Contact or Company:** Select the contact or company to link the attachment to.
 
         <StepContactOrCompanyMatch />
 
@@ -44,24 +45,22 @@ You can save email attachments directly to SuperOffice by following these steps:
 
         ![Contact card shown when you hover over a contact in the Contact or Company list -screenshot][img1]
 
-    * **Sale**: Link the attachment to a sale.
-    * **Project**: Link the attachment to a project.
-    * **Type**: Choose the type for the saved attachment.
-    * **Date**: Set the date for the saved attachment.
-    * **Visible for**: Choose who can see the attachment: **All**, a user group, or only you.
+    * **Sale:** Link the attachment to a sale.
+    * **Project:** Link the attachment to a project.
+    * **Type:** Choose the type for the saved attachment.
+    * **Date:** Set the date for the saved attachment.
+    * **Visible for:** Choose who can see the attachment: **All**, a user group, or only you.
 
         <NoteVisibility />
 
-    * **Mark as completed**: Marks the email activity as completed in SuperOffice. Off by default.
+    * **Mark as completed:** Marks the email activity as completed in SuperOffice. Off by default.
 
 1. Click **Save**.
 
 1. To save another attachment, repeat steps 1-6.
 
 <Note>
-Previously saved attachments are marked as "Attachment already saved."
+Previously saved attachments are marked as "Attachment already saved".
 </Note>
-
-[1]: ./add-contact-to-superoffice#match-first
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png

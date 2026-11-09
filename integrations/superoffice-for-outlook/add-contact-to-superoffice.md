@@ -30,9 +30,9 @@ When you open an email, SuperOffice for Outlook looks up the sender in SuperOffi
 
 What you see depends on what SuperOffice finds:
 
-* **The contact's name and company**: The sender is matched. Choose your action.
-* **Select contact**: Several contacts in SuperOffice share the email address. Click **Select contact** and choose the correct one.
-* **Click to add new contact**: The sender isn't in SuperOffice. [Add them as a new contact][2].
+* **The contact's name and company:** The sender is matched. Choose your action.
+* **Select contact:** Several contacts in SuperOffice share the email address. Click **Select contact** and choose the correct one.
+* **Click to add new contact:** The sender isn't in SuperOffice. [Add them as a new contact][2].
 
 ![Main panel with the Select contact button for several matching contacts, and the Click to add new contact link for an unknown contact -screenshot][img3]
 
@@ -46,9 +46,9 @@ If you choose an action without matching the contact, **Contact or Company** sta
 
 1. Choose one of these options:
 
-    * **Add email to an existing contact**: Select a contact from the **This contact could be** list to link the email address to that contact.
-    * **Add contact to an existing company**: Select a company from the **Or add contact to company** list.
-    * **Create a new company and contact**: Use this if the company isn't in SuperOffice yet.
+    * **Add email to an existing contact:** Select a contact from the **This contact could be** list to link the email address to that contact.
+    * **Add contact to an existing company:** Select a company from the **Or add contact to company** list.
+    * **Create a new company and contact:** Use this if the company isn't in SuperOffice yet.
 
 1. Fill in the required fields and click **Save**.
 

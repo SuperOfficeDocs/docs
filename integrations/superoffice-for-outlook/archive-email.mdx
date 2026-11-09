@@ -22,6 +22,7 @@ language: en
 userflow_index: true
 ---
 
+import StepCheckContact from "./snippets/step-check-contact.mdx";
 import StepContactOrCompanyMatch from "./snippets/step-contact-or-company-match.mdx";
 import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
 import NoteVisibility from "./snippets/note-visibility.mdx";
@@ -34,14 +35,14 @@ To archive information from an email in Outlook and save it to SuperOffice:
 
 1. [Open SuperOffice for Outlook][1] (if not already [pinned][3]).
 
-1. Check the contact at the top of the sidebar. If it shows **Select contact** or **Click to add new contact**, [match the contact][9] first.
+1. <StepCheckContact />
 
 1. Choose Save to SuperOffice in the SuperOffice sidebar.
 
 1. Review the fields and change what you need:
 
-    * **Subject**: Filled in with the email subject. You can overwrite it before you save.
-    * **Contact or Company**: Select the contact or company to link the email to.
+    * **Subject:** Filled in with the email subject. You can overwrite it before you save.
+    * **Contact or Company:** Select the contact or company to link the email to.
 
         <StepContactOrCompanyMatch />
 
@@ -49,15 +50,15 @@ To archive information from an email in Outlook and save it to SuperOffice:
 
         ![Contact card shown when you hover over a contact in the Contact or Company list -screenshot][img2]
 
-    * **Sale**: Link the email to a sale.
-    * **Project**: Link the email to a project.
-    * **Type**: Preselected from your [default incoming email type][5]. Choose another type to change it for this email only.
-    * **Visible for**: Choose who can see the email: **All**, a user group, or only you.
+    * **Sale:** Link the email to a sale.
+    * **Project:** Link the email to a project.
+    * **Type:** Preselected from your [default incoming email type][5]. Choose another type to change it for this email only.
+    * **Visible for:** Choose who can see the email: **All**, a user group, or only you.
 
         <NoteVisibility />
 
-    * **Mark as completed**: Marks the email activity as completed in SuperOffice. Off by default.
-    * **Remove from inbox**: Moves the email to deleted items after you archive it. Preselected from your [Remove from inbox setting][8]. Change it for this email only.
+    * **Mark as completed:** Marks the email activity as completed in SuperOffice. Off by default.
+    * **Remove from inbox:** Moves the email to deleted items after you archive it. Preselected from your [Remove from inbox setting][8]. Change it for this email only.
 
 1. Click **Save** to archive the email.
 
@@ -83,7 +84,6 @@ To change your preference, choose **Personal settings** > **Preferences** > **Co
 [5]: ./settings#email-type
 [6]: /en/learn/getting-started/preferences
 [8]: ./settings
-[9]: ./add-contact-to-superoffice#match-first
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-save-to-superoffice.png
 [img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png
