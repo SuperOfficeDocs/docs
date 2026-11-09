@@ -81,7 +81,7 @@ Hashing algorithm:
 ```crmscript
 String priv_key = "-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----";
 Rsa rsa;
-Bool loaded = rsa.loadPrivateKey(priv_key, "&quot);
+Bool loaded = rsa.loadPrivateKey(priv_key, "");
 Byte[] content = String("Hello world").toByteArray();
 Byte[] signature = rsa.createSignature(content, 3);
 String base64Signature = encodeBase64(signature,false);
@@ -151,8 +151,8 @@ String pub_key = "-----BEGIN PUBLIC KEY-----MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIB
 Rsa rsa;
 Bool loaded = rsa.loadPublicKey(pub_key);
 Byte[] content = String("Hello world").toByteArray();
-String base64Signature = "vka6U5GrfxMWTGO....WW322CGWQ1SPJr8uZ+6"
-Bool verified = rsa.verifySignature(content, decodeBase64(base64Signature));
+String base64Signature = "vka6U5GrfxMWTGO....WW322CGWQ1SPJr8uZ+6";
+Bool verified = rsa.verifySignature(content, decodeBase64(base64Signature), 1); // 1 = SHA256
 ```
 
 ## verifySignature(String,Byte[],Integer)
@@ -183,8 +183,8 @@ Hashing algorithm:
 String pub_key = "-----BEGIN PUBLIC KEY-----MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBig....f8kXvJLBEGBR5AgMBAAE=-----END PUBLIC KEY-----";
 Rsa rsa;
 Bool loaded = rsa.loadPublicKey(pub_key);
-String base64Signature = "vka6U5GrfxMWTGO....WW322CGWQ1SPJr8uZ+6"
-Bool verified = rsa.verifySignature("Hello world", decodeBase64(base64Signature));
+String base64Signature = "vka6U5GrfxMWTGO....WW322CGWQ1SPJr8uZ+6";
+Bool verified = rsa.verifySignature("Hello world", decodeBase64(base64Signature), 1); // 1 = SHA256
 ```
 
 ## encrypt(Byte[])

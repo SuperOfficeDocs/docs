@@ -534,7 +534,7 @@ items:
   summary: "\nConcatenates two strings and alters the original string.\n"
   remarks: "\nUsing the append() method is currently faster than +=.\n"
   example:
-  - "\n<pre><code>s1 = s1 + s2;\ns1 += s2;\ns1.append(s2);</code></pre>\n"
+  - "\n<pre><code>String s1 = &quot;Super&quot;;\nString s2 = &quot;Office&quot;;\n\n// Three ways to append s2 to s1:\ns1 = s1 + s2;\ns1 += s2;\ns1.append(s2);</code></pre>\n"
   syntax:
     content: Void append(String value)
     parameters:
@@ -841,7 +841,7 @@ items:
   summary: "\nDetermines if the string exclusively contains uppercase and lowercase letters. Will return true if the restriction applies, otherwise false.\n"
   remarks: "\nIf any white-space characters are present in the string, the method will return false!\n"
   example:
-  - "\n<pre><code>String s = &quot;SuperOffice&quot;;\nprint(s.isAlpha().toString())</code></pre>\n"
+  - "\n<pre><code>String s = &quot;SuperOffice&quot;;\nprint(s.isAlpha().toString());</code></pre>\n"
   syntax:
     content: Bool isAlpha()
     parameters: []
@@ -1263,7 +1263,7 @@ items:
   summary: "\nReturns the word at a given position from the string.\n"
   remarks: "\nWord 0 is the first word in the string, even if it's after some leading whitespace.\n"
   example:
-  - "\n<pre><code>String(&quot;  this is a test&quot;)`.getWord(1)</code></pre>\nReturns &quot;is&quot;.\n"
+  - "\n<pre><code>String word = String(&quot;  this is a test&quot;).getWord(1); // Returns &quot;is&quot;</code></pre>\n"
   syntax:
     content: String getWord(Integer pos)
     parameters:
@@ -1532,7 +1532,7 @@ items:
   summary: "\nUses regexp pattern on the String object. Support for sub-expressions is also present.<p></p>\nNo matches will result in an array with length 0. res[0] will point to the entire matched string. res[1 ... n-1] will point to the matches of the sub-expressions.\n"
   remarks: "\nThe regexp is case-insensitive.\n"
   example:
-  - "\n<pre><code>String s;\ns=&quot;blabla 1234-4567-7890-1111 asdfasdfasdf&quot;;\nString[] res = s.regexp(&quot;(\\\\d{4})-(\\\\d{4})-(\\\\d{4})-(\\{4})&quot;);\nfor (Integer i=0;i&gt;res.length(); i++)\n{\n\tprint(&quot;Result: &quot; + res[i] + &quot;\n&quot;);\n}</code></pre>\n"
+  - "\n<pre><code>String s;\ns=&quot;blabla 1234-4567-7890-1111 asdfasdfasdf&quot;;\nString[] res = s.regexp(&quot;(\\\\d{4})-(\\\\d{4})-(\\\\d{4})-(\\\\d{4})&quot;);\nfor (Integer i=0;i &lt; res.length(); i++)\n{\n\tprint(&quot;Result: &quot; + res[i] + &quot;\\n&quot;);\n}</code></pre>\n"
   syntax:
     content: String[] regexp(String pattern)
     parameters:

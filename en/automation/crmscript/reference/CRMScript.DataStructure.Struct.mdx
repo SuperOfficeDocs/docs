@@ -29,6 +29,9 @@ Bool {type}.compare({type} s)
 struct Person {
   String firstname;
   String lastname;
+  String toString() {
+    return this.firstname + " " + this.lastname;
+  }
   Bool compare(Person p) {
     return this.toString() > p.toString();
   }

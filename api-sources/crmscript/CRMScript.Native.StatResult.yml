@@ -230,7 +230,7 @@ items:
       type: CRMScript.Global.Integer
       description: "A reference to the result set."
   example: 
-  - "\nThe result set reference can be used like this to display tickets in the result set (if the result set references tickets):<pre><code>setVariable(&quot;url&quot;, getProgram(1) + &quot;&amp;action=listTickets&amp;special=11&amp;resultKey=&quot; + resKey .toString());</code></pre>\n"
+  - "\nThe result set reference can be used like this to display tickets in the result set (if the result set references tickets):<pre><code>StatResult statResult; // the statistics result to save\nInteger resKey = statResult.saveAsResult(0, getVariable(&quot;activeUser&quot;).toInteger(), 100);\nsetVariable(&quot;url&quot;, getProgram(1) + &quot;&amp;action=listTickets&amp;special=11&amp;resultKey=&quot; + resKey.toString());</code></pre>\n"
 references:
 - uid: CRMScript.Native.StatResult
   commentId: T:CRMScript.Native.StatResult

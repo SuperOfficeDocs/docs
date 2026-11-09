@@ -149,7 +149,7 @@ items:
   type: Method
   summary: "\nReturns the boolean value of the Byte.\n"
   example:
-  - "\n<pre><code>If(value != 0)\n\treturn true;\nelse\n\treturn false;</code></pre>\n"
+  - "\n<pre><code>Byte b = Byte(1);\nprintLine(b.toBool().toString()); // true: every value except 0 is true</code></pre>\n"
   syntax:
     content: Bool toBool()
     parameters: []

@@ -55,7 +55,7 @@ items:
       type: CRMScript.Global.String
       description: "The value of the specified field."
   example: 
-  - "\n<pre><code>Category c;\n\nc.load(2);\nprint(c.getValue(&quot;notificationEmail&quot;))</code></pre>\n"
+  - "\n<pre><code>Category c;\n\nc.load(2);\nprint(c.getValue(&quot;notificationEmail&quot;));</code></pre>\n"
 - uid: CRMScript.Native.Category.load(Integer)
   commentId: M:CRMScript.Native.Category.load(Integer)
   id: 'load(Integer)'

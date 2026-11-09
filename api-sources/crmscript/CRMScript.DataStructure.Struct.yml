@@ -32,7 +32,7 @@ items:
   syntax:
     content: Bool {type}.compare({type} s)
   example:
-  - "<pre><code>struct Person {\n  String firstname;\n  String lastname;\n  Bool compare(Person p) {\n    return this.toString() > p.toString();\n  }\n};\n\nPerson Person(String firstname, String lastname) {\n  Person p;\n  p.firstname = firstname;\n  p.lastname = lastname;\n  return p;\n}\n\nPerson[] persons;\npersons.pushBack(Person(\"Jack\", \"Black\"));\npersons.pushBack(Person(\"Mark\", \"Wahlberg\"));\npersons.pushBack(Person(\"Anthony\", \"Hopkins\"));\n\nprintLine(\"Before sort: \" + persons.buildString(\"|\"));\npersons.sort();\nprintLine(\"After sort: \" + persons.buildString(\"|\"));</code></pre>"
+  - "<pre><code>struct Person {\n  String firstname;\n  String lastname;\n  String toString() {\n    return this.firstname + \" \" + this.lastname;\n  }\n  Bool compare(Person p) {\n    return this.toString() > p.toString();\n  }\n};\n\nPerson Person(String firstname, String lastname) {\n  Person p;\n  p.firstname = firstname;\n  p.lastname = lastname;\n  return p;\n}\n\nPerson[] persons;\npersons.pushBack(Person(\"Jack\", \"Black\"));\npersons.pushBack(Person(\"Mark\", \"Wahlberg\"));\npersons.pushBack(Person(\"Anthony\", \"Hopkins\"));\n\nprintLine(\"Before sort: \" + persons.buildString(\"|\"));\npersons.sort();\nprintLine(\"After sort: \" + persons.buildString(\"|\"));</code></pre>"
 - uid: CRMScript.DataStructure.Struct.fromJsonString(String)
   commentId: M:CRMScript.DataStructure.Struct.fromJsonString(String)
   id: 'fromJsonString(String)'

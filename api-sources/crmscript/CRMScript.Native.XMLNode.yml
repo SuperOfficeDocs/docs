@@ -103,7 +103,7 @@ items:
   summary: "\nCreates a string containing XML nodes formatted as a JSON document. Child nodes are also included.\n"
   remarks: "\nValid types: object, array, string, number, bool, and null.\n"
   example:
-  - "\n<pre><code>XMLNode xml = XMLNode(&quot;root&quot;);\nxMenu.setParameter(&quot;type&quot;, &quot;object&quot;);\n\nXMLNode xMenu = XMLNode(&quot;menu&quot;);\nxMenu.setParameter(&quot;type&quot;, &quot;string&quot;);\nxMenu.setText(&quot;truls&quot;);\nxml.addChild(xMenu);\n\nXMLNode xFoo = XMLNode(&quot;foo&quot;);\nxFoo.setParameter(&quot;type&quot;, &quot;number&quot;);\nxFoo.setText(&quot;1.23456&quot;);\nxml.addChild(xFoo);\n\nprint(xml.toString(0));</code></pre><p></p>\nOutputs: { &quot;menu&quot;: &quot;truls&quot;, &quot;foo&quot;: 1.23456 }\n"
+  - "\n<pre><code>XMLNode xml = XMLNode(&quot;root&quot;);\nxml.setParameter(&quot;type&quot;, &quot;object&quot;);\n\nXMLNode xMenu = XMLNode(&quot;menu&quot;);\nxMenu.setParameter(&quot;type&quot;, &quot;string&quot;);\nxMenu.setText(&quot;truls&quot;);\nxml.addChild(xMenu);\n\nXMLNode xFoo = XMLNode(&quot;foo&quot;);\nxFoo.setParameter(&quot;type&quot;, &quot;number&quot;);\nxFoo.setText(&quot;1.23456&quot;);\nxml.addChild(xFoo);\n\nprint(xml.toJSON(0));\n// Outputs: { &quot;menu&quot;: &quot;truls&quot;, &quot;foo&quot;: 1.23456 }</code></pre>\n"
   syntax:
     content: String toJSON(Integer indent)
     parameters:
@@ -329,7 +329,7 @@ items:
   summary: "\nThis function will return the value for the given path. The path should be a dot-separated string containing either names of nodes or indices.\n"
   remarks: "\nIf your path does not lead to a node, you will get a String with a null value back (can be checked with isNull()).\n"
   example:
-  - "\nGiven the following structure, you can get &quot;Peter&quot; by asking for &quot;persons.1.name&quot;.<pre><code>{ persons: [{name: &quot;John&quot;},{name: &quot;Peter&quot;}]}</code></pre>\n"
+  - "\nGiven the following structure, you can get &quot;Peter&quot; by asking for &quot;persons.1.name&quot;.<pre><code>XMLNode root = parseJSON('{ &quot;persons&quot;: [{&quot;name&quot;: &quot;John&quot;}, {&quot;name&quot;: &quot;Peter&quot;}] }');\nprintLine(root.getValueFromPath(&quot;persons.1.name&quot;)); // Peter</code></pre>\n"
   syntax:
     content: String getValueFromPath(String path)
     parameters:
@@ -354,7 +354,7 @@ items:
   summary: "\nThis function will return the XMLNode for the given path. The path should be a dot-separated string containing either names of nodes or indices.\n"
   remarks: "\nIf your path does not lead to a node, you will get an empty XMLnode back.\n"
   example:
-  - "\nGiven the following structure, you can get the node containing &quot;Peter&quot; by asking for &quot;persons.1.name&quot;.<pre><code>{ persons: [{name: &quot;John&quot;},{name: &quot;Peter&quot;}]}</code></pre>\n"
+  - "\nGiven the following structure, you can get the node containing &quot;Peter&quot; by asking for &quot;persons.1.name&quot;.<pre><code>XMLNode root = parseJSON('{ &quot;persons&quot;: [{&quot;name&quot;: &quot;John&quot;}, {&quot;name&quot;: &quot;Peter&quot;}] }');\nXMLNode node = root.getNodeFromPath(&quot;persons.1.name&quot;);\nprintLine(node.getText()); // Peter</code></pre>\n"
   syntax:
     content: XMLNode getNodeFromPath(String path)
     parameters:

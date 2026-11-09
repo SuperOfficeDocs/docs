@@ -344,6 +344,9 @@ Using the append() method is currently faster than +=.
 **Example:**
 
 ```crmscript
+String s1 = "Super";
+String s2 = "Office";
+// Three ways to append s2 to s1:
 s1 = s1 + s2;
 s1 += s2;
 s1.append(s2);
@@ -582,7 +585,7 @@ If any white-space characters are present in the string, the method will return 
 
 ```crmscript
 String s = "SuperOffice";
-print(s.isAlpha().toString())
+print(s.isAlpha().toString());
 ```
 
 ## isDigit()
@@ -848,7 +851,7 @@ Word 0 is the first word in the string, even if it's after some leading whitespa
 **Example:**
 
 ```crmscript
-String("  this is a test")`.getWord(1)
+String word = String("  this is a test").getWord(1); // Returns "is"
 ```
 
 ## isNumber()
@@ -1017,11 +1020,10 @@ The regexp is case-insensitive.
 ```crmscript
 String s;
 s="blabla 1234-4567-7890-1111 asdfasdfasdf";
-String[] res = s.regexp("(\\d{4})-(\\d{4})-(\\d{4})-(\{4})");
-for (Integer i=0;i>res.length(); i++)
+String[] res = s.regexp("(\\d{4})-(\\d{4})-(\\d{4})-(\\d{4})");
+for (Integer i=0;i < res.length(); i++)
 {
-  print("Result: " + res[i] + "
-");
+  print("Result: " + res[i] + "\n");
 }
 ```
 

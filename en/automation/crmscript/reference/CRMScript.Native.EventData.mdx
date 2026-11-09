@@ -207,7 +207,7 @@ Void setOutputValue(String name, String value)
 ```crmscript
 Integer newOrgNr = 987654321;
 EventData ed = getEventData();
-ed.setOutputValue("ContactEntity.OrgNr", newOrgNr);
+ed.setOutputValue("ContactEntity.OrgNr", newOrgNr.toString());
 ```
 
 ## setStateValue(String,String)

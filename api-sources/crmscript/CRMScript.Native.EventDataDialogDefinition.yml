@@ -721,7 +721,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>EventDataDialogDefinition def;\nMap items;\nitems.insert(&quot;1&quot;&quot;Value 1&quot;);\nitems.insert(&quot;2&quot;,&quot;Value 2&quot;);\ndef.addList(&quot;listItems&quot;, &quot;Choose item&quot;, items, &quot;&quot;, &quot;Select from list&quot;, false);</code></pre>\n"
+  - "\n<pre><code>EventDataDialogDefinition def;\nMap items;\nitems.insert(&quot;1&quot;, &quot;Value 1&quot;);\nitems.insert(&quot;2&quot;,&quot;Value 2&quot;);\ndef.addList(&quot;listItems&quot;, &quot;Choose item&quot;, items, &quot;&quot;, &quot;Select from list&quot;, false);</code></pre>\n"
 - uid: CRMScript.Native.EventDataDialogDefinition.addList(String,String,String,Integer,String,Bool,String,Bool)
   commentId: M:CRMScript.Native.EventDataDialogDefinition.addList(String,String,String,Integer,String,Bool,String,Bool)
   id: 'addList(String,String,String,Integer,String,Bool,String,Bool)'

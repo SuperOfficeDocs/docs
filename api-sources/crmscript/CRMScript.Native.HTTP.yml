@@ -77,7 +77,7 @@ items:
       type: CRMScript.Global.Bool
       description: "True if the attachment was found; otherwise, false."
   example: 
-  - "\n<pre><code>#setLanguageLevel 3;\n\nHTTP http;\n\nif(http.addAttachmentData(24))\n{\n  Byte[] res = http.post(&quot;https://httpbin.org/post&quot;);\n  if (!http.hasError())\n    print(String(res));\n  else\n    print(http.getErrorMessage());</code></pre>\n"
+  - "\n<pre><code>#setLanguageLevel 3;\n\nHTTP http;\n\nif(http.addAttachmentData(24))\n{\n  Byte[] res = http.post(&quot;https://httpbin.org/post&quot;);\n  if (!http.hasError())\n    print(String(res));\n  else\n    print(http.getErrorMessage());\n}</code></pre>\n"
 - uid: CRMScript.Native.HTTP.addBinaryData(Byte[])
   commentId: M:CRMScript.Native.HTTP.addBinaryData(Byte[])
   id: 'addBinaryData(Byte[])'
@@ -575,7 +575,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\n\nByte[] b = h.post(&quot;https://httpbin.org/post&quot;);\n\nif (h.hasError())\n  print(h.getErrorMessage());\nelse\n  print(String(b));\n\n//Here is an example for creating an issue in JIRA, hosted by Atlassian\n\nHTTP h2;\nString json = &quot; {\n  &quot;fields&quot;: {\n    &quot;project&quot;: {\n      &quot;key&quot;: &quot;SUP&quot;\n    },\n&quot;summary&quot;: &quot;I have a problem!.&quot;,\n&quot;description&quot;: &quot;Thats awesome&quot;,\n    &quot;issuetype&quot;: {\n      &quot;name&quot;: &quot;Bug&quot;\n    }\n  }\n}&quot;;\n\nHTTP h;\nh.setOption(&quot;username&quot;, &quot;theUsername&quot;);\nh.setOption(&quot;password&quot;, &quot;thePassword&quot;);\nh.addHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);\nh.setOption(&quot;parameters&quot;, json);\nprint(String(h.post(&quot;https://theInstance.atlassian.net/rest/api/2/issue/&quot;)));</code></pre>\n"
+  - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\n\nByte[] b = h.post(&quot;https://httpbin.org/post&quot;);\n\nif (h.hasError())\n  print(h.getErrorMessage());\nelse\n  print(String(b));\n\n//Here is an example for creating an issue in JIRA, hosted by Atlassian\n\nHTTP h2;\nString json = ' {\n  &quot;fields&quot;: {\n    &quot;project&quot;: {\n      &quot;key&quot;: &quot;SUP&quot;\n    },\n&quot;summary&quot;: &quot;I have a problem!.&quot;,\n&quot;description&quot;: &quot;Thats awesome&quot;,\n    &quot;issuetype&quot;: {\n      &quot;name&quot;: &quot;Bug&quot;\n    }\n  }\n}';\n\nh2.setOption(&quot;username&quot;, &quot;theUsername&quot;);\nh2.setOption(&quot;password&quot;, &quot;thePassword&quot;);\nh2.addHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);\nh2.setOption(&quot;parameters&quot;, json);\nprint(String(h2.post(&quot;https://theInstance.atlassian.net/rest/api/2/issue/&quot;)));</code></pre>\n"
 - uid: CRMScript.Native.HTTP.setValue(String,String)
   commentId: M:CRMScript.Native.HTTP.setValue(String,String)
   id: 'setValue(String,String)'
