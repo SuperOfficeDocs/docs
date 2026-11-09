@@ -32907,5 +32907,9 @@
   {
     "source": "/downloads/cloud-office/cloud-office-superoffice.app",
     "destination": "/downloads/cloud-office/cloud-office-superoffice.zip"
+  },
+  {
+    "source": "/downloads/apps/superoffice-brand-guide-and-logos.zip",
+    "destination": "/en/developer-portal/standard-app/requirements/partner-brand-guidelines"
   }
 ]
