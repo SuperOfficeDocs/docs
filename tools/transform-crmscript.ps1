@@ -266,6 +266,8 @@ function ConvertFrom-YamlDoubleQuoted {
             't' { return "`t" }
             'r' { return "`r" }
             '0' { return [string][char]0 }
+            # \x, \u or \U without enough hex digits (for example C:\Users) is kept as written
+            { $_ -cin 'x', 'u', 'U' -and $e.Length -eq 1 } { return '\' + $e }
             { $_ -cin 'x', 'u' } { return [string][char][Convert]::ToInt32($e.Substring(1), 16) }
             'U' { return [char]::ConvertFromUtf32([Convert]::ToInt32($e.Substring(1), 16)) }
             default { return $e }
