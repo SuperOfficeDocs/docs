@@ -83,7 +83,7 @@ String priv_key = "-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....
 Rsa rsa;
 Bool loaded = rsa.loadPrivateKey(priv_key, "");
 Byte[] content = String("Hello world").toByteArray();
-Byte[] signature = rsa.createSignature(content, 3);
+Byte[] signature = rsa.createSignature(content, 1); // 1 = SHA256
 String base64Signature = encodeBase64(signature,false);
 printLine(base64Signature);
 ```
@@ -117,7 +117,7 @@ Hashing algorithm:
 String priv_key = "-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----";
 Rsa rsa;
 Bool b = rsa.loadPrivateKey(priv_key, "");
-Byte[] signature = rsa.createSignature("Hello world", 3);
+Byte[] signature = rsa.createSignature("Hello world", 1); // 1 = SHA256
 String base64Signature = encodeBase64(signature,false);
 printLine(base64Signature);
 ```

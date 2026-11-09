@@ -116,7 +116,7 @@ items:
       type: CRMScript.Global.Byte[]
       description: "Generated RSA signature as byte array."
   example: 
-  - "\n<pre><code>String priv_key = &quot;-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----&quot;;\nRsa rsa;\nBool loaded = rsa.loadPrivateKey(priv_key, &quot;&quot;);\nByte[] content = String(&quot;Hello world&quot;).toByteArray();\nByte[] signature = rsa.createSignature(content, 3);\nString base64Signature = encodeBase64(signature,false);\nprintLine(base64Signature);\n</code></pre>\n"
+  - "\n<pre><code>String priv_key = &quot;-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----&quot;;\nRsa rsa;\nBool loaded = rsa.loadPrivateKey(priv_key, &quot;&quot;);\nByte[] content = String(&quot;Hello world&quot;).toByteArray();\nByte[] signature = rsa.createSignature(content, 1); // 1 = SHA256\nString base64Signature = encodeBase64(signature,false);\nprintLine(base64Signature);\n</code></pre>\n"
 - uid: CRMScript.Native.Rsa.createSignature(String,Integer)
   commentId: M:CRMScript.Native.Rsa.createSignature(String,Integer)
   id: 'createSignature(String,Integer)'
@@ -143,7 +143,7 @@ items:
       type: CRMScript.Global.Byte[]
       description: "Generated RSA signature as byte array."
   example: 
-  - "\n<pre><code>String priv_key = &quot;-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----&quot;;\nRsa rsa;\n\nBool b = rsa.loadPrivateKey(priv_key, &quot;&quot;);\nByte[] signature = rsa.createSignature(&quot;Hello world&quot;, 3);\nString base64Signature = encodeBase64(signature,false);\nprintLine(base64Signature);\n</code></pre>\n"
+  - "\n<pre><code>String priv_key = &quot;-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----&quot;;\nRsa rsa;\n\nBool b = rsa.loadPrivateKey(priv_key, &quot;&quot;);\nByte[] signature = rsa.createSignature(&quot;Hello world&quot;, 1); // 1 = SHA256\nString base64Signature = encodeBase64(signature,false);\nprintLine(base64Signature);\n</code></pre>\n"
 - uid: CRMScript.Native.Rsa.verifySignature(Byte[],Byte[],Integer)
   commentId: M:CRMScript.Native.Rsa.verifySignature(Byte[],Byte[],Integer)
   id: 'verifySignature(Byte[],Byte[],Integer)'
