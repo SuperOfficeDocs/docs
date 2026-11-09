@@ -28,7 +28,7 @@ import SalesAssistantAgentBetaNote from "../../../snippets/ai/de/sales-assistant
 
 <SalesAssistantAgentBetaNote />
 
-Der Sales Assistant Agent beobachtet Ihre eigenen offenen Verkäufe und zeigt Ihnen, welche davon Aufmerksamkeit brauchen. Einmal am Tag, oder wann immer Sie nach einem bestimmten Verkauf fragen, vergleicht er jeden Verkauf mit ähnlichen gewonnenen Verkäufen. Für jeden Verkauf, der eine Entscheidung braucht, schlägt er einen klaren nächsten Schritt vor, zum Beispiel eine Folgeaufgabe, ein neues Verkaufsdatum oder ein Angebot, das Sie entwerfen sollten.
+Der Sales Assistant Agent beobachtet Ihre eigenen offenen Verkäufe und zeigt Ihnen, welche davon Aufmerksamkeit brauchen. Einmal am Tag, oder wann immer Sie nach einem bestimmten Verkauf fragen, vergleicht er jeden Verkauf mit ähnlichen gewonnenen Verkäufen. Für jeden Verkauf, der eine Entscheidung braucht, schlägt er einen klaren nächsten Schritt vor, zum Beispiel eine Folgeaufgabe, ein neues Verkaufsdatum oder einen Angebotsentwurf.
 
 ## Was der Agent für Sie tut
 
@@ -85,13 +85,13 @@ Die Einrichtung ist ein einziger Schritt. Sie sind automatisch der Genehmiger un
     | Meine eigenen Geschäftsabschlüsse | Ihre eigenen gewonnenen Verkäufe. |
     | Geschäftsabschlüsse meines Teams | Die gewonnenen Verkäufe Ihres Teams. |
     | Alle erfolgreichen Geschäftsabschlüsse (gesamte Organisation) | Jeder gewonnene Verkauf in Ihrer Organisation. |
-    | Nur Verkaufsleitfaden folgen | Der [Verkaufsleitfaden][1] der Verkaufsart. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
+    | Nur Verkaufsleitfaden folgen | Der [Verkaufsleitfaden][1] des Verkaufstyps. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
     | Meine eigenen Orientierungshilfe (Text) | Ein Text, den Sie schreiben (bis zu 2000 Zeichen), zum Beispiel *Verkäufe über 100.000 priorisieren; immer eine technische Person einbeziehen*. Der Zeitrahmen wird nicht mit früheren Verkäufen verglichen. |
     | Selektion erfolgreicher Verkäufe | Die gewonnenen Verkäufe in einer Ihrer eigenen gespeicherten Selektionen. |
 
     Unabhängig von Ihrer Wahl berücksichtigen die Empfehlungen auch, warum ähnliche Verkäufe verloren gingen oder pausiert wurden.
 
-1. Optional können Sie **An bevorstehende Termine erinnern** aktivieren, um auch einen Verkauf zu melden, dessen Verkaufsdatum näher rückt, selbst wenn sonst nichts im Argen liegt. Wählen Sie dann **So viele Werktage im Voraus erinnern** (1-14). Der Standardwert ist 3. Werktage überspringen Wochenenden, aber keine Feiertage.
+1. Optional können Sie **An bevorstehende Termine erinnern** aktivieren, um auch einen Verkauf zu melden, dessen Verkaufsdatum näher rückt, auch wenn sonst alles in Ordnung ist. Wählen Sie dann **So viele Werktage im Voraus erinnern** (1-14). Der Standardwert ist 3. Werktage überspringen Wochenenden, aber keine Feiertage.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -111,15 +111,15 @@ Bei jedem Lauf vergleicht der Agent Ihre offenen Verkäufe mit ähnlichen gewonn
 
 * **Offene Anfragen:** ob der Kunde eine offene Anfrage mit hoher Priorität hat. Der Agent teilt Ihnen mit, ob die Anfrage zu diesem Verkauf gehört oder anderswo im Konto des Kunden liegt, wo Sie sie vom Verkauf aus nicht sehen würden.
 
-Der Agent lernt aus den gewonnenen Verkäufen unter den 500 zuletzt erfassten Verkäufen des gewählten Verlaufs und braucht mindestens fünf gewonnene Verkäufe zum Vergleich. Bei weniger folgt er stattdessen dem Verkaufsleitfaden oder, falls es keinen gibt, den eigenen Signalen des Verkaufs.
+Der Agent lernt aus den gewonnenen Verkäufen unter den 500 zuletzt erfassten Verkäufen der von Ihnen gewählten Grundlage und braucht mindestens fünf gewonnene Verkäufe zum Vergleich. Bei weniger folgt er stattdessen dem Verkaufsleitfaden oder, falls es keinen gibt, den eigenen Signalen des Verkaufs.
 
 <Tip>
-Ein verstrichenes Verkaufsdatum wird immer gemeldet, und die Priorität wird um eine Stufe erhöht, selbst wenn alles andere am Verkauf gesund aussieht. Dies kann nicht deaktiviert werden.
+Ein verstrichenes Verkaufsdatum wird immer gemeldet, und die Priorität wird um eine Prioritätsstufe erhöht, selbst wenn alles andere am Verkauf gesund aussieht. Dies kann nicht deaktiviert werden.
 </Tip>
 
 ### Priorität
 
-Jede Empfehlung hat eine Priorität: **Hoch**, **Normal** oder **Niedrig**. Größere Verkäufe steigen eine Stufe auf und kleinere sinken, verglichen mit Ihren anderen offenen Verkäufen. Ein strategischer Kunde, dessen Verkauf pausiert ist, eine überfällige Aktivität hat oder eine offene Anfrage mit hoher Priorität hat, steigt ebenfalls auf. Das gilt auch für ein bevorstehendes Verkaufsdatum, wenn Erinnerungen aktiviert sind.
+Jede Empfehlung hat eine Priorität: **Hoch**, **Normal** oder **Niedrig**. Größere Verkäufe steigen eine Prioritätsstufe auf und kleinere sinken, verglichen mit Ihren anderen offenen Verkäufen. Ein strategischer Kunde, dessen Verkauf pausiert ist, eine überfällige Aktivität hat oder eine offene Anfrage mit hoher Priorität hat, steigt ebenfalls auf. Das gilt auch für ein bevorstehendes Verkaufsdatum, wenn Erinnerungen aktiviert sind.
 
 Brauchen mehr Verkäufe Aufmerksamkeit, als **Maximale Anzahl Aufgaben pro Tag** erlaubt, kommt die höchste Priorität zuerst, dann der höchste Betrag. Die übrigen warten auf einen späteren Lauf.
 
@@ -129,7 +129,7 @@ Brauchen mehr Verkäufe Aufmerksamkeit, als **Maximale Anzahl Aufgaben pro Tag**
 
 1. Klicken Sie auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend** aus.
 
-1. Wählen Sie einen Verkaufs-Thread (<i class="ph ph-currency-circle-dollar" aria-label="Verkaufssymbol"></i>) aus der Liste aus. Threads sind nach Verkauf, Firma und Person benannt.
+1. Wählen Sie einen Verkaufs-Thread (<i class="ph ph-currency-circle-dollar" aria-label="Verkaufs-Symbol"></i>) aus der Liste aus. Threads sind nach Verkauf, Firma und Person benannt.
 
 1. Prüfen Sie die Empfehlungskarte:
 

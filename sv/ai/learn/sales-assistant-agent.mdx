@@ -28,7 +28,7 @@ import SalesAssistantAgentBetaNote from "../../../snippets/ai/sv/sales-assistant
 
 <SalesAssistantAgentBetaNote />
 
-Sales Assistant Agent bevakar dina egna öppna försäljningar och talar om vilka som behöver uppmärksamhet. En gång om dagen, eller när du frågar om en specifik försäljning, jämför den varje försäljning med liknande försäljningar som har vunnits. För varje försäljning som kräver ett beslut föreslår den ett tydligt nästa steg, till exempel en uppföljning, ett nytt försäljningsdatum eller en offert att skapa.
+Sales Assistant Agent bevakar dina egna öppna försäljningar och talar om vilka som behöver uppmärksamhet. En gång om dagen, eller när du frågar om en specifik försäljning, jämför den varje försäljning med liknande försäljningar som har vunnits. För varje försäljning som kräver ett beslut föreslår den ett tydligt nästa steg, till exempel en uppföljning, ett nytt försäljningsdatum eller ett offertutkast att skapa.
 
 ## Vad agenten gör för dig
 
@@ -36,7 +36,7 @@ Sales Assistant Agent bevakar dina egna öppna försäljningar och talar om vilk
 
 * **Lär sig av verkliga försäljningar:** den tittar på hur liknande försäljningar vanns, till exempel hur många aktiviteter som behövdes och hur snart den första ägde rum. Den tittar också på vanliga orsaker till att liknande försäljningar förlorades eller pausades.
 
-* **Rekommenderar ett nästa steg:** till exempel en uppföljning, att flytta en försenad aktivitet, att lägga till en intressent, att skapa en offert, att uppdatera ett försäljningsdatum som har passerats eller att avsluta försäljningen som såld eller förlorad. Resonemanget visas bredvid.
+* **Rekommenderar ett nästa steg:** till exempel en uppföljning, att flytta en försenad aktivitet, att lägga till en intressent, att skapa ett offertutkast, att uppdatera ett försäljningsdatum som har passerats eller att avsluta försäljningen som såld eller förlorad. Resonemanget visas bredvid.
 
 * **Kommer ihåg dina beslut:** när du har godkänt eller avvisat en rekommendation tar den inte upp samma försäljning igen förrän försäljningen ändras eller en väntetid har gått.
 
@@ -83,7 +83,7 @@ Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan sk
     | Alternativ | Vad agenten lär sig av |
     |---|---|
     | Mina vunna försäljningar | Dina egna vunna försäljningar. |
-    | Min grupps vunna försäljningar | Ditt teams vunna försäljningar. |
+    | Min grupps vunna försäljningar | Din grupps vunna försäljningar. |
     | Alla vunna försäljningar (hela organisationen) | Alla vunna försäljningar i din organisation. |
     | Endast säljguiden | [Säljguiden][1] för försäljningstypen. Tidsåtgången jämförs inte med tidigare försäljningar. |
     | Mina egna riktlinjer (text) | En text som du skriver (upp till 2000 tecken), till exempel *Prioritera försäljningar över 100 000, involvera alltid en teknisk kontakt*. Tidsåtgången jämförs inte med tidigare försäljningar. |
@@ -91,17 +91,17 @@ Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan sk
 
     Oavsett vad du väljer tar rekommendationerna också hänsyn till varför liknande försäljningar förlorades eller pausades.
 
-1. Aktivera vid behov **Påminn mig om datum som närmar sig** för att även flagga en försäljning vars försäljningsdatum närmar sig, även när inget annat är fel. Välj sedan **Påminn mig så här många arbetsdagar i förväg** (1-14). Standardvärdet är 3. Arbetsdagar hoppar över helger, men inte helgdagar.
+1. Aktivera vid behov **Påminn mig om datum som närmar sig** för att även flagga en försäljning vars försäljningsdatum närmar sig, även när inget annat är fel. Välj sedan **Påminn mig så här många arbetsdagar i förväg** (1-14). Standardvärdet är 3. Arbetsdagar hoppar över lördagar och söndagar, men inte helgdagar.
 
 1. Klicka på **Spara**.
 
-    Instansen aktiveras, visas under **Mina agenter** i Agenter-sidofältet, hälsar på dig i **Allmän chatt** och startar sin första körning direkt.
+    Instansen aktiveras, visas under **Mina agenter** i Agenter-sidofältet, hälsar dig välkommen i **Allmän chatt** och startar sin första körning direkt.
 
     ![Bekräftelsen att agenten har aktiverats, med knappen Gå till instans -screenshot][img3]
 
 ## Så fungerar rekommendationerna {#recommendations}
 
-Vid varje körning jämför agenten dina öppna försäljningar med liknande vunna försäljningar, både utifrån total ålder och tid i den aktuella fasen. Försäljningar som ligger i fas lämnas ifred. Agenten tittar på:
+Vid varje körning jämför agenten dina öppna försäljningar med liknande vunna försäljningar, både utifrån total ålder och tid i den aktuella fasen. Försäljningar som följer tidsplanen lämnas ifred. Agenten tittar på:
 
 * **Försäljningens ålder och fastider:** en försäljning närmar sig sin vanliga tidsram när den har varit öppen längre än 7 av 10 liknande vunna försäljningar. Den har passerat sin vanliga tidsram när den har varit öppen längre än 9 av 10. Tiden i en fas kontrolleras inte om vunna försäljningar vanligtvis slutför den fasen på mindre än en vecka.
 
@@ -109,7 +109,7 @@ Vid varje körning jämför agenten dina öppna försäljningar med liknande vun
 
 * **Försäljningsdatumet:** om det har passerats eller, med påminnelser aktiverade, snart närmar sig.
 
-* **Öppna ärenden:** om kunden har ett öppet ärende med hög prioritet. Agenten talar om ifall ärendet gäller den här försäljningen eller någon annanstans på kundens konto, där du inte skulle se det från försäljningen.
+* **Öppna ärenden:** om kunden har ett öppet ärende med hög prioritet. Agenten talar om ifall ärendet finns på den här försäljningen eller någon annanstans på kundens konto, där du inte skulle se det från försäljningen.
 
 Agenten lär sig av de vunna försäljningarna bland de 500 senaste försäljningarna i den historik du har valt, och behöver minst fem vunna försäljningar att jämföra med. Med färre följer den säljguiden i stället, eller försäljningens egna signaler om det inte finns någon guide.
 
@@ -157,8 +157,8 @@ Den första kolumnen visar åtgärdens rubrik på rekommendationskortet.
 | Lägg till intressent | Lägger till försäljningens kontakt bland dess [intressenter][2]. Agenten lägger aldrig till en kontakt som inte redan finns på försäljningen. |
 | Skapa offertutkast | Skapar ett tomt utkast till en [offert][3] på försäljningen, som du kan prissätta och skicka. Inget läggs till om försäljningen redan har en offert. |
 | Uppdatera försäljningsdatum | Erbjuds när försäljningsdatumet har passerats. Anger försäljningsdatumet till när liknande vunna försäljningar vanligtvis avslutas, minst tio arbetsdagar framåt, och lägger till en uppföljning minst fem arbetsdagar framåt. Öppnar försäljningen igen om den var pausad. |
-| Stäng som såld | Anger försäljningen som **Såld**, med datumet för dagen du godkänner. |
-| Stäng som förlorad | Anger försäljningen som **Förlorad** med den föreslagna orsaken, med datumet för dagen du godkänner. Om orsaken inte finns i ditt företags lista avslutas försäljningen utan orsak. |
+| Stäng som såld | Sätter försäljningens status till **Såld**, med datumet för dagen du godkänner. |
+| Stäng som förlorad | Sätter försäljningens status till **Förlorad** med den föreslagna orsaken, med datumet för dagen du godkänner. Om orsaken inte finns i ditt företags lista avslutas försäljningen utan orsak. |
 
 <Warning>
 **Att avsluta en försäljning kan inte ångras från agenten.** Agenten föreslår detta bara med tydliga belägg i din CRM-historik, aldrig bara för att en försäljning har blivit tyst. Om du vill ångra det [uppdaterar du försäljningen][4] direkt.
@@ -176,7 +176,7 @@ När du har godkänt kommer försäljningen tillbaka två dagar efter att uppfö
 
 1. I tråden **Allmän chatt** frågar du om en försäljning, till exempel *Vad ska jag göra härnäst med Acme Corp?*
 
-    Om något behöver uppmärksamhet skapar agenten en rekommendation i den försäljningens egen tråd, precis som vid den dagliga körningen. Om försäljningen ligger i fas säger den det.
+    Om något behöver uppmärksamhet skapar agenten en rekommendation i den försäljningens egen tråd, precis som vid den dagliga körningen. Om försäljningen följer tidsplanen säger den det.
 
 Rekommendationer som du ber om räknas mot **Max antal uppgifter per dag**. Chatten tittar på samma 100 senast registrerade försäljningar som den dagliga körningen, så den hittar inte äldre försäljningar.
 
@@ -190,7 +190,7 @@ Sales Assistant Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **R
 |---|---|
 | Chatt | En **Allmän chatt**-tråd plus en tråd per försäljning som agenten har flaggat. |
 | Historik | En logg i klartext över vad agenten har gjort: hur många öppna försäljningar varje körning granskade, varje rekommendation och om den godkändes, avvisades eller förföll, allt som hoppades över (med orsak) och varje ändring som gjorts via chatten. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. |
-| Resultat | Föreslagna, godkända, ignorerade och förfallna rekommendationer under de senaste 7, 30 eller 90 dagarna. Godkända rekommendationer räknas som godkända och avvisade som ignorerade. |
+| Resultat | Föreslagna, accepterade, ignorerade och förfallna rekommendationer under de senaste 7, 30 eller 90 dagarna. Godkända rekommendationer räknas som accepterade och avvisade som ignorerade. |
 
 ![Tråden Allmän chatt, med agentens välkomstmeddelande -screenshot][img4]
 
@@ -204,11 +204,11 @@ Om du vill ändra beskrivningen, språket, **Max antal uppgifter per dag**, vad 
 
 ## Tips och felsökning
 
-**Varför ser jag inget betyg?** Av design visar kortet den rekommenderade åtgärden och dess resonemang, inte ett numeriskt betyg eller en procentuell säkerhet.
+**Varför ser jag inget betyg?** Kortet visar avsiktligt den rekommenderade åtgärden och dess resonemang, inte ett numeriskt betyg eller en procentuell säkerhet.
 
 **Kan jag besluta om flera rekommendationer samtidigt?** Ja. Markera flera väntande rekommendationer och använd **Godkänn** eller **Avvisa** från panelen för massåtgärder.
 
-**Vad händer med en rekommendation jag inte hinner med i tid?** En väntande rekommendation förfaller efter 14 dagar. Så snart den är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Ingenting ändras i SuperOffice för en förfallen rekommendation, och agenten kan föreslå försäljningen igen vid en senare körning.
+**Vad händer med en rekommendation jag inte hinner med i tid?** En väntande rekommendation förfaller efter 14 dagar. När det återstår 5 dagar eller mindre innan den förfaller visas en nedräkningsbanner i dess tråd. Ingenting ändras i SuperOffice för en förfallen rekommendation, och agenten kan föreslå försäljningen igen vid en senare körning.
 
 **Jag avaktiverade instansen och mina väntande rekommendationer är borta.** Att avaktivera en instans tar bort alla rekommendationer som väntar på godkännande, enligt beskrivningen i [Konfigurera AI-agenter][5]. Godkänn eller avvisa det du behöver först.
 

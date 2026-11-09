@@ -34,7 +34,7 @@ Sales Assistant Agent holder øje med dine egne åbne salg og fortæller dig, hv
 
 * **Overvåger din pipeline dagligt:** den fremhæver kun et salg, når noget kræver en beslutning, såsom en salgsdato, der er overskredet, et salg, der tager længere tid end normalt, et udsat salg, en forfalden eller manglende næste aktivitet eller en åben sag med høj prioritet for kunden.
 
-* **Lærer af rigtige salg:** den ser på, hvordan lignende salg blev vundet, for eksempel hvor mange aktiviteter der skulle til, og hvor hurtigt den første fandt sted. Den ser også på almindelige årsager til, at lignende salg blev tabt eller gik i stå.
+* **Lærer af rigtige salg:** den ser på, hvordan lignende salg blev vundet, for eksempel hvor mange aktiviteter der skulle til, og hvor hurtigt den første fandt sted. Den ser også på almindelige årsager til, at lignende salg blev tabt eller udsat.
 
 * **Anbefaler ét næste skridt:** for eksempel en opfølgning, flytning af en forfalden aktivitet, tilføjelse af en interessent, udarbejdelse af et tilbud, opdatering af en salgsdato, der er overskredet, eller afslutning af salget som solgt eller tabt. Begrundelsen vises ved siden af.
 
@@ -78,18 +78,18 @@ Opsætningen er ét enkelt trin. Du er automatisk godkender, og du kan oprette �
 
 1. Vælg, hvor mange anbefalinger agenten opretter pr. dag (op til 30). Standarden for **Maksimalt antal opgaver pr. dag** er 10.
 
-1. Vælg, hvad du vil **Baser anbefalingerne på**. Standarden er **Mine egne vundne salg**.
+1. Vælg en indstilling under **Baser anbefalingerne på**. Standarden er **Mine egne vundne salg**.
 
     | Mulighed | Hvad agenten lærer af |
     |---|---|
     | Mine egne vundne salg | Dine egne vundne salg. |
-    | Min gruppes vundne salg | Dit teams vundne salg. |
+    | Min gruppes vundne salg | Din gruppes vundne salg. |
     | Alle vundne salg (hele organisationen) | Alle vundne salg i din organisation. |
     | Udelukkende salgsguiden | [Salgsguiden][1] for salgstypen. Tidsforløbet sammenlignes ikke med tidligere salg. |
     | Mine egne retningslinjer (tekst) | En tekst, du selv skriver (op til 2000 tegn), for eksempel *Prioritér salg over 100k; inddrag altid en teknisk person*. Tidsforløbet sammenlignes ikke med tidligere salg. |
     | Udvalg af vellykkede salg | De vundne salg i et af dine egne gemte udvalg. |
 
-    Uanset hvad du vælger, tager anbefalingerne også højde for, hvorfor lignende salg blev tabt eller gik i stå.
+    Uanset hvad du vælger, tager anbefalingerne også højde for, hvorfor lignende salg blev tabt eller udsat.
 
 1. Aktivér valgfrit **Påmind mig om datoer, der nærmer sig** for også at fremhæve et salg, hvis salgsdato nærmer sig, selv når intet andet er galt. Vælg derefter **Påmind mig så mange arbejdsdage i forvejen** (1-14). Standarden er 3. Arbejdsdage springer weekender over, men ikke helligdage.
 
@@ -138,7 +138,7 @@ Når flere salg kræver opmærksomhed, end dit **Maksimalt antal opgaver pr. dag
     * **Why this deal**, en begrundelse i almindeligt sprog for, hvorfor salget blev valgt.
     * **Anbefalede handlinger**, ét felt pr. skridt, der viser præcis, hvad der bliver skrevet til SuperOffice. Nogle gange følger en understøttende handling, såsom at tilføje en opfølgning eller en interessent, med hovedskridtet.
 
-1. Bed valgfrit agenten i chatten om anbefalingen, før du beslutter.
+1. Spørg valgfrit agenten i chatten om anbefalingen, før du beslutter.
 
 1. Klik på **Godkend** eller **Afvis**. Knapperne gælder for hver handling på kortet.
 
@@ -155,7 +155,7 @@ Den første kolonne viser handlingens titel på anbefalingskortet.
 | Opret aftale | Tilføjer en opfølgning til salget: et telefonopkald, et møde eller en opgave (en foreslået e-mail bliver til en opgave). Den placeres inden for arbejdstiden 09:00-17:00, mindst fem arbejdsdage ude i fremtiden. |
 | Flyt forfalden aftale | Flytter salgets forfaldne opfølgning til en ny dato, mindst fem arbejdsdage ude i fremtiden. Der oprettes ingen ny opfølgning. |
 | Tilføj interessent | Tilføjer salgets person til dets [interessenter][2]. Agenten tilføjer aldrig en person, der ikke allerede er på salget. |
-| Opret tilbudsudkast | Opretter et tomt [tilbud][3] som kladde på salget, som du kan prissætte og sende. Der tilføjes intet, hvis salget allerede har et tilbud. |
+| Opret tilbudsudkast | Opretter et tomt [tilbudsudkast][3] på salget, som du kan prissætte og sende. Der tilføjes intet, hvis salget allerede har et tilbud. |
 | Opdater salgsdato | Tilbydes, når salgsdatoen er overskredet. Sætter salgsdatoen til, når lignende vundne salg normalt lukker, mindst ti arbejdsdage ude i fremtiden, og tilføjer en opfølgning mindst fem arbejdsdage ude i fremtiden. Genåbner salget, hvis det var udsat. |
 | Luk som solgt | Sætter salget til **Solgt**, med datoen for din godkendelse. |
 | Luk som tabt | Sætter salget til **Tabt** med den foreslåede årsag, med datoen for din godkendelse. Hvis årsagen ikke findes i din virksomheds liste, lukkes salget uden årsag. |
@@ -174,7 +174,7 @@ Når du har godkendt, kommer salget tilbage to dage efter, at opfølgningen skul
 
 1. Vælg fanen **Chat**.
 
-1. I tråden **Generel chat** kan du spørge om et salg, for eksempel *Hvad skal jeg gøre næste gang med Acme Corp?*
+1. I tråden **Generel chat** kan du spørge om et salg, for eksempel *Hvad er det næste skridt med Acme Corp?*
 
     Hvis noget kræver opmærksomhed, opretter agenten en anbefaling i det pågældende salgs egen tråd, ligesom ved den daglige kørsel. Hvis salget følger planen, siger den det.
 
@@ -204,7 +204,7 @@ For at ændre beskrivelsen, sproget, **Maksimalt antal opgaver pr. dag**, hvad a
 
 ## Tips og fejlfinding
 
-**Hvorfor ser jeg ikke en score?** Kortet viser med vilje den anbefalede handling og begrundelsen, ikke en numerisk score eller en procentdel for sikkerhed.
+**Hvorfor ser jeg ikke en score?** Kortet viser med vilje den anbefalede handling og begrundelsen, ikke en numerisk score eller en sikkerhedsprocent.
 
 **Kan jeg beslutte om flere anbefalinger på én gang?** Ja. Vælg flere afventende anbefalinger, og brug **Godkend** eller **Afvis** fra bulk-panelet.
 

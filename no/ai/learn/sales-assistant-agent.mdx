@@ -34,7 +34,7 @@ Sales Assistant Agent følger med på dine egne åpne salg og forteller deg hvil
 
 * **Følger med på pipelinen din daglig:** den løfter bare frem et salg når noe krever en beslutning, for eksempel en salgsdato som er passert, et salg som tar lengre tid enn vanlig, et utsatt salg, en forfalt eller manglende neste aktivitet, eller en åpen sak med høy prioritet for kunden.
 
-* **Lærer av reelle salg:** den ser på hvordan lignende salg ble vunnet, for eksempel hvor mange aktiviteter det krevde og hvor tidlig den første fant sted. Den ser også på vanlige årsaker til at lignende salg ble tapt eller stoppet opp.
+* **Lærer av reelle salg:** den ser på hvordan lignende salg ble vunnet, for eksempel hvor mange aktiviteter det krevde og hvor tidlig den første fant sted. Den ser også på vanlige årsaker til at lignende salg ble tapt eller utsatt.
 
 * **Anbefaler ett neste steg:** for eksempel en oppfølging, ny dato for en forfalt aktivitet, å legge til en interessent, å utarbeide et tilbud, å oppdatere en salgsdato som er passert, eller å lukke salget som solgt eller tapt. Begrunnelsen vises ved siden av.
 
@@ -83,13 +83,13 @@ Oppsett er ett enkelt trinn. Du er automatisk godkjenner, og du kan opprette én
     | Alternativ | Hva agenten lærer av |
     |---|---|
     | Salg jeg har vunnet | Dine egne vunne salg. |
-    | Salgene min gruppe har vunnet | Teamets vunne salg. |
+    | Salgene min gruppe har vunnet | Gruppens vunne salg. |
     | Alle vunne salg (hele organisasjonen) | Alle vunne salg i organisasjonen din. |
     | Kun salgsguiden | [Salgsguiden][1] for salgstypen. Tidsbruk sammenlignes ikke med tidligere salg. |
     | Mine egne retningslinjer (tekst) | En tekst du skriver (opptil 2000 tegn), for eksempel *Prioriter salg over 100k; involver alltid en teknisk person*. Tidsbruk sammenlignes ikke med tidligere salg. |
     | Utvalg av vellykkede salg | De vunne salgene i et av dine egne lagrede utvalg. |
 
-    Uansett hva du velger, tar anbefalingene også hensyn til hvorfor lignende salg ble tapt eller stoppet opp.
+    Uansett hva du velger, tar anbefalingene også hensyn til hvorfor lignende salg ble tapt eller utsatt.
 
 1. Slå eventuelt på **Påminn meg om datoer som nærmer seg** for også å flagge et salg hvor salgsdatoen nærmer seg, selv når ingenting annet er galt. Velg deretter **Påminn meg så mange virkedager i forveien** (1-14). Standard er 3. Virkedager hopper over helger, men ikke offentlige helligdager.
 
@@ -101,7 +101,7 @@ Oppsett er ett enkelt trinn. Du er automatisk godkjenner, og du kan opprette én
 
 ## Slik fungerer anbefalingene {#recommendations}
 
-Ved hver kjøring sammenligner agenten de åpne salgene dine med lignende vunne salg, både på total alder og på tid i den nåværende fasen. Salg som ligger an til å lykkes, lar den være. Den ser på:
+Ved hver kjøring sammenligner agenten de åpne salgene dine med lignende vunne salg, både på total alder og på tid i den nåværende fasen. Salg som er i rute, lar den være. Den ser på:
 
 * **Salgets alder og tid i fasen:** et salg nærmer seg sin vanlige tidslinje når det har vært åpent lenger enn 7 av 10 lignende vunne salg. Det har passert sin vanlige tidslinje når det har vært åpent lenger enn 9 av 10. Tid i en fase kontrolleres ikke hvis vunne salg vanligvis fullfører den fasen på under en uke.
 
@@ -157,8 +157,8 @@ Den første kolonnen viser handlingens tittel på anbefalingskortet.
 | Legg til interessent | Legger salgets person til blant [interessentene][2]. Agenten legger aldri til en person som ikke allerede er på salget. |
 | Opprett tilbudsutkast | Oppretter et tomt [tilbud][3] som utkast på salget, som du kan prise og sende. Ingenting legges til hvis salget allerede har et tilbud. |
 | Oppdater salgsdato | Tilbys når salgsdatoen er passert. Setter salgsdatoen til når lignende vunne salg vanligvis avsluttes, minst ti virkedager frem i tid, og legger til en oppfølging minst fem virkedager frem i tid. Gjenåpner salget hvis det var utsatt. |
-| Lukk som vunnet | Setter salget til **Solgt**, datert den dagen du godkjenner. |
-| Lukk som tapt | Setter salget til **Tapt** med den foreslåtte årsaken, datert den dagen du godkjenner. Hvis årsaken ikke finnes i firmaets liste, lukkes salget uten årsak. |
+| Lukk som vunnet | Setter salget til **Vunnet**, datert den dagen du godkjenner. |
+| Lukk som tapt | Setter salget til **Tapt** med den foreslåtte årsaken, datert den dagen du godkjenner. Hvis årsaken ikke finnes i organisasjonens liste, lukkes salget uten årsak. |
 
 <Warning>
 **Å lukke et salg kan ikke angres fra agenten.** Agenten foreslår dette bare med tydelige bevis i CRM-historikken din, aldri bare fordi et salg har blitt stille. For å reversere det må du [oppdatere salget][4] direkte.
@@ -176,7 +176,7 @@ Etter at du har godkjent, kommer salget tilbake to dager etter at oppfølgingen 
 
 1. Spør om et salg i **Generell chat**-tråden, for eksempel *Hva bør jeg gjøre videre med Acme Corp?*
 
-    Hvis noe trenger oppmerksomhet, oppretter agenten en anbefaling i salgets egen tråd, akkurat som den daglige kjøringen. Hvis salget ligger an til å lykkes, sier den det.
+    Hvis noe trenger oppmerksomhet, oppretter agenten en anbefaling i salgets egen tråd, akkurat som den daglige kjøringen. Hvis salget er i rute, sier den det.
 
 Anbefalinger du ber om, teller med i **Maks antall oppgaver per dag**. Chatten ser på de samme 100 sist registrerte salgene som den daglige kjøringen, så den finner ikke eldre salg.
 
@@ -200,7 +200,7 @@ Arbeidsområdet til Sales Assistant Agent har tre faner: **Chat**, **Historikk**
 
 Klikk på <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å hente inn de nyeste oppføringene.
 
-For å endre beskrivelsen, språket, **Maks antall oppgaver per dag**, hva anbefalingene er basert på eller påminnelsesinnstillingene, [rediger instansen][5]. Navnet og tidsplanen er fast. Endringer gjelder fra neste kjøring. Bare instansens eier kan endre innstillingene eller slette den.
+For å endre beskrivelsen, språket, **Maks antall oppgaver per dag**, hva anbefalingene er basert på eller påminnelsesinnstillingene, [rediger instansen][5]. Navnet og tidsplanen er faste. Endringer gjelder fra neste kjøring. Bare instansens eier kan endre innstillingene eller slette den.
 
 ## Tips og feilsøking
 
