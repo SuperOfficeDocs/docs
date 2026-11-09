@@ -1,0 +1,226 @@
+---
+title: Sales Assistant Agent (beta)
+sidebarTitle: Sales Assistant Agent
+description: Ontvang dagelijks een geprioriteerde volgende stap voor de openstaande verkopen die aandacht nodig hebben, waarbij u elke actie goedkeurt voordat er iets verandert in SuperOffice.
+keywords: ['AI-agent', 'volgende stap', 'verkooppijplijn', 'vastgelopen verkoop', 'verkoopdatum']
+author: digitaldiina
+date: 11.09.2026
+so_version: 12.6
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Agent activeren: /nl/ai/learn/set-up-ai-agents
+  - Instellingen bewerken: /nl/ai/learn/set-up-ai-agents#edit
+  - Een verkoop bijwerken: /nl/sale/learn/update
+  - /nl/sale/learn/sales-guides
+  - Overige AI-diensten: /nl/ai/learn/index
+language: nl
+---
+
+import SalesAssistantAgentBetaNote from "../../../snippets/ai/nl/sales-assistant-agent-beta-note.mdx";
+
+<SalesAssistantAgentBetaNote />
+
+De Sales Assistant Agent houdt uw eigen openstaande verkopen in de gaten en laat zien welke aandacht nodig hebben. Eén keer per dag, of wanneer u naar een specifieke verkoop vraagt, vergelijkt de agent elke verkoop met vergelijkbare verkopen die zijn gewonnen. Voor elke verkoop waarover een beslissing nodig is, stelt de agent één duidelijke volgende stap voor, bijvoorbeeld een vervolgactiviteit, een nieuwe verkoopdatum of een offerte om op te stellen.
+
+## Wat de agent voor u doet
+
+* **Houdt uw pijplijn dagelijks in de gaten:** de agent meldt een verkoop alleen wanneer er een beslissing nodig is, zoals een verkoopdatum die is verstreken, een verkoop die langer duurt dan gebruikelijk, een vastgelopen verkoop, een achterstallige of ontbrekende volgende activiteit, of een openstaand verzoek met hoge prioriteit voor de klant.
+
+* **Leert van echte verkopen:** de agent kijkt naar hoe vergelijkbare verkopen zijn gewonnen, bijvoorbeeld hoeveel activiteiten er nodig waren en hoe snel de eerste plaatsvond. Ook kijkt de agent naar de veelvoorkomende redenen waarom vergelijkbare verkopen verloren gingen of vastliepen.
+
+* **Raadt één volgende stap aan:** bijvoorbeeld een vervolgactiviteit, het opnieuw plannen van een achterstallige activiteit, het toevoegen van een belanghebbende, het opstellen van een offerte, het bijwerken van een verstreken verkoopdatum, of het afsluiten van de verkoop als verkocht of verloren. De redenering wordt erbij getoond.
+
+* **Onthoudt uw beslissingen:** nadat u een aanbeveling goedkeurt of afwijst, meldt de agent dezelfde verkoop niet opnieuw totdat de verkoop verandert of een wachttijd is verstreken.
+
+<Note>
+De agent stelt voor. U beslist. De agent neemt nooit contact op met een klant: offertes worden leeg aangemaakt en vervolgactiviteiten worden aangemaakt zonder uitnodigingen te versturen. Het enige wat de agent zelf schrijft, is een waarschuwingsvlag op verkopen die hun gebruikelijke tijdlijn naderen of al hebben overschreden. De vlag wordt niet automatisch gewist. De agent werkt alleen met uw eigen SuperOffice-gegevens. Er is geen webzoekopdracht of externe verrijking.
+</Note>
+
+## Planning
+
+De agent draait **Dagelijks**, één keer per dag op een door het systeem toegewezen tijdstip. U bepaalt met **Max aantal taken per dag** hoeveel aanbevelingen de agent per dag aanmaakt.
+
+Elke uitvoering kijkt naar uw 100 meest recent geregistreerde verkopen en beoordeelt de openstaande en vastgelopen verkopen daaronder. Oudere verkopen worden niet beoordeeld. Als er al 20 aanbevelingen op uw beslissing wachten, voegt de uitvoering geen nieuwe toe totdat u er een aantal hebt afgehandeld.
+
+## Agent activeren {#setup}
+
+De instelling is één enkele stap. U bent automatisch de goedkeurder en u kunt één instantie aanmaken.
+
+1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
+
+    De eerste keer dat u de pagina **Agents** opent, moet u inloggen en AI-agents in SuperOffice goedkeuren.
+
+1. Zoek de kaart **Sales Assistant Agent** in het **Agentoverzicht** en selecteer **Activeren**. Dit opent de instelwizard.
+
+    ![Het Agentoverzicht, met de kaart Sales Assistant Agent gemarkeerd als Beta -screenshot][img1]
+
+    <Tip>
+    Ziet u de kaart niet? Selecteer **Agents doorbladeren** om deze te vinden.
+    </Tip>
+
+## Algemene instellingen {#settings}
+
+1. Voer een unieke **Naam** in voor de agentinstantie. **Dit kan na activering niet meer worden gewijzigd.**
+
+    ![De Algemene instellingen van de Sales Assistant Agent, met Max aantal taken per dag, Base recommendations on en de herinneringsinstellingen -screenshot][img2]
+
+1. Bewerk desgewenst de voorgestelde **Beschrijving** als u iets anders wilt.
+
+1. Kies de **Rapportagetaal**. Dit is van invloed op zowel aanbevelingen als chatantwoorden. De standaardwaarde is Engels.
+
+1. Selecteer hoeveel aanbevelingen de agent per dag aanmaakt (maximaal 30). De standaardwaarde voor **Max aantal taken per dag** is 10.
+
+1. Kies waarop de agent de aanbevelingen baseert bij **Base recommendations on**. De standaardwaarde is **My own won deals**.
+
+    | Optie | Waarvan de agent leert |
+    |---|---|
+    | My own won deals | Uw eigen gewonnen verkopen. |
+    | My team's won deals | De gewonnen verkopen van uw team. |
+    | All won deals (whole organisation) | Elke gewonnen verkoop in uw organisatie. |
+    | The sale guide only | De [verkoopgids][1] voor het verkooptype. De timing wordt niet vergeleken met eerdere verkopen. |
+    | My own guidance | Een tekst die u zelf schrijft (maximaal 2000 tekens), bijvoorbeeld *Geef voorrang aan verkopen boven 100k; betrek altijd een technische contactpersoon*. De timing wordt niet vergeleken met eerdere verkopen. |
+    | Selection of successful sales | De gewonnen verkopen in een van uw eigen opgeslagen selecties. |
+
+    Wat u ook kiest, de aanbevelingen houden ook rekening met de redenen waarom vergelijkbare verkopen verloren gingen of vastliepen.
+
+1. Schakel desgewenst **Remind me about approaching dates** in om ook een verkoop te markeren waarvan de verkoopdatum nadert, zelfs als er verder niets mis is. Kies vervolgens bij **Remind me this many business days ahead** het aantal werkdagen (1-14). De standaardwaarde is 3. Werkdagen slaan weekenden over, maar geen feestdagen.
+
+1. Selecteer **Opslaan**.
+
+    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** in de zijbalk Agents, begroet u in de **Algemene chat** en start meteen de eerste uitvoering.
+
+    ![De bevestiging Agent geactiveerd, met de knop Naar instantie -screenshot][img3]
+
+## Hoe aanbevelingen werken {#recommendations}
+
+Bij elke uitvoering vergelijkt de agent uw openstaande verkopen met vergelijkbare gewonnen verkopen, zowel op totale leeftijd als op tijd in de huidige fase. Verkopen die op schema liggen, laat de agent met rust. De agent kijkt naar:
+
+* **Leeftijd van de verkoop en timing van de fase:** een verkoop nadert zijn gebruikelijke tijdlijn wanneer deze langer openstaat dan 7 van de 10 vergelijkbare gewonnen verkopen. De verkoop heeft zijn gebruikelijke tijdlijn overschreden wanneer deze langer openstaat dan 9 van de 10. De tijd in een fase wordt niet gecontroleerd als gewonnen verkopen die fase meestal in minder dan een week afronden.
+
+* **Voltooide activiteiten:** gesprekken, vergaderingen en taken die daadwerkelijk hebben plaatsgevonden. Zo weet de agent wanneer u voor het laatst contact hebt opgenomen met de klant en stelt de agent niets voor wat al is gedaan.
+
+* **De verkoopdatum:** of deze is verstreken of, met herinneringen ingeschakeld, binnenkort nadert.
+
+* **Openstaande verzoeken:** of de klant een openstaand verzoek met hoge prioriteit heeft. De agent vertelt u of het verzoek bij deze verkoop hoort of elders bij het account van de klant, waar u het vanuit de verkoop niet zou zien.
+
+De agent leert van de gewonnen verkopen in de 500 meest recente verkopen van de geschiedenis die u hebt gekozen, en heeft ten minste vijf gewonnen verkopen nodig om te vergelijken. Bij minder volgt de agent in plaats daarvan de verkoopgids, of de eigen signalen van de verkoop als er geen gids is.
+
+<Tip>
+Een verstreken verkoopdatum wordt altijd gemarkeerd en de prioriteit ervan gaat één niveau omhoog, zelfs als al het andere aan de verkoop er gezond uitziet. Dit kan niet worden uitgeschakeld.
+</Tip>
+
+### Prioriteit
+
+Elke aanbeveling heeft een prioriteit: **High**, **Normal** of **Low**. Grotere verkopen gaan een niveau omhoog en kleinere een niveau omlaag, vergeleken met uw andere openstaande verkopen. Een strategische klant waarvan de verkoop is vastgelopen, een achterstallige activiteit heeft of een openstaand verzoek met hoge prioriteit heeft, gaat ook omhoog. Hetzelfde geldt voor een naderende verkoopdatum wanneer herinneringen zijn ingeschakeld.
+
+Wanneer meer verkopen aandacht nodig hebben dan uw **Max aantal taken per dag** toestaat, komt de hoogste prioriteit eerst, daarna het hoogste bedrag. De rest wacht op een latere uitvoering.
+
+## Aanbevelingen beoordelen en goedkeuren {#review}
+
+1. Selecteer het tabblad **Chat**.
+
+1. Selecteer <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling**.
+
+1. Kies een verkoopthread (<i class="ph ph-currency-circle-dollar" aria-label="Verkooppictogram"></i>) uit de lijst. Threads zijn vernoemd naar de verkoop, het bedrijf en de contactpersoon.
+
+1. Beoordeel de aanbevelingskaart:
+
+    * De naam van de verkoop, de contactpersoon en het bedrijf.
+    * Kerngegevens: **Verkooptype**, **Bedrag**, **Fase** en **Days in stage**.
+    * **Why this deal**, een begrijpelijke reden waarom de verkoop is gekozen.
+    * **Recommended actions**, één blok per stap, met precies wat naar SuperOffice wordt geschreven. Soms hoort bij de hoofdstap een ondersteunende actie, zoals het toevoegen van een vervolgactiviteit of een belanghebbende.
+
+1. Vraag desgewenst de agent in de chat naar de aanbeveling voordat u beslist.
+
+1. Selecteer **Goedkeuren** of **Afwijzen**. De knoppen gelden voor elke actie op de kaart.
+
+1. Als de aanbeveling een datum instelt of wijzigt, behoud dan de voorgestelde datum in het bevestigingsvenster of kies een andere dag. Het tijdstip van de dag blijft hetzelfde.
+
+    U kunt de datum niet wijzigen wanneer u meerdere aanbevelingen tegelijk goedkeurt.
+
+### Wat goedkeuren doet
+
+De eerste kolom toont de titel van de actie op de aanbevelingskaart.
+
+| Aanbevolen actie | Wat er gebeurt wanneer u goedkeurt |
+|---|---|
+| Create appointment | Voegt een vervolgactiviteit toe aan de verkoop: een telefoongesprek, vergadering of taak (een voorgestelde e-mail wordt een taak). Deze wordt binnen werktijd van 09:00-17:00 geplaatst, ten minste vijf werkdagen vooruit. |
+| Reschedule overdue appointment | Verplaatst de achterstallige vervolgactiviteit van de verkoop naar een nieuwe datum, ten minste vijf werkdagen vooruit. Er wordt geen nieuwe vervolgactiviteit aangemaakt. |
+| Add stakeholder | Voegt de contactpersoon van de verkoop toe aan de [belanghebbenden][2]. De agent voegt nooit een contactpersoon toe die nog niet bij de verkoop hoort. |
+| Create draft quote | Maakt een lege [offerte][3] aan bij de verkoop, die u kunt prijzen en versturen. Er wordt niets toegevoegd als de verkoop al een offerte heeft. |
+| Update sale date | Wordt aangeboden wanneer de verkoopdatum is verstreken. Stelt de verkoopdatum in op het moment waarop vergelijkbare gewonnen verkopen meestal worden afgesloten, ten minste tien werkdagen vooruit, en voegt een vervolgactiviteit toe ten minste vijf werkdagen vooruit. Heropent de verkoop als deze was vastgelopen. |
+| Close as won | Zet de verkoop op **Verkocht**, met de datum waarop u goedkeurt. |
+| Close as lost | Zet de verkoop op **Verloren** met de voorgestelde reden, met de datum waarop u goedkeurt. Als die reden niet in de lijst van uw bedrijf staat, wordt de verkoop zonder reden afgesloten. |
+
+<Warning>
+**Het afsluiten van een verkoop kan niet ongedaan worden gemaakt vanuit de agent.** De agent stelt dit alleen voor bij duidelijk bewijs in uw CRM-geschiedenis, nooit alleen omdat een verkoop stil is komen te liggen. Om dit terug te draaien, [werkt u de verkoop][4] rechtstreeks bij.
+</Warning>
+
+Wanneer u goedkeurt, bevestigt de agent in de chat wat er is aangemaakt, of legt uit wat niet kon worden aangemaakt, zodat u dit handmatig kunt toevoegen. Als een kaart twee acties heeft en alleen de eerste slaagt, blijft de eerste behouden.
+
+Wanneer u afwijst, wordt er niets naar SuperOffice geschreven. De agent doet voor die verkoop geen nieuw voorstel totdat de verkoop verder achterloopt, naar een andere fase gaat of zijn verkoopdatum passeert, of totdat er 14 dagen zijn verstreken.
+
+Nadat u goedkeurt, komt de verkoop terug twee dagen nadat de vervolgactiviteit gepland was, twee dagen na de nieuwe verkoopdatum, of 14 dagen na goedkeuring als er niets is toegevoegd. De verkoop komt eerder terug als deze verandert.
+
+## Vragen over een specifieke verkoop
+
+1. Selecteer het tabblad **Chat**.
+
+1. Vraag in de thread **Algemene chat** naar een verkoop, bijvoorbeeld *Wat moet ik nu doen met Acme Corp?*
+
+    Als er iets aandacht nodig heeft, maakt de agent een aanbeveling aan in de eigen thread van die verkoop, net als bij de dagelijkse uitvoering. Als de verkoop op schema ligt, meldt de agent dat.
+
+Aanbevelingen waar u om vraagt, tellen mee voor **Max aantal taken per dag**. De chat kijkt naar dezelfde 100 meest recent geregistreerde verkopen als de dagelijkse uitvoering en vindt dus geen oudere verkopen.
+
+U kunt de agent in de chat ook vragen om een verkoop aan te maken of bij te werken, een vervolgactiviteit toe te voegen, een stap in een verkoopgids toe te voegen, een verzoek te registreren, een verkoop af te sluiten als verkocht of verloren, of een bedrijf op te zoeken. De agent vraagt u elke actie te bevestigen, maar er is geen goedkeuringskaart. Het opzoeken van de details van een verkoop of het vragen om een samenvatting van uw pijplijn maakt geen taak aan.
+
+## De werkruimte van de agent {#workspace}
+
+De werkruimte van de Sales Assistant Agent heeft drie tabbladen: **Chat**, **Historie** en **Prestaties**.
+
+| Tabblad | Beschrijving |
+|---|---|
+| Chat | Een **Algemene chat**-thread plus één thread per verkoop die de agent heeft gemarkeerd. |
+| Historie | Een begrijpelijk logboek van wat de agent heeft gedaan: hoeveel openstaande verkopen elke uitvoering heeft beoordeeld, elke aanbeveling en of deze is goedgekeurd, afgewezen of verlopen, alles wat is overgeslagen (met de reden) en elke wijziging via de chat. Selecteer een **Periode** (laatste 24 uur, 7, 30 of 90 dagen) om dit te beperken. |
+| Prestaties | Voorgestelde, geaccepteerde, genegeerde en verlopen aanbevelingen over de laatste 7, 30 of 90 dagen. Goedgekeurde aanbevelingen tellen als geaccepteerd en afgewezen aanbevelingen als genegeerd. |
+
+![De thread Algemene chat, met het welkomstbericht van de agent -screenshot][img4]
+
+![Het tabblad Historie, met het filter Periode en een voltooide uitvoering -screenshot][img5]
+
+![Het tabblad Prestaties, met de meetwaarde Recommendations Proposed -screenshot][img6]
+
+Selecteer <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om de meest recente items op te halen.
+
+Om de beschrijving, de taal, **Max aantal taken per dag**, waarop de aanbevelingen zijn gebaseerd of de herinneringsinstellingen te wijzigen, [bewerkt u de instantie][5]. De naam en de planning staan vast. Wijzigingen gelden vanaf de volgende uitvoering. Alleen de eigenaar van de instantie kan de instellingen wijzigen of de instantie verwijderen.
+
+## Tips en probleemoplossing
+
+**Waarom zie ik geen score?** De kaart toont bewust de aanbevolen actie en de redenering, geen numerieke score of betrouwbaarheidspercentage.
+
+**Kan ik meerdere aanbevelingen in één keer afhandelen?** Ja. Selecteer meerdere openstaande aanbevelingen en gebruik **Goedkeuren** of **Afwijzen** in het bulkpaneel.
+
+**Wat gebeurt er met een aanbeveling waar ik niet op tijd bij ben?** Een openstaande aanbeveling verloopt na 14 dagen. Zodra er nog 5 dagen resteren voordat de aanbeveling verloopt, verschijnt een aftelbanner op de thread. Er verandert niets in SuperOffice voor een verlopen aanbeveling en de agent kan de verkoop bij een latere uitvoering opnieuw voorstellen.
+
+**Ik heb de instantie gedeactiveerd en mijn openstaande aanbevelingen zijn verdwenen.** Het deactiveren van een instantie verwijdert alle aanbevelingen die nog op goedkeuring wachten, zoals beschreven in [AI-agents instellen][5]. Keur eerst goed of af wat u wilt bewaren.
+
+[1]: /nl/sale/learn/sales-guides
+[2]: /nl/sale/learn/stakeholders/index
+[3]: /nl/sale/learn/quote/index
+[4]: /nl/sale/learn/update
+[5]: /nl/ai/learn/set-up-ai-agents#edit
+
+[img1]: /media/loc/en/ai/sales-assistant-agent-overview.png
+[img2]: /media/loc/en/ai/sales-assistant-settings.png
+[img3]: /media/loc/en/ai/sales-assistant-activated.png
+[img4]: /media/loc/en/ai/sales-assistant-chat.png
+[img5]: /media/loc/en/ai/sales-assistant-history.png
+[img6]: /media/loc/en/ai/sales-assistant-performance.png

@@ -102,6 +102,7 @@
           "nl/ai/learn/data-quality-agent",
           "nl/ai/learn/duplicate-agent",
           "nl/ai/learn/lead-agent",
+          "nl/ai/learn/sales-assistant-agent",
           "nl/ai/learn/set-up-ai-agents",
           "nl/ai/learn/mcp",
           {
