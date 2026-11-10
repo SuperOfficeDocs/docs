@@ -53,7 +53,7 @@ printLine("After sort: " + persons.buildString("|"));
 
 ## fromJsonString
 
-Pass a boolean value to copy into a new object.
+Populates a struct from a JSON string.
 
 ```crmscript
 Void {type}.fromJsonString(String json)
@@ -150,7 +150,7 @@ printLine(p.toJsonString());
 
 ## toString
 
-This function will return a JSON formatted string of the struct's contents. Same functionality as toJson(JSONBuilder), but it will return a string directly without having to instantiate a JSONbuilder.
+If a struct has a function with this exact signature, then this method will be used whenever an instance of the struct is converted to a string, for example by buildString() on an array of struct instances, by convertGenericToString() and in the debugger. Without it, the struct's contents are converted to JSON, like toJsonString(). Structs have no built-in toString(), so p.toString() only compiles if the struct defines it.
 
 ```crmscript
 String {type}.toString()
@@ -171,4 +171,12 @@ p.firstname = "Jack";
 p.lastname = "Black";
 printLine(p.toString());
 //prints Jack Black
+Person q;
+q.firstname = "Mark";
+q.lastname = "Wahlberg";
+Person[] people;
+people.pushBack(p);
+people.pushBack(q);
+printLine(people.buildString(", "));
+//prints Jack Black, Mark Wahlberg
 ```
