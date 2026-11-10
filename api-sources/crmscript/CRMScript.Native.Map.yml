@@ -157,7 +157,7 @@ items:
   type: Method
   summary: "\nReturns the value for the given key.\n"
   example:
-  - "\n<pre><code>Map m = Map(&quot;height=25\\nwidth=10&quot;);\nString key = depth;\nprintLine(m.get(key));</code></pre>\n"
+  - "\n<pre><code>Map m = Map(&quot;height=25\\nwidth=10&quot;);\nString key = &quot;height&quot;;\nprintLine(m.get(key)); // prints 25</code></pre>\n"
   syntax:
     content: String get(String key)
     parameters:
@@ -427,7 +427,7 @@ items:
   type: Method
   summary: "\nConverts a JSON string to a map. Format: {&quot;key&quot;: &quot;value&quot;, &quot;foo&quot;: &quot;bar&quot;}\n"
   example:
-  - "\n<pre><code>String s = &quot;{&quot;depth&quot;:&quot;7&quot;,&quot;height&quot;:&quot;20&quot;,&quot;width&quot;:&quot;12.500000&quot;}&quot;;\nMap m;\nm.fromJson(s);</code></pre>\n"
+  - "\n<pre><code>String s = '{&quot;depth&quot;:&quot;7&quot;,&quot;height&quot;:&quot;20&quot;,&quot;width&quot;:&quot;12.500000&quot;}';\nMap m;\nm.fromJson(s);</code></pre>\n"
   syntax:
     content: Void fromJson(String json)
     parameters:

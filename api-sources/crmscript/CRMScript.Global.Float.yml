@@ -183,7 +183,7 @@ items:
   type: Method
   summary: "\nReturns the Integer preceding the decimal separator. The floor of a Float is calculated by rounding downward to the nearest Integer.\n"
   example:
-  - "\n<pre><code>Float f = 13.456;\nprint(f.floor().toString())</code></pre>\n"
+  - "\n<pre><code>Float f = 13.456;\nprint(f.floor().toString());</code></pre>\n"
   syntax:
     content: Integer floor()
     parameters: []
