@@ -128,25 +128,21 @@ function Clean-Description {
     # Skip TODO placeholders
     if ($Text -match '^\s*#?\s*TODO\s*$') { return "" }
 
-    # Remove leading/trailing quotes and \n
-    $Text = $Text.Trim('"').Trim()
-    $Text = $Text -replace '^\\n', ''
-    $Text = $Text -replace '\\n$', ''
+    # Double-quoted scalars keep their raw text, so decode their escapes (\n \" \\ \t \uXXXX ...) the same way as
+    # examples. Backslashes left after decoding are literal text, so escape them for markdown (and the frontmatter).
+    if ($Text -match '^\s*"([\s\S]*)"\s*$') {
+        $Text = (ConvertFrom-YamlDoubleQuoted $Matches[1]) -replace '\\', '\\'
+    } else {
+        $Text = $Text.Trim('"')
+    }
+    $Text = $Text.Trim()
 
-    # Convert <p></p>\n to blank lines
-    $Text = $Text -replace '<p></p>\\n', "`n`n"
-    $Text = $Text -replace '<p></p>', "`n`n"
-
-    # Convert \n to actual newlines
-    $Text = $Text -replace '\\n', "`n"
+    # Convert <p></p> (and the line break after it) to blank lines
+    $Text = $Text -replace '<p></p>\n?', "`n`n"
 
     # Convert HTML entities (but keep &lt; and &gt; as they're needed in markdown)
     $Text = $Text -replace '&quot;', '"'
     $Text = $Text -replace '&amp;', '&'
-
-    # The hand-rolled YAML parser never unescapes backslash-escaped quotes inside
-    # attribute values (for example <a href=\"...\">), so do it here before matching them
-    $Text = $Text -replace '\\"', '"'
 
     # Convert DocFx <xref href="..."> cross-references (source data occasionally carries these in a
     # description/summary field, for example "See <xref href=...>") to a real markdown link via the same
@@ -270,6 +266,8 @@ function ConvertFrom-YamlDoubleQuoted {
             't' { return "`t" }
             'r' { return "`r" }
             '0' { return [string][char]0 }
+            # \x, \u or \U without enough hex digits (for example C:\Users) is kept as written
+            { $_ -cin 'x', 'u', 'U' -and $e.Length -eq 1 } { return '\' + $e }
             { $_ -cin 'x', 'u' } { return [string][char][Convert]::ToInt32($e.Substring(1), 16) }
             'U' { return [char]::ConvertFromUtf32([Convert]::ToInt32($e.Substring(1), 16)) }
             default { return $e }
