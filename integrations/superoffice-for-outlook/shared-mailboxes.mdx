@@ -4,8 +4,8 @@ title: Work with shared mailboxes
 description: Archive emails, save attachments, and send and archive emails from a shared mailbox using SuperOffice for Outlook.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'shared mailbox', 'archive email', 'send and archive', 'save attachment', 'SOFO']
 author: schildea
-date: 11.04.2026
-version_sofo: 2026.6.4
+date: 11.09.2026
+version_sofo: 6.4.12
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -24,6 +24,9 @@ language: en
 userflow_index: true
 ---
 
+import StepCheckContact from "./snippets/step-check-contact.mdx";
+import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
+
 If you have access to a shared mailbox in Outlook, you can use SuperOffice for Outlook to take the same actions from that mailbox as you would from your personal mailbox.
 
 <Note>
@@ -38,11 +41,13 @@ The shared mailbox must already be available to you in Outlook. Access to shared
 
 1. [Open SuperOffice for Outlook][1] (if not already [pinned][2]).
 
-1. SuperOffice matches the sender to a contact. If the email address matches multiple contacts, select the correct one - the **Company** and **Contact** field fills in automatically. The search in this field follows your preference for [former employees][5].
+1. <StepCheckContact />
 
 1. Choose Save to SuperOffice in the SuperOffice sidebar.
 
-1. Make any necessary changes to the fields.
+1. Make any necessary changes to the fields. To link the email to a different contact or company, use **Contact or Company**.
+
+    <StepFindContactOrCompany />
 
 1. If you do not want to archive the attachments, select **Do not archive attachments**.
 
@@ -62,7 +67,7 @@ Always check the **From** address before sending from a shared mailbox.
 1. Open SuperOffice for Outlook.
 1. Select the shared mailbox address in the **From** field. If the **From** field is not visible, enable it in Outlook first.
 1. Add recipients and write the email.
-1. Keep **Archive email in SuperOffice** turned on to archive the email.
+1. Keep **Archive e-mail in SuperOffice** turned on to archive the email.
 1. Check or adjust the SuperOffice fields.
 1. Select **Send**.
 
@@ -74,4 +79,3 @@ SuperOffice for Outlook can add the **Archived in SuperOffice** category to arch
 [2]: ./pin-add-in
 [3]: https://community.superoffice.com/en/support-faqs/faq/superoffice-for-outlook-authorisation-guide/
 [4]: ./email-archive-status#shared-mailbox
-[5]: ./archive-email#former-employees

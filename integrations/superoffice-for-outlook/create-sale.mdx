@@ -3,9 +3,9 @@ uid: sofo-create-sale
 title: Create sale
 description: Create sale
 keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'create sale', 'SOFO']
-author: Erik Lebiko, digitaldiina
-date: 12.18.2025
-version_sofo: 2024.8.12
+author: Erik Lebiko, digitaldiina, schildea
+date: 11.09.2026
+version_sofo: 6.4.12
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -24,36 +24,44 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/create-sale
 ---
 
+import StepCheckContact from "./snippets/step-check-contact.mdx";
+import StepContactOrCompanyMatch from "./snippets/step-contact-or-company-match.mdx";
+import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
 import NoteVisibility from "./snippets/note-visibility.mdx";
 
 To create a [sale][1] in SuperOffice directly from Outlook, follow these steps:
 
 1. Open the email related to the activity.
 
-1. In the **SuperOffice** Outlook sidebar, select **Create sale**.
+1. <StepCheckContact />
+
+1. Select **Create sale** in the sidebar.
 
 1. Fill in the required fields:
 
-    * **Sale amount:** Enter an estimated amount and select the currency (if this option is activated).
-    * **Company:** Choose the relevant company from the list.
-    * **Contact:** Select the person from the company for this sale.
+    * **Sale name:** Enter a name for the sale.
+    * **Sale amount:** Enter the estimated amount and select the currency.
+    * **Contact or Company:** Select the contact or company for this sale.
+
+        <StepContactOrCompanyMatch />
+
+        <StepFindContactOrCompany />
+
+        ![Contact card shown when you hover over a contact in the Contact or Company list -screenshot][img1]
+
     * **Project:** (Optional) Link the sale to an ongoing project if applicable.
-    * **Type:** Choose the type of sale.
+    * **Sale type:** Choose the type of sale.
     * **Sale date:** Set the estimated date for the sale.
-    * **Visible for:** Choose who can see the sale - everyone, only the owner's primary group, or only the owner.
+    * **Visible for:** Choose who can see the sale: **All**, a user group, or only you.
 
         <NoteVisibility />
 
-    * **Notes:** (Optional) Enter a more detailed description of the sale.
+    * **Notes:** (Optional) Enter a more detailed description of the sale. Blank by default.
 
 1. Once all fields are completed, click **Save**.
-
-<Note>
-The **Visible for** drop-down is only available to users whose administrator has enabled the required license.
-For more details, see [**Admin - User Management - Visibility**][2].
-</Note>
 
 You can also create a follow-up or request directly from the email. If it is part of an ongoing issue, you can attach the message to a specific request.
 
 [1]: /en/sale/learn/create
-[2]: /en/admin/user-management/index#visible
+
+[img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png

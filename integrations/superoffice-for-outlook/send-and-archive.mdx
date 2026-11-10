@@ -4,8 +4,8 @@ title: Send and archive
 description: Send an email and automatically archive it to SuperOffice using the SuperOffice for Outlook add-in.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'send and archive', 'archive email', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 11.04.2026
-version_sofo: 2026.6.4
+date: 11.09.2026
+version_sofo: 6.4.12
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -22,13 +22,17 @@ language: en
 userflow_index: true
 ---
 
+import StepContactOrCompanyMatch from "./snippets/step-contact-or-company-match.mdx";
+import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
+import NoteVisibility from "./snippets/note-visibility.mdx";
+
 To send an email and automatically archive it to SuperOffice, follow these steps:
 
 1. Select **New mail** in Outlook.
 
 1. [Open SuperOffice for Outlook][1] (if not already [pinned][3]).
 
-1. Ensure the **Archive email in SuperOffice** toggle is enabled.
+1. Ensure the **Archive e-mail in SuperOffice** toggle is enabled.
 
     ![SuperOffice for Outlook, send and archive -screenshot][img2]
 
@@ -36,28 +40,50 @@ To send an email and automatically archive it to SuperOffice, follow these steps
     Bcc to **SuperOffice Mail Archive** is required to ensure the email is archived in SuperOffice.
     </Note>
 
-1. Add recipients to the **To** field. If the first recipient's email is known to SuperOffice, the **Company or Contact** field will auto-fill. The search in this field follows your preference for [former employees][6].
+1. Add recipients to the **To** field. If the first recipient's email is known to SuperOffice, the **Contact or Company** field auto-fills.
 
-1. Fill in any missing information or make adjustments as needed.
+    * If several contacts in SuperOffice share the recipient's email address, click **Select contact** and choose the correct one.
+    * If the recipient isn't in SuperOffice, select **Click to add new contact**. See [Select or add a contact][6].
 
-    The **Type** field is preselected from your [default outgoing email type][5]. Choose another type to change it for this email only.
+1. (Optional) To add a contact from SuperOffice as a recipient, select **Add recipients from SuperOffice** in the panel.
+
+    Choose whether to add the contact as To, CC, or BCC. Then search for the contact in **Contact** and select it. This field lists contacts only, not companies.
+
+    <StepFindContactOrCompany />
+
+    SuperOffice adds the contact to the email.
+
+1. Review the fields and change what you need:
+
+    * **Archive e-mail in SuperOffice:** On by default. When it's on, the email you send is also saved to SuperOffice.
+    * **Contact or Company:** Select the contact or company to link the email to.
+
+        <StepContactOrCompanyMatch />
+
+        <StepFindContactOrCompany />
+
+        ![Contact card shown when you hover over a contact in the Contact or Company list -screenshot][img3]
+
+    * **Sale:** Link the email to a sale.
+    * **Project:** Link the email to a project.
+    * **Type:** Preselected from your [default outgoing email type][5]. Choose another type to change it for this email only.
+    * **Visible for:** Choose who can see the email: **All**, a user group, or only you.
+
+        <NoteVisibility />
+
+    * **Mark as completed:** Marks the email activity as completed in SuperOffice. Off by default.
 
 1. Click **Send** to both send the email and archive it to SuperOffice.
-
-<Note>
-The **Visible for** drop-down is only available to users whose administrator has enabled the required license.
-For more details, see [**Admin - User Management - Visibility**][2].
-</Note>
 
 <Tip>
 With [email archive status][4] turned on, the sent email gets the **Archived in SuperOffice** category the next time you view an email with SuperOffice for Outlook open.
 </Tip>
 
 [1]: ./get#open
-[2]: /en/admin/user-management/index#visible
 [3]: ./pin-add-in
 [4]: ./email-archive-status
 [5]: ./settings#email-type
-[6]: ./archive-email#former-employees
+[6]: ./add-contact-to-superoffice
 
 [img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-send-and-archive.png
+[img3]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png
