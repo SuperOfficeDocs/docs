@@ -12229,6 +12229,10 @@
     "destination": "/en/automation/crmscript/parser"
   },
   {
+    "source": "/en/automation/crmscript/reference/CRMScript.Native.LocalizedField",
+    "destination": "/en/automation/crmscript/reference/CRMScript.NetServer.NSLocalizedField"
+  },
+  {
     "source": "/en/automation/crmscript/searchengine/db-basics.html",
     "destination": "/en/automation/crmscript/searchengine/db-basics"
   },
