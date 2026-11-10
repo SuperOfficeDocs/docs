@@ -30,7 +30,7 @@ items:
   - CRMScript.Native.HTTP.postAsStream(String)
   - CRMScript.Native.HTTP.putAsStream(String)
   - CRMScript.Native.HTTP.setDebugMode()
-  - CRMScript.Native.HTTP.setOption(String,Bool)
+  - CRMScript.Native.HTTP.setOption(String,String)
   - CRMScript.Native.HTTP.setValue(String,String)
   name: HTTP
   nameWithType: HTTP
@@ -551,27 +551,27 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.HTTP.setOption(String,Bool)
-  commentId: M:CRMScript.Native.HTTP.setOption(String,Bool)
-  id: 'setOption(String,Bool)'
+- uid: CRMScript.Native.HTTP.setOption(String,String)
+  commentId: M:CRMScript.Native.HTTP.setOption(String,String)
+  id: 'setOption(String,String)'
   so.intellisense: HTTP.setOption
   langs:
   - crmscript
-  name: 'setOption(String,Bool)'
-  nameWithType: HTTP.setOption(String,Bool)
-  fullName: CRMScript.Native.HTTP.setOption(String,Bool)
+  name: 'setOption(String,String)'
+  nameWithType: HTTP.setOption(String,String)
+  fullName: CRMScript.Native.HTTP.setOption(String,String)
   type: Method
-  summary: "\nOption function.\n"
-  remarks: "\n<table><thead><tr><th>Value</th><th>Description</th></tr></thead><body><tr><td>verifyPeer</td>><td>verify the peer's SSL certificate</td></tr><tr><td>verifyHost</td>><td>verify the certificate's name against the host</td></tr><tr><td>timeout</td>><td>set maximum time the request is allowed to take</td></tr><tr><td>followLocation</td>><td>follow HTTP 3xx redirects if set to 1, default is 1</td></tr><tr><td>username</td>><td>username used in authentication</td></tr><tr><td>password</td>><td>password used in authentication</td></tr><tr><td>parameters</td>><td>The complete parameters to post. This will replace whatever you have added using .setValue(), but allows you to specify the whole parameter to post. Useful when posting e.g. JSON structs instead of name=value pairs. NOTE  you need to prefix whatever you want to send with a dummy character (which will be removed) due to complexities in this class. See the example below.</td></tr><tr><td>authenticationMethod</td>><td>which authentication method to use  basic (default), digest, gssnegotiate, ntlm, digest_ie, ntlm_wb, none</td></tr><tr><td>parametersUTF8</td>><td>From version 8.2R3. This option makes the parameters be encoded as UTF-8. Normally this is what you want, but to not break any old uses, this is an optional option.</td></tr></body></table>\n"
+  summary: "\nSets an option for the requests made with this HTTP object.\n"
+  remarks: "\n<table><thead><tr><th>Option</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td>verifyPeer</td><td>On/off. Default: on</td><td>Verify the peer's SSL certificate.</td></tr><tr><td>verifyHost</td><td>On/off. Default: on</td><td>Verify that the certificate's name matches the host.</td></tr><tr><td>timeout</td><td>Seconds. Default: 3600</td><td>Maximum time the whole request is allowed to take.</td></tr><tr><td>followLocation</td><td>On/off. Default: on</td><td>Follow HTTP 3xx redirects.</td></tr><tr><td>username</td><td>Text</td><td>User name for authentication.</td></tr><tr><td>password</td><td>Text</td><td>Password for authentication. Only used together with username.</td></tr><tr><td>authenticationMethod</td><td>basic, digest, gssnegotiate, ntlm, ntlm_wb or none. Default: basic</td><td>Authentication method to use.</td></tr><tr><td>parameters</td><td>Text</td><td>The complete parameters to post. Replaces the parameters added with setValue(), so you can post for example JSON instead of name=value pairs. The first character is removed (parameters from setValue() start with ?), so start the value with one extra character. See the example below.</td></tr><tr><td>parametersUTF8</td><td>On/off. Default: off</td><td>Encode the posted parameters as UTF-8. Normally this is what you want, but it is off by default so older scripts keep working. From version 8.2R3.</td></tr></tbody></table><p></p>\nOn/off options are on when the value is &quot;true&quot; or &quot;1&quot;, and off for any other value. Unknown option names and authenticationMethod values are ignored.\n"
   syntax: 
     content: Void setOption(String name, String value)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: "The name of the option. See the table below."
     - id: value
       type: CRMScript.Global.String
-      description: "See table."
+      description: "The value of the option, as a String. See the table below."
     return:
       type: CRMScript.Global.Void
   example: 
