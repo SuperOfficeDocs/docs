@@ -3,7 +3,7 @@ title: KI-Agenten einrichten
 description: Wie Sie den Bereich Agenten öffnen, einen Agenten aktivieren sowie eine Instanz erstellen und verwalten. Ein Administratorzugriff ist nicht nötig, denn Agenteninstanzen sind persönlich und pro Benutzer angelegt.
 keywords: ['Agenteninstanz', 'Agent aktivieren', 'Instanz hinzufügen', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.09.2026
+date: 11.10.2026
 so_version: 12.6
 content_type: howto
 tier: plus
@@ -86,6 +86,55 @@ Wählen Sie im Drei-Punkte-Menü **Über** aus, um eine schreibgeschützte Zusam
 1. Klicken Sie auf die <i class="ph ph-pencil-simple" aria-label="Bearbeiten"></i> Bearbeiten-Schaltfläche (Stift) im Kopfbereich der Instanz.
 1. Nehmen Sie Ihre Änderungen im Einrichtungsassistenten vor.
 1. Klicken Sie auf **Änderungen speichern**. Die Änderungen gelten ab dem nächsten Lauf.
+
+## Aufgaben filtern {#filter}
+
+Jeder Agent legt die Elemente, die er Ihnen zur Prüfung vorlegen möchte, als Threads in der Registerkarte **Chat** an, neben einem dauerhaften Thread **Allgemeiner Chat**. Klicken Sie über der Thread-Liste auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i>, um die Anzeige einzugrenzen.
+
+| Filter | Zeigt |
+|---|---|
+| Kürzlich | Der Standard. Alles, was noch aussteht, plus alles, was in den letzten 6 Stunden genehmigt wurde. |
+| Ausstehend | Elemente, die auf Ihre Entscheidung warten. |
+| Genehmigt | Elemente, die Sie genehmigt haben. |
+| Abgelehnt | Elemente, die Sie abgelehnt haben. |
+| Abgebrochen/Beendet | Aufgaben, die ohne Entscheidung endeten, wobei nichts in SuperOffice geschrieben wurde. Die Instanz wurde deaktiviert, während die Aufgabe ausstehend war, die Aufgabe hat ihr Zeitlimit erreicht, oder bei der Verarbeitung ist etwas schiefgegangen. |
+
+## Mehrere Aufgaben gleichzeitig entscheiden {#bulk}
+
+1. Klicken Sie auf das Kontrollkästchen neben der Listenüberschrift, die den gewählten Filter anzeigt, zum Beispiel **KÜRZLICH**. Damit werden alle ausstehenden Elemente in der Liste ausgewählt, bis zu 50 auf einmal.
+
+    Sie können auch Strg (Cmd auf dem Mac) gedrückt halten und ausstehende Elemente einzeln auswählen.
+
+1. Klicken Sie im Bereich, der anzeigt, wie viele Elemente ausgewählt sind, auf **Genehmigen** oder **Ablehnen**.
+
+Nur ausstehende Elemente können ausgewählt werden. Bei einem Lead Agent, der Leads reihum verteilt, können Sie nur die Leads auswählen, die Ihnen zugewiesen sind. Jedes Element erhält dasselbe Ergebnis, als hätten Sie es einzeln entschieden. Der Agent teilt Ihnen außerdem mit, welche nicht aktualisiert werden konnten und warum.
+
+<Note>
+Die Sammelaktion **Genehmigen** funktioniert für jeden Agenten außer dem Duplicate Agent, bei dem sie nur für Firmenzusammenführungen funktioniert. Zusammenführungen doppelter Personen und Verknüpfungen verwaister Personen können in der Sammelaktion abgelehnt, müssen aber einzeln genehmigt werden. Wenn Sie Leads des Lead Agent in der Sammelaktion genehmigen, gilt die von Ihnen gewählte statische Selektion für jede im Stapel genehmigte Firma.
+</Note>
+
+## Zeitlimit {#expiry}
+
+Jeder Lead, jede Prüfung, jeder Vorschlag und jede Empfehlung, die auf Ihre Entscheidung wartet, hat eine begrenzte Lebensdauer: **21 Tage** für Lead Agent und **14 Tage** für die anderen Agenten.
+
+Sobald eine Aufgabe innerhalb von 5 Tagen vor ihrer Frist liegt, erscheint ein Banner auf ihrem Thread: **Läuft in N Tagen ab**, **Läuft heute ab** innerhalb der letzten 24 Stunden oder **Läuft jetzt ab**, wenn die Frist überschritten, die Aufgabe aber noch nicht geschlossen ist.
+
+Wird nicht rechtzeitig entschieden, läuft die Aufgabe ab, und in SuperOffice ändert sich nichts. Eine abgelaufene Aufgabe kann nicht wiederhergestellt werden und wird unter **Abgebrochen/Beendet** aufgeführt. Data Quality Agent und Duplicate Agent können dieselbe Arbeit erneut finden und eine neue Aufgabe anlegen. Lead Agent schlägt dieselbe Firma bei seiner täglichen Suche nie erneut vor, aber Sie können ihn im Chat bitten, sich diese Firma noch einmal anzusehen.
+
+## Eine Antwort bewerten {#rate}
+
+Wenn Sie Genehmiger der Instanz sind, können Sie zu jeder Antwort des Agenten im Chat Feedback geben. Ihre Bewertungen helfen SuperOffice, die Agenten zu verbessern. Das Bewerten ist nicht verfügbar, solange der Agent außerhalb Ihres Abonnements liegt.
+
+1. Klicken Sie auf **Antwort bewerten** unter einer Agentennachricht oder unter der Prüfkarte einer Aufgabe.
+
+1. Wählen Sie im Fenster **Diese Antwort bewerten** 1 bis 5 Sterne aus.
+
+    * Bei 4 Sternen oder mehr können Sie optional einen Kommentar hinzufügen.
+    * Bei weniger als 4 Sternen erscheint zusätzlich eine Liste **Was ist schiefgelaufen?**, in der Sie einen Grund auswählen müssen. Der Kommentar ist optional, außer wenn Sie **Sonstiges** wählen.
+
+1. Klicken Sie auf **Senden**.
+
+Sie können jede Antwort einmal bewerten, und eine Bewertung kann danach nicht mehr geändert werden.
 
 ## Benachrichtigungen stummschalten
 

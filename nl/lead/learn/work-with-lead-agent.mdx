@@ -3,8 +3,8 @@ title: Werken met Lead Agent
 description: Beoordeel en keur de prospects goed die Lead Agent vindt, met de tabbladen Chat, Historie en Prestaties.
 keywords: ['lead agent', 'prospectrapport', 'leads vinden', 'lead goedkeuren', 'lead afwijzen', 'AI-agents']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: howto
 tier: plus
 category: sale
@@ -29,11 +29,11 @@ Nadat [Lead Agent is ingesteld][1], draait de agent dagelijks op de achtergrond 
 
 ## Uw agent vinden
 
-1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
-1. Selecteer de Lead Agent-instantie in de lijst **Mijn agents** of de Lead Agent-kaart in het **Agentoverzicht**.
+1. Selecteer <i class="ph ph-robot" aria-label="Agentenpictogram"></i> **Agenten** in de Navigator.
+1. Selecteer de Lead Agent-instantie in de lijst **Mijn agenten** of de Lead Agent-kaart in het **Overzicht**.
 
-![De Lead Agent-instantie selecteren vanuit de lijst Mijn agents -screenshot][img8]
-![De Lead Agent-instantie selecteren vanuit het Agentoverzicht -screenshot][img9]
+![De Lead Agent-instantie selecteren vanuit de lijst Mijn agenten -screenshot][img8]
+![De Lead Agent-instantie selecteren vanuit het Overzicht -screenshot][img9]
 
 ## De werkruimte van de agent
 
@@ -68,7 +68,7 @@ Het tabblad **Prestaties** toont hoe de instantie presteert over een door u geko
 ## Een prospect beoordelen
 
 1. Selecteer het tabblad **Chat**.
-1. Selecteer <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling**.
+1. Selecteer <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling**. De lijst toont standaard **Recent**, dat ook bevat wat u de afgelopen 6 uur hebt goedgekeurd.
 1. Kies een lead uit de lijst om het **prospectrapport** van de agent te tonen.
 
     * Het rapport wordt eerst ingeklapt getoond, met alleen de essentie: een geschiktheidsbeoordeling, de gebruikte bronnen en belangrijke statistieken.
@@ -82,7 +82,7 @@ Het tabblad **Prestaties** toont hoe de instantie presteert over een door u geko
 ## Een specifiek bedrijf onderzoeken
 
 1. Selecteer het tabblad **Chat**.
-1. Vraag de agent in de **Algemene** chat om een specifiek bedrijf te onderzoeken.
+1. Vraag de agent in de **Algemene chat** om een specifiek bedrijf te onderzoeken.
 1. Als er een echte lead wordt gevonden, wordt het prospectrapport toegevoegd aan de lijst. Beoordeel dit zoals hierboven beschreven.
 
 ![Het tabblad Chat: Algemene chat en threads per bedrijf -screenshot][img2]
@@ -118,7 +118,9 @@ Als u besluit een prospect niet toe te voegen aan SuperOffice, hebt u twee optie
 ![De lead gemarkeerd als Afgewezen na bevestiging -screenshot][img13]
 
 <Tip>
-Om de lijst op te schonen, selecteert u meerdere prospects in behandeling en selecteert u **Afwijzen** om ze allemaal tegelijk te verwijderen.
+Om de lijst op te schonen, selecteert u meerdere prospects in behandeling en selecteert u **Afwijzen** om ze allemaal tegelijk te verwijderen. Selecteer het selectievakje naast de kop van de lijst om alle prospects in behandeling te selecteren, maximaal 50 tegelijk. Zie [Meerdere taken tegelijk afhandelen][2].
+
+U kunt ook meerdere prospects tegelijk goedkeuren. De statische selectie die u kiest, geldt voor elk bedrijf dat in de batch wordt goedgekeurd.
 
 Gebruik het filter om alleen afgewezen prospects te tonen.
 </Tip>
@@ -127,13 +129,17 @@ Gebruik het filter om alleen afgewezen prospects te tonen.
 
 ## Probleemoplossing
 
-**Een lead die ik aan het beoordelen was, is verdwenen.** Een lead die wacht op goedkeuring heeft een beperkte levensduur: standaard 30 dagen. Er verschijnt een aftelbanner zodra de lead nog 5 dagen te gaan heeft voordat deze verloopt. Als de lead niet op tijd wordt goedgekeurd of afgewezen, verloopt deze en wordt er niets opgeslagen in uw CRM.
+**Een lead die ik aan het beoordelen was, is verdwenen.** Een lead die wacht op goedkeuring heeft een beperkte levensduur: standaard 21 dagen. Er verschijnt een aftelbanner zodra de lead nog 5 dagen te gaan heeft voordat deze verloopt. Als de lead niet op tijd wordt goedgekeurd of afgewezen, verloopt deze en wordt er niets opgeslagen in uw CRM.
+
+**Kan ik de antwoorden van de agent beoordelen?** Ja, als u een goedkeurder bent. Zie [Een antwoord beoordelen][3].
 
 **Ik heb de instantie gedeactiveerd en mijn leads in behandeling zijn verdwenen.** Het deactiveren van een instantie verwijdert alle leads die nog op goedkeuring wachten. Keur eerst goed of af wat u wilt behouden.
 
 **Ik kan de instellingen van een instantie zien, maar niets wijzigen.** U bent een goedkeurder, niet de eigenaar. Alleen de eigenaar van de instantie kan wijzigingen aan de instellingen opslaan. Een goedkeurder die niet de eigenaar is, kan de instellingen wel bekijken maar niet bewerken.
 
 [1]: set-up-lead-agent
+[2]: /nl/ai/learn/set-up-ai-agents#bulk
+[3]: /nl/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/lead/lead-agent-general-chat.png
 [img2]: /media/loc/en/lead/lead-chat-threads.png

@@ -3,7 +3,7 @@ title: Sett opp AI-agenter
 description: Hvordan åpne Agenter-området, aktivere en agent, og opprette og administrere en instans. Ingen administratortilgang er nødvendig. Agentinstanser er personlige, per bruker.
 keywords: ['agentinstans', 'aktivere agent', 'legge til instans', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.09.2026
+date: 11.10.2026
 so_version: 12.6
 content_type: howto
 tier: plus
@@ -49,7 +49,7 @@ Kun instansens eier (den som opprettet den) kan redigere innstillingene, aktiver
 ![Agenter-sidens startsett med agentkort -screenshot][img2]
 
 1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i navigatoren.
-1. Klikk på **Bla gjennom agenter** øverst til høyre i **Agentoversikten**.
+1. Klikk på **Bla gjennom agenter** øverst til høyre i **Oversikt**.
 1. Bruk søkefeltet eller kategorifiltrene for å finne agenten du ønsker.
 
     ![Panelet Bla gjennom agenter, som viser alle agentene i abonnementet ditt -screenshot][img3]
@@ -86,6 +86,55 @@ Velg **Om** fra trepunktsmenyen for et skrivebeskyttet sammendrag, inkludert vis
 1. Klikk på <i class="ph ph-pencil-simple" aria-label="Rediger"></i> redigeringsknappen (blyanten) i instansens topptekst.
 1. Gjør endringene dine i oppsettveiviseren.
 1. Klikk på **Lagre endringer**. Endringene gjelder fra neste kjøring.
+
+## Filtrer oppgaver {#filter}
+
+Hver agent løfter elementene den vil at du skal gjennomgå, frem som tråder i fanen **Chat**, ved siden av en permanent **Generell chat**-tråd. Klikk på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> over trådlisten for å begrense hva som vises.
+
+| Filter | Viser |
+|---|---|
+| Nylig | Standard. Alt som fortsatt venter, pluss alt som er godkjent de siste 6 timene. |
+| Venter | Elementer som venter på din beslutning. |
+| Godkjent | Elementer du har godkjent. |
+| Avvist | Elementer du har avvist. |
+| Avbrutt/Avsluttet | Oppgaver som tok slutt uten en beslutning, uten at noe er skrevet til SuperOffice. Instansen ble deaktivert mens oppgaven ventet, oppgaven nådde tidsgrensen, eller noe gikk galt under behandlingen. |
+
+## Avgjør flere oppgaver samtidig {#bulk}
+
+1. Merk av i avmerkingsboksen ved siden av listeoverskriften, som viser det valgte filteret, for eksempel **NYLIG**. Dette velger alle ventende elementer i listen, opptil 50 om gangen.
+
+    Du kan også holde nede Ctrl (Cmd på Mac) og velge ventende elementer ett for ett.
+
+1. Klikk på **Godkjenn** eller **Avvis** i panelet som viser hvor mange elementer som er valgt.
+
+Bare ventende elementer kan velges. For en Lead Agent som deler leads i tur og orden, kan du bare velge leadene som er tildelt deg. Hvert element får samme resultat som om du hadde avgjort det alene. Agenten forteller deg også hvilke som ikke kunne oppdateres, og hvorfor.
+
+<Note>
+Bulk-**Godkjenn** fungerer for alle agenter unntatt Duplicate Agent, hvor det bare fungerer for firmasammenslåinger. Personsammenslåinger og koblinger av foreldreløse personer kan avvises samlet, men må godkjennes én om gangen. Når du godkjenner Lead Agent-leads samlet, gjelder det statiske utvalget du velger, for alle firmaer som godkjennes i samme omgang.
+</Note>
+
+## Tidsgrense {#expiry}
+
+Hver lead, gjennomgang, forslag eller anbefaling som venter på din beslutning, har en begrenset levetid: **21 dager** for Lead Agent og **14 dager** for de andre agentene.
+
+Når en oppgave er innen 5 dager fra fristen, vises et banner på tråden: **Utløper om N dager**, **Utløper i dag** de siste 24 timene, eller **Utløper nå** når fristen er passert, men oppgaven ennå ikke er lukket.
+
+Hvis ingenting avgjøres i tide, utløper oppgaven, og ingenting endres i SuperOffice. En utløpt oppgave kan ikke hentes tilbake, og den vises under **Avbrutt/Avsluttet**. Data Quality Agent og Duplicate Agent kan finne det samme arbeidet igjen og opprette en ny oppgave. Lead Agent foreslår aldri samme firma igjen i det daglige søket, men du kan be den i chatten om å se på det firmaet på nytt.
+
+## Vurder et svar {#rate}
+
+Hvis du er godkjenner for instansen, kan du gi tilbakemelding på ethvert agentsvar i chatten. Vurderingene dine hjelper SuperOffice med å forbedre agentene. Vurdering er ikke tilgjengelig mens agenten er utenfor abonnementet ditt.
+
+1. Klikk på **Vurder svar** under en agentmelding, eller under en oppgaves gjennomgangskort.
+
+1. I vinduet **Vurder dette svaret** velger du fra 1 til 5 stjerner.
+
+    * Med 4 stjerner eller mer kan du legge til en valgfri kommentar.
+    * Med færre enn 4 stjerner vises også en liste **Hva gikk galt?**, og du må velge en årsak. Kommentaren er valgfri, med mindre du velger **Annet**.
+
+1. Klikk på **Send**.
+
+Du kan vurdere hvert svar én gang, og en vurdering kan ikke endres etterpå.
 
 ## Demp varsler
 
