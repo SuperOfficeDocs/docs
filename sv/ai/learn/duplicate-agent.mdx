@@ -50,7 +50,7 @@ Agenten körs **Dagligen**, en gång om dagen vid en systemtilldelad tidpunkt. D
 
 Gränsen gäller för var och en av agentens tre kontroller separat: dubblerade företag, dubblerade kontakter och kontakter utan företag. Med standardvärdet 25 kan du få upp till 75 nya förslag per dag. Den begränsar förslag, inte de poster som kontrolleras.
 
-Agenten håller upp till 50 förslag av varje typ (företagssammanfogningar, kontaktsammanfogningar och kontakter utan företag) väntande på ditt beslut. När du godkänner eller avvisar tillräckligt för att frigöra utrymme fyller nästa schemalagda körning på den typen igen upp till 50 om det finns mer att hitta.
+Agenten håller upp till 50 förslag av varje typ (företagssammanfogningar, kontaktsammanfogningar och kontakter utan företag) väntande på ditt beslut. När du godkänner eller avvisar tillräckligt för att frigöra utrymme fyller nästa schemalagda körning på den typen igen upp till 50. Det sker bara om det finns mer att hitta.
 
 ## Aktivera agenten {#setup}
 
@@ -86,7 +86,7 @@ Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan sk
 
 1. Välj **Gå till instans** för att öppna din nya Duplicate Agent och [komma igång][3].
 
-Innan du granskar, välj fliken **Chatt**, klicka sedan på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande** för att avgränsa en full kö till förslag som väntar på ditt beslut. Listan visar **Senaste** som standard, vilket även omfattar det du godkände under de senaste 6 timmarna.
+Innan du granskar, välj fliken **Chatt**. Klicka sedan på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande** för att avgränsa en full kö till förslag som väntar på ditt beslut. Listan visar **Senaste** som standard, vilket även omfattar det du godkände under de senaste 6 timmarna.
 
 ## Sammanfogningsförslag: dubblerade företag {#merge-companies}
 
@@ -179,7 +179,7 @@ Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> fö
 
 **Vad händer om jag avvisar eller ignorerar?** Ingenting ändras. Båda posterna behålls som de är.
 
-**Kan jag besluta om flera förslag samtidigt?** Ja. Markera flera väntande förslag, eller kryssrutan bredvid listrubriken för att markera alla väntande förslag, upp till 50 åt gången, enligt beskrivningen i [Besluta om flera uppgifter samtidigt][4]. Massgodkännande med **Godkänn** fungerar bara för företagssammanfogningar. Sammanfogningar av dubblerade kontakter och kopplingar av kontakter utan företag kan bara avvisas som massåtgärd, så godkänn dem en i taget.
+**Kan jag besluta om flera förslag samtidigt?** Ja. Markera flera väntande förslag. Eller markera kryssrutan bredvid listrubriken för att markera alla, upp till 50 åt gången. Se [Besluta om flera uppgifter samtidigt][4]. Massgodkännande med **Godkänn** fungerar bara för företagssammanfogningar. Sammanfogningar av dubblerade kontakter och kopplingar av kontakter utan företag kan bara avvisas som massåtgärd, så godkänn dem en i taget.
 
 **Kan jag betygsätta agentens svar?** Ja, om du är godkännare. Se [Betygsätt ett svar][5].
 
