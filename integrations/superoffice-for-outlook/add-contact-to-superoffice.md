@@ -1,11 +1,11 @@
 ---
 uid: sofo-add-contact
-title: Add contact to SuperOffice
-description: Add contact to SuperOffice
-keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'add contact', 'SOFO']
-author: Erik Lebiko, digitaldiina
-date: 10.29.2024
-version_sofo: 2024.8.12
+title: Select or add a contact
+description: Check which SuperOffice contact an email's sender is matched to, choose the correct one, or add a new contact.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'add contact', 'select contact', 'SOFO']
+author: Erik Lebiko, digitaldiina, schildea
+date: 11.09.2026
+version_sofo: 6.4.12
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -24,31 +24,37 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/add-contact-to-superoffice
 ---
 
-You can easily add new contacts to SuperOffice CRM if the email address is unknown to the system.
+When you open an email, SuperOffice for Outlook looks up the sender in SuperOffice and shows the result at the top of the sidebar. Check it before you choose an action. The contact you match here fills **Contact or Company** in every action, so you don't have to search for it in each form.
 
-## Steps
+## Check the contact at the top of the sidebar {#match-first}
 
-1. Open the email from the person you want to add as a contact.
+What you see depends on what SuperOffice finds:
 
-1. [Open SuperOffice for Outlook][1] (if not pinned).
+* **The contact's name and company:** The sender is matched. Choose your action.
+* **Select contact:** Several contacts in SuperOffice share the email address. Click **Select contact** and choose the correct one.
+* **Click to add new contact:** The sender isn't in SuperOffice. [Add them as a new contact][2].
 
-1. In the SuperOffice sidebar, select **Click to add new contact**.
+![Main panel with the Select contact button for several matching contacts, and the Click to add new contact link for an unknown contact -screenshot][img3]
+
+If you choose an action without matching the contact, **Contact or Company** stays empty until you select a contact in the form.
+
+## Add a new contact {#add}
+
+1. At the top of the sidebar, select **Click to add new contact**.
 
     ![SuperOffice for Outlook, unknown contact -screenshot][img2]
 
-1. Choose from the following options:
+1. Choose one of these options:
 
-    * **Add email to an existing contact**: Select from the **This contact could be** list to link the email to an existing contact in SuperOffice.
+    * **Add email to an existing contact:** Select a contact from the **This contact could be** list to link the email address to that contact.
+    * **Add contact to an existing company:** Select a company from the **Or add contact to company** list.
+    * **Create a new company and contact:** Use this if the company isn't in SuperOffice yet.
 
-    * **Add contact to an existing company**: From the **Or add contact to company** list, associate the new contact with an existing company in SuperOffice.
-
-    * **Create a new company and contact**: If the contact's company does not exist in your database, create both the company and the contact.
-
-1. Fill out the required fields and click **Save**.
+1. Fill in the required fields and click **Save**.
 
 ![SuperOffice for Outlook, save contact -screenshot][img1]
 
-## Adding a contact from the People tab
+## Add a contact from the People tab {#people-tab}
 
 You can also add contacts from the **People** tab in the SuperOffice sidebar.
 
@@ -63,7 +69,8 @@ The **People** tab displays all contacts mentioned in the email. If the sender o
     * Save the contact to an existing company, or
     * Create a new company and contact.
 
-[1]: ./get#open
+[2]: #add
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-add-contact.png
 [img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-unknown-contact.png
+[img3]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-match-actions.png

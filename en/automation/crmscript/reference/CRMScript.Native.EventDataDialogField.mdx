@@ -35,6 +35,18 @@ Void addListItem(String item)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setId("myList");
+field.setType("list");
+field.addListItem("Value 1");
+field.addListItem("Value 2");
+dialog.addField(field);
+```
+
 ## getAdditionalInfo()
 
 Returns additional info for the named list.
@@ -44,6 +56,17 @@ String getAdditionalInfo()
 ```
 
 **Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setAdditionalInfo("hierarchy=true&shortNames=true&onlyOwnCategories=true&excludeHistory=true&shortTooltip=true");
+print(field.getAdditionalInfo());
+```
 
 ## getAllowBlank()
 
@@ -55,6 +78,17 @@ Bool getAllowBlank()
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setAllowBlank(false);
+print(field.getAllowBlank().toString());
+```
+
 ## getAllowRootSelection()
 
 Returns true if root selection is allowed.
@@ -64,6 +98,17 @@ Bool getAllowRootSelection()
 ```
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setAllowRootSelection(false);
+print(field.getAllowRootSelection().toString());
+```
 
 ## getDays()
 
@@ -75,6 +120,16 @@ Bool getDays()
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setDays(false);
+print(field.getDays().toString());
+```
+
 ## getDefault()
 
 Returns default value set.
@@ -84,6 +139,17 @@ String getDefault()
 ```
 
 **Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setDefault("1");
+print(field.getDefault());
+```
 
 ## getDefaultFloat()
 
@@ -95,6 +161,17 @@ Float getDefaultFloat()
 
 **Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setDefaultFloat(3.14);
+print(field.getDefaultFloat().toString(2));
+```
+
 ## getForceFlatList()
 
 Force flat list if using list name.
@@ -104,6 +181,17 @@ Bool getForceFlatList()
 ```
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setForceFlatList(false);
+print(field.getForceFlatList().toString());
+```
 
 ## getId()
 
@@ -115,6 +203,17 @@ String getId()
 
 **Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setId("assoc");
+print(field.getId());
+```
+
 ## getHideEmptyRootsInSearch()
 
 If true, hide empty roots in search. Default is false. Only applies when showFullPath is true and field type is list.
@@ -124,6 +223,17 @@ Bool getHideEmptyRootsInSearch()
 ```
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setHideEmptyRootsInSearch(true);
+print(field.getHideEmptyRootsInSearch().toString());
+```
 
 ## getHours()
 
@@ -135,6 +245,16 @@ Bool getHours()
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setHours(false);
+print(field.getHours().toString());
+```
+
 ## getLabel()
 
 Returns label for field.
@@ -144,6 +264,17 @@ String getLabel()
 ```
 
 **Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setLabel("My label");
+print(field.getLabel());
+```
 
 ## getListName()
 
@@ -155,6 +286,16 @@ String getListName()
 
 **Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+print(field.getListName());
+```
+
 ## getMandatory()
 
 If true, field has to have a valid value.
@@ -164,6 +305,17 @@ Bool getMandatory()
 ```
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setMandatory(true);
+print(field.getMandatory().toString());
+```
 
 ## getMinutes()
 
@@ -175,6 +327,16 @@ Bool getMinutes()
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setMinutes(false);
+print(field.getMinutes().toString());
+```
+
 ## getPlaceholder()
 
 Returns placeholder text for field.
@@ -184,6 +346,17 @@ String getPlaceholder()
 ```
 
 **Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setPlaceholder("Select associate");
+print(field.getPlaceholder());
+```
 
 ## getSeconds()
 
@@ -195,6 +368,16 @@ Bool getSeconds()
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setSeconds(false);
+print(field.getSeconds().toString());
+```
+
 ## getShowAllChildrenInSearch()
 
 Show all children when searching. Default is false. Only applies if showFullPath is true and field type is list.
@@ -205,6 +388,17 @@ Bool getShowAllChildrenInSearch()
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setShowAllChildrenInSearch(true);
+print(field.getShowAllChildrenInSearch().toString());
+```
+
 ## getShowFullPath()
 
 If true, list is preloaded so that the full path is shown.
@@ -214,6 +408,17 @@ Bool getShowFullPath()
 ```
 
 **Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setShowFullPath(true);
+print(field.getShowFullPath().toString());
+```
 
 ## getType()
 
@@ -240,6 +445,16 @@ Supports:
 - list
 </Note>
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+print(field.getType());
+```
+
 ## setAdditionalInfo(String)
 
 Sets additional info for the named list.
@@ -249,6 +464,17 @@ Void setAdditionalInfo(String info)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setAdditionalInfo("hierarchy=true&shortNames=true&onlyOwnCategories=true&excludeHistory=true&shortTooltip=true");
+print(field.getAdditionalInfo());
+```
 
 ## setAllowBlank(Bool)
 
@@ -260,6 +486,17 @@ Void setAllowBlank(Bool allowBlank)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setAllowBlank(false);
+print(field.getAllowBlank().toString());
+```
+
 ## setAllowRootSelection(Bool)
 
 Set to true if root selection is allowed.
@@ -270,6 +507,17 @@ Void setAllowRootSelection(Bool allowRoot)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setAllowRootSelection(false);
+print(field.getAllowRootSelection().toString());
+```
+
 ## setDays(Bool)
 
 Set to true if days is enabled, used with timespan field type.
@@ -279,6 +527,16 @@ Void setDays(Bool enable)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setDays(false);
+print(field.getDays().toString());
+```
 
 ## setDefault(String)
 
@@ -294,6 +552,17 @@ Void setDefault(String default)
 Can be used to set Integer, Date, DateTime, Time and String default value formatted as a String. For Float please use setDefaultFloat(Float).
 </Note>
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setDefault("1");
+print(field.getDefault());
+```
+
 ## setDefaultFloat(Float)
 
 Sets default float value. Only use for float field type.
@@ -303,6 +572,17 @@ Void setDefaultFloat(Float default)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setDefaultFloat(3.14);
+print(field.getDefaultFloat().toString(2));
+```
 
 ## setForceFlatList(Bool)
 
@@ -314,6 +594,17 @@ Void setForceFlatList(Bool enable)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setForceFlatList(false);
+print(field.getForceFlatList().toString());
+```
+
 ## setLabel(String)
 
 Sets label for field.
@@ -323,6 +614,17 @@ Void setLabel(String label)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setLabel("My label");
+print(field.getLabel());
+```
 
 ## setListName(String)
 
@@ -334,6 +636,16 @@ Void setListName(String listName)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+print(field.getListName());
+```
+
 ## setId(String)
 
 Set identifier for field.
@@ -343,6 +655,17 @@ Void setId(String identifier)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setId("assoc");
+print(field.getId());
+```
 
 ## setHideEmptyRootsInSearch(Bool)
 
@@ -354,6 +677,17 @@ Void setHideEmptyRootsInSearch(Bool enable)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setHideEmptyRootsInSearch(true);
+print(field.getHideEmptyRootsInSearch().toString());
+```
+
 ## setHours(Bool)
 
 Returns true if hours is enabled, used with timespan field type.
@@ -363,6 +697,16 @@ Void setHours(Bool enable)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setHours(false);
+print(field.getHours().toString());
+```
 
 ## setMandatory(Bool)
 
@@ -374,6 +718,17 @@ Void setMandatory(Bool mandatory)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setMandatory(true);
+print(field.getMandatory().toString());
+```
+
 ## setMinutes(Bool)
 
 Returns true if minutes is enabled, used with timespan field type.
@@ -383,6 +738,16 @@ Void setMinutes(Bool enable)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setMinutes(false);
+print(field.getMinutes().toString());
+```
 
 ## setPlaceholder(String)
 
@@ -394,6 +759,17 @@ Void setPlaceholder(String placeholder)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+field.setPlaceholder("Select associate");
+print(field.getPlaceholder());
+```
+
 ## setSeconds(Bool)
 
 Returns true if seconds is enabled, used with timespan field type.
@@ -403,6 +779,16 @@ Void setSeconds(Bool enable)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("timespan");
+field.setSeconds(false);
+print(field.getSeconds().toString());
+```
 
 ## setShowAllChildrenInSearch(Bool)
 
@@ -414,6 +800,17 @@ Void setShowAllChildrenInSearch(Bool enable)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setShowAllChildrenInSearch(true);
+print(field.getShowAllChildrenInSearch().toString());
+```
+
 ## setShowFullPath(Bool)
 
 If true, list is preloaded so that the full path is shown.
@@ -423,6 +820,17 @@ Void setShowFullPath(Bool enable)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("ejcategory");
+field.setShowFullPath(true);
+print(field.getShowFullPath().toString());
+```
 
 ## setType(String)
 
@@ -448,3 +856,13 @@ Supports:
 - timeSpan
 - list. Note: the "(No Selection)" option can be added by appending "WithNoSelection" to the list name e.g., field.setListName("associateWithNoSelection");
 </Note>
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition dialog;
+EventDataDialogField field;
+field.setType("list");
+field.setListName("associate");
+print(field.getType());
+```

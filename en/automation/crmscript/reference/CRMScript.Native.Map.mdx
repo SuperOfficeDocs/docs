@@ -111,8 +111,8 @@ String get(String key)
 
 ```crmscript
 Map m = Map("height=25\nwidth=10");
-String key = depth;
-printLine(m.get(key));
+String key = "height";
+printLine(m.get(key)); // prints 25
 ```
 
 ## getKey()
@@ -329,7 +329,7 @@ Void fromJson(String json)
 **Example:**
 
 ```crmscript
-String s = "{"depth":"7","height":"20","width":"12.500000"}";
+String s = '{"depth":"7","height":"20","width":"12.500000"}';
 Map m;
 m.fromJson(s);
 ```

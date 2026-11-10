@@ -3,8 +3,8 @@ title: Data Quality Agent
 description: Hold firmaene og personene som allerede finnes i CRM-en din nøyaktige, komplette og oppdaterte, med hver foreslåtte endring gjennomgått og godkjent av deg.
 keywords: ['AI-agent', 'berikelse', 'GDPR-samtykke', 'returnert e-post', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -46,7 +46,7 @@ Agenten foreslår. Du bestemmer. Hver foreslåtte endring gjennomgås og godkjen
 
 ## Tidsplan
 
-Agenten kjører **Daglig**, én gang om dagen på et systemtildelt tidspunkt. Du styrer hvor mange gjennomgangsoppgaver den oppretter hver dag med **Maks oppgaver per dag**, slik at gjennomgangsvolumet forblir håndterbart.
+Agenten kjører **Daglig**, én gang om dagen på et systemtildelt tidspunkt. Du styrer hvor mange gjennomgangsoppgaver den oppretter hver dag med **Maks antall oppgaver per dag**, slik at gjennomgangsvolumet forblir håndterbart.
 
 ## Aktiver agenten {#setup}
 
@@ -56,7 +56,7 @@ Du er automatisk godkjenner for postene den gjennomgår, og du kan opprette én 
 
     Første gang du åpner **Agenter**-siden, må du logge inn og godkjenne AI-agenter i SuperOffice.
 
-1. Finn kortet for **Data Quality Agent** i **Agentoversikt**, og klikk på **Aktiver**. Dette åpner oppsettveiviseren.
+1. Finn kortet for **Data Quality Agent** i **Oversikt**, og klikk på **Aktiver**. Dette åpner oppsettveiviseren.
 
     ![Agentoversikt, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
 
@@ -74,7 +74,7 @@ Du er automatisk godkjenner for postene den gjennomgår, og du kan opprette én 
 
 1. Velg **Rapporteringsspråk**. Dette påvirker både rapporter og chattesvar.
 
-1. Velg hvor mange gjennomgangsoppgaver agenten oppretter per dag (1-30). Standard **Maks oppgaver per dag** er 10.
+1. Velg hvor mange gjennomgangsoppgaver agenten oppretter per dag (1-30). Standarden er 10.
 
 1. Aktiver eventuelt **Berik kontakter**. Når dette er på, foreslår agenten også manglende personer og korrigerte returnerte e-postadresser, med e-post- og telefondetaljer der den finner dem. Når det er av, flagger den bare manglene.
 
@@ -100,7 +100,7 @@ Du er automatisk godkjenner for postene den gjennomgår, og du kan opprette én 
 
 1. Velg fanen **Chat**.
 
-1. Klikk på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> og velg **Venter**.
+1. Klikk på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> og velg **Venter**. Listen viser **Nylig** som standard, som også inkluderer det du godkjente de siste 6 timene.
 
 1. Velg en firmagjennomgangstråd (<i class="ph ph-buildings" aria-label="Firma-ikon"></i>) fra listen.
 
@@ -133,7 +133,7 @@ Du godkjenner eller avviser alt som er funnet for et firma som én samlet beslut
 
 1. Velg fanen **Chat**.
 
-1. Be agenten i **Generell**-chatten om å sjekke et bestemt firma nå, for eksempel *sjekk Acmes data*, eller slå opp nåværende detaljer for et firma eller en person.
+1. Be agenten i **Generell chat** om å sjekke et bestemt firma nå, for eksempel *sjekk Acmes data*, eller slå opp nåværende detaljer for et firma eller en person.
 
 1. Hvis den finner reelle endringer å foreslå på denne måten, oppretter den en normal gjennomgangsoppgave for det, akkurat som et firma funnet på den daglige planlagte kjøringen. Gjennomgå det som beskrevet ovenfor.
 
@@ -155,9 +155,11 @@ Klikk på <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for �
 
 **Hva skjer hvis jeg avviser?** Ingenting skrives. Gjennomgangen forkastes.
 
-**Kan jeg avgjøre flere gjennomganger samtidig?** Ja. Velg flere ventende gjennomganger og bruk **Godkjenn** eller **Avvis** fra fellespanelet. Å godkjenne flere samtidig skriver alle endringer i alle valgte gjennomganger samtidig, så samme "kan ikke angres"-forbehold gjelder for hver av dem.
+**Kan jeg avgjøre flere gjennomganger samtidig?** Ja. Hold nede Ctrl (Cmd på Mac) og velg ventende gjennomganger. Eller merk av i avmerkingsboksen ved siden av listeoverskriften for å velge alle ventende gjennomganger, opptil 50 om gangen. Bruk deretter **Godkjenn** eller **Avvis** fra fellespanelet. Se [Avgjør flere oppgaver samtidig][4]. Å godkjenne flere samtidig skriver alle endringer i alle valgte gjennomganger samtidig, så samme "kan ikke angres"-forbehold gjelder for hver av dem.
 
-**Hva skjer med en gjennomgang jeg ikke får behandlet i tide?** En gjennomgang som venter på godkjenning har en begrenset levetid, **30 dager som standard**. Når den er innen 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis du ikke handler i tide, forkastes den automatisk, og agenten fortsetter. Ingenting skrives for en utløpt gjennomgang.
+**Kan jeg vurdere agentens svar?** Ja, hvis du er godkjenner. Se [Vurder et svar][5].
+
+**Hva skjer med en gjennomgang jeg ikke får behandlet i tide?** En gjennomgang som venter på godkjenning har en begrenset levetid, **14 dager som standard**. Når den er innen 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis du ikke handler i tide, forkastes den automatisk, og agenten fortsetter. Ingenting skrives for en utløpt gjennomgang.
 
 **Jeg deaktiverte instansen, og de ventende gjennomgangene mine er borte.** Å deaktivere en instans forkaster alle gjennomganger som venter på godkjenning, som beskrevet i [Sett opp AI-agenter][1]. Hvis du vil beholde dem, må du først godkjenne eller avvise dem.
 
@@ -165,6 +167,8 @@ Bare instansens eier kan endre innstillingene eller slette den.
 
 [1]: /no/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /no/ai/learn/set-up-ai-agents#bulk
+[5]: /no/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png

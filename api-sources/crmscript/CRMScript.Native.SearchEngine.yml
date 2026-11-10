@@ -58,7 +58,7 @@ items:
   type: Class
   summary: "\nA tool for building up SQL queries, by adding fields, criteria, and data. The fields must be given on the following form: starttablename.fieldname, for example &quot;ticket.title&quot;. For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: &quot;ticket.cust_id.firstname&quot;. The company name of the primary customer of a ticket is: &quot;ticket.cust_id.company.name&quot;.<p></p>\nMake sure that all fields you use that start with the same table, for example, ticket, or else you will receive a big join that you probably do not want.<p></p>\nFor many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is a field in table2 that has a foreign key to table1.<p></p>\nFrom CS version 7, the aggregate functions are no longer supported, since the query is sent to NetServer instead of directly to the database. It is possible to circumvent this by setting the reg_id 235 to 1 and explicitly use bypassNetserver(true) in the SearchEngine. Be aware of any security implications this might cause.\n"
   example: 
-  - "\n<pre><code>ticket.(ticket_customers->ticket_id).cust_id</code></pre>\n"
+  - "\n<pre><code>SearchEngine se;\nse.addField(&quot;ticket.(ticket_customers->ticket_id).cust_id&quot;);</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.#ctor
   commentId: M:CRMScript.Native.SearchEngine.#ctor
   id: '#ctor'
@@ -290,7 +290,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>se.addDataField(&quot;customer.phone&quot;, &quot;customer.cellphone&quot;);</code></pre>\n"
+  - "\n<pre><code>SearchEngine se;\nse.addDataField(&quot;customer.phone&quot;, &quot;customer.cellphone&quot;);</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.addDataField(String,String,String)
   commentId: M:CRMScript.Native.SearchEngine.addDataField(String,String,String)
   id: 'addDataField(String,String,String)'
@@ -389,7 +389,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>addFields(&quot;ticket&quot;, &quot;id,title,category.fullname,cust_id.fullName&quot;);</code></pre>\n"
+  - "\n<pre><code>SearchEngine se;\nse.addFields(&quot;ticket&quot;, &quot;id,title,category.fullname,cust_id.fullName&quot;);</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.addHaving(String,String,String,String,Integer)
   commentId: M:CRMScript.Native.SearchEngine.addHaving(String,String,String,String,Integer)
   id: 'addHaving(String,String,String,String,Integer)'
@@ -1093,7 +1093,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "se.setDistinct(&quot;ticked.id&quot;); There will only be one entry with the same ticket ID, very useful with many to many relations."
+  - "<pre><code>SearchEngine se;\nse.setDistinct(&quot;ticket.id&quot;); // There will only be one entry with the same ticket ID, very useful with many to many relations.</code></pre>"
 - uid: CRMScript.Native.SearchEngine.setGroup(Bool)
   commentId: M:CRMScript.Native.SearchEngine.setGroup(Bool)
   id: 'setGroup(Bool)'

@@ -337,7 +337,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>HtmlElement selectDate;\nselectDate.setValue(&quot;2020.09.10&quot;);</code></pre><pre><code>HtmlElement t;\nt.setValue(&quot;x_boolean&quot;, &quot;1&quot;)</code></pre>\n"
+  - "\n<pre><code>HtmlElement selectDate = getHtmlElement(&quot;selectDate&quot;);\nselectDate.setValue(&quot;2020.09.10&quot;);</code></pre><pre><code>HtmlElement t = getHtmlElement(&quot;x_boolean&quot;);\nt.setValue(&quot;1&quot;);</code></pre>\n"
 - uid: CRMScript.Native.HtmlElement.toBool()
   commentId: M:CRMScript.Native.HtmlElement.toBool()
   id: 'toBool()'

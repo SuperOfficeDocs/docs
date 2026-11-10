@@ -3,9 +3,9 @@ uid: sofo-create-request
 title: Add request or message
 description: Add request or message
 keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'create request', 'add message', 'SOFO']
-author: Erik Lebiko, digitaldiina
-date: 10.29.2024
-version_sofo: 2024.8.12
+author: Erik Lebiko, digitaldiina, schildea
+date: 11.09.2026
+version_sofo: 6.4.12
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -24,23 +24,29 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/create-request
 ---
 
+import StepCheckContact from "./snippets/step-check-contact.mdx";
+
 You can create a [request][1] in SuperOffice directly from Outlook. If the email relates to an ongoing issue, you can attach the message to a specific request.
 
 ## Create request
 
 1. Open the email related to the request.
 
-1. In the **SuperOffice** Outlook sidebar, select **Create request in SuperOffice**.
+1. <StepCheckContact />
 
-1. Choose the appropriate queue for the new request.
+1. Select **Create request in SuperOffice** in the sidebar.
+
+1. In **Add request to this queue**, select the queue to create the request in.
 
 1. Click **Save**.
 
 ## Add message
 
-1. In the **SuperOffice** Outlook sidebar, select **Add message to request**.
+1. <StepCheckContact />
 
-1. Search for the request by ID or title and select it.
+1. Select **Add message to request** in the sidebar.
+
+1. In **Request**, search for the request by its ID and select it. Search is limited, so the ID is the most reliable way to find the request. SuperOffice adds the email as a message to that request.
 
 1. Click **Save**.
 

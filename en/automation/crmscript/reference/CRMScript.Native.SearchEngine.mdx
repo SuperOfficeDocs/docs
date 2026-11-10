@@ -295,6 +295,7 @@ Can only be used in update() queries.
 **Example:**
 
 ```crmscript
+SearchEngine se;
 se.addDataField("customer.phone", "customer.cellphone");
 ```
 
@@ -377,7 +378,8 @@ Void addFields(String table, String fields)
 **Example:**
 
 ```crmscript
-addFields("ticket", "id,title,category.fullname,cust_id.fullName");
+SearchEngine se;
+se.addFields("ticket", "id,title,category.fullname,cust_id.fullName");
 ```
 
 ## addHaving(String,String,String,String,Integer)
@@ -820,6 +822,13 @@ Void setDistinct(String field)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+SearchEngine se;
+se.setDistinct("ticket.id"); // There will only be one entry with the same ticket ID, very useful with many to many relations.
+```
 
 ## setGroup(Bool)
 

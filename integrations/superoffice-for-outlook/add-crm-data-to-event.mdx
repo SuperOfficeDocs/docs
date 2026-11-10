@@ -5,8 +5,8 @@ sidebarTitle: Add CRM data to events
 description: Link a meeting you're scheduling, or an existing calendar event, to SuperOffice contacts and companies so Synchronizer writes it to SuperOffice.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'calendar', 'meeting', 'event', 'appointment', 'CRM data', 'Synchronizer', 'auto save', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 11.04.2026
-version_sofo: 2026.6.4
+date: 11.09.2026
+version_sofo: 6.4.12
 content_type: howto
 category: integration
 topic: SuperOffice for Outlook
@@ -29,7 +29,9 @@ redirect_from:
   - /sv/email/superoffice-for-outlook/learn/add-crm-data-to-event
 ---
 
-Link a calendar event in Outlook to the right companies and contacts in SuperOffice. You can do this while you schedule a new meeting, or later on an event that's already in your calendar. Your changes [save automatically][4], and Synchronizer for SuperOffice writes the event with its CRM data to SuperOffice.
+import StepFindContactOrCompany from "./snippets/step-find-contact-or-company.mdx";
+
+Link a calendar event in Outlook to the correct companies and contacts in SuperOffice. You can do this while you schedule a new meeting, or later on an event that's already in your calendar. Your changes [save automatically][4], and Synchronizer for SuperOffice writes the event with its CRM data to SuperOffice.
 
 In this article, **event** means any calendar item in Outlook, matching the **New event** button. Microsoft defines a meeting as an event where you invite other people or reserve resources.
 
@@ -55,13 +57,26 @@ When you select a value in a field, a spinner appears, and then **Saved** shows 
 
 1. Add people to the **Invite attendees** field in Outlook.
 
-    ![SuperOffice for Outlook, add CRM data to event -screenshot][img1]
+    If SuperOffice finds one matching contact, the **Contact or Company** field auto-fills.
 
-    * If an attendee is stored in SuperOffice, their details appear, and **Contact or Company** is filled in automatically.
-    * If a contact is found but **Contact or Company** isn't filled in, several contacts in SuperOffice share the same email address. Click **Select Contact** and choose the right one.
-    * If no contact is found, select **Click to add new contact** and enter the required details.
+    * If several contacts in SuperOffice share the attendee's email address, click **Select contact** and choose the correct one.
+    * If the attendee isn't in SuperOffice, select **Click to add new contact**. See [Select or add a contact][5].
 
-1. To link the event to a different company or contact, type part of the name in **Contact or Company** to narrow the list, then select the company or contact. The search follows your preference for [former employees][5].
+        ![SuperOffice for Outlook, unknown contact -screenshot][img1]
+
+1. (Optional) To invite a contact from SuperOffice, select **Invite contact from SuperOffice** in the panel.
+
+    Select **Required** or **Optional**. Then search for the contact in **Contact** and select it. This field lists contacts only, not companies.
+
+    <StepFindContactOrCompany />
+
+    SuperOffice adds the contact to the event.
+
+1. To link the event to a different contact or company, use **Contact or Company**.
+
+    <StepFindContactOrCompany />
+
+    ![Contact card shown when you hover over a contact in the Contact or Company list -screenshot][img2]
 
 1. Send the event in Outlook, or save it if you're not inviting anyone. You don't need to save anything in SuperOffice for Outlook.
 
@@ -73,7 +88,7 @@ When you select a value in a field, a spinner appears, and then **Saved** shows 
 
 1. Review the CRM data shown for the attendees. If there's none, the add-in tries to find the organizer in SuperOffice.
 
-1. Select a contact, or add a new one, as described for a new event.
+1. Select a contact, add a new one, or invite one from SuperOffice, as described for a new event.
 
 1. Close the event when you're done. Your changes are already saved to the event.
 
@@ -93,6 +108,7 @@ Events created in SuperOffice and synchronized to Outlook are view-only in Outlo
 [2]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
 [3]: ./shared-mailboxes
 [4]: #auto-save
-[5]: ./archive-email#former-employees
+[5]: ./add-contact-to-superoffice
 
-[img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-calendar-event.png
+[img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-unknown-contact.png
+[img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png

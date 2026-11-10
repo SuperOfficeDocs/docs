@@ -83,7 +83,7 @@ items:
   nameWithType: NSTicketMessage.GetContactDepartment()
   fullName: CRMScript.NetServer.NSTicketMessage.GetContactDepartment()
   type: Method
-  summary: "\\n"
+  summary: # TODO
   remarks: 
   syntax: 
     content: String GetContactDepartment()

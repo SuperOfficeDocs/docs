@@ -29,7 +29,7 @@ items:
   type: Class
   summary: "\nGives you access to contextual information in an event handler. For example, the name of a created company or the amount of a sale.<p></p>\nYou can also check EventData properties after the event handler has run, to for example display a message or prevent an entity from being saved.\n"
   example: 
-  - "\n<pre><code>EventData ed = getEventData();\n\nMap sourceIds;\nsourceIds.insert(&quot;11&quot;, &quot;&quot;);\nsourceIds.insert(&quot;128&quot;, &quot;&quot;);\nsourceIds.insert(&quot;135&quot;, &quot;&quot;);\n\nif (sourceIds.exists(sourceId.toString())){\n  // ...\n}</code></pre>Check if a sale has a high enough value. Return a message and block the sale for values &lt; 100. Set for the event &quot;Before save sale&quot;.<p></p>\n<pre><code>EventData ed = getEventData();\n\nif (ed.getInputValue(&quot;SaleEntity.Amount&quot;).toInteger() &lt; 100)\n{\n  ed.setBlockExecution(true); // Prevents save\n  ed.setMessage(&quot;Amount too low&quot;);\n}</code></pre>\n"
+  - "\n<pre><code>EventData ed = getEventData();\nInteger sourceId = 128; // the ID to check\n\nMap sourceIds;\nsourceIds.insert(&quot;11&quot;, &quot;&quot;);\nsourceIds.insert(&quot;128&quot;, &quot;&quot;);\nsourceIds.insert(&quot;135&quot;, &quot;&quot;);\n\nif (sourceIds.exists(sourceId.toString())){\n  // ...\n}</code></pre>Check if a sale has a high enough value. Return a message and block the sale for values &lt; 100. Set for the event &quot;Before save sale&quot;.<p></p>\n<pre><code>EventData ed = getEventData();\n\nif (ed.getInputValue(&quot;SaleEntity.Amount&quot;).toInteger() &lt; 100)\n{\n  ed.setBlockExecution(true); // Prevents save\n  ed.setMessage(&quot;Amount too low&quot;);\n}</code></pre>\n"
 - uid: CRMScript.Native.EventData.#ctor
   commentId: M:CRMScript.Native.EventData.#ctor
   id: '#ctor'
@@ -308,7 +308,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>Integer newOrgNr = 987654321;\nEventData ed = getEventData();\ned.setOutputValue(&quot;ContactEntity.OrgNr&quot;, newOrgNr);</code></pre><pre><code>EventData ed = getEventData();\nString projectId = ed.getInputValue(&quot;ProjectEntity.ProjectId&quot;);\n\nSearchEngine se;\nse.bypassNetServer(true);\nse.addField(&quot;sale.amount&quot;, &quot;sum&quot;);\nse.addCriteria(&quot;sale.project_id&quot;, &quot;Equals&quot;, projectId);\n\nif(se.select() &gt; 0) {\n  ed.setOutputValue(&quot;ProjectEntity.UserDefinedFields.SuperOffice:1&quot;, &quot;[F:&quot; + se.getField(0) + &quot;]&quot;);\n}</code></pre>\n"
+  - "\n<pre><code>Integer newOrgNr = 987654321;\nEventData ed = getEventData();\ned.setOutputValue(&quot;ContactEntity.OrgNr&quot;, newOrgNr.toString());</code></pre><pre><code>EventData ed = getEventData();\nString projectId = ed.getInputValue(&quot;ProjectEntity.ProjectId&quot;);\n\nSearchEngine se;\nse.bypassNetServer(true);\nse.addField(&quot;sale.amount&quot;, &quot;sum&quot;);\nse.addCriteria(&quot;sale.project_id&quot;, &quot;Equals&quot;, projectId);\n\nif(se.select() &gt; 0) {\n  ed.setOutputValue(&quot;ProjectEntity.UserDefinedFields.SuperOffice:1&quot;, &quot;[F:&quot; + se.getField(0) + &quot;]&quot;);\n}</code></pre>\n"
 - uid: CRMScript.Native.EventData.setStateValue(String,String)
   commentId: M:CRMScript.Native.EventData.setStateValue(String,String)
   id: 'setStateValue(String,String)'
@@ -379,7 +379,7 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>EventData ed = getEventData();\nEventDataDialogDefinition dialog;\ndialog.setTitle(&quot;My dialog title&quot;);\ndialog.setType(&quot;okcancel&quot;);\ndialog.setIcon(&quot;info&quot;);\ndialog.setWidth(200);\ndialog.setHeight(200);\ndialog.setPrefix(&quot;step1_&quot;);\ndialog.setText(&quot;My body text&quot;);\ned.showDialog(dialog);\n</pre></code>\n"
+  - "\n<pre><code>EventData ed = getEventData();\nEventDataDialogDefinition dialog;\ndialog.setTitle(&quot;My dialog title&quot;);\ndialog.setType(&quot;okcancel&quot;);\ndialog.setIcon(&quot;info&quot;);\ndialog.setWidth(200);\ndialog.setHeight(200);\ndialog.setPrefix(&quot;step1_&quot;);\ndialog.setText(&quot;My body text&quot;);\ned.showDialog(dialog);\n</code></pre>\n"
 references:
 - uid: CRMScript.Native.EventData
   commentId: T:CRMScript.Native.EventData

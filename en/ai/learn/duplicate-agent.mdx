@@ -3,8 +3,8 @@ title: Duplicate Agent
 description: Find and merge duplicate companies and contacts, and reconnect orphaned contacts that have lost their company, with every change approved by you.
 keywords: ['data quality', 'AI agent', 'merge companies', 'duplicate companies', 'duplicate contacts', 'duplicate persons', 'orphaned contact']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -46,9 +46,11 @@ The agent proposes. You decide. No records are merged or linked until you approv
 
 ## Schedule
 
-The agent runs **Daily**, once a day at a system-assigned time.
+The agent runs **Daily**, once a day at a system-assigned time. You control how many suggestions it creates each day with **Max tasks per day**.
 
-There is no daily limit on how many companies it checks. The agent keeps up to 50 suggestions of each type (company merges, contact merges, and orphaned contacts) waiting for your decision. Once you approve or reject enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
+The limit applies to each of the agent's three checks separately: duplicate companies, duplicate contacts, and orphaned contacts. With the default of 25, you could receive up to 75 new suggestions in a day. It limits suggestions, not the records checked.
+
+The agent keeps up to 50 suggestions of each type (company merges, contact merges, and orphaned contacts) waiting for your decision. Once you approve or reject enough to free up room, its next scheduled scan tops that type back up toward 50. This happens only if there is more to find.
 
 ## Activate the agent {#setup}
 
@@ -70,11 +72,13 @@ Setup is a single step. You are automatically the approver, and you can create o
 
 1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
 
-    ![The Duplicate Agent's General settings, with Name, Description, Reporting language, and Schedule -screenshot][img1]
+    ![The Duplicate Agent's General settings, with Name, Description, Reporting language, Schedule, and Max tasks per day -screenshot][img1]
 
 1. Optionally, edit the suggested **Description** if you want something different.
 
 1. Choose **Reporting language**. This affects both reports and chat replies.
+
+1. Select how many suggestions the agent creates per day (5-50). The default is 25.
 
 1. Select **Save**.
 
@@ -82,7 +86,7 @@ Setup is a single step. You are automatically the approver, and you can create o
 
 1. Select **Go to instance** to open your new Duplicate Agent and [get started][3].
 
-Before reviewing, select the **Chat** tab, then select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending** to narrow a busy queue to suggestions awaiting your decision.
+Before reviewing, select the **Chat** tab. Then select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending** to narrow a busy queue to suggestions awaiting your decision. The list shows **Recent** by default, which also includes what you approved in the last 6 hours.
 
 ## Merge suggestion: duplicate companies {#merge-companies}
 
@@ -175,9 +179,11 @@ Select <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull i
 
 **What happens if I reject or ignore?** Nothing changes. Both records are kept as they are.
 
-**Can I decide on several suggestions at once?** Yes. Select multiple pending suggestions and use **Approve** or **Reject** from the bulk panel, the same way as any other agent.
+**Can I decide on several suggestions at once?** Yes. Select multiple pending suggestions. Or select the checkbox next to the list heading to select all of them, up to 50 at a time. See [Decide on several tasks at once][4]. Bulk **Approve** works only for company merges. Duplicate-contact merges and orphaned-contact links can only be rejected in bulk, so approve those one at a time.
 
-**What happens to a suggestion I do not get to in time?** A suggestion awaiting your decision has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded, and the agent moves on. Nothing is changed for an expired suggestion, and the same pair may be surfaced again on a later check.
+**Can I rate the agent's responses?** Yes, if you are an approver. See [Rate a response][5].
+
+**What happens to a suggestion I do not get to in time?** A suggestion awaiting your decision has a limited lifetime, **14 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded, and the agent moves on. Nothing is changed for an expired suggestion, and the same pair may be surfaced again on a later check.
 
 **I deactivated the instance and my pending suggestions are gone.** Deactivating an instance discards any suggestions awaiting approval, as described in [Set up AI agents][1]. Approve or reject what you need first if you want to keep them.
 
@@ -185,6 +191,8 @@ Only the instance's owner can change its settings or delete it.
 
 [1]: /en/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /en/ai/learn/set-up-ai-agents#bulk
+[5]: /en/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/duplicate-agent-settings.png
 [img2]: /media/loc/en/ai/duplicate-company-comparison.png
