@@ -1,10 +1,10 @@
 ---
 title: Arbejd med Lead Agent
-description: Gennemgå og godkend de emner, Lead Agent finder, ved hjælp af dens faner Chat, Historik og Performance.
+description: Gennemgå og godkend de emner, Lead Agent finder, ved hjælp af dens faner Chat, Historik og Ydeevne.
 keywords: ['lead agent', 'emnerapport', 'find leads', 'godkend lead', 'afvis lead', 'AI-agenter']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: howto
 tier: plus
 category: sale
@@ -30,10 +30,10 @@ Når [Lead Agent er sat op][1], kører den i baggrunden hver dag og bringer emne
 ## Find din agent
 
 1. Vælg <i class="ph ph-robot" aria-label="Agenter ikon"></i> **Agenter** i Navigator.
-1. Vælg Lead Agent-instansen fra listen **Mine agenter** eller Lead Agent-kortet i **Agentoversigt**.
+1. Vælg Lead Agent-instansen fra listen **Mine agenter** eller Lead Agent-kortet i **Oversigt over agenter**.
 
 ![Valg af Lead Agent-instansen fra listen Mine agenter -screenshot][img8]
-![Valg af Lead Agent-instansen fra Agentoversigt -screenshot][img9]
+![Valg af Lead Agent-instansen fra Oversigt over agenter -screenshot][img9]
 
 ## Agentens arbejdsområde
 
@@ -59,16 +59,16 @@ Fanen **Historik** er en detaljeret log over alt, hvad agenten har gjort: behand
 Denne fane er kun tilgængelig for agentens ejer og dens godkendere.
 </Note>
 
-### Performance
+### Ydeevne
 
-Fanen **Performance** viser, hvordan instansen præsterer over en periode, du vælger: behandlede links, kvalificerede leads, undersøgte leads, leads sendt til godkendelse, godkendte, afviste, udløbne og gennemførte kørsler. Hver måling vises som et trenddiagram.
+Fanen **Ydeevne** viser, hvordan instansen præsterer over en periode, du vælger: behandlede links, kvalificerede leads, undersøgte leads, leads sendt til godkendelse, godkendte, afviste, udløbne og gennemførte kørsler. Hver måling vises som et trenddiagram.
 
-![Fanen Performance -screenshot][img7]
+![Fanen Ydeevne -screenshot][img7]
 
 ## Gennemgå et emne
 
 1. Vælg fanen **Chat**.
-1. Klik på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i>, og vælg **Afventende**.
+1. Klik på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i>, og vælg **Afventende**. Listen viser som standard **Seneste**, som også omfatter det, du har godkendt inden for de seneste 6 timer.
 1. Vælg et lead fra listen for at vise agentens **emnerapport**.
 
     * Rapporten åbnes sammenfoldet til det væsentligste: en matchvurdering, kilderne den brugte, og nøgletal.
@@ -82,7 +82,7 @@ Fanen **Performance** viser, hvordan instansen præsterer over en periode, du v�
 ## Undersøg et bestemt firma
 
 1. Vælg fanen **Chat**.
-1. Bed agenten om at undersøge et bestemt firma i den **Generelle** chat.
+1. Bed agenten om at undersøge et bestemt firma i tråden **Generel chat**.
 1. Hvis der findes et reelt lead, tilføjes emnerapporten til listen. Gennemgå den som beskrevet ovenfor.
 
 ![Fanen Chat: Generel chat og lead-tråde pr. firma -screenshot][img2]
@@ -118,7 +118,9 @@ Hvis du beslutter ikke at tilføje et emne til SuperOffice, har du to muligheder
 ![Leadet markeret Afvist efter bekræftelse -screenshot][img13]
 
 <Tip>
-Vælg flere afventende emner, og klik på **Afvis** for at afvise dem alle på én gang og rydde op i listen.
+Vælg flere afventende emner, og klik på **Afvis** for at afvise dem alle på én gang og rydde op i listen. Vælg afkrydsningsfeltet ved siden af listeoverskriften for at vælge alle afventende emner, op til 50 ad gangen, som beskrevet i [Beslut om flere opgaver på én gang][2].
+
+Du kan også godkende flere emner på én gang. Det statiske udvalg, du vælger, gælder for alle firmaer, der godkendes i batchen.
 
 Brug filteret til kun at vise afviste emner.
 </Tip>
@@ -127,13 +129,17 @@ Brug filteret til kun at vise afviste emner.
 
 ## Fejlfinding
 
-**Et lead, jeg var ved at gennemgå, forsvandt.** Et lead, der afventer godkendelse, har en begrænset levetid: som standard 30 dage. Et nedtællingsbanner vises, når det er inden for 5 dage fra at udløbe. Hvis det ikke godkendes eller afvises i tide, udløber det, og intet gemmes i dit CRM.
+**Et lead, jeg var ved at gennemgå, forsvandt.** Et lead, der afventer godkendelse, har en begrænset levetid: som standard 21 dage. Et nedtællingsbanner vises, når det er inden for 5 dage fra at udløbe. Hvis det ikke godkendes eller afvises i tide, udløber det, og intet gemmes i dit CRM.
+
+**Kan jeg bedømme agentens svar?** Ja, hvis du er godkender. Se [Bedøm et svar][3].
 
 **Jeg deaktiverede instansen, og mine afventende leads er væk.** At deaktivere en instans kasserer alle leads, der afventer godkendelse. Godkend eller afvis det, du har brug for, først, hvis du vil beholde det.
 
 **Jeg kan se instansens indstillinger, men kan ikke ændre noget.** Du er en godkender, ikke ejeren. Kun instansens ejer kan gemme ændringer i dens opsætning. En godkender, der ikke er ejeren, kan se, men ikke redigere den.
 
 [1]: set-up-lead-agent
+[2]: /da/ai/learn/set-up-ai-agents#bulk
+[3]: /da/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/lead/lead-agent-general-chat.png
 [img2]: /media/loc/en/lead/lead-chat-threads.png

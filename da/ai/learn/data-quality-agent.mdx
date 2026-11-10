@@ -3,8 +3,8 @@ title: Data Quality Agent
 description: Hold de firmaer og personer, der allerede findes i dit CRM, nøjagtige, komplette og opdaterede, med hver foreslået ændring gennemgået og godkendt af dig.
 keywords: ['AI-agent', 'berigelse', 'GDPR-samtykke', 'afvist e-mail', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -46,7 +46,7 @@ Agenten foreslår. Du beslutter. Hver foreslået ændring gennemgås og godkende
 
 ## Tidsplan
 
-Agenten kører **Dagligt**, én gang om dagen på et systemtildelt tidspunkt. Du styrer, hvor mange gennemgangsopgaver den skaber hver dag, med **Maks. opgaver pr. dag**, så gennemgangsvolumen forbliver overskuelig.
+Agenten kører **Dagligt**, én gang om dagen på et systemtildelt tidspunkt. Du styrer, hvor mange gennemgangsopgaver den skaber hver dag, med **Maksimalt antal opgaver pr. dag**, så gennemgangsvolumen forbliver overskuelig.
 
 ## Aktivér agenten {#setup}
 
@@ -56,12 +56,12 @@ Du er automatisk godkender for de poster, den gennemgår, og du kan oprette én 
 
     Første gang du åbner siden **Agenter**, skal du logge ind og godkende AI-agenter i SuperOffice.
 
-1. Find kortet **Data Quality Agent** i **Agentoversigt**, og klik på **Aktivér**. Dette åbner opsætningsguiden.
+1. Find kortet **Data Quality Agent** i **Oversigt over agenter**, og klik på **Aktivér**. Dette åbner opsætningsguiden.
 
-    ![Agentoversigten, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
+    ![Oversigten over agenter, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
 
     <Tip>
-    Kan du ikke se kortet? Klik på **Gennemse agenter** for at finde det.
+    Kan du ikke se kortet? Klik på **Se agenter** for at finde det.
     </Tip>
 
 ## Generelle indstillinger {#settings}
@@ -74,7 +74,7 @@ Du er automatisk godkender for de poster, den gennemgår, og du kan oprette én 
 
 1. Vælg **Rapporteringssprog**. Dette påvirker både rapporter og chatsvar.
 
-1. Vælg, hvor mange gennemgangsopgaver agenten skaber pr. dag (1-30). Standarden for **Maks. opgaver pr. dag** er 10.
+1. Vælg, hvor mange gennemgangsopgaver agenten skaber pr. dag (1-30). Standarden for **Maksimalt antal opgaver pr. dag** er 10.
 
 1. Aktivér valgfrit **Berig kontakter**. Når den er slået til, foreslår agenten også manglende kontaktpersoner og korrigerede afviste e-mailadresser, med e-mail- og telefonoplysninger, hvor den finder dem. Når den er slået fra, markerer den kun hullerne.
 
@@ -100,7 +100,7 @@ Du er automatisk godkender for de poster, den gennemgår, og du kan oprette én 
 
 1. Vælg fanen **Chat**.
 
-1. Klik på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i>, og vælg **Afventende**.
+1. Klik på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i>, og vælg **Afventende**. Listen viser som standard **Seneste**, som også omfatter det, du har godkendt inden for de seneste 6 timer.
 
 1. Vælg en firmagennemgangstråd (<i class="ph ph-buildings" aria-label="Firmaikon"></i>) fra listen.
 
@@ -133,7 +133,7 @@ Du godkender eller afviser alt, der er fundet for et firma, som én samlet beslu
 
 1. Vælg fanen **Chat**.
 
-1. I **Generel** chat skal du bede agenten om at kontrollere et bestemt firma nu, for eksempel *kontrollér Acmes data*, eller slå et firmas eller en persons aktuelle oplysninger op.
+1. I tråden **Generel chat** skal du bede agenten om at kontrollere et bestemt firma nu, for eksempel *kontrollér Acmes data*, eller slå et firmas eller en persons aktuelle oplysninger op.
 
 1. Hvis den finder ægte ændringer at foreslå på denne måde, opretter den en normal gennemgangsopgave for det, præcis som et firma fundet på den daglige planlagte kørsel. Gennemgå det som beskrevet ovenfor.
 
@@ -155,9 +155,11 @@ Klik på <i class="ph ph-arrow-clockwise" aria-label="Opdateringsikon"></i> for 
 
 **Hvad sker der, hvis jeg afviser?** Intet skrives. Gennemgangen kasseres.
 
-**Kan jeg beslutte om flere gennemgange på én gang?** Ja. Vælg flere afventende gennemgange, og brug **Godkend** eller **Afvis** fra bulk-panelet. At godkende en batch skriver hver ændring i hver valgt gennemgang på én gang, så den samme "kan ikke fortrydes"-advarsel gælder for hver af dem.
+**Kan jeg beslutte om flere gennemgange på én gang?** Ja. Hold Ctrl (Cmd på Mac) nede, og vælg afventende gennemgange, eller vælg afkrydsningsfeltet ved siden af listeoverskriften for at vælge alle afventende gennemgange, op til 50 ad gangen. Brug derefter **Godkend** eller **Afvis** fra bulk-panelet, som beskrevet i [Beslut om flere opgaver på én gang][4]. At godkende en batch skriver hver ændring i hver valgt gennemgang på én gang, så den samme "kan ikke fortrydes"-advarsel gælder for hver af dem.
 
-**Hvad sker der med en gennemgang, jeg ikke får behandlet i tide?** En gennemgang, der afventer godkendelse, har en begrænset levetid, **30 dage som standard**. Når den er inden for 5 dage fra at udløbe, vises et nedtællingsbanner på dens tråd. Hvis du ikke handler i tide, kasseres den automatisk, og agenten går videre. Der gemmes ingenting for en udløbet gennemgang.
+**Kan jeg bedømme agentens svar?** Ja, hvis du er godkender. Se [Bedøm et svar][5].
+
+**Hvad sker der med en gennemgang, jeg ikke får behandlet i tide?** En gennemgang, der afventer godkendelse, har en begrænset levetid, **14 dage som standard**. Når den er inden for 5 dage fra at udløbe, vises et nedtællingsbanner på dens tråd. Hvis du ikke handler i tide, kasseres den automatisk, og agenten går videre. Der gemmes ingenting for en udløbet gennemgang.
 
 **Jeg deaktiverede instansen, og mine afventende gennemgange er væk.** At deaktivere en instans kasserer alle gennemgange, der afventer godkendelse, som beskrevet i [Opsæt AI-agenter][1]. Godkend eller afvis det, du har brug for, først, hvis du vil beholde det.
 
@@ -165,6 +167,8 @@ Kun instansens ejer kan ændre dens indstillinger eller slette den.
 
 [1]: /da/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /da/ai/learn/set-up-ai-agents#bulk
+[5]: /da/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png

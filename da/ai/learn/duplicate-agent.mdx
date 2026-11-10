@@ -3,8 +3,8 @@ title: Duplicate Agent
 description: Find og sammenlæg duplikerede firmaer og personer, og genforbind forældreløse personer, der har mistet deres firma, med hver ændring godkendt af dig.
 keywords: ['datakvalitet', 'AI-agent', 'sammenlæg firmaer', 'duplikerede firmaer', 'duplikerede personer', 'forældreløs person']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -46,9 +46,11 @@ Agenten foreslår. Du beslutter. Ingen poster sammenlægges eller forbindes, fø
 
 ## Tidsplan
 
-Agenten kører **Dagligt**, én gang om dagen på et systemtildelt tidspunkt.
+Agenten kører **Dagligt**, én gang om dagen på et systemtildelt tidspunkt. Du styrer, hvor mange forslag den opretter hver dag, med **Maksimalt antal opgaver pr. dag**.
 
-Der er ingen daglig grænse for, hvor mange firmaer den kontrollerer. Agenten holder op til 50 forslag af hver type (firmasammenlægninger, personsammenlægninger og forældreløse personer) afventende din beslutning. Når du godkender eller afviser tilstrækkeligt til at frigøre plads, fylder dens næste planlagte scanning den type op mod 50 igen, hvis der er mere at finde.
+Grænsen gælder for hver af agentens tre kontroller hver for sig: duplikerede firmaer, duplikerede personer og forældreløse personer. Med standarden på 25 kan du få op til 75 nye forslag på en dag. Den begrænser forslag, ikke de kontrollerede poster.
+
+Agenten holder op til 50 forslag af hver type (firmasammenlægninger, personsammenlægninger og forældreløse personer) afventende din beslutning. Når du godkender eller afviser tilstrækkeligt til at frigøre plads, fylder dens næste planlagte scanning den type op mod 50 igen, hvis der er mere at finde.
 
 ## Aktivér agenten {#setup}
 
@@ -58,23 +60,25 @@ Opsætning er et enkelt trin. Du er automatisk godkenderen, og du kan oprette é
 
     Første gang du åbner siden **Agenter**, skal du logge ind og godkende AI-agenter i SuperOffice.
 
-1. Find kortet **Duplicate Agent** i **Agentoversigt**, og klik på **Aktivér**. Dette åbner opsætningsguiden.
+1. Find kortet **Duplicate Agent** i **Oversigt over agenter**, og klik på **Aktivér**. Dette åbner opsætningsguiden.
 
-    ![Agentoversigten, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
+    ![Oversigten over agenter, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
 
     <Tip>
-    Kan du ikke se kortet? Klik på **Gennemse agenter** for at finde det.
+    Kan du ikke se kortet? Klik på **Se agenter** for at finde det.
     </Tip>
 
 ## Generelle indstillinger {#settings}
 
 1. Angiv et unikt **Navn** for agentinstansen. **Dette kan ikke ændres efter aktivering.**
 
-    ![Duplicate Agents Generelle indstillinger, med Navn, Beskrivelse, Rapporteringssprog og Tidsplan -screenshot][img1]
+    ![Duplicate Agents Generelle indstillinger, med Navn, Beskrivelse, Rapporteringssprog, Tidsplan og Maksimalt antal opgaver pr. dag -screenshot][img1]
 
 1. Redigér valgfrit den foreslåede **Beskrivelse**, hvis du vil have noget andet.
 
 1. Vælg **Rapporteringssprog**. Dette påvirker både rapporter og chatsvar.
+
+1. Vælg, hvor mange forslag agenten opretter pr. dag (5-50). Standarden for **Maksimalt antal opgaver pr. dag** er 25.
 
 1. Klik på **Gem**.
 
@@ -82,7 +86,7 @@ Opsætning er et enkelt trin. Du er automatisk godkenderen, og du kan oprette é
 
 1. Vælg **Gå til instans** for at åbne din nye Duplicate Agent og [komme i gang][3].
 
-Før du gennemgår, skal du vælge fanen **Chat**, derefter klikke på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i> og vælge **Afventende** for at indsnævre en travl kø til forslag, der afventer din beslutning.
+Før du gennemgår, skal du vælge fanen **Chat**, derefter klikke på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i> og vælge **Afventende** for at indsnævre en travl kø til forslag, der afventer din beslutning. Listen viser som standard **Seneste**, som også omfatter det, du har godkendt inden for de seneste 6 timer.
 
 ## Sammenlægningsforslag: duplikerede firmaer {#merge-companies}
 
@@ -153,7 +157,7 @@ Agenten leder efter **forældreløse personer**, det vil sige personer uden firm
 
 1. Vælg fanen **Chat**.
 
-1. I **Generel** chat skal du bede agenten om at kontrollere et bestemt firma for duplikater eller slå en person op.
+1. I tråden **Generel chat** skal du bede agenten om at kontrollere et bestemt firma for duplikater eller slå en person op.
 
 1. Hvis den finder en ægte duplikat eller forældreløs person på denne måde, opretter den en normal godkendelsesopgave for det, præcis som en fundet på den daglige planlagte kørsel. Gennemgå det som beskrevet ovenfor.
 
@@ -175,9 +179,11 @@ Klik på <i class="ph ph-arrow-clockwise" aria-label="Opdateringsikon"></i> for 
 
 **Hvad sker der, hvis jeg afviser eller ignorerer?** Intet ændres. Begge poster bevares som de er.
 
-**Kan jeg beslutte om flere forslag på én gang?** Ja. Vælg flere afventende forslag, og brug **Godkend** eller **Afvis** fra bulk-panelet, på samme måde som for enhver anden agent.
+**Kan jeg beslutte om flere forslag på én gang?** Ja. Vælg flere afventende forslag, eller afkrydsningsfeltet ved siden af listeoverskriften for at vælge alle afventende forslag, op til 50 ad gangen, som beskrevet i [Beslut om flere opgaver på én gang][4]. Bulk **Godkend** virker kun for firmasammenlægninger. Sammenlægninger af duplikerede personer og links til forældreløse personer kan kun afvises samlet, så godkend dem én ad gangen.
 
-**Hvad sker der med et forslag, jeg ikke får behandlet i tide?** Et forslag, der afventer din beslutning, har en begrænset levetid, **30 dage som standard**. Når det er inden for 5 dage fra at udløbe, vises et nedtællingsbanner på dets tråd. Hvis du ikke handler i tide, kasseres det, og agenten går videre. Intet ændres for et udløbet forslag, og det samme par kan blive vist igen ved en senere kontrol.
+**Kan jeg bedømme agentens svar?** Ja, hvis du er godkender. Se [Bedøm et svar][5].
+
+**Hvad sker der med et forslag, jeg ikke får behandlet i tide?** Et forslag, der afventer din beslutning, har en begrænset levetid, **14 dage som standard**. Når det er inden for 5 dage fra at udløbe, vises et nedtællingsbanner på dets tråd. Hvis du ikke handler i tide, kasseres det, og agenten går videre. Intet ændres for et udløbet forslag, og det samme par kan blive vist igen ved en senere kontrol.
 
 **Jeg deaktiverede instansen, og mine afventende forslag er væk.** At deaktivere en instans kasserer alle forslag, der afventer godkendelse, som beskrevet i [Opsæt AI-agenter][1]. Godkend eller afvis det, du har brug for, først, hvis du vil beholde dem.
 
@@ -185,6 +191,8 @@ Kun instansens ejer kan ændre dens indstillinger eller slette den.
 
 [1]: /da/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /da/ai/learn/set-up-ai-agents#bulk
+[5]: /da/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/duplicate-agent-settings.png
 [img2]: /media/loc/en/ai/duplicate-company-comparison.png

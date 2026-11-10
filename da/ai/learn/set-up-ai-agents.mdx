@@ -3,7 +3,7 @@ title: Opsæt AI-agenter
 description: Sådan åbner du Agenter-området, aktiverer en agent og opretter og administrerer en instans. Der kræves ikke administratoradgang. Agentinstanser er personlige, pr. bruger.
 keywords: ['agentinstans', 'aktivér agent', 'tilføj instans', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.09.2026
+date: 11.10.2026
 so_version: 12.6
 content_type: howto
 tier: plus
@@ -49,15 +49,15 @@ Kun instansens ejer (den, der oprettede den) kan redigere dens indstillinger, ak
 ![De første agentkort på siden Agenter -screenshot][img2]
 
 1. Vælg <i class="ph ph-robot" aria-label="Agenter ikon"></i> **Agenter** i Navigator.
-1. Klik på **Gennemse agenter** øverst til højre i **Agenter-overblikket**.
+1. Klik på **Se agenter** øverst til højre i **Oversigt over agenter**.
 1. Brug søgefeltet eller kategorifiltrene til at finde den agent, du ønsker.
 
-    ![Panelet Gennemse agenter med hver agent i dit abonnement -screenshot][img3]
+    ![Panelet Se agenter med hver agent i dit abonnement -screenshot][img3]
 
 1. Klik på **Aktivér** for at åbne den agents opsætningsguide og oprette din første **instans**.
 
 <Note>
-**Gennemse agenter** viser kun agenter, der er inkluderet i din CRM Suite-plan. Hvis en agent, du forventer, ikke er på listen, skal du kontakte din SuperOffice-administrator eller -partner.
+**Se agenter** viser kun agenter, der er inkluderet i din CRM Suite-plan. Hvis en agent, du forventer, ikke er på listen, skal du kontakte din SuperOffice-administrator eller -partner.
 </Note>
 
 Når en agent har en instans, viser dens kort et **N aktive**-link i stedet for **Aktivér**. Vælg det for at se agentens aktive og inaktive instanser, og åbne en af dem.
@@ -68,9 +68,9 @@ Når en agent har en instans, viser dens kort et **N aktive**-link i stedet for 
 
 Agenter, der tillader mere end én instans, viser en **+ Ny instans**-knap.
 
-![Gennemse agenter beholder en + Ny instans-mulighed for agenter, der tillader mere end én -screenshot][img5]
+![Se agenter beholder en + Ny instans-mulighed for agenter, der tillader mere end én -screenshot][img5]
 
-1. Klik på **+ Ny instans** på agentkortet eller i listen **Gennemse agenter**.
+1. Klik på **+ Ny instans** på agentkortet eller i listen **Se agenter**.
 1. Gennemfør den agentspecifikke opsætningsguide.
 
 ## Vis instansdetaljer
@@ -86,6 +86,55 @@ Vælg **Om** fra menuen med tre prikker for et skrivebeskyttet resumé, inklusiv
 1. Klik på <i class="ph ph-pencil-simple" aria-label="Rediger"></i> redigeringsknappen (blyanten) i instansens overskrift.
 1. Foretag dine ændringer i opsætningsguiden.
 1. Klik på **Gem ændringer**. Ændringer træder i kraft fra næste kørsel.
+
+## Filtrér opgaver {#filter}
+
+Hver agent sender de emner, den vil have dig til at gennemgå, som tråde i fanen **Chat**, ved siden af en permanent tråd, **Generel chat**. Klik på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i> over trådlisten for at indsnævre det, der vises.
+
+| Filter | Viser |
+|---|---|
+| **Seneste** | Standarden. Alt, der stadig afventer, plus alt, der er godkendt inden for de seneste 6 timer. |
+| **Afventende** | Emner, der afventer din beslutning. |
+| **Godkendt** | Emner, du har godkendt. |
+| **Afvist** | Emner, du har afvist. |
+| **Annulleret/Afbrudt** | Opgaver, der blev afsluttet uden en beslutning, uden at noget er skrevet til SuperOffice. Instansen blev deaktiveret, mens opgaven afventede, opgaven nåede sin tidsgrænse, eller der gik noget galt under behandlingen. |
+
+## Beslut om flere opgaver på én gang {#bulk}
+
+1. Vælg afkrydsningsfeltet ved siden af listeoverskriften, som viser det valgte filter, for eksempel **SENESTE**. Dette markerer alle afventende emner på listen, op til 50 ad gangen.
+
+    Du kan også holde Ctrl (Cmd på Mac) nede og vælge afventende emner et ad gangen.
+
+1. Klik på **Godkend** eller **Afvis** i panelet, der viser, hvor mange emner der er valgt.
+
+Kun afventende emner kan vælges. For en Lead Agent, der deler leads efter tur, kan du kun vælge de leads, der er tildelt dig. Hvert emne får samme resultat, som hvis du havde besluttet det enkeltvis, og agenten fortæller dig, hvilke der ikke kunne opdateres, og hvorfor.
+
+<Note>
+Bulk **Godkend** virker for alle agenter undtagen Duplicate Agent, hvor det kun virker for firmasammenlægninger. Sammenlægninger af duplikerede personer og links til forældreløse personer kan afvises samlet, men skal godkendes én ad gangen. Når du godkender Lead Agent-leads samlet, gælder det statiske udvalg, du vælger, for alle firmaer, der godkendes i batchen.
+</Note>
+
+## Tidsgrænse {#expiry}
+
+Hvert lead, hver gennemgang, hvert forslag eller hver anbefaling, der afventer din beslutning, har en begrænset levetid: **21 dage** for Lead Agent og **14 dage** for de øvrige agenter.
+
+Når en opgave er inden for 5 dage fra sin frist, vises et banner på dens tråd: **Udløber om N dage**, **Udløber i dag** inden for de sidste 24 timer eller **Udløber nu**, når fristen er overskredet, men opgaven endnu ikke er lukket.
+
+Hvis intet besluttes i tide, udløber opgaven, og intet ændres i SuperOffice. En udløbet opgave kan ikke genoprettes, og den vises under **Annulleret/Afbrudt**. Data Quality Agent og Duplicate Agent kan finde det samme arbejde igen og oprette en ny opgave. Lead Agent foreslår aldrig det samme firma igen ved sin daglige søgning, men du kan bede den i chatten om at se på det firma igen.
+
+## Bedøm et svar {#rate}
+
+Hvis du er godkender af instansen, kan du give feedback på ethvert svar fra agenten i chatten. Dine bedømmelser hjælper SuperOffice med at forbedre agenterne. Bedømmelse er ikke tilgængelig, mens agenten er uden for dit abonnement.
+
+1. Klik på **Bedøm svar** under en agentbesked eller under en opgaves gennemgangskort.
+
+1. Vælg 1 til 5 stjerner i vinduet **Bedøm dette svar**.
+
+    * Med 4 stjerner eller flere kan du tilføje en valgfri kommentar.
+    * Med færre end 4 stjerner vises også en liste **Hvad gik galt?**, og du skal vælge en årsag. Kommentaren er valgfri, medmindre du vælger **Andet**.
+
+1. Klik på **Send**.
+
+Du kan bedømme hvert svar én gang, og en bedømmelse kan ikke ændres bagefter.
 
 ## Slå notifikationer fra
 

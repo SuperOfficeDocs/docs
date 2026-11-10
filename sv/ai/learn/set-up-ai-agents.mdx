@@ -3,7 +3,7 @@ title: Konfigurera AI-agenter
 description: Hur du öppnar Agenter-området, aktiverar en agent och skapar och hanterar en instans. Ingen administratörsåtkomst krävs. Agentinstanser är personliga, per användare.
 keywords: ['agentinstans', 'aktivera agent', 'lägg till instans', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.09.2026
+date: 11.10.2026
 so_version: 12.6
 content_type: howto
 tier: plus
@@ -86,6 +86,55 @@ Välj **Om** i trepunktsmenyn för en skrivskyddad sammanfattning, inklusive vis
 1. Klicka på knappen <i class="ph ph-pencil-simple" aria-label="Redigera"></i> redigera (penna) i instansrubriken.
 1. Gör dina ändringar i konfigurationsguiden.
 1. Klicka på **Spara ändringar**. Ändringarna gäller från nästa körning.
+
+## Filtrera uppgifter {#filter}
+
+Varje agent tar upp de objekt den vill att du ska granska som trådar på fliken **Chatt**, bredvid en permanent tråd **Allmän chatt**. Klicka på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> ovanför trådlistan för att avgränsa det som visas.
+
+| Filter | Visar |
+|---|---|
+| **Senaste** | Standardvärdet. Allt som fortfarande väntar, plus allt som godkändes under de senaste 6 timmarna. |
+| **Väntande** | Objekt som väntar på ditt beslut. |
+| **Godkända** | Objekt som du har godkänt. |
+| **Avvisade** | Objekt som du har avvisat. |
+| **Avbrutna/Avslutade** | Uppgifter som avslutades utan beslut, utan att något skrevs till SuperOffice. Instansen avaktiverades medan uppgiften väntade, uppgiften nådde sin tidsgräns eller något gick fel när den behandlades. |
+
+## Besluta om flera uppgifter samtidigt {#bulk}
+
+1. Markera kryssrutan bredvid listrubriken, som visar det valda filtret, till exempel **SENASTE**. Då markeras alla väntande objekt i listan, upp till 50 åt gången.
+
+    Du kan också hålla ned Ctrl (Cmd på Mac) och välja väntande objekt ett i taget.
+
+1. Klicka på **Godkänn** eller **Avvisa** i panelen som visar hur många objekt som är markerade.
+
+Endast väntande objekt kan markeras. För en Lead Agent som delar leads i turordning kan du bara markera de leads som är tilldelade dig. Varje objekt får samma resultat som om du hade beslutat om det på egen hand, och agenten talar om vilka som inte kunde uppdateras och varför.
+
+<Note>
+Massgodkännande med **Godkänn** fungerar för alla agenter utom Duplicate Agent, där det bara fungerar för företagssammanfogningar. Sammanfogningar av dubblerade kontakter och kopplingar av kontakter utan företag kan avvisas som massåtgärd, men måste godkännas en i taget. När du godkänner Lead Agent-leads som massåtgärd gäller det statiska urval du väljer för alla företag som godkänns i omgången.
+</Note>
+
+## Tidsgräns {#expiry}
+
+Varje lead, granskning, förslag eller rekommendation som väntar på ditt beslut har en begränsad livslängd: **21 dagar** för Lead Agent och **14 dagar** för de andra agenterna.
+
+När en uppgift är inom 5 dagar från sin tidsfrist visas en banner i dess tråd: **Förfaller om N dagar**, **Förfaller idag** under de sista 24 timmarna, eller **Förfaller nu** när tidsfristen har passerats men uppgiften ännu inte har stängts.
+
+Om inget beslut fattas i tid förfaller uppgiften och ingenting ändras i SuperOffice. En förfallen uppgift kan inte återställas, och den listas under **Avbrutna/Avslutade**. Data Quality Agent och Duplicate Agent kan hitta samma arbete igen och skapa en ny uppgift. Lead Agent föreslår aldrig samma företag igen i sin dagliga sökning, men du kan be den i chatten att titta på det företaget igen.
+
+## Betygsätt ett svar {#rate}
+
+Om du är godkännare för instansen kan du ge feedback på valfritt agentsvar i chatten. Dina betyg hjälper SuperOffice att förbättra agenterna. Betygsättning är inte tillgänglig när agenten ligger utanför din prenumeration.
+
+1. Klicka på **Betygsätt svar** under ett agentmeddelande eller under en uppgifts granskningskort.
+
+1. Välj 1 till 5 stjärnor i dialogrutan **Betygsätt det här svaret**.
+
+    * Med 4 stjärnor eller fler kan du lägga till en valfri kommentar.
+    * Med färre än 4 stjärnor visas även listan **Vad gick fel?** och du måste välja en orsak. Kommentaren är valfri, om du inte väljer **Övrigt**.
+
+1. Klicka på **Skicka**.
+
+Du kan betygsätta varje svar en gång, och ett betyg kan inte ändras efteråt.
 
 ## Stäng av aviseringar
 

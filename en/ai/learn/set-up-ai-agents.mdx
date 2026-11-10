@@ -3,7 +3,7 @@ title: Set up AI agents
 description: How to open the Agents area, activate an agent, and create and manage an instance. No admin access is needed. Agent instances are personal, per user.
 keywords: ['agent instance', 'activate agent', 'add instance', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.09.2026
+date: 11.10.2026
 so_version: 12.6
 content_type: howto
 tier: plus
@@ -86,6 +86,55 @@ Select **About** from the three-dots menu for a read-only summary, including dis
 1. Select the <i class="ph ph-pencil-simple" aria-label="Edit"></i> edit (pencil) button in the instance header.
 1. Make your changes in the set-up wizard.
 1. Select **Save changes**. Changes apply from the next run.
+
+## Filter tasks {#filter}
+
+Every agent raises the items it wants you to review as threads in the **Chat** tab, next to a permanent **General chat** thread. Select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> above the thread list to narrow what is shown.
+
+| Filter | Shows |
+|---|---|
+| **Recent** | The default. Everything still pending, plus anything approved in the last 6 hours. |
+| **Pending** | Items awaiting your decision. |
+| **Approved** | Items you have approved. |
+| **Rejected** | Items you have rejected. |
+| **Cancelled/Terminated** | Tasks that ended without a decision, with nothing written to SuperOffice. The instance was deactivated while the task was pending, the task reached its time limit, or something went wrong while it was processed. |
+
+## Decide on several tasks at once {#bulk}
+
+1. Select the checkbox next to the list heading, which shows the chosen filter, for example **RECENT**. This selects all pending items in the list, up to 50 at a time.
+
+    You can also hold Ctrl (Cmd on a Mac) and select pending items one by one.
+
+1. Select **Approve** or **Reject** in the panel that shows how many items are selected.
+
+Only pending items can be selected. For a Lead Agent that shares leads in turn, you can select only the leads assigned to you. Each item gets the same result as if you had decided it on its own, and the agent tells you which ones could not be updated and why.
+
+<Note>
+Bulk **Approve** works for every agent except the Duplicate Agent, where it works only for company merges. Duplicate-contact merges and orphaned-contact links can be rejected in bulk, but must be approved one at a time. When you bulk-approve Lead Agent leads, the static selection you choose applies to every company approved in the batch.
+</Note>
+
+## Time limit {#expiry}
+
+Every lead, review, suggestion, or recommendation waiting for your decision has a limited lifetime: **21 days** for Lead Agent and **14 days** for the other agents.
+
+Once a task is within 5 days of its deadline, a banner appears on its thread: **Expiring in N days**, **Expires today** within the last 24 hours, or **Expiring now** when it is past the deadline but not yet closed.
+
+If nothing is decided in time, the task expires and nothing changes in SuperOffice. An expired task cannot be brought back, and it is listed under **Cancelled/Terminated**. Data Quality Agent and Duplicate Agent may find the same work again and raise a new task. Lead Agent never proposes the same company again in its daily search, but you can ask it in chat to look at that company again.
+
+## Rate a response {#rate}
+
+If you are an approver of the instance, you can give feedback on any agent reply in chat. Your ratings help SuperOffice improve the agents. Rating is not available while the agent is outside your subscription.
+
+1. Select **Rate response** below an agent message, or below a task's review card.
+
+1. In the **Rate this response** window, select 1 to 5 stars.
+
+    * With 4 stars or more, you can add an optional comment.
+    * With fewer than 4 stars, a **What went wrong?** list also appears and you must choose a reason. The comment is optional, unless you choose **Other**.
+
+1. Select **Submit**.
+
+You can rate each response once, and a rating cannot be changed afterwards.
 
 ## Mute notifications
 

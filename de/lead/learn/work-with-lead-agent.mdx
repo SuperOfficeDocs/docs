@@ -3,8 +3,8 @@ title: Mit Lead Agent arbeiten
 description: Prüfen und genehmigen Sie die von Lead Agent gefundenen Interessenten über die Registerkarten Chat, Verlauf und Leistung.
 keywords: ['Lead Agent', 'Interessentenbericht', 'Leads finden', 'Lead genehmigen', 'Lead ablehnen', 'KI-Agenten']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: howto
 tier: plus
 category: sale
@@ -68,7 +68,7 @@ Die Registerkarte **Leistung** zeigt, wie die Instanz über einen von Ihnen gew�
 ## Einen Interessenten prüfen
 
 1. Wählen Sie die Registerkarte **Chat**.
-1. Klicken Sie auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend**.
+1. Klicken Sie auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend**. Die Liste zeigt standardmäßig **Kürzlich** an, was auch einschließt, was Sie in den letzten 6 Stunden genehmigt haben.
 1. Wählen Sie einen Lead aus der Liste aus, um den **Interessentenbericht** des Agenten anzuzeigen.
 
     * Der Bericht öffnet sich zunächst eingeklappt auf das Wesentliche: eine Passgenauigkeitsbewertung, die verwendeten Quellen und wichtige Kennzahlen.
@@ -118,7 +118,9 @@ Wenn Sie sich entscheiden, einen Interessenten nicht zu SuperOffice hinzuzufüge
 ![Der Lead nach der Bestätigung, markiert als Abgelehnt -screenshot][img13]
 
 <Tip>
-Um die Liste zu bereinigen, wählen Sie mehrere ausstehende Interessenten aus und klicken Sie auf **Ablehnen**, um sie alle auf einmal zu verwerfen.
+Um die Liste zu bereinigen, wählen Sie mehrere ausstehende Interessenten aus und klicken Sie auf **Ablehnen**, um sie alle auf einmal zu verwerfen. Klicken Sie auf das Kontrollkästchen neben der Listenüberschrift, um alle ausstehenden Interessenten auszuwählen, bis zu 50 auf einmal, wie unter [Mehrere Aufgaben gleichzeitig entscheiden][2] beschrieben.
+
+Sie können auch mehrere Interessenten gleichzeitig genehmigen. Die von Ihnen gewählte statische Selektion gilt für jede im Stapel genehmigte Firma.
 
 Verwenden Sie den Filter, um nur abgelehnte Interessenten anzuzeigen.
 </Tip>
@@ -127,13 +129,17 @@ Verwenden Sie den Filter, um nur abgelehnte Interessenten anzuzeigen.
 
 ## Fehlerbehebung
 
-**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer: standardmäßig 30 Tage. Sobald weniger als 5 Tage bis zum Ablauf verbleiben, erscheint ein Countdown-Banner. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er ab, und nichts wird in Ihrem CRM gespeichert.
+**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer: standardmäßig 21 Tage. Sobald weniger als 5 Tage bis zum Ablauf verbleiben, erscheint ein Countdown-Banner. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er ab, und nichts wird in Ihrem CRM gespeichert.
+
+**Kann ich die Antworten des Agenten bewerten?** Ja, wenn Sie Genehmiger sind. Siehe [Eine Antwort bewerten][3].
 
 **Ich habe die Instanz deaktiviert, und meine ausstehenden Leads sind weg.** Das Deaktivieren einer Instanz verwirft alle auf Genehmigung wartenden Leads. Genehmigen oder lehnen Sie zuerst ab, was Sie behalten möchten.
 
 **Ich sehe die Einstellungen einer Instanz, kann aber nichts ändern.** Sie sind Genehmiger, nicht Eigentümer. Nur der Eigentümer der Instanz kann Änderungen an ihrer Einrichtung speichern. Ein Genehmiger, der nicht der Eigentümer ist, kann sie ansehen, aber nicht bearbeiten.
 
 [1]: set-up-lead-agent
+[2]: /de/ai/learn/set-up-ai-agents#bulk
+[3]: /de/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/lead/lead-agent-general-chat.png
 [img2]: /media/loc/en/lead/lead-chat-threads.png

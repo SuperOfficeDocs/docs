@@ -3,8 +3,8 @@ title: Data Quality Agent
 description: Keep the companies and contacts already in your CRM accurate, complete, and up to date, with every proposed change reviewed and approved by you.
 keywords: ['AI agent', 'enrichment', 'GDPR consent', 'bounced email', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -100,7 +100,7 @@ You are automatically the approver for the records it reviews, and you can creat
 
 1. Select the **Chat** tab.
 
-1. Select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending**.
+1. Select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending**. The list shows **Recent** by default, which also includes what you approved in the last 6 hours.
 
 1. Choose a company review thread (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
 
@@ -155,9 +155,11 @@ Select <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull i
 
 **What happens if I reject?** Nothing is written. The review is discarded.
 
-**Can I decide on several reviews at once?** Yes. Select multiple pending reviews and use **Approve** or **Reject** from the bulk panel. Approving a batch writes every change in every selected review at once, so the same "cannot be undone" caution applies to each of them.
+**Can I decide on several reviews at once?** Yes. Hold Ctrl (Cmd on a Mac) and select pending reviews, or select the checkbox next to the list heading to select all pending reviews, up to 50 at a time. Then use **Approve** or **Reject** from the bulk panel, as described in [Decide on several tasks at once][4]. Approving a batch writes every change in every selected review at once, so the same "cannot be undone" caution applies to each of them.
 
-**What happens to a review I do not get to in time?** A review awaiting approval has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded automatically and the agent moves on. Nothing is written for an expired review.
+**Can I rate the agent's responses?** Yes, if you are an approver. See [Rate a response][5].
+
+**What happens to a review I do not get to in time?** A review awaiting approval has a limited lifetime, **14 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded automatically and the agent moves on. Nothing is written for an expired review.
 
 **I deactivated the instance and my pending reviews are gone.** Deactivating an instance discards any reviews awaiting approval, as described in [Set up AI agents][1]. Approve or reject what you need first if you want to keep it.
 
@@ -165,6 +167,8 @@ Only the instance's owner can change its settings or delete it.
 
 [1]: /en/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /en/ai/learn/set-up-ai-agents#bulk
+[5]: /en/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png

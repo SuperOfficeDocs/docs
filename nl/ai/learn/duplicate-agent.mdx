@@ -3,8 +3,8 @@ title: Duplicate Agent
 description: Vind en voeg dubbele bedrijven en contactpersonen samen, en herstel de koppeling van contactpersonen zonder bedrijf die hun bedrijf zijn kwijtgeraakt, waarbij elke wijziging door u wordt goedgekeurd.
 keywords: ['datakwaliteit', 'AI-agent', 'bedrijven samenvoegen', 'dubbele bedrijven', 'dubbele contactpersonen', 'dubbele personen', 'contactpersoon zonder bedrijf']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -46,21 +46,23 @@ De agent stelt voor. U beslist. Er worden geen records samengevoegd of gekoppeld
 
 ## Planning
 
-De agent draait **Dagelijks**, één keer per dag op een door het systeem toegewezen tijdstip.
+De agent draait **Dagelijks**, één keer per dag op een door het systeem toegewezen tijdstip. U bepaalt met **Maximaal aantal taken per dag** hoeveel suggesties de agent per dag aanmaakt.
 
-Er is geen dagelijkse limiet op het aantal bedrijven dat wordt gecontroleerd. De agent houdt tot 50 suggesties van elk type (bedrijfssamenvoegingen, contactsamenvoegingen en contactpersonen zonder bedrijf) klaar in afwachting van uw beslissing. Zodra u genoeg goedkeurt of afkeurt om ruimte vrij te maken, vult de volgende geplande scan dat type weer aan tot 50, als er meer te vinden is.
+De limiet geldt afzonderlijk voor elk van de drie controles van de agent: dubbele bedrijven, dubbele contactpersonen en contactpersonen zonder bedrijf. Met de standaardwaarde van 25 kunt u per dag maximaal 75 nieuwe suggesties ontvangen. De limiet geldt voor suggesties, niet voor het aantal gecontroleerde records.
+
+De agent houdt tot 50 suggesties van elk type (bedrijfssamenvoegingen, contactsamenvoegingen en contactpersonen zonder bedrijf) klaar in afwachting van uw beslissing. Zodra u genoeg goedkeurt of afkeurt om ruimte vrij te maken, vult de volgende geplande scan dat type weer aan tot 50, als er meer te vinden is.
 
 ## Agent activeren {#setup}
 
 Het instellen is één enkele stap. U bent automatisch de goedkeurder, en u kunt één instantie aanmaken.
 
-1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
+1. Selecteer <i class="ph ph-robot" aria-label="Agentenpictogram"></i> **Agenten** in de Navigator.
 
-    De eerste keer dat u de pagina **Agents** opent, moet u inloggen en AI-agents in SuperOffice goedkeuren.
+    De eerste keer dat u de pagina **Agenten** opent, moet u inloggen en AI-agents in SuperOffice goedkeuren.
 
-1. Zoek de kaart **Duplicate Agent** in het **Agentoverzicht** en selecteer **Activeren**. Dit opent de instelwizard.
+1. Zoek de kaart **Duplicate Agent** in het **Overzicht** en selecteer **Activeren**. Dit opent de instelwizard.
 
-    ![Het Agentoverzicht, met de kaarten Data Quality Agent, Lead Agent en Duplicate Agent -screenshot][img9]
+    ![Het Overzicht van agenten, met de kaarten Data Quality Agent, Lead Agent en Duplicate Agent -screenshot][img9]
 
     <Tip>
     Ziet u de kaart niet? Selecteer **Agents doorbladeren** om deze te vinden.
@@ -70,19 +72,21 @@ Het instellen is één enkele stap. U bent automatisch de goedkeurder, en u kunt
 
 1. Voer een unieke **Naam** in voor de agentinstantie. **Dit kan na activering niet meer worden gewijzigd.**
 
-    ![De Algemene instellingen van Duplicate Agent, met Naam, Beschrijving, Rapportagetaal en Planning -screenshot][img1]
+    ![De Algemene instellingen van Duplicate Agent, met Naam, Beschrijving, Taal voor rapporten, Planning en Maximaal aantal taken per dag -screenshot][img1]
 
 1. Bewerk desgewenst de voorgestelde **Beschrijving** als u iets anders wilt.
 
-1. Kies de **Rapportagetaal**. Dit is van invloed op zowel rapporten als chatantwoorden.
+1. Kies de **Taal voor rapporten**. Dit is van invloed op zowel rapporten als chatantwoorden.
+
+1. Selecteer hoeveel suggesties de agent per dag aanmaakt (5-50). De standaardwaarde voor **Maximaal aantal taken per dag** is 25.
 
 1. Selecteer **Opslaan**.
 
-    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** in de zijbalk Agents en begint te werken op de volgende dagelijkse uitvoering.
+    De instantie wordt geactiveerd, verschijnt onder **Mijn agenten** in de zijbalk Agenten en begint te werken op de volgende dagelijkse uitvoering.
 
 1. Selecteer **Naar instantie** om uw nieuwe Duplicate Agent te openen en [aan de slag te gaan][3].
 
-Selecteer voordat u begint met beoordelen het tabblad **Chat**, selecteer daarna <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling** om een drukke wachtrij te beperken tot suggesties die op uw beslissing wachten.
+Selecteer voordat u begint met beoordelen het tabblad **Chat**, selecteer daarna <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling** om een drukke wachtrij te beperken tot suggesties die op uw beslissing wachten. De lijst toont standaard **Recent**, dat ook bevat wat u de afgelopen 6 uur hebt goedgekeurd.
 
 ## Samenvoegingssuggestie: dubbele bedrijven {#merge-companies}
 
@@ -153,7 +157,7 @@ De agent zoekt naar **contactpersonen zonder bedrijf**, contactpersonen zonder b
 
 1. Selecteer het tabblad **Chat**.
 
-1. Vraag de agent in de **Algemene** chat om een specifiek bedrijf op duplicaten te controleren of een contactpersoon op te zoeken.
+1. Vraag de agent in de **Algemene chat** om een specifiek bedrijf op duplicaten te controleren of een contactpersoon op te zoeken.
 
 1. Als de agent op deze manier een echt duplicaat of een contactpersoon zonder bedrijf vindt, maakt de agent hiervoor een normale goedkeuringstaak aan, precies zoals bij een taak die is gevonden tijdens de dagelijkse geplande uitvoering. Beoordeel deze zoals hierboven beschreven.
 
@@ -175,9 +179,11 @@ Selecteer <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> o
 
 **Wat gebeurt er als ik afwijs of negeer?** Er verandert niets. Beide records blijven ongewijzigd.
 
-**Kan ik meerdere suggesties in één keer afhandelen?** Ja. Selecteer meerdere openstaande suggesties en gebruik **Goedkeuren** of **Afwijzen** in het bulkpaneel, op dezelfde manier als bij elke andere agent.
+**Kan ik meerdere suggesties in één keer afhandelen?** Ja. Selecteer meerdere openstaande suggesties, of het selectievakje naast de kop van de lijst om alle openstaande suggesties te selecteren, maximaal 50 tegelijk, zoals beschreven in [Meerdere taken tegelijk afhandelen][4]. Bulk **Goedkeuren** werkt alleen voor bedrijfssamenvoegingen. Samenvoegingen van dubbele contactpersonen en koppelingen van contactpersonen zonder bedrijf kunnen alleen in bulk worden afgewezen, dus keur die één voor één goed.
 
-**Wat gebeurt er met een suggestie waar ik niet op tijd bij ben?** Een suggestie die op uw beslissing wacht, heeft een beperkte levensduur, **standaard 30 dagen**. Zodra er nog 5 dagen resteren voordat de suggestie verloopt, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze verwijderd en gaat de agent verder. Er verandert niets voor een verlopen suggestie, en hetzelfde paar kan later opnieuw naar boven komen bij een volgende controle.
+**Kan ik de antwoorden van de agent beoordelen?** Ja, als u een goedkeurder bent. Zie [Een antwoord beoordelen][5].
+
+**Wat gebeurt er met een suggestie waar ik niet op tijd bij ben?** Een suggestie die op uw beslissing wacht, heeft een beperkte levensduur, **standaard 14 dagen**. Zodra er nog 5 dagen resteren voordat de suggestie verloopt, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze verwijderd en gaat de agent verder. Er verandert niets voor een verlopen suggestie, en hetzelfde paar kan later opnieuw naar boven komen bij een volgende controle.
 
 **Ik heb de instantie gedeactiveerd en mijn openstaande suggesties zijn verdwenen.** Het deactiveren van een instantie verwijdert alle suggesties die nog op goedkeuring wachten, zoals beschreven in [AI-agents instellen][1]. Keur eerst goed of af wat u wilt bewaren.
 
@@ -185,6 +191,8 @@ Alleen de eigenaar van de instantie kan de instellingen wijzigen of de instantie
 
 [1]: /nl/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /nl/ai/learn/set-up-ai-agents#bulk
+[5]: /nl/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/duplicate-agent-settings.png
 [img2]: /media/loc/en/ai/duplicate-company-comparison.png

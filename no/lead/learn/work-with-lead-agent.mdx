@@ -3,8 +3,8 @@ title: Arbeid med Lead Agent
 description: Gjennomgå og godkjenn prospektene Lead Agent finner, ved hjelp av fanene Chat, Historikk og Ytelse.
 keywords: ['lead agent', 'prospektrapport', 'finne leads', 'godkjenne lead', 'avvise lead', 'AI-agenter']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: howto
 tier: plus
 category: sale
@@ -30,7 +30,7 @@ Etter at [Lead Agent er satt opp][1], kjører den i bakgrunnen daglig og bringer
 ## Finn agenten din
 
 1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i navigatoren.
-1. Velg Lead Agent-instansen fra listen **Mine agenter**, eller Lead Agent-kortet i **Agentoversikten**.
+1. Velg Lead Agent-instansen fra listen **Mine agenter**, eller Lead Agent-kortet i **Oversikt**.
 
 ![Velge Lead Agent-instansen fra listen Mine agenter -screenshot][img8]
 ![Velge Lead Agent-instansen fra Agentoversikten -screenshot][img9]
@@ -68,7 +68,7 @@ Fanen **Ytelse** viser hvordan instansen presterer over en periode du velger: be
 ## Gjennomgå et prospekt
 
 1. Velg fanen **Chat**.
-1. Klikk på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> og velg **Venter**.
+1. Klikk på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> og velg **Venter**. Listen viser **Nylig** som standard, som også inkluderer det du godkjente de siste 6 timene.
 1. Velg en lead fra listen for å vise agentens **prospektrapport**.
 
     * Rapporten åpnes i sammenfoldet visning med det viktigste: en treffvurdering, kildene den brukte, og nøkkeltall.
@@ -82,7 +82,7 @@ Fanen **Ytelse** viser hvordan instansen presterer over en periode du velger: be
 ## Se nærmere på et bestemt firma
 
 1. Velg fanen **Chat**.
-1. Be agenten i den **Generelle** chatten om å utforske et bestemt firma.
+1. Be agenten i **Generell chat** om å utforske et bestemt firma.
 1. Hvis en reell lead blir funnet, legges prospektrapporten til i listen. Gjennomgå den som beskrevet ovenfor.
 
 ![Fanen Chat: Generell chat og lead-tråder per firma -screenshot][img2]
@@ -118,7 +118,9 @@ Hvis du bestemmer deg for ikke å legge til et prospekt i SuperOffice, har du to
 ![Leadden merket Avvist etter bekreftelse -screenshot][img13]
 
 <Tip>
-For å rydde opp i listen, velg flere ventende prospekter og klikk på **Avvis** for å avvise dem alle på én gang.
+For å rydde opp i listen, velg flere ventende prospekter og klikk på **Avvis** for å avvise dem alle på én gang. Merk av i avmerkingsboksen ved siden av listeoverskriften for å velge alle ventende prospekter, opptil 50 om gangen, som beskrevet i [Avgjør flere oppgaver samtidig][2].
+
+Du kan også godkjenne flere prospekter samtidig. Det statiske utvalget du velger, gjelder for alle firmaer som godkjennes i samme omgang.
 
 Bruk filteret for å vise bare avviste prospekter.
 </Tip>
@@ -127,13 +129,17 @@ Bruk filteret for å vise bare avviste prospekter.
 
 ## Feilsøking
 
-**En lead jeg gjennomgikk, forsvant.** En lead som venter på godkjenning, har en begrenset levetid: 30 dager som standard. Et nedtellingsbanner vises når den er innenfor 5 dager fra å utløpe. Hvis den ikke godkjennes eller avvises i tide, utløper den, og ingenting lagres i CRM-en din.
+**En lead jeg gjennomgikk, forsvant.** En lead som venter på godkjenning, har en begrenset levetid: 21 dager som standard. Et nedtellingsbanner vises når den er innenfor 5 dager fra å utløpe. Hvis den ikke godkjennes eller avvises i tide, utløper den, og ingenting lagres i CRM-en din.
+
+**Kan jeg vurdere agentens svar?** Ja, hvis du er godkjenner. Se [Vurder et svar][3].
 
 **Jeg deaktiverte instansen, og de ventende leadene mine er borte.** Å deaktivere en instans forkaster alle leads som venter på godkjenning. Hvis du vil beholde dem, må du først godkjenne eller avvise dem.
 
 **Jeg kan se innstillingene til en instans, men kan ikke endre noe.** Du er en godkjenner, ikke eieren. Kun instansens eier kan lagre endringer i oppsettet. En godkjenner som ikke er eieren, kan se, men ikke redigere det.
 
 [1]: set-up-lead-agent
+[2]: /no/ai/learn/set-up-ai-agents#bulk
+[3]: /no/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/lead/lead-agent-general-chat.png
 [img2]: /media/loc/en/lead/lead-chat-threads.png

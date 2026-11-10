@@ -3,8 +3,8 @@ title: Duplicate Agent
 description: Hitta och sammanfoga dubblerade företag och kontakter, och återanslut kontakter utan företag som har tappat sitt företag, där varje ändring godkänns av dig.
 keywords: ['datakvalitet', 'AI-agent', 'sammanfoga företag', 'dubblerade företag', 'dubblerade kontakter', 'kontaktdubbletter', 'kontakt utan företag']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -46,9 +46,11 @@ Agenten föreslår. Du bestämmer. Inga poster sammanfogas eller kopplas förrä
 
 ## Schema
 
-Agenten körs **dagligen**, en gång om dagen vid en systemtilldelad tidpunkt.
+Agenten körs **Dagligen**, en gång om dagen vid en systemtilldelad tidpunkt. Du styr hur många förslag den skapar varje dag med **Max antal uppgifter per dag**.
 
-Det finns ingen daglig gräns för hur många företag den kontrollerar. Agenten håller upp till 50 förslag av varje typ (företagssammanfogningar, kontaktsammanfogningar och kontakter utan företag) väntande på ditt beslut. När du godkänner eller avvisar tillräckligt för att frigöra utrymme fyller nästa schemalagda körning på den typen igen upp till 50 om det finns mer att hitta.
+Gränsen gäller för var och en av agentens tre kontroller separat: dubblerade företag, dubblerade kontakter och kontakter utan företag. Med standardvärdet 25 kan du få upp till 75 nya förslag per dag. Den begränsar förslag, inte de poster som kontrolleras.
+
+Agenten håller upp till 50 förslag av varje typ (företagssammanfogningar, kontaktsammanfogningar och kontakter utan företag) väntande på ditt beslut. När du godkänner eller avvisar tillräckligt för att frigöra utrymme fyller nästa schemalagda körning på den typen igen upp till 50 om det finns mer att hitta.
 
 ## Aktivera agenten {#setup}
 
@@ -70,11 +72,13 @@ Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan sk
 
 1. Ange ett unikt **Namn** för agentinstansen. **Detta kan inte ändras efter aktivering.**
 
-    ![Duplicate Agents allmänna inställningar, med Namn, Beskrivning, Rapporteringsspråk och Schema -screenshot][img1]
+    ![Duplicate Agents allmänna inställningar, med Namn, Beskrivning, Rapporteringsspråk, Schema och Max antal uppgifter per dag -screenshot][img1]
 
 1. Redigera vid behov den föreslagna **Beskrivningen** om du vill ha något annat.
 
 1. Välj **Rapporteringsspråk**. Detta påverkar både rapporter och chattsvar.
+
+1. Välj hur många förslag agenten skapar per dag (5-50). Standardvärdet för **Max antal uppgifter per dag** är 25.
 
 1. Klicka på **Spara**.
 
@@ -82,7 +86,7 @@ Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan sk
 
 1. Välj **Gå till instans** för att öppna din nya Duplicate Agent och [komma igång][3].
 
-Innan du granskar, välj fliken **Chatt**, klicka sedan på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande** för att avgränsa en full kö till förslag som väntar på ditt beslut.
+Innan du granskar, välj fliken **Chatt**, klicka sedan på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande** för att avgränsa en full kö till förslag som väntar på ditt beslut. Listan visar **Senaste** som standard, vilket även omfattar det du godkände under de senaste 6 timmarna.
 
 ## Sammanfogningsförslag: dubblerade företag {#merge-companies}
 
@@ -153,19 +157,19 @@ Agenten letar efter **kontakter utan företag**, alltså kontakter vars e-postad
 
 1. Välj fliken **Chatt**.
 
-1. I den **Allmänna** chatten ber du agenten att kontrollera ett specifikt företag efter dubbletter eller slå upp en kontakt.
+1. I tråden **Allmän chatt** ber du agenten att kontrollera ett specifikt företag efter dubbletter eller slå upp en kontakt.
 
 1. Om den hittar en verklig dubblett eller en kontakt utan företag på detta sätt skapar den en vanlig godkännandeuppgift för det, precis som en som hittats vid den dagliga schemalagda körningen. Granska den enligt beskrivningen ovan.
 
 ## Agentens arbetsyta {#workspace}
 
-Duplicate Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Prestanda**.
+Duplicate Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Resultat**.
 
 | Flik | Beskrivning |
 |---|---|
 | Chatt | En **Allmän chatt**-tråd plus en tråd per förslag som agenten har skapat. |
 | Historik | En detaljerad logg över kontrollerade företag, skapade förslag, godkända sammanfogningar och kopplingar, och eventuella överhoppade poster, med orsak. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. Långa historiker delas upp i sidor. |
-| Prestanda | Visar hur agenten har presterat under en period (senaste 7, 30 eller 90 dagarna): föreslagna företagsdubbletter, föreslagna kontakter utan företag, föreslagna kontaktdubbletter, godkända sammanfogningar, avvisade dubbletter, förfallna dubbletter och slutförda körningar. |
+| Resultat | Visar hur agenten har presterat under en period (senaste 7, 30 eller 90 dagarna): föreslagna företagsdubbletter, föreslagna kontakter utan företag, föreslagna kontaktdubbletter, godkända sammanfogningar, avvisade dubbletter, förfallna dubbletter och slutförda körningar. |
 
 ![Fliken Historik, med filtret Period och uppdateringsknappen. En post expanderad, som visar dess arbetsflödes-ID och körnings-ID -screenshot][img5]
 
@@ -175,9 +179,11 @@ Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> fö
 
 **Vad händer om jag avvisar eller ignorerar?** Ingenting ändras. Båda posterna behålls som de är.
 
-**Kan jag besluta om flera förslag samtidigt?** Ja. Markera flera väntande förslag och använd **Godkänn** eller **Avvisa** från panelen för massåtgärder, på samma sätt som för alla andra agenter.
+**Kan jag besluta om flera förslag samtidigt?** Ja. Markera flera väntande förslag, eller kryssrutan bredvid listrubriken för att markera alla väntande förslag, upp till 50 åt gången, enligt beskrivningen i [Besluta om flera uppgifter samtidigt][4]. Massgodkännande med **Godkänn** fungerar bara för företagssammanfogningar. Sammanfogningar av dubblerade kontakter och kopplingar av kontakter utan företag kan bara avvisas som massåtgärd, så godkänn dem en i taget.
 
-**Vad händer med ett förslag jag inte hinner med i tid?** Ett förslag som väntar på ditt beslut har en begränsad livslängd, **30 dagar som standard**. Så snart det är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Om du inte agerar i tid kasseras det, och agenten går vidare. Ingenting ändras för ett förfallet förslag, och samma par kan visas igen vid en senare kontroll.
+**Kan jag betygsätta agentens svar?** Ja, om du är godkännare. Se [Betygsätt ett svar][5].
+
+**Vad händer med ett förslag jag inte hinner med i tid?** Ett förslag som väntar på ditt beslut har en begränsad livslängd, **14 dagar som standard**. Så snart det är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Om du inte agerar i tid kasseras det, och agenten går vidare. Ingenting ändras för ett förfallet förslag, och samma par kan visas igen vid en senare kontroll.
 
 **Jag avaktiverade instansen och mina väntande förslag är borta.** Att avaktivera en instans tar bort alla förslag som väntar på godkännande, enligt beskrivningen i [Konfigurera AI-agenter][1]. Godkänn eller avvisa det du behöver först om du vill behålla dem.
 
@@ -185,6 +191,8 @@ Endast instansens ägare kan ändra dess inställningar eller radera den.
 
 [1]: /sv/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /sv/ai/learn/set-up-ai-agents#bulk
+[5]: /sv/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/duplicate-agent-settings.png
 [img2]: /media/loc/en/ai/duplicate-company-comparison.png
