@@ -2,10 +2,10 @@
 uid: help-de-extra-fields-create
 title: Zusatzfelder hinzufügen
 description: Zusatzfelder hinzufügen
-keywords: ['Zusatzfeld', 'Zusatztabelle', 'Datenbankfeld']
+keywords: ['Zusatzfeld', 'Zusatztabelle', 'Feld für benutzerdefiniertes Objekt', 'Datenbankfeld']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.11.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
@@ -17,7 +17,7 @@ language: de
 
 import GotoTables from "./snippets/goto-tables.md";
 
-Nachdem Sie eine [Zusatztabelle][1] erstellt haben, müssen Sie Felder in der Tabelle einrichten, damit Sie anschließend Daten (Einträge) in die Tabelle eingeben können. Sie können auch Zusatzfelder in Standardtabellen erstellen.
+Nachdem Sie eine [Zusatztabelle][1] erstellt haben, fügen Sie die Felder hinzu, die Benutzer für jeden Datensatz ausfüllen. Sie können auch Zusatzfelder zu Standardtabellen in Service hinzufügen.
 
 ## Schritte
 
@@ -25,7 +25,7 @@ Nachdem Sie eine [Zusatztabelle][1] erstellt haben, müssen Sie Felder in der Ta
 
 1. zeigen Sie auf den Tabellennamen und klicken Sie auf **Neues Feld**.
 
-    ![Extra Feld erstellen -screenshot][img1]
+    ![Ansicht Tabellen mit Neues Feld neben einer Tabelle -screenshot][img1]
 
 1. Wählen Sie einen Typ für das neue Feld und klicken Sie auf **OK**.
 
@@ -33,11 +33,10 @@ Nachdem Sie eine [Zusatztabelle][1] erstellt haben, müssen Sie Felder in der Ta
 
     * Geben Sie einen *Namen* ein, der als Bezeichnung verwendet wird.
     * Geben Sie ein *Datenbankfeld* ein, das mit **x_** beginnt, um es im Schema zu identifizieren.
-    * Optional setzen Sie andere Eigenschaften. Der Typ (in Schritt 3 festgelegt) bestimmt, was verfügbar ist. Siehe Details zu den Feldern unten.
+    * Um das Feld obligatorisch zu machen, wählen Sie **Darf nicht leer sein**.
+    * Optional setzen Sie andere Eigenschaften. Der Feldtyp, den Sie im vorherigen Schritt ausgewählt haben, bestimmt, was verfügbar ist. Siehe [Eigenschaften des Feldes](#properties).
 
-    <Tip>
-    Um ein Feld obligatorisch zu machen, wählen Sie **Darf nicht leer sein**.
-    </Tip>
+    ![Eigenschaften eines Feldes vom Typ Text (kurz) -screenshot][img2]
 
 1. Klicken Sie auf **OK**, um das neue Feld zu speichern (führt `alter table y_mynewtable add column x_mynewfield ...` aus).
 
@@ -45,7 +44,7 @@ Nachdem Sie eine [Zusatztabelle][1] erstellt haben, müssen Sie Felder in der Ta
 
 1. Klicken Sie auf **NetServer neu starten**, wenn Sie fertig sind. Wenn Travel aktiviert ist, sehen Sie auch eine Nachricht, dass eine neue Travel-Datenbank generiert werden muss.
 
-## Eigenschaften des Feldes
+## Eigenschaften des Feldes {#properties}
 
 <Note>
 Die Eigenschaft **URL** in dieser Tabelle gehört zum Feldtyp **Dynamischer Link**. Wie Sie URLs, die in Feldern vom Typ **Kurzer Text** und **Langer Text** gespeichert sind, als anklickbare Links anzeigen, lesen Sie unter [URLs in Textfeldern][2].
@@ -63,7 +62,7 @@ Die Eigenschaft **URL** in dieser Tabelle gehört zum Feldtyp **Dynamischer Link
 | Beschreibung | Die Standardbeschreibung. |
 | Wert anzeigen | Diese Option legt fest, ob der Wert angezeigt werden soll. |
 | Extern | Wenn diese Option aktiviert ist, ist das Feld in einem Kundenzentrum verfügbar. Dies ist nur für Standardtabellen relevant, weil Zusatztabellen immer in Kundenzentren angezeigt werden. |
-| Kopfzeile für Liste | In diesem Feld geben Sie eine Kopfzeile für Einträge an, wenn sie als "Untereinträge" in einer Liste angezeigt werden. |
+| Kopfzeile für Liste | In diesem Feld geben Sie eine Kopfzeile für Einträge an, wenn sie als "Untereinträge" in einer Liste angezeigt werden. Mit CRM Suite **Growth** oder höher ist dies auch die Bezeichnung der Bereichsregisterkarte beim zugehörigen Datensatz. Obligatorisch, wenn **Eins-zu-viele-Beziehungen anzeigen** ausgewählt ist. |
 | Funktionsschaltflächen ausblenden | (Beziehungen) Wählen Sie diese Option, um die Funktion zum Hinzufügen neuer Einträge zu Beziehungstabellen auszublenden. |
 | Feld ausblenden | Diese Option legt fest, ob das Feld angezeigt werden soll. |
 | HTML-Tags beibehalten | (Text) Wählen Sie diese Option, um das HTML-Tag in den Text aufzunehmen. |
@@ -71,9 +70,9 @@ Die Eigenschaft **URL** in dieser Tabelle gehört zum Feldtyp **Dynamischer Link
 | Anzahl der Einheiten | (Zeitraum) Geben Sie die maximale Anzahl von Einheiten für die übergeordnete ausgewählte Zeiteinheit ein. Beispiel: Wenn Sie Stunden und Minuten ausgewählt haben und "4" eingeben, können höchstens 4 Stunden ausgewählt werden, während bis zu 60 Minuten möglich sind. In ähnlicher Weise können für Tage und Stunden höchstens 4 Tage ausgewählt werden, während bis zu 24 Stunden möglich sind. |
 | Untergeordnete Knoten nur in hierarchischen Dropdown-Listen zulassen | (Beziehung zu Zusatztabelle) Gibt an, ob nur der niedrigste Knoten in einer Hierarchie vom Benutzer ausgewählt werden kann. |
 | Position | Legt die Position dieses Feldes unter den anderen Feldern in der Liste fest. |
-| Suchen-Operator | Wählen Sie den Suchoperator aus, der für dieses Feld verwendet werden soll. |
+| Suchkriterien | Der Suchoperator, der für dieses Feld verwendet werden soll, zum Beispiel **beginnt mit**. |
 | In Tabelle anzeigen | Wenn diese Option aktiviert ist, wird dieses Feld als Spalte in Ansichten angezeigt, in denen mehrere Einträge in einer Tabelle angezeigt werden. |
-| Eins-zu-viele-Beziehungen anzeigen | Wenn Sie die Optionen **Beziehung zu Person**, **Beziehung zu Firma** oder **Beziehung zu Anfrage** auswählen und eine Registerkarte mit Daten aus dieser Tabelle in den Ansichten Person, Firma und Anfrage anzeigen möchten, können Sie dieses Feld aktivieren. |
+| Eins-zu-viele-Beziehungen anzeigen | Wenn Sie die Optionen **Beziehung zu Person**, **Beziehung zu Firma** oder **Beziehung zu Anfrage** auswählen und eine Registerkarte mit Daten aus dieser Tabelle in den Ansichten Person, Firma und Anfrage anzeigen möchten, können Sie dieses Feld aktivieren. Mit CRM Suite **Growth** oder höher erhält auch der zugehörige Datensatz in SuperOffice CRM eine Bereichsregisterkarte, zum Beispiel eine Registerkarte **Equipment** bei der Firma. |
 | Tabelle | Gibt an, zu welcher Tabelle das Feld gehört. |
 | Zieltabelle | Gibt an, welche Tabelle verwendet werden soll. |
 | Textbereich /Höhe | Wählen Sie diese Optionen, um die Höhe (Anzahl der Zeilen) des Textfelds anzugeben. |
@@ -88,21 +87,28 @@ Die Eigenschaft **URL** in dieser Tabelle gehört zum Feldtyp **Dynamischer Link
 
 ## Beziehung hinzufügen (Fremdschlüssel, FK)
 
-1. Klicken Sie auf **Neues Feld**.
-1. Wählen Sie den Beziehungstyp für die Entität aus, mit der Sie verbinden möchten, und klicken Sie auf **OK**.
+Ein Beziehungsfeld verknüpft einen Datensatz mit einem Datensatz in einer anderen Tabelle. Mit CRM Suite **Growth** oder höher kann der zugehörige Datensatz zusätzlich eine Bereichsregisterkarte anzeigen, die die verknüpften Datensätze auflistet.
 
-    <Note>
-    Verfügbar ab Version 10.3.4 im Pilot: Die Auswahl von **Ein-zu-viele-Beziehungen anzeigen** fügt einen Bereichsreiter (Archiv) zu den zugehörigen Standardentitäten hinzu.
-    </Note>
+1. Zeigen Sie auf die Tabelle, die die Beziehung enthalten soll, und klicken Sie auf **Neues Feld**.
+1. Wählen Sie den Beziehungstyp für die Tabelle aus, mit der Sie verknüpfen möchten, und klicken Sie auf **OK**.
+1. Stellen Sie die Feldeigenschaften wie oben beschrieben ein. Um eine Bereichsregisterkarte beim zugehörigen Datensatz anzuzeigen, wählen Sie **Eins-zu-viele-Beziehungen anzeigen** aus und geben die Bezeichnung der Registerkarte in **Kopfzeile für Liste** ein.
 
-1. Stellen Sie die Feldeigenschaften wie oben beschrieben ein.
+    ![Eigenschaften einer Beziehung zu Zusatztabelle mit ausgefüllten Feldern Kopfzeile für Liste und Zieltabelle -screenshot][img3]
+
 1. Klicken Sie auf **OK**, um die Beziehung zu speichern.
+1. Öffnen Sie bei einer **Beziehung zu Zusatztabelle** die Eigenschaften der Zieltabelle und legen Sie **Anzeigefeld** auf ein Feld fest, das Benutzer erkennen, zum Beispiel den Namen. Siehe [Tabelleneigenschaften][1].
 1. Klicken Sie auf **NetServer neu starten**, um die Änderungen anzuwenden.
 
-Zum Beispiel, um alle eingehenden Anfragen mit einem bestimmten Verkauf zu verbinden, können Sie ein zusätzliches Feld des Typs Verkaufsbeziehung zu Anfragen hinzufügen ([Tickettabelle][4]). Um verbundene Anfragen beim Ansicht eines Verkaufs in SuperOffice CRM aufzulisten, müssen Sie ein Webpanel erstellen.
+Beispiel: Eine Tabelle Lease hat ein Feld **Laptop** (Beziehung zu Zusatztabelle Laptop) und ein Feld **Verkauf** (Verkaufsbeziehung). Bei beiden ist **Eins-zu-viele-Beziehungen anzeigen** ausgewählt und *Leases* als **Kopfzeile für Liste** festgelegt. Jeder Laptop und jeder Verkauf zeigt dann eine Registerkarte **Leases** mit den verknüpften Leases.
+
+![Verkauf mit Bereichsregisterkarte Leases -screenshot][img4]
+
+Bei einer benutzerplanbasierten Lizenz erstellen Sie stattdessen ein Webpanel, um die zugehörigen Datensätze aufzulisten.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
-[4]: ../../../en/database/tables/ticket
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

@@ -1,11 +1,11 @@
 ---
 uid: help-de-custom-objects
 title: Benutzerdefinierte Objekte und Felder
-description: Benutzerdefinierte Objekte
-keywords: ['benutzerdefiniertes Objekt', 'Felder', 'udef']
+description: Lernen Sie den Unterschied zwischen benutzerdefinierten Feldern, Zusatzfeldern und benutzerdefinierten Objekten kennen und welchen Plan Sie für die jeweilige Variante benötigen.
+keywords: ['benutzerdefiniertes Objekt', 'Tabelle', 'Feld', 'benutzerdefiniertes Feld', 'udef', 'Zusatzfeld', 'Zusatztabelle']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
@@ -16,33 +16,61 @@ language: de
 
 import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
->Alle Firmen und Organisationen haben ihre eigenen Anforderungen an die Informationen, die sie bezüglich ihrer Kunden, Verkäufe, Projekte, Verträge usw. registrieren müssen. Administratoren können in SuperOffice Felder und Tabellen hinzufügen, um den Typ der zu registrierenden Informationen anzupassen.
+Jede Firma hat ihre eigenen Anforderungen daran, was sie über ihre Kunden, Verkäufe, Projekte, Verträge usw. registrieren möchte. Administratoren können in SuperOffice Felder und Tabellen hinzufügen, um den Typ der zu registrierenden Informationen anzupassen.
 
-SuperOffice CRM und Service waren einmal zwei separate Anwendungen mit unterschiedlichen Erweiterungsoptionen. [**Benutzerdefinierte Felder**][1] (kurz udefs) gehören zu SuperOffice CRM, während [**Zusättabellen**][3] (auch als Drittanbietertabellen bezeichnet) und [**Zusätzfelder**][2] zu Service gehören. Der Begriff **benutzerdefiniertes Feld** umfasst sowohl benutzerdefinierte Felder als auch zusätzliche Felder.
+SuperOffice CRM und Service waren einmal zwei separate Anwendungen mit unterschiedlichen Erweiterungsoptionen. [**Benutzerdefinierte Felder**][1] (kurz udefs) gehören zu SuperOffice CRM, während [**Zusatztabellen**][3] (auch als Drittanbietertabellen bezeichnet) und [**Zusatzfelder**][2] zu Service gehören. Der Begriff **benutzerdefiniertes Feld** umfasst sowohl benutzerdefinierte Felder als auch Zusatzfelder.
 
-## Verwendung
+Es gibt zwei Möglichkeiten, SuperOffice zu erweitern:
 
-* Ein gutes Beispiel für ein benutzerdefiniertes Feld, das Sie auf der Ansicht **Kontakt** verwenden können, ist ein Feld namens "Zufriedener Kunde", bei dem der Wert des Feldes Ja oder Nein ist. Sie können zum Beispiel Ihren Kontakten eine E-Mail (mit Verknüpfungsaktionen) senden, in der sie angeben können, ob sie mit Ihren Dienstleistungen zufrieden sind. Dies gibt Ihnen wertvolle Einblicke in die allgemeine Kundenzufriedenheitsrate.
+* **Felder zu Datensätzen hinzufügen.** Diese Felder heißen *benutzerdefinierte Felder*. Fügen Sie zum Beispiel ein Feld "Zufriedener Kunde" zu Personen hinzu.
+* **Neue Typen von Datensätzen hinzufügen.** Diese Datensätze heißen *benutzerdefinierte Objekte*. Registrieren Sie zum Beispiel die Laptops, die Sie an Kunden vermieten, als eigenen Datensatztyp.
 
-* Mit der **Suchen**-Funktion können Sie nach den Informationen suchen, die Sie in benutzerdefinierten Feldern registrieren, und Selektionen erstellen. Wenn Sie zum Beispiel das Ablaufdatum der Wartungsvertrag registrieren, die Sie mit Kunden haben, können Sie eine dynamische Selektion erstellen, die die Kunden zeigt, für die die Vereinbarung in weniger als einem Monat abläuft.
+## Benutzerdefinierte Felder
 
-* Sie können die Informationen aus diesen Feldern in Dokumenten und E-Mails als **Vorlagenvariablen** wiederverwenden. Jedes Feld, das Sie hinzufügen, erhält seine eigene eindeutige ID (Prog ID), die in Dokumenten verwendet werden kann, um kontaktspezifische Informationen zu fusionieren. Wenn Sie also eine E-Mail an Kunden senden möchten, in der steht, dass ihre Wartungsvertrag bald abläuft, können Sie die Vorlagenvariable für das Ablaufdatum verwenden, um das korrekte Ablaufdatum ihrer Vereinbarung in der Mitteilung anzuzeigen.
+Es gibt zwei Arten von benutzerdefinierten Feldern, abhängig vom Datensatz:
+
+| Art | Hinzugefügt zu | Verwaltet in |
+|---|---|---|
+| [Benutzerdefinierte Felder][1] (udefs) | Firmen, Personen, Verkäufen, Projekten, Folgeaufgaben und Dokumenten | **Einstellungen und Verwaltung** > **Felder** |
+| [Zusatzfelder][2] | Anfragen, Nachrichten, anderen Service-Tabellen und benutzerdefinierten Objekten | **Einstellungen und Verwaltung** > **Systemdesign** > **Tabellen** |
+
+## Benutzerdefinierte Objekte
+
+Ein [benutzerdefiniertes Objekt][3] ist ein neuer Datensatztyp, den Sie selbst definieren. Zum Beispiel *Laptop*, *Lease* oder *Auto*. Sie entscheiden, welche Felder das benutzerdefinierte Objekt hat und wie es mit Firmen, Personen, Anfragen und anderen Datensätzen in Beziehung steht.
+
+Mit CRM Suite **Growth** oder höher funktioniert ein benutzerdefiniertes Objekt wie die Standarddatensätze in SuperOffice. Benutzer finden es im Navigator, erstellen neue Datensätze über **Neu** in der oberen Leiste, suchen nach Datensätzen, erstellen Selektionen und Dashboards und sehen zugehörige Datensätze auf einer Bereichsregisterkarte, zum Beispiel bei der Firma.
+
+Benutzerdefinierte Objekte werden in **Einstellungen und Verwaltung** > **Systemdesign** > **Tabellen** erstellt. In der Datenbank ist ein benutzerdefiniertes Objekt eine Zusatztabelle.
+
+## Beispiele
+
+* **Zufriedener Kunde (benutzerdefiniertes Feld).** Fügen Sie Personen ein Ja/Nein-Feld hinzu. Senden Sie ein Mailing, in dem Personen angeben, ob sie zufrieden sind, und speichern Sie die Antwort im Feld.
+
+* **Ablaufdatum der Vereinbarung (benutzerdefiniertes Feld).** Registrieren Sie das Ablaufdatum jedes Wartungsvertrags bei der Firma. Erstellen Sie eine dynamische Selektion der Firmen, bei denen der Vertrag innerhalb eines Monats abläuft.
+
+* **Vorlagenvariablen (benutzerdefinierte Felder).** Verwenden Sie die Informationen aus benutzerdefinierten Feldern in Dokumenten und E-Mails als Vorlagenvariablen wieder. Jedes Feld, das Sie hinzufügen, erhält seine eigene eindeutige ID (Prog ID), die Sie in Dokumenten verwenden, um kontaktspezifische Informationen zu fusionieren. Eine E-Mail über einen bald ablaufenden Wartungsvertrag kann zum Beispiel für jede Person das korrekte Ablaufdatum anzeigen.
+
+* **Laptop-Leasing (benutzerdefinierte Objekte).** Registrieren Sie jeden vermieteten Laptop mit Modell, Seriennummer, Kaufdatum und Preis. Registrieren Sie jedes Lease als weiteres benutzerdefiniertes Objekt, das mit dem Laptop, der Firma, der Person und dem Verkauf in Beziehung steht. Der Bildschirm Firma zeigt dann eine Registerkarte **Leases**, und der Laptop zeigt alle seine Leases im Zeitverlauf.
 
 ## Anforderungen
 
+**Benutzerdefinierte Felder:**
+
 <ReqDevToolsTransition />
 
+**Benutzerdefinierte Objekte:**
+
 <Note>
-**CRM Suite (Growth-Plan):** Ihr Plan beinhaltet eine Begrenzung der Anzahl benutzerdefinierter Objekte. Wenn das Limit erreicht ist, ist die Erstellung weiterer Objekte gesperrt. Siehe [Plangrenzen][13] für Details.
+Für benutzerdefinierte Objekte ist der CRM Suite **Growth**-Plan oder höher erforderlich. Wenn Sie eine [benutzerplanbasierte Lizenz][1026] haben und benutzerdefinierte Objekte verwenden möchten, nehmen Sie am [Pilotprogramm für benutzerdefinierte Objekte][1027] teil.
 </Note>
 
-Felder werden automatisch auf der [Registerkarte Mehr][12] angezeigt, sobald sie hinzugefügt wurden.
+Mit einer benutzerplanbasierten Lizenz sind Zusatztabellen in SuperOffice Service und in SuperOffice CRM über Webpanels verfügbar. Siehe [Zusatztabellen mit einer benutzerplanbasierten Lizenz][16].
 
-## Layout (Positionierung von Feldern)
+Der CRM Suite-Plan legt fest, wie viele benutzerdefinierte Objekte Sie erstellen können. Wenn Sie das Limit erreichen, können Sie keine weiteren erstellen. Siehe [Plangrenzen][13].
 
-Alle benutzerdefinierten Ansichtlayouts (erstellt im Ansichtsdesigner) können die Einstellungen für individuelle benutzerdefinierte Felder außer Kraft setzen.
+## Layout von Feldern
 
-Wenn Sie keine Development Tools-Lizenz oder den **Core**-Plan haben, verwenden Sie die Reihenfolge der verschiedenen Felder, um sie auf dem Tab **Mehr** zu sortieren.
+Benutzerdefinierte Felder werden auf der [Registerkarte Mehr][12] angezeigt, sortiert nach ihrer Reihenfolge. Mit dem [Ansichtsdesigner][14] können Sie Felder auf jeder Registerkarte platzieren und das Layout benutzerdefinierter Objekte gestalten. Ein im Ansichtsdesigner erstelltes Layout setzt die an einzelnen Feldern festgelegte Position außer Kraft.
 
 ## Zugehörige Inhalte
 
@@ -54,3 +82,7 @@ Wenn Sie keine Development Tools-Lizenz oder den **Core**-Plan haben, verwenden 
 [5]: /de/customization/screen-designer/admin/index
 [12]: /de/custom-objects/learn/more-tab
 [13]: /de/admin/license/crm-suite
+[14]: /de/customization/screen-designer/admin/index
+[16]: /de/custom-objects/learn/extra-table#user-plans
+[1026]: /de/admin/license/user-plans
+[1027]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/

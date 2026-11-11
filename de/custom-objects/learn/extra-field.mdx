@@ -4,8 +4,8 @@ title: Zusatzfeld
 description: Zusatzfeld
 keywords: ['Zusatzfeld', 'url', 'anklickbarer Link', 'Link im Zusatzfeld']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: user
@@ -87,23 +87,23 @@ Datenbanktabellen sind mit *Fremdschlüssel* (FK) verbunden. Diese sind Feldtype
 * Beziehung zu Termin
 * Beziehung zu Zusatztabelle
 
-#### Im Pilot verfügbar ab Version 10.3.4
+#### Bereichsregisterkarten für zugehörige Datensätze {#section-tab}
 
-Wenn ein Zusatzfeld so eingestellt ist, dass es Ein-zu-viele-Beziehungen anzeigt, fügt das System automatisch eine Bereichsregisterkarte in den zugehörigen Standardentitäten hinzu. Dies ist nicht dasselbe wie der **Beziehungen**-Reiter auf den Firmen- und Personbildschirmen.
+Mit CRM Suite **Growth** oder höher erhält der zugehörige Datensatz eine Bereichsregisterkarte, die die Datensätze auflistet, die auf ihn verweisen, wenn bei einem Beziehungsfeld **Eins-zu-viele-Beziehungen anzeigen** ausgewählt ist. Beispiel: Ein benutzerdefiniertes Objekt **Lease** mit einer Beziehung zu Firma fügt der Firma eine Registerkarte **Leases** hinzu. Diese Registerkarte ist nicht dasselbe wie der **Beziehungen**-Reiter auf den Firmen- und Personbildschirmen.
 
-![Bereichsregisterkarte mit zusätzlicher Feldrelation -screenshot][img1]
+![Firma mit Bereichsregisterkarte Leases -screenshot][img1]
 
-#### Im Pilot verfügbar ab Version 10.3.7
+#### Vorschau zugehöriger Datensätze {#preview}
 
-Um die Details der Elemente in dieser Liste anzuzeigen, ohne jedes einzelne Objekt öffnen zu müssen:
+Mit CRM Suite **Growth** oder höher können Sie die Details zugehöriger Datensätze in der Seitenleiste anzeigen. So zeigen Sie die Details der Datensätze in dieser Liste an, ohne jeden einzeln zu öffnen:
 
-1. Gehen Sie zum Seitenbereich und wählen Sie die **Vorschau**-Ansicht.
-2. Klicken Sie auf ein Element im relationsbasierten Bereichsregisterkarte. Der Seitenbereich zeigt eine Vorschau des ausgewählten Objekts an. In der Vorschau können Sie:
+1. Gehen Sie zur Seitenleiste und wählen Sie die **Vorschau**-Ansicht.
+2. Wählen Sie einen Datensatz auf der Bereichsregisterkarte aus. Die Seitenleiste zeigt eine Vorschau des ausgewählten Objekts an. In der Vorschau können Sie:
 
-    * Auf eine Standardentität klicken, um zu ihr zu wechseln.
-    * Auf ein Zusatzobjekt klicken, um ein Dialogfeld zu öffnen, in dem Sie zusätzliche Informationen anzeigen oder bearbeiten können.
+    * Einen Standarddatensatz, zum Beispiel eine Firma, auswählen, um zu ihm zu wechseln.
+    * Einen Datensatz eines benutzerdefinierten Objekts auswählen, um ein Dialogfeld zu öffnen, in dem Sie ihn anzeigen oder bearbeiten können.
 
-![Vorschau zusätzliche Feldrelation -screenshot][img2]
+![Vorschau zugehöriger Datensätze einer Firma -screenshot][img2]
 
 ## Verwendung
 
@@ -111,6 +111,6 @@ Zusatzfelder können beispielsweise als Suchkriterien und Spalten im Verkauf in 
 
 [6]: ./extra-table
 [7]: /de/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png
