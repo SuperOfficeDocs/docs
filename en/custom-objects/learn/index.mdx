@@ -21,23 +21,25 @@ language: en
 import ReqDevToolsTransition from "../../../snippets/license/req-dev-tools-transition.mdx";
 import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 
-Every company has its own needs for what to register about its customers, sales, projects, contracts, and so on. Administrators can add fields and objects in SuperOffice to register this information.
+Every company has its own needs for what to register about its customers, sales, projects, contracts, and so on. Administrators can add fields and tables in SuperOffice to customize the type of information that can be registered.
+
+SuperOffice CRM and Service were once two separate applications, with different extensibility options. [**User-defined fields**][1] (udefs for short) belong in SuperOffice CRM, while [**extra tables**][3] (aka 3rd party tables) and [**extra fields**][2] belong in Service. The term **custom field** includes both user-defined fields and extra fields.
 
 There are two ways to extend SuperOffice:
 
-* **Add fields to existing records.** These fields are called *user-defined fields*. For example, add a "Satisfied customer" field to contacts.
+* **Add fields to records.** These fields are called *custom fields*. For example, add a "Satisfied customer" field to contacts.
 * **Add new types of records.** These records are called *custom objects*. For example, register the laptops you lease to customers as their own type of record.
 
-## User-defined fields
+## Custom fields
 
-*User-defined fields* is the umbrella term for fields that you add to the existing SuperOffice records. There are two kinds, depending on the record:
+*Custom field* is the umbrella term for fields that you add to SuperOffice records. There are two kinds, depending on the record:
 
 | Kind | Added to | Managed in |
 |---|---|---|
 | [User-defined fields][1] (udefs) | Companies, contacts, sales, projects, follow-ups, and documents | **Settings and maintenance** > **Fields** |
-| [Extra fields][2] | Requests, messages, and other Service records, and custom objects | **Settings and maintenance** > **System design** > **Tables** |
+| [Extra fields][2] | Requests, messages, and other Service tables, and custom objects | **Settings and maintenance** > **System design** > **Tables** |
 
-User-defined fields are shown on the [More tab][12] of the record.
+User-defined fields are shown on the [More tab][12] of the record they are added to.
 
 <ReqDevToolsTransition />
 
@@ -61,11 +63,13 @@ The CRM Suite plan sets the number of custom objects you can create. When you re
 
 * **Agreement expiry date (user-defined field).** Register the expiry date of each maintenance agreement on the company. Create a dynamic selection of the companies where the agreement expires within one month. Use the field as a template variable in an email to remind them.
 
+* **Template variables (custom fields).** Reuse the information from custom fields in documents and emails as template variables. Each field you add gets its own unique ID (Prog ID), which you use in documents to merge in contact-specific information. For example, an email about an expiring maintenance agreement can show the correct expiry date for each contact.
+
 * **Laptop leases (custom objects).** Register each laptop you lease out, with model, serial number, purchase date, and price. Register each lease as another custom object related to the laptop, the company, the contact, and the sale. The company card then shows a **Leases** tab, and the laptop shows all its leases over time.
 
 ## Layout of fields
 
-User-defined fields are shown on the **More** tab, sorted by their rank. With the Screen Designer, you can place fields on any tab and design the layout of custom objects. A layout created in the Screen Designer overrides the position set on individual fields. See [Screen Designer][14].
+User-defined fields are shown on the **More** tab, sorted by their rank. With the [Screen Designer][14], you can place fields on any tab and design the layout of custom objects. A layout created in the Screen Designer overrides the position set on individual fields.
 
 [1]: /en/custom-objects/learn/udef
 [2]: /en/custom-objects/learn/extra-field
