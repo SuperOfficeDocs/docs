@@ -90,23 +90,26 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 
 ## Add relation (foreign key, FK)
 
-1. Click **New field**.
-1. Select the relation type for the entity you want to connect to and click **OK**.
-1. Set field properties as described above. To show the related records on a tab on the other record, select **Show one-to-many relations** and fill in **Header for list**. The header is mandatory when **Show one-to-many relations** is selected.
+A relation field links a record to a record in another table, for example a lease to a laptop. With CRM Suite **Growth** or higher, the related record can also show a section tab that lists the linked records.
+
+1. Point at the table that should hold the relation, for example **Lease**, and click **New field**.
+1. Select the relation type for the table you want to link to and click **OK**.
+1. Set field properties as described above. To show a section tab on the related record, select **Show one-to-many relations**, and enter the tab label in **Header for list**. For example, a **Laptop** field in the Lease table with the header *Leases* adds a **Leases** tab to each laptop.
 
     ![Field properties for an extra table relation, with Header for list and Target table filled in -screenshot][img3]
 
 1. Click **OK** to save the relation.
-1. For an **Extra table relation**, set **Display field** on the target table to a field users recognize, such as the name. See [table properties][1].
+1. For an **Extra table relation**, open the properties of the target table, for example **Laptop**, and set **Display field** to a field users recognize, such as the name. See [table properties][1].
 1. Click **Restart NetServer** to apply the changes.
 
-For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With CRM Suite **Growth** or higher and **Show one-to-many relations** selected, the sale shows a tab with its requests. In the same way, a **Lease** custom object with a sale relation adds a **Leases** tab to the sale. With a user-plan based license, build a web panel to list connected requests when viewing a sale in SuperOffice CRM.
+For example, the Lease custom object has a **Sale relation** with **Show one-to-many relations** selected, so each sale shows a **Leases** tab with its leases.
 
 ![Sale with a Leases section tab -screenshot][img4]
 
+With a user-plan based license, build a web panel to list the related records instead.
+
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
-[4]: /en/database/tables/ticket
 
 [img1]: /media/loc/en/custom-objects/tables-new-field.png
 [img2]: /media/loc/en/custom-objects/field-properties-text.png
