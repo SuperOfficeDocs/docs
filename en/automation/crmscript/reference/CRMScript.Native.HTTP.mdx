@@ -492,9 +492,9 @@ Void setDebugMode(Bool debug)
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
-## setOption(String,Bool)
+## setOption(String,String)
 
-Option function.
+Sets an option for the requests made with this HTTP object.
 
 ```crmscript
 Void setOption(String name, String value)
@@ -503,17 +503,19 @@ Void setOption(String name, String value)
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
-| Value | Description |
-|---|---|
-| verifyPeer | verify the peer's SSL certificate |
-| verifyHost | verify the certificate's name against the host |
-| timeout | set maximum time the request is allowed to take |
-| followLocation | follow HTTP 3xx redirects if set to 1, default is 1 |
-| username | username used in authentication |
-| password | password used in authentication |
-| parameters | The complete parameters to post. This will replace whatever you have added using .setValue(), but allows you to specify the whole parameter to post. Useful when posting e.g. JSON structs instead of name=value pairs. NOTE you need to prefix whatever you want to send with a dummy character (which will be removed) due to complexities in this class. See the example below. |
-| authenticationMethod | which authentication method to use basic (default), digest, gssnegotiate, ntlm, digest_ie, ntlm_wb, none |
-| parametersUTF8 | From version 8.2R3. This option makes the parameters be encoded as UTF-8. Normally this is what you want, but to not break any old uses, this is an optional option. |
+| Option | Value | Description |
+|---|---|---|
+| verifyPeer | On/off. Default: on | Verify the peer's SSL certificate. |
+| verifyHost | On/off. Default: on | Verify that the certificate's name matches the host. |
+| timeout | Seconds. Default: 3600 | Maximum time the whole request is allowed to take. |
+| followLocation | On/off. Default: on | Follow HTTP 3xx redirects. |
+| username | Text | User name for authentication. |
+| password | Text | Password for authentication. Only used together with username. |
+| authenticationMethod | basic, digest, gssnegotiate, ntlm, ntlm_wb or none. Default: basic | Authentication method to use. |
+| parameters | Text | The complete parameters to post. Replaces the parameters added with setValue(), so you can post for example JSON instead of name=value pairs. The first character is removed (parameters from setValue() start with ?), so start the value with one extra character. See the example below. |
+| parametersUTF8 | On/off. Default: off | Encode the posted parameters as UTF-8. Normally this is what you want, but it is off by default so older scripts keep working. From version 8.2R3. |
+
+On/off options are on when the value is "true" or "1", and off for any other value. Unknown option names and authenticationMethod values are ignored.
 </Note>
 
 **Example:**

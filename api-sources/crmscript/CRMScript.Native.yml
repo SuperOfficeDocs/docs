@@ -33,7 +33,6 @@ items:
   - CRMScript.Native.JSONBuilder
   - CRMScript.Native.Knowledge
   - CRMScript.Native.License
-  - CRMScript.Native.LocalizedField
   - CRMScript.Native.MacroParameter
   - CRMScript.Native.MacroReturnValue
   - CRMScript.Native.MainMenu
@@ -237,12 +236,6 @@ references:
   name: License
   nameWithType: License
   fullName: CRMScript.Native.License
-- uid: CRMScript.Native.LocalizedField
-  commentId: T:CRMScript.Native.LocalizedField
-  isExternal: true
-  name: LocalizedField
-  nameWithType: LocalizedField
-  fullName: CRMScript.Native.LocalizedField
 - uid: CRMScript.Native.MacroParameter
   commentId: T:CRMScript.Native.MacroParameter
   isExternal: true
