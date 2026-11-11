@@ -673,7 +673,7 @@
         ]
       },
       {
-        "group": "Egendefinerte objekter",
+        "group": "Ekstratabeller",
         "icon": "cube",
         "root": "no/custom-objects/learn/index",
         "pages": [
@@ -689,7 +689,7 @@
             ]
           },
           {
-            "group": "Egendefinerte objekter",
+            "group": "Ekstratabeller",
             "pages": [
               "no/custom-objects/learn/extra-table",
               "no/custom-objects/admin/create-extra-table"
