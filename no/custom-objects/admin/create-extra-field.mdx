@@ -2,10 +2,10 @@
 uid: help-no-extra-fields-create
 title: Legge til ekstrafelt
 description: Legge til ekstrafelt
-keywords: ['ekstrafelt', 'tilpasset felt', 'databasefelt', 'feltegenskaper']
+keywords: ['ekstrafelt', 'tilpasset felt', 'databasefelt', 'felt for egendefinert objekt', 'feltegenskaper']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.11.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
@@ -17,7 +17,7 @@ language: no
 
 import GotoTables from "./snippets/goto-tables.md";
 
-Når du har opprettet en [ekstratabell][1], må du definere felt i tabellen, slik at du senere kan skrive inn data (oppføringer). Du kan også opprette ekstrafelt i standardtabeller.
+Når du har opprettet en [ekstratabell][1], legger du til feltene brukerne fyller ut for hver post. Du kan også legge til ekstrafelt i standard Service-tabeller.
 
 ## Trinn
 
@@ -25,7 +25,7 @@ Når du har opprettet en [ekstratabell][1], må du definere felt i tabellen, sli
 
 1. Bla til ønsket tabell, pek på tabellnavnet, og klikk **Nytt felt**.
 
-    ![Legge til ekstrafelt -screenshot][img1]
+    ![Bildet Tabeller med Nytt felt ved siden av en tabell -screenshot][img1]
 
 1. Velg en type for det nye feltet og klikk **OK**.
 
@@ -33,11 +33,10 @@ Når du har opprettet en [ekstratabell][1], må du definere felt i tabellen, sli
 
     * Skriv inn et *navn* som skal brukes som ledetekst.
     * Skriv inn et *databasefelt* som begynner med **x_** for å identifisere feltet i skjemaet.
-    * Valgfritt sett andre egenskaper. Typen (spesifisert i trinn 3) bestemmer hva som er tilgjengelig. Se detaljer om feltene nedenfor.
+    * For å gjøre feltet obligatorisk, velg **Kan ikke være tomt**.
+    * Valgfritt sett andre egenskaper. Felttypen du valgte i forrige trinn bestemmer hva som er tilgjengelig. Se [feltegenskaper](#properties).
 
-    <Tip>
-    For å gjøre et felt obligatorisk, velg **Kan ikke være tomt**.
-    </Tip>
+    ![Feltegenskaper for et Tekststreng (kort)-felt -screenshot][img2]
 
 1. Klikk **OK** for å lagre det nye feltet (kjører `alter table y_mynewtable add column x_mynewfield ...`).
 
@@ -45,7 +44,7 @@ Når du har opprettet en [ekstratabell][1], må du definere felt i tabellen, sli
 
 1. Klikk **Start NetServer om igjen** når du er ferdig. Hvis Travel er aktivert, vil du også se en melding om at en ny Travel-database må genereres.
 
-## Egenskaper for felt
+## Egenskaper for felt {#properties}
 
 <Note>
 Egenskapen **URL** i denne tabellen hører til felttypen **Dynamisk kobling**. Hvis du vil vise URL-er som er lagret i felt av typen **Kort tekst** og **Lang tekst**, som klikkbare koblinger, kan du se [URL-er i tekstfelt][2].
@@ -63,7 +62,7 @@ Egenskapen **URL** i denne tabellen hører til felttypen **Dynamisk kobling**. H
 | Beskrivelse | Standardbeskrivelsen. |
 | Vis verdi | Angi om verdien skal vises. |
 | Eksterne | Hvis det er merket av, er feltet tilgjengelig fra et kundesenter. Bare relevant for standardtabeller, siden ekstratabeller alltid vises i kundesentre. |
-| Topptekst for liste | En overskrift for disse postene når de vises som "underposter" på en liste. |
+| Topptekst for liste | En overskrift for disse postene når de vises som "underposter" på en liste. Med CRM Suite **Growth** eller høyere er det også navnet på detaljkortet på den relaterte posten. Obligatorisk når **Vis én-til-mange-relasjoner** er valgt. |
 | Skjul funksjonsknapper | (relasjoner) Velg dette alternativet hvis du vil skjule funksjonen for å legge til nye poster i relasjonstabellen. |
 | Skjul feltet | Angi om feltet skal vises. |
 | Behold HTML-koder | (tekst) Velg dette alternativet for å inkludere HTML-koden i teksten. |
@@ -71,9 +70,9 @@ Egenskapen **URL** i denne tabellen hører til felttypen **Dynamisk kobling**. H
 | Antall enheter | (tidsperiode) Angi maksimum antall enheter for den "største" valgte tidsenheten. Eksempel: Hvis du valgte timer og minutter og skriver "4", kan maksimum 4 timer velges, mens minutter går til 60. På samme måte kan du for dager og timer maksimum velge 4 dager, mens timer går til 24. |
 | Tillat bladnode bare i hierarkiske listebokser | (relasjon til ekstratabell) Angi om bare den laveste noden i hierarkiet skal kunne velges av brukeren. |
 | Posisjon | Angir dette feltets plassering blant de andre feltene i oversikter. |
-| Søkeoperator | Velg søkeoperator som skal brukes i dette feltet. |
+| Søkekriterier | Søkeoperatoren som skal brukes i dette feltet, for eksempel **Begynner med**. |
 | Vis i tabell | Hvis det er merket av for dette alternativet, vil dette feltet vises som en kolonne i de bildene hvor flere poster vises i en tabell. |
-| Vis én-til-mange-relasjoner | Hvis du har valgt felttypen **Personrelasjon**, **Firmarelasjon** eller **Saksrelasjon** og ønsker at det skal vises en fane med informasjon fra denne tabellen i bildene for person, firma eller sak, kan du merke av i dette feltet. |
+| Vis én-til-mange-relasjoner | Hvis du har valgt felttypen **Personrelasjon**, **Firmarelasjon** eller **Saksrelasjon** og ønsker at det skal vises en fane med informasjon fra denne tabellen i bildene for person, firma eller sak, kan du merke av i dette feltet. Med CRM Suite **Growth** eller høyere får den relaterte posten i SuperOffice CRM også et detaljkort, for eksempel et detaljkort **Utstyr** på firmaet. |
 | Tabell | Angir hvilken tabell feltet tilhører. |
 | Måltabell | Angi hvilken tabell som skal brukes. |
 | Tekstområde/høyde | Antall linjer på tekstfeltet. |
@@ -88,21 +87,28 @@ Egenskapen **URL** i denne tabellen hører til felttypen **Dynamisk kobling**. H
 
 ## Legg til relasjon (fremmednøkkel, FK)
 
-1. Klikk på **Nytt felt**.
-1. Velg relasjonstypen for enheten du vil koble til og klikk på **OK**.
-1. Sett feltegenskaper som beskrevet ovenfor.
+Et relasjonsfelt kobler en post til en post i en annen tabell. Med CRM Suite **Growth** eller høyere kan den relaterte posten også vise et detaljkort som lister opp de koblede postene.
 
-    <Note>
-    Tilgjengelig fra versjon 10.3.4 i pilot: Valg av **Vis én-til-mange-relasjoner** legger til et detalkort (arkiv) til relaterte standardenheter.
-    </Note>
+1. Pek på tabellen som skal inneholde relasjonen, og klikk på **Nytt felt**.
+1. Velg relasjonstypen for tabellen du vil koble til og klikk på **OK**.
+1. Sett feltegenskaper som beskrevet ovenfor. For å vise et detaljkort på den relaterte posten, velg **Vis én-til-mange-relasjoner**, og skriv inn navnet på kortet i **Topptekst for liste**.
+
+    ![Feltegenskaper for en relasjon til ekstratabell, med Topptekst for liste og Måltabell utfylt -screenshot][img3]
 
 1. Klikk på **OK** for å lagre relasjonen.
+1. For en **Relasjon til ekstratabell**, åpne egenskapene til måltabellen og sett **Visningsfelt** til et felt brukerne kjenner igjen, for eksempel navnet. Se [tabellegenskaper][1].
 1. Klikk på **Start NetServer om igjen** for å anvende endringene.
 
-For eksempel, for å koble alle innkommende saker til et bestemt salg, kan du legge til et ekstrafelt av typen salgsrelasjon til Sak ([ticket tabellen][4]). For å liste opp tilknyttede saker når du ser på et salg i SuperOffice CRM, må du bygge et webpanel.
+For eksempel har en tabell Leieavtale et felt **Laptop** (relasjon til ekstratabell til tabellen Laptop) og et felt **Salg** (salgsrelasjon). Begge har **Vis én-til-mange-relasjoner** valgt og *Leieavtaler* som **Topptekst for liste**. Hver laptop og hvert salg viser da et detaljkort **Leieavtaler** med de koblede leieavtalene.
+
+![Salg med et detaljkort for leieavtaler -screenshot][img4]
+
+Med en lisens basert på brukerplan bygger du et webpanel for å liste opp de relaterte postene i stedet.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
-[4]: ../../../en/database/tables/ticket
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

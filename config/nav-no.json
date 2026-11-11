@@ -689,7 +689,7 @@
             ]
           },
           {
-            "group": "Ekstratabeller",
+            "group": "Egendefinerte objekter",
             "pages": [
               "no/custom-objects/learn/extra-table",
               "no/custom-objects/admin/create-extra-table"

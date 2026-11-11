@@ -4,8 +4,8 @@ title: Ekstrafelt
 description: Et ekstrafelt er et tilpasset felt som du legger til i en eksisterende SuperOffice-databasetabell i Service.
 keywords: ['ekstrafelt', 'tilpasset felt', 'url', 'klikkbar kobling', 'kobling i ekstrafelt']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: user
@@ -29,7 +29,7 @@ Et *ekstra felt* er et tilpasset felt som du legger til i en eksisterende SuperO
 * Melding
 * Sak og saksbehandler
 * Bruker
-* Dine [egendefinerte tabeller][6]
+* Dine [ekstratabeller][6]
 
 <Note>
 Ekstrafelt på firma eller kontakt er ikke det samme som brukerdefinerte felt på disse enhetene!
@@ -87,21 +87,21 @@ Databasetabeller er koblet sammen med *fremmednøkler* (FK). Disse er felttypene
 * Avtalerelasjon
 * Relasjon til ekstratabell
 
-#### Tilgjengelig i pilot fra versjon 10.3.4
+#### Detaljkort for relaterte poster {#section-tab}
 
-Når et relasjonsfelt er satt til å vise én-til-mange-relasjoner, legger systemet automatisk til et detaljkort i relaterte standardenheter. Dette er ikke det samme som fanen **Relasjoner** på Firma- og Person-skjermene.
+Med CRM Suite **Growth** eller høyere, når et relasjonsfelt har **Vis én-til-mange-relasjoner** valgt, får den relaterte posten et detaljkort som lister opp postene som peker til den. Et egendefinert objekt **Leieavtale** med en firmarelasjon legger for eksempel til et detaljkort **Leieavtaler** på firmaet. Dette kortet er ikke det samme som fanen **Relasjoner** på Firma- og Person-skjermene.
 
-![Detaljkort med ekstrafeltrelasjon -screenshot][img1]
+![Firma med et detaljkort for leieavtaler -screenshot][img1]
 
-#### Tilgjengelig i pilot fra versjon 10.3.7
+#### Forhåndsvis relaterte poster {#preview}
 
-For å se detaljene for elementene i denne listen uten å åpne hver enkelt enhet:
+Med CRM Suite **Growth** eller høyere kan du se detaljene for relaterte poster i sidepanelet. For å se detaljene for postene i denne listen uten å åpne hver enkelt:
 
 1. Gå til sidepanelet og velg **Forhåndsvisning**.
-2. Klikk på et element i det relasjonsbaserte detaljkortet. Sidepanelet viser en forhåndsvisning av den valgte enheten. I forhåndsvisningen kan du:
+2. Velg en post på detaljkortet. Sidepanelet viser en forhåndsvisning av den valgte enheten. I forhåndsvisningen kan du:
 
-    * Klikke på en standardenhet for å gå til den.
-    * Klikke på et tilpasset objekt for å åpne en dialog for visning eller redigering av tilleggsinformasjon.
+    * Velge en standardpost, for eksempel et firma, for å gå til den.
+    * Velge en post for et egendefinert objekt for å åpne en dialog der du kan vise eller redigere den.
 
 ![Forhåndsvisning ekstrafeltrelasjon -screenshot][img2]
 
@@ -111,6 +111,6 @@ Ekstrafelt kan for eksempel brukes som søkekriterier og kolonner i salg i Super
 
 [6]: ./extra-table
 [7]: /no/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png

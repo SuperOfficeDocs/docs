@@ -1,48 +1,80 @@
 ---
 uid: help-no-custom-objects
 title: Egendefinerte objekter og felt
-description: Egendefinerte objekter og felt
+description: Lær forskjellen mellom brukerdefinerte felt, ekstrafelt og egendefinerte objekter, og hvilken plan du trenger for hvert av dem.
 keywords: ['egendefinert objekt', 'felt', 'brukerdefinert', 'udef', 'ekstrafelt', 'ekstratabell']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
 audience: user
 audience_tooltip: SuperOffice CRM
+related:
+  - /no/custom-objects/learn/udef
+  - /no/custom-objects/learn/extra-field
+  - Egendefinerte objekter: /no/custom-objects/learn/extra-table
 language: no
 ---
 
 import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Alle firma og organisasjoner har egne krav til hvilke opplysninger de trenger å registrere angående kontakter, salg, prosjekter, kontrakter og så videre. Administratorer kan legge til felt og tabeller i SuperOffice for å tilpasse typen informasjon som kan registreres.
+Alle firma har egne behov for hva de skal registrere om kundene, salgene, prosjektene, kontraktene og så videre. Administratorer kan legge til felt og tabeller i SuperOffice for å tilpasse typen informasjon som kan registreres.
 
 SuperOffice CRM og Service var en gang to separate applikasjoner med ulike utvidelsesalternativer. [**Brukerdefinerte felt**][1] (kort kalt udefs) hører hjemme i SuperOffice CRM, mens [**ekstratabeller**][3] (også kalt tredjepartstabeller) og [**ekstrafelt**][2] hører hjemme i Service. Begrepet **tilpasset felt** inkluderer både brukerdefinerte felt og ekstra felt.
 
-## Bruk
+Det er to måter å utvide SuperOffice på:
 
-* Et godt eksempel på et egendefinert felt du kan bruke på **Personkortet**, er et felt kalt "Fornøyd kunde", der verdien av feltet er Ja eller Nei. Du kan for eksempel sende dine kontakter en e-post (med koblingshandlinger) der de kan si om de er fornøyde med tjenestene dine. Dette gir deg verdifull innsikt i den generelle kundetilfredshetsraten.
+* **Legg til felt i poster.** Disse feltene kalles *tilpassede felt*. Du kan for eksempel legge til et felt "Fornøyd kunde" på personer.
+* **Legg til nye typer poster.** Disse postene kalles *egendefinerte objekter*. Du kan for eksempel registrere laptopene du leaser ut til kunder som en egen type post.
 
-* Ved å bruke **Finn**-funksjonen, kan du søke etter opplysningene du registrerer i tilpassede felt og lage utvalg. For eksempel, hvis du registrerer utløpsdatoen for vedlikeholdsavtalen du har med kunder, kan du opprette et dynamisk utvalg som viser kunder der avtalen utløper om mindre enn en måned.
+## Tilpassede felt
 
-* Du kan gjenbruke informasjonen fra disse feltene i dokumenter og e-poster som **malvariabler**. Hvert felt du legger til får sin egen unike ID (Prog-ID), som kan brukes i dokumenter for å flette personspesifikk informasjon. Så hvis du vil sende en e-post til dine kunder som sier at vedlikeholdsavtalen deres snart utløper, kan du bruke malvariabelen for utløpsdato for å vise riktig utløpsdato for avtalen i meldingen.
+Det finnes to typer tilpassede felt, avhengig av posten:
+
+| Type | Legges til i | Administreres i |
+|---|---|---|
+| [Brukerdefinerte felt][1] (udefs) | Firma, personer, salg, prosjekter, oppfølginger og dokumenter | **Innstillinger og vedlikehold** > **Felt** |
+| [Ekstrafelt][2] | Saker, meldinger, andre Service-tabeller og egendefinerte objekter | **Innstillinger og vedlikehold** > **Systemdesign** > **Tabeller** |
+
+## Egendefinerte objekter
+
+Et [egendefinert objekt][3] er en ny type post som du definerer selv. For eksempel *Laptop*, *Leieavtale* eller *Bil*. Du bestemmer hvilke felt det egendefinerte objektet har, og hvordan det er relatert til firma, personer, saker og andre poster.
+
+Med CRM Suite **Growth** eller høyere fungerer et egendefinert objekt som standardpostene i SuperOffice. Brukerne finner det i Navigatoren, oppretter nye poster fra **Ny** på toppraden, søker etter poster, lager utvalg og dashbord, og ser relaterte poster på et detaljkort, for eksempel på firmaet.
+
+Egendefinerte objekter opprettes i **Innstillinger og vedlikehold** > **Systemdesign** > **Tabeller**. I databasen er et egendefinert objekt en ekstratabell.
+
+## Eksempler
+
+* **Fornøyd kunde (brukerdefinert felt).** Legg til et ja/nei-felt på personer. Send en utsendelse der personene sier om de er fornøyde, og lagre svaret i feltet.
+
+* **Utløpsdato for avtale (brukerdefinert felt).** Registrer utløpsdatoen for hver vedlikeholdsavtale på firmaet. Lag et dynamisk utvalg av firmaene der avtalen utløper innen en måned.
+
+* **Malvariabler (tilpassede felt).** Gjenbruk informasjonen fra tilpassede felt i dokumenter og e-poster som malvariabler. Hvert felt du legger til får sin egen unike ID (Prog-ID), som du bruker i dokumenter for å flette inn personspesifikk informasjon. En e-post om en vedlikeholdsavtale som snart utløper, kan for eksempel vise riktig utløpsdato for hver person.
+
+* **Laptop-leieavtaler (egendefinerte objekter).** Registrer hver laptop du leaser ut, med modell, serienummer, kjøpsdato og pris. Registrer hver leieavtale som et eget egendefinert objekt relatert til laptopen, firmaet, personen og salget. Firma-skjermen viser da et detaljkort **Leieavtaler**, og laptopen viser alle leieavtalene sine over tid.
 
 ## Krav
 
+**Tilpassede felt:**
+
 <ReqDevToolsTransition />
 
+**Egendefinerte objekter:**
+
 <Note>
-**CRM Suite (Growth-plan):** Planen din har en grense for antall egendefinerte objekter. Når grensen er nådd, er opprettelse av flere objekter blokkert. Se [Plangrenser][13] for detaljer.
+Egendefinerte objekter krever CRM Suite-planen **Growth** eller høyere. Hvis du har en [lisens basert på brukerplan][1026] og vil bruke egendefinerte objekter, kan du delta i [pilotprogrammet for egendefinerte objekter][1027].
 </Note>
 
-Felt vises automatisk på [fanen Mer][12] når de er lagt til.
+Med en lisens basert på brukerplan er ekstratabeller tilgjengelige i SuperOffice Service, og i SuperOffice CRM via webpaneler. Se [ekstratabeller med en lisens basert på brukerplan][16].
 
-## Oppsett (plassering av felt)
+CRM Suite-planen angir hvor mange egendefinerte objekter du kan opprette. Når du når grensen, kan du ikke opprette flere. Se [plangrenser][13].
 
-Eventuelle tilpassede skjermlayouter (opprettet i Skjermdesigneren) kan overstyre innstillingene for individuelle brukerdefinerte felt.
+## Oppsett av felt
 
-Hvis du ikke har en Development Tools-lisens eller **Core**-planen, bruk rangeringen av de forskjellige feltene for å sortere dem på fanen **Mer**.
+Brukerdefinerte felt vises på [fanen Mer][12], sortert etter rangering. Med [Skjermdesigneren][14] kan du plassere felt på en hvilken som helst fane og designe layouten for egendefinerte objekter. En layout opprettet i Skjermdesigneren overstyrer posisjonen som er angitt på de enkelte feltene.
 
 ## Aktuelt innhold
 
@@ -55,3 +87,7 @@ Hvis du ikke har en Development Tools-lisens eller **Core**-planen, bruk rangeri
 [3]: /no/custom-objects/learn/extra-table
 [12]: /no/custom-objects/learn/more-tab
 [13]: /no/admin/license/crm-suite
+[14]: /no/customization/screen-designer/admin/index
+[16]: /no/custom-objects/learn/extra-table#user-plans
+[1026]: /no/admin/license/user-plans
+[1027]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
