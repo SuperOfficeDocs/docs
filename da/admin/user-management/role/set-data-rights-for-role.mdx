@@ -4,8 +4,8 @@ title: Angivelse af datarettigheder for rolle
 description: Angiv datarettigheder for rolle
 keywords: ['brugerstyring', 'rolle', 'adgang', 'rettigheder']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.11.2026
+so_version: 12.6
 content_type: howto
 tier: starter
 category: identity management
@@ -63,4 +63,29 @@ Du kan angive rettigheder for dataobjekter baseret på, hvem der ejer objektet. 
 
 På personkortet hentes feltet **Vores kontakt** altid fra firmakortet, som personen tilhører.
 
+## Brugerdefinerede objekter {#custom-objects}
+
+Med CRM Suite **Growth** eller højere angiver du også rettigheder for [brugerdefinerede objekter][3]. I modsætning til datarettighederne ovenfor gælder disse rettigheder for alle poster i et brugerdefineret objekt, uanset hvem der ejer dem.
+
+1. Med rollen valgt skal du vælge fanen **Custom objects rights**.
+
+1. Klik på <i class="ph ph-caret-down" aria-label="Chevron"></i> på listen **Permission** ud for hvert brugerdefineret objekt, og vælg en rettighed:
+
+    | Rettighed | Brugere med denne rolle kan |
+    |---|---|
+    | Ingen | Ikke se det brugerdefinerede objekt eller dets poster |
+    | Læs | Se poster |
+    | Opret | Se og oprette poster |
+    | Opdater | Se, oprette og redigere poster |
+    | Slet | Se, oprette, redigere og slette poster |
+
+![Fanen Custom objects rights for en rolle -screenshot][img1]
+
+<Tip>
+Når du har oprettet tabellen for et brugerdefineret objekt og tilføjet dets felter, skal du angive rettighederne, så brugerne kan begynde at tilføje poster.
+</Tip>
+
 [2]: ./index
+[3]: ../../../custom-objects/learn/extra-table
+
+[img1]: /media/loc/en/custom-objects/role-custom-object-rights.png

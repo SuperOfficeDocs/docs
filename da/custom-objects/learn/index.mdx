@@ -1,11 +1,11 @@
 ---
 uid: help-da-custom-objects
 title: Brugerdefinerede objekterog felter
-description: Brugerdefinerede objekter
+description: Lær forskellen mellem brugerdefinerede felter, ekstra felter og brugerdefinerede objekter, og hvilken plan du skal have til hver af dem.
 keywords: ['brugerdefinerede objekter', 'udef', 'ekstrafelt', 'ekstra tabel', 'tilpassede felter']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
@@ -14,42 +14,71 @@ audience_tooltip: SuperOffice CRM
 related:
   - Brugerdefinerte felt: /da/custom-objects/learn/udef
   - /da/custom-objects/learn/extra-field
-  - /da/custom-objects/learn/extra-table
+  - Brugerdefinerede objekter: /da/custom-objects/learn/extra-table
 language: da
 ---
 
 import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
+import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 
-Alle firma og organisationer har deres egne krav til de oplysninger, de skal registrere vedrørende deres kunder, salg, projekter, kontrakter og så videre. Administratorer kan tilføje felter og tabeller i SuperOffice for at tilpasse typen information, der kan registreres.
+Alle virksomheder har deres egne behov for, hvad de skal registrere om deres kunder, salg, projekter, kontrakter og så videre. Administratorer kan tilføje felter og tabeller i SuperOffice for at tilpasse typen af information, der kan registreres.
 
 SuperOffice CRM og Service var engang to separate applikationer med forskellige udvidelsesmuligheder. [**Brugerdefinerede felter**][1] (kaldet udefs) hører til i SuperOffice CRM, mens [**ekstra tabeller**][3] (også kaldet tredjepartstabeller) og [**ekstra felter**][2] hører til i Service. Begrebet **tilpasset felt** inkluderer både brugerdefinerede felter og ekstra felter.
 
-## Anvendelse
+Der er to måder at udvide SuperOffice på:
 
-* Et godt eksempel på et brugerdefineret felt, du kan bruge på kortet **Person**, er et felt kaldet "Tilfreds kunde", hvor værdien af feltet er Ja eller Nej. Du kan f.eks. sende dine kontakter en e-mail (med linkhandling), hvor de kan angive, om de er tilfredse med dine tjenester. Dette giver dig værdifuld indsigt i den generelle kundetilfredshed.
+* **Tilføj felter til poster.** Disse felter kaldes *tilpassede felter*. Tilføj for eksempel et felt "Tilfreds kunde" til personer.
+* **Tilføj nye typer poster.** Disse poster kaldes *brugerdefinerede objekter*. Registrer for eksempel de bærbare computere, du leaser ud til kunder, som en egen type post.
 
-* Ved hjælp af funktionen **Find** kan du søge efter de oplysninger, du registrerer i brugerdefinerede felter, og oprette udvalg. Hvis du f.eks. registrerer udløbsdatoen for vedligeholdelsesaftalen, du har med kontakter, kan du oprette et dynamisk udvalg, der viser kontakter, hvor aftalen udløber om mindre end en måned.
+## Tilpassede felter
 
-* Du kan genbruge oplysningerne fra disse felter i dokumenter og e-mails som **skabelonvariabler**. Hvert felt, du tilføjer, får sin egen unikke ID (Prog ID), som kan bruges i dokumenter til at flette person-specifik information. Så hvis du vil sende en e-mail til dine kunder, der siger, at deres vedligeholdelsesaftale udløber snart, kan du bruge skabelonvariablen for udløbsdato til at vise den korrekte udløbsdato for deres aftale i meddelelsen.
+Der er to slags tilpassede felter, afhængigt af posten:
+
+| Slags | Tilføjes til | Administreres i |
+|---|---|---|
+| [Brugerdefinerede felter][1] (udefs) | Firmaer, personer, salg, projekter, opfølgninger og dokumenter | **Indstillinger og vedligeholdelse** > **Felter** |
+| [Ekstra felter][2] | Sager, beskeder, andre Service-tabeller og brugerdefinerede objekter | **Indstillinger og vedligeholdelse** > **Systemdesign** > **Tabeller** |
+
+## Brugerdefinerede objekter
+
+Et [brugerdefineret objekt][3] er en ny type post, som du selv definerer. For eksempel *Bærbar*, *Leasing* eller *Bil*. Du bestemmer, hvilke felter det brugerdefinerede objekt har, og hvordan det relaterer til firmaer, personer, sager og andre poster.
+
+Med CRM Suite **Growth** eller højere fungerer et brugerdefineret objekt som standardposterne i SuperOffice. Brugerne kan finde det i Navigatoren, oprette nye poster fra **Ny** i topbjælken, søge efter poster, oprette udvalg og dashboards og se relaterede poster på en detaljefane, for eksempel på firmaet.
+
+Brugerdefinerede objekter oprettes i **Indstillinger og vedligeholdelse** > **Systemdesign** > **Tabeller**. I databasen er et brugerdefineret objekt en ekstra tabel.
+
+## Eksempler
+
+* **Tilfreds kunde (brugerdefineret felt).** Tilføj et Ja/Nej-felt til personer. Send en e-mail, hvor personerne angiver, om de er tilfredse, og gem svaret i feltet.
+
+* **Udløbsdato for aftale (brugerdefineret felt).** Registrer udløbsdatoen for hver vedligeholdelsesaftale på firmaet. Opret et dynamisk udvalg af de firmaer, hvor aftalen udløber inden for en måned.
+
+* **Skabelonvariabler (tilpassede felter).** Genbrug oplysningerne fra tilpassede felter i dokumenter og e-mails som skabelonvariabler. Hvert felt, du tilføjer, får sit eget unikke ID (Prog ID), som du bruger i dokumenter til at flette person-specifik information. En e-mail om en vedligeholdelsesaftale, der udløber snart, kan for eksempel vise den korrekte udløbsdato for hver person.
+
+* **Leasing af bærbare (brugerdefinerede objekter).** Registrer hver bærbar, du leaser ud, med model, serienummer, indkøbsdato og pris. Registrer hver leasingaftale som et andet brugerdefineret objekt, der er relateret til den bærbare, firmaet, personen og salget. Skærmbilledet **Firma** viser så en fane **Leasingaftaler**, og den bærbare viser alle sine leasingaftaler over tid.
 
 ## Krav
 
+**Tilpassede felter:**
+
 <ReqDevToolsTransition />
 
-<Note>
-**CRM Suite (Growth-plan):** Din plan inkluderer en grænse for antallet af brugerdefinerede objekter. Når grænsen er nået, er oprettelse af yderligere objekter blokeret. Se [Plangrænser][13] for detaljer.
-</Note>
+**Brugerdefinerede objekter:**
 
-Felter vises automatisk på [fanen Mere][12], når de er tilføjet.
+<ReqGrowthCustomObjects />
 
-## Layout (placering af felter)
+Med en licens baseret på brugerplaner er ekstra tabeller tilgængelige i SuperOffice Service og i SuperOffice CRM via webpaneler. Se [ekstra tabeller med en licens baseret på brugerplaner][16].
 
-Eventuelle brugerdefinerede skærmlayouts (oprettet i Skærmdesigneren) kan tilsidesætte indstillingerne for individuelle brugerdefinerede felter.
+CRM Suite-planen bestemmer, hvor mange brugerdefinerede objekter du kan oprette. Når du når grænsen, kan du ikke oprette flere. Se [plangrænser][13].
 
-Hvis du ikke har en Development Tools-licens eller **Core**-planen, skal du bruge rækkefølgen af de forskellige felter for at sortere dem på fanen **Mere**.
+## Layout af felter
+
+Brugerdefinerede felter vises på [fanen Mere][12], sorteret efter deres rækkefølge. Med [Skærmdesigneren][14] kan du placere felter på en hvilken som helst fane og designe layoutet af brugerdefinerede objekter. Et layout oprettet i Skærmdesigneren tilsidesætter den placering, der er angivet på de enkelte felter.
 
 [1]: /da/custom-objects/learn/udef
 [2]: /da/custom-objects/learn/extra-field
 [3]: /da/custom-objects/learn/extra-table
 [12]: /da/custom-objects/learn/more-tab
 [13]: /da/admin/license/crm-suite
+[14]: /da/customization/screen-designer/admin/index
+[16]: /da/custom-objects/learn/extra-table#user-plans

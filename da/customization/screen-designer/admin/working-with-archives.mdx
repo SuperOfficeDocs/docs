@@ -4,8 +4,8 @@ title: Arbejde med detaljekort (arkiver)
 description: Skærmdesigner - arbejde med detaljekort (arkiver)
 keywords: ['tilføj sektionsfane', 'ny sektionsfane', 'tilføj arkivfane', 'tilpas sektionsfane', 'sektionsfanelayout']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.11.2026
+so_version: 12.6
 content_type: howto
 license: development-tools
 tier: core
@@ -26,7 +26,7 @@ import ReqDevToolsTransition from "../../../snippets/req-dev-tools-transition.md
 
 <ReqDevToolsTransition />
 
-Du kan tilpasse layoutet ved at tilføje eller fjerne detaljekort (også kaldet arkiver) på hovedkortene for Firma, Person, Salg, Projekt og Sags-skærme.
+Du kan tilpasse layoutet ved at tilføje eller fjerne detaljekort (også kaldet arkiver) på hovedkortene for Firma, Person, Salg, Projekt og Sags-skærme samt for brugerdefinerede objekter.
 
 Tilpasning af detaljekort gøres typisk for at imødekomme de specifikke behov hos forskellige brugergrupper. Du kan oprette et layout, der er skræddersyet til en bestemt brugergruppe, og sikre, at detaljekortene viser relevant indhold for den gruppe.
 
@@ -37,6 +37,10 @@ Tilpasning af detaljekort gøres typisk for at imødekomme de specifikke behov h
 Detaljekort, der er placeret i bunden af de fleste SuperOffice CRM-skærme, viser relaterede data som personer, aktiviteter, projekter og salg. Selvom nogle detaljekort, såsom salgsguide og tilbud, ikke er arkiver, vil vi for nemheds skyld henvise til alle som arkiver eller arkivfaner.
 
 Når du opretter et nyt layout til en brugergruppe, bør du overveje, hvilke data de har mest brug for. Ved at tilpasse arkiver kan du filtrere og prioritere informationer, hvilket gør det lettere for brugerne at finde det, de har brug for.
+
+### Detaljekort for brugerdefinerede objekter {#custom-objects}
+
+Nogle detaljekort tilføjes automatisk. Hvis et [brugerdefineret objekt][20] har et relationsfelt med **Vis én-til-mange-relationer** markeret, får den post, det relaterer til, et detaljekort, der viser det brugerdefinerede objekts poster. Et brugerdefineret objekt Leasing, der er relateret til firmaer, tilføjer for eksempel en fane **Leasingaftaler** til skærmbilledet Firma. Du kan redigere, flytte eller fjerne denne fane i layoutet som andre detaljekort.
 
 ## Tilføj arkivfane
 
@@ -101,6 +105,7 @@ For at ændre et eksisterende arkiv skal du vælge det og opdatere felterne og i
 For at fortryde disse ændringer skal du klikke på **Gendan faner**.
 
 [2]: ../../../search-options/learn/search-criteria
+[20]: ../../../custom-objects/learn/extra-table
 [img1]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive.png
 [img5]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive-add-tab.png
 [img6]: ../../../../media/loc/en/customization/admin-screendesigner-add-archive-layout.png
