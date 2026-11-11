@@ -1,11 +1,11 @@
 ---
 uid: help-sv-custom-objects
 title: Egendefinierade objekt och fält
-description: Egendefinierade objekt och fält
+description: Lär dig skillnaden mellan användardefinierade fält, extrafält och anpassade objekt, och vilken plan du behöver för varje.
 keywords: ['egendefinierade objekt', 'användardefinierade fält', 'extratabell', 'extrafält', 'tilläggsfält', 'anpassat fält']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
@@ -14,42 +14,74 @@ audience_tooltip: Settings and maintenance
 related:
   - Brukerdefinerte felt: /sv/custom-objects/learn/udef
   - Ekstrafelt: /sv/custom-objects/learn/extra-field
-  - Ekstra tabeller: /sv/custom-objects/learn/extra-table
+  - Anpassade objekt: /sv/custom-objects/learn/extra-table
 language: sv
 ---
 
 import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Alla företag och organisationer har sina egna krav på den information de behöver registrera angående sina kontakter, försäljning, projekt, avtal och så vidare. Administratörer kan lägga till fält och tabeller i SuperOffice för att anpassa vilken typ av information som kan registreras.
+Varje företag har sina egna behov av vad som ska registreras om kunder, försäljning, projekt, avtal och så vidare. Administratörer kan lägga till fält och tabeller i SuperOffice för att anpassa vilken typ av information som kan registreras.
 
 SuperOffice CRM och Service var en gång två separata applikationer med olika möjligheter till utökning. [**Användardefinierade fält**][1] (kallat udefs för kort) hör hemma i SuperOffice CRM, medan [**extra tabeller**][3] (även kallade tredjepartstabeller) och [**extrafält**][2] hör hemma i Service. Begreppet **anpassat fält** inkluderar både användardefinierade fält och extra fält.
 
-## Användning
+Det finns två sätt att utöka SuperOffice:
 
-* Ett bra exempel på ett anpassat fält du kan använda på **Kontakt**-skärmen är ett fält kallat "Nöjd kund", där värdet av fältet är Ja eller Nej. Till exempel kan du skicka dina kontakter ett mail (med länkåtgärder) där de kan ange om de är nöjda med din service. Detta ger dig värdefull insikt i den generella kundnöjdhetsgraden.
+* **Lägg till fält i poster.** Dessa fält kallas *anpassade fält*. Lägg till exempel ett fält "Nöjd kund" på kontakter.
+* **Lägg till nya typer av poster.** Dessa poster kallas *anpassade objekt*. Registrera till exempel de laptops du leasar ut till kunder som en egen typ av post.
 
-* Genom att använda **Sök**-funktionen kan du söka efter informationen du lägger in i anpassade fält och skapa urval. Om du till exempel registrerar förfallodatumet för underhållsavtalet du har med kontakter kan du skapa ett dynamiskt urval som visar alla kontakter vars avtal löper ut om mindre än en månad.
+## Anpassade fält
 
-* Du kan återanvända informationen från dessa fält i dokument och e-post som **mallvariabler**. Varje fält du lägger till får sitt eget unika ID (Program-ID), som kan användas i dokument för att slå ihop kontaktspecifik information. Så om du vill skicka ett mail till dina kontakter som säger att deras underhållsavtal snart löper ut, kan du använda mallvariabeln för förfallodatum för att visa rätt förfallodatum för deras avtal i meddelandet.
+Det finns två sorters anpassade fält, beroende på posten:
+
+| Sort | Läggs till på | Hanteras i |
+|---|---|---|
+| [Användardefinierade fält][1] (udefs) | Företag, kontakter, försäljningar, projekt, uppföljningar och dokument | **Inställningar och underhåll** > **Fält** |
+| [Extrafält][2] | Ärenden, meddelanden, andra Service-tabeller och anpassade objekt | **Inställningar och underhåll** > **Systemdesign** > **Tabeller** |
+
+## Anpassade objekt
+
+Ett [anpassat objekt][3] är en ny typ av post som du definierar själv. Till exempel *Laptop*, *Lease* eller *Car*. Du bestämmer vilka fält det anpassade objektet har och hur det relaterar till företag, kontakter, ärenden och andra poster.
+
+Med CRM Suite **Growth** eller högre fungerar ett anpassat objekt som standardposterna i SuperOffice. Användare hittar det i Navigatorn, skapar nya poster från **Ny** i det övre fältet, söker efter poster, skapar urval och dashboards och ser relaterade poster på ett detaljkort, till exempel på företaget.
+
+Anpassade objekt skapas i **Inställningar och underhåll** > **Systemdesign** > **Tabeller**. I databasen är ett anpassat objekt en extratabell.
+
+## Exempel
+
+* **Nöjd kund (användardefinierat fält).** Lägg till ett Ja/Nej-fält på kontakter. Skicka ett utskick där kontakter anger om de är nöjda och lagra svaret i fältet.
+
+* **Avtalets förfallodatum (användardefinierat fält).** Registrera förfallodatumet för varje underhållsavtal på företaget. Skapa ett dynamiskt urval av de företag vars avtal löper ut inom en månad.
+
+* **Mallvariabler (anpassade fält).** Återanvänd informationen från anpassade fält i dokument och e-post som mallvariabler. Varje fält du lägger till får sitt eget unika ID (Program-ID), som du använder i dokument för att slå ihop kontaktspecifik information. Till exempel kan ett mail om ett underhållsavtal som snart löper ut visa rätt förfallodatum för varje kontakt.
+
+* **Laptopleasing (anpassade objekt).** Registrera varje laptop du leasar ut, med modell, serienummer, inköpsdatum och pris. Registrera varje leasingavtal som ett annat anpassat objekt som relaterar till laptopen, företaget, kontakten och försäljningen. Företagsskärmen visar då en flik **Leases**, och laptopen visar alla sina leasingavtal över tid.
 
 ## Krav
 
+**Anpassade fält:**
+
 <ReqDevToolsTransition />
 
+**Anpassade objekt:**
+
 <Note>
-**CRM Suite (Growth-plan):** Din plan inkluderar en gräns för antalet egendefinierade objekt. När gränsen nås är det inte möjligt att skapa fler objekt. Se [Plangränser][13] för mer information.
+Anpassade objekt kräver CRM Suite **Growth**-planen eller högre. Om du har en [användarplansbaserad licens][17] och vill använda anpassade objekt kan du gå med i [pilotprogrammet för anpassade objekt][18].
 </Note>
 
-Fält visas automatiskt på [fliken Mer][12] när de har lagts till.
+Med en användarplansbaserad licens finns extratabeller i SuperOffice Service och i SuperOffice CRM via webbpaneler. Se [extratabeller med en användarplansbaserad licens][16].
 
-## Layout (positionering av fält)
+CRM Suite-planen bestämmer hur många anpassade objekt du kan skapa. När du når gränsen kan du inte skapa fler. Se [plangränser][13].
 
-Eventuella anpassade skärmlayouter (skapade i Skärmdesignern) kan åsidosätta inställningarna för enskilda anpassade fält.
+## Layout för fält
 
-Om du inte har en Development Tools-licens eller **Core**-planen, använd rangordningen av de olika fälten för att sortera dem på fliken **Mer**.
+Användardefinierade fält visas på [fliken Mer][12], sorterade efter rangordning. Med [Skärmdesignern][14] kan du placera fält på valfri flik och utforma layouten för anpassade objekt. En layout som skapats i Skärmdesignern åsidosätter den position som angetts på enskilda fält.
 
 [1]: /sv/custom-objects/learn/udef
 [2]: /sv/custom-objects/learn/extra-field
 [3]: /sv/custom-objects/learn/extra-table
 [12]: /sv/custom-objects/learn/more-tab
 [13]: /sv/admin/license/crm-suite
+[14]: /sv/customization/screen-designer/admin/index
+[16]: /sv/custom-objects/learn/extra-table#user-plans
+[17]: /sv/admin/license/user-plans
+[18]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/

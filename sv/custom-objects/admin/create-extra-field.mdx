@@ -2,10 +2,10 @@
 uid: help-sv-extra-fields-create
 title: Lägg till extrafält
 description: Lägg till extrafält
-keywords: ['extrafält', 'anpassa fält']
+keywords: ['extrafält', 'anpassa fält', 'fält för anpassat objekt']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.11.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
@@ -17,7 +17,7 @@ language: sv
 
 import GotoTables from "./snippets/goto-tables.md";
 
-När du har skapat en [extratabell][1] måste du skapa fält i tabellen så att du senare kan lägga in data (poster) i tabellen. Du kan även skapa extrafält i standardtabellerna.
+När du har skapat en [extratabell][1] lägger du till de fält som användarna fyller i för varje post. Du kan även lägga till extrafält i Service-standardtabellerna.
 
 ## Steg
 
@@ -25,7 +25,7 @@ När du har skapat en [extratabell][1] måste du skapa fält i tabellen så att 
 
 1. Bläddra till önskad tabell, peka på tabellnamnet och klicka på **Nytt fält**.
 
-    ![Skapa extra fält -screenshot][img1]
+    ![Skärmen Tabeller med Nytt fält bredvid en tabell -screenshot][img1]
 
 1. Välj en typ för det nya fältet och klicka på **OK**.
 
@@ -33,11 +33,10 @@ När du har skapat en [extratabell][1] måste du skapa fält i tabellen så att 
 
     * Ange ett *namn* som ska användas som etiketten.
     * Ange ett *databasfält* som börjar med **x_** för att identifiera det i schemat.
-    * Valfritt ställ in andra egenskaper. Typen bestämmer vad som är tillgängligt. Se detaljer om fälten nedan.
+    * För att göra fältet obligatoriskt, välj **Kan inte vara tomt**.
+    * Valfritt ställ in andra egenskaper. Den fälttyp du valde i föregående steg bestämmer vad som är tillgängligt. Se [egenskaper för fält](#properties).
 
-    <Tip>
-    För att göra ett fält obligatoriskt, välj **Kan inte vara tomt**.
-    </Tip>
+    ![Fältegenskaper för ett fält av typen Text (kort) -screenshot][img2]
 
 1. Klicka på **OK** för att spara det nya fältet (kör `alter table y_mynewtable add column x_mynewfield ...`).
 
@@ -45,7 +44,7 @@ När du har skapat en [extratabell][1] måste du skapa fält i tabellen så att 
 
 1. Klicka på **Starta om NetServer** när du är klar. Om Travel är aktiverat kommer du också att se ett meddelande om att en ny Travel-databas måste skapas.
 
-## Egenskaper för fält
+## Egenskaper för fält {#properties}
 
 <Note>
 Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. Om du vill visa URL:er som lagras i fält av typen **Kort text** och **Lång text** som klickbara länkar, se [URL:er i textfält][2].
@@ -63,7 +62,7 @@ Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. 
 | Beskrivning | Standardbeskrivningen. |
 | Visa värde | Ange om värdet ska visas eller inte. |
 | Externt | Om det här alternativet har markerats är fältet tillgängligt från ett kundcenter. Detta är bara relevant för standardtabeller eftersom extratabeller alltid visas i kundcentra. |
-| Sidhuvud för lista | Detta fält används för att specificera en rubrik för dessa poster när de visas som "underposter" i en lista. |
+| Sidhuvud för lista | Detta fält används för att specificera en rubrik för dessa poster när de visas som "underposter" i en lista. Med CRM Suite **Growth** eller högre är det också etiketten på detaljkortet på den relaterade posten. Obligatoriskt när **Visa en-till-flera-relationer** är markerat. |
 | Dölj funktionsknappar | (relationer) Välj detta alternativ om du inte vill visa funktionen för tillägg av nya poster i relationstabeller. |
 | Dölj fältet | Ange om fältet ska visas eller inte. |
 | Behåll HTML-taggar | (text) Välj detta alternativ om du vill inkludera HTML-koden i texten. |
@@ -71,9 +70,9 @@ Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. 
 | Antal enheter | (tidsperiod) Ange maximalt antal enheter för den "största" valda tidsenheten. Exempel: Om du har valt timmar och minuter och skriver "4" kan maximalt 4 timmar väljas medan minuterna går till 60. För dagar och timmar kan på liknande sätt maximalt 4 dagar väljas medan timmarna går till 24. |
 | Tillåt bara bladnod i hierarkiska listrutor | (extratabellrelation) Specificera om endast den lägsta noden i en hierarki kan väljas av användaren. |
 | Befattning | Anger fältets placering bland de övriga fälten i listor. |
-| Sökkriterium | Välj den sökoperator som ska användas för det här fältet. |
+| Sökkriterium | Den sökoperator som ska användas för det här fältet, till exempel **börjar med**. |
 | Visa i tabell | Om det här alternativet markeras visas fältet som en kolumn i fönster där flera poster visas i en tabell. |
-| Visa en-till-flera-relationer | Om du har valt fälttyperna **Kontaktrelation**, **Företagsrelation** eller **Ärenderelation** och vill att en flik med data från denna tabell ska visas i fönstren Kontakt, Företag eller Ärende kan du markera det här fältet. |
+| Visa en-till-flera-relationer | Om du har valt fälttyperna **Kontaktrelation**, **Företagsrelation** eller **Ärenderelation** och vill att en flik med data från denna tabell ska visas i fönstren Kontakt, Företag eller Ärende kan du markera det här fältet. Med CRM Suite **Growth** eller högre får den relaterade posten i SuperOffice CRM också ett detaljkort, till exempel en flik **Equipment** på företaget. |
 | Tabell | Specificera vilken tabell fältet tillhör. |
 | Måltabell | Specificera vilken tabell som ska användas. |
 | Textområde/höjd | Välj detta alternativ om du vill specificera textfältets höjd (antalet rader). |
@@ -88,21 +87,28 @@ Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. 
 
 ## Lägg till relation (förnyckel, FK)
 
-1. Klicka på **Nytt fält**.
-1. Välj relationstypen för den enhet du vill ansluta till och klicka på **OK**.
-1. Ställ in fältegenskaper som beskrivs ovan.
+Ett relationsfält länkar en post till en post i en annan tabell. Med CRM Suite **Growth** eller högre kan den relaterade posten också visa ett detaljkort som listar de länkade posterna.
 
-    <Note>
-    Tillgänglig från version 10.3.4 i pilot: Att välja **Visa en-till-flera-relationer** lägger till ett detaljkort (arkiv) till relaterade standardenheter.
-    </Note>
+1. Peka på den tabell som ska innehålla relationen och klicka på **Nytt fält**.
+1. Välj relationstypen för den tabell du vill länka till och klicka på **OK**.
+1. Ställ in fältegenskaper som beskrivs ovan. För att visa ett detaljkort på den relaterade posten, markera **Visa en-till-flera-relationer** och ange flikens etikett i **Sidhuvud för lista**.
+
+    ![Fältegenskaper för en relation till en extratabell, med Sidhuvud för lista och Måltabell ifyllda -screenshot][img3]
 
 1. Klicka på **OK** för att spara relationen.
+1. För en **Relation till extratabell**, öppna egenskaperna för måltabellen och ställ in **Visningsfält** på ett fält som användarna känner igen, till exempel namnet. Se [tabellegenskaper][1].
 1. Klicka på **Starta om NetServer** för att tillämpa ändringarna.
 
-Till exempel, för att ansluta alla inkommande ärende till en specifik försäljning, kan du lägga till ett extra fält av typen säljrelation till Ärende ([ticket tabellen][4]). För att lista anslutna ärende när du tittar på en försäljning i SuperOffice CRM, behöver du bygga en webbpanel.
+Till exempel har en tabell Lease ett fält **Laptop** (relation till extratabellen Laptop) och ett fält **Sale** (säljrelation). Båda har **Visa en-till-flera-relationer** markerat och *Leases* som **Sidhuvud för lista**. Varje laptop och varje försäljning visar då en flik **Leases** med de länkade leasingavtalen.
+
+![Försäljning med ett detaljkort för Leases -screenshot][img4]
+
+Med en användarplansbaserad licens bygger du i stället en webbpanel för att lista de relaterade posterna.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
-[4]: ../../../en/database/tables/ticket
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

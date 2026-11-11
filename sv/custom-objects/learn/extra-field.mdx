@@ -4,8 +4,8 @@ title: Extrafält
 description: Extrafält
 keywords: ['extrafält', 'anpassead fält', 'Service', 'url', 'klickbar länk', 'länk i extrafält']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
@@ -29,7 +29,7 @@ Ett *extrafält* är ett anpassat fält som du lägger till i en befintlig Super
 * Meddelande
 * Ärende
 * Användare
-* Dina [egna tabeller][6]
+* Dina [extratabeller][6]
 
 <Note>
 Extrafält på företag eller kontakt är inte samma som användardefinierade fält på dessa enheter!
@@ -87,21 +87,21 @@ Databastabeller är kopplade med *förnyckel* (FK). Dessa är fälttyper som slu
 * Mötesrelation
 * Relation till extratabell
 
-#### Tillgänglig i pilot från version 10.3.4
+#### Detaljkort för relaterade poster {#section-tab}
 
-När ett relationsfält är inställt för att visa en-till-många-relationer lägger systemet automatiskt till ett detaljkort i relaterade standardenheter. Detta är inte samma sak som fliken **Relationer** på Företags- och Kontaktskärmarna.
+Med CRM Suite **Growth** eller högre får den relaterade posten ett detaljkort som listar de poster som pekar på den, när ett relationsfält har **Visa en-till-flera-relationer** markerat. Till exempel lägger ett anpassat objekt **Lease** med en företagsrelation till en flik **Leases** på företaget. Den här fliken är inte samma sak som fliken **Relationer** på Företags- och Kontaktskärmarna.
 
-![Detaljkort med extrafältrelation -screenshot][img1]
+![Företag med ett detaljkort för Leases -screenshot][img1]
 
-#### Tillgänglig i pilot från version 10.3.7
+#### Förhandsvisa relaterade poster {#preview}
 
-För att visa detaljerna för objekt i denna lista utan att behöva öppna varje enskild enhet:
+Med CRM Suite **Growth** eller högre kan du visa detaljerna för relaterade poster i sidopanelen. För att visa detaljerna för posterna i den här listan utan att öppna var och en:
 
 1. Gå till sidopanelen och välj **Förhandsvisning**.
-2. Klicka på ett objekt i det relationsbaserade detaljkortet. Sidopanelen visar en förhandsvisning av den valda enheten. I förhandsvisningen kan du:
+2. Välj en post på detaljkortet. Sidopanelen visar en förhandsvisning av den valda enheten. I förhandsvisningen kan du:
 
-    * Klicka på en standardenhet för att gå till den.
-    * Klicka på ett anpassat objekt för att öppna en dialogruta för att visa eller redigera ytterligare information.
+    * Välja en standardpost, till exempel ett företag, för att gå till den.
+    * Välja en post för ett anpassat objekt för att öppna en dialogruta där du kan visa eller redigera den.
 
 ![Förhandsvisning extrafältrelation -screenshot][img2]
 
@@ -111,6 +111,6 @@ Extrafält kan till exempel användas som sökkriterier och kolumner i försälj
 
 [6]: ./extra-table
 [7]: /sv/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png
