@@ -1,0 +1,123 @@
+---
+uid: connect-erp-visma-net-order-sync
+title: Set up order sync
+description: How to configure the sales order synchronization from SuperOffice CRM to Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'order sync', 'sale', 'user-defined fields', 'DataBridge', 'CRMScript']
+author: marcelspapens
+date: 11.11.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+<Note>
+Order sync is only available for **CRM Suite Growth and higher**. Skip this page for Core.
+</Note>
+
+This page covers all configuration steps required to push sales orders from SuperOffice to Visma Net. Orders are created on demand when a user clicks the action button on the Sale card.
+
+## 1. Create user-defined field on the Sale card
+
+Go to **SuperOffice Admin > Fields > Sale > Add** and create the following field. Set it to **Read-Only**.
+
+| # | Field name | Type | Prog ID |
+|---|---|---|---|
+| 1 | ERP Order Number | Short text | `SALEERPORDERNUMBER` |
+
+After adding the field, click **Publish**.
+
+## 2. Add the Order CRMScript
+
+The CRMScript allows users to manually push a sale from SuperOffice to Visma Net as a sales order.
+
+1. Go to **SuperOffice Admin > CRMScript > New script**.
+1. Open the **Order to Visma Net** *.txt* file from *crmscripts-visma-net.zip* and paste the content into the script editor.
+1. Set the configuration variables at the top of the script:
+
+| Variable | Value |
+|---|---|
+| `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
+| `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
+| `allowOnlySaleWithStatusSold` | `true` to only allow sales with status **Sold** to be pushed; `false` to allow all statuses |
+
+1. Save the script.
+
+<Tip>
+We recommend keeping `allowOnlySaleWithStatusSold = true` to prevent accidental order creation in Visma Net from quotes that aren't yet finalized.
+</Tip>
+
+## 3. Create the Sale card screen layouts
+
+### Standard layout
+
+1. Go to **SuperOffice Admin > Screen Designer > Sale**.
+1. Create a new layout for all users.
+1. Add a new tab **ERP (Visma Net)** with the **ERP Order Number** field.
+1. Save and publish the layout.
+
+![Sale card: standard layout with ERP (Visma Net) tab showing ERP Order Number -screenshot][img1]
+
+### Admin layout
+
+1. Create a second layout for users with edit rights.
+1. Add a button executing the **Order to Visma Net** CRMScript, labeled **Create Order in Visma Net**.
+1. Add a URL link to the corresponding Visma Net sales order screen.
+1. Save and publish the layout.
+
+![Sale card: admin layout with Create Order in Visma Net button -screenshot][img2]
+
+## 4. Create the product selection
+
+DataBridge uses this selection as its data template for the product sync integration.
+
+1. In SuperOffice, click **New > Selection**.
+1. Select **Find Product**.
+1. Add a criterion with **Code** as the field, **Is not** as the operator, and a single space character as the value.
+1. Run the search and confirm at least one result appears.
+1. Save as a **dynamic selection** with the name **DB – Template: Quote**.
+
+![Find Product with criteria Code Is not (space) -screenshot][img3]
+
+<Note>
+Make sure at least one result appears before saving. An empty selection may cause DataBridge to fail when the integration runs.
+</Note>
+
+## 5. Import the order sync integration
+
+### Integration 6: Visma Net Sales Orders (Button)
+
+This profile is triggered manually when a user clicks **Create Order in Visma Net**.
+
+1. In DataBridge, import the corresponding *.ndb* file.
+1. Connect to Visma Net.
+1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#add-instant-job-url).
+
+### Integration 7: Visma Net Sales Orders (Hourly)
+
+This profile runs automatically every hour to pull new and updated sales orders from Visma Net into SuperOffice.
+
+1. In DataBridge, import the corresponding *.ndb* file.
+1. Connect to Visma Net.
+1. After saving, **disable the integration immediately**. You'll enable it in [Verify and finalize][2].
+
+## 6. Add the Instant Job URL to the CRMScript {#add-instant-job-url}
+
+1. Go to **SuperOffice Admin > CRMScript**.
+1. Open the **Order to Visma Net** script.
+1. Set the `instantJobUrl` variable to the URL you copied from **Visma Net Sales Orders (Button)**.
+1. Save.
+
+## Next step
+
+Continue with [Add panels][1].
+
+[1]: ./add-panels
+[2]: ./verify-finalize
+
+[img1]: /media/loc/en/integrations/connect-erp/sale-card-standard-layout.png
+[img2]: /media/loc/en/integrations/connect-erp/sale-card-admin-layout.png
+[img3]: /media/loc/en/integrations/connect-erp/selection-products.png

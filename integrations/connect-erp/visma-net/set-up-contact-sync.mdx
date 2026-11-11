@@ -1,0 +1,135 @@
+---
+uid: connect-erp-visma-net-contact-sync
+title: Set up contact sync
+description: How to configure the full contact synchronization between SuperOffice and Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'contact sync', 'person sync', 'user-defined fields', 'DataBridge', 'CRMScript']
+author: marcelspapens
+date: 11.11.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+This page covers all configuration steps required to synchronize contacts (persons) between SuperOffice and Visma Net. Contact sync is available in all CRM Suites.
+
+<Note>
+Complete [Set up company sync][1] before this page. Contacts in Visma Net are linked to companies via the ERP customer number, which is only present after company sync is configured.
+</Note>
+
+## 1. Create user-defined fields on the Contact card
+
+Go to **SuperOffice Admin > Fields > Contact > Add** and create the following 2 fields. Set both to **Read-Only**.
+
+| # | Field name | Type | Prog ID |
+|---|---|---|---|
+| 1 | Linked to ERP | Checkbox | `CONTACTLINKEDTOERP` |
+| 2 | ERP Pers. Number | Number | `CONTACTERPPERSONNUMBER` |
+
+After adding both fields, click **Publish**.
+
+## 2. Create the contact selections
+
+Two selections are needed for contact sync.
+
+### Selection: DB – Linked ERP Contact Persons
+
+This selection is used by the hourly automated contact sync to identify which contacts should be synchronized to Visma Net.
+
+**Before creating this selection:**
+
+1. Open a (test) contact card in SuperOffice.
+1. Manually set the field **Linked to ERP** to **Yes/True**.
+
+**Create the selection:**
+
+1. In SuperOffice, click **New > Selection**.
+1. Select **Find Contact**.
+1. Add a criterion with **Linked to ERP** as the field, **Equals** as the operator, and **Yes/True** as the value.
+1. Run the search and confirm the contact you just updated appears in the results.
+1. Save as a **dynamic selection** with the name **DB – Linked ERP Contact Persons**.
+
+![DB – Linked ERP Contact Persons selection with criteria Linked to ERP Is Yes -screenshot][img1]
+
+<Tip>
+Remember to reset the **Linked to ERP** field on the test contact after saving the selection if you don't want it permanently flagged.
+</Tip>
+
+## 3. Add the Contact CRMScript
+
+The CRMScript allows users to manually push or update a contact from SuperOffice to Visma Net.
+
+1. Go to **SuperOffice Admin > CRMScript > New script**.
+1. Open the **Contact to Visma Net** *.txt* file from *crmscripts-visma-net.zip* and paste the content into the script editor.
+1. Set the configuration variables at the top of the script:
+
+| Variable | Value |
+|---|---|
+| `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
+| `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
+
+1. Save the script.
+
+## 4. Create the Contact card screen layouts
+
+### Standard layout
+
+1. Go to **SuperOffice Admin > Screen Designer > Contact**.
+1. Create a new layout for all users.
+1. Add a new tab **ERP (Visma Net)** with the two ERP contact fields.
+1. Save and publish the layout.
+
+![Contact card: standard layout with ERP (Visma Net) tab showing ERP person number -screenshot][img2]
+
+### Admin layout
+
+1. Create a second layout for users with edit rights.
+1. Add a button executing the **Contact to Visma Net** CRMScript, labeled **Create/Update Person in Visma Net**.
+1. Add a URL link to the corresponding Visma Net contact screen.
+1. Save and publish the layout.
+
+![Contact card: admin layout with Create/update person in Visma Net button -screenshot][img3]
+
+## 5. Import the contact sync integrations
+
+### Integration 3: Visma Net Person Sync (Button)
+
+This profile is triggered manually when a user clicks **Create/Update Person in Visma Net**.
+
+1. In DataBridge, import the corresponding *.ndb* file.
+1. Connect to Visma Net.
+1. Verify that the customer number field mapping is correct. Contacts are linked to companies using the ERP customer number.
+1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#add-instant-job-url).
+
+### Integration 4: Visma Net Person Sync (Hourly)
+
+This profile runs automatically every hour to synchronize linked contacts.
+
+1. Import the *.ndb* file.
+1. Select the **DB – Linked ERP Contact Persons** selection as the data source.
+1. After saving, **disable the integration immediately**. You'll enable it in [Verify and finalize][2].
+
+## 6. Add the Instant Job URL to the CRMScript {#add-instant-job-url}
+
+1. Go to **SuperOffice Admin > CRMScript**.
+1. Open the **Contact to Visma Net** script.
+1. Set the `instantJobUrl` variable to the URL you copied from **Visma Net Person Sync (Button)**.
+1. Save.
+
+## Next step
+
+For **Core**: proceed to [Add panels][3].
+
+For **Growth and higher**: continue with [Set up product sync][4].
+
+[1]: ./set-up-company-sync
+[2]: ./verify-finalize
+[3]: ./add-panels
+[4]: ./set-up-product-sync
+
+[img1]: /media/loc/en/integrations/connect-erp/selection-linked-erp-contacts.png
+[img2]: /media/loc/en/integrations/connect-erp/contact-card-standard-layout.png
+[img3]: /media/loc/en/integrations/connect-erp/contact-card-admin-layout.png

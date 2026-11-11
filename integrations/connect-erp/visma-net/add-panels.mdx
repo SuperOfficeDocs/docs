@@ -1,0 +1,71 @@
+---
+uid: connect-erp-visma-net-add-panels
+title: Add panels
+description: How to add the DataBridge Panels for invoices, orders, and order history from Visma Net in SuperOffice.
+keywords: ['ConnectERP', 'Visma Net', 'DataBridge Panels', 'invoices', 'orders', 'order history', 'archives', 'panel']
+author: marcelspapens
+date: 11.11.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+DataBridge Panels display live order and invoice data from Visma Net directly on the Company card in SuperOffice, without copying the data into the SuperOffice database. Panels are available in all CRM Suites.
+
+<Note>
+A **ConnectERP subscription** must be active for your SuperOffice tenant to have access to the Visma Net Financials panels.
+</Note>
+
+## Initial panel setup
+
+1. Navigate to the DataBridge panel signup portal.
+1. Configure your timezone settings.
+1. Accept the terms and privacy documentation.
+1. Complete the registration to gain access to the panel configuration.
+
+## Adding the Invoices panel
+
+1. Click **New panel**.
+1. Enter the label **Invoices (Visma Net)**.
+1. Select the **Visma Net Financials Invoice** panel template.
+1. Set **Company user-defined: ERP Customer Number** as the identifier field.
+1. Authorize the connection to Visma Net and accept the terms.
+1. Click **Publish**.
+
+## Adding the Orders panel
+
+1. Click **New panel**.
+1. Enter the label **Orders (Visma Net)**.
+1. Select the **Visma Net Financials Order** panel template.
+1. Set **Company user-defined: ERP Customer Number** as the identifier field.
+1. Authorize the connection to Visma Net and accept the terms.
+1. Click **Publish**.
+
+## Adding the Order History panel
+
+1. Click **New panel**.
+1. Enter the label **Order History (Visma Net)**.
+1. Select the **Visma Net Financials Order History** panel template.
+1. Set **Company user-defined: ERP Customer Number** as the identifier field.
+1. Authorize the connection to Visma Net and accept the terms.
+1. Click **Publish**.
+
+The panels are now available on the Company card in SuperOffice. The **Orders (Visma Net)** tab shows live open order data, the **Order History (Visma Net)** tab shows historical orders, and the **Invoices (Visma Net)** tab shows invoice status, all directly from Visma Net.
+
+![SuperOffice Company card: ERP tab with key figures and Orders (Visma Net) panel showing live order data -screenshot][img1]
+
+<Tip>
+All panels support filtering and export. Users can filter by date range or order status and export the results to Excel directly from the panel.
+</Tip>
+
+## Next step
+
+Continue with [Verify and finalize][1].
+
+[1]: ./verify-finalize
+
+[img1]: /media/loc/en/integrations/connect-erp/company-card-orders-panel.png
