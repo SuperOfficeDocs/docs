@@ -4,7 +4,7 @@ title: Set data rights for a role
 description: Set data rights for role
 keywords: ['user management', 'access']
 author: digitaldiina
-date: 11.09.2026
+date: 11.11.2026
 so_version: 12.6
 content_type: howto
 tier: starter
@@ -63,9 +63,33 @@ You can set rights for data objects based on who owns the object. All users who 
 
 On the Contact card, the **Our contact** field always pulls the associate from the Company card that the contact belongs to.
 
-## Custom objects
+## Custom objects {#custom-objects}
 
-Rights for custom objects are set per custom object, not by owner. See [set access rights for custom objects][3].
+With CRM Suite **Growth** or higher, you also set rights for [custom objects][3]. Unlike the data rights above, these rights apply to all records of a custom object, whoever owns them.
+
+1. <OpenRoles />
+
+1. Choose the **Associates** tab, and select the role in the **Roles** list.
+
+1. Select the **Custom objects rights** tab.
+
+1. Next to each custom object, select <i class="ph ph-caret-down" aria-label="Chevron"></i> in the **Permission** list and choose a permission:
+
+    | Permission | Users with this role can |
+    |---|---|
+    | None | Not see the custom object or its records |
+    | Read | See records |
+    | Create | See and create records |
+    | Update | See, create, and edit records |
+    | Delete | See, create, edit, and delete records |
+
+![Custom objects rights tab for a role -screenshot][img1]
+
+<Tip>
+Set the permissions as soon as you add a custom object, so the users who need it can start working with it.
+</Tip>
 
 [2]: ./index
-[3]: /en/custom-objects/admin/access-rights
+[3]: /en/custom-objects/learn/extra-table
+
+[img1]: /media/loc/en/custom-objects/role-custom-object-rights.png
