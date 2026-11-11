@@ -2,7 +2,7 @@
 uid: help-en-extra-fields-create
 title: Add extra fields
 description: How to define extra fields in SuperOffice
-keywords: ['extra field', 'custom field', 'field properties']
+keywords: ['extra field', 'custom field', 'custom object field', 'field properties']
 author: Bergfrid Dias
 date: 11.11.2026
 so_version: 12.6
@@ -17,7 +17,7 @@ language: en
 
 import GotoTables from "./snippets/goto-tables.md";
 
-After you create a [custom object][1], add the fields users fill in for each record. You can also add extra fields to standard Service tables, such as requests.
+After you create the table for a [custom object][1], add the fields users fill in for each record. You can also add extra fields to standard Service tables.
 
 ## Steps
 
@@ -27,13 +27,13 @@ After you create a [custom object][1], add the fields users fill in for each rec
 
     ![Tables screen with New field next to a table -screenshot][img1]
 
-1. Select a type for the new field and click **OK**.
+1. Select a field type for the new field and click **OK**.
 
 1. In the **Field properties** screen, enter data about the new field.
 
     * Enter a *name* to be used as the label.
     * Enter a *database field* beginning with **x_** to identify the field in the schema.
-    * Optionally set other properties. The type (specified in step 3) determines what is available. See [field properties](#properties).
+    * Optionally set other properties. The field type you selected in the previous step determines what is available. See [field properties](#properties).
 
     <Tip>
     To make a field mandatory, select **Cannot be empty**.
@@ -45,7 +45,7 @@ After you create a [custom object][1], add the fields users fill in for each rec
 
 1. Continue adding more fields.
 
-1. Click **Restart Netserver** when you are done. If Travel is activated, you will also see a message that a new Travel database must be generated.
+1. Click **Restart NetServer** when you are done. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
 ## Field properties {#properties}
 
@@ -98,7 +98,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 
 1. Click **OK** to save the relation.
 1. For an **Extra table relation**, set **Display field** on the target table to a field users recognize, such as the name. See [table properties][1].
-1. Click **Restart Netserver** to apply the changes.
+1. Click **Restart NetServer** to apply the changes.
 
 For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With CRM Suite **Growth** or higher and **Show one-to-many relations** selected, the sale shows a tab with its requests. In the same way, a **Lease** custom object with a sale relation adds a **Leases** tab to the sale. With a user-plan based license, build a web panel to list connected requests when viewing a sale in SuperOffice CRM.
 
