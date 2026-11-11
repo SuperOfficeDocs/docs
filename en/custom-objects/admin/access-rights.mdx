@@ -5,7 +5,7 @@ sidebarTitle: Access rights
 description: Decide per role who can read, create, update, and delete the records of each custom object.
 keywords: ['custom object', 'access rights', 'role', 'data rights', 'extra table']
 author: digitaldiina
-date: 11.09.2026
+date: 11.11.2026
 so_version: 12.6
 content_type: howto
 tier: growth
@@ -22,7 +22,7 @@ import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
 
 <ReqGrowthCustomObjects />
 
-You decide per [role][1] what users can do with the records of each custom object. For example, service technicians can update equipment records, while sales representatives can only read them.
+You decide per [role][1] what users can do with the records of each custom object. For example, account managers can update lease records, while other users can only read them.
 
 The rights apply to all records of the custom object. They are set separately from the [data rights][2] for companies, contacts, sales, and projects.
 
@@ -34,11 +34,11 @@ The rights apply to all records of the custom object. They are set separately fr
 
 1. Select the role in the **Roles** list.
 
-1. Select the **Custom objects** tab. TODO(label)
+1. Select the **Custom objects rights** tab.
 
-1. Next to each custom object, select <i class="ph ph-caret-down" aria-label="Chevron"></i> and choose the right:
+1. Next to each custom object, select <i class="ph ph-caret-down" aria-label="Chevron"></i> in the **Permission** list and choose a permission:
 
-    | Right | Users with this role can |
+    | Permission | Users with this role can |
     |---|---|
     | None | Not see the custom object or its records |
     | Read | See records |
@@ -46,11 +46,7 @@ The rights apply to all records of the custom object. They are set separately fr
     | Update | See, create, and edit records |
     | Delete | See, create, edit, and delete records |
 
-    TODO(label): confirm that each right includes the rights above it, and whether changes save automatically.
-
-{/*
-TODO(screenshot): role-custom-object-rights.png
-*/}
+![Custom objects rights tab for a role -screenshot][img1]
 
 <Tip>
 Set the rights as soon as you add a custom object, so the users who need it can start working with it.
@@ -58,3 +54,5 @@ Set the rights as soon as you add a custom object, so the users who need it can 
 
 [1]: /en/admin/user-management/role/index
 [2]: /en/admin/user-management/role/set-data-rights-for-role
+
+[img1]: /media/loc/en/custom-objects/role-custom-object-rights.png

@@ -4,7 +4,7 @@ title: Add extra fields
 description: How to define extra fields in SuperOffice
 keywords: ['extra field', 'custom field', 'field properties']
 author: Bergfrid Dias
-date: 11.09.2026
+date: 11.11.2026
 so_version: 12.6
 content_type: howto
 tier: growth
@@ -25,7 +25,7 @@ After you create a [custom object][1], add the fields users fill in for each rec
 
 1. Browse to your desired table, point at the table name, and click **New field**.
 
-    ![Create extra field -screenshot][img1]
+    ![Tables screen with New field next to a table -screenshot][img1]
 
 1. Select a type for the new field and click **OK**.
 
@@ -39,11 +39,13 @@ After you create a [custom object][1], add the fields users fill in for each rec
     To make a field mandatory, select **Cannot be empty**.
     </Tip>
 
+    ![Field properties for a Text (short) field -screenshot][img2]
+
 1. Click **OK** to save the new field (runs `alter table y_mynewtable add column x_mynewfield ...`).
 
 1. Continue adding more fields.
 
-1. Click **Restart NetServer** when you are done. If Travel is activated, you will also see a message that a new Travel database must be generated.
+1. Click **Restart Netserver** when you are done. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
 ## Field properties {#properties}
 
@@ -63,7 +65,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Description | The default description. |
 | Display value | Whether to display the field's value. |
 | External | If checked, the field is available from a customer centre. Relevant only for standard tables (extra tables are always displayed in customer centres). |
-| Header for list | A header for these entries when they are displayed as "sub-entries" in a list. |
+| Header for list | A header for these entries when they are displayed as "sub-entries" in a list. With CRM Suite, it is also the label of the section tab on the related record. Mandatory when **Show one-to-many relations** is selected. |
 | Hide function buttons | (relations) Select this option to hide the function for adding new entries to relation tables. |
 | Hide the field | Whether to display the field. |
 | Keep HTML tags | (text) Select this option to include the HTML tag in the text. |
@@ -71,9 +73,9 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Number of units | (time span) The maximum number of units for the "largest" selected time unit. Example: If you selected hours and minutes, and enter "4", a maximum of 4 hours can be selected, while minutes go to 60. Similarly for days and hours, a maximum of 4 days can be selected, while hours go to 24. |
 | Only allow leaf nodes for hierarchical list boxes | (extra table relation) Specify if only the lowest node in a hierarchy can be selected by the user. |
 | Position | Specifies this field's position among the other fields in lists. |
-| Search operator | Which search operator to use for this field. |
+| Search criteria | The search operator to use for this field, for example **begins with**. |
 | Show in table | If checked, this field is displayed as a column in screens where several entries are displayed in a table. |
-| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite, the related record in SuperOffice CRM also gets a section tab, for example an **Equipment** tab on the company. |
+| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite, the related record in SuperOffice CRM also gets a section tab, for example a **Leases** tab on the company. |
 | Table | The table this field belongs to. |
 | Target table | Which table to use. |
 | Text area / Height | The number of lines of the text field. |
@@ -90,15 +92,23 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 
 1. Click **New field**.
 1. Select the relation type for the entity you want to connect to and click **OK**.
-1. Set field properties as described above. To show the related records on a tab on the other record, select **Show one-to-many relations**.
+1. Set field properties as described above. To show the related records on a tab on the other record, select **Show one-to-many relations** and fill in **Header for list**. The header is mandatory when **Show one-to-many relations** is selected.
+
+    ![Field properties for an extra table relation, with the Target table list open -screenshot][img3]
 
 1. Click **OK** to save the relation.
-1. Click **Restart NetServer** to apply the changes.
+1. For an **Extra table relation**, users select a record by typing the start of its display value, for example the name. Set a clear **Display field** on the target table, so users know what to type. See [table properties][1].
+1. Click **Restart Netserver** to apply the changes.
 
-For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With CRM Suite and **Show one-to-many relations** selected, the sale shows a tab with its requests. TODO(label): confirm for sales. With a user-plan based license, build a web panel to list connected requests when viewing a sale in SuperOffice CRM.
+For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With CRM Suite and **Show one-to-many relations** selected, the sale shows a tab with its requests. In the same way, a **Lease** custom object with a sale relation adds a **Leases** tab to the sale. With a user-plan based license, build a web panel to list connected requests when viewing a sale in SuperOffice CRM.
+
+![Sale with a Leases section tab -screenshot][img4]
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
 [4]: /en/database/tables/ticket
 
-[img1]: /media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

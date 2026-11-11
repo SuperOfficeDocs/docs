@@ -2,10 +2,10 @@
 uid: help-en-custom-object-create
 title: Create a custom object record
 sidebarTitle: Create record
-description: Create a new record of a custom object, such as a new piece of equipment, from the top bar, the custom object screen, or a related company or contact.
+description: Create a new record of a custom object, such as a new lease, from the top bar or from a related company or contact.
 keywords: ['custom object', 'new record', 'create', 'extra table']
 author: digitaldiina
-date: 11.09.2026
+date: 11.11.2026
 so_version: 12.6
 content_type: howto
 tier: growth
@@ -21,39 +21,31 @@ import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-
 
 <ReqGrowthCustomObjects />
 
-You can create a record of a custom object from the top bar, from the custom object's screen, or from a related record. The fields you see depend on how your administrator set up the custom object.
+You can create a record of a custom object from the top bar or from a related record. The fields you see depend on how your administrator set up the custom object.
 
-To create records, your role must have the **Create** right for the custom object. See [access rights for custom objects][1].
+To create records, your role must have the **Create** permission for the custom object. See [access rights for custom objects][1].
 
 ## Create a record from the top bar {#top-bar}
 
-1. Select **New** in the top bar, and then select the custom object. For example, **Equipment**.
+1. Select **New** in the top bar, and then select the custom object. For example, **Lease**.
 
 1. Fill in the fields. Mandatory fields are marked in red.
 
     * For a relation field, such as **Company**, start typing and select the record from the list. The list shows a preview of each match, so you can select the right one.
 
-1. Select **Save**. TODO(label)
+1. Select **Save**.
 
-{/*
-TODO(screenshot): new-menu-custom-object.png, equipment-new-dialog.png
-*/}
+![New menu in the top bar with custom objects -screenshot][img1]
 
-## Create a record from the custom object screen {#screen}
-
-1. Open the custom object from the Navigator.
-
-1. Select **Task** > **New**. TODO(label)
-
-1. Fill in the fields and select **Save**.
+![Lease form with relation fields filled in -screenshot][img2]
 
 ## Create a record from a related company or contact {#related}
 
 When a custom object relates to a company, contact, sale, project, or request, the record has a section tab for the custom object. A record you create there is linked automatically.
 
-1. Open the company (or other record) and select the custom object's section tab. For example, **Equipment**.
+1. Open the company (or other record) and select the custom object's section tab. For example, **Leases**.
 
-1. Select **Add**. TODO(label)
+1. Select **Add**.
 
 1. Fill in the fields. The relation to the company is already filled in.
 
@@ -62,3 +54,6 @@ When a custom object relates to a company, contact, sale, project, or request, t
 Some fields may already have values when the form opens. Your administrator can set default values or use a trigger to pre-fill fields.
 
 [1]: ../admin/access-rights
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png

@@ -1,10 +1,10 @@
 ---
 uid: help-en-extra-table
 title: Custom objects
-description: A custom object is a type of record you define yourself, such as Equipment or Contract. Learn where custom objects appear and how to search for them.
+description: A custom object is a type of record you define yourself, such as Laptop or Lease. Learn where custom objects appear and how to search for them.
 keywords: ['custom object', 'extra table', 'third-party table', 'navigator', 'find', 'selection', 'dashboard']
 author: digitaldiina
-date: 11.09.2026
+date: 11.11.2026
 so_version: 12.6
 content_type: concept
 tier: growth
@@ -24,7 +24,7 @@ import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-
 
 <ReqGrowthCustomObjects />
 
-A *custom object* is a type of record that your administrator defines, such as *Equipment*, *Contract*, or *Car*. Each custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
+A *custom object* is a type of record that your administrator defines, such as *Laptop*, *Lease*, or *Car*. Each custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
 
 In the database, a custom object is an extra table (also called a *third-party table*). Administrators create custom objects in **Settings and maintenance** > **System design** > **Tables**. See [Add a custom object][2].
 
@@ -32,20 +32,20 @@ In the database, a custom object is an extra table (also called a *third-party t
 
 With CRM Suite, custom objects work like the standard records in SuperOffice:
 
-* **Navigator:** Custom objects are listed in the Navigator, each with its own icon. Select a custom object to open its screen with a list of records. TODO(label): confirm whether only custom objects set to show in the Navigator appear here.
-* **Main menu:** Select <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** to see all custom objects you have access to. TODO(label)
+* **Navigator:** Custom objects are listed in the Navigator, each with its own icon. Select a custom object to open its screen with a list of records. Your administrator decides which custom objects are listed.
+* **Main menu:** Select <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** to see all custom objects you have access to. Select a custom object, add [search criteria][16] on the **Criteria** tab, and click **Find**. The matching records are shown on the **Results** tab.
 * **New:** Select **New** in the top bar to [create a record][7] of a custom object.
-* **Section tabs:** When a custom object relates to a company, contact, sale, project, or request, the related records are shown on a tab on that record. For example, a company shows an **Equipment** tab with the equipment registered for the company.
+* **Section tabs:** When a custom object relates to a company, contact, sale, project, or request, the related records are shown on a tab on that record. For example, a company shows a **Leases** tab with the company's leases.
 * **Side panel:** On a section tab with custom objects, select a record to see it in the **Preview** view of the side panel. Select a related record in the preview to go to it.
 * **History and favorites:** Records you open are added to your [history][9], and you can [add them as favorites][10].
 
-![Section tab with custom objects on a company -screenshot][img8]
+![Company with a Leases section tab -screenshot][img8]
 
-![Preview of a custom object in the side panel -screenshot][img9]
+![Lease shown in the Preview view of the side panel -screenshot][img9]
 
-{/*
-TODO(screenshot): navigator-custom-objects.png, equipment-list.png
-*/}
+![Navigator with four custom objects -screenshot][img10]
+
+![Custom objects screen with Laptop search results -screenshot][img11]
 
 Which custom objects and records you can see, create, update, or delete depends on your [role][8].
 
@@ -53,20 +53,20 @@ Which custom objects and records you can see, create, update, or delete depends 
 
 You can search for custom objects and create selections and dashboards based on them, in the same way as for companies, contacts, and sales.
 
-* **Find:** In the **Find** screen, select a custom object to search for its records. You can also use a custom object as search criteria when you search for companies, contacts, sales, projects, requests, and follow-ups. For example, find all companies that have equipment of the type *Printer*.
+* **Find:** In the **Find** screen, select a custom object to search for its records. You can also use a custom object as search criteria when you search for companies, contacts, sales, projects, requests, and follow-ups. For example, find all companies that have a lease ending this month.
 * **Selections:** Save the search as a selection of custom object records. A dynamic selection keeps the list up to date.
-* **Dashboards:** Use a custom object as the data source of a dashboard tile. For example, show the number of equipment items per type.
+* **Dashboards:** Use a custom object as the data source of a dashboard tile. For example, show the number of laptops per status.
 
-![Custom object as search criteria -screenshot][img2]
+![Find Company with a Lease field as search criteria -screenshot][img2]
 
 ![Find screen with custom objects -screenshot][img3]
 
-![Selection of custom objects -screenshot][img4]
+![Find Laptop with search results and Save as selection -screenshot][img4]
 
-![Dashboard with custom objects -screenshot][img1]
+![Dashboard with tiles based on the Lease and Laptop custom objects -screenshot][img1]
 
 <Note>
-Free-text search does not include custom objects. Use **Find** or the search in the custom object's own screen. TODO(label): confirm this is the search field in the top bar.
+[Freetext search][17] (the **Search for anything** field in the top bar) does not include custom objects. Use **Find** or the search in the custom object's own screen.
 </Note>
 
 ## Tables screen {#tables}
@@ -124,10 +124,14 @@ To work with extra tables as custom objects in SuperOffice CRM, join the [custom
 [14]: /en/customization/web-panels/admin/index
 [15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
 [12]: /en/customization/screen-designer/admin/add-layout#custom-objects
+[16]: /en/search-options/learn/search-criteria
+[17]: /en/search-options/learn/freetext-search
 
-[img1]: /media/loc/en/automation/custom-object-dashboard.png
-[img2]: /media/loc/en/automation/find-custom-object-relation.png
-[img3]: /media/loc/en/automation/find-screen-with-custom-objects.png
-[img4]: /media/loc/en/automation/custom-object-selection.png
-[img8]: /media/loc/en/automation/section-tab-for-relation.png
-[img9]: /media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/dashboard-leases.png
+[img2]: /media/loc/en/custom-objects/find-company-lease-criteria.png
+[img3]: /media/loc/en/custom-objects/find-screen-custom-objects.png
+[img4]: /media/loc/en/custom-objects/find-laptop-results.png
+[img8]: /media/loc/en/custom-objects/company-lease-tab.png
+[img9]: /media/loc/en/custom-objects/company-lease-preview.png
+[img10]: /media/loc/en/custom-objects/navigator-custom-objects.png
+[img11]: /media/loc/en/custom-objects/custom-objects-screen.png

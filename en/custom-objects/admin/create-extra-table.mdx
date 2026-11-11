@@ -5,7 +5,7 @@ sidebarTitle: Add custom object
 description: Create a custom object (extra table) in Settings and maintenance, choose its icon, and show it in the Navigator.
 keywords: ['custom object', 'extra table', 'third-party table', 'system design', 'icon', 'navigator']
 author: Bergfrid Dias, Eivind Fasting
-date: 11.09.2026
+date: 11.11.2026
 so_version: 12.6
 content_type: howto
 tier: growth
@@ -27,7 +27,7 @@ import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-
 
 With a user-plan based license, you need [Development Tools][8] to add extra tables.
 
-A [custom object][3] is a new type of record, such as *Equipment* or *Contract*. In the database, it is an extra table. You create the table, [add fields][1] to it, and decide how users find it.
+A [custom object][3] is a new type of record, such as *Laptop* or *Lease*. In the database, it is an extra table. You create the table, [add fields][1] to it, and decide how users find it.
 
 ## Steps
 
@@ -35,11 +35,12 @@ A [custom object][3] is a new type of record, such as *Equipment* or *Contract*.
 
 1. Select **New table**.
 
-    ![Create extra table -screenshot][img1]
+    ![Tables screen with the New table button -screenshot][img1]
 
 1. In the **Table properties** screen, enter data about the new table.
 
     * Enter a *name* to be used as the label.
+    * Enter a *description* that explains what the custom object is for, so other administrators understand it.
     * Enter a *database table* beginning with **y_** to identify it in the schema.
     * Optionally set other properties. See [table properties](#properties).
 
@@ -53,9 +54,11 @@ A [custom object][3] is a new type of record, such as *Equipment* or *Contract*.
 
 1. Select the table name in the list to open its properties again, and set the properties that need fields, such as **Sort order** and **Display field**.
 
+    ![Display field list with the fields of the table -screenshot][img4]
+
 1. [Choose an icon](#icon) and [show the custom object in the Navigator](#navigator).
 
-1. Select **Restart NetServer**. If Travel is activated, you will also see a message that a new Travel database must be generated.
+1. Select **Restart Netserver**. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
 1. [Set access rights][4] for the roles that should work with the custom object.
 
@@ -81,13 +84,11 @@ To go back to the default icon, select **Remove icon**.
 
 ## Show the custom object in the Navigator {#navigator}
 
-TODO(label): name and location of the option.
+In the table properties, select **Show in navigator**. The custom object is then listed in the Navigator and under **New** in the top bar, and its records are added to history and favorites like other records.
 
-When this option is selected, the custom object is listed in the Navigator and under **New** in the top bar. Users can search its records, and the records are added to history and favorites like other records.
+To let users search for records of the custom object in **Find**, also select **Show table in Find**.
 
-{/*
-TODO(screenshot): table-properties-navigator.png
-*/}
+![Table properties with a description, Show table in Find, Show in navigator, and an icon selected -screenshot][img3]
 
 ## Table properties {#properties}
 
@@ -95,6 +96,7 @@ TODO(screenshot): table-properties-navigator.png
 |---|---|
 | Folder | To place the table in an existing folder, select a folder from the list. |
 | Name | The UI label of the table. |
+| Description | What the custom object is for. Fill it in so other administrators understand the table. |
 | Database table | The database table's name can only be set during creation and **cannot be changed**. It should start with "y_", and can only include underscores, letters (a-z), and numbers. A logical name is recommended for easy identification of the database content. |
 | Search header | The header used in the search screen for this table. |
 | Header for viewing entry | The header used when you display an entry in this table. |
@@ -106,6 +108,8 @@ TODO(screenshot): table-properties-navigator.png
 | Full name |  If this is a hierarchical table, this field can specify a field that is automatically updated with the entry's full name based on the name field for this entry, and all parent entries. |
 | Hide ID field | If selected, the ID field will not be shown when listing entries in the table. |
 | Hide the table | If selected, the table will not be visible from **System design** > **Tables**. |
+| Show table in Find | If selected, users can search for records of the custom object in **Find**. |
+| Show in navigator | If selected, the custom object is listed in the Navigator. See [show the custom object in the Navigator](#navigator). |
 | Icon | The icon shown for the custom object. See [choose an icon](#icon). |
 | Enable batch webhook in Service | If selected, batch updates on this table will trigger [webhooks][2]. |
 
@@ -126,5 +130,7 @@ With a user-plan based license, you show extra tables in SuperOffice CRM through
 [6]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
 [8]: /en/admin/license/expander-services
 
-[img1]: /media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-table.png
 [img2]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
+[img3]: /media/loc/en/custom-objects/table-properties-navigator.png
+[img4]: /media/loc/en/custom-objects/table-properties-display-field.png
