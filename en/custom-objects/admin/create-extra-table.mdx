@@ -1,8 +1,8 @@
 ---
 uid: help-en-extra-table-create
-title: Add a custom object
-sidebarTitle: Add custom object
-description: Create a custom object (extra table) in Settings and maintenance, choose its icon, and show it in the Navigator.
+title: Add an extra table
+sidebarTitle: Add extra table
+description: Create an extra table in Settings and maintenance. With CRM Suite Growth or higher, it works as a custom object, like companies and sales.
 keywords: ['custom object', 'extra table', 'third-party table', 'system design', 'icon', 'navigator']
 author: Bergfrid Dias, Eivind Fasting
 date: 11.11.2026
@@ -28,7 +28,9 @@ import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
 
 With a user-plan based license, you need [Development Tools][8] to add extra tables.
 
-A [custom object][3] is a new type of record, such as *Laptop* or *Lease*. In the database, it is an extra table. You create the table, [add fields][1] to it, and decide how users find it.
+You store your own types of data, such as laptops or leases, in extra tables. You create the table in **Tables** and [add fields][1] to it.
+
+With CRM Suite **Growth** or higher, an extra table also works as a [custom object][3], like the standard records such as companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. A few table properties and role permissions control this. See [make the table a custom object](#custom-object).
 
 ## Steps
 
@@ -41,9 +43,9 @@ A [custom object][3] is a new type of record, such as *Laptop* or *Lease*. In th
 1. In the **Table properties** screen, enter data about the new table.
 
     * Enter a *name* to be used as the label.
-    * Enter a *description* that explains what the custom object is for, so other administrators understand it.
+    * Enter a *description* that explains what the table is for, so other administrators understand it.
     * Enter a *database table* beginning with **y_** to identify it in the schema.
-    * [Choose an icon](#icon) and [show the custom object in the Navigator](#navigator).
+    * To make the table a custom object, [choose an icon](#icon) and [show it in the Navigator and Find](#navigator).
     * Optionally set other properties. See [table properties](#properties).
 
     <Note>
@@ -62,9 +64,13 @@ A [custom object][3] is a new type of record, such as *Laptop* or *Lease*. In th
 
 1. [Give roles access](#access-rights) to the custom object.
 
-Users can now create records of the custom object. You can also add records through the APIs.
+Users can now work with the table as a custom object. You can also add records through the APIs.
 
-## Choose an icon {#icon}
+## Make the table a custom object {#custom-object}
+
+With CRM Suite **Growth** or higher, these settings decide how the table appears to users.
+
+### Choose an icon {#icon}
 
 The icon is shown in the Navigator, the custom objects list, context menus, the webhook event list, and the Screen Designer.
 
@@ -82,15 +88,15 @@ To go back to the default icon, select **Remove icon**.
 
 ![Select icon dialog with the Default icons, Full icon library, and Custom icons tabs -screenshot][img2]
 
-## Show the custom object in the Navigator {#navigator}
+### Show the table in the Navigator and Find {#navigator}
 
-In the table properties, select **Show in navigator**. The custom object is then listed in the Navigator and under **New** in the top bar, and its records are added to history and favorites like other records.
+In the table properties, select **Show in navigator**. The table is then listed in the Navigator and under **New** in the top bar, and its records are added to history and favorites like other records.
 
-To let users search for records of the custom object in **Find**, also select **Show table in Find**.
+To let users search for its records in **Find**, also select **Show table in Find**.
 
 ![Show table in Find, Show in navigator, and an icon selected in the table properties -screenshot][img3]
 
-## Give roles access {#access-rights}
+### Give roles access {#access-rights}
 
 Users can only see and work with a custom object if their role gives them access. When you have created the table and added its fields, set the permission for each role that should use it.
 
@@ -110,7 +116,7 @@ See [data rights for custom objects][4] for what each permission allows.
 |---|---|
 | Folder | To place the table in an existing folder, select a folder from the list. |
 | Name | The UI label of the table. |
-| Description | What the custom object is for. Fill it in so other administrators understand the table. |
+| Description | What the table is for. Fill it in so other administrators understand it. |
 | Database table | The database table's name can only be set during creation and **cannot be changed**. It should start with "y_", and can only include underscores, letters (a-z), and numbers. A logical name is recommended for easy identification of the database content. |
 | Search header | The header used in the search screen for this table. |
 | Header for viewing entry | The header used when you display an entry in this table. |
@@ -122,9 +128,9 @@ See [data rights for custom objects][4] for what each permission allows.
 | Full name |  If this is a hierarchical table, this field can specify a field that is automatically updated with the entry's full name based on the name field for this entry, and all parent entries. |
 | Hide ID field | If selected, the ID field will not be shown when listing entries in the table. |
 | Hide the table | If selected, the table will not be visible from **System design** > **Tables**. |
-| Show table in Find | If selected, users can search for records of the custom object in **Find**. |
-| Show in navigator | If selected, the custom object is listed in the Navigator. See [show the custom object in the Navigator](#navigator). |
-| Icon | The icon shown for the custom object. See [choose an icon](#icon). |
+| Show table in Find | If selected, users can search for records in this table in **Find**. |
+| Show in navigator | If selected, the table is listed in the Navigator and under **New**. See [show the table in the Navigator and Find](#navigator). |
+| Icon | The icon shown for the table in the Navigator and other places. See [choose an icon](#icon). |
 | Enable batch webhook in Service | If selected, batch updates on this table will trigger [webhooks][2]. |
 
 ## Next steps

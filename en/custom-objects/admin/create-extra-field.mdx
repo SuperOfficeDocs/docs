@@ -75,7 +75,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Position | Specifies this field's position among the other fields in lists. |
 | Search criteria | The search operator to use for this field, for example **begins with**. |
 | Show in table | If checked, this field is displayed as a column in screens where several entries are displayed in a table. |
-| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite **Growth** or higher, the related record in SuperOffice CRM also gets a section tab, for example a **Leases** tab on the company. |
+| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite **Growth** or higher, the related record in SuperOffice CRM also gets a section tab, for example an **Equipment** tab on the company. |
 | Table | The table this field belongs to. |
 | Target table | Which table to use. |
 | Text area / Height | The number of lines of the text field. |
@@ -90,19 +90,19 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 
 ## Add relation (foreign key, FK)
 
-A relation field links a record to a record in another table, for example a lease to a laptop. With CRM Suite **Growth** or higher, the related record can also show a section tab that lists the linked records.
+A relation field links a record to a record in another table. With CRM Suite **Growth** or higher, the related record can also show a section tab that lists the linked records.
 
-1. Point at the table that should hold the relation, for example **Lease**, and click **New field**.
+1. Point at the table that should hold the relation, and click **New field**.
 1. Select the relation type for the table you want to link to and click **OK**.
-1. Set field properties as described above. To show a section tab on the related record, select **Show one-to-many relations**, and enter the tab label in **Header for list**. For example, a **Laptop** field in the Lease table with the header *Leases* adds a **Leases** tab to each laptop.
+1. Set field properties as described above. To show a section tab on the related record, select **Show one-to-many relations**, and enter the tab label in **Header for list**.
 
     ![Field properties for an extra table relation, with Header for list and Target table filled in -screenshot][img3]
 
 1. Click **OK** to save the relation.
-1. For an **Extra table relation**, open the properties of the target table, for example **Laptop**, and set **Display field** to a field users recognize, such as the name. See [table properties][1].
+1. For an **Extra table relation**, open the properties of the target table and set **Display field** to a field users recognize, such as the name. See [table properties][1].
 1. Click **Restart NetServer** to apply the changes.
 
-For example, the Lease custom object has a **Sale relation** with **Show one-to-many relations** selected, so each sale shows a **Leases** tab with its leases.
+For example, a Lease table has a **Laptop** field (extra table relation to the Laptop table) and a **Sale** field (sale relation). Both have **Show one-to-many relations** selected and *Leases* as **Header for list**. Each laptop and each sale then shows a **Leases** tab with the linked leases.
 
 ![Sale with a Leases section tab -screenshot][img4]
 
