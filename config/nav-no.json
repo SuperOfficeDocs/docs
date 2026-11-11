@@ -673,7 +673,7 @@
         ]
       },
       {
-        "group": "Ekstratabeller",
+        "group": "Egendefinerte objekter",
         "icon": "cube",
         "root": "no/custom-objects/learn/index",
         "pages": [
