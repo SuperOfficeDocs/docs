@@ -4,8 +4,8 @@ title: Extra veld
 description: Extra veld
 keywords: ['extra veld', 'aangepast', 'databasetabel', 'url', 'klikbare link', 'link in extra veld']
 author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+date: 11.11.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
@@ -87,21 +87,21 @@ Databasetabellen zijn verbonden met *vreemde sleutel* (FK). Dit zijn veldtypen d
 * Afspraakrelatie
 * Extratabelrelatie
 
-#### Beschikbaar in pilot vanaf versie 10.3.4
+#### Sectietabbladen voor gerelateerde records {#section-tab}
 
-Wanneer een relationeel veld is ingesteld om een-op-veel-relaties weer te geven, voegt het systeem automatisch een sectietabblad toe in gerelateerde standaardentiteiten. Dit is niet hetzelfde als het tabblad **Relaties** op de Bedrijf- en Contactschermen.
+Met CRM Suite **Growth** of hoger krijgt het gerelateerde record een sectietabblad met de records die ernaar verwijzen, wanneer bij een relatieveld **Een-op-veel-relaties weergeven** is geselecteerd. Een aangepast object **Lease** met een bedrijfsrelatie voegt bijvoorbeeld een tabblad **Leases** toe aan het bedrijf. Dit tabblad is niet hetzelfde als het tabblad **Relaties** op de Bedrijf- en Contactschermen.
 
-![Sectietabblad met extraveldrelatie -screenshot][img1]
+![Bedrijf met een sectietabblad Leases -screenshot][img1]
 
-#### Beschikbaar in pilot vanaf versie 10.3.7
+#### Gerelateerde records bekijken in een voorbeeld {#preview}
 
-Om de details van items in deze lijst te bekijken zonder elke entiteit afzonderlijk te openen:
+Met CRM Suite **Growth** of hoger kunt u de details van gerelateerde records bekijken in het zijpaneel. Om de details van records in deze lijst te bekijken zonder elk record afzonderlijk te openen:
 
 1. Ga naar het zijpaneel en selecteer de weergave **Voorbeeld**.
-2. Klik op een item in het relatiegebaseerde sectietabblad. Het zijpaneel toont een voorbeeld van de geselecteerde entiteit. In het voorbeeld kunt u:
+2. Selecteer een record op het sectietabblad. Het zijpaneel toont een voorbeeld van de geselecteerde entiteit. In het voorbeeld kunt u:
 
-    * Klik op een standaardentiteit om ernaartoe te gaan.
-    * Klik op een aangepast object om een dialoogvenster te openen voor het bekijken of bewerken van aanvullende informatie.
+    * Een standaardrecord, zoals een bedrijf, selecteren om ernaartoe te gaan.
+    * Een record van een aangepast object selecteren om een dialoogvenster te openen waarin u het kunt bekijken of bewerken.
 
 ![Voorbeeld extraveldrelatie -screenshot][img2]
 
@@ -111,6 +111,6 @@ Extra velden kunnen bijvoorbeeld worden gebruikt als zoekcriteria en kolommen in
 
 [6]: ./extra-table
 [7]: /nl/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png
