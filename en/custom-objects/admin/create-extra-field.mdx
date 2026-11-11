@@ -17,7 +17,7 @@ language: en
 
 import GotoTables from "./snippets/goto-tables.md";
 
-After you create the table for a [custom object][1], add the fields users fill in for each record. You can also add extra fields to standard Service tables.
+After you create an [extra table][1], add the fields users fill in for each record. You can also add extra fields to standard Service tables.
 
 ## Steps
 
@@ -27,17 +27,14 @@ After you create the table for a [custom object][1], add the fields users fill i
 
     ![Tables screen with New field next to a table -screenshot][img1]
 
-1. Select a field type for the new field and click **OK**.
+1. Select a type for the new field and click **OK**.
 
 1. In the **Field properties** screen, enter data about the new field.
 
     * Enter a *name* to be used as the label.
     * Enter a *database field* beginning with **x_** to identify the field in the schema.
+    * To make the field mandatory, select **Cannot be empty**.
     * Optionally set other properties. The field type you selected in the previous step determines what is available. See [field properties](#properties).
-
-    <Tip>
-    To make a field mandatory, select **Cannot be empty**.
-    </Tip>
 
     ![Field properties for a Text (short) field -screenshot][img2]
 

@@ -32,46 +32,48 @@ There are two ways to extend SuperOffice:
 
 ## Custom fields
 
-*Custom field* is the umbrella term for fields that you add to SuperOffice records. There are two kinds, depending on the record:
+There are two kinds of custom fields, depending on the record:
 
 | Kind | Added to | Managed in |
 |---|---|---|
 | [User-defined fields][1] (udefs) | Companies, contacts, sales, projects, follow-ups, and documents | **Settings and maintenance** > **Fields** |
-| [Extra fields][2] | Requests, messages, and other Service tables, and custom objects | **Settings and maintenance** > **System design** > **Tables** |
-
-User-defined fields are shown on the [More tab][12] of the record they are added to.
+| [Extra fields][2] | Requests, messages, other Service tables, and custom objects | **Settings and maintenance** > **System design** > **Tables** |
 
 ## Custom objects
 
 A [custom object][3] is a new type of record that you define yourself. For example, *Laptop*, *Lease*, or *Car*. You decide which fields the custom object has and how it relates to companies, contacts, requests, and other records.
 
-With CRM Suite **Growth** or higher, a custom object works like the standard records in SuperOffice. Users can find it in the Navigator, create new records from **New** in the top bar, search for records, create selections and dashboards, and see related records on a tab on the company or contact.
+With CRM Suite **Growth** or higher, a custom object works like the standard records in SuperOffice. Users can find it in the Navigator, create new records from **New** in the top bar, search for records, create selections and dashboards, and see related records on a section tab, for example on the company.
 
-Custom objects are created in **Settings and maintenance** > **System design** > **Tables**. In the database, a custom object is an extra table, so you also see the terms *extra table* and *third-party table*.
+Custom objects are created in **Settings and maintenance** > **System design** > **Tables**. In the database, a custom object is an extra table.
 
 ## Examples
 
 * **Satisfied customer (user-defined field).** Add a Yes/No field to contacts. Send a mailing where contacts state whether they are satisfied, and store the answer in the field.
 
-* **Agreement expiry date (user-defined field).** Register the expiry date of each maintenance agreement on the company. Create a dynamic selection of the companies where the agreement expires within one month. Use the field as a template variable in an email to remind them.
+* **Agreement expiry date (user-defined field).** Register the expiry date of each maintenance agreement on the company. Create a dynamic selection of the companies where the agreement expires within one month.
 
 * **Template variables (custom fields).** Reuse the information from custom fields in documents and emails as template variables. Each field you add gets its own unique ID (Prog ID), which you use in documents to merge in contact-specific information. For example, an email about an expiring maintenance agreement can show the correct expiry date for each contact.
 
-* **Laptop leases (custom objects).** Register each laptop you lease out, with model, serial number, purchase date, and price. Register each lease as another custom object related to the laptop, the company, the contact, and the sale. The company card then shows a **Leases** tab, and the laptop shows all its leases over time.
+* **Laptop leases (custom objects).** Register each laptop you lease out, with model, serial number, purchase date, and price. Register each lease as another custom object related to the laptop, the company, the contact, and the sale. The Company screen then shows a **Leases** tab, and the laptop shows all its leases over time.
 
 ## Requirements
 
+**Custom fields:**
+
 <ReqDevToolsTransition />
+
+**Custom objects:**
 
 <ReqGrowthCustomObjects />
 
-With a user-plan based license and [Development Tools][15], you can add extra tables. They are available in SuperOffice Service, and in SuperOffice CRM through web panels. See [extra tables with a user-plan based license][16].
+With a user-plan based license, extra tables are available in SuperOffice Service, and in SuperOffice CRM through web panels. See [extra tables with a user-plan based license][16].
 
 The CRM Suite plan sets the number of custom objects you can create. When you reach the limit, you cannot create more. See [plan limits][13].
 
 ## Layout of fields
 
-User-defined fields are shown on the **More** tab, sorted by their rank. With the [Screen Designer][14], you can place fields on any tab and design the layout of custom objects. A layout created in the Screen Designer overrides the position set on individual fields.
+User-defined fields are shown on the [More tab][12], sorted by their rank. With the [Screen Designer][14], you can place fields on any tab and design the layout of custom objects. A layout created in the Screen Designer overrides the position set on individual fields.
 
 [1]: /en/custom-objects/learn/udef
 [2]: /en/custom-objects/learn/extra-field
@@ -79,5 +81,4 @@ User-defined fields are shown on the **More** tab, sorted by their rank. With th
 [12]: /en/custom-objects/learn/more-tab
 [13]: /en/admin/license/crm-suite
 [14]: /en/customization/screen-designer/admin/index
-[15]: /en/admin/license/expander-services
 [16]: /en/custom-objects/learn/extra-table#user-plans
