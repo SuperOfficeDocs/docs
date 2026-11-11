@@ -65,7 +65,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Description | The default description. |
 | Display value | Whether to display the field's value. |
 | External | If checked, the field is available from a customer centre. Relevant only for standard tables (extra tables are always displayed in customer centres). |
-| Header for list | A header for these entries when they are displayed as "sub-entries" in a list. With CRM Suite, it is also the label of the section tab on the related record. Mandatory when **Show one-to-many relations** is selected. |
+| Header for list | A header for these entries when they are displayed as "sub-entries" in a list. With CRM Suite **Growth** or higher, it is also the label of the section tab on the related record. Mandatory when **Show one-to-many relations** is selected. |
 | Hide function buttons | (relations) Select this option to hide the function for adding new entries to relation tables. |
 | Hide the field | Whether to display the field. |
 | Keep HTML tags | (text) Select this option to include the HTML tag in the text. |
@@ -75,7 +75,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Position | Specifies this field's position among the other fields in lists. |
 | Search criteria | The search operator to use for this field, for example **begins with**. |
 | Show in table | If checked, this field is displayed as a column in screens where several entries are displayed in a table. |
-| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite, the related record in SuperOffice CRM also gets a section tab, for example a **Leases** tab on the company. |
+| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite **Growth** or higher, the related record in SuperOffice CRM also gets a section tab, for example a **Leases** tab on the company. |
 | Table | The table this field belongs to. |
 | Target table | Which table to use. |
 | Text area / Height | The number of lines of the text field. |
@@ -97,10 +97,10 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
     ![Field properties for an extra table relation, with the Target table list open -screenshot][img3]
 
 1. Click **OK** to save the relation.
-1. For an **Extra table relation**, users select a record by typing the start of its display value, for example the name. Set a clear **Display field** on the target table, so users know what to type. See [table properties][1].
+1. For an **Extra table relation**, set **Display field** on the target table to a field users recognize, such as the name. See [table properties][1].
 1. Click **Restart Netserver** to apply the changes.
 
-For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With CRM Suite and **Show one-to-many relations** selected, the sale shows a tab with its requests. In the same way, a **Lease** custom object with a sale relation adds a **Leases** tab to the sale. With a user-plan based license, build a web panel to list connected requests when viewing a sale in SuperOffice CRM.
+For example, to connect requests to a sale, add an extra field of type **Sale relation** to requests ([ticket table][4]). With CRM Suite **Growth** or higher and **Show one-to-many relations** selected, the sale shows a tab with its requests. In the same way, a **Lease** custom object with a sale relation adds a **Leases** tab to the sale. With a user-plan based license, build a web panel to list connected requests when viewing a sale in SuperOffice CRM.
 
 ![Sale with a Leases section tab -screenshot][img4]
 
