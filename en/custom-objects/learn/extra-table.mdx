@@ -1,7 +1,7 @@
 ---
 uid: help-en-extra-table
 title: Extra tables
-description: An extra table is a database table that you define yourself. With CRM Suite Growth or higher, it works as a custom object, like companies and sales.
+description: An extra table is a database table that you define yourself. With CRM Suite Growth or higher, it becomes a custom object, like companies and sales.
 keywords: ['extra table', 'third-party table', 'custom object']
 author: digitaldiina
 date: 11.12.2026
@@ -17,43 +17,51 @@ related:
   - Create a custom object record: /en/custom-objects/learn/create
   - Update a custom object record: /en/custom-objects/learn/update
   - Add an extra table: /en/custom-objects/admin/create-extra-table
+  - Add extra fields: /en/custom-objects/admin/create-extra-field
+  - Set data rights for custom objects: /en/admin/user-management/role/set-data-rights-for-role#custom-objects
+  - Design the layout of a custom object: /en/customization/screen-designer/admin/add-layout#custom-objects
+  - Pre-fill fields when a custom object is loaded: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
+  - Custom screens: /en/ui/blogic/learn/index
 language: en
 ---
 
-import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
-
 <Note>
-Extra tables require a license for [Development Tools][13] with a user-plan based license, or the CRM Suite **Growth** plan or higher.
+Extra tables require the CRM Suite **Growth** plan or higher, or a user-plan based license with [Development Tools][13].
+
+With a user-plan based license, extra tables are available in SuperOffice Service, and in SuperOffice CRM through [web panels][14]. To use them as custom objects in SuperOffice CRM, join the [custom objects pilot program][15].
 </Note>
 
-An *extra table* (also called a *third-party table*) is a database table that you define yourself, for data that SuperOffice does not store in a standard table. Administrators create extra tables, and add fields to them, in **Settings and maintenance** > **System design** > **Tables**. See [Add an extra table][2].
+An *extra table* (also called a *third-party table*) is a database table that you define yourself, for data that SuperOffice does not store in a standard table. Administrators [create extra tables][2], and add fields to them, in **Settings and maintenance** > **System design** > **Tables**.
 
 ## Extra tables as custom objects {#custom-objects}
 
-<ReqGrowthCustomObjects />
+In the CRM Suite, an extra table becomes a *custom object*: a type of record that behaves like the standard records, such as companies and sales. A custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
 
-With CRM Suite **Growth** or higher, an extra table works as a *custom object*: a type of record that behaves like the standard records, such as companies and sales. A custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
-
-You create the table in the same way whether or not it works as a custom object. What differs is how users get it: in the main menu, the Navigator, **New**, **Find**, and relations and section tabs on other records.
+The steps to create a table are the same regardless of license. What differs is how users view and work with the data stored in it.
 
 ## Where to find custom objects {#where}
 
 Users find custom objects in these places:
 
 * **Navigator:** Custom objects are listed in the Navigator, each with its own icon. Select a custom object to open its screen with a list of records. Your administrator decides which custom objects are listed.
-* **Main menu:** Select <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** to see all custom objects you have access to. Select a custom object, add [search criteria][16] on the **Criteria** tab, and click **Find**. The matching records are shown on the **Results** tab.
+
+    ![Navigator with four custom objects, Laptop selected -screenshot][img10]
+
+* **Main menu:** Select <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** to open the **Custom objects** screen, with all custom objects you have access to. Select a custom object, add [search criteria][16] on the **Criteria** tab, and click **Find**. The matching records are shown on the **Results** tab.
+
+    ![Custom objects screen with the Laptop records -screenshot][img11]
+
 * **New:** Select **New** in the top bar to [create a record][7] of a custom object.
+
 * **Section tabs:** When a custom object relates to a company, contact, sale, project, or request, the related records are shown on a section tab on that record.
+
+    ![Company with a Leases section tab -screenshot][img8]
+
 * **Side panel:** On a section tab with custom objects, select a record to see it in the **Preview** view of the side panel. Select a related record in the preview to go to it.
+
+    ![Lease shown in the Preview view of the side panel -screenshot][img9]
+
 * **History and favorites:** Records you open are added to your [history][9], and you can [add them as favorites][10].
-
-![Company with a Leases section tab -screenshot][img8]
-
-![Lease shown in the Preview view of the side panel -screenshot][img9]
-
-![Navigator with four custom objects, Laptop selected -screenshot][img10]
-
-![Custom objects screen with the Laptop records -screenshot][img11]
 
 Which custom objects and records you can see, create, update, or delete depends on your [role][8].
 
@@ -62,16 +70,18 @@ Which custom objects and records you can see, create, update, or delete depends 
 You can search for custom objects and create selections and dashboards based on them, in the same way as for companies, contacts, and sales.
 
 * **Find:** In the **Find** screen, select a custom object to search for its records. You can also use a custom object as search criteria when you search for companies, contacts, sales, projects, requests, and follow-ups.
+
+    ![Find Company with a Lease field as search criteria -screenshot][img2]
+
+    ![Find screen with custom objects -screenshot][img3]
+
 * **Selections:** Save the search as a selection of custom object records. A dynamic selection keeps the list up to date.
+
+    ![Find Laptop with search results and Save as selection -screenshot][img4]
+
 * **Dashboards:** Use a custom object as the data source of a dashboard tile.
 
-![Find Company with a Lease field as search criteria -screenshot][img2]
-
-![Find screen with custom objects -screenshot][img3]
-
-![Find Laptop with search results and Save as selection -screenshot][img4]
-
-![Dashboard with tiles based on the Lease and Laptop custom objects -screenshot][img1]
+    ![Dashboard with tiles based on the Lease and Laptop custom objects -screenshot][img1]
 
 <Note>
 [Freetext search][17] (the **Search for anything** field in the top bar) does not include custom objects. Use **Find** or the search in the custom object's own screen.
@@ -79,51 +89,11 @@ You can search for custom objects and create selections and dashboards based on 
 
 ## Tables screen {#tables}
 
-The **Tables** screen in **Settings and maintenance** > **System design** lists the database tables. It shows both standard tables, which are part of SuperOffice, and extra tables, which you create yourself.
-
-Here, administrators create extra tables and add fields to them. Only administrators have access to this screen.
+The **Tables** screen in **Settings and maintenance** > **System design** lists the database tables. It shows both standard tables, which are part of SuperOffice, and extra tables, which you create yourself. Only administrators have access to this screen.
 
 Use table folders to organize your extra tables.
 
-## Naming conventions {#conventions}
-
-<Warning>
-Choose database table and field names carefully. You cannot change them later.
-</Warning>
-
-Use logical names, so it is easy to see what the database contains. The prefixes prevent conflicts with future SuperOffice table and field names. They do not prevent conflicts between extra tables from different third parties.
-
-### Table names
-
-* Must start with **y_**
-* May contain only underscores, the letters a to z, and numbers
-
-### Field names
-
-* Must start with **x_**
-* Must be unique within the table
-* Must be a single word
-* May contain only underscores, the letters a to z, and numbers
-
-## Extra tables with a user-plan based license {#user-plans}
-
-With a user-plan based license and [Development Tools][13], extra tables are available for standard create, read, update, and delete operations in SuperOffice Service. To access them from SuperOffice CRM, set up a [web panel][14].
-
-To work with extra tables as custom objects in SuperOffice CRM, join the [custom objects pilot program][15].
-
-## Related topics
-
-* [Add an extra table][2]
-* [Add extra fields][3]
-* [Set access rights for custom objects][8]
-* [Design the layout of a custom object][12]
-* [Pre-fill fields when a custom object is loaded][6] (trigger)
-* [Custom screens][1]
-
-[1]: ../../ui/blogic/learn/index
 [2]: ../admin/create-extra-table
-[3]: ../admin/create-extra-field
-[6]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
 [7]: ./create
 [8]: /en/admin/user-management/role/set-data-rights-for-role#custom-objects
 [9]: /en/learn/basics/history
@@ -131,7 +101,6 @@ To work with extra tables as custom objects in SuperOffice CRM, join the [custom
 [13]: /en/admin/license/expander-services
 [14]: /en/customization/web-panels/admin/index
 [15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
-[12]: /en/customization/screen-designer/admin/add-layout#custom-objects
 [16]: /en/search-options/learn/search-criteria
 [17]: /en/search-options/learn/freetext-search
 

@@ -2,9 +2,9 @@
 uid: help-en-extra-table-create
 title: Add an extra table
 sidebarTitle: Add extra table
-description: Create an extra table in Settings and maintenance. With CRM Suite Growth or higher, it works as a custom object, like companies and sales.
+description: Create an extra table in Settings and maintenance. With CRM Suite Growth or higher, it becomes a custom object, like companies and sales.
 keywords: ['extra table', 'third-party table', 'custom object', 'system design', 'icon']
-author: Bergfrid Dias, Eivind Fasting
+author: digitaldiina, Eivind Fasting
 date: 11.12.2026
 so_version: 12.6
 content_type: howto
@@ -21,16 +21,17 @@ language: en
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
-import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
 
 <Note>
-Extra tables require a license for [Development Tools][8] with a user-plan based license, or the CRM Suite **Growth** plan or higher.
+Extra tables require the CRM Suite **Growth** plan or higher, or a user-plan based license with [Development Tools][8].
+
+With a user-plan based license, extra tables are available in SuperOffice Service, and in SuperOffice CRM through [web panels](#web-panel). To use them as custom objects in SuperOffice CRM, join the [custom objects pilot program][9].
 </Note>
 
 You store your own types of data in extra tables. You create the table in **Tables** and [add fields][1] to it.
 
-With CRM Suite **Growth** or higher, an extra table also works as a [custom object][3], like companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. You create the table in the same way either way. A few table properties and role permissions decide how users get it. See [make the table a custom object](#custom-object).
+In the CRM Suite, an extra table also becomes a [custom object][3], like companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. The steps to create the table are the same regardless of license. A few table properties and role permissions decide how users view and work with it. See [make the table a custom object](#custom-object).
 
 ## Steps
 
@@ -44,8 +45,8 @@ With CRM Suite **Growth** or higher, an extra table also works as a [custom obje
 
     * Enter a *name* to be used as the label.
     * Enter a *description* that explains what the table is for, so other administrators understand it.
-    * Enter a *database table* beginning with **y_** to identify it in the schema.
-    * To make the table work as a custom object (CRM Suite **Growth** or higher), [choose an icon](#icon) and [show it in the Navigator and Find](#navigator).
+    * Enter a *database table* beginning with **y_** to identify it in the schema. See [naming conventions](#conventions).
+    * To make the table available as a custom object, [choose an icon](#icon) and [show it in the Navigator and Find](#navigator).
     * Optionally set other properties. See [table properties](#properties).
 
     <Note>
@@ -62,15 +63,13 @@ With CRM Suite **Growth** or higher, an extra table also works as a [custom obje
 
 1. Select **Restart NetServer**. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
-1. If the table works as a custom object, [give roles access](#access-rights) to it.
+1. If the table is a custom object, [give roles access](#access-rights) to it.
 
-The table is ready to use. With CRM Suite **Growth** or higher, users can now work with it as a custom object. You can also add records through the APIs.
+The table is ready to use. In the CRM Suite, users can now work with it as a custom object. You can also add records through the APIs.
 
 ## Make the table a custom object {#custom-object}
 
-<ReqGrowthCustomObjects />
-
-These settings decide how users get the table as a custom object.
+These settings decide how users view and work with the table as a custom object.
 
 ### Choose an icon {#icon}
 
@@ -119,7 +118,7 @@ See [data rights for custom objects][4] for what each permission allows.
 | Folder | To place the table in an existing folder, select a folder from the list. |
 | Name | The UI label of the table. |
 | Description | What the table is for. Fill it in so other administrators understand it. |
-| Database table | The database table's name can only be set during creation and **cannot be changed**. It should start with "y_", and can only include underscores, letters (a-z), and numbers. A logical name is recommended for easy identification of the database content. |
+| Database table | The name of the table in the database. It can only be set during creation and **cannot be changed**. See [naming conventions](#conventions). |
 | Search header | The header used in the search screen for this table. |
 | Header for viewing entry | The header used when you display an entry in this table. |
 | Header for new entry | The header used when you create a new entry in this table. |
@@ -134,6 +133,18 @@ See [data rights for custom objects][4] for what each permission allows.
 | Show in navigator | If selected, the table is listed in the Navigator and under **New**. See [show the table in the Navigator and Find](#navigator). |
 | Icon | The icon shown for the table in the Navigator and other places. See [choose an icon](#icon). |
 | Enable batch webhook in Service | If selected, batch updates on this table will trigger [webhooks][2]. |
+
+## Naming conventions {#conventions}
+
+<Warning>
+Choose database table names carefully. You cannot change them later.
+</Warning>
+
+Use logical names, so it is easy to see what the database contains. The **y_** prefix prevents conflicts with future SuperOffice table names. It does not prevent conflicts between extra tables from different third parties.
+
+* Must start with **y_**
+
+* May contain only underscores, the letters a to z, and numbers
 
 ## Next steps
 
@@ -151,6 +162,7 @@ With a user-plan based license, you show extra tables in SuperOffice CRM through
 [5]: /en/customization/screen-designer/admin/add-layout#custom-objects
 [6]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
 [8]: /en/admin/license/expander-services
+[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
 
 [img1]: /media/loc/en/custom-objects/tables-new-table.png
 [img2]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
