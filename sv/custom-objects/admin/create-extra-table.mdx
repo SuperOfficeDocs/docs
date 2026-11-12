@@ -91,45 +91,45 @@ Tabellen är klar att använda. I CRM Suite kan du valfritt anpassa layouten fö
 | Beskrivning | Vad tabellen används till. Fyll i den så att andra administratörer förstår den. |
 | Databastabell | Databastabellens namn i databasen. Kan endast anges när tabellen skapas och **kan inte ändras**. |
 | Rubrik för sökning | Rubriken som används i sökfönstret för den här tabellen. |
-| Rubrik för visning av post | Rubriken som används när du visar en post i den här tabellen. |
+| Rubrik för visning av datapost | Rubriken som används när du visar en post i den här tabellen. |
 | Rubrik för ny post | Rubriken som används när du skapar en ny post i den här tabellen. |
-| Rubrik för redigering av post | Rubriken som används när du redigerar en post i den här tabellen. |
+| Rubrik för redigering av datapost | Rubriken som används när du redigerar en post i den här tabellen. |
 | Sorteringsordning | Kolumnen som tabellen sorteras efter. Om du markerar **Fallande** sorteras värdena i fallande ordning. För numeriska värden betyder det att det högsta värdet visas överst i tabellen. Tabellen måste innehålla fält innan du kan välja något här. |
 | Visningsfält | Om data från tabellen ska visas i en annan tabell (en relation) måste du välja vilket fält som ska visas i den andra tabellen. Tabellen måste innehålla fält innan du kan välja något här. |
 | Överordnat fält | Används i samband med hierarkiskt organiserade tabeller. |
 | Fullständigt namn | Om detta är en hierarkiskt organiserad tabell kan detta fält ange ett fält som automatiskt uppdateras med postens fullständiga namn baserat på namnfältet för posten och alla överordnade poster. |
 | Dölj ID-fält | Om du markerar detta alternativ visas inte ID-fältet när posterna i tabellen visas. |
 | Dölj tabellen | Om du markerar det här alternativet är tabellen inte synlig från **Systemdesign** > **Tabeller**. |
-| Show table in Find | Om valt kan användare söka efter anpassade objekt i **Sök**. |
-| [Show in navigator](#navigator) | Om valt visas tabellen i navigatorn och under **Nytt**. |
-| [Icon](#icon) | Ikonen som visas för tabellen i navigatorn och på andra platser. |
-| Aktivera batch-webhook i Service | Om valt aktiverar batchuppdateringar på den här tabellen [webhooks][2]. |
+| Visa tabell i Hitta | Om valt kan användare söka efter anpassade objekt i **Sök**. |
+| [Visa i navigatorn](#navigator) | Om valt visas tabellen i navigatorn och under **Nytt**. |
+| [Ikon](#icon) | Ikonen som visas för tabellen i navigatorn och på andra platser. |
+| Aktivera webhook för sats under Service | Om valt aktiverar batchuppdateringar på den här tabellen [webhooks][2]. |
 
 ## Välj en ikon {#icon}
 
 Ikonen visas i navigatorn, listan över anpassade objekt, snabbmenyer, listan över webhook-händelser och Skärmdesignern.
 
-1. Öppna tabellegenskaperna och klicka på **Select icon**.
+1. Öppna tabellegenskaperna och klicka på **Välj ikon**.
 
-1. I dialogrutan **Select icon** väljer du en ikon:
+1. I dialogrutan **Välj ikon** väljer du en ikon:
 
-    * **Default icons:** en uppsättning vanliga ikoner.
-    * **Full icon library:** sök i hela biblioteket eller bläddra efter kategori.
-    * **Custom icons:** ladda upp din egen SVG-fil, upp till 50 KB.
+    * **Standardikoner:** en uppsättning vanliga ikoner.
+    * **Komplett ikonbibliotek:** sök i hela biblioteket eller bläddra efter kategori.
+    * **Anpassade ikoner:** ladda upp din egen SVG-fil, upp till 50 KB.
 
 1. Klicka på **Apply icon**.
 
-Om du vill återgå till standardikonen klickar du på **Remove icon**.
+Om du vill återgå till standardikonen klickar du på **Ta bort ikon**.
 
-![Dialogrutan Select icon med flikarna Default icons, Full icon library och Custom icons -screenshot][img2]
+![Dialogrutan Välj ikon med flikarna Standardikoner, Komplett ikonbibliotek och Anpassade ikoner -screenshot][img2]
 
 ## Visa tabellen i navigatorn och i Sök {#navigator}
 
-Tabellen kan visas i navigatorn och under **Nytt** i toppraden. Aktivera det genom att välja **Show in navigator** i tabellegenskaperna.
+Tabellen kan visas i navigatorn och under **Nytt** i toppraden. Aktivera det genom att välja **Visa i navigatorn** i tabellegenskaperna.
 
-För att användarna ska kunna söka efter anpassade objekt i **Sök** väljer du även **Show table in Find**.
+För att användarna ska kunna söka efter anpassade objekt i **Sök** väljer du även **Visa tabell i Hitta**.
 
-![Show table in Find, Show in navigator och en vald ikon i tabellegenskaperna -screenshot][img3]
+![Visa tabell i Hitta, Visa i navigatorn och en vald ikon i tabellegenskaperna -screenshot][img3]
 
 ## Ge roller åtkomst {#access-rights}
 
@@ -139,9 +139,9 @@ Användare kan se och arbeta med ett anpassat objekt bara om deras roll ger dem 
 
 1. Välj en roll i listan.
 
-1. Gå till fliken **Custom objects rights**.
+1. Gå till fliken **Behörigheter för anpassade objekt**.
 
-1. I listan **Behörighet** bredvid det anpassade objektet väljer du vad användare med den här rollen kan göra: **Läsa**, **Skapa**, **Uppdatera** eller **Radera**.
+1. I listan **Tillstånd** bredvid det anpassade objektet väljer du vad användare med den här rollen kan göra: **Read**, **Create**, **Update** eller **Delete**.
 
 Se [databehörigheter för anpassade objekt][4] för vad varje behörighet tillåter.
 
