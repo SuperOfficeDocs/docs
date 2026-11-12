@@ -5,7 +5,7 @@ sidebarTitle: "Custom objects in API"
 description: There are 3 ways to customize the database schema - user-defined fields; extra fields; extra tables
 keywords: ['custom object', 'custom field', 'udef', 'extra table', 'extra field', 'user-defined field', 'UDefField', 'updatedCount', 'udefidentity']
 author: Bergfrid Dias
-date: 11.09.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: reference
 tier: core
@@ -20,7 +20,7 @@ import ReqDevToolsTransition from "../../../snippets/license/req-dev-tools-trans
 
 <ReqDevToolsTransition />
 
-Via the APIs, you can create and manage user-defined fields. Custom objects (extra tables) and extra fields are defined in Settings and maintenance. All custom object data is accessible via the APIs: see the [custom object how-to guides][20] and the [CustomObjectAgent][21].
+Via the APIs, you can create and manage user-defined fields. Extra tables and extra fields are defined in Settings and maintenance. All custom object data is accessible via the APIs: see the [custom object how-to guides][20] and the [CustomObjectAgent][21].
 
 ## Data-driven approach
 
@@ -317,7 +317,8 @@ Extra field archive query support is available only for:
 
 ## Requirements
 
-* Development Tools license or the **Core** plan
+* For user-defined fields and extra fields: Development Tools license or the **Core** plan
+* For extra tables: Development Tools license (user-plan based license) or the **Growth** plan or higher
 * SuperOffice 8.1 or newer
 * NetServer must be restarted every time you change the schema
   * If Travel is activated, a new Travel database must also be generated

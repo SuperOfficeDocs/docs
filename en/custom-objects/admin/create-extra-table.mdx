@@ -3,9 +3,9 @@ uid: help-en-extra-table-create
 title: Add an extra table
 sidebarTitle: Add extra table
 description: Create an extra table in Settings and maintenance. With CRM Suite Growth or higher, it works as a custom object, like companies and sales.
-keywords: ['custom object', 'extra table', 'third-party table', 'system design', 'icon', 'navigator']
+keywords: ['extra table', 'third-party table', 'custom object', 'system design', 'icon']
 author: Bergfrid Dias, Eivind Fasting
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
@@ -16,7 +16,7 @@ userflow_index: true
 related:
   - Add extra fields: /en/custom-objects/admin/create-extra-field
   - Set data rights for a role: /en/admin/user-management/role/set-data-rights-for-role
-  - Custom objects: /en/custom-objects/learn/extra-table
+  - Extra tables: /en/custom-objects/learn/extra-table
 language: en
 ---
 
@@ -24,13 +24,13 @@ import GotoTables from "./snippets/goto-tables.md";
 import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
 
-<ReqGrowthCustomObjects />
+<Note>
+Extra tables require a license for [Development Tools][8] with a user-plan based license, or the CRM Suite **Growth** plan or higher.
+</Note>
 
-With a user-plan based license, you need [Development Tools][8] to add extra tables.
+You store your own types of data in extra tables. You create the table in **Tables** and [add fields][1] to it.
 
-You store your own types of data, such as laptops or leases, in extra tables. You create the table in **Tables** and [add fields][1] to it.
-
-With CRM Suite **Growth** or higher, an extra table also works as a [custom object][3], like the standard records such as companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. A few table properties and role permissions control this. See [make the table a custom object](#custom-object).
+With CRM Suite **Growth** or higher, an extra table also works as a [custom object][3], like companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. You create the table in the same way either way. A few table properties and role permissions decide how users get it. See [make the table a custom object](#custom-object).
 
 ## Steps
 
@@ -45,7 +45,7 @@ With CRM Suite **Growth** or higher, an extra table also works as a [custom obje
     * Enter a *name* to be used as the label.
     * Enter a *description* that explains what the table is for, so other administrators understand it.
     * Enter a *database table* beginning with **y_** to identify it in the schema.
-    * To make the table a custom object, [choose an icon](#icon) and [show it in the Navigator and Find](#navigator).
+    * To make the table work as a custom object (CRM Suite **Growth** or higher), [choose an icon](#icon) and [show it in the Navigator and Find](#navigator).
     * Optionally set other properties. See [table properties](#properties).
 
     <Note>
@@ -62,13 +62,15 @@ With CRM Suite **Growth** or higher, an extra table also works as a [custom obje
 
 1. Select **Restart NetServer**. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
-1. [Give roles access](#access-rights) to the custom object.
+1. If the table works as a custom object, [give roles access](#access-rights) to it.
 
-Users can now work with the table as a custom object. You can also add records through the APIs.
+The table is ready to use. With CRM Suite **Growth** or higher, users can now work with it as a custom object. You can also add records through the APIs.
 
 ## Make the table a custom object {#custom-object}
 
-With CRM Suite **Growth** or higher, these settings decide how the table appears to users.
+<ReqGrowthCustomObjects />
+
+These settings decide how users get the table as a custom object.
 
 ### Choose an icon {#icon}
 

@@ -1,10 +1,10 @@
 ---
 uid: help-en-extra-table
-title: Custom objects
-description: A custom object is a type of record you define yourself, such as Laptop or Lease. Learn where custom objects appear and how to search for them.
-keywords: ['custom object', 'extra table', 'third-party table', 'navigator', 'find', 'selection', 'dashboard']
+title: Extra tables
+description: An extra table is a database table that you define yourself. With CRM Suite Growth or higher, it works as a custom object, like companies and sales.
+keywords: ['extra table', 'third-party table', 'custom object']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: concept
 tier: growth
@@ -22,20 +22,28 @@ language: en
 
 import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 
+<Note>
+Extra tables require a license for [Development Tools][13] with a user-plan based license, or the CRM Suite **Growth** plan or higher.
+</Note>
+
+An *extra table* (also called a *third-party table*) is a database table that you define yourself, for data that SuperOffice does not store in a standard table. Administrators create extra tables, and add fields to them, in **Settings and maintenance** > **System design** > **Tables**. See [Add an extra table][2].
+
+## Extra tables as custom objects {#custom-objects}
+
 <ReqGrowthCustomObjects />
 
-A *custom object* is a type of record that your administrator defines, such as *Laptop*, *Lease*, or *Car*. Each custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
+With CRM Suite **Growth** or higher, an extra table works as a *custom object*: a type of record that behaves like the standard records, such as companies and sales. A custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
 
-In the database, a custom object is an extra table (also called a *third-party table*). Administrators create the extra table in **Settings and maintenance** > **System design** > **Tables**. See [Add an extra table][2].
+You create the table in the same way whether or not it works as a custom object. What differs is how users get it: in the main menu, the Navigator, **New**, **Find**, and relations and section tabs on other records.
 
 ## Where to find custom objects {#where}
 
-With CRM Suite **Growth** or higher, custom objects work like the standard records in SuperOffice:
+Users find custom objects in these places:
 
 * **Navigator:** Custom objects are listed in the Navigator, each with its own icon. Select a custom object to open its screen with a list of records. Your administrator decides which custom objects are listed.
 * **Main menu:** Select <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** to see all custom objects you have access to. Select a custom object, add [search criteria][16] on the **Criteria** tab, and click **Find**. The matching records are shown on the **Results** tab.
 * **New:** Select **New** in the top bar to [create a record][7] of a custom object.
-* **Section tabs:** When a custom object relates to a company, contact, sale, project, or request, the related records are shown on a tab on that record. For example, a company shows a **Leases** tab with the company's leases.
+* **Section tabs:** When a custom object relates to a company, contact, sale, project, or request, the related records are shown on a section tab on that record.
 * **Side panel:** On a section tab with custom objects, select a record to see it in the **Preview** view of the side panel. Select a related record in the preview to go to it.
 * **History and favorites:** Records you open are added to your [history][9], and you can [add them as favorites][10].
 
@@ -53,9 +61,9 @@ Which custom objects and records you can see, create, update, or delete depends 
 
 You can search for custom objects and create selections and dashboards based on them, in the same way as for companies, contacts, and sales.
 
-* **Find:** In the **Find** screen, select a custom object to search for its records. You can also use a custom object as search criteria when you search for companies, contacts, sales, projects, requests, and follow-ups. For example, find all companies that have a lease ending this month.
+* **Find:** In the **Find** screen, select a custom object to search for its records. You can also use a custom object as search criteria when you search for companies, contacts, sales, projects, requests, and follow-ups.
 * **Selections:** Save the search as a selection of custom object records. A dynamic selection keeps the list up to date.
-* **Dashboards:** Use a custom object as the data source of a dashboard tile. For example, show the number of laptops per status.
+* **Dashboards:** Use a custom object as the data source of a dashboard tile.
 
 ![Find Company with a Lease field as search criteria -screenshot][img2]
 
@@ -71,11 +79,11 @@ You can search for custom objects and create selections and dashboards based on 
 
 ## Tables screen {#tables}
 
-The **Tables** screen in **Settings and maintenance** > **System design** lists the database tables. It shows both standard tables, which are part of SuperOffice, and extra tables, which you create yourself. Custom objects are extra tables.
+The **Tables** screen in **Settings and maintenance** > **System design** lists the database tables. It shows both standard tables, which are part of SuperOffice, and extra tables, which you create yourself.
 
-Here, administrators create custom objects and add fields to them. Only administrators have access to this screen.
+Here, administrators create extra tables and add fields to them. Only administrators have access to this screen.
 
-Use table folders to organize your custom objects.
+Use table folders to organize your extra tables.
 
 ## Naming conventions {#conventions}
 
@@ -83,7 +91,7 @@ Use table folders to organize your custom objects.
 Choose database table and field names carefully. You cannot change them later.
 </Warning>
 
-Use logical names, so it is easy to see what the database contains. The prefixes prevent conflicts with future SuperOffice table and field names. They do not prevent conflicts between custom objects from different third parties.
+Use logical names, so it is easy to see what the database contains. The prefixes prevent conflicts with future SuperOffice table and field names. They do not prevent conflicts between extra tables from different third parties.
 
 ### Table names
 
