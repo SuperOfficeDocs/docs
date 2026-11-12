@@ -25,15 +25,15 @@ related:
 language: en
 ---
 
+An *extra table* (also called a *third-party table*) is a database table that you define yourself, for data that SuperOffice does not store in a standard table. Administrators [create extra tables][2], and add fields to them, in **Settings and maintenance** > **System design** > **Tables**.
+
 <Note>
 Extra tables require the CRM Suite **Growth** plan or higher, or a user-plan based license with [Development Tools][13].
 
 With a user-plan based license, extra tables are available in SuperOffice Service, and in SuperOffice CRM through [web panels][14]. To use them as custom objects in SuperOffice CRM, join the [custom objects pilot program][15].
 </Note>
 
-An *extra table* (also called a *third-party table*) is a database table that you define yourself, for data that SuperOffice does not store in a standard table. Administrators [create extra tables][2], and add fields to them, in **Settings and maintenance** > **System design** > **Tables**.
-
-## Extra tables as custom objects {#custom-objects}
+## Extra tables as custom objects
 
 In the CRM Suite, an extra table becomes a *custom object*: a type of record that behaves like the standard records, such as companies and sales. A custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
 
@@ -43,13 +43,13 @@ The steps to create a table are the same regardless of license. What differs is 
 
 Users find custom objects in these places:
 
-* **Navigator:** Custom objects are listed in the Navigator, each with its own icon. Select a custom object to open its screen with a list of records. Your administrator decides which custom objects are listed.
-
-    ![Navigator with four custom objects, Laptop selected -screenshot][img10]
-
 * **Main menu:** Select <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** to open the **Custom objects** screen, with all custom objects you have access to. Select a custom object, add [search criteria][16] on the **Criteria** tab, and click **Find**. The matching records are shown on the **Results** tab.
 
     ![Custom objects screen with the Laptop records -screenshot][img11]
+
+* **Navigator:** Custom objects are listed in the Navigator, each with its own icon. Select a custom object to open its screen with a list of records. Your administrator decides which custom objects are listed.
+
+    ![Navigator with four custom objects, Laptop selected -screenshot][img10]
 
 * **New:** Select **New** in the top bar to [create a record][7] of a custom object.
 
@@ -61,13 +61,17 @@ Users find custom objects in these places:
 
     ![Lease shown in the Preview view of the side panel -screenshot][img9]
 
+* **Dashboards:** Use a custom object as the data source of a dashboard tile.
+
+    ![Dashboard with tiles based on the Lease and Laptop custom objects -screenshot][img1]
+
 * **History and favorites:** Records you open are added to your [history][9], and you can [add them as favorites][10].
 
 Which custom objects and records you can see, create, update, or delete depends on your [role][8].
 
 ## Search for custom objects {#search}
 
-You can search for custom objects and create selections and dashboards based on them, in the same way as for companies, contacts, and sales.
+You can search for custom objects and create selections based on them, in the same way as for companies, contacts, and sales.
 
 * **Find:** In the **Find** screen, select a custom object to search for its records. You can also use a custom object as search criteria when you search for companies, contacts, sales, projects, requests, and follow-ups.
 
@@ -78,10 +82,6 @@ You can search for custom objects and create selections and dashboards based on 
 * **Selections:** Save the search as a selection of custom object records. A dynamic selection keeps the list up to date.
 
     ![Find Laptop with search results and Save as selection -screenshot][img4]
-
-* **Dashboards:** Use a custom object as the data source of a dashboard tile.
-
-    ![Dashboard with tiles based on the Lease and Laptop custom objects -screenshot][img1]
 
 <Note>
 [Freetext search][17] (the **Search for anything** field in the top bar) does not include custom objects. Use **Find** or the search in the custom object's own screen.
