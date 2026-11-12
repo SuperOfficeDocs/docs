@@ -679,29 +679,19 @@
         "root": "nl/custom-objects/learn/index",
         "pages": [
           "nl/custom-objects/index",
+          "nl/custom-objects/learn/extra-table",
+          "nl/custom-objects/learn/create",
+          "nl/custom-objects/learn/update",
           "nl/custom-objects/learn/more-tab",
+          "nl/custom-objects/learn/udef",
+          "nl/custom-objects/learn/extra-field",
           {
-            "group": "Door gebruiker gedefinieerde velden",
-            "root": "nl/custom-objects/learn/udef",
+            "group": "Voor beheerders",
             "pages": [
               "nl/custom-objects/admin/add-udef",
               "nl/custom-objects/admin/edit-udef",
-              "nl/custom-objects/admin/edit-udef-layout"
-            ]
-          },
-          {
-            "group": "Extra tabellen",
-            "root": "nl/custom-objects/learn/extra-table",
-            "pages": [
-              "nl/custom-objects/learn/create",
-              "nl/custom-objects/learn/update",
-              "nl/custom-objects/admin/create-extra-table"
-            ]
-          },
-          {
-            "group": "Extra velden",
-            "root": "nl/custom-objects/learn/extra-field",
-            "pages": [
+              "nl/custom-objects/admin/edit-udef-layout",
+              "nl/custom-objects/admin/create-extra-table",
               "nl/custom-objects/admin/create-extra-field",
               "nl/custom-objects/admin/show-extra-field-on-request-details"
             ]

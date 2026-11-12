@@ -679,29 +679,19 @@
         "root": "sv/custom-objects/learn/index",
         "pages": [
           "sv/custom-objects/index",
+          "sv/custom-objects/learn/extra-table",
+          "sv/custom-objects/learn/create",
+          "sv/custom-objects/learn/update",
           "sv/custom-objects/learn/more-tab",
+          "sv/custom-objects/learn/udef",
+          "sv/custom-objects/learn/extra-field",
           {
-            "group": "Användardefinierade fält",
-            "root": "sv/custom-objects/learn/udef",
+            "group": "För administratörer",
             "pages": [
               "sv/custom-objects/admin/add-udef",
               "sv/custom-objects/admin/edit-udef",
-              "sv/custom-objects/admin/edit-udef-layout"
-            ]
-          },
-          {
-            "group": "Extratabeller",
-            "root": "sv/custom-objects/learn/extra-table",
-            "pages": [
-              "sv/custom-objects/learn/create",
-              "sv/custom-objects/learn/update",
-              "sv/custom-objects/admin/create-extra-table"
-            ]
-          },
-          {
-            "group": "Extrafält",
-            "root": "sv/custom-objects/learn/extra-field",
-            "pages": [
+              "sv/custom-objects/admin/edit-udef-layout",
+              "sv/custom-objects/admin/create-extra-table",
               "sv/custom-objects/admin/create-extra-field",
               "sv/custom-objects/admin/show-extra-field-on-request-details"
             ]
