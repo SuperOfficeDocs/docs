@@ -33,53 +33,55 @@ With a user-plan based license, extra tables are available in SuperOffice Servic
 
 You store your own types of data in extra tables. You create the table in **Tables** and [add fields][1] to it.
 
-In the CRM Suite, an extra table also becomes a [custom object][3], like companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. The steps to create the table are the same regardless of license. A few table properties and role permissions decide how users view and work with it.
+In the CRM Suite, an extra table becomes a [custom object][3], like companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. The steps to create the table are the same regardless of license. Table properties and role permissions decide how users view and work with it.
 
-## Naming conventions {#conventions}
+## Naming conventions
 
 <Warning>
-Choose database table names carefully. You cannot change them later.
+Choose database table names carefully. You **cannot change** them later.
 </Warning>
 
 Use logical names, so it is easy to see what the database contains. The **y_** prefix prevents conflicts with future SuperOffice table names. It does not prevent conflicts between extra tables from different third parties.
 
 * Must start with **y_**
-
 * May contain only underscores, the letters a to z, and numbers
 
 ## Steps
 
 1. <GotoTables />
 
-1. Select **New table**.
+1. Click **New table**.
 
     ![Tables screen with the New table button -screenshot][img1]
 
-1. In the **Table properties** screen, set the properties of the new table.
+1. In the **Table properties** screen, configure the new table.
 
     * Enter a *name* to be used as the label.
     * Enter a *description* that explains what the table is for, so other administrators understand it.
     * Enter a *database table* beginning with **y_** to identify it in the schema.
-    * To let users find the custom object, [choose an icon](#icon) and [show the table in the Navigator and Find](#navigator).
-    * Optionally set other properties. See [table properties](#properties).
+    * To let users find the custom object, [choose an icon](#icon) and [opt to show the table in the Navigator and Find](#navigator).
+    * Optionally set [other properties](#properties).
 
     <Note>
     Some table properties cannot be set until you have added fields.
     </Note>
 
-1. Select **OK** to save the new table (runs `create table y_mynewtable ...`).
+1. Click **OK** to save the new table (runs `create table y_mynewtable ...`).
 
 1. [Add fields to your new table][1].
 
-1. Select the table name in the list to open its properties again, and set the properties that need fields, such as **Sort order** and **Display field**.
+1. Select the table name in the list to reopen the **Table properties** screen. Now that the table has fields, you can use them instead of the ID:
+
+    * In **Sort order**, choose the field to sort the records on.
+    * In **Display field**, choose the field that identifies a record when the table is shown in another table.
 
     ![Display field list with the fields of the table -screenshot][img4]
 
-1. Select **Restart NetServer**. If Travel is activated, you will also see a message that a new Travel database must be generated.
+1. Click **Restart NetServer**. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
 1. If the table is a custom object, [give roles access](#access-rights) to it.
 
-The table is ready to use. To decide which fields users see and where, [design the layout][5] of the custom object in the Screen Designer. In the CRM Suite, users can now work with it as a custom object. You can also add records through the APIs.
+The table is ready to use. In the CRM Suite, optionally customize the layout of the custom object in the [Screen Designer][5].
 
 ## Table properties {#properties}
 
@@ -88,7 +90,7 @@ The table is ready to use. To decide which fields users see and where, [design t
 | Folder | To place the table in an existing folder, select a folder from the list. |
 | Name | The UI label of the table. |
 | Description | What the table is for. Fill it in so other administrators understand it. |
-| Database table | The name of the table in the database. It can only be set during creation and **cannot be changed**. See [naming conventions](#conventions). |
+| Database table | The name of the table in the database. It can only be set during creation and **cannot be changed**. |
 | Search header | The header used in the search screen for this table. |
 | Header for viewing entry | The header used when you display an entry in this table. |
 | Header for new entry | The header used when you create a new entry in this table. |
@@ -100,8 +102,8 @@ The table is ready to use. To decide which fields users see and where, [design t
 | Hide ID field | If selected, the ID field will not be shown when listing entries in the table. |
 | Hide the table | If selected, the table will not be visible from **System design** > **Tables**. |
 | Show table in Find | If selected, users can search for records in this table in **Find**. |
-| Show in navigator | If selected, the table is listed in the Navigator and under **New**. See [show the table in the Navigator and Find](#navigator). |
-| Icon | The icon shown for the table in the Navigator and other places. See [choose an icon](#icon). |
+| [Show in navigator](#navigator) | If selected, the table is listed in the Navigator and under **New**. |
+| [Icon](#icon) | The icon shown for the table in the Navigator and other places. |
 | Enable batch webhook in Service | If selected, batch updates on this table will trigger [webhooks][2]. |
 
 ## Choose an icon {#icon}
@@ -112,19 +114,19 @@ The icon is shown in the Navigator, the custom objects list, context menus, the 
 
 1. In the **Select icon** dialog, choose an icon:
 
-    * **Default icons**: a selection of common icons.
-    * **Full icon library**: search the full library, or browse by category.
-    * **Custom icons**: upload your own SVG file, up to 50 KB.
+    * **Default icons:** a selection of common icons.
+    * **Full icon library:** search the full library, or browse by category.
+    * **Custom icons:** upload your own SVG file, up to 50 KB.
 
-1. Select **Apply icon**.
+1. Click **Apply icon**.
 
-To go back to the default icon, select **Remove icon**.
+To go back to the default icon, click **Remove icon**.
 
 ![Select icon dialog with the Default icons, Full icon library, and Custom icons tabs -screenshot][img2]
 
 ## Show the table in the Navigator and Find {#navigator}
 
-In the table properties, select **Show in navigator**. The table is then listed in the Navigator and under **New** in the top bar, and its records are added to history and favorites like other records.
+The table can be listed in the Navigator and under **New** in the top bar, and its records are added to history and favorites like other records. To enable this, select **Show in navigator** in the table properties.
 
 To let users search for its records in **Find**, also select **Show table in Find**.
 
@@ -132,13 +134,13 @@ To let users search for its records in **Find**, also select **Show table in Fin
 
 ## Give roles access {#access-rights}
 
-Users can only see and work with a custom object if their role gives them access. When you have created the table and added its fields, set the permission for each role that should use it.
+Users can see and work with a custom object only if their role gives them access. After you create the table and add its fields, set the permission for each role that should use it.
 
 1. <OpenRoles />
 
-1. Select the role in the **Roles** list.
+1. Select a role from the list.
 
-1. Select the **Custom objects rights** tab.
+1. Go to the **Custom objects rights** tab.
 
 1. In the **Permission** list next to the custom object, choose what users with this role can do: **Read**, **Create**, **Update**, or **Delete**.
 

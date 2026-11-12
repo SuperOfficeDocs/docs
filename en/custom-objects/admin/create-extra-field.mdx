@@ -22,6 +22,19 @@ import ReqDevToolsTransition from "../../../snippets/license/req-dev-tools-trans
 
 After you create an [extra table][1], add the fields users fill in for each record. You can also add extra fields to standard Service tables.
 
+## Naming conventions
+
+<Warning>
+Choose database field names carefully. You **cannot change** them later.
+</Warning>
+
+Use logical names, so it is easy to see what the database contains. The **x_** prefix prevents conflicts with future SuperOffice field names. It does not prevent conflicts between extra fields from different third parties.
+
+* Must start with **x_**
+* Must be unique within the table
+* Must be a single word
+* May contain only underscores, the letters a to z, and numbers
+
 ## Steps
 
 1. <GotoTables />
@@ -59,7 +72,7 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Choose from list box | If the field is connected to an extra table, select this option to display a list of table values. |
 | Choose values from list | If checked, the field turns into a list box. The list options are the text strings inputted in the text box, with one option per line. |
 | Create index | If selected, it is possible to search by this field. It is quicker to search for data in indexed fields. |
-| Database field | The column's name in the database must be unique within the table. It should be a single word, containing only underscores, letters (a-z), or numbers, and must start with "x_". This can only be set during creation and and **cannot be changed**. |
+| Database field | The name of the column in the database. It can only be set during creation and **cannot be changed**. |
 | Decimal places | The number of decimal places that are allowed in a number. |
 | Default value | The value to be inserted by default in this field. |
 | Description | The default description. |
