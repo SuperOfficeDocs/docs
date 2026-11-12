@@ -1,7 +1,7 @@
 ---
 title: Add custom data
-description: Add custom data to a custom object from the top bar or from a related entity.
-keywords: ['custom object', 'new record', 'create custom object', 'extra table']
+description: Add data to a custom object from the top bar or from a related entity.
+keywords: ['new custom object', 'create custom object', 'extra table']
 author: digitaldiina
 date: 11.12.2026
 so_version: 12.6
@@ -19,33 +19,33 @@ import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-
 
 <ReqGrowthCustomObjects />
 
-You can add custom data to a custom object from the top bar or from a related entity. The fields you see depend on how your administrator set up the custom object.
+You can add data to a custom object from the top bar or from a related entity. The fields you see depend on how your administrator set up the custom object.
 
 To add custom data, your role must have the **Create** [permission for the custom object][1].
 
 ## Add custom data from the top bar
 
-1. Click **New** in the top bar, and then select the custom object. For example, **Lease**.
+1. Click **New** in the top bar, and then select the custom object. For example, **Equipment**.
 
     ![New menu in the top bar with custom objects -screenshot][img1]
 
 1. Fill in the fields. Mandatory fields are marked in red.
 
-    * For a relation field, such as **Company**, start typing and select the related record from the list. The list shows a preview of each match, so you can choose the right one.
+    * For a relation field, such as **Company**, start typing and select the related record from the list. The list shows a preview of each match, so you can choose the correct one.
 
-    ![Lease form with relation fields filled in -screenshot][img2]
+    ![Lease with relation fields filled in -screenshot][img2]
 
 1. Click **Save**.
 
 ## Add custom data from a related entity {#related}
 
-When a custom object relates to another entity, such as a company, contact, sale, project, request, or custom object, that entity has a section tab for the custom object. Custom data you add there is linked automatically.
+When a custom object relates to another entity, such as a company, sale, or custom object, that entity has a section tab for the custom object. Custom data you add there is linked automatically.
 
 1. Open the related entity and select the custom object's section tab. For example, **Equipment**.
 
 1. Click **Add**.
 
-1. Fill in the fields. The relation to the entity you opened is already filled in, and your administrator can set default values or use a trigger to pre-fill other fields.
+1. Fill in the fields. The relation to the entity you opened is pre-filled, and your administrator can set default values or use a trigger to fill other fields.
 
 1. Click **Save**.
 
