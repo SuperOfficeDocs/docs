@@ -1,0 +1,72 @@
+---
+uid: teams-notify-settings
+title: Configure Teams Notify
+sidebarTitle: "Settings"
+description: Connect to Microsoft Teams, choose which channels receive which SuperOffice events, and filter sale notifications.
+keywords: ['Teams Notify', 'settings', 'channels', 'events', 'advanced settings', 'sale filter', 'disconnect']
+author: SuperOffice Product and Engineering
+date: 11.12.2026
+content_type: howto
+category: integration
+topic: Teams Notify
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Authorize Teams Notify: /integrations/teams-notify/authorize
+  - Supported events: /integrations/teams-notify/supported-events
+language: en
+---
+
+In the Teams Notify portal, choose which SuperOffice events are posted to which Microsoft Teams channels.
+
+## Connect to Microsoft Teams and select channels
+
+1. Sign in to the Teams Notify portal at [msteams.superofficeapps.com][2].
+2. Go to **Settings**.
+3. Click **Sign in with Microsoft**.
+
+    ![Microsoft Teams connection with the Sign in with Microsoft button -screenshot][img1]
+
+4. Review the requested permissions and click **Accept**.
+
+    ![Microsoft permissions requested for Teams Notify -screenshot][img2]
+
+5. Under **Channels & events**, select the Microsoft Teams channel or channels that receive each event.
+
+    ![Channels and events with a channel selected for each event -screenshot][img3]
+
+6. Click **Save**.
+
+<Tip>
+You can choose different channels for different events, and add several channels to a single event.
+</Tip>
+
+Leave the channel empty if you don't want notifications for an event.
+
+## Filter sale events
+
+Use advanced settings to post only sales that meet certain criteria.
+
+1. Click **Enable advanced settings**.
+
+    ![Enable advanced settings link -screenshot][img4]
+
+2. Select the **Sale** tab.
+3. Select the sale type for which you want to specify the criteria a sale must meet to be posted.
+
+    ![Advanced settings on the Sale tab -screenshot][img5]
+
+See [Supported events][1] for the filters available per event.
+
+## Disconnect from Microsoft Teams
+
+Click **Disconnect from Microsoft Teams** to stop posting SuperOffice events to Microsoft Teams.
+
+[1]: ./supported-events
+[2]: https://msteams.superofficeapps.com/
+
+[img1]: /media/loc/en/integrations/teams-notify/teams-notify-sign-in-microsoft.png
+[img2]: /media/loc/en/integrations/teams-notify/teams-notify-permissions.png
+[img3]: /media/loc/en/integrations/teams-notify/teams-notify-channels-events.png
+[img4]: /media/loc/en/integrations/teams-notify/teams-notify-enable-advanced-settings.png
+[img5]: /media/loc/en/integrations/teams-notify/teams-notify-advanced-sale.png
