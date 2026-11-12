@@ -682,8 +682,8 @@
           "no/custom-objects/learn/more-tab",
           {
             "group": "Brukerdefinerte felt",
+            "root": "no/custom-objects/learn/udef",
             "pages": [
-              "no/custom-objects/learn/udef",
               "no/custom-objects/admin/add-udef",
               "no/custom-objects/admin/edit-udef",
               "no/custom-objects/admin/edit-udef-layout"
@@ -691,8 +691,8 @@
           },
           {
             "group": "Ekstratabeller",
+            "root": "no/custom-objects/learn/extra-table",
             "pages": [
-              "no/custom-objects/learn/extra-table",
               "no/custom-objects/learn/create",
               "no/custom-objects/learn/update",
               "no/custom-objects/admin/create-extra-table"
@@ -700,8 +700,8 @@
           },
           {
             "group": "Ekstrafelt",
+            "root": "no/custom-objects/learn/extra-field",
             "pages": [
-              "no/custom-objects/learn/extra-field",
               "no/custom-objects/admin/create-extra-field",
               "no/custom-objects/admin/show-extra-field-on-request-details"
             ]

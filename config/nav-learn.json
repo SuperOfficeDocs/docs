@@ -696,8 +696,8 @@
       "en/custom-objects/learn/more-tab",
       {
         "group": "User-defined fields",
+        "root": "en/custom-objects/learn/udef",
         "pages": [
-          "en/custom-objects/learn/udef",
           "en/custom-objects/admin/add-udef",
           "en/custom-objects/admin/edit-udef",
           "en/custom-objects/admin/edit-udef-layout"
@@ -705,8 +705,8 @@
       },
       {
         "group": "Extra tables",
+        "root": "en/custom-objects/learn/extra-table",
         "pages": [
-          "en/custom-objects/learn/extra-table",
           "en/custom-objects/learn/create",
           "en/custom-objects/learn/update",
           "en/custom-objects/admin/create-extra-table"
@@ -714,8 +714,8 @@
       },
       {
         "group": "Extra fields",
+        "root": "en/custom-objects/learn/extra-field",
         "pages": [
-          "en/custom-objects/learn/extra-field",
           "en/custom-objects/admin/create-extra-field",
           "en/custom-objects/admin/show-extra-field-on-request-details"
         ]
