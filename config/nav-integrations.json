@@ -138,8 +138,7 @@
       "integrations/teams-notify/settings",
       "integrations/teams-notify/how-to-use",
       "integrations/teams-notify/supported-events",
-      "integrations/teams-notify/troubleshooting",
-      "integrations/teams-notify/version-history"
+      "integrations/teams-notify/troubleshooting"
     ]
   },
   {
