@@ -3,7 +3,7 @@ uid: help-en-extra-table-create
 title: Add an extra table
 sidebarTitle: Add extra table
 description: Create an extra table in Settings and maintenance. With CRM Suite Growth or higher, it becomes a custom object, like companies and sales.
-keywords: ['extra table', 'third-party table', 'custom object', 'system design', 'icon']
+keywords: ['third-party table', 'custom object', 'system design', 'icon', 'add table', 'new table', 'custom table']
 author: digitaldiina, Eivind Fasting
 date: 11.12.2026
 so_version: 12.6
@@ -17,6 +17,8 @@ related:
   - Add extra fields: /en/custom-objects/admin/create-extra-field
   - Set data rights for a role: /en/admin/user-management/role/set-data-rights-for-role
   - Extra tables: /en/custom-objects/learn/extra-table
+  - Design the layout of a custom object: /en/customization/screen-designer/admin/add-layout#custom-objects
+  - Pre-fill fields when a custom object is loaded: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
 language: en
 ---
 
@@ -31,7 +33,19 @@ With a user-plan based license, extra tables are available in SuperOffice Servic
 
 You store your own types of data in extra tables. You create the table in **Tables** and [add fields][1] to it.
 
-In the CRM Suite, an extra table also becomes a [custom object][3], like companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. The steps to create the table are the same regardless of license. A few table properties and role permissions decide how users view and work with it. See [make the table a custom object](#custom-object).
+In the CRM Suite, an extra table also becomes a [custom object][3], like companies and sales. Users can open it from <i class="ph ph-list" aria-label="Main menu"></i> > **Custom objects** and from the Navigator, create records from **New**, search for them in **Find**, select them in relation fields, and see related records on section tabs. The steps to create the table are the same regardless of license. A few table properties and role permissions decide how users view and work with it.
+
+## Naming conventions {#conventions}
+
+<Warning>
+Choose database table names carefully. You cannot change them later.
+</Warning>
+
+Use logical names, so it is easy to see what the database contains. The **y_** prefix prevents conflicts with future SuperOffice table names. It does not prevent conflicts between extra tables from different third parties.
+
+* Must start with **y_**
+
+* May contain only underscores, the letters a to z, and numbers
 
 ## Steps
 
@@ -41,12 +55,12 @@ In the CRM Suite, an extra table also becomes a [custom object][3], like compani
 
     ![Tables screen with the New table button -screenshot][img1]
 
-1. In the **Table properties** screen, enter data about the new table.
+1. In the **Table properties** screen, set the properties of the new table.
 
     * Enter a *name* to be used as the label.
     * Enter a *description* that explains what the table is for, so other administrators understand it.
-    * Enter a *database table* beginning with **y_** to identify it in the schema. See [naming conventions](#conventions).
-    * To make the table available as a custom object, [choose an icon](#icon) and [show it in the Navigator and Find](#navigator).
+    * Enter a *database table* beginning with **y_** to identify it in the schema.
+    * To let users find the custom object, [choose an icon](#icon) and [show the table in the Navigator and Find](#navigator).
     * Optionally set other properties. See [table properties](#properties).
 
     <Note>
@@ -65,51 +79,7 @@ In the CRM Suite, an extra table also becomes a [custom object][3], like compani
 
 1. If the table is a custom object, [give roles access](#access-rights) to it.
 
-The table is ready to use. In the CRM Suite, users can now work with it as a custom object. You can also add records through the APIs.
-
-## Make the table a custom object {#custom-object}
-
-These settings decide how users view and work with the table as a custom object.
-
-### Choose an icon {#icon}
-
-The icon is shown in the Navigator, the custom objects list, context menus, the webhook event list, and the Screen Designer.
-
-1. Open the table properties and select **Icon**.
-
-1. In the **Select icon** dialog, choose an icon:
-
-    * **Default icons**: a selection of common icons.
-    * **Full icon library**: search the full library, or browse by category.
-    * **Custom icons**: upload your own SVG file, up to 50 KB.
-
-1. Select **Apply icon**.
-
-To go back to the default icon, select **Remove icon**.
-
-![Select icon dialog with the Default icons, Full icon library, and Custom icons tabs -screenshot][img2]
-
-### Show the table in the Navigator and Find {#navigator}
-
-In the table properties, select **Show in navigator**. The table is then listed in the Navigator and under **New** in the top bar, and its records are added to history and favorites like other records.
-
-To let users search for its records in **Find**, also select **Show table in Find**.
-
-![Show table in Find, Show in navigator, and an icon selected in the table properties -screenshot][img3]
-
-### Give roles access {#access-rights}
-
-Users can only see and work with a custom object if their role gives them access. When you have created the table and added its fields, set the permission for each role that should use it.
-
-1. <OpenRoles />
-
-1. Select the role in the **Roles** list.
-
-1. Select the **Custom objects rights** tab.
-
-1. In the **Permission** list next to the custom object, choose what users with this role can do: **Read**, **Create**, **Update**, or **Delete**.
-
-See [data rights for custom objects][4] for what each permission allows.
+The table is ready to use. To decide which fields users see and where, [design the layout][5] of the custom object in the Screen Designer. In the CRM Suite, users can now work with it as a custom object. You can also add records through the APIs.
 
 ## Table properties {#properties}
 
@@ -134,22 +104,45 @@ See [data rights for custom objects][4] for what each permission allows.
 | Icon | The icon shown for the table in the Navigator and other places. See [choose an icon](#icon). |
 | Enable batch webhook in Service | If selected, batch updates on this table will trigger [webhooks][2]. |
 
-## Naming conventions {#conventions}
+## Choose an icon {#icon}
 
-<Warning>
-Choose database table names carefully. You cannot change them later.
-</Warning>
+The icon is shown in the Navigator, the custom objects list, context menus, the webhook event list, and the Screen Designer.
 
-Use logical names, so it is easy to see what the database contains. The **y_** prefix prevents conflicts with future SuperOffice table names. It does not prevent conflicts between extra tables from different third parties.
+1. Open the table properties and select **Icon**.
 
-* Must start with **y_**
+1. In the **Select icon** dialog, choose an icon:
 
-* May contain only underscores, the letters a to z, and numbers
+    * **Default icons**: a selection of common icons.
+    * **Full icon library**: search the full library, or browse by category.
+    * **Custom icons**: upload your own SVG file, up to 50 KB.
 
-## Next steps
+1. Select **Apply icon**.
 
-* [Design the layout][5] of the custom object in the Screen Designer.
-* [Pre-fill fields][6] with a trigger when a record is opened.
+To go back to the default icon, select **Remove icon**.
+
+![Select icon dialog with the Default icons, Full icon library, and Custom icons tabs -screenshot][img2]
+
+## Show the table in the Navigator and Find {#navigator}
+
+In the table properties, select **Show in navigator**. The table is then listed in the Navigator and under **New** in the top bar, and its records are added to history and favorites like other records.
+
+To let users search for its records in **Find**, also select **Show table in Find**.
+
+![Show table in Find, Show in navigator, and an icon selected in the table properties -screenshot][img3]
+
+## Give roles access {#access-rights}
+
+Users can only see and work with a custom object if their role gives them access. When you have created the table and added its fields, set the permission for each role that should use it.
+
+1. <OpenRoles />
+
+1. Select the role in the **Roles** list.
+
+1. Select the **Custom objects rights** tab.
+
+1. In the **Permission** list next to the custom object, choose what users with this role can do: **Read**, **Create**, **Update**, or **Delete**.
+
+See [data rights for custom objects][4] for what each permission allows.
 
 ## Show table in a web panel {#web-panel}
 
@@ -160,7 +153,6 @@ With a user-plan based license, you show extra tables in SuperOffice CRM through
 [3]: ../learn/extra-table
 [4]: /en/admin/user-management/role/set-data-rights-for-role#custom-objects
 [5]: /en/customization/screen-designer/admin/add-layout#custom-objects
-[6]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
 [8]: /en/admin/license/expander-services
 [9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
 
