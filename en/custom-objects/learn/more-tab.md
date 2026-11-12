@@ -11,7 +11,7 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Custom fields overview: /en/custom-objects/learn/index
+  - About custom objects and fields: /en/custom-objects/learn/index
   - Add user-defined fields: /en/custom-objects/admin/add-udef
   - Add extra fields: /en/custom-objects/admin/create-extra-field
   - Managing custom layouts with the Screen Designer: /en/customization/screen-designer/admin/add-layout

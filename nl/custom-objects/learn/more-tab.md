@@ -11,7 +11,7 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Overzicht van door de gebruiker gedefinieerde velden: /nl/custom-objects/learn/index
+  - Over aangepaste objecten en velden: /nl/custom-objects/learn/index
   - Door de gebruiker gedefinieerde velden toevoegen: /nl/custom-objects/admin/add-udef
   - Extra velden toevoegen: /nl/custom-objects/admin/create-extra-field
   - Aangepaste lay-outs beheren met de Screen Designer: /nl/customization/screen-designer/admin/add-layout

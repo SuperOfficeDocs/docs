@@ -11,7 +11,7 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Översikt över användardefinierade fält: /sv/custom-objects/learn/index
+  - Om anpassade objekt och fält: /sv/custom-objects/learn/index
   - Lägg till användardefinierade fält: /sv/custom-objects/admin/add-udef
   - Lägg till extra fält: /sv/custom-objects/admin/create-extra-field
   - Hantera anpassade layouter med Skärmdesignern: /sv/customization/screen-designer/admin/add-layout

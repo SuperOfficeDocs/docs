@@ -11,7 +11,7 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Oversikt over tilpassede felt: /no/custom-objects/learn/index
+  - Om egendefinerte objekter og felt: /no/custom-objects/learn/index
   - Legg til brukerdefinerte felt: /no/custom-objects/admin/add-udef
   - Legg til ekstra felt: /no/custom-objects/admin/create-extra-field
   - Administrer tilpassede oppsett med Skjermdesigner: /no/customization/screen-designer/admin/add-layout

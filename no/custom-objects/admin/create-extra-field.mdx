@@ -10,7 +10,9 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-redirect_from: /no/custom-objects/learn/extra-field/create
+redirect_from:
+  - /no/custom-objects/learn/extra-field/create
+  - /no/custom-objects/admin/show-extra-field-on-request-details
 userflow_index: true
 language: no
 ---
@@ -125,8 +127,32 @@ For eksempel har en tabell Leieavtale et felt **Laptop** (relasjon til ekstratab
 
 Med en lisens basert på brukerplan bygger du et webpanel for å liste opp de relaterte egendefinerte dataene i stedet.
 
+## Vis ekstrafelt i fanen Detaljer
+
+Scenario: Du har lagt til et ekstrafelt for firma (`contact` tabellen) som indikerer om et firma har en støtteavtale, og du ønsker å vise denne informasjonen når du ser på en sak.
+
+1. Gå til **Innstillinger og vedlikehold** > **Skjermdesigner** og velg fanen **Sak**.
+
+1. Klikk på <i class="ph ph-pencil-simple" aria-label="Edit layout"></i> nederst.
+
+1. Finn innstillingen for **Felter**.
+
+1. Velg ditt felt.
+
+1. Velg eventuelt passende stileringsalternativer.
+
+1. Klikk på **Lagre** for å lagre innstillingene.
+
+<Tip>
+Du kan også gruppere felt, legge til overskrifter for grupper og endre størrelsen på kolonner. [Lær mer om Skjermdesigner][3].
+</Tip>
+
+I klassisk Service bruker du i stedet en felles elementprofil. Trinnene finner du i [hjelpen for versjon 11][4].
+
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
+[3]: /no/customization/screen-designer/admin/working-with-fields
+[4]: https://help.superoffice.com/docs/11/no/custom-objects/admin/show-extra-field-on-request-details.html
 
 [img1]: /media/loc/en/custom-objects/tables-new-field.png
 [img2]: /media/loc/en/custom-objects/field-properties-text.png

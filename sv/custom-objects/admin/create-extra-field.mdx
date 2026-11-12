@@ -10,7 +10,9 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-redirect_from: /sv/custom-objects/learn/extra-field/create
+redirect_from:
+  - /sv/custom-objects/learn/extra-field/create
+  - /sv/custom-objects/admin/show-extra-field-on-request-details
 userflow_index: true
 language: sv
 ---
@@ -125,8 +127,32 @@ Till exempel har en tabell Lease ett fält **Laptop** (relation till extratabell
 
 Med en användarplansbaserad licens bygger du i stället en webbpanel för att lista de relaterade anpassade data.
 
+## Visa extra fält på fliken Detaljer
+
+Scenario: Du har lagt till ett extra fält för företag (`contact` tabellen) som indikerar om ett företag har ett supportavtal och du vill visa den informationen när du tittar på en förfrågan.
+
+1. Gå till **Inställningar och underhåll** > **Screen designer** och välj fliken **Förfrågningar**.
+
+1. Klicka på <i class="ph ph-pencil-simple" aria-label="Edit layout"></i> längst ned.
+
+1. Hitta inställningen för **Fält**.
+
+1. Välj ditt fält.
+
+1. Välj eventuellt lämpliga stilar.
+
+1. Klicka på **Spara** för att spara inställningarna.
+
+<Tip>
+Du kan också gruppera fält, lägga till rubriker för grupper och ändra storleken på kolumner. [Läs mer om Screen Designer][3].
+</Tip>
+
+I klassisk Service använder du i stället en gemensam elementprofil. Stegen finns i [hjälpen för version 11][4].
+
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
+[3]: /sv/customization/screen-designer/admin/working-with-fields
+[4]: https://help.superoffice.com/docs/11/sv/custom-objects/admin/show-extra-field-on-request-details.html
 
 [img1]: /media/loc/en/custom-objects/tables-new-field.png
 [img2]: /media/loc/en/custom-objects/field-properties-text.png

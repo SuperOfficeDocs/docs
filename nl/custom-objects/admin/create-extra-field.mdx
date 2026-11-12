@@ -10,7 +10,9 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-redirect_from: /nl/custom-objects/learn/extra-field/create
+redirect_from:
+  - /nl/custom-objects/learn/extra-field/create
+  - /nl/custom-objects/admin/show-extra-field-on-request-details
 userflow_index: true
 language: nl
 ---
@@ -125,8 +127,32 @@ Een tabel Lease heeft bijvoorbeeld een veld **Laptop** (extra tabelrelatie naar 
 
 Met een licentie op basis van gebruikersplannen bouwt u in plaats daarvan een webpaneel om de gerelateerde aangepaste gegevens weer te geven.
 
+## Toon extra veld op het tabblad Details
+
+Scenario: U heeft een extra veld toegevoegd aan het bedrijf (`contact` tabel) dat aangeeft of een bedrijf een ondersteuningscontract heeft, en u wilt die informatie weergeven bij het bekijken van een verzoek.
+
+1. Ga naar **Instellingen en onderhoud** > **Screen Designer** en selecteer het tabblad **Verzoeken**.
+
+1. Klik onderaan op <i class="ph ph-pencil-simple" aria-label="Edit layout"></i>.
+
+1. Zoek de instelling **Velden**.
+
+1. Selecteer uw veld.
+
+1. Selecteer indien gewenst de passende opmaakopties.
+
+1. Klik op **Opslaan** om de instellingen op te slaan.
+
+<Tip>
+U kunt ook velden groeperen, koppen toevoegen voor groepen en de grootte van kolommen wijzigen. [Lees meer over de Screen Designer][3].
+</Tip>
+
+In de klassieke Service gebruikt u in plaats daarvan een gemeenschappelijk elementprofiel. De stappen staan in de [help voor versie 11][4].
+
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
+[3]: /nl/customization/screen-designer/admin/working-with-fields
+[4]: https://help.superoffice.com/docs/11/nl/custom-objects/admin/show-extra-field-on-request-details.html
 
 [img1]: /media/loc/en/custom-objects/tables-new-field.png
 [img2]: /media/loc/en/custom-objects/field-properties-text.png

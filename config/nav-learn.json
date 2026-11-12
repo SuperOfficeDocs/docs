@@ -706,8 +706,7 @@
           "en/custom-objects/admin/edit-udef",
           "en/custom-objects/admin/edit-udef-layout",
           "en/custom-objects/admin/create-extra-table",
-          "en/custom-objects/admin/create-extra-field",
-          "en/custom-objects/admin/show-extra-field-on-request-details"
+          "en/custom-objects/admin/create-extra-field"
         ]
       },
       "en/custom-objects/reference/index"

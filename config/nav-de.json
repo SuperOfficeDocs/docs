@@ -692,8 +692,7 @@
               "de/custom-objects/admin/edit-udef",
               "de/custom-objects/admin/edit-udef-layout",
               "de/custom-objects/admin/create-extra-table",
-              "de/custom-objects/admin/create-extra-field",
-              "de/custom-objects/admin/show-extra-field-on-request-details"
+              "de/custom-objects/admin/create-extra-field"
             ]
           }
         ]

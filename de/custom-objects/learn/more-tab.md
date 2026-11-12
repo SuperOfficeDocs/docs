@@ -11,7 +11,7 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Benutzerdefinierte Felder Übersicht: /de/custom-objects/learn/index
+  - Über benutzerdefinierte Objekte und Felder: /de/custom-objects/learn/index
   - Benutzerdefinierte Felder hinzufügen: /de/custom-objects/admin/add-udef
   - Zusätzliche Felder hinzufügen: /de/custom-objects/admin/create-extra-field
   - Anpassen von Layouts mit dem Screen Designer: /de/customization/screen-designer/admin/add-layout

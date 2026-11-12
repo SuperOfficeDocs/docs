@@ -10,7 +10,9 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-redirect_from: /da/custom-objects/learn/extra-field/create
+redirect_from:
+  - /da/custom-objects/learn/extra-field/create
+  - /da/custom-objects/admin/show-extra-field-on-request-details
 userflow_index: true
 language: da
 ---
@@ -125,8 +127,32 @@ For eksempel har en tabel Leasing et feltet **Bærbar** (ekstra tabelrelation ti
 
 Med en licens baseret på brugerplaner skal du i stedet bygge et webpanel for at vise de relaterede brugerdefinerede data.
 
+## Vis ekstra felt på fanen Detaljer
+
+Scenarie: Du har tilføjet et ekstra felt til virksomhed (`contact` tabellen), der angiver, om en virksomhed har en supportaftale, og du ønsker at vise den information, når du ser en anmodning.
+
+1. Gå til **Indstillinger og vedligeholdelse** > **Screen designer** og vælg fanen **Anmodninger**.
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Edit layout"></i> nederst.
+
+1. Find indstillingen **Felter**.
+
+1. Vælg dit felt.
+
+1. Vælg eventuelt passende stylingmuligheder.
+
+1. Klik på **Gem** for at gemme indstillingerne.
+
+<Tip>
+Du kan også gruppere felter, tilføje overskrifter til grupper og ændre størrelsen på kolonner. [Læs mere om Screen Designer][3].
+</Tip>
+
+I klassisk Service bruger du i stedet en fælles elementprofil. Trinnene findes i [hjælpen til version 11][4].
+
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
+[3]: /da/customization/screen-designer/admin/working-with-fields
+[4]: https://help.superoffice.com/docs/11/da/custom-objects/admin/show-extra-field-on-request-details.html
 
 [img1]: /media/loc/en/custom-objects/tables-new-field.png
 [img2]: /media/loc/en/custom-objects/field-properties-text.png
