@@ -2,12 +2,12 @@
 uid: help-no-extra-fields-create
 title: Legge til ekstrafelt
 description: Legge til ekstrafelt
-keywords: ['ekstrafelt', 'tilpasset felt', 'databasefelt', 'felt for egendefinert objekt', 'feltegenskaper']
+keywords: ['ekstrafelt', 'tilpasset felt', 'felt for egendefinert objekt', 'feltegenskaper']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/custom-objects/learn/extra-field/create
@@ -16,8 +16,24 @@ language: no
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Når du har opprettet en [ekstratabell][1], legger du til feltene brukerne fyller ut for hver post. Du kan også legge til ekstrafelt i standard Service-tabeller.
+<ReqDevToolsTransition />
+
+Når du har opprettet en [ekstratabell][1], legger du til feltene brukerne fyller ut når de legger til egendefinerte data. Du kan også legge til ekstrafelt i standard Service-tabeller.
+
+## Navnekonvensjoner
+
+<Warning>
+Velg databasefeltnavn nøye. Du **kan ikke endre** dem senere.
+</Warning>
+
+Bruk logiske navn, slik at det er lett å se hva databasen inneholder. Prefikset **x_** hindrer konflikter med fremtidige SuperOffice-feltnavn. Det hindrer ikke konflikter mellom ekstrafelt fra ulike tredjeparter.
+
+* Må starte med **x_**
+* Må være unikt i tabellen
+* Må være ett enkelt ord
+* Kan bare inneholde understrek, bokstavene a til z, og tall
 
 ## Trinn
 
@@ -56,7 +72,7 @@ Egenskapen **URL** i denne tabellen hører til felttypen **Dynamisk kobling**. H
 | Velg fra listeboks | Hvis feltet er knyttet til en ekstratabell, velger du dette alternativet for å vise en liste over tabellverdier. |
 | Velg verdier fra liste | Hvis dette er merket, blir feltet til en listeboks. Alternativene på listen vil være de tekstene som skrives inn i tekstboksen. Det er én linje per alternativ. |
 | Opprett indeks | Angi om feltet skal indekseres. Det er raskere å søke etter data i indekserte felt. |
-| Databasefelt | Navnet som kolonnen vil få i databasen. Dette navnet må være unikt for denne tabellen. Videre må kolonnenavnet være et enkeltord, og det kan bare inneholde understrek, bokstavene a til z eller tall, og det må begynne med "x_". Kan bare angis når feltet opprettes. **Kan ikke endres senere**. |
+| Databasefelt | Navnet på kolonnen i databasen. Kan bare angis ved opprettelse, og **kan ikke endres**. |
 | Antall desimaler | Antall desimaler som er tillatt i et tall. |
 | Standardverdi | Standardverdien brukes for dette feltet. |
 | Beskrivelse | Standardbeskrivelsen. |
@@ -90,20 +106,24 @@ Egenskapen **URL** i denne tabellen hører til felttypen **Dynamisk kobling**. H
 Et relasjonsfelt kobler en post til en post i en annen tabell. Med CRM Suite **Growth** eller høyere kan den relaterte posten også vise et detaljkort som lister opp de koblede postene.
 
 1. Pek på tabellen som skal inneholde relasjonen, og klikk på **Nytt felt**.
+
 1. Velg relasjonstypen for tabellen du vil koble til og klikk på **OK**.
+
 1. Sett feltegenskaper som beskrevet ovenfor. For å vise et detaljkort på den relaterte posten, velg **Vis én-til-mange-relasjoner**, og skriv inn navnet på kortet i **Topptekst for liste**.
 
     ![Feltegenskaper for en relasjon til ekstratabell, med Topptekst for liste og Måltabell utfylt -screenshot][img3]
 
 1. Klikk på **OK** for å lagre relasjonen.
+
 1. For en **Relasjon til ekstratabell**, åpne egenskapene til måltabellen og sett **Visningsfelt** til et felt brukerne kjenner igjen, for eksempel navnet. Se [tabellegenskaper][1].
+
 1. Klikk på **Start NetServer om igjen** for å anvende endringene.
 
 For eksempel har en tabell Leieavtale et felt **Laptop** (relasjon til ekstratabell til tabellen Laptop) og et felt **Salg** (salgsrelasjon). Begge har **Vis én-til-mange-relasjoner** valgt og *Leieavtaler* som **Topptekst for liste**. Hver laptop og hvert salg viser da et detaljkort **Leieavtaler** med de koblede leieavtalene.
 
 ![Salg med et detaljkort for leieavtaler -screenshot][img4]
 
-Med en lisens basert på brukerplan bygger du et webpanel for å liste opp de relaterte postene i stedet.
+Med en lisens basert på brukerplan bygger du et webpanel for å liste opp de relaterte egendefinerte dataene i stedet.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls

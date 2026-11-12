@@ -1,13 +1,13 @@
 ---
 uid: help-sv-extra-fields-create
 title: Lägg till extrafält
-description: Lägg till extrafält
-keywords: ['extrafält', 'anpassa fält', 'fält för anpassat objekt']
+description: Så här definierar du extrafält i SuperOffice
+keywords: ['extrafält', 'anpassat fält', 'fält för anpassat objekt', 'fältegenskaper']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/custom-objects/learn/extra-field/create
@@ -16,8 +16,24 @@ language: sv
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-När du har skapat en [extratabell][1] lägger du till de fält som användarna fyller i för varje post. Du kan även lägga till extrafält i Service-standardtabellerna.
+<ReqDevToolsTransition />
+
+När du har skapat en [extratabell][1] lägger du till de fält som användarna fyller i när de lägger till anpassade data. Du kan även lägga till extrafält i Service-standardtabellerna.
+
+## Namnkonventioner
+
+<Warning>
+Välj namn på databasfält noggrant. Du **kan inte ändra** dem senare.
+</Warning>
+
+Använd logiska namn, så att det är lätt att se vad databasen innehåller. Prefixet **x_** förhindrar konflikter med framtida SuperOffice-fältnamn. Det förhindrar inte konflikter mellan extrafält från olika tredje parter.
+
+* Måste börja med **x_**
+* Måste vara unikt i tabellen
+* Måste vara ett enda ord
+* Får endast innehålla understreck, bokstäverna a till z och siffror
 
 ## Steg
 
@@ -29,12 +45,12 @@ När du har skapat en [extratabell][1] lägger du till de fält som användarna 
 
 1. Välj en typ för det nya fältet och klicka på **OK**.
 
-1. I **Fält egenskaper** skärmen, ange information om det nya fältet.
+1. I skärmen **Fältegenskaper** anger du information om det nya fältet.
 
-    * Ange ett *namn* som ska användas som etiketten.
-    * Ange ett *databasfält* som börjar med **x_** för att identifiera det i schemat.
+    * Ange ett *namn* som ska användas som etikett.
+    * Ange ett *databasfält* som börjar med **x_** för att identifiera fältet i schemat.
     * För att göra fältet obligatoriskt, välj **Kan inte vara tomt**.
-    * Valfritt ställ in andra egenskaper. Den fälttyp du valde i föregående steg bestämmer vad som är tillgängligt. Se [egenskaper för fält](#properties).
+    * Ställ eventuellt in andra egenskaper. Den fälttyp du valde i föregående steg avgör vad som är tillgängligt. Se [egenskaper för fält](#properties).
 
     ![Fältegenskaper för ett fält av typen Text (kort) -screenshot][img2]
 
@@ -52,11 +68,11 @@ Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. 
 
 | Fält | Beskrivning |
 |---|---|
-| Får inte vara tomt | Om du markerar det här alternativet blir fältet obligatoriskt. |
+| Kan inte vara tomt | Om du markerar det här alternativet blir fältet obligatoriskt. |
 | Välj i listrutan | Om fältet är kopplat till en extratabell kan du välja detta alternativ för att visa en lista över tabellvärden. |
 | Välj värden i lista | Om du markerar det här alternativet blir fältet en listruta. Alternativen i listan blir de textsträngar som anges i textrutan. Det är en rad per alternativ. |
 | Skapa index | Ange om fältet ska indexeras eller inte. Det går snabbare att söka efter data i indexerade fält. |
-| Databasfält | Det namn som kolumnen ska ha i databasen. Detta namn måste vara unikt i denna tabell. Dessutom måste kolumnnamnet vara ett enda ord och börja med "x_" och det får endast innehålla understreck, bokstäver från a till z och siffror. Kan bara anges när fältet skapas. **Kan inte ändras senare.** |
+| Databasfält | Kolumnens namn i databasen. Kan bara anges när fältet skapas och **kan inte ändras**. |
 | Antal decimaler | Det antal decimaler som är tillåtna i ett tal. |
 | Standardvärde | Standardvärdet används för det här fältet. |
 | Beskrivning | Standardbeskrivningen. |
@@ -69,7 +85,7 @@ Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. 
 | Namn | Namnet på fältet. |
 | Antal enheter | (tidsperiod) Ange maximalt antal enheter för den "största" valda tidsenheten. Exempel: Om du har valt timmar och minuter och skriver "4" kan maximalt 4 timmar väljas medan minuterna går till 60. För dagar och timmar kan på liknande sätt maximalt 4 dagar väljas medan timmarna går till 24. |
 | Tillåt bara bladnod i hierarkiska listrutor | (extratabellrelation) Specificera om endast den lägsta noden i en hierarki kan väljas av användaren. |
-| Befattning | Anger fältets placering bland de övriga fälten i listor. |
+| Position | Anger fältets placering bland de övriga fälten i listor. |
 | Sökkriterium | Den sökoperator som ska användas för det här fältet, till exempel **börjar med**. |
 | Visa i tabell | Om det här alternativet markeras visas fältet som en kolumn i fönster där flera poster visas i en tabell. |
 | Visa en-till-flera-relationer | Om du har valt fälttyperna **Kontaktrelation**, **Företagsrelation** eller **Ärenderelation** och vill att en flik med data från denna tabell ska visas i fönstren Kontakt, Företag eller Ärende kan du markera det här fältet. Med CRM Suite **Growth** eller högre får den relaterade posten i SuperOffice CRM också ett detaljkort, till exempel en flik **Equipment** på företaget. |
@@ -90,20 +106,24 @@ Egenskapen **URL** i den här tabellen hör till fälttypen **Dynamisk länk**. 
 Ett relationsfält länkar en post till en post i en annan tabell. Med CRM Suite **Growth** eller högre kan den relaterade posten också visa ett detaljkort som listar de länkade posterna.
 
 1. Peka på den tabell som ska innehålla relationen och klicka på **Nytt fält**.
+
 1. Välj relationstypen för den tabell du vill länka till och klicka på **OK**.
+
 1. Ställ in fältegenskaper som beskrivs ovan. För att visa ett detaljkort på den relaterade posten, markera **Visa en-till-flera-relationer** och ange flikens etikett i **Sidhuvud för lista**.
 
     ![Fältegenskaper för en relation till en extratabell, med Sidhuvud för lista och Måltabell ifyllda -screenshot][img3]
 
 1. Klicka på **OK** för att spara relationen.
+
 1. För en **Relation till extratabell**, öppna egenskaperna för måltabellen och ställ in **Visningsfält** på ett fält som användarna känner igen, till exempel namnet. Se [tabellegenskaper][1].
+
 1. Klicka på **Starta om NetServer** för att tillämpa ändringarna.
 
 Till exempel har en tabell Lease ett fält **Laptop** (relation till extratabellen Laptop) och ett fält **Sale** (säljrelation). Båda har **Visa en-till-flera-relationer** markerat och *Leases* som **Sidhuvud för lista**. Varje laptop och varje försäljning visar då en flik **Leases** med de länkade leasingavtalen.
 
 ![Försäljning med ett detaljkort för Leases -screenshot][img4]
 
-Med en användarplansbaserad licens bygger du i stället en webbpanel för att lista de relaterade posterna.
+Med en användarplansbaserad licens bygger du i stället en webbpanel för att lista de relaterade anpassade data.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls

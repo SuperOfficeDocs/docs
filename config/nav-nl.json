@@ -693,6 +693,8 @@
             "group": "Extra tabellen",
             "pages": [
               "nl/custom-objects/learn/extra-table",
+              "nl/custom-objects/learn/create",
+              "nl/custom-objects/learn/update",
               "nl/custom-objects/admin/create-extra-table"
             ]
           },

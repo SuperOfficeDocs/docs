@@ -1,22 +1,65 @@
 ---
-uid: help-da-custom-object-update
-title: Opdater en post i et brugerdefineret objekt
-sidebarTitle: Opdater post
-description: Åbn, rediger eller slet en post i et brugerdefineret objekt, og åbn links, der er gemt i dets felter.
-keywords: ['brugerdefineret objekt', 'rediger post', 'slet post', 'ekstra tabel', 'klikbart link']
+title: Opdater brugerdefinerede data
+description: Åbn, rediger eller slet data i et brugerdefineret objekt, og åbn links, der er gemt i dets felter.
+keywords: ['rediger brugerdefineret objekt', 'slet brugerdefineret objekt', 'opdater brugerdefineret objekt', 'ekstra tabel']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Opret en post i et brugerdefineret objekt: /da/custom-objects/learn/create
-  - Brugerdefinerede objekter: /da/custom-objects/learn/extra-table
+  - Tilføj brugerdefinerede data: /da/custom-objects/learn/create
+  - Ekstra tabeller: /da/custom-objects/learn/extra-table
 language: da
 ---
 
-Denne side er endnu ikke oversat til dansk.
+<Note>
+Brugerdefinerede objekter kræver CRM Suite **Growth**-planen eller en højere plan. Hvis du har en [licens baseret på brugerplaner][5] og vil bruge brugerdefinerede objekter, kan du deltage i [pilotprogrammet for brugerdefinerede objekter][6].
+</Note>
 
-{/* TODO: translate after EN review */}
+Du kan se, redigere og slette brugerdefinerede data, afhængigt af [de rettigheder, din rolle har til det brugerdefinerede objekt][1]: **Læs**, **Opdater** eller **Slet**.
+
+## Åbn brugerdefinerede data
+
+Åbn brugerdefinerede data på en af disse måder:
+
+* Vælg det brugerdefinerede objekt i Navigatoren, søg på listen, og vælg den række, du vil åbne.
+* Vælg dem på en detaljefane på en relateret enhed.
+* Vælg dem i din [historik][2] eller dine [favoritter][3].
+
+Hvis du vil se brugerdefinerede data uden at forlade den relaterede enhed, skal du vælge dem på detaljefanen og se dem i visningen **Forhåndsvisning** i sidepanelet.
+
+![Bærbar med et link til en produktside og detaljefanen Leasingaftaler -screenshot][img1]
+
+## Rediger brugerdefinerede data
+
+1. Åbn de brugerdefinerede data.
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Rediger"></i> for at gå til redigeringstilstand.
+
+1. Foretag dine ændringer. For et relationsfelt begynder du at skrive og vælger den relaterede post på listen.
+
+1. Klik på **Gem**.
+
+### Links i tekstfelter
+
+Når et tekstfelt indeholder en URL, vises URL'en som et link i læsetilstand. Klik på den for at åbne siden i en ny fane. For eksempel kan et felt **Produktside** linke til produktet i leverandørens webshop. I redigeringstilstand er feltet et almindeligt tekstfelt. Se [URL'er i tekstfelter][4].
+
+## Slet brugerdefinerede data
+
+For at slette brugerdefinerede data skal din rolle have [rettigheden **Slet** til det brugerdefinerede objekt][1].
+
+<Warning>
+Du kan ikke fortryde en sletning.
+</Warning>
+
+[1]: /da/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /da/learn/basics/history
+[3]: /da/learn/basics/fav
+[4]: ./extra-field#urls
+[5]: /da/admin/license/user-plans
+[6]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+
+[img1]: /media/loc/en/custom-objects/laptop-card.png

@@ -2,12 +2,12 @@
 uid: help-da-extra-fields-create
 title: Tilføj ekstra felter
 description: Definere ekstrafelter
-keywords: ['ekstrafelt', 'tilpasset felt', 'felt i brugerdefineret objekt']
+keywords: ['ekstrafelt', 'tilpasset felt', 'felt i brugerdefineret objekt', 'feltegenskaber']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/custom-objects/learn/extra-field/create
@@ -16,8 +16,24 @@ language: da
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Når du har oprettet en [ekstratabel][1], skal du tilføje de felter, brugerne udfylder for hver post. Du kan også tilføje ekstrafelter til standardtabeller i Service.
+<ReqDevToolsTransition />
+
+Når du har oprettet en [ekstratabel][1], skal du tilføje de felter, brugerne udfylder, når de tilføjer brugerdefinerede data. Du kan også tilføje ekstrafelter til standardtabeller i Service.
+
+## Navngivningskonventioner
+
+<Warning>
+Vælg navne på databasefelter omhyggeligt. Du **kan ikke ændre** dem senere.
+</Warning>
+
+Brug logiske navne, så det er nemt at se, hvad databasen indeholder. Præfikset **x_** sikrer, at navnet ikke er i konflikt med fremtidige SuperOffice-feltnavne. Det forhindrer ikke navnekonflikter mellem ekstra felter fra forskellige tredjeparter.
+
+* Skal starte med **x_**
+* Skal være unikt i tabellen
+* Skal være ét enkelt ord
+* Må kun indeholde understreger, bogstaverne a til z og tal
 
 ## Trin
 
@@ -56,13 +72,13 @@ Egenskaben **URL** i denne tabel hører til felttypen **Dynamisk link**. Hvis du
 | Vælg på rulleliste | Hvis feltet er knyttet til en ekstratabel, skal du vælge denne valgmulighed for at få vist en liste over tabelværdier. |
 | Vælg værdier på liste | Hvis denne valgmulighed er markeret, bliver feltet en rulleliste. Valgmulighederne i listen bliver de tekststrenge, der indtastes i tekstfeltet. Der er én linje pr. valgmulighed. |
 | Indekser felt | Angiv, om feltet skal indekseres. Det er hurtigere at søge efter data i indekserede felter. |
-| Databasefelt | Navnet, som kolonnen får i databasen. Navnet skal være unikt i denne tabel. Desuden skal kolonnenavnet være et enkelt ord, der kun indeholder understregninger, bogstaver fra a til z eller tal, og som starter med "x_". Kan kun specificeres, når feltet oprettes, det **kan ikke ændres senere**. |
+| Databasefelt | Navnet på kolonnen i databasen. Kan kun angives ved oprettelse og **kan ikke ændres**. |
 | Antal decimaler | Det antal decimaler, der er tilladt i et tal. |
 | Standardværdi | Standardværdien vil blive anvendt for dette felt. |
 | Beskrivelse | Standardbeskrivelsen. |
 | Visningsværdi | Angiv, om værdien skal vises eller ej. |
 | Eksternt | Hvis denne valgmulighed er markeret, vil feltet kunne være tilgængeligt fra et kundecenter. Dette er kun relevant for standardtabeller, da ekstratabeller altid vises i kundecentre. |
-| Overskrift for liste | Dette felt kan bruges til at angive en overskrift for disse poster, når de vises som "underposter" i en liste. I vores eksempel betyder dette navnet på den nye fane i skærmbilledet **Vis person**, så vi indtaster "Computere" her. Med CRM Suite **Growth** eller højere er det også ledeteksten på fanen på den relaterede post. Obligatorisk, når **Vis én-til-mange-relationer** er markeret. |
+| Overskrift for liste | Dette felt kan bruges til at angive en overskrift for disse poster, når de vises som "underposter" i en liste. Med CRM Suite **Growth** eller højere er det også ledeteksten på fanen på den relaterede post. Obligatorisk, når **Vis én-til-mange-relationer** er markeret. |
 | Skjul funktionsknapper | (relationer) Vælg denne valgmulighed for at skjule funktionen for tilføjelse af nye poster til relationstabeller. |
 | Skjul feltet | Angiv, om feltet skal vises eller ej. |
 | Behold HTML-koder | (tekst) Vælg denne valgmulighed for at medtage HTML-taggen i teksten. |
@@ -90,25 +106,29 @@ Egenskaben **URL** i denne tabel hører til felttypen **Dynamisk link**. Hvis du
 Et relationsfelt forbinder en post med en post i en anden tabel. Med CRM Suite **Growth** eller højere kan den relaterede post også vise en detaljefane, der viser de tilknyttede poster.
 
 1. Peg på den tabel, der skal indeholde relationen, og klik på **Nyt felt**.
+
 1. Vælg relationstypen for den tabel, du vil forbinde til, og klik på **OK**.
+
 1. Indstil feltegenskaber som beskrevet ovenfor. For at vise en detaljefane på den relaterede post skal du vælge **Vis én-til-mange-relationer** og indtaste fanens ledetekst i **Overskrift for liste**.
 
     ![Egenskaber for en ekstra tabelrelation med Overskrift for liste og Destinationstabel udfyldt -screenshot][img3]
 
 1. Klik på **OK** for at gemme relationen.
+
 1. For en **Ekstra tabelrelation** skal du åbne egenskaberne for destinationstabellen og indstille **Visningsfelt** til et felt, brugerne genkender, for eksempel navnet. Se [egenskaber for tabel][1].
+
 1. Klik på **Genstart NetServer** for at anvende ændringerne.
 
 For eksempel har en tabel Leasing et feltet **Bærbar** (ekstra tabelrelation til tabellen Bærbar) og et feltet **Salg** (salgsrelation). Begge har **Vis én-til-mange-relationer** markeret og *Leasingaftaler* som **Overskrift for liste**. Hver bærbar og hvert salg viser så en fane **Leasingaftaler** med de tilknyttede leasingaftaler.
 
 ![Salg med detaljefanen Leasingaftaler -screenshot][img4]
 
-Med en licens baseret på brugerplaner skal du i stedet bygge et webpanel for at vise de relaterede poster.
+Med en licens baseret på brugerplaner skal du i stedet bygge et webpanel for at vise de relaterede brugerdefinerede data.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
 
-[img1]: ../../../media/loc/en/custom-objects/tables-new-field.png
-[img2]: ../../../media/loc/en/custom-objects/field-properties-text.png
-[img3]: ../../../media/loc/en/custom-objects/field-properties-extra-table-relation.png
-[img4]: ../../../media/loc/en/custom-objects/sale-lease-tab.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

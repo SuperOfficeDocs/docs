@@ -1,22 +1,57 @@
 ---
-uid: help-de-custom-object-create
-title: Datensatz eines benutzerdefinierten Objekts erstellen
-sidebarTitle: Datensatz erstellen
-description: Erstellen Sie einen neuen Datensatz eines benutzerdefinierten Objekts, zum Beispiel ein neues Lease, über die obere Leiste oder über eine zugehörige Firma oder Person.
-keywords: ['benutzerdefiniertes Objekt', 'neuer Datensatz', 'erstellen', 'Zusatztabelle']
+title: Benutzerdefinierte Daten hinzufügen
+description: Fügen Sie einem benutzerdefinierten Objekt Daten über die obere Leiste oder über eine zugehörige Entität hinzu.
+keywords: ['neues benutzerdefiniertes Objekt', 'benutzerdefiniertes Objekt erstellen', 'Zusatztabelle']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Datensatz eines benutzerdefinierten Objekts aktualisieren: /de/custom-objects/learn/update
-  - Benutzerdefinierte Objekte: /de/custom-objects/learn/extra-table
+  - Benutzerdefinierte Daten aktualisieren: /de/custom-objects/learn/update
+  - Zusatztabellen: /de/custom-objects/learn/extra-table
 language: de
 ---
 
-Diese Seite wird derzeit übersetzt. Bis dahin finden Sie den Inhalt in der englischen Version.
+<Note>
+Für benutzerdefinierte Objekte ist der CRM Suite **Growth**-Plan oder höher erforderlich. Wenn Sie eine [benutzerplanbasierte Lizenz][2] haben und benutzerdefinierte Objekte verwenden möchten, nehmen Sie am [Pilotprogramm für benutzerdefinierte Objekte][3] teil.
+</Note>
 
-{/* TODO: translate after EN review */}
+Sie können einem benutzerdefinierten Objekt Daten über die obere Leiste oder über eine zugehörige Entität hinzufügen. Welche Felder Sie sehen, hängt davon ab, wie Ihr Administrator das benutzerdefinierte Objekt eingerichtet hat.
+
+Um benutzerdefinierte Daten hinzuzufügen, muss Ihre Rolle das [Recht für das benutzerdefinierte Objekt][1] **Erstellen** haben.
+
+## Benutzerdefinierte Daten über die obere Leiste hinzufügen
+
+1. Klicken Sie in der oberen Leiste auf **Neu** und wählen Sie dann das benutzerdefinierte Objekt aus. Zum Beispiel **Equipment**.
+
+    ![Menü Neu in der oberen Leiste mit benutzerdefinierten Objekten -screenshot][img1]
+
+1. Füllen Sie die Felder aus. Obligatorische Felder sind rot markiert.
+
+    Beginnen Sie bei einem Beziehungsfeld, zum Beispiel **Firma**, mit der Eingabe und wählen Sie den zugehörigen Datensatz aus der Liste aus. Die Liste zeigt eine Vorschau jedes Treffers, damit Sie den richtigen auswählen können.
+
+    ![Lease mit ausgefüllten Beziehungsfeldern -screenshot][img2]
+
+1. Klicken Sie auf **Speichern**.
+
+## Benutzerdefinierte Daten über eine zugehörige Entität hinzufügen
+
+Wenn ein benutzerdefiniertes Objekt mit einer anderen Entität, zum Beispiel einer Firma, einem Verkauf oder einem benutzerdefinierten Objekt, in Beziehung steht, hat diese Entität eine Bereichsregisterkarte für das benutzerdefinierte Objekt. Benutzerdefinierte Daten, die Sie dort hinzufügen, werden automatisch verknüpft.
+
+1. Öffnen Sie die zugehörige Entität und wählen Sie die Bereichsregisterkarte des benutzerdefinierten Objekts aus. Zum Beispiel **Equipment**.
+
+1. Klicken Sie auf **Hinzufügen**.
+
+1. Füllen Sie die Felder aus. Die Beziehung zu der Entität, die Sie geöffnet haben, ist vorausgefüllt, und Ihr Administrator kann Standardwerte festlegen oder einen Auslöser verwenden, um andere Felder auszufüllen.
+
+1. Klicken Sie auf **Speichern**.
+
+[1]: /de/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /de/admin/license/user-plans
+[3]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png

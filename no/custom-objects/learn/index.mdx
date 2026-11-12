@@ -2,19 +2,19 @@
 uid: help-no-custom-objects
 title: Egendefinerte objekter og felt
 description: Lær forskjellen mellom brukerdefinerte felt, ekstrafelt og egendefinerte objekter, og hvilken plan du trenger for hvert av dem.
-keywords: ['egendefinert objekt', 'felt', 'brukerdefinert', 'udef', 'ekstrafelt', 'ekstratabell']
+keywords: ['egendefinert objekt', 'tabell', 'felt', 'brukerdefinert felt', 'udef', 'tilpasset felt', 'ekstrafelt', 'ekstratabell']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
-audience: user
+audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - /no/custom-objects/learn/udef
   - /no/custom-objects/learn/extra-field
-  - Egendefinerte objekter: /no/custom-objects/learn/extra-table
+  - Ekstratabeller: /no/custom-objects/learn/extra-table
 language: no
 ---
 
@@ -42,9 +42,9 @@ Det finnes to typer tilpassede felt, avhengig av posten:
 
 Et [egendefinert objekt][3] er en ny type post som du definerer selv. For eksempel *Laptop*, *Leieavtale* eller *Bil*. Du bestemmer hvilke felt det egendefinerte objektet har, og hvordan det er relatert til firma, personer, saker og andre poster.
 
-Med CRM Suite **Growth** eller høyere fungerer et egendefinert objekt som standardpostene i SuperOffice. Brukerne finner det i Navigatoren, oppretter nye poster fra **Ny** på toppraden, søker etter poster, lager utvalg og dashbord, og ser relaterte poster på et detaljkort, for eksempel på firmaet.
+Med CRM Suite **Growth** eller høyere oppfører et egendefinert objekt seg som standardpostene i SuperOffice. Brukerne finner det i Navigatoren, legger til egendefinerte data fra **Ny** på toppraden, søker etter dem, lager utvalg og dashbord, og ser relaterte egendefinerte data på et detaljkort, for eksempel på firmaet.
 
-Egendefinerte objekter opprettes i **Innstillinger og vedlikehold** > **Systemdesign** > **Tabeller**. I databasen er et egendefinert objekt en ekstratabell.
+I databasen er et egendefinert objekt en ekstratabell. Administratorer oppretter det i **Innstillinger og vedlikehold** > **Systemdesign** > **Tabeller**.
 
 ## Eksempler
 
@@ -65,10 +65,10 @@ Egendefinerte objekter opprettes i **Innstillinger og vedlikehold** > **Systemde
 **Egendefinerte objekter:**
 
 <Note>
-Egendefinerte objekter krever CRM Suite-planen **Growth** eller høyere. Hvis du har en [lisens basert på brukerplan][1026] og vil bruke egendefinerte objekter, kan du delta i [pilotprogrammet for egendefinerte objekter][1027].
+Egendefinerte objekter krever CRM Suite-planen **Growth** eller høyere. Hvis du har en [lisens basert på brukerplan][15] og vil bruke egendefinerte objekter, kan du delta i [pilotprogrammet for egendefinerte objekter][16].
 </Note>
 
-Med en lisens basert på brukerplan er ekstratabeller tilgjengelige i SuperOffice Service, og i SuperOffice CRM via webpaneler. Se [ekstratabeller med en lisens basert på brukerplan][3].
+Med en lisens basert på brukerplan krever ekstratabeller Development Tools. De er tilgjengelige i SuperOffice Service, og i SuperOffice CRM via webpaneler. Se [ekstratabeller][3].
 
 CRM Suite-planen angir hvor mange egendefinerte objekter du kan opprette. Når du når grensen, kan du ikke opprette flere. Se [plangrenser][13].
 
@@ -76,17 +76,11 @@ CRM Suite-planen angir hvor mange egendefinerte objekter du kan opprette. Når d
 
 Brukerdefinerte felt vises på [fanen Mer][12], sortert etter rangering. Med [Skjermdesigneren][14] kan du plassere felt på en hvilken som helst fane og designe layouten for egendefinerte objekter. En layout opprettet i Skjermdesigneren overstyrer posisjonen som er angitt på de enkelte feltene.
 
-## Aktuelt innhold
-
-* [Brukerdefinerte felt][1]
-* [Ekstrafelt][2]
-* [Ekstratabeller][3]
-
 [1]: /no/custom-objects/learn/udef
 [2]: /no/custom-objects/learn/extra-field
 [3]: /no/custom-objects/learn/extra-table
 [12]: /no/custom-objects/learn/more-tab
 [13]: /no/admin/license/crm-suite
 [14]: /no/customization/screen-designer/admin/index
-[1026]: /no/admin/license/user-plans
-[1027]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+[15]: /no/admin/license/user-plans
+[16]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/

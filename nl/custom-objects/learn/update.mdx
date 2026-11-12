@@ -1,24 +1,65 @@
 ---
-uid: help-nl-custom-object-update
-title: Een record van een aangepast object bijwerken
-sidebarTitle: Record bijwerken
-description: Open, bewerk of verwijder een record van een aangepast object, en open links die in de velden zijn opgeslagen.
-keywords: ['aangepast object', 'record bewerken', 'record verwijderen', 'extra tabel', 'klikbare link']
+title: Aangepaste gegevens bijwerken
+description: Open, bewerk of verwijder gegevens in een aangepast object en open links die in de velden zijn opgeslagen.
+keywords: ['aangepast object bewerken', 'aangepast object verwijderen', 'aangepast object bijwerken', 'extra tabel']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Een record van een aangepast object maken: /nl/custom-objects/learn/create
-  - Aangepaste objecten: /nl/custom-objects/learn/extra-table
+  - Aangepaste gegevens toevoegen: /nl/custom-objects/learn/create
+  - Extra tabellen: /nl/custom-objects/learn/extra-table
 language: nl
 ---
 
-# Een record van een aangepast object bijwerken
+<Note>
+Aangepaste objecten vereisen het CRM Suite **Growth**-plan of hoger. Als u een [licentie op basis van gebruikersplannen][5] hebt en aangepaste objecten wilt gebruiken, doet u mee aan het [pilotprogramma voor aangepaste objecten][6].
+</Note>
 
-Deze pagina wordt binnenkort vertaald.
+U kunt aangepaste gegevens bekijken, bewerken en verwijderen, afhankelijk van de [machtigingen die uw rol heeft voor het aangepaste object][1]: **Read**, **Update** of **Delete**.
 
-{/* TODO: translate after EN review */}
+## Aangepaste gegevens openen
+
+Open aangepaste gegevens op een van deze manieren:
+
+* Selecteer het aangepaste object in de navigator, doorzoek de lijst en selecteer de gewenste rij.
+* Selecteer het op een sectietabblad van een gerelateerde entiteit.
+* Selecteer het in uw [historie][2] of [favorieten][3].
+
+Om aangepaste gegevens te bekijken zonder de gerelateerde entiteit te verlaten, selecteert u het op het sectietabblad en bekijkt u het in de weergave **Voorbeeld** van het zijpaneel.
+
+![Laptop met een link naar een productpagina en een sectietabblad Leases -screenshot][img1]
+
+## Aangepaste gegevens bewerken
+
+1. Open de aangepaste gegevens.
+
+1. Klik op <i class="ph ph-pencil-simple" aria-label="Bewerken"></i> om de bewerkmodus te openen.
+
+1. Breng uw wijzigingen aan. Typ bij een relatieveld de eerste letters en selecteer het gerelateerde record in de lijst.
+
+1. Klik op **Opslaan**.
+
+### Links in tekstvelden
+
+Wanneer een tekstveld een URL bevat, wordt de URL in leesmodus weergegeven als link. Klik erop om de pagina in een nieuw tabblad te openen. Een veld **Product page** kan bijvoorbeeld linken naar het product in de webshop van de leverancier. In bewerkmodus is het veld een gewoon tekstveld. Zie [URL's in tekstvelden][4].
+
+## Aangepaste gegevens verwijderen
+
+Om aangepaste gegevens te verwijderen, moet uw rol de [machtiging voor het aangepaste object][1] **Delete** hebben.
+
+<Warning>
+U kunt een verwijdering niet ongedaan maken.
+</Warning>
+
+[1]: /nl/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /nl/learn/basics/history
+[3]: /nl/learn/basics/fav
+[4]: ./extra-field#urls
+[5]: /nl/admin/license/user-plans
+[6]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+
+[img1]: /media/loc/en/custom-objects/laptop-card.png

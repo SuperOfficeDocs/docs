@@ -693,6 +693,8 @@
             "group": "Extratabeller",
             "pages": [
               "sv/custom-objects/learn/extra-table",
+              "sv/custom-objects/learn/create",
+              "sv/custom-objects/learn/update",
               "sv/custom-objects/admin/create-extra-table"
             ]
           },

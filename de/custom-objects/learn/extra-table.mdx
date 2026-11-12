@@ -1,7 +1,7 @@
 ---
 uid: help-de-extra-table
 title: Zusatztabellen
-description: Eine Zusatztabelle ist eine Datenbanktabelle, die Sie selbst definieren. Mit CRM Suite Growth oder höher wird sie zu einem benutzerdefinierten Objekt, das sich ähnlich wie Firmen und Verkäufe verhält.
+description: Eine Zusatztabelle ist eine Datenbanktabelle, die Sie selbst definieren. Mit CRM Suite Growth oder höher wird sie zu einem benutzerdefinierten Objekt, das sich wie Firmen und Verkäufe verhält.
 keywords: ['Zusatztabelle', 'Drittanbietertabelle', 'benutzerdefiniertes Objekt']
 author: digitaldiina
 date: 11.12.2026
@@ -14,12 +14,13 @@ redirect_from:
   - /de/custom-objects/extra-table/index
   - /de/custom-objects/learn/extra-table/index
 related:
-  - Datensatz eines benutzerdefinierten Objekts erstellen: /de/custom-objects/learn/create
-  - Datensatz eines benutzerdefinierten Objekts aktualisieren: /de/custom-objects/learn/update
+  - Benutzerdefinierte Daten hinzufügen: /de/custom-objects/learn/create
+  - Benutzerdefinierte Daten aktualisieren: /de/custom-objects/learn/update
   - Eine Zusatztabelle hinzufügen: /de/custom-objects/admin/create-extra-table
   - Zusatzfelder hinzufügen: /de/custom-objects/admin/create-extra-field
   - Datenrechte für benutzerdefinierte Objekte festlegen: /de/admin/user-management/role/set-data-rights-for-role#custom-objects
   - Layout eines benutzerdefinierten Objekts gestalten: /de/customization/screen-designer/admin/add-layout#custom-objects
+  - Felder vorbelegen, wenn ein benutzerdefiniertes Objekt geladen wird: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
   - Benutzerdefinierte Ansichten: /de/ui/blogic/learn/index
 language: de
 ---
@@ -42,21 +43,21 @@ Die Schritte zum Erstellen einer Tabelle sind unabhängig von der Lizenz dieselb
 
 Benutzer finden benutzerdefinierte Objekte an diesen Stellen:
 
-* **Hauptmenü:** Klicken Sie auf <i class="ph ph-list" aria-label="Main menu"></i> und wählen Sie **Custom objects** aus, um die Ansicht **Custom objects** mit allen benutzerdefinierten Objekten zu öffnen, auf die Sie Zugriff haben. Wählen Sie ein benutzerdefiniertes Objekt aus, fügen Sie auf der Registerkarte **Kriterien** [Suchkriterien][16] hinzu und klicken Sie auf **Suchen**. Die passenden Datensätze werden auf der Registerkarte **Ergebnisse** angezeigt.
+* **Hauptmenü:** Klicken Sie auf <i class="ph ph-list" aria-label="Main menu"></i> und wählen Sie **Custom objects** aus, um die Ansicht **Custom objects** mit allen benutzerdefinierten Objekten zu öffnen, auf die Sie Zugriff haben. Wählen Sie ein benutzerdefiniertes Objekt aus, fügen Sie auf der Registerkarte **Kriterien** [Suchkriterien][16] hinzu und klicken Sie auf **Suchen**. Die passenden benutzerdefinierten Daten werden auf der Registerkarte **Ergebnisse** angezeigt.
 
-    ![Ansicht Custom objects mit den Laptop-Datensätzen -screenshot][img11]
+    ![Ansicht Custom objects mit Laptop-Daten -screenshot][img11]
 
-* **Navigator:** Benutzerdefinierte Objekte werden im Navigator aufgelistet, jedes mit eigenem Symbol. Wählen Sie ein benutzerdefiniertes Objekt aus, um seine Ansicht mit einer Liste von Datensätzen zu öffnen. Ihr Administrator legt fest, welche benutzerdefinierten Objekte aufgelistet werden.
+* **Navigator:** Benutzerdefinierte Objekte werden im Navigator aufgelistet, jedes mit eigenem Symbol. Wählen Sie ein benutzerdefiniertes Objekt aus, um seine Ansicht mit seinen benutzerdefinierten Daten in einer Liste zu öffnen. Ihr Administrator legt fest, welche benutzerdefinierten Objekte aufgelistet werden.
 
     ![Navigator mit vier benutzerdefinierten Objekten, Laptop ausgewählt -screenshot][img10]
 
-* **Neu:** Wählen Sie **Neu** in der oberen Leiste aus, um [einen Datensatz][7] eines benutzerdefinierten Objekts zu erstellen.
+* **Neu:** Klicken Sie in der oberen Leiste auf **Neu**, um einem benutzerdefinierten Objekt [Daten hinzuzufügen][7].
 
-* **Bereichsregisterkarten:** Wenn ein benutzerdefiniertes Objekt mit einer Firma, Person, einem Verkauf, Projekt oder einer Anfrage in Beziehung steht, werden die zugehörigen Datensätze auf einer Bereichsregisterkarte bei diesem Datensatz angezeigt.
+* **Bereichsregisterkarten:** Wenn ein benutzerdefiniertes Objekt mit einer anderen Entität, zum Beispiel einer Firma, einem Verkauf oder einem benutzerdefinierten Objekt, in Beziehung steht, werden die zugehörigen benutzerdefinierten Daten dort auf einer Bereichsregisterkarte angezeigt.
 
     ![Firma mit Bereichsregisterkarte Leases -screenshot][img8]
 
-* **Seitenleiste:** Wählen Sie auf einer Bereichsregisterkarte mit benutzerdefinierten Objekten einen Datensatz aus, um ihn in der Ansicht **Vorschau** der Seitenleiste anzuzeigen. Wählen Sie in der Vorschau einen zugehörigen Datensatz aus, um zu ihm zu wechseln.
+* **Seitenleiste:** Wählen Sie auf einer Bereichsregisterkarte mit benutzerdefinierten Objekten eine Zeile aus, um sie in der Ansicht **Vorschau** der Seitenleiste anzuzeigen. Wählen Sie in der Vorschau einen zugehörigen Datensatz aus, um zu ihm zu wechseln.
 
     ![Lease in der Ansicht Vorschau der Seitenleiste -screenshot][img9]
 
@@ -64,21 +65,21 @@ Benutzer finden benutzerdefinierte Objekte an diesen Stellen:
 
     ![Dashboard mit Kacheln, die auf den benutzerdefinierten Objekten Lease und Laptop basieren -screenshot][img1]
 
-* **Verlauf und Favoriten:** Datensätze, die Sie öffnen, werden zur [Verlaufsliste][9] hinzugefügt, und Sie können sie [als Favoriten hinzufügen][10].
+* **Verlauf und Favoriten:** Benutzerdefinierte Daten, die Sie öffnen, werden zur [Verlaufsliste][9] hinzugefügt, und Sie können sie [als Favoriten hinzufügen][10].
 
-Welche benutzerdefinierten Objekte und Datensätze Sie sehen, erstellen, aktualisieren oder löschen können, hängt von Ihrer [Rolle][8] ab.
+Welche benutzerdefinierten Objekte und benutzerdefinierten Daten Sie sehen, hinzufügen, aktualisieren oder löschen können, hängt von Ihrer [Rolle][8] ab.
 
-## Nach benutzerdefinierten Objekten suchen {#search}
+## Nach benutzerdefinierten Objekten suchen
 
 Sie können nach benutzerdefinierten Objekten suchen und Selektionen auf Basis dieser Objekte erstellen, auf dieselbe Weise wie bei Firmen, Personen und Verkäufen.
 
-* **Suchen:** Wählen Sie in der Ansicht **Suchen** ein benutzerdefiniertes Objekt aus, um nach seinen Datensätzen zu suchen. Sie können ein benutzerdefiniertes Objekt auch als Suchkriterium verwenden, wenn Sie nach Firmen, Personen, Verkäufen, Projekten, Anfragen und Folgeaufgaben suchen.
+* **Suchen:** Wählen Sie in der Ansicht **Suchen** ein benutzerdefiniertes Objekt aus, um nach seinen benutzerdefinierten Daten zu suchen. Sie können ein benutzerdefiniertes Objekt auch als Suchkriterium verwenden, wenn Sie nach Firmen, Personen, Verkäufen, Projekten, Anfragen und Folgeaufgaben suchen.
 
     ![Suchen Firma mit einem Feld Lease als Suchkriterium -screenshot][img2]
 
     ![Ansicht Suchen mit benutzerdefinierten Objekten -screenshot][img3]
 
-* **Selektionen:** Speichern Sie die Suche als Selektion von Datensätzen eines benutzerdefinierten Objekts. Eine dynamische Selektion hält die Liste aktuell.
+* **Selektionen:** Speichern Sie die Suche als Selektion benutzerdefinierter Daten. Eine dynamische Selektion hält die Liste aktuell.
 
     ![Suchen Laptop mit Suchergebnissen und Als Selektion speichern -screenshot][img4]
 
@@ -86,7 +87,7 @@ Sie können nach benutzerdefinierten Objekten suchen und Selektionen auf Basis d
 Die [Freitextsuche][17] (das Feld **Freitextsuche** in der oberen Leiste) umfasst keine benutzerdefinierten Objekte. Verwenden Sie **Suchen** oder die Suche in der Ansicht des jeweiligen benutzerdefinierten Objekts.
 </Note>
 
-## Ansicht Tabellen {#tables}
+## Ansicht Tabellen
 
 Die Ansicht **Tabellen** unter **Einstellungen und Verwaltung** > **Systemdesign** listet die Datenbanktabellen auf. Sie zeigt sowohl Standardtabellen, die Teil von SuperOffice sind, als auch Zusatztabellen, die Sie selbst erstellen. Nur Administratoren haben Zugriff auf diese Ansicht.
 

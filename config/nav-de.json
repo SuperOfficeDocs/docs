@@ -693,6 +693,8 @@
             "group": "Zusatztabellen",
             "pages": [
               "de/custom-objects/learn/extra-table",
+              "de/custom-objects/learn/create",
+              "de/custom-objects/learn/update",
               "de/custom-objects/admin/create-extra-table"
             ]
           },

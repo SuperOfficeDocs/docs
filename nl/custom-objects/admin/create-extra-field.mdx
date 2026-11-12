@@ -4,10 +4,10 @@ title: Extra velden toevoegen
 description: Extra velden toevoegen
 keywords: ['extra veld', 'aangepast veld', 'veld van aangepast object', 'veldeigenschappen']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/custom-objects/learn/extra-field/create
@@ -16,8 +16,24 @@ language: nl
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Nadat u een [extra tabel][1] hebt gemaakt, voegt u de velden toe die gebruikers voor elk record invullen. U kunt ook extra velden toevoegen aan standaard Service-tabellen.
+<ReqDevToolsTransition />
+
+Nadat u een [extra tabel][1] hebt gemaakt, voegt u de velden toe die gebruikers invullen wanneer ze aangepaste gegevens toevoegen. U kunt ook extra velden toevoegen aan standaard Service-tabellen.
+
+## Naamgevingsconventies
+
+<Warning>
+Kies databaseveldnamen zorgvuldig. U kunt ze later **niet wijzigen**.
+</Warning>
+
+Gebruik logische namen, zodat het gemakkelijk is om te zien wat de database bevat. De prefix **x_** voorkomt conflicten met toekomstige SuperOffice-veldnamen. Het voorkomt geen conflicten tussen extra velden van verschillende derden.
+
+* Moet beginnen met **x_**
+* Moet uniek zijn binnen de tabel
+* Moet uit één woord bestaan
+* Mag alleen underscores, de letters a tot z en cijfers bevatten
 
 ## Stappen
 
@@ -50,13 +66,13 @@ Nadat u een [extra tabel][1] hebt gemaakt, voegt u de velden toe die gebruikers 
 De eigenschap **URL** in deze tabel hoort bij het veldtype **Dynamische link**. Zie [URL's in tekstvelden][2] om URL's in velden van het type **Korte tekst** en **Lange tekst** als klikbare links weer te geven.
 </Note>
 
-| Veld | Beschrijving |
+| Eigenschap | Beschrijving |
 |---|---|
 | Mag niet leeg zijn | Als deze optie is aangevinkt, wordt dit veld verplicht. |
 | Selecteren in keuzelijst | als het veld is gekoppeld aan een extra tabel, selecteert u deze optie om een lijst met tabelwaarden weer te geven. |
 | Waarden uit de lijst kiezen | Als deze optie is ingeschakeld, wordt het veld een keuzelijst. De opties in de lijst zijn de tekenreeksen die in het tekstvak ingevuld worden. Er is één regel per optie. |
 | Index maken | Geef op of het veld moet worden geïndexeerd. U vindt sneller gegevens in geïndexeerde velden. |
-| Databaseveld | de naam die de kolom in de database zal hebben. Deze naam moet uniek zijn in deze tabel. Bovendien moet de kolomnaam een enkel woord zijn, met alleen onderstrepingstekens, letters van a tot z of cijfers en de naam moet beginnen met 'x_'. Kan alleen worden opgegeven wanneer het veld is gemaakt; **het kan later niet meer worden gewijzigd**. |
+| Databaseveld | De naam van de kolom in de database. Kan alleen bij het maken worden opgegeven en **kan niet worden gewijzigd**. |
 | Aantal decimalen | het aantal decimalen dat is toegestaan in een getal. |
 | Standaardwaarde | De standaardwaarde wordt voor dit veld gebruikt. |
 | Beschrijving | de standaardbeschrijving. |
@@ -90,20 +106,24 @@ De eigenschap **URL** in deze tabel hoort bij het veldtype **Dynamische link**. 
 Een relatieveld koppelt een record aan een record in een andere tabel. Met CRM Suite **Growth** of hoger kan het gerelateerde record ook een sectietabblad tonen met de gekoppelde records.
 
 1. Wijs naar de tabel die de relatie moet bevatten en klik op **Nieuw veld**.
+
 1. Selecteer het relatietype voor de tabel waaraan u wilt koppelen en klik op **OK**.
+
 1. Stel veldeigenschappen in zoals hierboven beschreven. Om een sectietabblad op het gerelateerde record te tonen, selecteer **Een-op-veel-relaties weergeven** en voer het label van het tabblad in bij **Koptekst voor lijst**.
 
     ![Veldeigenschappen voor een extra tabelrelatie, met Koptekst voor lijst en Targettabel ingevuld -screenshot][img3]
 
 1. Klik op **OK** om de relatie op te slaan.
+
 1. Open bij een **Extra tabelrelatie** de eigenschappen van de targettabel en stel **Display field** in op een veld dat gebruikers herkennen, zoals de naam. Zie [tabeleigenschappen][1].
+
 1. Klik op **NetServer opnieuw starten** om de wijzigingen toe te passen.
 
 Een tabel Lease heeft bijvoorbeeld een veld **Laptop** (extra tabelrelatie naar de tabel Laptop) en een veld **Verkoop** (verkooprelatie). Bij beide is **Een-op-veel-relaties weergeven** geselecteerd en is *Leases* ingevuld als **Koptekst voor lijst**. Elke laptop en elke verkoop toont dan een tabblad **Leases** met de gekoppelde leases.
 
 ![Verkoop met een sectietabblad Leases -screenshot][img4]
 
-Met een licentie op basis van gebruikersplannen bouwt u in plaats daarvan een webpaneel om de gerelateerde records weer te geven.
+Met een licentie op basis van gebruikersplannen bouwt u in plaats daarvan een webpaneel om de gerelateerde aangepaste gegevens weer te geven.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls

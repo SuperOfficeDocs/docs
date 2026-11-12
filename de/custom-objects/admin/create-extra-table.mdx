@@ -2,7 +2,7 @@
 uid: help-de-extra-table-create
 title: Eine Zusatztabelle hinzufügen
 sidebarTitle: Zusatztabelle hinzufügen
-description: Erstellen Sie eine Zusatztabelle unter Einstellungen und Verwaltung. Mit CRM Suite Growth oder höher wird sie zu einem benutzerdefinierten Objekt, das sich ähnlich wie Firmen und Verkäufe verhält.
+description: Erstellen Sie eine Zusatztabelle unter Einstellungen und Verwaltung. Mit CRM Suite Growth oder höher wird sie zu einem benutzerdefinierten Objekt, das sich wie Firmen und Verkäufe verhält.
 keywords: ['Drittanbietertabelle', 'benutzerdefiniertes Objekt', 'Systemdesign', 'Symbol', 'Tabelle hinzufügen', 'neue Tabelle', 'benutzerdefinierte Tabelle']
 author: digitaldiina, Eivind Fasting
 date: 11.12.2026
@@ -18,6 +18,7 @@ related:
   - Datenrechte für eine Rolle festlegen: /de/admin/user-management/role/set-data-rights-for-role
   - Zusatztabellen: /de/custom-objects/learn/extra-table
   - Layout eines benutzerdefinierten Objekts gestalten: /de/customization/screen-designer/admin/add-layout#custom-objects
+  - Felder vorbelegen, wenn ein benutzerdefiniertes Objekt geladen wird: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
 language: de
 ---
 
@@ -32,7 +33,7 @@ Mit einer benutzerplanbasierten Lizenz sind Zusatztabellen in SuperOffice Servic
 
 Sie speichern Ihre eigenen Datentypen in Zusatztabellen. Sie erstellen die Tabelle unter **Tabellen** und [fügen ihr Felder hinzu][1].
 
-In der CRM Suite wird eine Zusatztabelle zu einem [benutzerdefinierten Objekt][3] und verhält sich ähnlich wie Firmen und Verkäufe. Die Schritte zum Erstellen der Tabelle sind unabhängig von der Lizenz dieselben. Tabelleneigenschaften und Rollenberechtigungen bestimmen, wie Benutzer sie anzeigen und bearbeiten.
+In der CRM Suite wird eine Zusatztabelle zu einem [benutzerdefinierten Objekt][3], das sich wie Firmen und Verkäufe verhält. Die Schritte zum Erstellen der Tabelle sind unabhängig von der Lizenz dieselben. Tabelleneigenschaften und Rollenberechtigungen bestimmen, wie Benutzer sie anzeigen und bearbeiten.
 
 ## Namenskonventionen
 
@@ -71,8 +72,8 @@ Verwenden Sie logische Namen, damit leicht zu erkennen ist, was die Datenbank en
 
 1. Wählen Sie den Tabellennamen in der Liste aus, um die Ansicht **Eigenschaften der Tabelle** erneut zu öffnen. Da die Tabelle jetzt Felder hat, können Sie diese anstelle der ID verwenden:
 
-    * Wählen Sie unter **Sortierreihenfolge** das Feld aus, nach dem die Datensätze sortiert werden.
-    * Wählen Sie unter **Anzeigefeld** das Feld aus, das einen Datensatz identifiziert, wenn die Tabelle in einer anderen Tabelle angezeigt wird.
+    * Wählen Sie unter **Sortierreihenfolge** das Feld aus, nach dem die Einträge sortiert werden.
+    * Wählen Sie unter **Anzeigefeld** das Feld aus, das einen Eintrag identifiziert, wenn die Tabelle in einer anderen Tabelle angezeigt wird.
 
     ![Liste Anzeigefeld mit den Feldern der Tabelle -screenshot][img4]
 
@@ -100,7 +101,7 @@ Die Tabelle ist einsatzbereit. In der CRM Suite können Sie optional das Layout 
 | Vollständiger Name | Für hierarchisch strukturierte Tabellen können Sie hier ein Feld angeben, in das automatisch der vollständige Name des Eintrags eingefügt wird. Der Name wird aus dem Namensfeld des Eintrags und aller übergeordneten Einträge abgeleitet. |
 | ID-Feld ausblenden | Wenn diese Option ausgewählt ist, wird das ID-Feld bei der Auflistung von Einträgen in der Tabelle nicht angezeigt. |
 | Tabelle ausblenden | Wenn diese Option aktiviert ist, ist die Tabelle nicht über das **Systemdesign** > **Tabellen** sichtbar. |
-| Show table in Find | Wenn diese Option aktiviert ist, können Benutzer in **Suchen** nach Datensätzen in dieser Tabelle suchen. |
+| Show table in Find | Wenn diese Option aktiviert ist, können Benutzer in **Suchen** nach benutzerdefinierten Objekten suchen. |
 | [Show in navigator](#navigator) | Wenn diese Option aktiviert ist, wird die Tabelle im Navigator und unter **Neu** aufgelistet. |
 | [Icon](#icon) | Das Symbol, das für die Tabelle im Navigator und an anderen Stellen angezeigt wird. |
 | Batch-Webhook in Service aktivieren | Wenn ausgewählt, aktivieren Batch-Updates auf dieser Tabelle [Webhooks][2]. |

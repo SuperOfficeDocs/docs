@@ -1,13 +1,13 @@
 ---
 uid: help-de-extra-fields-create
 title: Zusatzfelder hinzufügen
-description: Zusatzfelder hinzufügen
-keywords: ['Zusatzfeld', 'Zusatztabelle', 'Feld für benutzerdefiniertes Objekt', 'Datenbankfeld']
+description: Wie Sie Zusatzfelder in SuperOffice definieren
+keywords: ['Zusatzfeld', 'benutzerdefiniertes Feld', 'Feld für benutzerdefiniertes Objekt', 'Feldeigenschaften']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /de/custom-objects/learn/extra-field/create
@@ -16,20 +16,36 @@ language: de
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Nachdem Sie eine [Zusatztabelle][1] erstellt haben, fügen Sie die Felder hinzu, die Benutzer für jeden Datensatz ausfüllen. Sie können auch Zusatzfelder zu Standardtabellen in Service hinzufügen.
+<ReqDevToolsTransition />
+
+Nachdem Sie eine [Zusatztabelle][1] erstellt haben, fügen Sie die Felder hinzu, die Benutzer beim Hinzufügen benutzerdefinierter Daten ausfüllen. Sie können auch Zusatzfelder zu Standardtabellen in Service hinzufügen.
+
+## Namenskonventionen
+
+<Warning>
+Wählen Sie die Namen von Datenbankfeldern sorgfältig aus. Sie **können sie später nicht ändern**.
+</Warning>
+
+Verwenden Sie logische Namen, damit leicht zu erkennen ist, was die Datenbank enthält. Das Präfix **x_** verhindert Konflikte mit zukünftigen SuperOffice-Feldnamen. Es verhindert keine Konflikte zwischen Zusatzfeldern verschiedener Drittanbieter.
+
+* Muss mit **x_** beginnen
+* Muss in der Tabelle eindeutig sein
+* Muss ein einzelnes Wort sein
+* Darf nur Unterstriche, die Buchstaben a bis z und Zahlen enthalten
 
 ## Schritte
 
 1. <GotoTables />
 
-1. zeigen Sie auf den Tabellennamen und klicken Sie auf **Neues Feld**.
+1. Navigieren Sie zur gewünschten Tabelle, zeigen Sie auf den Tabellennamen und klicken Sie auf **Neues Feld**.
 
     ![Ansicht Tabellen mit Neues Feld neben einer Tabelle -screenshot][img1]
 
 1. Wählen Sie einen Typ für das neue Feld und klicken Sie auf **OK**.
 
-1. In der Ansicht **Eigenschaften des Feldes**, geben Sie Daten über das neue Feld ein.
+1. Geben Sie in der Ansicht **Eigenschaften des Feldes** Daten über das neue Feld ein.
 
     * Geben Sie einen *Namen* ein, der als Bezeichnung verwendet wird.
     * Geben Sie ein *Datenbankfeld* ein, das mit **x_** beginnt, um es im Schema zu identifizieren.
@@ -50,13 +66,13 @@ Nachdem Sie eine [Zusatztabelle][1] erstellt haben, fügen Sie die Felder hinzu,
 Die Eigenschaft **URL** in dieser Tabelle gehört zum Feldtyp **Dynamischer Link**. Wie Sie URLs, die in Feldern vom Typ **Kurzer Text** und **Langer Text** gespeichert sind, als anklickbare Links anzeigen, lesen Sie unter [URLs in Textfeldern][2].
 </Note>
 
-| Feld | Beschreibung |
+| Eigenschaft | Beschreibung |
 |---|---|
 | Darf nicht leer sein | Wenn diese Option aktiviert ist, wird dieses Feld obligatorisch. |
 | Von Listenfeld wählen | Wenn das Feld mit einer Zusatztabelle verbunden ist, wählen Sie diese Option, um eine Liste von Tabellenwerten anzuzeigen. |
 | Werte aus Liste wählen | Wenn diese Option aktiviert ist, wird das Feld zu einem Listenfeld. Die Zeichenfolgen, die Sie in das Textfeld eingeben, werden als Optionen in der Liste angezeigt. Für jede Option gibt es eine Zeile. |
 | Index erstellen | Diese Option legt fest, ob das Feld indiziert werden soll. Daten in indizierten Feldern sind schneller zu finden. |
-| Datenbankfeld | Der Name, den die Spalte in der Datenbank erhält. Der Name muss in der Tabelle eindeutig sein. Weiter muss der Spaltenname ein einziges Wort sein, das nur Unterstriche, Buchstaben von a bis z oder Ziffern enthält und mit "x_" beginnt. Kann nur festgelegt werden, wenn das Feld erstellt wurde; **es kann später nicht mehr geändert werden**. |
+| Datenbankfeld | Der Name der Spalte in der Datenbank. Kann nur bei der Erstellung festgelegt werden und **kann nicht geändert werden**. |
 | Dezimalstellen | Die Anzahl an Dezimalstellen, die bei einer Zahl zulässig sind. |
 | Standardwert | Der Standardwert wird für dieses Feld verwendet. |
 | Beschreibung | Die Standardbeschreibung. |
@@ -90,20 +106,24 @@ Die Eigenschaft **URL** in dieser Tabelle gehört zum Feldtyp **Dynamischer Link
 Ein Beziehungsfeld verknüpft einen Datensatz mit einem Datensatz in einer anderen Tabelle. Mit CRM Suite **Growth** oder höher kann der zugehörige Datensatz zusätzlich eine Bereichsregisterkarte anzeigen, die die verknüpften Datensätze auflistet.
 
 1. Zeigen Sie auf die Tabelle, die die Beziehung enthalten soll, und klicken Sie auf **Neues Feld**.
+
 1. Wählen Sie den Beziehungstyp für die Tabelle aus, mit der Sie verknüpfen möchten, und klicken Sie auf **OK**.
+
 1. Stellen Sie die Feldeigenschaften wie oben beschrieben ein. Um eine Bereichsregisterkarte beim zugehörigen Datensatz anzuzeigen, wählen Sie **Eins-zu-viele-Beziehungen anzeigen** aus und geben die Bezeichnung der Registerkarte in **Kopfzeile für Liste** ein.
 
     ![Eigenschaften einer Beziehung zu Zusatztabelle mit ausgefüllten Feldern Kopfzeile für Liste und Zieltabelle -screenshot][img3]
 
 1. Klicken Sie auf **OK**, um die Beziehung zu speichern.
+
 1. Öffnen Sie bei einer **Beziehung zu Zusatztabelle** die Eigenschaften der Zieltabelle und legen Sie **Anzeigefeld** auf ein Feld fest, das Benutzer erkennen, zum Beispiel den Namen. Siehe [Tabelleneigenschaften][1].
+
 1. Klicken Sie auf **NetServer neu starten**, um die Änderungen anzuwenden.
 
 Beispiel: Eine Tabelle Lease hat ein Feld **Laptop** (Beziehung zu Zusatztabelle Laptop) und ein Feld **Verkauf** (Verkaufsbeziehung). Bei beiden ist **Eins-zu-viele-Beziehungen anzeigen** ausgewählt und *Leases* als **Kopfzeile für Liste** festgelegt. Jeder Laptop und jeder Verkauf zeigt dann eine Registerkarte **Leases** mit den verknüpften Leases.
 
 ![Verkauf mit Bereichsregisterkarte Leases -screenshot][img4]
 
-Bei einer benutzerplanbasierten Lizenz erstellen Sie stattdessen ein Webpanel, um die zugehörigen Datensätze aufzulisten.
+Bei einer benutzerplanbasierten Lizenz erstellen Sie stattdessen ein Webpanel, um die zugehörigen benutzerdefinierten Daten aufzulisten.
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls

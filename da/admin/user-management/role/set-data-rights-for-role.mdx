@@ -4,7 +4,7 @@ title: Angivelse af datarettigheder for rolle
 description: Angiv datarettigheder for rolle
 keywords: ['brugerstyring', 'rolle', 'adgang', 'rettigheder']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: starter
@@ -65,24 +65,24 @@ På personkortet hentes feltet **Vores kontakt** altid fra firmakortet, som pers
 
 ## Brugerdefinerede objekter {#custom-objects}
 
-Med CRM Suite **Growth** eller højere angiver du også rettigheder for [brugerdefinerede objekter][3]. I modsætning til datarettighederne ovenfor gælder disse rettigheder for alle poster i et brugerdefineret objekt, uanset hvem der ejer dem.
+Med CRM Suite **Growth** eller højere angiver du også rettigheder for [brugerdefinerede objekter][3]. I modsætning til datarettighederne ovenfor gælder disse rettigheder for alle data i et brugerdefineret objekt, uanset hvem der ejer dem.
 
 1. Med rollen valgt skal du vælge fanen **Custom objects rights**.
 
-1. Klik på <i class="ph ph-caret-down" aria-label="Chevron"></i> på listen **Permission** ud for hvert brugerdefineret objekt, og vælg en rettighed:
+    ![Fanen Custom objects rights for en rolle -screenshot][img1]
 
-    | Rettighed | Brugere med denne rolle kan |
+1. Klik på <i class="ph ph-caret-down" aria-label="Chevron"></i> på listen **Permission** ud for et brugerdefineret objekt, og vælg en rettighed:
+
+    | Rettighed | Brugere med denne rolle |
     |---|---|
-    | Ingen | Ikke se det brugerdefinerede objekt eller dets poster |
-    | Læs | Se poster |
-    | Opret | Se og oprette poster |
-    | Opdater | Se, oprette og redigere poster |
-    | Slet | Se, oprette, redigere og slette poster |
-
-![Fanen Custom objects rights for en rolle -screenshot][img1]
+    | Ingen | Kan ikke se det brugerdefinerede objekt eller dets data |
+    | Læs | Kan se brugerdefinerede data |
+    | Opret | Kan se og tilføje brugerdefinerede data |
+    | Opdater | Kan se, tilføje og redigere brugerdefinerede data |
+    | Slet | Kan se, tilføje, redigere og slette brugerdefinerede data |
 
 <Tip>
-Når du har oprettet tabellen for et brugerdefineret objekt og tilføjet dets felter, skal du angive rettighederne, så brugerne kan begynde at tilføje poster.
+Når du har oprettet tabellen for et brugerdefineret objekt og tilføjet dets felter, skal du angive rettighederne, så brugerne kan begynde at tilføje data.
 </Tip>
 
 [2]: ./index

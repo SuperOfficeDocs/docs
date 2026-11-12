@@ -1,22 +1,57 @@
 ---
-uid: help-sv-custom-object-create
-title: Skapa en post för ett anpassat objekt
-sidebarTitle: Skapa post
-description: Skapa en ny post för ett anpassat objekt, till exempel ett nytt leasingavtal, från det övre fältet eller från ett relaterat företag eller en relaterad kontakt.
-keywords: ['anpassat objekt', 'ny post', 'skapa', 'extratabell']
+title: Lägg till anpassade data
+description: Lägg till data i ett anpassat objekt från toppraden eller från en relaterad enhet.
+keywords: ['nytt anpassat objekt', 'skapa anpassat objekt', 'extratabell']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Uppdatera en post för ett anpassat objekt: /sv/custom-objects/learn/update
-  - Anpassade objekt: /sv/custom-objects/learn/extra-table
+  - Uppdatera anpassade data: /sv/custom-objects/learn/update
+  - Extratabeller: /sv/custom-objects/learn/extra-table
 language: sv
 ---
 
-Den här sidan är under översättning. Se den engelska versionen för aktuell information.
+<Note>
+Anpassade objekt kräver CRM Suite **Growth**-planen eller högre. Om du har en [användarplansbaserad licens][2] och vill använda anpassade objekt kan du gå med i [pilotprogrammet för anpassade objekt][3].
+</Note>
 
-{/*TODO: translate after EN review*/}
+Du kan lägga till data i ett anpassat objekt från toppraden eller från en relaterad enhet. Vilka fält du ser beror på hur din administratör har konfigurerat det anpassade objektet.
+
+För att lägga till anpassade data måste din roll ha [behörigheten **Skapa** för det anpassade objektet][1].
+
+## Lägg till anpassade data från toppraden
+
+1. Klicka på **Nytt** i toppraden och välj sedan det anpassade objektet. Till exempel **Equipment**.
+
+    ![Menyn Nytt i toppraden med anpassade objekt -screenshot][img1]
+
+1. Fyll i fälten. Obligatoriska fält är markerade med rött.
+
+    För ett relationsfält, till exempel **Företag**, börjar du skriva och väljer den relaterade posten i listan. Listan visar en förhandsvisning av varje träff, så att du kan välja rätt.
+
+    ![Lease med ifyllda relationsfält -screenshot][img2]
+
+1. Klicka på **Spara**.
+
+## Lägg till anpassade data från en relaterad enhet
+
+När ett anpassat objekt relaterar till en annan enhet, till exempel ett företag, en försäljning eller ett anpassat objekt, har den enheten ett detaljkort för det anpassade objektet. Anpassade data som du lägger till där länkas automatiskt.
+
+1. Öppna den relaterade enheten och välj detaljkortet för det anpassade objektet. Till exempel **Equipment**.
+
+1. Klicka på **Lägg till**.
+
+1. Fyll i fälten. Relationen till enheten du öppnade är förifylld, och din administratör kan ange standardvärden eller använda en trigger för att fylla i andra fält.
+
+1. Klicka på **Spara**.
+
+[1]: /sv/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /sv/admin/license/user-plans
+[3]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png

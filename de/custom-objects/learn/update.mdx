@@ -1,22 +1,65 @@
 ---
-uid: help-de-custom-object-update
-title: Datensatz eines benutzerdefinierten Objekts aktualisieren
-sidebarTitle: Datensatz aktualisieren
-description: Öffnen, bearbeiten oder löschen Sie einen Datensatz eines benutzerdefinierten Objekts und öffnen Sie Links, die in seinen Feldern gespeichert sind.
-keywords: ['benutzerdefiniertes Objekt', 'Datensatz bearbeiten', 'Datensatz löschen', 'Zusatztabelle', 'anklickbarer Link']
+title: Benutzerdefinierte Daten aktualisieren
+description: Öffnen, bearbeiten oder löschen Sie Daten eines benutzerdefinierten Objekts und öffnen Sie Links, die in seinen Feldern gespeichert sind.
+keywords: ['benutzerdefiniertes Objekt bearbeiten', 'benutzerdefiniertes Objekt löschen', 'benutzerdefiniertes Objekt aktualisieren', 'Zusatztabelle']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Datensatz eines benutzerdefinierten Objekts erstellen: /de/custom-objects/learn/create
-  - Benutzerdefinierte Objekte: /de/custom-objects/learn/extra-table
+  - Benutzerdefinierte Daten hinzufügen: /de/custom-objects/learn/create
+  - Zusatztabellen: /de/custom-objects/learn/extra-table
 language: de
 ---
 
-Diese Seite wird derzeit übersetzt. Bis dahin finden Sie den Inhalt in der englischen Version.
+<Note>
+Für benutzerdefinierte Objekte ist der CRM Suite **Growth**-Plan oder höher erforderlich. Wenn Sie eine [benutzerplanbasierte Lizenz][5] haben und benutzerdefinierte Objekte verwenden möchten, nehmen Sie am [Pilotprogramm für benutzerdefinierte Objekte][6] teil.
+</Note>
 
-{/* TODO: translate after EN review */}
+Sie können benutzerdefinierte Daten anzeigen, bearbeiten und löschen, abhängig von den [Rechten, die Ihre Rolle für das benutzerdefinierte Objekt hat][1]: **Lesen**, **Abgleichen** oder **Löschen**.
+
+## Benutzerdefinierte Daten öffnen
+
+Öffnen Sie benutzerdefinierte Daten auf eine dieser Arten:
+
+* Wählen Sie das benutzerdefinierte Objekt im Navigator aus, durchsuchen Sie die Liste und wählen Sie die gewünschte Zeile aus.
+* Wählen Sie sie auf einer Bereichsregisterkarte einer zugehörigen Entität aus.
+* Wählen Sie sie in Ihrer [Verlaufsliste][2] oder in Ihren [Favoriten][3] aus.
+
+Um sich benutzerdefinierte Daten anzusehen, ohne die zugehörige Entität zu verlassen, wählen Sie sie auf der Bereichsregisterkarte aus und sehen Sie sie in der Ansicht **Vorschau** der Seitenleiste an.
+
+![Laptop mit einem Link zur Produktseite und einer Bereichsregisterkarte Leases -screenshot][img1]
+
+## Benutzerdefinierte Daten bearbeiten
+
+1. Öffnen Sie die benutzerdefinierten Daten.
+
+1. Klicken Sie auf <i class="ph ph-pencil-simple" aria-label="Edit"></i>, um den Bearbeitungsmodus zu öffnen.
+
+1. Nehmen Sie Ihre Änderungen vor. Beginnen Sie bei einem Beziehungsfeld mit der Eingabe und wählen Sie den zugehörigen Datensatz aus der Liste aus.
+
+1. Klicken Sie auf **Speichern**.
+
+### Links in Textfeldern
+
+Wenn ein Textfeld eine URL enthält, wird die URL im Lesemodus als Link angezeigt. Klicken Sie darauf, um die Seite in einem neuen Tab zu öffnen. Zum Beispiel kann ein Feld **Produktseite** auf das Produkt im Webshop des Lieferanten verweisen. Im Bearbeitungsmodus ist das Feld ein normales Textfeld. Siehe [URLs in Textfeldern][4].
+
+## Benutzerdefinierte Daten löschen
+
+Um benutzerdefinierte Daten zu löschen, muss Ihre Rolle das [Recht für das benutzerdefinierte Objekt][1] **Löschen** haben.
+
+<Warning>
+Sie können das Löschen nicht rückgängig machen.
+</Warning>
+
+[1]: /de/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /de/learn/basics/history
+[3]: /de/learn/basics/fav
+[4]: ./extra-field#urls
+[5]: /de/admin/license/user-plans
+[6]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+
+[img1]: /media/loc/en/custom-objects/laptop-card.png

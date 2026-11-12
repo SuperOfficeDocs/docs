@@ -1,24 +1,57 @@
 ---
-uid: help-nl-custom-object-create
-title: Een record van een aangepast object maken
-sidebarTitle: Record maken
-description: Maak een nieuw record van een aangepast object, zoals een nieuwe lease, vanuit de bovenste balk of vanuit een gerelateerd bedrijf of een gerelateerde contactpersoon.
-keywords: ['aangepast object', 'nieuw record', 'maken', 'extra tabel']
+title: Aangepaste gegevens toevoegen
+description: Voeg gegevens toe aan een aangepast object vanuit de bovenste balk of vanuit een gerelateerde entiteit.
+keywords: ['nieuw aangepast object', 'aangepast object maken', 'extra tabel']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Een record van een aangepast object bijwerken: /nl/custom-objects/learn/update
-  - Aangepaste objecten: /nl/custom-objects/learn/extra-table
+  - Aangepaste gegevens bijwerken: /nl/custom-objects/learn/update
+  - Extra tabellen: /nl/custom-objects/learn/extra-table
 language: nl
 ---
 
-# Een record van een aangepast object maken
+<Note>
+Aangepaste objecten vereisen het CRM Suite **Growth**-plan of hoger. Als u een [licentie op basis van gebruikersplannen][2] hebt en aangepaste objecten wilt gebruiken, doet u mee aan het [pilotprogramma voor aangepaste objecten][3].
+</Note>
 
-Deze pagina wordt binnenkort vertaald.
+U kunt gegevens toevoegen aan een aangepast object vanuit de bovenste balk of vanuit een gerelateerde entiteit. De velden die u ziet, hangen af van hoe uw beheerder het aangepaste object heeft ingesteld.
 
-{/* TODO: translate after EN review */}
+Om aangepaste gegevens toe te voegen, moet uw rol de [machtiging voor het aangepaste object][1] **Create** hebben.
+
+## Aangepaste gegevens toevoegen vanuit de bovenste balk
+
+1. Klik op **Nieuw** in de bovenste balk en selecteer vervolgens het aangepaste object. Bijvoorbeeld **Apparatuur**.
+
+    ![Menu Nieuw in de bovenste balk met aangepaste objecten -screenshot][img1]
+
+1. Vul de velden in. Verplichte velden zijn rood gemarkeerd.
+
+    Typ bij een relatieveld, zoals **Bedrijf**, de eerste letters en selecteer het gerelateerde record in de lijst. De lijst toont een voorbeeld van elke overeenkomst, zodat u het juiste kunt kiezen.
+
+    ![Lease met ingevulde relatievelden -screenshot][img2]
+
+1. Klik op **Opslaan**.
+
+## Aangepaste gegevens toevoegen vanuit een gerelateerde entiteit
+
+Wanneer een aangepast object is gerelateerd aan een andere entiteit, zoals een bedrijf, verkoop of aangepast object, heeft die entiteit een sectietabblad voor het aangepaste object. Aangepaste gegevens die u daar toevoegt, worden automatisch gekoppeld.
+
+1. Open de gerelateerde entiteit en selecteer het sectietabblad van het aangepaste object. Bijvoorbeeld **Apparatuur**.
+
+1. Klik op **Toevoegen**.
+
+1. Vul de velden in. De relatie met de entiteit die u hebt geopend, is vooraf ingevuld en uw beheerder kan standaardwaarden instellen of een trigger gebruiken om andere velden te vullen.
+
+1. Klik op **Opslaan**.
+
+[1]: /nl/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /nl/admin/license/user-plans
+[3]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png

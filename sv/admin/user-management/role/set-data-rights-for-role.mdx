@@ -4,7 +4,7 @@ title: Ange behörighet för roll
 description: Ange databehörigheter för en roll
 keywords: ['administrera användare', 'roll', 'åtkomst', 'behörigheter']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: starter
@@ -65,24 +65,24 @@ I kontaktkortet hämtas fältet **Vår kontakt** alltid från företagskortet so
 
 ## Anpassade objekt {#custom-objects}
 
-Med CRM Suite **Growth** eller högre ställer du också in behörigheter för [anpassade objekt][3]. Till skillnad från databehörigheterna ovan gäller dessa behörigheter alla poster för ett anpassat objekt, oavsett vem som äger dem.
+Med CRM Suite **Growth** eller högre ställer du också in behörigheter för [anpassade objekt][3]. Till skillnad från databehörigheterna ovan gäller dessa behörigheter alla data i ett anpassat objekt, oavsett vem som äger dem.
 
 1. Med rollen vald, gå till fliken **Custom objects rights**.
 
-1. Bredvid varje anpassat objekt klickar du på <i class="ph ph-caret-down" aria-label="Chevron"></i> i listan **Behörighet** och väljer en behörighet:
+    ![Fliken Custom objects rights för en roll -screenshot][img1]
 
-    | Behörighet | Användare med den här rollen kan |
+1. Klicka på <i class="ph ph-caret-down" aria-label="Chevron"></i> i listan **Behörighet** bredvid ett anpassat objekt och välj en behörighet:
+
+    | Behörighet | Användare med den här rollen |
     |---|---|
-    | Ingen | Inte se det anpassade objektet eller dess poster |
-    | Läsa | Se poster |
-    | Skapa | Se och skapa poster |
-    | Uppdatera | Se, skapa och redigera poster |
-    | Radera | Se, skapa, redigera och ta bort poster |
-
-![Fliken Custom objects rights för en roll -screenshot][img1]
+    | Ingen | Kan inte se det anpassade objektet eller dess anpassade data |
+    | Läsa | Kan se anpassade data |
+    | Skapa | Kan se och lägga till anpassade data |
+    | Uppdatera | Kan se, lägga till och redigera anpassade data |
+    | Radera | Kan se, lägga till, redigera och ta bort anpassade data |
 
 <Tip>
-När du har skapat tabellen för ett anpassat objekt och lagt till dess fält ställer du in behörigheterna så att användarna kan börja lägga till poster.
+När du har skapat tabellen för ett anpassat objekt och lagt till dess fält ställer du in behörigheterna så att användarna kan börja lägga till data.
 </Tip>
 
 [2]: ./index

@@ -1,22 +1,57 @@
 ---
-uid: help-da-custom-object-create
-title: Opret en post i et brugerdefineret objekt
-sidebarTitle: Opret post
-description: Opret en ny post i et brugerdefineret objekt, for eksempel en ny leasingaftale, fra topbjælken eller fra et relateret firma eller en relateret person.
-keywords: ['brugerdefineret objekt', 'ny post', 'opret', 'ekstra tabel']
+title: Tilføj brugerdefinerede data
+description: Tilføj data til et brugerdefineret objekt fra topbjælken eller fra en relateret enhed.
+keywords: ['nyt brugerdefineret objekt', 'opret brugerdefineret objekt', 'ekstra tabel']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: howto
 tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Opdater en post i et brugerdefineret objekt: /da/custom-objects/learn/update
-  - Brugerdefinerede objekter: /da/custom-objects/learn/extra-table
+  - Opdater brugerdefinerede data: /da/custom-objects/learn/update
+  - Ekstra tabeller: /da/custom-objects/learn/extra-table
 language: da
 ---
 
-Denne side er endnu ikke oversat til dansk.
+<Note>
+Brugerdefinerede objekter kræver CRM Suite **Growth**-planen eller en højere plan. Hvis du har en [licens baseret på brugerplaner][2] og vil bruge brugerdefinerede objekter, kan du deltage i [pilotprogrammet for brugerdefinerede objekter][3].
+</Note>
 
-{/* TODO: translate after EN review */}
+Du kan tilføje data til et brugerdefineret objekt fra topbjælken eller fra en relateret enhed. De felter, du ser, afhænger af, hvordan din administrator har konfigureret det brugerdefinerede objekt.
+
+For at tilføje brugerdefinerede data skal din rolle have [rettigheden **Opret** til det brugerdefinerede objekt][1].
+
+## Tilføj brugerdefinerede data fra topbjælken
+
+1. Klik på **Ny** i topbjælken, og vælg derefter det brugerdefinerede objekt. For eksempel **Udstyr**.
+
+    ![Menuen Ny i topbjælken med brugerdefinerede objekter -screenshot][img1]
+
+1. Udfyld felterne. Obligatoriske felter er markeret med rødt.
+
+    For et relationsfelt, for eksempel **Firma**, begynder du at skrive og vælger den relaterede post på listen. Listen viser en forhåndsvisning af hvert match, så du kan vælge den rigtige.
+
+    ![Leasingaftale med udfyldte relationsfelter -screenshot][img2]
+
+1. Klik på **Gem**.
+
+## Tilføj brugerdefinerede data fra en relateret enhed
+
+Når et brugerdefineret objekt har relation til en anden enhed, for eksempel et firma, et salg eller et brugerdefineret objekt, har den enhed en detaljefane for det brugerdefinerede objekt. Brugerdefinerede data, du tilføjer dér, bliver automatisk knyttet til enheden.
+
+1. Åbn den relaterede enhed, og vælg det brugerdefinerede objekts detaljefane. For eksempel **Udstyr**.
+
+1. Klik på **Tilføj**.
+
+1. Udfyld felterne. Relationen til den enhed, du åbnede, er udfyldt på forhånd, og din administrator kan angive standardværdier eller bruge en trigger til at udfylde andre felter.
+
+1. Klik på **Gem**.
+
+[1]: /da/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /da/admin/license/user-plans
+[3]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png

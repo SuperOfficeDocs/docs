@@ -1,7 +1,7 @@
 ---
 uid: help-da-extra-table
 title: Ekstra tabeller
-description: En ekstra tabel er en databasetabel, som du selv definerer. Med CRM Suite Growth eller højere bliver den et brugerdefineret objekt, der fungerer på samme måde som firmaer og salg.
+description: En ekstra tabel er en databasetabel, som du selv definerer. Med CRM Suite Growth eller højere bliver den et brugerdefineret objekt, der opfører sig som firmaer og salg.
 keywords: ['ekstra tabel', 'tredjepartstabel', 'brugerdefineret objekt']
 author: digitaldiina
 date: 11.12.2026
@@ -14,8 +14,8 @@ redirect_from:
   - /da/custom-objects/extra-table/index
   - /da/custom-objects/learn/extra-table/index
 related:
-  - Opret en post i et brugerdefineret objekt: /da/custom-objects/learn/create
-  - Opdater en post i et brugerdefineret objekt: /da/custom-objects/learn/update
+  - Tilføj brugerdefinerede data: /da/custom-objects/learn/create
+  - Opdater brugerdefinerede data: /da/custom-objects/learn/update
   - Tilføj en ekstra tabel: /da/custom-objects/admin/create-extra-table
   - Tilføj ekstra felter: /da/custom-objects/admin/create-extra-field
   - Angiv rettigheder for brugerdefinerede objekter: /da/admin/user-management/role/set-data-rights-for-role#custom-objects
@@ -34,7 +34,7 @@ Med en licens baseret på brugerplaner er ekstra tabeller tilgængelige i SuperO
 
 ## Ekstra tabeller som brugerdefinerede objekter
 
-I CRM Suite bliver en ekstra tabel et *brugerdefineret objekt*: en type post, der fungerer som standardposterne, for eksempel firmaer og salg. Et brugerdefineret objekt har sine egne felter og kan have relation til firmaer, personer, salg, projekter, sager, opfølginger og andre brugerdefinerede objekter.
+I CRM Suite bliver en ekstra tabel et *brugerdefineret objekt*: en type post, der opfører sig som standardposterne, for eksempel firmaer og salg. Et brugerdefineret objekt har sine egne felter og kan have relation til firmaer, personer, salg, projekter, sager, opfølginger og andre brugerdefinerede objekter.
 
 Trinnene til at oprette en tabel er de samme uanset licens. Forskellen er, hvordan brugerne får vist og arbejder med de data, der er gemt i den.
 
@@ -42,21 +42,21 @@ Trinnene til at oprette en tabel er de samme uanset licens. Forskellen er, hvord
 
 Brugerne finder brugerdefinerede objekter disse steder:
 
-* **Hovedmenu:** Vælg <i class="ph ph-list" aria-label="Hovedmenu"></i> > **Brugerdefinerede objekter** for at åbne skærmbilledet **Brugerdefinerede objekter** med alle de brugerdefinerede objekter, du har adgang til. Vælg et brugerdefineret objekt, tilføj [søgekriterier][16] under fanen **Kriterier**, og klik **Søg**. De poster, der matcher, vises under fanen **Resultater**.
+* **Hovedmenu:** Klik på <i class="ph ph-list" aria-label="Hovedmenu"></i>, og vælg **Brugerdefinerede objekter** for at åbne skærmbilledet **Brugerdefinerede objekter** med alle de brugerdefinerede objekter, du har adgang til. Vælg et brugerdefineret objekt, tilføj [søgekriterier][16] under fanen **Kriterier**, og klik på **Søg**. De matchende brugerdefinerede data vises under fanen **Resultater**.
 
-    ![Skærmbilledet Brugerdefinerede objekter med posterne i Bærbar -screenshot][img11]
+    ![Skærmbilledet Brugerdefinerede objekter med data fra Bærbar -screenshot][img11]
 
-* **Navigator:** Brugerdefinerede objekter vises i Navigatoren, hver med sit eget ikon. Vælg et brugerdefineret objekt for at åbne dets skærmbillede med en liste over poster. Din administrator bestemmer, hvilke brugerdefinerede objekter der vises.
+* **Navigator:** Brugerdefinerede objekter vises i Navigatoren, hver med sit eget ikon. Vælg et brugerdefineret objekt for at åbne dets skærmbillede med dets brugerdefinerede data på en liste. Din administrator bestemmer, hvilke brugerdefinerede objekter der vises.
 
     ![Navigatoren med fire brugerdefinerede objekter, hvor Bærbar er valgt -screenshot][img10]
 
-* **Ny:** Vælg **Ny** i topbjælken for at [oprette en post][7] i et brugerdefineret objekt.
+* **Ny:** Klik på **Ny** i topbjælken for at [tilføje data][7] til et brugerdefineret objekt.
 
-* **Detaljefaner:** Når et brugerdefineret objekt har relation til et firma, en person, et salg, et projekt eller en sag, vises de relaterede poster under en detaljefane på den post.
+* **Detaljefaner:** Når et brugerdefineret objekt har relation til en anden enhed, for eksempel et firma, et salg eller et brugerdefineret objekt, vises de relaterede brugerdefinerede data på en detaljefane dér.
 
     ![Firma med detaljefanen Leasingaftaler -screenshot][img8]
 
-* **Sidepanel:** Vælg en post under en detaljefane med brugerdefinerede objekter for at se den i visningen **Forhåndsvisning** i sidepanelet. Vælg en relateret post i forhåndsvisningen for at gå til den.
+* **Sidepanel:** På en detaljefane med brugerdefinerede objekter vælger du en række for at se den i visningen **Forhåndsvisning** i sidepanelet. Vælg en relateret post i forhåndsvisningen for at gå til den.
 
     ![Leasingaftale vist i visningen Forhåndsvisning i sidepanelet -screenshot][img9]
 
@@ -64,21 +64,21 @@ Brugerne finder brugerdefinerede objekter disse steder:
 
     ![Dashboard med ruder baseret på de brugerdefinerede objekter Leasing og Bærbar -screenshot][img1]
 
-* **Historik og favoritter:** De poster, du åbner, føjes til din [historik][9], og du kan [tilføje dem som favoritter][10].
+* **Historik og favoritter:** Brugerdefinerede data, du åbner, føjes til din [historik][9], og du kan [tilføje dem som favoritter][10].
 
-Hvilke brugerdefinerede objekter og poster du kan se, oprette, opdatere eller slette, afhænger af din [rolle][8].
+Hvilke brugerdefinerede objekter og brugerdefinerede data du kan se, tilføje, opdatere eller slette, afhænger af din [rolle][8].
 
-## Søg efter brugerdefinerede objekter {#search}
+## Søg efter brugerdefinerede objekter
 
 Du kan søge efter brugerdefinerede objekter og oprette udvalg baseret på dem på samme måde som for firmaer, personer og salg.
 
-* **Find:** I skærmbilledet **Find** vælger du et brugerdefineret objekt for at søge efter dets poster. Du kan også bruge et brugerdefineret objekt som søgekriterie, når du søger efter firmaer, personer, salg, projekter, sager og opfølginger.
+* **Find:** I skærmbilledet **Find** vælger du et brugerdefineret objekt for at søge efter dets brugerdefinerede data. Du kan også bruge et brugerdefineret objekt som søgekriterie, når du søger efter firmaer, personer, salg, projekter, sager og opfølginger.
 
     ![Find firma med et felt for Leasing som søgekriterie -screenshot][img2]
 
     ![Skærmbilledet Find med brugerdefinerede objekter -screenshot][img3]
 
-* **Udvalg:** Gem søgningen som et udvalg af poster i det brugerdefinerede objekt. Et dynamisk udvalg holder listen ajourført.
+* **Udvalg:** Gem søgningen som et udvalg af brugerdefinerede data. Et dynamisk udvalg holder listen ajourført.
 
     ![Find Bærbar med søgeresultater og Gem som udvalg -screenshot][img4]
 
@@ -86,7 +86,7 @@ Du kan søge efter brugerdefinerede objekter og oprette udvalg baseret på dem p
 [Fritekstsøgning][17] (feltet **Search for anything** i topbjælken) omfatter ikke brugerdefinerede objekter. Brug **Find** eller søgningen i det brugerdefinerede objekts eget skærmbillede.
 </Note>
 
-## Skærmbilledet Tabeller {#tables}
+## Skærmbilledet Tabeller
 
 Skærmbilledet **Tabeller** i **Indstillinger og vedligeholdelse** > **Systemdesign** viser databasetabellerne. Det viser både standardtabeller, som er en del af SuperOffice, og ekstra tabeller, som du selv opretter. Kun administratorer har adgang til dette skærmbillede.
 

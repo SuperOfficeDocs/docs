@@ -1,20 +1,20 @@
 ---
 uid: help-sv-custom-objects
-title: Egendefinierade objekt och fält
+title: Anpassade objekt och fält
 description: Lär dig skillnaden mellan användardefinierade fält, extrafält och anpassade objekt, och vilken plan du behöver för varje.
-keywords: ['egendefinierade objekt', 'användardefinierade fält', 'extratabell', 'extrafält', 'tilläggsfält', 'anpassat fält']
+keywords: ['anpassat objekt', 'tabell', 'fält', 'användardefinierat fält', 'udef', 'anpassat fält', 'extrafält', 'extratabell']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
-audience: settings
-audience_tooltip: Settings and maintenance
+audience: person
+audience_tooltip: SuperOffice CRM
 related:
-  - Brukerdefinerte felt: /sv/custom-objects/learn/udef
-  - Ekstrafelt: /sv/custom-objects/learn/extra-field
-  - Anpassade objekt: /sv/custom-objects/learn/extra-table
+  - /sv/custom-objects/learn/udef
+  - /sv/custom-objects/learn/extra-field
+  - Extratabeller: /sv/custom-objects/learn/extra-table
 language: sv
 ---
 
@@ -26,7 +26,7 @@ SuperOffice CRM och Service var en gång två separata applikationer med olika m
 
 Det finns två sätt att utöka SuperOffice:
 
-* **Lägg till fält i poster.** Dessa fält kallas *anpassade fält*. Lägg till exempel ett fält "Nöjd kund" på kontakter.
+* **Lägg till fält i poster.** Dessa fält kallas *anpassade fält*. Lägg till exempelvis ett fält "Nöjd kund" på kontakter.
 * **Lägg till nya typer av poster.** Dessa poster kallas *anpassade objekt*. Registrera till exempel de laptops du leasar ut till kunder som en egen typ av post.
 
 ## Anpassade fält
@@ -42,9 +42,9 @@ Det finns två sorters anpassade fält, beroende på posten:
 
 Ett [anpassat objekt][3] är en ny typ av post som du definierar själv. Till exempel *Laptop*, *Lease* eller *Car*. Du bestämmer vilka fält det anpassade objektet har och hur det relaterar till företag, kontakter, ärenden och andra poster.
 
-Med CRM Suite **Growth** eller högre fungerar ett anpassat objekt som standardposterna i SuperOffice. Användare hittar det i Navigatorn, skapar nya poster från **Ny** i det övre fältet, söker efter poster, skapar urval och dashboards och ser relaterade poster på ett detaljkort, till exempel på företaget.
+Med CRM Suite **Growth** eller högre beter sig ett anpassat objekt som standardposterna i SuperOffice. Användare hittar det i Navigatorn, lägger till anpassade data från **Nytt** i toppraden, söker efter dem, skapar urval och dashboards och ser relaterade anpassade data på ett detaljkort, till exempel på företaget.
 
-Anpassade objekt skapas i **Inställningar och underhåll** > **Systemdesign** > **Tabeller**. I databasen är ett anpassat objekt en extratabell.
+I databasen är ett anpassat objekt en extratabell. Administratörer skapar det i **Inställningar och underhåll** > **Systemdesign** > **Tabeller**.
 
 ## Exempel
 
@@ -68,7 +68,7 @@ Anpassade objekt skapas i **Inställningar och underhåll** > **Systemdesign** >
 Anpassade objekt kräver CRM Suite **Growth**-planen eller högre. Om du har en [användarplansbaserad licens][17] och vill använda anpassade objekt kan du gå med i [pilotprogrammet för anpassade objekt][18].
 </Note>
 
-Med en användarplansbaserad licens finns extratabeller i SuperOffice Service och i SuperOffice CRM via webbpaneler. Se [extratabeller med en användarplansbaserad licens][3].
+Med en användarplansbaserad licens kräver extratabeller Development Tools. De finns i SuperOffice Service och i SuperOffice CRM via webbpaneler. Se [extratabeller][3].
 
 CRM Suite-planen bestämmer hur många anpassade objekt du kan skapa. När du når gränsen kan du inte skapa fler. Se [plangränser][13].
 

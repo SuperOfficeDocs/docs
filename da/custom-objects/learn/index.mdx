@@ -1,10 +1,10 @@
 ---
 uid: help-da-custom-objects
-title: Brugerdefinerede objekterog felter
+title: Brugerdefinerede objekter og felter
 description: Lær forskellen mellem brugerdefinerede felter, ekstra felter og brugerdefinerede objekter, og hvilken plan du skal have til hver af dem.
-keywords: ['brugerdefinerede objekter', 'udef', 'ekstrafelt', 'ekstra tabel', 'tilpassede felter']
+keywords: ['brugerdefineret objekt', 'tabel', 'felt', 'brugerdefineret felt', 'udef', 'tilpasset felt', 'ekstra felt', 'ekstra tabel']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: concept
 boost: 1.5
@@ -12,14 +12,13 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Brugerdefinerte felt: /da/custom-objects/learn/udef
+  - /da/custom-objects/learn/udef
   - /da/custom-objects/learn/extra-field
-  - Brugerdefinerede objekter: /da/custom-objects/learn/extra-table
+  - Ekstra tabeller: /da/custom-objects/learn/extra-table
 language: da
 ---
 
 import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
-import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 
 Alle virksomheder har deres egne behov for, hvad de skal registrere om deres kunder, salg, projekter, kontrakter og så videre. Administratorer kan tilføje felter og tabeller i SuperOffice for at tilpasse typen af information, der kan registreres.
 
@@ -43,9 +42,9 @@ Der er to slags tilpassede felter, afhængigt af posten:
 
 Et [brugerdefineret objekt][3] er en ny type post, som du selv definerer. For eksempel *Bærbar*, *Leasing* eller *Bil*. Du bestemmer, hvilke felter det brugerdefinerede objekt har, og hvordan det relaterer til firmaer, personer, sager og andre poster.
 
-Med CRM Suite **Growth** eller højere fungerer et brugerdefineret objekt som standardposterne i SuperOffice. Brugerne kan finde det i Navigatoren, oprette nye poster fra **Ny** i topbjælken, søge efter poster, oprette udvalg og dashboards og se relaterede poster på en detaljefane, for eksempel på firmaet.
+Med CRM Suite **Growth** eller højere opfører et brugerdefineret objekt sig som standardposterne i SuperOffice. Brugerne kan finde det i Navigatoren, tilføje brugerdefinerede data fra **Ny** i topbjælken, søge efter det, oprette udvalg og dashboards og se relaterede brugerdefinerede data på en detaljefane, for eksempel på firmaet.
 
-Brugerdefinerede objekter oprettes i **Indstillinger og vedligeholdelse** > **Systemdesign** > **Tabeller**. I databasen er et brugerdefineret objekt en ekstra tabel.
+I databasen er et brugerdefineret objekt en ekstra tabel. Administratorer opretter det i **Indstillinger og vedligeholdelse** > **Systemdesign** > **Tabeller**.
 
 ## Eksempler
 
@@ -65,9 +64,11 @@ Brugerdefinerede objekter oprettes i **Indstillinger og vedligeholdelse** > **Sy
 
 **Brugerdefinerede objekter:**
 
-<ReqGrowthCustomObjects />
+<Note>
+Brugerdefinerede objekter kræver CRM Suite **Growth**-planen eller en højere plan. Hvis du har en [licens baseret på brugerplaner][15] og vil bruge brugerdefinerede objekter, kan du deltage i [pilotprogrammet for brugerdefinerede objekter][16].
+</Note>
 
-Med en licens baseret på brugerplaner er ekstra tabeller tilgængelige i SuperOffice Service og i SuperOffice CRM via webpaneler. Se [ekstra tabeller med en licens baseret på brugerplaner][3].
+Med en licens baseret på brugerplaner kræver ekstra tabeller Development Tools. De er tilgængelige i SuperOffice Service og i SuperOffice CRM via webpaneler. Se [ekstra tabeller][3].
 
 CRM Suite-planen bestemmer, hvor mange brugerdefinerede objekter du kan oprette. Når du når grænsen, kan du ikke oprette flere. Se [plangrænser][13].
 
@@ -81,3 +82,5 @@ Brugerdefinerede felter vises på [fanen Mere][12], sorteret efter deres rækkef
 [12]: /da/custom-objects/learn/more-tab
 [13]: /da/admin/license/crm-suite
 [14]: /da/customization/screen-designer/admin/index
+[15]: /da/admin/license/user-plans
+[16]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/

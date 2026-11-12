@@ -1,10 +1,10 @@
 ---
 uid: help-nl-custom-objects
-title: Aangepaste objecten  en velden
+title: Aangepaste objecten en velden
 description: Leer het verschil tussen gebruikersgedefinieerde velden, extra velden en aangepaste objecten, en welk plan u voor elk nodig hebt.
-keywords: ['aangepast object', 'veld']
+keywords: ['aangepast object', 'tabel', 'veld', 'gebruikersgedefinieerd veld', 'udef', 'aangepast veld', 'extra veld', 'extra tabel']
 author: digitaldiina
-date: 11.11.2026
+date: 11.12.2026
 so_version: 12.6
 content_type: concept
 boost: 1.5
@@ -12,14 +12,13 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Brukerdefinerte felt: /nl/custom-objects/learn/udef
-  - Ekstrafelt: /nl/custom-objects/learn/extra-field
-  - Aangepaste objecten: /nl/custom-objects/learn/extra-table
+  - /nl/custom-objects/learn/udef
+  - /nl/custom-objects/learn/extra-field
+  - Extra tabellen: /nl/custom-objects/learn/extra-table
 language: nl
 ---
 
 import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
-import ReqGrowthCustomObjects from "../../../snippets/license/req-growth-custom-objects.mdx";
 
 Elk bedrijf heeft eigen behoeften voor wat het wil registreren over zijn klanten, verkopen, projecten, contracten, enzovoort. Beheerders kunnen velden en tabellen toevoegen in SuperOffice om het type informatie dat kan worden geregistreerd aan te passen.
 
@@ -43,9 +42,9 @@ Er zijn twee soorten aangepaste velden, afhankelijk van het record:
 
 Een [aangepast object][3] is een nieuw type record dat u zelf definieert. Bijvoorbeeld *Laptop*, *Lease* of *Auto*. U bepaalt welke velden het aangepaste object heeft en hoe het is gerelateerd aan bedrijven, contactpersonen, verzoeken en andere records.
 
-Met CRM Suite **Growth** of hoger werkt een aangepast object zoals de standaardrecords in SuperOffice. Gebruikers vinden het in de navigator, maken nieuwe records via **Nieuw** in de bovenste balk, zoeken naar records, maken selecties en dashboards, en zien gerelateerde records op een sectietabblad, bijvoorbeeld bij het bedrijf.
+Met CRM Suite **Growth** of hoger gedraagt een aangepast object zich zoals de standaardrecords in SuperOffice. Gebruikers vinden het in de navigator, voegen aangepaste gegevens toe via **Nieuw** in de bovenste balk, zoeken ernaar, maken selecties en dashboards, en zien gerelateerde aangepaste gegevens op een sectietabblad, bijvoorbeeld bij het bedrijf.
 
-Aangepaste objecten worden gemaakt in **Instellingen en onderhoud** > **Systeemontwerp** > **Tabellen**. In de database is een aangepast object een extra tabel.
+In de database is een aangepast object een extra tabel. Beheerders maken het in **Instellingen en onderhoud** > **Systeemontwerp** > **Tabellen**.
 
 ## Voorbeelden
 
@@ -65,9 +64,11 @@ Aangepaste objecten worden gemaakt in **Instellingen en onderhoud** > **Systeemo
 
 **Aangepaste objecten:**
 
-<ReqGrowthCustomObjects />
+<Note>
+Aangepaste objecten vereisen het CRM Suite **Growth**-plan of hoger. Als u een [licentie op basis van gebruikersplannen][15] hebt en aangepaste objecten wilt gebruiken, doet u mee aan het [pilotprogramma voor aangepaste objecten][16].
+</Note>
 
-Met een licentie op basis van gebruikersplannen zijn extra tabellen beschikbaar in SuperOffice Service en, via webpanelen, in SuperOffice CRM. Zie [extra tabellen met een licentie op basis van gebruikersplannen][3].
+Met een licentie op basis van gebruikersplannen vereisen extra tabellen Development Tools. Ze zijn beschikbaar in SuperOffice Service en, via webpanelen, in SuperOffice CRM. Zie [extra tabellen][3].
 
 Het CRM Suite-plan bepaalt het aantal aangepaste objecten dat u kunt maken. Wanneer u de limiet bereikt, kunt u er geen meer maken. Zie [plangrenzen][13].
 
@@ -81,3 +82,5 @@ Gebruikersgedefinieerde velden worden weergegeven op het [tabblad Meer][12], ges
 [12]: /nl/custom-objects/learn/more-tab
 [13]: /nl/admin/license/crm-suite
 [14]: /nl/customization/screen-designer/admin/index
+[15]: /nl/admin/license/user-plans
+[16]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
