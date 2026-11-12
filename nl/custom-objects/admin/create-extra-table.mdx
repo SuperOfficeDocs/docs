@@ -32,7 +32,7 @@ Met een licentie op basis van gebruikersplannen zijn extra tabellen beschikbaar 
 
 U slaat uw eigen soorten gegevens op in extra tabellen. U maakt de tabel in **Tabellen** en [voegt er velden aan toe][1].
 
-In de CRM Suite wordt een extra tabel een [aangepast object][3] dat zich gedraagt zoals bedrijven en verkopen. De stappen om de tabel te maken zijn voor elke licentie hetzelfde. Tabeleigenschappen en machtigingen voor rollen bepalen hoe gebruikers de tabel bekijken en ermee werken.
+In de CRM Suite wordt een extra tabel een [aangepast object][3] dat zich gedraagt zoals bedrijven en verkopen. De stappen om de tabel te maken zijn voor elke licentie hetzelfde. Tabeleigenschappen en rechten voor rollen bepalen hoe gebruikers de tabel bekijken en ermee werken.
 
 ## Naamgevingsconventies
 
@@ -99,51 +99,51 @@ De tabel is klaar voor gebruik. Pas in de CRM Suite eventueel de opmaak van het 
 | Bovenliggend veld | Dit veld wordt gebruikt in samenhang met hiërarchische tabellen. |
 | Volledige naam | Wanneer dit een hiërarchische tabel betreft, kunt u in dit veld een veld opgeven dat automatisch wordt bijgewerkt met de volledige naam van het item, op basis van het naamveld voor dit item en alle bovenliggende items. |
 | Veld ID verbergen | Wanneer deze optie is ingeschakeld, wordt het veld ID niet weergegeven wanneer de items in de tabel worden weergegeven. |
-| De tabel verbergen | Als deze optie is ingeschakeld, is de tabel niet zichtbaar via **Systeemontwerp** > **Tabellen**. |
-| Show table in Find | Als deze optie is ingeschakeld, kunnen gebruikers in **Zoeken** naar aangepaste objecten zoeken. |
-| [Show in navigator](#navigator) | Als deze optie is ingeschakeld, wordt de tabel weergegeven in de navigator en onder **Nieuw**. |
-| [Icon](#icon) | Het pictogram dat voor de tabel wordt weergegeven in de navigator en op andere plaatsen. |
-| Batch-webhook inschakelen in Service | Indien geselecteerd, activeren batchupdates op deze tabel [webhooks][2]. |
+| Tabel verbergen | Als deze optie is ingeschakeld, is de tabel niet zichtbaar via **Systeemontwerp** > **Tabellen**. |
+| Tabel weergeven in Zoeken | Als deze optie is ingeschakeld, kunnen gebruikers in **Zoeken** naar aangepaste objecten zoeken. |
+| [Weergeven in navigator](#navigator) | Als deze optie is ingeschakeld, wordt de tabel weergegeven in de navigator en onder **Nieuw**. |
+| [Pictogram](#icon) | Het pictogram dat voor de tabel wordt weergegeven in de navigator en op andere plaatsen. |
+| Batchwebhook inschakelen in Service | Indien geselecteerd, activeren batchupdates op deze tabel [webhooks][2]. |
 
 ## Kies een pictogram {#icon}
 
 Het pictogram wordt weergegeven in de navigator, de lijst met aangepaste objecten, contextmenu's, de gebeurtenislijst van webhooks en de Schermontwerper.
 
-1. Open de tabeleigenschappen en klik op **Select icon**.
+1. Open de tabeleigenschappen en klik op **Pictogram selecteren**.
 
-1. Kies in het dialoogvenster **Select icon** een pictogram:
+1. Kies in het dialoogvenster **Pictogram selecteren** een pictogram:
 
-    * **Default icons:** een set veelgebruikte pictogrammen.
-    * **Full icon library:** doorzoek de volledige bibliotheek of blader per categorie.
-    * **Custom icons:** upload uw eigen SVG-bestand, tot 50 KB.
+    * **Standaardpictogrammen:** een set veelgebruikte pictogrammen.
+    * **Volledige pictogrammenbibliotheek:** doorzoek de volledige bibliotheek of blader per categorie.
+    * **Aangepaste pictogrammen:** upload uw eigen SVG-bestand, tot 50 KB.
 
-1. Klik op **Apply icon**.
+1. Klik op **Pictogram toepassen**.
 
-Om terug te keren naar het standaardpictogram, klikt u op **Remove icon**.
+Om terug te keren naar het standaardpictogram, klikt u op **Pictogram verwijderen**.
 
-![Dialoogvenster Select icon met de tabbladen Default icons, Full icon library en Custom icons -screenshot][img2]
+![Dialoogvenster Pictogram selecteren met de tabbladen Standaardpictogrammen, Volledige pictogrammenbibliotheek en Aangepaste pictogrammen -screenshot][img2]
 
 ## De tabel weergeven in de navigator en bij Zoeken {#navigator}
 
-De tabel kan worden weergegeven in de navigator en onder **Nieuw** in de bovenste balk. Selecteer hiervoor **Show in navigator** in de tabeleigenschappen.
+De tabel kan worden weergegeven in de navigator en onder **Nieuw** in de bovenste balk. Selecteer hiervoor **Weergeven in navigator** in de tabeleigenschappen.
 
-Om gebruikers in **Zoeken** naar aangepaste objecten te laten zoeken, selecteert u ook **Show table in Find**.
+Om gebruikers in **Zoeken** naar aangepaste objecten te laten zoeken, selecteert u ook **Tabel weergeven in Zoeken**.
 
-![Show table in Find, Show in navigator en een geselecteerd pictogram in de tabeleigenschappen -screenshot][img3]
+![Tabel weergeven in Zoeken, Weergeven in navigator en een geselecteerd pictogram in de tabeleigenschappen -screenshot][img3]
 
 ## Rollen toegang geven {#access-rights}
 
-Gebruikers kunnen een aangepast object alleen bekijken en ermee werken als hun rol toegang geeft. Nadat u de tabel hebt gemaakt en de velden hebt toegevoegd, stelt u de machtiging in voor elke rol die de tabel moet gebruiken.
+Gebruikers kunnen een aangepast object alleen bekijken en ermee werken als hun rol toegang geeft. Nadat u de tabel hebt gemaakt en de velden hebt toegevoegd, stelt u het recht in voor elke rol die de tabel moet gebruiken.
 
 1. <OpenRoles />
 
 1. Selecteer een rol in de lijst.
 
-1. Ga naar het tabblad **Custom objects rights**.
+1. Ga naar het tabblad **Rechten van aangepaste objecten**.
 
-1. Kies in de lijst **Permission** naast het aangepaste object wat gebruikers met deze rol kunnen doen: **Read**, **Create**, **Update** of **Delete**.
+1. Kies in de lijst **Recht** naast het aangepaste object wat gebruikers met deze rol kunnen doen: **Read**, **Create**, **Update** of **Delete**.
 
-Zie [gegevensrechten voor aangepaste objecten][4] voor wat elke machtiging toestaat.
+Zie [gegevensrechten voor aangepaste objecten][4] voor wat elk recht toestaat.
 
 ## Tabel weergeven in een webpaneel {#web-panel}
 
