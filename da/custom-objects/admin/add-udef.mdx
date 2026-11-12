@@ -13,6 +13,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /da/custom-objects/learn/udef/add
 userflow_index: true
 related:
+  - Om brugerdefinerede felter: /da/custom-objects/learn/udef
   - Placering af felter: /da/custom-objects/admin/edit-udef-layout
   - Redigering af brugerdefinerede felt: /da/custom-objects/admin/edit-udef
   - Skærmdesigner: /da/customization/screen-designer/admin/index
@@ -50,6 +51,10 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/da-udef-s
 
 1. Indstil eventuelt andre [feltegenskaber](#properties), såsom om feltet er obligatorisk eller skal indekseres.
 
+    <Note>
+    Du kan ikke vælge **Skrivebeskyttet**, hvis du har valgt **Obligatorisk**. Disse muligheder udelukker hinanden.
+    </Note>
+
 1. Når du er færdig, klik på **Gem**. Dialogboksen lukkes, og det nye felt vises i **Felt**-listen og i gitteret.
 
 1. [Valgfrit, justér feltets placering][3]. Dette kræver licensen Development Tools eller Core-planen.
@@ -67,10 +72,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/da-udef-s
 | Skjul etiket | Hvis valgt, vises navnet på feltet ikke. |
 | Skrivebeskyttet | Hvis valgt, er det ikke muligt at ændre feltet. |
 | Indekseret | Hvis valgt, bliver dette felt søgbart og fremskynder **Find**. Der kan også søges i ikke-indekserede felter, men søgningen tager længere tid. Indekser kun felter, der ofte søges i og som indeholder almindeligt anvendte data. |
-
-<Note>
-Du kan ikke vælge **Skrivebeskyttet**, hvis du har valgt **Obligatorisk**. Disse muligheder udelukker hinanden.
-</Note>
 
 <UdefDanger />
 

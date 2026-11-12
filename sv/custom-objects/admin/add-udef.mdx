@@ -13,6 +13,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /sv/custom-objects/learn/udef/add
 userflow_index: true
 related:
+  - Om användardefinierade fält: /sv/custom-objects/learn/udef
   - Anpassa användargränssnitt: /sv/custom-objects/admin/edit-udef-layout
   - Redigera användardefinierade fält: /sv/custom-objects/admin/edit-udef
   - Skärmdesigner: /sv/customization/screen-designer/admin/index
@@ -52,6 +53,10 @@ Den här filmen visar hur du skapar egna extrafält i SuperOffice CRM (filmens l
 
 1. Ställ in eventuella andra [fältegenskaper](#properties), som om fältet är obligatoriskt eller ska indexeras.
 
+    <Note>
+    Du kan inte markera **Endast läsbart** om du har markerat alternativet **Obligatorisk**. Dessa alternativ utesluter varandra.
+    </Note>
+
 1. När du är klar, klicka på **Spara**. Dialogen stängs och det nya fältet visas i **Fält**-listan och i rutnätet.
 
 1. [Valfritt, justera positionen för fältet][3]. Detta kräver en licens för Development Tools eller Core-planen.
@@ -69,10 +74,6 @@ Den här filmen visar hur du skapar egna extrafält i SuperOffice CRM (filmens l
 | Dölj ledtext | Om vald visas inte namnet på fältet. |
 | Endast läsbart | Om vald är det inte möjligt att ändra fältet. |
 | Indexterat | Om vald blir detta fält sökbart och det går snabbare att söka **Hitta**. Icke-indexerade fält kan också sökas, men det går långsammare. Indexera bara fält som ofta söks och innehåller ofta använda data. |
-
-<Note>
-Du kan inte markera **Endast läsbart** om du har markerat alternativet **Obligatorisk**. Dessa alternativ utesluter varandra.
-</Note>
 
 <UdefDanger />
 

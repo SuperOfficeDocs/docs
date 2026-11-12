@@ -13,6 +13,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /no/custom-objects/learn/udef/add
 userflow_index: true
 related:
+  - Om brukerdefinerte felt: /no/custom-objects/learn/udef
   - Grensesnitttilpasning: /no/custom-objects/admin/edit-udef-layout
   - Redigere egendefinert felt: /no/custom-objects/admin/edit-udef
   - Skjermdesigner: /no/customization/screen-designer/admin/index
@@ -50,6 +51,10 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/no-udef-s
 
 1. Sett eventuelt andre [feltegenskaper](#properties), som om feltet er obligatorisk eller skal indekseres.
 
+    <Note>
+    Du kan ikke krysse av for **Kun lesbart** hvis du har krysset av for **Obligatorisk**. Disse alternativene er gjensidig utelukkende.
+    </Note>
+
 1. Når du er ferdig, klikk på **Lagre**. Dialogen lukkes, og det nye feltet vises i **Felt**-listen og i rutenettet.
 
 1. [Valgfritt, juster feltets posisjon][3]. Dette krever lisensen Development Tools eller Core-planen.
@@ -67,10 +72,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/no-udef-s
 | Skjul ledetekst | Hvis valgt, vises ikke navnet på feltet. |
 | Kun lesbart | Hvis valgt, er det ikke mulig å endre feltet. |
 | Indeksert | Hvis valgt, blir dette feltet søkbart og det blir raskere å søke på disse feltene ved hjelp av **Finn**. Ikke-indekserte felt kan også søkes på, men søkingen vil ta lengre tid. Indekser bare felt som ofte blir søkt og inneholder ofte brukte data. |
-
-<Note>
-Du kan ikke krysse av for **Kun lesbart** hvis du har krysset av for **Obligatorisk**. Disse alternativene er gjensidig utelukkende.
-</Note>
 
 <UdefDanger />
 
@@ -92,18 +93,10 @@ Hvis du ikke får lov til å opprette et nytt felt, kan det skyldes at du allere
 
 Fire av hver felttype (Kort tekst, Lang tekst, Nummer, Desimaltall) er søkbare. Hvis du for eksempel ikke merker noen felt som søkbare, kan du bare angi seks Desimaltall-felt.
 
-## Aktuelle emner
-
-* [Plassere felt][3]
-* [Rediger feltegenskaper][4]
-* [Skjermdesigner][11]
-
 [1]: ../learn/udef#limit
 [2]: ../learn/udef#field-types
 [3]: ./edit-udef-layout
-[4]: ./edit-udef
 [5]: ../learn/more-tab
-[11]: ../../customization/screen-designer/admin/index
 [12]: ../../document/templates/learn/template-variables
 
 [img3]: ../../../media/loc/en/custom-objects/add-udef-multi-languages.png

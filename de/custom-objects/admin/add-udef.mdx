@@ -13,6 +13,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /de/custom-objects/learn/udef/add
 userflow_index: true
 related:
+  - Über benutzerdefinierte Felder: /de/custom-objects/learn/udef
   - Benutzeroberfläche anpassen: /de/custom-objects/admin/edit-udef-layout
   - Benutzerdefinierte Felder bearbeiten: /de/custom-objects/admin/edit-udef
   - Ansichtsdesigner: /de/customization/screen-designer/admin/index
@@ -50,6 +51,10 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/de-udef-s
 
 1. Setzen Sie optional andere [Feld-Eigenschaften](#properties), wie zum Beispiel, ob das Feld obligatorisch ist oder indiziert werden soll.
 
+    <Note>
+    Sie können das Kontrollkästchen **Schreibgeschützt** nicht aktivieren, wenn Sie **Obligatorisch** aktiviert haben. Diese beiden Optionen schließen sich gegenseitig aus.
+    </Note>
+
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern**. Das Dialogfeld wird geschlossen und das neue Feld wird in der Liste **Felder** und im Raster angezeigt.
 
 1. [Optional können Sie die Position des Feldes anpassen][3]. Dies erfordert eine Lizenz für Development Tools oder den Core-Plan.
@@ -67,10 +72,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/de-udef-s
 | Bezeichn. ausbl. | Wenn ausgewählt, wird der Name des Feldes nicht angezeigt. |
 | Schreibgeschützt | Wenn ausgewählt, ist es nicht möglich, das Feld zu ändern. |
 | Indiziert | Wenn ausgewählt, wird dieses Feld durchsuchbar und beschleunigt die **Suchen**. Nicht indizierte Felder können ebenfalls durchsucht werden, dies dauert jedoch länger. Indizieren Sie nur Felder, die häufig gesucht werden und häufig verwendete Daten enthalten. |
-
-<Note>
-Sie können das Kontrollkästchen **Schreibgeschützt** nicht aktivieren, wenn Sie **Obligatorisch** aktiviert haben. Diese beiden Optionen schließen sich gegenseitig aus.
-</Note>
 
 <UdefDanger />
 

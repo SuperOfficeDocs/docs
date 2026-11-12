@@ -14,6 +14,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /nl/custom-objects/learn/udef/add
 userflow_index: true
 related:
+  - Over gebruikersgedefinieerde velden: /nl/custom-objects/learn/udef
   - Gebruikersinterface aanpassen: /nl/custom-objects/admin/edit-udef-layout
   - Gebruiker gedefinieerde velden bewerken: /nl/custom-objects/admin/edit-udef
   - Schermontwerper: /nl/customization/screen-designer/admin/index
@@ -51,6 +52,10 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/nl-udef-s
 
 1. Stel eventueel andere [veld eigenschappen](#properties) in, zoals of het veld verplicht is of geïndexeerd moet worden.
 
+    <Note>
+    U kunt **Alleen lezen** niet aanvinken als u **Verplicht** hebt aangevinkt. Deze opties sluiten elkaar uit.
+    </Note>
+
 1. Als u klaar bent, klik op **Opslaan**. Het dialoogvenster sluit en het nieuwe veld wordt weergegeven in de lijst **Velden** en in het raster.
 
 1. [Optioneel, pas de positie van het veld aan][3]. Dit vereist een licentie voor Development Tools of het Core-plan.
@@ -68,10 +73,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/nl-udef-s
 | Label verbergen | Als geselecteerd, wordt de naam van het veld niet weergegeven. |
 | Alleen lezen | Als geselecteerd, is het niet mogelijk om het veld te wijzigen. |
 | Geïndexeerd | Als geselecteerd, wordt dit veld doorzoekbaar en versnelt het **Zoeken**. Niet-geïndexeerde velden zijn ook doorzoekbaar, maar het zoeken duurt langer. U moet alleen velden indexeren die vaak worden gezocht en die veelgebruikte gegevens bevatten. |
-
-<Note>
-U kunt **Alleen lezen** niet aanvinken als u **Verplicht** hebt aangevinkt. Deze opties sluiten elkaar uit.
-</Note>
 
 <UdefDanger />
 

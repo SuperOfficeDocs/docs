@@ -13,6 +13,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /en/custom-objects/learn/udef/add
 userflow_index: true
 related:
+  - About user-defined fields: /en/custom-objects/learn/udef
   - Customize layout of user-defined fields: /en/custom-objects/admin/edit-udef-layout
   - Edit user-defined field: /en/custom-objects/admin/edit-udef
   - Screen designer: /en/customization/screen-designer/admin/index
@@ -50,6 +51,10 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/en-udef-s
 
 1. Optionally set other [field properties](#properties), such as whether the field is mandatory or should be indexed.
 
+    <Note>
+    You cannot check **Read only** if you checked **Mandatory**. These options are mutually exclusive.
+    </Note>
+
 1. When you are done, click **Save**. The dialog closes and the new field is displayed in the **Fields** list and in the grid.
 
 1. [Optionally, adjust the position of the field][3]. This requires the Development Tools license or the Core plan.
@@ -67,10 +72,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/en-udef-s
 | Hide label | If selected, the name of the field is not displayed. |
 | Read only | If selected, it is not possible to amend the field. |
 | Indexed | If selected, this field becomes searchable, speeding up **Find**. Non-indexed fields can also be searched, but it is slower. Index only fields that are often searched and hold commonly used data. |
-
-<Note>
-You cannot check **Read only** if you checked **Mandatory**. These options are mutually exclusive.
-</Note>
 
 <UdefDanger />
 
@@ -92,18 +93,10 @@ If you find you are not allowed to create a new field, this may be because you h
 
 Four of each type of field (Short text, Long text, Number, Decimal) are searchable. For example, if you do not mark any fields searchable, you can specify only six Decimal fields.
 
-## Related topics
-
-* [Place fields][3]
-* [Edit field properties][4]
-* [Screen designer][11]
-
 [1]: ../learn/udef#limit
 [2]: ../learn/udef#field-types
 [3]: ./edit-udef-layout
-[4]: ./edit-udef
 [5]: ../learn/more-tab
-[11]: ../../customization/screen-designer/admin/index
 [12]: ../../document/templates/learn/template-variables
 
 [img3]: /media/loc/en/custom-objects/add-udef-multi-languages.png
