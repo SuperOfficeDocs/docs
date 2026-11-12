@@ -1,120 +1,113 @@
 ---
 uid: help-sv-extra-table
 title: Extratabeller
-description: Extratabeller
-keywords: ['extratabell']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
-content_type: howto
-tier: core
+description: En extratabell är en databastabell som du definierar själv. Med CRM Suite Growth eller högre blir den ett anpassat objekt som fungerar ungefär som företag och försäljningar.
+keywords: ['extratabell', 'tredjepartstabell', 'anpassat objekt']
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
+content_type: concept
+tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /sv/custom-objects/learn/extra-table/index
+redirect_from:
+  - /sv/custom-objects/extra-table/index
+  - /sv/custom-objects/learn/extra-table/index
 related:
-  - Lägg till extratabeller: /sv/custom-objects/admin/create-extra-table
-  - /sv/custom-objects/admin/create-extra-field
-  - Användardefinierade fält: /sv/custom-objects/admin/add-udef
+  - Skapa en post för ett anpassat objekt: /sv/custom-objects/learn/create
+  - Uppdatera en post för ett anpassat objekt: /sv/custom-objects/learn/update
+  - Lägg till en extratabell: /sv/custom-objects/admin/create-extra-table
+  - Lägg till extrafält: /sv/custom-objects/admin/create-extra-field
+  - Ange behörigheter för anpassade objekt: /sv/admin/user-management/role/set-data-rights-for-role#custom-objects
+  - Utforma layouten för ett anpassat objekt: /sv/customization/screen-designer/admin/add-layout#custom-objects
   - Anpassade skärmar: /sv/ui/blogic/learn/index
-  - Lägg till utlösare: /en/automation/trigger/create-trigger-script
 language: sv
 ---
 
-import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
+En *extratabell* (kallas även *tredjepartstabell*) är en databastabell som du definierar själv, för data som SuperOffice inte lagrar i en standardtabell. Administratörer [skapar extratabeller][2] och lägger till fält i dem i **Inställningar och underhåll** > **Systemdesign** > **Tabeller**.
 
-<ReqDevToolsTransition />
+<Note>
+Extratabeller kräver CRM Suite **Growth**-planen eller högre, eller en användarplansbaserad licens med [Development Tools][13].
 
-Development Tools-licensen eller Core-planen ger dig möjligheten att skapa extra tabeller i databasen.
+Med en användarplansbaserad licens finns extratabeller i SuperOffice Service och i SuperOffice CRM via [webbpaneler][14]. Om du vill använda dem som anpassade objekt i SuperOffice CRM kan du gå med i [pilotprogrammet för anpassade objekt][15].
+</Note>
 
-**Tabeller**-skärmen är ditt verktyg för anpassning av databasschemat.
+## Extratabeller som anpassade objekt
 
-## Så här får du åtkomst
+I CRM Suite blir en extratabell ett *anpassat objekt*: en typ av post som fungerar som standardposterna, till exempel företag och försäljningar. Ett anpassat objekt har egna fält och kan relatera till företag, kontakter, försäljningar, projekt, ärenden, uppföljningar och andra anpassade objekt.
 
-<Tabs>
-<Tab title="Klassisk">
-Tredjepartstabeller är direkt tillgängliga för standard CRUD-operationer i SuperOffice Service. Du måste ställa in en webbpanel för att få tillgång till dem från Säljklienten.
-</Tab>
+Stegen för att skapa en tabell är desamma oavsett licens. Det som skiljer sig är hur användarna visar och arbetar med data som lagras i den.
 
-<Tab title="Ny (från version 10.3.4 pilot)">
-Inte längre begränsad till SuperOffice Service kan du nu enkelt utforska och hantera data i extra tabeller från SuperOffice CRM.
+## Var du hittar anpassade objekt {#where}
 
-### Bygg dashboards med anpassade objekt
+Användare hittar anpassade objekt på följande platser:
 
-![Dashboards med anpassade objekt -screenshot][img1]
+* **Huvudmeny:** Välj <i class="ph ph-list" aria-label="Huvudmeny"></i> > **Anpassade objekt** för att öppna skärmen **Anpassade objekt** med alla anpassade objekt som du har åtkomst till. Välj ett anpassat objekt, lägg till [sökkriterier][16] på fliken **Kriterier** och klicka på **Sök**. Posterna som matchar visas på fliken **Resultat**.
 
-### Sök och urval
+    ![Skärmen Anpassade objekt med Laptop-posterna -screenshot][img11]
 
-**Anpassat objekt som sökkriterium för företag, kontakt, försäljning, projekt, ärende, aktivitet:**
+* **Navigatorn:** Anpassade objekt visas i navigatorn, vart och ett med en egen ikon. Välj ett anpassat objekt för att öppna dess skärm med en lista över poster. Din administratör bestämmer vilka anpassade objekt som visas.
 
-![Anpassat objekt som sökkriterium -screenshot][img2]
+    ![Navigatorn med fyra anpassade objekt, Laptop markerad -screenshot][img10]
 
-**Skapa urval av anpassade objekt (10.3.7):**
+* **Nytt:** Välj **Nytt** i toppraden för att [skapa en post][7] för ett anpassat objekt.
 
-![Sökskärm med anpassade objekt -screenshot][img3]
+* **Detaljkort:** När ett anpassat objekt relaterar till ett företag, en kontakt, en försäljning, ett projekt eller ett ärende visas de relaterade posterna på ett detaljkort på den posten.
 
-![Urval av anpassade objekt -screenshot][img4]
+    ![Företag med ett detaljkort för Leases -screenshot][img8]
 
-### Hantera data (10.3.7)
+* **Sidopanel:** På ett detaljkort med anpassade objekt väljer du en post för att se den i vyn **Förhandsvisning** i sidopanelen. Välj en relaterad post i förhandsvisningen för att gå till den.
 
-**Öppna översikt över anpassade objekt:**
+    ![Lease visas i vyn Förhandsvisning i sidopanelen -screenshot][img9]
 
-![Översikt över anpassade objekt -screenshot][img5]
+* **Dashboards:** Använd ett anpassat objekt som datakälla för en panel på en dashboard.
 
-**Sök:**
+    ![Dashboard med paneler baserade på de anpassade objekten Lease och Laptop -screenshot][img1]
 
-![Översikt över anpassade objekt, sök -screenshot][img6]
+* **Historik och favoriter:** Poster som du öppnar läggs till i din [historiklista][9], och du kan [lägga till dem som favoriter][10].
 
-**Förhandsvisning:**
+Vilka anpassade objekt och poster du kan se, skapa, uppdatera eller ta bort beror på din [roll][8].
 
-![Översikt över anpassade objekt, förhandsvisning -screenshot][img7]
+## Sök efter anpassade objekt {#search}
 
-**Lägg till/ta bort objekt:**
+Du kan söka efter anpassade objekt och skapa urval baserade på dem, på samma sätt som för företag, kontakter och försäljningar.
 
-När du visar resultaten för ett specifikt objekt i översikten **Anpassade objekt**, klicka på knappen **Uppgift** och välj **Ny** eller **Ta bort**.
+* **Sök:** I fönstret **Sök** väljer du ett anpassat objekt för att söka efter dess poster. Du kan också använda ett anpassat objekt som sökkriterium när du söker efter företag, kontakter, försäljningar, projekt, ärenden och uppföljningar.
 
-**Förifyll fält när anpassat objekt laddas (10.3.8):**
+    ![Sökning efter företag med ett Lease-fält som sökkriterium -screenshot][img2]
 
-Den nya [SalesLoadCustomObject][6]-triggern kallas innan en skärm med anpassat objekt laddas. Använd den för att ange standardvärden i fält och definiera affärsregler.
-</Tab>
-</Tabs>
+    ![Fönstret Sök med anpassade objekt -screenshot][img3]
 
-## Fönstret Tabeller
+* **Urval:** Spara sökningen som ett urval av poster för anpassade objekt. Ett dynamiskt urval håller listan uppdaterad.
 
-**Tabeller**-skärmen visar en lista över databastabeller. Den visar både standardtabeller (fördefinierade i systemet och utgör grunden för olika fönster) och extratabeller (tabeller du skapar själv med valfritt innehåll).
+    ![Sökning efter Laptop med sökresultat och Spara som urval -screenshot][img4]
 
-Här kan du skapa nya tabeller och fält för olika kort och dialogrutor. Endast administratörer har åtkomst till den här funktionen.
+<Note>
+[Fritextsökning][17] (fältet **Fritextsök** i toppraden) omfattar inte anpassade objekt. Använd **Sök** eller sökfunktionen på det anpassade objektets egen skärm.
+</Note>
 
-## Tabellmappar
+## Skärmen Tabeller {#tables}
 
-Tabellmappar används för att organisera dina egendefinierade tabeller.
+Skärmen **Tabeller** i **Inställningar och underhåll** > **Systemdesign** visar en lista över databastabellerna. Den visar både standardtabeller, som ingår i SuperOffice, och extratabeller, som du skapar själv. Endast administratörer har åtkomst till den här skärmen.
 
-## Konventioner
+Använd tabellmappar för att organisera dina extratabeller.
 
-<Warning>
-Välj dina databastabell- och fältnamn noggrant. De kan inte ändras senare!
+[2]: ../admin/create-extra-table
+[7]: ./create
+[8]: /sv/admin/user-management/role/set-data-rights-for-role#custom-objects
+[9]: /sv/learn/basics/history
+[10]: /sv/learn/basics/fav
+[13]: /sv/admin/license/expander-services
+[14]: /sv/customization/web-panels/admin/index
+[15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+[16]: /sv/search-options/learn/search-criteria
+[17]: /sv/search-options/learn/freetext-search
 
-Ett logiskt namn är bäst eftersom det gör det lättare att se vad databasen innehåller.
-</Warning>
-
-Prefix säkerställer att det du skapar inte kommer i konflikt med framtida SuperOffice-tabell- och fältnamn. Det garanterar dock inte frånvaron av namnkonflikter mellan olika tredjeparter.
-
-### Tabelnamn
-
-* Måste börja med **y_**
-* Får endast innehålla understreck, bokstäverna a till z och siffror
-
-### Fältnamn
-
-* Måste börja med **x_**
-* Måste vara unikt inom tabellen
-* Måste vara ett enda ord
-* Får endast innehålla understreck, bokstäver från a till z och siffror
-
-[6]: ../../../en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
-[img1]: ../../../media/loc/en/automation/custom-object-dashboard.png
-[img2]: ../../../media/loc/en/automation/find-custom-object-relation.png
-[img3]: ../../../media/loc/en/automation/find-screen-with-custom-objects.png
-[img4]: ../../../media/loc/en/automation/custom-object-selection.png
-[img5]: ../../../media/loc/en/automation/go-to-custom-objects.png
-[img6]: ../../../media/loc/en/automation/search-inventory.png
-[img7]: ../../../media/loc/en/automation/preview-inventory-results.png
+[img1]: /media/loc/en/custom-objects/dashboard-leases.png
+[img2]: /media/loc/en/custom-objects/find-company-lease-criteria.png
+[img3]: /media/loc/en/custom-objects/find-screen-custom-objects.png
+[img4]: /media/loc/en/custom-objects/find-laptop-results.png
+[img8]: /media/loc/en/custom-objects/company-lease-tab.png
+[img9]: /media/loc/en/custom-objects/company-lease-preview.png
+[img10]: /media/loc/en/custom-objects/navigator-custom-objects.png
+[img11]: /media/loc/en/custom-objects/custom-objects-screen.png

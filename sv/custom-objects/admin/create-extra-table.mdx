@@ -1,23 +1,49 @@
 ---
 uid: help-sv-extra-table-create
-title: Lägg till extratabell
-description: Lägg till extratabell
-keywords: ['extratabell']
-author: Bergfrid Dias, Eivind Fasting
-date: 12.10.2025
-so_version: 11
+title: Lägg till en extratabell
+sidebarTitle: Lägg till extratabell
+description: Skapa en extratabell i Inställningar och underhåll. Med CRM Suite Growth eller högre blir den ett anpassat objekt som fungerar ungefär som företag och försäljningar.
+keywords: ['tredjepartstabell', 'anpassat objekt', 'systemdesign', 'ikon', 'lägg till tabell', 'ny tabell', 'anpassad tabell']
+author: digitaldiina, Eivind Fasting
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/custom-objects/learn/extra-table/create
 userflow_index: true
+related:
+  - Lägg till extrafält: /sv/custom-objects/admin/create-extra-field
+  - Ange behörighet för roll: /sv/admin/user-management/role/set-data-rights-for-role
+  - Extratabeller: /sv/custom-objects/learn/extra-table
+  - Utforma layouten för ett anpassat objekt: /sv/customization/screen-designer/admin/add-layout#custom-objects
 language: sv
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
 
-Du kan skapa extratabeller i SuperOffice för att registrera olika typer av data. När du har skapat tabellen och [skapat extrafält i den][1] kan du öppna tabellen för att lägga till innehåll i den.
+<Note>
+Extratabeller kräver CRM Suite **Growth**-planen eller högre, eller en användarplansbaserad licens med [Development Tools][8].
+
+Med en användarplansbaserad licens finns extratabeller i SuperOffice Service och i SuperOffice CRM via [webbpaneler](#web-panel). Om du vill använda dem som anpassade objekt i SuperOffice CRM kan du gå med i [pilotprogrammet för anpassade objekt][9].
+</Note>
+
+Du lagrar dina egna typer av data i extratabeller. Du skapar tabellen i **Tabeller** och [lägger till fält][1] i den.
+
+I CRM Suite blir en extratabell ett [anpassat objekt][3] och fungerar ungefär som företag och försäljningar. Stegen för att skapa tabellen är desamma oavsett licens. Tabellegenskaper och rollbehörigheter avgör hur användarna visar och arbetar med den.
+
+## Namnkonventioner
+
+<Warning>
+Välj namn på databastabeller noggrant. Du **kan inte ändra** dem senare.
+</Warning>
+
+Använd logiska namn, så att det är lätt att se vad databasen innehåller. Prefixet **y_** förhindrar konflikter med framtida SuperOffice-tabellnamn. Det förhindrar inte konflikter mellan extratabeller från olika tredje parter.
+
+* Måste börja med **y_**
+* Får endast innehålla understreck, bokstäverna a till z och siffror
 
 ## Steg
 
@@ -25,52 +51,113 @@ Du kan skapa extratabeller i SuperOffice för att registrera olika typer av data
 
 1. Klicka på **Ny tabell**.
 
-    ![Skapa extra tabell -screenshot][img1]
+    ![Skärmen Tabeller med knappen Ny tabell -screenshot][img1]
 
-1. I skärmen **Egenskaper för tabell**, ange data om den nya tabellen.
+1. I skärmen **Egenskaper för tabell** konfigurerar du den nya tabellen.
 
-    * Ange ett *namn* som ska användas som etiketten.
-    * Ange en *databastabell* som börjar med **y_** för att identifiera det i schemat.
-    * Valfritt ställ in andra egenskaper. Se detaljer om fälten nedan.
+    * Ange ett *namn* som ska användas som etikett.
+    * Ange en *beskrivning* som förklarar vad tabellen används till, så att andra administratörer förstår den.
+    * Ange en *databastabell* som börjar med **y_** för att identifiera den i schemat.
+    * För att användarna ska kunna hitta det anpassade objektet, [välj en ikon](#icon) och [välj att visa tabellen i navigatorn och i Sök](#navigator).
+    * Ställ eventuellt in [andra egenskaper](#properties).
 
     <Note>
-    Vissa tabelleegenskaper kan inte ställas in förrän du har lagt till fält.
+    Vissa tabellegenskaper kan inte ställas in förrän du har lagt till fält.
     </Note>
 
 1. Klicka på **OK** för att spara den nya tabellen (detta kör `create table y_mynewtable ...`).
 
 1. [Lägg till fält i din nya tabell][1].
 
-1. Valfritt, justera tabellegenskaper som sorteringsordning. (Klicka på tabellnamnet i listan för att gå in i redigeringsläge.)
+1. Välj tabellnamnet i listan för att öppna skärmen **Egenskaper för tabell** igen. Nu när tabellen har fält kan du använda dem i stället för ID:t:
+
+    * I **Sorteringsordning** väljer du fältet som posterna ska sorteras på.
+    * I **Visningsfält** väljer du fältet som identifierar en post när tabellen visas i en annan tabell.
+
+    ![Listan Visningsfält med tabellens fält -screenshot][img4]
 
 1. Klicka på **Starta om NetServer**. Om Travel är aktiverat kommer du också att se ett meddelande om att en ny Travel-databas måste skapas.
 
-Du kan nu öppna tabellen i användargränssnittet för att lägga till innehåll i den **eller** befolka den via API:erna.
+1. Om tabellen är ett anpassat objekt, [ge roller åtkomst](#access-rights) till den.
 
-## Fält
+Tabellen är klar att använda. I CRM Suite kan du valfritt anpassa layouten för det anpassade objektet i [Skärmdesignern][5].
 
-| Fält | Beskrivning |
+## Tabellegenskaper {#properties}
+
+| Egenskap | Beskrivning |
 |---|---|
-| Mapp | Om du vill placera tabellen i en befintlig väljer du en mapp i listan. |
-| Namn | Tabellens namn. |
-| Databastabell | Databastabellens namn. Kan endast anges när tabellen skapas och kan inte ändras. Tabellnamnet får bara innehålla understreck, bokstäverna a-z eller siffror, och namnet måste börja med "y_". Ett logiskt namn är bäst eftersom det då blir enklare att se vad databasen innehåller. |
-| Rubrik för sökning | Används i sökfönstret för tabellen. |
-| Rubrik för visning av post | Används när du visar en post i den här tabellen. |
-| Rubrik för ny post | Används när du skapar en ny post i den här tabellen. |
-| Rubrik för redigering av post | Används när du redigerar en post i den här tabellen. |
+| Mapp | Om du vill placera tabellen i en befintlig mapp väljer du en mapp i listan. |
+| Namn | Tabellens etikett i användargränssnittet. |
+| Beskrivning | Vad tabellen används till. Fyll i den så att andra administratörer förstår den. |
+| Databastabell | Databastabellens namn i databasen. Kan endast anges när tabellen skapas och **kan inte ändras**. |
+| Rubrik för sökning | Rubriken som används i sökfönstret för den här tabellen. |
+| Rubrik för visning av post | Rubriken som används när du visar en post i den här tabellen. |
+| Rubrik för ny post | Rubriken som används när du skapar en ny post i den här tabellen. |
+| Rubrik för redigering av post | Rubriken som används när du redigerar en post i den här tabellen. |
 | Sorteringsordning | Kolumnen som tabellen sorteras efter. Om du markerar **Fallande** sorteras värdena i fallande ordning. För numeriska värden betyder det att det högsta värdet visas överst i tabellen. Tabellen måste innehålla fält innan du kan välja något här. |
 | Visningsfält | Om data från tabellen ska visas i en annan tabell (en relation) måste du välja vilket fält som ska visas i den andra tabellen. Tabellen måste innehålla fält innan du kan välja något här. |
-| Överordnat fält | Detta fält används i samband med hierarkiskt organiserade tabeller. |
-| Fullständigt namn |  Om detta är en hierarkiskt organiserad tabell kan detta fält ange ett fält som automatiskt uppdateras med postens fullständiga namn baserat på namnfältet för posten och alla överordnade poster. |
+| Överordnat fält | Används i samband med hierarkiskt organiserade tabeller. |
+| Fullständigt namn | Om detta är en hierarkiskt organiserad tabell kan detta fält ange ett fält som automatiskt uppdateras med postens fullständiga namn baserat på namnfältet för posten och alla överordnade poster. |
 | Dölj ID-fält | Om du markerar detta alternativ visas inte ID-fältet när posterna i tabellen visas. |
 | Dölj tabellen | Om du markerar det här alternativet är tabellen inte synlig från **Systemdesign** > **Tabeller**. |
+| Show table in Find | Om valt kan användare söka efter poster i den här tabellen i **Sök**. |
+| [Show in navigator](#navigator) | Om valt visas tabellen i navigatorn och under **Nytt**. |
+| [Icon](#icon) | Ikonen som visas för tabellen i navigatorn och på andra platser. |
 | Aktivera batch-webhook i Service | Om valt aktiverar batchuppdateringar på den här tabellen [webhooks][2]. |
 
-## Visa tabell i webbpanel
+## Välj en ikon {#icon}
 
-I SuperOffice CRM kan du skapa webbpaneler som kan innehålla tabellinformation. Om du vill ange relevanta åtkomstbehörighet,måste användaren tillhöra en roll som har funktionsrättigheterna **Lista tabeller** och **Redigera tabeller**.
+Ikonen visas i navigatorn, listan över anpassade objekt, snabbmenyer, listan över webhook-händelser och Skärmdesignern.
+
+1. Öppna tabellegenskaperna och välj **Icon**.
+
+1. I dialogrutan **Select icon** väljer du en ikon:
+
+    * **Default icons:** en uppsättning vanliga ikoner.
+    * **Full icon library:** sök i hela biblioteket eller bläddra efter kategori.
+    * **Custom icons:** ladda upp din egen SVG-fil, upp till 50 KB.
+
+1. Klicka på **Apply icon**.
+
+Om du vill återgå till standardikonen klickar du på **Remove icon**.
+
+![Dialogrutan Select icon med flikarna Default icons, Full icon library och Custom icons -screenshot][img2]
+
+## Visa tabellen i navigatorn och i Sök {#navigator}
+
+Tabellen kan visas i navigatorn och under **Nytt** i toppraden. Aktivera det genom att välja **Show in navigator** i tabellegenskaperna.
+
+För att användarna ska kunna söka efter anpassade objekt i **Sök** väljer du även **Show table in Find**.
+
+![Show table in Find, Show in navigator och en vald ikon i tabellegenskaperna -screenshot][img3]
+
+## Ge roller åtkomst {#access-rights}
+
+Användare kan se och arbeta med ett anpassat objekt bara om deras roll ger dem åtkomst. När du har skapat tabellen och lagt till dess fält ställer du in behörigheten för varje roll som ska använda den.
+
+1. <OpenRoles />
+
+1. Välj en roll i listan.
+
+1. Gå till fliken **Custom objects rights**.
+
+1. I listan **Behörighet** bredvid det anpassade objektet väljer du vad användare med den här rollen kan göra: **Läsa**, **Skapa**, **Uppdatera** eller **Radera**.
+
+Se [databehörigheter för anpassade objekt][4] för vad varje behörighet tillåter.
+
+## Visa tabell i en webbpanel {#web-panel}
+
+Med en användarplansbaserad licens visar du extratabeller i SuperOffice CRM via webbpaneler. För att ange relevanta åtkomstbehörigheter måste användaren tillhöra en roll som har funktionsrättigheterna **Lista tabeller** och **Redigera tabeller**.
 
 [1]: ./create-extra-field
-[2]: ../../../en/automation/webhook/dev/index
+[2]: /en/automation/webhook/dev/index
+[3]: ../learn/extra-table
+[4]: /sv/admin/user-management/role/set-data-rights-for-role#custom-objects
+[5]: /sv/customization/screen-designer/admin/add-layout#custom-objects
+[8]: /sv/admin/license/expander-services
+[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-table.png
+[img2]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
+[img3]: /media/loc/en/custom-objects/table-properties-navigator.png
+[img4]: /media/loc/en/custom-objects/table-properties-display-field.png

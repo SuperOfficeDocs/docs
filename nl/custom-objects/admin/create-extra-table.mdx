@@ -1,23 +1,49 @@
 ---
 uid: help-nl-extra-table-create
-title: Extra tabellen toevoegen
-description: Extra tabellen toevoegen
-keywords: ['extra tabellen', 'databasetabel', 'tabel', 'tabeleigenschappen']
-author: Bergfrid Dias, Eivind Fasting
-date: 12.10.2025
-so_version: 11
+title: Een extra tabel toevoegen
+sidebarTitle: Extra tabel toevoegen
+description: Maak een extra tabel in Instellingen en onderhoud. Met CRM Suite Growth of hoger wordt het een aangepast object dat zich gedraagt zoals bedrijven en verkopen.
+keywords: ['3rd party-tabel', 'aangepast object', 'systeemontwerp', 'pictogram', 'tabel toevoegen', 'nieuwe tabel', 'aangepaste tabel']
+author: digitaldiina, Eivind Fasting
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/custom-objects/learn/extra-table/create
 userflow_index: true
+related:
+  - Extra velden toevoegen: /nl/custom-objects/admin/create-extra-field
+  - Gegevensrechten voor een rol instellen: /nl/admin/user-management/role/set-data-rights-for-role
+  - Extra tabellen: /nl/custom-objects/learn/extra-table
+  - De opmaak van een aangepast object ontwerpen: /nl/customization/screen-designer/admin/add-layout#custom-objects
 language: nl
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
 
-U kunt extra tabellen maken in SuperOffice om verschillende soorten gegevens te registreren. Nadat u de tabel hebt gemaakt en er [extra velden][1] in hebt gemaakt, kunt u de tabel openen om er inhoud aan toe te voegen.
+<Note>
+Extra tabellen vereisen het CRM Suite **Growth**-plan of hoger, of een licentie op basis van gebruikersplannen met [Development Tools][8].
+
+Met een licentie op basis van gebruikersplannen zijn extra tabellen beschikbaar in SuperOffice Service en, via [webpanelen](#web-panel), in SuperOffice CRM. Als u ze wilt gebruiken als aangepaste objecten in SuperOffice CRM, doet u mee aan het [pilotprogramma voor aangepaste objecten][9].
+</Note>
+
+U slaat uw eigen soorten gegevens op in extra tabellen. U maakt de tabel in **Tabellen** en [voegt er velden aan toe][1].
+
+In de CRM Suite wordt een extra tabel een [aangepast object][3] en gedraagt deze zich zoals bedrijven en verkopen. De stappen om de tabel te maken zijn voor elke licentie hetzelfde. Tabeleigenschappen en machtigingen voor rollen bepalen hoe gebruikers de tabel bekijken en ermee werken.
+
+## Naamgevingsconventies
+
+<Warning>
+Kies databasetabelnamen zorgvuldig. U kunt ze later **niet wijzigen**.
+</Warning>
+
+Gebruik logische namen, zodat het gemakkelijk is om te zien wat de database bevat. De prefix **y_** voorkomt conflicten met toekomstige SuperOffice-tabelnamen. Het voorkomt geen conflicten tussen extra tabellen van verschillende derden.
+
+* Moet beginnen met **y_**
+* Mag alleen underscores, de letters a tot z en cijfers bevatten
 
 ## Stappen
 
@@ -25,52 +51,113 @@ U kunt extra tabellen maken in SuperOffice om verschillende soorten gegevens te 
 
 1. Klik op **Nieuwe tabel**.
 
-    ![Maak een extra tabel aan -screenshot][img1]
+    ![Scherm Tabellen met de knop Nieuwe tabel -screenshot][img1]
 
-1. In het veld **Tabeleigenschappen** voer gegevens in over de nieuwe tabel.
+1. Configureer in het scherm **Tabeleigenschappen** de nieuwe tabel.
 
     * Voer een *naam* in die als label wordt gebruikt.
+    * Voer een *beschrijving* in waarin staat waarvoor de tabel dient, zodat andere beheerders het begrijpen.
     * Voer een *databasetabel* in die begint met **y_** om het in het schema te identificeren.
-    * Optioneel stel andere eigenschappen in. Zie details over de velden hieronder.
+    * Om gebruikers het aangepaste object te laten vinden, [kies een pictogram](#icon) en [kies ervoor om de tabel weer te geven in de navigator en bij Zoeken](#navigator).
+    * Stel optioneel [andere eigenschappen](#properties) in.
 
     <Note>
-    Sommige tabeleigenschappen kunnen niet worden ingesteld totdat u velden heeft toegevoegd.
+    Sommige tabeleigenschappen kunnen niet worden ingesteld totdat u velden hebt toegevoegd.
     </Note>
 
 1. Klik op **OK** om de nieuwe tabel op te slaan (voert `create table y_mynewtable ...` uit).
 
 1. [Voeg velden toe aan uw nieuwe tabel][1].
 
-1. Optioneel, pas tabeleigenschappen aan zoals sorteervolgorde. (Klik op de tabelnaam in de lijst om de bewerkingsmodus te betreden.)
+1. Selecteer de tabelnaam in de lijst om het scherm **Tabeleigenschappen** opnieuw te openen. Nu de tabel velden heeft, kunt u die gebruiken in plaats van de ID:
+
+    * Kies bij **Sorteervolgorde** het veld waarop de records worden gesorteerd.
+    * Kies bij **Veld weergeven** het veld dat een record identificeert wanneer de tabel in een andere tabel wordt weergegeven.
+
+    ![Lijst Veld weergeven met de velden van de tabel -screenshot][img4]
 
 1. Klik op **NetServer opnieuw starten**. Als Travel is geactiveerd, ziet u ook een bericht dat er een nieuwe Travel-database moet worden gegenereerd.
 
-U kunt nu de tabel in de gebruikersinterface openen om er inhoud aan toe te voegen **of** het via de API's vullen.
+1. Als de tabel een aangepast object is, [geef rollen toegang](#access-rights) ertoe.
 
-## Velden
+De tabel is klaar voor gebruik. Pas in de CRM Suite eventueel de opmaak van het aangepaste object aan in de [Schermontwerper][5].
 
-| Veld | Beschrijving |
+## Tabeleigenschappen {#properties}
+
+| Eigenschap | Beschrijving |
 |---|---|
 | Map | Als u de tabel in een bestaande map wilt plaatsen, selecteert u een map in de lijst. |
-| Naam | de naam van de tabel. |
-| Databasetabel | De naam van de databasetabel. Kan alleen bij het maken worden opgegeven en kan niet worden gewijzigd. De tabelnaam mag onderstrepingstekens, de letters a-z en alleen cijfers bevatten en de naam moet beginnen met "y_". Een logische naam is het beste, omdat het dan makkelijker is om te zien wat de database bevat. |
+| Naam | Het label van de tabel in de gebruikersinterface. |
+| Beschrijving | Waarvoor de tabel dient. Vul dit in zodat andere beheerders het begrijpen. |
+| Databasetabel | De naam van de tabel in de database. Kan alleen bij het maken worden opgegeven en **kan niet worden gewijzigd**. |
 | Zoekkoptekst | De koptekst die in het zoekscherm voor deze tabel wordt gebruikt. |
 | Koptekst voor weergeven van item | De koptekst die wordt gebruikt wanneer u een item in deze tabel weergeeft. |
 | Koptekst voor nieuw item | De koptekst die wordt gebruikt wanneer u een nieuw item in deze tabel maakt. |
 | Koptekst voor bewerken van item | De koptekst die wordt gebruikt wanneer u een item in deze tabel bewerkt. |
 | Sorteervolgorde | De kolom waarop de tabel is gesorteerd. Als u **Aflopend** aanvinkt, worden de waarden in aflopende volgorde gesorteerd. Voor numerieke waarden betekent dit dat de hoogste waarde boven aan de tabel wordt weergegeven. De tabel moet velden bevatten voordat u hier iets kunt selecteren. |
-| Veld weergeven | Als gegevens uit deze tabel in een andere tabel (een relatie) worden weergegeven, moet u selecteren welk veld u in de andere tabel wilt weergeven. De tabel moet velden bevatten voordat u hier iets kunt selecteren. |
+| Veld weergeven | Als gegevens uit deze tabel in een andere (gerelateerde) tabel worden weergegeven, moet u het veld kiezen dat in die tabel wordt weergegeven. De tabel moet velden bevatten voordat u hier iets kunt selecteren. |
 | Bovenliggend veld | Dit veld wordt gebruikt in samenhang met hiërarchische tabellen. |
 | Volledige naam | Wanneer dit een hiërarchische tabel betreft, kunt u in dit veld een veld opgeven dat automatisch wordt bijgewerkt met de volledige naam van het item, op basis van het naamveld voor dit item en alle bovenliggende items. |
-| Veld ID verbergen | Wanneer deze optie is ingeschakeld, wordt het veld ID niet weergegeven wanneer een gebruiker de items in de tabel bekijkt. |
+| Veld ID verbergen | Wanneer deze optie is ingeschakeld, wordt het veld ID niet weergegeven wanneer de items in de tabel worden weergegeven. |
 | De tabel verbergen | Als deze optie is ingeschakeld, is de tabel niet zichtbaar via **Systeemontwerp** > **Tabellen**. |
+| Show table in Find | Als deze optie is ingeschakeld, kunnen gebruikers in **Zoeken** naar records in deze tabel zoeken. |
+| [Show in navigator](#navigator) | Als deze optie is ingeschakeld, wordt de tabel weergegeven in de navigator en onder **Nieuw**. |
+| [Icon](#icon) | Het pictogram dat voor de tabel wordt weergegeven in de navigator en op andere plaatsen. |
 | Batch-webhook inschakelen in Service | Indien geselecteerd, activeren batchupdates op deze tabel [webhooks][2]. |
 
-## Tabelinformatie in webvensters bevatten
+## Kies een pictogram {#icon}
 
-In SuperOffice CRM kunt u webvensters maken die tabelinformatie bevatten. Als u de relevante toegangsrechten wilt instellen, moet de gebruiker deel uitmaken van een rol met de functionele rechten **Tabellen weergeven** en **Tabellen bewerken**.
+Het pictogram wordt weergegeven in de navigator, de lijst met aangepaste objecten, contextmenu's, de gebeurtenislijst van webhooks en de Schermontwerper.
+
+1. Open de tabeleigenschappen en selecteer **Icon**.
+
+1. Kies in het dialoogvenster **Select icon** een pictogram:
+
+    * **Default icons:** een set veelgebruikte pictogrammen.
+    * **Full icon library:** doorzoek de volledige bibliotheek of blader per categorie.
+    * **Custom icons:** upload uw eigen SVG-bestand, tot 50 KB.
+
+1. Klik op **Apply icon**.
+
+Om terug te keren naar het standaardpictogram, klikt u op **Remove icon**.
+
+![Dialoogvenster Select icon met de tabbladen Default icons, Full icon library en Custom icons -screenshot][img2]
+
+## De tabel weergeven in de navigator en bij Zoeken {#navigator}
+
+De tabel kan worden weergegeven in de navigator en onder **Nieuw** in de bovenste balk. Selecteer hiervoor **Show in navigator** in de tabeleigenschappen.
+
+Om gebruikers in **Zoeken** naar aangepaste objecten te laten zoeken, selecteert u ook **Show table in Find**.
+
+![Show table in Find, Show in navigator en een geselecteerd pictogram in de tabeleigenschappen -screenshot][img3]
+
+## Rollen toegang geven {#access-rights}
+
+Gebruikers kunnen een aangepast object alleen bekijken en ermee werken als hun rol toegang geeft. Nadat u de tabel hebt gemaakt en de velden hebt toegevoegd, stelt u de machtiging in voor elke rol die de tabel moet gebruiken.
+
+1. <OpenRoles />
+
+1. Selecteer een rol in de lijst.
+
+1. Ga naar het tabblad **Custom objects rights**.
+
+1. Kies in de lijst **Permission** naast het aangepaste object wat gebruikers met deze rol kunnen doen: **Read**, **Create**, **Update** of **Delete**.
+
+Zie [gegevensrechten voor aangepaste objecten][4] voor wat elke machtiging toestaat.
+
+## Tabel weergeven in een webpaneel {#web-panel}
+
+Met een licentie op basis van gebruikersplannen geeft u extra tabellen weer in SuperOffice CRM via webpanelen. Om de relevante toegangsrechten in te stellen, moet de gebruiker deel uitmaken van een rol met de functionele rechten **List tables** en **Edit tables**.
 
 [1]: ./create-extra-field
-[2]: ../../../en/automation/webhook/dev/index
+[2]: /en/automation/webhook/dev/index
+[3]: ../learn/extra-table
+[4]: /nl/admin/user-management/role/set-data-rights-for-role#custom-objects
+[5]: /nl/customization/screen-designer/admin/add-layout#custom-objects
+[8]: /nl/admin/license/expander-services
+[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-table.png
+[img2]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
+[img3]: /media/loc/en/custom-objects/table-properties-navigator.png
+[img4]: /media/loc/en/custom-objects/table-properties-display-field.png

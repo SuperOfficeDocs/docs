@@ -1,23 +1,49 @@
 ---
 uid: help-de-extra-table-create
-title: Zusatztabellen hinzufügen
-description: Zusatztabellen hinzufügen
-keywords: ['Zusatztabelle', 'Tabelle', 'Datentypen', 'Datenbanktabelle', 'Systemdesign']
-author: Bergfrid Dias, Eivind Fasting
-date: 12.10.2025
-so_version: 11
+title: Eine Zusatztabelle hinzufügen
+sidebarTitle: Zusatztabelle hinzufügen
+description: Erstellen Sie eine Zusatztabelle unter Einstellungen und Verwaltung. Mit CRM Suite Growth oder höher wird sie zu einem benutzerdefinierten Objekt, das sich ähnlich wie Firmen und Verkäufe verhält.
+keywords: ['Drittanbietertabelle', 'benutzerdefiniertes Objekt', 'Systemdesign', 'Symbol', 'Tabelle hinzufügen', 'neue Tabelle', 'benutzerdefinierte Tabelle']
+author: digitaldiina, Eivind Fasting
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /de/custom-objects/learn/extra-table/create
 userflow_index: true
+related:
+  - Zusatzfelder hinzufügen: /de/custom-objects/admin/create-extra-field
+  - Datenrechte für eine Rolle festlegen: /de/admin/user-management/role/set-data-rights-for-role
+  - Zusatztabellen: /de/custom-objects/learn/extra-table
+  - Layout eines benutzerdefinierten Objekts gestalten: /de/customization/screen-designer/admin/add-layout#custom-objects
 language: de
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import OpenRoles from "../../admin/user-management/snippets/open-roles.md";
 
-Sie können Zusatztabellen in SuperOffice erstellen, um unterschiedliche Datentypen zu erfassen. Nachdem Sie die Tabelle und darin [Zusatzfelder erstellt][1] wurden, können Sie die Tabelle öffnen, um ihr Inhalte hinzuzufügen.
+<Note>
+Für Zusatztabellen ist der CRM Suite **Growth**-Plan oder höher erforderlich, oder eine benutzerplanbasierte Lizenz mit [Development Tools][8].
+
+Mit einer benutzerplanbasierten Lizenz sind Zusatztabellen in SuperOffice Service und in SuperOffice CRM über [Webpanels](#web-panel) verfügbar. Um sie als benutzerdefinierte Objekte in SuperOffice CRM zu verwenden, nehmen Sie am [Pilotprogramm für benutzerdefinierte Objekte][9] teil.
+</Note>
+
+Sie speichern Ihre eigenen Datentypen in Zusatztabellen. Sie erstellen die Tabelle unter **Tabellen** und [fügen ihr Felder hinzu][1].
+
+In der CRM Suite wird eine Zusatztabelle zu einem [benutzerdefinierten Objekt][3] und verhält sich ähnlich wie Firmen und Verkäufe. Die Schritte zum Erstellen der Tabelle sind unabhängig von der Lizenz dieselben. Tabelleneigenschaften und Rollenberechtigungen bestimmen, wie Benutzer sie anzeigen und bearbeiten.
+
+## Namenskonventionen
+
+<Warning>
+Wählen Sie die Namen von Datenbanktabellen sorgfältig aus. Sie **können sie später nicht ändern**.
+</Warning>
+
+Verwenden Sie logische Namen, damit leicht zu erkennen ist, was die Datenbank enthält. Das Präfix **y_** verhindert Konflikte mit zukünftigen SuperOffice-Tabellennamen. Es verhindert keine Konflikte zwischen Zusatztabellen verschiedener Drittanbieter.
+
+* Muss mit **y_** beginnen
+* Darf nur Unterstriche, die Buchstaben a bis z und Zahlen enthalten
 
 ## Schritte
 
@@ -25,13 +51,15 @@ Sie können Zusatztabellen in SuperOffice erstellen, um unterschiedliche Datenty
 
 1. Klicken Sie auf **Neue Tabelle**.
 
-    ![Erstellen Sie eine Zusatztabelle -screenshot][img1]
+    ![Ansicht Tabellen mit der Schaltfläche Neue Tabelle -screenshot][img1]
 
-1. In der Ansicht **Eigenschaften der Tabelle** geben Sie Daten über die neue Tabelle ein.
+1. In der Ansicht **Eigenschaften der Tabelle** konfigurieren Sie die neue Tabelle.
 
     * Geben Sie einen *Namen* ein, der als Bezeichnung verwendet wird.
+    * Geben Sie eine *Beschreibung* ein, die erklärt, wofür die Tabelle verwendet wird, damit andere Administratoren sie verstehen.
     * Geben Sie eine *Datenbanktabelle* ein, die mit **y_** beginnt, um sie im Schema zu identifizieren.
-    * Optional setzen Sie andere Eigenschaften. Sehen Sie Details zu den Feldern unten.
+    * Damit Benutzer das benutzerdefinierte Objekt finden, [wählen Sie ein Symbol aus](#icon) und [lassen Sie die Tabelle im Navigator und unter Suchen anzeigen](#navigator).
+    * Optional setzen Sie [weitere Eigenschaften](#properties).
 
     <Note>
     Einige Tabelleneigenschaften können nicht eingestellt werden, bis Sie Felder hinzugefügt haben.
@@ -41,19 +69,27 @@ Sie können Zusatztabellen in SuperOffice erstellen, um unterschiedliche Datenty
 
 1. [Fügen Sie Felder zu Ihrer neuen Tabelle hinzu][1].
 
-1. Optional, passen Sie Tabelleneigenschaften wie Sortierreihenfolge an. (Klicken Sie auf den Tabellennamen in der Liste, um den Bearbeitungsmodus zu betreten.)
+1. Wählen Sie den Tabellennamen in der Liste aus, um die Ansicht **Eigenschaften der Tabelle** erneut zu öffnen. Da die Tabelle jetzt Felder hat, können Sie diese anstelle der ID verwenden:
+
+    * Wählen Sie unter **Sortierreihenfolge** das Feld aus, nach dem die Datensätze sortiert werden.
+    * Wählen Sie unter **Anzeigefeld** das Feld aus, das einen Datensatz identifiziert, wenn die Tabelle in einer anderen Tabelle angezeigt wird.
+
+    ![Liste Anzeigefeld mit den Feldern der Tabelle -screenshot][img4]
 
 1. Klicken Sie auf **NetServer neu starten**. Wenn Travel aktiviert ist, sehen Sie auch eine Nachricht, dass eine neue Travel-Datenbank generiert werden muss.
 
-Sie können nun die Tabelle in der Benutzeroberfläche öffnen, um Inhalte hinzuzufügen **oder** sie über die APIs zu füllen.
+1. Wenn die Tabelle ein benutzerdefiniertes Objekt ist, [geben Sie Rollen Zugriff](#access-rights) darauf.
 
-## Felder
+Die Tabelle ist einsatzbereit. In der CRM Suite können Sie optional das Layout des benutzerdefinierten Objekts im [Ansichtsdesigner][5] anpassen.
 
-| Feld | Beschreibung |
+## Tabelleneigenschaften {#properties}
+
+| Eigenschaft | Beschreibung |
 |---|---|
-| Ordner | Um die Tabelle in einen vorhandenen Ordner zu kopieren, wählen Sie einen Ordner von der Liste aus. |
-| Name | Der Name der Tabelle. |
-| Datenbanktabelle | Der Name der Datenbanktabelle. Kann nur bei der Erstellung festgelegt und nicht mehr geändert werden. Der Tabellenname kann Unterstriche, die Buchstaben a-z und Zahlen enthalten, und der Name muss mit "y_" beginnen. Ein logischer Name ist am besten, weil er es einfacher macht, zu sehen, was die Datenbank enthält. |
+| Ordner | Um die Tabelle in einem vorhandenen Ordner abzulegen, wählen Sie einen Ordner aus der Liste aus. |
+| Name | Die Bezeichnung der Tabelle in der Benutzeroberfläche. |
+| Beschreibung | Wofür die Tabelle verwendet wird. Füllen Sie das Feld aus, damit andere Administratoren die Tabelle verstehen. |
+| Datenbanktabelle | Der Name der Tabelle in der Datenbank. Kann nur bei der Erstellung festgelegt werden und **kann nicht geändert werden**. |
 | Kopfzeile für Suche | Die Kopfzeile wird für diese Tabelle in der Ansicht Suchen verwendet. |
 | Kopfzeile für Datenanzeige | Die Kopfzeile wird zur Anzeige eines Eintrags in dieser Tabelle verwendet. |
 | Kopfzeile für neuen Eintrag | Die Kopfzeile wird zum Erstellen eines neuen Eintrags in dieser Tabelle verwendet. |
@@ -64,13 +100,64 @@ Sie können nun die Tabelle in der Benutzeroberfläche öffnen, um Inhalte hinzu
 | Vollständiger Name | Für hierarchisch strukturierte Tabellen können Sie hier ein Feld angeben, in das automatisch der vollständige Name des Eintrags eingefügt wird. Der Name wird aus dem Namensfeld des Eintrags und aller übergeordneten Einträge abgeleitet. |
 | ID-Feld ausblenden | Wenn diese Option ausgewählt ist, wird das ID-Feld bei der Auflistung von Einträgen in der Tabelle nicht angezeigt. |
 | Tabelle ausblenden | Wenn diese Option aktiviert ist, ist die Tabelle nicht über das **Systemdesign** > **Tabellen** sichtbar. |
+| Show table in Find | Wenn diese Option aktiviert ist, können Benutzer in **Suchen** nach Datensätzen in dieser Tabelle suchen. |
+| [Show in navigator](#navigator) | Wenn diese Option aktiviert ist, wird die Tabelle im Navigator und unter **Neu** aufgelistet. |
+| [Icon](#icon) | Das Symbol, das für die Tabelle im Navigator und an anderen Stellen angezeigt wird. |
 | Batch-Webhook in Service aktivieren | Wenn ausgewählt, aktivieren Batch-Updates auf dieser Tabelle [Webhooks][2]. |
 
-## Tabelleninformation in Web-Bildschirme erstellen
+## Symbol auswählen {#icon}
 
-In SuperOffice können Sie Web-Bildschirme erstellen, die Tabelleninformationen enthalten können. Um die entsprechenden Zugriffsrechte festzulegen, muss der Benutzer einer Rolle angehören, die über die Funktionsrechte **Tabellen anzeigen** und **Tabellen bearbeiten** verfügt.
+Das Symbol wird im Navigator, in der Liste der benutzerdefinierten Objekte, in Kontextmenüs, in der Webhook-Ereignisliste und im Ansichtsdesigner angezeigt.
+
+1. Öffnen Sie die Tabelleneigenschaften und wählen Sie **Icon** aus.
+
+1. Wählen Sie im Dialogfeld **Select icon** ein Symbol aus:
+
+    * **Default icons:** eine Auswahl gängiger Symbole.
+    * **Full icon library:** Durchsuchen Sie die gesamte Bibliothek oder nach Kategorie.
+    * **Custom icons:** Laden Sie Ihre eigene SVG-Datei hoch, bis zu 50 KB.
+
+1. Klicken Sie auf **Apply icon**.
+
+Um zum Standardsymbol zurückzukehren, klicken Sie auf **Remove icon**.
+
+![Dialogfeld Select icon mit den Registerkarten Default icons, Full icon library und Custom icons -screenshot][img2]
+
+## Tabelle im Navigator und unter Suchen anzeigen {#navigator}
+
+Die Tabelle kann im Navigator und unter **Neu** in der oberen Leiste aufgelistet werden. Wählen Sie dazu **Show in navigator** in den Tabelleneigenschaften aus.
+
+Damit Benutzer in **Suchen** nach benutzerdefinierten Objekten suchen können, wählen Sie zusätzlich **Show table in Find** aus.
+
+![Show table in Find, Show in navigator und ein Symbol in den Tabelleneigenschaften ausgewählt -screenshot][img3]
+
+## Rollen Zugriff geben {#access-rights}
+
+Benutzer können ein benutzerdefiniertes Objekt nur sehen und damit arbeiten, wenn ihre Rolle ihnen Zugriff gibt. Nachdem Sie die Tabelle erstellt und ihre Felder hinzugefügt haben, legen Sie das Recht für jede Rolle fest, die sie verwenden soll.
+
+1. <OpenRoles />
+
+1. Wählen Sie eine Rolle aus der Liste aus.
+
+1. Wechseln Sie zur Registerkarte **Custom objects rights**.
+
+1. Wählen Sie in der Liste **Permission** neben dem benutzerdefinierten Objekt aus, was Benutzer mit dieser Rolle tun können: **Lesen**, **Erstellen**, **Abgleichen** oder **Löschen**.
+
+Welche Möglichkeiten jedes Recht bietet, lesen Sie unter [Datenrechte für benutzerdefinierte Objekte][4].
+
+## Tabelle in einem Webpanel anzeigen {#web-panel}
+
+Mit einer benutzerplanbasierten Lizenz zeigen Sie Zusatztabellen in SuperOffice CRM über Webpanels an. Um die entsprechenden Zugriffsrechte festzulegen, muss der Benutzer einer Rolle angehören, die über die Funktionsrechte **List tables** und **Edit tables** verfügt.
 
 [1]: ./create-extra-field
-[2]: ../../../en/automation/webhook/dev/index
+[2]: /en/automation/webhook/dev/index
+[3]: ../learn/extra-table
+[4]: /de/admin/user-management/role/set-data-rights-for-role#custom-objects
+[5]: /de/customization/screen-designer/admin/add-layout#custom-objects
+[8]: /de/admin/license/expander-services
+[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-table.png
+[img2]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
+[img3]: /media/loc/en/custom-objects/table-properties-navigator.png
+[img4]: /media/loc/en/custom-objects/table-properties-display-field.png

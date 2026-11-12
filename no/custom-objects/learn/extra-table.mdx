@@ -1,128 +1,113 @@
 ---
 uid: help-no-extra-table
 title: Ekstratabeller
-description: Introduksjon til ekstratabeller i SuperOffice,
-keywords: ['database', 'ekstratabell', 'tabellmappe', 'tredjepartstabell']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+description: En ekstratabell er en databasetabell som du definerer selv. Med CRM Suite Growth eller høyere blir den et egendefinert objekt som oppfører seg som firma og salg.
+keywords: ['ekstratabell', 'tredjepartstabell', 'egendefinert objekt']
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
 content_type: concept
-tier: core
-audience: user
+tier: growth
+audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /no/custom-objects/learn/extra-table/index
+redirect_from:
+  - /no/custom-objects/extra-table/index
+  - /no/custom-objects/learn/extra-table/index
+related:
+  - Opprette en post for et egendefinert objekt: /no/custom-objects/learn/create
+  - Oppdatere en post for et egendefinert objekt: /no/custom-objects/learn/update
+  - Legge til en ekstratabell: /no/custom-objects/admin/create-extra-table
+  - Legge til ekstrafelt: /no/custom-objects/admin/create-extra-field
+  - Angi datarettigheter for egendefinerte objekter: /no/admin/user-management/role/set-data-rights-for-role#custom-objects
+  - Utforme layouten for et egendefinert objekt: /no/customization/screen-designer/admin/add-layout#custom-objects
+  - Egendefinerte skjermer: /no/ui/blogic/learn/index
 language: no
 ---
 
-import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
+En *ekstratabell* (også kalt *tredjepartstabell*) er en databasetabell som du definerer selv, for data som SuperOffice ikke lagrer i en standardtabell. Administratorer [oppretter ekstratabeller][2], og legger til felt i dem, i **Innstillinger og vedlikehold** > **Systemdesign** > **Tabeller**.
 
-<ReqDevToolsTransition />
+<Note>
+Ekstratabeller krever CRM Suite-planen **Growth** eller høyere, eller en lisens basert på brukerplan med [Development Tools][13].
 
-Development Tools-lisensen eller Core-planen gir deg muligheten til å opprette ekstratabeller (tilpassede objekter) i databasen.
+Med en lisens basert på brukerplan er ekstratabeller tilgjengelige i SuperOffice Service, og i SuperOffice CRM via [webpaneler][14]. Hvis du vil bruke dem som egendefinerte objekter i SuperOffice CRM, kan du delta i [pilotprogrammet for egendefinerte objekter][15].
+</Note>
 
-**Tabeller**-skjermbildet er verktøyet ditt for tilpasning av databaseskjemaet.
+## Ekstratabeller som egendefinerte objekter
 
-## Slik får du tilgang
+I CRM Suite blir en ekstratabell et *egendefinert objekt*: en type post som oppfører seg som standardpostene, for eksempel firma og salg. Et egendefinert objekt har egne felt, og kan være relatert til firma, personer, salg, prosjekter, saker, oppfølginger og andre egendefinerte objekter.
 
-<Tabs>
-<Tab title="Klassisk">
-Tredjepartstabeller er umiddelbart tilgjengelige for standard CRUD-operasjoner i SuperOffice Service. Du må sette opp et webpanel for å få tilgang til dem fra Salgsklienten.
-</Tab>
+Trinnene for å opprette en tabell er de samme uavhengig av lisens. Det som er forskjellig, er hvordan brukerne viser og arbeider med dataene som er lagret i den.
 
-<Tab title="Ny (fra versjon 10.3.4 pilot)">
-Ikke lenger begrenset til SuperOffice Service, kan du enkelt utforske og vedlikeholde data i ekstratabeller fra SuperOffice CRM.
+## Hvor du finner egendefinerte objekter {#where}
 
-### Bygg dashbord ved hjelp av tilpassede objekter
+Brukere finner egendefinerte objekter på disse stedene:
 
-![Dashbord med tilpassede objekter -screenshot][img1]
+* **Hovedmeny:** Klikk <i class="ph ph-list" aria-label="Hovedmeny"></i> og velg **Egendefinerte objekter** for å åpne skjermbildet **Egendefinerte objekter** med alle egendefinerte objekter du har tilgang til. Velg et egendefinert objekt, legg til [søkekriterier][16] i fanen **Kriterier**, og klikk **Finn**. Postene som samsvarer, vises i fanen **Resultater**.
 
-### Søk og utvalg
+    ![Skjermbildet Egendefinerte objekter med Laptop-postene -screenshot][img11]
 
-**Tilpasset objekt som søkekriterium for firma, person, salg, prosjekt, sak, aktivitet:**
+* **Navigatoren:** Egendefinerte objekter er oppført i Navigatoren, hver med sitt eget ikon. Velg et egendefinert objekt for å åpne skjermbildet med en liste over poster. Administratoren din bestemmer hvilke egendefinerte objekter som vises.
 
-![Tilpasset objekt som søkekriterium -screenshot][img2]
+    ![Navigatoren med fire egendefinerte objekter, Laptop valgt -screenshot][img10]
 
-**Opprett utvalg av tilpassede objekter (10.3.7):**
+* **Ny:** Klikk **Ny** på toppraden for å [opprette en post][7] for et egendefinert objekt.
 
-![Søkeside med tilpassede objekter -screenshot][img3]
+* **Detaljkort:** Når et egendefinert objekt er relatert til et firma, en person, et salg, et prosjekt eller en sak, vises de relaterte postene på et detaljkort på den posten.
 
-![Utvalg av tilpassede objekter -screenshot][img4]
+    ![Firma med et detaljkort for leieavtaler -screenshot][img8]
 
-### Vedlikeholde data (10.3.7)
+* **Sidepanel:** På et detaljkort med egendefinerte objekter velger du en post for å se den i visningen **Forhåndsvisning** i sidepanelet. Velg en relatert post i forhåndsvisningen for å gå til den.
 
-**Åpne oversikten over tilpassede objekter:**
+    ![Leieavtale vist i visningen Forhåndsvisning i sidepanelet -screenshot][img9]
 
-![Oversikt over tilpassede objekter -screenshot][img5]
+* **Dashbord:** Bruk et egendefinert objekt som datakilde for en dashbordfigur.
 
-**Søk:**
+    ![Dashbord med figurer basert på de egendefinerte objektene Leieavtale og Laptop -screenshot][img1]
 
-![Oversikt over tilpassede objekter, søk -screenshot][img6]
+* **Historikk og favoritter:** Postene du åpner, legges til i [historikklisten][9], og du kan [legge dem til som favoritter][10].
 
-**Forhåndsvisning:**
+Hvilke egendefinerte objekter og poster du kan se, opprette, oppdatere eller slette, avhenger av [rollen][8] din.
 
-![Oversikt over tilpassede objekter, forhåndsvisning -screenshot][img7]
+## Søk etter egendefinerte objekter {#search}
 
-**Legg til/fjern elementer:**
+Du kan søke etter egendefinerte objekter og opprette utvalg basert på dem, på samme måte som for firma, personer og salg.
 
-Når du ser resultatene for et spesifikt element i oversikten **Tilpassede objekter**, klikker du på **Oppgave**-knappen og velger **Ny** eller **Slett**.
+* **Finn:** I skjermbildet **Finn** velger du et egendefinert objekt for å søke etter postene. Du kan også bruke et egendefinert objekt som søkekriterium når du søker etter firma, personer, salg, prosjekter, saker og oppfølginger.
 
-**Forhåndsutfyll felter når tilpasset objekt lastes (10.3.8):**
+    ![Finn firma med et Leieavtale-felt som søkekriterium -screenshot][img2]
 
-Den nye [SalesLoadCustomObject][6]-triggeren blir kalt før et tilpasset objekt-skjermbilde lastes. Bruk den til å sette standardverdier i felter og definere forretningsregler.
-</Tab>
-</Tabs>
+    ![Skjermbildet Finn med egendefinerte objekter -screenshot][img3]
 
-## Tabeller-bilde
+* **Utvalg:** Lagre søket som et utvalg av poster for egendefinerte objekter. Et dynamisk utvalg holder listen oppdatert.
 
-**Tabeller**-skjermbildet viser en liste over databasetabeller. Den viser både standardtabeller (forhåndsdefinert i systemet og danner grunnlaget for forskjellige kort) og ekstratabeller (tabeller du oppretter selv med valgfritt innhold).
+    ![Finn Laptop med søkeresultater og Lagre som utvalg -screenshot][img4]
 
-Her kan du opprette nye tabeller og felt for forskjellige kort og dialogbokser. Kun administratorer har tilgang til denne funksjonaliteten.
+<Note>
+[Fritekstsøk][17] (feltet **Search for anything** på toppraden) inkluderer ikke egendefinerte objekter. Bruk **Finn** eller søket i det egendefinerte objektets egen skjerm.
+</Note>
 
-### Tabellmapper
+## Skjermbildet Tabeller {#tables}
 
-Tabellmapper brukes til å organisere egendefinerte tabeller.
+Skjermbildet **Tabeller** i **Innstillinger og vedlikehold** > **Systemdesign** viser databasetabellene. Det viser både standardtabeller, som er en del av SuperOffice, og ekstratabeller, som du oppretter selv. Bare administratorer har tilgang til dette skjermbildet.
 
-## Konvensjoner
+Bruk tabellmapper til å organisere ekstratabellene dine.
 
-<Warning>
-Velg databasetabell- og feltnavn nøye. De kan ikke endres senere!
-
-Et logisk navn er best fordi det gjør det enklere å se hva databasen inneholder.
-</Warning>
-
-Prefikser sikrer at det du oppretter ikke skaper konflikt med fremtidige SuperOffice-tabell- og feltnavn. Det garanterer imidlertid ikke at du unngår navnekonflikter mellom forskjellige tredjeparter.
-
-### Tabellnavn
-
-* Må starte med **y_**
-* Kan bare inneholde understrek, bokstavene a til z, og tall
-
-### Feltnavn
-
-* Må starte med **x_**
-* Må være unikt innen tabellen
-* Må være ett enkelt ord
-* Kan bare inneholde understrek, bokstaver fra a til z, og tall
-
-## Aktuelle emner
-
-* [Legge til ekstratabell][2]
-* [Legge til ekstrafelt][3]
-* [Brukerdefinerte felt][4]
-* [Egendefinerte skjermer][1]
-* [Legge til trigger][5]
-
-[1]: ../../ui/blogic/learn/index
 [2]: ../admin/create-extra-table
-[3]: ../admin/create-extra-field
-[4]: ../admin/add-udef
-[5]: ../../../en/automation/trigger/create-trigger-script
-[6]: ../../../en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
+[7]: ./create
+[8]: /no/admin/user-management/role/set-data-rights-for-role#custom-objects
+[9]: /no/learn/basics/history
+[10]: /no/learn/basics/fav
+[13]: /no/admin/license/expander-services
+[14]: /no/customization/web-panels/admin/index
+[15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+[16]: /no/search-options/learn/search-criteria
+[17]: /no/search-options/learn/freetext-search
 
-[img1]: ../../../media/loc/en/automation/custom-object-dashboard.png
-[img2]: ../../../media/loc/en/automation/find-custom-object-relation.png
-[img3]: ../../../media/loc/en/automation/find-screen-with-custom-objects.png
-[img4]: ../../../media/loc/en/automation/custom-object-selection.png
-[img5]: ../../../media/loc/en/automation/go-to-custom-objects.png
-[img6]: ../../../media/loc/en/automation/search-inventory.png
-[img7]: ../../../media/loc/en/automation/preview-inventory-results.png
+[img1]: /media/loc/en/custom-objects/dashboard-leases.png
+[img2]: /media/loc/en/custom-objects/find-company-lease-criteria.png
+[img3]: /media/loc/en/custom-objects/find-screen-custom-objects.png
+[img4]: /media/loc/en/custom-objects/find-laptop-results.png
+[img8]: /media/loc/en/custom-objects/company-lease-tab.png
+[img9]: /media/loc/en/custom-objects/company-lease-preview.png
+[img10]: /media/loc/en/custom-objects/navigator-custom-objects.png
+[img11]: /media/loc/en/custom-objects/custom-objects-screen.png
