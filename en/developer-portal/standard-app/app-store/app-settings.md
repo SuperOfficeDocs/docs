@@ -4,7 +4,7 @@ title: Application settings
 description: Reference of application settings in the SuperOffice Developer Portal.
 keywords: ['apps', 'Developer Portal']
 author: Bergfrid Dias
-date: 07.07.2026
+date: 11.06.2026
 so_version: 2.0
 version_devportal: 2.0
 content_type: reference
@@ -36,9 +36,9 @@ The [steps to update all App Store information][3] are the same.
 |---|---|---|
 | Green button text | The label of the green button on your App Store entry. | [Details tab][5] |
 | Links | Any additional links. Each link has a type (see list below), URL, and text. | [Details tab][5] |
-| Categories | Apps are divided into categories in the App Store to help visitors navigate. See list below. | [Marketing requirements][7] |
-| Languages | The languages the app is available in. Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Romansh, Swedish | [Marketing requirements][7] |
-| Markets | In which markets should the app be available? Benelux, Denmark, Finland, Germany, Norway,Sweden, Switzerland, United Kingdom | [Marketing requirements][7] |
+| Categories | Apps are divided into categories in the App Store to help visitors navigate. See list below. | [App Store listing requirements][7] |
+| Languages | The languages the app is available in. Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Romansh, Swedish | [App Store listing requirements][7] |
+| Markets | In which markets should the app be available? Benelux, Denmark, Finland, Germany, Norway,Sweden, Switzerland, United Kingdom | [App Store listing requirements][7] |
 
 **Link types:**
 
@@ -65,9 +65,9 @@ The [steps to update all App Store information][3] are the same.
 
 | Setting | Description | Read more |
 |---|---|---|
-| Header | A one-liner to introduce the App and make visitors curious. The bold text below your company name on the App Store entry. | [Marketing requirements][7] |
-| About this app| In more detail (max 200 words), explain what your application does and what the customers get when they use it. Include the key benefit statements and customer testimonials if you have any. | [Marketing requirements][7] |
-| Key features | What does the app do? List the key features in bullet style. (max 10 features) | [Marketing requirements][7] |
+| Header | A one-liner to introduce the App and make visitors curious. The bold text below your company name on the App Store entry. | [App Store listing requirements][7] |
+| About this app| In more detail (max 200 words), explain what your application does and what the customers get when they use it. Include the key benefit statements and customer testimonials if you have any. | [App Store listing requirements][7] |
+| Key features | What does the app do? List the key features in bullet style. (max 10 features) | [App Store listing requirements][7] |
 | What's new | Information to help boost visibility when you release a new version of your application. | |
 
 ### Prices and terms

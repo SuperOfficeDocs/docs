@@ -1463,7 +1463,7 @@ items:
   nameWithType: NSContactEntity.SetDepartment(String)
   fullName: CRMScript.NetServer.NSContactEntity.SetDepartment(String)
   type: Method
-  summary: "\\n"
+  summary: # TODO
   remarks: 
   syntax: 
     content: Void SetDepartment(String department)

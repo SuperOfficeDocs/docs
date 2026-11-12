@@ -41,7 +41,7 @@ items:
   syntax:
     content: String {instance}.buildString(String delimiter)
   example:
-  - "<pre><code>String[] strings;\nstrings.pushBack(\"Alpha\");\nstrings.pushBack(\"Beta\");\nstrings.pushBack(\"Charlie\");\nString delimitedString = nstrings.buildString(\",\");\nprintLine(delimitedString);\n\n//prints Alpha,Beta,Charlie</code></pre>"
+  - "<pre><code>String[] strings;\nstrings.pushBack(\"Alpha\");\nstrings.pushBack(\"Beta\");\nstrings.pushBack(\"Charlie\");\nString delimitedString = strings.buildString(\",\");\nprintLine(delimitedString);\n\n//prints Alpha,Beta,Charlie</code></pre>"
 - uid: CRMScript.DataStructure.Array.clear()
   commentId: M:CRMScript.DataStructure.Array.clear()
   id: 'clear()'
@@ -137,7 +137,7 @@ items:
   syntax:
     content: Integer {instance}.length()
   example:
-  - "<pre><code>String[] userPlans;\nuserPlans.pushBack(\"Standard\");\nuserPlans.pushBack(\"Sales\");\nInteger arrLength = userPlans.length()\nprintLine(\"Array length: \" + userPlans.length().toString());\n//prints Array length: 2</code></pre>"
+  - "<pre><code>String[] userPlans;\nuserPlans.pushBack(\"Standard\");\nuserPlans.pushBack(\"Sales\");\nInteger arrLength = userPlans.length();\nprintLine(\"Array length: \" + userPlans.length().toString());\n//prints Array length: 2</code></pre>"
 - uid: CRMScript.DataStructure.Array.popBack()
   commentId: M:CRMScript.DataStructure.Array.popBack()
   id: 'popBack()'

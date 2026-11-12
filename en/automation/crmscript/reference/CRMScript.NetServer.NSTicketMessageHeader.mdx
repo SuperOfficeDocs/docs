@@ -41,7 +41,7 @@ NSTicketMessage message = agent.GetTicketMessageEntity(12);
 NSTicketMessageHeader[] headers = message.GetMessageHeaders();
 for(Integer i = 0; i < headers.length(); i++)
 {
-\tprintLine(headers[i].GetName());
+  printLine(headers[i].GetName());
 }
 ```
 
@@ -61,7 +61,7 @@ NSTicketMessage message = agent.GetTicketMessageEntity(12);
 NSTicketMessageHeader[] headers = message.GetMessageHeaders();
 for(Integer i = 0; i < headers.length(); i++)
 {
-\tprintLine(headers[i].GetValue());
+  printLine(headers[i].GetValue());
 }
 ```
 

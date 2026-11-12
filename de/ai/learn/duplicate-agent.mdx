@@ -3,8 +3,8 @@ title: Duplicate Agent
 description: Finden und führen Sie doppelte Firmen und Personen zusammen und verbinden Sie verwaiste Personen, die ihre Firma verloren haben, wieder mit ihrer Firma. Jede Änderung wird von Ihnen genehmigt.
 keywords: ['Datenqualität', 'KI-Agent', 'Firmen zusammenführen', 'doppelte Firmen', 'doppelte Personen', 'verwaiste Person']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: concept
 tier: growth
 category: automation
@@ -46,9 +46,11 @@ Der Agent schlägt vor, Sie entscheiden. Es werden keine Datensätze zusammengef
 
 ## Zeitplan
 
-Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Zeit.
+Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Zeit. Mit **Maximale Anzahl Aufgaben pro Tag** legen Sie fest, wie viele Vorschläge er täglich erstellt.
 
-Es gibt kein Tageslimit, wie viele Firmen er prüft. Der Agent hält bis zu 50 Vorschläge jedes Typs (Firmenzusammenführungen, Personenzusammenführungen und verwaiste Personen) für Ihre Entscheidung bereit. Sobald Sie genug genehmigt oder abgelehnt haben, füllt sein nächster geplanter Durchlauf diesen Typ wieder auf bis zu 50 auf, sofern es mehr zu finden gibt.
+Die Obergrenze gilt für jede der drei Prüfungen des Agenten getrennt: doppelte Firmen, doppelte Personen und verwaiste Personen. Beim Standardwert 25 könnten Sie an einem Tag bis zu 75 neue Vorschläge erhalten. Begrenzt werden die Vorschläge, nicht die geprüften Datensätze.
+
+Der Agent hält bis zu 50 Vorschläge jedes Typs (Firmenzusammenführungen, Personenzusammenführungen und verwaiste Personen) für Ihre Entscheidung bereit. Sobald Sie genug genehmigt oder abgelehnt haben, füllt sein nächster geplanter Durchlauf diesen Typ wieder auf bis zu 50 auf. Das geschieht nur, wenn es mehr zu finden gibt.
 
 ## Agent aktivieren {#setup}
 
@@ -70,11 +72,13 @@ Die Einrichtung ist ein einziger Schritt. Sie sind automatisch der Genehmiger un
 
 1. Geben Sie einen eindeutigen **Namen** für die Agenteninstanz ein. **Dieser kann nach der Aktivierung nicht mehr geändert werden.**
 
-    ![Die allgemeinen Einstellungen des Duplicate Agent mit Name, Beschreibung, Berichtssprache und Zeitplan -screenshot][img1]
+    ![Die allgemeinen Einstellungen des Duplicate Agent mit Name, Beschreibung, Berichtssprache, Zeitplan und Maximale Anzahl Aufgaben pro Tag -screenshot][img1]
 
 1. Optional können Sie die vorgeschlagene **Beschreibung** bearbeiten, wenn Sie etwas anderes möchten.
 
 1. Wählen Sie die **Berichtssprache**. Diese wirkt sich sowohl auf Berichte als auch auf Chat-Antworten aus.
+
+1. Wählen Sie, wie viele Vorschläge der Agent pro Tag erstellt (5 bis 50). Der Standardwert ist 25.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -82,7 +86,7 @@ Die Einrichtung ist ein einziger Schritt. Sie sind automatisch der Genehmiger un
 
 1. Wählen Sie **Zur Instanz**, um Ihren neuen Duplicate Agent zu öffnen und [loszulegen][3].
 
-Wählen Sie vor der Prüfung die Registerkarte **Chat**, klicken Sie dann auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend**, um eine umfangreiche Warteschlange auf Vorschläge einzugrenzen, die auf Ihre Entscheidung warten.
+Wählen Sie vor der Prüfung die Registerkarte **Chat**. Klicken Sie dann auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend**, um eine umfangreiche Warteschlange auf Vorschläge einzugrenzen, die auf Ihre Entscheidung warten. Die Liste zeigt standardmäßig **Kürzlich** an, was auch einschließt, was Sie in den letzten 6 Stunden genehmigt haben.
 
 ## Zusammenführungsvorschlag: doppelte Firmen {#merge-companies}
 
@@ -153,7 +157,7 @@ Der Agent sucht nach **verwaisten Personen**, also Personen ohne Firma, deren E-
 
 1. Wählen Sie die Registerkarte **Chat** aus.
 
-1. Bitten Sie den Agenten im Chat **Allgemein**, eine bestimmte Firma auf Duplikate zu prüfen, oder suchen Sie eine Person.
+1. Bitten Sie den Agenten im Thread **Allgemeiner Chat**, eine bestimmte Firma auf Duplikate zu prüfen, oder suchen Sie eine Person.
 
 1. Findet er auf diesem Weg ein echtes Duplikat oder eine verwaiste Person, erstellt er dafür eine normale Genehmigungsaufgabe, genau wie bei einem Fund aus dem täglichen geplanten Lauf. Prüfen Sie sie wie oben beschrieben.
 
@@ -175,9 +179,11 @@ Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbo
 
 **Was passiert, wenn ich ablehne oder ignoriere?** Es ändert sich nichts. Beide Datensätze bleiben unverändert.
 
-**Kann ich über mehrere Vorschläge gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Vorschläge aus und verwenden Sie **Genehmigen** oder **Ablehnen** im Bereich für Sammelaktionen, genau wie bei jedem anderen Agenten.
+**Kann ich über mehrere Vorschläge gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Vorschläge aus. Oder klicken Sie auf das Kontrollkästchen neben der Listenüberschrift, um alle auszuwählen, bis zu 50 auf einmal. Siehe [Mehrere Aufgaben gleichzeitig entscheiden][4]. Die Sammelaktion **Genehmigen** funktioniert nur für Firmenzusammenführungen. Zusammenführungen doppelter Personen und Verknüpfungen verwaister Personen können in der Sammelaktion nur abgelehnt werden. Genehmigen Sie diese daher einzeln.
 
-**Was passiert mit einem Vorschlag, den ich nicht rechtzeitig bearbeite?** Ein auf Ihre Entscheidung wartender Vorschlag hat eine begrenzte Lebensdauer, **standardmäßig 30 Tage**. Sobald er innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf seinem Thread. Handeln Sie nicht rechtzeitig, wird er verworfen, und der Agent macht weiter. Für einen abgelaufenen Vorschlag ändert sich nichts, und dasselbe Paar kann bei einer späteren Prüfung erneut auftauchen.
+**Kann ich die Antworten des Agenten bewerten?** Ja, wenn Sie Genehmiger sind. Siehe [Eine Antwort bewerten][5].
+
+**Was passiert mit einem Vorschlag, den ich nicht rechtzeitig bearbeite?** Ein auf Ihre Entscheidung wartender Vorschlag hat eine begrenzte Lebensdauer, **standardmäßig 14 Tage**. Sobald er innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf seinem Thread. Handeln Sie nicht rechtzeitig, wird er verworfen, und der Agent macht weiter. Für einen abgelaufenen Vorschlag ändert sich nichts, und dasselbe Paar kann bei einer späteren Prüfung erneut auftauchen.
 
 **Ich habe die Instanz deaktiviert, und meine ausstehenden Vorschläge sind weg.** Das Deaktivieren einer Instanz verwirft alle auf Genehmigung wartenden Vorschläge, wie unter [KI-Agenten einrichten][1] beschrieben. Genehmigen oder lehnen Sie zuerst ab, was Sie behalten möchten.
 
@@ -185,6 +191,8 @@ Nur der Eigentümer der Instanz kann ihre Einstellungen ändern oder sie lösche
 
 [1]: /de/ai/learn/set-up-ai-agents
 [3]: #workspace
+[4]: /de/ai/learn/set-up-ai-agents#bulk
+[5]: /de/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/ai/duplicate-agent-settings.png
 [img2]: /media/loc/en/ai/duplicate-company-comparison.png

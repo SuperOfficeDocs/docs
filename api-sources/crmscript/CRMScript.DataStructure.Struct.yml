@@ -32,7 +32,7 @@ items:
   syntax:
     content: Bool {type}.compare({type} s)
   example:
-  - "<pre><code>struct Person {\n  String firstname;\n  String lastname;\n  Bool compare(Person p) {\n    return this.toString() > p.toString();\n  }\n};\n\nPerson Person(String firstname, String lastname) {\n  Person p;\n  p.firstname = firstname;\n  p.lastname = lastname;\n  return p;\n}\n\nPerson[] persons;\npersons.pushBack(Person(\"Jack\", \"Black\"));\npersons.pushBack(Person(\"Mark\", \"Wahlberg\"));\npersons.pushBack(Person(\"Anthony\", \"Hopkins\"));\n\nprintLine(\"Before sort: \" + persons.buildString(\"|\"));\npersons.sort();\nprintLine(\"After sort: \" + persons.buildString(\"|\"));</code></pre>"
+  - "<pre><code>struct Person {\n  String firstname;\n  String lastname;\n  String toString() {\n    return this.firstname + \" \" + this.lastname;\n  }\n  Bool compare(Person p) {\n    return this.toString() > p.toString();\n  }\n};\n\nPerson Person(String firstname, String lastname) {\n  Person p;\n  p.firstname = firstname;\n  p.lastname = lastname;\n  return p;\n}\n\nPerson[] persons;\npersons.pushBack(Person(\"Jack\", \"Black\"));\npersons.pushBack(Person(\"Mark\", \"Wahlberg\"));\npersons.pushBack(Person(\"Anthony\", \"Hopkins\"));\n\nprintLine(\"Before sort: \" + persons.buildString(\"|\"));\npersons.sort();\nprintLine(\"After sort: \" + persons.buildString(\"|\"));</code></pre>"
 - uid: CRMScript.DataStructure.Struct.fromJsonString(String)
   commentId: M:CRMScript.DataStructure.Struct.fromJsonString(String)
   id: 'fromJsonString(String)'
@@ -44,7 +44,7 @@ items:
   nameWithType: Struct.fromJsonString(String)
   fullName: CRMScript.DataStructure.Struct.fromJsonString(String)
   type: Method
-  summary: "\nPass a boolean value to copy into a new object.\n"
+  summary: "Populates a struct from a JSON string."
   syntax:
     content: Void {type}.fromJsonString(String json)
   example:
@@ -108,11 +108,11 @@ items:
   nameWithType: Struct.toString()
   fullName: CRMScript.DataStructure.Struct.toString()
   type: Method
-  summary: "This function will return a JSON formatted string of the struct's contents. Same functionality as toJson(JSONBuilder), but it will return a string directly without having to instantiate a JSONbuilder."
+  summary: "If a struct has a function with this exact signature, then this method will be used whenever an instance of the struct is converted to a string, for example by buildString() on an array of struct instances, by convertGenericToString() and in the debugger. Without it, the struct's contents are converted to JSON, like toJsonString(). Structs have no built-in toString(), so p.toString() only compiles if the struct defines it."
   syntax:
     content: String {type}.toString()
   example:
-  - "<pre><code>struct Person {\n  String firstname;\n  String lastname;\n\n  String toString() {\n    return this.firstname + \" \" + this.lastname;\n  }\n};\n\nPerson p;\np.firstname = \"Jack\";\np.lastname = \"Black\";\nprintLine(p.toString());\n\n//prints Jack Black</code></pre>"
+  - "<pre><code>struct Person {\n  String firstname;\n  String lastname;\n\n  String toString() {\n    return this.firstname + \" \" + this.lastname;\n  }\n};\n\nPerson p;\np.firstname = \"Jack\";\np.lastname = \"Black\";\nprintLine(p.toString());\n//prints Jack Black\n\nPerson q;\nq.firstname = \"Mark\";\nq.lastname = \"Wahlberg\";\n\nPerson[] people;\npeople.pushBack(p);\npeople.pushBack(q);\nprintLine(people.buildString(\", \"));\n//prints Jack Black, Mark Wahlberg</code></pre>"
 references:
 - uid: CRMScript.DataStructure.Struct
   commentId: T:CRMScript.DataStructure.Struct

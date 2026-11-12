@@ -214,7 +214,7 @@ items:
       type: CRMScript.Global.Integer
       description:
   example: 
-  - "\n<pre><code>FHBitSet flags;\n\nflags.set(extraField.getFlags());\n\nflags.getBitNo(17);  // returns true if the extra field cannot be empty</code></pre>\n"
+  - "\n<pre><code>ExtraFieldsInfo extraField;\nextraField.getExtraFields(&quot;ticket&quot;);\n\nif (!extraField.eof()) {\n  FHBitSet flags;\n  flags.set(extraField.getFlags());\n  flags.getBitNo(17);  // returns true if the extra field cannot be empty\n}</code></pre>\n"
 - uid: CRMScript.Native.ExtraFieldsInfo.getName()
   commentId: M:CRMScript.Native.ExtraFieldsInfo.getName()
   id: 'getName()'
@@ -278,7 +278,7 @@ items:
       type: CRMScript.Global.String
       description: "The table the current field belongs to."
   example: 
-  - "\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;);\nprint(e.TableName());\n\nWill print &quot;person&quot;.</code></pre>\n"
+  - "\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;);\nprint(e.getTableName()); // Will print &quot;person&quot;</code></pre>\n"
 - uid: CRMScript.Native.ExtraFieldsInfo.getTicketChildrenFields()
   commentId: M:CRMScript.Native.ExtraFieldsInfo.getTicketChildrenFields()
   id: 'getTicketChildrenFields()'

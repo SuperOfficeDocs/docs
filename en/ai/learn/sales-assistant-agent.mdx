@@ -1,0 +1,226 @@
+---
+title: Sales Assistant Agent (beta)
+sidebarTitle: Sales Assistant Agent
+description: Get a daily, prioritized next step for the open sales that need attention, with every action approved by you before anything changes in SuperOffice.
+keywords: ['AI agent', 'next step', 'sales pipeline', 'stalled sale', 'sale date']
+author: digitaldiina
+date: 11.09.2026
+so_version: 12.6
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Activate agent: /en/ai/learn/set-up-ai-agents
+  - Edit settings: /en/ai/learn/set-up-ai-agents#edit
+  - Update a sale: /en/sale/learn/update
+  - /en/sale/learn/sales-guides
+  - Other AI services: /en/ai/learn/index
+language: en
+---
+
+import SalesAssistantAgentBetaNote from "../../../snippets/ai/sales-assistant-agent-beta-note.mdx";
+
+<SalesAssistantAgentBetaNote />
+
+The Sales Assistant Agent watches your own open sales and tells you which ones need attention. Once a day, or whenever you ask about a specific sale, it compares each sale with similar sales that were won. For every sale that needs a decision, it proposes one clear next step, for example a follow-up, a new sale date, or a quote to draft.
+
+## What the agent does for you
+
+* **Watches your pipeline daily:** it raises a sale only when something needs a decision, such as a sale date that has passed, a sale that takes longer than usual, a stalled sale, an overdue or missing next activity, or an open high-priority request for the customer.
+
+* **Learns from real sales:** it looks at how similar sales were won, for example how many activities it took and how soon the first one happened. It also looks at common reasons why similar sales were lost or stalled.
+
+* **Recommends one next step:** for example a follow-up, rescheduling an overdue activity, adding a stakeholder, drafting a quote, updating a sale date that has passed, or closing the sale as sold or lost. The reasoning is shown alongside.
+
+* **Remembers your decisions:** after you approve or reject a recommendation, it does not raise the same sale again until the sale changes or a waiting period has passed.
+
+<Note>
+The agent proposes. You decide. It never contacts a customer: quotes are created empty, and follow-ups are created without sending any invitations. The only thing the agent writes on its own is an alert flag on sales that are approaching or past their usual timeline. The flag is not cleared automatically. The agent works only from your own SuperOffice data. There is no web search or external enrichment.
+</Note>
+
+## Schedule
+
+The agent runs **Daily**, once a day at a system-assigned time. You control how many recommendations it creates each day with **Max tasks per day**.
+
+Each run looks at your 100 most recently registered sales and reviews the open and stalled ones among them. Older sales are not reviewed. If 20 recommendations are already waiting for your decision, the run adds no new ones until you have handled some.
+
+## Activate the agent {#setup}
+
+Setup is a single step. You are automatically the approver, and you can create one instance.
+
+1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
+
+    The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
+
+1. Locate the **Sales Assistant Agent** card in the **Agent overview** and select **Activate**. This opens the set-up wizard.
+
+    ![The Agent overview, with the Sales Assistant Agent card marked Beta -screenshot][img1]
+
+    <Tip>
+    Do not see the card? Select **Browse agents** to find it.
+    </Tip>
+
+## General settings {#settings}
+
+1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
+
+    ![The Sales Assistant Agent's General settings, with Max tasks per day, Base recommendations on, and the reminder settings -screenshot][img2]
+
+1. Optionally, edit the suggested **Description** if you want something different.
+
+1. Choose **Reporting language**. This affects both recommendations and chat replies. The default is English.
+
+1. Select how many recommendations the agent creates per day (up to 30). The default **Max tasks per day** is 10.
+
+1. Choose what to **Base recommendations on**. The default is **My own won deals**.
+
+    | Option | What the agent learns from |
+    |---|---|
+    | My own won deals | Your own won sales. |
+    | My team's won deals | Your team's won sales. |
+    | All won deals (whole organisation) | Every won sale in your organization. |
+    | The sale guide only | The [sales guide][1] for the sale type. Timing is not compared with past sales. |
+    | My own guidance | A text you write (up to 2000 characters), for example *Prioritize sales over 100k; always involve a technical contact*. Timing is not compared with past sales. |
+    | Selection of successful sales | The won sales in one of your own saved selections. |
+
+    Whatever you choose, recommendations also take into account why similar sales were lost or stalled.
+
+1. Optionally, turn on **Remind me about approaching dates** to also flag a sale whose sale date is coming up, even when nothing else is wrong. Then choose **Remind me this many business days ahead** (1-14). The default is 3. Business days skip weekends, but not public holidays.
+
+1. Select **Save**.
+
+    The instance is activated, appears under **My agents** in the Agents sidebar, greets you in **General chat**, and starts its first run straight away.
+
+    ![The Agent activated confirmation, with the Go to instance button -screenshot][img3]
+
+## How recommendations work {#recommendations}
+
+On each run, the agent compares your open sales with similar won sales, both on total age and on time in the current stage. Sales that are on track are left alone. It looks at:
+
+* **Sale age and stage timing:** a sale is approaching its usual timeline when it has been open longer than 7 out of 10 similar won sales were. It is past its usual timeline when it has been open longer than 9 out of 10. Time in a stage is not checked if won sales usually complete that stage in less than a week.
+
+* **Completed activities:** calls, meetings, and to-dos that actually happened. This tells the agent when you last reached out to the customer, so it does not suggest something already done.
+
+* **The sale date:** whether it has passed or, with reminders on, is coming up soon.
+
+* **Open requests:** whether the customer has an open, high-priority request. The agent tells you whether the request is on this sale or elsewhere on the customer's account, where you would not see it from the sale.
+
+The agent learns from the won sales in the 500 most recent sales of the history you chose, and needs at least five won sales to compare. With fewer, it follows the sales guide instead, or the sale's own signals if there is no guide.
+
+<Tip>
+A sale date that has passed is always flagged, and its priority is raised one level, even if everything else about the sale looks healthy. This cannot be turned off.
+</Tip>
+
+### Priority
+
+Each recommendation has a priority: **High**, **Normal**, or **Low**. Bigger sales move up a level and smaller ones down, compared with your other open sales. A strategic customer whose sale is stalled, has an overdue activity, or has an open high-priority request also moves up. So does an upcoming sale date when reminders are on.
+
+When more sales need attention than your **Max tasks per day** allows, the highest priority comes first, then the highest amount. The rest wait for a later run.
+
+## Review and approve recommendations {#review}
+
+1. Select the **Chat** tab.
+
+1. Select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending**.
+
+1. Choose a sale thread (<i class="ph ph-currency-circle-dollar" aria-label="Sale icon"></i>) from the list. Threads are named after the sale, company, and contact.
+
+1. Review the recommendation card:
+
+    * The sale's name, contact, and company.
+    * Key facts: **Sale type**, **Amount**, **Stage**, and **Days in stage**.
+    * **Why this deal**, a plain-language reason the sale was picked.
+    * **Recommended actions**, one block per step, listing exactly what will be written to SuperOffice. Sometimes a supporting action, such as adding a follow-up or a stakeholder, comes with the main step.
+
+1. Optionally, ask the agent in chat about the recommendation before you decide.
+
+1. Select **Approve** or **Reject**. The buttons apply to every action on the card.
+
+1. If the recommendation sets or changes a date, keep the suggested date in the confirmation or pick another day. The time of day stays the same.
+
+    You cannot change the date when you approve several recommendations at once.
+
+### What approving does
+
+The first column shows the action's title on the recommendation card.
+
+| Recommended action | What happens when you approve |
+|---|---|
+| Create appointment | Adds a follow-up to the sale: a phone call, meeting, or to-do (a suggested email becomes a to-do). It is placed in working hours 09:00-17:00, at least five business days ahead. |
+| Reschedule overdue appointment | Moves the sale's overdue follow-up to a new date, at least five business days ahead. No new follow-up is created. |
+| Add stakeholder | Adds the sale's contact to its [stakeholders][2]. The agent never adds a contact that is not already on the sale. |
+| Create draft quote | Creates an empty [quote][3] draft on the sale, for you to price and send. Nothing is added if the sale already has a quote. |
+| Update sale date | Offered when the sale date has passed. Sets the sale date to when similar won sales usually close, at least ten business days ahead, and adds a follow-up at least five business days ahead. Reopens the sale if it was stalled. |
+| Close as won | Sets the sale to **Sold**, dated the day you approve. |
+| Close as lost | Sets the sale to **Lost** with the suggested reason, dated the day you approve. If that reason is not in your company's list, the sale is closed without a reason. |
+
+<Warning>
+**Closing a sale cannot be undone from the agent.** The agent only suggests this with clear evidence in your CRM history, never just because a sale has gone quiet. To reverse it, [update the sale][4] directly.
+</Warning>
+
+When you approve, the agent confirms in chat what was created, or explains what could not be created so you can add it manually. If a card has two actions and only the first succeeds, the first is kept.
+
+When you reject, nothing is written to SuperOffice. The agent does not suggest anything for that sale again until the sale falls further behind, moves to another stage, or passes its sale date, or until 14 days have passed.
+
+After you approve, the sale comes back two days after the follow-up was due, two days after the new sale date, or 14 days after approval if nothing was added. It comes back sooner if the sale changes.
+
+## Ask about a specific sale
+
+1. Select the **Chat** tab.
+
+1. In the **General chat** thread, ask about a sale, for example *What should I do next with Acme Corp?*
+
+    If something needs attention, the agent creates a recommendation in that sale's own thread, just like the daily run. If the sale is on track, it says so.
+
+Recommendations you ask for count toward **Max tasks per day**. Chat looks at the same 100 most recently registered sales as the daily run, so it does not find older sales.
+
+You can also ask the agent in chat to create or update a sale, add a follow-up, add a sales guide step, register a request, close a sale as sold or lost, or search for a company. It asks you to confirm each one, but there is no approval card. Looking up a sale's details or asking for a summary of your pipeline creates no task.
+
+## The agent workspace {#workspace}
+
+The Sales Assistant Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
+
+| Tab | Description |
+|---|---|
+| Chat | A **General chat** thread plus one thread per sale the agent has flagged. |
+| History | A plain-language log of what the agent has done: how many open sales each run reviewed, each recommendation and whether it was approved, rejected, or expired, anything skipped (with the reason), and every change made through chat. Select a **Period** (last 24 hours, 7, 30, or 90 days) to narrow it down. |
+| Performance | Recommendations proposed, accepted, ignored, and expired over the last 7, 30, or 90 days. Approved recommendations count as accepted and rejected ones as ignored. |
+
+![The General chat thread, with the agent's welcome message -screenshot][img4]
+
+![The History tab, with the Period filter and a completed run -screenshot][img5]
+
+![The Performance tab, with the Recommendations Proposed metric -screenshot][img6]
+
+Select <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries.
+
+To change the description, language, **Max tasks per day**, what recommendations are based on, or the reminder settings, [edit the instance][5]. The name and schedule are fixed. Changes apply from the next run. Only the instance's owner can change its settings or delete it.
+
+## Tips and troubleshooting
+
+**Why do I not see a score?** By design, the card shows the recommended action and its reasoning, not a numeric score or confidence percentage.
+
+**Can I decide on several recommendations at once?** Yes. Select multiple pending recommendations and use **Approve** or **Reject** from the bulk panel.
+
+**What happens to a recommendation I do not get to in time?** A pending recommendation expires after 14 days. Once it is within 5 days of expiring, a countdown banner appears on its thread. Nothing changes in SuperOffice for an expired recommendation, and the agent may suggest the sale again on a later run.
+
+**I deactivated the instance and my pending recommendations are gone.** Deactivating an instance discards any recommendations awaiting approval, as described in [Set up AI agents][5]. Approve or reject what you need first.
+
+[1]: /en/sale/learn/sales-guides
+[2]: /en/sale/learn/stakeholders/index
+[3]: /en/sale/learn/quote/index
+[4]: /en/sale/learn/update
+[5]: /en/ai/learn/set-up-ai-agents#edit
+
+[img1]: /media/loc/en/ai/sales-assistant-agent-overview.png
+[img2]: /media/loc/en/ai/sales-assistant-settings.png
+[img3]: /media/loc/en/ai/sales-assistant-activated.png
+[img4]: /media/loc/en/ai/sales-assistant-chat.png
+[img5]: /media/loc/en/ai/sales-assistant-history.png
+[img6]: /media/loc/en/ai/sales-assistant-performance.png

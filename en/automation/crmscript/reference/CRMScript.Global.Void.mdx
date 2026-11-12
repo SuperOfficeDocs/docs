@@ -1916,7 +1916,7 @@ This function has a bug. Empty arrays will still return one child. We recommend 
 **Example:**
 
 ```crmscript
-String jsonString = "{"menu": {"liste": [ "1", "2", "3", true, 123, 1.23 ],"id": "file","value": "File""tall": 1.234567,"sant": true,"usant": false,"tom": null,"popup": {"menuitem": [{"value": "New", "onclick":"CreateNewDoc()"},{"value": "Open", "onclick": "OpenDoc()"},{"value": "Close", "onclick": "CloseDoc()"}]}}}";
+String jsonString = '{"menu": {"liste": [ "1", "2", "3", true, 123, 1.23 ],"id": "file","value": "File","tall": 1.234567,"sant": true,"usant": false,"tom": null,"popup": {"menuitem": [{"value": "New", "onclick":"CreateNewDoc()"},{"value": "Open", "onclick": "OpenDoc()"},{"value": "Close", "onclick": "CloseDoc()"}]}}}';
 XMLNode xmlObject = parseJSON(jsonString); // Converts jsonString to XML
 printLine(xmlObject.toJSON(0)); // Prints out the actual JSON content
 //For example the following JSON document:
@@ -1990,7 +1990,7 @@ XMLNode parseJSON2(String jsonDocument)
 **Example:**
 
 ```crmscript
-String jsonString = "{"menu": {"liste": [ "1", "2", "3", true, 123, 1.23 ],"id": "file","value": "File","tall": 1.234567,"sant": true,"usant": false,"tom": null,"popup": {"menuitem": [{"value": "New", "onclick": "CreateNewDoc()"},{"value": "Open", "onclick": "OpenDoc()"},{"value": "Close", "onclick": "CloseDoc()"}]}}}";
+String jsonString = '{"menu": {"liste": [ "1", "2", "3", true, 123, 1.23 ],"id": "file","value": "File","tall": 1.234567,"sant": true,"usant": false,"tom": null,"popup": {"menuitem": [{"value": "New", "onclick": "CreateNewDoc()"},{"value": "Open", "onclick": "OpenDoc()"},{"value": "Close", "onclick": "CloseDoc()"}]}}}';
 XMLNode xmlObject = parseJSON2(jsonString); // Converts jsonString to XML
 printLine(xmlObject.toJSON(0)); // Prints out the actual JSON content
 ```
@@ -2071,8 +2071,7 @@ Void printDebug(String debug)
 
 ## printLine(String)
 
-Prints lines into standard output without appending \\r\
- in p_line.
+Prints lines into standard output without appending \\r\\n in p_line.
 
 ```crmscript
 Void printLine(String line)
@@ -2389,7 +2388,7 @@ Useful in some CPU-intensive loops to maintain a responsive system.
 **Example:**
 
 ```crmscript
-sleep(01); //sleeps for about one-tenth of a second.
+sleep(0.1); // sleeps for about one-tenth of a second
 ```
 
 ## getTypeName(Generic)
@@ -2426,8 +2425,8 @@ An exception is thrown if the name is unknown, or the struct is not a struct.
 
 ```crmscript
 struct Person {
-\tString name;
-\tInteger age;
+  String name;
+  Integer age;
 };
 Person person;
 person.age = 42;
@@ -2656,7 +2655,7 @@ This is the number of dimensions in, not the length of, the array!
 
 ```crmscript
 Integer[][] i;
-printLine(getTypeDimensions(i).toString())
+printLine(getTypeDimensions(i).toString());
 ```
 
 ## typeIsStruct(Generic)
@@ -2673,12 +2672,12 @@ Bool typeIsStruct(Generic generic)
 
 ```crmscript
 struct Person {
-\tString name;
-\tInteger age;
+  String name;
+  Integer age;
 };
 Person p;
 if (typeIsStruct(p)) {
-\tprintLine("10-4");
+  printLine("10-4");
 }
 ```
 

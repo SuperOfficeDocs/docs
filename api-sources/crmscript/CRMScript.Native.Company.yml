@@ -135,6 +135,7 @@ items:
       type: CRMScript.NetServer.NSLocalizedField[][]
       description: "The formatted company address."
   example: 
+  - "\n<pre><code>Company c;\nc.load(123); // the ID of the company\nNSLocalizedField[][] adr = c.getFormattedAddress();\nadr[0][0].SetValue(adr[0][0].GetValue() + &quot;A&quot;); // Add an 'A' to the first address field\nc.setFormattedAddress(adr);\nc.save();\n\n// Print all info about all the address fields\nfor (Integer i = 0; i &lt; adr.length(); i++)\n{\n  for (Integer j = 0; j &lt; adr[i].length(); j++)\n  {\n    NSLocalizedField f = adr[i][j];\n    print(f.GetLabel() + &quot;:&quot; + f.GetName() + &quot;:&quot; + f.GetValue() + &quot;:&quot; + f.GetTooltip() + &quot;:&quot;);\n    print(f.GetValueLength().toString() + &quot;:&quot; + f.GetAddressType() + &quot;     &quot;);\n  }\n\n  print(&quot;\\n&quot;);\n}</code></pre>\n"
 - uid: CRMScript.Native.Company.getValue(String)
   commentId: M:CRMScript.Native.Company.getValue(String)
   id: 'getValue(String)'
@@ -238,14 +239,15 @@ items:
   summary: "\nSets the formatted address for a company.\n"
   remarks: 
   syntax: 
-    content: Void SetFormattedAddress(NSLocalizedField[][] name)
+    content: Void setFormattedAddress(NSLocalizedField[][] address)
     parameters:
-    - id: name
+    - id: address
       type: CRMScript.NetServer.NSLocalizedField[][]
       description: "The new address."
     return:
       type: CRMScript.Global.Void
   example: 
+  - "\n<pre><code>Company c;\nc.load(123); // the ID of the company\nNSLocalizedField[][] adr = c.getFormattedAddress();\nadr[0][0].SetValue(adr[0][0].GetValue() + &quot;A&quot;); // Add an 'A' to the first address field\nc.setFormattedAddress(adr);\nc.save();</code></pre>\n"
 - uid: CRMScript.Native.Company.setValue(String,String)
   commentId: M:CRMScript.Native.Company.setValue(String,String)
   id: 'setValue(String,String)'

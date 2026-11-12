@@ -348,7 +348,7 @@ items:
       type: CRMScript.Global.Bool
       description: "True if the customer exists; otherwise, false."
   example: 
-  - "\n<pre><code>Customer c;\n\nprint(c.load(3));</code></pre>\n"
+  - "\n<pre><code>Customer c;\n\nprint(c.load(3).toString());</code></pre>\n"
 - uid: CRMScript.Native.Customer.loadFromAgentAndKey(Integer,String)
   commentId: M:CRMScript.Native.Customer.loadFromAgentAndKey(Integer,String)
   id: 'loadFromAgentAndKey(Integer,String)'

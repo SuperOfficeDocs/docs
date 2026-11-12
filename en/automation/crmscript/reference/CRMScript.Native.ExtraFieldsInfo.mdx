@@ -186,9 +186,13 @@ Integer getFlags()
 **Example:**
 
 ```crmscript
-FHBitSet flags;
-flags.set(extraField.getFlags());
-flags.getBitNo(17);  // returns true if the extra field cannot be empty
+ExtraFieldsInfo extraField;
+extraField.getExtraFields("ticket");
+if (!extraField.eof()) {
+  FHBitSet flags;
+  flags.set(extraField.getFlags());
+  flags.getBitNo(17);  // returns true if the extra field cannot be empty
+}
 ```
 
 ## getName()
@@ -258,8 +262,7 @@ String getTableName()
 ```crmscript
 ExtraFieldsInfo e;
 e.getExtraFields("person");
-print(e.TableName());
-Will print "person".
+print(e.getTableName()); // Will print "person"
 ```
 
 ## getTicketChildrenFields()

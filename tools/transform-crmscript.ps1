@@ -128,25 +128,21 @@ function Clean-Description {
     # Skip TODO placeholders
     if ($Text -match '^\s*#?\s*TODO\s*$') { return "" }
 
-    # Remove leading/trailing quotes and \n
-    $Text = $Text.Trim('"').Trim()
-    $Text = $Text -replace '^\\n', ''
-    $Text = $Text -replace '\\n$', ''
+    # Double-quoted scalars keep their raw text, so decode their escapes (\n \" \\ \t \uXXXX ...) the same way as
+    # examples. Backslashes left after decoding are literal text, so escape them for markdown (and the frontmatter).
+    if ($Text -match '^\s*"([\s\S]*)"\s*$') {
+        $Text = (ConvertFrom-YamlDoubleQuoted $Matches[1]) -replace '\\', '\\'
+    } else {
+        $Text = $Text.Trim('"')
+    }
+    $Text = $Text.Trim()
 
-    # Convert <p></p>\n to blank lines
-    $Text = $Text -replace '<p></p>\\n', "`n`n"
-    $Text = $Text -replace '<p></p>', "`n`n"
-
-    # Convert \n to actual newlines
-    $Text = $Text -replace '\\n', "`n"
+    # Convert <p></p> (and the line break after it) to blank lines
+    $Text = $Text -replace '<p></p>\n?', "`n`n"
 
     # Convert HTML entities (but keep &lt; and &gt; as they're needed in markdown)
     $Text = $Text -replace '&quot;', '"'
     $Text = $Text -replace '&amp;', '&'
-
-    # The hand-rolled YAML parser never unescapes backslash-escaped quotes inside
-    # attribute values (for example <a href=\"...\">), so do it here before matching them
-    $Text = $Text -replace '\\"', '"'
 
     # Convert DocFx <xref href="..."> cross-references (source data occasionally carries these in a
     # description/summary field, for example "See <xref href=...>") to a real markdown link via the same
@@ -256,6 +252,27 @@ function Build-Line {
 function Test-EmptyRawField {
     param([string]$Text)
     return ($Text -eq '""') -or ($Text -match '^#?\s*TODO\s*$')
+}
+
+# The hand-rolled parser keeps a double-quoted YAML scalar's raw text, so its escapes (\" \\ \n \t ...) must be
+# decoded before rendering; otherwise example code shows up with literal backslashes.
+function ConvertFrom-YamlDoubleQuoted {
+    param([string]$Text)
+    return [regex]::Replace($Text, '\\(x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8}|[\s\S])', {
+        param($m)
+        $e = $m.Groups[1].Value
+        switch -CaseSensitive ($e.Substring(0, 1)) {
+            'n' { return "`n" }
+            't' { return "`t" }
+            'r' { return "`r" }
+            '0' { return [string][char]0 }
+            # \x, \u or \U without enough hex digits (for example C:\Users) is kept as written
+            { $_ -cin 'x', 'u', 'U' -and $e.Length -eq 1 } { return '\' + $e }
+            { $_ -cin 'x', 'u' } { return [string][char][Convert]::ToInt32($e.Substring(1), 16) }
+            'U' { return [char]::ConvertFromUtf32([Convert]::ToInt32($e.Substring(1), 16)) }
+            default { return $e }
+        }
+    })
 }
 
 # Parse YAML manually (safe line-by-line parsing)
@@ -372,15 +389,14 @@ function Get-YamlItems {
             # Check if next line starts with a dash (array item with example content)
             if ($j -lt $Lines.Count -and $Lines[$j] -match '^\s*-\s+"(.+)"$') {
                 # Extract the example string value
-                $exampleValue = $matches[1]
+                $exampleValue = ConvertFrom-YamlDoubleQuoted $matches[1]
                 
-                # The example is in a single line with escaped quotes and \n for newlines
                 # Extract content between <pre><code> and </code></pre>
-                if ($exampleValue -match '<pre><code>(.+?)</code></pre>') {
+                if ($exampleValue -match '(?s)<pre><code>(.+?)</code></pre>') {
                     $codeContent = $matches[1]
                     
-                    # Split by \n and clean up each line
-                    $exCode = $codeContent -split '\\n' | Where-Object { $_.Trim() -ne '' }
+                    # Split into lines, drop blank ones; tabs become 2 spaces (markdownlint MD010)
+                    $exCode = $codeContent -split "`r?`n" | ForEach-Object { $_ -replace "`t", '  ' } | Where-Object { $_.Trim() -ne '' }
                     
                     # Decode HTML entities
                     $exCode = $exCode | ForEach-Object {

@@ -1,10 +1,10 @@
 ---
 title: Arbeta med Lead Agent
-description: Granska och godkänn de prospekt Lead Agent hittar, med hjälp av flikarna Chatt, Historik och Prestanda.
+description: Granska och godkänn de prospekt Lead Agent hittar, med hjälp av flikarna Chatt, Historik och Resultat.
 keywords: ['lead agent', 'prospektrapport', 'hitta leads', 'godkänna lead', 'avvisa lead', 'AI-agenter']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
-so_version: 12.4
+date: 11.10.2026
+so_version: 12.6
 content_type: howto
 tier: plus
 category: sale
@@ -59,16 +59,16 @@ Fliken **Historik** är en detaljerad logg över allt agenten har gjort: bearbet
 Den här fliken är endast tillgänglig för agentens ägare och dess godkännare.
 </Note>
 
-### Prestanda
+### Resultat
 
-Fliken **Prestanda** visar hur instansen presterar under en period du väljer: bearbetade länkar, kvalificerade leads, undersökta leads, leads skickade för godkännande, godkända, avvisade, utgångna och avslutade körningar. Varje mätvärde visas som ett trenddiagram.
+Fliken **Resultat** visar hur instansen presterar under en period du väljer: bearbetade länkar, kvalificerade leads, undersökta leads, leads skickade för godkännande, godkända, avvisade, utgångna och avslutade körningar. Varje mätvärde visas som ett trenddiagram.
 
-![Fliken Prestanda -screenshot][img7]
+![Fliken Resultat -screenshot][img7]
 
 ## Granska ett prospekt
 
 1. Välj fliken **Chatt**.
-1. Klicka på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande**.
+1. Klicka på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande**. Listan visar **Senaste** som standard, vilket även omfattar det du godkände under de senaste 6 timmarna.
 1. Välj en lead från listan för att visa agentens **prospektrapport**.
 
     * Rapporten öppnas hopfälld till det väsentliga: ett matchningsbetyg, källorna den använde och viktiga nyckeltal.
@@ -82,7 +82,7 @@ Fliken **Prestanda** visar hur instansen presterar under en period du väljer: b
 ## Undersök ett specifikt företag
 
 1. Välj fliken **Chatt**.
-1. Be agenten i **Allmän**-chatten att undersöka ett specifikt företag.
+1. Be agenten i tråden **Allmän chatt** att undersöka ett specifikt företag.
 1. Om en verklig lead hittas läggs prospektrapporten till i listan. Granska den enligt beskrivningen ovan.
 
 ![Fliken Chatt: Allmän chatt och leadtrådar per företag -screenshot][img2]
@@ -118,7 +118,9 @@ Om du bestämmer dig för att inte lägga till ett prospekt i SuperOffice har du
 ![Leadden markerad som Avvisad efter bekräftelse -screenshot][img13]
 
 <Tip>
-För att städa upp listan kan du välja flera väntande prospekt och klicka på **Avvisa** för att avfärda dem alla på en gång.
+För att städa upp listan kan du välja flera väntande prospekt och klicka på **Avvisa** för att avfärda dem alla på en gång. Markera kryssrutan bredvid listrubriken för att markera alla väntande prospekt, upp till 50 åt gången. Se [Besluta om flera uppgifter samtidigt][2].
+
+Du kan också godkänna flera prospekt på en gång. Det statiska urval du väljer gäller för alla företag som godkänns i omgången.
 
 Använd filtret för att bara visa avvisade prospekt.
 </Tip>
@@ -127,13 +129,17 @@ Använd filtret för att bara visa avvisade prospekt.
 
 ## Felsökning
 
-**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd: 30 dagar som standard. En nedräkningsbanner visas när det återstår 5 dagar eller mindre tills den går ut. Om den inte godkänns eller avvisas i tid går den ut och ingenting sparas i ditt CRM.
+**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd: 21 dagar som standard. En nedräkningsbanner visas när det återstår 5 dagar eller mindre tills den går ut. Om den inte godkänns eller avvisas i tid går den ut och ingenting sparas i ditt CRM.
+
+**Kan jag betygsätta agentens svar?** Ja, om du är godkännare. Se [Betygsätt ett svar][3].
 
 **Jag avaktiverade instansen och mina väntande leads är borta.** Att avaktivera en instans tar bort alla leads som väntar på godkännande. Godkänn eller avvisa det du behöver först om du vill behålla det.
 
 **Jag kan se inställningarna för en instans men kan inte ändra något.** Du är en godkännare, inte ägaren. Endast instansens ägare kan spara ändringar i dess konfiguration. En godkännare som inte är ägaren kan visa men inte redigera den.
 
 [1]: set-up-lead-agent
+[2]: /sv/ai/learn/set-up-ai-agents#bulk
+[3]: /sv/ai/learn/set-up-ai-agents#rate
 
 [img1]: /media/loc/en/lead/lead-agent-general-chat.png
 [img2]: /media/loc/en/lead/lead-chat-threads.png
