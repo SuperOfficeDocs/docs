@@ -3,9 +3,9 @@ uid: help-de-more-tab
 title: Die Registerkarte Mehr
 description: Erfahren Sie, wie Sie die Registerkarte Mehr in SuperOffice CRM verwenden, um benutzerdefinierte Felder für Firmen, Personen, Verkäufe, Projekte, Folgeaufgabe und Dokumente anzuzeigen und zu verwalten.
 keywords: ['Registerkarte Mehr', 'Mehr-Registerkarte', 'udef', 'benutzerdefiniertes Feld', 'zusätzliches Feld', 'kundenspezifisches Feld']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
@@ -46,9 +46,7 @@ Um Daten in der Mehr-Registerkarte anzuzeigen:
 1. Gehen Sie zur entsprechenden Entitätsansicht, wie zum Beispiel **Firma** oder **Person**.
 1. Wählen Sie die **Mehr-Registerkarte** aus, um benutzerdefinierte Felder anzuzeigen.
 
-![Mehr-Registerkarte (Verkauf) -screenshot][img6]
-
-![Mehr-Registerkarte (Projekt) -screenshot][img4]
+    ![Registerkarte Mehr bei einem Verkauf -screenshot][img1]
 
 ## Informationen in der Mehr-Registerkarte bearbeiten
 
@@ -58,5 +56,4 @@ Klicken Sie auf <i class="ph ph-pencil-simple" aria-label="Edit"></i>, um die In
 
 * **Benutzerdefinierte Felder anpassen**: Das Hinzufügen benutzerdefinierter Felder oder die Anpassung von Layouts erfordert administrative Zugriffsrechte und in einigen Fällen eine **Development Tools**-Lizenz oder den **Core**-Plan.
 
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png

@@ -3,17 +3,17 @@ uid: help-da-more-tab
 title: Mere-fanen
 description: Lær hvordan du bruger Mere-fanen i SuperOffice CRM til at se og administrere brugerdefinerede felter for firmaer, personer, salg, projekter, opfølgninger og dokumenter.
 keywords: ['Mere-fane', 'fanen Mere', 'brugerdefineret felt', 'ekstra felt', 'tilpasset felt']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - Oversigt over brugerdefinerede felter: /da/custom-objects/learn/index
-  - /da/custom-objects/admin/add-udef
-  - /da/custom-objects/admin/create-extra-field
+  - Tilføj brugerdefinerede felter: /da/custom-objects/admin/add-udef
+  - Tilføj ekstra felter: /da/custom-objects/admin/create-extra-field
   - Administrer tilpassede layout med Skærmdesigner: /da/customization/screen-designer/admin/add-layout
 language: da
 ---
@@ -46,9 +46,7 @@ For at se data i Mere-fanen:
 1. Gå til den relevante enhedsskærm, såsom Firma eller Kontakt.
 1. Vælg **Mere-fanen** for at se de brugerdefinerede felter.
 
-![Mere-fanen (Salg) -screenshot][img6]
-
-![Mere-fanen (Projekt) -screenshot][img4]
+    ![Mere-fanen på et salg -screenshot][img1]
 
 ## Rediger information i Mere-fanen
 
@@ -58,5 +56,4 @@ Klik på <i class="ph ph-pencil-simple" aria-label="Edit"></i> for at redigere o
 
 * **Tilpas felterne**: Tilføjelse af brugerdefinerede felter eller justering af layout kræver administrativ adgang og i nogle tilfælde en licens til Development Tools eller **Core**-planen.
 
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png

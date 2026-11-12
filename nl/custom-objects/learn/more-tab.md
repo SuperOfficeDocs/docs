@@ -3,9 +3,9 @@ uid: help-nl-more-tab
 title: Het tabblad Meer
 description: Leer hoe u het tabblad Meer in SuperOffice CRM gebruikt om door de gebruiker gedefinieerde velden voor bedrijven, personen, verkopen, projecten, vervolgactiviteiten en documenten te bekijken en te beheren.
 keywords: ['tabblad Meer', 'Meer-tabblad', 'udef', 'door de gebruiker gedefinieerd veld', 'extra veld', 'aangepast veld']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
@@ -13,7 +13,7 @@ audience_tooltip: SuperOffice CRM
 related:
   - Overzicht van door de gebruiker gedefinieerde velden: /nl/custom-objects/learn/index
   - Door de gebruiker gedefinieerde velden toevoegen: /nl/custom-objects/admin/add-udef
-  - /nl/custom-objects/admin/create-extra-field
+  - Extra velden toevoegen: /nl/custom-objects/admin/create-extra-field
   - Aangepaste lay-outs beheren met de Screen Designer: /nl/customization/screen-designer/admin/add-layout
 language: nl
 ---
@@ -46,9 +46,7 @@ Om gegevens in het tabblad Meer te bekijken:
 1. Ga naar het relevante entiteitsscherm, zoals **Bedrijf** of **Persoon**.
 1. Selecteer het **tabblad Meer** om door de gebruiker gedefinieerde velden te bekijken.
 
-![Tabblad Meer (Verkoop) -screenshot][img6]
-
-![Tabblad Meer (Project) -screenshot][img4]
+    ![Tabblad Meer bij een verkoop -screenshot][img1]
 
 ## Informatie bewerken in het tabblad Meer
 
@@ -58,5 +56,4 @@ Klik op <i class="ph ph-pencil-simple" aria-label="Edit"></i> om de informatie i
 
 * **Velden aanpassen**: Het toevoegen van door de gebruiker gedefinieerde velden of het aanpassen van de lay-outs vereist administratieve toegang en in sommige gevallen een licentie voor **Development Tools** of het **Core**-plan.
 
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png

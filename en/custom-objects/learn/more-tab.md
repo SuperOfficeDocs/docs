@@ -3,13 +3,18 @@ uid: help-en-more-tab
 title: The More tab
 description: Learn how to use the More tab in SuperOffice CRM to view and manage user-defined fields for companies, contacts, sales, projects, follow-ups, and documents.
 keywords: ['udef', 'user-defined field', 'extra field', 'custom field']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Custom fields overview: /en/custom-objects/learn/index
+  - Add user-defined fields: /en/custom-objects/admin/add-udef
+  - Add extra fields: /en/custom-objects/admin/create-extra-field
+  - Managing custom layouts with the Screen Designer: /en/customization/screen-designer/admin/add-layout
 language: en
 ---
 
@@ -42,9 +47,7 @@ To view data in the More tab:
 
 1. Select the **More** tab to view custom fields.
 
-![The More tab (Sale) -screenshot][img6]
-
-![The More tab (Project) -screenshot][img4]
+    ![The More tab on a sale -screenshot][img1]
 
 ## Edit information in the More tab
 
@@ -54,17 +57,4 @@ Click <i class="ph ph-pencil-simple" aria-label="Edit"></i> to update the inform
 
 * **Customizing fields:** Adding custom defined fields or adjusting layouts requires administrative access and, in some cases, a Development Tools license or the Core plan.
 
-## Related topics
-
-* [Custom fields overview][1]
-* [Add user-defined fields][2]
-* [Add extra fields][3]
-* [Managing custom layouts with the Screen Designer][4]
-
-[1]: ./index
-[2]: ../admin/add-udef
-[3]: ../admin/create-extra-field
-[4]: ../../customization/screen-designer/admin/add-layout
-
-[img6]: /media/loc/en/sale/sale-more.png
-[img4]: /media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png

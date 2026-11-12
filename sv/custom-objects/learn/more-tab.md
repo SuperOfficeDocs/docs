@@ -3,9 +3,9 @@ uid: help-sv-more-tab
 title: Mer-fliken
 description: Lär dig hur du använder Mer-fliken i SuperOffice CRM för att visa och hantera användardefinierade fält för företag, kontakter, försäljning, projekt, händelse och dokument.
 keywords: ['Mer-flik', 'fliken Mer', 'udef', 'användardefinierat fält', 'extra fält', 'anpassat fält']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
@@ -46,9 +46,7 @@ För att visa data i Mer-fliken:
 1. Gå till relevant enhetsskärm, som **Företag** eller **Kontakt**.
 1. Välj **Mer-fliken** för att visa användardefinierade fält.
 
-![Mer-fliken (Försäljning) -screenshot][img6]
-
-![Mer-fliken (Projekt) -screenshot][img4]
+    ![Mer-fliken på en försäljning -screenshot][img1]
 
 ## Redigera information i Mer-fliken
 
@@ -58,5 +56,4 @@ Klicka på <i class="ph ph-pencil-simple" aria-label="Edit"></i> för att redige
 
 * **Anpassa fält**: Att lägga till användardefinierade fält eller justera layout kräver administrativ tillgång och i vissa fall en licens för Development Tools eller **Core**-planen.
 
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png

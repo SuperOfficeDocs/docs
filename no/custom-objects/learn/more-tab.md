@@ -3,13 +3,18 @@ uid: help-no-more-tab
 title: Mer-fanen
 description: Lær hvordan du bruker Mer-fanen i SuperOffice CRM for å vise og administrere brukerdefinerte felt for firmaer, personer, salg, prosjekter, oppfølginger og dokumenter.
 keywords: ['Mer-fane', 'udef', 'brukerdefinert felt', 'ekstra felt', 'tilpasset felt']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Oversikt over tilpassede felt: /no/custom-objects/learn/index
+  - Legg til brukerdefinerte felt: /no/custom-objects/admin/add-udef
+  - Legg til ekstra felt: /no/custom-objects/admin/create-extra-field
+  - Administrer tilpassede oppsett med Skjermdesigner: /no/customization/screen-designer/admin/add-layout
 language: no
 ---
 
@@ -41,9 +46,7 @@ For å vise data i Mer-fanen:
 1. Gå til den relevante skjermen, som Firma eller Person.
 1. Velg **Mer-fanen** for å se de tilpassede feltene.
 
-![Mer-fanen (Salg) -screenshot][img6]
-
-![Mer-fanen (Prosjekt) -screenshot][img4]
+    ![Mer-fanen på et salg -screenshot][img1]
 
 ## Rediger informasjon i Mer-fanen
 
@@ -53,17 +56,4 @@ Klikk <i class="ph ph-pencil-simple" aria-label="Edit"></i> for å redigere info
 
 * **Tilpass feltene**: Å legge til brukerdefinerte felt eller justere oppsett krever administrativ tilgang og i noen tilfeller en lisens for Development Tools eller **Core**-planen.
 
-## Relaterte emner
-
-* [Oversikt over tilpassede felt][1]
-* [Legg til brukerdefinerte felt][2]
-* [Legg til ekstra felt][3]
-* [Administrer tilpassede oppsett med Skjermdesigner][4]
-
-[1]: ./index
-[2]: ../admin/add-udef
-[3]: ../admin/create-extra-field
-[4]: ../../customization/screen-designer/admin/add-layout
-
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png
