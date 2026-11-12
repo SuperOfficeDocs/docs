@@ -34,7 +34,7 @@ The **More** tab is available for multiple entity types, allowing users to store
 | Contact | Stores user-specific data, for example, hardware, software, or contact roles. |
 | Sale | Includes any additional information specific to a sale, like approval status. |
 | Project | Tracks additional details such as client requirements or project-specific tags. |
-| Follow | Holds extra fields for further categorizing and documenting activities. |
+| Follow-up | Holds extra fields for further categorizing and documenting activities. |
 | Document | Stores additional document-specific fields, such as version notes or metadata. |
 
 Each of these **More** tabs allows users to adapt their CRM setup to their particular requirements without extensive customization efforts.
