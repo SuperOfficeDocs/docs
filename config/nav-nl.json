@@ -679,12 +679,12 @@
         "root": "nl/custom-objects/learn/index",
         "pages": [
           "nl/custom-objects/index",
+          "nl/custom-objects/learn/udef",
+          "nl/custom-objects/learn/more-tab",
+          "nl/custom-objects/learn/extra-field",
           "nl/custom-objects/learn/extra-table",
           "nl/custom-objects/learn/create",
           "nl/custom-objects/learn/update",
-          "nl/custom-objects/learn/more-tab",
-          "nl/custom-objects/learn/udef",
-          "nl/custom-objects/learn/extra-field",
           {
             "group": "Voor beheerders",
             "pages": [

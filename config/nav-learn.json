@@ -693,12 +693,12 @@
     "root": "en/custom-objects/learn/index",
     "pages": [
       "en/custom-objects/index",
+      "en/custom-objects/learn/udef",
+      "en/custom-objects/learn/more-tab",
+      "en/custom-objects/learn/extra-field",
       "en/custom-objects/learn/extra-table",
       "en/custom-objects/learn/create",
       "en/custom-objects/learn/update",
-      "en/custom-objects/learn/more-tab",
-      "en/custom-objects/learn/udef",
-      "en/custom-objects/learn/extra-field",
       {
         "group": "For administrators",
         "pages": [

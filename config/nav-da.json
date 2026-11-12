@@ -679,12 +679,12 @@
         "root": "da/custom-objects/learn/index",
         "pages": [
           "da/custom-objects/index",
+          "da/custom-objects/learn/udef",
+          "da/custom-objects/learn/more-tab",
+          "da/custom-objects/learn/extra-field",
           "da/custom-objects/learn/extra-table",
           "da/custom-objects/learn/create",
           "da/custom-objects/learn/update",
-          "da/custom-objects/learn/more-tab",
-          "da/custom-objects/learn/udef",
-          "da/custom-objects/learn/extra-field",
           {
             "group": "For admins",
             "pages": [
