@@ -1,0 +1,116 @@
+---
+uid: connect-erp-visma-net-requirements
+title: Requirements and preparations
+description: Requirements, user roles, and preparation steps for the ConnectERP integration with Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'requirements', 'subscriptions', 'user roles', 'value mappings', 'preparations']
+author: marcelspapens
+date: 11.11.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+Review all requirements and complete all preparations before starting the technical setup. Skipping this step is the most common cause of a failed or incomplete integration.
+
+## Subscriptions
+
+| System | Required |
+|---|---|
+| Visma Net Financials | Active subscription |
+| SuperOffice CRM Suite | Core or higher, see the table below for scope |
+
+| Feature | Core | Growth and higher |
+|---|---|---|
+| Customer sync | Yes | Yes |
+| Supplier sync | No | Yes |
+| Contact sync | Yes | Yes |
+| Product sync | No | Yes |
+| Sales price sync | No | Yes |
+| Order sync | No | Yes |
+| Location sync | No | Yes |
+| Project sync | No | Yes |
+| Customer order view, invoice view, and order graph (panels) | Yes | Yes |
+
+## Visma Net user account
+
+Create a **dedicated Visma Net user account** for the integration. Don't use a personal user account. If an employee leaves, the integration breaks.
+
+The integration user needs the following roles in Visma Net:
+
+* **Financials API user**
+* **Sales Creator (neXtGen)**
+
+{/* Screenshot needed: Add a screenshot of the Visma Net user roles screen showing the required roles assigned. */}
+
+<Tip>
+Use a neutral name such as *SuperOffice Integration* for this account so it's clearly identifiable in Visma Net audit logs.
+</Tip>
+
+## SuperOffice user rights
+
+Users who need to manually push data to Visma Net must have **edit rights** on the relevant card:
+
+| Action | Required right |
+|---|---|
+| Create Customer in Visma Net | Edit right on Company card |
+| Create/Update Contact in Visma Net | Edit right on Contact card |
+| Create Order in Visma Net | Edit right on Sale card |
+
+Users without edit rights won't see the action buttons. Assign the admin screen layouts only to groups that need them.
+
+## Downloads
+
+Before starting the default setup, download all required files from the [Downloads][1] page. Or use the provided integrations as a safe start of the configuration.
+
+## Value mappings
+
+Before starting the DataBridge configuration, map values used in Visma Net to the corresponding values in SuperOffice. You'll need these when configuring the product sync transformations in DataBridge.
+
+Collect the following mappings in a spreadsheet or document and bring them to the configuration session:
+
+| Mapping | Visma Net side | SuperOffice side | Needed in Core |
+|---|---|---|---|
+| Customer classes | Customer class codes in Visma Net | Countries or segments in SuperOffice | Yes |
+| VAT percentages | VAT codes used in Visma Net | VAT codes in SuperOffice price list | No |
+| Price lists | Price list names in Visma Net | Price list names in SuperOffice | No |
+| Product types | Item classes in Visma Net | Product categories in SuperOffice | No |
+| Product families | Product groups in Visma Net | Product groups in SuperOffice | No |
+
+The example below shows how a Map List transformation in DataBridge maps SuperOffice country values to Visma Net customer classes.
+
+![DataBridge Map List transformation: mapping Country to Visma Customer Class -screenshot][img1]
+
+<Tip>
+Incomplete or incorrect value mappings are the most common cause of products being imported with the wrong VAT rate or into the wrong price list. Take time to prepare these before the configuration session.
+</Tip>
+
+## Pre-configuration session (Growth and higher only)
+
+<Note>
+This session is only required for **CRM Suite Growth and higher**.
+</Note>
+
+For Growth and higher, the integration is fully customized to the customer's data model. Before starting the technical setup, hold a session with the customer to decide:
+
+* **Field mapping**: which Visma Net fields map to which SuperOffice fields for each entity
+* **Data flow direction**: per entity, is the data pushed, pulled, or synchronized in both directions?
+* **Leading system**: which system is the source of truth per entity in case of a conflict?
+* **Scope**: which entities should be synchronized, and which should remain separate?
+
+Document the outcomes of this session. The decisions made here directly determine how DataBridge integrations are configured.
+
+## Related content
+
+* [Prerequisites][2]
+* [Set up company sync][3]
+* [Downloads][1]
+
+[1]: ./downloads
+[2]: ./prerequisites
+[3]: ./set-up-company-sync
+
+[img1]: /media/loc/en/integrations/connect-erp/databridge-map-list-customer-class.png

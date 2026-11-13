@@ -1,0 +1,108 @@
+---
+uid: connect-erp-visma-net-verify
+title: Verify and finalize
+description: How to verify the ConnectERP integration with Visma Net Financials and finalize the setup.
+keywords: ['ConnectERP', 'Visma Net', 'verify', 'test', 'finalize', 'automated sync', 'lock integrations']
+author: marcelspapens
+date: 11.11.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+Run the verification tests before enabling the automated synchronizations. This confirms that all field mappings, scripts, and integrations are working correctly.
+
+| Verification | Core | Growth and higher |
+|---|---|---|
+| 1. Verify company sync | Yes | Yes |
+| 2. Verify contact sync | Yes | Yes |
+| 3. Verify product sync | No | Yes |
+| 4. Verify order sync | No | Yes |
+
+## 1. Verify company sync
+
+1. Create a new test company in SuperOffice.
+1. Open the company card and go to the **ERP (Visma Net)** tab (admin layout).
+1. Click **Create Company in Visma Net**.
+1. Confirm that the **ERP Cust. Number** field is populated on the company card in SuperOffice.
+1. Log in to Visma Net and verify that the customer was created with the correct details.
+1. Make a change to the company in Visma Net and wait up to one hour for the hourly sync to update SuperOffice.
+
+{/* Screenshot needed: Add a screenshot of the SuperOffice Company card ERP tab showing a populated ERP customer number after a successful sync. */}
+
+## 2. Verify contact sync
+
+1. Create a new contact on the test company in SuperOffice.
+1. Open the contact card and go to the **ERP (Visma Net)** tab (admin layout).
+1. Click **Create/Update Person in Visma Net**.
+1. Confirm that the **ERP Pers. Number** field is populated on the contact card in SuperOffice.
+1. Log in to Visma Net and verify the contact was created correctly.
+
+## 3. Verify product sync (Growth and higher only)
+
+<Note>
+This verification is only required for **CRM Suite Growth and higher**. Skip this section for Core.
+</Note>
+
+1. Log in to DataBridge.
+1. Open the **Visma Net Product Sync (Daily)** integration.
+1. Set today's date as the start value.
+1. Enable the integration and run it manually.
+1. In SuperOffice, open the price list and confirm that products from Visma Net have been imported with the correct VAT rates and price lists.
+
+{/* Screenshot needed: Add a screenshot of the SuperOffice price list showing imported Visma Net products. */}
+
+<Tip>
+After the test, set the start date back to a date before your oldest products to ensure a full initial import when the daily sync runs automatically for the first time.
+</Tip>
+
+## 4. Verify order sync (Growth and higher only)
+
+<Note>
+This verification is only required for **CRM Suite Growth and higher**. Skip this section for Core.
+</Note>
+
+1. Create a new sale in SuperOffice linked to the test company.
+1. Add a quote to the sale with at least two products from the imported product list.
+1. Set the sale status to **Sold** and convert the quote to an order.
+1. Open the sale card, go to the **ERP (Visma Net)** tab, and click **Create Order in Visma Net**.
+1. Confirm that the **ERP Order Number** field is populated on the sale card.
+1. Log in to Visma Net and verify the sales order was created correctly.
+
+{/* Screenshot needed: Add a screenshot of the SuperOffice Sale card showing the ERP Order Number populated after a successful order sync. */}
+
+## Enable automated synchronizations
+
+<Warning>
+Don't enable the automated synchronizations before the [initial match of companies][1] is done. If companies already exist in both SuperOffice and Visma Net before the first sync runs, the automated sync may create duplicates instead of linking the existing records.
+</Warning>
+
+Once all applicable verification tests pass, and the [initial match][1] is completed if companies exist in both systems, enable the automated integrations in DataBridge:
+
+**Core:**
+
+1. Enable **Visma Net Customer Sync (Hourly)**.
+1. Enable **Visma Net Person Sync (Hourly)**.
+
+**Growth and higher:**
+
+1. Enable **Visma Net Customer Sync (Hourly)**.
+1. Enable **Visma Net Person Sync (Hourly)**.
+1. Enable **Visma Net Product Sync (Daily)**.
+1. Enable **Visma Net Sales Orders (Hourly)**.
+
+<Note>
+If a verification step fails, check the DataBridge job log for error details. Common issues are incorrect field mappings, missing value transformations, or incorrect Instant Job URLs in the CRMScripts.
+</Note>
+
+## Finalize
+
+**CRM Suite Core:** Lock all DataBridge integrations now. The Core solution is a fixed configuration. Locking prevents accidental or unauthorized changes after handover to the customer.
+
+**Growth and higher:** Review the configured integrations with the customer and confirm all field mappings and data flows match the agreed requirements.
+
+[1]: ./initial-match

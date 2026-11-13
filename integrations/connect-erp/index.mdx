@@ -1,0 +1,81 @@
+---
+uid: connect-erp
+title: ConnectERP
+description: Introduction to ConnectERP, the ERP integration for SuperOffice CRM.
+keywords: ['ConnectERP', 'ERP', 'integration', 'Visma', 'synchronization', 'CRM Suite', 'Core', 'Growth']
+author: marcelspapens
+date: 11.11.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+related: false
+language: en
+userflow_index: true
+---
+
+ConnectERP is an integration solution that connects SuperOffice CRM with ERP systems, enabling synchronization of key business data between the two systems. The scope and flexibility of the integration depend on your SuperOffice CRM Suite.
+
+## Core vs Growth and higher
+
+ConnectERP works fundamentally differently depending on the CRM Suite:
+
+**CRM Suite Core: fixed solution**
+
+In Core, ConnectERP provides a standardized, locked integration for company and contact synchronization. The DataBridge integrations are delivered with a fixed configuration and are locked by the implementing consultant after setup. No customization of field mapping, data flow, or leading system is possible. This setup also includes financial views to show orders and invoices with each customer.
+This fixed solution ensures a stable and predictable integration that requires no ongoing maintenance.
+
+**CRM Suite Growth and higher: fully customizable**
+
+From Growth onwards, the full ConnectERP solution is available and can be fully tailored to the customer's needs. The customer decides which fields are synchronized, the direction of data flow, and which system is the leading system for each entity. Product catalog import, sales order synchronization, and financial views are also available. A consultant sets up the integration together with the customer based on their specific requirements.
+
+## What's included per CRM Suite
+
+| Feature | CRM Suite Core | CRM Suite Growth and higher |
+|---|---|---|
+| Customer sync | Yes (fixed) | Yes (customizable) |
+| Supplier sync | No | Yes (customizable) |
+| Contact sync | Yes (fixed) | Yes (customizable) |
+| Product sync | No | Yes (customizable) |
+| Sales price sync | No | Yes (customizable) |
+| Order sync | No | Yes (customizable) |
+| Location sync | No | Yes (customizable) |
+| Project sync | No | Yes (customizable) |
+| Customer order view | Yes | Yes |
+| Customer invoice view | Yes | Yes |
+| Customer order graph | Yes | Yes |
+| Custom field mapping | No | Yes |
+| Custom data flow direction | No | Yes |
+| Custom leading system per entity | No | Yes |
+
+### Company and contact sync (all suites)
+
+ConnectERP synchronizes companies and contacts between SuperOffice and your ERP system.
+
+In **Core**, the data flow is fixed: the ERP system is the leading system for company data, and SuperOffice is the leading system for contacts. This configuration is locked and can't be changed.
+
+In **Growth and higher**, the customer defines which system leads for each entity, how fields are mapped, and in which direction data flows.
+
+### Company order and invoice views (all suites)
+
+ConnectERP comes with three additional views on the customer card in SuperOffice, providing a list of orders, a list of invoices, and a graphical overview of order history.
+
+### Products and orders sync (Growth and higher)
+
+In Growth and higher CRM Suites, ConnectERP also supports synchronization of product catalogs and price information from the ERP. Sales orders can be created directly from SuperOffice quotes and sent to the ERP. Orders sync in both directions: orders that originate in the ERP, for example through e-commerce, become visible in SuperOffice, including their product details. All aspects of these flows are configurable.
+
+### Default setup for a quick start
+
+This documentation describes a default setup, for which we offer downloadable integrations and scripts. You can adapt the default setup to your needs. The exception is the company and contact sync in **Core**: there, you must use the defaults so that we can provide support.
+
+In **Core**, you can't create quotes in SuperOffice. It therefore doesn't make sense to set up the product import and the order sync.
+
+## Supported ERP systems
+
+* [Visma Net][1]
+* Visma Business NXT
+* Tripletex
+* Fortnox
+
+More ERP systems are added periodically.
+
+[1]: /integrations/connect-erp/visma-net/index

@@ -1,0 +1,69 @@
+---
+uid: connect-erp-visma-net-initial-match
+title: Initial match of companies
+description: How to link existing companies between Visma Net and SuperOffice using the initial match process.
+keywords: ['ConnectERP', 'Visma Net', 'initial match', 'companies', 'linking', 'DataBridge']
+author: marcelspapens
+date: 11.11.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+If companies already exist in both SuperOffice and Visma Net before the integration is set up, you can use the initial match process to link them without creating duplicates.
+
+Do the initial match before you enable the automated synchronizations in [Verify and finalize][2]. If no companies exist in both systems, skip this page.
+
+<Note>
+Download the initial match DataBridge profiles from the [Downloads][1] page (*databridge-integrations-initial-import.zip*) before starting.
+</Note>
+
+## Overview
+
+The initial match uses three DataBridge profiles:
+
+| Profile | Purpose |
+|---|---|
+| Visma Net Initial 1/3 (Visma) | Exports a list of all customers from Visma Net |
+| Visma Net Initial 2/3 (SuperOffice) | Exports a list of all companies from SuperOffice |
+| Visma Net Initial 3/3 (Link) | Imports the matched company pairs |
+
+## Step 1: Export both lists
+
+1. In DataBridge, run **Visma Net Initial 1/3 (Visma)** to generate a list of Visma Net customers. Configure the email destination to receive the exported list.
+1. Run **Visma Net Initial 2/3 (SuperOffice)** to generate a list of SuperOffice companies.
+
+![DataBridge: Visma Net Initial 1/3 (Visma) integration setup -screenshot][img1]
+
+## Step 2: Match the companies
+
+Create an import file with two columns:
+
+| Column | Description |
+|---|---|
+| `SuperOffice_Company_Number` | The SuperOffice company number |
+| `Visma_Company_Number` | The corresponding Visma Net customer number |
+
+<Warning>
+Review and verify every match before importing. Incorrect links cause data to be written to the wrong company records.
+</Warning>
+
+## Step 3: Import the matches
+
+1. In DataBridge, open **Visma Net Initial 3/3 (Link)**.
+1. Use your completed match file as the import source.
+1. Run the profile.
+1. In SuperOffice, verify that the **ERP Cust. Number** field is populated on the linked companies.
+
+## Next step
+
+Continue with [Verify and finalize][2].
+
+[1]: ./downloads
+[2]: ./verify-finalize
+
+[img1]: /media/loc/en/integrations/connect-erp/databridge-initial-match.png
