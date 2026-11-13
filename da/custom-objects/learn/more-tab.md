@@ -4,7 +4,7 @@ title: Mere-fanen
 description: Lær hvordan du bruger Mere-fanen i SuperOffice CRM til at se og administrere brugerdefinerede felter for firmaer, personer, salg, projekter, opfølgninger og dokumenter.
 keywords: ['Mere-fane', 'fanen Mere', 'brugerdefineret felt', 'ekstra felt', 'tilpasset felt']
 author: digitaldiina
-date: 11.12.2026
+date: 11.13.2026
 so_version: 12.6
 content_type: howto
 tier: core
@@ -18,7 +18,7 @@ related:
 language: da
 ---
 
-**Mere-fanen** i SuperOffice CRM giver brugerne mulighed for at se og administrere brugerdefinerede felter for forskellige enheder, herunder firmaer, kontakter, salg, projekter, opfølgninger og dokumenter. Denne tilpasningsfunktion hjælper dig med at indfange specifik information, der er unik for din organisations behov, og øger fleksibiliteten af din CRM.
+**Mere-fanen** i SuperOffice CRM giver brugerne mulighed for at se og administrere brugerdefinerede felter for forskellige posttyper, herunder firmaer, kontakter, salg, projekter, opfølgninger og dokumenter. Denne tilpasningsfunktion hjælper dig med at indfange specifik information, der er unik for din organisations behov, og øger fleksibiliteten af din CRM.
 
 Brugerdefinerede felter i **Mere-fanen** gør det lettere for din organisation at spore yderligere detaljer som hardware, ejet af kontakter, medarbejderomsætning eller andre tilpassede data, som ikke er tilgængelige som standard i SuperOffice CRM.
 
@@ -26,9 +26,9 @@ Hvis din organisation f.eks. sælger IT-produkter og har brug for felter for hve
 
 ## Indhold i Mere-fanen
 
-**Mere-fanen** er tilgængelig for flere enhedstyper og giver brugerne mulighed for at gemme tilpasset information, der er skræddersyet til deres forretningsbehov:
+**Mere-fanen** er tilgængelig for flere posttyper og giver brugerne mulighed for at gemme tilpasset information, der er skræddersyet til deres forretningsbehov:
 
-| Enhed | Beskrivelse af Mere-fanen|
+| Posttype | Beskrivelse af Mere-fanen|
 |---|---|
 | Firma | Viser brugerdefinerede felter som omsætning, antal ansatte og noter.|
 | Person | Gemmer bruger-specifikke data, som f.eks. hardware, software eller kontaktroller. |

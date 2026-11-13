@@ -4,7 +4,7 @@ title: Mer-fanen
 description: Lær hvordan du bruker Mer-fanen i SuperOffice CRM for å vise og administrere brukerdefinerte felt for firmaer, personer, salg, prosjekter, oppfølginger og dokumenter.
 keywords: ['Mer-fane', 'udef', 'brukerdefinert felt', 'ekstra felt', 'tilpasset felt']
 author: digitaldiina
-date: 11.12.2026
+date: 11.13.2026
 so_version: 12.6
 content_type: howto
 tier: core
@@ -18,7 +18,7 @@ related:
 language: no
 ---
 
-**Mer-fanen** i SuperOffice CRM lar brukere se og administrere brukerdefinerte felt for ulike enheter, inkludert firma, personer, salg, prosjekter, oppfølginger og dokumenter. Denne tilpasningsfunksjonen hjelper deg med å fange spesifikk informasjon som er unik for din organisasjons behov, og forbedrer fleksibiliteten til din CRM.
+**Mer-fanen** i SuperOffice CRM lar brukere se og administrere brukerdefinerte felt for ulike posttyper, inkludert firma, personer, salg, prosjekter, oppfølginger og dokumenter. Denne tilpasningsfunksjonen hjelper deg med å fange spesifikk informasjon som er unik for din organisasjons behov, og forbedrer fleksibiliteten til din CRM.
 
 Brukerdefinerte felt i **Mer-fanen** gjør det enklere for organisasjonen din å spore ekstra detaljer som maskinvare eid av kontakter, ansatturnover eller annen tilpasset data som ikke er tilgjengelig som standard i SuperOffice CRM.
 
@@ -26,9 +26,9 @@ Hvis for eksempel organisasjonen din selger IT-produkter og trenger felt for hve
 
 ## Innhold i Mer-fanen
 
-**Mer-fanen** er tilgjengelig for flere enhetstyper, og lar brukerne lagre tilpasset informasjon skreddersydd til deres forretningsbehov:
+**Mer-fanen** er tilgjengelig for flere posttyper, og lar brukerne lagre tilpasset informasjon skreddersydd til deres forretningsbehov:
 
-| Enhet | Beskrivelse av Mer-fanen|
+| Posttype | Beskrivelse av Mer-fanen|
 |---|---|
 | Firma | Viser tilpassede felt som omsetning, antall ansatte og notater.|
 | Kontakt | Lagre bruker-spesifikk data, for eksempel maskinvare, programvare eller kontaktroller. |

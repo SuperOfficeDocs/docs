@@ -4,7 +4,7 @@ title: Mer-fliken
 description: Lär dig hur du använder Mer-fliken i SuperOffice CRM för att visa och hantera användardefinierade fält för företag, kontakter, försäljning, projekt, händelse och dokument.
 keywords: ['Mer-flik', 'fliken Mer', 'udef', 'användardefinierat fält', 'extra fält', 'anpassat fält']
 author: digitaldiina
-date: 11.12.2026
+date: 11.13.2026
 so_version: 12.6
 content_type: howto
 tier: core
@@ -18,7 +18,7 @@ related:
 language: sv
 ---
 
-**Mer-fliken** i SuperOffice CRM låter användare visa och hantera användardefinierade fält för olika enheter, inklusive företag, kontakter, försäljning, projekt, uppföljningar och dokument. Denna anpassningsfunktion hjälper dig att samla in specifik information unik för din organisations behov, vilket ökar flexibiliteten i din CRM.
+**Mer-fliken** i SuperOffice CRM låter användare visa och hantera användardefinierade fält för olika posttyper, inklusive företag, kontakter, försäljning, projekt, uppföljningar och dokument. Denna anpassningsfunktion hjälper dig att samla in specifik information unik för din organisations behov, vilket ökar flexibiliteten i din CRM.
 
 Användardefinierade fält i **Mer-fliken** gör det enklare för din organisation att spåra ytterligare detaljer som hårdvara ägd av kontakter, personalomsättning eller annan anpassad data som inte finns som standard i SuperOffice CRM.
 
@@ -26,9 +26,9 @@ Om ditt företag till exempel säljer IT-produkter och behöver fält för varje
 
 ## Innehåll i Mer-fliken
 
-**Mer-fliken** är tillgänglig för flera enhetstyper och låter användarna lagra anpassad information skräddarsydd efter deras affärsbehov:
+**Mer-fliken** är tillgänglig för flera posttyper och låter användarna lagra anpassad information skräddarsydd efter deras affärsbehov:
 
-| Enhet | Beskrivning av Mer-fliken |
+| Posttyp | Beskrivning av Mer-fliken |
 |---|---|
 | Företag | Visar användardefinierade fält som omsättning, antal anställda och anpassade anteckningar. |
 | Kontakt | Lagrar användarspecifik data, till exempel hårdvara, mjukvara eller kontaktroller. |
