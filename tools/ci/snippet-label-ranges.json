@@ -14,27 +14,27 @@
     "da": {
       "start": 1300,
       "end": 1399,
-      "next": 1334
+      "next": 1336
     },
     "de": {
       "start": 1400,
       "end": 1499,
-      "next": 1434
+      "next": 1436
     },
     "nl": {
       "start": 1500,
       "end": 1599,
-      "next": 1534
+      "next": 1536
     },
     "no": {
       "start": 1600,
       "end": 1699,
-      "next": 1634
+      "next": 1636
     },
     "sv": {
       "start": 1700,
       "end": 1799,
-      "next": 1734
+      "next": 1736
     },
     "integrations": {
       "start": 1800,
