@@ -81,7 +81,7 @@ This verification is only required for **CRM Suite Growth and higher**. Skip thi
 Don't enable the automated synchronizations before the [initial match of companies][1] is done. If companies already exist in both SuperOffice and Visma Net before the first sync runs, the automated sync may create duplicates instead of linking the existing records.
 </Warning>
 
-Once all applicable verification tests pass, and the [initial match][1] has been completed (if applicable), enable the automated integrations in DataBridge:
+Once all applicable verification tests pass, and the [initial match][1] is completed if companies exist in both systems, enable the automated integrations in DataBridge:
 
 **Core:**
 
@@ -103,6 +103,6 @@ If a verification step fails, check the DataBridge job log for error details. Co
 
 **CRM Suite Core:** Lock all DataBridge integrations now. The Core solution is a fixed configuration. Locking prevents accidental or unauthorized changes after handover to the customer.
 
-**Growth and higher:** Review the configured integrations with the customer and confirm all field mappings and data flows match the agreed requirements. If companies existed in both systems before setup, proceed to [Initial match of companies][1].
+**Growth and higher:** Review the configured integrations with the customer and confirm all field mappings and data flows match the agreed requirements.
 
 [1]: ./initial-match

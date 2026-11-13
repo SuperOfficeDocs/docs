@@ -18,7 +18,7 @@ userflow_index: true
 Order sync is only available for **CRM Suite Growth and higher**. Skip this page for Core.
 </Note>
 
-This page covers all configuration steps required to push sales orders from SuperOffice to Visma Net. Orders are created on demand when a user clicks the action button on the Sale card.
+This page covers all configuration steps required to synchronize sales orders between SuperOffice and Visma Net. Orders sync in both directions. Orders are pushed to Visma Net on demand when a user clicks the action button on the Sale card. Orders that originate in Visma Net are synchronized into SuperOffice every hour.
 
 ## 1. Create user-defined field on the Sale card
 
@@ -38,11 +38,11 @@ The CRMScript allows users to manually push a sale from SuperOffice to Visma Net
 1. Open the **Order to Visma Net** *.txt* file from *crmscripts-visma-net.zip* and paste the content into the script editor.
 1. Set the configuration variables at the top of the script:
 
-| Variable | Value |
-|---|---|
-| `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
-| `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
-| `allowOnlySaleWithStatusSold` | `true` to only allow sales with status **Sold** to be pushed; `false` to allow all statuses |
+    | Variable | Value |
+    |---|---|
+    | `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
+    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
+    | `allowOnlySaleWithStatusSold` | `true` to only allow sales with status **Sold** to be pushed; `false` to allow all statuses |
 
 1. Save the script.
 
@@ -72,7 +72,7 @@ We recommend keeping `allowOnlySaleWithStatusSold = true` to prevent accidental 
 
 ## 4. Create the product selection
 
-DataBridge uses this selection as its data template for the product sync integration.
+DataBridge uses this selection as the data template for the **Visma Net Sales Orders (Button)** integration.
 
 1. In SuperOffice, click **New > Selection**.
 1. Select **Find Product**.
@@ -94,6 +94,7 @@ This profile is triggered manually when a user clicks **Create Order in Visma Ne
 
 1. In DataBridge, import the corresponding *.ndb* file.
 1. Connect to Visma Net.
+1. Select the **DB – Template: Quote** selection as the data source.
 1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#add-instant-job-url).
 
 ### Integration 7: Visma Net Sales Orders (Hourly)

@@ -15,9 +15,8 @@
           "integrations/connect-erp/visma-net/set-up-product-sync",
           "integrations/connect-erp/visma-net/set-up-order-sync",
           "integrations/connect-erp/visma-net/add-panels",
-          "integrations/connect-erp/visma-net/verify-finalize",
           "integrations/connect-erp/visma-net/initial-match",
-          "integrations/connect-erp/visma-net/send-invoice",
+          "integrations/connect-erp/visma-net/verify-finalize",
           "integrations/connect-erp/visma-net/downloads",
           "integrations/connect-erp/visma-net/troubleshooting"
         ]

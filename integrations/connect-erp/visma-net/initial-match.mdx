@@ -16,6 +16,8 @@ userflow_index: true
 
 If companies already exist in both SuperOffice and Visma Net before the integration is set up, you can use the initial match process to link them without creating duplicates.
 
+Do the initial match before you enable the automated synchronizations in [Verify and finalize][2]. If no companies exist in both systems, skip this page.
+
 <Note>
 Download the initial match DataBridge profiles from the [Downloads][1] page (*databridge-integrations-initial-import.zip*) before starting.
 </Note>
@@ -46,13 +48,9 @@ Create an import file with two columns:
 | `SuperOffice_Company_Number` | The SuperOffice company number |
 | `Visma_Company_Number` | The corresponding Visma Net customer number |
 
-<Tip>
-You can use an AI tool such as ChatGPT to speed up the matching process. Upload both lists and ask it to compare them and generate matches with a confidence percentage. Always review the AI-generated results manually before importing.
-
-Example prompt: *"Compare the 'SuperOffice Customers' list against the 'Visma Customers' list and generate a match file with columns SuperOffice_Company_Number and Visma_Company_Number. Add a confidence percentage for each match."*
-
-AI is only an aid. Always review and verify every match before importing. Incorrect links will cause data to be written to the wrong company records.
-</Tip>
+<Warning>
+Review and verify every match before importing. Incorrect links cause data to be written to the wrong company records.
+</Warning>
 
 ## Step 3: Import the matches
 
@@ -61,6 +59,11 @@ AI is only an aid. Always review and verify every match before importing. Incorr
 1. Run the profile.
 1. In SuperOffice, verify that the **ERP Cust. Number** field is populated on the linked companies.
 
+## Next step
+
+Continue with [Verify and finalize][2].
+
 [1]: ./downloads
+[2]: ./verify-finalize
 
 [img1]: /media/loc/en/integrations/connect-erp/databridge-initial-match.png

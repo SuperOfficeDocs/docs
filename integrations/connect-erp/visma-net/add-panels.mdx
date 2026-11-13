@@ -1,8 +1,8 @@
 ---
 uid: connect-erp-visma-net-add-panels
 title: Add panels
-description: How to add the DataBridge Panels for invoices, orders, and order history from Visma Net in SuperOffice.
-keywords: ['ConnectERP', 'Visma Net', 'DataBridge Panels', 'invoices', 'orders', 'order history', 'archives', 'panel']
+description: How to add the Panels for SuperOffice for invoices, orders, and order history from Visma Net.
+keywords: ['ConnectERP', 'Visma Net', 'Panels for SuperOffice', 'invoices', 'orders', 'order history', 'archives', 'panel']
 author: marcelspapens
 date: 11.11.2026
 content_type: howto
@@ -14,7 +14,7 @@ language: en
 userflow_index: true
 ---
 
-DataBridge Panels display live order and invoice data from Visma Net directly on the Company card in SuperOffice, without copying the data into the SuperOffice database. Panels are available in all CRM Suites.
+Panels for SuperOffice display live order and invoice data from Visma Net directly on the Company card in SuperOffice, without copying the data into the SuperOffice database. Panels are available in all CRM Suites.
 
 <Note>
 A **ConnectERP subscription** must be active for your SuperOffice tenant to have access to the Visma Net Financials panels.
@@ -22,7 +22,7 @@ A **ConnectERP subscription** must be active for your SuperOffice tenant to have
 
 ## Initial panel setup
 
-1. Navigate to the DataBridge panel signup portal.
+1. Go to [Panels for SuperOffice][3] and sign up.
 1. Configure your timezone settings.
 1. Accept the terms and privacy documentation.
 1. Complete the registration to gain access to the panel configuration.
@@ -32,7 +32,7 @@ A **ConnectERP subscription** must be active for your SuperOffice tenant to have
 1. Click **New panel**.
 1. Enter the label **Invoices (Visma Net)**.
 1. Select the **Visma Net Financials Invoice** panel template.
-1. Set **Company user-defined: ERP Customer Number** as the identifier field.
+1. Set **Company user-defined: ERP Cust. Number** as the identifier field.
 1. Authorize the connection to Visma Net and accept the terms.
 1. Click **Publish**.
 
@@ -41,7 +41,7 @@ A **ConnectERP subscription** must be active for your SuperOffice tenant to have
 1. Click **New panel**.
 1. Enter the label **Orders (Visma Net)**.
 1. Select the **Visma Net Financials Order** panel template.
-1. Set **Company user-defined: ERP Customer Number** as the identifier field.
+1. Set **Company user-defined: ERP Cust. Number** as the identifier field.
 1. Authorize the connection to Visma Net and accept the terms.
 1. Click **Publish**.
 
@@ -50,7 +50,7 @@ A **ConnectERP subscription** must be active for your SuperOffice tenant to have
 1. Click **New panel**.
 1. Enter the label **Order History (Visma Net)**.
 1. Select the **Visma Net Financials Order History** panel template.
-1. Set **Company user-defined: ERP Customer Number** as the identifier field.
+1. Set **Company user-defined: ERP Cust. Number** as the identifier field.
 1. Authorize the connection to Visma Net and accept the terms.
 1. Click **Publish**.
 
@@ -64,8 +64,10 @@ All panels support filtering and export. Users can filter by date range or order
 
 ## Next step
 
-Continue with [Verify and finalize][1].
+If companies already exist in both SuperOffice and Visma Net, continue with [Initial match of companies][2]. Otherwise, continue with [Verify and finalize][1].
 
 [1]: ./verify-finalize
+[2]: ./initial-match
+[3]: https://my-panels.infobridgeuniverse.com/
 
 [img1]: /media/loc/en/integrations/connect-erp/company-card-orders-panel.png

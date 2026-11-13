@@ -31,13 +31,9 @@ Go to **SuperOffice Admin > Fields > Contact > Add** and create the following 2 
 
 After adding both fields, click **Publish**.
 
-## 2. Create the contact selections
+## 2. Create the contact selection
 
-Two selections are needed for contact sync.
-
-### Selection: DB – Linked ERP Contact Persons
-
-This selection is used by the hourly automated contact sync to identify which contacts should be synchronized to Visma Net.
+Both contact sync integrations use the selection **DB – Linked ERP Contact Persons** as their data source. It identifies which contacts should be synchronized to Visma Net.
 
 **Before creating this selection:**
 
@@ -66,10 +62,10 @@ The CRMScript allows users to manually push or update a contact from SuperOffice
 1. Open the **Contact to Visma Net** *.txt* file from *crmscripts-visma-net.zip* and paste the content into the script editor.
 1. Set the configuration variables at the top of the script:
 
-| Variable | Value |
-|---|---|
-| `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
-| `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
+    | Variable | Value |
+    |---|---|
+    | `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
+    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
 
 1. Save the script.
 
@@ -101,6 +97,7 @@ This profile is triggered manually when a user clicks **Create/Update Person in 
 
 1. In DataBridge, import the corresponding *.ndb* file.
 1. Connect to Visma Net.
+1. Select the **DB – Linked ERP Contact Persons** selection as the data source.
 1. Verify that the customer number field mapping is correct. Contacts are linked to companies using the ERP customer number.
 1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#add-instant-job-url).
 
