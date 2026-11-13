@@ -1529,11 +1529,7 @@
     "destination": "/da/custom-objects/admin/edit-udef"
   },
   {
-    "source": "/da/custom-objects/admin/show-extra-field-on-request-details",
-    "destination": "/da/custom-objects/admin/create-extra-field"
-  },
-  {
-    "source": "/da/custom-objects/admin/show-extra-field-on-request-details.html",
+    "source": "/da/custom-objects/admin/show-extra-field-on-request-details*",
     "destination": "/da/custom-objects/admin/create-extra-field"
   },
   {
@@ -5905,11 +5901,7 @@
     "destination": "/de/custom-objects/admin/edit-udef"
   },
   {
-    "source": "/de/custom-objects/admin/show-extra-field-on-request-details",
-    "destination": "/de/custom-objects/admin/create-extra-field"
-  },
-  {
-    "source": "/de/custom-objects/admin/show-extra-field-on-request-details.html",
+    "source": "/de/custom-objects/admin/show-extra-field-on-request-details*",
     "destination": "/de/custom-objects/admin/create-extra-field"
   },
   {
@@ -12933,11 +12925,7 @@
     "destination": "/en/custom-objects/admin/edit-udef"
   },
   {
-    "source": "/en/custom-objects/admin/show-extra-field-on-request-details",
-    "destination": "/en/custom-objects/admin/create-extra-field"
-  },
-  {
-    "source": "/en/custom-objects/admin/show-extra-field-on-request-details.html",
+    "source": "/en/custom-objects/admin/show-extra-field-on-request-details*",
     "destination": "/en/custom-objects/admin/create-extra-field"
   },
   {
@@ -20705,11 +20693,7 @@
     "destination": "/nl/custom-objects/admin/edit-udef"
   },
   {
-    "source": "/nl/custom-objects/admin/show-extra-field-on-request-details",
-    "destination": "/nl/custom-objects/admin/create-extra-field"
-  },
-  {
-    "source": "/nl/custom-objects/admin/show-extra-field-on-request-details.html",
+    "source": "/nl/custom-objects/admin/show-extra-field-on-request-details*",
     "destination": "/nl/custom-objects/admin/create-extra-field"
   },
   {
@@ -25069,11 +25053,7 @@
     "destination": "/no/custom-objects/admin/edit-udef"
   },
   {
-    "source": "/no/custom-objects/admin/show-extra-field-on-request-details",
-    "destination": "/no/custom-objects/admin/create-extra-field"
-  },
-  {
-    "source": "/no/custom-objects/admin/show-extra-field-on-request-details.html",
+    "source": "/no/custom-objects/admin/show-extra-field-on-request-details*",
     "destination": "/no/custom-objects/admin/create-extra-field"
   },
   {
@@ -29941,11 +29921,7 @@
     "destination": "/sv/custom-objects/admin/edit-udef"
   },
   {
-    "source": "/sv/custom-objects/admin/show-extra-field-on-request-details",
-    "destination": "/sv/custom-objects/admin/create-extra-field"
-  },
-  {
-    "source": "/sv/custom-objects/admin/show-extra-field-on-request-details.html",
+    "source": "/sv/custom-objects/admin/show-extra-field-on-request-details*",
     "destination": "/sv/custom-objects/admin/create-extra-field"
   },
   {
