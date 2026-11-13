@@ -5,7 +5,7 @@ sidebarTitle: "Custom objects in API"
 description: There are 3 ways to customize the database schema - user-defined fields; extra fields; extra tables
 keywords: ['custom object', 'custom field', 'udef', 'extra table', 'extra field', 'user-defined field', 'UDefField', 'updatedCount', 'udefidentity']
 author: digitaldiina
-date: 11.12.2026
+date: 11.13.2026
 so_version: 12.6
 content_type: reference
 tier: core
@@ -123,7 +123,7 @@ When the user-defined fields are defined for a contact, the system controls whic
 * The **small** table contains integer values and short strings (10 chars)
 * The **large** table contains long strings (200 chars max)
 
-Some fields are indexed, some are not. The first 4 fields are indexed for searching:
+From version 10.3.1, any user-defined field can be indexed. Before version 10.3.1, only the first 4 fields of each type were indexed for searching:
 
 * `long01`-`long04` (UdXxxSmall table)
 * `string01`-`string04`
@@ -144,9 +144,9 @@ SELECT * FROM udprojectsmall WHERE udprojectsmall_id = 2345
 |---|---|---|---|---|---|---|
 | 211 | 0 | 0 | 0 | 0 | 0 | |
 
-If you change a field from non-searchable to searchable, its values are moved from a non-indexed to indexed field when you publish the change. For example, from `long05` to `long01`
+Before version 10.3.1, changing a field from non-searchable to searchable moved its values from a non-indexed to an indexed field when you published the change. For example, from `long05` to `long01`. An index could not be added to the table, so the data had to move to an indexed field.
 
-The only thing that has changed is that the new field is indexed. Unfortunately, we can't just add an index on the table - we have to move the data into the indexed field.
+From version 10.3.1, publishing an index change no longer moves data between fields.
 
 ### Table identity
 
@@ -201,8 +201,8 @@ This value used to be stored in updatedCount in SuperOffice.
 
 The **column ID** is the dictionary ID of the table and field used for storing the value.
 
-* 36358 = `UdProjSmall.Long06` (not indexed, not fast to search)
-* 36353 = `UdProjSmall.Long01` (indexed field)
+* 36358 = `UdProjSmall.Long06`
+* 36353 = `UdProjSmall.Long01`
 
 ### Column offset
 
