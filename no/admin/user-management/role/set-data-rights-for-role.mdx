@@ -4,8 +4,8 @@ title: Angi datarettigheter for rolle
 description: Angi datarettigheter for rolle
 keywords: ['brukeradministrasjon', 'rolle', 'tilgang', 'rettigheter']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
 tier: starter
 category: identity management
@@ -63,4 +63,29 @@ Du kan angi rettigheter for dataobjekter  basert på hvem som eier objektet. All
 
 I personkortet hentes feltet **Vår kontakt** alltid fra firmakortet som personen tilhører.
 
+## Egendefinerte objekter {#custom-objects}
+
+Med CRM Suite **Growth** eller høyere angir du også rettigheter for [egendefinerte objekter][3]. I motsetning til datarettighetene ovenfor gjelder disse rettighetene for alle data i et egendefinert objekt, uavhengig av hvem som eier det.
+
+1. Med rollen valgt, velg fanen **Rettigheter for egendefinert objekt**.
+
+    ![Fanen Rettigheter for egendefinert objekt for en rolle -screenshot][img1]
+
+1. Klikk <i class="ph ph-caret-down" aria-label="Chevron"></i> i listen **Samtykke** ved siden av et egendefinert objekt, og velg en rettighet:
+
+    | Rettighet | Brukere med denne rollen |
+    |---|---|
+    | None | Kan ikke se det egendefinerte objektet eller dataene i det |
+    | Read | Kan se egendefinerte data |
+    | Create | Kan se og legge til egendefinerte data |
+    | Update | Kan se, legge til og redigere egendefinerte data |
+    | Delete | Kan se, legge til, redigere og slette egendefinerte data |
+
+<Tip>
+Når du har opprettet tabellen for et egendefinert objekt og lagt til feltene, angir du rettighetene slik at brukerne kan begynne å legge til data.
+</Tip>
+
 [2]: ./index
+[3]: /no/custom-objects/learn/extra-table
+
+[img1]: /media/loc/en/custom-objects/role-custom-object-rights.png

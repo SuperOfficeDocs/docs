@@ -3,8 +3,8 @@ uid: help-de-udef-add
 title: Benutzerdefiniertes Feld hinzufügen
 description: Felder hinzufügen
 keywords: ['udef', 'benutzerdefiniertes Feld', 'Feld-Eigenschaften']
-author: Bergfrid Dias
-date: 06.10.2026
+author: digitaldiina
+date: 11.13.2026
 so_version: 12.0
 content_type: howto
 tier: core
@@ -13,9 +13,10 @@ audience_tooltip: Settings and maintenance
 redirect_from: /de/custom-objects/learn/udef/add
 userflow_index: true
 related:
-  - Felder platzieren: /de/custom-objects/admin/edit-udef-layout
-  - Felder bearbeiten: /de/custom-objects/admin/edit-udef
-  - /de/customization/screen-designer/admin/index
+  - Über benutzerdefinierte Felder: /de/custom-objects/learn/udef
+  - Benutzeroberfläche anpassen: /de/custom-objects/admin/edit-udef-layout
+  - Benutzerdefinierte Felder bearbeiten: /de/custom-objects/admin/edit-udef
+  - Ansichtsdesigner: /de/customization/screen-designer/admin/index
 language: de
 ---
 
@@ -50,6 +51,10 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/de-udef-s
 
 1. Setzen Sie optional andere [Feld-Eigenschaften](#properties), wie zum Beispiel, ob das Feld obligatorisch ist oder indiziert werden soll.
 
+    <Note>
+    Sie können das Kontrollkästchen **Schreibgeschützt** nicht aktivieren, wenn Sie **Obligatorisch** aktiviert haben. Diese beiden Optionen schließen sich gegenseitig aus.
+    </Note>
+
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern**. Das Dialogfeld wird geschlossen und das neue Feld wird in der Liste **Felder** und im Raster angezeigt.
 
 1. [Optional können Sie die Position des Feldes anpassen][3]. Dies erfordert eine Lizenz für Development Tools oder den Core-Plan.
@@ -68,10 +73,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/de-udef-s
 | Schreibgeschützt | Wenn ausgewählt, ist es nicht möglich, das Feld zu ändern. |
 | Indiziert | Wenn ausgewählt, wird dieses Feld durchsuchbar und beschleunigt die **Suchen**. Nicht indizierte Felder können ebenfalls durchsucht werden, dies dauert jedoch länger. Indizieren Sie nur Felder, die häufig gesucht werden und häufig verwendete Daten enthalten. |
 
-<Note>
-Sie können das Kontrollkästchen **Schreibgeschützt** nicht aktivieren, wenn Sie **Obligatorisch** aktiviert haben. Diese beiden Optionen schließen sich gegenseitig aus.
-</Note>
-
 <UdefDanger />
 
 ## Sprachcodes {#language}
@@ -82,15 +83,13 @@ Sie können das Kontrollkästchen **Schreibgeschützt** nicht aktivieren, wenn S
 
 Die von Ihnen erstellten benutzerdefinierten Felder werden in der [Registerkarte Meer][5] für Firmen, Personen, Verkäufe und Projekte sowie in den Folgeaufgabe- und Dokumentdialogen angezeigt.
 
-Im unteren Teil rechts befindet sich im Dialogfeld **Felder** der **Vorlagenvariablenname**, gefolgt von einem Code (ID), mit dem die in diesem Feld die Information wiederverwenden können, wie zum Beispiel als [Vorlagenvariablen][12] in Dokumenten und E-Mails.
+In der unteren rechten Ecke des Dialogfelds **Felder** befindet sich der **Vorlagenvariablenname**, gefolgt von einem Code (ID). Mit dem Code können Sie die in diesem Feld eingegebene Information wiederverwenden, zum Beispiel als [Vorlagenvariablen][12] in Dokumenten und E-Mails.
 
 ## Fehlerbehebung
 
 ### Ich kann kein neues Feld erstellen
 
 Wenn Sie kein neues Feld erstellen dürfen, kann das daran liegen, dass Sie bereits die maximale Anzahl zulässiger Felder dieses Typs erreicht haben (siehe [Maximal zulässige Feldanzahl][1]). Sie müssen dann ein vorhandenes Feld löschen, bevor Sie ein neues einfügen können.
-
-Vier von jedem Feldtyp (Kurzer Text, Langer Text, Nummer, Dezimalzahl) sind suchbar. Wenn Sie zum Beispiel keine Felder als suchbar markieren, können Sie nur sechs Dezimal-Felder angeben.
 
 [1]: ../learn/udef#limit
 [2]: ../learn/udef#field-types

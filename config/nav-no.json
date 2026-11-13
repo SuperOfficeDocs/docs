@@ -679,29 +679,20 @@
         "root": "no/custom-objects/learn/index",
         "pages": [
           "no/custom-objects/index",
+          "no/custom-objects/learn/udef",
           "no/custom-objects/learn/more-tab",
+          "no/custom-objects/learn/extra-field",
+          "no/custom-objects/learn/extra-table",
+          "no/custom-objects/learn/create",
+          "no/custom-objects/learn/update",
           {
-            "group": "Brukerdefinerte felt",
+            "group": "For administratorer",
             "pages": [
-              "no/custom-objects/learn/udef",
               "no/custom-objects/admin/add-udef",
               "no/custom-objects/admin/edit-udef",
-              "no/custom-objects/admin/edit-udef-layout"
-            ]
-          },
-          {
-            "group": "Ekstratabeller",
-            "pages": [
-              "no/custom-objects/learn/extra-table",
-              "no/custom-objects/admin/create-extra-table"
-            ]
-          },
-          {
-            "group": "Ekstrafelt",
-            "pages": [
-              "no/custom-objects/learn/extra-field",
-              "no/custom-objects/admin/create-extra-field",
-              "no/custom-objects/admin/show-extra-field-on-request-details"
+              "no/custom-objects/admin/edit-udef-layout",
+              "no/custom-objects/admin/create-extra-table",
+              "no/custom-objects/admin/create-extra-field"
             ]
           }
         ]

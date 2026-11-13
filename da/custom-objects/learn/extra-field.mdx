@@ -3,16 +3,15 @@ uid: help-da-extra-field
 title: Ekstrafelt
 description: Et ekstrafelt er et tilpasset felt som du legger til i en eksisterende SuperOffice-databasetabell i Service.
 keywords: ['ekstrafelt', 'tilpasset felt', 'Service', 'url', 'klikbart link', 'link i ekstrafelt']
-author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Vis ekstrafelt på detaljfanen: /da/custom-objects/admin/show-extra-field-on-request-details
-  - /da/custom-objects/admin/create-extra-field
+  - Tilføj ekstra felter: /da/custom-objects/admin/create-extra-field
 language: da
 ---
 
@@ -20,7 +19,9 @@ import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
 <ReqDevToolsTransition />
 
-Et *ekstra felt* er et brugerdefineret felt, du tilføjer til en eksisterende SuperOffice-databasetabel. Du kan udvide følgende enheder:
+Et *ekstra felt* er et brugerdefineret felt, du tilføjer til en eksisterende SuperOffice-databasetabel. Ekstra felter kan for eksempel bruges som søgekriterier og kolonner i salg i SuperOffice CRM.
+
+Du kan udvide følgende posttyper:
 
 * Kategori
 * Firma
@@ -29,10 +30,10 @@ Et *ekstra felt* er et brugerdefineret felt, du tilføjer til en eksisterende Su
 * Meddelelse
 * Sag og sagsbehandler
 * Bruger
-* Dine [brugerdefinerede tabeller][6]
+* Dine [ekstra tabeller][6]
 
 <Note>
-Ekstra felter på firma eller person er ikke det samme som brugerdefinerede felter på disse enheder!
+Ekstra felter på firma eller person er ikke det samme som brugerdefinerede felter på disse posttyper!
 </Note>
 
 Ekstra felter administreres i Indstillinger og vedligeholdelse, på **Tabeller**-skærmen.
@@ -51,7 +52,7 @@ Ekstra felter administreres i Indstillinger og vedligeholdelse, på **Tabeller**
 * Vedhæft
 * Dynamisk link
 
-Desuden har hver enhed en relations type. For eksempel *kontaktrelationen*.
+Desuden har hver posttype en relationstype. For eksempel *kontaktrelationen*.
 
 I modsætning til brugerdefinerede felter tilføjes ekstra felter som faktiske felter til databasetabellerne. Der er ingen foruddefinerede pladser, du skal tage hensyn til, og i princippet ingen begrænsninger.
 
@@ -87,30 +88,28 @@ Databasetabeller er forbundet med *fremmednøgler* (FK). Disse er felttyper, der
 * Aftalerelation
 * Relation til Ekstratabel
 
-#### Tilgængelig i pilot fra version 10.3.4
+#### Detaljefaner for relaterede brugerdefinerede data
 
-Når et relationsfelt er sat til at vise én-til-mange relationer, tilføjer systemet automatisk et detaljekort i relaterede standardenheder. Dette er ikke det samme som fanen **Relationer** på Firma- og Person-skærmene.
+Med CRM Suite **Growth** eller højere får den relaterede post en detaljefane, der viser de elementer, der peger på den, når et relationsfelt har **Vis én-til-mange-relationer** markeret. Et firma kan for eksempel vise en fane **Leases**. Denne fane er ikke det samme som fanen **Relationer** på Firma- og Person-skærmene.
 
-![Detaljekort med ekstrafeltrelation -screenshot][img1]
+![Firma med detaljefanen Leasingaftaler -screenshot][img1]
 
-#### Tilgængelig i pilot fra version 10.3.7
+#### Forhåndsvis relaterede brugerdefinerede data
 
-For at se detaljerne for elementerne på denne liste uden at åbne hver enkelt enhed:
+Med CRM Suite **Growth** eller højere kan du se detaljerne for relaterede brugerdefinerede data i sidepanelet. For at se detaljerne for elementerne på denne liste uden at åbne hver enkelt:
 
 1. Gå til sidepanelet, og vælg **Forhåndsvisning**.
-2. Klik på et element i det relationsbaserede detaljekort. Sidepanelet viser en forhåndsvisning af den valgte enhed. I forhåndsvisningen kan du:
 
-    * Klikke på en standardenhed for at gå til den.
-    * Klikke på et brugerdefineret objekt for at åbne en dialog til visning eller redigering af yderligere oplysninger.
+1. Vælg en række på detaljefanen. Sidepanelet viser en forhåndsvisning af den valgte række. I forhåndsvisningen kan du:
+
+    * Vælge en post for en standardposttype, for eksempel et firma, for at gå til den.
+
+    * Vælge brugerdefinerede data for at åbne en dialog, hvor du kan se eller redigere dem.
 
 ![Forhåndsvisning af ekstrafeltrelation -screenshot][img2]
 
-## Brug
-
-Ekstra felter kan for eksempel bruges som søgekriterier og kolonner i salg i SuperOffice CRM.
-
 [6]: ./extra-table
 [7]: /da/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png

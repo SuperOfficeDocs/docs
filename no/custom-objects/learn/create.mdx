@@ -1,0 +1,55 @@
+---
+title: Legge til egendefinerte data
+description: Legg til data i et egendefinert objekt fra toppraden eller fra en relatert post.
+keywords: ['nytt egendefinert objekt', 'opprett egendefinert objekt', 'ekstratabell']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Oppdatere egendefinerte data: /no/custom-objects/learn/update
+  - Om ekstratabeller: /no/custom-objects/learn/extra-table
+language: no
+---
+
+import ReqGrowthCustomObjects from "../../snippets/req-growth-custom-objects.mdx";
+
+<ReqGrowthCustomObjects />
+
+Du kan legge til data i et egendefinert objekt fra toppraden eller fra en relatert post. Feltene du ser, avhenger av hvordan administratoren din har satt opp det egendefinerte objektet.
+
+For å legge til egendefinerte data må rollen din ha rettigheten **Create** for [det egendefinerte objektet][1].
+
+## Legg til egendefinerte data fra toppraden
+
+1. Klikk **Ny** på toppraden, og velg deretter det egendefinerte objektet. For eksempel **Laptop**.
+
+    ![Menyen Ny på toppraden med egendefinerte objekter -screenshot][img1]
+
+1. Fyll ut feltene. Obligatoriske felt er merket med rødt.
+
+    For et relasjonsfelt, for eksempel **Firma**, begynner du å skrive og velger den relaterte posten fra listen. Listen viser en forhåndsvisning av hvert treff, slik at du kan velge riktig.
+
+    ![Leieavtale med relasjonsfelt utfylt -screenshot][img2]
+
+1. Klikk **Lagre**.
+
+## Legg til egendefinerte data fra en relatert post
+
+Når et egendefinert objekt er relatert til en annen posttype, for eksempel et firma, et salg eller et egendefinert objekt, har den posttypen et detaljkort for det egendefinerte objektet. Egendefinerte data du legger til der, kobles automatisk.
+
+1. Åpne den relaterte posten og velg detaljkortet for det egendefinerte objektet. For eksempel **Utstyr**.
+
+1. Klikk **Legg til**.
+
+1. Fyll ut feltene. Relasjonen til posten du åpnet, er forhåndsutfylt, og administratoren din kan angi standardverdier eller bruke en trigger for å fylle ut andre felt.
+
+1. Klikk **Lagre**.
+
+[1]: /no/admin/user-management/role/set-data-rights-for-role#custom-objects
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png

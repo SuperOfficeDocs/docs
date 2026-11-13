@@ -4,8 +4,8 @@ title: Arbeide med detaljkort (arkiv)
 description: Hvordan tilpasse detaljkort (arkiv) i Skjermdesigneren i Innstillinger of vedlikehold.
 keywords: ['legg til detaljkort', 'nytt detaljkort', 'legg til arkivfane', 'tilpass detaljkort', 'detaljkort-layout']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
 license: development-tools
 tier: core
@@ -26,7 +26,7 @@ import ReqDevToolsTransition from "../../../snippets/req-dev-tools-transition.md
 
 <ReqDevToolsTransition />
 
-Du kan tilpasse layouten ved å legge til eller fjerne detaljkort (også kalt arkiv) på hovedkortene for skjermene Firma, Person, Salg, Prosjekt og Sak.
+Du kan tilpasse layouten ved å legge til eller fjerne detaljkort (også kalt arkiv) på hovedkortene for skjermene Firma, Person, Salg, Prosjekt og Sak, og for egendefinerte objekter.
 
 Detaljkort tilpasses vanligvis for å imøtekomme de spesifikke behovene til ulike brukergrupper. Du kan opprette en layout som er skreddersydd for en bestemt brukergruppe og sørge for at detaljkortene viser relevant innhold for den gruppen.
 
@@ -37,6 +37,10 @@ Detaljkort tilpasses vanligvis for å imøtekomme de spesifikke behovene til uli
 Detaljkort, som ligger nederst på de fleste SuperOffice CRM-skjermbilder, viser relaterte data som kontakter, aktiviteter, prosjekter og salg. Selv om noen detaljkort, som Salgsguide og Tilbud, ikke er arkiv, vil vi for enkelhets skyld referere til alle som arkiv eller arkivfaner.
 
 Når du lager en ny layout for en brukergruppe, bør du vurdere hvilke data de trenger mest. Ved å tilpasse arkiver kan du filtrere og prioritere informasjon, slik at brukerne lettere finner det de trenger.
+
+### Detaljkort for egendefinerte objekter {#custom-objects}
+
+Noen detaljkort legges til automatisk. Hvis et [egendefinert objekt][20] har et relasjonsfelt med **Vis én-til-mange-relasjoner** valgt, får posttypen det relaterer til et detaljkort som viser dataene. Firma-skjermen kan for eksempel vise et detaljkort **Utstyr**. Du kan redigere, flytte eller fjerne dette kortet i layouten som andre detaljkort.
 
 ## Legg til detaljkort
 
@@ -100,6 +104,7 @@ For å angre disse endringene klikker du på **Gjenopprett faner**.
 
 [1]: ../../../localization/learn/translate-fields
 [2]: ../../../search-options/learn/search-criteria
+[20]: /no/custom-objects/learn/extra-table
 [img1]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive.png
 [img5]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive-add-tab.png
 [img6]: ../../../../media/loc/en/customization/admin-screendesigner-add-archive-layout.png

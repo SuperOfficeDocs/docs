@@ -1,1 +1,1 @@
-Gå till **Inställningar och underhåll** > **Systemdesign**. Välj så fliken **Tabeller**
+Gå till **Inställningar och underhåll** > **Systemdesign**. Välj sedan fliken **Tabeller**

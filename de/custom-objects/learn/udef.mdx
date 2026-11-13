@@ -4,8 +4,8 @@ title: Benutzerdefinierte Felder
 description: Benutzerdefinierte Felder
 keywords: ['udef', 'benutzerdefiniertes Feld']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: user
@@ -56,7 +56,7 @@ Die folgenden Einschränkungen gelten für die Anzahl der benutzerdefinierten Fe
 * **Dezimal**: Insgesamt maximal 10.
 
 <Note>
-Das Indizieren von Feldern wird für eine bessere Leistung empfohlen, insbesondere bei großen Datensätzen. Vier Felder in jeder Gruppe sind für Indizes reserviert. Wenn keine Felder indiziert sind, wird die Gesamtanzahl der benutzerdefinierten Felder auf 103 reduziert, da 16 Plätze ungenutzt bleiben.
+Das Indizieren von Feldern wird für eine bessere Leistung empfohlen, insbesondere bei großen Datensätzen.
 </Note>
 
 ## Indizierte Felder {#index}
@@ -65,11 +65,7 @@ Die Indizierung beschleunigt die Datenabfrage und verbessert die Benutzererfahru
 
 Sie können so viele Felder indizieren, wie Sie benötigen, indem Sie das Kontrollkästchen **Indiziert** beim Erstellen oder Bearbeiten eines Feldes auswählen. Indizes werden automatisch aktualisiert, wenn Sie Ihre Änderungen veröffentlichen.
 
-**Neu in Version 10.3.1:**
-
-* Sie können nun mehr als 4 Felder in jeder Gruppe (Long, Double, String[40], String[200]) pro Entität indizieren.
-
-* Daten werden beim Veröffentlichen von Indexänderungen nicht mehr zwischen Feldern verschoben, was das Veröffentlichen schneller macht, unabhängig von der Tabellengröße (Anzahl der Zeilen).
+Daten werden beim Veröffentlichen von Indexänderungen nicht zwischen Feldern verschoben, sodass das Veröffentlichen schnell ist, unabhängig von der Tabellengröße (Anzahl der Zeilen).
 
 ## Seite 1-Felder {#page-1}
 

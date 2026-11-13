@@ -3,22 +3,22 @@ uid: help-sv-more-tab
 title: Mer-fliken
 description: Lär dig hur du använder Mer-fliken i SuperOffice CRM för att visa och hantera användardefinierade fält för företag, kontakter, försäljning, projekt, händelse och dokument.
 keywords: ['Mer-flik', 'fliken Mer', 'udef', 'användardefinierat fält', 'extra fält', 'anpassat fält']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Översikt över användardefinierade fält: /sv/custom-objects/learn/index
+  - Om anpassade objekt och fält: /sv/custom-objects/learn/index
   - Lägg till användardefinierade fält: /sv/custom-objects/admin/add-udef
   - Lägg till extra fält: /sv/custom-objects/admin/create-extra-field
   - Hantera anpassade layouter med Skärmdesignern: /sv/customization/screen-designer/admin/add-layout
 language: sv
 ---
 
-**Mer-fliken** i SuperOffice CRM låter användare visa och hantera användardefinierade fält för olika enheter, inklusive företag, kontakter, försäljning, projekt, uppföljningar och dokument. Denna anpassningsfunktion hjälper dig att samla in specifik information unik för din organisations behov, vilket ökar flexibiliteten i din CRM.
+**Mer-fliken** i SuperOffice CRM låter användare visa och hantera användardefinierade fält för olika posttyper, inklusive företag, kontakter, försäljning, projekt, uppföljningar och dokument. Denna anpassningsfunktion hjälper dig att samla in specifik information unik för din organisations behov, vilket ökar flexibiliteten i din CRM.
 
 Användardefinierade fält i **Mer-fliken** gör det enklare för din organisation att spåra ytterligare detaljer som hårdvara ägd av kontakter, personalomsättning eller annan anpassad data som inte finns som standard i SuperOffice CRM.
 
@@ -26,9 +26,9 @@ Om ditt företag till exempel säljer IT-produkter och behöver fält för varje
 
 ## Innehåll i Mer-fliken
 
-**Mer-fliken** är tillgänglig för flera enhetstyper och låter användarna lagra anpassad information skräddarsydd efter deras affärsbehov:
+**Mer-fliken** är tillgänglig för flera posttyper och låter användarna lagra anpassad information skräddarsydd efter deras affärsbehov:
 
-| Enhet | Beskrivning av Mer-fliken |
+| Posttyp | Beskrivning av Mer-fliken |
 |---|---|
 | Företag | Visar användardefinierade fält som omsättning, antal anställda och anpassade anteckningar. |
 | Kontakt | Lagrar användarspecifik data, till exempel hårdvara, mjukvara eller kontaktroller. |
@@ -46,9 +46,7 @@ För att visa data i Mer-fliken:
 1. Gå till relevant enhetsskärm, som **Företag** eller **Kontakt**.
 1. Välj **Mer-fliken** för att visa användardefinierade fält.
 
-![Mer-fliken (Försäljning) -screenshot][img6]
-
-![Mer-fliken (Projekt) -screenshot][img4]
+    ![Mer-fliken på en försäljning -screenshot][img1]
 
 ## Redigera information i Mer-fliken
 
@@ -58,5 +56,4 @@ Klicka på <i class="ph ph-pencil-simple" aria-label="Edit"></i> för att redige
 
 * **Anpassa fält**: Att lägga till användardefinierade fält eller justera layout kräver administrativ tillgång och i vissa fall en licens för Development Tools eller **Core**-planen.
 
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png

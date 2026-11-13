@@ -2,22 +2,46 @@
 uid: help-da-extra-fields-create
 title: Tilføj ekstra felter
 description: Definere ekstrafelter
-keywords: ['ekstrafelt', 'tilpasset felt']
-author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+keywords: ['ekstrafelt', 'tilpasset felt', 'felt i brugerdefineret objekt', 'feltegenskaber']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-redirect_from: /da/custom-objects/learn/extra-field/create
+redirect_from:
+  - /da/custom-objects/learn/extra-field/create
+  - /da/custom-objects/admin/show-extra-field-on-request-details
 userflow_index: true
+related:
+  - Om ekstra felter: /da/custom-objects/learn/extra-field
+  - Tilføj en ekstra tabel: /da/custom-objects/admin/create-extra-table
+  - Om ekstra tabeller: /da/custom-objects/learn/extra-table
+  - Arbejde med felter: /da/customization/screen-designer/admin/working-with-fields
+  - Design layoutet af et brugerdefineret objekt: /da/customization/screen-designer/admin/add-layout#custom-objects
 language: da
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Når du har oprettet en [ekstratabel][1], skal du konfigurere felter i tabellen, så du efterfølgende kan indlæse data i tabellen (poster). Du kan også oprette ekstrafelter i standardtabeller.
+<ReqDevToolsTransition />
+
+Når du har oprettet en [ekstratabel][1], skal du tilføje de felter, brugerne udfylder, når de tilføjer brugerdefinerede data. Du kan også tilføje ekstrafelter til standardtabeller i Service.
+
+## Navngivningskonventioner
+
+<Warning>
+Vælg navne på databasefelter omhyggeligt. Du **kan ikke ændre** dem senere.
+</Warning>
+
+Brug logiske navne, så det er nemt at se, hvad databasen indeholder. Præfikset **x_** sikrer, at navnet ikke er i konflikt med fremtidige SuperOffice-feltnavne. Det forhindrer ikke navnekonflikter mellem ekstra felter fra forskellige tredjeparter.
+
+* Skal starte med **x_**
+* Skal være unikt i tabellen
+* Skal være ét enkelt ord
+* Må kun indeholde understreger, bogstaverne a til z og tal
 
 ## Trin
 
@@ -25,7 +49,7 @@ Når du har oprettet en [ekstratabel][1], skal du konfigurere felter i tabellen,
 
 1. Gå til den ønskede tabel, peg på tabelnavnet, og klik **Nyt felt**.
 
-    ![Opret ekstra felt -screenshot][img1]
+    ![Skærmbilledet Tabeller med Nyt felt ud for en tabel -screenshot][img1]
 
 1. Vælg en type for det nye felt og klik **OK**.
 
@@ -33,11 +57,10 @@ Når du har oprettet en [ekstratabel][1], skal du konfigurere felter i tabellen,
 
     * Indtast et *navn* der skal bruges som ledetekst.
     * Indtast et *databasefelt* der begynder med **x_** for at identificere feltet i skemaet.
-    * Valgfrit sæt andre egenskaber. Typen (angivet i trin 3) bestemmer hvad der er tilgængeligt. Se detaljer om felterne nedenfor.
+    * For at gøre feltet obligatorisk, vælg **Kan ikke være tomt**.
+    * Valgfrit sæt andre egenskaber. Den felttype, du valgte i det forrige trin, bestemmer hvad der er tilgængeligt. Se [egenskaber for felt](#properties).
 
-    <Tip>
-    For at gøre et felt obligatorisk, vælg **Kan ikke være tomt**.
-    </Tip>
+    ![Egenskaber for et felt af typen Kort tekst -screenshot][img2]
 
 1. Klik **OK** for at gemme det nye felt (kører `alter table y_mynewtable add column x_mynewfield ...`).
 
@@ -45,7 +68,7 @@ Når du har oprettet en [ekstratabel][1], skal du konfigurere felter i tabellen,
 
 1. Klik **Genstart NetServer** når du er færdig. Hvis Travel er aktiveret, vil du også se en besked om at en ny Travel-database skal genereres.
 
-## Egenskaber for felt
+## Egenskaber for felt {#properties}
 
 <Note>
 Egenskaben **URL** i denne tabel hører til felttypen **Dynamisk link**. Hvis du vil vise URL'er, der er gemt i felter af typen **Kort tekst** og **Lang tekst**, som klikbare links, kan du se [URL'er i tekstfelter][2].
@@ -57,13 +80,13 @@ Egenskaben **URL** i denne tabel hører til felttypen **Dynamisk link**. Hvis du
 | Vælg på rulleliste | Hvis feltet er knyttet til en ekstratabel, skal du vælge denne valgmulighed for at få vist en liste over tabelværdier. |
 | Vælg værdier på liste | Hvis denne valgmulighed er markeret, bliver feltet en rulleliste. Valgmulighederne i listen bliver de tekststrenge, der indtastes i tekstfeltet. Der er én linje pr. valgmulighed. |
 | Indekser felt | Angiv, om feltet skal indekseres. Det er hurtigere at søge efter data i indekserede felter. |
-| Databasefelt | Navnet, som kolonnen får i databasen. Navnet skal være unikt i denne tabel. Desuden skal kolonnenavnet være et enkelt ord, der kun indeholder understregninger, bogstaver fra a til z eller tal, og som starter med "x_". Kan kun specificeres, når feltet oprettes, det **kan ikke ændres senere**. |
+| Databasefelt | Navnet på kolonnen i databasen. Kan kun angives ved oprettelse og **kan ikke ændres**. |
 | Antal decimaler | Det antal decimaler, der er tilladt i et tal. |
 | Standardværdi | Standardværdien vil blive anvendt for dette felt. |
 | Beskrivelse | Standardbeskrivelsen. |
 | Visningsværdi | Angiv, om værdien skal vises eller ej. |
 | Eksternt | Hvis denne valgmulighed er markeret, vil feltet kunne være tilgængeligt fra et kundecenter. Dette er kun relevant for standardtabeller, da ekstratabeller altid vises i kundecentre. |
-| Overskrift for liste | Dette felt kan bruges til at angive en overskrift for disse poster, når de vises som "underposter" i en liste. I vores eksempel betyder dette navnet på den nye fane i skærmbilledet **Vis person**, så vi indtaster "Computere" her. |
+| Overskrift for liste | Dette felt kan bruges til at angive en overskrift for disse poster, når de vises som "underposter" i en liste. Med CRM Suite **Growth** eller højere er det også ledeteksten på fanen på den relaterede post. Obligatorisk, når **Vis én-til-mange-relationer** er markeret. |
 | Skjul funktionsknapper | (relationer) Vælg denne valgmulighed for at skjule funktionen for tilføjelse af nye poster til relationstabeller. |
 | Skjul feltet | Angiv, om feltet skal vises eller ej. |
 | Behold HTML-koder | (tekst) Vælg denne valgmulighed for at medtage HTML-taggen i teksten. |
@@ -71,9 +94,9 @@ Egenskaben **URL** i denne tabel hører til felttypen **Dynamisk link**. Hvis du
 | Antal enheder | (tidsperiode) Indtast det maksimale antal enheder for den "største" valgte tidsenhed. Eksempel: Hvis du har valgt timer og minutter og indtaster "4", kan der vælges et maksimum på 4 timer, mens minutter går til 60. Tilsvarende kan der for dage og timer vælges et maksimum på 4, mens timer går til 24. |
 | Tillad kun rodnode i hierarkiske rullelister | (ekstra tabelrelation) Angives, hvis kun den laveste node i et hierarki kan vælges af brugeren. |
 | Stilling | Angiver dette felts placering blandt de andre felter på lister. |
-| Søgeoperatør | Vælg den søgeoperator, der skal bruges til dette felt. |
+| Søgekriterier | Den søgeoperator, der skal bruges til dette felt, for eksempel **begynder med**. |
 | Vis i tabel | Hvis denne valgmulighed er markeret, vises dette felt som en kolonne i skærmbilleder, hvor flere poster vises i en tabel. |
-| Vis én-til-mange-relationer | Hvis du har valgt felttyperne **Personrelation**, **Firmarelation** eller **Sagsrelation** og ønsker at få vist en fane, der indeholder data fra denne tabel på skærmbillederne for person, firma eller sag, kan du markere dette felt. |
+| Vis én-til-mange-relationer | Hvis du har valgt felttyperne **Personrelation**, **Firmarelation** eller **Sagsrelation** og ønsker at få vist en fane, der indeholder data fra denne tabel på skærmbillederne for person, firma eller sag, kan du markere dette felt. Med CRM Suite **Growth** eller højere får den relaterede post i SuperOffice CRM også en detaljefane, for eksempel en fane **Udstyr** på firmaet. |
 | Tabel | Angiv, hvilken tabel feltet hører til. |
 | Destinationstabel | Angiv, hvilken tabel der skal anvendes. |
 | Tekstområde/Højde | Vælg denne indstilling for at angive højden (antallet af linjer) i tekstfeltet. |
@@ -88,21 +111,56 @@ Egenskaben **URL** i denne tabel hører til felttypen **Dynamisk link**. Hvis du
 
 ## Tilføj relation (fremmednøgle, FK)
 
-1. Klik på **Nyt felt**.
-1. Vælg relationstypen for den enhed, du vil forbinde til, og klik på **OK**.
-1. Indstil feltegenskaber som beskrevet ovenfor.
+Et relationsfelt forbinder et element i denne tabel med en post i en anden tabel. Med CRM Suite **Growth** eller højere kan den relaterede post også vise en detaljefane, der viser de tilknyttede elementer.
 
-    <Note>
-    Tilgængelig fra version 10.3.4 i pilot: Valg af **Vis én-til-mange-relationer** tilføjer et detaljekort (arkiv) til relaterede standardenheder.
-    </Note>
+1. Peg på den tabel, der skal indeholde relationen, og klik på **Nyt felt**.
+
+1. Vælg relationstypen for den tabel, du vil forbinde til, og klik på **OK**.
+
+1. Indstil feltegenskaber som beskrevet ovenfor. For at vise en detaljefane på den relaterede post skal du vælge **Vis én-til-mange-relationer** og indtaste fanens ledetekst i **Overskrift for liste**.
+
+    ![Egenskaber for en ekstra tabelrelation med Overskrift for liste og Destinationstabel udfyldt -screenshot][img3]
 
 1. Klik på **OK** for at gemme relationen.
+
+1. For en **Ekstra tabelrelation** skal du åbne egenskaberne for destinationstabellen og indstille **Visningsfelt** til et felt, brugerne genkender, for eksempel navnet. Se [egenskaber for tabel][1].
+
 1. Klik på **Genstart NetServer** for at anvende ændringerne.
 
-For eksempel, for at forbinde alle indgående sager til et bestemt salg, kan du tilføje et ekstra felt af typen salgsrelation til Sag ([ticket tabellen][4]). For at liste tilsluttede sager, når du ser et salg i SuperOffice CRM, skal du bygge et webpanel.
+For eksempel har en tabel Leasing et feltet **Bærbar** (ekstra tabelrelation til tabellen Bærbar) og et feltet **Salg** (salgsrelation). Begge har **Vis én-til-mange-relationer** markeret og *Leasingaftaler* som **Overskrift for liste**. Hver bærbar og hvert salg viser så en fane **Leasingaftaler** med de tilknyttede leasingaftaler.
+
+![Salg med detaljefanen Leasingaftaler -screenshot][img4]
+
+Med en licens baseret på brugerplaner skal du i stedet bygge et webpanel for at vise de relaterede brugerdefinerede data.
+
+## Vis ekstra felt på fanen Detaljer
+
+Scenarie: Du har tilføjet et ekstra felt til virksomhed (`contact` tabellen), der angiver, om en virksomhed har en supportaftale. Du ønsker at vise denne information, når du ser en sag.
+
+1. Gå til **Indstillinger og vedligeholdelse** > **Skærmdesigner** og vælg fanen **Sag**.
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Edit layout"></i> nederst.
+
+1. Find indstillingen **Felter**.
+
+1. Vælg dit felt.
+
+1. Vælg eventuelt passende stylingmuligheder.
+
+1. Klik på **Gem** for at gemme indstillingerne.
+
+<Tip>
+Du kan også gruppere felter, tilføje overskrifter til grupper og ændre størrelsen på kolonner. [Læs mere om Skærmdesigner][3].
+</Tip>
+
+I klassisk Service bruger du i stedet en fælles elementprofil. Trinnene findes i [hjælpen til version 11][4].
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
-[4]: ../../../en/database/tables/ticket
+[3]: /da/customization/screen-designer/admin/working-with-fields
+[4]: https://help.superoffice.com/docs/11/da/custom-objects/admin/show-extra-field-on-request-details.html
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

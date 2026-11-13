@@ -4,8 +4,8 @@ title: Gebruikersgedefinieerde velden
 description: Gebruikersgedefinieerde velden
 keywords: ['udef', 'aangepast veld', 'gebruikersgedefinieerd']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
@@ -56,7 +56,7 @@ De volgende beperkingen gelden voor het aantal door gebruikers gedefinieerde vel
 * **Decimaal**: Maximaal 10 in totaal.
 
 <Note>
-Het wordt aanbevolen om velden te indexeren voor betere prestaties, vooral in grote datasets. Vier velden in elke groep zijn gereserveerd voor indexen. Als er geen velden worden geïndexeerd, wordt het totale aantal gebruiker gedefinieerde velden teruggebracht tot 103, omdat 16 slots onbenut blijven.
+Het wordt aanbevolen om velden te indexeren voor betere prestaties, vooral in grote datasets.
 </Note>
 
 ## Geïndexeerde velden {#index}
@@ -65,11 +65,7 @@ Indexeren versnelt het ophalen van gegevens en verbetert de gebruikerservaring.
 
 Je kunt zoveel velden indexeren als nodig is door het selectievakje **Geïndexeerd** aan te vinken bij het maken of bewerken van een veld. Indexen worden automatisch bijgewerkt wanneer je je wijzigingen publiceert.
 
-**Nieuw vanaf versie 10.3.1:**
-
-* Je kunt nu meer dan 4 velden in elke groep (Long, Double, String[40], String[200]) voor elke entiteit indexeren.
-
-* Gegevens worden niet langer verplaatst tussen velden bij het publiceren van indexwijzigingen, waardoor publiceren sneller gaat, ongeacht de tabelgrootte (aantal rijen).
+Gegevens worden niet verplaatst tussen velden bij het publiceren van indexwijzigingen, waardoor publiceren snel gaat, ongeacht de tabelgrootte (aantal rijen).
 
 ## Velden pagina 1 {#page-1}
 

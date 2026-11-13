@@ -4,8 +4,8 @@ title: Working with section tabs (archives)
 description: ScreenDesigner Edit layout - Archives (section tabs)
 keywords: ['add section tab', 'new section tab', 'add archive tab', 'customize section tab', 'section tab layout']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
 license: development-tools
 tier: core
@@ -26,7 +26,7 @@ import ReqDevToolsTransition from "../../../../snippets/license/req-dev-tools-tr
 
 <ReqDevToolsTransition />
 
-You can customize the layout by adding or removing section tabs (also called archives) on the main cards for Company, Contact, Sale, Project, and Request screens.
+You can customize the layout by adding or removing section tabs (also called archives) on the main cards for Company, Contact, Sale, Project, and Request screens, and for custom objects.
 
 Customizing section tabs is typically done to meet the specific needs of different user groups. You can create a layout tailored for a particular user group, ensuring the section tabs display relevant content for that group.
 
@@ -37,6 +37,10 @@ Customizing section tabs is typically done to meet the specific needs of differe
 Section tabs, located at the bottom of most SuperOffice CRM screens, display related data such as contacts, activities, projects, and sales. While some section tabs, like Sales Guides and Quotes, are not archives, for simplicity, we will refer to all as archives or archive tabs.
 
 When creating a new layout for a user group, consider what data they need most. Customizing archives allows you to filter and prioritize information, making it easier for users to find what they need.
+
+### Section tabs for custom objects {#custom-objects}
+
+Some section tabs are added automatically. If a [custom object][20] has a relation field with **Show one-to-many relations** selected, the entity it relates to gets a section tab that lists its data. For example, the Company screen can show an **Equipment** tab. You can edit, move, or remove this tab in the layout like other section tabs.
 
 ## Add archive tab
 
@@ -100,6 +104,7 @@ To undo these changes, click **Restore tabs**.
 
 [1]: ../../../localization/learn/translate-fields
 [2]: ../../../search-options/learn/search-criteria
+[20]: /en/custom-objects/learn/extra-table
 [img1]: /media/loc/en/customization/admin-screendesigner-edit-archive.png
 [img5]: /media/loc/en/customization/admin-screendesigner-edit-archive-add-tab.png
 [img6]: /media/loc/en/customization/admin-screendesigner-add-archive-layout.png

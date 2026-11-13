@@ -4,13 +4,15 @@ title: Brukerdefinerte felt
 description: Introduksjon til brukerdefinerte felt i SuperOffice
 keywords: ['udef', 'egendefinert', 'brukerdefinert', 'felt', 'felttype']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
-audience: user
+audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/custom-objects/learn/udef/index
+related:
+  - /no/custom-objects/admin/add-udef
 language: no
 ---
 
@@ -18,7 +20,7 @@ import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
 <ReqDevToolsTransition />
 
-Et *brukerdefinert* felt (udef) er et tilpasset felt du legger til i en standard SuperOffice-databasetabell. Du kan utvide følgende enheter:
+Et *brukerdefinert* felt (udef) er et tilpasset felt du legger til i en standard SuperOffice-databasetabell. Du kan utvide følgende posttyper:
 
 * Firma
 * Person
@@ -27,7 +29,7 @@ Et *brukerdefinert* felt (udef) er et tilpasset felt du legger til i en standard
 * Prosjekt
 * Salg
 
-Brukerdefinerte felt administreres i Innstillinger og vedlikehold, i **Felter**-skjermen. I applikasjonen er brukerdefinerte felt synlige på **Mer**-fanen til enheten de ble lagt til. For eksempel vises et brukerdefinert felt på et firma på **Mer**-fanen i Firma-skjermen.
+Brukerdefinerte felt administreres i Innstillinger og vedlikehold, i **Felter**-skjermen. I applikasjonen er brukerdefinerte felt synlige på **Mer**-fanen til posttypen de ble lagt til. For eksempel vises et brukerdefinert felt på et firma på **Mer**-fanen i Firma-skjermen.
 
 <Note>
 Alle kan **oppdatere** data lagret i et brukerdefinert felt. Bare en administrator kan legge til (eller fjerne) et brukerdefinert felt. Du trenger en Development Tools-lisens eller **Core**-planen for å tilpasse utformingen av **Mer**-fanen og for å bruke [side 1-felt](#page-1).
@@ -54,7 +56,7 @@ Følgende begrensninger gjelder for hvor mange brukerdefinerte felt du kan angi 
 * **Desimal**: Maksimalt 10 totalt.
 
 <Note>
-Indeksering av felt anbefales for bedre ytelse, spesielt i store datasett. Fire felt i hver gruppe er reservert for indeksering. Hvis ingen felt er indeksert, reduseres det totale antallet brukerdefinerte til 103, siden 16 plasser forblir ubrukt.
+Indeksering av felt anbefales for bedre ytelse, spesielt i store datasett.
 </Note>
 
 ## Indekserte felt {#index}
@@ -63,11 +65,7 @@ Indeksering gjør datahenting raskere og forbedrer brukeropplevelsen.
 
 Du kan indeksere så mange felt som nødvendig ved å merke av for **Indeksert** når du oppretter eller redigerer et felt. Indekser oppdateres automatisk når du publiserer endringene dine.
 
-**Nytt fra versjon 10.3.1:**
-
-* Du kan nå indeksere mer enn 4 felt i hver gruppe (Long, Double, String[40], String[200]).
-
-* Data flyttes ikke lenger mellom felt når du publiserer indeksendringer, noe som gjør publisering raskere uavhengig av tabellstørrelsen (antall rader).
+Data flyttes ikke mellom felt når du publiserer indeksendringer, så publiseringen går raskt uavhengig av tabellstørrelsen (antall rader).
 
 ## Side 1-felt {#page-1}
 
@@ -130,11 +128,6 @@ Du kan deretter legge til disse feltene i Prosjekt-bildet:
 |---|---|---|---|
 | Budsjett | Desimal | Et tallfelt der du kan angi en sum. | [Velg at feltet skal vises på side 1][1]. |
 
-## Aktuelt innhold
-
-* [Legg til brukerdefinert felt][2]
-
 [1]: ../admin/edit-udef-layout#page-1
-[2]: ../admin/add-udef
 [3]: ../../admin/lists/user-defined-lists
 [8]: ../../customization/screen-designer/admin/index

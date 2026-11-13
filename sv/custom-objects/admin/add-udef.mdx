@@ -3,8 +3,8 @@ uid: help-sv-udef-add
 title: Lägg till användardefinierat fält
 description: Lägg till användardefinierat fält
 keywords: ['udef', 'användardefinierade', 'anpassa fält']
-author: Bergfrid Dias
-date: 06.10.2026
+author: digitaldiina
+date: 11.13.2026
 so_version: 12.0
 content_type: howto
 tier: core
@@ -13,9 +13,10 @@ audience_tooltip: Settings and maintenance
 redirect_from: /sv/custom-objects/learn/udef/add
 userflow_index: true
 related:
-  - Placera fält: /sv/custom-objects/admin/edit-udef-layout
-  - Redigera fält: /sv/custom-objects/admin/edit-udef
-  - /sv/customization/screen-designer/admin/index
+  - Om användardefinierade fält: /sv/custom-objects/learn/udef
+  - Anpassa användargränssnitt: /sv/custom-objects/admin/edit-udef-layout
+  - Redigera användardefinierade fält: /sv/custom-objects/admin/edit-udef
+  - Skärmdesigner: /sv/customization/screen-designer/admin/index
 language: sv
 ---
 
@@ -52,6 +53,10 @@ Den här filmen visar hur du skapar egna extrafält i SuperOffice CRM (filmens l
 
 1. Ställ in eventuella andra [fältegenskaper](#properties), som om fältet är obligatoriskt eller ska indexeras.
 
+    <Note>
+    Du kan inte markera **Endast läsbart** om du har markerat alternativet **Obligatorisk**. Dessa alternativ utesluter varandra.
+    </Note>
+
 1. När du är klar, klicka på **Spara**. Dialogen stängs och det nya fältet visas i **Fält**-listan och i rutnätet.
 
 1. [Valfritt, justera positionen för fältet][3]. Detta kräver en licens för Development Tools eller Core-planen.
@@ -70,10 +75,6 @@ Den här filmen visar hur du skapar egna extrafält i SuperOffice CRM (filmens l
 | Endast läsbart | Om vald är det inte möjligt att ändra fältet. |
 | Indexterat | Om vald blir detta fält sökbart och det går snabbare att söka **Hitta**. Icke-indexerade fält kan också sökas, men det går långsammare. Indexera bara fält som ofta söks och innehåller ofta använda data. |
 
-<Note>
-Du kan inte markera **Endast läsbart** om du har markerat alternativet **Obligatorisk**. Dessa alternativ utesluter varandra.
-</Note>
-
 <UdefDanger />
 
 ## Språkkoder {#language}
@@ -84,15 +85,13 @@ Du kan inte markera **Endast läsbart** om du har markerat alternativet **Obliga
 
 Användardefinierade fält som du skapar visas i [Mer-fliken][5] för företag, kontakter, försäljningar och projekt, samt i händelses- och dokumentdialogerna.
 
-Längst ned till höger i dialogrutan **Fält** finns **Mallvariabelnamnet** följt av en kod (ID), som kan användas för att återanvända informationen du anger i det här fältet, till exempel som [mallvariabler][12] i dokument och e-postmeddelanden.
+I det nedre högra hörnet av dialogrutan **Fält** finns **Mallvariabelnamnet** följt av en kod (ID). Använd koden för att återanvända informationen du anger i det här fältet, till exempel som [mallvariabler][12] i dokument och e-postmeddelanden.
 
 ## Felsökning
 
 ### Jag kan inte skapa ett nytt fält
 
 Om du inte kan skapa ett nytt fält kan det bero på att du redan har nått det [maximala antalet tillåtna fält][1] av den aktuella typen. Du måste då ta bort ett befintligt fält innan du kan lägga till ett nytt.
-
-Fyra fält av varje typ (Kort text, Lång text, Nummer och Decimal) är sökbara. Om du till exempel inte markerar några fält som sökbara kan du bara lägga till sex decimalfält.
 
 [1]: ../learn/udef#limit
 [2]: ../learn/udef#field-types

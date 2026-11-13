@@ -1,18 +1,17 @@
 ---
 uid: help-sv-extra-field
 title: Extrafält
-description: Extrafält
-keywords: ['extrafält', 'anpassead fält', 'Service', 'url', 'klickbar länk', 'länk i extrafält']
-author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+description: Ett extrafält är ett anpassat fält som du lägger till i en befintlig SuperOffice-databastabell i Service.
+keywords: ['extrafält', 'anpassat fält', 'fälttyper', 'url', 'klickbar länk', 'länk i extrafält']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Visa extrafält på detaljfanen: /sv/custom-objects/admin/show-extra-field-on-request-details
-  - Skapa extrafält: /sv/custom-objects/admin/create-extra-field
+  - Lägg till extrafält: /sv/custom-objects/admin/create-extra-field
 language: sv
 ---
 
@@ -20,7 +19,9 @@ import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
 <ReqDevToolsTransition />
 
-Ett *extrafält* är ett anpassat fält som du lägger till i en befintlig SuperOffice-databastabell. Du kan utvidga följande enheter:
+Ett *extrafält* är ett anpassat fält som du lägger till i en befintlig SuperOffice-databastabell. Extrafält kan till exempel användas som sökkriterier och kolumner i försäljningar i SuperOffice CRM.
+
+Du kan utvidga följande posttyper:
 
 * Kategori
 * Företag
@@ -29,10 +30,10 @@ Ett *extrafält* är ett anpassat fält som du lägger till i en befintlig Super
 * Meddelande
 * Ärende
 * Användare
-* Dina [egna tabeller][6]
+* Dina [extratabeller][6]
 
 <Note>
-Extrafält på företag eller kontakt är inte samma som användardefinierade fält på dessa enheter!
+Extrafält på företag eller kontakt är inte samma som användardefinierade fält på dessa posttyper!
 </Note>
 
 Extrafält hanteras i **Inställningar och underhåll** > **Tabeller**.
@@ -51,7 +52,7 @@ Extrafält hanteras i **Inställningar och underhåll** > **Tabeller**.
 * Bilaga
 * Dynamisk länk
 
-Dessutom har varje enhet en relations typ. Till exempel *kontaktrelationen*.
+Dessutom har varje posttyp en relationstyp. Till exempel *kontaktrelationen*.
 
 Till skillnad från användardefinierade fält läggs extrafält till som faktiska fält i databastabellerna. Det finns inga fördefinierade platser du behöver ta hänsyn till, och i princip inga begränsningar.
 
@@ -78,7 +79,7 @@ Databastabeller är kopplade med *förnyckel* (FK). Dessa är fälttyper som slu
 * Kontaktrelation
 * Företagsrelation
 * Användarrelation
-* Ärende- och Ärendehandläggarrelasjon
+* Ärenderelation
 * Kategorirelation
 * Prioritetsrelation
 * FAQ-relation
@@ -87,30 +88,28 @@ Databastabeller är kopplade med *förnyckel* (FK). Dessa är fälttyper som slu
 * Mötesrelation
 * Relation till extratabell
 
-#### Tillgänglig i pilot från version 10.3.4
+#### Detaljkort för relaterade anpassade data
 
-När ett relationsfält är inställt för att visa en-till-många-relationer lägger systemet automatiskt till ett detaljkort i relaterade standardenheter. Detta är inte samma sak som fliken **Relationer** på Företags- och Kontaktskärmarna.
+Med CRM Suite **Growth** eller högre, när ett relationsfält har **Visa en-till-flera-relationer** markerat, får den relaterade posten ett detaljkort som listar de poster som pekar på den. Ett företag kan till exempel visa en flik **Leases**. Den här fliken är inte samma sak som fliken **Relationer** på Företags- och Kontaktskärmarna.
 
-![Detaljkort med extrafältrelation -screenshot][img1]
+![Företag med ett detaljkort för Leases -screenshot][img1]
 
-#### Tillgänglig i pilot från version 10.3.7
+#### Förhandsvisa relaterade anpassade data
 
-För att visa detaljerna för objekt i denna lista utan att behöva öppna varje enskild enhet:
+Med CRM Suite **Growth** eller högre kan du visa detaljerna för relaterade anpassade data i sidopanelen. För att visa detaljerna för posterna i den här listan utan att öppna var och en:
 
 1. Gå till sidopanelen och välj **Förhandsvisning**.
-2. Klicka på ett objekt i det relationsbaserade detaljkortet. Sidopanelen visar en förhandsvisning av den valda enheten. I förhandsvisningen kan du:
 
-    * Klicka på en standardenhet för att gå till den.
-    * Klicka på ett anpassat objekt för att öppna en dialogruta för att visa eller redigera ytterligare information.
+1. Välj en rad på detaljkortet. Sidopanelen visar en förhandsvisning av den valda raden. I förhandsvisningen kan du:
+
+    * Välja en post av en standardposttyp, till exempel ett företag, för att gå till den.
+
+    * Välja anpassade data för att öppna en dialogruta där du kan visa eller redigera dem.
 
 ![Förhandsvisning extrafältrelation -screenshot][img2]
 
-## Användning
-
-Extrafält kan till exempel användas som sökkriterier och kolumner i försäljningar i SuperOffice CRM.
-
 [6]: ./extra-table
 [7]: /sv/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png

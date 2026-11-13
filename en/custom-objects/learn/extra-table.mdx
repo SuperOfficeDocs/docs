@@ -1,130 +1,115 @@
 ---
 uid: help-en-extra-table
-title: Third-party tables
-description: Introduction to SuperOffice extra tables
-keywords: ['database', 'extra table', 'custom object', '3rd-party table']
+title: Extra tables
+description: An extra table is a database table that you define yourself. With CRM Suite Growth or higher, it becomes a custom object that behaves like companies and sales.
+keywords: ['extra table', 'third-party table', 'custom object']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
-tier: core
+tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from:
   - /en/custom-objects/extra-table/index
   - /en/custom-objects/learn/extra-table/index
+related:
+  - Add custom data: /en/custom-objects/learn/create
+  - Update custom data: /en/custom-objects/learn/update
+  - Add an extra table: /en/custom-objects/admin/create-extra-table
+  - Add extra fields: /en/custom-objects/admin/create-extra-field
+  - Set data rights for custom objects: /en/admin/user-management/role/set-data-rights-for-role#custom-objects
+  - Design the layout of a custom object: /en/customization/screen-designer/admin/add-layout#custom-objects
 language: en
 ---
 
-import ReqDevToolsTransition from "../../../snippets/license/req-dev-tools-transition.mdx";
+An *extra table* (also called a *third-party table*) is a database table that you define yourself, for data that SuperOffice does not store in a standard table. Administrators [create extra tables][2], and add fields to them, in **Settings and maintenance** > **System design** > **Tables**.
 
-<ReqDevToolsTransition />
+<Note>
+Extra tables require the CRM Suite **Growth** plan or higher, or a user-plan based license with [Development Tools][13].
 
-The Development Tools license or the Core plan gives you the possibility to create extra tables (custom objects) in the database.
+With a user-plan based license, extra tables are available in SuperOffice Service, and in SuperOffice CRM through [web panels][14]. To use them as custom objects in SuperOffice CRM, join the [custom objects pilot program][15].
+</Note>
 
-The **Tables** screen is your tool for customizing the database schema.
+## Extra tables as custom objects
 
-## How to access
+In the CRM Suite, an extra table becomes a *custom object*: an entity that behaves like the standard entities, such as companies and sales. A custom object has its own fields, and can relate to companies, contacts, sales, projects, requests, follow-ups, and other custom objects.
 
-<Tabs>
-<Tab title="Classic">
-Third-party tables are instantly available for standard CRUD operations in SuperOffice Service. You need to set up a web panel to access them from the Sales client.
-</Tab>
+The steps to create a table are the same regardless of license. What differs is how users view and work with the data stored in it.
 
-<Tab title="New (from version 10.3.4 pilot)">
-No longer confined to SuperOffice Service, you can effortlessly explore and maintain data in extra tables from SuperOffice CRM.
+## Where to find custom objects {#where}
 
-### Build dashboards using custom objects
+Users find custom objects in these places:
 
-![Dashboard with custom objects -screenshot][img1]
+* **Main menu:** Click <i class="ph ph-list" aria-label="Main menu"></i> and select **Custom objects** to open the **Custom objects** screen, with all custom objects you have access to. Select a custom object, add [search criteria][16] on the **Criteria** tab, and click **Find**. The matching custom data is shown on the **Results** tab.
 
-### Find and selection
+    ![Custom objects screen with Laptop data -screenshot][img11]
 
-**Custom object as search criteria for company, contact, sale, project, request, activity:**
+* **Navigator:** Custom objects are listed in the Navigator, each with its own icon. Select a custom object to open its screen, with its custom data in a list. Your administrator decides which custom objects are listed.
 
-![Custom object as search criteria -screenshot][img2]
+    ![Navigator with four custom objects, Laptop selected -screenshot][img10]
 
-**Create selection of custom objects (10.3.7):**
+* **New:** Click **New** in the top bar to [add data][7] to a custom object.
 
-![Find screen with custom objects -screenshot][img3]
+    ![New menu in the top bar with custom objects -screenshot][img12]
 
-![Selection of custom objects -screenshot][img4]
+* **Section tabs:** When a custom object relates to another entity, such as a company, sale, or custom object, the related custom data is shown on a section tab there.
 
-### Maintaining data (10.3.7)
+    ![Company with a Leases section tab -screenshot][img8]
 
-**Open Custom Objects overview:**
+* **Side panel:** On a section tab with custom objects, select a row to see it in the **Preview** view of the side panel. Select a related record in the preview to go to it.
 
-![Custom Objects overview -screenshot][img5]
+    ![Lease shown in the Preview view of the side panel -screenshot][img9]
 
-**Search:**
+* **Dashboards:** Use a custom object as the data source of a dashboard tile.
 
-![Custom Objects overview, search -screenshot][img6]
+    ![Dashboard with tiles based on the Lease and Laptop custom objects -screenshot][img1]
 
-**Preview:**
+* **History and favorites:** Custom data you open is added to your [history][9], and you can [add it as a favorite][10].
 
-![Custom Objects overview, preview -screenshot][img7]
+Which custom objects and custom data you can see, add, update, or delete depends on your [role][8].
 
-**Add/remove items:**
+## Search for custom objects
 
-When viewing the results for a specific item in the **Custom Objects** overview, click the **Task** button and select **New** or **Delete**.
+You can search for custom objects and create selections based on them, in the same way as for companies, contacts, and sales.
 
-**Pre-fill fields when loading custom object (10.3.8):**
+* **Find:** In the **Find** screen, select a custom object to search for its custom data. You can also use a custom object as search criteria when you search for companies, contacts, sales, projects, requests, and follow-ups.
 
-The new [SalesLoadCustomObject][6] trigger is called before a custom object screen is loaded. Use it to set default values in fields and define business rules.
-</Tab>
-</Tabs>
+    ![Find screen with custom objects -screenshot][img3]
+
+    ![Find Company with a Lease field as search criteria -screenshot][img2]
+
+* **Selections:** Save the search as a selection of custom data. A dynamic selection keeps the list up to date.
+
+    ![Find Laptop with search results and Save as selection -screenshot][img4]
+
+<Note>
+The field for [freetext search][17] in the top bar does not include custom objects. Use **Find** or the search in the custom object's own screen.
+</Note>
 
 ## Tables screen
 
-The **Tables** screen shows a list of database tables. It displays both standard tables (predefined in the system and form the basis of different screens) and extra tables (tables you create yourself with optional content).
+The **Tables** screen in **Settings and maintenance** > **System design** lists the database tables. It shows both standard tables, which are part of SuperOffice, and extra tables, which you create yourself. Only administrators have access to this screen.
 
-Here, you can create new tables and fields for different screens and dialogs. Only administrators have access to this functionality.
+Use table folders to organize your extra tables.
 
-### Table folders
-
-Table folders are used to organize your custom tables.
-
-## Conventions
-
-<Warning>
-Choose your database table and field names carefully. They cannot be changed later!
-
-A logical name is best because it makes it easier to see what the database contains.
-</Warning>
-
-Prefixes ensure that what you create do not conflict with future SuperOffice table and field names. However, it does not guarantee a lack of naming conflicts between different 3rd parties.
-
-### Table names
-
-* Must start with **y_**
-* May contain only underscores, the letters a to z, and numbers
-
-### Field names
-
-* Must start with **x_**
-* Must be unique within the table
-* Must be a single word
-* May contain only underscores, letters from a to z, and numbers
-
-## Related topics
-
-* [Add extra table][2]
-* [Add extra fields][3]
-* [Add user-defined fields][4]
-* [Custom screens][1]
-* [Create trigger][5]
-
-[1]: ../../ui/blogic/learn/index
 [2]: ../admin/create-extra-table
-[3]: ../admin/create-extra-field
-[4]: ../admin/add-udef
-[5]: /en/automation/trigger/create-trigger-script
-[6]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
+[7]: ./create
+[8]: /en/admin/user-management/role/set-data-rights-for-role#custom-objects
+[9]: /en/learn/basics/history
+[10]: /en/learn/basics/fav
+[13]: /en/admin/license/expander-services
+[14]: /en/customization/web-panels/admin/index
+[15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+[16]: /en/search-options/learn/search-criteria
+[17]: /en/search-options/learn/freetext-search
 
-[img1]: /media/loc/en/automation/custom-object-dashboard.png
-[img2]: /media/loc/en/automation/find-custom-object-relation.png
-[img3]: /media/loc/en/automation/find-screen-with-custom-objects.png
-[img4]: /media/loc/en/automation/custom-object-selection.png
-[img5]: /media/loc/en/automation/go-to-custom-objects.png
-[img6]: /media/loc/en/automation/search-inventory.png
-[img7]: /media/loc/en/automation/preview-inventory-results.png
+[img1]: /media/loc/en/custom-objects/dashboard-leases.png
+[img2]: /media/loc/en/custom-objects/find-company-lease-criteria.png
+[img3]: /media/loc/en/custom-objects/find-screen-custom-objects.png
+[img4]: /media/loc/en/custom-objects/find-laptop-results.png
+[img8]: /media/loc/en/custom-objects/company-lease-tab.png
+[img9]: /media/loc/en/custom-objects/company-lease-preview.png
+[img10]: /media/loc/en/custom-objects/navigator-custom-objects.png
+[img11]: /media/loc/en/custom-objects/custom-objects-screen.png
+[img12]: /media/loc/en/custom-objects/new-menu-custom-object.png

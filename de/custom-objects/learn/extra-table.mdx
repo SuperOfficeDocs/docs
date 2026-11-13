@@ -1,120 +1,115 @@
 ---
 uid: help-de-extra-table
 title: Zusatztabellen
-description: Zusatztabellen
-keywords: ['Zusatztabelle']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
-content_type: howto
-tier: core
-audience: user
+description: Eine Zusatztabelle ist eine Datenbanktabelle, die Sie selbst definieren. Mit CRM Suite Growth oder höher wird sie zu einem benutzerdefinierten Objekt, das sich wie Firmen und Verkäufe verhält.
+keywords: ['Zusatztabelle', 'Drittanbietertabelle', 'benutzerdefiniertes Objekt']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: concept
+tier: growth
+audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /de/custom-objects/learn/extra-table/index
+redirect_from:
+  - /de/custom-objects/extra-table/index
+  - /de/custom-objects/learn/extra-table/index
 related:
-  - /de/custom-objects/admin/create-extra-table
-  - /de/custom-objects/admin/create-extra-field
-  - Benutzerdefinierte Felder: /de/custom-objects/admin/add-udef
-  - Benutzerdefinierte Anziege: /de/ui/blogic/learn/index
-  - Auslöser hinzufügen: /en/automation/trigger/create-trigger-script
+  - Benutzerdefinierte Daten hinzufügen: /de/custom-objects/learn/create
+  - Benutzerdefinierte Daten aktualisieren: /de/custom-objects/learn/update
+  - Eine Zusatztabelle hinzufügen: /de/custom-objects/admin/create-extra-table
+  - Zusatzfelder hinzufügen: /de/custom-objects/admin/create-extra-field
+  - Datenrechte für benutzerdefinierte Objekte festlegen: /de/admin/user-management/role/set-data-rights-for-role#custom-objects
+  - Layout eines benutzerdefinierten Objekts gestalten: /de/customization/screen-designer/admin/add-layout#custom-objects
 language: de
 ---
 
-import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
+Eine *Zusatztabelle* (auch *Drittanbietertabelle* genannt) ist eine Datenbanktabelle, die Sie selbst definieren, für Daten, die SuperOffice nicht in einer Standardtabelle speichert. Administratoren [erstellen Zusatztabellen][2] und fügen ihnen Felder hinzu, unter **Einstellungen und Verwaltung** > **Systemdesign** > **Tabellen**.
 
-<ReqDevToolsTransition />
+<Note>
+Für Zusatztabellen ist der CRM Suite **Growth**-Plan oder höher erforderlich, oder eine benutzerplanbasierte Lizenz mit [Development Tools][13].
 
-Die Development Tools-Lizenz oder der Core-Plan ermöglicht es Ihnen, Zusatztabellen (Zusatzobjekten) in der Datenbank zu erstellen.
+Mit einer benutzerplanbasierten Lizenz sind Zusatztabellen in SuperOffice Service und in SuperOffice CRM über [Webpanels][14] verfügbar. Um sie als benutzerdefinierte Objekte in SuperOffice CRM zu verwenden, nehmen Sie am [Pilotprogramm für benutzerdefinierte Objekte][15] teil.
+</Note>
 
-Die Ansicht Tabellen ist Ihr Werkzeug zur Anpassung des Datenbankschemas.
+## Zusatztabellen als benutzerdefinierte Objekte
 
-## So greifen Sie darauf zu
+In der CRM Suite wird eine Zusatztabelle zu einem *benutzerdefinierten Objekt*: eine Entität, die sich wie die Standardentitäten verhält, zum Beispiel Firmen und Verkäufe. Ein benutzerdefiniertes Objekt hat eigene Felder und kann mit Firmen, Personen, Verkäufen, Projekten, Anfragen, Folgeaufgaben und anderen benutzerdefinierten Objekten in Beziehung stehen.
 
-<Tabs>
-<Tab title="Klassisch">
-Drittanbietertabellen stehen sofort für Standard-CRUD-Operationen in SuperOffice Service zur Verfügung. Sie müssen ein Webpanel einrichten, um von der Verkaufs-App darauf zugreifen zu können.
-</Tab>
+Die Schritte zum Erstellen einer Tabelle sind unabhängig von der Lizenz dieselben. Unterschiedlich ist, wie Benutzer die darin gespeicherten Daten anzeigen und bearbeiten.
 
-<Tab title="Neu (ab Version 10.3.4 Pilot)">
-Nicht mehr auf SuperOffice Service beschränkt, können Sie Daten in Zusatztabellen jetzt mühelos über SuperOffice CRM erkunden und verwalten.
+## Wo Sie benutzerdefinierte Objekte finden {#where}
 
-### Dashboards mit Zusatzobjekten erstellen
+Benutzer finden benutzerdefinierte Objekte an diesen Stellen:
 
-![Dashboard mit Zusatzobjekten -screenshot][img1]
+* **Hauptmenü:** Klicken Sie auf <i class="ph ph-list" aria-label="Main menu"></i> und wählen Sie **Custom objects** aus, um die Ansicht **Custom objects** mit allen benutzerdefinierten Objekten zu öffnen, auf die Sie Zugriff haben. Wählen Sie ein benutzerdefiniertes Objekt aus, fügen Sie auf der Registerkarte **Kriterien** [Suchkriterien][16] hinzu und klicken Sie auf **Suchen**. Die passenden benutzerdefinierten Daten werden auf der Registerkarte **Ergebnisse** angezeigt.
 
-### Finden und Auswahl
+    ![Ansicht Custom objects mit Laptop-Daten -screenshot][img11]
 
-**Zusatzobjekt als Suchkriterium für Firma, Person, Verkauf, Projekt, Anfrage, Aktivität:**
+* **Navigator:** Benutzerdefinierte Objekte werden im Navigator aufgelistet, jedes mit eigenem Symbol. Wählen Sie ein benutzerdefiniertes Objekt aus, um seine Ansicht mit seinen benutzerdefinierten Daten in einer Liste zu öffnen. Ihr Administrator legt fest, welche benutzerdefinierten Objekte aufgelistet werden.
 
-![Zusatzobjekt als Suchkriterium -screenshot][img2]
+    ![Navigator mit vier benutzerdefinierten Objekten, Laptop ausgewählt -screenshot][img10]
 
-**Erstellen Sie eine Auswahl von Zusatzobjekten (10.3.7):**
+* **Neu:** Klicken Sie in der oberen Leiste auf **Neu**, um einem benutzerdefinierten Objekt [Daten hinzuzufügen][7].
 
-![Suchbildschirm mit Zusatzobjekten -screenshot][img3]
+    ![Menü Neu in der oberen Leiste mit benutzerdefinierten Objekten -screenshot][img12]
 
-![Auswahl von Zusatzobjekten -screenshot][img4]
+* **Bereichsregisterkarten:** Wenn ein benutzerdefiniertes Objekt mit einer anderen Entität, zum Beispiel einer Firma, einem Verkauf oder einem benutzerdefinierten Objekt, in Beziehung steht, werden die zugehörigen benutzerdefinierten Daten dort auf einer Bereichsregisterkarte angezeigt.
 
-### Datenverwaltung (10.3.7)
+    ![Firma mit Bereichsregisterkarte Leases -screenshot][img8]
 
-**Übersicht über Zusatzobjekte öffnen:**
+* **Seitenleiste:** Wählen Sie auf einer Bereichsregisterkarte mit benutzerdefinierten Objekten eine Zeile aus, um sie in der Ansicht **Vorschau** der Seitenleiste anzuzeigen. Wählen Sie in der Vorschau einen zugehörigen Datensatz aus, um zu ihm zu wechseln.
 
-![Übersicht über Zusatzobjekte -screenshot][img5]
+    ![Lease in der Ansicht Vorschau der Seitenleiste -screenshot][img9]
 
-**Suche:**
+* **Dashboards:** Verwenden Sie ein benutzerdefiniertes Objekt als Datenquelle einer Dashboard-Kachel.
 
-![Übersicht über Zusatzobjekte, Suche -screenshot][img6]
+    ![Dashboard mit Kacheln, die auf den benutzerdefinierten Objekten Lease und Laptop basieren -screenshot][img1]
 
-**Vorschau:**
+* **Verlauf und Favoriten:** Benutzerdefinierte Daten, die Sie öffnen, werden zur [Verlaufsliste][9] hinzugefügt, und Sie können sie [als Favoriten hinzufügen][10].
 
-![Übersicht über Zusatzobjekte, Vorschau -screenshot][img7]
+Welche benutzerdefinierten Objekte und benutzerdefinierten Daten Sie sehen, hinzufügen, aktualisieren oder löschen können, hängt von Ihrer [Rolle][8] ab.
 
-**Elemente hinzufügen/entfernen:**
+## Nach benutzerdefinierten Objekten suchen
 
-Wenn Sie die Ergebnisse für ein bestimmtes Element in der Übersicht über **Zusatzobjekte** anzeigen, klicken Sie auf die Schaltfläche **Aufgabe** und wählen **Neu** oder **Löschen**.
+Sie können nach benutzerdefinierten Objekten suchen und Selektionen auf Basis dieser Objekte erstellen, auf dieselbe Weise wie bei Firmen, Personen und Verkäufen.
 
-**Felder automatisch ausfüllen, wenn Zusatzobjekte geladen wird (10.3.8):**
+* **Suchen:** Wählen Sie in der Ansicht **Suchen** ein benutzerdefiniertes Objekt aus, um nach seinen benutzerdefinierten Daten zu suchen. Sie können ein benutzerdefiniertes Objekt auch als Suchkriterium verwenden, wenn Sie nach Firmen, Personen, Verkäufen, Projekten, Anfragen und Folgeaufgaben suchen.
 
-Der neue [SalesLoadCustomObject][6] Auslöser wird aufgerufen, bevor ein Bildschirm für Zusatzobjekte geladen wird. Verwenden Sie ihn, um Standardwerte in Feldern festzulegen und Geschäftsregeln zu definieren.
-</Tab>
-</Tabs>
+    ![Ansicht Suchen mit benutzerdefinierten Objekten -screenshot][img3]
+
+    ![Suchen Firma mit einem Feld Lease als Suchkriterium -screenshot][img2]
+
+* **Selektionen:** Speichern Sie die Suche als Selektion benutzerdefinierter Daten. Eine dynamische Selektion hält die Liste aktuell.
+
+    ![Suchen Laptop mit Suchergebnissen und Als Selektion speichern -screenshot][img4]
+
+<Note>
+Das Feld für die [Volltextsuche][17] in der oberen Leiste umfasst keine benutzerdefinierten Objekte. Verwenden Sie **Suchen** oder die Suche in der Ansicht des jeweiligen benutzerdefinierten Objekts.
+</Note>
 
 ## Ansicht Tabellen
 
-Die Ansicht Tabellen zeigt eine Liste von Datenbanktabellen an. Er zeigt sowohl Standardtabellen (im System vordefiniert und bildet die Grundlage für verschiedene Ansichten) als auch Zusatztabellen (Tabellen, die Sie selbst mit optionalen Inhalten erstellen).
+Die Ansicht **Tabellen** unter **Einstellungen und Verwaltung** > **Systemdesign** listet die Datenbanktabellen auf. Sie zeigt sowohl Standardtabellen, die Teil von SuperOffice sind, als auch Zusatztabellen, die Sie selbst erstellen. Nur Administratoren haben Zugriff auf diese Ansicht.
 
-Hier können Sie neue Tabellen und Felder für verschiedene Karten und Dialogfelder erstellen. Nur Administratoren haben Zugriff auf diese Funktion.
+Verwenden Sie Tabellenordner, um Ihre Zusatztabellen zu organisieren.
 
-## Tabellenordners
+[2]: ../admin/create-extra-table
+[7]: ./create
+[8]: /de/admin/user-management/role/set-data-rights-for-role#custom-objects
+[9]: /de/learn/basics/history
+[10]: /de/learn/basics/fav
+[13]: /de/admin/license/expander-services
+[14]: /de/customization/web-panels/admin/index
+[15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+[16]: /de/search-options/learn/search-criteria
+[17]: /de/search-options/learn/freetext-search
 
-Tabellenordner werden zum Organisieren von Zusatztabellen verwendet.
-
-## Konventionen
-
-<Warning>
-Wählen Sie Ihre Datenbanktabellen- und Feldnamen sorgfältig aus. Sie können später nicht geändert werden!
-
-Ein logischer Name ist am besten, da er es erleichtert zu erkennen, was die Datenbank enthält.
-</Warning>
-
-Präfixe stellen sicher, dass das, was Sie erstellen, nicht mit zukünftigen SuperOffice-Tabelle- und Feldnamen in Konflikt gerät. Es garantiert jedoch keine fehlenden Namenskonflikte zwischen verschiedenen Drittanbietern.
-
-### Tabellennamen
-
-* Muss mit **y_** beginnen
-* Darf nur Unterstriche, die Buchstaben a bis z und Zahlen enthalten
-
-### Feldnamen
-
-* Muss mit **x_** beginnen
-* Muss innerhalb der Tabelle eindeutig sein
-* Muss ein einzelnes Wort sein
-* Darf nur Unterstriche, Buchstaben von a bis z und Zahlen enthalten
-
-[6]: ../../../en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
-[img1]: ../../../media/loc/en/automation/custom-object-dashboard.png
-[img2]: ../../../media/loc/en/automation/find-custom-object-relation.png
-[img3]: ../../../media/loc/en/automation/find-screen-with-custom-objects.png
-[img4]: ../../../media/loc/en/automation/custom-object-selection.png
-[img5]: ../../../media/loc/en/automation/go-to-custom-objects.png
-[img6]: ../../../media/loc/en/automation/search-inventory.png
-[img7]: ../../../media/loc/en/automation/preview-inventory-results.png
+[img1]: /media/loc/en/custom-objects/dashboard-leases.png
+[img2]: /media/loc/en/custom-objects/find-company-lease-criteria.png
+[img3]: /media/loc/en/custom-objects/find-screen-custom-objects.png
+[img4]: /media/loc/en/custom-objects/find-laptop-results.png
+[img8]: /media/loc/en/custom-objects/company-lease-tab.png
+[img9]: /media/loc/en/custom-objects/company-lease-preview.png
+[img10]: /media/loc/en/custom-objects/navigator-custom-objects.png
+[img11]: /media/loc/en/custom-objects/custom-objects-screen.png
+[img12]: /media/loc/en/custom-objects/new-menu-custom-object.png

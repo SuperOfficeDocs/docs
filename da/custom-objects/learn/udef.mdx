@@ -4,8 +4,8 @@ title: Brugerdefinerede felter
 description: Brugerdefinerede felter
 keywords: ['udef', 'tilpasset felt', 'Brugerdefinered']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
@@ -20,7 +20,7 @@ import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
 <ReqDevToolsTransition />
 
-Et *brugerdefineret* felt (udef) er et tilpasset felt, du tilføjer til en standard SuperOffice-databasetabel. Du kan udvide følgende enheder:
+Et *brugerdefineret* felt (udef) er et tilpasset felt, du tilføjer til en standard SuperOffice-databasetabel. Du kan udvide følgende posttyper:
 
 * Firma
 * Kontakt
@@ -29,7 +29,7 @@ Et *brugerdefineret* felt (udef) er et tilpasset felt, du tilføjer til en stand
 * Projekt
 * Salg
 
-Brugerdefinerede felter administreres i Indstillinger og vedligeholdelse, i **Felter**-skærmen. I applikationen er brugerdefinerede felter synlige på **Mere**-fanen for den enhed, de blev tilføjet til. For eksempel vises et brugerdefineret felt på et firma på **Mere**-fanen i Firma-skærmen.
+Brugerdefinerede felter administreres i Indstillinger og vedligeholdelse, i **Felter**-skærmen. I applikationen er brugerdefinerede felter synlige på **Mere**-fanen for den posttype, de blev tilføjet til. For eksempel vises et brugerdefineret felt på et firma på **Mere**-fanen i Firma-skærmen.
 
 <Note>
 Alle kan **opdatere** de data, der er gemt i et brugerdefineret felt. Kun en administrator kan tilføje (eller fjerne) et brugerdefineret felt. Du skal have en Development Tools-licens eller **Core**-planen for at tilpasse layoutet af **Mere**-fanen og bruge side 1-felter.
@@ -56,7 +56,7 @@ Følgende begrænsninger gælder for antallet af tilpassede felter, du kan angiv
 * **Decimal**: Højst 10 i alt.
 
 <Note>
-Det anbefales at indeksere felter for at opnå bedre ydeevne, især i store datasæt. Fire felter i hver gruppe er reserveret til indeksering. Hvis ingen felter er indekseret, reduceres det samlede antal brugerdefinerede felter til 103, da 16 pladser forbliver ubrugte.
+Det anbefales at indeksere felter for at opnå bedre ydeevne, især i store datasæt.
 </Note>
 
 ## Indekserede felter {#index}
@@ -65,11 +65,7 @@ Indeksering fremskynder datahentning og forbedrer brugeroplevelsen.
 
 Du kan indeksere så mange felter, som du har brug for, ved at vælge afkrydsningsfeltet **Indekseret**, når du opretter eller redigerer et felt. Indekser opdateres automatisk, når du udgiver dine ændringer.
 
-**Nyt fra version 10.3.1:**
-
-* Du kan nu indeksere mere end 4 felter i hver gruppe (Long, Double, String[40], String[200]).
-
-* Data flyttes ikke længere mellem felter, når du udgiver indeksændringer, hvilket gør udgivelsen hurtigere, uanset tabelstørrelsen (antal rækker).
+Data flyttes ikke mellem felter, når du udgiver indeksændringer, så udgivelsen er hurtig, uanset tabelstørrelsen (antal rækker).
 
 ## Side 1-felt {#page-1}
 

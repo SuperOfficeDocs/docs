@@ -1,0 +1,55 @@
+---
+title: Aangepaste gegevens toevoegen
+description: Voeg gegevens toe aan een aangepast object vanuit de bovenste balk of vanuit een gerelateerd record.
+keywords: ['nieuw aangepast object', 'aangepast object maken', 'extra tabel']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Aangepaste gegevens bijwerken: /nl/custom-objects/learn/update
+  - Over extra tabellen: /nl/custom-objects/learn/extra-table
+language: nl
+---
+
+import ReqGrowthCustomObjects from "../../snippets/req-growth-custom-objects.mdx";
+
+<ReqGrowthCustomObjects />
+
+U kunt gegevens toevoegen aan een aangepast object vanuit de bovenste balk of vanuit een gerelateerd record. De velden die u ziet, hangen af van hoe uw beheerder het aangepaste object heeft ingesteld.
+
+Om aangepaste gegevens toe te voegen, moet uw rol het [recht voor het aangepaste object][1] **Create** hebben.
+
+## Aangepaste gegevens toevoegen vanuit de bovenste balk
+
+1. Klik op **Nieuw** in de bovenste balk en selecteer vervolgens het aangepaste object. Bijvoorbeeld **Laptop**.
+
+    ![Menu Nieuw in de bovenste balk met aangepaste objecten -screenshot][img1]
+
+1. Vul de velden in. Verplichte velden zijn rood gemarkeerd.
+
+    Typ bij een relatieveld, zoals **Bedrijf**, de eerste letters en selecteer het gerelateerde record in de lijst. De lijst toont een voorbeeld van elke overeenkomst, zodat u het juiste kunt kiezen.
+
+    ![Lease met ingevulde relatievelden -screenshot][img2]
+
+1. Klik op **Opslaan**.
+
+## Aangepaste gegevens toevoegen vanuit een gerelateerd record
+
+Wanneer een aangepast object is gerelateerd aan een andere entiteit, zoals een bedrijf, verkoop of aangepast object, heeft die entiteit een sectietabblad voor het aangepaste object. Aangepaste gegevens die u daar toevoegt, worden automatisch gekoppeld.
+
+1. Open het gerelateerde record en selecteer het sectietabblad van het aangepaste object. Bijvoorbeeld **Apparatuur**.
+
+1. Klik op **Toevoegen**.
+
+1. Vul de velden in. De relatie met het record dat u hebt geopend, is vooraf ingevuld en uw beheerder kan standaardwaarden instellen of een trigger gebruiken om andere velden te vullen.
+
+1. Klik op **Opslaan**.
+
+[1]: /nl/admin/user-management/role/set-data-rights-for-role#custom-objects
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png
