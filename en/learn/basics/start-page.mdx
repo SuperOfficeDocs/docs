@@ -67,6 +67,8 @@ To go back to the recommended setup later, click <i class="ph ph-pencil-simple" 
 
 The panel lists the widgets you can add, in alphabetical order, followed by the widgets already on your page. You can add each widget once. Widgets that your plan does not include are not listed.
 
+On a wide screen, the widgets are placed in a grid of 6 columns. On a narrow screen, they are stacked in one column.
+
 ![Edit mode with the Edit Start page panel, and the remove and resize controls on each widget -screenshot][img3]
 
 ## Remove a widget {#remove-widget}
@@ -84,8 +86,6 @@ To start over with the recommended setup instead, click **Reset** in step 2.
     * **Move:** Point to the widget until the pointer turns into a hand, then drag it to a new place.
     * **Resize:** Point to the widget to show its outline, then drag the handle on its right edge, bottom edge, or lower-right corner.
 1. Click **Save**.
-
-On a wide screen, the widgets are placed in a grid of 6 columns. On a narrow screen, they are stacked in one column.
 
 ## Summary {#summary}
 
@@ -158,6 +158,8 @@ You can do the following from the widget:
 1. Turn on the criteria you want, and set the number of days.
 1. Click **Save**.
 
+![The Sales - Spotlight criteria, with the number of days for each -screenshot][img4]
+
 | Criterion | Shows a sale when | Setting |
 |---|---|---|
 | Sale date within N days | The sale date is today or within the next N days. | 1–60 days, default 7 |
@@ -168,8 +170,6 @@ You can do the following from the widget:
 | No update in the last N days | The sale has not been updated for N days or more. | 1–60 days, default 7 |
 
 If you turn off every criterion, **Sale date within N days** is turned on again with 7 days.
-
-![The Sales - Spotlight criteria, with the number of days for each -screenshot][img4]
 
 ## Request - Spotlight {#request-spotlight}
 
@@ -191,6 +191,8 @@ When no requests match your criteria, the widget says "Nothing to spotlight righ
 1. Turn on the criteria you want, and set the number of hours or the priority.
 1. Click **Save**.
 
+![The Request - Spotlight criteria with the default criteria turned on -screenshot][img5]
+
 | Criterion | Shows a request when | Setting | Default |
 |---|---|---|---|
 | Deadline in N hours | The deadline is within the next N hours. | 1, 4, 8, or 24 hours | On, 4 hours |
@@ -209,8 +211,6 @@ If you turn off every criterion, **Deadline in N hours** is turned on again with
 **Unread for N hours** and **No new activity for N hours** use the time the request last changed, not the time of the last message from the customer.
 </Note>
 
-![The Request - Spotlight criteria with the default criteria turned on -screenshot][img5]
-
 ## Mailings - Spotlight {#mailings-spotlight}
 
 The **Mailings - Spotlight** widget shows email mailings that have finished sending and do not meet your goals. It shows up to 10 mailings, newest first.
@@ -226,8 +226,11 @@ When no mailings match, the widget says "Nothing to spotlight right now".
 ### Choose which mailings to show {#mailings-criteria}
 
 1. Click <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> on the widget and select **Widget filter**.
-1. Turn on the criteria you want, set your goals, and select the subscription types to include.
+1. Turn on the criteria you want, and set your goals.
+1. Under **Subscription type**, select the types to include. All types are selected by default.
 1. Click **Save**.
+
+![The Mailings - Spotlight widget filter with the three criteria and the subscription types -screenshot][img6]
 
 | Criterion | Shows a mailing when | Default |
 |---|---|---|
@@ -236,10 +239,6 @@ When no mailings match, the widget says "Nothing to spotlight right now".
 | Bounce rate above X% | More than X% of the emails bounced. | On, 2% |
 
 If you turn off every criterion, **Open rate below X%** is turned on again with 20%.
-
-Under **Subscription type**, all types are selected by default.
-
-![The Mailings - Spotlight widget filter with the three criteria and the subscription types -screenshot][img6]
 
 ### Choose whose mailings and which period {#mailings-settings}
 
@@ -294,7 +293,7 @@ You see the agent widgets when:
 
 ### Show the Negative sentiment criterion {#admin-sentiment}
 
-To use the **Negative sentiment** criterion in **Request - Spotlight**, [turn on sentiment analysis][7].
+You can use the **Negative sentiment** criterion in **Request - Spotlight** when your administrator has [turned on sentiment analysis][7].
 
 [1]: /en/learn/getting-started/main-screen/navigator
 [2]: /en/ai/learn/set-up-ai-agents
