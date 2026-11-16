@@ -11,11 +11,20 @@ for example for a page whose real title reads oddly out of context on a homepage
      often to be a useful "what's new" signal) and adds them to the list, except anything under
      GENERATED_TREE_PREFIXES (see below) or a `snippets/` path segment (MDX-import-only fragments,
      never served at their own URL — see #448, where a new snippet was auto-added as a broken
-     homepage link).
+     homepage link). A PR that adds a whole new top-level folder under `en/` or `integrations/`
+     (a folder with no file on the base branch, for example a section migrated from the knowledge
+     base) contributes only that folder's root page: `index.mdx`/`index.md`, otherwise
+     `<folder>/<folder>.mdx`/`.md`, otherwise its shallowest page. Its other pages would push every
+     older entry off the list.
   2. Stamps `since` with today's date on any entry that's missing it (a freshly hand-added or
      auto-detected entry), and on any *pinned* entry whose own target file was touched by this PR;
      pinned pages (for example the current release notes) should read as current, not stale,
-     whenever their content actually changes.
+     whenever their content actually changes. A pinned page that carries `<Update description=
+     "DD.MM.YYYY">` labels (the SuperOffice 12 release notes) is stamped with its newest label date
+     instead, clamped to today because release notes are merged before their release date, and only
+     when that date is later than the entry's current `since`, so a typo fix leaves it alone.
+     `.github/workflows/recent-pages-sync.yml` lists `release-notes/12/index.mdx` among its paths for
+     this; no other release-notes page triggers the workflow or is ever added to the list.
   3. Drops any entry whose target has `generated: true` frontmatter, or whose path falls under
      GENERATED_TREE_PREFIXES. The frontmatter check alone isn't reliable: some generated reference
      trees (for example `en/api/reference/webapi/`, `en/api/reference/restful/`) carry no
@@ -24,7 +33,7 @@ for example for a page whose real title reads oddly out of context on a homepage
      frontmatter-less, "Added" by that PR, and matching the plain `en/` auto-detect prefix, wiped
      out the homepage's curated "New content" list with raw generated page paths as titles).
   4. Drops non-pinned entries whose `since` is more than 120 days old.
-  5. Caps the combined list at 7: pinned entries get guaranteed slots
+  5. Caps the combined list at 10: pinned entries get guaranteed slots
      (they still count against the cap); the most recent eligible
      non-pinned entries fill whatever's left.
   6. Writes the trimmed, `since`-refreshed list back into `index.mdx`'s frontmatter, and a resolved
@@ -64,8 +73,9 @@ RECENT_PAGES_BLOCK_RE = re.compile(
 RECENT_PAGES_CALL_RE = re.compile(r"<RecentPages\s+items=\{\[.*?\]\}\s*/>", re.DOTALL)
 TITLE_RE = re.compile(r'(?m)^title:\s*"?(.*?)"?\s*$')
 GENERATED_RE = re.compile(r"(?m)^generated:\s*true\s*$")
+UPDATE_LABEL_RE = re.compile(r'<Update\b[^>]*?\bdescription="(\d{2})\.(\d{2})\.(\d{4})"')
 
-MAX_TOTAL = 7
+MAX_TOTAL = 10
 MAX_AGE_DAYS = 120
 AUTO_DETECT_PREFIXES = ("en/", "integrations/")
 # Machine-generated reference trees: regenerate too often, and often carry
@@ -219,6 +229,22 @@ def is_generated(rel_url_path):
     return bool(fm and GENERATED_RE.search(fm))
 
 
+def newest_update_label_date(rel_url_path):
+    """Newest `<Update description="DD.MM.YYYY">` date in the target page, or None if it has no
+    parsable label (the label format is DD.MM.YYYY since #617; anything else is ignored)."""
+    target = resolve_target_file(rel_url_path)
+    if target is None:
+        return None
+    text, _, _ = read_text_file(target)
+    dates = []
+    for day, month, year in UPDATE_LABEL_RE.findall(text):
+        try:
+            dates.append(datetime(int(year), int(month), int(day)))
+        except ValueError:
+            continue
+    return max(dates) if dates else None
+
+
 def get_changed_files(base_ref):
     """Returns (added, modified) as sets of repo-relative POSIX paths."""
     out = subprocess.run(
@@ -251,6 +277,72 @@ def is_auto_detect_candidate(rel_file_path):
     return rel_file_path.endswith(".md") or rel_file_path.endswith(".mdx")
 
 
+def top_level_folder(rel_file_path):
+    """`integrations/foo/bar/x.mdx` -> `integrations/foo`; None for a file directly under the
+    prefix (`integrations/index.mdx`) or outside it."""
+    for prefix in AUTO_DETECT_PREFIXES:
+        if rel_file_path.startswith(prefix):
+            parts = rel_file_path[len(prefix):].split("/")
+            return prefix + parts[0] if len(parts) > 1 else None
+    return None
+
+
+def folders_new_in_pr(base_ref, folders):
+    """Returns the subset of `folders` that has no tracked file at the PR's merge base."""
+    if not folders:
+        return set()
+    merge_base = subprocess.run(
+        ["git", "merge-base", base_ref, "HEAD"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout.strip()
+    new = set()
+    for folder in folders:
+        out = subprocess.run(
+            ["git", "ls-tree", "-r", "--name-only", merge_base, "--", folder + "/"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        if not out.stdout.strip():
+            new.add(folder)
+    return new
+
+
+def pick_root_page(folder, candidates):
+    """The page that stands for a whole new folder: `index.mdx`, `index.md`, `<name>.mdx`/`.md`
+    next to the folder's own name, else the shallowest page, alphabetical on ties."""
+    name = folder.rsplit("/", 1)[-1]
+    for wanted in (f"{folder}/index.mdx", f"{folder}/index.md", f"{folder}/{name}.mdx", f"{folder}/{name}.md"):
+        if wanted in candidates:
+            return wanted
+    return sorted(candidates, key=lambda p: (p.count("/"), p))[0]
+
+
+def select_auto_detected(added, base_ref):
+    """Added pages to put on the list: every eligible page, except that a new top-level folder
+    under `en/` or `integrations/` is represented by its root page only."""
+    candidates = sorted(p for p in added if is_auto_detect_candidate(p))
+    by_folder = {}
+    for p in candidates:
+        folder = top_level_folder(p)
+        if folder:
+            by_folder.setdefault(folder, []).append(p)
+    collapsed = {}
+    for folder in folders_new_in_pr(base_ref, by_folder):
+        collapsed[folder] = pick_root_page(folder, set(by_folder[folder]))
+    selected = []
+    for p in candidates:
+        folder = top_level_folder(p)
+        if folder in collapsed and p != collapsed[folder]:
+            continue
+        selected.append(p)
+    return selected
+
+
 def sync(base_ref, today_str):
     text, has_bom, uses_crlf = read_text_file(INDEX_PATH)
     parts = split_frontmatter(text)
@@ -264,9 +356,7 @@ def sync(base_ref, today_str):
 
     # 1. Auto-detect brand-new pages under en/ or integrations/ only.
     existing_paths = {item["path"] for item in items}
-    for rel_file_path in sorted(added):
-        if not is_auto_detect_candidate(rel_file_path):
-            continue
+    for rel_file_path in select_auto_detected(added, base_ref):
         url_path = file_path_to_url(rel_file_path)
         if url_path in existing_paths:
             continue
@@ -278,17 +368,27 @@ def sync(base_ref, today_str):
     touched_urls = set()
     for rel_file_path in added | modified:
         touched_urls.add(file_path_to_url(rel_file_path))
+    today = datetime.strptime(today_str, DATE_FMT)
     for item in items:
         if not item.get("since"):
             item["since"] = today_str
         elif item.get("pinned") and item["path"] in touched_urls:
-            item["since"] = today_str
+            label_date = newest_update_label_date(item["path"])
+            if label_date is None:
+                item["since"] = today_str
+            else:
+                new_since = min(label_date, today)
+                try:
+                    current = datetime.strptime(item["since"], DATE_FMT)
+                except ValueError:
+                    current = None
+                if current is None or new_since > current:
+                    item["since"] = new_since.strftime(DATE_FMT)
 
     # 3. Drop generated targets.
     items = [item for item in items if not is_generated(item["path"])]
 
     # 4 + 5. Age filter (pinned exempt) + cap at MAX_TOTAL, pinned first.
-    today = datetime.strptime(today_str, DATE_FMT)
     cutoff = today - timedelta(days=MAX_AGE_DAYS)
 
     def parse_since(item):
