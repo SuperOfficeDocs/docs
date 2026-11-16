@@ -94,7 +94,6 @@
       "integrations/superoffice-for-outlook/deploy",
       "integrations/superoffice-for-outlook/pin-add-in",
       "integrations/superoffice-for-outlook/settings",
-      "integrations/superoffice-for-outlook/stay-up-to-date",
       "integrations/superoffice-for-outlook/add-contact-to-superoffice",
       "integrations/superoffice-for-outlook/view-contact-details",
       {
@@ -112,6 +111,7 @@
       "integrations/superoffice-for-outlook/create-follow-up",
       "integrations/superoffice-for-outlook/create-request",
       "integrations/superoffice-for-outlook/create-sale",
+      "integrations/superoffice-for-outlook/stay-up-to-date",
       "integrations/superoffice-for-outlook/troubleshooting"
     ]
   },
