@@ -40,6 +40,7 @@
         "icon": "graduation-cap",
         "root": "da/learn/basics/index",
         "pages": [
+          "da/learn/basics/start-page",
           "da/learn/basics/recent-navigation",
           "da/learn/basics/overview-pages",
           "da/learn/basics/notifications",
