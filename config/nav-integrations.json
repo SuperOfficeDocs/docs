@@ -94,6 +94,7 @@
       "integrations/superoffice-for-outlook/deploy",
       "integrations/superoffice-for-outlook/pin-add-in",
       "integrations/superoffice-for-outlook/settings",
+      "integrations/superoffice-for-outlook/in-app-notifications",
       "integrations/superoffice-for-outlook/add-contact-to-superoffice",
       "integrations/superoffice-for-outlook/view-contact-details",
       {

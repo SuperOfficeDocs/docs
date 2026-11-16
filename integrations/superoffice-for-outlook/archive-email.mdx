@@ -1,10 +1,10 @@
 ---
 uid: sofo-archive-email
 title: Archive email to SuperOffice
-description: Archive emails from Outlook to SuperOffice using the SuperOffice for Outlook add-in.
-keywords: ['SuperOffice for Outlook', 'Outlook', 'archive email', 'email', 'save to SuperOffice', 'SOFO']
+description: Archive emails from Outlook to SuperOffice using the SuperOffice for Outlook add-in, and add a comment or an AI summary.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'archive email', 'email', 'save to SuperOffice', 'comment', 'AI summary', 'SOFO']
 author: Erik Lebiko, digitaldiina, schildea
-date: 11.09.2026
+date: 11.16.2026
 version_sofo: 6.4.12
 content_type: howto
 category: integration
@@ -17,6 +17,7 @@ related:
   - /integrations/superoffice-for-outlook/email-archive-status
   - /integrations/superoffice-for-outlook/archive-reminder
   - /integrations/superoffice-for-outlook/shared-mailboxes
+  - /integrations/superoffice-for-outlook/in-app-notifications
   - /release-notes/integrations/sofo
 language: en
 userflow_index: true
@@ -52,6 +53,7 @@ To archive information from an email in Outlook and save it to SuperOffice:
 
     * **Sale:** Link the email to a sale.
     * **Project:** Link the email to a project.
+    * **Comment:** Add context for colleagues who view the email in SuperOffice. You can also [generate a summary of the email][9] in this field.
     * **Type:** Preselected from your [default incoming email type][5]. Choose another type to change it for this email only.
     * **Visible for:** Choose who can see the email: **All**, a user group, or only you.
 
@@ -67,6 +69,68 @@ To archive information from an email in Outlook and save it to SuperOffice:
 <Tip>
 Turn on [email archive status][4] to see the **Archived in SuperOffice** category on archived emails directly in your message list.
 </Tip>
+
+## Add a comment {#comment}
+
+Use the **Comment** field to give colleagues context when you archive an incoming email, for example the outcome of a conversation. The comment is saved with the archived email in your SuperOffice CRM, so the customer record holds more than the email itself. It shows in the same place as the AI summary. See [Find the summary in SuperOffice][11].
+
+The **Comment** field is available to all users.
+
+## Generate an AI summary {#ai-summary}
+
+Generate is included in the [Core plan][10] and higher. It adds a short summary of the email to your SuperOffice record, so the customer history is more complete. Colleagues who were not part of the conversation can see the key points and the outcome without reading the whole email.
+
+1. In the SuperOffice Outlook sidebar, choose **Save to SuperOffice** on an incoming email.
+
+1. Click **Generate** next to **Comment**.
+
+1. Review the summary and edit it if you need to.
+
+1. Click **Save** to archive the email together with the summary.
+
+SuperOffice for Outlook generates a summary only when you click **Generate**.
+
+If the **Comment** field already contains text, **Generate** opens a menu with two options:
+
+* **Replace:** Overwrites the text in the field with the summary.
+* **Append:** Adds the summary below your text.
+
+After you choose one, an **Undo** link appears for a few seconds. Click it to restore the field.
+
+{/* Screenshot placeholder: outlook-save-to-superoffice.png needs a retake that shows the Comment field and Generate. The existing image is shown above the Tip. */}
+
+### What the summary contains {#ai-summary-content}
+
+The summary shows the following, from top to bottom:
+
+* The subject of the email. If the email has no subject, the summary starts with the people on the email.
+* The people on the email: the sender and everyone on To and Cc, each listed once. Each line shows the name and the email address in brackets, plus the job title when the email shows one. For example: Jane Smith (jane.smith@example.com), Sales Manager.
+* Short bullet points that summarize the whole email, including the earlier messages quoted in it, followed by action items with an owner for each. If the email has no action items, that part is left out.
+
+Names and email addresses come from the email itself. If no name is found, only the email address is shown. A job title is never guessed. People in Bcc, and people who only appear elsewhere in the conversation, are not listed.
+
+The summary does not include other messages in the Outlook conversation, and it does not analyze attachments.
+
+### Availability {#ai-summary-availability}
+
+The **Comment** field and **Generate** are available when you save an incoming email with **Save to SuperOffice**. They are not available for outgoing emails, Send & Archive, or meetings.
+
+If you do not see **Generate**, your organization may not be on a plan that includes it. You can still add a comment.
+
+### Find the summary in SuperOffice {#ai-summary-find}
+
+The summary is saved with the email in your SuperOffice CRM. To read it:
+
+* Hover over the email in the **Activities** tab of the contact or company. The summary shows in the pop-up.
+* Right-click the email, then choose **Document**. The summary is in the text on the **Details** tab of the **Document** dialog.
+
+{/* Screenshot placeholder: outlook-ai-summary-activity-hover.png (the pop-up with the summary on the Activities tab). Use demo data. */}
+
+{/* Screenshot placeholder: outlook-ai-summary-document-details.png (the Document dialog, Details tab, with the summary). Use demo data. */}
+
+### Use the comment and summary in other tools {#ai-summary-mcp}
+
+The comment and the summary are saved in the text of the archived email in your SuperOffice CRM. The SuperOffice Model Context Protocol (MCP) server can read this text. It follows the **Visible for** setting of the email, so people can only get the text of emails they are allowed to see in SuperOffice.
 
 ## Former employees in search results {#former-employees}
 
@@ -84,6 +148,9 @@ To change your preference, choose **Personal settings** > **Preferences** > **Co
 [5]: ./settings#email-type
 [6]: /en/learn/getting-started/preferences
 [8]: ./settings
+[9]: #ai-summary
+[10]: https://www.superoffice.com/pricing/
+[11]: #ai-summary-find
 
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-save-to-superoffice.png
 [img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-contact-hover-list.png
