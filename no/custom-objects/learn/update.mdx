@@ -1,0 +1,69 @@
+---
+title: Oppdatere egendefinerte data
+description: Åpne, rediger eller slett data i et egendefinert objekt, og åpne koblinger som er lagret i feltene.
+keywords: ['rediger egendefinert objekt', 'slett egendefinert objekt', 'oppdater egendefinert objekt', 'ekstratabell']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Legge til egendefinerte data: /no/custom-objects/learn/create
+  - Om ekstratabeller: /no/custom-objects/learn/extra-table
+language: no
+---
+
+import ReqGrowthCustomObjects from "../../snippets/req-growth-custom-objects.mdx";
+
+<ReqGrowthCustomObjects />
+
+Du kan vise, redigere og slette egendefinerte data, avhengig av [rettighetene rollen din har for det egendefinerte objektet][1]: **Read**, **Update** eller **Delete**.
+
+![Laptop med en kobling til produktsiden og et detaljkort for leieavtaler -screenshot][img1]
+
+## Åpne egendefinerte data
+
+Åpne egendefinerte data på en av disse måtene:
+
+* Velg det egendefinerte objektet i Navigatoren, søk i listen, og velg raden du vil ha.
+* Velg det på et detaljkort for en relatert post.
+* Velg det i [historikken][2] eller [favorittene][3].
+
+Hvis du vil se på egendefinerte data uten å forlate den relaterte posten, velger du det på detaljkortet og ser det i visningen **Forhåndsvisning** i sidepanelet.
+
+## Rediger egendefinerte data
+
+1. Åpne de egendefinerte dataene.
+
+1. Klikk <i class="ph ph-pencil-simple" aria-label="Rediger"></i> for å gå til redigeringsmodus.
+
+1. Gjør endringene dine. For et relasjonsfelt begynner du å skrive og velger den relaterte posten fra listen.
+
+1. Klikk **Lagre**.
+
+### Koblinger i tekstfelt
+
+Når et tekstfelt inneholder en URL, vises URL-en som en kobling i lesemodus. Klikk på den for å åpne siden i en ny fane. Et felt **Produktside** kan for eksempel lenke til produktet i leverandørens nettbutikk. I redigeringsmodus er feltet et vanlig tekstfelt. Se [URL-er i tekstfelt][4].
+
+## Slett egendefinerte data
+
+For å slette egendefinerte data må rollen din ha rettigheten **Delete** for [det egendefinerte objektet][1].
+
+<Warning>
+Du kan ikke angre en sletting.
+</Warning>
+
+1. Åpne de egendefinerte dataene.
+
+1. Klikk på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> og velg **Slett**.
+
+1. Klikk på **Ja** i bekreftelsesdialogboksen.
+
+[1]: /no/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /no/learn/basics/history
+[3]: /no/learn/basics/fav
+[4]: ./extra-field#urls
+
+[img1]: /media/loc/en/custom-objects/laptop-card.png

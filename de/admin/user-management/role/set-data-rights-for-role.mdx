@@ -4,8 +4,8 @@ title: Datenrechte für eine Rolle festlegen
 description: Datenrechten für Rolle festlegen
 keywords: ['Benutzerverwaltung', 'Rolle', 'Zugriff', 'Rechte']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.12.2026
+so_version: 12.6
 content_type: howto
 tier: starter
 category: identity management
@@ -63,4 +63,29 @@ Sie können Rechte für Datenobjekte festlegen, die davon abhängen, wer Eigent�
 
 Im **Personen**-karte wird das Feld **Verantwortliche** immer von der zugehörigen **Firma** übernommen.
 
+## Benutzerdefinierte Objekte {#custom-objects}
+
+Mit CRM Suite **Growth** oder höher legen Sie auch Rechte für [benutzerdefinierte Objekte][3] fest. Anders als die oben beschriebenen Datenrechte gelten diese Rechte für alle Daten eines benutzerdefinierten Objekts, unabhängig davon, wer sie besitzt.
+
+1. Wählen Sie bei ausgewählter Rolle die Registerkarte **Rechte für benutzerdefinierte Objekte** aus.
+
+    ![Registerkarte Rechte für benutzerdefinierte Objekte für eine Rolle -screenshot][img1]
+
+1. Klicken Sie in der Liste **Berechtigung** neben einem benutzerdefinierten Objekt auf <i class="ph ph-caret-down" aria-label="Chevron"></i> und wählen Sie eine Berechtigung aus:
+
+    | Berechtigung | Benutzer mit dieser Rolle |
+    |---|---|
+    | None | Können das benutzerdefinierte Objekt und seine Daten nicht sehen |
+    | Read | Können benutzerdefinierte Daten sehen |
+    | Create | Können benutzerdefinierte Daten sehen und hinzufügen |
+    | Update | Können benutzerdefinierte Daten sehen, hinzufügen und bearbeiten |
+    | Delete | Können benutzerdefinierte Daten sehen, hinzufügen, bearbeiten und löschen |
+
+<Tip>
+Wenn Sie die Tabelle für ein benutzerdefiniertes Objekt erstellt und ihre Felder hinzugefügt haben, legen Sie die Rechte fest, damit Benutzer mit dem Hinzufügen von Daten beginnen können.
+</Tip>
+
 [2]: ./index
+[3]: /de/custom-objects/learn/extra-table
+
+[img1]: /media/loc/en/custom-objects/role-custom-object-rights.png

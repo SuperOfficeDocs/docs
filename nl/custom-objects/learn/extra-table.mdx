@@ -1,120 +1,115 @@
 ---
 uid: help-nl-extra-table
 title: Extra tabellen
-description: Extra tabellen
-keywords: ['extra tabel', 'Scherm Tabellen']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
-content_type: howto
-tier: core
+description: Een extra tabel is een databasetabel die u zelf definieert. Met CRM Suite Growth of hoger wordt het een aangepast object dat zich gedraagt zoals bedrijven en verkopen.
+keywords: ['extra tabel', '3rd party-tabel', 'aangepast object']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: concept
+tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /nl/custom-objects/learn/extra-table/index
+redirect_from:
+  - /nl/custom-objects/extra-table/index
+  - /nl/custom-objects/learn/extra-table/index
 related:
-  - /nl/custom-objects/admin/create-extra-table
-  - /nl/custom-objects/admin/create-extra-field
-  - Door gebruiker gedefinieerde velden: /nl/custom-objects/admin/add-udef
-  - Gebruiker gedefinieerde chermen: /nl/ui/blogic/learn/index
-  - Triggers toevoegen: /en/automation/trigger/create-trigger-script
+  - Aangepaste gegevens toevoegen: /nl/custom-objects/learn/create
+  - Aangepaste gegevens bijwerken: /nl/custom-objects/learn/update
+  - Een extra tabel toevoegen: /nl/custom-objects/admin/create-extra-table
+  - Extra velden toevoegen: /nl/custom-objects/admin/create-extra-field
+  - Gegevensrechten voor aangepaste objecten instellen: /nl/admin/user-management/role/set-data-rights-for-role#custom-objects
+  - De opmaak van een aangepast object ontwerpen: /nl/customization/screen-designer/admin/add-layout#custom-objects
 language: nl
 ---
 
-import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
+Een *extra tabel* (ook wel *3rd party-tabel* genoemd) is een databasetabel die u zelf definieert, voor gegevens die SuperOffice niet in een standaardtabel opslaat. Beheerders [maken extra tabellen][2] en voegen er velden aan toe in **Instellingen en onderhoud** > **Systeemontwerp** > **Tabellen**.
 
-<ReqDevToolsTransition />
+<Note>
+Extra tabellen vereisen het CRM Suite **Growth**-plan of hoger, of een licentie op basis van gebruikersplannen met [Development Tools][13].
 
-De Development Tools-licentie of het Core-plan geeft je de mogelijkheid om extra tabellen in de database aan te maken.
+Met een licentie op basis van gebruikersplannen zijn extra tabellen beschikbaar in SuperOffice Service en, via [webpanelen][14], in SuperOffice CRM. Als u ze wilt gebruiken als aangepaste objecten in SuperOffice CRM, doet u mee aan het [pilotprogramma voor aangepaste objecten][15].
+</Note>
 
-Het **Tabellen**-scherm is jouw tool voor het aanpassen van het databaseschema.
+## Extra tabellen als aangepaste objecten
 
-## Toegang krijgen
+In de CRM Suite wordt een extra tabel een *aangepast object*: een entiteit die zich gedraagt zoals de standaardentiteiten, zoals bedrijven en verkopen. Een aangepast object heeft eigen velden en kan gerelateerd zijn aan bedrijven, contactpersonen, verkopen, projecten, verzoeken, vervolgactiviteiten en andere aangepaste objecten.
 
-<Tabs>
-<Tab title="Klassiek">
-Tabellen van derden zijn direct beschikbaar voor standaard CRUD-operaties in SuperOffice Service. Je moet een webpaneel instellen om er vanuit de Verkoop-client toegang toe te krijgen.
-</Tab>
+De stappen om een tabel te maken zijn voor elke licentie hetzelfde. Wat verschilt, is hoe gebruikers de opgeslagen gegevens bekijken en ermee werken.
 
-<Tab title="Nieuw (vanaf versie 10.3.4 pilot)">
-Niet langer beperkt tot SuperOffice Service, kunt u nu eenvoudig gegevens in extra tabellen verkennen en beheren vanuit SuperOffice CRM.
+## Waar vindt u aangepaste objecten {#where}
 
-### Dashboards bouwen met aangepaste objecten
+Gebruikers vinden aangepaste objecten op deze plaatsen:
 
-![Dashboard met aangepaste objecten -screenshot][img1]
+* **Hoofdmenu:** Klik op <i class="ph ph-list" aria-label="Hoofdmenu"></i> en selecteer **Aangepaste objecten** om het scherm **Aangepaste objecten** te openen, met alle aangepaste objecten waartoe u toegang hebt. Selecteer een aangepast object, voeg [zoekcriteria][16] toe op het tabblad **Criteria** en klik op **Zoeken**. De overeenkomende aangepaste gegevens worden weergegeven op het tabblad **Resultaten**.
 
-### Zoeken en selectie
+    ![Scherm Aangepaste objecten met Laptop-gegevens -screenshot][img11]
 
-**Aangepast object als zoekcriterium voor bedrijf, contact, verkoop, project, verzoek, activiteit:**
+* **Navigator:** Aangepaste objecten staan in de navigator, elk met een eigen pictogram. Selecteer een aangepast object om het scherm met de aangepaste gegevens in een lijst te openen. Uw beheerder bepaalt welke aangepaste objecten worden weergegeven.
 
-![Aangepast object als zoekcriterium -screenshot][img2]
+    ![Navigator met vier aangepaste objecten, Laptop geselecteerd -screenshot][img10]
 
-**Maak een selectie van aangepaste objecten (10.3.7):**
+* **Nieuw:** Klik op **Nieuw** in de bovenste balk om [gegevens toe te voegen][7] aan een aangepast object.
 
-![Zoekscherm met aangepaste objecten -screenshot][img3]
+    ![Menu Nieuw in de bovenste balk met aangepaste objecten -screenshot][img12]
 
-![Selectie van aangepaste objecten -screenshot][img4]
+* **Sectietabbladen:** Wanneer een aangepast object is gerelateerd aan een andere entiteit, zoals een bedrijf, verkoop of aangepast object, worden de gerelateerde aangepaste gegevens daar weergegeven op een sectietabblad.
 
-### Gegevens beheren (10.3.7)
+    ![Bedrijf met een sectietabblad Leases -screenshot][img8]
 
-**Open het overzicht van aangepaste objecten:**
+* **Zijpaneel:** Selecteer op een sectietabblad met aangepaste objecten een rij om die weer te geven in de weergave **Voorbeeld** van het zijpaneel. Selecteer in het voorbeeld een gerelateerd record om ernaartoe te gaan.
 
-![Overzicht van aangepaste objecten -screenshot][img5]
+    ![Lease weergegeven in de weergave Voorbeeld van het zijpaneel -screenshot][img9]
 
-**Zoeken:**
+* **Dashboards:** Gebruik een aangepast object als gegevensbron van een dashboardtegel.
 
-![Overzicht van aangepaste objecten, zoekopdracht -screenshot][img6]
+    ![Dashboard met tegels op basis van de aangepaste objecten Lease en Laptop -screenshot][img1]
 
-**Voorbeeld:**
+* **Historie en favorieten:** Aangepaste gegevens die u opent, worden toegevoegd aan uw [historielijst][9] en u kunt ze [als favoriet toevoegen][10].
 
-![Overzicht van aangepaste objecten, voorbeeld -screenshot][img7]
+Welke aangepaste objecten en aangepaste gegevens u kunt bekijken, toevoegen, bijwerken of verwijderen, hangt af van uw [rol][8].
 
-**Items toevoegen/verwijderen:**
+## Zoeken naar aangepaste objecten
 
-Wanneer u de resultaten bekijkt voor een specifiek item in het overzicht **Aangepaste objecten**, klikt u op de knop **Taak** en selecteert u **Nieuw** of **Verwijderen**.
+U kunt zoeken naar aangepaste objecten en selecties maken op basis van aangepaste objecten, op dezelfde manier als voor bedrijven, contactpersonen en verkopen.
 
-**Velden vooraf invullen bij het laden van aangepast object (10.3.8):**
+* **Zoeken:** Selecteer in het scherm **Zoeken** een aangepast object om naar de aangepaste gegevens ervan te zoeken. U kunt een aangepast object ook gebruiken als zoekcriterium wanneer u zoekt naar bedrijven, contactpersonen, verkopen, projecten, verzoeken en vervolgactiviteiten.
 
-De nieuwe [SalesLoadCustomObject][6] trigger wordt aangeroepen voordat een aangepast objectscherm wordt geladen. Gebruik het om standaardwaarden in te stellen in velden en bedrijfsregels te definiëren.
-</Tab>
-</Tabs>
+    ![Scherm Zoeken met aangepaste objecten -screenshot][img3]
+
+    ![Bedrijf zoeken met een veld Lease als zoekcriterium -screenshot][img2]
+
+* **Selecties:** Sla de zoekopdracht op als een selectie van aangepaste gegevens. Een dynamische selectie houdt de lijst actueel.
+
+    ![Laptop zoeken met zoekresultaten en Opslaan als selectie -screenshot][img4]
+
+<Note>
+Het veld voor [vrije-tekst zoekbewerking][17] in de bovenste balk bevat geen aangepaste objecten. Gebruik **Zoeken** of de zoekfunctie in het eigen scherm van het aangepaste object.
+</Note>
 
 ## Scherm Tabellen
 
-Het **Tabellen**-scherm toont een lijst met databasetabellen. Het toont zowel standaardtabellen (vooraf gedefinieerd in het systeem en vormt de basis van verschillende schermen) als extra tabellen (tabellen die je zelf maakt met optionele inhoud).
+Het scherm **Tabellen** in **Instellingen en onderhoud** > **Systeemontwerp** toont een lijst met databasetabellen. Het toont zowel standaardtabellen, die deel uitmaken van SuperOffice, als extra tabellen, die u zelf maakt. Alleen beheerders hebben toegang tot dit scherm.
 
-Hier kun je nieuwe tabellen en velden maken voor verschillende schermen en dialogen. Alleen beheerders hebben toegang tot deze functionaliteit.
+Gebruik tabelmappen om uw extra tabellen te ordenen.
 
-## Tabelmap
+[2]: ../admin/create-extra-table
+[7]: ./create
+[8]: /nl/admin/user-management/role/set-data-rights-for-role#custom-objects
+[9]: /nl/learn/basics/history
+[10]: /nl/learn/basics/fav
+[13]: /nl/admin/license/expander-services
+[14]: /nl/customization/web-panels/admin/index
+[15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+[16]: /nl/search-options/learn/search-criteria
+[17]: /nl/search-options/learn/freetext-search
 
-Tabelmappen worden gebruikt voor het ordenen van uw aangepaste tabellen.
-
-## Conventies
-
-<Warning>
-Kies uw databasetabel- en veldnamen zorgvuldig. Ze kunnen later niet worden gewijzigd!
-
-Een logische naam is het beste omdat het gemakkelijker maakt om te zien wat de database bevat.
-</Warning>
-
-Prefixen zorgen ervoor dat wat u maakt niet in conflict komt met toekomstige SuperOffice-tabel- en veldnamen. Het garandeert echter niet het ontbreken van namenconflicten tussen verschillende derde partijen.
-
-### Tabelnamen
-
-* Moet beginnen met **y_**
-* Mag alleen underscores, de letters a tot z en cijfers bevatten
-
-### Veldnamen
-
-* Moet beginnen met **x_**
-* Moet uniek zijn binnen de tabel
-* Moet een enkel woord zijn
-* Mag alleen underscores, letters van a tot z en cijfers bevatten
-
-[6]: ../../../en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
-[img1]: ../../../media/loc/en/automation/custom-object-dashboard.png
-[img2]: ../../../media/loc/en/automation/find-custom-object-relation.png
-[img3]: ../../../media/loc/en/automation/find-screen-with-custom-objects.png
-[img4]: ../../../media/loc/en/automation/custom-object-selection.png
-[img5]: ../../../media/loc/en/automation/go-to-custom-objects.png
-[img6]: ../../../media/loc/en/automation/search-inventory.png
-[img7]: ../../../media/loc/en/automation/preview-inventory-results.png
+[img1]: /media/loc/en/custom-objects/dashboard-leases.png
+[img2]: /media/loc/en/custom-objects/find-company-lease-criteria.png
+[img3]: /media/loc/en/custom-objects/find-screen-custom-objects.png
+[img4]: /media/loc/en/custom-objects/find-laptop-results.png
+[img8]: /media/loc/en/custom-objects/company-lease-tab.png
+[img9]: /media/loc/en/custom-objects/company-lease-preview.png
+[img10]: /media/loc/en/custom-objects/navigator-custom-objects.png
+[img11]: /media/loc/en/custom-objects/custom-objects-screen.png
+[img12]: /media/loc/en/custom-objects/new-menu-custom-object.png

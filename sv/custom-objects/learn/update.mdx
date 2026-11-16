@@ -1,0 +1,69 @@
+---
+title: Uppdatera anpassade data
+description: Öppna, redigera eller ta bort data i ett anpassat objekt och öppna länkar som lagras i dess fält.
+keywords: ['redigera anpassat objekt', 'ta bort anpassat objekt', 'uppdatera anpassat objekt', 'extratabell']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Lägg till anpassade data: /sv/custom-objects/learn/create
+  - Om extratabeller: /sv/custom-objects/learn/extra-table
+language: sv
+---
+
+import ReqGrowthCustomObjects from "../../snippets/req-growth-custom-objects.mdx";
+
+<ReqGrowthCustomObjects />
+
+Du kan visa, redigera och ta bort anpassade data, beroende på [behörigheterna som din roll har för det anpassade objektet][1]: **Read**, **Update** eller **Delete**.
+
+![Laptop med en länk till produktsidan och ett detaljkort för Leases -screenshot][img1]
+
+## Öppna anpassade data
+
+Öppna anpassade data på något av följande sätt:
+
+* Välj det anpassade objektet i navigatorn, sök i listan och välj den rad du vill ha.
+* Välj dem på ett detaljkort för en relaterad post.
+* Välj dem i din [historiklista][2] eller dina [favoriter][3].
+
+Om du vill titta på anpassade data utan att lämna den relaterade posten väljer du dem på detaljkortet och visar dem i vyn **Förhandsvisning** i sidopanelen.
+
+## Redigera anpassade data
+
+1. Öppna de anpassade data.
+
+1. Klicka på <i class="ph ph-pencil-simple" aria-label="Redigera"></i> för att gå till redigeringsläge.
+
+1. Gör dina ändringar. För ett relationsfält börjar du skriva och väljer den relaterade posten i listan.
+
+1. Klicka på **Spara**.
+
+### Länkar i textfält
+
+När ett textfält innehåller en URL visas URL:en som en länk i läsläge. Klicka på den för att öppna sidan i en ny flik. Ett fält **Produktsida** kan till exempel länka till produkten i leverantörens webbutik. I redigeringsläge är fältet ett vanligt textfält. Se [URL:er i textfält][4].
+
+## Ta bort anpassade data
+
+För att ta bort anpassade data måste din roll ha [behörigheten **Delete** för det anpassade objektet][1].
+
+<Warning>
+Du kan inte ångra en borttagning.
+</Warning>
+
+1. Öppna de anpassade data.
+
+1. Klicka på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> och välj **Ta bort**.
+
+1. Klicka på **Ja** i bekräftelserutan.
+
+[1]: /sv/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /sv/learn/basics/history
+[3]: /sv/learn/basics/fav
+[4]: ./extra-field#urls
+
+[img1]: /media/loc/en/custom-objects/laptop-card.png

@@ -3,8 +3,8 @@ uid: help-da-udef-add
 title: Tilføj brugerdefinerede felter
 description: Tilføj brugerdefinerede felter
 keywords: ['udef', 'brugerdefineret', 'tilpasset felt']
-author: Bergfrid Dias
-date: 06.10.2026
+author: digitaldiina
+date: 11.13.2026
 so_version: 12.0
 content_type: howto
 tier: core
@@ -13,9 +13,10 @@ audience_tooltip: Settings and maintenance
 redirect_from: /da/custom-objects/learn/udef/add
 userflow_index: true
 related:
-  - /da/custom-objects/admin/edit-udef-layout
-  - Redigering af feltegenskaber: /da/custom-objects/admin/edit-udef
-  - /da/customization/screen-designer/admin/index
+  - Om brugerdefinerede felter: /da/custom-objects/learn/udef
+  - Placering af felter: /da/custom-objects/admin/edit-udef-layout
+  - Redigering af brugerdefinerede felt: /da/custom-objects/admin/edit-udef
+  - Skærmdesigner: /da/customization/screen-designer/admin/index
 language: da
 ---
 
@@ -50,6 +51,10 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/da-udef-s
 
 1. Indstil eventuelt andre [feltegenskaber](#properties), såsom om feltet er obligatorisk eller skal indekseres.
 
+    <Note>
+    Du kan ikke vælge **Skrivebeskyttet**, hvis du har valgt **Obligatorisk**. Disse muligheder udelukker hinanden.
+    </Note>
+
 1. Når du er færdig, klik på **Gem**. Dialogboksen lukkes, og det nye felt vises i **Felt**-listen og i gitteret.
 
 1. [Valgfrit, justér feltets placering][3]. Dette kræver licensen Development Tools eller Core-planen.
@@ -68,10 +73,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/da-udef-s
 | Skrivebeskyttet | Hvis valgt, er det ikke muligt at ændre feltet. |
 | Indekseret | Hvis valgt, bliver dette felt søgbart og fremskynder **Find**. Der kan også søges i ikke-indekserede felter, men søgningen tager længere tid. Indekser kun felter, der ofte søges i og som indeholder almindeligt anvendte data. |
 
-<Note>
-Du kan ikke vælge **Skrivebeskyttet**, hvis du har valgt **Obligatorisk**. Disse muligheder udelukker hinanden.
-</Note>
-
 <UdefDanger />
 
 ## Sprogkoder {#language}
@@ -82,15 +83,13 @@ Du kan ikke vælge **Skrivebeskyttet**, hvis du har valgt **Obligatorisk**. Diss
 
 Brugerdefinerede felter, du opretter, vises i [Mere-fanen][5] for firmaer, personer, salg og projekter samt i opfølgnings- og dokumentdialogerne.
 
-Nederst til højre i dialogboksen **Felt** er **navnet på skabelonvariablen** efterfulgt af en kode (ID), som kan bruges til at genbruge de oplysninger, du indtaster i dette felt, f.eks. som [skabelonvariabler][12] i dokumenter og mails.
+I det nederste højre hjørne af dialogboksen **Felt** er **navnet på skabelonvariablen** efterfulgt af en kode (ID). Brug koden til at genbruge de oplysninger, du indtaster i dette felt, for eksempel som [skabelonvariabler][12] i dokumenter og mails.
 
 ## Fejlfinding
 
 ### Jeg kan ikke oprette et nyt felt
 
 Hvis du finder ud af, at du ikke har tilladelse til at oprette et nyt felt, kan det skyldes, at du allerede har nået det [maksimale antal tilladte felter][1] af denne type. Du skal derefter slette et eksisterende felt, før du kan indsætte et nyt.
-
-Fire af hver felttype (kort tekst, lang tekst, tal, decimal) er søgbare. Hvis du f.eks. ikke markerer nogen felter, der kan søges i, kan du kun angive seks decimalfelter.
 
 [1]: ../learn/udef#limit
 [2]: ../learn/udef#field-types
