@@ -7,6 +7,9 @@ on:
       - 'index.mdx'
       - 'en/**'
       - 'integrations/**'
+      # Only this release-notes file, so a release re-dates the pinned homepage entry. No other
+      # release-notes page may trigger the workflow or be added to the list.
+      - 'release-notes/12/index.mdx'
 
 # Shared group with every other auto-fix workflow that pushes to this same PR branch: prevents a
 # cross-workflow push race (see the full rationale in generated-reference-autofix.yml). Queue, don't

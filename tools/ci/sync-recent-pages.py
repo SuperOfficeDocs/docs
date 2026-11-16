@@ -19,7 +19,12 @@ for example for a page whose real title reads oddly out of context on a homepage
   2. Stamps `since` with today's date on any entry that's missing it (a freshly hand-added or
      auto-detected entry), and on any *pinned* entry whose own target file was touched by this PR;
      pinned pages (for example the current release notes) should read as current, not stale,
-     whenever their content actually changes.
+     whenever their content actually changes. A pinned page that carries `<Update description=
+     "DD.MM.YYYY">` labels (the SuperOffice 12 release notes) is stamped with its newest label date
+     instead, clamped to today because release notes are merged before their release date, and only
+     when that date is later than the entry's current `since`, so a typo fix leaves it alone.
+     `.github/workflows/recent-pages-sync.yml` lists `release-notes/12/index.mdx` among its paths for
+     this; no other release-notes page triggers the workflow or is ever added to the list.
   3. Drops any entry whose target has `generated: true` frontmatter, or whose path falls under
      GENERATED_TREE_PREFIXES. The frontmatter check alone isn't reliable: some generated reference
      trees (for example `en/api/reference/webapi/`, `en/api/reference/restful/`) carry no
@@ -68,6 +73,7 @@ RECENT_PAGES_BLOCK_RE = re.compile(
 RECENT_PAGES_CALL_RE = re.compile(r"<RecentPages\s+items=\{\[.*?\]\}\s*/>", re.DOTALL)
 TITLE_RE = re.compile(r'(?m)^title:\s*"?(.*?)"?\s*$')
 GENERATED_RE = re.compile(r"(?m)^generated:\s*true\s*$")
+UPDATE_LABEL_RE = re.compile(r'<Update\b[^>]*?\bdescription="(\d{2})\.(\d{2})\.(\d{4})"')
 
 MAX_TOTAL = 10
 MAX_AGE_DAYS = 120
@@ -223,6 +229,22 @@ def is_generated(rel_url_path):
     return bool(fm and GENERATED_RE.search(fm))
 
 
+def newest_update_label_date(rel_url_path):
+    """Newest `<Update description="DD.MM.YYYY">` date in the target page, or None if it has no
+    parsable label (the label format is DD.MM.YYYY since #617; anything else is ignored)."""
+    target = resolve_target_file(rel_url_path)
+    if target is None:
+        return None
+    text, _, _ = read_text_file(target)
+    dates = []
+    for day, month, year in UPDATE_LABEL_RE.findall(text):
+        try:
+            dates.append(datetime(int(year), int(month), int(day)))
+        except ValueError:
+            continue
+    return max(dates) if dates else None
+
+
 def get_changed_files(base_ref):
     """Returns (added, modified) as sets of repo-relative POSIX paths."""
     out = subprocess.run(
@@ -346,17 +368,27 @@ def sync(base_ref, today_str):
     touched_urls = set()
     for rel_file_path in added | modified:
         touched_urls.add(file_path_to_url(rel_file_path))
+    today = datetime.strptime(today_str, DATE_FMT)
     for item in items:
         if not item.get("since"):
             item["since"] = today_str
         elif item.get("pinned") and item["path"] in touched_urls:
-            item["since"] = today_str
+            label_date = newest_update_label_date(item["path"])
+            if label_date is None:
+                item["since"] = today_str
+            else:
+                new_since = min(label_date, today)
+                try:
+                    current = datetime.strptime(item["since"], DATE_FMT)
+                except ValueError:
+                    current = None
+                if current is None or new_since > current:
+                    item["since"] = new_since.strftime(DATE_FMT)
 
     # 3. Drop generated targets.
     items = [item for item in items if not is_generated(item["path"])]
 
     # 4 + 5. Age filter (pinned exempt) + cap at MAX_TOTAL, pinned first.
-    today = datetime.strptime(today_str, DATE_FMT)
     cutoff = today - timedelta(days=MAX_AGE_DAYS)
 
     def parse_since(item):

@@ -87,7 +87,7 @@ A subcategory map page (`mode: "custom"`, `<div id="subcategory">` in the body �
 </Note>
 
 <Note>
-`index.mdx` (the site homepage, `mode: "custom"`) carries one extra, homepage-only property: `recent_pages`, a YAML list of `{path, pinned?, since?, title?}` entries driving the "What's new" list. `pinned: true` exempts an entry from the 120-day age-out but it still counts against the 10-entry cap. `title` is an optional override, shown instead of the target page's own title when that reads oddly out of context. Don't hand-edit the resolved `<RecentPages items={[...]} />` call in the page body — `tools/ci/sync-recent-pages.py` regenerates it and will overwrite manual edits. See [Automated tests][5].
+`index.mdx` (the site homepage, `mode: "custom"`) carries one extra, homepage-only property: `recent_pages`, a YAML list of `{path, pinned?, since?, title?}` entries driving the "What's new" list. `pinned: true` exempts an entry from the 120-day age-out but it still counts against the 10-entry cap. The pinned release notes entry takes its `since` from the newest `<Update>` date in `release-notes/12/index.mdx` (see [Automated tests][5]). `title` is an optional override, shown instead of the target page's own title when that reads oddly out of context. Don't hand-edit the resolved `<RecentPages items={[...]} />` call in the page body — `tools/ci/sync-recent-pages.py` regenerates it and will overwrite manual edits. See [Automated tests][5].
 </Note>
 
 ### Default so_version by section
