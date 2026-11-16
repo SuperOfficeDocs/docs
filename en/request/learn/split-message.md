@@ -4,7 +4,7 @@ title: Split message
 description: Split message
 keywords: ['request']
 author: digitaldiina
-date: 06.10.2026
+date: 11.16.2026
 so_version: 12.0
 content_type: howto
 license: serviceessentials
@@ -41,7 +41,7 @@ If a message contains two issues that should be handled separately, you can spli
     * **External**: Select this option if the customer is to have access to the request via a customer centre.
     * **Internal**: Select this option if the customer is not to have access to the request.
 
-1. In the **Status** list box, choose one of the following:
+1. The **Status** list box shows the status and postpone time of the original request. Default statuses for new requests aren't applied. To change the status, choose one of the following:
     * **Open**: Select this option if the request is in progress.
     * **Closed**: Select this option if the request is completed.
     * **Postponed**: To postpone handling of this request, select this option and specify a date in the date field to the right. On this date, the request is set back to **Open**.

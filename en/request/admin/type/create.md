@@ -4,7 +4,7 @@ title: Create request type
 description: Create request type
 keywords: ['new request type', 'add request type', 'Request types tab']
 author: Bergfrid Dias
-date: 06.10.2026
+date: 11.16.2026
 so_version: 12.0
 content_type: howto
 license: servicepremium
@@ -40,7 +40,7 @@ language: en
 
     ![Settings and maintenance, Request type status/priority -screenshot][img3]
 
-1. Optionally, select a default status and/or priority to use when an agent creates a request of this type. (Mandatory if you set availability.) This setting takes precedence over other preferences.
+1. Optionally, select a default status and/or priority to use when an agent creates a request of this type. (Mandatory if you set availability.) The default priority takes precedence over other preferences. The default status is used unless the category's default status is allowed for this type. See [default status order][6].
 
 1. Optionally, select a [reply template][5] to use when an agent replies to a request of this type.
 
@@ -49,6 +49,7 @@ language: en
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
+[6]: ../status/index#default-status
 
 [img1]: /media/loc/en/request/add-request-type.png
 [img3]: /media/loc/en/request/edit-request-type-values.png
