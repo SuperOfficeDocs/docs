@@ -1,8 +1,8 @@
 ---
 title: Planera dagen på Startsidan
 sidebarTitle: "Startsida"
-description: Startsidan visar dina möten och uppgifter, och de försäljningsmöjligheter, ärenden, utskick och agentresultat som behöver uppmärksamhet, i widgetar som du själv väljer och ordnar.
-keywords: ['widget', 'spotlight', 'uppgift', 'kalender', 'sammanfattning', 'rekommenderad konfiguration', 'från början', 'layout', 'agent']
+description: Startsidan visar dina möten och att göra-uppgifter, och de försäljningar, ärenden, utskick och agentresultat som behöver uppmärksamhet, i widgetar som du själv väljer och ordnar.
+keywords: ['widget', 'spotlight', 'att göra', 'sammanfattning', 'rekommenderad konfiguration', 'agent']
 author: digitaldiina
 date: 11.16.2026
 so_version: 12.6
@@ -20,9 +20,295 @@ related:
 language: sv
 ---
 
-Den här sidan är under översättning.
+Startsidan visar det som behöver din uppmärksamhet i dag, samlat på ett ställe. Den består av widgetar: små kort som var och ett visar en sak, till exempel dina möten, försenade ärenden eller de försäljningar som behöver uppföljning. Du kan hantera de flesta objekt direkt i widgeten.
 
-{/*
-TODO: translate after EN review.
+* Välj <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startsida** i [Navigatorn][1].
 
-*/}
+![Startsidan med widgetarna Sammanfattning, Datakvalitetsagent, Kalender, Ärende – Spotlight och Försäljning – Spotlight, och Startsida markerad i Navigatorn -screenshot][img1]
+
+<Note>
+Startsidan finns i alla CRM Suite-planer och införs gradvis hos utvalda kunder. Om du inte ser <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startsida** i Navigatorn är den inte tillgänglig för dig än.
+</Note>
+
+## Tillgängliga widgetar {#widgets}
+
+| Widget | Vad den visar | Plan |
+|---|---|---|
+| [Datakvalitetsagent](#data-quality-agent) | Hur många företag [Data Quality Agent][3] har uppdateringar för. | CRM Suite Growth |
+| [Kalender](#diary) | Dina möten i dag och i morgon, med knappen **Anslut till möte** för onlinemöten. | Alla CRM Suite-planer |
+| [Duplicera agent](#duplicate-agent) | Hur många sammanfogningar och kontakter utan företag [Duplicate Agent][4] har hittat. | CRM Suite Growth |
+| [Lead-agent](#lead-agent) | De leads som [Lead Agent][5] har hittat, en i taget, så att du kan godkänna eller avvisa dem. | CRM Suite Plus |
+| [Utskick – Spotlight](#mailings-spotlight) | Skickade e-postutskick som inte når dina mål för öppnings-, klick- eller studsfrekvens. | Alla CRM Suite-planer |
+| [Ärende – Spotlight](#request-spotlight) | Dina öppna och uppskjutna ärenden som matchar de kriterier du väljer. | Alla CRM Suite-planer |
+| [Försäljning – Spotlight](#sales-spotlight) | Dina öppna och uppskjutna försäljningar som matchar de kriterier du väljer. | Alla CRM Suite-planer |
+| [Sammanfattning](#summary) | En hälsning och en mening om din dag. | Alla CRM Suite-planer |
+| [Att göra](#todo) | Dina försenade att göra-uppgifter, och de som förfaller i dag och de kommande 6 dagarna. | Alla CRM Suite-planer |
+
+Du ser bara de widgetar som din plan och dina inställningar ger dig åtkomst till. Agentwidgetarna har [ytterligare krav](#requirements).
+
+## Konfigurera Startsidan första gången {#first-time}
+
+Första gången du öppnar Startsidan har den inga widgetar än. Välj hur du vill börja:
+
+* **Använd rekommenderad konfiguration:** Klicka på **Kom igång** för att lägga till alla widgetar du har åtkomst till, i standardordning och standardstorlek. Du kan ändra det senare.
+* **Börja från början:** Klicka på **Börja bygga** för att öppna en tom sida i [redigeringsläge](#add-widget), så att du bara lägger till de widgetar du vill ha.
+
+![Valet första gången mellan Använd rekommenderad konfiguration och Börja från början -screenshot][img2]
+
+<Tip>
+Om du vill gå tillbaka till den rekommenderade konfigurationen senare klickar du på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Redigera), sedan på **Återställ** och sedan på **Spara**.
+</Tip>
+
+## Lägg till en widget {#add-widget}
+
+1. Klicka på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Redigera) i sidans nedre högra hörn. Sidan öppnas i redigeringsläge, med panelen **Redigera Startsida** till höger.
+1. Peka på en widget i panelen och klicka på <i class="ph ph-plus" aria-label="Add"></i>, eller dra den till sidan. En ny widget placeras sist, i standardstorlek.
+1. Klicka på **Spara**.
+
+Panelen visar de widgetar du kan lägga till, i alfabetisk ordning, följda av de widgetar som redan finns på sidan. Du kan lägga till varje widget en gång. Widgetar som inte ingår i din plan visas inte.
+
+På en bred skärm placeras widgetarna i ett rutnät med 6 kolumner. På en smal skärm staplas de i en kolumn.
+
+![Redigeringsläget med panelen Redigera Startsida och kontrollerna för att ta bort och ändra storlek på varje widget -screenshot][img3]
+
+## Ta bort en widget {#remove-widget}
+
+1. Klicka på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Redigera).
+1. Klicka på <i class="ph ph-x" aria-label="Close icon"></i> på widgeten, eller på <i class="ph ph-x-circle" aria-label="Remove icon"></i> bredvid den i panelen.
+1. Klicka på **Spara**.
+
+Om du i stället vill börja om med den rekommenderade konfigurationen klickar du på **Återställ** i steg 2.
+
+## Flytta en widget eller ändra storlek {#move-widget}
+
+1. Klicka på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Redigera).
+1. Flytta widgeten eller ändra storleken:
+    * **Flytta:** Peka på widgeten tills pekaren blir en hand och dra den sedan till en ny plats.
+    * **Ändra storlek:** Peka på widgeten så att konturen visas och dra sedan i handtaget på höger kant, nederkant eller nedre högra hörnet.
+1. Klicka på **Spara**.
+
+## Sammanfattning {#summary}
+
+Widgeten Sammanfattning hälsar dig med namn och sammanfattar din dag i en mening, till exempel: "Du har 3 möten i dag, 2 försäljningar markerade för uppföljning och 4 att göra-uppgifter som förfaller i dag".
+
+* Sammanfattningen tar upp högst 4 saker, i den här ordningen: möten i dag, objekt i en Spotlight-widget, att göra-uppgifter som förfaller i dag, leads, dubbletter och företag att uppdatera.
+* Den räknar bara widgetar som finns på din Startsida, och bara saker som har minst ett objekt.
+* Möten i dag omfattar även de som har avslutats. Försenade att göra-uppgifter räknas inte.
+* När det inte finns något att göra står det "Du är helt ikapp".
+
+## Att göra {#todo}
+
+Widgeten Att göra grupperar dina att göra-uppgifter så här:
+
+| Grupp | Visar |
+|---|---|
+| Försenade | Att göra-uppgifter från de senaste 7 dagarna som inte är klara. Var och en har taggen **Försenad**, äldst först. |
+| I dag | Att göra-uppgifter som förfaller i dag och inte är klara. |
+| Kommande | Att göra-uppgifter som förfaller de kommande 6 dagarna och inte är klara. |
+| Slutförda | Att göra-uppgifter som du har markerat som klara i dag. |
+
+Du kan göra följande i widgeten:
+
+* **Markera en att göra-uppgift som klar:** Markera kryssrutan. Avmarkera kryssrutan för att ångra. Du kan bara göra detta för dina egna att göra-uppgifter.
+* **Öppna en att göra-uppgift:** Välj den.
+* **Lägg till en att göra-uppgift:** Klicka på **Lägg till ny**.
+* **Se alla dina aktiviteter:** Välj widgetens titel. Fliken **Aktiviteter** i Kalender öppnas.
+
+<Tip>
+När du sparar en ändring i en dialogruta som du har öppnat från Startsidan, till exempel en uppföljning, uppdateras alla widgetar.
+</Tip>
+
+## Kalender {#diary}
+
+Widgeten Kalender visar dina möten:
+
+| Grupp | Visar |
+|---|---|
+| I dag | Alla dagens möten. Möten som har avslutats är nedtonade och visas ovanför rubriken. |
+| I morgon | Morgondagens möten. |
+| Kommande | Möten de kommande 7 dagarna, med datum. Visas bara när du inte har något i dag eller i morgon. |
+
+Möten som du har tackat nej till visas inte. Ett möte som varar flera dagar visas på varje dag.
+
+Du kan göra följande i widgeten:
+
+* **Anslut till ett onlinemöte:** Klicka på **Anslut till möte**. Knappen visas från 15 minuter innan mötet börjar tills det slutar, för möten med en webblänk.
+* **Öppna ett möte:** Välj det.
+* **Lägg till ett möte:** Klicka på **Lägg till ny**.
+* **Öppna din kalender:** Välj widgetens titel. Kalendern öppnas i veckovyn.
+
+![Widgeten Kalender med knappen Anslut till möte för ett onlinemöte -screenshot][img8]
+
+## Försäljning – Spotlight {#sales-spotlight}
+
+Widgeten **Försäljning – Spotlight** visar dina egna försäljningar med statusen **Öppen** eller **Uppskjuten** som matchar de kriterier du väljer.
+
+Varje kort visar försäljningen, företaget och kontakten, försäljningsdatum och belopp, och en tagg som anger varför försäljningen visas. Om en försäljning matchar flera kriterier visas den mest brådskande taggen, i den här ordningen: försenad, försäljningsdatum närmar sig, uppskjuten försäljning återupptas, ingen aktivitet, ingen planerad aktivitet, ingen uppdatering.
+
+Du kan göra följande i widgeten:
+
+* **Redigera en försäljning snabbt:** Välj kortet.
+* **Öppna en försäljning:** Dubbelklicka på kortet eller välj dess titel.
+* **Planera nästa steg:** Klicka på **Skapa en aktivitet**. En ny att göra-uppgift öppnas, med kontakten och försäljningen redan ifyllda.
+* **Sortera försäljningarna:** Klicka på <i class="ph ph-arrows-down-up" aria-label="Sort"></i> och välj **Närmaste försäljningsdatum** (standard) eller **Högsta belopp**.
+
+### Välj vilka försäljningar som ska visas {#sales-criteria}
+
+1. Klicka på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgeten.
+1. Aktivera de kriterier du vill använda och ange antalet dagar.
+1. Klicka på **Spara**.
+
+![Kriterierna för Försäljning – Spotlight, med antalet dagar för varje -screenshot][img4]
+
+| Kriterium | Visar en försäljning när | Inställning |
+|---|---|---|
+| Försäljningsdatum inom N dagar | Försäljningsdatumet är i dag eller inom de kommande N dagarna. | 1–60 dagar, standard 7 |
+| Försäljningsdatum passerat | Försäljningsdatumet har passerat. | På eller av |
+| Ingen aktivitet loggad de senaste N dagarna | Ingen uppföljning och inget dokument har lagts till på N dagar eller mer. | 1–60 dagar, standard 7 |
+| Ingen planerad aktivitet före försäljningsdatumet | Ingen uppföljning är planerad mellan i dag och försäljningsdatumet. | På eller av |
+| Uppskjuten, återupptas inom N dagar | Försäljningen är uppskjuten och återupptas inom N dagar. | 1–60 dagar, standard 7 |
+| Ingen uppdatering de senaste N dagarna | Försäljningen har inte uppdaterats på N dagar eller mer. | 1–60 dagar, standard 7 |
+
+Om du stänger av alla kriterier aktiveras **Försäljningsdatum inom N dagar** igen med 7 dagar.
+
+## Ärende – Spotlight {#request-spotlight}
+
+Widgeten **Ärende – Spotlight** visar ärenden som du ansvarar för med statusen **Öppet** eller **Uppskjutet** som matchar de kriterier du väljer. Den visar upp till 10 ärenden.
+
+Varje kort visar ärendets ID och titel, företaget och kontakten, tidsfrist, kategori, status och typ, och en tagg som anger varför ärendet visas. När tidsfristen närmar sig visar kortet också återstående tid, till exempel "1 TIMME".
+
+Du kan göra följande i widgeten:
+
+* **Svara på ett ärende:** Välj kortet eller klicka på **Svar**.
+* **Öppna ett ärende:** Dubbelklicka på kortet eller välj dess titel.
+* **Sortera ärendena:** Klicka på <i class="ph ph-arrows-down-up" aria-label="Sort"></i> och välj **Närmaste tidsfrist** (standard) eller **Längst utan aktivitet**. Med **Närmaste tidsfrist** hamnar ärenden utan tidsfrist sist.
+
+När inga ärenden matchar dina kriterier står det "Inget att lyfta fram just nu" i widgeten. När du har hanterat alla ärenden som visades står det "Allt är klart!". Klicka på **Hämta fler spotlights** för att öppna kriterierna och välja fler.
+
+### Välj vilka ärenden som ska visas {#request-criteria}
+
+1. Klicka på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgeten.
+1. Aktivera de kriterier du vill använda och ange antalet timmar eller prioriteten.
+1. Klicka på **Spara**.
+
+![Kriterierna för Ärende – Spotlight med standardkriterierna aktiverade -screenshot][img5]
+
+| Kriterium | Visar ett ärende när | Inställning | Standard |
+|---|---|---|---|
+| Tidsfrist om N timmar | Tidsfristen är inom de kommande N timmarna. | 1, 4, 8 eller 24 timmar | På, 4 timmar |
+| Oläst i N timmar | Ärendet är inte markerat som läst och har inte ändrats på N timmar. | 4, 8, 24, 48 eller 72 timmar | På, 24 timmar |
+| Ingen ny aktivitet på N timmar | Ärendet är markerat som läst och har inte ändrats på N timmar. | 4, 8, 24 eller 48 timmar | På, 24 timmar |
+| Negativt sentiment | Kundens meddelande är negativt. | På eller av | Av |
+| Tidsfrist passerad | Tidsfristen har passerat. | På eller av | Av |
+| Prioritet | Ärendet har den prioritet du väljer. | En prioritet från listan | Av, **Hög** vald |
+| Uppskjutet - förfaller nu | Ärendet har skjutits upp och tiden för att ta upp det igen har passerat. | På eller av | Av |
+
+**Negativt sentiment** kräver sentimentanalys. Utan den är kriteriet nedtonat.
+
+Om du stänger av alla kriterier aktiveras **Tidsfrist om N timmar** igen med 4 timmar.
+
+<Note>
+**Oläst i N timmar** och **Ingen ny aktivitet på N timmar** använder tidpunkten då ärendet senast ändrades, inte tidpunkten för kundens senaste meddelande.
+</Note>
+
+## Utskick – Spotlight {#mailings-spotlight}
+
+Widgeten **Utskick – Spotlight** visar e-postutskick som har skickats klart och inte når dina mål. Den visar upp till 10 utskick, nyaste först.
+
+Varje kort visar utskickets namn, prenumerationstypen, när det skickades, antalet mottagare och öppnings-, klick- och studsfrekvensen jämfört med dina mål. En frekvens är röd när den inte når målet och grön när den når det.
+
+Du kan göra följande i widgeten:
+
+* **Öppna ett utskick:** Välj kortet.
+
+När inga utskick matchar står det "Inget att lyfta fram just nu" i widgeten.
+
+### Välj vilka utskick som ska visas {#mailings-criteria}
+
+1. Klicka på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgeten och välj **Widgetfilter**.
+1. Aktivera de kriterier du vill använda och ange dina mål.
+1. Under **Prenumerationstyp** väljer du de typer som ska ingå. Alla typer är valda som standard.
+1. Klicka på **Spara**.
+
+![Widgetfiltret för Utskick – Spotlight med de tre kriterierna och prenumerationstyperna -screenshot][img6]
+
+| Kriterium | Visar ett utskick när | Standard |
+|---|---|---|
+| Öppningsfrekvens under X% | Färre än X% av mottagarna öppnade det. | På, 20% |
+| Klickfrekvens under X% | Färre än X% av mottagarna klickade på en länk. | På, 5% |
+| Studsfrekvens över X% | Fler än X% av e-postmeddelandena studsade. | På, 2% |
+
+Om du stänger av alla kriterier aktiveras **Öppningsfrekvens under X%** igen med 20%.
+
+### Välj vems utskick och vilken period {#mailings-settings}
+
+1. Klicka på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgeten och välj **Utskicksinställningar**.
+1. Ändra inställningarna.
+1. Klicka på **Spara**.
+
+| Inställning | Vad den gör | Standard |
+|---|---|---|
+| Välj ägare för utskick | Vems utskick som visas: **Mina**, **Primärgrupp** eller **Alla**. | Mina |
+| Vänta innan visning | Hur många dagar efter att ett utskick har skickats klart som det kontrolleras, 0–7. | 2 dagar |
+| Visa bara de senaste | Hur långt tillbaka utskick söks: 7, 30, 60, 90, 180 eller 365 dagar. Alltid minst en dag längre än **Vänta innan visning**. | 30 dagar |
+
+## AI-agentwidgetar {#agents}
+
+Agentwidgetarna visar vad dina [AI-agenter][2] har hittat, så att du kan följa upp när du börjar dagen. Varje agentwidget kräver att agenten är aktiv, se [Konfigurera AI-agenter][2].
+
+### Lead-agent {#lead-agent}
+
+Visar de leads som [Lead Agent][5] har hittat, en i taget. Klicka på **Föregående** och **Nästa** för att flytta mellan dem. Widgeten visar vilken lead du är på, till exempel "1 av 10".
+
+Varje lead visar företagsnamnet, ett betyg på 0 till 5 stjärnor med en kort etikett som "Stark matchning", agentens sammanfattning och agentens namn med tidpunkten för dess senaste uppdatering. Välj företagsnamnet för att öppna det.
+
+Välj något av följande för varje lead:
+
+* **Godkänn:** Accepterar leaden. Kortet tas bort.
+* **Avvisa:** Avvisar leaden. Kortet tas bort.
+
+När det inte finns några leads står det "Det finns inga leads att granska just nu" i widgeten. Klicka på **Gå till agenter** för att öppna sidan **Agenter**.
+
+### Duplicera agent {#duplicate-agent}
+
+Visar hur många **Företagssammanfogningar**, **Kontaktsammanfogningar** och **Kontakter utan företag** [Duplicate Agent][4] har hittat. Klicka på **Visa sammanfogningar** för att granska dem i agenten.
+
+När det inte finns några står det "Inga dubbletter hittades" i widgeten. Klicka på **Gå till agenter** för att öppna sidan **Agenter**.
+
+![Widgeten Duplicera agent med företagssammanfogningar, kontaktsammanfogningar och kontakter utan företag -screenshot][img7]
+
+### Datakvalitetsagent {#data-quality-agent}
+
+Visar hur många företag Data Quality Agent har uppdateringar för. Klicka på **Visa tillägg** för att öppna agenten och [granska uppdateringarna][8].
+
+## Krav {#requirements}
+
+### Visa agentwidgetarna {#admin-agents}
+
+Du ser agentwidgetarna när:
+
+* Din administratör har [aktiverat AI-funktioner][6] för din organisation.
+* AI-agenter är aktiverade för dig. De är aktiverade för alla som standard, men din administratör kan stänga av dem.
+* Du har [aktiverat agenten][2] på sidan **Agenter**.
+
+### Visa kriteriet Negativt sentiment {#admin-sentiment}
+
+Du kan använda kriteriet **Negativt sentiment** i **Ärende – Spotlight** när din administratör har [aktiverat sentimentanalys][7].
+
+[1]: /sv/learn/getting-started/main-screen/navigator
+[2]: /sv/ai/learn/set-up-ai-agents
+[3]: /sv/ai/learn/data-quality-agent
+[4]: /sv/ai/learn/duplicate-agent
+[5]: /sv/ai/learn/lead-agent
+[6]: /sv/ai/admin/index
+[7]: /sv/ai/admin/index#enable-text-analysis
+[8]: /sv/ai/learn/data-quality-agent#review-and-approve-changes
+
+[img1]: /media/loc/en/learn/start-page.png
+[img2]: /media/loc/en/learn/start-page-first-time.png
+[img3]: /media/loc/en/learn/start-page-edit-mode.png
+[img4]: /media/loc/en/learn/start-page-sales-spotlight-criteria.png
+[img5]: /media/loc/en/learn/start-page-request-spotlight-criteria.png
+[img6]: /media/loc/en/learn/start-page-mailings-spotlight-filter.png
+[img7]: /media/loc/en/learn/start-page-duplicate-agent.png
+[img8]: /media/loc/en/learn/start-page-diary-join.png

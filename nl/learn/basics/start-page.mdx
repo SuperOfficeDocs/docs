@@ -1,8 +1,8 @@
 ---
 title: Plan uw dag op de Startpagina
 sidebarTitle: "Startpagina"
-description: De Startpagina toont uw vergaderingen en taken, en de verkoopkansen, verzoeken, mailings en agentresultaten die aandacht nodig hebben, in widgets die u zelf kiest en indeelt.
-keywords: ['widget', 'spotlight', 'taak', 'agenda', 'samenvatting', 'aanbevolen instelling', 'helemaal opnieuw', 'indeling', 'agent']
+description: De Startpagina toont uw vergaderingen, taken en de verkopen, verzoeken, mailings en agentresultaten die aandacht nodig hebben, in widgets die u zelf kiest en indeelt.
+keywords: ['widget', 'spotlight', 'taak', 'samenvatting', 'aanbevolen instelling', 'agent']
 author: digitaldiina
 date: 11.16.2026
 so_version: 12.6
@@ -20,9 +20,295 @@ related:
 language: nl
 ---
 
-Deze pagina wordt momenteel vertaald.
+De Startpagina toont op één plek wat vandaag uw aandacht nodig heeft. De pagina bestaat uit widgets: kleine kaarten die elk één ding tonen, zoals uw vergaderingen, achterstallige verzoeken of de verkopen die opvolging nodig hebben. De meeste items kunt u direct vanuit de widget afhandelen.
 
-{/*
-TODO: translate after EN review.
+* Selecteer <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startpagina** in de [Navigator][1].
 
-*/}
+![De Startpagina met de widgets Samenvatting, Datakwaliteitsagent, Agenda, Verzoek - Spotlight en Verkoop - Spotlight, en Startpagina gemarkeerd in de Navigator -screenshot][img1]
+
+<Note>
+De Startpagina is beschikbaar in alle CRM Suite-abonnementen en wordt geleidelijk ingevoerd bij geselecteerde klanten. Als u <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startpagina** niet in de Navigator ziet, is deze nog niet voor u beschikbaar.
+</Note>
+
+## Beschikbare widgets {#widgets}
+
+| Widget | Wat de widget toont | Abonnement |
+|---|---|---|
+| [Datakwaliteitsagent](#data-quality-agent) | Voor hoeveel bedrijven de [Data Quality Agent][3] updates heeft. | CRM Suite Growth |
+| [Agenda](#diary) | Uw vergaderingen van vandaag en morgen, met een knop **Deelnemen aan vergadering** voor onlinevergaderingen. | Alle CRM Suite-abonnementen |
+| [Dubbele agent](#duplicate-agent) | Hoeveel samenvoegingen en contactpersonen zonder bedrijf de [Duplicate Agent][4] heeft gevonden. | CRM Suite Growth |
+| [Leadagent](#lead-agent) | De leads die de [Lead Agent][5] heeft gevonden, één voor één, zodat u ze kunt goedkeuren of afwijzen. | CRM Suite Plus |
+| [Mailings - Spotlight](#mailings-spotlight) | Verzonden e-mailmailings die uw doelen voor openings-, klik- of bouncepercentage niet halen. | Alle CRM Suite-abonnementen |
+| [Verzoek - Spotlight](#request-spotlight) | Uw openstaande en uitgestelde verzoeken die voldoen aan de criteria die u kiest. | Alle CRM Suite-abonnementen |
+| [Verkoop - Spotlight](#sales-spotlight) | Uw openstaande en vastgelopen verkopen die voldoen aan de criteria die u kiest. | Alle CRM Suite-abonnementen |
+| [Samenvatting](#summary) | Een begroeting en één zin over uw dag. | Alle CRM Suite-abonnementen |
+| [To-do](#todo) | Uw achterstallige taken, en de taken voor vandaag en de komende 6 dagen. | Alle CRM Suite-abonnementen |
+
+U ziet alleen de widgets waartoe uw abonnement en uw instellingen u toegang geven. Voor de agentwidgets gelden [aanvullende vereisten](#requirements).
+
+## Uw Startpagina de eerste keer instellen {#first-time}
+
+De eerste keer dat u de Startpagina opent, staan er nog geen widgets op. Kies hoe u wilt beginnen:
+
+* **Aanbevolen instelling gebruiken:** Klik op **Aan de slag** om alle widgets toe te voegen waartoe u toegang hebt, in de standaardvolgorde en -grootte. U kunt dit later wijzigen.
+* **Helemaal opnieuw beginnen:** Klik op **Beginnen met bouwen** om een lege pagina te openen in [bewerkmodus](#add-widget), zodat u alleen de widgets toevoegt die u wilt.
+
+![De keuze bij het eerste gebruik tussen Aanbevolen instelling gebruiken en Helemaal opnieuw beginnen -screenshot][img2]
+
+<Tip>
+Om later terug te gaan naar de aanbevolen instelling, klikt u op <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Bewerken), vervolgens op **Herstellen** en daarna op **Opslaan**.
+</Tip>
+
+## Een widget toevoegen {#add-widget}
+
+1. Klik op <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Bewerken) in de rechterbenedenhoek van de pagina. De pagina wordt geopend in bewerkmodus, met het paneel **Startpagina bewerken** aan de rechterkant.
+1. Wijs een widget in het paneel aan en klik op <i class="ph ph-plus" aria-label="Add"></i>, of sleep de widget naar de pagina. Een nieuwe widget wordt als laatste geplaatst, in de standaardgrootte.
+1. Klik op **Opslaan**.
+
+Het paneel toont de widgets die u kunt toevoegen, in alfabetische volgorde, gevolgd door de widgets die al op uw pagina staan. U kunt elke widget één keer toevoegen. Widgets die niet in uw abonnement zitten, worden niet weergegeven.
+
+Op een breed scherm worden de widgets in een raster van 6 kolommen geplaatst. Op een smal scherm worden ze in één kolom onder elkaar geplaatst.
+
+![Bewerkmodus met het paneel Startpagina bewerken en de knoppen voor verwijderen en formaat wijzigen op elke widget -screenshot][img3]
+
+## Een widget verwijderen {#remove-widget}
+
+1. Klik op <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Bewerken).
+1. Klik op <i class="ph ph-x" aria-label="Close icon"></i> op de widget, of op <i class="ph ph-x-circle" aria-label="Remove icon"></i> ernaast in het paneel.
+1. Klik op **Opslaan**.
+
+Wilt u in plaats daarvan opnieuw beginnen met de aanbevolen instelling, klik dan in stap 2 op **Herstellen**.
+
+## Een widget verplaatsen of het formaat wijzigen {#move-widget}
+
+1. Klik op <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Bewerken).
+1. Verplaats de widget of wijzig het formaat:
+    * **Verplaatsen:** Wijs de widget aan tot de aanwijzer in een hand verandert, en sleep de widget dan naar een nieuwe plek.
+    * **Formaat wijzigen:** Wijs de widget aan om de omtrek te tonen, en sleep dan de greep aan de rechterrand, de onderrand of de rechterbenedenhoek.
+1. Klik op **Opslaan**.
+
+## Samenvatting {#summary}
+
+De widget Samenvatting begroet u met uw naam en vat uw dag samen in één zin, bijvoorbeeld: "U hebt vandaag 3 vergaderingen, 2 verkoopitems gemarkeerd voor opvolging en 4 taken voor vandaag".
+
+* De samenvatting noemt maximaal 4 zaken, in deze volgorde: vergaderingen vandaag, items in één Spotlight-widget, taken voor vandaag, leads, duplicaten en bedrijven om bij te werken.
+* Alleen widgets die op uw Startpagina staan tellen mee, en alleen zaken met minstens één item.
+* Vergaderingen vandaag omvatten ook de vergaderingen die al afgelopen zijn. Achterstallige taken worden niet meegeteld.
+* Als er niets te doen is, staat er "U bent helemaal bij".
+
+## To-do {#todo}
+
+De widget To-do groepeert uw taken als volgt:
+
+| Groep | Toont |
+|---|---|
+| Achterstallig | Taken van de afgelopen 7 dagen die niet zijn voltooid. Elke taak heeft een label **Achterstallig**, de oudste eerst. |
+| Vandaag | Taken voor vandaag die niet zijn voltooid. |
+| Binnenkort | Taken voor de komende 6 dagen die niet zijn voltooid. |
+| Voltooid | Taken die u vandaag als voltooid hebt gemarkeerd. |
+
+U kunt het volgende doen vanuit de widget:
+
+* **Een taak als voltooid markeren:** Selecteer het selectievakje van de taak. Wis het selectievakje om dit ongedaan te maken. U kunt dit alleen doen voor uw eigen taken.
+* **Een taak openen:** Selecteer de taak.
+* **Een taak toevoegen:** Klik op **Nieuw toevoegen**.
+* **Al uw activiteiten bekijken:** Selecteer de titel van de widget. Het tabblad **Activiteiten** in de Agenda wordt geopend.
+
+<Tip>
+Wanneer u een wijziging opslaat in een dialoogvenster dat u vanaf de Startpagina hebt geopend, bijvoorbeeld een vervolgactiviteit, worden alle widgets bijgewerkt.
+</Tip>
+
+## Agenda {#diary}
+
+De widget Agenda toont uw vergaderingen:
+
+| Groep | Toont |
+|---|---|
+| Vandaag | Alle vergaderingen van vandaag. Afgelopen vergaderingen worden grijs weergegeven boven de kop. |
+| Morgen | De vergaderingen van morgen. |
+| Binnenkort | Vergaderingen in de komende 7 dagen, met datum. Alleen weergegeven als u vandaag of morgen niets hebt. |
+
+Vergaderingen die u hebt afgewezen, worden niet weergegeven. Een vergadering die meerdere dagen duurt, wordt op elke dag weergegeven.
+
+U kunt het volgende doen vanuit de widget:
+
+* **Deelnemen aan een onlinevergadering:** Klik op **Deelnemen aan vergadering**. Voor vergaderingen met een weblink wordt de knop weergegeven vanaf 15 minuten voor het begin van de vergadering tot het einde ervan.
+* **Een vergadering openen:** Selecteer de vergadering.
+* **Een vergadering toevoegen:** Klik op **Nieuw toevoegen**.
+* **Uw agenda openen:** Selecteer de titel van de widget. De Agenda wordt geopend in de weekweergave.
+
+![De widget Agenda met een knop Deelnemen aan vergadering bij een onlinevergadering -screenshot][img8]
+
+## Verkoop - Spotlight {#sales-spotlight}
+
+De widget **Verkoop - Spotlight** toont uw eigen verkopen met de status **Open** of **Vastgelopen** die voldoen aan de criteria die u kiest.
+
+Elke kaart toont de verkoop, het bedrijf en de contactpersoon, de verkoopdatum en het bedrag, en één label dat aangeeft waarom de verkoop wordt getoond. Als een verkoop aan meerdere criteria voldoet, wordt het meest urgente label getoond, in deze volgorde: achterstallig, verkoopdatum nadert, vastgelopen verkoop wordt heropend, geen activiteit, geen geplande activiteit, geen update.
+
+U kunt het volgende doen vanuit de widget:
+
+* **Een verkoop snel bewerken:** Selecteer de kaart.
+* **Een verkoop openen:** Dubbelklik op de kaart of selecteer de titel.
+* **De volgende stap plannen:** Klik op **Activiteit maken**. Er wordt een nieuwe taak geopend, waarin de contactpersoon en de verkoop al zijn ingevuld.
+* **De verkopen sorteren:** Klik op <i class="ph ph-arrows-down-up" aria-label="Sort"></i> en selecteer **Dichtstbijzijnde verkoopdatum** (de standaard) of **Hoogste bedrag**.
+
+### Kiezen welke verkopen worden getoond {#sales-criteria}
+
+1. Klik op <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> op de widget.
+1. Schakel de gewenste criteria in en stel het aantal dagen in.
+1. Klik op **Opslaan**.
+
+![De criteria van Verkoop - Spotlight, met het aantal dagen voor elk criterium -screenshot][img4]
+
+| Criterium | Toont een verkoop wanneer | Instelling |
+|---|---|---|
+| Verkoopdatum binnen N dagen | De verkoopdatum is vandaag of binnen de komende N dagen. | 1–60 dagen, standaard 7 |
+| Verkoopdatum verstreken | De verkoopdatum is verstreken. | Aan of uit |
+| Geen activiteit geregistreerd in de afgelopen N dagen | Er is N dagen of langer geen vervolgactiviteit of document toegevoegd. | 1–60 dagen, standaard 7 |
+| Geen geplande activiteit vóór de verkoopdatum | Er is geen vervolgactiviteit gepland tussen vandaag en de verkoopdatum. | Aan of uit |
+| Vastgelopen, heropeningsdatum binnen N dagen | De verkoop is vastgelopen en wordt binnen N dagen heropend. | 1–60 dagen, standaard 7 |
+| Geen update in de afgelopen N dagen | De verkoop is N dagen of langer niet bijgewerkt. | 1–60 dagen, standaard 7 |
+
+Als u alle criteria uitschakelt, wordt **Verkoopdatum binnen N dagen** weer ingeschakeld met 7 dagen.
+
+## Verzoek - Spotlight {#request-spotlight}
+
+De widget **Verzoek - Spotlight** toont verzoeken waarvan u eigenaar bent met de status **Open** of **Uitgesteld** die voldoen aan de criteria die u kiest. De widget toont maximaal 10 verzoeken.
+
+Elke kaart toont het ID en de titel van het verzoek, het bedrijf en de contactpersoon, de deadline, categorie, status en type, en één label dat aangeeft waarom het verzoek wordt getoond. Als de deadline nadert, toont de kaart ook de resterende tijd, bijvoorbeeld "1 UUR".
+
+U kunt het volgende doen vanuit de widget:
+
+* **Een verzoek beantwoorden:** Selecteer de kaart of klik op **Beantwoorden**.
+* **Een verzoek openen:** Dubbelklik op de kaart of selecteer de titel.
+* **De verzoeken sorteren:** Klik op <i class="ph ph-arrows-down-up" aria-label="Sort"></i> en selecteer **Dichtstbijzijnde deadline** (de standaard) of **Langst zonder activiteit**. Bij **Dichtstbijzijnde deadline** komen verzoeken zonder deadline als laatste.
+
+Als er geen verzoeken aan uw criteria voldoen, staat er in de widget "Op dit moment is er niets om uit te lichten". Als u alle getoonde verzoeken hebt afgehandeld, staat er "U bent helemaal klaar!". Klik op **Meer spotlights ophalen** om de criteria te openen en er meer te kiezen.
+
+### Kiezen welke verzoeken worden getoond {#request-criteria}
+
+1. Klik op <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> op de widget.
+1. Schakel de gewenste criteria in en stel het aantal uren of de prioriteit in.
+1. Klik op **Opslaan**.
+
+![De criteria van Verzoek - Spotlight met de standaardcriteria ingeschakeld -screenshot][img5]
+
+| Criterium | Toont een verzoek wanneer | Instelling | Standaard |
+|---|---|---|---|
+| Deadline over N uur | De deadline valt binnen de komende N uur. | 1, 4, 8 of 24 uur | Aan, 4 uur |
+| Ongelezen gedurende N uur | Het verzoek is niet als gelezen gemarkeerd en is N uur niet gewijzigd. | 4, 8, 24, 48 of 72 uur | Aan, 24 uur |
+| Geen nieuwe activiteit gedurende N uur | Het verzoek is als gelezen gemarkeerd en is N uur niet gewijzigd. | 4, 8, 24 of 48 uur | Aan, 24 uur |
+| Negatief sentiment | Het bericht van de klant is negatief. | Aan of uit | Uit |
+| Deadline verstreken | De deadline is verstreken. | Aan of uit | Uit |
+| Prioriteit | Het verzoek heeft de prioriteit die u kiest. | Een prioriteit uit de lijst | Uit, **Hoog** geselecteerd |
+| Uitgesteld - nu te behandelen | Het verzoek is uitgesteld, en het tijdstip om het weer op te pakken is verstreken. | Aan of uit | Uit |
+
+**Negatief sentiment** vereist sentimentanalyse. Zonder sentimentanalyse is het criterium uitgegrijsd.
+
+Als u alle criteria uitschakelt, wordt **Deadline over N uur** weer ingeschakeld met 4 uur.
+
+<Note>
+**Ongelezen gedurende N uur** en **Geen nieuwe activiteit gedurende N uur** gebruiken het tijdstip waarop het verzoek voor het laatst is gewijzigd, niet het tijdstip van het laatste bericht van de klant.
+</Note>
+
+## Mailings - Spotlight {#mailings-spotlight}
+
+De widget **Mailings - Spotlight** toont e-mailmailings die volledig zijn verzonden en uw doelen niet halen. De widget toont maximaal 10 mailings, de nieuwste eerst.
+
+Elke kaart toont de naam van de mailing, het abonnementstype, wanneer de mailing is verzonden, het aantal ontvangers en het openings-, klik- en bouncepercentage vergeleken met uw doelen. Een percentage is rood als het doel niet wordt gehaald en groen als het doel wordt gehaald.
+
+U kunt het volgende doen vanuit de widget:
+
+* **Een mailing openen:** Selecteer de kaart.
+
+Als er geen mailings voldoen, staat er in de widget "Op dit moment is er niets om uit te lichten".
+
+### Kiezen welke mailings worden getoond {#mailings-criteria}
+
+1. Klik op <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> op de widget en selecteer **Widgetfilter**.
+1. Schakel de gewenste criteria in en stel uw doelen in.
+1. Selecteer onder **Abonnementstype** de typen die u wilt opnemen. Standaard zijn alle typen geselecteerd.
+1. Klik op **Opslaan**.
+
+![Het widgetfilter van Mailings - Spotlight met de drie criteria en de abonnementstypen -screenshot][img6]
+
+| Criterium | Toont een mailing wanneer | Standaard |
+|---|---|---|
+| Openingspercentage lager dan X% | Minder dan X% van de ontvangers heeft de mailing geopend. | Aan, 20% |
+| Klikpercentage lager dan X% | Minder dan X% van de ontvangers heeft op een link geklikt. | Aan, 5% |
+| Bouncepercentage hoger dan X% | Meer dan X% van de e-mails is gebounced. | Aan, 2% |
+
+Als u alle criteria uitschakelt, wordt **Openingspercentage lager dan X%** weer ingeschakeld met 20%.
+
+### Kiezen van wie de mailings zijn en welke periode {#mailings-settings}
+
+1. Klik op <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> op de widget en selecteer **Mailinginstellingen**.
+1. Wijzig de instellingen.
+1. Klik op **Opslaan**.
+
+| Instelling | Wat de instelling doet | Standaard |
+|---|---|---|
+| Eigenaar van mailing kiezen | Van wie de mailings worden getoond: **Mijn**, **Primaire groep** of **Alle**. | Mijn |
+| Wachten voor weergave | Hoeveel dagen nadat een mailing is voltooid deze wordt gecontroleerd, 0–7. | 2 dagen |
+| Alleen de laatste tonen | Hoe ver terug naar mailings wordt gezocht: 7, 30, 60, 90, 180 of 365 dagen. Altijd minstens één dag langer dan **Wachten voor weergave**. | 30 dagen |
+
+## AI-agentwidgets {#agents}
+
+De agentwidgets tonen wat uw [AI-agents][2] hebben gevonden, zodat u actie kunt ondernemen wanneer u aan uw dag begint. Elke agentwidget vereist dat de agent actief is, zie [AI-agents instellen][2].
+
+### Leadagent {#lead-agent}
+
+Toont de leads die de [Lead Agent][5] heeft gevonden, één voor één. Klik op **Vorige** en **Volgende** om tussen de leads te wisselen. De widget toont bij welke lead u bent, bijvoorbeeld "1 van 10".
+
+Elke lead toont de bedrijfsnaam, een beoordeling van 0 tot 5 sterren met een kort label zoals "Sterke match", de samenvatting van de agent, en de naam van de agent met het tijdstip van de laatste update. Selecteer de bedrijfsnaam om het bedrijf te openen.
+
+Kies voor elke lead een van de volgende opties:
+
+* **Goedkeuren:** Accepteert de lead. De kaart wordt verwijderd.
+* **Afwijzen:** Wijst de lead af. De kaart wordt verwijderd.
+
+Als er geen leads zijn, staat er in de widget "Er zijn momenteel geen leads om te beoordelen". Klik op **Naar agenten** om het scherm **Agenten** te openen.
+
+### Dubbele agent {#duplicate-agent}
+
+Toont hoeveel **Bedrijfssamenvoegingen**, **Contactpersoonsamenvoegingen** en **Contactpersonen zonder bedrijf** de [Duplicate Agent][4] heeft gevonden. Klik op **Samenvoegingen weergeven** om ze in de agent te beoordelen.
+
+Als er geen zijn, staat er in de widget "Er zijn geen duplicaten gevonden". Klik op **Naar agenten** om het scherm **Agenten** te openen.
+
+![De widget Dubbele agent met bedrijfssamenvoegingen, contactpersoonsamenvoegingen en contactpersonen zonder bedrijf -screenshot][img7]
+
+### Datakwaliteitsagent {#data-quality-agent}
+
+Toont voor hoeveel bedrijven de Data Quality Agent updates heeft. Klik op **Verrijkingen weergeven** om de agent te openen en [de updates te beoordelen][8].
+
+## Vereisten {#requirements}
+
+### De agentwidgets weergeven {#admin-agents}
+
+U ziet de agentwidgets wanneer:
+
+* Uw beheerder [AI-functies heeft ingeschakeld][6] voor uw organisatie.
+* AI-agents voor u zijn ingeschakeld. Ze zijn standaard voor iedereen ingeschakeld, maar uw beheerder kan ze uitschakelen.
+* U [de agent hebt geactiveerd][2] in het scherm **Agenten**.
+
+### Het criterium Negatief sentiment weergeven {#admin-sentiment}
+
+U kunt het criterium **Negatief sentiment** in **Verzoek - Spotlight** gebruiken wanneer uw beheerder [sentimentanalyse heeft ingeschakeld][7].
+
+[1]: /nl/learn/getting-started/main-screen/navigator
+[2]: /nl/ai/learn/set-up-ai-agents
+[3]: /nl/ai/learn/data-quality-agent
+[4]: /nl/ai/learn/duplicate-agent
+[5]: /nl/ai/learn/lead-agent
+[6]: /nl/ai/admin/index
+[7]: /nl/ai/admin/index#enable-text-analysis
+[8]: /nl/ai/learn/data-quality-agent#review-and-approve-changes
+
+[img1]: /media/loc/en/learn/start-page.png
+[img2]: /media/loc/en/learn/start-page-first-time.png
+[img3]: /media/loc/en/learn/start-page-edit-mode.png
+[img4]: /media/loc/en/learn/start-page-sales-spotlight-criteria.png
+[img5]: /media/loc/en/learn/start-page-request-spotlight-criteria.png
+[img6]: /media/loc/en/learn/start-page-mailings-spotlight-filter.png
+[img7]: /media/loc/en/learn/start-page-duplicate-agent.png
+[img8]: /media/loc/en/learn/start-page-diary-join.png

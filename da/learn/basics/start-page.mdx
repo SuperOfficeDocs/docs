@@ -2,7 +2,7 @@
 title: Planlæg din dag på Startsiden
 sidebarTitle: "Startside"
 description: Startsiden viser dine møder og opgaver og de salg, sager, udsendelser og agentresultater, der kræver opmærksomhed, i widgets, som du selv vælger og arrangerer.
-keywords: ['widget', 'spotlight', 'opgave', 'dagbog', 'opsummering', 'anbefalet opsætning', 'fra bunden', 'layout', 'agent']
+keywords: ['widget', 'fokus', 'opgave', 'opsummering', 'anbefalet opsætning', 'agent']
 author: digitaldiina
 date: 11.16.2026
 so_version: 12.6
@@ -20,9 +20,295 @@ related:
 language: da
 ---
 
-Denne side er under oversættelse.
+Startsiden viser ét sted, hvad der kræver din opmærksomhed i dag. Den består af widgets: små kort, der hver viser én ting, f.eks. dine møder, forfaldne sager eller de salg, der kræver opfølgning. Du kan handle på de fleste elementer direkte fra widgetten.
 
-{/*
-TODO: translate after EN review.
+* Vælg <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startside** i [Navigator][1].
 
-*/}
+![Startsiden med widgetterne Opsummering, Datakvalitetsagent, Dagbog, Sag – Fokus og Salg – Fokus, og Startside fremhævet i Navigator -screenshot][img1]
+
+<Note>
+Startsiden er tilgængelig i alle CRM Suite-planer og indføres gradvist hos udvalgte kunder. Hvis du ikke kan se <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startside** i Navigator, er den endnu ikke tilgængelig for dig.
+</Note>
+
+## Tilgængelige widgets {#widgets}
+
+| Widget | Hvad den viser | Plan |
+|---|---|---|
+| [Datakvalitetsagent](#data-quality-agent) | Hvor mange firmaer [Data Quality Agent][3] har opdateringer til. | CRM Suite Growth |
+| [Dagbog](#diary) | Dine møder i dag og i morgen, med knappen **Deltag i møde** til onlinemøder. | Alle CRM Suite-planer |
+| [Dublet-agent](#duplicate-agent) | Hvor mange sammenlægninger og forældreløse personer [Duplicate Agent][4] har fundet. | CRM Suite Growth |
+| [Lead-agent](#lead-agent) | De leads, [Lead Agent][5] har fundet, ét ad gangen, som du kan godkende eller afvise. | CRM Suite Plus |
+| [Udsendelser – Fokus](#mailings-spotlight) | Sendte e-mailudsendelser, der ikke når dine mål for åbnings-, klik- eller bouncerate. | Alle CRM Suite-planer |
+| [Sag – Fokus](#request-spotlight) | Dine åbne og udsatte sager, der matcher de kriterier, du vælger. | Alle CRM Suite-planer |
+| [Salg – Fokus](#sales-spotlight) | Dine åbne og udsatte salg, der matcher de kriterier, du vælger. | Alle CRM Suite-planer |
+| [Opsummering](#summary) | En hilsen og én sætning om din dag. | Alle CRM Suite-planer |
+| [Skal udføres](#todo) | Dine forfaldne opgaver og dem, der forfalder i dag og de næste 6 dage. | Alle CRM Suite-planer |
+
+Du ser kun de widgets, som din plan og dine indstillinger giver dig adgang til. Agentwidgetterne har [yderligere krav](#requirements).
+
+## Opsæt din Startside første gang {#first-time}
+
+Første gang du åbner Startsiden, har den endnu ingen widgets. Vælg, hvordan du vil starte:
+
+* **Brug anbefalet opsætning:** Klik på **Kom i gang** for at tilføje alle de widgets, du har adgang til, i standardrækkefølge og -størrelse. Du kan ændre det senere.
+* **Start fra bunden:** Klik på **Begynd at bygge** for at åbne en tom side i [redigeringstilstand](#add-widget), så du kun tilføjer de widgets, du ønsker.
+
+![Valget mellem Brug anbefalet opsætning og Start fra bunden første gang -screenshot][img2]
+
+<Tip>
+Hvis du senere vil vende tilbage til den anbefalede opsætning, skal du klikke på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Rediger), derefter på **Nulstil** og til sidst på **Gem**.
+</Tip>
+
+## Tilføj en widget {#add-widget}
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Rediger) i nederste højre hjørne af siden. Siden åbnes i redigeringstilstand med panelet **Rediger Startside** til højre.
+1. Peg på en widget i panelet, og klik på <i class="ph ph-plus" aria-label="Add"></i>, eller træk den over på siden. En ny widget placeres sidst i standardstørrelse.
+1. Klik på **Gem**.
+
+Panelet viser de widgets, du kan tilføje, i alfabetisk rækkefølge, efterfulgt af de widgets, der allerede er på din side. Du kan tilføje hver widget én gang. Widgets, som din plan ikke omfatter, vises ikke.
+
+På en bred skærm placeres widgetterne i et gitter med 6 kolonner. På en smal skærm stables de i én kolonne.
+
+![Redigeringstilstand med panelet Rediger Startside og knapperne til at fjerne og ændre størrelse på hver widget -screenshot][img3]
+
+## Fjern en widget {#remove-widget}
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Rediger).
+1. Klik på <i class="ph ph-x" aria-label="Close icon"></i> på widgetten eller på <i class="ph ph-x-circle" aria-label="Remove icon"></i> ved siden af den i panelet.
+1. Klik på **Gem**.
+
+Hvis du i stedet vil starte forfra med den anbefalede opsætning, skal du klikke på **Nulstil** i trin 2.
+
+## Flyt en widget, eller ændr dens størrelse {#move-widget}
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Edit"></i> (Rediger).
+1. Flyt widgetten, eller ændr dens størrelse:
+    * **Flyt:** Peg på widgetten, indtil markøren bliver til en hånd, og træk den derefter til en ny placering.
+    * **Ændr størrelse:** Peg på widgetten for at vise dens omrids, og træk derefter i håndtaget i højre kant, nederste kant eller nederste højre hjørne.
+1. Klik på **Gem**.
+
+## Opsummering {#summary}
+
+Widgetten Opsummering hilser på dig med navn og opsummerer din dag i én sætning, f.eks.: "Du har 3 møder i dag, 2 salgselementer markeret til opfølgning og 4 opgaver, der forfalder i dag."
+
+* Opsummeringen dækker højst 4 ting i denne rækkefølge: møder i dag, elementer i én Fokus-widget, opgaver, der forfalder i dag, leads, dubletter og firmaer, der skal opdateres.
+* Den tæller kun widgets, der er på din Startside, og kun ting, der har mindst ét element.
+* Møder i dag omfatter også dem, der er slut. Forfaldne opgaver tælles ikke med.
+* Når der ikke er noget at gøre, står der "Du er helt ajour."
+
+## Skal udføres {#todo}
+
+Widgetten **Skal udføres** grupperer dine opgaver på denne måde:
+
+| Gruppe | Viser |
+|---|---|
+| Forfalden | Opgaver fra de seneste 7 dage, der ikke er udført. Hver af dem har mærket **Forfalden**, ældste først. |
+| I dag | Opgaver, der forfalder i dag, og som ikke er udført. |
+| Kommende | Opgaver, der forfalder inden for de næste 6 dage, og som ikke er udført. |
+| Fuldført | Opgaver, du har markeret som udført i dag. |
+
+Du kan gøre følgende fra widgetten:
+
+* **Markér en opgave som udført:** Markér afkrydsningsfeltet for den. Fjern markeringen for at fortryde. Det kan du kun gøre for dine egne opgaver.
+* **Åbn en opgave:** Vælg den.
+* **Tilføj en opgave:** Klik på **Tilføj ny**.
+* **Se alle dine aktiviteter:** Vælg widgettens titel. Detaljekortet **Aktiviteter** i Dagbogen åbnes.
+
+<Tip>
+Når du gemmer en ændring i en dialogboks, der er åbnet fra Startsiden, f.eks. en opfølgning, opdateres alle widgets.
+</Tip>
+
+## Dagbog {#diary}
+
+Widgetten **Dagbog** viser dine møder:
+
+| Gruppe | Viser |
+|---|---|
+| I dag | Alle dagens møder. Møder, der er slut, vises nedtonet og står over overskriften. |
+| I morgen | Morgendagens møder. |
+| Kommende | Møder i de næste 7 dage med datoer. Vises kun, når du ikke har noget i dag eller i morgen. |
+
+Møder, du har afslået, vises ikke. Et møde, der varer flere dage, vises på hver dag.
+
+Du kan gøre følgende fra widgetten:
+
+* **Deltag i et onlinemøde:** Klik på **Deltag i møde**. Knappen vises fra 15 minutter før mødet starter, og indtil det slutter, for møder med et weblink.
+* **Åbn et møde:** Vælg det.
+* **Tilføj et møde:** Klik på **Tilføj ny**.
+* **Åbn din dagbog:** Vælg widgettens titel. Dagbogen åbnes i ugevisning.
+
+![Widgetten Dagbog med knappen Deltag i møde på et onlinemøde -screenshot][img8]
+
+## Salg – Fokus {#sales-spotlight}
+
+Widgetten **Salg – Fokus** viser dine egne salg med status **Åben** eller **Udsat**, der matcher de kriterier, du vælger.
+
+Hvert kort viser salget, firmaet og personen, salgsdatoen og beløbet samt ét mærke, der fortæller, hvorfor salget er med. Hvis et salg matcher flere kriterier, vises det mest presserende mærke i denne rækkefølge: forfalden, salgsdato nærmer sig, udsat salg genåbnes, ingen aktivitet, ingen planlagt aktivitet, ingen opdatering.
+
+Du kan gøre følgende fra widgetten:
+
+* **Rediger et salg hurtigt:** Vælg kortet.
+* **Åbn et salg:** Dobbeltklik på kortet, eller vælg dets titel.
+* **Planlæg næste trin:** Klik på **Opret aktivitet**. En ny opgave åbnes, hvor personen og salget allerede er udfyldt.
+* **Sortér salgene:** Klik på <i class="ph ph-arrows-down-up" aria-label="Sort"></i>, og vælg **Nærmeste salgsdato** (standard) eller **Højeste beløb**.
+
+### Vælg, hvilke salg der skal vises {#sales-criteria}
+
+1. Klik på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgetten.
+1. Slå de kriterier til, du ønsker, og angiv antallet af dage.
+1. Klik på **Gem**.
+
+![Kriterierne for Salg – Fokus med antallet af dage for hvert kriterium -screenshot][img4]
+
+| Kriterium | Viser et salg, når | Indstilling |
+|---|---|---|
+| Salgsdato inden for N dage | Salgsdatoen er i dag eller inden for de næste N dage. | 1–60 dage, standard 7 |
+| Salgsdato overskredet | Salgsdatoen er passeret. | Til eller fra |
+| Ingen aktivitet registreret de seneste N dage | Der er ikke tilføjet nogen opfølgning eller noget dokument i N dage eller mere. | 1–60 dage, standard 7 |
+| Ingen planlagt aktivitet før salgsdatoen | Der er ikke planlagt nogen opfølgning mellem i dag og salgsdatoen. | Til eller fra |
+| Udsat, genåbningsdato inden for N dage | Salget er udsat og genåbnes inden for N dage. | 1–60 dage, standard 7 |
+| Ingen opdatering de seneste N dage | Salget er ikke blevet opdateret i N dage eller mere. | 1–60 dage, standard 7 |
+
+Hvis du slår alle kriterier fra, slås **Salgsdato inden for N dage** til igen med 7 dage.
+
+## Sag – Fokus {#request-spotlight}
+
+Widgetten **Sag – Fokus** viser sager, du ejer, med status **Aktiv** eller **Udsat**, der matcher de kriterier, du vælger. Den viser op til 10 sager.
+
+Hvert kort viser sags-ID og titel, firmaet og personen, deadline, kategori, status og type samt ét mærke, der fortæller, hvorfor sagen er med. Når deadline er tæt på, viser kortet også den resterende tid, f.eks. "1 TIME".
+
+Du kan gøre følgende fra widgetten:
+
+* **Besvar en sag:** Vælg kortet, eller klik på **Svar**.
+* **Åbn en sag:** Dobbeltklik på kortet, eller vælg dets titel.
+* **Sortér sagerne:** Klik på <i class="ph ph-arrows-down-up" aria-label="Sort"></i>, og vælg **Nærmeste deadline** (standard) eller **Længst uden aktivitet**. Med **Nærmeste deadline** kommer sager uden deadline sidst.
+
+Når ingen sager matcher dine kriterier, står der "Der er ikke noget at sætte i fokus lige nu" i widgetten. Når du har behandlet alle de sager, den viste, står der "Du er helt færdig!". Klik på **Få flere i fokus** for at åbne kriterierne og vælge flere.
+
+### Vælg, hvilke sager der skal vises {#request-criteria}
+
+1. Klik på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgetten.
+1. Slå de kriterier til, du ønsker, og angiv antallet af timer eller prioriteten.
+1. Klik på **Gem**.
+
+![Kriterierne for Sag – Fokus med standardkriterierne slået til -screenshot][img5]
+
+| Kriterium | Viser en sag, når | Indstilling | Standard |
+|---|---|---|---|
+| Deadline om N timer | Deadline er inden for de næste N timer. | 1, 4, 8 eller 24 timer | Til, 4 timer |
+| Ulæst i N timer | Sagen er ikke markeret som læst og er ikke ændret i N timer. | 4, 8, 24, 48 eller 72 timer | Til, 24 timer |
+| Ingen ny aktivitet i N timer | Sagen er markeret som læst og er ikke ændret i N timer. | 4, 8, 24 eller 48 timer | Til, 24 timer |
+| Negativt synspunkt | Kundens meddelelse er negativ. | Til eller fra | Fra |
+| Deadline overskredet | Deadline er passeret. | Til eller fra | Fra |
+| Prioritet | Sagen har den prioritet, du vælger. | En prioritet fra listen | Fra, **Høj** valgt |
+| Udsat - forfalden nu | Sagen blev udsat, og tidspunktet for at tage den op igen er passeret. | Til eller fra | Fra |
+
+**Negativt synspunkt** kræver analyse af synspunkt. Uden den er kriteriet nedtonet.
+
+Hvis du slår alle kriterier fra, slås **Deadline om N timer** til igen med 4 timer.
+
+<Note>
+**Ulæst i N timer** og **Ingen ny aktivitet i N timer** bruger tidspunktet for sagens seneste ændring, ikke tidspunktet for kundens seneste meddelelse.
+</Note>
+
+## Udsendelser – Fokus {#mailings-spotlight}
+
+Widgetten **Udsendelser – Fokus** viser e-mailudsendelser, der er færdige med at blive sendt, og som ikke når dine mål. Den viser op til 10 udsendelser, nyeste først.
+
+Hvert kort viser udsendelsens navn, abonnementstypen, hvornår den blev sendt, antallet af modtagere og åbnings-, klik- og bouncerate sammenlignet med dine mål. En rate er rød, når den ikke når målet, og grøn, når den når det.
+
+Du kan gøre følgende fra widgetten:
+
+* **Åbn en udsendelse:** Vælg kortet.
+
+Når ingen udsendelser matcher, står der "Der er ikke noget at sætte i fokus lige nu" i widgetten.
+
+### Vælg, hvilke udsendelser der skal vises {#mailings-criteria}
+
+1. Klik på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgetten, og vælg **Widgetfilter**.
+1. Slå de kriterier til, du ønsker, og angiv dine mål.
+1. Under **Abonnementstype** skal du vælge de typer, der skal medtages. Alle typer er valgt som standard.
+1. Klik på **Gem**.
+
+![Widgetfilteret for Udsendelser – Fokus med de tre kriterier og abonnementstyperne -screenshot][img6]
+
+| Kriterium | Viser en udsendelse, når | Standard |
+|---|---|---|
+| Åbningsrate under X% | Færre end X% af modtagerne har åbnet den. | Til, 20% |
+| Klikrate under X% | Færre end X% af modtagerne har klikket på et link. | Til, 5% |
+| Bouncerate over X% | Mere end X% af e-mailene er returneret. | Til, 2% |
+
+Hvis du slår alle kriterier fra, slås **Åbningsrate under X%** til igen med 20%.
+
+### Vælg, hvis udsendelser og hvilken periode {#mailings-settings}
+
+1. Klik på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgetten, og vælg **Indstillinger for udsendelse**.
+1. Rediger indstillingerne.
+1. Klik på **Gem**.
+
+| Indstilling | Hvad den gør | Standard |
+|---|---|---|
+| Vælg ejer af udsendelse | Hvis udsendelser der skal vises: **Mine**, **Primær gruppe** eller **Alle**. | Mine |
+| Vent før visning | Hvor mange dage efter, at en udsendelse er færdig, før den kontrolleres, 0–7. | 2 dage |
+| Vis kun de seneste | Hvor langt tilbage der skal søges efter udsendelser: 7, 30, 60, 90, 180 eller 365 dage. Altid mindst én dag længere end **Vent før visning**. | 30 dage |
+
+## Widgets til AI-agenter {#agents}
+
+Agentwidgetterne viser, hvad dine [AI-agenter][2] har fundet, så du kan følge op, når du starter dagen. Hver agentwidget kræver, at agenten er aktiv, se [Opsæt AI-agenter][2].
+
+### Lead-agent {#lead-agent}
+
+Viser de leads, [Lead Agent][5] har fundet, ét ad gangen. Klik på **Forrige** og **Næste** for at skifte mellem dem. Widgetten viser, hvilket lead du er på, f.eks. "1 af 10".
+
+Hvert lead viser firmanavnet, en vurdering på 0 til 5 stjerner med en kort etiket som "Stærkt match", agentens resumé og agentens navn med tidspunktet for dens seneste opdatering. Vælg firmanavnet for at åbne det.
+
+Vælg én af følgende for hvert lead:
+
+* **Godkend:** Accepterer leadet. Kortet fjernes.
+* **Afvis:** Afviser leadet. Kortet fjernes.
+
+Når der ikke er nogen leads, står der "Der er ingen leads at gennemgå lige nu" i widgetten. Klik på **Gå til agenter** for at åbne skærmbilledet **Agenter**.
+
+### Dublet-agent {#duplicate-agent}
+
+Viser, hvor mange **Firmasammenlægninger**, **Personsammenlægninger** og **Forældreløse personer** [Duplicate Agent][4] har fundet. Klik på **Vis sammenlægninger** for at gennemgå dem i agenten.
+
+Når der ikke er nogen, står der "Der blev ikke fundet nogen dubletter" i widgetten. Klik på **Gå til agenter** for at åbne skærmbilledet **Agenter**.
+
+![Widgetten Dublet-agent med firmasammenlægninger, personsammenlægninger og forældreløse personer -screenshot][img7]
+
+### Datakvalitetsagent {#data-quality-agent}
+
+Viser, hvor mange firmaer Data Quality Agent har opdateringer til. Klik på **Vis berigelser** for at åbne agenten og [gennemgå opdateringerne][8].
+
+## Krav {#requirements}
+
+### Vis agentwidgetterne {#admin-agents}
+
+Du ser agentwidgetterne, når:
+
+* Din administrator har [aktiveret AI-funktioner][6] for din organisation.
+* AI-agenter er slået til for dig. De er som standard slået til for alle, men din administrator kan slå dem fra.
+* Du har [aktiveret agenten][2] på skærmbilledet **Agenter**.
+
+### Vis kriteriet Negativt synspunkt {#admin-sentiment}
+
+Du kan bruge kriteriet **Negativt synspunkt** i **Sag – Fokus**, når din administrator har [slået analyse af synspunkt til][7].
+
+[1]: /da/learn/getting-started/main-screen/navigator
+[2]: /da/ai/learn/set-up-ai-agents
+[3]: /da/ai/learn/data-quality-agent
+[4]: /da/ai/learn/duplicate-agent
+[5]: /da/ai/learn/lead-agent
+[6]: /da/ai/admin/index
+[7]: /da/ai/admin/index#enable-text-analysis
+[8]: /da/ai/learn/data-quality-agent#review-and-approve-changes
+
+[img1]: /media/loc/en/learn/start-page.png
+[img2]: /media/loc/en/learn/start-page-first-time.png
+[img3]: /media/loc/en/learn/start-page-edit-mode.png
+[img4]: /media/loc/en/learn/start-page-sales-spotlight-criteria.png
+[img5]: /media/loc/en/learn/start-page-request-spotlight-criteria.png
+[img6]: /media/loc/en/learn/start-page-mailings-spotlight-filter.png
+[img7]: /media/loc/en/learn/start-page-duplicate-agent.png
+[img8]: /media/loc/en/learn/start-page-diary-join.png
