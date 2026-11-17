@@ -85,3 +85,29 @@ def test_real_move_and_delete_are_still_reported(repo):
     renamed, deleted = mod.get_renamed_and_deleted("base")
     assert renamed == [("en/a/moved.md", "en/b/moved.mdx")]
     assert deleted == ["en/a/gone.md"]
+
+
+@pytest.fixture
+def run_main(repo, monkeypatch, tmp_path_factory):
+    redirects = tmp_path_factory.mktemp("cfg") / "redirects.json"
+    redirects.write_text("[]", encoding="utf-8")
+    monkeypatch.setattr(mod, "REDIRECTS_PATH", redirects)
+    monkeypatch.delenv("GITHUB_OUTPUT", raising=False)
+
+    def run():
+        monkeypatch.setattr(sys, "argv", ["check-redirect-coverage.py", "--base-ref", "base"])
+        return mod.main()
+
+    return run
+
+
+def test_main_fails_on_missing_redirect(repo, run_main):
+    git(repo, "rm", "-q", "en/a/gone.md")
+    commit(repo)
+    assert run_main() == 1
+
+
+def test_main_passes_on_extension_only_rename(repo, run_main):
+    git(repo, "mv", "en/a/index.md", "en/a/index.mdx")
+    commit(repo)
+    assert run_main() == 0
