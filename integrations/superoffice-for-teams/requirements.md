@@ -5,7 +5,7 @@ sidebarTitle: "Requirements"
 description: What you need before you can use SuperOffice for Teams.
 keywords: ['SuperOffice for Teams', 'Teams', 'requirements', 'prerequisites']
 author: schildea
-date: 02.06.2026
+date: 11.17.2026
 content_type: reference
 category: integration
 topic: SuperOffice for Teams
@@ -18,6 +18,7 @@ Before you start, make sure the following requirements are met:
 
 * Microsoft Teams (desktop or web).
 * A SuperOffice Online user account with permission to create activities and documents.
+* A SuperOffice license that includes requests, to use **Create Request** and **Add to Request**.
 * A registered tenant and granted admin consent. This is usually handled once by a Microsoft 365 or SuperOffice administrator.
 
 See [Deploy SuperOffice for Teams][1] for the full setup steps.

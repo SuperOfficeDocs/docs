@@ -123,6 +123,7 @@
       "integrations/superoffice-for-teams/get",
       "integrations/superoffice-for-teams/archive-conversation",
       "integrations/superoffice-for-teams/archive-file",
+      "integrations/superoffice-for-teams/archive-request",
       "integrations/superoffice-for-teams/ai-summary",
       "integrations/superoffice-for-teams/preferences",
       "integrations/superoffice-for-teams/security",
