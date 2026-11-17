@@ -1,8 +1,8 @@
 ---
 title: Planera dagen på Startsidan
 sidebarTitle: "Startsida"
-description: Startsidan visar dina möten och att göra-uppgifter, och de försäljningar, ärenden, utskick och agentresultat som behöver uppmärksamhet, i widgetar som du själv väljer och ordnar.
-keywords: ['widget', 'spotlight', 'att göra', 'sammanfattning', 'rekommenderad konfiguration', 'agent']
+description: Startsidan visar dina möten och uppgifter, och de försäljningar, ärenden, utskick och agentresultat som behöver uppmärksamhet, i widgetar som du själv väljer och ordnar.
+keywords: ['widget', 'spotlight', 'att göra', 'sammanfattning', 'rekommenderad konfiguration', 'agent', 'Dubblettagent', 'Duplicera agent']
 author: digitaldiina
 date: 11.16.2026
 so_version: 12.6
@@ -41,8 +41,8 @@ Startsidan finns i alla CRM Suite-planer och införs gradvis hos utvalda kunder.
 | [Utskick – Spotlight](#mailings-spotlight) | Genomförda e-postutskick som inte når dina mål för öppnings-, klick- eller studsfrekvens. | Alla CRM Suite-planer |
 | [Ärende – Spotlight](#request-spotlight) | Dina öppna och uppskjutna ärenden som matchar de kriterier du väljer. | Alla CRM Suite-planer |
 | [Försäljning – Spotlight](#sales-spotlight) | Dina öppna och uppskjutna försäljningar som matchar de kriterier du väljer. | Alla CRM Suite-planer |
-| [Sammanfattning](#summary) | En hälsning och en mening om din dag. | Alla CRM Suite-planer |
-| [Att göra](#todo) | Dina försenade att göra-uppgifter, och de som förfaller i dag och de kommande 6 dagarna. | Alla CRM Suite-planer |
+| [Sammanfattning](#summary) | En hälsning och en kort sammanfattning av din dag. | Alla CRM Suite-planer |
+| [Att göra](#todo) | Dina försenade uppgifter, och de som förfaller i dag och de kommande 6 dagarna. | Alla CRM Suite-planer |
 
 Du ser bara de widgetar som din plan och dina inställningar ger dig åtkomst till. Agentwidgetarna har [ytterligare krav](#requirements).
 
@@ -89,35 +89,35 @@ Om du i stället vill börja om med den rekommenderade konfigurationen klickar d
 
 ## Sammanfattning {#summary}
 
-Widgeten Sammanfattning hälsar dig med namn och sammanfattar din dag i en mening, till exempel: "Du har 3 möten i dag, 2 försäljningar markerade för uppföljning och 4 att göra-uppgifter som förfaller i dag".
+Widgeten Sammanfattning hälsar dig med namn och sammanfattar kort din dag, till exempel: "Du har 3 möten i dag, 2 försäljningar markerade för uppföljning och 4 uppgifter som förfaller i dag".
 
-* Sammanfattningen tar upp högst 4 saker, i den här ordningen: möten i dag, objekt i en Spotlight-widget, att göra-uppgifter som förfaller i dag, leads, dubbletter och företag att uppdatera.
-* Den räknar bara widgetar som finns på din Startsida, och bara saker som har minst ett objekt.
-* Möten i dag omfattar även de som har avslutats. Försenade att göra-uppgifter räknas inte.
+* Sammanfattningen tar upp högst 4 saker, i den här ordningen: möten i dag, objekt i en Spotlight-widget, uppgifter som förfaller i dag, leads, dubbletter och företag att uppdatera.
+* Den räknar bara widgetar som finns på din Startsida, och bara sådant som det finns något av.
+* Möten i dag omfattar även de som har avslutats. Försenade uppgifter räknas inte.
 * När det inte finns något att göra står det "Du är helt ikapp".
 
 ## Att göra {#todo}
 
-Widgeten Att göra grupperar dina att göra-uppgifter så här:
+Widgeten Att göra grupperar dina uppgifter så här:
 
 | Grupp | Visar |
 |---|---|
-| Försenade | Att göra-uppgifter från de senaste 7 dagarna som inte är klara. Var och en har taggen **Försenad**, äldst först. |
-| I dag | Att göra-uppgifter som förfaller i dag och inte är klara. |
-| Kommande | Att göra-uppgifter som förfaller de kommande 6 dagarna och inte är klara. |
-| Slutförda | Att göra-uppgifter som du har markerat som klara i dag. |
+| Försenade | Uppgifter från de senaste 7 dagarna som inte är klara. Var och en har taggen **Försenad**, äldst först. |
+| I dag | Uppgifter som förfaller i dag och inte är klara. |
+| Kommande | Uppgifter som förfaller de kommande 6 dagarna och inte är klara. |
+| Slutförda | Uppgifter som du har markerat som slutförda i dag. |
 
-![Widgeten Att göra med en att göra-uppgift som förfaller i dag -screenshot][img9]
+![Widgeten Att göra med en uppgift som förfaller i dag -screenshot][img9]
 
 Du kan göra följande i widgeten:
 
-* **Markera en att göra-uppgift som klar:** Markera kryssrutan. Avmarkera kryssrutan för att ångra. Du kan bara göra detta för dina egna att göra-uppgifter.
-* **Öppna en att göra-uppgift:** Välj den.
-* **Lägg till en att göra-uppgift:** Klicka på **Lägg till ny**.
+* **Markera en uppgift som slutförd:** Markera kryssrutan. Avmarkera kryssrutan för att ångra. Du kan bara göra detta för dina egna uppgifter.
+* **Öppna en uppgift:** Välj den.
+* **Lägg till en uppgift:** Klicka på **Lägg till ny**.
 * **Se alla dina aktiviteter:** Välj widgetens titel eller <i class="ph ph-list-bullets" aria-label="To-do"></i>. Fliken **Aktiviteter** i Kalendern öppnas.
 
 <Tip>
-När du sparar en ändring i en dialogruta som du har öppnat från Startsidan, till exempel en uppföljning, uppdateras alla widgetar.
+När du sparar en ändring i en dialogruta som du har öppnat från Startsidan, till exempel en händelse, uppdateras alla widgetar.
 </Tip>
 
 ## Kalender {#diary}
@@ -151,7 +151,7 @@ Du kan göra följande i widgeten:
 
 * **Redigera en försäljning snabbt:** Välj kortet.
 * **Öppna en försäljning:** Dubbelklicka på kortet eller välj dess titel.
-* **Planera nästa steg:** Klicka på **Skapa en aktivitet**. En ny att göra-uppgift öppnas, med kontakten och försäljningen redan ifyllda.
+* **Planera nästa steg:** Klicka på **Skapa en aktivitet**. En ny uppgift öppnas, med kontakten och försäljningen redan ifyllda.
 * **Sortera försäljningarna:** Klicka på <i class="ph ph-arrows-down-up" aria-label="Sort"></i> och välj **Närmaste försäljningsdatum** (standard) eller **Högsta belopp**.
 
 ### Välj vilka försäljningar som ska visas {#sales-criteria}
@@ -215,7 +215,7 @@ Om du stänger av alla kriterier aktiveras **Tidsfrist om N timmar** igen med 4 
 
 ## Utskick – Spotlight {#mailings-spotlight}
 
-Widgeten **Utskick – Spotlight** visar e-postutskick som har skickats klart och inte når dina mål. Den visar upp till 10 utskick, nyaste först.
+Widgeten **Utskick – Spotlight** visar genomförda e-postutskick som inte når dina mål. Den visar upp till 10 utskick, nyaste först.
 
 Varje kort visar utskickets namn, prenumerationstypen, när det skickades, antalet mottagare och öppnings-, klick- och studsfrekvensen jämfört med dina mål. En frekvens är röd när den inte når målet och grön när den når det.
 
@@ -242,7 +242,7 @@ När inga utskick matchar står det "Inget att lyfta fram just nu" i widgeten.
 
 Om du stänger av alla kriterier aktiveras **Öppningsfrekvens under X%** igen med 20%.
 
-### Välj vems utskick och vilken period {#mailings-settings}
+### Välj ägare och period för utskick {#mailings-settings}
 
 1. Klicka på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> på widgeten och välj **Utskicksinställningar** i menyn.
 1. Ändra inställningarna.
@@ -250,7 +250,7 @@ Om du stänger av alla kriterier aktiveras **Öppningsfrekvens under X%** igen m
 
 | Inställning | Vad den gör | Standard |
 |---|---|---|
-| Välj ägare för utskick | Vems utskick som visas: **Mina**, **Primärgrupp** eller **Alla**. | Mina |
+| Välj ägare för utskick | Visa utskick som ägs av: **Mina**, **Primärgrupp** eller **Alla**. | Mina |
 | Vänta innan visning | Hur många dagar det dröjer efter att ett utskick har skickats klart innan det kontrolleras, 0–7. | 2 dagar |
 | Visa bara de senaste | Hur långt tillbaka utskick söks: 7, 30, 60, 90, 180 eller 365 dagar. Alltid minst en dag längre än **Vänta innan visning**. | 30 dagar |
 
@@ -271,7 +271,7 @@ Välj något av följande för varje lead:
 
 När det inte finns några leads står det "Det finns inga leads att granska just nu" i widgeten. Klicka på **Gå till agenter** för att öppna sidan **Agenter**.
 
-### Duplicera agent {#duplicate-agent}
+### Dubblettagent {#duplicate-agent}
 
 Visar hur många **Företagssammanfogningar**, **Kontaktsammanfogningar** och **Kontakter utan företag** [Duplicate Agent][4] har hittat. Klicka på **Visa sammanfogningar** för att granska dem i agenten.
 
