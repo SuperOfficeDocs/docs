@@ -22,6 +22,8 @@ language: de
 
 Die Startseite zeigt an einem Ort, was heute Ihre Aufmerksamkeit erfordert. Sie besteht aus Widgets: kleinen Karten, die jeweils eine Sache zeigen, zum Beispiel Ihre Besprechungen, überfällige Anfragen oder die Verkäufe, die nachverfolgt werden müssen. Das meiste können Sie direkt im Widget erledigen.
 
+Die Startseite gehört Ihnen. Welche Widgets Sie auswählen, wie Sie sie anordnen und welche Kriterien Sie festlegen, betrifft nur Ihre Seite, nicht die Ihrer Kollegen. Was die Widgets anzeigen, sind gemeinsame CRM-Daten. Wenn Sie eine Aufgabe als erledigt markieren oder eine Zusammenführung genehmigen, sehen Ihre Kollegen die Änderung.
+
 * Wählen Sie <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startseite** im [Navigator][1] aus.
 
 ![Die Startseite mit den Widgets Zusammenfassung, Agent für Datenqualität, Kalender, Anfrage – Spotlight und Verkäufe – Spotlight sowie der im Navigator hervorgehobenen Startseite -screenshot][img1]
@@ -91,7 +93,7 @@ Um stattdessen mit der empfohlenen Einrichtung neu zu beginnen, klicken Sie in S
 
 Das Zusammenfassungs-Widget begrüßt Sie mit Ihrem Namen und fasst Ihren Tag in einem Satz zusammen, zum Beispiel: "Sie haben heute 3 Besprechungen, 2 zur Nachverfolgung markierte Verkäufe und 4 heute fällige Aufgaben".
 
-* Die Zusammenfassung umfasst höchstens 4 Dinge in dieser Reihenfolge: Besprechungen heute, Einträge in einem Spotlight-Widget, heute fällige Aufgaben, Leads, Duplikate und zu aktualisierende Firmen.
+* Die Zusammenfassung umfasst höchstens 4 Dinge in dieser Reihenfolge: Besprechungen heute; Einträge in einem Spotlight-Widget; heute fällige Aufgaben; Leads; Duplikate; und zu aktualisierende Firmen.
 * Sie berücksichtigt nur Widgets, die auf Ihrer Startseite sind, und nur Dinge mit mindestens einem Eintrag.
 * Zu den Besprechungen heute gehören auch die bereits beendeten. Überfällige Aufgaben werden nicht mitgezählt.
 * Wenn nichts zu tun ist, lautet sie "Sie sind auf dem neuesten Stand".
@@ -205,7 +207,7 @@ Wenn keine Anfragen Ihren Kriterien entsprechen, zeigt das Widget "Derzeit gibt 
 | Priorität | Die Anfrage hat die von Ihnen gewählte Priorität. | Eine Priorität aus der Liste | Aus, **Hoch** ausgewählt |
 | Auf Termin gelegt - jetzt fällig | Die Anfrage wurde auf Termin gelegt, und der Zeitpunkt für die Wiederaufnahme ist verstrichen. | Ein oder aus | Aus |
 
-**Negative Stimmung** erfordert die Sentiment-Analyse. Ohne sie ist das Kriterium ausgegraut.
+**Negative Stimmung** erfordert die KI-Textanalyse. Ohne sie ist das Kriterium ausgegraut.
 
 Wenn Sie alle Kriterien deaktivieren, wird **Frist in N Stunden** mit 4 Stunden wieder aktiviert.
 
@@ -293,9 +295,13 @@ Sie sehen die Agenten-Widgets, wenn:
 * KI-Agenten für Sie aktiviert sind. Sie sind standardmäßig für alle aktiviert, aber Ihr Administrator kann sie deaktivieren.
 * Sie den Agenten auf der Seite **Agenten** [aktiviert][2] haben.
 
+<Tip>
+Wenn Sie <i class="ph ph-robot" aria-label="Agents icon"></i> **Agenten** im Navigator sehen, haben Sie Zugriff auf KI-Agenten. Wenn nicht, haben Sie keinen Zugriff, und die Agenten-Widgets werden nicht angezeigt.
+</Tip>
+
 ### Kriterium "Negative Stimmung" anzeigen {#admin-sentiment}
 
-Sie können das Kriterium **Negative Stimmung** in **Anfrage – Spotlight** verwenden, wenn Ihr Administrator [die Sentiment-Analyse aktiviert][7] hat.
+Sie können das Kriterium **Negative Stimmung** in **Anfrage – Spotlight** verwenden, wenn Ihr Administrator [die KI-Textanalyse aktiviert][7] hat.
 
 [1]: /de/learn/getting-started/main-screen/navigator
 [2]: /de/ai/learn/set-up-ai-agents

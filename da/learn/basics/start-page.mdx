@@ -20,7 +20,9 @@ related:
 language: da
 ---
 
-Startsiden viser ét sted, hvad der kræver din opmærksomhed i dag. Den består af widgets: små kort, der hver viser én ting, f.eks. dine møder, forfaldne sager eller de salg, der kræver opfølgning. Du kan håndtere det meste direkte fra widgetten.
+Startsiden viser samlet, hvad der kræver din opmærksomhed i dag. Den består af widgets: små kort, der hver viser én ting, f.eks. dine møder, forfaldne sager eller de salg, der kræver opfølgning. Du kan håndtere det meste direkte fra widgetten.
+
+Startsiden er din egen. De widgets, du vælger, hvordan du placerer dem, og de kriterier, du angiver, påvirker kun din side og ikke dine kollegers. Det, widgetterne viser, er fælles CRM-data. Når du markerer en opgave som udført eller godkender en sammenlægning, kan dine kolleger se ændringen.
 
 * Vælg <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startside** i [navigatoren][1].
 
@@ -89,9 +91,9 @@ Hvis du i stedet vil starte forfra med den anbefalede opsætning, skal du klikke
 
 ## Opsummering {#summary}
 
-Widgetten Opsummering hilser på dig med navn og opsummerer din dag i én sætning, f.eks.: "Du har 3 møder i dag, 2 salgselementer markeret til opfølgning og 4 opgaver, der forfalder i dag".
+Widgetten Opsummering hilser på dig med navn og opsummerer din dag i én sætning, f.eks.: "Du har 3 møder i dag, 2 salg markeret til opfølgning og 4 opgaver, der forfalder i dag".
 
-* Opsummeringen dækker højst 4 ting i denne rækkefølge: møder i dag, elementer i én Fokus-widget, opgaver, der forfalder i dag, leads, dubletter og firmaer, der skal opdateres.
+* Opsummeringen dækker højst 4 ting i denne rækkefølge: møder i dag; elementer i én Fokus-widget; opgaver, der forfalder i dag; leads; dubletter; og firmaer, der skal opdateres.
 * Den tæller kun widgets, der er på din Startside, og kun ting, der har mindst ét element.
 * Møder i dag omfatter også dem, der er slut. Forfaldne opgaver tælles ikke med.
 * Når der ikke er noget at gøre, står der "Du er helt ajour".
@@ -205,7 +207,7 @@ Når ingen sager matcher dine kriterier, står der "Der er ikke noget at sætte 
 | Prioritet | Sagen har den prioritet, du vælger. | En prioritet fra listen | Fra, **Høj** valgt |
 | Udsat - forfalden nu | Sagen blev udsat, og tidspunktet for at tage den op igen er passeret. | Til eller fra | Fra |
 
-**Negativt synspunkt** kræver analyse af synspunkt. Uden den er kriteriet nedtonet.
+**Negativt synspunkt** kræver AI-tekstanalyse. Uden den er kriteriet nedtonet.
 
 Hvis du slår alle kriterier fra, slås **Deadline om N timer** til igen med 4 timer.
 
@@ -293,9 +295,13 @@ Du ser agentwidgetterne, når:
 * AI-agenter er slået til for dig. De er som standard slået til for alle, men din administrator kan slå dem fra.
 * Du har [aktiveret agenten][2] på skærmbilledet **Agenter**.
 
+<Tip>
+Hvis du kan se <i class="ph ph-robot" aria-label="Agents icon"></i> **Agenter** i navigatoren, har du adgang til AI-agenter. Hvis du ikke kan se det, har du ikke adgang, og agentwidgetterne vises ikke.
+</Tip>
+
 ### Vis kriteriet Negativt synspunkt {#admin-sentiment}
 
-Du kan bruge kriteriet **Negativt synspunkt** i **Sag – Fokus**, når din administrator har [slået analyse af synspunkt til][7].
+Du kan bruge kriteriet **Negativt synspunkt** i **Sag – Fokus**, når din administrator har [slået AI-tekstanalyse til][7].
 
 [1]: /da/learn/getting-started/main-screen/navigator
 [2]: /da/ai/learn/set-up-ai-agents

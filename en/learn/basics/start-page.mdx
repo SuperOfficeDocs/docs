@@ -22,6 +22,8 @@ language: en
 
 The Start page shows what needs your attention today in one place. It is built from widgets: small cards that each show one thing, such as your meetings, overdue requests, or the sales that need follow-up. You can act on most items directly from the widget.
 
+The Start page is your own. The widgets you choose, how you arrange them, and the criteria you set affect only your page, not your coworkers'. What the widgets show is shared CRM data. When you complete a to-do or approve a merge, your coworkers see the change.
+
 * Select <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Start page** in the [Navigator][1].
 
 ![The Start page with the Summary, Data quality agent, Diary, Request - Spotlight, and Sales - Spotlight widgets, and Start page highlighted in the Navigator -screenshot][img1]
@@ -91,7 +93,7 @@ To start over with the recommended setup instead, click **Reset** in step 2.
 
 The Summary widget greets you by name and sums up your day in one sentence, for example: "You've got 3 meetings today, 2 sales items flagged for follow-up and 4 to-dos due today".
 
-* The summary covers at most 4 things, in this order: meetings today, items in one Spotlight widget, to-dos due today, leads, duplicates, and companies to update.
+* The summary covers at most 4 things, in this order: meetings today; items in one Spotlight widget; to-dos due today; leads; duplicates; and companies to update.
 * It counts only widgets that are on your Start page, and only things that have at least one item.
 * Meetings today include the ones that have ended. To-dos that are overdue are not counted.
 * When there is nothing to do, it says "You're all caught up".
@@ -205,7 +207,7 @@ When no requests match your criteria, the widget says "Nothing to spotlight righ
 | Priority | The request has the priority you choose. | A priority from the list | Off, **High** selected |
 | Postponed - due now | The request was postponed, and the time to pick it up again has passed. | On or off | Off |
 
-**Negative sentiment** needs sentiment analysis. Without it, the criterion is dimmed.
+**Negative sentiment** needs AI text analysis. Without it, the criterion is dimmed.
 
 If you turn off every criterion, **Deadline in N hours** is turned on again with 4 hours.
 
@@ -293,9 +295,13 @@ You see the agent widgets when:
 * AI agents are turned on for you. They are on for everyone by default, but your administrator can turn them off.
 * You have [activated the agent][2] on the **Agents** screen.
 
+<Tip>
+If you see <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator, you have access to AI agents. If you do not see it, you do not have access, and the agent widgets are not shown.
+</Tip>
+
 ### Show the Negative sentiment criterion {#admin-sentiment}
 
-You can use the **Negative sentiment** criterion in **Request - Spotlight** when your administrator has [turned on sentiment analysis][7].
+You can use the **Negative sentiment** criterion in **Request - Spotlight** when your administrator has [turned on AI text analysis][7].
 
 [1]: /en/learn/getting-started/main-screen/navigator
 [2]: /en/ai/learn/set-up-ai-agents

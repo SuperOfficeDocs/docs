@@ -22,6 +22,8 @@ language: no
 
 Startsiden viser det som trenger oppmerksomheten din i dag, samlet på ett sted. Den består av widgeter: små kort som hver viser én ting, for eksempel møtene dine, saker med passert frist eller salg som trenger oppfølging. Du kan håndtere det meste direkte fra widgeten.
 
+Startsiden er din egen. Widgetene du velger, hvordan du ordner dem, og kriteriene du angir, gjelder bare din side, ikke kollegenes. Det widgetene viser, er felles CRM-data. Når du merker en oppgave som utført eller godkjenner en sammenslåing, ser kollegene dine endringen.
+
 * Velg <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startside** i [navigatoren][1].
 
 ![Startsiden med widgetene Oppsummering, Datakvalitetsagent, Dagbok, Sak – Fremhevet og Salg – Fremhevet, og Startside uthevet i navigatoren -screenshot][img1]
@@ -91,7 +93,7 @@ Hvis du heller vil begynne på nytt med det anbefalte oppsettet, klikker du på 
 
 Oppsummeringswidgeten hilser deg med navn og oppsummerer dagen din i én setning, for eksempel: "Du har 3 møter i dag, 2 salg merket for oppfølging og 4 oppgaver som forfaller i dag".
 
-* Oppsummeringen dekker maksimalt 4 ting, i denne rekkefølgen: møter i dag, elementer i én Fremhevet-widget, oppgaver som forfaller i dag, leads, duplikater og firmaer som skal oppdateres.
+* Oppsummeringen dekker maksimalt 4 ting, i denne rekkefølgen: møter i dag; elementer i én Fremhevet-widget; oppgaver som forfaller i dag; leads; duplikater; og firmaer som skal oppdateres.
 * Den teller bare widgeter som er på Startsiden din, og bare ting som har minst ett element.
 * Møter i dag omfatter også dem som er avsluttet. Oppgaver som har forfalt, telles ikke.
 * Når det ikke er noe å gjøre, står det "Du er helt oppdatert".
@@ -205,7 +207,7 @@ Når ingen saker samsvarer med kriteriene, står det "Ingenting å fremheve akku
 | Prioritet | Saken har prioriteten du velger. | En prioritet fra listen | Av, **Høy** valgt |
 | Utsatt - forfaller nå | Saken ble utsatt, og tidspunktet for å ta den opp igjen har passert. | På eller av | Av |
 
-**Negativt sentiment** krever sentimentanalyse. Uten den er kriteriet nedtonet.
+**Negativt sentiment** krever AI-tekstanalyse. Uten den er kriteriet nedtonet.
 
 Hvis du deaktiverer alle kriteriene, aktiveres **Frist om N timer** igjen med 4 timer.
 
@@ -293,9 +295,13 @@ Du ser agentwidgetene når:
 * AI-agenter er slått på for deg. De er slått på for alle som standard, men administratoren kan slå dem av.
 * Du har [aktivert agenten][2] i skjermbildet **Agenter**.
 
+<Tip>
+Hvis du ser <i class="ph ph-robot" aria-label="Agents icon"></i> **Agenter** i navigatoren, har du tilgang til AI-agenter. Hvis du ikke ser det, har du ikke tilgang, og agentwidgetene vises ikke.
+</Tip>
+
 ### Vis kriteriet Negativt sentiment {#admin-sentiment}
 
-Du kan bruke kriteriet **Negativt sentiment** i **Sak – Fremhevet** når administratoren har [slått på sentimentanalyse][7].
+Du kan bruke kriteriet **Negativt sentiment** i **Sak – Fremhevet** når administratoren har [slått på AI-tekstanalyse][7].
 
 [1]: /no/learn/getting-started/main-screen/navigator
 [2]: /no/ai/learn/set-up-ai-agents

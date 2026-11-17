@@ -22,6 +22,8 @@ language: sv
 
 Startsidan visar det som behöver din uppmärksamhet i dag, samlat på ett ställe. Den består av widgetar: små kort som var och ett visar en sak, till exempel dina möten, försenade ärenden eller de försäljningar som behöver uppföljning. Du kan hantera det mesta direkt i widgeten.
 
+Startsidan är din egen. Vilka widgetar du väljer, hur du ordnar dem och vilka kriterier du anger påverkar bara din sida, inte dina kollegors. Det som widgetarna visar är delade CRM-data. När du markerar en uppgift som slutförd eller godkänner en sammanfogning ser dina kollegor ändringen.
+
 * Välj <i class="ph ph-rocket-launch" aria-label="Start page icon"></i> **Startsida** i [Navigatorn][1].
 
 ![Startsidan med widgetarna Sammanfattning, Datakvalitetsagent, Kalender, Ärende – Spotlight och Försäljning – Spotlight, och Startsida markerad i Navigatorn -screenshot][img1]
@@ -91,7 +93,7 @@ Om du i stället vill börja om med den rekommenderade konfigurationen klickar d
 
 Widgeten Sammanfattning hälsar dig med namn och sammanfattar kort din dag, till exempel: "Du har 3 möten i dag, 2 försäljningar markerade för uppföljning och 4 uppgifter som förfaller i dag".
 
-* Sammanfattningen tar upp högst 4 saker, i den här ordningen: möten i dag, objekt i en Spotlight-widget, uppgifter som förfaller i dag, leads, dubbletter och företag att uppdatera.
+* Sammanfattningen tar upp högst 4 saker, i den här ordningen: möten i dag; objekt i en Spotlight-widget; uppgifter som förfaller i dag; leads; dubbletter; och företag att uppdatera.
 * Den räknar bara widgetar som finns på din Startsida, och bara sådant som det finns något av.
 * Möten i dag omfattar även de som har avslutats. Försenade uppgifter räknas inte.
 * När det inte finns något att göra står det "Du är helt ikapp".
@@ -205,7 +207,7 @@ När inga ärenden matchar dina kriterier står det "Inget att lyfta fram just n
 | Prioritet | Ärendet har den prioritet du väljer. | En prioritet från listan | Av, **Hög** vald |
 | Uppskjutet - förfaller nu | Ärendet har skjutits upp och tiden för att ta upp det igen har passerat. | På eller av | Av |
 
-**Negativt sentiment** kräver sentimentanalys. Utan den är kriteriet nedtonat.
+**Negativt sentiment** kräver AI-textanalys. Utan den är kriteriet nedtonat.
 
 Om du stänger av alla kriterier aktiveras **Tidsfrist om N timmar** igen med 4 timmar.
 
@@ -293,9 +295,13 @@ Du ser agentwidgetarna när:
 * AI-agenter är aktiverade för dig. De är aktiverade för alla som standard, men din administratör kan stänga av dem.
 * Du har [aktiverat agenten][2] på sidan **Agenter**.
 
+<Tip>
+Om du ser <i class="ph ph-robot" aria-label="Agents icon"></i> **Agenter** i Navigatorn har du tillgång till AI-agenter. Om du inte ser det har du inte tillgång, och agentwidgetarna visas inte.
+</Tip>
+
 ### Visa kriteriet Negativt sentiment {#admin-sentiment}
 
-Du kan använda kriteriet **Negativt sentiment** i **Ärende – Spotlight** när din administratör har [aktiverat sentimentanalys][7].
+Du kan använda kriteriet **Negativt sentiment** i **Ärende – Spotlight** när din administratör har [aktiverat AI-textanalys][7].
 
 [1]: /sv/learn/getting-started/main-screen/navigator
 [2]: /sv/ai/learn/set-up-ai-agents
