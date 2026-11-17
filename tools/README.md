@@ -109,7 +109,7 @@ House rules for anything new added under `tools/` or `.github/workflows/` — di
 
 * **Line length in comments/docstrings**: up to 120 characters is fine. Don't over-wrap prose into short, choppy lines just to stay near 80 — a comment that reads as 3 fragmented lines when it could be one clear one is worse, not more disciplined.
 
-* **Advisory vs. blocking**: default a new guard to advisory (`::warning::` annotation, exit 0) — this repo's guard family is advisory-first by design. Reserve a blocking (non-zero exit) guard for a permanent-regression-class bug (something that would otherwise keep quietly reappearing on every regen) or a security gate; document the exception in `contribute/automated-tests.mdx` alongside the existing blocking exceptions (`office-format-download-guard`, `docfx-legacy-tags-guard`, `workflow-injection-guard`) so the list of "why is this one different" stays in one place.
+* **Advisory vs. blocking**: default a new guard to advisory (`::warning::` annotation, exit 0) — this repo's guard family is advisory-first by design. Reserve a blocking (non-zero exit) guard for a permanent-regression-class bug (something that would otherwise keep quietly reappearing on every regen) or a security gate; document the exception in `contribute/automated-tests.mdx` alongside the existing blocking exceptions (`office-format-download-guard`, `docfx-legacy-tags-guard`, `workflow-injection-guard`, `redirect-coverage-guard`) so the list of "why is this one different" stays in one place.
 
 ## PowerShell script conventions
 
