@@ -20,6 +20,12 @@ for:
   * (renamed only) any entry whose `destination` already equals the new path: someone already added
     the redirect, just not in the exact string shape this script would have derived itself.
 
+A change of extension only (`.md` <-> `.mdx` at an otherwise identical path, in either direction) is
+skipped: Mintlify serves both at the same URL, so nothing needs a redirect (#684). This covers a rename
+git pairs up, and a deletion whose other-extension sibling exists at HEAD (git reports a delete plus
+an add when the content changed too much to detect the rename). The translation-mirroring check below
+skips such a rename too, since the translations' URLs don't change either.
+
 Per `contribute/redirects.mdx`'s documented `.html`-suffix-duplicate rule (#339), a bare-form entry
 alone isn't enough unless the source is a wildcard, ends in `/index` or a trailing slash, or already
 ends in `.html`; otherwise the `.html`-suffixed form needs its own entry too. Both forms are checked
@@ -129,6 +135,29 @@ def is_in_scope(rel_path):
 
 
 
+def swap_md_extension(rel_path):
+    """`foo.md` -> `foo.mdx` and `foo.mdx` -> `foo.md`; None for anything else."""
+    if rel_path.endswith(".mdx"):
+        return rel_path[:-1]
+    if rel_path.endswith(".md"):
+        return rel_path + "x"
+    return None
+
+
+def is_extension_only_change(old_path, new_path):
+    """True when the two paths are identical apart from `.md` vs `.mdx`, which
+    Mintlify serves at the same URL, so no redirect is needed (#684)."""
+    return swap_md_extension(old_path) == new_path
+
+
+def has_same_url_sibling(deleted_path):
+    """True when a deleted `.md`/`.mdx` file's other-extension twin exists at
+    HEAD: git reported a delete plus an add instead of a rename, but the URL
+    is unchanged (#684)."""
+    sibling = swap_md_extension(deleted_path)
+    return sibling is not None and (REPO_ROOT / sibling).is_file()
+
+
 def get_renamed_and_deleted(base_ref, scope=None):
     """Returns (renamed, deleted): renamed is a list of (old_path, new_path)
     from git's own rename detection; deleted is a list of old_path. Scoped
@@ -146,11 +175,11 @@ def get_renamed_and_deleted(base_ref, scope=None):
         status = parts[0]
         if status.startswith("R"):
             old_path, new_path = parts[1], parts[2]
-            if is_in_scope(old_path):
+            if is_in_scope(old_path) and not is_extension_only_change(old_path, new_path):
                 renamed.append((old_path, new_path))
         elif status.startswith("D"):
             old_path = parts[1]
-            if is_in_scope(old_path):
+            if is_in_scope(old_path) and not has_same_url_sibling(old_path):
                 deleted.append(old_path)
     return renamed, deleted
 

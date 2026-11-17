@@ -42,14 +42,18 @@ jobs:
         run: |
           # Reuses this repo's existing labels rather than inventing new ones: mintlify/nav-redirects for
           # a coverage gap, translation for a stale-pathed mirror (see #340).
+          # The guard is advisory: a fork PR gets a read-only token, so labelling can fail there.
+          # Warn instead of failing the job (#684).
           if [ "$FOUND" = "true" ]; then
-            gh pr edit "$PR_NUMBER" --add-label "mintlify/nav-redirects"
+            gh pr edit "$PR_NUMBER" --add-label "mintlify/nav-redirects" \
+              || echo "::warning::Could not add the mintlify/nav-redirects label (read-only token on a fork PR?)."
           else
             gh pr edit "$PR_NUMBER" --remove-label "mintlify/nav-redirects" || true
           fi
 
           if [ "$TRANSLATION_GAP" = "true" ]; then
-            gh pr edit "$PR_NUMBER" --add-label "translation"
+            gh pr edit "$PR_NUMBER" --add-label "translation" \
+              || echo "::warning::Could not add the translation label (read-only token on a fork PR?)."
           else
             gh pr edit "$PR_NUMBER" --remove-label "translation" || true
           fi
