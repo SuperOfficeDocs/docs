@@ -12,43 +12,44 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /no/request/learn/howto/split-message
+related:
+  - Dele en sak: /no/request/learn/split-request
+  - /no/request/learn/merge
 language: no
 ---
 
-Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele meldingen og opprette en ny sak. Dette er nyttig hvis meldingen både inneholder et teknisk spørsmål og et fakturaspørsmål, siden disse håndteres av ulike avdelinger.
+Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele meldingen i to og opprette en ny sak med én av meldingene. Dette kan være nyttig hvis en melding inneholder både et teknisk spørsmål og et fakturaspørsmål, fordi disse to spørsmålene håndteres av to ulike avdelinger.
+
+## Trinn
 
 1. [Åpne saken][1].
 
 1. I fanen **Meldinger** klikker du på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgave-knappen"></i> ved siden av meldingen du vil dele.
 
-1. I skjermbildet **Del melding**, fyll ut følgende felter:
+1. I skjermbildet **Del melding** angir du et beskrivende navn på den nye saken i feltet **Tittel**.
 
-    * **Tittel**: Angi et beskrivende navn på den nye saken.
-    * **Kategori**: Velg en passende kategori.
-    * **Eier**:
-      * Velg en bestemt person for å tildele saken manuelt.
-      * **(Automatisk tildelt)**: Systemet fordeler saken i henhold til gjeldende regler.
-      * **(Ufordelt)**: Ingen spesifikk eier, slik at medlemmer av kategorien blir ansvarlige.
-    * **Prioritet**: Velg mellom **Lav**, **Medium** og **Høy**, eller la systemet tildele prioritet basert på eskaleringsnivåer.
-    * **Tilgangsnivå**:
-      * **Ekstern**: Kunden kan se saken via kundesenteret.
-      * **Internt**: Kunden har ikke tilgang til saken.
-    * **Status**: Viser statusen og utsettelsesdatoen til den opprinnelige saken. Standardstatuser for nye saker brukes ikke. For å endre statusen velger du ett av følgende:
-      * **Aktiv**: Saken er under behandling.
-      * **Avsluttet**: Saken er ferdigbehandlet.
-      * **Utsatt**: Saken settes på vent, med en valgt dato for gjenåpning.
+1. I feltet **Kategori** velger du en kategori.
 
-1. **Merk av for vedlegg som skal flyttes til den nye saken** (valgfritt). Vedleggene slettes fra den opprinnelige saken.
+1. I **Eier**-listen velger du ett av følgende alternativer:
+    * Hvis du vil tildele saken til en bestemt person, velger du navnet du ønsker.
+    * **(Automatisk tildelt)**: Hvis du velger dette, fordeler systemet saken i henhold til gjeldende regler for fordeling.
+    * **(Ufordelt)**: Du kan også velge å ikke tildele saken. Medlemmene av den aktuelle kategorien blir da ansvarlige for å behandle saken.
+
+1. I **Prioritet**-listen velger du mellom **Lav**, **Medium** og **Høy**, eller du kan la systemet tildele prioritet automatisk. Dette kan for eksempel gjøres basert på eskaleringsnivåer som er angitt for ulike kunder.
+
+1. I **Tilgangsnivå**-listen velger du ett av følgende alternativer:
+    * **Ekstern**: Velg dette hvis kunden skal ha tilgang til saken via et kundesenter.
+    * **Internt**: Velg dette hvis kunden ikke skal ha tilgang til saken.
+
+1. **Status**-listen viser statusen og utsettelsesdatoen til den opprinnelige saken. Standardstatuser for nye saker brukes ikke. For å endre statusen velger du ett av følgende alternativer:
+    * **Aktiv**: Velg dette hvis saken er under behandling.
+    * **Avsluttet**: Velg dette hvis saken er ferdigbehandlet.
+    * **Utsatt**: Hvis saken må utsettes, velger du dette alternativet og angir en dato i datofeltet til høyre. På denne datoen settes saken tilbake til **Aktiv**.
+
+1. (Hvis aktuelt) Under **Merk av for vedlegg som skal flyttes til den nye saken** velger du vedleggene som skal flyttes til den nye saken. Vedleggene slettes fra den eksisterende saken.
 
 1. Gå til fanen **Meldinger**, og rediger meldingsteksten for både den eksisterende og den nye saken.
 
-1. Klikk på **OK**. Meldingen er nå delt, og den nye saken åpnes.
-
-## Aktuelt innhold
-
-* [Dele en sak][2]
-* [Slå sammen saker][3]
+1. Klikk på **OK**. Meldingen deles, og den nye saken åpnes.
 
 [1]: ./index#open
-[2]: ./split-request
-[3]: ./merge
