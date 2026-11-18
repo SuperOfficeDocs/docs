@@ -72,18 +72,6 @@ def rewrite(repo, old, new, text):
 LONG_NEW_BODY = "A completely different paragraph.\n" * 60
 
 
-@pytest.mark.parametrize(
-    "path, expected",
-    [
-        ("en/a/foo.md", "en/a/foo.mdx"),
-        ("en/a/foo.mdx", "en/a/foo.md"),
-        ("docs.json", None),
-    ],
-)
-def test_swap_md_extension(path, expected):
-    assert mod.swap_md_extension(path) == expected
-
-
 def test_frontmatter_boost_reads_only_the_frontmatter():
     assert mod.frontmatter_boost(page("x", boost=1.5)) == "1.5"
     assert mod.frontmatter_boost("﻿" + page("x", boost=3).replace("\n", "\r\n")) == "3"

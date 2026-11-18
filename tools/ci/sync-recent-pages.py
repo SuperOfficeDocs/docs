@@ -15,7 +15,9 @@ for example for a page whose real title reads oddly out of context on a homepage
      (a folder with no file on the base branch, for example a section migrated from the knowledge
      base) contributes only that folder's root page: `index.mdx`/`index.md`, otherwise
      `<folder>/<folder>.mdx`/`.md`, otherwise its shallowest page. Its other pages would push every
-     older entry off the list.
+     older entry off the list. A page whose `.md`/`.mdx` twin existed on the base branch isn't new
+     either: Mintlify serves both at the same URL, and a rename that also changes a lot of content
+     falls below git's rename similarity, so git reports it as a delete plus an add (#694).
   2. Stamps `since` with today's date on any entry that's missing it (a freshly hand-added or
      auto-detected entry), and on any *pinned* entry whose own target file was touched by this PR;
      pinned pages (for example the current release notes) should read as current, not stale,
@@ -61,6 +63,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib import page_history  # noqa: E402
 from lib.repo_files import file_path_to_url, is_snippet  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -287,21 +290,14 @@ def top_level_folder(rel_file_path):
     return None
 
 
-def folders_new_in_pr(base_ref, folders):
-    """Returns the subset of `folders` that has no tracked file at the PR's merge base."""
+def folders_new_in_pr(base_commit, folders):
+    """Returns the subset of `folders` that has no tracked file at `base_commit`, the PR's merge base."""
     if not folders:
         return set()
-    merge_base = subprocess.run(
-        ["git", "merge-base", base_ref, "HEAD"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-        check=True,
-    ).stdout.strip()
     new = set()
     for folder in folders:
         out = subprocess.run(
-            ["git", "ls-tree", "-r", "--name-only", merge_base, "--", folder + "/"],
+            ["git", "ls-tree", "-r", "--name-only", base_commit, "--", folder + "/"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
@@ -324,15 +320,20 @@ def pick_root_page(folder, candidates):
 
 def select_auto_detected(added, base_ref):
     """Added pages to put on the list: every eligible page, except that a new top-level folder
-    under `en/` or `integrations/` is represented by its root page only."""
-    candidates = sorted(p for p in added if is_auto_detect_candidate(p))
+    under `en/` or `integrations/` is represented by its root page only. A page that existed at the
+    merge base as its `.md`/`.mdx` twin is a rename, not a new page (#694)."""
+    base_commit = page_history.merge_base(base_ref)
+    candidates = sorted(
+        p for p in added
+        if is_auto_detect_candidate(p) and page_history.base_version_path(p, base_commit) is None
+    )
     by_folder = {}
     for p in candidates:
         folder = top_level_folder(p)
         if folder:
             by_folder.setdefault(folder, []).append(p)
     collapsed = {}
-    for folder in folders_new_in_pr(base_ref, by_folder):
+    for folder in folders_new_in_pr(base_commit, by_folder):
         collapsed[folder] = pick_root_page(folder, set(by_folder[folder]))
     selected = []
     for p in candidates:
