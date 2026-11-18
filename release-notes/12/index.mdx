@@ -4,7 +4,7 @@ title: What's new in SuperOffice 12
 description: Release notes. What's new in SuperOffice 12
 keywords: ['SuperOffice CRM 12']
 author: kirstiaa
-date: 11.17.2026
+date: 11.18.2026
 so_version: 12
 content_type: release-note
 audience: person
@@ -31,6 +31,9 @@ The introduction of CRM Suite changes the access to some features and functions.
 
 * Version 12.7 - 24.11.2026
   * Mailings - Filtering and grouping in list view
+  * Requests - Preview attachments before adding them to a reply
+  * Requests - Postpone options that follow your working week
+  * Requests - Request status - Customise postpone options - Settings and maintenance
 * Version 12.6 - 04.11.2026
   * Search and selection - Criteria for externally owned follow-ups
   * Sale - Copy sale
@@ -65,12 +68,62 @@ The introduction of CRM Suite changes the access to some features and functions.
 
 ## Feature updates
 
-<Update label="12.7" description="24.11.2026" tags={["Sales", "Service", "Settings and maintenance"]}>
+<Update label="12.7" description="24.11.2026" tags={["Marketing", "Service", "Settings and maintenance"]}>
 <a id="12.7"></a>
 
 ### Mailings - Filtering and grouping in list view <Badge icon="bullseye" color="purple">Marketing</Badge>
 
 The lists can now be filtered and grouped like other archives in SuperOffice. This applies to list view, not the folder/thumbnail view (tiles).
+
+### Requests - Preview attachments before adding them to a reply <Badge icon="ticket" color="green">Service</Badge>
+
+Pick the right file for your reply without leaving it. A preview shows what an attachment contains before you add it.
+
+Requests often collect many files over time, and a list of file names alone makes it hard to tell which one you need. The preview lets you check the content in place, so you can reuse files already on the request with confidence.
+
+Open a request, start a reply, and open the **Attachments** pane in the reply tools on the right. Each attachment has an eye icon that opens a preview showing the file name, date, size and position in the list, for example "3 of 8".
+
+![Preview an attachment before adding it to the reply -screenshot][img29]
+
+Images, PDF and Word files are shown in the preview. Files that cannot be previewed, such as Excel and PowerPoint files, show a **Download** button instead. Use the arrows to move to the previous or next attachment without closing the preview, and tick **Selected** to pick files as you go. **Done**, which shows how many files you have ticked, returns you to the list with those files ticked, and **Insert** adds them to the reply. If you need the context, **Go to message** closes the preview and scrolls to the message the attachment came from.
+
+For example, on a request with eight attachments, you can step through them, tick the signed PDF contract and the screenshot of the error, and insert both in one go.
+
+Learn more about [replying to requests][23].
+
+### Requests - Postpone options that follow your working week <Badge icon="ticket" color="green">Service</Badge>
+
+Postpone a request until the next working day, so a request postponed on a Friday returns on Monday morning rather than on a weekend.
+
+Postponing is most useful when it matches how your team works. The postpone menu offers options that respect working days, and the options can be tailored by your administrator.
+
+The menu has **1 hour**, **24 hours**, **Next working day**, **Next week**, **1 week** and **1 month**, followed by any options your administrator has added. **Specified** is always last and lets you pick your own date. Options with a fixed time show it on the right, for example "08:00" or "Mon 08:00". The same options are available in the status menu on the request, in the postpone dialog on the request board, and when you change the status while replying or using quick reply.
+
+![Choose a postpone option from the status menu -screenshot][img30]
+
+**Next working day** brings the request back at 08:00 on the next working day, which is Monday 08:00 when you postpone on a Friday. **Next week** brings it back on Monday next week at 08:00. **24 hours**, **1 week** and **1 month** use plain clock time and can land on a weekend.
+ 
+Working days follow the opening hours set on the request's priority (**Settings and maintenance > Requests > Priorities > Time frame**), and closed days and the priority's holidays are skipped. If no opening hours are set, Monday to Friday is used. Times such as 08:00 follow your preferred time zone. The system respects settings in this order: category, priority, then user preference. An information icon with a tooltip shows which setting applies.
+
+### Requests - Request status - Customise postpone options <Badge icon="gear" color="orange">Settings and maintenance</Badge>
+
+**Tailor the postpone menu to how your team works.** Each status with the internal status Postponed has its own list of postpone options, so teams can offer the intervals they use and hide the ones they do not.
+
+Go to **Settings and maintenance > Requests > Request status** and open a status with internal status Postponed. The **Postpone options** section lists the standard options, which can be switched off to hide them from the menu but cannot be edited or deleted.
+
+![Manage postpone options on a Postponed request status -screenshot][img31]
+
+Use **Add option** to create a custom option of one of three types:
+
+* **After a time interval**: 1 to 999 hours, days, weeks or months, optionally skipping weekends and non-working hours.
+* **Next working day**: at a chosen time.
+* **Weekday next week**: at a chosen time.
+
+The time defaults to 08:00. Drag the options to set their order in the menu. Changes are saved with the status.
+
+For example, a support team adds "Tomorrow afternoon" (**Next working day** at 13:00) and switches off **1 month**, which they never use.
+
+Learn more about [request statuses][24].
 
 </Update>
 
@@ -459,6 +512,8 @@ Some features are available to selected customers as part of ongoing pilots. See
 [20]: /en/marketing/forms/learn/create#thank-you-page
 [21]: /en/custom-objects/learn/index
 [22]: /en/admin/license/crm-suite
+[23]: /en/request/learn/reply
+[24]: /en/request/admin/status/index
 
 [img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
 [img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
@@ -488,3 +543,6 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img26]: /media/loc/en/sale/sale-copy-sale-dialog.png
 [img27]: /media/loc/en/request/knowledge-base-blocked-email-addresses-clear-bounce-flag.png
 [img28]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
+[img29]: /media/loc/en/request/requests-reply-tools-attachment-insert-button.png
+[img30]: /media/loc/en/request/requests-status-postponed-options.png
+[img31]: /media/loc/en/admin/admin-requests-request-status-postponed.png
