@@ -4,8 +4,8 @@ title: Skapa ett ärende
 description: Skapa ett ärende
 keywords: ['skapa ärende', 'nytt ärende', 'ärende']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -39,7 +39,7 @@ Ett ärende kan komma in i systemet via ett e-postmeddelande från kunden, eller
     * Välj **Ärendetyp**, **Status**, **Ägare**, **Kategori**, **Prioritet** och andra egenskaper.
 
     <Note>
-    Ärendetypen påverkar standardvärden och tillgängliga statusar och prioriteringar. Om en [regel för relation][20] kräver att en parent har angetts för den här typen måste du ange ett parent-ärende innan du sparar.
+    Ärendetypen påverkar standardvärden och tillgängliga statusar och prioriteringar. Se [ordning för standardstatus][21]. Om en [regel för relation][20] kräver att en parent har angetts för den här typen måste du ange ett parent-ärende innan du sparar.
     </Note>
 
 1. Gå till panelen **Meddelanden** för att skriva meddelandet för ärendet:
@@ -67,6 +67,8 @@ På ärendeskärmen öppnas ett nytt ärende på en flik med namnet **Nytt ären
 * Fliken kan inte nålas fast. När du stänger den ombeds du bekräfta.
 
 * Om du läser in sidan på nytt återställs fliken med meddelandet du skrev. De värden du angav i ärendets fält återställs inte.
+
+* Statusen anges när fliken öppnas. Om du ändrar kategori eller ärendetyp ändras den inte. Om standardstatusen är uppskjuten visas dess uppskjutningsalternativ, till exempel **1 vecka**, innan du sparar.
 
 * Om du vill förkasta ärendet klickar du på **Avbryt**. Du ombeds bekräfta, och därefter stängs fliken.
 
@@ -179,5 +181,6 @@ Funktionen autospara aktiveras som standard när du visar och redigerar ärenden
 [11]: ../../learn/getting-started/edit-email-signature
 [16]: ../../custom-objects/admin/create-extra-field
 [20]: ../admin/relation-rules
+[21]: ../admin/status/index#default-status
 [img1]: ../../../media/loc/en/request/create-request.png
 [img2]: ../../../media/loc/en/request/request-screen-new-request.png

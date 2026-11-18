@@ -4,8 +4,8 @@ title: Dela meddelande
 description: Dela meddelande i ett ärende i SuperOffice Service.
 keywords: ['dela meddelande', 'ärende', 'meddelanden', 'splittra meddelande']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -39,7 +39,7 @@ Om ett meddelande innehåller två frågor som bör hanteras separat, kan du del
     * **Externt**: Välj detta om kunden ska ha tillgång till ärendet via ett kundcenter.
     * **Internt**: Välj detta om kunden inte ska ha tillgång till ärendet.
 
-1. I listrutan **Status** väljer du något av följande alternativ:
+1. Listrutan **Status** visar det ursprungliga ärendets status och uppskjutningsdatum. Standardstatus för nya ärenden tillämpas inte. Om du vill ändra statusen väljer du något av följande alternativ:
     * **Aktivt**: Välj detta om ärendet är under arbete.
     * **Avslutat**: Välj detta om ärendet är slutfört.
     * **Uppskjutet**: För att skjuta upp ärendehanteringen markerar du detta alternativ och anger ett datum i datumfältet till höger. På detta datum visas ärendet som **Aktivt** igen.

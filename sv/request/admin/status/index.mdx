@@ -4,8 +4,8 @@ title: Ärendestatus
 description: Ärendestatus
 keywords: ['ärendestatus', 'fliken Ärendestatus', 'ärende', 'status']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: serviceessentials
 tier: starter
@@ -34,3 +34,30 @@ Du kan exempelvis skapa en ny status kallad "Väntar på svar" som en mer detalj
 | Standard | Anger om detta är en standardstatus för intern status. |
 | Köstatus | Anger om ärenden med denna status ska placeras i kön. Aktuellt om du använder funktionen **Hämta nästa ärende i kön**. |
 | Spåra tid som | Används för att rapportera hur mycket tid som går åt i olika faser av ärendehanteringen. Systemet beräknar den använda tiden i förhållande till både definierade "öppettider" och hela 24-timmarsperioden. Välj mellan: i kö och väntar på handläggning; i intern beslutsfas; i extern beslutsfas |
+
+## Standardstatus för nya ärenden och svar {#default-status}
+
+När du skapar ett ärende anges dess status i den här ordningen:
+
+1. Kategorins **Standardstatus för nytt ärende**, om ärendetypen tillåter den statusen.
+1. Ärendetypens **Standardstatus**.
+1. Din inställning **Standardstatus i nytt ärende**, om ärendetypen tillåter den statusen.
+1. Om inget av detta gäller sparas ärendet som **Aktivt**.
+
+Statusen anges när skärmen **Nytt ärende** öppnas. Om du ändrar kategori eller ärendetyp efteråt ändras den inte.
+
+När du svarar på ett ärende anges statusen i den här ordningen:
+
+1. Kategorins **Standardstatus för nytt meddelande**, om ärendetypen tillåter den statusen.
+1. Din inställning **Standardstatus i nytt meddelande**, om ärendetypen tillåter den statusen.
+1. Om inget av detta gäller ändras inte statusen.
+
+En ärendetyps **Tillgängliga statusar** begränsar standardvärdena. En standardstatus från en kategori eller inställning som inte finns i listan hoppas över.
+
+En standardstatus kan vara en uppskjuten status med ett uppskjutningsalternativ, till exempel **1 vecka**. Alternativet kommer från samma inställning som statusen, och skärmen **Nytt ärende** visar det innan du sparar.
+
+<Note>
+Delade ärenden och delade meddelanden behåller det ursprungliga ärendets status och uppskjutningsdatum. Ärenden som skapas från inkommande e-post får statusen **Aktivt**, eller **Avslutat** om ett [e-postfilter][4] har **Stäng ärende** markerat. Standardstatus används inte i dessa fall.
+</Note>
+
+[4]: /sv/email/admin/mailbox/create-email-filter

@@ -4,8 +4,8 @@ title: Ärendetyp
 description: Lär dig mer om ärendetyper i SuperOffice Service.
 keywords: ['ärendetyp', 'ärendetyper', 'fliken Ärendetyper', 'typ', 'ärende']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: servicepremium
 tier: growth
@@ -51,8 +51,8 @@ Finansteamet använder ärenden för att hantera inkommande fakturakrav och krä
 | Beskrivning | Förklarar syftet med ärendetypen.|
 | Ikon | Används som en visuell etikett för att visa typen. Välj från en uppsättning fördefinierade alternativ. Standard: biljettikon.|
 | Använd som standard | Indikerar om detta är standardtypen för nya ärender. |
-| Tillgängliga statusar | En delmängd av ärendestatusar som är relevanta för denna typ. Används för att filtrera rullgardinslistan i användargränssnittet. Tomt fält innebär att alla statusar är tillgängliga. |
-| Standardstatus | Den [statusen][4] som ställs in när en agent skapar ett nytt ärende. Har företräde framför andra preferenser. Obligatorisk om **Tillgängliga statusar** är inställda. |
+| Tillgängliga statusar | En delmängd av ärendestatusar som är relevanta för denna typ. Används för att filtrera rullgardinslistan i användargränssnittet och för att begränsa vilka standardstatusar som gäller. En standardstatus från en kategori eller inställning som inte finns i den här listan hoppas över. Tomt fält innebär att alla statusar är tillgängliga. |
+| Standardstatus | Den [statusen][4] som ställs in när en agent skapar ett nytt ärende av denna typ, om inte kategorins standardstatus används. Se [ordning för standardstatus][6]. Obligatorisk om **Tillgängliga statusar** är inställda. |
 | Tillgängliga prioriteringar | En delmängd av ärendeprioriteringar som är relevanta för denna typ. Används för att filtrera rullgardinslistan i användargränssnittet. Tomt fält innebär att alla prioriteringar är tillgängliga. |
 | Standardprioritet | Den [prioriteten][3] som ställs in när en agent skapar ett nytt ärende. Har företräde framför andra preferenser. Obligatorisk om **Tillgängliga prioriteringar** är inställda. |
 | Svarsmall | Den [svarsmall][5] som kommer att användas när en agent svarar på entt ärende av denna typ. |
@@ -60,3 +60,4 @@ Finansteamet använder ärenden för att hantera inkommande fakturakrav och krä
 [3]: /sv/request/admin/priority/index
 [4]: /sv/request/admin/status/index
 [5]: /sv/knowledge-base/learn/reply-templates/index
+[6]: /sv/request/admin/status/index#default-status
