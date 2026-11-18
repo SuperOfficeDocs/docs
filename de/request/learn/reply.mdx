@@ -4,8 +4,8 @@ title: Einer Person antworten
 description: In dieser Anleitung lernen Sie, wie Sie alle eingehenden Anfragen in SuperOffice beantworten können.
 keywords: ['Anfrage', 'Antwortvorlage', 'Antwort', 'Antworten', 'Kommentar', 'intern', 'extern']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -58,6 +58,10 @@ Legen Sie die *Anzahl der erweiterten Nachrichten*-Einstellung fest (unter <i cl
     ![Erstes Bild: Nachrichtenvorschau mit sichtbarem Absendernamen. Zweites Bild: Dieselbe Nachrichtenvorschau mit entferntem Absendernamen, was eine Anonymisierung anzeigt. -screenshot][img7]
 
 Wenn Sie in der Anfrageansicht zu einer anderen Registerkarte wechseln, bevor Sie die Nachricht senden, bleibt Ihre ungesendete Antwort erhalten. Die Registerkarte zeigt einen Stift (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) an, bis Sie die Antwort senden oder verwerfen.
+
+### Status beim Antworten {#reply-status}
+
+Der Status wird aus dem **Standardstatus für neue Nachrichten** der Kategorie übernommen, sofern der Anfragetyp diesen Status zulässt. Andernfalls wird Ihre Einstellung **Standardstatus in neuer Nachricht** verwendet, sofern der Anfragetyp diesen Status zulässt. Wenn keines davon zutrifft, bleibt der Status unverändert. Siehe [Reihenfolge der Standardstatus][13].
 
 ## Schnellantwort aus einer Vorschau {#quick-reply}
 
@@ -186,6 +190,7 @@ Der erfasste Zeitaufwand wird in jeder Mitteilung angezeigt, und die Bearbeitung
 [10]: ./forward
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
+[13]: ../admin/status/index#default-status
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png

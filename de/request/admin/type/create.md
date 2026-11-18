@@ -4,8 +4,8 @@ title: Anfragetyp erstellen
 description: Anfragetyp erstellen
 keywords: ['Anfragetyp erstellen', 'neuer Anfragetyp', 'Anfragetyp hinzufügen', 'Anfragetyp', 'Anfragetypliste', 'Typ', 'Anfrage']
 author: Bergfrid Dias
-date: 02.11.2025
-so_version: 10.5.2
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: servicepremium
 tier: growth
@@ -40,7 +40,7 @@ language: de
 
     ![Einstellungen und Verwaltung, Anfragetypen Status/Priorität -screenshot][img3]
 
-1. Optional: Wählen Sie einen Standardstatus und/oder eine Standardpriorität aus, die verwendet wird, wenn ein Agent eine Anfrage dieses Typs erstellt. (Obligatorisch, falls Verfügbarkeiten festgelegt wurden.) Diese Einstellung hat Vorrang vor anderen Präferenzen.
+1. Optional: Wählen Sie einen Standardstatus und/oder eine Standardpriorität aus, die verwendet wird, wenn ein Agent eine Anfrage dieses Typs erstellt. (Obligatorisch, falls Verfügbarkeiten festgelegt wurden.) Die Standardpriorität hat Vorrang vor anderen Präferenzen. Der Standardstatus wird verwendet, es sei denn, der Standardstatus der Kategorie ist für diesen Typ zulässig. Siehe [Reihenfolge der Standardstatus][6].
 
 1. Optional: Wählen Sie eine [Antwortvorlage][5] aus, die verwendet wird, wenn ein Agent auf eine Anfrage dieses Typs antwortet.
 
@@ -51,6 +51,7 @@ language: de
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
+[6]: ../status/index#default-status
 
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img2]: ../../../../media/loc/en/request/request-type-settings.png

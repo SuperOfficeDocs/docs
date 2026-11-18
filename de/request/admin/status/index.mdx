@@ -4,8 +4,8 @@ title: Anfragestatus
 description: Anfragestatus
 keywords: ['Anfragestatus', 'Anfragestatus-Registerkarte', 'Anfrage', 'Status']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: serviceessentials
 tier: starter
@@ -31,6 +31,31 @@ Sie könnten beispielsweise den neuen Status "Warten auf Antwort" als Variante z
 | Warteschlangenstatus | Gibt an, ob Anfragen mit diesem Status in die Warteschlange gestellt werden sollen. Relevant, wenn Sie die Funktion **Nächste Anfrage in der Warteschlange anzeigen** verwenden. |
 | Zeit nachverfolgen als | Wird verwendet, um den Zeitverbrauch in mehreren Stufen der Anfragenverwaltung zu melden. Das System berechnet den Zeitverbrauch bezüglich der definierten "Geschäftszeiten" sowie des gesamten 24-Stunden-Zeitraums. Wählen Sie aus: in der Warteschlange und in Erwartung der Verarbeitung; in der Phase der internen Entscheidung; in der Phase der externen Entscheidung |
 
+## Standardstatus für neue Anfragen und Antworten {#default-status}
+
+Wenn Sie eine Anfrage erstellen, wird ihr Status in dieser Reihenfolge festgelegt:
+
+1. Der **Standardstatus für neue Anfragen** der Kategorie, sofern der Anfragetyp diesen Status zulässt.
+1. Der **Standard-Status** des Anfragetyps.
+1. Ihre Einstellung **Standardstatus in neuer Anfrage**, sofern der Anfragetyp diesen Status zulässt.
+1. Wenn nichts davon zutrifft, wird die Anfrage mit dem Status **Offen** gespeichert.
+
+Der Status wird festgelegt, wenn die Registerkarte **Neue Anfrage** geöffnet wird. Wenn Sie danach die Kategorie oder den Anfragetyp ändern, ändert sich der Status nicht.
+
+Wenn Sie auf eine Anfrage antworten, wird der Status in dieser Reihenfolge festgelegt:
+
+1. Der **Standardstatus für neue Nachrichten** der Kategorie, sofern der Anfragetyp diesen Status zulässt.
+1. Ihre Einstellung **Standardstatus in neuer Nachricht**, sofern der Anfragetyp diesen Status zulässt.
+1. Wenn keines davon zutrifft, bleibt der Status unverändert.
+
+Die Liste **Verfügbare Statuskategorien** eines Anfragetyps schränkt die Standardstatus ein. Ein Standardstatus einer Kategorie oder Einstellung, der nicht in dieser Liste enthalten ist, wird übersprungen.
+
+Ein Standardstatus kann ein Status sein, der die Anfrage auf Termin legt, mit einer Terminoption wie **1 Woche**. Die Option stammt aus derselben Einstellung wie der Status, und die Registerkarte **Neue Anfrage** zeigt sie an, bevor Sie speichern.
+
+<Note>
+Aufgeteilte Anfragen und aufgeteilte Nachrichten behalten den Status und das Termindatum der ursprünglichen Anfrage. Anfragen, die aus eingehenden E-Mails erstellt werden, erhalten den Status **Offen**, oder **Geschlossen**, wenn bei einem [E-Mail-Filter][4] **Anfrage abschließen** aktiviert ist. In diesen Fällen werden keine Standardstatus verwendet.
+</Note>
+
 ## Was möchten Sie als Nächstes tun?
 
 * [Anfragestatus erstellen][1]
@@ -40,3 +65,4 @@ Sie könnten beispielsweise den neuen Status "Warten auf Antwort" als Variante z
 [1]: /de/request/admin/status/create
 [2]: /de/request/admin/status/delete
 [3]: /de/request/admin/next-in-queue
+[4]: /de/email/admin/mailbox/create-email-filter

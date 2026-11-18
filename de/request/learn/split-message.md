@@ -4,8 +4,8 @@ title: Nachricht aufteilen
 description: Nachricht aufteilen
 keywords: ['Anfrage', 'Nachricht aufteilen', 'neue Anfrage erstellen', 'Nachrichten trennen']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -45,7 +45,7 @@ Wenn eine Nachricht zwei verschiedene Anliegen enthält, die getrennt bearbeitet
     * **Extern**: Der Kunde kann die Anfrage über das Kundenzentrum einsehen.
     * **Intern**: Der Kunde hat keinen Zugriff auf die Anfrage.
 
-1. Wählen Sie im Feld **Status** eine der folgenden Optionen:
+1. Das Feld **Status** zeigt den Status und das Termindatum der ursprünglichen Anfrage. Standardstatus für neue Anfragen werden nicht angewendet. Um den Status zu ändern, wählen Sie eine der folgenden Optionen:
     * **Offen**: Die Anfrage wird aktiv bearbeitet.
     * **Geschlossen**: Die Anfrage ist abgeschlossen.
     * **Auf Termin gelegt**: Die Bearbeitung der Anfrage wird aufgeschoben. Wählen Sie ein Datum aus, an dem die Anfrage automatisch auf **Offen** zurückgesetzt wird.
