@@ -4,8 +4,8 @@ title: Een verzoek maken
 description: Een verzoek maken
 keywords: ['verzoek aanmaken', 'verzoek toevoegen', 'nieuw verzoek', 'verzoek eigenschappen', 'verzoekdetails', 'bericht']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -39,7 +39,7 @@ Een verzoek kan in het systeem worden ontvangen via een e-mail van de klant, of 
     * Selecteer **Verzoektype**, **Status**, **Eigenaar**, **Categorie**, **Prioriteit** en andere eigenschappen.
 
     <Note>
-    Het verzoektype bepaalt de standaardwaarden en beschikbare statussen en prioriteiten. Als een [relatieregel][20] vereist dat er een bovenliggend verzoek is ingesteld voor dit type, moet u een bovenliggend verzoek opgeven voordat u opslaat.
+    Het verzoektype bepaalt de standaardwaarden en beschikbare statussen en prioriteiten. Zie [volgorde van standaardstatussen][21]. Als een [relatieregel][20] vereist dat er een bovenliggend verzoek is ingesteld voor dit type, moet u een bovenliggend verzoek opgeven voordat u opslaat.
     </Note>
 
 1. Ga naar het tabblad **Berichten** om het verzoekbericht op te stellen:
@@ -67,6 +67,8 @@ Op het Verzoekscherm wordt een nieuw verzoek geopend in een tabblad **Nieuw verz
 * Het tabblad kan niet worden vastgemaakt. Wanneer u het sluit, wordt u om bevestiging gevraagd.
 
 * Als u de pagina opnieuw laadt, wordt het tabblad hersteld met het bericht dat u aan het schrijven was. De waarden die u in de verzoekvelden hebt ingevoerd, worden niet hersteld.
+
+* De status wordt ingesteld wanneer het tabblad wordt geopend. Als u de categorie of het verzoektype wijzigt, verandert de status niet. Als de standaardstatus uitgesteld is, wordt de uitsteloptie ervan, zoals **1 week**, getoond voordat u opslaat.
 
 * Klik op **Annuleren** om het verzoek te verwerpen. U wordt om bevestiging gevraagd en daarna sluit het tabblad.
 
@@ -179,5 +181,6 @@ De functie Automatisch opslaan is standaard geactiveerd wanneer u verzoeken beki
 [11]: ../../learn/getting-started/edit-email-signature
 [16]: ../../custom-objects/admin/create-extra-field
 [20]: ../admin/relation-rules
+[21]: ../admin/status/index#default-status
 [img1]: ../../../media/loc/en/request/create-request.png
 [img2]: ../../../media/loc/en/request/request-screen-new-request.png

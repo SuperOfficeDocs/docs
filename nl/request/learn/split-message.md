@@ -4,8 +4,8 @@ title: Bericht opsplitsen
 description: Leer hoe u een bericht in een verzoek kunt opsplitsen in SuperOffice.
 keywords: ['verzoek', 'bericht', 'opsplitsen']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 tier: starter
 audience: person
@@ -40,7 +40,7 @@ Als een bericht twee kwesties bevat die afzonderlijk moeten worden behandeld, ku
     * **Extern**: als de klant toegang moet hebben tot het verzoek via het klantencentrum.
     * **Intern**: als de klant geen toegang tot het verzoek mag hebben.
 
-1. Selecteer in de keuzelijst **Status** een van de volgende opties:
+1. De keuzelijst **Status** toont de status en de uitsteldatum van het oorspronkelijke verzoek. Standaardstatussen voor nieuwe verzoeken worden niet toegepast. Selecteer een van de volgende opties om de status te wijzigen:
     * **Openen**: selecteer deze optie als het verzoek actief is.
     * **Gesloten**: Selecteer deze optie als het verzoek voltooid is.
     * **Uitgesteld**: Om de afhandeling van het verzoek uit te stellen, selecteert u deze optie en geeft u in het datumveld rechts van dit veld een datum op. De status van het verzoek wordt op de opgegeven datum teruggezet naar **Openstaand**.
