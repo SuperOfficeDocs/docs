@@ -18,6 +18,7 @@ related:
   - /de/request/admin/type/create
   - /de/request/admin/type/delete
   - /de/request/admin/relation-rules
+  - Reihenfolge der Standardstatus: /de/request/admin/status/index#default-status
 language: de
 ---
 
@@ -52,7 +53,7 @@ Das Finanzteam nutzt Anfragen zur Verwaltung eingehender Rechnungsansprüche und
 | Symbol | Wird als visuelles Etikett verwendet, um den Typ anzuzeigen. Auswahl aus einem Satz vordefinierter Optionen. Standard: Ticket-Symbol.|
 | Als Standard verwenden | Gibt an, ob dies der Standardtyp für neue Anfragen ist. |
 | Verfügbare Statuskategorien | Eine Teilmenge von Anfragestatusen, die für diesen Typ relevant sind. Wird verwendet, um die Dropdown-Liste in der Benutzeroberfläche zu filtern und um festzulegen, welche Standardstatus gelten. Ein Standardstatus einer Kategorie oder Einstellung, der nicht in dieser Liste enthalten ist, wird übersprungen. Ein leeres Feld bedeutet, dass alle Statuskategorien verfügbar sind. |
-| Standard-Status | Der [Status][4], der festgelegt wird, wenn ein Agent eine neue Anfrage dieses Typs erstellt, es sei denn, der Standardstatus der Kategorie wird verwendet. Siehe [Reihenfolge der Standardstatus][7]. Erforderlich, wenn **Verfügbare Statuskategorien** festgelegt sind. |
+| Standard-Status | Der [Status][4], der festgelegt wird, wenn ein Agent eine neue Anfrage dieses Typs erstellt, es sei denn, der Standardstatus der Kategorie wird verwendet. Erforderlich, wenn **Verfügbare Statuskategorien** festgelegt sind. |
 | Verfügbare Prioritäten | Eine Teilmenge von Anfrageprioritäten, die für diesen Typ relevant sind. Wird verwendet, um die Dropdown-Liste im Benutzeroberfläche zu filtern. Ein leeres Feld bedeutet, dass alle Prioritäten verfügbar sind. |
 | Standardpriorität | Die [Priorität][3], die festgelegt wird, wenn ein Agent eine neue Anfrage erstellt. Hat Vorrang vor anderen Präferenzen. Erforderlich, wenn **Verfügbare Prioritäten** festgelegt sind. |
 | Antwortvorlage | Die [Antwortvorlage][5], die verwendet wird, wenn ein Agent auf eine Anfrage dieses Typs antwortet. |
@@ -69,4 +70,3 @@ Das Finanzteam nutzt Anfragen zur Verwaltung eingehender Rechnungsansprüche und
 [3]: /de/request/admin/priority/index
 [4]: /de/request/admin/status/index
 [5]: /de/knowledge-base/learn/reply-templates/index
-[7]: /de/request/admin/status/index#default-status

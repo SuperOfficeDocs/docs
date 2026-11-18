@@ -18,6 +18,7 @@ related:
   - /no/request/admin/type/create
   - /no/request/admin/type/delete
   - /no/request/admin/relation-rules
+  - Rekkefølge for standardstatus: /no/request/admin/status/index#default-status
 language: no
 ---
 
@@ -52,7 +53,7 @@ Hovedfordelen med sakstyper er effektiv kundestøtte. En spesifikk sakstype tilp
 | Ikon | Visuell etikett for sakstypen. Velg fra forhåndsdefinerte alternativer. Standard: billettikon. |
 | Bruk som standard | Angir om denne sakstypen skal være standard for nye saker. |
 | Tilgjengelige statuser | Begrens listen over saksstatuser som er relevante for denne typen. Brukes til å filtrere nedtrekkslisten i brukergrensesnittet og til å begrense hvilke standardstatuser som gjelder. En standardstatus fra en kategori eller preferanse som ikke står i denne listen, hoppes over. Tomt felt betyr at alle statuser er tilgjengelige. |
-| Standardstatus | Den [statusen][4] som settes når en agent oppretter en ny sak av denne typen, med mindre kategoriens standardstatus brukes. Se [rekkefølge for standardstatus][6]. Påkrevd hvis **Tilgjengelige statuser** er angitt. |
+| Standardstatus | Den [statusen][4] som settes når en agent oppretter en ny sak av denne typen, med mindre kategoriens standardstatus brukes. Påkrevd hvis **Tilgjengelige statuser** er angitt. |
 | Tilgjengelige prioriteter | Begrens listen over saksprioriteter som er relevante for denne typen. Tomt felt betyr at alle prioriteringer er tilgjengelige. |
 | Standard prioritet | Den [prioriteten][3] som settes når en agent oppretter en ny sak. Påkrevd hvis **Tilgjengelige prioriteter** er angitt. |
 | Svarmal | Den [svarmalen][5] som brukes når en agent svarer på en sak av denne typen. |
@@ -60,4 +61,3 @@ Hovedfordelen med sakstyper er effektiv kundestøtte. En spesifikk sakstype tilp
 [3]: /no/request/admin/priority/index
 [4]: /no/request/admin/status/index
 [5]: /no/knowledge-base/learn/reply-templates/index
-[6]: /no/request/admin/status/index#default-status

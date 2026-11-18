@@ -18,6 +18,7 @@ related:
   - /en/request/admin/type/create
   - /en/request/admin/type/delete
   - /en/request/admin/relation-rules
+  - Default status order: /en/request/admin/status/index#default-status
 language: en
 ---
 
@@ -52,7 +53,7 @@ The finance team utilizes requests to manage incoming invoice claims, necessitat
 | Icon | Used as a visual label to show the type. Choose from a set of pre-defined options. Default: ticket icon.|
 | Use as default | Indicates if this is the default type of new requests. |
 | Available statuses | A subset of request statuses that are relevant for this type. Used to filter the dropdown list in the UI and to limit which default statuses apply. A category or preference default that is not in this list is skipped. Empty field means all statuses are available. |
-| Default status | The [status][4] set when an agent creates a new request of this type, unless the category's default status is used. See [default status order][6]. Mandatory if **Available statuses** is set. |
+| Default status | The [status][4] set when an agent creates a new request of this type, unless the category's default status is used. Mandatory if **Available statuses** is set. |
 | Available priorities | A subset of request priorities that are relevant for this type. Used to filter the dropdown list in the UI. Empty field means all priorities are available. |
 | Default priority | The [priority][3] set when an agent creates a new request. Takes precedence over other preferences. Mandatory if **Available priorities** is set. |
 | Reply template | The [reply template][5] that will be used when an agent replies to a request of this type. |
@@ -60,4 +61,3 @@ The finance team utilizes requests to manage incoming invoice claims, necessitat
 [3]: /en/request/admin/priority/index
 [4]: /en/request/admin/status/index
 [5]: /en/knowledge-base/learn/reply-templates/index
-[6]: /en/request/admin/status/index#default-status
