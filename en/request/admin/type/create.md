@@ -14,7 +14,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /en/request/learn/type/create
 userflow_index: true
 related:
-  - Default status order: /en/request/admin/status/index#default-status
+  - Default status order: /en/request/admin/status/index#default
 language: en
 ---
 

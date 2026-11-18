@@ -34,7 +34,7 @@ U kunt bijvoorbeeld een nieuwe status maken met de naam 'Wacht op antwoord', als
 | Wachtrijstatus | Geeft aan of verzoeken met deze status in de wachtrij geplaatst moeten worden. Dit is relevant als u de functie **Volgende in wachtrij ophalen** gebruikt. |
 | Tijd traceren als | Wordt gebruikt om tijdsgebruik in verschillende fasen van het verzoekbeheer te rapporteren. Het systeem berekent de tijd zowel in relatie tot bepaalde 'openingstijden' en de gehele periode van 24 uur. Kies uit: in de wachtrij en wachtend op verwerking, in de interne beslissingsfase, in de externe beslissingsfase |
 
-## Standaardstatus voor nieuwe verzoeken en antwoorden {#default-status}
+## Standaardstatus voor nieuwe verzoeken en antwoorden {#default}
 
 Wanneer u een verzoek maakt, wordt de status in deze volgorde ingesteld:
 
@@ -43,7 +43,7 @@ Wanneer u een verzoek maakt, wordt de status in deze volgorde ingesteld:
 1. Uw voorkeur **Standaardstatus van nieuw verzoek**, als het verzoektype die status toestaat.
 1. Als geen van deze van toepassing is, wordt het verzoek opgeslagen als **Openstaand**.
 
-De status wordt ingesteld wanneer het scherm **Nieuw verzoek** wordt geopend. Als u daarna de categorie of het verzoektype wijzigt, verandert de status niet.
+De status wordt ingesteld wanneer het tabblad **Nieuw verzoek** wordt geopend. Als u daarna de categorie of het verzoektype wijzigt, verandert de status niet.
 
 Wanneer u een verzoek beantwoordt, wordt de status in deze volgorde ingesteld:
 
@@ -53,10 +53,12 @@ Wanneer u een verzoek beantwoordt, wordt de status in deze volgorde ingesteld:
 
 De **Beschikbare statussen** van een verzoektype beperken de standaardwaarden. Een standaardwaarde van een categorie of voorkeur die niet in de lijst staat, wordt overgeslagen.
 
-Een standaardstatus kan een uitgestelde status zijn met een uitsteloptie, zoals **1 week**. De optie komt uit dezelfde instelling als de status, en het scherm **Nieuw verzoek** toont deze voordat u opslaat.
+Een standaardstatus kan een uitgestelde status zijn met een uitsteloptie, zoals **1 week**. De optie komt uit dezelfde instelling als de status, en het tabblad **Nieuw verzoek** toont deze voordat u opslaat.
 
 <Note>
-Opgesplitste verzoeken en opgesplitste berichten behouden de status en de uitsteldatum van het oorspronkelijke verzoek. Verzoeken die vanuit inkomende e-mail worden gemaakt, krijgen de status **Openstaand**. Als **Verzoek sluiten** is ingeschakeld in een [e-mailfilter][4], krijgen ze in plaats daarvan de status **Gesloten**. Standaardstatussen worden in deze gevallen niet gebruikt.
+[Opgesplitste verzoeken][5] en [opgesplitste berichten][6] behouden de status en de uitsteldatum van het oorspronkelijke verzoek. Verzoeken die vanuit inkomende e-mail worden gemaakt, krijgen de status **Openstaand**. Als **Verzoek sluiten** is ingeschakeld in een [e-mailfilter][4], krijgen ze in plaats daarvan de status **Gesloten**. Standaardstatussen worden in deze gevallen niet gebruikt.
 </Note>
 
 [4]: /nl/email/admin/mailbox/create-email-filter
+[5]: /nl/request/learn/split-request
+[6]: /nl/request/learn/split-message

@@ -14,7 +14,7 @@ audience_tooltip: Einstellungen und Verwaltung
 redirect_from: /de/request/learn/type/create
 userflow_index: true
 related:
-  - Reihenfolge der Standardstatus: /de/request/admin/status/index#default-status
+  - Reihenfolge der Standardstatus: /de/request/admin/status/index#default
 language: de
 ---
 

@@ -31,7 +31,7 @@ For example, you can create a new status called "Waiting for reply" as a more de
 | Queue status | Indicates if requests with this status should be placed in the queue. Relevant if you use the **Get next request in queue** function. |
 | Track time as | Used to report time usage in various phases of request management. The system calculates time used both in relation to defined "opening hours" and the whole 24-hour period. Choose from: in queue and awaiting processing; at internal decision stage; at external decision stage |
 
-## Default status for new requests and replies {#default-status}
+## Default status for new requests and replies {#default}
 
 When you create a request, its status is set in this order:
 
@@ -40,7 +40,7 @@ When you create a request, its status is set in this order:
 1. Your preference **Default status in new request**, if the request type allows that status.
 1. If none of these apply, the request is saved as **Open**.
 
-The status is set when the **New request** screen opens. Changing the category or request type afterward does not change the status.
+The status is set when the **New request** tab opens. Changing the category or request type afterward does not change the status.
 
 When you reply to a request, the status is set in this order:
 
@@ -50,10 +50,10 @@ When you reply to a request, the status is set in this order:
 
 A request type's **Available statuses** limit the defaults. A category or preference default that is not in the list is skipped.
 
-A default status can be a postponed status with a postpone option, such as **1 week**. The option comes from the same setting as the status, and the **New request** screen shows it before you save.
+A default status can be a postponed status with a postpone option, such as **1 week**. The option comes from the same setting as the status, and the **New request** tab shows it before you save.
 
 <Note>
-Split requests and split messages keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**. If an [email filter][4] has **Close request** checked, they are set to **Closed** instead. Default statuses are not used in these cases.
+[Split requests][5] and [split messages][6] keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**. If an [email filter][4] has **Close request** checked, they are set to **Closed** instead. Default statuses are not used in these cases.
 </Note>
 
 ## What do you want to do now?
@@ -66,3 +66,5 @@ Split requests and split messages keep the status and postpone date of the origi
 [2]: /en/request/admin/status/delete
 [3]: /en/request/admin/next-in-queue
 [4]: /en/email/admin/mailbox/create-email-filter
+[5]: /en/request/learn/split-request
+[6]: /en/request/learn/split-message

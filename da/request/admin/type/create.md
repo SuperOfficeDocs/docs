@@ -14,7 +14,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /da/request/learn/type/create
 userflow_index: true
 related:
-  - Rækkefølge for standardstatus: /da/request/admin/status/index#default-status
+  - Rækkefølge for standardstatus: /da/request/admin/status/index#default
 language: da
 ---
 

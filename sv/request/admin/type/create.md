@@ -14,7 +14,7 @@ audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/request/learn/type/create
 userflow_index: true
 related:
-  - Ordning för standardstatus: /sv/request/admin/status/index#default-status
+  - Ordning för standardstatus: /sv/request/admin/status/index#default
 language: sv
 ---
 

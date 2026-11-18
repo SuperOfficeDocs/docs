@@ -31,7 +31,7 @@ Sie könnten beispielsweise den neuen Status "Warten auf Antwort" als Variante z
 | Warteschlangenstatus | Gibt an, ob Anfragen mit diesem Status in die Warteschlange gestellt werden sollen. Relevant, wenn Sie die Funktion **Nächste Anfrage in der Warteschlange anzeigen** verwenden. |
 | Zeit nachverfolgen als | Wird verwendet, um den Zeitverbrauch in mehreren Stufen der Anfragenverwaltung zu melden. Das System berechnet den Zeitverbrauch bezüglich der definierten "Geschäftszeiten" sowie des gesamten 24-Stunden-Zeitraums. Wählen Sie aus: in der Warteschlange und in Erwartung der Verarbeitung; in der Phase der internen Entscheidung; in der Phase der externen Entscheidung |
 
-## Standardstatus für neue Anfragen und Antworten {#default-status}
+## Standardstatus für neue Anfragen und Antworten {#default}
 
 Wenn Sie eine Anfrage erstellen, wird ihr Status in dieser Reihenfolge festgelegt:
 
@@ -53,7 +53,7 @@ Die Liste **Verfügbare Statuskategorien** eines Anfragetyps schränkt die Stand
 Ein Standardstatus kann ein aufgeschobener Status mit einer Aufschuboption wie **1 Woche** sein. Die Option stammt aus derselben Einstellung wie der Status, und die Registerkarte **Neue Anfrage** zeigt sie an, bevor Sie speichern.
 
 <Note>
-Aufgeteilte Anfragen und aufgeteilte Nachrichten behalten den Status und das Aufschubdatum der ursprünglichen Anfrage. Anfragen, die aus eingehenden E-Mails erstellt werden, erhalten den Status **Geöffnet**. Wenn bei einem [E-Mail-Filter][4] **Anfrage abschließen** aktiviert ist, erhalten sie stattdessen den Status **Geschlossen**. In diesen Fällen werden keine Standardstatus verwendet.
+[Aufgeteilte Anfragen][5] und [aufgeteilte Nachrichten][6] behalten den Status und das Aufschubdatum der ursprünglichen Anfrage. Anfragen, die aus eingehenden E-Mails erstellt werden, erhalten den Status **Geöffnet**. Wenn bei einem [E-Mail-Filter][4] **Anfrage abschließen** aktiviert ist, erhalten sie stattdessen den Status **Geschlossen**. In diesen Fällen werden keine Standardstatus verwendet.
 </Note>
 
 ## Was möchten Sie als Nächstes tun?
@@ -66,3 +66,5 @@ Aufgeteilte Anfragen und aufgeteilte Nachrichten behalten den Status und das Auf
 [2]: /de/request/admin/status/delete
 [3]: /de/request/admin/next-in-queue
 [4]: /de/email/admin/mailbox/create-email-filter
+[5]: /de/request/learn/split-request
+[6]: /de/request/learn/split-message

@@ -13,7 +13,7 @@ audience_tooltip: Settings and maintenance
 redirect_from: /nl/request/learn/type/create
 userflow_index: true
 related:
-  - Volgorde van standaardstatussen: /nl/request/admin/status/index#default-status
+  - Volgorde van standaardstatussen: /nl/request/admin/status/index#default
 language: nl
 ---
 
