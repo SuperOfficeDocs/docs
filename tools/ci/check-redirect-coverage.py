@@ -94,6 +94,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.page_history import swap_md_extension  # noqa: E402
 from lib.repo_files import file_path_to_url  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -134,15 +135,6 @@ def is_in_scope(rel_path):
     return not rel_path.startswith(EXCLUDED_PREFIXES)
 
 
-
-
-def swap_md_extension(rel_path):
-    """`foo.md` -> `foo.mdx` and `foo.mdx` -> `foo.md`; None for anything else."""
-    if rel_path.endswith(".mdx"):
-        return rel_path[:-1]
-    if rel_path.endswith(".md"):
-        return rel_path + "x"
-    return None
 
 
 def is_extension_only_change(old_path, new_path):
