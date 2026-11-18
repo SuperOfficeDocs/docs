@@ -39,8 +39,8 @@ For example, you can create a new status called "Waiting for reply" as a more de
 
 When you create a request, its status is set in this order:
 
-1. The category's **Default status for new request**, if the request type allows that status.
-1. The request type's **Default status**.
+1. The [category's][1] **Default status for new request**, if the request type allows that status.
+1. The [request type's][2] **Default status**.
 1. Your preference **Default status in new request**, if the request type allows that status.
 1. If none of these apply, the request is saved as **Open**.
 
@@ -57,9 +57,11 @@ A request type's **Available statuses** limit the defaults. A category or prefer
 A default status can be a postponed status with a postpone option, such as **1 week**. The option comes from the same setting as the status, and the **New request** tab shows it before you save.
 
 <Note>
-[Split requests][2] and [split messages][3] keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**. If an [email filter][1] has **Close request** checked, they are set to **Closed** instead. Default statuses are not used in these cases.
+[Split requests][4] and [split messages][5] keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**. If an [email filter][3] has **Close request** checked, they are set to **Closed** instead. Default statuses are not used in these cases.
 </Note>
 
-[1]: /en/email/admin/mailbox/create-email-filter
-[2]: /en/request/learn/split-request
-[3]: /en/request/learn/split-message
+[1]: /en/request/admin/category/create
+[2]: /en/request/admin/type/index
+[3]: /en/email/admin/mailbox/create-email-filter
+[4]: /en/request/learn/split-request
+[5]: /en/request/learn/split-message

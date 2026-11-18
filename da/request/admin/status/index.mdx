@@ -38,8 +38,8 @@ Du kan f.eks. oprette en ny status, der hedder "Venter på svar", og som er en m
 
 Når du opretter en sag, sættes dens status i denne rækkefølge:
 
-1. Kategoriens **Standardstatus for ny sag**, hvis sagstypen tillader denne status.
-1. Sagstypens **Standardstatus**.
+1. [Kategoriens][1] **Standardstatus for ny sag**, hvis sagstypen tillader denne status.
+1. [Sagstypens][2] **Standardstatus**.
 1. Din præference **Standardstatus for ny sag**, hvis sagstypen tillader denne status.
 1. Hvis ingen af disse gælder, gemmes sagen som **Aktiv**.
 
@@ -56,9 +56,11 @@ En sagstypes **Tilgængelige statusser** begrænser standardstatusserne. En stan
 En standardstatus kan være en udsat status med et udsættelsesvalg, for eksempel **1 uge**. Valget kommer fra den samme indstilling som statussen, og fanen **Ny sag** viser det, før du gemmer.
 
 <Note>
-[Opdelte sager][2] og [opdelte meddelelser][3] beholder den oprindelige sags status og udsættelsesdato. Sager, der oprettes fra indgående e-mail, får statussen **Aktiv**. Hvis et [e-mail-filter][1] har **Afslut sagen** markeret, får de i stedet statussen **Afsluttet**. Standardstatusser bruges ikke i disse tilfælde.
+[Opdelte sager][4] og [opdelte meddelelser][5] beholder den oprindelige sags status og udsættelsesdato. Sager, der oprettes fra indgående e-mail, får statussen **Aktiv**. Hvis et [e-mail-filter][3] har **Afslut sagen** markeret, får de i stedet statussen **Afsluttet**. Standardstatusser bruges ikke i disse tilfælde.
 </Note>
 
-[1]: /da/email/admin/mailbox/create-email-filter
-[2]: /da/request/learn/split-request
-[3]: /da/request/learn/split-message
+[1]: /da/request/admin/category/create
+[2]: /da/request/admin/type/index
+[3]: /da/email/admin/mailbox/create-email-filter
+[4]: /da/request/learn/split-request
+[5]: /da/request/learn/split-message
