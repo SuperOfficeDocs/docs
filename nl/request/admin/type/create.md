@@ -3,7 +3,7 @@ uid: help-nl-request-type-create
 title: Verzoektype aanmaken
 description: Verzoektype aanmaken
 keywords: ['verzoek', 'type', 'verzoektype', 'tabblad Verzoektypen']
-author: Bergfrid Dias
+author: digitaldiina
 date: 11.18.2026
 so_version: 12.7
 content_type: howto

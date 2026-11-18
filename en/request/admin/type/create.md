@@ -3,7 +3,7 @@ uid: help-en-request-type-create
 title: Create request type
 description: Create request type
 keywords: ['new request type', 'add request type', 'Request types tab']
-author: Bergfrid Dias
+author: digitaldiina
 date: 11.18.2026
 so_version: 12.7
 content_type: howto

@@ -3,7 +3,7 @@ uid: help-de-request-type-create
 title: Anfragetyp erstellen
 description: Anfragetyp erstellen
 keywords: ['Anfragetyp erstellen', 'neuer Anfragetyp', 'Anfragetyp hinzufügen', 'Anfragetyp', 'Anfragetypliste', 'Typ', 'Anfrage']
-author: Bergfrid Dias
+author: digitaldiina
 date: 11.18.2026
 so_version: 12.7
 content_type: howto

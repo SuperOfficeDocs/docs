@@ -3,7 +3,7 @@ uid: help-sv-request-type-create
 title: Skapa ärendetyp
 description: Lär dig hur du skapar en ärendetyp i SuperOffice Service.
 keywords: ['skapa ärendetyp', 'ny ärendetyp', 'lägg till ärendetyp', 'ärendetyp', 'fliken Ärendetyper', 'typ', 'ärende']
-author: Bergfrid Dias
+author: digitaldiina
 date: 11.18.2026
 so_version: 12.7
 content_type: howto

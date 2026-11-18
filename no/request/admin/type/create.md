@@ -3,7 +3,7 @@ uid: help-no-request-type-create
 title: Legg til sakstype
 description: Legg til sakstype
 keywords: ['opprett sakstype', 'ny sakstype', 'legg til sakstype', 'sakstype', 'fanen Sakstyper', 'type', 'sak']
-author: Bergfrid Dias
+author: digitaldiina
 date: 11.18.2026
 so_version: 12.7
 content_type: howto
