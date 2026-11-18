@@ -21,6 +21,8 @@ related:
 language: de
 ---
 
+import SplitStatus from "./snippets/split-status.md";
+
 Wenn eine Anfrage mehrere Anliegen enthält - beispielsweise eine technische Frage und eine Rechnungsanfrage - können Sie die Anfrage aufteilen und daraus eine neue Anfrage erstellen.
 
 <Tip>
@@ -49,10 +51,7 @@ Sie können auch eine [Nachricht aufteilen][1].
     * **Extern**: Der Kunde kann die Anfrage über das Kundenzentrum einsehen.
     * **Intern**: Der Kunde hat keinen Zugriff auf die Anfrage.
 
-1. Das Feld **Status** zeigt den Status und das Aufschubdatum der ursprünglichen Anfrage. Standardstatus für neue Anfragen werden nicht angewendet. Um den Status zu ändern, wählen Sie eine der folgenden Optionen:
-    * **Geöffnet**: Die Anfrage wird aktiv bearbeitet.
-    * **Geschlossen**: Die Anfrage ist abgeschlossen.
-    * **Aufgeschoben**: Die Bearbeitung der Anfrage wird aufgeschoben. Wählen Sie ein Datum, an dem die Anfrage automatisch auf **Geöffnet** zurückgesetzt wird.
+1. <SplitStatus />
 
 1. Wechseln Sie zur Registerkarte **Nachrichten**, wo eine Liste der Nachrichten innerhalb der Anfrage angezeigt wird. Wählen Sie die Nachrichten aus, die in die neue Anfrage verschoben werden sollen.
 

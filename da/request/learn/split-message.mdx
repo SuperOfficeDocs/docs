@@ -18,6 +18,8 @@ related:
 language: da
 ---
 
+import SplitStatus from "./snippets/split-status.md";
+
 Hvis en meddelelse indeholder to problemer, som skal håndteres særskilt, kan du opdele meddelelsen i to og oprette en ny sag med én af meddelelserne. Dette kan være relevant, hvis en meddelelse indeholder både et teknisk spørgsmål og et fakturaspørgsmål, fordi disse to problemer håndteres af forskellige afdelinger.
 
 ## Trin
@@ -41,10 +43,7 @@ Hvis en meddelelse indeholder to problemer, som skal håndteres særskilt, kan d
     * **Ekstern**: Vælg denne, hvis kunden skal have adgang til sagen via kundecenteret.
     * **Intern**: Vælg denne, hvis kunden ikke skal have adgang til sagen.
 
-1. Rullemenuen **Status** viser den oprindelige sags status og udsættelsesdato. Standardstatusser for nye sager anvendes ikke. Vælg en af følgende muligheder for at ændre statussen:
-    * **Aktiv**: Vælg denne, hvis sagen er under behandling.
-    * **Afsluttet**: Vælg denne, hvis sagen er færdigbehandlet.
-    * **Udsat**: Hvis sagsbehandlingen skal udsættes, vælg denne og angiv en dato. På denne dato sættes sagen automatisk til **Aktiv** igen.
+1. <SplitStatus />
 
 1. (Hvis relevant) Under **Vælg de vedhæftninger, der skal flyttes til den nye sag**, skal du vælge de vedhæftninger, der skal flyttes. Disse fjernes fra den oprindelige sag.
 

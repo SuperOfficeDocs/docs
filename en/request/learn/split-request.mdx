@@ -21,6 +21,8 @@ related:
 language: en
 ---
 
+import SplitStatus from "./snippets/split-status.md";
+
 If a single request contains several questions, for example, if the customer first asks a technical question and then uses the opportunity to raise an invoicing query, you can split the request into two.
 
 <Tip>
@@ -47,10 +49,7 @@ You can also [split a message][1].
     * **External**: Select this option if the contact is to have access to the request via SuperOffice Customer Centre.
     * **Internal**: Select this option if the contact is not to have access to the request.
 
-1. The **Status** list box shows the status and postpone date of the original request. Default statuses for new requests are not applied. To change the status, choose one of the following:
-    * **Open**: Select this option if the request is in progress.
-    * **Closed**: Select this option if the request is completed.
-    * **Postponed**: To postpone handling of this request, select this option and specify a date in the date field to the right. On this date, the request is set back to **Open**.
+1. <SplitStatus />
 
 1. Select the **Messages** tab where you will find a list of messages involved in the request. Here you select the messages you want to move to the new request.
 

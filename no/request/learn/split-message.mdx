@@ -18,6 +18,8 @@ related:
 language: no
 ---
 
+import SplitStatus from "./snippets/split-status.md";
+
 Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele meldingen i to og opprette en ny sak med én av meldingene. Dette kan være nyttig hvis en melding inneholder både et teknisk spørsmål og et fakturaspørsmål, fordi disse to spørsmålene håndteres av to ulike avdelinger.
 
 ## Trinn
@@ -41,10 +43,7 @@ Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele 
     * **Ekstern**: Velg dette hvis kunden skal ha tilgang til saken via et kundesenter.
     * **Internt**: Velg dette hvis kunden ikke skal ha tilgang til saken.
 
-1. **Status**-listen viser statusen og utsettelsesdatoen til den opprinnelige saken. Standardstatuser for nye saker brukes ikke. For å endre statusen velger du ett av følgende alternativer:
-    * **Aktiv**: Velg dette hvis saken er under behandling.
-    * **Avsluttet**: Velg dette hvis saken er ferdigbehandlet.
-    * **Utsatt**: Hvis saken må utsettes, velger du dette alternativet og angir en dato i datofeltet til høyre. På denne datoen settes saken tilbake til **Aktiv**.
+1. <SplitStatus />
 
 1. (Hvis aktuelt) Under **Merk av for vedlegg som skal flyttes til den nye saken** velger du vedleggene som skal flyttes til den nye saken. Vedleggene slettes fra den eksisterende saken.
 

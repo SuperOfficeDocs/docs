@@ -18,6 +18,8 @@ related:
 language: en
 ---
 
+import SplitStatus from "./snippets/split-status.md";
+
 If a message contains two issues that should be handled separately, you can split the message in two and create a new request with one of the messages. This can be relevant if a message contains both a technical question and an invoice question, because these two issues are handled by two different departments.
 
 ## Steps
@@ -41,10 +43,7 @@ If a message contains two issues that should be handled separately, you can spli
     * **External**: Select this option if the customer is to have access to the request via a customer centre.
     * **Internal**: Select this option if the customer is not to have access to the request.
 
-1. The **Status** list box shows the status and postpone date of the original request. Default statuses for new requests are not applied. To change the status, choose one of the following:
-    * **Open**: Select this option if the request is in progress.
-    * **Closed**: Select this option if the request is completed.
-    * **Postponed**: To postpone handling of this request, select this option and specify a date in the date field to the right. On this date, the request is set back to **Open**.
+1. <SplitStatus />
 
 1. (if relevant) Under **Choose the attachments to move to the new request** select the attachment(s) that should be moved to the new request. The attachments will be deleted from the existing request.
 

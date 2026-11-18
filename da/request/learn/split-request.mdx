@@ -21,6 +21,8 @@ related:
 language: da
 ---
 
+import SplitStatus from "./snippets/split-status.md";
+
 Hvis en sag indeholder flere spørgsmål, f.eks. hvis kunden først stiller et teknisk spørgsmål og derefter et fakturaspørgsmål, kan du opdele sagen i to.
 
 <Tip>
@@ -47,10 +49,7 @@ Du kan også [dele en meddelelse][1].
     * **Ekstern**: Vælg denne, hvis personen skal have adgang til sagen via SuperOffice Kundecenter.
     * **Intern**: Vælg denne, hvis personen ikke skal have adgang til sagen.
 
-1. Rullemenuen **Status** viser den oprindelige sags status og udsættelsesdato. Standardstatusser for nye sager anvendes ikke. Vælg en af følgende muligheder for at ændre statussen:
-    * **Aktiv**: Vælg denne, hvis sagen er under behandling.
-    * **Afsluttet**: Vælg denne, hvis sagen er færdigbehandlet.
-    * **Udsat**: Hvis sagsbehandlingen skal udsættes, vælg denne og angiv en dato. På denne dato sættes sagen automatisk til **Aktiv** igen.
+1. <SplitStatus />
 
 1. Gå til fanen **Meddelelser**, hvor du finder en liste over meddelelser i sagen. Marker de meddelelser, der skal flyttes til den nye sag.
 
