@@ -34,7 +34,7 @@ Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele 
       * **Ekstern**: Kunden kan se saken via kundesenteret.
       * **Internt**: Kunden har ikke tilgang til saken.
     * **Status**: Viser statusen og utsettelsesdatoen til den opprinnelige saken. Standardstatuser for nye saker brukes ikke. For å endre statusen velger du ett av følgende:
-      * **Åpen**: Saken er under behandling.
+      * **Aktiv**: Saken er under behandling.
       * **Avsluttet**: Saken er ferdigbehandlet.
       * **Utsatt**: Saken settes på vent, med en valgt dato for gjenåpning.
 

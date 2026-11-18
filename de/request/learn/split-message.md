@@ -45,10 +45,10 @@ Wenn eine Nachricht zwei verschiedene Anliegen enthält, die getrennt bearbeitet
     * **Extern**: Der Kunde kann die Anfrage über das Kundenzentrum einsehen.
     * **Intern**: Der Kunde hat keinen Zugriff auf die Anfrage.
 
-1. Das Feld **Status** zeigt den Status und das Termindatum der ursprünglichen Anfrage. Standardstatus für neue Anfragen werden nicht angewendet. Um den Status zu ändern, wählen Sie eine der folgenden Optionen:
-    * **Offen**: Die Anfrage wird aktiv bearbeitet.
+1. Das Feld **Status** zeigt den Status und das Aufschubdatum der ursprünglichen Anfrage. Standardstatus für neue Anfragen werden nicht angewendet. Um den Status zu ändern, wählen Sie eine der folgenden Optionen:
+    * **Geöffnet**: Die Anfrage wird aktiv bearbeitet.
     * **Geschlossen**: Die Anfrage ist abgeschlossen.
-    * **Auf Termin gelegt**: Die Bearbeitung der Anfrage wird aufgeschoben. Wählen Sie ein Datum aus, an dem die Anfrage automatisch auf **Offen** zurückgesetzt wird.
+    * **Aufgeschoben**: Die Bearbeitung der Anfrage wird aufgeschoben. Wählen Sie ein Datum aus, an dem die Anfrage automatisch auf **Geöffnet** zurückgesetzt wird.
 
 1. (Falls relevant) Wählen Sie unter **Anhänge zur neuen Anfrage verschieben** die Anhänge aus, die in die neue Anfrage übernommen werden sollen. Diese werden dann aus der ursprünglichen Anfrage entfernt.
 

@@ -21,11 +21,11 @@ related:
 language: no
 ---
 
-Alle saker som registreres i SuperOffice, har en status, for eksempel **Åpen**, **Avsluttet** eller **Utsatt**. I **Saker**-bildet i **Innstillinger og vedlikehold**, under **Saksstatus**, kan du se hvilke saksstatuser som allerede er definert i systemet, samt opprette nye statuser.
+Alle saker som registreres i SuperOffice, har en status, for eksempel **Aktiv**, **Avsluttet** eller **Utsatt**. I **Saker**-bildet i **Innstillinger og vedlikehold**, under **Saksstatus**, kan du se hvilke saksstatuser som allerede er definert i systemet, samt opprette nye statuser.
 
-Hver saksstatus må knyttes til én av systemets interne statuser, for eksempel **Åpen** eller **Avsluttet**. Hver interne status må ha minst én tilknyttet saksstatus.
+Hver saksstatus må knyttes til én av systemets interne statuser, for eksempel **Aktiv** eller **Avsluttet**. Hver interne status må ha minst én tilknyttet saksstatus.
 
-For eksempel kan du opprette en ny status kalt "Venter på svar" som en mer detaljert variant av enten **Avsluttet** eller **Åpen**, avhengig av hvordan du ønsker at systemet skal behandle og rapportere denne statusen internt. Du kan også knytte egendefinerte regler til slike statuser for å optimalisere forretningsprosessene dine.
+For eksempel kan du opprette en ny status kalt "Venter på svar" som en mer detaljert variant av enten **Avsluttet** eller **Aktiv**, avhengig av hvordan du ønsker at systemet skal behandle og rapportere denne statusen internt. Du kan også knytte egendefinerte regler til slike statuser for å optimalisere forretningsprosessene dine.
 
 ## Innstillinger
 
@@ -44,7 +44,7 @@ Når du oppretter en sak, settes statusen i denne rekkefølgen:
 1. Kategoriens **Standardstatus for ny sak**, hvis sakstypen tillater denne statusen.
 1. Sakstypens **Standardstatus**.
 1. Preferansen din **Standardstatus i ny sak**, hvis sakstypen tillater denne statusen.
-1. Hvis ingen av disse gjelder, lagres saken som **Åpen**.
+1. Hvis ingen av disse gjelder, lagres saken som **Aktiv**.
 
 Statusen settes når skjermbildet **Ny sak** åpnes. Hvis du endrer kategorien eller sakstypen etterpå, endres ikke statusen.
 
@@ -59,7 +59,7 @@ En sakstypes **Tilgjengelige statuser** begrenser standardverdiene. En standards
 En standardstatus kan være en utsatt status med et utsettelsesvalg, for eksempel **1 uke**. Valget kommer fra samme innstilling som statusen, og skjermbildet **Ny sak** viser det før du lagrer.
 
 <Note>
-Delte saker og delte meldinger beholder statusen og utsettelsesdatoen til den opprinnelige saken. Saker som opprettes fra innkommende e-post, får statusen **Åpen**, eller **Avsluttet** hvis et [e-postfilter][4] har **Avslutt sak** avmerket. Standardstatuser brukes ikke i disse tilfellene.
+Delte saker og delte meldinger beholder statusen og utsettelsesdatoen til den opprinnelige saken. Saker som opprettes fra innkommende e-post, får statusen **Aktiv**, eller **Avsluttet** hvis et [e-postfilter][4] har **Avslutt sak** avmerket. Standardstatuser brukes ikke i disse tilfellene.
 </Note>
 
 [4]: /no/email/admin/mailbox/create-email-filter
