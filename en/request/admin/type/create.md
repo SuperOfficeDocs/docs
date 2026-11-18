@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/request/learn/type/create
 userflow_index: true
+related:
+  - Default status order: /en/request/admin/status/index#default-status
 language: en
 ---
 
@@ -40,7 +42,7 @@ language: en
 
     ![Settings and maintenance, Request type status/priority -screenshot][img3]
 
-1. Optionally, select a default status and/or priority to use when an agent creates a request of this type. (Mandatory if you set availability.) The default priority takes precedence over other preferences. The default status is used unless the category's default status is allowed for this type. See [default status order][6].
+1. Optionally, select a default status and/or priority to use when an agent creates a request of this type. (Mandatory if you set availability.) The default priority takes precedence over other preferences. The default status is used unless the category's default status is allowed for this type.
 
 1. Optionally, select a [reply template][5] to use when an agent replies to a request of this type.
 
@@ -49,7 +51,6 @@ language: en
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
-[6]: ../status/index#default-status
 
 [img1]: /media/loc/en/request/add-request-type.png
 [img3]: /media/loc/en/request/edit-request-type-values.png

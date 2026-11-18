@@ -12,6 +12,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/request/learn/type/create
 userflow_index: true
+related:
+  - Volgorde van standaardstatussen: /nl/request/admin/status/index#default-status
 language: nl
 ---
 
@@ -39,7 +41,7 @@ language: nl
 
     ![Instellingen en onderhoud, Verzoektype status/prioriteit -screenshot][img3]
 
-1. Optioneel, selecteer een standaardstatus en/of prioriteit om te gebruiken wanneer een agent een verzoek van dit type maakt. (Verplicht als u beschikbaarheid instelt.) De standaardprioriteit heeft voorrang op andere voorkeuren. De standaardstatus wordt gebruikt, tenzij de standaardstatus van de categorie is toegestaan voor dit type. Zie [volgorde van standaardstatussen][6].
+1. Optioneel, selecteer een standaardstatus en/of prioriteit om te gebruiken wanneer een agent een verzoek van dit type maakt. (Verplicht als u beschikbaarheid instelt.) De standaardprioriteit heeft voorrang op andere voorkeuren. De standaardstatus wordt gebruikt, tenzij de standaardstatus van de categorie is toegestaan voor dit type.
 
 1. Optioneel, selecteer een [antwoordsjabloon][5] om te gebruiken wanneer een agent antwoordt op een verzoek van dit type.
 
@@ -48,7 +50,6 @@ language: nl
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
-[6]: ../status/index#default-status
 
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img3]: ../../../../media/loc/en/request/edit-request-type-values.png

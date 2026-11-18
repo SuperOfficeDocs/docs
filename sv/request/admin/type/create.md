@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/request/learn/type/create
 userflow_index: true
+related:
+  - Ordning för standardstatus: /sv/request/admin/status/index#default-status
 language: sv
 ---
 
@@ -40,7 +42,7 @@ language: sv
 
     ![Inställningar och underhåll, ärendetypens status/prioritet -screenshot][img3]
 
-1. Valfritt: Välj en standardstatus och/eller prioritet att använda när en agent skapar ett ärende av denna typ. *(Obligatoriskt om du har begränsat tillgängliga alternativ.)* Standardprioriteten har företräde framför andra preferenser. Standardstatusen används om inte kategorins standardstatus är tillåten för den här typen. Se [ordning för standardstatus][6].
+1. Valfritt: Välj en standardstatus och/eller prioritet att använda när en agent skapar ett ärende av denna typ. *(Obligatoriskt om du har begränsat tillgängliga alternativ.)* Standardprioriteten har företräde framför andra preferenser. Standardstatusen används om inte kategorins standardstatus är tillåten för den här typen.
 
 1. Valfritt: Välj en [svarsmall][5] som ska användas när en agent svarar på ett ärende av denna typ.
 
@@ -49,7 +51,6 @@ language: sv
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
-[6]: ../status/index#default-status
 
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img3]: ../../../../media/loc/en/request/edit-request-type-values.png

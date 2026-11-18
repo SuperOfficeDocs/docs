@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/request/learn/type/create
 userflow_index: true
+related:
+  - Rækkefølge for standardstatus: /da/request/admin/status/index#default-status
 language: da
 ---
 
@@ -40,7 +42,7 @@ language: da
 
     ![Indstillinger og vedligeholdelse, Sager status/prioritet -screenshot][img3]
 
-1. (Valgfrit) Vælg en standardstatus og/eller prioritet til brug, når en agent opretter en sag af denne type. (Obligatorisk, hvis tilgængelighed er defineret.) Standardprioriteten har forrang over andre præferencer. Standardstatussen bruges, medmindre kategoriens standardstatus er tilladt for denne type. Se [rækkefølge for standardstatus][6].
+1. (Valgfrit) Vælg en standardstatus og/eller prioritet til brug, når en agent opretter en sag af denne type. (Obligatorisk, hvis tilgængelighed er defineret.) Standardprioriteten har forrang over andre præferencer. Standardstatussen bruges, medmindre kategoriens standardstatus er tilladt for denne type.
 
 1. Valgfrit, vælg en [svarskabelon][5] til brug, når en agent svarer på en sag af denne type.
 
@@ -49,7 +51,6 @@ language: da
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
-[6]: ../status/index#default-status
 
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img3]: ../../../../media/loc/en/request/edit-request-type-values.png

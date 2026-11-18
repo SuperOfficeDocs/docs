@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Einstellungen und Verwaltung
 redirect_from: /de/request/learn/type/create
 userflow_index: true
+related:
+  - Reihenfolge der Standardstatus: /de/request/admin/status/index#default-status
 language: de
 ---
 
@@ -40,7 +42,7 @@ language: de
 
     ![Einstellungen und Verwaltung, Anfragetypen Status/Priorität -screenshot][img3]
 
-1. Optional: Wählen Sie einen Standardstatus und/oder eine Standardpriorität aus, die verwendet wird, wenn ein Agent eine Anfrage dieses Typs erstellt. (Obligatorisch, falls Verfügbarkeiten festgelegt wurden.) Die Standardpriorität hat Vorrang vor anderen Präferenzen. Der Standardstatus wird verwendet, es sei denn, der Standardstatus der Kategorie ist für diesen Typ zulässig. Siehe [Reihenfolge der Standardstatus][6].
+1. Optional: Wählen Sie einen Standardstatus und/oder eine Standardpriorität aus, die verwendet wird, wenn ein Agent eine Anfrage dieses Typs erstellt. (Obligatorisch, falls Verfügbarkeiten festgelegt wurden.) Die Standardpriorität hat Vorrang vor anderen Präferenzen. Der Standardstatus wird verwendet, es sei denn, der Standardstatus der Kategorie ist für diesen Typ zulässig.
 
 1. Optional: Wählen Sie eine [Antwortvorlage][5] aus, die verwendet wird, wenn ein Agent auf eine Anfrage dieses Typs antwortet.
 
@@ -51,7 +53,6 @@ language: de
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
-[6]: ../status/index#default-status
 
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img2]: ../../../../media/loc/en/request/request-type-settings.png
