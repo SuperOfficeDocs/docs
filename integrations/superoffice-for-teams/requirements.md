@@ -18,7 +18,7 @@ Before you start, make sure the following requirements are met:
 
 * Microsoft Teams (desktop or web).
 * A SuperOffice Online user account with permission to create activities and documents.
-* The SuperOffice Service module, to use **Create Request** and **Add to Request**. It is included in all SuperOffice plans.
+* To use **Create Request** and **Add to Request**, you need a SuperOffice CRM Suite plan or a Service user plan (Service Essentials or higher).
 * A registered tenant and granted admin consent. This is usually handled once by a Microsoft 365 or SuperOffice administrator.
 
 See [Deploy SuperOffice for Teams][1] for the full setup steps.

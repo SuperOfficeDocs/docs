@@ -20,7 +20,7 @@ SuperOffice for Teams didn't detect any files in the selected conversation. Make
 
 ## Create Request and Add to Request are disabled
 
-Your SuperOffice license does not include requests. Ask your SuperOffice administrator.
+Your user plan doesn’t include service requests. You need a CRM Suite plan or a Service user plan. Ask your SuperOffice administrator.
 
 ## "You are not signed in"
 
