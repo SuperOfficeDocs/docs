@@ -4,7 +4,7 @@ title: Request status
 description: Request status
 keywords: ['Request status tab']
 author: digitaldiina
-date: 06.10.2026
+date: 11.17.2026
 so_version: 12.0
 content_type: concept
 license: serviceessentials
@@ -31,6 +31,31 @@ For example, you can create a new status called "Waiting for reply" as a more de
 | Queue status | Indicates if requests with this status should be placed in the queue. Relevant if you use the **Get next request in queue** function. |
 | Track time as | Used to report time usage in various phases of request management. The system calculates time used both in relation to defined "opening hours" and the whole 24-hour period. Choose from: in queue and awaiting processing; at internal decision stage; at external decision stage |
 
+## Default status for new requests and replies {#default-status}
+
+When you create a request, its status is set in this order:
+
+1. The category's **Default status for new request**, if the request type allows that status.
+1. The request type's **Default status**.
+1. Your preference **Default status in new request**, if the request type allows that status.
+1. If none of these apply, the request is saved as **Open**.
+
+The status is set when the **New request** screen opens. Changing the category or request type afterward does not change it.
+
+When you reply to a request, the status is set in this order:
+
+1. The category's **Default status for new message**, if the request type allows that status.
+1. Your preference **Default status in new message**, if the request type allows that status.
+1. If neither applies, the status is unchanged.
+
+A request type's **Available statuses** limit the defaults. A category or preference default that is not in the list is skipped.
+
+A default status can be a postponed status with a postpone option, such as **1 week**. The option comes from the same setting as the status, and the **New request** screen shows it before you save.
+
+<Note>
+Split requests and split messages keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**, or **Closed** if an [email filter][4] has **Close request** checked. Default statuses are not used in these cases.
+</Note>
+
 ## What do you want to do now?
 
 * [Create request status][1]
@@ -40,3 +65,4 @@ For example, you can create a new status called "Waiting for reply" as a more de
 [1]: /en/request/admin/status/create
 [2]: /en/request/admin/status/delete
 [3]: /en/request/admin/next-in-queue
+[4]: /en/email/admin/mailbox/create-email-filter
