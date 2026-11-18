@@ -4,8 +4,8 @@ title: Legg til sakstype
 description: Legg til sakstype
 keywords: ['opprett sakstype', 'ny sakstype', 'legg til sakstype', 'sakstype', 'fanen Sakstyper', 'type', 'sak']
 author: Bergfrid Dias
-date: 02.05.2025
-so_version: 10.5.1
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: servicepremium
 tier: growth
@@ -38,7 +38,7 @@ language: no
 
     ![Innstillinger og vedlikehold, Saksstyper status/prioritet -screenshot][img3]
 
-1. Valgfritt: Velg en standardstatus og/eller -prioritet som skal brukes når en agent oppretter en sak av denne typen. (Påkrevd hvis du begrenser tilgjengelighet.)
+1. Valgfritt: Velg en standardstatus og/eller -prioritet som skal brukes når en agent oppretter en sak av denne typen. (Påkrevd hvis du begrenser tilgjengelighet.) Standardprioriteten har forrang fremfor andre preferanser. Standardstatusen brukes, med mindre kategoriens standardstatus er tillatt for denne typen. Se [rekkefølge for standardstatus][6].
 
 1. Valgfritt: Velg en [svarmal][5] som skal brukes når en agent svarer på en sak av denne typen.
 
@@ -47,6 +47,7 @@ language: no
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
+[6]: ../status/index#default-status
 
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img3]: ../../../../media/loc/en/request/edit-request-type-values.png

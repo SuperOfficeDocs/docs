@@ -4,8 +4,8 @@ title: Dele melding
 description: Dele melding
 keywords: ['dele melding', 'sak', 'melding']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -33,7 +33,7 @@ Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele 
     * **Tilgangsnivå**:
       * **Ekstern**: Kunden kan se saken via kundesenteret.
       * **Internt**: Kunden har ikke tilgang til saken.
-    * **Status**:
+    * **Status**: Viser statusen og utsettelsesdatoen til den opprinnelige saken. Standardstatuser for nye saker brukes ikke. For å endre statusen velger du ett av følgende:
       * **Åpen**: Saken er under behandling.
       * **Avsluttet**: Saken er ferdigbehandlet.
       * **Utsatt**: Saken settes på vent, med en valgt dato for gjenåpning.

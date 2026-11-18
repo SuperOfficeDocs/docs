@@ -4,8 +4,8 @@ title: Saksstatus
 description: Saksstatus
 keywords: ['saksstatus', 'Saksstatus-fanen', 'sak', 'status']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: serviceessentials
 tier: starter
@@ -36,3 +36,30 @@ For eksempel kan du opprette en ny status kalt "Venter på svar" som en mer deta
 | Standard | Angir om dette er standardstatusen for den interne statusen. |
 | Køstatus | Angir om saker med denne statusen skal plasseres i køen. Dette er relevant hvis du bruker funksjonen **Hent neste sak i køen**. |
 | Registrer tid som | Brukes til å rapportere tidsbruk i ulike faser av saksbehandlingen. Systemet beregner tidsbruk både ut fra fastsatte "åpningstider" og et 24-timers døgn. Velg mellom: i kø og venter på behandling, på internt beslutningsstadium, eller på eksternt beslutningsstadium. |
+
+## Standardstatus for nye saker og svar {#default-status}
+
+Når du oppretter en sak, settes statusen i denne rekkefølgen:
+
+1. Kategoriens **Standardstatus for ny sak**, hvis sakstypen tillater denne statusen.
+1. Sakstypens **Standardstatus**.
+1. Preferansen din **Standardstatus i ny sak**, hvis sakstypen tillater denne statusen.
+1. Hvis ingen av disse gjelder, lagres saken som **Åpen**.
+
+Statusen settes når skjermbildet **Ny sak** åpnes. Hvis du endrer kategorien eller sakstypen etterpå, endres ikke statusen.
+
+Når du svarer på en sak, settes statusen i denne rekkefølgen:
+
+1. Kategoriens **Standardstatus for ny melding**, hvis sakstypen tillater denne statusen.
+1. Preferansen din **Standardstatus i ny melding**, hvis sakstypen tillater denne statusen.
+1. Hvis ingen av disse gjelder, endres ikke statusen.
+
+En sakstypes **Tilgjengelige statuser** begrenser standardverdiene. En standardstatus fra en kategori eller preferanse som ikke står i listen, hoppes over.
+
+En standardstatus kan være en utsatt status med et utsettelsesvalg, for eksempel **1 uke**. Valget kommer fra samme innstilling som statusen, og skjermbildet **Ny sak** viser det før du lagrer.
+
+<Note>
+Delte saker og delte meldinger beholder statusen og utsettelsesdatoen til den opprinnelige saken. Saker som opprettes fra innkommende e-post, får statusen **Åpen**, eller **Avsluttet** hvis et [e-postfilter][4] har **Avslutt sak** avmerket. Standardstatuser brukes ikke i disse tilfellene.
+</Note>
+
+[4]: /no/email/admin/mailbox/create-email-filter

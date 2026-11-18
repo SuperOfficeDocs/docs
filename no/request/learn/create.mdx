@@ -4,8 +4,8 @@ title: Opprette en sak
 description: Opprette en sak
 keywords: ['opprett sak', 'legg til sak', 'ny sak', 'saksdetaljer', 'melding', 'sak']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -39,7 +39,7 @@ En sak kan komme inn i systemet via en e-post fra kunden, eller du kan registrer
     * Velg **Sakstype**, **Status**, **Eier**, **Kategori**, **Prioritet** og andre egenskaper.
 
     <Note>
-    Sakstypen påvirker standardverdier, samt tilgjengelige statuser og prioriteringer. Hvis en [relasjonsregel][20] krever at en overordnet sak er angitt for denne typen, må du angi en overordnet sak før du lagrer.
+    Sakstypen påvirker standardverdier, samt tilgjengelige statuser og prioriteringer. Se [rekkefølge for standardstatus][21]. Hvis en [relasjonsregel][20] krever at en overordnet sak er angitt for denne typen, må du angi en overordnet sak før du lagrer.
     </Note>
 
 1. Gå til fanen **Meldinger** for å skrive inn saksmeldingen:
@@ -67,6 +67,8 @@ På Saksskjermen åpnes en ny sak i en **Ny sak**-fane øverst i gruppen **Aktiv
 * Fanen kan ikke festes. Når du lukker den, blir du bedt om å bekrefte.
 
 * Hvis du laster siden på nytt, gjenopprettes fanen med meldingen du skrev. Verdiene du fylte ut i saksfeltene, gjenopprettes ikke.
+
+* Statusen settes når fanen åpnes. Hvis du endrer kategorien eller sakstypen, endres ikke statusen. Hvis standardstatusen er utsatt, vises utsettelsesvalget, for eksempel **1 uke**, før du lagrer.
 
 * Hvis du vil forkaste saken, klikker du på **Avbryt**. Du blir bedt om å bekrefte, og deretter lukkes fanen.
 
@@ -179,5 +181,6 @@ Autolagringsfunksjonen aktiveres som standard når du viser og redigerer saker o
 [11]: ../../learn/getting-started/edit-email-signature
 [16]: ../../custom-objects/admin/create-extra-field
 [20]: ../admin/relation-rules
+[21]: ../admin/status/index#default-status
 [img1]: ../../../media/loc/en/request/create-request.png
 [img2]: ../../../media/loc/en/request/request-screen-new-request.png
