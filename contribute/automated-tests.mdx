@@ -88,6 +88,8 @@ Each run: detects brand-new pages this PR added under `en/`/`integrations/` only
 
 A PR that adds a whole new top-level folder under `en/` or `integrations/` (a folder with no file on `main`, such as a section migrated from the knowledge base) adds only that folder's root page to the list: its `index.mdx` or `index.md`, otherwise a page named after the folder, otherwise its shallowest page. Otherwise one large section would push every older entry off the list. Pages added to an existing top-level folder, or to a new subfolder of one, are each added as before.
 
+A page renamed from `.md` to `.mdx`, or back, isn't new and isn't added, also when the rename changed so much content that git reports a delete plus an add (#694).
+
 The pinned release notes entry is re-dated when a PR changes `release-notes/12/index.mdx`: its `since` becomes the newest `<Update description="DD.MM.YYYY">` date in that file, but never later than the day the check runs, because release notes are merged before their release date. It only moves when that date is later than the current `since`, so a typo fix leaves it alone. No other release-notes page triggers the check, and none is ever added to the list.
 
 ### Markdownlint

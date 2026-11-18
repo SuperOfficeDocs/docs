@@ -36,42 +36,22 @@ Usage:
 import argparse
 import os
 import re
-import subprocess
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib import diff_utils  # noqa: E402
+from lib import page_history  # noqa: E402
 from lib.diff_utils import get_added_line_numbers  # noqa: E402
 from lib.repo_files import resolve_safe_path  # noqa: E402
 
 PATTERNS = ("*.md", "*.mdx", "config/nav-*.json", "docs.json")
-PAGE_PATTERNS = ("*.md", "*.mdx")
 
 FRONTMATTER_BOOST_RE = re.compile(r'^\s*boost:\s*([\d.]+)\s*$')
 JSON_BOOST_RE = re.compile(r'^\s*"boost":\s*([\d.]+)\s*,?\s*$')
 
 
-def git(*args):
-    """Runs git in the repo root (read at call time, so tests can point it at a
-    throwaway repo) and returns the CompletedProcess."""
-    return subprocess.run(
-        ["git", *args], cwd=diff_utils.REPO_ROOT, capture_output=True,
-        encoding="utf-8", errors="replace",
-    )
-
-
 def is_page(rel_path):
     return rel_path.endswith(".md") or rel_path.endswith(".mdx")
-
-
-def swap_md_extension(rel_path):
-    """`foo.md` -> `foo.mdx` and `foo.mdx` -> `foo.md`; None for anything else."""
-    if rel_path.endswith(".mdx"):
-        return rel_path[:-1]
-    if rel_path.endswith(".md"):
-        return rel_path + "x"
-    return None
 
 
 def frontmatter_boost(text):
@@ -88,33 +68,14 @@ def frontmatter_boost(text):
     return None
 
 
-def get_rename_sources(base_ref):
-    """{new_path: old_path} for every page rename git detects in base...HEAD."""
-    out = git("diff", "--name-status", "-M", f"{base_ref}...HEAD", "--", *PAGE_PATTERNS)
-    sources = {}
-    if out.returncode != 0:
-        return sources
-    for line in out.stdout.splitlines():
-        parts = line.split("\t")
-        if len(parts) == 3 and parts[0].startswith("R"):
-            sources[parts[2]] = parts[1]
-    return sources
-
-
-def base_boost(rel_path, merge_base, rename_sources):
-    """The page's `boost` in its base version: the first of (same path, the
-    `.md`/`.mdx` twin, a detected rename source) that exists at `merge_base`.
+def base_boost(rel_path, base_commit, rename_sources):
+    """The page's `boost` in its base version (see `page_history.base_version_path`).
     Returns (found, value); value is None when that version has no boost."""
-    candidates = [rel_path, swap_md_extension(rel_path), rename_sources.get(rel_path)]
-    seen = set()
-    for candidate in candidates:
-        if not candidate or candidate in seen:
-            continue
-        seen.add(candidate)
-        shown = git("show", f"{merge_base}:{candidate}")
-        if shown.returncode == 0:
-            return True, frontmatter_boost(shown.stdout)
-    return False, None
+    base_path = page_history.base_version_path(rel_path, base_commit, rename_sources)
+    if base_path is None:
+        return False, None
+    text = page_history.show_at(base_commit, base_path)
+    return True, frontmatter_boost(text or "")
 
 
 def same_value(a, b):
@@ -144,9 +105,8 @@ def find_boost_additions(base_ref):
             value = m.group(1)
             if is_page(rel_path) and FRONTMATTER_BOOST_RE.match(content):
                 if merge_base is None:
-                    mb = git("merge-base", base_ref, "HEAD")
-                    merge_base = mb.stdout.strip() if mb.returncode == 0 else base_ref
-                    rename_sources = get_rename_sources(base_ref)
+                    merge_base = page_history.merge_base(base_ref)
+                    rename_sources = page_history.get_rename_sources(base_ref)
                 found, old = base_boost(rel_path, merge_base, rename_sources)
                 if found and old is not None and same_value(old, value):
                     continue
