@@ -14,6 +14,10 @@ audience_tooltip: Settings and maintenance
 redirect_from: /en/request/learn/status/index
 boost: 1.5
 userflow_index: true
+related:
+  - /en/request/admin/status/create
+  - /en/request/admin/status/delete
+  - Set up Get next request in queue: /en/request/admin/next-in-queue
 language: en
 ---
 
@@ -53,18 +57,9 @@ A request type's **Available statuses** limit the defaults. A category or prefer
 A default status can be a postponed status with a postpone option, such as **1 week**. The option comes from the same setting as the status, and the **New request** tab shows it before you save.
 
 <Note>
-[Split requests][5] and [split messages][6] keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**. If an [email filter][4] has **Close request** checked, they are set to **Closed** instead. Default statuses are not used in these cases.
+[Split requests][2] and [split messages][3] keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**. If an [email filter][1] has **Close request** checked, they are set to **Closed** instead. Default statuses are not used in these cases.
 </Note>
 
-## What do you want to do now?
-
-* [Create request status][1]
-* [Delete request status][2]
-* [Set up Get next request in queue][3].
-
-[1]: /en/request/admin/status/create
-[2]: /en/request/admin/status/delete
-[3]: /en/request/admin/next-in-queue
-[4]: /en/email/admin/mailbox/create-email-filter
-[5]: /en/request/learn/split-request
-[6]: /en/request/learn/split-message
+[1]: /en/email/admin/mailbox/create-email-filter
+[2]: /en/request/learn/split-request
+[3]: /en/request/learn/split-message
