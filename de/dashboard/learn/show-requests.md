@@ -70,6 +70,6 @@ Listet Anfragen auf, die noch niemandem zugeordnet sind. Wenn Sie die [Verantwor
 [4]: ../../request/learn/create
 [5]: ../../request/learn/find
 [6]: ../../request/learn/index#request-mgt
-[7]: ./add-tile
+[7]: ./working-with-tiles#edit
 
 [img1]: ../../../media/loc/en/request/service-dashboard.png

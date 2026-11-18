@@ -18,6 +18,8 @@ related:
 language: no
 ---
 
+## Trinn
+
 1. I **Innstillinger og vedlikehold**, velg **Saker** i navigatoren.
 
 1. Gå til fanen **Sakstyper**.
