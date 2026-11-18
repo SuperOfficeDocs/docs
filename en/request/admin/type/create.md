@@ -4,8 +4,8 @@ title: Create request type
 description: Create request type
 keywords: ['new request type', 'add request type', 'Request types tab']
 author: Bergfrid Dias
-date: 11.16.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: servicepremium
 tier: growth

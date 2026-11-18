@@ -4,8 +4,8 @@ title: Split message
 description: Split message
 keywords: ['request']
 author: digitaldiina
-date: 11.17.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
