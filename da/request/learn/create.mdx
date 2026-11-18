@@ -4,8 +4,8 @@ title: Opret en sag
 description: Lær, hvordan du opretter en ny sag i SuperOffice.
 keywords: ['opret sag', 'ny sag', 'sagsdetaljer', 'sagsegenskaber', 'meddelelse', 'sagsbehandling']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -39,7 +39,7 @@ En sag kan komme ind i systemet via en e-mail fra kunden, eller du kan registrer
     * Vælg **Sagstype**, **Status**, **Ejer**, **Kategori**, **Prioritet** og andre egenskaber.
 
     <Note>
-    Sagstypen påvirker standardværdier og tilgængelige statusser og prioriteter. Hvis en [relationsregel][20] kræver, at en overordnet sag er angivet for denne type, skal du angive en overordnet sag, inden du gemmer.
+    Sagstypen påvirker standardværdier og tilgængelige statusser og prioriteter. Se [rækkefølge for standardstatus][21]. Hvis en [relationsregel][20] kræver, at en overordnet sag er angivet for denne type, skal du angive en overordnet sag, inden du gemmer.
     </Note>
 
 1. Gå til fanen **Meddelelser** for at skrive selve sagen:
@@ -67,6 +67,8 @@ På Sagsskærmen åbnes en ny sag i fanen **Ny sag** øverst i gruppen **Aktive*
 * Fanen kan ikke fastgøres. Når du lukker den, bliver du bedt om at bekræfte.
 
 * Hvis du genindlæser siden, gendannes fanen med den meddelelse, du skrev. De værdier, du har indtastet i sagsfelterne, gendannes ikke.
+
+* Statussen sættes, når fanen åbnes. Hvis du ændrer kategorien eller sagstypen, ændres statussen ikke. Hvis standardstatussen er udsat, vises dens udsættelsesvalg, for eksempel **1 uge**, før du gemmer.
 
 * Klik på **Afbryd** for at annullere sagen. Du bliver bedt om at bekræfte, og derefter lukkes fanen.
 
@@ -179,5 +181,6 @@ Funktionen er som standard aktiveret ved visning og redigering af sager samt ved
 [11]: ../../learn/getting-started/edit-email-signature
 [16]: ../../custom-objects/admin/create-extra-field
 [20]: ../admin/relation-rules
+[21]: ../admin/status/index#default-status
 [img1]: ../../../media/loc/en/request/create-request.png
 [img2]: ../../../media/loc/en/request/request-screen-new-request.png

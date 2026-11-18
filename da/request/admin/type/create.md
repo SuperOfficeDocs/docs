@@ -4,8 +4,8 @@ title: Tilføj sagstype
 description: Opret og administrer sagstyper i SuperOffice. Læs hvordan du tilføjer en ny sagstype, konfigurerer indstillinger og vælger standardindstillinger.
 keywords: ['opret sagstype', 'ny sagstype', 'tilføj sagstype', 'sagstype', 'Sagstyper-fanen', 'type', 'sag']
 author: Bergfrid Dias
-date: 03.07.2025
-so_version: 10.5.2
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: servicepremium
 tier: growth
@@ -40,7 +40,7 @@ language: da
 
     ![Indstillinger og vedligeholdelse, Sager status/prioritet -screenshot][img3]
 
-1. (Valgfrit) Vælg en standardstatus og/eller prioritet til brug, når en agent opretter en sag af denne type. (Obligatorisk, hvis tilgængelighed er defineret.) Denne indstilling har forrang over andre præferencer.
+1. (Valgfrit) Vælg en standardstatus og/eller prioritet til brug, når en agent opretter en sag af denne type. (Obligatorisk, hvis tilgængelighed er defineret.) Standardprioriteten har forrang over andre præferencer. Standardstatussen bruges, medmindre kategoriens standardstatus er tilladt for denne type. Se [rækkefølge for standardstatus][6].
 
 1. Valgfrit, vælg en [svarskabelon][5] til brug, når en agent svarer på en sag af denne type.
 
@@ -49,6 +49,7 @@ language: da
 [3]: ../priority/index
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
+[6]: ../status/index#default-status
 
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img3]: ../../../../media/loc/en/request/edit-request-type-values.png

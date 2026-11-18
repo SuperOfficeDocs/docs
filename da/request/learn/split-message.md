@@ -4,8 +4,8 @@ title: Opdel meddelelse
 description: Lær, hvordan du opdeler en meddelelse i en sag i SuperOffice.
 keywords: ['opdel meddelelse', 'sag', 'meddelelse']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -41,7 +41,7 @@ Hvis en meddelelse indeholder to problemer, som skal håndteres særskilt, kan d
     * **Ekstern**: Vælg denne, hvis kunden skal have adgang til sagen via kundecenteret.
     * **Intern**: Vælg denne, hvis kunden ikke skal have adgang til sagen.
 
-1. I rullemenuen **Status** skal du vælge en af følgende muligheder:
+1. Rullemenuen **Status** viser den oprindelige sags status og udsættelsesdato. Standardstatusser for nye sager anvendes ikke. Vælg en af følgende muligheder for at ændre statussen:
     * **Aktiv**: Vælg denne, hvis sagen er under behandling.
     * **Afsluttet**: Vælg denne, hvis sagen er færdigbehandlet.
     * **Udsat**: Hvis sagsbehandlingen skal udsættes, vælg denne og angiv en dato. På denne dato sættes sagen automatisk til **Aktiv** igen.
