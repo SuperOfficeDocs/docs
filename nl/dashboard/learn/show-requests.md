@@ -4,7 +4,7 @@ title: Verzoeken in tegels gebruiken
 description: In deze handleiding leert u hoe u een snel overzicht krijgt van alle openstaande verzoeken in SuperOffice-dashboards.
 keywords: ['dashboard', 'verzoek']
 author: digitaldiina
-date: 11.21.2025
+date: 11.18.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -57,7 +57,7 @@ Als het aantal van een specifiek verzoektype groter is dan 0, kunt u op de bewus
 
 ## Mijn lijst met openstaande verzoeken
 
-Geeft verzoeken weer die bij u horen en die de status **Open** hebben. Met andere woorden: deze lijst bevat de verzoeken waarvoor u verantwoordelijk bent.
+Geeft verzoeken weer die bij u horen en die de status **Openstaand** hebben. Met andere woorden: deze lijst bevat de verzoeken waarvoor u verantwoordelijk bent.
 
 ## Lijst Niet-toegewezen verzoeken
 

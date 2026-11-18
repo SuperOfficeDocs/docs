@@ -4,7 +4,7 @@ title: Anfragestatus erstellen
 description: Anfragestatus erstellen
 keywords: ['Anfragestatus erstellen', 'Anfragestatus hinzufügen', 'neuer Anfragestatus', 'Anfragestatus', 'interner Status', 'Warteschlangenstatus', 'Zeitnachverfolgung', 'Anfrage', 'Status']
 author: digitaldiina
-date: 06.10.2026
+date: 11.18.2026
 so_version: 12.0
 content_type: howto
 license: serviceessentials
@@ -32,7 +32,7 @@ language: de
 
 1. Aktivieren Sie **Warteschlangenstatus**, wenn Anfragen mit diesem Status in die Warteschlange gestellt werden sollen.
 
-1. Aktivieren Sie **Neue Anfrage bei Kundenantwort erstellen**, um zu verhindern, dass alte Anfragen wieder geöffnet werden, weil ein Kunde auf eine alte Nachricht antwortet. Dies kann beispielsweise für Status wie **Bearbeitet** und **Gelöscht** relevant sein.
+1. Aktivieren Sie **Neue Anfrage bei Kundenantwort erstellen**, um zu verhindern, dass alte Anfragen wieder geöffnet werden, weil ein Kunde auf eine alte Nachricht antwortet. Dies kann beispielsweise für Status wie **Geschlossen** und **Gelöscht** relevant sein.
 
 1. Wählen Sie in der Liste **Zeit nachverfolgen als**, wie die Zeitnutzung erfasst werden soll:
 
