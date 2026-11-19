@@ -65,6 +65,7 @@
     "root": "release-notes/mobile/index",
     "boost": 2,
     "pages": [
+      "release-notes/mobile/v12",
       "release-notes/mobile/v11",
       "release-notes/mobile/v10"
     ]
