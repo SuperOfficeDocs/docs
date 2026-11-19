@@ -5,7 +5,7 @@ sidebarTitle: "Troubleshooting"
 description: Solutions to common issues in SuperOffice for Teams.
 keywords: ['SuperOffice for Teams', 'Teams', 'troubleshooting', 'errors', 'sign-in', 'consent']
 author: schildea
-date: 11.17.2026
+date: 11.19.2026
 content_type: howto
 category: integration
 topic: SuperOffice for Teams
@@ -20,7 +20,7 @@ SuperOffice for Teams didn't detect any files in the selected conversation. Make
 
 ## Create Request and Add to Request are disabled
 
-Your user plan doesn’t include service requests. You need a CRM Suite plan or a Service user plan. Ask your SuperOffice administrator.
+Your user plan doesn't include service requests. You need a CRM Suite plan or a Service user plan. Ask your SuperOffice administrator.
 
 ## "You are not signed in"
 
