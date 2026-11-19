@@ -5,7 +5,7 @@ sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice Integrations
 keywords: ['integration', 'app', 'App Store', 'product release']
 author: kirstiaa
-date: 11.18.2026
+date: 11.19.2026
 content_type: release-note
 audience: person
 audience_tooltip: SuperOffice CRM
@@ -56,7 +56,7 @@ Current version: For the latest version numbers and release details for all prod
 | Panels | 73.1 | 13.11.2026 |
 | SharePoint Documents | 3.12 | 12.11.2026 |
 | Slack Notify | 14.0 | 01.10.2026 |
-| SuperOffice AI Agents | 1.1.0 | 28.08.2026 |
+| SuperOffice AI Agents | 1.0.0 | 12.11.2026 |
 | SuperOffice AI Platform | 1.6 | 02.09.2026 |
 | SuperOffice Copilot | 2.0 | 02.09.2026 |
 | SuperOffice for Gmail | 3.0 | 24.02.2026 |
