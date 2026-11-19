@@ -4,7 +4,7 @@ title: Standard apps for SuperOffice Online
 description: Standard apps for SuperOffice Online
 keywords: ['standard app', 'public app', 'App Store']
 author: Margrethe Romnes
-date: 12.04.2025
+date: 11.19.2026
 content_type: concept
 deployment: online
 platform: web
@@ -22,7 +22,55 @@ All applications begin in our [sandbox environment][2]. Standard applications mu
 The Telenor Cyberdefense security evaluation is a mandatory part of our certification program.
 </Note>
 
+## Owner vs. developer {#ownership}
+
+Sometimes a partner develops a standard app on behalf of another partner. To support this, each app is linked to two partners:
+
+* **Owned by**: the partner the app belongs to commercially and publicly.
+* **Developed by**: the partner that builds and runs the app.
+
+When you create an app, your company is both owner and developer. The app header in the Developer Portal shows **Owned by** and **Developed by** separately only when they're different partners.
+
+In short, the owner handles the App Store listing and receives uninstall and support emails. The developer handles the app configuration.
+
+### What the owner handles
+
+| Area | Behavior |
+|---|---|
+| App Store listing | The App Store shows the owner's name and links to the owner's partner page. The app is listed on the owner's partner page, not the developer's. |
+| App Store search | The app is only indexed if the owner's [App Store partner profile][5] is published. |
+| App Store profile | The owner [edits the App Store profile][6] and requests publishing. The developer can only view it. |
+| Uninstall requests | Sent to the app's [uninstall reporting emails][7]. If none are set, they go to the owner's partner-level [uninstall reporting emails][8], then to the owner's administrative contact. |
+| Support notifications | Sent to the owner's [support emails][8] when a customer's app-support request is routed to the partner in [Messages][9]. If none are set, they go to the app's error reporting emails, then to the owner's technical contact. |
+
+### What the developer handles
+
+| Area | Behavior |
+|---|---|
+| App configuration | The developer [edits the configuration][10], such as versions and client setup, and [requests publishing][11] to stage and production. The owner can only view it. |
+| App Store search | The developer's name isn't shown on the App Store pages, but searching for the developer's company name finds the app. |
+| Developer Portal | A **Developed by** line with a link appears in the app header and in partner app lists. |
+
+### What both partners can work with
+
+Depending on each user's [permissions][12], users at both partners can work with the app's technical contact, error reporting emails, uninstall reporting emails, tenants, usage, and failures.
+
+### Change the owner or developer
+
+Only SuperOffice can change who owns or develops an app. Contact us via chat or support to request a change. **Developed by** can be changed to another partner, but not removed.
+
+Each change is recorded in the [event log][13].
+
 [1]: /en/developer-portal/index
 [2]: /en/developer-portal/getting-started/app-envir
 [3]: /en/developer-portal/standard-app/certification/index
 [4]: /en/developer-portal/standard-app/certification/initial-security-eval
+[5]: /en/developer-portal/standard-app/app-store/update-partner-profile
+[6]: /en/developer-portal/standard-app/app-store/update-app-page
+[7]: /en/developer-portal/standard-app/app-store/app-settings
+[8]: /en/developer-portal/partner/partner-settings
+[9]: /en/developer-portal/create-app/message-center
+[10]: /en/developer-portal/create-app/config/index
+[11]: /en/developer-portal/create-app/request-to-publish
+[12]: /en/developer-portal/partner/manage-permissions
+[13]: /en/developer-portal/analytics/logs
