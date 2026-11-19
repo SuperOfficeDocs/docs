@@ -1,120 +1,115 @@
 ---
 uid: help-da-extra-table
 title: Ekstra tabeller
-description: Ekstra tabeller
-keywords: ['ekstra tabel', 'brugerdefinerede objekter']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
-content_type: howto
-tier: core
-audience: settings
-audience_tooltip: Settings and maintenance
-redirect_from: /da/custom-objects/learn/extra-table/index
+description: En ekstra tabel er en databasetabel, som du selv definerer. Med CRM Suite Growth eller højere bliver den et brugerdefineret objekt, der opfører sig som firmaer og salg.
+keywords: ['ekstra tabel', 'tredjepartstabel', 'brugerdefineret objekt']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: concept
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+redirect_from:
+  - /da/custom-objects/extra-table/index
+  - /da/custom-objects/learn/extra-table/index
 related:
-  - /da/custom-objects/admin/create-extra-table
-  - /da/custom-objects/admin/create-extra-field
-  - Brugerdefinerede felter: /da/custom-objects/admin/add-udef
-  - Custom screens: /da/ui/blogic/learn/index
-  - Tilføj trigger: /en/automation/trigger/create-trigger-script
+  - Tilføj brugerdefinerede data: /da/custom-objects/learn/create
+  - Opdater brugerdefinerede data: /da/custom-objects/learn/update
+  - Tilføj en ekstra tabel: /da/custom-objects/admin/create-extra-table
+  - Tilføj ekstra felter: /da/custom-objects/admin/create-extra-field
+  - Angiv rettigheder for brugerdefinerede objekter: /da/admin/user-management/role/set-data-rights-for-role#custom-objects
+  - Design layoutet af et brugerdefineret objekt: /da/customization/screen-designer/admin/add-layout#custom-objects
 language: da
 ---
 
-import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
+En *ekstra tabel* (også kaldet en *tredjepartstabel*) er en databasetabel, som du selv definerer, til data som SuperOffice ikke gemmer i en standardtabel. Administratorer [opretter ekstra tabeller][2] og tilføjer felter til dem i **Indstillinger og vedligeholdelse** > **Systemdesign** > **Tabeller**.
 
-<ReqDevToolsTransition />
+<Note>
+Ekstra tabeller kræver CRM Suite **Growth**-planen eller en højere plan, eller en licens baseret på brugerplaner med [Development Tools][13].
 
-Development Tools-licensen eller Core-planen giver dig mulighed for at oprette ekstra tabeller (brugerdefinerede objekter) i databasen.
+Med en licens baseret på brugerplaner er ekstra tabeller tilgængelige i SuperOffice Service og i SuperOffice CRM via [webpaneler][14]. Hvis du vil bruge dem som brugerdefinerede objekter i SuperOffice CRM, kan du deltage i [pilotprogrammet for brugerdefinerede objekter][15].
+</Note>
 
-**Tabeller**-skærmen er dit værktøj til tilpasning af databaseskemaet.
+## Ekstra tabeller som brugerdefinerede objekter
 
-## Sådan får du adgang
+I CRM Suite bliver en ekstra tabel et *brugerdefineret objekt*: en posttype, der opfører sig som standardposttyperne, for eksempel firmaer og salg. Et brugerdefineret objekt har sine egne felter og kan have relation til firmaer, personer, salg, projekter, sager, opfølginger og andre brugerdefinerede objekter.
 
-<Tabs>
-<Tab title="Klassisk">
-Ekstra tabeller er straks tilgængelige til standard CRUD-operationer i SuperOffice Service. Du skal opsætte et webpanel for at få adgang til dem fra Salgsklienten.
-</Tab>
+Trinnene til at oprette en tabel er de samme uanset licens. Forskellen er, hvordan brugerne får vist og arbejder med de data, der er gemt i den.
 
-<Tab title="Ny (fra version 10.3.4 pilot)">
-Ikke længere begrænset til SuperOffice Service, kan du nemt udforske og vedligeholde data i ekstra tabeller fra SuperOffice CRM.
+## Sådan finder du brugerdefinerede objekter {#where}
 
-### Byg dashboards ved hjælp af brugerdefinerede objekter
+Brugerne finder brugerdefinerede objekter disse steder:
 
-![Dashboard med brugerdefinerede objekter -screenshot][img1]
+* **Hovedmenu:** Klik på <i class="ph ph-list" aria-label="Hovedmenu"></i>, og vælg **Brugerdefinerede objekter** for at åbne skærmbilledet **Brugerdefinerede objekter** med alle de brugerdefinerede objekter, du har adgang til. Vælg et brugerdefineret objekt, tilføj [søgekriterier][16] under fanen **Kriterier**, og klik på **Søg**. De matchende brugerdefinerede data vises under fanen **Resultater**.
 
-### Find og udvælgelse
+    ![Skærmbilledet Brugerdefinerede objekter med data fra Bærbar -screenshot][img11]
 
-**Brugerdefineret objekt som søgekriterium for firma, person, salg, projekt, sag, aktivitet:**
+* **Navigator:** Brugerdefinerede objekter vises i Navigatoren, hver med sit eget ikon. Vælg et brugerdefineret objekt for at åbne dets skærmbillede med dets brugerdefinerede data på en liste. Din administrator bestemmer, hvilke brugerdefinerede objekter der vises.
 
-![Brugerdefineret objekt som søgekriterium -screenshot][img2]
+    ![Navigatoren med fire brugerdefinerede objekter, hvor Bærbar er valgt -screenshot][img10]
 
-**Opret udvælgelse af brugerdefinerede objekter (10.3.7):**
+* **Ny:** Klik på **Ny** i topbjælken for at [tilføje data][7] til et brugerdefineret objekt.
 
-![Find-skærm med brugerdefinerede objekter -screenshot][img3]
+    ![Menuen Ny i topbjælken med brugerdefinerede objekter -screenshot][img12]
 
-![Udvælgelse af brugerdefinerede objekter -screenshot][img4]
+* **Detaljefaner:** Når et brugerdefineret objekt har relation til en anden posttype, for eksempel et firma, et salg eller et brugerdefineret objekt, vises de relaterede brugerdefinerede data på en detaljefane dér.
 
-### Vedligeholdelse af data (10.3.7)
+    ![Firma med detaljefanen Leasingaftaler -screenshot][img8]
 
-**Åbn oversigt over brugerdefinerede objekter:**
+* **Sidepanel:** På en detaljefane med brugerdefinerede objekter vælger du en række for at se den i visningen **Forhåndsvisning** i sidepanelet. Vælg en relateret post i forhåndsvisningen for at gå til den.
 
-![Oversigt over brugerdefinerede objekter -screenshot][img5]
+    ![Leasingaftale vist i visningen Forhåndsvisning i sidepanelet -screenshot][img9]
 
-**Søg:**
+* **Dashboards:** Brug et brugerdefineret objekt som datakilde for en rude på et dashboard.
 
-![Oversigt over brugerdefinerede objekter, søgning -screenshot][img6]
+    ![Dashboard med ruder baseret på de brugerdefinerede objekter Leasing og Bærbar -screenshot][img1]
 
-**Forhåndsvisning:**
+* **Historik og favoritter:** Brugerdefinerede data, du åbner, føjes til din [historik][9], og du kan [tilføje dem som favoritter][10].
 
-![Oversigt over brugerdefinerede objekter, forhåndsvisning -screenshot][img7]
+Hvilke brugerdefinerede objekter og brugerdefinerede data du kan se, tilføje, opdatere eller slette, afhænger af din [rolle][8].
 
-**Tilføj/fjern elementer:**
+## Søg efter brugerdefinerede objekter
 
-Når du ser resultaterne for et bestemt element i oversigten over **Brugerdefinerede objekter**, klik på knappen **Opgave**, og vælg **Ny** eller **Slet**.
+Du kan søge efter brugerdefinerede objekter og oprette udvalg baseret på dem på samme måde som for firmaer, personer og salg.
 
-**Forudfyld felter ved indlæsning af brugerdefineret objekt (10.3.8):**
+* **Find:** I skærmbilledet **Find** vælger du et brugerdefineret objekt for at søge efter dets brugerdefinerede data. Du kan også bruge et brugerdefineret objekt som søgekriterie, når du søger efter firmaer, personer, salg, projekter, sager og opfølginger.
 
-Den nye [SalesLoadCustomObject][6] trigger kaldes, før en brugerdefineret objekt-skærm indlæses. Brug den til at angive standardværdier i felter og definere forretningsregler.
-</Tab>
-</Tabs>
+    ![Skærmbilledet Find med brugerdefinerede objekter -screenshot][img3]
 
-## Tabeller-skærm
+    ![Find firma med et felt for Leasing som søgekriterie -screenshot][img2]
 
-Skærmbilledet **Tabeller** viser en liste over databasetabeller. Den viser både standardtabeller (foruddefineret i systemet og danner grundlaget for forskellige skærme) og ekstratabeller (tabeller, du opretter selv med valgfrit indhold).
+* **Udvalg:** Gem søgningen som et udvalg af brugerdefinerede data. Et dynamisk udvalg holder listen ajourført.
 
-Her kan du oprette nye tabeller og felter til forskellige skærme og dialogbokse. Kun administratorer har adgang til denne funktionalitet.
+    ![Find Bærbar med søgeresultater og Gem som udvalg -screenshot][img4]
 
-### Tabelmapper
+<Note>
+Feltet til [fritekstsøgning][17] i topbjælken omfatter ikke brugerdefinerede objekter. Brug **Find** eller søgningen i det brugerdefinerede objekts eget skærmbillede.
+</Note>
 
-Tabelmapper anvendes til at organisere brugerdefinerede tabeller.
+## Skærmbilledet Tabeller
 
-## Konventioner
+Skærmbilledet **Tabeller** i **Indstillinger og vedligeholdelse** > **Systemdesign** viser databasetabellerne. Det viser både standardtabeller, som er en del af SuperOffice, og ekstra tabeller, som du selv opretter. Kun administratorer har adgang til dette skærmbillede.
 
-<Warning>
-Vælg dine databasetabel- og feltnavne omhyggeligt. De kan ikke ændres senere!
+Brug tabelmapper til at organisere dine ekstra tabeller.
 
-Et logisk navn er bedst, fordi det gør det nemmere at se, hvad databasen indeholder.
-</Warning>
+[2]: ../admin/create-extra-table
+[7]: ./create
+[8]: /da/admin/user-management/role/set-data-rights-for-role#custom-objects
+[9]: /da/learn/basics/history
+[10]: /da/learn/basics/fav
+[13]: /da/admin/license/expander-services
+[14]: /da/customization/web-panels/admin/index
+[15]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/
+[16]: /da/search-options/learn/search-criteria
+[17]: /da/search-options/learn/freetext-search
 
-Præfikser sikrer, at det du opretter, ikke konflikter med fremtidige SuperOffice-tabel- og feltnavne. Det garanterer dog ikke fraværet af navnekonflikter mellem forskellige tredjeparter.
-
-### Tabelnavne
-
-* Skal starte med **y_**
-* Må kun indeholde understreger, bogstaverne a til z og tal
-
-### Feltnavne
-
-* Skal starte med **x_**
-* Skal være unik inden for tabellen
-* Skal være et enkelt ord
-* Må kun indeholde understreger, bogstaver fra a til z og tal
-
-[6]: ../../../en/automation/trigger/reference/CRMScript.Event.Trigger#salesloadcustomobject
-[img1]: ../../../media/loc/en/automation/custom-object-dashboard.png
-[img2]: ../../../media/loc/en/automation/find-custom-object-relation.png
-[img3]: ../../../media/loc/en/automation/find-screen-with-custom-objects.png
-[img4]: ../../../media/loc/en/automation/custom-object-selection.png
-[img5]: ../../../media/loc/en/automation/go-to-custom-objects.png
-[img6]: ../../../media/loc/en/automation/search-inventory.png
-[img7]: ../../../media/loc/en/automation/preview-inventory-results.png
+[img1]: /media/loc/en/custom-objects/dashboard-leases.png
+[img2]: /media/loc/en/custom-objects/find-company-lease-criteria.png
+[img3]: /media/loc/en/custom-objects/find-screen-custom-objects.png
+[img4]: /media/loc/en/custom-objects/find-laptop-results.png
+[img8]: /media/loc/en/custom-objects/company-lease-tab.png
+[img9]: /media/loc/en/custom-objects/company-lease-preview.png
+[img10]: /media/loc/en/custom-objects/navigator-custom-objects.png
+[img11]: /media/loc/en/custom-objects/custom-objects-screen.png
+[img12]: /media/loc/en/custom-objects/new-menu-custom-object.png

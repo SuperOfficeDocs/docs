@@ -1,55 +1,83 @@
 ---
 uid: help-nl-custom-objects
-title: Aangepaste objecten  en velden
-description: Aangepaste objecten en velden
-keywords: ['aangepast object', 'veld']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+title: Aangepaste objecten en velden
+description: Leer het verschil tussen gebruikersgedefinieerde velden, extra velden en aangepaste objecten, en welk plan u voor elk nodig hebt.
+keywords: ['aangepast object', 'tabel', 'veld', 'gebruikersgedefinieerd veld', 'udef', 'aangepast veld', 'extra veld', 'extra tabel']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 boost: 1.5
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Brukerdefinerte felt: /nl/custom-objects/learn/udef
-  - Ekstrafelt: /nl/custom-objects/learn/extra-field
-  - Ekstra tabeller: /nl/custom-objects/learn/extra-table
+  - Over gebruikersgedefinieerde velden: /nl/custom-objects/learn/udef
+  - Over extra velden: /nl/custom-objects/learn/extra-field
+  - Over extra tabellen: /nl/custom-objects/learn/extra-table
 language: nl
 ---
 
 import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
+import ReqGrowthCustomObjects from "../../snippets/req-growth-custom-objects.mdx";
 
-Alle bedrijven en organisaties hebben hun eigen eisen voor de informatie die ze moeten registreren met betrekking tot hun contacten, verkopen, projecten, contracten, enzovoort. Beheerders kunnen velden en tabellen toevoegen in SuperOffice om het type informatie dat kan worden geregistreerd aan te passen.
+Elk bedrijf heeft eigen behoeften voor wat het wil registreren over zijn klanten, verkopen, projecten, contracten, enzovoort. Beheerders kunnen velden en tabellen toevoegen in SuperOffice om het type informatie dat kan worden geregistreerd aan te passen.
 
 SuperOffice CRM en Service waren ooit twee aparte toepassingen met verschillende uitbreidingsmogelijkheden. [**Gebruikersgedefinieerde velden**][1] (kortweg udefs) horen thuis in SuperOffice CRM, terwijl [**extra tabellen**][3] (ook wel 3rd party-tabellen genoemd) en [**extra velden**][2] thuis horen in Service. De term **aangepast veld** omvat zowel gebruikersgedefinieerde velden als extra velden.
 
-## Gebruik
+Er zijn twee manieren om SuperOffice uit te breiden:
 
-* Een goed voorbeeld van een aangepast veld dat je kunt gebruiken op het scherm **Contact** is een veld genaamd "Tevreden klant", waar de waarde van het veld Ja of Nee is. Je kunt bijvoorbeeld je klanten een mailing sturen (met linkacties) waarin ze kunnen aangeven of ze tevreden zijn met je diensten. Dit geeft je waardevol inzicht in het algemene klanttevredenheidspercentage.
+* **Velden toevoegen aan entiteiten.** Deze velden heten *aangepaste velden*. Voeg bijvoorbeeld een veld "Tevreden klant" toe aan contactpersonen.
+* **Nieuwe entiteiten toevoegen.** Deze entiteiten heten *aangepaste objecten*. Registreer bijvoorbeeld de laptops die u aan klanten least als een eigen entiteit.
 
-* Met de **Zoeken**-functie kun je zoeken naar de informatie die je registreert in aangepaste velden en selecties maken. Bijvoorbeeld, als je de verloopdatum van de onderhoudsovereenkomst registreert die je hebt met klanten, kun je een dynamische selectie maken die de klanten toont waarvoor de overeenkomst binnen minder dan een maand verloopt.
+## Aangepaste velden
 
-* Je kunt de informatie uit deze velden hergebruiken in documenten en e-mails als **sjabloonvariabelen**. Elk veld dat je toevoegt krijgt zijn eigen unieke ID (Prog ID), die in documenten kan worden gebruikt om contactspecifieke informatie samen te voegen. Dus als je een e-mail naar je klanten wilt sturen waarin staat dat hun onderhoudsovereenkomst binnenkort verloopt, kun je de sjabloonvariabele voor de verloopdatum gebruiken om de juiste verloopdatum van hun overeenkomst in het bericht weer te geven.
+Er zijn twee soorten aangepaste velden, afhankelijk van de entiteit:
+
+| Soort | Toegevoegd aan | Beheerd in |
+|---|---|---|
+| [Gebruikersgedefinieerde velden][1] (udefs) | Bedrijven, contactpersonen, verkopen, projecten, vervolgactiviteiten en documenten | **Instellingen en onderhoud** > **Velden** |
+| [Extra velden][2] | Verzoeken, berichten, andere Service-tabellen en aangepaste objecten | **Instellingen en onderhoud** > **Systeemontwerp** > **Tabellen** |
+
+## Aangepaste objecten
+
+Een [aangepast object][3] is een nieuwe entiteit die u zelf definieert. Bijvoorbeeld *Laptop*, *Lease* of *Auto*. U bepaalt welke velden het aangepaste object heeft en hoe het is gerelateerd aan bedrijven, contactpersonen, verzoeken en andere entiteiten.
+
+Met CRM Suite **Growth** of hoger gedraagt een aangepast object zich zoals de standaardentiteiten in SuperOffice. Gebruikers vinden het in de navigator, voegen aangepaste gegevens toe via **Nieuw** in de bovenste balk en zoeken ernaar. Ze kunnen ook selecties en dashboards maken en gerelateerde aangepaste gegevens zien op een sectietabblad, bijvoorbeeld bij het bedrijf.
+
+In de database is een aangepast object een extra tabel. Beheerders maken het in **Instellingen en onderhoud** > **Systeemontwerp** > **Tabellen**.
+
+## Voorbeelden
+
+* **Tevreden klant (gebruikersgedefinieerd veld).** Voeg een Ja/Nee-veld toe aan contactpersonen. Stuur een mailing waarin contactpersonen aangeven of ze tevreden zijn, en sla het antwoord op in het veld.
+
+* **Verloopdatum van overeenkomst (gebruikersgedefinieerd veld).** Registreer de verloopdatum van elke onderhoudsovereenkomst bij het bedrijf. Maak een dynamische selectie van de bedrijven waarvan de overeenkomst binnen een maand verloopt.
+
+* **Sjabloonvariabelen (aangepaste velden).** Hergebruik de informatie uit aangepaste velden in documenten en e-mails als sjabloonvariabelen. Elk veld dat u toevoegt krijgt zijn eigen unieke ID (Prog ID), die u in documenten gebruikt om contactspecifieke informatie samen te voegen. Een e-mail over een binnenkort verlopende onderhoudsovereenkomst kan bijvoorbeeld voor elke contactpersoon de juiste verloopdatum tonen.
+
+* **Laptopleases (aangepaste objecten).** Registreer elke laptop die u verleaset, met model, serienummer, aankoopdatum en prijs. Registreer elke lease als een ander aangepast object dat is gerelateerd aan de laptop, het bedrijf, de contactpersoon en de verkoop. Het scherm Bedrijf toont dan een tabblad **Leases**, en de laptop toont al zijn leases in de loop van de tijd.
 
 ## Vereisten
 
+**Aangepaste velden:**
+
 <ReqDevToolsTransition />
 
-<Note>
-**CRM Suite (Growth-abonnement):** Uw abonnement bevat een limiet op het aantal aangepaste objecten. Wanneer de limiet is bereikt, is het aanmaken van extra objecten geblokkeerd. Zie [Plangrenzen][13] voor meer informatie.
-</Note>
+**Aangepaste objecten:**
 
-Velden worden automatisch weergegeven op het [tabblad Meer][12] zodra ze zijn toegevoegd.
+<ReqGrowthCustomObjects />
 
-## Layout (positionering van velden)
+Met een licentie op basis van gebruikersplannen vereisen extra tabellen Development Tools. [Extra tabellen][3] zijn beschikbaar in SuperOffice Service en, via webpanelen, in SuperOffice CRM.
 
-Eventuele aangepaste schermindelingen (gemaakt in de Schermontwerper) kunnen de instellingen voor individuele aangepaste velden overschrijven.
+Het CRM Suite-plan bepaalt het aantal aangepaste objecten dat u kunt maken. Wanneer u de limiet bereikt, kunt u er geen meer maken. Zie [plangrenzen][13].
 
-Als u geen Development Tools-licentie of het **Core**-plan heeft, gebruikt u de rang van de verschillende velden om ze te sorteren op het tabblad **Meer**.
+## Layout van velden
+
+Gebruikersgedefinieerde velden worden weergegeven op het [tabblad Meer][12], gesorteerd op hun rang. Met de [Schermontwerper][14] kunt u velden op elk tabblad plaatsen en de opmaak van aangepaste objecten ontwerpen. Een opmaak die in de Schermontwerper is gemaakt, overschrijft de positie die bij individuele velden is ingesteld.
 
 [1]: /nl/custom-objects/learn/udef
 [2]: /nl/custom-objects/learn/extra-field
 [3]: /nl/custom-objects/learn/extra-table
 [12]: /nl/custom-objects/learn/more-tab
 [13]: /nl/admin/license/crm-suite
+[14]: /nl/customization/screen-designer/admin/index

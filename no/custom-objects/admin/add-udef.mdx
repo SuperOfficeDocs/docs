@@ -3,8 +3,8 @@ uid: help-no-udef-add
 title: Legge til brukerdefinert felt
 description: Legge til brukerdefinert felt
 keywords: ['udef', 'brukerdefinert', 'egendefinert felt', 'feltegenskaper']
-author: Bergfrid Dias
-date: 06.10.2026
+author: digitaldiina
+date: 11.13.2026
 so_version: 12.0
 content_type: howto
 tier: core
@@ -12,6 +12,11 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/custom-objects/learn/udef/add
 userflow_index: true
+related:
+  - Om brukerdefinerte felt: /no/custom-objects/learn/udef
+  - Grensesnitttilpasning: /no/custom-objects/admin/edit-udef-layout
+  - Redigere egendefinert felt: /no/custom-objects/admin/edit-udef
+  - Skjermdesigner: /no/customization/screen-designer/admin/index
 language: no
 ---
 
@@ -42,9 +47,13 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/no-udef-s
 
     Bruk et [språkprefiks](#language) for å spesifisere navnet på flere språk som dette: `US:"Language";NO:"Språk"`
 
-    ![UDEF-feltnavn på flere språk -screendshot][img3]
+    ![UDEF-feltnavn på flere språk -screenshot][img3]
 
 1. Sett eventuelt andre [feltegenskaper](#properties), som om feltet er obligatorisk eller skal indekseres.
+
+    <Note>
+    Du kan ikke krysse av for **Kun lesbart** hvis du har krysset av for **Obligatorisk**. Disse alternativene er gjensidig utelukkende.
+    </Note>
 
 1. Når du er ferdig, klikk på **Lagre**. Dialogen lukkes, og det nye feltet vises i **Felt**-listen og i rutenettet.
 
@@ -64,10 +73,6 @@ import UdefDanger from "../../../snippets/udef-screen-designer-warning/no-udef-s
 | Kun lesbart | Hvis valgt, er det ikke mulig å endre feltet. |
 | Indeksert | Hvis valgt, blir dette feltet søkbart og det blir raskere å søke på disse feltene ved hjelp av **Finn**. Ikke-indekserte felt kan også søkes på, men søkingen vil ta lengre tid. Indekser bare felt som ofte blir søkt og inneholder ofte brukte data. |
 
-<Note>
-Du kan ikke krysse av for **Kun lesbart** hvis du har krysset av for **Obligatorisk**. Disse alternativene er gjensidig utelukkende.
-</Note>
-
 <UdefDanger />
 
 ## Språkkoder {#language}
@@ -78,7 +83,7 @@ Du kan ikke krysse av for **Kun lesbart** hvis du har krysset av for **Obligator
 
 Egendefinerte felter du oppretter, vil vises i [Mer-fanen][5] for firmaer, personer, salg og prosjekter, samt i oppfølgings- og dokumentdialogene.
 
-Nederst til høyre i dialogboksen **Felt** er **Malvariabelnavn** etterfulgt av en kode (ID), som kan brukes til å gjenbruke informasjonen du skriver inn i dette feltet, for eksempel som [malvariabler][12] i dokumenter og e-poster.
+I nedre høyre hjørne av dialogboksen **Felt** er **Malvariabelnavn** etterfulgt av en kode (ID). Bruk koden til å gjenbruke informasjonen du skriver inn i dette feltet, for eksempel som [malvariabler][12] i dokumenter og e-poster.
 
 ## Feilsøking
 
@@ -86,20 +91,10 @@ Nederst til høyre i dialogboksen **Felt** er **Malvariabelnavn** etterfulgt av 
 
 Hvis du ikke får lov til å opprette et nytt felt, kan det skyldes at du allerede har nådd [maksimalt antall tillatte felt][1] av denne typen. Da må du eventuelt slette et eksisterende felt før du kan sette inn et nytt.
 
-Fire av hver felttype (Kort tekst, Lang tekst, Nummer, Desimaltall) er søkbare. Hvis du for eksempel ikke merker noen felt som søkbare, kan du bare angi seks Desimaltall-felt.
-
-## Aktuelle emner
-
-* [Plassere felt][3]
-* [Rediger feltegenskaper][4]
-* [Skjermdesigner][11]
-
 [1]: ../learn/udef#limit
 [2]: ../learn/udef#field-types
 [3]: ./edit-udef-layout
-[4]: ./edit-udef
 [5]: ../learn/more-tab
-[11]: ../../customization/screen-designer/admin/index
 [12]: ../../document/templates/learn/template-variables
 
 [img3]: ../../../media/loc/en/custom-objects/add-udef-multi-languages.png

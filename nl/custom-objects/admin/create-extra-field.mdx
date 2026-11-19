@@ -2,22 +2,46 @@
 uid: help-nl-extra-fields-create
 title: Extra velden toevoegen
 description: Extra velden toevoegen
-keywords: ['extra veld', 'aangepast veld']
-author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+keywords: ['extra veld', 'aangepast veld', 'veld van aangepast object', 'veldeigenschappen']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-redirect_from: /nl/custom-objects/learn/extra-field/create
+redirect_from:
+  - /nl/custom-objects/learn/extra-field/create
+  - /nl/custom-objects/admin/show-extra-field-on-request-details
 userflow_index: true
+related:
+  - Over extra velden: /nl/custom-objects/learn/extra-field
+  - Een extra tabel toevoegen: /nl/custom-objects/admin/create-extra-table
+  - Over extra tabellen: /nl/custom-objects/learn/extra-table
+  - Werken met velden: /nl/customization/screen-designer/admin/working-with-fields
+  - De opmaak van een aangepast object ontwerpen: /nl/customization/screen-designer/admin/add-layout#custom-objects
 language: nl
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
-Nadat u een [extra tabel][1] hebt gemaakt, moet u velden in de tabel instellen, zodat u vervolgens gegevens (vermeldingen) in de tabel, kunt invoeren. U kunt ook extra velden in de standaardtabellen toevoegen.
+<ReqDevToolsTransition />
+
+Nadat u een [extra tabel][1] hebt gemaakt, voegt u de velden toe die gebruikers invullen wanneer ze aangepaste gegevens toevoegen. U kunt ook extra velden toevoegen aan standaard Service-tabellen.
+
+## Naamgevingsconventies
+
+<Warning>
+Kies databaseveldnamen zorgvuldig. U kunt ze later **niet wijzigen**.
+</Warning>
+
+Gebruik logische namen, zodat het gemakkelijk is om te zien wat de database bevat. De prefix **x_** voorkomt conflicten met toekomstige SuperOffice-veldnamen. Het voorkomt geen conflicten tussen extra velden van verschillende derden.
+
+* Moet beginnen met **x_**
+* Moet uniek zijn binnen de tabel
+* Moet uit één woord bestaan
+* Mag alleen underscores, de letters a tot z en cijfers bevatten
 
 ## Stappen
 
@@ -25,7 +49,7 @@ Nadat u een [extra tabel][1] hebt gemaakt, moet u velden in de tabel instellen, 
 
 1. Blader naar uw gewenste tabel, wijs naar de tabelnaam en klik op **Nieuw veld**.
 
-    ![Extra veld aanmaken -screenshot][img1]
+    ![Scherm Tabellen met Nieuw veld naast een tabel -screenshot][img1]
 
 1. Selecteer een type voor het nieuwe veld en klik op **OK**.
 
@@ -33,11 +57,10 @@ Nadat u een [extra tabel][1] hebt gemaakt, moet u velden in de tabel instellen, 
 
     * Voer een *naam* in die als label wordt gebruikt.
     * Voer een *databaseveld* in dat begint met **x_** om het in het schema te identificeren.
-    * Optioneel stel andere eigenschappen in. Het type (gespecificeerd in stap 3) bepaalt wat beschikbaar is. Zie details over de velden hieronder.
+    * Om het veld verplicht te maken, selecteer **Mag niet leeg zijn**.
+    * Optioneel stel andere eigenschappen in. Het veldtype dat u in de vorige stap hebt geselecteerd, bepaalt wat beschikbaar is. Zie [veldeigenschappen](#properties).
 
-    <Tip>
-    Om een veld verplicht te maken, selecteer **Mag niet leeg zijn**.
-    </Tip>
+    ![Veldeigenschappen voor een veld van het type Tekst (kort) -screenshot][img2]
 
 1. Klik op **OK** om het nieuwe veld op te slaan (voert `alter table y_mynewtable add column x_mynewfield ...` uit).
 
@@ -45,25 +68,25 @@ Nadat u een [extra tabel][1] hebt gemaakt, moet u velden in de tabel instellen, 
 
 1. Klik op **NetServer opnieuw starten** als u klaar bent. Als Travel is geactiveerd, ziet u ook een bericht dat er een nieuwe Travel-database moet worden gegenereerd.
 
-## Veldeigenschappen
+## Veldeigenschappen {#properties}
 
 <Note>
 De eigenschap **URL** in deze tabel hoort bij het veldtype **Dynamische link**. Zie [URL's in tekstvelden][2] om URL's in velden van het type **Korte tekst** en **Lange tekst** als klikbare links weer te geven.
 </Note>
 
-| Veld | Beschrijving |
+| Eigenschap | Beschrijving |
 |---|---|
 | Mag niet leeg zijn | Als deze optie is aangevinkt, wordt dit veld verplicht. |
 | Selecteren in keuzelijst | als het veld is gekoppeld aan een extra tabel, selecteert u deze optie om een lijst met tabelwaarden weer te geven. |
 | Waarden uit de lijst kiezen | Als deze optie is ingeschakeld, wordt het veld een keuzelijst. De opties in de lijst zijn de tekenreeksen die in het tekstvak ingevuld worden. Er is één regel per optie. |
 | Index maken | Geef op of het veld moet worden geïndexeerd. U vindt sneller gegevens in geïndexeerde velden. |
-| Databaseveld | de naam die de kolom in de database zal hebben. Deze naam moet uniek zijn in deze tabel. Bovendien moet de kolomnaam een enkel woord zijn, met alleen onderstrepingstekens, letters van a tot z of cijfers en de naam moet beginnen met 'x_'. Kan alleen worden opgegeven wanneer het veld is gemaakt; **het kan later niet meer worden gewijzigd**. |
+| Databaseveld | De naam van de kolom in de database. Kan alleen bij het maken worden opgegeven en **kan niet worden gewijzigd**. |
 | Aantal decimalen | het aantal decimalen dat is toegestaan in een getal. |
 | Standaardwaarde | De standaardwaarde wordt voor dit veld gebruikt. |
 | Beschrijving | de standaardbeschrijving. |
 | Waarde weergeven | Geef op of de waarde moet worden weergegeven. |
 | Extern | Als deze optie is aangevinkt, is het veld beschikbaar via een Customer Centre. Alleen relevant voor standaardtabellen, omdat extra tabellen altijd worden weergegeven in Customer Centres. |
-| Koptekst voor lijst | dit veld wordt gebruikt om een koptekst op te geven voor deze items wanneer ze worden weergegeven als 'sub-items' in een lijst. |
+| Koptekst voor lijst | dit veld wordt gebruikt om een koptekst op te geven voor deze items wanneer ze worden weergegeven als 'sub-items' in een lijst. Met CRM Suite **Growth** of hoger is het ook het label van het sectietabblad op het gerelateerde record. Verplicht wanneer **Een-op-veel-relaties weergeven** is geselecteerd. |
 | Functieknoppen verbergen | (relaties) selecteer deze optie om de functie voor het toevoegen van nieuwe items aan de relatietabellen te verbergen. |
 | Veld verbergen | Geef op of het veld moet worden weergegeven. |
 | HTML-tags behouden | (tekst) selecteer deze optie om de HTML-tag in de tekst op te nemen. |
@@ -71,9 +94,9 @@ De eigenschap **URL** in deze tabel hoort bij het veldtype **Dynamische link**. 
 | Aantal eenheden | (tijdspanne) voer het maximumaantal eenheden voor de 'grootste' geselecteerde tijdseenheid in. Bijvoorbeeld: Als u uren en minuten hebt geselecteerd en daarna '4' invoert, kan een maximum van 4 uur worden geselecteerd, terwijl minuten tot 60 gaan. Zo ook voor dagen en uren, er kunnen dan maximaal 4 dagen worden geselecteerd, terwijl u tot 24 uur kunt gaan. |
 | Alleen leaf-knooppunten toestaan voor hiërarchische keuzelijsten | (extra tabelrelatie) geeft aan dat alleen knooppunten op het laagste niveau kunnen worden gekozen door de gebruiker. |
 | Functie | geeft de positie aan van het veld tussen de andere velden in lijsten. |
-| Zoekoperator | Selecteer de te gebruiken zoekoperator voor dit veld. |
+| Zoekcriteria | De te gebruiken zoekoperator voor dit veld, bijvoorbeeld **begint met**. |
 | Weergeven in tabel | Als deze optie is ingeschakeld, wordt dit veld weergegeven als een kolom in schermen waarin verschillende vermeldingen in een tabel worden weergegeven. |
-| Een-op-veel-relaties weergeven | Als u de veldtypen **Persoonsrelatie**, **Bedrijfsrelatie** of **Verzoekrelatie** hebt geselecteerd en een tabblad met gegevens uit deze tabel wilt weergeven in de persoons-, bedrijfs- of verzoekschermen, kunt u dit veld aanvinken. |
+| Een-op-veel-relaties weergeven | Als u de veldtypen **Persoonsrelatie**, **Bedrijfsrelatie** of **Verzoekrelatie** hebt geselecteerd en een tabblad met gegevens uit deze tabel wilt weergeven in de persoons-, bedrijfs- of verzoekschermen, kunt u dit veld aanvinken. Met CRM Suite **Growth** of hoger krijgt het gerelateerde record in SuperOffice CRM ook een sectietabblad, bijvoorbeeld een tabblad **Apparatuur** bij het bedrijf. |
 | Tabel | geeft het veld aan waarvan de tabel deel uitmaakt. |
 | Targettabel | geeft aan welke tabel gebruikt moet worden. |
 | Tekstgebied /hoogte | selecteer deze optie om de hoogte (aantal regels) van het tekstveld op te geven. |
@@ -88,21 +111,56 @@ De eigenschap **URL** in deze tabel hoort bij het veldtype **Dynamische link**. 
 
 ## Relatie toevoegen (vreemde sleutel, FK)
 
-1. Klik op **Nieuw veld**.
-1. Selecteer het relatie type voor de entiteit waarmee u wilt verbinden en klik op **OK**.
+Een relatieveld koppelt een item in deze tabel aan een record in een andere tabel. Met CRM Suite **Growth** of hoger kan het gerelateerde record ook een sectietabblad tonen met de gekoppelde items.
 
-    <Note>
-    Beschikbaar vanaf versie 10.3.4 in pilot: Het selecteren van **Eén-op-veel-relaties weergeven** voegt een sectietabblad (archief) toe aan gerelateerde standaardentiteiten.
-    </Note>
+1. Wijs naar de tabel die de relatie moet bevatten en klik op **Nieuw veld**.
 
-1. Stel veld eigenschappen in zoals hierboven beschreven.
+1. Selecteer het relatietype voor de tabel waaraan u wilt koppelen en klik op **OK**.
+
+1. Stel veldeigenschappen in zoals hierboven beschreven. Om een sectietabblad op het gerelateerde record te tonen, selecteer **Een-op-veel-relaties weergeven** en voer het label van het tabblad in bij **Koptekst voor lijst**.
+
+    ![Veldeigenschappen voor een extra tabelrelatie, met Koptekst voor lijst en Targettabel ingevuld -screenshot][img3]
+
 1. Klik op **OK** om de relatie op te slaan.
+
+1. Open bij een **Extra tabelrelatie** de eigenschappen van de targettabel en stel **Veld weergeven** in op een veld dat gebruikers herkennen, zoals de naam. Zie [tabeleigenschappen][1].
+
 1. Klik op **NetServer opnieuw starten** om de wijzigingen toe te passen.
 
-Bijvoorbeeld, om alle binnenkomende verzoeken te verbinden met een specifieke verkoop, kunt u een extra veld van het type verkooprelatie toevoegen aan verzoeken ([ticket tabel][4]). Om verbonden verzoeken te tonen bij het bekijken van een verkoop in SuperOffice CRM, moet u een webpaneel bouwen.
+Een tabel Lease heeft bijvoorbeeld een veld **Laptop** (extra tabelrelatie naar de tabel Laptop) en een veld **Verkoop** (verkooprelatie). Bij beide is **Een-op-veel-relaties weergeven** geselecteerd en is *Leases* ingevuld als **Koptekst voor lijst**. Elke laptop en elke verkoop toont dan een tabblad **Leases** met de gekoppelde leases.
+
+![Verkoop met een sectietabblad Leases -screenshot][img4]
+
+Met een licentie op basis van gebruikersplannen bouwt u in plaats daarvan een webpaneel om de gerelateerde aangepaste gegevens weer te geven.
+
+## Toon extra veld op het tabblad Details
+
+Scenario: U heeft een extra veld toegevoegd aan het bedrijf (`contact` tabel) dat aangeeft of een bedrijf een ondersteuningscontract heeft. U wilt die informatie weergeven bij het bekijken van een verzoek.
+
+1. Ga naar **Instellingen en onderhoud** > **Schermontwerper** en selecteer het tabblad **Verzoek**.
+
+1. Klik onderaan op <i class="ph ph-pencil-simple" aria-label="Edit layout"></i>.
+
+1. Zoek de instelling **Velden**.
+
+1. Selecteer uw veld.
+
+1. Selecteer indien gewenst de passende opmaakopties.
+
+1. Klik op **Opslaan** om de instellingen op te slaan.
+
+<Tip>
+U kunt ook velden groeperen, koppen toevoegen voor groepen en de grootte van kolommen wijzigen. [Lees meer over de Schermontwerper][3].
+</Tip>
+
+In de klassieke Service gebruikt u in plaats daarvan een gemeenschappelijk elementprofiel. De stappen staan in de [help voor versie 11][4].
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
-[4]: ../../../en/database/tables/ticket
+[3]: /nl/customization/screen-designer/admin/working-with-fields
+[4]: https://help.superoffice.com/docs/11/nl/custom-objects/admin/show-extra-field-on-request-details.html
 
-[img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

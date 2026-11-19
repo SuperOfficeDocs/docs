@@ -2,22 +2,46 @@
 uid: help-en-extra-fields-create
 title: Add extra fields
 description: How to define extra fields in SuperOffice
-keywords: ['extra field', 'custom field', 'field properties']
-author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+keywords: ['extra field', 'custom field', 'custom object field', 'field properties']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
-tier: growth
+tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-redirect_from: /en/custom-objects/learn/extra-field/create
+redirect_from:
+  - /en/custom-objects/learn/extra-field/create
+  - /en/custom-objects/admin/show-extra-field-on-request-details
 userflow_index: true
+related:
+  - About extra fields: /en/custom-objects/learn/extra-field
+  - Add an extra table: /en/custom-objects/admin/create-extra-table
+  - About extra tables: /en/custom-objects/learn/extra-table
+  - Working with fields: /en/customization/screen-designer/admin/working-with-fields
+  - Design the layout of a custom object: /en/customization/screen-designer/admin/add-layout#custom-objects
 language: en
 ---
 
 import GotoTables from "./snippets/goto-tables.md";
+import ReqDevToolsTransition from "../../../snippets/license/req-dev-tools-transition.mdx";
 
-After you create an [extra table][1], you must set up fields in the table, to allow you to subsequently input data (entries). You can also create extra fields in standard tables.
+<ReqDevToolsTransition />
+
+After you create an [extra table][1], add the fields users fill in when they add custom data. You can also add extra fields to standard Service tables.
+
+## Naming conventions
+
+<Warning>
+Choose database field names carefully. You **cannot change** them later.
+</Warning>
+
+Use logical names, so it is easy to see what the database contains. The **x_** prefix prevents conflicts with future SuperOffice field names. It does not prevent conflicts between extra fields from different third parties.
+
+* Must start with **x_**
+* Must be unique within the table
+* Must be a single word
+* May contain only underscores, the letters a to z, and numbers
 
 ## Steps
 
@@ -25,7 +49,7 @@ After you create an [extra table][1], you must set up fields in the table, to al
 
 1. Browse to your desired table, point at the table name, and click **New field**.
 
-    ![Create extra field -screenshot][img1]
+    ![Tables screen with New field next to a table -screenshot][img1]
 
 1. Select a type for the new field and click **OK**.
 
@@ -33,11 +57,10 @@ After you create an [extra table][1], you must set up fields in the table, to al
 
     * Enter a *name* to be used as the label.
     * Enter a *database field* beginning with **x_** to identify the field in the schema.
-    * Optionally set other properties. The type (specified in step 3) determines what is available. Se details about the fields below.
+    * To make the field mandatory, select **Cannot be empty**.
+    * Optionally set other properties. The field type you selected in the previous step determines what is available. See [field properties](#properties).
 
-    <Tip>
-    To make a field mandatory, select **Cannot be empty**.
-    </Tip>
+    ![Field properties for a Text (short) field -screenshot][img2]
 
 1. Click **OK** to save the new field (runs `alter table y_mynewtable add column x_mynewfield ...`).
 
@@ -45,7 +68,7 @@ After you create an [extra table][1], you must set up fields in the table, to al
 
 1. Click **Restart NetServer** when you are done. If Travel is activated, you will also see a message that a new Travel database must be generated.
 
-## Field properties
+## Field properties {#properties}
 
 <Note>
 The **URL** property in this table belongs to the **Dynamic link** field type. To show URLs stored in **Short text** and **Long text** fields as clickable links, see [URLs in text fields][2].
@@ -57,13 +80,13 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Choose from list box | If the field is connected to an extra table, select this option to display a list of table values. |
 | Choose values from list | If checked, the field turns into a list box. The list options are the text strings inputted in the text box, with one option per line. |
 | Create index | If selected, it is possible to search by this field. It is quicker to search for data in indexed fields. |
-| Database field | The column's name in the database must be unique within the table. It should be a single word, containing only underscores, letters (a-z), or numbers, and must start with "x_". This can only be set during creation and and **cannot be changed**. |
+| Database field | The name of the column in the database. It can only be set during creation and **cannot be changed**. |
 | Decimal places | The number of decimal places that are allowed in a number. |
 | Default value | The value to be inserted by default in this field. |
 | Description | The default description. |
 | Display value | Whether to display the field's value. |
 | External | If checked, the field is available from a customer centre. Relevant only for standard tables (extra tables are always displayed in customer centres). |
-| Header for list | A header for these entries when they are displayed as "sub-entries" in a list. |
+| Header for list | A header for these entries when they are displayed as "sub-entries" in a list. With CRM Suite **Growth** or higher, it is also the label of the section tab on the related record. Mandatory when **Show one-to-many relations** is selected. |
 | Hide function buttons | (relations) Select this option to hide the function for adding new entries to relation tables. |
 | Hide the field | Whether to display the field. |
 | Keep HTML tags | (text) Select this option to include the HTML tag in the text. |
@@ -71,9 +94,9 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 | Number of units | (time span) The maximum number of units for the "largest" selected time unit. Example: If you selected hours and minutes, and enter "4", a maximum of 4 hours can be selected, while minutes go to 60. Similarly for days and hours, a maximum of 4 days can be selected, while hours go to 24. |
 | Only allow leaf nodes for hierarchical list boxes | (extra table relation) Specify if only the lowest node in a hierarchy can be selected by the user. |
 | Position | Specifies this field's position among the other fields in lists. |
-| Search operator | Which search operator to use for this field. |
+| Search criteria | The search operator to use for this field, for example **begins with**. |
 | Show in table | If checked, this field is displayed as a column in screens where several entries are displayed in a table. |
-| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. |
+| Show one-to-many relations | If you selected the **Contact relation**, **Company relation** or **Request relation** field types and want to display a tab containing data from this table in the contact, company, or request screens, you can check this field. With CRM Suite **Growth** or higher, the related record in SuperOffice CRM also gets a section tab, for example an **Equipment** tab on the company. |
 | Table | The table this field belongs to. |
 | Target table | Which table to use. |
 | Text area / Height | The number of lines of the text field. |
@@ -88,21 +111,56 @@ The **URL** property in this table belongs to the **Dynamic link** field type. T
 
 ## Add relation (foreign key, FK)
 
-1. Click **New field**.
-1. Select the relation type for the entity you want to connect to and click **OK**.
-1. Set field properties as described above.
+A relation field links an entry in this table to a record in another table. With CRM Suite **Growth** or higher, the related record can also show a section tab that lists the linked entries.
 
-    <Note>
-    Available from version 10.3.4 in pilot: Selecting **Show one-to-many relations** adds a section tab (archive) to related standard entities.
-    </Note>
+1. Point at the table that should hold the relation, and click **New field**.
+
+1. Select the relation type for the table you want to link to and click **OK**.
+
+1. Set field properties as described above. To show a section tab on the related record, select **Show one-to-many relations**, and enter the tab label in **Header for list**.
+
+    ![Field properties for an extra table relation, with Header for list and Target table filled in -screenshot][img3]
 
 1. Click **OK** to save the relation.
+
+1. For an **Extra table relation**, open the properties of the target table and set **Display field** to a field users recognize, such as the name. See [table properties][1].
+
 1. Click **Restart NetServer** to apply the changes.
 
-For example, to connect all incoming requests to a specific sale, you can add an extra field of type sale relation to requests ([ticket table][4]). To list connected requests when viewing a sale in SuperOffice CRM, you will need to build a web panel.
+For example, a Lease table has a **Laptop** field (extra table relation to the Laptop table) and a **Sale** field (sale relation). Both have **Show one-to-many relations** selected and *Leases* as **Header for list**. Each laptop and each sale then shows a **Leases** tab with the linked leases.
+
+![Sale with a Leases section tab -screenshot][img4]
+
+With a user-plan based license, build a web panel to list the related custom data instead.
+
+## Show an extra field on the Details tab
+
+Scenario: you have added an extra field to company (`contact` table) that shows whether a company has a support contract. You want to display this information when viewing a request.
+
+1. Go to **Settings and maintenance** > **Screen designer** and select the **Requests** tab.
+
+1. Click <i class="ph ph-pencil-simple" aria-label="Edit layout"></i> at the bottom.
+
+1. Locate the **Fields** setting.
+
+1. Select your field.
+
+1. Optionally, select the appropriate styling options.
+
+1. Click **Save** to save the settings.
+
+<Tip>
+You can also group fields, add headers for groups, and change the sizes of columns. [Learn more about the Screen Designer][3].
+</Tip>
+
+In classic Service, you use a common element profile instead. The steps are in the [version 11 help][4].
 
 [1]: ./create-extra-table
 [2]: ../learn/extra-field#urls
-[4]: /en/database/tables/ticket
+[3]: /en/customization/screen-designer/admin/working-with-fields
+[4]: https://help.superoffice.com/docs/11/en/custom-objects/admin/show-extra-field-on-request-details.html
 
-[img1]: /media/loc/en/custom-objects/create-extra-tables-and-fields.png
+[img1]: /media/loc/en/custom-objects/tables-new-field.png
+[img2]: /media/loc/en/custom-objects/field-properties-text.png
+[img3]: /media/loc/en/custom-objects/field-properties-extra-table-relation.png
+[img4]: /media/loc/en/custom-objects/sale-lease-tab.png

@@ -1,1 +1,1 @@
-Gå til **Innstillinger og vedlikehold** > **Systemdesign**. Vælg deretter fanen **Tabeller**.
+Gå til **Indstillinger og vedligeholdelse** > **Systemdesign**. Vælg derefter fanen **Tabeller**.

@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   check-redirect-coverage:
-    name: "Warn on renamed/deleted pages missing a redirect"
+    name: "Fail on renamed/deleted pages missing a redirect"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

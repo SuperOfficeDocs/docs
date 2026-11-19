@@ -3,16 +3,15 @@ uid: help-nl-extra-field
 title: Extra veld
 description: Extra veld
 keywords: ['extra veld', 'aangepast', 'databasetabel', 'url', 'klikbare link', 'link in extra veld']
-author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Toon extra velden op het Details-tabblad: /nl/custom-objects/admin/show-extra-field-on-request-details
-  - /nl/custom-objects/admin/create-extra-field
+  - Extra velden toevoegen: /nl/custom-objects/admin/create-extra-field
 language: nl
 ---
 
@@ -20,7 +19,9 @@ import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
 <ReqDevToolsTransition />
 
-Een *extra veld* is een aangepast veld dat je toevoegt aan een bestaande SuperOffice-databasetabel. Je kunt de volgende entiteiten uitbreiden:
+Een *extra veld* is een aangepast veld dat je toevoegt aan een bestaande SuperOffice-databasetabel. Extra velden kunnen bijvoorbeeld worden gebruikt als zoekcriteria en kolommen in de verkoop in SuperOffice CRM.
+
+Je kunt de volgende entiteiten uitbreiden:
 
 * Categorie
 * Bedrijf
@@ -87,30 +88,28 @@ Databasetabellen zijn verbonden met *vreemde sleutel* (FK). Dit zijn veldtypen d
 * Afspraakrelatie
 * Extratabelrelatie
 
-#### Beschikbaar in pilot vanaf versie 10.3.4
+#### Sectietabbladen voor gerelateerde aangepaste gegevens
 
-Wanneer een relationeel veld is ingesteld om een-op-veel-relaties weer te geven, voegt het systeem automatisch een sectietabblad toe in gerelateerde standaardentiteiten. Dit is niet hetzelfde als het tabblad **Relaties** op de Bedrijf- en Contactschermen.
+Met CRM Suite **Growth** of hoger krijgt het gerelateerde record een sectietabblad met de items die ernaar verwijzen, wanneer bij een relatieveld **Een-op-veel-relaties weergeven** is geselecteerd. Een bedrijf kan bijvoorbeeld een tabblad **Leases** tonen. Dit tabblad is niet hetzelfde als het tabblad **Relaties** op de Bedrijf- en Contactschermen.
 
-![Sectietabblad met extraveldrelatie -screenshot][img1]
+![Bedrijf met een sectietabblad Leases -screenshot][img1]
 
-#### Beschikbaar in pilot vanaf versie 10.3.7
+#### Gerelateerde aangepaste gegevens bekijken in een voorbeeld
 
-Om de details van items in deze lijst te bekijken zonder elke entiteit afzonderlijk te openen:
+Met CRM Suite **Growth** of hoger kunt u de details van gerelateerde aangepaste gegevens bekijken in het zijpaneel. Om de details van de items in deze lijst te bekijken zonder elk item te openen:
 
 1. Ga naar het zijpaneel en selecteer de weergave **Voorbeeld**.
-2. Klik op een item in het relatiegebaseerde sectietabblad. Het zijpaneel toont een voorbeeld van de geselecteerde entiteit. In het voorbeeld kunt u:
 
-    * Klik op een standaardentiteit om ernaartoe te gaan.
-    * Klik op een aangepast object om een dialoogvenster te openen voor het bekijken of bewerken van aanvullende informatie.
+1. Selecteer een rij op het sectietabblad. Het zijpaneel toont een voorbeeld van de geselecteerde rij. In het voorbeeld kunt u:
+
+    * Een record van een standaardentiteit, zoals een bedrijf, selecteren om ernaartoe te gaan.
+
+    * Aangepaste gegevens selecteren om een dialoogvenster te openen waarin u ze kunt bekijken of bewerken.
 
 ![Voorbeeld extraveldrelatie -screenshot][img2]
 
-## Gebruik
-
-Extra velden kunnen bijvoorbeeld worden gebruikt als zoekcriteria en kolommen in de verkoop in SuperOffice CRM.
-
 [6]: ./extra-table
 [7]: /nl/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png

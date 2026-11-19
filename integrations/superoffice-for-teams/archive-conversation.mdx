@@ -4,7 +4,7 @@ title: Archive a Teams conversation
 description: How to save Teams chat messages and channel conversations to SuperOffice.
 keywords: ['SuperOffice for Teams', 'Teams', 'archive', 'save chat', 'conversation', 'messages']
 author: schildea
-date: 02.06.2026
+date: 11.17.2026
 content_type: howto
 category: integration
 topic: SuperOffice for Teams
@@ -15,6 +15,10 @@ language: en
 
 Archiving works in chats and standard channels - refer to the [compatibility overview][1] to see exactly what's supported where. You can start archiving in two ways. Both open the same archive window, where you choose your scope and fill in the details needed to save the content to the correct place in SuperOffice.
 
+The **Choose Action** screen also offers **Create Request** and **Add to Request**, for conversations that need a customer service follow-up. See [Create or add to a request from Teams][2].
+
+![The Choose Action screen with Save Chat, Save File, Create Request, and Add to Request -screenshot][img5]
+
 ## Option A - Start from a specific message
 
 Use this when you want to capture a specific point in the conversation - a key decision, a handover, or (in a standard channel) a message with a file.
@@ -22,7 +26,7 @@ Use this when you want to capture a specific point in the conversation - a key d
 1. Find the message in the chat or channel.
 1. Right-click the message (or select the **...** menu).
 1. Select **SuperOffice for Teams**.
-1. Click **Save Chat**.
+1. On the **Choose Action** screen, click **Save Chat**.
 1. Select your scope: **This message**, **This and later**, or **Custom**.
 1. Fill in the details to connect the archive to the correct record in SuperOffice (see below).
 1. Click **Create**.
@@ -36,7 +40,7 @@ Use this when you want to archive a range of messages - like Today, Yesterday, o
 1. Open the chat or channel.
 1. Click the **+** (apps) icon in the compose area.
 1. Search for and select **SuperOffice for Teams**.
-1. Click **Save Chat** in the pop-up.
+1. On the **Choose Action** screen, click **Save Chat**.
 1. Select a date range or click **Custom** to set start and end dates.
 1. Fill in the details to connect the archive to the correct record in SuperOffice (see below).
 1. Click **Create**.
@@ -55,7 +59,7 @@ Before you save, you can decide what gets included.
 * **Include emoji reactions:** Captures reactions like thumbs up or heart alongside messages. Custom emojis are not supported.
 * **Include files (attach to .EML):** Attaches files from the selected date range to the email file. This option is only available in standard channels.
 
-## Choosing where it goes in SuperOffice
+## Choosing where it goes in SuperOffice {#where-it-goes}
 
 Whether you're saving a chat or a file, you'll fill in a few details so the archive lands in the correct place.
 
@@ -73,8 +77,10 @@ When you're ready, click **Create**. After a successful save, SuperOffice for Te
 ![The successfully archived chat confirmation with the Open in SuperOffice button -screenshot][img4]
 
 [1]: ./index
+[2]: ./create-request
 
 [img1]: /media/loc/en/integrations/superoffice-for-teams/teams-message-menu-sofo.png
 [img2]: /media/loc/en/integrations/superoffice-for-teams/teams-compose-bar-picker.png
 [img3]: /media/loc/en/integrations/superoffice-for-teams/teams-archive-form.png
 [img4]: /media/loc/en/integrations/superoffice-for-teams/teams-archive-success.png
+[img5]: /media/loc/en/integrations/superoffice-for-teams/teams-choose-action.png

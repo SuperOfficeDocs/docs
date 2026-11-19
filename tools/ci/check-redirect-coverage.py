@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Warn (never fail) when a PR renames, moves, or deletes a content page
+"""Fail when a PR renames, moves, or deletes a content page
 with no corresponding `config/redirects.json` entry, or renames/moves an
 `en/` page without mirroring the change across its `da/de/nl/no/sv`
 translations (see issue #340).
@@ -19,6 +19,12 @@ for:
   * a `source` entry covered by an existing wildcard (`prefix/*`), or
   * (renamed only) any entry whose `destination` already equals the new path: someone already added
     the redirect, just not in the exact string shape this script would have derived itself.
+
+A change of extension only (`.md` <-> `.mdx` at an otherwise identical path, in either direction) is
+skipped: Mintlify serves both at the same URL, so nothing needs a redirect (#684). This covers a rename
+git pairs up, and a deletion whose other-extension sibling exists at HEAD (git reports a delete plus
+an add when the content changed too much to detect the rename). The translation-mirroring check below
+skips such a rename too, since the translations' URLs don't change either.
 
 Per `contribute/redirects.mdx`'s documented `.html`-suffix-duplicate rule (#339), a bare-form entry
 alone isn't enough unless the source is a wildcard, ends in `/index` or a trailing slash, or already
@@ -63,14 +69,15 @@ out of scope: it only watches for a newly added nav entry losing language parity
 full historical completeness auditing of every existing page (that remains untracked; see the master
 journal's "Explicitly out of scope" section for the pre-existing gaps this doesn't catch).
 
-Like the checks above, this is advisory only; it never fails the build, and it only runs on a full
+Like the checks above, a hit fails the run (see below), and it only runs on a full
 (unscoped) invocation, since a `--path`-scoped run is asking about one folder's redirect/rename
 coverage, not repo-wide nav parity.
 
-All three checks emit a GitHub Actions warning annotation per hit
+All three checks emit a GitHub Actions error annotation per hit
 so it shows up on the PR's Files Changed tab, and sets `found=true`/`translation_gap=true` on
 `$GITHUB_OUTPUT` (when running under Actions) so the calling workflow can label the PR without
-re-deriving anything itself. The nav-language-parity check above also feeds into both of those
+re-deriving anything itself. Any hit makes the script exit 1, so the
+check goes red and the PR shows as unsafe to merge (#684). The nav-language-parity check above also feeds into both of those
 booleans: a missing per-language nav entry counts as a `found` hit and sets `translation_gap` just like
 a stale-pathed rename does.
 
@@ -87,6 +94,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.page_history import swap_md_extension  # noqa: E402
 from lib.repo_files import file_path_to_url  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -129,6 +137,20 @@ def is_in_scope(rel_path):
 
 
 
+def is_extension_only_change(old_path, new_path):
+    """True when the two paths are identical apart from `.md` vs `.mdx`, which
+    Mintlify serves at the same URL, so no redirect is needed (#684)."""
+    return swap_md_extension(old_path) == new_path
+
+
+def has_same_url_sibling(deleted_path):
+    """True when a deleted `.md`/`.mdx` file's other-extension twin exists at
+    HEAD: git reported a delete plus an add instead of a rename, but the URL
+    is unchanged (#684)."""
+    sibling = swap_md_extension(deleted_path)
+    return sibling is not None and (REPO_ROOT / sibling).is_file()
+
+
 def get_renamed_and_deleted(base_ref, scope=None):
     """Returns (renamed, deleted): renamed is a list of (old_path, new_path)
     from git's own rename detection; deleted is a list of old_path. Scoped
@@ -146,11 +168,11 @@ def get_renamed_and_deleted(base_ref, scope=None):
         status = parts[0]
         if status.startswith("R"):
             old_path, new_path = parts[1], parts[2]
-            if is_in_scope(old_path):
+            if is_in_scope(old_path) and not is_extension_only_change(old_path, new_path):
                 renamed.append((old_path, new_path))
         elif status.startswith("D"):
             old_path = parts[1]
-            if is_in_scope(old_path):
+            if is_in_scope(old_path) and not has_same_url_sibling(old_path):
                 deleted.append(old_path)
     return renamed, deleted
 
@@ -339,12 +361,12 @@ def main():
         if missing:
             redirect_hits += 1
             print(
-                f"::warning file={new_path}::Renamed from '{old_path}' with no redirect covering "
+                f"::error file={new_path}::Renamed from '{old_path}' with no redirect covering "
                 f"the old URL: missing {', '.join(missing)}. See contribute/redirects.mdx."
             )
         for message in check_translation_mirroring(old_path, new_path):
             translation_hits += 1
-            print(f"::warning file={new_path}::{message}")
+            print(f"::error file={new_path}::{message}")
 
     for old_path in deleted:
         old_url = file_path_to_url(old_path)
@@ -352,17 +374,17 @@ def main():
         if missing:
             redirect_hits += 1
             print(
-                f"::warning file={old_path}::Deleted with no redirect covering the old URL: "
+                f"::error file={old_path}::Deleted with no redirect covering the old URL: "
                 f"missing {', '.join(missing)}. See contribute/redirects.mdx."
             )
 
     if redirect_hits:
-        print(f"\n{redirect_hits} renamed/deleted page(s) missing redirect coverage; see warnings above.")
+        print(f"\n{redirect_hits} renamed/deleted page(s) missing redirect coverage; see errors above.")
     else:
         print("No renamed/deleted pages missing redirect coverage.")
 
     if translation_hits:
-        print(f"{translation_hits} translation(s) not mirrored to a renamed English page's new path; see warnings above.")
+        print(f"{translation_hits} translation(s) not mirrored to a renamed English page's new path; see errors above.")
 
     nav_parity_hits = 0
     if not args.path:
@@ -370,18 +392,19 @@ def main():
         # module docstring's "Nav-language-parity check" section.
         for message in check_nav_language_parity(args.base_ref):
             nav_parity_hits += 1
-            print(f"::warning file={NAV_LEARN_PATH}::{message}")
+            print(f"::error file={NAV_LEARN_PATH}::{message}")
 
         if nav_parity_hits:
-            print(f"{nav_parity_hits} new nav entr{'y' if nav_parity_hits == 1 else 'ies'} missing per-language nav coverage; see warnings above.")
+            print(f"{nav_parity_hits} new nav entr{'y' if nav_parity_hits == 1 else 'ies'} missing per-language nav coverage; see errors above.")
 
     write_github_output(
         found=bool(redirect_hits or translation_hits or nav_parity_hits),
         translation_gap=bool(translation_hits or nav_parity_hits),
     )
 
-    # Advisory only; never fail the build.
-    return 0
+    # Blocking: any gap makes the PR unsafe to merge (#684). The workflow's
+    # label step runs with if: always(), so labels are still applied.
+    return 1 if (redirect_hits or translation_hits or nav_parity_hits) else 0
 
 
 if __name__ == "__main__":

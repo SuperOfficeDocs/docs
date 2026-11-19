@@ -12,7 +12,14 @@ The nav JSON may be:
   - a bare list of pages/groups: [...]
   - a full docs.json, or any of the modular-config split files it now $refs
     into (config/navigation.json, config/nav-<lang>.json, config/nav-<section>.json)
-    - every string found anywhere under a "pages" key is treated as a page path
+
+Only these strings are treated as page paths:
+  - strings directly inside a "pages" list (or inside a top-level bare list)
+  - the value of a key in PAGE_PATH_KEYS ("root")
+  - the spec file of an "openapi" entry (its "source", or the string itself)
+Other string values ("group", "tab", "item", "icon", "directory", ...) are
+labels or settings, not pages. A "$ref" to another split
+file is not followed; run the script on that file directly.
 
 Exit code is non-zero if any page path fails to resolve.
 """
@@ -22,20 +29,37 @@ import json
 import os
 import sys
 
+# Dict keys whose string value is a page path.
+PAGE_PATH_KEYS = {"root"}
 
-def find_page_strings(node, out):
+
+def find_page_strings(node, out, in_pages=True):
+    """Collect page paths from a nav node.
+
+    in_pages is True when node sits in a "pages" list (or is the top-level
+    value), where bare strings are page paths.
+    """
     if isinstance(node, str):
-        out.append(node)
-    elif isinstance(node, dict):
-        if "pages" in node:
-            for p in node["pages"]:
-                find_page_strings(p, out)
-        else:
-            for v in node.values():
-                find_page_strings(v, out)
+        if in_pages:
+            out.append(node)
     elif isinstance(node, list):
         for item in node:
-            find_page_strings(item, out)
+            find_page_strings(item, out, in_pages)
+    elif isinstance(node, dict):
+        for key, value in node.items():
+            if key == "pages":
+                find_page_strings(value, out, in_pages=True)
+            elif key in PAGE_PATH_KEYS and isinstance(value, str):
+                out.append(value)
+            elif key == "openapi":
+                # Spec file: "openapi": "path" or {"source": "path", "directory": ...}
+                source = value.get("source") if isinstance(value, dict) else value
+                if isinstance(source, str):
+                    out.append(source)
+            elif key == "$ref":
+                continue
+            else:
+                find_page_strings(value, out, in_pages=False)
 
 
 def resolves(repo_root, page_path):
