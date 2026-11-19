@@ -4,8 +4,8 @@ title: Troubleshooting Teams Notify
 sidebarTitle: "Troubleshooting"
 description: Solutions to common issues with Teams Notify.
 keywords: ['Teams Notify', 'troubleshooting', 'missing events', 'notifications']
-author: SuperOffice Product and Engineering
-date: 11.12.2026
+author: remcosuperoffice
+date: 11.19.2026
 content_type: howto
 category: integration
 topic: Teams Notify

@@ -3,9 +3,9 @@ uid: teams-notify-supported-events
 title: Supported events in Teams Notify
 sidebarTitle: "Supported events"
 description: SuperOffice events that Teams Notify can post to Microsoft Teams, and the filters available for each.
-keywords: ['Teams Notify', 'events', 'company', 'project', 'sale', 'service ticket', 'minimum sale price', 'probability']
-author: SuperOffice Product and Engineering
-date: 11.12.2026
+keywords: ['Teams Notify', 'events', 'company', 'project', 'sale', 'request', 'minimum sale price', 'probability']
+author: remcosuperoffice
+date: 11.19.2026
 content_type: reference
 category: integration
 topic: Teams Notify
@@ -23,11 +23,13 @@ Teams Notify posts a message in the selected Microsoft Teams channel when any of
 |---|---|
 | A company is created | None |
 | A project is created | None |
-| A service ticket is created | None |
+| A request is created | None |
 | A sale is created | Minimum sale price |
 | A sale turns to sold | Minimum sale price |
 | A sale turns to lost | Minimum sale price |
-| A sale's probability changes | Minimum probability percentage and/or minimum sale price |
+| A sale's probability changes | Minimum probability percentage, minimum sale price, or both |
+
+The sale filters are set per sale type, so you can use different criteria for a sale to a new customer than for a cross-sale to an existing customer.
 
 Configure events and filters in [Teams Notify settings][1].
 

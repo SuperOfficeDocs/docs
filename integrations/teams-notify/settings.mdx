@@ -4,8 +4,8 @@ title: Configure Teams Notify
 sidebarTitle: "Settings"
 description: Connect to Microsoft Teams, choose which channels receive which SuperOffice events, and filter sale notifications.
 keywords: ['Teams Notify', 'settings', 'channels', 'events', 'advanced settings', 'sale filter', 'disconnect']
-author: SuperOffice Product and Engineering
-date: 11.12.2026
+author: remcosuperoffice
+date: 11.19.2026
 content_type: howto
 category: integration
 topic: Teams Notify
@@ -20,6 +20,8 @@ language: en
 In the Teams Notify portal, choose which SuperOffice events are posted to which Microsoft Teams channels.
 
 ## Connect to Microsoft Teams and select channels
+
+A Microsoft 365 administrator must sign in with Microsoft and approve the requested permissions. You don't need to select **Consent on behalf of your organization**.
 
 1. Sign in to the Teams Notify portal at [msteams.superofficeapps.com][2].
 2. Go to **Settings**.
@@ -45,16 +47,31 @@ Leave the channel empty if you don't want notifications for an event.
 
 ## Filter sale events
 
-Use advanced settings to post only sales that meet certain criteria.
+Use advanced settings to post only sales that meet certain criteria. You set the criteria per sale type.
 
-1. Click **Enable advanced settings**.
+1. Under **Channels & events**, click **Enable advanced settings**.
 
     ![Enable advanced settings link -screenshot][img4]
 
 2. Select the **Sale** tab.
-3. Select the sale type for which you want to specify the criteria a sale must meet to be posted.
+3. Click a sale type to expand it: **Sale to new customer**, **Sale to existing customer**, **Cross-sale to existing customer**, or **Other**.
+4. For **Created**, **Sold**, and **Lost**, set these options:
+
+    * **Channels**: The Microsoft Teams channels that receive the event.
+    * **Minimum Sale Price**: Only sales at or above this amount are posted.
+
+5. For **Probability changed**, set these options:
+
+    * **Channels**: The Microsoft Teams channels that receive the event.
+    * **Minimum Probability %**: Only sales at or above this probability are posted.
+    * **Minimum Sale Price**: Only sales at or above this amount are posted.
 
     ![Advanced settings on the Sale tab -screenshot][img5]
+
+6. Repeat for the other sale types you want to filter.
+7. Click **Save**.
+
+The **Company**, **Project**, and **Ticket** tabs show the channel settings for those events.
 
 See [Supported events][1] for the filters available per event.
 
