@@ -10,12 +10,13 @@ topic: ConnectERP
 platform: Visma Net
 related:
   - /en/custom-objects/admin/add-udef
+  - /en/customization/screen-designer/admin/add-layout
 language: en
 userflow_index: true
 ---
 
 <Note>
-Order sync is available only in **CRM Suite Growth and higher**. Skip this page for Core.
+Order sync is available only in **CRM Suite Growth and higher**. Skip these steps for Core.
 </Note>
 
 Order sync synchronizes sales orders in both directions:
@@ -73,12 +74,16 @@ Keep `allowOnlySaleWithStatusSold = true` to prevent accidental order creation i
 
 ![Sale card: admin layout with Create Order in Visma Net button -screenshot][img2]
 
+<Warning>
+Assign the admin layout only to user groups that should be able to push data to Visma Net. This prevents accidental data creation by other users.
+</Warning>
+
 ## 4. Create the product selection
 
 DataBridge uses this selection as the field template for the **Visma Net Sales Orders (Button)** integration.
 
-1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice® CRM**.
-1. Click **New** > **Selection**.
+1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice CRM**.
+1. Click **New** > **Selection** to [create a selection][5].
 1. Select **Find Product**.
 1. [Add a criterion][3] with **Code** as the field, **Is not** as the operator, and a single space character as the value.
 1. Run the search and confirm that at least one result appears. An empty selection may cause DataBridge to fail when the integration runs.
@@ -120,6 +125,7 @@ Continue with [Add panels][1].
 [2]: ./verify-finalize
 [3]: /en/search-options/learn/search-criteria
 [4]: /en/customization/screen-designer/admin/add-layout
+[5]: /en/search-options/selection/learn/create
 
 [img1]: /media/loc/en/integrations/connect-erp/sale-card-standard-layout.png
 [img2]: /media/loc/en/integrations/connect-erp/sale-card-admin-layout.png
