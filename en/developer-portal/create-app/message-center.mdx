@@ -12,7 +12,7 @@ deployment: online
 related:
   - /en/developer-portal/partner/partner-settings
   - /en/developer-portal/best-practices/error-emails
-  - /en/developer-portal/partner/manage-technical-contacts
+  - /en/developer-portal/faq/update-contact-person
   - /en/developer-portal/standard-app/app-store/app-store-info
 language: en
 ---
@@ -33,7 +33,9 @@ It collects messages from:
 * Your emails sent to `appdev@superoffice.com` or `appstore@superoffice.com`.
 
   <Warning>
+
   Problems may occur if you use a different email address than the one you sign in to the Developer Portal with, or if the address is a duplicate in SuperOffice.
+
   </Warning>
 
 * Notifications about Developer Portal changes.
@@ -129,16 +131,12 @@ To send an image with your reply:
 
 Next to the **Send** button there is a toggle that decides what happens to the ticket *after* your reply goes out.
 
-By default, the toggle is set to **Mark as answered**. Switch it to **Return to SuperOffice** to hand the ticket back; when you do, **Send** is disabled until you add at least one recipient.
+By default, the toggle is set to **Mark as answered**. Switch it to **Return to SuperOffice** to hand the ticket back. **Send** is then disabled until you add at least one recipient in **To**, **Cc**, or **Bcc**, so you can't hand a ticket back without telling the customer.
 
 | Option | When to use it | What happens to the ticket |
 |---|---|---|
 | **Mark as answered** *(default)* | You have resolved the customer's question yourself. | The ticket is closed on the partner side and moves to the **Closed** category. You can still open it later from there. |
-| **Return to SuperOffice** | You need SuperOffice to take it from here, or the request is outside the partner's scope. | Responsibility for the ticket moves back to SuperOffice. For **app support** tickets the ticket also leaves your Messages entirely - it no longer belongs to the partner. The reply is still emailed to everyone listed in **To**, **Cc**, and **Bcc**. |
-
-<Warning>
-When the toggle is set to **Return to SuperOffice**, the reply must have at least one recipient. **Send** is disabled until you add an address in **To**, **Cc**, or **Bcc**. This prevents you from handing a ticket back without telling the customer.
-</Warning>
+| **Return to SuperOffice** | You need SuperOffice to take it from here, or the request is outside the partner's scope. | Responsibility for the ticket moves back to SuperOffice. For **app support** tickets, the ticket also leaves your Messages entirely. It no longer belongs to the partner. The reply is still emailed to everyone listed in **To**, **Cc**, and **Bcc**. |
 
 ## How support requests reach you
 
@@ -154,7 +152,9 @@ If you have a **standard application** in the App Store, your customers are also
 5. Choose **Mark as answered** if you resolved the request, or **Return to SuperOffice** if the request isn't for you or SuperOffice should take over. See [Mark as answered or Return to SuperOffice](#mark-as-answered-or-return-to-superoffice).
 
 <Warning>
+
 Always reply from Messages. The notification email only tells you that a customer is waiting for an answer. If you reply to the email, SuperOffice sees your message on the ticket, but the customer doesn't receive it.
+
 </Warning>
 
 If you haven't replied within 7 days, SuperOffice support is reminded to follow up with you. The ticket stays in Messages, and you can still reply.
@@ -163,7 +163,7 @@ Problems that customers report through **Report a problem** in the App Store rea
 
 <Note>
 
-Make sure we can reach you. We send the notification to the app owner's **[Support emails][8]**. If none are set, we use the app's **[Error reporting emails][9]**, then the sign-in email of the app owner's **[technical contact][10]**. If none of these are set, you won't be notified. We recommend that you [set Support emails in your partner settings][11].
+SuperOffice sends the notification to the app owner's **[Support emails][8]**. If none are set, it uses the app's **[Error reporting emails][9]**, then the app owner's **technical contact**. If none of these are set, no one is notified, so make sure the app owner has set **Support emails** in the partner settings.
 
 </Note>
 
@@ -190,8 +190,6 @@ You must be authenticated to see the ticket immediately in the SuperOffice Custo
 [3]: ../widgets/index#messages
 [8]: ../partner/partner-settings
 [9]: ../best-practices/error-emails
-[10]: ../partner/manage-technical-contacts
-[11]: ../partner/update-partner-settings
 
 [img1]: /media/loc/en/developer-portal/messages-icon.png "Messages"
 [img2]: /media/loc/en/developer-portal/messages-reply-reply-all.png "Messages inbox"
