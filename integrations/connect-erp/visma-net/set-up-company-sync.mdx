@@ -120,6 +120,7 @@ This profile is triggered manually when a user clicks **Create Company in Visma 
 1. In the **Source** tab, select the **DB – Template: Companies** selection as the data source.
 1. In the **Data** tab, update the values in the transformations **Visma - Customer Class** and **Visma - Tax Zones**.
 1. Check that the values in all other transformations match the SuperOffice and Visma Net setup.
+1. If you created the **SuperOffice Number** attribute in [Set up Visma Net][4], check that the field mapping includes **EXTNUMBER**, so that the SuperOffice company number is written to the customer in Visma Net.
 1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript).
 
 ### Integration 2: Visma Net Customer Sync (Hourly)
@@ -152,6 +153,7 @@ Continue with [Set up contact sync][3].
 [1]: ./requirements#downloads
 [2]: ./verify-finalize
 [3]: ./set-up-contact-sync
+[4]: ./set-up-visma-net
 
 [img1]: /media/loc/en/integrations/connect-erp/selection-companies.png
 [img2]: /media/loc/en/integrations/connect-erp/company-card-standard-layout.png
