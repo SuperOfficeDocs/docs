@@ -80,11 +80,14 @@ This documentation describes a default setup, with downloadable DataBridge integ
 
 ## Terminology {#terminology}
 
-* **DataBridge integration:** A configuration in DataBridge that moves data between SuperOffice and the ERP system, also called a profile. The default setup provides the integrations as *.ndb* files. Depending on the integration, it runs when a user clicks an action button, on a schedule (hourly or daily), or once, as in the initial match of companies.
-* **Instant Job URL:** The URL that DataBridge generates for an integration so that it can be started on demand. In the default setup, the CRMScripts behind the action buttons on the Company, Contact, and Sale cards call this URL.
+* **DataBridge integration:** A configuration in DataBridge of what to export from a source and import into a destination, for example from Visma Net into SuperOffice. It holds the connection, the field mapping, the transformations, and the schedule. DataBridge previously used the term profile, and some pages in this guide still do. The default setup provides the integrations as *.ndb* files. An integration runs when a user clicks an action button, on a schedule (hourly or daily), or when you start it manually, as in the initial match of companies.
+* **Instant Job URL:** The URL that you copy from a Button integration in DataBridge after you save it. In the default setup, the CRMScripts behind the action buttons on the Company, Contact, and Sale cards use this URL to call that integration.
+* **Job:** One run of a DataBridge integration. A job records when the run started and finished, the number of rows processed, and the log. You find the jobs of an integration on its last tab in DataBridge.
 * **Leading system:** The system that is the source of truth for an entity when the data in SuperOffice and the ERP system conflicts. The leading system does not set the direction of the data flow.
-* **Panel:** A tab on the Company card that shows data such as orders and invoices directly from the ERP system, without copying it into the SuperOffice database. You set up panels in Panels for SuperOffice.
-* **Value mapping:** A list that matches values in the ERP system, such as customer classes or VAT codes, to the corresponding values in SuperOffice. DataBridge applies value mappings in transformations, for example a Map List transformation.
+* **Locked integration:** A DataBridge integration that users without access can only view, not change. Only selected SuperOffice consultants and partners can lock integrations. In Core, the implementing consultant locks the ConnectERP integrations after setup.
+* **Panel:** A tab on the Company card that shows data such as orders and invoices directly from the ERP system, without copying it into the SuperOffice database. You set up panels in Panels for SuperOffice. The panels require an active ConnectERP subscription on the SuperOffice tenant.
+* **Transformation:** A step in a DataBridge integration that changes values from the source before they reach the destination. You manage transformations on the **Data** tab of the integration.
+* **Value mapping:** A list that matches values in the ERP system, such as customer classes or VAT codes, to the corresponding values in SuperOffice. DataBridge applies value mappings in transformations, for example a Map List transformation, which converts each value of a field into an item from a list in the destination.
 
 [1]: /integrations/connect-erp/visma-net/index
 [2]: /en/admin/license/crm-suite
