@@ -43,7 +43,7 @@ The CRMScript allows users to manually push a sale from SuperOffice to Visma Net
     | Variable | Value |
     |---|---|
     | `erpPlatform` | The ERP name shown to users in dialogs, for example `"Visma Net"` |
-    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
+    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript) |
     | `allowOnlySaleWithStatusSold` | `true` to allow only sales with status **Sold** to be pushed; `false` to allow all statuses |
 
 1. Save the script.
@@ -97,7 +97,7 @@ This profile is triggered manually when a user clicks **Create Order in Visma Ne
 1. In DataBridge, import the corresponding *.ndb* file.
 1. Connect to Visma Net.
 1. Select the **DB – Template: Quote** selection as the data source.
-1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#add-instant-job-url).
+1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript).
 
 ### Integration 7: Visma Net Sales Orders (Hourly)
 
@@ -107,7 +107,7 @@ This profile runs automatically every hour to pull new and updated sales orders 
 1. Connect to Visma Net.
 1. After saving, **disable the integration immediately**. You'll enable it in [Verify and finalize][2].
 
-## 6. Add the Instant Job URL to the CRMScript {#add-instant-job-url}
+## 6. Add the Instant Job URL to the CRMScript
 
 1. Go to **Settings and maintenance** > **CRMScript**.
 1. Open the **Order to Visma Net** script.
