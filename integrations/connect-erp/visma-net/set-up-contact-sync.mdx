@@ -4,7 +4,7 @@ title: Set up contact sync
 description: How to configure the full contact synchronization between SuperOffice and Visma Net Financials.
 keywords: ['ConnectERP', 'Visma Net', 'contact sync', 'person sync', 'user-defined fields', 'DataBridge', 'CRMScript']
 author: marcelspapens
-date: 11.11.2026
+date: 11.20.2026
 content_type: howto
 category: integration
 topic: ConnectERP
@@ -22,7 +22,7 @@ Complete [Set up company sync][1] before this page. Contacts in Visma Net are li
 
 ## 1. Create user-defined fields on the Contact card
 
-Go to **SuperOffice Admin > Fields > Contact > Add** and create the following 2 fields. Set both to **Read-Only**.
+Go to **Settings and maintenance** > **Fields** > **Contact** > **Add** and create the following 2 fields. Set both to **Read-Only**.
 
 | # | Field name | Type | Prog ID |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Remember to reset the **Linked to ERP** field on the test contact after saving t
 
 The CRMScript allows users to manually push or update a contact from SuperOffice to Visma Net.
 
-1. Go to **SuperOffice Admin > CRMScript > New script**.
+1. Go to **Settings and maintenance** > **CRMScript** > **New script**.
 1. Open the **Contact to Visma Net** *.txt* file from *crmscripts-visma-net.zip* and paste the content into the script editor.
 1. Set the configuration variables at the top of the script:
 
@@ -73,7 +73,7 @@ The CRMScript allows users to manually push or update a contact from SuperOffice
 
 ### Standard layout
 
-1. Go to **SuperOffice Admin > Screen Designer > Contact**.
+1. Go to **Settings and maintenance** > **Screen designer** > **Contact**.
 1. Create a new layout for all users.
 1. Add a new tab **ERP (Visma Net)** with the two ERP contact fields.
 1. Save and publish the layout.
@@ -111,7 +111,7 @@ This profile runs automatically every hour to synchronize linked contacts.
 
 ## 6. Add the Instant Job URL to the CRMScript {#add-instant-job-url}
 
-1. Go to **SuperOffice Admin > CRMScript**.
+1. Go to **Settings and maintenance** > **CRMScript**.
 1. Open the **Contact to Visma Net** script.
 1. Set the `instantJobUrl` variable to the URL you copied from **Visma Net Person Sync (Button)**.
 1. Save.

@@ -4,7 +4,7 @@ title: Set up company sync
 description: How to configure the full company synchronization between SuperOffice and Visma Net Financials.
 keywords: ['ConnectERP', 'Visma Net', 'company sync', 'user-defined fields', 'DataBridge', 'CRMScript', 'screen designer']
 author: marcelspapens
-date: 11.11.2026
+date: 11.20.2026
 content_type: howto
 category: integration
 topic: ConnectERP
@@ -18,7 +18,7 @@ This page covers all configuration steps required to synchronize companies betwe
 
 ## 1. Create user-defined fields on the Company card
 
-Go to **SuperOffice Admin > Fields > Company > Add** and create the following fields. Set all fields to **Read-Only**.
+Go to **Settings and maintenance** > **Fields** > **Company** > **Add** and create the following fields. Set all fields to **Read-Only**.
 
 <Note>
 Use the exact **Prog IDs** as specified. DataBridge and the CRMScripts rely on these identifiers to read and write the correct fields.
@@ -46,7 +46,7 @@ Note the SuperOffice **template variables** generated for field #2 (ERP Cust. Nu
 
 ## 2. Create the company selection
 
-DataBridge uses this selection as its "field template" for the integrations.
+DataBridge uses this selection as the data source for the company sync integrations.
 
 1. In SuperOffice, click **New > Selection**.
 1. Select **Find Company**.
@@ -65,7 +65,7 @@ Make sure at least one result appears before saving. An empty selection may caus
 The CRMScript allows users to manually push a company from SuperOffice to Visma Net.
 
 1. Download and unzip *crmscripts-visma-net.zip* from the [Downloads][1] page.
-1. Go to **SuperOffice Admin > CRMScript > New script**.
+1. Go to **Settings and maintenance** > **CRMScript** > **New script**.
 1. Open the **Company to Visma Net** *.txt* file and paste the content into the script editor.
 1. Set the configuration variables at the top of the script:
 
@@ -82,7 +82,7 @@ Create two screen layouts in SuperOffice: one for standard users (read-only ERP 
 
 ### Standard layout
 
-1. Go to **SuperOffice Admin > Screen Designer > Company**.
+1. Go to **Settings and maintenance** > **Screen designer** > **Company**.
 1. Create a new layout for all users.
 1. Add a new tab with the label **ERP (Visma Net)**.
 1. Add a panel **Visma Net Key Figures** and add all 11 ERP user-defined fields.
@@ -141,7 +141,7 @@ If any **warnings** appear (yellow background) during import, read the message c
 
 ## 6. Add the Instant Job URL to the CRMScript {#add-instant-job-url}
 
-1. Go to **SuperOffice Admin > CRMScript**.
+1. Go to **Settings and maintenance** > **CRMScript**.
 1. Open the **Company to Visma Net** script.
 1. Set the `instantJobUrl` variable to the URL you copied from **Visma Net Customer Sync (Button)**.
 1. Save.
