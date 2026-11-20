@@ -1,18 +1,17 @@
 ---
 uid: help-de-extra-field
 title: Zusatzfeld
-description: Zusatzfeld
-keywords: ['Zusatzfeld', 'url', 'anklickbarer Link', 'Link im Zusatzfeld']
-author: Bergfrid Dias
-date: 10.13.2026
-so_version: 12.5
+description: Ein Zusatzfeld ist ein benutzerdefiniertes Feld, das Sie in Service einer vorhandenen SuperOffice-Datenbanktabelle hinzufügen.
+keywords: ['Zusatzfeld', 'benutzerdefiniertes Feld', 'Feldtypen', 'url', 'anklickbarer Link', 'Link im Zusatzfeld']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: concept
 tier: core
-audience: user
+audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Zusatzfelder auf der Detailregisterkarte anzeigen: /de/custom-objects/admin/show-extra-field-on-request-details
-  - /de/custom-objects/admin/create-extra-field
+  - Zusatzfelder hinzufügen: /de/custom-objects/admin/create-extra-field
 language: de
 ---
 
@@ -20,7 +19,9 @@ import ReqDevToolsTransition from "../../snippets/req-dev-tools-transition.mdx";
 
 <ReqDevToolsTransition />
 
-Ein *Zusatzfeld* ist ein Feld, das Sie einer vorhandenen SuperOffice-Datenbanktabelle hinzufügen. Sie können die folgenden Entitäten erweitern:
+Ein *Zusatzfeld* ist ein Feld, das Sie einer vorhandenen SuperOffice-Datenbanktabelle hinzufügen. Zusatzfelder können beispielsweise als Suchkriterien und Spalten im Verkauf in SuperOffice CRM verwendet werden.
+
+Sie können die folgenden Entitäten erweitern:
 
 * Kategorie
 * Unternehmen
@@ -87,30 +88,28 @@ Datenbanktabellen sind mit *Fremdschlüssel* (FK) verbunden. Diese sind Feldtype
 * Beziehung zu Termin
 * Beziehung zu Zusatztabelle
 
-#### Im Pilot verfügbar ab Version 10.3.4
+#### Bereichsregisterkarten für zugehörige benutzerdefinierte Daten
 
-Wenn ein Zusatzfeld so eingestellt ist, dass es Ein-zu-viele-Beziehungen anzeigt, fügt das System automatisch eine Bereichsregisterkarte in den zugehörigen Standardentitäten hinzu. Dies ist nicht dasselbe wie der **Beziehungen**-Reiter auf den Firmen- und Personbildschirmen.
+Mit CRM Suite **Growth** oder höher erhält der zugehörige Datensatz eine Bereichsregisterkarte, die die Einträge auflistet, die auf ihn verweisen, wenn bei einem Beziehungsfeld **Eins-zu-viele-Beziehungen anzeigen** ausgewählt ist. Zum Beispiel kann eine Firma eine Registerkarte **Leases** anzeigen. Diese Registerkarte ist nicht dasselbe wie die Registerkarte **Beziehungen** in den Ansichten Firma und Person.
 
-![Bereichsregisterkarte mit zusätzlicher Feldrelation -screenshot][img1]
+![Firma mit Bereichsregisterkarte Leases -screenshot][img1]
 
-#### Im Pilot verfügbar ab Version 10.3.7
+#### Vorschau zugehöriger benutzerdefinierter Daten
 
-Um die Details der Elemente in dieser Liste anzuzeigen, ohne jedes einzelne Objekt öffnen zu müssen:
+Mit CRM Suite **Growth** oder höher können Sie die Details zugehöriger benutzerdefinierter Daten in der Seitenleiste anzeigen. So zeigen Sie die Details der Einträge in dieser Liste an, ohne jeden einzeln zu öffnen:
 
-1. Gehen Sie zum Seitenbereich und wählen Sie die **Vorschau**-Ansicht.
-2. Klicken Sie auf ein Element im relationsbasierten Bereichsregisterkarte. Der Seitenbereich zeigt eine Vorschau des ausgewählten Objekts an. In der Vorschau können Sie:
+1. Gehen Sie zur Seitenleiste und wählen Sie die **Vorschau**-Ansicht.
 
-    * Auf eine Standardentität klicken, um zu ihr zu wechseln.
-    * Auf ein Zusatzobjekt klicken, um ein Dialogfeld zu öffnen, in dem Sie zusätzliche Informationen anzeigen oder bearbeiten können.
+1. Wählen Sie eine Zeile auf der Bereichsregisterkarte aus. Die Seitenleiste zeigt eine Vorschau der ausgewählten Zeile an. In der Vorschau können Sie:
 
-![Vorschau zusätzliche Feldrelation -screenshot][img2]
+    * Einen Datensatz einer Standardentität, zum Beispiel eine Firma, auswählen, um zu ihm zu wechseln.
 
-## Verwendung
+    * Benutzerdefinierte Daten auswählen, um ein Dialogfeld zu öffnen, in dem Sie sie anzeigen oder bearbeiten können.
 
-Zusatzfelder können beispielsweise als Suchkriterien und Spalten im Verkauf in SuperOffice CRM verwendet werden.
+![Vorschau zugehöriger benutzerdefinierter Daten einer Firma -screenshot][img2]
 
 [6]: ./extra-table
 [7]: /de/customization/screen-designer/admin/add-button
-[img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
-[img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img1]: /media/loc/en/custom-objects/company-lease-tab.png
+[img2]: /media/loc/en/custom-objects/company-lease-preview.png
 [img3]: /media/loc/en/request/request-field-with-url-link.png

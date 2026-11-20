@@ -1,0 +1,55 @@
+---
+title: Benutzerdefinierte Daten hinzufügen
+description: Fügen Sie einem benutzerdefinierten Objekt Daten über die obere Leiste oder über einen zugehörigen Datensatz hinzu.
+keywords: ['neues benutzerdefiniertes Objekt', 'benutzerdefiniertes Objekt erstellen', 'Zusatztabelle']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Benutzerdefinierte Daten aktualisieren: /de/custom-objects/learn/update
+  - Über Zusatztabellen: /de/custom-objects/learn/extra-table
+language: de
+---
+
+import ReqGrowthCustomObjects from "../../snippets/req-growth-custom-objects.mdx";
+
+<ReqGrowthCustomObjects />
+
+Sie können einem benutzerdefinierten Objekt Daten über die obere Leiste oder über einen zugehörigen Datensatz hinzufügen. Welche Felder Sie sehen, hängt davon ab, wie Ihr Administrator das benutzerdefinierte Objekt eingerichtet hat.
+
+Um benutzerdefinierte Daten hinzuzufügen, muss Ihre Rolle die [Berechtigung **Create** für das benutzerdefinierte Objekt][1] haben.
+
+## Benutzerdefinierte Daten über die obere Leiste hinzufügen
+
+1. Klicken Sie in der oberen Leiste auf **Neu** und wählen Sie dann das benutzerdefinierte Objekt aus. Zum Beispiel **Laptop**.
+
+    ![Menü Neu in der oberen Leiste mit benutzerdefinierten Objekten -screenshot][img1]
+
+1. Füllen Sie die Felder aus. Obligatorische Felder sind rot markiert.
+
+    Beginnen Sie bei einem Beziehungsfeld, zum Beispiel **Firma**, mit der Eingabe und wählen Sie den zugehörigen Datensatz aus der Liste aus. Die Liste zeigt eine Vorschau jedes Treffers, damit Sie den richtigen auswählen können.
+
+    ![Lease mit ausgefüllten Beziehungsfeldern -screenshot][img2]
+
+1. Klicken Sie auf **Speichern**.
+
+## Benutzerdefinierte Daten über einen zugehörigen Datensatz hinzufügen
+
+Wenn ein benutzerdefiniertes Objekt mit einer anderen Entität, zum Beispiel einer Firma, einem Verkauf oder einem benutzerdefinierten Objekt, in Beziehung steht, hat diese Entität eine Bereichsregisterkarte für das benutzerdefinierte Objekt. Benutzerdefinierte Daten, die Sie dort hinzufügen, werden automatisch verknüpft.
+
+1. Öffnen Sie den zugehörigen Datensatz und wählen Sie die Bereichsregisterkarte des benutzerdefinierten Objekts aus. Zum Beispiel **Equipment**.
+
+1. Klicken Sie auf **Hinzufügen**.
+
+1. Füllen Sie die Felder aus. Die Beziehung zu dem Datensatz, den Sie geöffnet haben, ist vorausgefüllt, und Ihr Administrator kann Standardwerte festlegen oder einen Auslöser verwenden, um andere Felder auszufüllen.
+
+1. Klicken Sie auf **Speichern**.
+
+[1]: /de/admin/user-management/role/set-data-rights-for-role#custom-objects
+
+[img1]: /media/loc/en/custom-objects/new-menu-custom-object.png
+[img2]: /media/loc/en/custom-objects/lease-form.png

@@ -5,8 +5,8 @@ sidebarTitle: "Bereichsregisterkarten"
 description: Ansichtsdesigner - arbeiten mit Bereichsregisterkarten (Archive)
 keywords: ['Bereichsregisterkarte hinzufügen', 'neue Bereichsregisterkarte', 'Archivregisterkarte hinzufügen', 'Bereichsregisterkarte anpassen', 'Bereichsregisterkarten-Layout']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
 license: development-tools
 tier: core
@@ -27,7 +27,7 @@ import ReqDevToolsTransition from "../../../snippets/req-dev-tools-transition.md
 
 <ReqDevToolsTransition />
 
-Sie können das Layout anpassen, indem Sie Bereichsregisterkarten (auch Archive genannt) auf den Hauptkarten für die Bildschirme Firma, Person, Verkauf, Projekt und Anfrage hinzufügen oder entfernen.
+Sie können das Layout anpassen, indem Sie Bereichsregisterkarten (auch Archive genannt) auf den Hauptkarten für die Bildschirme Firma, Person, Verkauf, Projekt und Anfrage sowie für benutzerdefinierte Objekte hinzufügen oder entfernen.
 
 Das Anpassen von Bereichsregisterkarten erfolgt typischerweise, um den spezifischen Bedürfnissen verschiedener Benutzergruppen gerecht zu werden. Sie können ein Layout erstellen, das auf eine bestimmte Benutzergruppe zugeschnitten ist und sicherstellen, dass die Bereichsregisterkarten relevante Inhalte für diese Gruppe anzeigen.
 
@@ -38,6 +38,10 @@ Das Anpassen von Bereichsregisterkarten erfolgt typischerweise, um den spezifisc
 Bereichsregisterkarten, die sich am unteren Rand der meisten SuperOffice CRM-Bildschirme befinden, zeigen verwandte Daten wie Personen, Aktivitäten, Projekte und Verkäufe an. Während einige Bereichsregisterkarten, wie Verkaufsleitfäden und Angebote, keine Archive sind, bezeichnen wir zur Vereinfachung alle als Archive oder Archivregisterkarten.
 
 Wenn Sie ein neues Layout für eine Benutzergruppe erstellen, sollten Sie überlegen, welche Daten diese am dringendsten benötigen. Das Anpassen von Archiven ermöglicht es Ihnen, Informationen zu filtern und zu priorisieren, sodass Benutzer schneller finden, was sie benötigen.
+
+### Bereichsregisterkarten für benutzerdefinierte Objekte {#custom-objects}
+
+Einige Bereichsregisterkarten werden automatisch hinzugefügt. Wenn ein [benutzerdefiniertes Objekt][20] ein Beziehungsfeld hat, bei dem **Eins-zu-viele-Beziehungen anzeigen** ausgewählt ist, erhält die Entität, auf die es sich bezieht, eine Bereichsregisterkarte, die dessen Daten auflistet. Zum Beispiel kann die Ansicht Firma eine Registerkarte **Equipment** anzeigen. Sie können diese Registerkarte im Layout wie andere Bereichsregisterkarten bearbeiten, verschieben oder entfernen.
 
 ## Bereichsregisterkarten hinzufügen
 
@@ -102,6 +106,7 @@ Um eine vorhandene Bereichsregisterkarte zu ändern, wählen Sie sie aus und akt
 Um diese Änderungen rückgängig zu machen, klicken Sie auf **Registerkarten wiederherstellen**.
 
 [2]: ../../../search-options/learn/search-criteria
+[20]: /de/custom-objects/learn/extra-table
 [img1]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive.png
 [img5]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive-add-tab.png
 [img6]: ../../../../media/loc/en/customization/admin-screendesigner-add-archive-layout.png

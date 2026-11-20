@@ -83,6 +83,28 @@ NSLocalizedField[][] getFormattedAddress()
 
 **Returns:** [CRMScript.NetServer.NSLocalizedField](/en/automation/crmscript/reference/CRMScript.NetServer.NSLocalizedField)[][] - The formatted company address.
 
+**Example:**
+
+```crmscript
+Company c;
+c.load(123); // the ID of the company
+NSLocalizedField[][] adr = c.getFormattedAddress();
+adr[0][0].SetValue(adr[0][0].GetValue() + "A"); // Add an 'A' to the first address field
+c.setFormattedAddress(adr);
+c.save();
+// Print all info about all the address fields
+for (Integer i = 0; i < adr.length(); i++)
+{
+  for (Integer j = 0; j < adr[i].length(); j++)
+  {
+    NSLocalizedField f = adr[i][j];
+    print(f.GetLabel() + ":" + f.GetName() + ":" + f.GetValue() + ":" + f.GetTooltip() + ":");
+    print(f.GetValueLength().toString() + ":" + f.GetAddressType() + "     ");
+  }
+  print("\n");
+}
+```
+
 ## getValue(String)
 
 Gets a String with the value of a given column.
@@ -169,10 +191,21 @@ Integer save()
 Sets the formatted address for a company.
 
 ```crmscript
-Void SetFormattedAddress(NSLocalizedField[][] name)
+Void setFormattedAddress(NSLocalizedField[][] address)
 ```
 
 **Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Company c;
+c.load(123); // the ID of the company
+NSLocalizedField[][] adr = c.getFormattedAddress();
+adr[0][0].SetValue(adr[0][0].GetValue() + "A"); // Add an 'A' to the first address field
+c.setFormattedAddress(adr);
+c.save();
+```
 
 ## setValue(String,String)
 

@@ -33,6 +33,7 @@
     "icon": "graduation-cap",
     "root": "en/learn/basics/index",
     "pages": [
+      "en/learn/basics/start-page",
       "en/learn/basics/recent-navigation",
       "en/learn/basics/overview-pages",
       "en/learn/basics/notifications",
@@ -693,29 +694,20 @@
     "root": "en/custom-objects/learn/index",
     "pages": [
       "en/custom-objects/index",
+      "en/custom-objects/learn/udef",
       "en/custom-objects/learn/more-tab",
+      "en/custom-objects/learn/extra-field",
+      "en/custom-objects/learn/extra-table",
+      "en/custom-objects/learn/create",
+      "en/custom-objects/learn/update",
       {
-        "group": "User-defined fields",
+        "group": "For administrators",
         "pages": [
-          "en/custom-objects/learn/udef",
           "en/custom-objects/admin/add-udef",
           "en/custom-objects/admin/edit-udef",
-          "en/custom-objects/admin/edit-udef-layout"
-        ]
-      },
-      {
-        "group": "Extra tables",
-        "pages": [
-          "en/custom-objects/learn/extra-table",
-          "en/custom-objects/admin/create-extra-table"
-        ]
-      },
-      {
-        "group": "Extra fields",
-        "pages": [
-          "en/custom-objects/learn/extra-field",
-          "en/custom-objects/admin/create-extra-field",
-          "en/custom-objects/admin/show-extra-field-on-request-details"
+          "en/custom-objects/admin/edit-udef-layout",
+          "en/custom-objects/admin/create-extra-table",
+          "en/custom-objects/admin/create-extra-field"
         ]
       },
       "en/custom-objects/reference/index"

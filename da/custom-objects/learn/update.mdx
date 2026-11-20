@@ -1,0 +1,69 @@
+---
+title: Opdater brugerdefinerede data
+description: Åbn, rediger eller slet data i et brugerdefineret objekt, og åbn links, der er gemt i dets felter.
+keywords: ['rediger brugerdefineret objekt', 'slet brugerdefineret objekt', 'opdater brugerdefineret objekt', 'ekstra tabel']
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
+content_type: howto
+tier: growth
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Tilføj brugerdefinerede data: /da/custom-objects/learn/create
+  - Om ekstra tabeller: /da/custom-objects/learn/extra-table
+language: da
+---
+
+import ReqGrowthCustomObjects from "../../snippets/req-growth-custom-objects.mdx";
+
+<ReqGrowthCustomObjects />
+
+Du kan se, redigere og slette brugerdefinerede data, afhængigt af [de tilladelser, din rolle har til det brugerdefinerede objekt][1]: **Read**, **Update** eller **Delete**.
+
+![Bærbar med et link til en produktside og detaljefanen Leasingaftaler -screenshot][img1]
+
+## Åbn brugerdefinerede data
+
+Åbn brugerdefinerede data på en af disse måder:
+
+* Vælg det brugerdefinerede objekt i Navigatoren, søg på listen, og vælg den række, du vil åbne.
+* Vælg dem på en detaljefane på en relateret post.
+* Vælg dem i din [historik][2] eller dine [favoritter][3].
+
+Hvis du vil se brugerdefinerede data uden at forlade den relaterede post, skal du vælge dem på detaljefanen og se dem i visningen **Forhåndsvisning** i sidepanelet.
+
+## Rediger brugerdefinerede data
+
+1. Åbn de brugerdefinerede data.
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Rediger"></i> for at gå til redigeringstilstand.
+
+1. Foretag dine ændringer. For et relationsfelt begynder du at skrive og vælger den relaterede post på listen.
+
+1. Klik på **Gem**.
+
+### Links i tekstfelter
+
+Når et tekstfelt indeholder en URL, vises URL'en som et link i læsetilstand. Klik på den for at åbne siden i en ny fane. For eksempel kan et felt **Produktside** linke til produktet i leverandørens webshop. I redigeringstilstand er feltet et almindeligt tekstfelt. Se [URL'er i tekstfelter][4].
+
+## Slet brugerdefinerede data
+
+For at slette brugerdefinerede data skal din rolle have [tilladelsen **Delete** til det brugerdefinerede objekt][1].
+
+<Warning>
+Du kan ikke fortryde en sletning.
+</Warning>
+
+1. Åbn de brugerdefinerede data.
+
+1. Klik på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> og vælg **Slet**.
+
+1. Klik på **Ja** i bekræftelsesdialogboksen.
+
+[1]: /da/admin/user-management/role/set-data-rights-for-role#custom-objects
+[2]: /da/learn/basics/history
+[3]: /da/learn/basics/fav
+[4]: ./extra-field#urls
+
+[img1]: /media/loc/en/custom-objects/laptop-card.png

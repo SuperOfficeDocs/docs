@@ -59,7 +59,6 @@
       "en/automation/crmscript/reference/CRMScript.Native.JSONBuilder",
       "en/automation/crmscript/reference/CRMScript.Native.Knowledge",
       "en/automation/crmscript/reference/CRMScript.Native.License",
-      "en/automation/crmscript/reference/CRMScript.Native.LocalizedField",
       "en/automation/crmscript/reference/CRMScript.Native.MacroParameter",
       "en/automation/crmscript/reference/CRMScript.Native.MacroReturnValue",
       "en/automation/crmscript/reference/CRMScript.Native.MainMenu",

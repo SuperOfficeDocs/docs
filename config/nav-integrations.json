@@ -147,10 +147,22 @@
       "integrations/superoffice-for-teams/archive-conversation",
       "integrations/superoffice-for-teams/archive-file",
       "integrations/superoffice-for-teams/ai-summary",
+      "integrations/superoffice-for-teams/create-request",
       "integrations/superoffice-for-teams/preferences",
       "integrations/superoffice-for-teams/security",
       "integrations/superoffice-for-teams/troubleshooting",
       "integrations/superoffice-for-teams/limitations"
+    ]
+  },
+  {
+    "group": "Teams Notify",
+    "root": "integrations/teams-notify/index",
+    "pages": [
+      "integrations/teams-notify/authorize",
+      "integrations/teams-notify/settings",
+      "integrations/teams-notify/how-to-use",
+      "integrations/teams-notify/supported-events",
+      "integrations/teams-notify/troubleshooting"
     ]
   },
   {

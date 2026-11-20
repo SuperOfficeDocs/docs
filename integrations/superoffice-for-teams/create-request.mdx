@@ -1,0 +1,91 @@
+---
+uid: teams-create-request
+title: Create or add to a request from Teams
+sidebarTitle: "Create or add to request"
+description: How to create a SuperOffice Service request from a Teams conversation, or add a conversation to an existing request.
+keywords: ['SuperOffice for Teams', 'Teams', 'request', 'create request', 'add to request', 'conversation']
+author: schildea
+date: 11.19.2026
+content_type: howto
+category: integration
+topic: SuperOffice for Teams
+pilot: yes
+related: false
+language: en
+---
+
+When a Teams conversation needs a customer service follow-up, you can create a [request][6] directly from it. If the conversation relates to an existing request, add it to that request instead. You do not need to leave Teams.
+
+You need a SuperOffice CRM Suite plan or a Service user plan (Service Essentials or Premium). See [Requirements][1]. **Create Request** and **Add to Request** are available wherever you can save messages. See the [compatibility overview][2]. If the two buttons are greyed out, see [Troubleshooting][3].
+
+## Start SuperOffice for Teams
+
+Start SuperOffice for Teams from a message or from the compose bar, as described in [Archive a Teams conversation][4]. The **Choose Action** screen then offers **Create Request** and **Add to Request**.
+
+![The Choose Action screen with Save Chat, Save File, Create Request, and Add to Request -screenshot][img1]
+
+## Choose the messages
+
+Both actions use the same message options.
+
+| Started from | Options |
+| - | - |
+| A message | **This Message**, **This and Later**, **Custom** |
+| The compose bar | **Today**, **Yesterday**, **Last 7 Days**, **Custom** |
+
+## Create a request
+
+1. On the **Choose Action** screen, click **Create Request**.
+1. Select the messages to include.
+1. Optional: Change the title. SuperOffice for Teams prefills it.
+1. Check the **Contact or Company** field. It auto-fills when someone in the conversation matches a contact in SuperOffice. If it does not, or if it is wrong, select a contact or company. See [Choosing where it goes in SuperOffice][5].
+1. Select a category. A category is required, so **Create** stays disabled until you select one. If you have a default category in your SuperOffice preferences, it is preselected. See [Set a default category](#default-category).
+1. Click **Create**.
+
+![The Create Request screen with message range, title, contact, and category -screenshot][img2]
+
+A new request is always created with External visibility. You cannot change this.
+
+A confirmation shows the request number. To add a comment, see [Add a comment](#add-comment).
+
+## Add a conversation to an existing request
+
+1. On the **Choose Action** screen, click **Add to Request**.
+1. Select the messages to include.
+1. In the **Request** field, select a request. The list first shows requests from your request history. To find any other request, search by title or ID. Merged and deleted requests do not appear.
+1. Select **Internal** or **External** to set the visibility of the post on the request. The default is **Internal**.
+1. Click **Add**. The button stays disabled until you select a request.
+
+![The Add to Request screen with message range, request, and visibility -screenshot][img3]
+
+## Add a comment {#add-comment}
+
+After SuperOffice for Teams creates the request or adds the messages, a confirmation shows the request number and an **Open SuperOffice** button. Click it to open the request in SuperOffice.
+
+You can also add a comment to the request on the same screen.
+
+1. Write the comment.
+1. Select **Internal** or **External** to set the visibility of the comment. The default is **Internal**.
+1. Click **Save**. To skip the comment, click **Close**.
+
+![The confirmation with the Open SuperOffice button and the comment box -screenshot][img4]
+
+<Tip>
+You can add an **Internal** comment to a new request, even though the request itself is always External.
+</Tip>
+
+## Set a default category {#default-category}
+
+The category that is preselected comes from your SuperOffice preferences. In SuperOffice, click <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Preferences** > **Request**, and set **Default category**.
+
+[1]: ./requirements
+[2]: ./index
+[3]: ./troubleshooting
+[4]: ./archive-conversation
+[5]: ./archive-conversation#where-it-goes
+[6]: /en/request/learn/create
+
+[img1]: /media/loc/en/integrations/superoffice-for-teams/teams-choose-action.png
+[img2]: /media/loc/en/integrations/superoffice-for-teams/teams-request-create.png
+[img3]: /media/loc/en/integrations/superoffice-for-teams/teams-request-add.png
+[img4]: /media/loc/en/integrations/superoffice-for-teams/teams-request-saved.png

@@ -4,8 +4,8 @@ title: Werken met sectietabbladen (archieven)
 description: Schermontwerper Opmaak bewerken - Archieven (sectietabbladen)
 keywords: ['sectietabblad toevoegen', 'nieuw sectietabblad', 'archieftabblad toevoegen', 'sectietabblad aanpassen', 'sectietabblad-opmaak']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
 license: development-tools
 tier: core
@@ -26,7 +26,7 @@ import ReqDevToolsTransition from "../../../snippets/req-dev-tools-transition.md
 
 <ReqDevToolsTransition />
 
-U kunt de opmaak aanpassen door sectietabbladen (ook wel archieven genoemd) toe te voegen of te verwijderen op de hoofdkaarten voor de schermen Bedrijf, Persoon, Verkoop, Project en Verzoek.
+U kunt de opmaak aanpassen door sectietabbladen (ook wel archieven genoemd) toe te voegen of te verwijderen op de hoofdkaarten voor de schermen Bedrijf, Persoon, Verkoop, Project en Verzoek, en voor aangepaste objecten.
 
 Het aanpassen van sectietabbladen gebeurt meestal om te voldoen aan de specifieke behoeften van verschillende gebruikersgroepen. U kunt een opmaak maken die is afgestemd op een specifieke gebruikersgroep, zodat de sectietabbladen relevante inhoud voor die groep tonen.
 
@@ -37,6 +37,10 @@ Het aanpassen van sectietabbladen gebeurt meestal om te voldoen aan de specifiek
 Sectietabbladen, die zich onderaan de meeste SuperOffice CRM-schermen bevinden, tonen gerelateerde gegevens zoals personen, activiteiten, projecten en verkopen. Hoewel sommige sectietabbladen, zoals verkoopgidsen en offertes, geen archieven zijn, zullen we ze voor de eenvoud allemaal archieven of archieftabbladen noemen.
 
 Bij het maken van een nieuw opmaak voor een gebruikersgroep, moet u overwegen welke gegevens zij het meest nodig hebben. Door archieven aan te passen, kunt u informatie filteren en prioriteren, waardoor gebruikers sneller kunnen vinden wat ze nodig hebben.
+
+### Sectietabbladen voor aangepaste objecten {#custom-objects}
+
+Sommige sectietabbladen worden automatisch toegevoegd. Als een [aangepast object][20] een relatieveld heeft waarbij **Een-op-veel-relaties weergeven** is geselecteerd, krijgt de entiteit waarmee het is verbonden een sectietabblad met de gegevens ervan. Het scherm Bedrijf kan bijvoorbeeld een tabblad **Apparatuur** tonen. U kunt dit tabblad in de opmaak bewerken, verplaatsen of verwijderen, net als andere sectietabbladen.
 
 ## Sectietabbladen toevoegen
 
@@ -99,6 +103,7 @@ Om een bestaand archief te bewerken, selecteert u het en werkt u de velden en in
 Om deze wijzigingen ongedaan te maken, klikt u op **Tabbladen herstellen**.
 
 [2]: ../../../search-options/learn/search-criteria
+[20]: /nl/custom-objects/learn/extra-table
 [img1]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive.png
 [img5]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive-add-tab.png
 [img6]: ../../../../media/loc/en/customization/admin-screendesigner-add-archive-layout.png

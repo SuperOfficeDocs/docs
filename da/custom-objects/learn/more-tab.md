@@ -3,22 +3,22 @@ uid: help-da-more-tab
 title: Mere-fanen
 description: Lær hvordan du bruger Mere-fanen i SuperOffice CRM til at se og administrere brugerdefinerede felter for firmaer, personer, salg, projekter, opfølgninger og dokumenter.
 keywords: ['Mere-fane', 'fanen Mere', 'brugerdefineret felt', 'ekstra felt', 'tilpasset felt']
-author: Bergfrid Skaara Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.13.2026
+so_version: 12.6
 content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Oversigt over brugerdefinerede felter: /da/custom-objects/learn/index
-  - /da/custom-objects/admin/add-udef
-  - /da/custom-objects/admin/create-extra-field
+  - Om brugerdefinerede objekter og felter: /da/custom-objects/learn/index
+  - Tilføj brugerdefinerede felter: /da/custom-objects/admin/add-udef
+  - Tilføj ekstra felter: /da/custom-objects/admin/create-extra-field
   - Administrer tilpassede layout med Skærmdesigner: /da/customization/screen-designer/admin/add-layout
 language: da
 ---
 
-**Mere-fanen** i SuperOffice CRM giver brugerne mulighed for at se og administrere brugerdefinerede felter for forskellige enheder, herunder firmaer, kontakter, salg, projekter, opfølgninger og dokumenter. Denne tilpasningsfunktion hjælper dig med at indfange specifik information, der er unik for din organisations behov, og øger fleksibiliteten af din CRM.
+**Mere-fanen** i SuperOffice CRM giver brugerne mulighed for at se og administrere brugerdefinerede felter for forskellige posttyper, herunder firmaer, kontakter, salg, projekter, opfølgninger og dokumenter. Denne tilpasningsfunktion hjælper dig med at indfange specifik information, der er unik for din organisations behov, og øger fleksibiliteten af din CRM.
 
 Brugerdefinerede felter i **Mere-fanen** gør det lettere for din organisation at spore yderligere detaljer som hardware, ejet af kontakter, medarbejderomsætning eller andre tilpassede data, som ikke er tilgængelige som standard i SuperOffice CRM.
 
@@ -26,9 +26,9 @@ Hvis din organisation f.eks. sælger IT-produkter og har brug for felter for hve
 
 ## Indhold i Mere-fanen
 
-**Mere-fanen** er tilgængelig for flere enhedstyper og giver brugerne mulighed for at gemme tilpasset information, der er skræddersyet til deres forretningsbehov:
+**Mere-fanen** er tilgængelig for flere posttyper og giver brugerne mulighed for at gemme tilpasset information, der er skræddersyet til deres forretningsbehov:
 
-| Enhed | Beskrivelse af Mere-fanen|
+| Posttype | Beskrivelse af Mere-fanen|
 |---|---|
 | Firma | Viser brugerdefinerede felter som omsætning, antal ansatte og noter.|
 | Person | Gemmer bruger-specifikke data, som f.eks. hardware, software eller kontaktroller. |
@@ -46,9 +46,7 @@ For at se data i Mere-fanen:
 1. Gå til den relevante enhedsskærm, såsom Firma eller Kontakt.
 1. Vælg **Mere-fanen** for at se de brugerdefinerede felter.
 
-![Mere-fanen (Salg) -screenshot][img6]
-
-![Mere-fanen (Projekt) -screenshot][img4]
+    ![Mere-fanen på et salg -screenshot][img1]
 
 ## Rediger information i Mere-fanen
 
@@ -58,5 +56,4 @@ Klik på <i class="ph ph-pencil-simple" aria-label="Edit"></i> for at redigere o
 
 * **Tilpas felterne**: Tilføjelse af brugerdefinerede felter eller justering af layout kræver administrativ adgang og i nogle tilfælde en licens til Development Tools eller **Core**-planen.
 
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img1]: /media/loc/en/custom-objects/more-tab-sale.png

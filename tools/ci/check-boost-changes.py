@@ -19,6 +19,12 @@ touched the same file. Re-reads each flagged file's own current content at those
 masking-optional approach the DocFX guards use since a `boost:`/`"boost":` line can't collide
 with a fenced-code-block example the way an inline pattern could.
 
+A page-level `boost` whose value is unchanged from the page's base version is not reported
+(#691). A `.md` <-> `.mdx` rename that also changes a lot of content falls below git's rename
+similarity, so git reports a delete plus an add and every line of the new file, including an
+untouched `boost:`, counts as added. The base version is looked up at the same path, at its
+other-extension twin, and at the source of any rename git detects.
+
 Advisory only: always exits 0. Sets `boost_changed=true` plus a `boost_summary` multi-line
 output on `$GITHUB_OUTPUT` (when running under Actions) so the calling workflow can post a PR
 comment without re-deriving anything itself.
@@ -34,6 +40,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib import page_history  # noqa: E402
 from lib.diff_utils import get_added_line_numbers  # noqa: E402
 from lib.repo_files import resolve_safe_path  # noqa: E402
 
@@ -43,8 +50,45 @@ FRONTMATTER_BOOST_RE = re.compile(r'^\s*boost:\s*([\d.]+)\s*$')
 JSON_BOOST_RE = re.compile(r'^\s*"boost":\s*([\d.]+)\s*,?\s*$')
 
 
+def is_page(rel_path):
+    return rel_path.endswith(".md") or rel_path.endswith(".mdx")
+
+
+def frontmatter_boost(text):
+    """The `boost` value in a page's leading frontmatter block, or None."""
+    lines = text.lstrip("﻿").replace("\r\n", "\n").split("\n")
+    if not lines or lines[0].strip() != "---":
+        return None
+    for line in lines[1:]:
+        if line.strip() == "---":
+            break
+        m = FRONTMATTER_BOOST_RE.match(line)
+        if m:
+            return m.group(1)
+    return None
+
+
+def base_boost(rel_path, base_commit, rename_sources):
+    """The page's `boost` in its base version (see `page_history.base_version_path`).
+    Returns (found, value); value is None when that version has no boost."""
+    base_path = page_history.base_version_path(rel_path, base_commit, rename_sources)
+    if base_path is None:
+        return False, None
+    text = page_history.show_at(base_commit, base_path)
+    return True, frontmatter_boost(text or "")
+
+
+def same_value(a, b):
+    try:
+        return float(a) == float(b)
+    except (TypeError, ValueError):
+        return False
+
+
 def find_boost_additions(base_ref):
     added = get_added_line_numbers(base_ref, patterns=PATTERNS)
+    merge_base = None
+    rename_sources = None
     hits = []
     for rel_path, line_numbers in added.items():
         full_path = resolve_safe_path(rel_path)
@@ -54,10 +98,19 @@ def find_boost_additions(base_ref):
         for line_no in sorted(line_numbers):
             if line_no > len(lines):
                 continue
-            content = lines[line_no - 1]
+            content = lines[line_no - 1].rstrip("\r")
             m = FRONTMATTER_BOOST_RE.match(content) or JSON_BOOST_RE.match(content)
-            if m:
-                hits.append((rel_path, line_no, m.group(1)))
+            if not m:
+                continue
+            value = m.group(1)
+            if is_page(rel_path) and FRONTMATTER_BOOST_RE.match(content):
+                if merge_base is None:
+                    merge_base = page_history.merge_base(base_ref)
+                    rename_sources = page_history.get_rename_sources(base_ref)
+                found, old = base_boost(rel_path, merge_base, rename_sources)
+                if found and old is not None and same_value(old, value):
+                    continue
+            hits.append((rel_path, line_no, value))
     hits.sort()
     return hits
 
