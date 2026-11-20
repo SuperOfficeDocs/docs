@@ -1,0 +1,101 @@
+---
+title: Set up Visma Net
+description: Visma Net configuration required before setting up the ConnectERP integration in SuperOffice.
+keywords: ['ConnectERP', 'integration user', 'user roles', 'company number', 'EXTNUMBER', 'attribute field', 'customer class', 'CS205000', 'AR2010PL', 'Visma.net', 'prerequisites', 'API user']
+author: marcelspapens
+date: 11.20.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+Complete these steps in Visma Net before you configure SuperOffice. They are one-time preparations that apply to all CRM Suites.
+
+## 1. Create the integration user
+
+Create a **dedicated Visma Net user account** for the integration.
+
+<Warning>
+Don't use a personal user account. If that employee leaves, the integration breaks.
+
+Use a neutral name such as *SuperOffice Integration* for this account, so it's clearly identifiable in Visma Net audit logs.
+</Warning>
+
+The integration user needs the following roles in Visma Net:
+
+* **Financials API user**
+* **Sales Creator (neXtGen)**
+
+{/* Screenshot needed: Add a screenshot of the Visma Net user roles screen showing the required roles assigned. */}
+
+## 2. Find the Visma Net company number
+
+Each Visma Net tenant has a unique company number, shown as **Company ID**. You'll need it when you import the DataBridge integrations, so keep it with the other values for the setup, such as the value mappings from [Plan the integration][1].
+
+1. Log in to Visma Net as an administrator at [Visma Net Financials][3].
+1. Click the **Admin** menu option.
+1. Click the pencil icon on the relevant **Company** from the list of companies.
+1. Select the **Configuration** tab and find the Company ID.
+1. Write down the **Company ID**.
+
+![Company details: Company ID highlighted -screenshot][img1]
+
+## 3. Create the attribute field 'SuperOffice Number' (optional)
+
+This step adds a custom attribute to Visma Net customer records so that the corresponding SuperOffice company number is stored and visible in Visma Net.
+
+<Tip>
+This information is available in Visma Net for reference only. It doesn't influence the synchronization process. Skip this step if users won't need the SuperOffice number in Visma Net.
+</Tip>
+
+1. In Visma Net, click the hamburger menu. A search box is shown.
+1. Search for screen code **CS205000** in the search bar. The **Attributes** dialog opens.
+1. Enter **EXTNUMBER** as the Attribute ID.
+1. Enter **SuperOffice Number** as the Description.
+1. Save by clicking the floppy disk icon or pressing **Ctrl+S**.
+
+![Attributes screen: Attribute ID EXTNUMBER with description SuperOffice Number -screenshot][img4]
+
+The company sync writes the SuperOffice company number into this attribute. In [Set up company sync][2], you check that the field mapping of **Visma Net Customer Sync (Button)** includes **EXTNUMBER**.
+
+### Link the attribute field to all customer classes
+
+Customer classes in Visma Net group customers by type (for example, EU and non-EU). The SuperOffice Number attribute must be added to each class for the integration to work across all customer records.
+
+1. In Visma Net, search for screen code **AR2010PL**.
+1. Open **Customer Classes**.
+
+    ![Customer Classes overview in Visma Net -screenshot][img5]
+
+1. For each customer class in the list:
+   1. Open the customer class record.
+   1. Go to the **Attributes** tab and click the **plus** button to add a new row.
+
+       ![Customer class: Attributes tab with the plus button highlighted -screenshot][img6]
+
+   1. Click the magnifying glass icon in the second column and double-click **SuperOffice Number**.
+
+       ![Attribute selection popup: selecting SuperOffice Number (EXTNUMBER) -screenshot][img7]
+
+   1. Enter a sort order number (use **1** if this is the only attribute).
+   1. Save with **Ctrl+S**.
+
+Repeat this for **every** customer class in Visma Net. If a class is missing the attribute, companies in that class can't be synchronized with SuperOffice.
+
+## Next step
+
+Continue with [Set up company sync][2].
+
+[1]: ./plan-the-integration#value-mappings
+[2]: ./set-up-company-sync
+[3]: https://finance.visma.net/
+
+[img1]: /media/loc/en/integrations/connect-erp/visma-company-id.png
+[img4]: /media/loc/en/integrations/connect-erp/visma-attribute-extnumber.png
+[img5]: /media/loc/en/integrations/connect-erp/visma-customer-classes.png
+[img6]: /media/loc/en/integrations/connect-erp/visma-customer-class-attributes.png
+[img7]: /media/loc/en/integrations/connect-erp/visma-select-attribute.png

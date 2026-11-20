@@ -1,0 +1,63 @@
+---
+title: Visma Net
+description: ConnectERP integration with Visma Net Financials for SuperOffice CRM.
+keywords: ['ConnectERP', 'ERP', 'integration', 'synchronization', 'DataBridge', 'Visma.net', 'Visma.net Financials', 'master data']
+author: marcelspapens
+date: 11.20.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related:
+  - What's included per CRM Suite: /integrations/connect-erp/index#whats-included
+language: en
+userflow_index: true
+---
+
+ConnectERP synchronizes companies, contacts, products, and sales orders between SuperOffice CRM and Visma Net. Panels in SuperOffice show orders and invoices directly from Visma Net.
+
+## Leading system per entity
+
+The [leading system][13] is the source of truth for an entity when the data in the two systems conflicts. In the default setup, the leading system differs per entity:
+
+| Entity | Leading system |
+|---|---|
+| Companies (customers and suppliers) | Visma Net |
+| Contact persons | SuperOffice |
+| Products | Visma Net |
+| Sales orders | Visma Net |
+| Invoices and order status | Visma Net (shown live in SuperOffice) |
+
+The leading system does not set the direction of the data flow. For example, Visma Net is the leading system for sales orders, but orders created in SuperOffice are still sent to Visma Net. In CRM Suite Growth and higher, you can change the leading system per entity.
+
+## Set up the integration
+
+Before you start, check the [Requirements][2]: subscriptions, the Visma Net user roles, SuperOffice user rights, and the files to download.
+
+Follow these steps in order. Product sync and order sync are available in CRM Suite Growth and higher only; in Core, go from contact sync straight to the panels.
+
+1. [Plan the integration][14]: prepare the value mappings and, in Growth and higher, agree on the data flow per entity.
+1. [Set up Visma Net][3]: create the integration user and configure Visma Net before you start the setup in SuperOffice.
+1. [Set up company sync][4]
+1. [Set up contact sync][5]
+1. [Set up product sync][6] (Growth and higher)
+1. [Set up order sync][7] (Growth and higher)
+1. [Add panels][8]: show orders, invoices, and order history from Visma Net on the Company card.
+1. [Initial match of companies][9]: only if companies already exist in both SuperOffice and Visma Net.
+1. [Verify and finalize][10]: test each sync, then enable the automated synchronizations.
+
+The DataBridge integrations and CRMScripts for all steps are listed under [Downloads][11] in Requirements. If something doesn't work as expected, see [Troubleshoot ConnectERP for Visma Net][12].
+
+[2]: /integrations/connect-erp/visma-net/requirements
+[3]: /integrations/connect-erp/visma-net/set-up-visma-net
+[4]: /integrations/connect-erp/visma-net/set-up-company-sync
+[5]: /integrations/connect-erp/visma-net/set-up-contact-sync
+[6]: /integrations/connect-erp/visma-net/set-up-product-sync
+[7]: /integrations/connect-erp/visma-net/set-up-order-sync
+[8]: /integrations/connect-erp/visma-net/add-panels
+[9]: /integrations/connect-erp/visma-net/initial-match
+[10]: /integrations/connect-erp/visma-net/verify-finalize
+[11]: /integrations/connect-erp/visma-net/requirements#downloads
+[12]: /integrations/connect-erp/visma-net/troubleshooting
+[13]: /integrations/connect-erp/index#terminology
+[14]: /integrations/connect-erp/visma-net/plan-the-integration

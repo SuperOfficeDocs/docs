@@ -1,0 +1,109 @@
+---
+title: ConnectERP
+description: Introduction to ConnectERP, the ERP integration for SuperOffice CRM.
+keywords: ['ERP', 'integration', 'Visma', 'synchronization', 'CRM Suite', 'Core', 'Growth', 'Visma.net', 'accounting system', 'back office']
+author: marcelspapens
+date: 11.20.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+related: false
+language: en
+userflow_index: true
+---
+
+ConnectERP connects SuperOffice CRM with ERP systems and synchronizes key business data between them. What the integration covers, and how much of it you can customize, depends on your SuperOffice [CRM Suite][2].
+
+## Supported ERP systems
+
+* [Visma Net][1]
+* Visma Business NXT
+* Tripletex
+* Fortnox
+
+More ERP systems are added periodically. This documentation currently covers Visma Net.
+
+The example below shows a Company card with ConnectERP for Visma Net: the synchronized ERP fields on the **ERP (Visma Net)** tab, and the **Orders (Visma Net)** panel.
+
+![Company card with ConnectERP for Visma Net: ERP tab with key figures and the Orders (Visma Net) panel showing live order data -screenshot][img1]
+
+## Availability
+
+### CRM Suite Core: fixed solution
+
+In Core, ConnectERP Standard is a standardized, locked integration for company and contact synchronization:
+
+* The ERP system is the [leading system][7] for company data, and SuperOffice is the leading system for contacts.
+* The DataBridge integrations come with a fixed configuration, and the implementing consultant locks them after setup. You cannot customize the field mapping, the data flow direction, or the leading system.
+* Panels on the Company card show orders and invoices from the ERP for each company.
+* Product sync and order sync are not part of Core, because Core does not support creating quotes in SuperOffice.
+
+The fixed configuration keeps the integration stable and predictable, and it requires no ongoing maintenance.
+
+### CRM Suite Growth and higher: fully customizable
+
+In Growth and higher, ConnectERP Professional is available as the full solution and can be tailored to your needs. A consultant sets up the integration together with you, based on your requirements. You decide, for each entity:
+
+* Which fields are synchronized
+* The direction of the data flow
+* Which system is the leading system
+
+In addition to company and contact sync and the panels, Growth and higher includes these configurable flows:
+
+* **Product sync:** The [product catalog and price information][8] are synchronized from the ERP into SuperOffice.
+* **Order sync:** Sales orders created from [quotes in SuperOffice][9] are sent to the ERP, and orders that originate in the ERP, for example through e-commerce, are synchronized into SuperOffice with their product details.
+
+### SuperOffice CRM user plans: add-on
+
+If you have a SuperOffice CRM user plan instead of a CRM Suite, you can buy ConnectERP Standard or ConnectERP Professional as an add-on in the App Store: [ConnectERP for Visma Net][3].
+
+## What's included per CRM Suite {#whats-included}
+
+| Feature | CRM Suite Core | CRM Suite Growth and higher |
+|---|---|---|
+| Custom data flow direction | No | Yes |
+| Custom field mapping | No | Yes |
+| Custom leading system per entity | No | Yes |
+| Location sync | No | Yes (customizable) |
+| Order sync | No | Yes (customizable) |
+| Product sync | No | Yes (customizable) |
+| Project sync | No | Yes (customizable) |
+| Sales price sync | No | Yes (customizable) |
+| Supplier sync | No | Yes (customizable) |
+| Contact sync | Yes (fixed) | Yes (customizable) |
+| Customer sync | Yes (fixed) | Yes (customizable) |
+| Invoices panel | Yes | Yes |
+| Order history panel | Yes | Yes |
+| Orders panel | Yes | Yes |
+
+Location, project, and sales price sync aren't part of the default setup in this guide. You set them up as regular DataBridge integrations, without a default configuration.
+
+The three panels on the Company card show a list of orders, a list of invoices, and a graphical overview of the order history for the current year and the previous four years.
+
+## Default setup
+
+This documentation describes a default setup, with downloadable DataBridge integrations and CRMScripts. In Growth and higher, you can adapt the default setup to your needs. In Core, SuperOffice supports the company and contact sync only with the default setup.
+
+## Terminology {#terminology}
+
+* **DataBridge:** The SuperOffice add-on that synchronizes data between SuperOffice and external databases or business systems. ConnectERP uses DataBridge to run its integrations. See [DataBridge for SuperOffice][4] in the App Store and the [DataBridge documentation][5].
+* **DataBridge integration:** A configuration in DataBridge of what to export from a source and import into a destination, for example from Visma Net into SuperOffice. It holds the connection, the field mapping, the transformations, and the schedule. DataBridge previously used the term profile. The default setup provides the integrations as *.ndb* files. An integration runs when a user clicks an action button, on a schedule (hourly or daily), or when you start it manually, as in the initial match of companies.
+* **Instant Job URL:** The URL that you copy from a Button integration in DataBridge after you save it. In the default setup, the CRMScripts behind the action buttons on the Company, Contact, and Sale cards use this URL to call that integration.
+* **Job:** One run of a DataBridge integration. A job records when the run started and finished, the number of rows processed, and the log. You find the jobs of an integration on its last tab in DataBridge.
+* **Leading system:** The system that is the source of truth for an entity when the data in SuperOffice and the ERP system conflicts. The leading system does not set the direction of the data flow.
+* **Locked integration:** A DataBridge integration that users without access can only view, not change. Only selected SuperOffice consultants and partners can lock integrations. In Core, the implementing consultant locks the ConnectERP integrations after setup.
+* **Panel:** A tab on the Company card that shows data such as orders and invoices directly from the ERP system, without copying it into the SuperOffice database. You set up panels in [Panels for SuperOffice][6]. The panels require an active ConnectERP subscription on the SuperOffice tenant.
+* **Transformation:** A step in a DataBridge integration that changes values from the source before they reach the destination. You manage transformations on the **Data** tab of the integration.
+* **Value mapping:** A list that matches values in the ERP system, such as customer classes or VAT codes, to the corresponding values in SuperOffice. DataBridge applies value mappings in transformations, for example a Map List transformation, which converts each value of a field into an item from a list in the destination.
+
+[1]: /integrations/connect-erp/visma-net/index
+[2]: /en/admin/license/crm-suite
+[3]: https://appstore.superoffice.com/superoffice-as/connecterp-for-visma-net
+[4]: https://appstore.superoffice.com/superoffice-as/databridge-for-superoffice
+[5]: https://help.infobridge.com/docs/databridge/
+[6]: https://appstore.superoffice.com/superoffice-as/panels-for-superoffice
+[7]: #terminology
+[8]: /en/sale/admin/quote/price-list-and-products
+[9]: /en/sale/learn/quote/index
+
+[img1]: /media/loc/en/integrations/connect-erp/company-card-orders-panel.png

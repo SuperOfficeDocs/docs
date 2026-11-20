@@ -1,0 +1,58 @@
+---
+title: Plan the integration
+description: Value mappings and configuration decisions to prepare before you set up the ConnectERP integration with Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'value mappings', 'field mapping', 'data flow', 'leading system', 'planning', 'Visma.net', 'workshop', 'scoping']
+author: marcelspapens
+date: 11.20.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+Prepare the value mappings and, in CRM Suite Growth and higher, agree on the configuration before the setup starts.
+
+## Value mappings {#value-mappings}
+
+Before starting the DataBridge configuration, map values used in Visma Net to the corresponding values in SuperOffice. You'll need these when you configure the transformations in the company sync and product sync integrations in DataBridge.
+
+Collect the following mappings in a spreadsheet or document and bring them to the configuration session:
+
+| Mapping | Visma Net side | SuperOffice side | Needed in Core |
+|---|---|---|---|
+| Customer classes | Customer class codes in Visma Net | Countries or segments in SuperOffice | Yes |
+| Price lists | Price list names in Visma Net | Price list names in SuperOffice | No |
+| Product families | Product groups in Visma Net | Product groups in SuperOffice | No |
+| Product types | Item classes in Visma Net | Product categories in SuperOffice | No |
+| VAT percentages | VAT codes used in Visma Net | VAT codes in SuperOffice price list | No |
+
+The example below shows how a Map List transformation in DataBridge maps SuperOffice country values to Visma Net customer classes.
+
+![DataBridge Map List transformation: mapping Country to Visma Customer Class -screenshot][img1]
+
+<Tip>
+Incomplete or incorrect value mappings are the most common cause of products being imported with the wrong VAT rate or into the wrong price list. Take time to prepare these before the configuration session.
+</Tip>
+
+## Pre-configuration session (Growth and higher only)
+
+In CRM Suite Growth and higher, the integration is customized to the customer's data model. Before the technical setup starts, the customer and the consultant hold a session to decide:
+
+* **Field mapping:** which Visma Net fields map to which SuperOffice fields for each entity
+* **Data flow direction:** per entity, is the data pushed, pulled, or synchronized in both directions?
+* **[Leading system][1]:** which system is the source of truth per entity in case of a conflict?
+* **Scope:** which entities should be synchronized, and which should remain separate?
+
+Document the outcomes of this session. The decisions made here directly determine how DataBridge integrations are configured.
+
+## Next step
+
+Continue with [Set up Visma Net][2].
+
+[1]: ../index#terminology
+[2]: ./set-up-visma-net
+
+[img1]: /media/loc/en/integrations/connect-erp/databridge-map-list-customer-class.png

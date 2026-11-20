@@ -1,0 +1,73 @@
+---
+title: Requirements
+description: Subscriptions, Visma Net user roles, SuperOffice user rights, and files required for the ConnectERP integration with Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'subscriptions', 'user roles', 'user rights', 'downloads', 'Visma.net', 'prerequisites', 'license', 'permissions']
+author: marcelspapens
+date: 11.20.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related:
+  - What's included per CRM Suite: /integrations/connect-erp/index#whats-included
+  - /integrations/connect-erp/visma-net/plan-the-integration
+  - /integrations/connect-erp/visma-net/set-up-visma-net
+language: en
+userflow_index: true
+---
+
+Check that these requirements are met before you start the setup. Missing requirements and skipped preparations are the most common cause of a failed or incomplete integration.
+
+## Subscriptions
+
+* **Visma Net Financials:** an active subscription
+* **SuperOffice CRM:** CRM Suite Core or higher
+
+## Visma Net integration user
+
+The integration needs a dedicated Visma Net user with these roles:
+
+* **Financials API user**
+* **Sales Creator (neXtGen)**
+
+You create this user in [Set up Visma Net][3].
+
+## SuperOffice user rights
+
+Users who need to manually push data to Visma Net must have **edit rights** on the relevant card:
+
+| Action | Required right |
+|---|---|
+| Create Customer in Visma Net | Edit right on Company card |
+| Create/Update Contact in Visma Net | Edit right on Contact card |
+| Create Order in Visma Net | Edit right on Sale card |
+
+Users without edit rights won't see the action buttons. Assign the admin screen layouts only to groups that need them.
+
+## Downloads {#downloads}
+
+Download all required files before you start the default setup. You can also use the provided integrations as a safe starting point for a custom configuration.
+
+<Note>
+Files are updated periodically. Always download the latest version before starting a new installation.
+</Note>
+
+### DataBridge integrations
+
+| File | Description | Last updated |
+|---|---|---|
+| <a href="/downloads/connect-erp/databridge-integrations-visma-net.zip" download>databridge-integrations-visma-net.zip</a> | The seven DataBridge integrations for the standard Visma Net integration | 11.11.2026 |
+| <a href="/downloads/connect-erp/databridge-integrations-initial-import-visma-net.zip" download>databridge-integrations-initial-import-visma-net.zip</a> | Three DataBridge integrations for the initial company match | 13.11.2026 |
+
+### CRMScripts
+
+| File | Description | Last updated |
+|---|---|---|
+| <a href="/downloads/connect-erp/crmscripts-visma-net.zip" download>crmscripts-visma-net.zip</a> | Three CRMScripts for manually pushing companies, contacts, and orders to Visma Net | 17.02.2025 |
+
+## Next step
+
+Continue with [Plan the integration][4].
+
+[3]: ./set-up-visma-net
+[4]: ./plan-the-integration
