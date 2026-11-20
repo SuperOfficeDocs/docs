@@ -12,58 +12,7 @@ language: en
 userflow_index: true
 ---
 
-ConnectERP connects SuperOffice CRM with ERP systems and synchronizes key business data between them. What the integration covers, and how much of it can be customized, depends on the customer's SuperOffice CRM Suite.
-
-## Core vs Growth and higher
-
-### CRM Suite Core: fixed solution
-
-In Core, ConnectERP is a standardized, locked integration for company and contact synchronization:
-
-* The ERP system is the leading system for company data, and SuperOffice is the leading system for contacts.
-* The DataBridge integrations come with a fixed configuration, and the implementing consultant locks them after setup. Field mapping, data flow direction, and the leading system can't be customized.
-* Panels on the Company card show orders and invoices from the ERP for each customer.
-* Product sync and order sync aren't part of Core, because Core doesn't support creating quotes in SuperOffice.
-
-The fixed configuration keeps the integration stable and predictable, and it requires no ongoing maintenance.
-
-### CRM Suite Growth and higher: fully customizable
-
-In Growth and higher, the full ConnectERP solution is available and can be tailored to the customer's needs. A consultant sets up the integration together with the customer, based on the customer's requirements. The customer decides, for each entity:
-
-* which fields are synchronized
-* the direction of the data flow
-* which system is the leading system
-
-In addition to company and contact sync and the panels, Growth and higher includes these configurable flows:
-
-* **Product sync**: the product catalog and price information are synchronized from the ERP into SuperOffice.
-* **Order sync**: sales orders created from quotes in SuperOffice are sent to the ERP, and orders that originate in the ERP, for example through e-commerce, are synchronized into SuperOffice with their product details.
-
-## What's included per CRM Suite {#whats-included}
-
-| Feature | CRM Suite Core | CRM Suite Growth and higher |
-|---|---|---|
-| Customer sync | Yes (fixed) | Yes (customizable) |
-| Supplier sync | No | Yes (customizable) |
-| Contact sync | Yes (fixed) | Yes (customizable) |
-| Product sync | No | Yes (customizable) |
-| Sales price sync | No | Yes (customizable) |
-| Order sync | No | Yes (customizable) |
-| Location sync | No | Yes (customizable) |
-| Project sync | No | Yes (customizable) |
-| Orders panel | Yes | Yes |
-| Invoices panel | Yes | Yes |
-| Order history panel | Yes | Yes |
-| Custom field mapping | No | Yes |
-| Custom data flow direction | No | Yes |
-| Custom leading system per entity | No | Yes |
-
-The three panels on the Company card show a list of orders, a list of invoices, and a graphical overview of the order history.
-
-## Default setup
-
-This documentation describes a default setup, with downloadable DataBridge integrations and CRMScripts. You can adapt the default setup to the customer's needs, except for the company and contact sync in Core: SuperOffice supports the Core company and contact sync only with the default setup.
+ConnectERP connects SuperOffice CRM with ERP systems and synchronizes key business data between them. What the integration covers, and how much of it you can customize, depends on your SuperOffice [CRM Suite][2].
 
 ## Supported ERP systems
 
@@ -74,4 +23,56 @@ This documentation describes a default setup, with downloadable DataBridge integ
 
 More ERP systems are added periodically. This documentation currently covers Visma Net.
 
+## Core vs Growth and higher
+
+### CRM Suite Core: fixed solution
+
+In Core, ConnectERP is a standardized, locked integration for company and contact synchronization:
+
+* The ERP system is the leading system for company data, and SuperOffice is the leading system for contacts.
+* The DataBridge integrations come with a fixed configuration, and the implementing consultant locks them after setup. You cannot customize the field mapping, the data flow direction, or the leading system.
+* Panels on the Company card show orders and invoices from the ERP for each company.
+* Product sync and order sync are not part of Core, because Core does not support creating quotes in SuperOffice.
+
+The fixed configuration keeps the integration stable and predictable, and it requires no ongoing maintenance.
+
+### CRM Suite Growth and higher: fully customizable
+
+In Growth and higher, the full ConnectERP solution is available and can be tailored to your needs. A consultant sets up the integration together with you, based on your requirements. You decide, for each entity:
+
+* Which fields are synchronized
+* The direction of the data flow
+* Which system is the leading system
+
+In addition to company and contact sync and the panels, Growth and higher includes these configurable flows:
+
+* **Product sync:** The product catalog and price information are synchronized from the ERP into SuperOffice.
+* **Order sync:** Sales orders created from quotes in SuperOffice are sent to the ERP, and orders that originate in the ERP, for example through e-commerce, are synchronized into SuperOffice with their product details.
+
+## What's included per CRM Suite {#whats-included}
+
+| Feature | CRM Suite Core | CRM Suite Growth and higher |
+|---|---|---|
+| Custom data flow direction | No | Yes |
+| Custom field mapping | No | Yes |
+| Custom leading system per entity | No | Yes |
+| Location sync | No | Yes (customizable) |
+| Order sync | No | Yes (customizable) |
+| Product sync | No | Yes (customizable) |
+| Project sync | No | Yes (customizable) |
+| Sales price sync | No | Yes (customizable) |
+| Supplier sync | No | Yes (customizable) |
+| Contact sync | Yes (fixed) | Yes (customizable) |
+| Customer sync | Yes (fixed) | Yes (customizable) |
+| Invoices panel | Yes | Yes |
+| Order history panel | Yes | Yes |
+| Orders panel | Yes | Yes |
+
+The three panels on the Company card show a list of orders, a list of invoices, and a graphical overview of the order history.
+
+## Default setup
+
+This documentation describes a default setup, with downloadable DataBridge integrations and CRMScripts. You can adapt the default setup to your needs, except for the company and contact sync in Core: SuperOffice supports the Core company and contact sync only with the default setup.
+
 [1]: /integrations/connect-erp/visma-net/index
+[2]: /en/admin/license/crm-suite
