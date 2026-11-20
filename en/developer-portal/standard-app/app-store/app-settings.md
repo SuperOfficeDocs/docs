@@ -4,7 +4,7 @@ title: Application settings
 description: Reference of application settings in the SuperOffice Developer Portal.
 keywords: ['apps', 'Developer Portal']
 author: Bergfrid Dias
-date: 11.06.2026
+date: 11.20.2026
 so_version: 2.0
 version_devportal: 2.0
 content_type: reference
@@ -19,12 +19,14 @@ deployment: online
 | SEO-friendly name | For search engines. | [Update partner profile][2], [Update the product page][3] | [Improve SEO][1] |
 | Technical contact | The contact person for this app. | [Update contact person][21], [Review and update all your technical contacts][22] | |
 | Error reporting emails | Email addresses that receive error messages for issues reported from the App Store, notifications, and problems with mirroring, ERP sync, and quote connectors. Add each address with **Enter**. If empty, the technical contact receives these. | [Set state change URL][26], [Get error emails][28] | [About tenant status][27] |
-| Uninstall reporting emails | Where SuperOffice sends app uninstall requests. Add each address with **Enter**. If blank, the partner's Uninstall reporting emails list is used; if that is also blank, the notifications go to the partner's administrative contact. | [Update app info][3], [Get error emails][28] | |
+| Uninstall reporting emails | Where SuperOffice sends app uninstall requests. Add each address with **Enter**. If blank, the owner's partner-level Uninstall reporting emails list is used; if that is also blank, the notifications go to the owner's administrative contact. | [Update app info][3], [Get error emails][28] | |
 | Hidden from Our Apps | If checked, this app will not show up when customers go to the App Store and see their installed apps. | | |
 | Is custom app | Whether this is a one-off customization or if we should provide the option to publish to the app store as a standard app. | [Create app][13] | [About custom apps][16] |
 | Is beta | Whether the app is currently in beta in the App Store. | [Publish app][10] | [About the beta period][9] |
 
 As a partner, you may change the technical contact and the list of error reporting emails. Other settings may only be changed by SuperOffice app managers. Contact us via chat or support if you want to request any changes.
+
+**Owned by** and **Developed by** aren't app settings. They're shown with icons in the app header, and only SuperOffice can change them. See [Owner vs. developer][29].
 
 ## App Store information
 
@@ -123,5 +125,6 @@ The [steps to update all App Store information][3] are the same.
 [26]: ../../best-practices/tenant-status/get-notifications
 [27]: ../../best-practices/tenant-status/index
 [28]: ../../best-practices/error-emails
+[29]: ../index#ownership
 
 [img1]: /media/loc/en/developer-portal/app-overview.png

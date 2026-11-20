@@ -4,7 +4,7 @@ title: Standard apps for SuperOffice Online
 description: Standard apps for SuperOffice Online
 keywords: ['standard app', 'public app', 'App Store']
 author: Margrethe Romnes
-date: 12.04.2025
+date: 11.20.2026
 content_type: concept
 deployment: online
 platform: web
@@ -22,7 +22,65 @@ All applications begin in our [sandbox environment][2]. Standard applications mu
 The Telenor Cyberdefense security evaluation is a mandatory part of our certification program.
 </Note>
 
+## Owner vs. developer {#ownership}
+
+Sometimes a partner develops a standard app on behalf of another partner. To support this, each app is linked to two partners:
+
+* **Owned by:** The partner the app belongs to commercially and publicly.
+* **Developed by:** The partner that builds and runs the app.
+
+When you create an app, your company is both owner and developer. When they're different partners, the app header in the Developer Portal shows both. The header has no text labels: the person icon marks the owner and the code icon (`</>`) marks the developer. Hover over an icon to see **Owned by** or **Developed by**.
+
+For example, SuperOffice AS owns Map4You Pro and i-Centrum AB develops it:
+
+![Application header showing the owner (SuperOffice AS, person icon) and developer (i-Centrum AB, code icon) -screenshot][img1]
+
+In short, the owner handles the App Store listing and receives uninstall and support emails. The developer handles the app configuration.
+
+### What the owner handles
+
+| Area | Behavior |
+|---|---|
+| App Store listing | The App Store shows the owner's name and links to the owner's partner page. The app is listed on the owner's partner page, not the developer's. The developer's name isn't shown on the App Store pages. |
+| App Store search | The app is indexed only if the owner's [App Store partner profile][5] is published. Searching for the developer's company name also finds the app. |
+| App Store product page | The owner [edits the product page][6] and requests publishing of the product page. The developer can only view it. |
+| Uninstall requests | Sent to the app's [uninstall reporting emails][7]. If none are set, they go to the owner's partner-level [uninstall reporting emails][8], then to the owner's administrative contact. |
+| Support notifications | Sent to the owner's [support emails][8] when a customer's app-support request is routed to the partner in [Messages][9]. If none are set, they go to the app's error reporting emails, then to the owner's technical contact. |
+
+Customers see only the owner in the App Store. The Map4You Pro listing names SuperOffice AS, and the URL uses the owner's name. i-Centrum AB isn't shown.
+
+![App Store listing for Map4You Pro showing only the owner, SuperOffice AS -screenshot][img2]
+
+### What the developer handles and where it shows
+
+| Area | Behavior |
+|---|---|
+| App configuration | The developer [edits the app configuration][10], such as versions and client setup, and [requests publishing of the configuration][11] to stage and production. The owner can only view it. |
+| Developer Portal | The developer's name, with a link, appears in the app header next to the code icon and in partner app lists. |
+
+### What both partners can work with
+
+Depending on each user's [permissions][12], users at both partners can work with the app's technical contact, error reporting emails, uninstall reporting emails, tenants, usage, and failures.
+
+### Change the owner or developer
+
+Only SuperOffice can change who owns or develops an app. SuperOffice staff do this with the **Change Owned by** and **Change Developed by** buttons on the app's **Overview** page. Partner users don't see these buttons. Contact us via chat or support to request a change. **Developed by** can be changed to another partner, but not removed.
+
+Each change is recorded in the [event log][13].
+
 [1]: /en/developer-portal/index
 [2]: /en/developer-portal/getting-started/app-envir
 [3]: /en/developer-portal/standard-app/certification/index
 [4]: /en/developer-portal/standard-app/certification/initial-security-eval
+[5]: /en/developer-portal/standard-app/app-store/update-partner-profile
+[6]: /en/developer-portal/standard-app/app-store/update-app-page
+[7]: /en/developer-portal/standard-app/app-store/app-settings
+[8]: /en/developer-portal/partner/partner-settings
+[9]: /en/developer-portal/create-app/message-center
+[10]: /en/developer-portal/create-app/config/index
+[11]: /en/developer-portal/create-app/request-to-publish
+[12]: /en/developer-portal/partner/manage-permissions
+[13]: /en/developer-portal/analytics/logs
+
+[img1]: /media/loc/en/developer-portal/app-header-owner-developer.png
+[img2]: /media/loc/en/developer-portal/app-store-listing-owner.png

@@ -4,7 +4,7 @@ title: Tenant management
 description: Tenant management
 keywords: ['standard app', 'public app', 'App Store', 'custom app']
 author: Bergfrid Dias
-date: 12.10.2024
+date: 11.20.2026
 version_devportal: 1.29
 content_type: concept
 deployment: online
@@ -42,7 +42,7 @@ The Tenant Manager simplifies tenant management, making it easier to oversee aut
 
 ## Who are my customers?
 
-The **partner page** provides an overview of how many tenants that have authorized one or more applications developed by a specific company per environment.
+The **partner page** shows, per environment, how many tenants have authorized one or more applications owned or developed by the partner. See [Owner vs. developer][10].
 
 ![List of tenants -screenshot][img1]
 
@@ -60,5 +60,6 @@ The **partner page** provides an overview of how many tenants that have authoriz
 [4]: /en/developer-portal/tenants/authorization
 [5]: /en/developer-portal/tenants/get
 [9]: /en/developer-portal/getting-started/app-envir
+[10]: /en/developer-portal/standard-app/index#ownership
 
 [img1]: /media/loc/en/developer-portal/tenants.png
