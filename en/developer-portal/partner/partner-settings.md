@@ -4,7 +4,7 @@ uid: dp-partner-settings
 description: Reference of partner settings in the SuperOffice Developer Portal.
 keywords: ['apps', 'Developer Portal']
 author: Bergfrid Dias
-date: 11.06.2026
+date: 11.20.2026
 so_version: 1.30
 version_devportal: 2.15
 content_type: reference
@@ -19,8 +19,8 @@ deployment: online
 | SEO-friendly name | For search engines. | [Update settings][9] | [Improve SEO][10] |
 | Administrative contact | The main contact person for this company.| [Update contact person][3] | |
 | Technical contact | The IT contact person for this company. | [Update contact person][3] | [About notifications][11] |
-| Uninstall reporting emails | Where SuperOffice sends requests to uninstall an app. If left blank, these emails go to the partner's administrative contact. | [Get error emails][12] | |
-| Support emails | Where SuperOffice notifies you when a shared customer's app-support request is routed to you in **Messages**. Add each address with **Enter**. | [Update settings][9] | [About Messages][7] |
+| Uninstall reporting emails | Where SuperOffice sends requests to uninstall apps your company owns, when the app has no uninstall reporting emails of its own. If left blank, these emails go to the partner's administrative contact. | [Get error emails][12] | [Owner vs. developer][13] |
+| Support emails | Where SuperOffice notifies you when a shared customer's app-support request for an app your company owns is routed to you in **Messages**. Add each address with **Enter**. | [Update settings][9] | [About Messages][7], [Owner vs. developer][13] |
 | Logo | Company logo, circular | [Update settings][9] | [App Store listing requirements][5] |
 | Description | The company blurb. | [Update partner profile][6]| [App Store listing requirements][5] |
 | Meta description | Description for search engines. | [Update settings][9] | [Improve SEO][10] |
@@ -45,5 +45,6 @@ As a partner, you may change the contact persons. Other settings may only be cha
 [9]: ../standard-app/app-store/update-app-page
 [10]: ../standard-app/app-store/seo
 [7]: ../create-app/message-center
+[13]: ../standard-app/index#ownership
 
 [img1]: /media/loc/en/developer-portal/partner-settings-uninstall-support-emails.png
