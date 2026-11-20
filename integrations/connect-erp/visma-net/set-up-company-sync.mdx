@@ -19,7 +19,7 @@ Company sync synchronizes companies between SuperOffice and Visma Net. It's avai
 
 ## 1. Create user-defined fields on the Company card
 
-Go to **Settings and maintenance** > **Fields** > **Company** > **Add** and create the following fields. Set all fields to **Read-Only**.
+Go to **Settings and maintenance** > **Fields** > **Company** > **Add** and create the following fields. Set all fields to **Read only**.
 
 <Note>
 Use the exact **Prog IDs** as specified. DataBridge and the CRMScripts rely on these identifiers to read and write the correct fields.
@@ -107,9 +107,15 @@ Assign the admin layout only to user groups that should be able to push data to 
 
 Download and unzip *databridge-integrations-visma-net.zip* from the [Downloads][1] section in Requirements.
 
+<Note>
+Warnings can appear during import (yellow background). The warning that not all required fields are configured is expected, and you can continue the import. For any other warning, read the message and follow its instructions before you continue.
+</Note>
+
+![Expected warning: not all required fields are configured, existing entities can still be updated -screenshot][img6]
+
 ### Integration 1: Visma Net Customer Sync (Button)
 
-This profile is triggered manually when a user clicks **Create Company in Visma Net**.
+This integration is triggered manually when a user clicks **Create Company in Visma Net**.
 
 1. In DataBridge, import the corresponding *.ndb* file.
 1. Connect to Visma Net when prompted and authorize the connection.
@@ -124,19 +130,13 @@ This profile is triggered manually when a user clicks **Create Company in Visma 
 
 ### Integration 2: Visma Net Customer Sync (Hourly)
 
-This profile runs automatically every hour to pull updated customer data from Visma Net into SuperOffice.
+This integration runs automatically every hour to pull updated customer data from Visma Net into SuperOffice.
 
 1. Import the *.ndb* file.
 1. Connect to Visma Net.
 1. After saving, **disable the integration immediately** to prevent it from running before setup is complete. You'll enable it in [Verify and finalize][2].
 
 ![DataBridge integration: Disabled toggle -screenshot][img5]
-
-<Note>
-If any **warnings** appear (yellow background) during import, read the message carefully and follow the instructions before proceeding.
-</Note>
-
-![Expected warning: not all required fields are configured, existing entities can still be updated -screenshot][img6]
 
 ## 6. Add the Instant Job URL to the CRMScript
 

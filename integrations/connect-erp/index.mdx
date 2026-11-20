@@ -76,16 +76,18 @@ If you have a SuperOffice CRM user plan instead of a CRM Suite, you can buy Conn
 | Order history panel | Yes | Yes |
 | Orders panel | Yes | Yes |
 
+Location, project, and sales price sync aren't part of the default setup in this guide. You set them up as regular DataBridge integrations, without a default configuration.
+
 The three panels on the Company card show a list of orders, a list of invoices, and a graphical overview of the order history for the current year and the previous four years.
 
 ## Default setup
 
-This documentation describes a default setup, with downloadable DataBridge integrations and CRMScripts. You can adapt the default setup to your needs, except for the company and contact sync in Core: SuperOffice supports the Core company and contact sync only with the default setup.
+This documentation describes a default setup, with downloadable DataBridge integrations and CRMScripts. In Growth and higher, you can adapt the default setup to your needs. In Core, SuperOffice supports the company and contact sync only with the default setup.
 
 ## Terminology {#terminology}
 
 * **DataBridge:** The SuperOffice add-on that synchronizes data between SuperOffice and external databases or business systems. ConnectERP uses DataBridge to run its integrations. See [DataBridge for SuperOffice][4] in the App Store and the [DataBridge documentation][5].
-* **DataBridge integration:** A configuration in DataBridge of what to export from a source and import into a destination, for example from Visma Net into SuperOffice. It holds the connection, the field mapping, the transformations, and the schedule. DataBridge previously used the term profile, and some pages in this guide still do. The default setup provides the integrations as *.ndb* files. An integration runs when a user clicks an action button, on a schedule (hourly or daily), or when you start it manually, as in the initial match of companies.
+* **DataBridge integration:** A configuration in DataBridge of what to export from a source and import into a destination, for example from Visma Net into SuperOffice. It holds the connection, the field mapping, the transformations, and the schedule. DataBridge previously used the term profile. The default setup provides the integrations as *.ndb* files. An integration runs when a user clicks an action button, on a schedule (hourly or daily), or when you start it manually, as in the initial match of companies.
 * **Instant Job URL:** The URL that you copy from a Button integration in DataBridge after you save it. In the default setup, the CRMScripts behind the action buttons on the Company, Contact, and Sale cards use this URL to call that integration.
 * **Job:** One run of a DataBridge integration. A job records when the run started and finished, the number of rows processed, and the log. You find the jobs of an integration on its last tab in DataBridge.
 * **Leading system:** The system that is the source of truth for an entity when the data in SuperOffice and the ERP system conflicts. The leading system does not set the direction of the data flow.

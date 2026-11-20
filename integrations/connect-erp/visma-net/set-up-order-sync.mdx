@@ -26,7 +26,7 @@ Order sync synchronizes sales orders in both directions:
 
 ## 1. Create user-defined field on the Sale card
 
-Go to **Settings and maintenance** > **Fields** > **Sale** > **Add** and create the following field. Set it to **Read-Only**.
+Go to **Settings and maintenance** > **Fields** > **Sale** > **Add** and create the following field. Set it to **Read only**.
 
 | # | Field name | Type | Prog ID |
 |---|---|---|---|
@@ -51,7 +51,7 @@ The CRMScript allows users to manually push a sale from SuperOffice to Visma Net
 1. Save the script.
 
 <Tip>
-Keep `allowOnlySaleWithStatusSold = true` to prevent accidental order creation in Visma Net from quotes that aren't finalized yet.
+Keep `allowOnlySaleWithStatusSold = true` to prevent accidental order creation in Visma Net from sales that don't have the status **Sold**.
 </Tip>
 
 ## 3. Create the Sale card screen layouts
@@ -95,7 +95,7 @@ DataBridge uses this selection as the field template for the **Visma Net Sales O
 
 ### Integration 6: Visma Net Sales Orders (Button)
 
-This profile is triggered manually when a user clicks **Create Order in Visma Net**.
+This integration is triggered manually when a user clicks **Create Order in Visma Net**.
 
 1. In DataBridge, import the corresponding *.ndb* file.
 1. Connect to Visma Net.
@@ -104,7 +104,7 @@ This profile is triggered manually when a user clicks **Create Order in Visma Ne
 
 ### Integration 7: Visma Net Sales Orders (Hourly)
 
-This profile runs automatically every hour to pull new and updated sales orders from Visma Net into SuperOffice.
+This integration runs automatically every hour to pull new and updated sales orders from Visma Net into SuperOffice.
 
 1. In DataBridge, import the corresponding *.ndb* file.
 1. Connect to Visma Net.

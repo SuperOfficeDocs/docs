@@ -18,12 +18,12 @@ userflow_index: true
 Contact sync synchronizes contacts (persons) between SuperOffice and Visma Net. It's available in all CRM Suites.
 
 <Note>
-Complete [Set up company sync][1] before you start the steps on this page. Contacts in Visma Net are linked to companies via the ERP customer number, which is present only after company sync is configured.
+Complete [Set up company sync][1] before you start the steps on this page. Contacts in Visma Net are linked to companies via the ERP customer number, which a company gets only when it is synchronized with Visma Net.
 </Note>
 
 ## 1. Create user-defined fields on the Contact card
 
-Go to **Settings and maintenance** > **Fields** > **Contact** > **Add** and create the following 2 fields. Set both to **Read-Only**.
+Go to **Settings and maintenance** > **Fields** > **Contact** > **Add** and create the following 2 fields. Set both to **Read only**.
 
 | # | Field name | Type | Prog ID |
 |---|---|---|---|
@@ -99,7 +99,7 @@ Assign the admin layout only to user groups that should be able to push data to 
 
 ### Integration 3: Visma Net Person Sync (Button)
 
-This profile is triggered manually when a user clicks **Create/Update Person in Visma Net**.
+This integration is triggered manually when a user clicks **Create/Update Person in Visma Net**.
 
 1. In DataBridge, import the corresponding *.ndb* file.
 1. Connect to Visma Net.
@@ -109,7 +109,7 @@ This profile is triggered manually when a user clicks **Create/Update Person in 
 
 ### Integration 4: Visma Net Person Sync (Hourly)
 
-This profile runs automatically every hour to synchronize linked contacts.
+This integration runs automatically every hour to synchronize linked contacts.
 
 1. Import the *.ndb* file.
 1. Select the **DB – Linked ERP Contact Persons** selection as the data source.
