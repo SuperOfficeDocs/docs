@@ -1,7 +1,7 @@
 ---
-title: Prerequisites
+title: Set up Visma Net
 description: Visma Net configuration required before setting up the ConnectERP integration in SuperOffice.
-keywords: ['ConnectERP', 'Visma Net', 'company number', 'EXTNUMBER', 'attribute field', 'customer class', 'CS205000', 'AR2010PL']
+keywords: ['ConnectERP', 'Visma Net', 'integration user', 'user roles', 'company number', 'EXTNUMBER', 'attribute field', 'customer class', 'CS205000', 'AR2010PL']
 author: marcelspapens
 date: 11.20.2026
 content_type: howto
@@ -13,9 +13,24 @@ language: en
 userflow_index: true
 ---
 
-Before configuring SuperOffice, complete the following steps in Visma Net. These are one-time preparations that apply to all CRM Suites.
+Complete these steps in Visma Net before you configure SuperOffice. They are one-time preparations that apply to all CRM Suites.
 
-## 1. Find the Visma Net company number
+## 1. Create the integration user {#create-the-integration-user}
+
+Create a **dedicated Visma Net user account** for the integration. Don't use a personal user account. If an employee leaves, the integration breaks.
+
+The integration user needs the following roles in Visma Net:
+
+* **Financials API user**
+* **Sales Creator (neXtGen)**
+
+{/* Screenshot needed: Add a screenshot of the Visma Net user roles screen showing the required roles assigned. */}
+
+<Tip>
+Use a neutral name such as *SuperOffice Integration* for this account so it's clearly identifiable in Visma Net audit logs.
+</Tip>
+
+## 2. Find the Visma Net company number
 
 Each Visma Net tenant has a unique company number. You'll need this number when importing the DataBridge integrations.
 
@@ -28,10 +43,10 @@ Each Visma Net tenant has a unique company number. You'll need this number when 
 ![Company details: Company ID highlighted -screenshot][img1]
 
 <Tip>
-Keep the Company ID in a note alongside the other values you'll need during setup, such as the value mappings from the [Requirements][1] page.
+Keep the Company ID in a note alongside the other values you'll need during setup, such as the value mappings from [Plan the integration][1].
 </Tip>
 
-## 2. Create the attribute field 'SuperOffice Number' (optional)
+## 3. Create the attribute field 'SuperOffice Number' (optional)
 
 This step adds a custom attribute to Visma Net customer records so that the corresponding SuperOffice company number is stored and visible in Visma Net.
 
@@ -81,7 +96,7 @@ Repeat this for **every** customer class in Visma Net. If a class is missing the
 
 Continue with [Set up company sync][2].
 
-[1]: ./requirements
+[1]: ./plan-the-integration#value-mappings
 [2]: ./set-up-company-sync
 [3]: https://finance.visma.net/
 

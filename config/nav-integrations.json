@@ -9,7 +9,8 @@
         "root": "integrations/connect-erp/visma-net/index",
         "pages": [
           "integrations/connect-erp/visma-net/requirements",
-          "integrations/connect-erp/visma-net/prerequisites",
+          "integrations/connect-erp/visma-net/plan-the-integration",
+          "integrations/connect-erp/visma-net/set-up-visma-net",
           "integrations/connect-erp/visma-net/set-up-company-sync",
           "integrations/connect-erp/visma-net/set-up-contact-sync",
           "integrations/connect-erp/visma-net/set-up-product-sync",
