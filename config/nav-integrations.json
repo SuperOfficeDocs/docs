@@ -1,6 +1,29 @@
 [
   "integrations/index",
   {
+    "group": "ConnectERP",
+    "root": "integrations/connect-erp/index",
+    "pages": [
+      {
+        "group": "Visma Net",
+        "root": "integrations/connect-erp/visma-net/index",
+        "pages": [
+          "integrations/connect-erp/visma-net/requirements",
+          "integrations/connect-erp/visma-net/prerequisites",
+          "integrations/connect-erp/visma-net/set-up-company-sync",
+          "integrations/connect-erp/visma-net/set-up-contact-sync",
+          "integrations/connect-erp/visma-net/set-up-product-sync",
+          "integrations/connect-erp/visma-net/set-up-order-sync",
+          "integrations/connect-erp/visma-net/add-panels",
+          "integrations/connect-erp/visma-net/initial-match",
+          "integrations/connect-erp/visma-net/verify-finalize",
+          "integrations/connect-erp/visma-net/downloads",
+          "integrations/connect-erp/visma-net/troubleshooting"
+        ]
+      }
+    ]
+  },
+  {
     "group": "Gmail Link",
     "root": "integrations/gmail-link/index",
     "boost": 0.25,

@@ -1,0 +1,41 @@
+---
+uid: connect-erp-visma-net-troubleshooting
+title: Troubleshoot ConnectERP for Visma Net
+sidebarTitle: Troubleshooting
+description: Solutions for problems you can run into when you use ConnectERP with Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'troubleshooting', 'currency', 'order sync']
+author: marcelspapens
+date: 11.11.2026
+content_type: reference
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+## Order sync {#order-sync}
+
+### "Currency rate cannot be found"
+
+The order sync fails with this error:
+
+`Code: 0001-NullNotAllowed – Message: Currency rate cannot be found – Parameters: currencyId`
+
+This error occurs when you create an order from SuperOffice in a currency that differs from the default currency of your Visma Net tenant. Visma Net has no exchange rate for that currency.
+
+To fix it, add the exchange rate in Visma Net:
+
+1. In Visma Net, open screen **CM301000**.
+1. In the **Rate Details** grid, click the **plus** icon to add a new row.
+1. Fill in the following fields:
+    * **From Currency**: the currency used in SuperOffice (for example, GBP)
+    * **Currency Rate type**: SPOT
+    * **Effective date**: today's date
+    * **Currency rate**: the exchange rate (for example, 11.3)
+    * **Mult/Div**: Multiply
+1. Repeat for any other currencies you use.
+1. Save, and retry the order sync from SuperOffice.
+
+{/* Screenshot needed: Visma Net screen CM301000 with a completed currency rate row. */}

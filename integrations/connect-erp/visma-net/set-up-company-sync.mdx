@@ -1,0 +1,162 @@
+---
+uid: connect-erp-visma-net-company-sync
+title: Set up company sync
+description: How to configure the full company synchronization between SuperOffice and Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'company sync', 'user-defined fields', 'DataBridge', 'CRMScript', 'screen designer']
+author: marcelspapens
+date: 11.11.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+This page covers all configuration steps required to synchronize companies between SuperOffice and Visma Net. Company sync is available in all CRM Suites.
+
+## 1. Create user-defined fields on the Company card
+
+Go to **SuperOffice Admin > Fields > Company > Add** and create the following fields. Set all fields to **Read-Only**.
+
+<Note>
+Use the exact **Prog IDs** as specified. DataBridge and the CRMScripts rely on these identifiers to read and write the correct fields.
+</Note>
+
+| # | Field name | Type | Prog ID |
+|---|---|---|---|
+| 1 | Linked to ERP | Checkbox | `COMPANYLINKEDTOERP` |
+| 2 | ERP Cust. Number | Number | `COMPANYERPCUSTOMERNUMBER` |
+| 3 | Account Reference | Short text | `COMPANYACCOUNTREFERENCE` |
+| 4 | Credit limit | Decimal | `COMPANYCREDITLIMIT` |
+| 5 | Payment Terms | Short text | `COMPANYPAYMENTTERMS` |
+| 6 | Last Sync Date | Date | `COMPANYLASTSYNCDATE` |
+| 7 | Currency | Short text | `COMPANYCURRENCY` |
+| 8 | Balance | Decimal | `COMPANYBALANCE` |
+| 9 | Sales this period | Decimal | `COMPANYSALESPERIOD` |
+| 10 | Sales this year | Decimal | `COMPANYSALESYEAR` |
+| 11 | Unreleased Balance | Decimal | `COMPANYUNRELEASEDBALANCE` |
+
+After adding all fields, click **Publish**.
+
+<Tip>
+Note the SuperOffice **template variables** generated for field #2 (ERP Cust. Number). You'll need that later.
+</Tip>
+
+## 2. Create the company selection
+
+DataBridge uses this selection as its "field template" for the integrations.
+
+1. In SuperOffice, click **New > Selection**.
+1. Select **Find Company**.
+1. Add a criterion with **Company name** as the field, **Is not** as the operator, and a single space character as the value.
+1. Run the search and confirm at least one result appears.
+1. Save as a **dynamic selection** with the name **DB – Template: Companies**.
+
+![Find Company with criteria Company name Is not (space) -screenshot][img1]
+
+<Note>
+Make sure at least one result appears before saving. An empty selection may cause DataBridge to fail when the integration runs.
+</Note>
+
+## 3. Add the Company CRMScript
+
+The CRMScript allows users to manually push a company from SuperOffice to Visma Net.
+
+1. Download and unzip *crmscripts-visma-net.zip* from the [Downloads][1] page.
+1. Go to **SuperOffice Admin > CRMScript > New script**.
+1. Open the **Company to Visma Net** *.txt* file and paste the content into the script editor.
+1. Set the configuration variables at the top of the script:
+
+    | Variable | Value |
+    |---|---|
+    | `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
+    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
+
+1. Save the script.
+
+## 4. Create the Company card screen layouts
+
+Create two screen layouts in SuperOffice: one for standard users (read-only ERP data) and one for admin users (with action button).
+
+### Standard layout
+
+1. Go to **SuperOffice Admin > Screen Designer > Company**.
+1. Create a new layout for all users.
+1. Add a new tab with the label **ERP (Visma Net)**.
+1. Add a panel **Visma Net Key Figures** and add all 11 ERP user-defined fields.
+1. Save and publish the layout.
+
+![Company card: standard layout with ERP (Visma Net) tab and Key Figures panel -screenshot][img2]
+
+### Admin layout
+
+1. Create a second layout for users with edit rights.
+1. Add a new tab **ERP (Visma Net)** with two columns.
+1. In the first column, add a **button** executing the **Company to Visma Net** CRMScript, labeled **Create Company in Visma Net**.
+1. In the second column, add a **URL link** to the corresponding Visma Net customer screen.
+1. Add the ERP fields below the button area.
+1. Save and publish the layout.
+
+![Company card: admin layout with Visma Net Actions panel showing Create Company button -screenshot][img3]
+
+<Tip>
+Assign the admin layout only to user groups that should be able to push data to Visma Net. This prevents accidental data creation by other users.
+</Tip>
+
+## 5. Import the company sync integrations
+
+Download and unzip *databridge-integrations-visma-net.zip* from the [Downloads][1] page.
+
+### Integration 1: Visma Net Customer Sync (Button)
+
+This profile is triggered manually when a user clicks **Create Company in Visma Net**.
+
+1. In DataBridge, import the corresponding *.ndb* file.
+1. Connect to Visma Net when prompted and authorize the connection.
+
+    ![DataBridge authorization dialog: authorize access to Visma.net Financials -screenshot][img4]
+
+1. In the **Source** tab, select the **DB – Template: Companies** selection as the data source.
+1. In the **Data** tab, update the values in the transformations **Visma - Customer Class** and **Visma - Tax Zones**.
+1. Check all other transformations for matching values with your environments.
+1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#add-instant-job-url).
+
+### Integration 2: Visma Net Customer Sync (Hourly)
+
+This profile runs automatically every hour to pull updated customer data from Visma Net into SuperOffice.
+
+1. Import the *.ndb* file.
+1. Connect to Visma Net.
+1. After saving, **disable the integration immediately** to prevent it from running before setup is complete. You'll enable it in [Verify and finalize][2].
+
+![DataBridge integration: Disabled toggle -screenshot][img5]
+
+<Note>
+If any **warnings** appear (yellow background) during import, read the message carefully and follow the instructions before proceeding.
+</Note>
+
+![Expected warning: not all required fields are configured, existing entities can still be updated -screenshot][img6]
+
+## 6. Add the Instant Job URL to the CRMScript {#add-instant-job-url}
+
+1. Go to **SuperOffice Admin > CRMScript**.
+1. Open the **Company to Visma Net** script.
+1. Set the `instantJobUrl` variable to the URL you copied from **Visma Net Customer Sync (Button)**.
+1. Save.
+
+## Next step
+
+Continue with [Set up contact sync][3].
+
+[1]: ./downloads
+[2]: ./verify-finalize
+[3]: ./set-up-contact-sync
+
+[img1]: /media/loc/en/integrations/connect-erp/selection-companies.png
+[img2]: /media/loc/en/integrations/connect-erp/company-card-standard-layout.png
+[img3]: /media/loc/en/integrations/connect-erp/company-card-admin-layout.png
+[img4]: /media/loc/en/integrations/connect-erp/databridge-authorize.png
+[img5]: /media/loc/en/integrations/connect-erp/databridge-disabled-toggle.png
+[img6]: /media/loc/en/integrations/connect-erp/databridge-import-warning.png

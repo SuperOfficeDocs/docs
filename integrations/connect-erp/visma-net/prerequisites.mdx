@@ -1,0 +1,94 @@
+---
+uid: connect-erp-visma-net-prerequisites
+title: Prerequisites
+description: Visma Net configuration required before setting up the ConnectERP integration in SuperOffice.
+keywords: ['ConnectERP', 'Visma Net', 'company number', 'EXTNUMBER', 'attribute field', 'customer class', 'CS205000', 'AR2010PL']
+author: marcelspapens
+date: 11.11.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related: false
+language: en
+userflow_index: true
+---
+
+Before configuring SuperOffice, complete the following steps in Visma Net. These are one-time preparations that apply to all CRM Suites.
+
+## 1. Find the Visma Net company number
+
+Each Visma Net tenant has a unique company number. You'll need this number when importing the DataBridge integrations.
+
+1. Log in to Visma Net as an administrator at [Visma Net Financials][3].
+1. Click the **Admin** menu option.
+1. Click the pencil icon on the relevant **Company** from the list of companies.
+1. Select the **Configuration** tab and find the Company ID.
+1. Write down the **Company ID**.
+
+![Company details: Company ID highlighted -screenshot][img1]
+
+<Tip>
+Keep the Company ID in a note alongside the other values you'll need during setup, such as the value mappings from the [Requirements][1] page.
+</Tip>
+
+## 2. Create the attribute field 'SuperOffice Number' (optional)
+
+This step adds a custom attribute to Visma Net customer records so that the corresponding SuperOffice company number is stored and visible in Visma Net.
+
+<Tip>
+This information is available in Visma for reference only. It doesn't influence the synchronization process. Skip this step if your users won't need the SuperOffice number in Visma.
+</Tip>
+
+1. In Visma Net, click the hamburger menu. A search box is shown.
+1. Search for screen code **CS205000** in the search bar.
+1. The **Attributes** dialog is shown.
+1. Enter **EXTNUMBER** as the Attribute ID.
+1. Enter **SuperOffice Number** as the Description.
+1. Save by clicking the floppy disk icon or pressing **Ctrl+S**.
+
+![Attributes screen: Attribute ID EXTNUMBER with description SuperOffice Number -screenshot][img4]
+
+<Note>
+Make sure to set up your DataBridge integration that creates companies in Visma Net from SuperOffice to include the EXTNUMBER attribute in the field mapping.
+</Note>
+
+**Link the attribute field to all customer classes**
+
+Customer classes in Visma Net group customers by type (for example, EU and non-EU). The SuperOffice Number attribute must be added to each class for the integration to work across all customer records.
+
+1. In Visma Net, search for screen code **AR2010PL**.
+1. Open **Customer Classes**.
+
+    ![Customer Classes overview in Visma Net -screenshot][img5]
+
+1. For each customer class in the list:
+   1. Open the customer class record.
+   1. Go to the **Attributes** tab and click the **plus** button to add a new row.
+
+       ![Customer class: Attributes tab with the plus button highlighted -screenshot][img6]
+
+   1. Click the magnifying glass icon in the second column and double-click **SuperOffice Number**.
+
+       ![Attribute selection popup: selecting SuperOffice Number (EXTNUMBER) -screenshot][img7]
+
+   1. Enter a sort order number (use **1** if this is the only attribute).
+   1. Save with **Ctrl+S**.
+
+<Tip>
+Repeat this for **every** customer class in your system. If a class is missing the attribute, companies in that class can't be synchronized with SuperOffice.
+</Tip>
+
+## Next step
+
+Continue with [Set up company sync][2].
+
+[1]: ./requirements
+[2]: ./set-up-company-sync
+[3]: https://finance.visma.net/
+
+[img1]: /media/loc/en/integrations/connect-erp/visma-company-id.png
+[img4]: /media/loc/en/integrations/connect-erp/visma-attribute-extnumber.png
+[img5]: /media/loc/en/integrations/connect-erp/visma-customer-classes.png
+[img6]: /media/loc/en/integrations/connect-erp/visma-customer-class-attributes.png
+[img7]: /media/loc/en/integrations/connect-erp/visma-select-attribute.png
