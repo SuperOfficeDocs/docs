@@ -62,7 +62,7 @@ Current version: For the latest version numbers and release details for all prod
 | SuperOffice for Gmail | 3.0 | 24.02.2026 |
 | SuperOffice for Mailchimp | 14.0 | 01.10.2026 |
 | SuperOffice for Outlook | 6.4.12 | 05.11.2026 |
-| SuperOffice for Teams | 1.0.2 | 01.10.2026 |
+| SuperOffice for Teams | 1.0.3 | 19.11.2026 |
 | SuperOffice for Trello | 15.0 | 01.10.2026 |
 | SuperOffice for Wordpress | 14.0 | 01.10.2026 |
 | SuperOffice MailLink | 13.1.61 | 30.01.2026 |
