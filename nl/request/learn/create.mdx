@@ -4,8 +4,8 @@ title: Een verzoek maken
 description: Een verzoek maken
 keywords: ['verzoek aanmaken', 'verzoek toevoegen', 'nieuw verzoek', 'verzoek eigenschappen', 'verzoekdetails', 'bericht']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -18,6 +18,7 @@ related:
   - Sjabloonvariabelen voor antwoordsjablonen: /nl/knowledge-base/learn/reply-templates/template-variables
   - Antwoordsjabloon maken: /nl/knowledge-base/learn/reply-templates/index
   - /nl/request/learn/request-relations
+  - Volgorde van standaardstatussen: /nl/request/admin/status/index#default
 language: nl
 ---
 
@@ -67,6 +68,8 @@ Op het Verzoekscherm wordt een nieuw verzoek geopend in een tabblad **Nieuw verz
 * Het tabblad kan niet worden vastgemaakt. Wanneer u het sluit, wordt u om bevestiging gevraagd.
 
 * Als u de pagina opnieuw laadt, wordt het tabblad hersteld met het bericht dat u aan het schrijven was. De waarden die u in de verzoekvelden hebt ingevoerd, worden niet hersteld.
+
+* De status wordt ingesteld wanneer het tabblad wordt geopend. Als u de categorie of het verzoektype wijzigt, verandert de status niet. Als de standaardstatus uitgesteld is, wordt de uitsteloptie ervan, zoals **1 week**, getoond voordat u opslaat.
 
 * Klik op **Annuleren** om het verzoek te verwerpen. U wordt om bevestiging gevraagd en daarna sluit het tabblad.
 
@@ -141,7 +144,7 @@ Het tabblad **Details** bevat meer details over het verzoek. Hier vindt u inform
 Het **Eigenschappenvenster** stelt u in staat het verzoek te categoriseren en toe te wijzen.
 
 * **Verzoektype:** Bepaalt standaardwaarden en statusopties.
-* **Status:** Stel in op **Open** (in behandeling), **Gesloten** (afgehandeld), of **Uitgesteld** (met een specifieke heropeningsdatum).
+* **Status:** Stel in op **Openstaand** (in behandeling), **Gesloten** (afgehandeld), of **Uitgesteld** (met een specifieke heropeningsdatum).
 * **Eigenaar:** Wijs het verzoek toe aan uzelf, een andere gebruiker, of laat het niet-toegewezen.
   * **(Automatisch toegewezen):** Het systeem wijst het verzoek toe op basis van toewijzingsregels.
   * **(Niet-toegewezen):** Leden van de relevante categorie delen de verantwoordelijkheid voor het verzoek.

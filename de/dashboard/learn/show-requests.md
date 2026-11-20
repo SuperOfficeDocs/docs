@@ -4,7 +4,7 @@ title: Anfragen in Kacheln verwenden
 description: In dieser Anleitung lernen Sie, wie Sie sich einen schnellen Überblick über alle offenen Anfragen in SuperOffice-Dashboards erhalten können.
 keywords: ['Dashboard', 'Anfrage']
 author: digitaldiina
-date: 11.21.2025
+date: 11.18.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -51,7 +51,7 @@ Wenn die Anzahl eines bestimmten Antragstyps größer als 0 ist, können Sie auf
 
 ## Liste meiner unbearbeiteten Anfragen
 
-Zeigt Ihre Anfragen an, die den Status **Offen** haben. In anderen Worten ausgedrückt enthält diese Liste die Anfragen, um die Sie sich kümmern müssen.
+Zeigt Ihre Anfragen an, die den Status **Geöffnet** haben. In anderen Worten ausgedrückt enthält diese Liste die Anfragen, um die Sie sich kümmern müssen.
 
 ## Liste von nicht zugeordneten Anfragen
 
@@ -70,6 +70,6 @@ Listet Anfragen auf, die noch niemandem zugeordnet sind. Wenn Sie die [Verantwor
 [4]: ../../request/learn/create
 [5]: ../../request/learn/find
 [6]: ../../request/learn/index#request-mgt
-[7]: ./add-tile
+[7]: ./working-with-tiles#edit
 
 [img1]: ../../../media/loc/en/request/service-dashboard.png

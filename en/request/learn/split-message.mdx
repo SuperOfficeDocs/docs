@@ -4,8 +4,8 @@ title: Split message
 description: Split message
 keywords: ['request']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -13,10 +13,12 @@ audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /en/request/learn/howto/split-message
 related:
-  - Split a requests: /en/request/learn/split-request
+  - Split a request: /en/request/learn/split-request
   - /en/request/learn/merge
 language: en
 ---
+
+import StepSplitStatus from "../../../snippets/step-split-status.md";
 
 If a message contains two issues that should be handled separately, you can split the message in two and create a new request with one of the messages. This can be relevant if a message contains both a technical question and an invoice question, because these two issues are handled by two different departments.
 
@@ -24,7 +26,7 @@ If a message contains two issues that should be handled separately, you can spli
 
 1. [Open the request][1].
 
-1. In the **Messages** tab, click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> next to the message you want to split.
+1. In the **Messages** tab, click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> next to the message you want to split, and select **Split message**.
 
 1. In the **Split message** screen in the **Title** field, enter a descriptive name for the new request.
 
@@ -32,19 +34,16 @@ If a message contains two issues that should be handled separately, you can spli
 
 1. In the **Owner** list box, choose one of the following:
     * To assign the request to a specific person, select the name you require.
-    * **(Automatically assigned)**: If selected, the system assigns the request in accordance with the applicable assignment rules.
-    * **(Unassigned)**: You can also choose not to assign the request. The members of the relevant category then become responsible for dealing with the request.
+    * **(Automatically assigned):** If selected, the system assigns the request in accordance with the applicable assignment rules.
+    * **(Unassigned):** You can also choose not to assign the request. The members of the relevant category then become responsible for dealing with the request.
 
 1. In the **Priority** list box, you can choose between **Low**, **Medium** and **High**, or you can make the system assign the priority automatically. This can be done, for example, on the basis of escalation levels set for different customers.
 
 1. In the **Access level** list box, select one of the following options:
-    * **External**: Select this option if the customer is to have access to the request via a customer centre.
-    * **Internal**: Select this option if the customer is not to have access to the request.
+    * **External:** Select this option if the customer is to have access to the request via a customer centre.
+    * **Internal:** Select this option if the customer is not to have access to the request.
 
-1. In the **Status** list box, choose one of the following:
-    * **Open**: Select this option if the request is in progress.
-    * **Closed**: Select this option if the request is completed.
-    * **Postponed**: To postpone handling of this request, select this option and specify a date in the date field to the right. On this date, the request is set back to **Open**.
+1. <StepSplitStatus />
 
 1. (if relevant) Under **Choose the attachments to move to the new request** select the attachment(s) that should be moved to the new request. The attachments will be deleted from the existing request.
 

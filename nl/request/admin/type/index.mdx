@@ -4,8 +4,8 @@ title: Verzoektypen
 description: Verzoektypen
 keywords: ['verzoek', 'type', 'verzoektype', 'tabblad Verzoektypen']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 tier: growth
 audience: settings
@@ -17,6 +17,7 @@ related:
   - /nl/request/admin/type/create
   - /nl/request/admin/type/delete
   - /nl/request/admin/relation-rules
+  - Volgorde van standaardstatussen: /nl/request/admin/status/index#default
 language: nl
 ---
 
@@ -50,8 +51,8 @@ Het financiële team gebruikt verzoeken om inkomende factuurclaims te beheren, w
 | Beschrijving | Legt het doel van het verzoektype uit. |
 | Pictogram | Wordt gebruikt als visueel label om het type aan te geven. Kies uit een set vooraf gedefinieerde opties. Standaard: ticketpictogram. |
 | Als standaard gebruiken | Geeft aan of dit het standaardtype is voor nieuwe verzoeken. |
-| Beschikbare statussen | Een subset van verzoekstatussen die relevant zijn voor dit type. Gebruikt om de keuzelijst in de gebruikersinterface te filteren. Een leeg veld betekent dat alle statussen beschikbaar zijn. |
-| Standaardstatus | De [status][4] die wordt ingesteld wanneer een agent een nieuw verzoek creëert. Heeft voorrang op andere voorkeuren. Verplicht als **Beschikbare statussen** zijn ingesteld. |
+| Beschikbare statussen | Een subset van verzoekstatussen die relevant zijn voor dit type. Gebruikt om de keuzelijst in de gebruikersinterface te filteren en om te beperken welke standaardstatussen van toepassing zijn. Een standaardwaarde van een categorie of voorkeur die niet in deze lijst staat, wordt overgeslagen. Een leeg veld betekent dat alle statussen beschikbaar zijn. |
+| Standaardstatus | De [status][4] die wordt ingesteld wanneer een agent een nieuw verzoek van dit type creëert, tenzij de standaardstatus van de categorie wordt gebruikt. Verplicht als **Beschikbare statussen** zijn ingesteld. |
 | Beschikbare prioriteiten | Een subset van verzoekprioriteiten die relevant zijn voor dit type. Gebruikt om de keuzelijst in de gebruikersinterface te filteren. Een leeg veld betekent dat alle prioriteiten beschikbaar zijn. |
 | Standaardprioriteit | De [prioriteit][3] die wordt ingesteld wanneer een agent een nieuw verzoek creëert. Heeft voorrang op andere voorkeuren. Verplicht als **Beschikbare prioriteiten** zijn ingesteld. |
 | Antwoordsjabloon | Het [antwoordsjabloon][5] dat wordt gebruikt wanneer een agent antwoordt op een verzoek van dit type. |

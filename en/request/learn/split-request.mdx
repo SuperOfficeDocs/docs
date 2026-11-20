@@ -4,8 +4,8 @@ title: Split a request
 description: Split requests
 keywords: ['Properties of the new request']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -20,6 +20,8 @@ related:
   - /en/request/learn/merge
 language: en
 ---
+
+import StepSplitStatus from "../../../snippets/step-split-status.md";
 
 If a single request contains several questions, for example, if the customer first asks a technical question and then uses the opportunity to raise an invoicing query, you can split the request into two.
 
@@ -44,13 +46,10 @@ You can also [split a message][1].
 1. In the **Priority** list box, you can choose between **Low**, **Medium** and **High**, or you can make the system assign the priority automatically. This can be done, for example, on the basis of [escalation levels][3] set for different contacts and companies.
 
 1. In the **Access level** list box, select one of the following options:
-    * **External**: Select this option if the contact is to have access to the request via SuperOffice Customer Centre.
-    * **Internal**: Select this option if the contact is not to have access to the request.
+    * **External:** Select this option if the contact is to have access to the request via SuperOffice Customer Centre.
+    * **Internal:** Select this option if the contact is not to have access to the request.
 
-1. In the **Status** list box, choose one of the following:
-    * **Open**: Select this option if the request is in progress.
-    * **Closed**: Select this option if the request is completed.
-    * **Postponed**: To postpone handling of this request, select this option and specify a date in the date field to the right. On this date, the request is set back to **Open**.
+1. <StepSplitStatus />
 
 1. Select the **Messages** tab where you will find a list of messages involved in the request. Here you select the messages you want to move to the new request.
 

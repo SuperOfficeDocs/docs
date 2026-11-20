@@ -4,8 +4,8 @@ title: Sagstype
 description: Sagstype
 keywords: ['sag', 'sagstype', 'type']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: servicepremium
 tier: growth
@@ -18,6 +18,7 @@ related:
   - /da/request/admin/type/create
   - /da/request/admin/type/delete
   - /da/request/admin/relation-rules
+  - Rækkefølge for standardstatus: /da/request/admin/status/index#default
 language: da
 ---
 
@@ -51,8 +52,8 @@ Finansholdet bruger sager til at håndtere indkomne fakturakrav og kræver synli
 | **Beskrivelse** | Forklarer formålet med sagstypen. |
 | **Ikon** | Bruges som en visuel etiket for at vise typen. Vælg fra et sæt foruddefinerede muligheder. Standard: billetikon. |
 | **Anvend som standard** | Angiver, om dette er standardtypen for nye sager. |
-| **Tilgængelige statusser** | En delmængde af sagsstatusser, der er relevante for denne type. Bruges til at filtrere rullelisten i UI. Tomt felt betyder, at alle statusser er tilgængelige. |
-| **Standardstatus** | Den [status][4], der sættes, når en agent opretter en ny sag. Har forrang over andre præferencer. Obligatorisk, hvis **Tilgængelige statusser** er sat. |
+| **Tilgængelige statusser** | En delmængde af sagsstatusser, der er relevante for denne type. Bruges til at filtrere rullelisten i UI og til at begrænse, hvilke standardstatusser der gælder. En standardstatus fra en kategori eller præference, der ikke er på denne liste, springes over. Tomt felt betyder, at alle statusser er tilgængelige. |
+| **Standardstatus** | Den [status][4], der sættes, når en agent opretter en ny sag af denne type, medmindre kategoriens standardstatus bruges. Obligatorisk, hvis **Tilgængelige statusser** er sat. |
 | **Tilgængelige prioriteter** | En delmængde af sagsprioriteter, der er relevante for denne type. Bruges til at filtrere rullelisten i UI. Tomt felt betyder, at alle prioriteter er tilgængelige. |
 | **Standardprioritet** | Den [prioritet][3], der sættes, når en agent opretter en ny sag. Har forrang over andre præferencer. Obligatorisk, hvis **Tilgængelige prioriteter** er sat. |
 | **Svarskabelon** | Den [svarskabelon][5], der vil blive brugt, når en agent svarer på en sag. |

@@ -4,8 +4,8 @@ title: Dele en sak
 description: Dele en sak
 keywords: ['dele sak', 'splitte sak', 'egenskaper for ny sak', 'sak']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -20,6 +20,8 @@ related:
   - /no/request/learn/merge
 language: no
 ---
+
+import StepSplitStatus from "../../snippets/step-split-status.md";
 
 Hvis en sak inneholder flere spørsmål, for eksempel hvis kunden først stiller et teknisk spørsmål og deretter legger til et fakturaspørsmål, kan du dele saken i to.
 
@@ -44,13 +46,10 @@ Du kan også [dele en melding][1].
 1. I **Prioritet**-listen velger du mellom **Lav**, **Medium** og **Høy**, eller du kan la systemet tildele prioritet automatisk, basert på [eskaleringsnivåer][3] for ulike kontakter og firmaer.
 
 1. I **Tilgangsnivå**-listen velger du ett av følgende alternativer:
-    * **Ekstern**: Velg dette hvis kunden skal ha tilgang til saken via SuperOffice Kundesenter.
-    * **Internt**: Velg dette hvis kunden ikke skal ha tilgang.
+    * **Ekstern:** Velg dette hvis kunden skal ha tilgang til saken via SuperOffice Kundesenter.
+    * **Internt:** Velg dette hvis kunden ikke skal ha tilgang.
 
-1. I **Status**-listen velger du ett av følgende alternativer:
-    * **Åpen**: Hvis saken er under arbeid.
-    * **Avsluttet**: Hvis saken er ferdigbehandlet.
-    * **Utsatt**: Hvis saken må utsettes, velger du dette alternativet og angir en dato. På denne datoen settes saken automatisk tilbake til **Åpen**.
+1. <StepSplitStatus />
 
 1. Velg fanen **Meldinger**, der du finner en liste over meldingene i saken. Her velger du meldingene du vil flytte til den nye saken.
 

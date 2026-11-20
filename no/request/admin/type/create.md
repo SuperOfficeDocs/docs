@@ -3,9 +3,9 @@ uid: help-no-request-type-create
 title: Legg til sakstype
 description: Legg til sakstype
 keywords: ['opprett sakstype', 'ny sakstype', 'legg til sakstype', 'sakstype', 'fanen Sakstyper', 'type', 'sak']
-author: Bergfrid Dias
-date: 02.05.2025
-so_version: 10.5.1
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: servicepremium
 tier: growth
@@ -13,8 +13,12 @@ audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 redirect_from: /no/request/learn/type/create
 userflow_index: true
+related:
+  - Rekkefølge for standardstatus: /no/request/admin/status/index#default
 language: no
 ---
+
+## Trinn
 
 1. I **Innstillinger og vedlikehold**, velg **Saker** i navigatoren.
 
@@ -38,7 +42,7 @@ language: no
 
     ![Innstillinger og vedlikehold, Saksstyper status/prioritet -screenshot][img3]
 
-1. Valgfritt: Velg en standardstatus og/eller -prioritet som skal brukes når en agent oppretter en sak av denne typen. (Påkrevd hvis du begrenser tilgjengelighet.)
+1. Valgfritt: Velg en standardstatus og/eller -prioritet som skal brukes når en agent oppretter en sak av denne typen. (Påkrevd hvis du begrenser tilgjengelighet.) Standardprioriteten har forrang fremfor andre preferanser. Standardstatusen brukes, med mindre kategoriens standardstatus er tillatt for denne typen.
 
 1. Valgfritt: Velg en [svarmal][5] som skal brukes når en agent svarer på en sak av denne typen.
 

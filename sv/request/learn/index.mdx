@@ -4,8 +4,8 @@ title: Ärenden och SuperOffice Service
 description: Introduktion till ärenden i SuperOffice
 keywords: ['ärendehantering', 'ärende', 'ticket', 'service', 'ärendeskärm', 'ärendekort', 'Översikt', 'vänsterpanel', 'aktiva flikar', 'fastnålade ärenden', 'förhandsgranskningspanel', 'standardlistor', 'stäng flik automatiskt', 'flera aktiva flikar', 'stäng alla flikar', 'för många flikar', 'osparade ändringar']
 author: digitaldiina
-date: 11.06.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: serviceessentials
 tier: starter
@@ -189,7 +189,7 @@ En ärendeflik stängs av sig själv i dessa situationer:
 
 * Ärendet tas bort, markeras som skräppost eller slås ihop med ett annat ärende. Fliken stängs även om den är fastnålad. Om du slår ihop från [ärendekortet][16] öppnas det kvarvarande ärendet i dess ställe.
 
-* Du lägger till ett meddelande i ärendet, eller sätter dess status till **Stängt**, och du har aktiverat motsvarande inställning. Fastnålade flikar förblir öppna.
+* Du lägger till ett meddelande i ärendet, eller sätter dess status till **Avslutat**, och du har aktiverat motsvarande inställning. Fastnålade flikar förblir öppna.
 
 Så här stänger du flikar automatiskt:
 
@@ -197,7 +197,7 @@ Så här stänger du flikar automatiskt:
 
 1. Klicka på gruppen **Ärende**.
 
-1. Ställ in **Stäng flik automatiskt när ett meddelande läggs till i ärendet** eller **Stäng flik automatiskt när ärendets status ändras till stängt** på **Ja**.
+1. Ställ in **Stäng automatiskt fliken när ett meddelande läggs till ärendet** eller **Stäng fliken automatiskt när ärendestatusen ändras till stängt** på **Ja**.
 
 1. Klicka på **Spara**.
 
@@ -358,14 +358,15 @@ Du kan anpassa ärenden så att de passar ditt arbetsflöde:
 
 1. Välj **Ärende**, och justera inställningar som:
     * Visa det senaste meddelandet högst upp.
-    * Använd det äldsta ärendet som huvudärende vid hopslagning.
+    * Använd det äldsta ärendet som huvudärende vid sammanfogning.
     * Förhandsgranskning av bildbilaga i meddelanden.
     * Antal expanderade meddelanden.
     * Klistra in senaste meddelande automatiskt.
     * Visa bara egna kategorier.
-    * Stäng flik automatiskt när ett meddelande läggs till i ärendet.
-    * Stäng flik automatiskt när ärendets status ändras till stängt.
-    * Standardägare, -kategori och -status för nya ärenden.
+    * Stäng automatiskt fliken när ett meddelande läggs till ärendet.
+    * Stäng fliken automatiskt när ärendestatusen ändras till stängt.
+    * Standardägare och -kategori för nya ärenden.
+    * Standardstatus för nytt ärende och Standardstatus för nytt meddelande. Se [ordning för standardstatus][37].
 
 1. Välj **E-postavisering**, och justera inställningar som:
     * Nya ärenden eller meddelanden.
@@ -418,6 +419,7 @@ Några inställningar som påverkar supportagenter inkluderar:
 [10]: /sv/request/learn/find
 [35]: /sv/request/learn/find#list
 [36]: /sv/request/learn/mentions
+[37]: /sv/request/admin/status/index#default
 [11]: /sv/request/learn/split-request
 [12]: /sv/search-options/learn/index
 [16]: /sv/request/learn/merge

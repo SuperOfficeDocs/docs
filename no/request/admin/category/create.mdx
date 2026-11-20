@@ -4,8 +4,8 @@ title: Opprett sakskategori
 description: Opprett sakskategori
 keywords: ['legg til sakskategori', 'opprett sakskategori', 'ny sakskategori', 'sakskategori', 'fanen Kategorier', 'sak', 'kategori']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -43,9 +43,9 @@ language: no
 
     * **Overta ved svar**: Hvis det er merket av her, blir brukeren som svarer på en sak i denne kategorien, satt som eier av saken.
 
-    * **Standardstatus for ny sak**: Her velger du hvilken status som skal være standard i bildet **Sak**. Denne innstillingen overstyrer [brukerpreferanser][1], med mindre du velger **Brukerdefinert**.
+    * **Standardstatus for ny sak**: Statusen en ny sak i denne kategorien får, hvis sakstypen tillater det. Se [rekkefølge for standardstatus][2]. Velg **Brukerdefinert** for ikke å angi status fra kategorien.
 
-    * **Standardstatus for ny melding**: Her velger du standardstatusen som skal vises i en ny melding. Denne innstillingen overstyrer [brukerpreferanser][1], med mindre du velger **Brukerdefinert**.
+    * **Standardstatus for ny melding**: Statusen som settes når noen svarer på en sak i denne kategorien, hvis sakstypen tillater det. Velg **Brukerdefinert** for ikke å angi status fra kategorien.
 
     * **Slå sammen utgående e-postmeldinger for denne kategorien med svarmal**: Velg hvilken svarmal som skal brukes i meldinger som sendes ut til kunder og andre personer, for saker som tilhører denne kategorien. Dette kan være en svarmal som er spesifikt opprettet for denne kategorien, for å gi alle svar fra en kategori (som støtte eller regnskap) et enhetlig utseende.
 
@@ -81,4 +81,4 @@ language: no
 
 1. Klikk på **Lagre**. Kategorien opprettes.
 
-[1]: ../../../admin/preferences/index
+[2]: ../status/index#default

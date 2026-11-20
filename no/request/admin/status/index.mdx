@@ -1,0 +1,69 @@
+---
+uid: help-no-request-status
+title: Saksstatus
+description: Saksstatus
+keywords: ['saksstatus', 'Saksstatus-fanen', 'sak', 'status', 'standardstatus']
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
+content_type: concept
+license: serviceessentials
+tier: starter
+audience: settings
+audience_tooltip: Innstillinger og vedlikehold
+redirect_from: /no/request/learn/status/index
+boost: 1.5
+userflow_index: true
+related:
+  - /no/request/admin/status/create
+  - /no/request/admin/status/delete
+  - Sett opp Hent neste sak i køen: /no/request/admin/next-in-queue
+language: no
+---
+
+Alle saker som registreres i SuperOffice, har en status, for eksempel **Aktiv**, **Avsluttet** eller **Utsatt**. I **Saker**-bildet i **Innstillinger og vedlikehold**, under **Saksstatus**, kan du se hvilke saksstatuser som allerede er definert i systemet, samt opprette nye statuser.
+
+Hver saksstatus må knyttes til én av systemets interne statuser, for eksempel **Aktiv** eller **Avsluttet**. Hver interne status må ha minst én tilknyttet saksstatus.
+
+For eksempel kan du opprette en ny status kalt "Venter på svar" som en mer detaljert variant av enten **Avsluttet** eller **Aktiv**, avhengig av hvordan du ønsker at systemet skal behandle og rapportere denne statusen internt. Du kan også knytte egendefinerte regler til slike statuser for å optimalisere forretningsprosessene dine.
+
+## Innstillinger
+
+| Innstilling | Beskrivelse |
+|---|---|
+| Navn | Navnet på saksstatusen. Som standard har hver interne status en saksstatus med samme navn. |
+| Intern status | Systemets interne statuser. Hver interne status må være knyttet til minst én saksstatus. Systemstatusene **Sammenslått** og **Slettet** brukes kun for henholdsvis sammenslåtte saker og slettede saker, og er ikke synlige for brukerne. |
+| Standard | Angir om dette er standardstatusen for den interne statusen. |
+| Køstatus | Angir om saker med denne statusen skal plasseres i køen. Dette er relevant hvis du bruker funksjonen **Hent neste sak i køen**. |
+| Registrer tid som | Brukes til å rapportere tidsbruk i ulike faser av saksbehandlingen. Systemet beregner tidsbruk både ut fra fastsatte "åpningstider" og et 24-timers døgn. Velg mellom: i kø og venter på behandling, på internt beslutningsstadium, eller på eksternt beslutningsstadium. |
+
+## Standardstatus for nye saker og svar {#default}
+
+Når du oppretter en sak, settes statusen i denne rekkefølgen:
+
+1. [Kategoriens][1] **Standardstatus for ny sak**, hvis sakstypen tillater denne statusen.
+1. [Sakstypens][2] **Standardstatus**.
+1. Preferansen din **Standardstatus for ny sak**, hvis sakstypen tillater denne statusen.
+1. Hvis ingen av disse gjelder, lagres saken som **Aktiv**.
+
+Statusen settes når fanen **Ny sak** åpnes. Hvis du endrer kategorien eller sakstypen etterpå, endres ikke statusen.
+
+Når du svarer på en sak, settes statusen i denne rekkefølgen:
+
+1. Kategoriens **Standardstatus for ny melding**, hvis sakstypen tillater denne statusen.
+1. Preferansen din **Standardstatus for ny melding**, hvis sakstypen tillater denne statusen.
+1. Hvis ingen av disse gjelder, endres ikke statusen.
+
+En sakstypes **Tilgjengelige statuser** begrenser standardverdiene. En standardstatus fra en kategori eller preferanse som ikke står i listen, hoppes over.
+
+En standardstatus kan være en utsatt status med et utsettelsesvalg, for eksempel **1 uke**. Valget kommer fra samme innstilling som statusen, og fanen **Ny sak** viser det før du lagrer.
+
+<Note>
+[Delte saker][4] og [delte meldinger][5] beholder statusen og utsettelsesdatoen til den opprinnelige saken. Saker som opprettes fra innkommende e-post, får statusen **Aktiv**. Hvis et [e-postfilter][3] har **Avslutt sak** avmerket, får de i stedet statusen **Avsluttet**. Standardstatuser brukes ikke i disse tilfellene.
+</Note>
+
+[1]: /no/request/admin/category/create
+[2]: /no/request/admin/type/index
+[3]: /no/email/admin/mailbox/create-email-filter
+[4]: /no/request/learn/split-request
+[5]: /no/request/learn/split-message

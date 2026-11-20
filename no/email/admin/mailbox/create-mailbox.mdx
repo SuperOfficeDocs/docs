@@ -4,8 +4,8 @@ title: Opprette e-postkasser
 description: Opprette e-postkasser
 keywords: ['e-post', 'Ny e-postkasse', 'Egenskaper for e-postkasse']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: core
@@ -50,6 +50,10 @@ Før du konfigurerer en postboks, må du kontrollere at det ikke er gamle meldin
 
     * I **Sakstype**-listeboksen velger du typen meldinger som tilhører denne postkassen.
 
+    <Note>
+    Saker som opprettes fra innkommende e-post, får statusen **Aktiv**. Hvis et [e-postfilter][1] har **Avslutt sak** avmerket, får de i stedet statusen **Avsluttet**. Standardstatusene for kategorien, sakstypen og brukerpreferansene brukes ikke.
+    </Note>
+
 1. <StepSetLanguage />
 
 1. Angi svar:
@@ -71,4 +75,5 @@ Før du konfigurerer en postboks, må du kontrollere at det ikke er gamle meldin
 
 1. Klikk på **OK**. E-postkassen opprettes.
 
+[1]: ./create-email-filter
 [ai1]: ../../../ai/learn/index

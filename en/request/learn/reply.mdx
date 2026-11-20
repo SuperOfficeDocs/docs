@@ -2,10 +2,10 @@
 uid: help-en-request-reply
 title: Reply to contact
 description: In this guide you will learn how to reply to all incoming requests in SuperOffice.
-keywords: ['reply to request', 'reply all', 'add message', 'add comment', 'comment', 'internal', 'external']
+keywords: ['reply to request', 'reply all', 'add message', 'add comment', 'comment', 'internal', 'external', 'reply status']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -58,6 +58,10 @@ Set the *No. of expanded messages* preference (under <i class="ph ph-user-circle
     ![First image: Message preview showing sender's name. Second image: Same message preview with the sender's name removed, indicating anonymization. -screenshot][img7]
 
 If you switch to another tab on the Request screen before you send the message, your unsent reply is kept. The tab shows a pencil (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) until you send or discard it.
+
+### Status when you reply {#status}
+
+The status is set from the category's **Default status for new message**, if the request type allows it. Otherwise, the same setting in your preferences is used, if the request type allows it. If neither applies, the status is unchanged. See [default status order][13].
 
 ## Quick reply from a preview {#quick-reply}
 
@@ -180,6 +184,7 @@ Time spent is displayed in each message header, and the time to reply is availab
 [10]: ./forward
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
+[13]: ../admin/status/index#default
 [img1]: /media/loc/en/request/insert-reply-template.png
 [img3]: /media/loc/en/request/message-to-external.png
 [img4]: /media/loc/en/request/reply-to-a-customer.png

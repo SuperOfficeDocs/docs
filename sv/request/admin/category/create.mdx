@@ -4,8 +4,8 @@ title: Skapa ärendekategori
 description: Skapa ärendekategori
 keywords: ['lägg till ärendekategori', 'skapa ärendekategori', 'ny ärendekategori', 'ärendekategori', 'Kategoriflik', 'ärende', 'kategori']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -43,9 +43,9 @@ language: sv
 
     * **Bli ägare när du svarar**: Om markerat, blir den användare som svarar på ett ärende i denna kategori dess ägare.
 
-    * **Standardstatus för nytt ärende**: Välj standardstatus som ska visas i **Ärende**-skärmen. Den här inställningen åsidosätter [användarinställningar][1], om inte **Användardefinierad** är vald.
+    * **Standardstatus för nytt ärende**: Den status som ett nytt ärende i den här kategorin får, om ärendetypen tillåter det. Se [ordning för standardstatus][2]. Välj **Användardefinierad** om kategorin inte ska ange någon status.
 
-    * **Standardstatus för nytt meddelande**: Välj standardstatus för nya meddelanden. Den här inställningen åsidosätter [användarinställningar][1], om inte **Användardefinierad** är vald.
+    * **Standardstatus för nytt meddelande**: Den status som anges när du svarar på ett ärende i den här kategorin, om ärendetypen tillåter det. Välj **Användardefinierad** om kategorin inte ska ange någon status.
 
     * **Slå ihop e-postmeddelanden för den här kategorin med svarsmall**: Välj den svarsmall som ska användas i meddelanden som skickas till kunder och andra personer för ärenden som tillhör denna kategori. Detta kan vara en svarsmall som har skapats speciellt för kategorin för att alla svar från kategorin (t.ex. support eller redovisning) ska få ett enhetligt utseende.
 
@@ -81,4 +81,4 @@ language: sv
 
 1. Klicka på **Spara**. Kategorin skapas.
 
-[1]: ../../../admin/preferences/index
+[2]: ../status/index#default

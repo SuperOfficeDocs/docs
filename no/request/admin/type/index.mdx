@@ -4,8 +4,8 @@ title: Sakstype
 description: Sakstype
 keywords: ['sakstype', 'fanen Sakstyper', 'type', 'sak']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: servicepremium
 tier: growth
@@ -18,6 +18,7 @@ related:
   - /no/request/admin/type/create
   - /no/request/admin/type/delete
   - /no/request/admin/relation-rules
+  - Rekkefølge for standardstatus: /no/request/admin/status/index#default
 language: no
 ---
 
@@ -51,8 +52,8 @@ Hovedfordelen med sakstyper er effektiv kundestøtte. En spesifikk sakstype tilp
 | Beskrivelse | Forklarer formålet med sakstypen. |
 | Ikon | Visuell etikett for sakstypen. Velg fra forhåndsdefinerte alternativer. Standard: billettikon. |
 | Bruk som standard | Angir om denne sakstypen skal være standard for nye saker. |
-| Tilgjengelige statuser | Begrens listen over saksstatuser som er relevante for denne typen. Tomt felt betyr at alle statuser er tilgjengelige. |
-| Standardstatus | Den [statusen][4] som settes når en agent oppretter en ny sak. Påkrevd hvis **Tilgjengelige statuser** er angitt. |
+| Tilgjengelige statuser | Begrens listen over saksstatuser som er relevante for denne typen. Brukes til å filtrere nedtrekkslisten i brukergrensesnittet og til å begrense hvilke standardstatuser som gjelder. En standardstatus fra en kategori eller preferanse som ikke står i denne listen, hoppes over. Tomt felt betyr at alle statuser er tilgjengelige. |
+| Standardstatus | Den [statusen][4] som settes når en agent oppretter en ny sak av denne typen, med mindre kategoriens standardstatus brukes. Påkrevd hvis **Tilgjengelige statuser** er angitt. |
 | Tilgjengelige prioriteter | Begrens listen over saksprioriteter som er relevante for denne typen. Tomt felt betyr at alle prioriteringer er tilgjengelige. |
 | Standard prioritet | Den [prioriteten][3] som settes når en agent oppretter en ny sak. Påkrevd hvis **Tilgjengelige prioriteter** er angitt. |
 | Svarmal | Den [svarmalen][5] som brukes når en agent svarer på en sak av denne typen. |

@@ -2,10 +2,10 @@
 uid: help-de-request-reply
 title: Einer Person antworten
 description: In dieser Anleitung lernen Sie, wie Sie alle eingehenden Anfragen in SuperOffice beantworten können.
-keywords: ['Anfrage', 'Antwortvorlage', 'Antwort', 'Antworten', 'Kommentar', 'intern', 'extern']
+keywords: ['Anfrage', 'Antwortvorlage', 'Antwort', 'Antworten', 'Kommentar', 'intern', 'extern', 'Antwortstatus']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -58,6 +58,10 @@ Legen Sie die *Anzahl der erweiterten Nachrichten*-Einstellung fest (unter <i cl
     ![Erstes Bild: Nachrichtenvorschau mit sichtbarem Absendernamen. Zweites Bild: Dieselbe Nachrichtenvorschau mit entferntem Absendernamen, was eine Anonymisierung anzeigt. -screenshot][img7]
 
 Wenn Sie in der Anfrageansicht zu einer anderen Registerkarte wechseln, bevor Sie die Nachricht senden, bleibt Ihre ungesendete Antwort erhalten. Die Registerkarte zeigt einen Stift (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) an, bis Sie die Antwort senden oder verwerfen.
+
+### Status beim Antworten {#status}
+
+Der Status wird aus dem **Standardstatus für neue Nachrichten** der Kategorie übernommen, sofern der Anfragetyp diesen Status zulässt. Andernfalls wird die gleichnamige Einstellung in Ihren persönlichen Einstellungen verwendet, sofern der Anfragetyp diesen Status zulässt. Wenn keines davon zutrifft, bleibt der Status unverändert. Siehe [Reihenfolge der Standardstatus][13].
 
 ## Schnellantwort aus einer Vorschau {#quick-reply}
 
@@ -134,8 +138,8 @@ Sie können eine frühere Nachricht in Ihre aktuelle Antwort einfügen.
 Sie können mehreren Anfragen gleichzeitig eine Mitteilung hinzufügen, z. B. wenn mehrere Anfragen zum selben Problem eingegangen sind.
 
 1. Wählen Sie die Anfragen aus, auf die Sie antworten möchten:
-   * Verwenden Sie eine **gespeicherte Selektion** in der Ansicht Selektion.
-   * Nutzen Sie die Ergebnisse der **Anfragen suchen**-Ansicht.
+    * Verwenden Sie eine **gespeicherte Selektion** in der Ansicht Selektion.
+    * Nutzen Sie die Ergebnisse der **Anfragen suchen**-Ansicht.
 
 1. Klicken Sie auf <i class="ph ph-list-dashes" aria-label="Aufgabenschaltfläche"></i> **Aufgabe** und wählen Sie **Antwort an Kunden**.
 
@@ -157,8 +161,8 @@ Kommentare ermöglichen es Ihnen, interne Notizen zu einer Anfrage hinzuzufügen
 1. Klicken Sie auf <i class="ph ph-note-pencil" aria-label="Kommentar"></i> über dem Mitteilungenverlauf.
 
 1. Geben Sie Ihren Kommentar in das Textfeld ein.
-   * Wählen Sie **Intern** in der Werkzeugleiste aus, damit der Kommentar nur für Kollegen sichtbar ist.
-   * Geben Sie **@** und einen Namen ein, um einen [Mitarbeiter zu erwähnen][12]. Der Mitarbeiter wird benachrichtigt und findet die Anfrage auf seiner Registerkarte **Erwähnungen**.
+    * Wählen Sie **Intern** in der Werkzeugleiste aus, damit der Kommentar nur für Kollegen sichtbar ist.
+    * Geben Sie **@** und einen Namen ein, um einen [Mitarbeiter zu erwähnen][12]. Der Mitarbeiter wird benachrichtigt und findet die Anfrage auf seiner Registerkarte **Erwähnungen**.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -171,8 +175,8 @@ Verwenden Sie Kommentare, um zusätzliche Informationen bereitzustellen, wenn Si
 Beim Beantworten einer Anfrage können Sie die aufgewendete Zeit erfassen.
 
 1. In der Werkzeugleiste unten auf der Registerkarte **Mitteilung** können Sie die Zeitmessung starten oder anhalten:
-   * Klicken Sie auf <i class="ph ph-play-circle" aria-label="Starten"></i>, um die Zeitmessung zu starten.
-   * Klicken Sie auf <i class="ph ph-pause-circle" aria-label="Anhalten"></i>, um die Zeitmessung zu stoppen.
+    * Klicken Sie auf <i class="ph ph-play-circle" aria-label="Starten"></i>, um die Zeitmessung zu starten.
+    * Klicken Sie auf <i class="ph ph-pause-circle" aria-label="Anhalten"></i>, um die Zeitmessung zu stoppen.
 1. Passen Sie die erfasste Zeit manuell an, falls erforderlich.
 1. Speichern Sie die Anfrage, um den Zeitaufwand zu protokollieren.
 
@@ -186,6 +190,7 @@ Der erfasste Zeitaufwand wird in jeder Mitteilung angezeigt, und die Bearbeitung
 [10]: ./forward
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
+[13]: ../admin/status/index#default
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png

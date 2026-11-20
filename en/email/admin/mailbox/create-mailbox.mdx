@@ -4,8 +4,8 @@ title: Create mailboxes
 description: Create mailboxes
 keywords: ['email', 'New mailbox', 'Mailbox properties']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: core
@@ -50,6 +50,10 @@ Before you set up a mailbox, make sure that there are no old messages in this ma
 
     * In the **Request type** list box, select the type the messages in this mailbox belong to.
 
+    <Note>
+    Requests created from incoming email are set to **Open**. If an [email filter][1] has **Close request** checked, they are set to **Closed** instead. The default statuses of the category, the request type, and user preferences are not used.
+    </Note>
+
 1. <StepSetLanguage />
 
 1. Set reply:
@@ -71,4 +75,5 @@ Before you set up a mailbox, make sure that there are no old messages in this ma
 
 1. Click **OK**. The mailbox is created.
 
+[1]: ./create-email-filter
 [ai1]: ../../../ai/learn/index

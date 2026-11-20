@@ -4,8 +4,8 @@ title: Anfragen und SuperOffice Service
 description: Einführung zu Anfragen in SuperOffice
 keywords: ['Anfragenmanagement', 'Anfrage', 'Ticket', 'Service', 'Anfrageansicht', 'Anfragekarte', 'Übersicht', 'linkes Panel', 'aktive Registerkarten', 'angeheftete Anfragen', 'Vorschaupanel', 'Standardlisten', 'Registerkarte automatisch schließen', 'mehrere aktive Registerkarten', 'alle Registerkarten schließen', 'zu viele Registerkarten', 'nicht gespeicherte Änderungen']
 author: digitaldiina
-date: 11.06.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: concept
 license: serviceessentials
 tier: starter
@@ -83,7 +83,7 @@ Die Registerkarte **Übersicht** zeigt Ihre Arbeit in bis zu vier Spalten mit An
 
 1. Klicken Sie im linken Panel auf **Übersicht**.
 
-1. Finden Sie mit den Karten die Anfragen, die Ihre Aufmerksamkeit brauchen. Ein farbiges Badge am Symbol des Anfragetyps zeigt den Status. Rot bedeutet, dass die Bearbeitungsfrist abgelaufen ist, grün bedeutet geschlossen, und grau bedeutet auf Termin gelegt.
+1. Finden Sie mit den Karten die Anfragen, die Ihre Aufmerksamkeit brauchen. Ein farbiges Badge am Symbol des Anfragetyps zeigt den Status. Rot bedeutet, dass die Bearbeitungsfrist abgelaufen ist, grün bedeutet geschlossen, und grau bedeutet aufgeschoben.
 
 1. Klicken Sie auf eine Karte, um die [Anfrage in der Vorschau anzuzeigen und zu aktualisieren](#slide-in), oder doppelklicken Sie darauf, um sie in einer Registerkarte zu öffnen.
 
@@ -197,7 +197,7 @@ So schließen Sie Registerkarten automatisch:
 
 1. Klicken Sie auf die Gruppe **Anfrage**.
 
-1. Setzen Sie **Registerkarte beim Hinzufügen einer Nachricht zur Anfrage automatisch schließen** oder **Registerkarte beim Ändern des Anfragestatus auf Geschlossen automatisch schließen** auf **Ja**.
+1. Setzen Sie **Beim Hinzufügen von Nachricht zu Anfrage Registerkarte autom. schließen** oder **Beim Ändern des Anfragestatus in Geschlossen Registerkarte autom. schließen** auf **Ja**.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -279,8 +279,8 @@ Die Seitenleiste Eigenschaften der Anfrage enthält folgende Optionen:
 
 * **Status**: Zeigt den Status der Anfrage an. Sie können den Status hier ändern.
   * **Öffnen**: Die Anfrage ist noch nicht abgeschlossen.
-  * **Bearbeitet**: Die Anfrage wurde vollständig beantwortet.
-  * **Auf Termin gelegt**: Die Aktion auf der Anfrage wurde auf ein späteres Datum auf Termin gelegt.
+  * **Geschlossen**: Die Anfrage wurde vollständig beantwortet.
+  * **Aufgeschoben**: Die Aktion auf der Anfrage wurde auf ein späteres Datum aufgeschoben.
 
 * **Eigentümer**: Der Name des Bearbeiters, der für die Anfrage verantwortlich ist. Sie können hier den [Eigentümer ändern][7].
 
@@ -357,15 +357,16 @@ Sie können Anfragen an Ihren Arbeitsablauf anpassen:
 1. Gehen Sie zu <i class="ph ph-user-circle" aria-hidden="true"></i> **Persönliche Einstellungen** > **Einstellungen**.
 
 1. Wählen Sie **Anfrage** und passen Sie Einstellungen an wie:
-    * Neueste Nachricht am Anfang der Liste anzeigen.
-    * Älteste Anfrage beim Zusammenführen als Hauptanfrage verwenden.
+    * Neuste Nachricht am Anfang der Liste anzeigen.
+    * Verwenden Sie beim Zusammenfügen die älteste Anfrage als Hauptanfrage.
     * Vorschau für Bilder in Nachrichten.
     * Anzahl der erweiterten Nachrichten.
     * Letzte Nachricht automatisch einfügen.
     * Nur eigene Kategorien anzeigen.
-    * Registerkarte beim Hinzufügen einer Nachricht zur Anfrage automatisch schließen.
-    * Registerkarte beim Ändern des Anfragestatus auf Geschlossen automatisch schließen.
-    * Standardbesitzer, -kategorie und -status für neue Anfragen.
+    * Beim Hinzufügen von Nachricht zu Anfrage Registerkarte autom. schließen.
+    * Beim Ändern des Anfragestatus in Geschlossen Registerkarte autom. schließen.
+    * Standardeigentümer und -kategorie für neue Anfragen.
+    * Standardstatus für neue Anfragen und Standardstatus für neue Nachrichten. Siehe [Reihenfolge der Standardstatus][37].
 
 1. Wählen Sie **E-Mail-Benachrichtigungen** und passen Sie Einstellungen an wie:
     * Neue Anfragen oder Nachrichten.
@@ -439,6 +440,7 @@ Einige Einstellungen, die Support-Agenten betreffen, umfassen:
 [32]: /de/learn/getting-started/main-screen/navigator
 [33]: /de/learn/section-tabs/requests-tab
 [36]: /de/request/learn/mentions
+[37]: /de/request/admin/status/index#default
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/service-dashboard.png

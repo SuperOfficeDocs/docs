@@ -4,8 +4,8 @@ title: Postbussen maken
 description: Postbussen maken
 keywords: ['e-mail', 'Nieuwe postbus', 'Postbuseigenschappen']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: core
@@ -50,6 +50,10 @@ Voordat u een postbus instelt, moet u ervoor zorgen dat er geen oude berichten i
 
     * Selecteer in de keuzelijst **Verzoektype** het type berichten dat bij deze postbus hoort.
 
+    <Note>
+    Verzoeken die vanuit inkomende e-mail worden gemaakt, krijgen de status **Openstaand**. Als **Verzoek sluiten** is ingeschakeld in een [e-mailfilter][1], krijgen ze in plaats daarvan de status **Gesloten**. De standaardstatussen van de categorie, het verzoektype en de gebruikersvoorkeuren worden niet gebruikt.
+    </Note>
+
 1. <StepSetLanguage />
 
 1. Stel antwoord in:
@@ -71,4 +75,5 @@ Voordat u een postbus instelt, moet u ervoor zorgen dat er geen oude berichten i
 
 1. Klik op **OK**. De postbus wordt gemaakt.
 
+[1]: ./create-email-filter
 [ai1]: ../../../ai/learn/index

@@ -4,8 +4,8 @@ title: Opret sagskategori
 description: Opret sagskategori
 keywords: ['tilføj sagskategori', 'opret sagskategori', 'ny sagskategori', 'sagskategori', 'fanen Kategorier', 'sag', 'kategori']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -43,9 +43,9 @@ language: da
 
     * **Tag ejerskab ved besvarelse**: Hvis du markerer denne indstilling, vil den bruger, der svarer på en sag i denne kategori, blive angivet som ejer af sagen.
 
-    * **Standardstatus for ny sag**: Hér vælger du, hvilken status der skal være standard i skærmbilledet **Sag**. Denne indstilling tilsidesætter [brugerpræferencer][1], medmindre du vælger **Brugerdefineret**.
+    * **Standardstatus for ny sag**: Den status, en ny sag i denne kategori får, hvis sagstypen tillader det. Se [rækkefølge for standardstatus][2]. Vælg **Brugerdefineret** for ikke at sætte en status fra kategorien.
 
-    * **Standardstatus for ny meddelelse**: Her vælger du den standardstatus, der skal vises i en ny meddelelse. Denne indstilling tilsidesætter [brugerpræferencer][1], medmindre du vælger **Brugerdefineret**.
+    * **Standardstatus for ny meddelelse**: Den status, der sættes, når der svares på en sag i denne kategori, hvis sagstypen tillader det. Vælg **Brugerdefineret** for ikke at sætte en status fra kategorien.
 
     * **Flet udgående e-mails for denne kategori med svarskabelon**: Vælg den svarskabelon, der skal bruges i meddelelser, som sendes ud til kunder og andre personer for sager, der tilhører denne kategori. Dette kan være en svarskabelon specielt oprettet til denne kategori for at give alle svar fra en kategori (f.eks. support eller regnskab) et ensartet udseende.
 
@@ -81,4 +81,4 @@ language: da
 
 1. Klik på **Gem**. Kategorien oprettes.
 
-[1]: ../../../admin/preferences/index
+[2]: ../status/index#default

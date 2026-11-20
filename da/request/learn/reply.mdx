@@ -2,10 +2,10 @@
 uid: help-da-request-reply
 title: Svar til person
 description: I denne guide lærer du, hvordan du besvarer alle indgående sager i SuperOffice.
-keywords: ['svar på sag', 'svar', 'svar til alle', 'tilføj meddelelse', 'tilføj kommentar', 'kommentar', 'intern', 'ekstern', 'sag']
+keywords: ['svar på sag', 'svar', 'svar til alle', 'tilføj meddelelse', 'tilføj kommentar', 'kommentar', 'intern', 'ekstern', 'sag', 'svarstatus']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -58,6 +58,10 @@ Indstil *Antal ekspanderede meddelelser* præferencen (under <i class="ph ph-use
     ![Første billede: Meddelelsesforhåndsvisning, der viser afsenderens navn. Andet billede: Samme meddelelsesforhåndsvisning med afsenderens navn fjernet, hvilket indikerer anonymisering. -screenshot][img7]
 
 Hvis du skifter til en anden fane på Sagsskærmen, før du sender meddelelsen, beholdes dit usendte svar. Fanen viser en blyant (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>), indtil du sender eller kasserer svaret.
+
+### Status, når du svarer {#status}
+
+Statussen sættes ud fra kategoriens **Standardstatus for ny meddelelse**, hvis sagstypen tillader det. Ellers bruges den samme indstilling i dine præferencer, hvis sagstypen tillader det. Hvis ingen af dem gælder, forbliver statussen uændret. Se [rækkefølge for standardstatus][13].
 
 ## Hurtigsvar fra en forhåndsvisning {#quick-reply}
 
@@ -180,6 +184,7 @@ Den registrerede tid vises i hver meddelelsesoverskrift, og svartiden kan findes
 [10]: ./forward
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
+[13]: ../admin/status/index#default
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png

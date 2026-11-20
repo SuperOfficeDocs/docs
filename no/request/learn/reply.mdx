@@ -2,10 +2,10 @@
 uid: help-no-request-reply
 title: Svar til person
 description: I denne veiledningen lærer du hvordan du svarer på alle innkommende saker i SuperOffice.
-keywords: ['svare på sak', 'svare', 'svar til alle', 'legge til melding', 'legge til kommentar', 'kommentar', 'intern', 'ekstern', 'sak']
+keywords: ['svare på sak', 'svare', 'svar til alle', 'legge til melding', 'legge til kommentar', 'kommentar', 'intern', 'ekstern', 'sak', 'svarstatus']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -58,6 +58,10 @@ Angi *Antall ekspanderte meldinger*-innstillingen (under <i class="ph ph-user-ci
     ![Første bilde: Meldingsforhåndsvisning som viser avsenders navn. Andre bilde: Samme meldingsforhåndsvisning med avsenders navn fjernet, som indikerer anonymisering. -screenshot][img7]
 
 Hvis du bytter til en annen fane på Saksskjermen før du sender meldingen, beholdes det usendte svaret ditt. Fanen viser en blyant (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) til du sender eller forkaster det.
+
+### Status når du svarer {#status}
+
+Statusen settes fra kategoriens **Standardstatus for ny melding**, hvis sakstypen tillater det. Ellers brukes den samme innstillingen i preferansene dine, hvis sakstypen tillater det. Hvis ingen av disse gjelder, endres ikke statusen. Se [rekkefølge for standardstatus][13].
 
 ## Hurtigsvar fra en forhåndsvisning {#quick-reply}
 
@@ -180,6 +184,7 @@ Tidsbruken vises i meldingsoverskriften, og svartiden er tilgjengelig i fanen **
 [10]: ./forward
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
+[13]: ../admin/status/index#default
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
