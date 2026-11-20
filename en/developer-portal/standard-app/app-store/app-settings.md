@@ -26,7 +26,7 @@ deployment: online
 
 As a partner, you may change the technical contact and the list of error reporting emails. Other settings may only be changed by SuperOffice app managers. Contact us via chat or support if you want to request any changes.
 
-**Owned by** and **Developed by** aren't app settings. They're shown in the app header, and only SuperOffice can change them. See [Owner vs. developer][29].
+**Owned by** and **Developed by** aren't app settings. They're shown with icons in the app header, and only SuperOffice can change them. See [Owner vs. developer][29].
 
 ## App Store information
 
