@@ -8,7 +8,8 @@ content_type: howto
 category: integration
 topic: ConnectERP
 platform: Visma Net
-related: false
+related:
+  - /en/custom-objects/admin/add-udef
 language: en
 userflow_index: true
 ---
@@ -36,14 +37,15 @@ Both contact sync integrations use the selection **DB – Linked ERP Contact Per
 
 **Before creating this selection:**
 
+1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice® CRM**.
 1. Open a (test) contact card in SuperOffice.
 1. Manually set the field **Linked to ERP** to **Yes/True**.
 
 **Create the selection:**
 
-1. In SuperOffice, click **New > Selection**.
+1. Click **New** > **Selection**.
 1. Select **Find Contact**.
-1. Add a criterion with **Linked to ERP** as the field, **Equals** as the operator, and **Yes/True** as the value.
+1. [Add a criterion][7] with **Linked to ERP** as the field, **Equals** as the operator, and **Yes/True** as the value.
 1. Run the search and confirm the contact you just updated appears in the results.
 1. Save as a **dynamic selection** with the name **DB – Linked ERP Contact Persons**.
 
@@ -132,6 +134,7 @@ The [setup path][6] splits here, depending on the CRM Suite:
 [4]: ./set-up-product-sync
 [5]: ./set-up-order-sync
 [6]: ./index#set-up-the-integration
+[7]: /en/search-options/learn/search-criteria
 
 [img1]: /media/loc/en/integrations/connect-erp/selection-linked-erp-contacts.png
 [img2]: /media/loc/en/integrations/connect-erp/contact-card-standard-layout.png

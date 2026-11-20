@@ -8,7 +8,8 @@ content_type: howto
 category: integration
 topic: ConnectERP
 platform: Visma Net
-related: false
+related:
+  - /en/custom-objects/admin/add-udef
 language: en
 userflow_index: true
 ---
@@ -76,9 +77,10 @@ Keep `allowOnlySaleWithStatusSold = true` to prevent accidental order creation i
 
 DataBridge uses this selection as the field template for the **Visma Net Sales Orders (Button)** integration.
 
-1. In SuperOffice, click **New > Selection**.
+1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice® CRM**.
+1. Click **New** > **Selection**.
 1. Select **Find Product**.
-1. Add a criterion with **Code** as the field, **Is not** as the operator, and a single space character as the value.
+1. [Add a criterion][3] with **Code** as the field, **Is not** as the operator, and a single space character as the value.
 1. Run the search and confirm at least one result appears.
 1. Save as a **dynamic selection** with the name **DB – Template: Quote**.
 
@@ -120,6 +122,7 @@ Continue with [Add panels][1].
 
 [1]: ./add-panels
 [2]: ./verify-finalize
+[3]: /en/search-options/learn/search-criteria
 
 [img1]: /media/loc/en/integrations/connect-erp/sale-card-standard-layout.png
 [img2]: /media/loc/en/integrations/connect-erp/sale-card-admin-layout.png

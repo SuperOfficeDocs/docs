@@ -8,7 +8,8 @@ content_type: howto
 category: integration
 topic: ConnectERP
 platform: Visma Net
-related: false
+related:
+  - /en/custom-objects/admin/add-udef
 language: en
 userflow_index: true
 ---
@@ -47,9 +48,10 @@ Note the SuperOffice **template variables** generated for field #2 (ERP Cust. Nu
 
 DataBridge uses this selection as its "field template" for the integrations.
 
-1. In SuperOffice, click **New > Selection**.
+1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice® CRM**.
+1. Click **New** > **Selection**.
 1. Select **Find Company**.
-1. Add a criterion with **Company name** as the field, **Is not** as the operator, and a single space character as the value.
+1. [Add a criterion][5] with **Company name** as the field, **Is not** as the operator, and a single space character as the value.
 1. Run the search and confirm at least one result appears.
 1. Save as a **dynamic selection** with the name **DB – Template: Companies**.
 
@@ -154,6 +156,7 @@ Continue with [Set up contact sync][3].
 [2]: ./verify-finalize
 [3]: ./set-up-contact-sync
 [4]: ./set-up-visma-net
+[5]: /en/search-options/learn/search-criteria
 
 [img1]: /media/loc/en/integrations/connect-erp/selection-companies.png
 [img2]: /media/loc/en/integrations/connect-erp/company-card-standard-layout.png
