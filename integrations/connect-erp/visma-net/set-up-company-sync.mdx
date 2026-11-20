@@ -13,7 +13,7 @@ language: en
 userflow_index: true
 ---
 
-This page covers all configuration steps required to synchronize companies between SuperOffice and Visma Net. Company sync is available in all CRM Suites.
+Company sync synchronizes companies between SuperOffice and Visma Net. It's available in all CRM Suites.
 
 ## 1. Create user-defined fields on the Company card
 
@@ -70,7 +70,7 @@ The CRMScript allows users to manually push a company from SuperOffice to Visma 
 
     | Variable | Value |
     |---|---|
-    | `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
+    | `erpPlatform` | The ERP name shown to users in dialogs, for example `"Visma Net"` |
     | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
 
 1. Save the script.
@@ -119,7 +119,7 @@ This profile is triggered manually when a user clicks **Create Company in Visma 
 
 1. In the **Source** tab, select the **DB – Template: Companies** selection as the data source.
 1. In the **Data** tab, update the values in the transformations **Visma - Customer Class** and **Visma - Tax Zones**.
-1. Check all other transformations for matching values with your environments.
+1. Check that the values in all other transformations match the customer's SuperOffice and Visma Net setup.
 1. After saving, copy the **Instant Job URL**. You'll need it in [Add the Instant Job URL to the CRMScript](#add-instant-job-url).
 
 ### Integration 2: Visma Net Customer Sync (Hourly)

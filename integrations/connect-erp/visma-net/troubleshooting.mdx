@@ -22,7 +22,7 @@ The order sync fails with this error:
 
 `Code: 0001-NullNotAllowed – Message: Currency rate cannot be found – Parameters: currencyId`
 
-This error occurs when you create an order from SuperOffice in a currency that differs from the default currency of your Visma Net tenant. Visma Net has no exchange rate for that currency.
+This error occurs when a user creates an order from SuperOffice in a currency that differs from the default currency of the Visma Net tenant. Visma Net has no exchange rate for that currency.
 
 To fix it, add the exchange rate in Visma Net:
 
@@ -34,7 +34,7 @@ To fix it, add the exchange rate in Visma Net:
     * **Effective date**: today's date
     * **Currency rate**: the exchange rate (for example, 11.3)
     * **Mult/Div**: Multiply
-1. Repeat for any other currencies you use.
+1. Repeat for any other currencies used in SuperOffice.
 1. Save, and retry the order sync from SuperOffice.
 
 {/* Screenshot needed: Visma Net screen CM301000 with a completed currency rate row. */}

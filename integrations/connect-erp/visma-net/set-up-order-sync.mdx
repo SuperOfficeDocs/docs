@@ -17,7 +17,10 @@ userflow_index: true
 Order sync is only available for **CRM Suite Growth and higher**. Skip this page for Core.
 </Note>
 
-This page covers all configuration steps required to synchronize sales orders between SuperOffice and Visma Net. Orders sync in both directions. Orders are pushed to Visma Net on demand when a user clicks the action button on the Sale card. Orders that originate in Visma Net are synchronized into SuperOffice every hour.
+Order sync synchronizes sales orders in both directions:
+
+* From SuperOffice to Visma Net on demand, when a user clicks **Create Order in Visma Net** on the Sale card.
+* From Visma Net to SuperOffice every hour, for orders that originate in Visma Net.
 
 ## 1. Create user-defined field on the Sale card
 
@@ -39,14 +42,14 @@ The CRMScript allows users to manually push a sale from SuperOffice to Visma Net
 
     | Variable | Value |
     |---|---|
-    | `erpPlatform` | The ERP platform name as users are used to mention the ERP. This is used in user-facing dialogs (for example, `"Visma Net"`) |
+    | `erpPlatform` | The ERP name shown to users in dialogs, for example `"Visma Net"` |
     | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#add-instant-job-url) |
     | `allowOnlySaleWithStatusSold` | `true` to only allow sales with status **Sold** to be pushed; `false` to allow all statuses |
 
 1. Save the script.
 
 <Tip>
-We recommend keeping `allowOnlySaleWithStatusSold = true` to prevent accidental order creation in Visma Net from quotes that aren't yet finalized.
+Keep `allowOnlySaleWithStatusSold = true` to prevent accidental order creation in Visma Net from quotes that aren't finalized yet.
 </Tip>
 
 ## 3. Create the Sale card screen layouts

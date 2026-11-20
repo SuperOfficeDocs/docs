@@ -31,14 +31,14 @@ The initial match uses three DataBridge profiles:
 | Visma Net Initial 2/3 (SuperOffice) | Exports a list of all companies from SuperOffice |
 | Visma Net Initial 3/3 (Link) | Imports the matched company pairs |
 
-## Step 1: Export both lists
+## 1. Export both lists
 
 1. In DataBridge, run **Visma Net Initial 1/3 (Visma)** to generate a list of Visma Net customers. Configure the email destination to receive the exported list.
 1. Run **Visma Net Initial 2/3 (SuperOffice)** to generate a list of SuperOffice companies.
 
 ![DataBridge: Visma Net Initial 1/3 (Visma) integration setup -screenshot][img1]
 
-## Step 2: Match the companies
+## 2. Match the companies
 
 Create an import file with two columns:
 
@@ -51,10 +51,10 @@ Create an import file with two columns:
 Review and verify every match before importing. Incorrect links cause data to be written to the wrong company records.
 </Warning>
 
-## Step 3: Import the matches
+## 3. Import the matches
 
 1. In DataBridge, open **Visma Net Initial 3/3 (Link)**.
-1. Use your completed match file as the import source.
+1. Use the completed match file as the import source.
 1. Run the profile.
 1. In SuperOffice, verify that the **ERP Cust. Number** field is populated on the linked companies.
 

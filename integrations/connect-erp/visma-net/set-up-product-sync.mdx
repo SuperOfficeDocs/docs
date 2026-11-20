@@ -17,13 +17,13 @@ userflow_index: true
 Product sync is only available for **CRM Suite Growth and higher**. Skip this page for Core.
 </Note>
 
-This page covers all configuration steps required to synchronize the Visma Net product catalog into SuperOffice's price list. The sync runs once per day.
+Product sync synchronizes the Visma Net product catalog into the SuperOffice price list once per day.
 
 ## 1. Import the product sync integration
 
 ### Integration 5: Visma Net Product Sync (Daily)
 
-This profile runs once per day to synchronize the Visma Net product catalog into SuperOffice's price list. The source is Visma Net Financials, so you don't need to create a SuperOffice selection for this integration.
+The source of this integration is Visma Net Financials, so it doesn't need a SuperOffice selection.
 
 1. Download and unzip *databridge-integrations-visma-net.zip* from the [Downloads][1] section in Requirements and preparations.
 1. In DataBridge, import the corresponding *.ndb* file.
@@ -35,10 +35,6 @@ This profile runs once per day to synchronize the Visma Net product catalog into
 
     Match these values to the lists configured in SuperOffice (as prepared in the value mapping exercise on the [Requirements][2] page).
 1. After saving, **disable the integration immediately**. You'll enable it in [Verify and finalize][3].
-
-<Tip>
-Take extra care with the product transformations. Incorrect mappings will cause products to be imported with the wrong VAT rate or into the wrong price list in SuperOffice.
-</Tip>
 
 ## Next step
 

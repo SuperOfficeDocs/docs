@@ -36,12 +36,11 @@ Keep the Company ID in a note alongside the other values you'll need during setu
 This step adds a custom attribute to Visma Net customer records so that the corresponding SuperOffice company number is stored and visible in Visma Net.
 
 <Tip>
-This information is available in Visma for reference only. It doesn't influence the synchronization process. Skip this step if your users won't need the SuperOffice number in Visma.
+This information is available in Visma Net for reference only. It doesn't influence the synchronization process. Skip this step if the customer's users won't need the SuperOffice number in Visma Net.
 </Tip>
 
 1. In Visma Net, click the hamburger menu. A search box is shown.
-1. Search for screen code **CS205000** in the search bar.
-1. The **Attributes** dialog is shown.
+1. Search for screen code **CS205000** in the search bar. The **Attributes** dialog opens.
 1. Enter **EXTNUMBER** as the Attribute ID.
 1. Enter **SuperOffice Number** as the Description.
 1. Save by clicking the floppy disk icon or pressing **Ctrl+S**.
@@ -49,7 +48,7 @@ This information is available in Visma for reference only. It doesn't influence 
 ![Attributes screen: Attribute ID EXTNUMBER with description SuperOffice Number -screenshot][img4]
 
 <Note>
-Make sure to set up your DataBridge integration that creates companies in Visma Net from SuperOffice to include the EXTNUMBER attribute in the field mapping.
+Make sure to set up the DataBridge integration that creates companies in Visma Net from SuperOffice to include the EXTNUMBER attribute in the field mapping.
 </Note>
 
 ### Link the attribute field to all customer classes
@@ -75,7 +74,7 @@ Customer classes in Visma Net group customers by type (for example, EU and non-E
    1. Save with **Ctrl+S**.
 
 <Tip>
-Repeat this for **every** customer class in your system. If a class is missing the attribute, companies in that class can't be synchronized with SuperOffice.
+Repeat this for **every** customer class in Visma Net. If a class is missing the attribute, companies in that class can't be synchronized with SuperOffice.
 </Tip>
 
 ## Next step
