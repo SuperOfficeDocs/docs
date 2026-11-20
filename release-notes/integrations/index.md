@@ -5,7 +5,7 @@ sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice Integrations
 keywords: ['integration', 'app', 'App Store', 'product release']
 author: kirstiaa
-date: 11.19.2026
+date: 11.20.2026
 content_type: release-note
 audience: person
 audience_tooltip: SuperOffice CRM
