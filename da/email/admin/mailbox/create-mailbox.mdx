@@ -4,8 +4,8 @@ title: Oprettelse af e-mailkonti
 description: Oprettelse af e-mailkonti
 keywords: ['e-mail', 'Ny mailboks', 'Egenskaber for e-mailkonto']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: core
@@ -50,6 +50,10 @@ Før du opsætter en e-mailkonto, skal du sørge for, at der ikke ligger gamle m
 
     * I rullelisten **Sagstype** skal du vælge den type beskeder, der hører til i denne postkasse.
 
+    <Note>
+    Sager, der oprettes fra indgående e-mail, får statussen **Aktiv**. Hvis et [e-mail-filter][1] har **Afslut sagen** markeret, får de i stedet statussen **Afsluttet**. Standardstatusserne for kategorien, sagstypen og brugerpræferencerne bruges ikke.
+    </Note>
+
 1. <StepSetLanguage />
 
 1. Angiv svar:
@@ -71,4 +75,5 @@ Før du opsætter en e-mailkonto, skal du sørge for, at der ikke ligger gamle m
 
 1. Klik på **OK**. E-mailkontoen oprettes.
 
+[1]: ./create-email-filter
 [ai1]: ../../../ai/learn/index

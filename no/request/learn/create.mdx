@@ -4,8 +4,8 @@ title: Opprette en sak
 description: Opprette en sak
 keywords: ['opprett sak', 'legg til sak', 'ny sak', 'saksdetaljer', 'melding', 'sak']
 author: digitaldiina
-date: 10.13.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -18,6 +18,7 @@ related:
   - Malvariabler: /no/knowledge-base/learn/reply-templates/template-variables
   - Opprette svarmal: /no/knowledge-base/learn/reply-templates/index
   - /no/request/learn/request-relations
+  - Rekkefølge for standardstatus: /no/request/admin/status/index#default
 language: no
 ---
 
@@ -67,6 +68,8 @@ På Saksskjermen åpnes en ny sak i en **Ny sak**-fane øverst i gruppen **Aktiv
 * Fanen kan ikke festes. Når du lukker den, blir du bedt om å bekrefte.
 
 * Hvis du laster siden på nytt, gjenopprettes fanen med meldingen du skrev. Verdiene du fylte ut i saksfeltene, gjenopprettes ikke.
+
+* Statusen settes når fanen åpnes. Hvis du endrer kategorien eller sakstypen, endres ikke statusen. Hvis standardstatusen er utsatt, vises utsettelsesvalget, for eksempel **1 uke**, før du lagrer.
 
 * Hvis du vil forkaste saken, klikker du på **Avbryt**. Du blir bedt om å bekrefte, og deretter lukkes fanen.
 
@@ -141,7 +144,7 @@ Fanen **Detaljer** inneholder tilleggsinformasjon om saken. Her finner du inform
 **Egenskaper-panelet** brukes til å kategorisere og tildele saken.
 
 * **Sakstype:** Bestemmer standardverdier og statusalternativer.
-* **Status:** Angi **Åpen**, **Avsluttet** (utført, lukket) eller **Utsatt** (med spesifisert oppfølgingstid).
+* **Status:** Angi **Aktiv**, **Avsluttet** (utført, lukket) eller **Utsatt** (med spesifisert oppfølgingstid).
 * **Eier:** Tildel saken til deg selv, en annen bruker, eller la den være ufordelt.
   * **(Automatisk tildelt):** Systemet fordeler saken etter reglene.
   * **(Ufordelt):** Kategorimedlemmer deler ansvaret.

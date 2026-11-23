@@ -2,10 +2,10 @@
 uid: help-sv-request-reply
 title: Svara kontakt
 description: I den här guiden får du lära dig hur du svarar på alla inkommande ärenden i SuperOffice.
-keywords: ['ärende', 'svara på ärende', 'svara', 'svara alla', 'lägga till meddelande', 'lägga till kommentar', 'kommentar', 'internt', 'externt']
+keywords: ['ärende', 'svara på ärende', 'svara', 'svara alla', 'lägga till meddelande', 'lägga till kommentar', 'kommentar', 'internt', 'externt', 'svarsstatus']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -32,7 +32,7 @@ När du öppnar ett ärende och väljer **Svara**, visas automatiskt den [e-post
 ![Svara på ett ärende -screenshot][img4]
 
 <Tip>
-Ställ in *Antal expanderade meddelanden*-inställningen (under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Preferenser** > **Ärende**) för att bestämma hur många meddelanden som visas när du visar ett ärende.
+Ställ in *Antal expanderade meddelanden*-inställningen (under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Inställningar** > **Ärende**) för att bestämma hur många meddelanden som visas när du visar ett ärende.
 </Tip>
 
 ## Svara på ett ärende
@@ -58,6 +58,10 @@ Ställ in *Antal expanderade meddelanden*-inställningen (under <i class="ph ph-
     ![Första bilden: Meddelandeförhandsgranskning som visar avsändarens namn. Andra bilden: Samma meddelandeförhandsgranskning med avsändarens namn borttaget, vilket indikerar anonymisering. -screenshot][img7]
 
 Om du byter till en annan flik på ärendeskärmen innan du skickar meddelandet behålls ditt osända svar. Fliken visar en penna (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) tills du skickar eller förkastar det.
+
+### Status när du svarar {#status}
+
+Statusen anges från kategorins **Standardstatus för nytt meddelande**, om ärendetypen tillåter det. Annars används samma inställning i dina personliga inställningar, om ärendetypen tillåter det. Om inget av detta gäller ändras inte statusen. Se [ordning för standardstatus][13].
 
 ## Snabbsvar från en förhandsgranskning {#quick-reply}
 
@@ -165,8 +169,8 @@ Använd kommentarer för att ge kontext när du [överför ärenden][10] till ko
 När du svarar på ett ärende kan du registrera den tid du lägger på att besvara det.
 
 1. I verktygsfältet längst ner på fliken **Meddelande**, kontrollera timern:
-   * Klicka på <i class="ph ph-play" aria-label="Play"></i> för att starta tidsregistreringen.
-   * Klicka på <i class="ph ph-pause" aria-label="Pause"></i> för att stoppa timern.
+    * Klicka på <i class="ph ph-play" aria-label="Play"></i> för att starta tidsregistreringen.
+    * Klicka på <i class="ph ph-pause" aria-label="Pause"></i> för att stoppa timern.
 1. Justera tiden manuellt om det behövs.
 1. Spara ärendet för att logga tidsåtgången.
 
@@ -180,6 +184,7 @@ Den registrerade tiden visas i varje meddelandehuvud, och svarstiden finns tillg
 [10]: ./forward
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
+[13]: ../admin/status/index#default
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png

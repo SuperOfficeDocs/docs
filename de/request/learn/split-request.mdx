@@ -4,8 +4,8 @@ title: Anfrage aufteilen
 description: Anfrage aufteilen
 keywords: ['Anfrage', 'Anfrage aufteilen', 'neue Anfrage erstellen']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -20,6 +20,8 @@ related:
   - /de/request/learn/merge
 language: de
 ---
+
+import StepSplitStatus from "../../snippets/step-split-status.md";
 
 Wenn eine Anfrage mehrere Anliegen enthält - beispielsweise eine technische Frage und eine Rechnungsanfrage - können Sie die Anfrage aufteilen und daraus eine neue Anfrage erstellen.
 
@@ -41,18 +43,13 @@ Sie können auch eine [Nachricht aufteilen][1].
 
 1. Wählen Sie eine passende **Kategorie** für die neue Anfrage aus.
 
-1. Wählen Sie im Feld **Priorität** eine der folgenden Optionen:
-    * **Niedrig**, **Mittel** oder **Hoch** - je nach Dringlichkeit der Anfrage.
-    * Alternativ kann die Priorität automatisch anhand definierter [Eskalationsstufen][3] für Kunden oder Firmen gesetzt werden.
+1. Im Feld **Priorität** können Sie zwischen **Niedrig**, **Mittel** und **Hoch** wählen oder die Priorität automatisch vom System festlegen lassen. Dies kann zum Beispiel anhand der [Eskalationsstufen][3] erfolgen, die für verschiedene Personen und Firmen festgelegt sind.
 
 1. Wählen Sie im Feld **Zugriffsstufe** eine der folgenden Optionen:
-    * **Extern**: Der Kunde kann die Anfrage über das Kundenzentrum einsehen.
-    * **Intern**: Der Kunde hat keinen Zugriff auf die Anfrage.
+    * **Extern:** Der Kunde kann die Anfrage über das Kundenzentrum einsehen.
+    * **Intern:** Der Kunde hat keinen Zugriff auf die Anfrage.
 
-1. Wählen Sie im Feld **Status** eine der folgenden Optionen:
-    * **Offen**: Die Anfrage wird aktiv bearbeitet.
-    * **Geschlossen**: Die Anfrage ist abgeschlossen.
-    * **Auf Termin gelegt**: Die Bearbeitung der Anfrage wird aufgeschoben. Wählen Sie ein Datum, an dem die Anfrage automatisch auf **Offen** zurückgesetzt wird.
+1. <StepSplitStatus />
 
 1. Wechseln Sie zur Registerkarte **Nachrichten**, wo eine Liste der Nachrichten innerhalb der Anfrage angezeigt wird. Wählen Sie die Nachrichten aus, die in die neue Anfrage verschoben werden sollen.
 

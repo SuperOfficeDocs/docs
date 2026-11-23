@@ -1,0 +1,54 @@
+---
+uid: help-sv-request-message-split
+title: Dela meddelande
+description: Dela meddelande i ett ärende i SuperOffice Service.
+keywords: ['dela meddelande', 'ärende', 'meddelanden', 'splittra meddelande']
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+redirect_from: /sv/request/learn/howto/split-message
+related:
+  - Dela ett ärende: /sv/request/learn/split-request
+  - /sv/request/learn/merge
+language: sv
+---
+
+import StepSplitStatus from "../../snippets/step-split-status.md";
+
+Om ett meddelande innehåller två frågor som bör hanteras separat, kan du dela meddelandet i två och skapa ett nytt ärende med ett av meddelandena. Detta kan vara användbart om ett meddelande innehåller både en teknisk fråga och en fakturafråga, eftersom dessa två frågor hanteras av två olika avdelningar.
+
+## Steg
+
+1. [Öppna ärendet][1].
+
+1. På fliken **Meddelanden** klickar du på <i class="ph ph-dots-three-circle-vertical" aria-label="Uppgift-meny"></i> bredvid det meddelande du vill dela och väljer **Dela meddelande**.
+
+1. I fönstret **Dela ett meddelande** anger du ett beskrivande namn för det nya ärendet i fältet **Titel**.
+
+1. I fältet **Kategori** väljer du en kategori.
+
+1. I listrutan **Ägare** väljer du ett av följande alternativ:
+    * För att tilldela ärendet till en viss person väljer du önskat namn.
+    * **(Tilldelas automatiskt):** Om detta alternativ väljs, tilldelas ärendet enligt gällande tilldelningsregler.
+    * **(Otilldelat):** Du kan även välja att inte tilldela ärendet till någon. Då blir medlemmarna i den aktuella kategorin ansvariga för att ta hand om ärendet.
+
+1. I listrutan **Prioritet** kan du välja mellan **Låg**, **Medel** och **Hög**, eller så kan du låta systemet ange prioriteten automatiskt. Detta kan till exempel göras utifrån eskaleringsnivåer som ställs in för olika kunder.
+
+1. I listrutan **Åtkomstnivå** väljer du ett av följande alternativ:
+    * **Externt:** Välj detta om kunden ska ha tillgång till ärendet via ett kundcenter.
+    * **Internt:** Välj detta om kunden inte ska ha tillgång till ärendet.
+
+1. <StepSplitStatus />
+
+1. (Om aktuellt) Under **Markera bilagor som ska flyttas till det nya ärendet** väljer du de bilagor som ska flyttas till det nya ärendet. Bilagorna tas bort från det befintliga ärendet.
+
+1. Gå till fliken **Meddelanden** och redigera meddelandetexterna för det befintliga och det nya ärendet.
+
+1. Klicka på **OK**. Meddelandet delas och det nya ärendet öppnas.
+
+[1]: ./index#open

@@ -4,8 +4,8 @@ title: Opdel en sag
 description: Lær, hvordan du opdeler en sag i SuperOffice.
 keywords: ['opdel sag', 'sag']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -20,6 +20,8 @@ related:
   - /da/request/learn/merge
 language: da
 ---
+
+import StepSplitStatus from "../../snippets/step-split-status.md";
 
 Hvis en sag indeholder flere spørgsmål, f.eks. hvis kunden først stiller et teknisk spørgsmål og derefter et fakturaspørgsmål, kan du opdele sagen i to.
 
@@ -44,13 +46,10 @@ Du kan også [dele en meddelelse][1].
 1. I rullemenuen **Prioritet** kan du vælge mellem **Lav**, **Middel** og **Høj**, eller du kan angive, at systemet skal tildele prioritet automatisk. Dette kan f.eks. ske ud fra [eskaleringsniveauer][3] angivet for forskellige personer og firmaer.
 
 1. I rullemenuen **Adgangsniveau** skal du vælge en af følgende muligheder:
-    * **Ekstern**: Vælg denne, hvis personen skal have adgang til sagen via SuperOffice Kundecenter.
-    * **Intern**: Vælg denne, hvis personen ikke skal have adgang til sagen.
+    * **Ekstern:** Vælg denne, hvis personen skal have adgang til sagen via SuperOffice Kundecenter.
+    * **Intern:** Vælg denne, hvis personen ikke skal have adgang til sagen.
 
-1. I rullemenuen **Status** skal du vælge en af følgende muligheder:
-    * **Aktiv**: Vælg denne, hvis sagen er under behandling.
-    * **Afsluttet**: Vælg denne, hvis sagen er færdigbehandlet.
-    * **Udsat**: Hvis sagsbehandlingen skal udsættes, vælg denne og angiv en dato. På denne dato sættes sagen automatisk til **Aktiv** igen.
+1. <StepSplitStatus />
 
 1. Gå til fanen **Meddelelser**, hvor du finder en liste over meddelelser i sagen. Marker de meddelelser, der skal flyttes til den nye sag.
 

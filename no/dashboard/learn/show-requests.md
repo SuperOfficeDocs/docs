@@ -4,7 +4,7 @@ title: Bruke saker i figurer
 description: I denne veiledningen lærer du hvordan du får en rask oversikt over alle åpne saker i SuperOffice-dashbord.
 keywords: ['dashbord', 'sak']
 author: digitaldiina
-date: 11.21.2025
+date: 11.18.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -57,7 +57,7 @@ Hvis antallet av en bestemt type saker er over 0, kan du klikke på den aktuelle
 
 ## Mine åpne saker-listen
 
-Her vises sakene som tilhører deg, og som har statusen **Åpen**. Denne listen inneholder med andre ord de sakene du har ansvaret for å behandle.
+Her vises sakene som tilhører deg, og som har statusen **Aktiv**. Denne listen inneholder med andre ord de sakene du har ansvaret for å behandle.
 
 ## Ufordelte saker-listen
 

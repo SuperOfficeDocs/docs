@@ -4,8 +4,8 @@ title: Postfächer erstellen
 description: Postfächer erstellen
 keywords: ['E-Mail', 'Neues Postfach', 'Eigenschaften des Postfachs']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: core
@@ -50,6 +50,10 @@ Stellen Sie vor dem Einrichten eines Postfachs sicher, dass sich in diesem Postf
 
     * Wählen Sie im Listenfeld **Anfragetyp** den Typ, dem die Nachrichten in diesem Postfach angehören.
 
+    <Note>
+    Anfragen, die aus eingehenden E-Mails erstellt werden, erhalten den Status **Geöffnet**. Wenn bei einem [E-Mail-Filter][1] **Anfrage abschließen** aktiviert ist, erhalten sie stattdessen den Status **Geschlossen**. Die Standardstatus der Kategorie, des Anfragetyps und der Benutzereinstellungen werden nicht verwendet.
+    </Note>
+
 1. <StepSetLanguage />
 
 1. Antwort bearbeiten:
@@ -71,4 +75,5 @@ Stellen Sie vor dem Einrichten eines Postfachs sicher, dass sich in diesem Postf
 
 1. Klicken Sie auf **OK**. Das Postfach wird erstellt.
 
+[1]: ./create-email-filter
 [ai1]: ../../../ai/learn/index

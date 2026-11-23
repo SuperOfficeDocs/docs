@@ -3,15 +3,17 @@ uid: help-nl-request-type-create
 title: Verzoektype aanmaken
 description: Verzoektype aanmaken
 keywords: ['verzoek', 'type', 'verzoektype', 'tabblad Verzoektypen']
-author: Bergfrid Dias
-date: 03.14.2025
-so_version: 10.5.2
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/request/learn/type/create
 userflow_index: true
+related:
+  - Volgorde van standaardstatussen: /nl/request/admin/status/index#default
 language: nl
 ---
 
@@ -39,7 +41,7 @@ language: nl
 
     ![Instellingen en onderhoud, Verzoektype status/prioriteit -screenshot][img3]
 
-1. Optioneel, selecteer een standaardstatus en/of prioriteit om te gebruiken wanneer een agent een verzoek van dit type maakt. (Verplicht als u beschikbaarheid instelt.) Deze instelling heeft voorrang op andere voorkeuren.
+1. Optioneel, selecteer een standaardstatus en/of prioriteit om te gebruiken wanneer een agent een verzoek van dit type maakt. (Verplicht als u beschikbaarheid instelt.) De standaardprioriteit heeft voorrang op andere voorkeuren. De standaardstatus wordt gebruikt, tenzij de standaardstatus van de categorie is toegestaan voor dit type.
 
 1. Optioneel, selecteer een [antwoordsjabloon][5] om te gebruiken wanneer een agent antwoordt op een verzoek van dit type.
 

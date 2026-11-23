@@ -1,0 +1,66 @@
+---
+uid: help-da-request-status
+title: Sagsstatus
+description: Alle sager i SuperOffice har en status, såsom Åben, Lukket eller Udsat. Lær, hvordan du administrerer sagsstatusser i Indstillinger og vedligeholdelse.
+keywords: ['sagsstatus', 'status', 'sager', 'statusindstillinger', 'standardstatus']
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
+content_type: concept
+tier: starter
+audience: settings
+audience_tooltip: Settings and maintenance
+redirect_from: /da/request/learn/status/index
+boost: 1.5
+userflow_index: true
+related:
+  - /da/request/admin/status/create
+  - /da/request/admin/status/delete
+  - Opsæt Svar næste sag i køen: /da/request/admin/next-in-queue
+language: da
+---
+
+Alle sager, der er registreret i SuperOffice, har en status, for eksempel **Aktiv**, **Afsluttet** eller **Udsat**. Vælg **Sag** i navigatoren. På fanen **Sagsstatus** kan du se de sagsstatusser, der allerede er defineret i systemet, og du kan oprette yderligere sagsstatusser. En sagsstatus skal være knyttet til en af systemets interne statusser som for eksempel **Aktiv** eller **Afsluttet**. Hver interne status skal knyttes til mindst én sagsstatus.
+
+Du kan f.eks. oprette en ny status, der hedder "Venter på svar", og som er en mere detaljeret variant af enten **Afsluttet** eller **Aktiv**, alt efter hvordan du ønsker, systemet internt skal behandle og rapportere denne status. Du kan også knytte en brugerdefineret logik til sådanne statusser for at optimere dine brancheprocesser.
+
+## Indstillinger
+
+| Indstilling | Beskrivelse |
+|---|---|
+| Navn | Navnet på sagsstatussen. Som standard har hver intern status en sagsstatus med samme navn. |
+| Intern status | Systemets interne statusser. Hver interne status skal knyttes til mindst én sagsstatus. Systemstatusserne **Lagt sammen** og **Slettet** anvendes kun til henholdsvis flettede sager og slettede sager og er ikke synlige for brugerne. |
+| Standard | Angiver, om dette er en standardstatus for den interne status. |
+| Køstatus | Angiver, om sager med denne status skal anbringes i køen. Dette er relevant, hvis du bruger funktionen **Svar næste sag i køen** . |
+| Registrer tid som | Bruges til at rapportere tidsforbrug i forskellige faser af sagsbehandlingen. Systemet beregner den brugte tid i forhold til definerede "åbningstider" og hele 24-timers perioden. Vælg mellem: i kø og afventer behandling; i den interne beslutningsfase; i den eksterne beslutningsfase |
+
+## Standardstatus for nye sager og svar {#default}
+
+Når du opretter en sag, sættes dens status i denne rækkefølge:
+
+1. [Kategoriens][1] **Standardstatus for ny sag**, hvis sagstypen tillader denne status.
+1. [Sagstypens][2] **Standardstatus**.
+1. Din præference **Standardstatus for ny sag**, hvis sagstypen tillader denne status.
+1. Hvis ingen af disse gælder, gemmes sagen som **Aktiv**.
+
+Statussen sættes, når fanen **Ny sag** åbnes. Hvis du ændrer kategorien eller sagstypen bagefter, ændres statussen ikke.
+
+Når du svarer på en sag, sættes statussen i denne rækkefølge:
+
+1. Kategoriens **Standardstatus for ny meddelelse**, hvis sagstypen tillader denne status.
+1. Din præference **Standardstatus for ny meddelelse**, hvis sagstypen tillader denne status.
+1. Hvis ingen af dem gælder, forbliver statussen uændret.
+
+En sagstypes **Tilgængelige statusser** begrænser standardstatusserne. En standardstatus fra en kategori eller præference, der ikke er på listen, springes over.
+
+En standardstatus kan være en udsat status med et udsættelsesvalg, for eksempel **1 uge**. Valget kommer fra den samme indstilling som statussen, og fanen **Ny sag** viser det, før du gemmer.
+
+<Note>
+[Opdelte sager][4] og [opdelte meddelelser][5] beholder den oprindelige sags status og udsættelsesdato. Sager, der oprettes fra indgående e-mail, får statussen **Aktiv**. Hvis et [e-mail-filter][3] har **Afslut sagen** markeret, får de i stedet statussen **Afsluttet**. Standardstatusser bruges ikke i disse tilfælde.
+</Note>
+
+[1]: /da/request/admin/category/create
+[2]: /da/request/admin/type/index
+[3]: /da/email/admin/mailbox/create-email-filter
+[4]: /da/request/learn/split-request
+[5]: /da/request/learn/split-message

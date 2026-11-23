@@ -3,9 +3,9 @@ uid: help-en-request-type-create
 title: Create request type
 description: Create request type
 keywords: ['new request type', 'add request type', 'Request types tab']
-author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: servicepremium
 tier: growth
@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/request/learn/type/create
 userflow_index: true
+related:
+  - Default status order: /en/request/admin/status/index#default
 language: en
 ---
 
@@ -40,7 +42,7 @@ language: en
 
     ![Settings and maintenance, Request type status/priority -screenshot][img3]
 
-1. Optionally, select a default status and/or priority to use when an agent creates a request of this type. (Mandatory if you set availability.) This setting takes precedence over other preferences.
+1. Optionally, select a default status and/or priority to use when an agent creates a request of this type. (Mandatory if you set availability.) The default priority takes precedence over other preferences. The default status is used unless the category's default status is allowed for this type.
 
 1. Optionally, select a [reply template][5] to use when an agent replies to a request of this type.
 

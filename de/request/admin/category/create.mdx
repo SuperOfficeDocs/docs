@@ -4,8 +4,8 @@ title: Anfragekategorie erstellen
 description: Anfragekategorie erstellen
 keywords: ['Anfragekategorie hinzufügen', 'Anfragekategorie erstellen', 'neue Anfragekategorie', 'Anfragekategorie', 'Kategorien-Registerkarte', 'Anfrage', 'Kategorie']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -43,9 +43,9 @@ language: de
 
     * **Beim Antworten die Zuständigkeit übernehmen**: Falls aktiviert, wird der Benutzer, der antwortet, als Eigentümer der Anfrage festgelegt.
 
-    * **Standardstatus für neue Anfragen**: Wählen Sie den Standardstatus für neue Anfragen aus. Diese Einstellung überschreibt [Benutzereinstellungen][1], es sei denn, Sie wählen **Benutzerdefiniert**.
+    * **Standardstatus für neue Anfragen**: Der Status, den eine neue Anfrage in dieser Kategorie erhält, sofern der Anfragetyp ihn zulässt. Siehe [Reihenfolge der Standardstatus][2]. Wählen Sie **Benutzerdefiniert**, wenn die Kategorie keinen Status festlegen soll.
 
-    * **Standardstatus für neue Nachrichten**: Wählen Sie den Standardstatus für neue Nachrichten aus. Diese Einstellung überschreibt [Benutzereinstellungen][1], es sei denn, Sie wählen **Benutzerdefiniert**.
+    * **Standardstatus für neue Nachrichten**: Der Status, der beim Antworten auf eine Anfrage in dieser Kategorie festgelegt wird, sofern der Anfragetyp ihn zulässt. Wählen Sie **Benutzerdefiniert**, wenn die Kategorie keinen Status festlegen soll.
 
     * **Ausgehende E-Mails für diese Kategorie mit Antwortvorlage zusammenführen**: Wählen Sie die Antwortvorlage für Nachrichten an Kunden und andere Empfänger aus, die bei Anfragen, die dieser Kategorie angehören, verwendet werden soll. Dies kann eine speziell für diese Kategorie erstellte Antwortvorlage sein, um allen Antworten einer Kategorie (wie Support oder Buchhaltung) ein einheitliches Erscheinungsbild zu verleihen.
 
@@ -81,4 +81,4 @@ language: de
 
 1. Klicken Sie auf **Speichern**. Die Kategorie wird erstellt.
 
-[1]: ../../../admin/preferences/index
+[2]: ../status/index#default

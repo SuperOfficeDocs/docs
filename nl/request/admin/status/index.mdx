@@ -1,0 +1,66 @@
+---
+uid: help-nl-request-status
+title: Verzoekstatus
+description: Verzoekstatus
+keywords: ['verzoek', 'status', 'verzoekstatus', 'tabblad Verzoekstatus', 'standaardstatus']
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
+content_type: concept
+tier: starter
+audience: settings
+audience_tooltip: Settings and maintenance
+redirect_from: /nl/request/learn/status/index
+boost: 1.5
+userflow_index: true
+related:
+  - /nl/request/admin/status/create
+  - /nl/request/admin/status/delete
+  - Instellen van Volgende verzoek in wachtrij ophalen: /nl/request/admin/next-in-queue
+language: nl
+---
+
+Alle verzoeken die zijn geregistreerd in SuperOffice, hebben een status, zoals **Openstaand**, **Gesloten** of **Uitgesteld**. Selecteer **Verzoek** in de Navigator en in het tabblad **Verzoekstatus**, u kunt u de verzoekstatussen zien die al in het systeem zijn gedefinieerd en extra verzoekstatussen maken. Een verzoekstatus moet zijn gekoppeld aan een van de interne statuswaarden van het systeem, zoals **Openstaand** of **Gesloten**. Elke interne status moet zijn gekoppeld aan minimaal één verzoekstatus.
+
+U kunt bijvoorbeeld een nieuwe status maken met de naam 'Wacht op antwoord', als een meer gedetailleerde variant van **Gesloten** of **Openstaand**, afhankelijk van de manier waarop het systeem deze status intern moet verwerken en rapporteren. U kunt ook aangepaste logica aan dergelijke statussen koppelen om bedrijfsprocessen te stroomlijnen.
+
+## Instellingen
+
+| Instelling | Beschrijving |
+|---|---|
+| Naam | De naam van de verzoekstatus. Standaard heeft elke interne status een verzoekstatus met dezelfde naam. |
+| Interne status | De interne statuswaarden van het systeem. Elke interne status moet zijn gekoppeld aan minimaal één verzoekstatus. De systeemstatussen **Samengevoegd** en **Verwijderd** worden alleen gebruikt voor respectievelijk samengevoegde verzoeken en verwijderde verzoeken en zijn niet zichtbaar voor de gebruiker. |
+| Standaard | Geeft aan of dit een standaardstatus is voor de interne status. |
+| Wachtrijstatus | Geeft aan of verzoeken met deze status in de wachtrij geplaatst moeten worden. Dit is relevant als u de functie **Volgende in wachtrij ophalen** gebruikt. |
+| Tijd traceren als | Wordt gebruikt om tijdsgebruik in verschillende fasen van het verzoekbeheer te rapporteren. Het systeem berekent de tijd zowel in relatie tot bepaalde 'openingstijden' en de gehele periode van 24 uur. Kies uit: in de wachtrij en wachtend op verwerking, in de interne beslissingsfase, in de externe beslissingsfase |
+
+## Standaardstatus voor nieuwe verzoeken en antwoorden {#default}
+
+Wanneer u een verzoek maakt, wordt de status in deze volgorde ingesteld:
+
+1. De **Standaardstatus van nieuw verzoek** van de [categorie][1], als het verzoektype die status toestaat.
+1. De **Standaardstatus** van het [verzoektype][2].
+1. Uw voorkeur **Standaardstatus van nieuw verzoek**, als het verzoektype die status toestaat.
+1. Als geen van deze van toepassing is, wordt het verzoek opgeslagen als **Openstaand**.
+
+De status wordt ingesteld wanneer het tabblad **Nieuw verzoek** wordt geopend. Als u daarna de categorie of het verzoektype wijzigt, verandert de status niet.
+
+Wanneer u een verzoek beantwoordt, wordt de status in deze volgorde ingesteld:
+
+1. De **Standaardstatus voor nieuw bericht** van de categorie, als het verzoektype die status toestaat.
+1. Uw voorkeur **Standaardstatus voor nieuw bericht**, als het verzoektype die status toestaat.
+1. Als geen van beide van toepassing is, blijft de status ongewijzigd.
+
+De **Beschikbare statussen** van een verzoektype beperken de standaardwaarden. Een standaardwaarde van een categorie of voorkeur die niet in de lijst staat, wordt overgeslagen.
+
+Een standaardstatus kan een uitgestelde status zijn met een uitsteloptie, zoals **1 week**. De optie komt uit dezelfde instelling als de status, en het tabblad **Nieuw verzoek** toont deze voordat u opslaat.
+
+<Note>
+[Opgesplitste verzoeken][4] en [opgesplitste berichten][5] behouden de status en de uitsteldatum van het oorspronkelijke verzoek. Verzoeken die vanuit inkomende e-mail worden gemaakt, krijgen de status **Openstaand**. Als **Verzoek sluiten** is ingeschakeld in een [e-mailfilter][3], krijgen ze in plaats daarvan de status **Gesloten**. Standaardstatussen worden in deze gevallen niet gebruikt.
+</Note>
+
+[1]: /nl/request/admin/category/create
+[2]: /nl/request/admin/type/index
+[3]: /nl/email/admin/mailbox/create-email-filter
+[4]: /nl/request/learn/split-request
+[5]: /nl/request/learn/split-message

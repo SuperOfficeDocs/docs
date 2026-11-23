@@ -4,8 +4,8 @@ title: Verzoeken splitsen
 description: Leer hoe u een verzoek kunt splitsen in SuperOffice.
 keywords: ['verzoek', 'splitsen', 'eigenschappen nieuw verzoek']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 tier: starter
 audience: person
@@ -19,6 +19,8 @@ related:
   - /nl/request/learn/merge
 language: nl
 ---
+
+import StepSplitStatus from "../../snippets/step-split-status.md";
 
 Wanneer hetzelfde verzoek meerdere vragen bevat, bijvoorbeeld als de klant eerst een technische vraag stelt en vervolgens in hetzelfde e-mailbericht een vraag over facturering stelt, kunt u het verzoek opsplitsen.
 
@@ -43,13 +45,10 @@ U kunt ook [een bericht opsplitsen][1].
 1. In de keuzelijst **Prioriteit** kunt u kiezen uit **Laag**, **Gemiddeld** en **Hoog**. U kunt er ook voor kiezen de prioriteit automatisch te laten toekennen. Dit kan bijvoorbeeld op basis van [escalatieniveaus][3] die voor verschillende personen en bedrijven zijn ingesteld.
 
 1. Selecteer in de keuzelijst **Toegangsniveau** een van de volgende opties:
-    * **Extern**: selecteer deze optie als de persoon toegang moet krijgen tot het verzoek via SuperOffice Customer Centre.
-    * **Intern**: selecteer deze optie als de persoon geen toegang moet krijgen tot het verzoek.
+    * **Extern:** selecteer deze optie als de persoon toegang moet krijgen tot het verzoek via SuperOffice Customer Centre.
+    * **Intern:** selecteer deze optie als de persoon geen toegang moet krijgen tot het verzoek.
 
-1. Selecteer in de keuzelijst **Status** een van de volgende opties:
-    * **Openen**: selecteer deze optie als het verzoek actief is.
-    * **Gesloten**: Selecteer deze optie als het verzoek voltooid is.
-    * **Uitgesteld**: Om de afhandeling van het verzoek uit te stellen, selecteert u deze optie en geeft u in het datumveld rechts van dit veld een datum op. De status van het verzoek wordt op de opgegeven datum teruggezet naar **Openstaand**.
+1. <StepSplitStatus />
 
 1. Selecteer het tabblad **Berichten** waar u een lijst met berichten vindt die aan het verzoek gerelateerd zijn. Hier selecteert u de berichten die u naar het nieuwe verzoek wilt verplaatsen.
 

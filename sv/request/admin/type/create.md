@@ -3,9 +3,9 @@ uid: help-sv-request-type-create
 title: Skapa ärendetyp
 description: Lär dig hur du skapar en ärendetyp i SuperOffice Service.
 keywords: ['skapa ärendetyp', 'ny ärendetyp', 'lägg till ärendetyp', 'ärendetyp', 'fliken Ärendetyper', 'typ', 'ärende']
-author: Bergfrid Dias
-date: 02.25.2025
-so_version: 10.5.2
+author: digitaldiina
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: servicepremium
 tier: growth
@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/request/learn/type/create
 userflow_index: true
+related:
+  - Ordning för standardstatus: /sv/request/admin/status/index#default
 language: sv
 ---
 
@@ -40,7 +42,7 @@ language: sv
 
     ![Inställningar och underhåll, ärendetypens status/prioritet -screenshot][img3]
 
-1. Valfritt: Välj en standardstatus och/eller prioritet att använda när en agent skapar ett ärende av denna typ. *(Obligatoriskt om du har begränsat tillgängliga alternativ.)* Denna inställning har högre prioritet än andra preferenser.
+1. Valfritt: Välj en standardstatus och/eller prioritet att använda när en agent skapar ett ärende av denna typ. *(Obligatoriskt om du har begränsat tillgängliga alternativ.)* Standardprioriteten har företräde framför andra preferenser. Standardstatusen används om inte kategorins standardstatus är tillåten för den här typen.
 
 1. Valfritt: Välj en [svarsmall][5] som ska användas när en agent svarar på ett ärende av denna typ.
 

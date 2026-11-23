@@ -4,7 +4,7 @@ title: Opret sagsstatus
 description: Lær, hvordan du opretter en ny sagsstatus i Indstillinger og vedligeholdelse.
 keywords: ['sagsstatus', 'status', 'opret sagsstatus']
 author: digitaldiina
-date: 06.10.2026
+date: 11.18.2026
 so_version: 12.0
 content_type: howto
 license: serviceessentials
@@ -34,7 +34,7 @@ language: da
 
 1. Marker **Køstatus**, hvis sager med denne status skal placeres i køen.
 
-1. Marker **Opret ny sag for kundesvar** for at forhindre, at gamle sager genåbnes, når en kunde svarer på en ældre meddelelse. Dette kan være relevant for statusser såsom **Lukket** og **Slettet**.
+1. Marker **Opret ny sag for kundesvar** for at forhindre, at gamle sager genåbnes, når en kunde svarer på en ældre meddelelse. Dette kan være relevant for statusser såsom **Afsluttet** og **Slettet**.
 
 1. I rullemenuen **Registrer tid som** skal du vælge, hvordan tidsforbrug skal rapporteres:
 

@@ -4,8 +4,8 @@ title: Skapa brevlåda
 description: Skapa brevlåda
 keywords: ['e-post', 'Ny brevlåda', 'Egenskaper för brevlåda']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.18.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: core
@@ -50,6 +50,10 @@ Innan du konfigurerar en brevlåda måste du kontrollera att det inte finns gaml
 
     * I listrutan **Ärendetyp** väljer du typen av meddelanden som hör hemma i den här brevlådan.
 
+    <Note>
+    Ärenden som skapas från inkommande e-post får statusen **Aktivt**. Om ett [e-postfilter][1] har **Stäng ärende** markerat får de i stället statusen **Avslutat**. Standardstatus från kategorin, ärendetypen och användarinställningarna används inte.
+    </Note>
+
 1. <StepSetLanguage />
 
 1. Ange svar:
@@ -71,4 +75,5 @@ Innan du konfigurerar en brevlåda måste du kontrollera att det inte finns gaml
 
 1. Klicka på **OK**. Brevlådan skapas.
 
+[1]: ./create-email-filter
 [ai1]: ../../../ai/learn/index
