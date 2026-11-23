@@ -5,7 +5,7 @@ sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice Integrations
 keywords: ['integration', 'app', 'App Store', 'product release']
 author: kirstiaa
-date: 11.03.2026
+date: 11.20.2026
 content_type: release-note
 audience: person
 audience_tooltip: SuperOffice CRM
@@ -51,40 +51,41 @@ Current version: For the latest version numbers and release details for all prod
 
 | Product | Version | Date |
 | --- | --- | --- |
-| ConnectERP | 163.0 | 05.10.2026 |
-| DataBridge | 163.0 | 05.10.2026 |
-| Panels | 73.0 | 14.09.2026 |
-| SharePoint Documents | 3.11 | 27.10.2026 |
+| ConnectERP | 165.0 | 17.11.2026 |
+| DataBridge | 165.0 | 17.11.2026 |
+| Panels | 73.1 | 13.11.2026 |
+| SharePoint Documents | 3.12 | 12.11.2026 |
 | Slack Notify | 14.0 | 01.10.2026 |
-| SuperOffice AI Agents | 1.1.0 | 28.08.2026 |
+| SuperOffice AI Agents | 1.0.0 | 12.11.2026 |
 | SuperOffice AI Platform | 1.6 | 02.09.2026 |
 | SuperOffice Copilot | 2.0 | 02.09.2026 |
 | SuperOffice for Gmail | 3.0 | 24.02.2026 |
 | SuperOffice for Mailchimp | 14.0 | 01.10.2026 |
-| SuperOffice for Outlook | 6.4.11 | 29.10.2026 |
-| SuperOffice for Teams | 1.0.2 | 01.10.2026 |
+| SuperOffice for Outlook | 6.4.12 | 05.11.2026 |
+| SuperOffice for Teams | 1.0.3 | 19.11.2026 |
 | SuperOffice for Trello | 15.0 | 01.10.2026 |
 | SuperOffice for Wordpress | 14.0 | 01.10.2026 |
 | SuperOffice MailLink | 13.1.61 | 30.01.2026 |
 | SuperOffice MCP Server | 1.1 | 21.09.2026 |
-| Synchronizer | 131.0 | 01.09.2026 |
+| Synchronizer | 132.0 | 02.11.2026 |
 | Teams Notify | 14.0 | 01.10.2026 |
 | Video Meetings | 2.14 | 20.10.2026 |
 | Webex Notify | 14.0 | 01.10.2026 |
-| WebTools for Mac | 13.4 | 25.10.2026 |
+| WebTools for Mac | 13.4 | 25.09.2026 |
 | WebTools for Windows | 13.2.3 | 24.03.2026 |
-| Zapier | 3.5.11 | 01.10.2026 |
+| Zapier | 3.5.11 | 21.09.2026 |
 
 ## SuperOffice App Store
 
 See all the [new or updated apps][2]
 
+* [eMarketeer for SuperOffice][76] from eMarketeer AB (11.11.2026)
+* [SuperOffice for Outlook][63] from SuperOffice AS (05.11.2026)
 * [InZynk for SuperOffice][65] from InZynk (12.10.2026)
 * [SuperOffice for Trello][75] from SuperOffice AS (01.10.2026)
 * [Teams Notify][74] from SuperOffice AS (01.10.2026)
 * [SuperOffice for WordPress][70] from SuperOffice AS (01.10.2026)
 * [Zapier Integration][71] from SuperOffice AS (01.10.2026)
-* [SuperOffice for Outlook][63] from SuperOffice AS (01.10.2026)
 * [SharePoint Documents][46] from SuperOffice AS (01.10.2026)
 * [Finago by Syncify][49] from Syncify AB (21.09.2026)
 * [Xledger by Syncify][40] from Syncify AB (21.09.2026)
@@ -177,3 +178,4 @@ See all the [new or updated apps][2]
 [73]: https://appstore.superoffice.com/superoffice-as/places-for-superoffice
 [74]: https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams
 [75]: https://appstore.superoffice.com/superoffice-as/superoffice-for-trello
+[76]: https://appstore.superoffice.com/emarketeer-ab/emarketeer-for-superoffice

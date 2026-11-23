@@ -4,7 +4,7 @@ title: What's new in SuperOffice 12
 description: Release notes. What's new in SuperOffice 12
 keywords: ['SuperOffice CRM 12']
 author: kirstiaa
-date: 11.03.2026
+date: 11.23.2026
 so_version: 12
 content_type: release-note
 audience: person
@@ -21,14 +21,20 @@ language: en
 
 ## Summary of highlights
 
-**SuperOffice 12** - a new main version of SuperOffice CRM where we focus on AI to become part of how you work every day.
+**SuperOffice 12** is a new main version of SuperOffice CRM, focused on making AI part of how you work every day.
 
 From this version, all feature updates are available to SuperOffice Online customers only. Onsite installations will receive security updates only.
 
-The introduction of CRM Suite changes the access to some features and functions. This means that some features and functions mentioned here might not apply to your CRM Suite plan. So check out our five plans to learn more about [CRM Suite][22] and what's available.
+The introduction of CRM Suite changes the access to some features and functions. This means that some features and functions mentioned here might not apply to your CRM Suite plan. Check out our five plans to learn more about [CRM Suite][22] and what's available.
 
 <Accordion title="Features released in Version 12">
 
+* Version 12.7 - 24.11.2026
+  * Mailings - Filtering and grouping in list view
+  * Requests - Preview attachments before adding them to a reply
+  * Requests - Postpone options that follow your working week
+  * Requests - Request status - Customize postpone options - Settings and maintenance
+  * Requests - Default status for new requests and replies
 * Version 12.6 - 04.11.2026
   * Search and selection - Criteria for externally owned follow-ups
   * Sale - Copy sale
@@ -42,19 +48,19 @@ The introduction of CRM Suite changes the access to some features and functions.
   * Forms - Message when a form is too large to save
   * Requests - Oldest request becomes the primary request when merging
   * System design - Extra fields - URLs shown as clickable links - Settings and maintenance
-  * Licences - See your available apps in App store - Settings and maintenance
+  * Licences - See your available apps in App Store - Settings and maintenance
 * Version 12.4 - 17.09.2026
   * Requests - Reply to requests directly from the preview
   * Forms - Conditional fields in Forms
   * Forms - Default checked state for the Custom checkbox field
   * Forms - AI styling of form
   * Flows - Expanded trigger conditions for custom fields
-* Version 12.3 - 25.08.2026
+* Version 12.3 - 27.08.2026
   * Multiple DKIM for Mailgun - Settings and maintenance
 * Version 12.2 - 09.07.2026
   * Dashboard - Measure sale cycles
   * Email and Document - Download the email or document file
-  * Mailing - View numbers with two decimal in Summary
+  * Mailing - View numbers with two decimals in Summary
 * Version 12.1 - 16.06.2026
   * System design - Webhooks management panel - Settings and maintenance
 * Version 12.0 - 01.06.2026
@@ -63,6 +69,79 @@ The introduction of CRM Suite changes the access to some features and functions.
 
 ## Feature updates
 
+<Update label="12.7" description="24.11.2026" tags={["Marketing", "Service", "Settings and maintenance"]}>
+<a id="12.7"></a>
+
+### Mailings - Filtering and grouping in list view <Badge icon="bullseye" color="purple">Marketing</Badge>
+
+Find the mailing you need quickly by filtering and grouping the list, just as you do in other archives in SuperOffice.
+
+Marketing teams can build up a long list of mailings over time, and scrolling through it to find a particular one takes effort. Mailing lists work like the other archives, so the way you narrow down and organize records is familiar.
+
+Go to **Marketing** > **Mailings** and switch to list view. Filter the list to show only the mailings you are interested in, or group it by a column such as **Status** or **Owner** to see related mailings together. This applies to list view only. The folder and thumbnail (tile) views can't be filtered or grouped.
+
+![Filter and group mailings in list view -screenshot][img32]
+
+Learn more about [configuring columns][25], [grouping lists][26], and [filtering lists][27].
+
+### Requests - Preview attachments before adding them to a reply <Badge icon="ticket" color="green">Service</Badge>
+
+Pick the correct file for your reply without leaving it. A preview shows what an attachment contains before you add it.
+
+Requests often collect many files over time, and a list of file names alone makes it hard to tell which one you need. The preview lets you check the content in place, so you can reuse files already on the request with confidence.
+
+Open a request, start a reply, and click <i class="ph ph-paperclip" aria-label="Attachments"></i> in the right-side panel to open **Attachments**. Each attachment has an eye icon that opens a preview showing the file name, date, size, and position in the list, for example "3 of 8".
+
+![Preview an attachment before adding it to the reply -screenshot][img29]
+
+Images, PDF, and Word files are shown in the preview. Files that cannot be previewed, such as Excel and PowerPoint files, show a **Download** button instead. Use the arrows to move to the previous or next attachment without closing the preview, and tick **Selected** to pick files as you go. **Done**, which shows how many files you have ticked, returns you to the list with those files ticked, and **Insert** adds them to the reply. If you need the context, **Go to message** closes the preview and scrolls to the message the attachment came from.
+
+For example, on a request with eight attachments, you can step through them, tick the signed PDF contract and the screenshot of the error, and insert both in one go.
+
+Learn more about [replying to requests][23].
+
+### Requests - Postpone options that follow your working week <Badge icon="ticket" color="green">Service</Badge>
+
+Postpone a request until the next working day, so a request postponed on a Friday returns on Monday morning rather than on a weekend.
+
+Postponing is most useful when it matches how your team works. The postpone menu offers options that respect working days, and the options can be tailored by your administrator.
+
+The menu has **1 hour**, **24 hours**, **Next working day**, **Next week**, **1 week**, and **1 month**, followed by any options your administrator has added. **Specified** is always last and lets you pick your own date. Options with a fixed time show it on the right, for example "08:00" or "Mon 08:00". The same options are available in the status menu on the request, in the postpone dialog on the request board, and when you change the status while replying or using quick reply.
+
+![Choose a postpone option from the status menu -screenshot][img30]
+
+**Next working day** brings the request back at 08:00 on the next working day, which is Monday 08:00 when you postpone on a Friday. **Next week** brings it back on Monday next week at 08:00. **24 hours**, **1 week**, and **1 month** use plain clock time and can land on a weekend.
+
+Working days follow the opening hours set on the request's priority (**Settings and maintenance** > **Requests** > **Priorities** > **Time frame**), and closed days and the priority's holidays are skipped. If no opening hours are set, Monday to Friday is used. Times such as 08:00 follow your preferred time zone.
+
+### Requests - Request status - Customize postpone options <Badge icon="gear" color="orange">Settings and maintenance</Badge>
+
+Tailor the postpone menu to how your team works. Each status with the internal status **Postponed** has its own list of postpone options, so teams can offer the intervals they use and hide the ones they do not.
+
+Go to **Settings and maintenance** > **Requests** > **Request status** and open a status with internal status **Postponed**. The **Postpone options** section lists the standard options, which can be switched off to hide them from the menu but cannot be edited or deleted.
+
+![Manage postpone options on a Postponed request status -screenshot][img31]
+
+Use **Add option** to create a custom option of one of three types:
+
+* **After a time interval:** 1 to 999 hours, days, weeks, or months, optionally skipping weekends and non-working hours.
+* **Next working day:** at a chosen time.
+* **Weekday next week:** at a chosen time.
+
+The time defaults to 08:00. Drag the options to set their order in the menu. Changes are saved with the status.
+
+For example, a support team adds **Tomorrow afternoon** (**Next working day** at 13:00) and switches off **1 month**, which they never use.
+
+Learn more about [request statuses][24].
+
+### Requests - Default status for new requests and replies <Badge icon="ticket" color="green">Service</Badge>
+
+A new request gets its status from the first of these that applies: the category's default status, the request type's default status, your preference, and otherwise **Open**. Replies use the category's default status for new messages, then your preference, and otherwise keep the current status. A category or preference default is used only if the request type allows that status.
+
+Learn more about [default statuses][28].
+
+</Update>
+
 <Update label="12.6" description="04.11.2026" tags={["Sales", "Service", "Settings and maintenance"]}>
 <a id="12.6"></a>
 
@@ -70,59 +149,59 @@ The introduction of CRM Suite changes the access to some features and functions.
 
 Separate follow-ups synced from Outlook or Google Calendar from those created in SuperOffice, and review or clean up synced follow-ups in bulk.
 
-Follow-ups created in an external calendar are kept in sync by the Synchronizer, and can only be edited or deleted there. Administrators often need to locate them in large numbers, for example after a Synchronizer migration or when recovering from synchronisation issues, without opening each follow-up one by one.
+Follow-ups created in an external calendar are kept in sync by the Synchronizer, and can only be edited or deleted there. Administrators often need to locate them in large numbers, for example after a Synchronizer migration or when recovering from synchronization issues, without opening each follow-up one by one.
 
-The **Created in** criterion is available in **Find**, in selections and in activity archives. You can also show it as a column in follow-up lists.
+The **Created in** criterion is available in **Find**, in selections, and in activity archives. You can also show it as a column in follow-up lists.
 
-![Search criteria with Created in selected for follow-ups -screen][img24]
+![Search criteria with Created in selected for follow-ups -screenshot][img24]
 
-Choose **Created in** to list only follow-ups from a specific calendar, or exclude them to see only the follow-ups created in SuperOffice. For example, an administrator can find all follow-ups created in Outlook for a group of users, and review them together. Create a selection of these follow-ups, then run a **Delete all follow-ups** to keep your environment tidy.
+Choose **Created in** to list only follow-ups from a specific calendar, or exclude them to see only the follow-ups created in SuperOffice. For example, an administrator can find all follow-ups created in Outlook for a group of users, and review them together. Create a selection of these follow-ups, then run **Delete all follow-ups** to keep your environment tidy.
 
 ### Project - Copy project
 
-Set up a new project from an existing one and reuse the structure you already know works. It is ideal for recurring projects, such as yearly events, campaigns or customer onboarding.
+Set up a new project from an existing one and reuse the structure you already know works. It is ideal for recurring projects, such as yearly events, campaigns, or customer onboarding.
 
-Projects of the same kind often share a type, description, web links and members, and recreating them each time is repetitive.
+Projects of the same kind often share a type, description, web links, and members, and recreating them each time is repetitive.
 
 Select **Copy project** from the **Task** menu on the Project card, or right-click a project in any project archive.
 
-![Copy project dialog showing the From section, the To section and the Copy Options switches -screen][img25]
+![Copy project dialog showing the From section, the To section, and the Copy Options switches -screenshot][img25]
 
-The dialog shows the original project under **From**. Under **To**, you name the copy and choose who is **Responsible**. The copy is an independent, active project with its own number. It keeps the project type, description, web links and custom fields. The status starts at the first status of the project type, and the end date is calculated from the type's duration. Activities, documents and guide progress stay with the original. Under **Copy Options**, you can also bring along the **Project members**, **Note**, **Links** and **Image**. For example, copy last year's conference project with its members, and plan this year's edition from there.
+The dialog shows the original project under **From**. Under **To**, you name the copy and choose who is **Responsible**. The copy is an independent, active project with its own number. It keeps the project type, description, web links, and custom fields. The status starts at the first status of the project type, and the end date is calculated from the type's duration. Activities, documents, and guide progress stay with the original. Under **Copy Options**, you can also bring along the **Project members**, **Note**, **Links**, and **Image**. For example, copy last year's conference project with its members, and plan this year's edition from there.
 
 ### Sales - Copy sale <Badge icon="dollar" color="yellow">Sales</Badge>
 
 Create a sale from an existing one in seconds, without retyping what the two have in common. It is ideal for renewals, upsells, repeat orders, and the same opportunity for another company.
 
-Similar opportunities often share the same company, contact, project and sale type, and entering them again takes time.
+Similar opportunities often share the same company, contact, project, and sale type, and entering them again takes time.
 
 Select **Copy sale** from the **Task** menu on the Sale card, or right-click a sale in any sale archive.
 
-![Copy sale dialog showing the From section, the To – New Sale section and what is not included in the copy -screen][img26]
+![Copy sale dialog showing the From section, the To – New Sale section and what is not included in the copy -screenshot][img26]
 
-The dialog shows the original sale under **From**. Under **To – New Sale**, you name the copy and, if needed, change the company, contact and project. The copy is an independent, open sale with its own number, starting at the first stage of its sale type, with you as the owner. Amount, earnings and profit percentage start at zero, and activities, documents and history stay with the original. Under **Copy Options**, you can also bring along the **Quote**, **Stakeholders**, **Note** and **Links**. For example, when a customer renews, copy last year's sale with its quote, and adjust the details.
+The dialog shows the original sale under **From**. Under **To – New Sale**, you name the copy and, if needed, change the company, contact, and project. The copy is an independent, open sale with its own number, starting at the first stage of its sale type, with you as the owner. Amount, earnings, and profit percentage start at zero, and activities, documents, and history stay with the original. Under **Copy Options**, you can also bring along the **Quote**, **Stakeholders**, **Note**, and **Links**. For example, when a customer renews, copy last year's sale with its quote, and adjust the details.
 
-### Knowledge base - Clear the bounce flag in list for Blocked e-mail addresses <Badge icon="ticket" color="green">Service</Badge>
+### Knowledge base - Clear the bounce flag for Blocked e-mail addresses <Badge icon="ticket" color="green">Service</Badge>
 
-Get a contact's email address back in use without leaving SuperOffice. Service sets the bounce flag automatically when a reply to a request bounces, and Service users may not have access to Marketing or a licence for it. The list of blocked email addresses is therefore available directly in SuperOffice CRM.
+Get a contact's email address back in use without leaving SuperOffice. Service sets the bounce flag automatically when a reply to a request bounces, and Service users may not have access to Marketing or a license for it. The list of blocked email addresses is therefore available directly in SuperOffice CRM.
 
-Select <i class="ph ph-list" aria-label="Main menu"></i> in the top bar, then **Knowledge base** > **Blocked e-mail addresses**. Go to the tab for Blocked e-mail addresses, select the address(es) and choose **Actions** > **Clear bounce-flag**. You will get a confirmation dialog to clear the bounce flag. Remember it's a good idea to multiselect in your list to do any of the actions available.
+Select <i class="ph ph-list" aria-label="Main menu"></i> in the top bar, then **Knowledge base** > **Blocked e-mail addresses**. On the **Blocked e-mail addresses** tab, select one or more addresses, choose **Actions** > **Clear bounce-flag**, and confirm.
 
-![Knowledge base and Blocked e-mail addresses gives you an option to clear the bounce-flag -screen][img27]
+![Knowledge base and Blocked e-mail addresses gives you an option to clear the bounce-flag -screenshot][img27]
 
-You need the functional right **General Administrator**, **Service administration** or **Knowledge Base**, in addition to access to Service.
+You need the functional right **General Administrator**, **Service administration**, or **Knowledge Base**, in addition to access to Service.
 
 ### System design - Icon picker for custom objects <Badge icon="gear" color="orange">Settings and maintenance</Badge>
 
-**Give each custom object a recognisable icon, without sourcing icon files yourself.** Icons make custom objects easy to spot, so users find the right one quickly.
+Give each custom object a recognizable icon, without sourcing icon files yourself. Icons make custom objects easy to spot, so users find the right one quickly.
 
-Custom objects are included from the CRM Suite Growth plan (or extra licence for Development Tools). Customers on legacy licensing can use custom objects behind the feature toggle **CustomObjects** (pilot).
+Custom objects are included from the CRM Suite Growth plan (or with an extra license for Development Tools). Customers on legacy licensing can use custom objects behind the feature toggle **CustomObjects** (pilot).
 
-Go to **Settings and maintenance** > **System design** > **Tables**, open the custom object and select **Icon**. The **Select icon** dialog has three tabs: **Default icons** with 54 curated icons, **Full icon library** with search and categories, and **Custom icons** where you upload your own SVG file (up to 50 KB). Select **Apply icon** to save your choice, or **Remove icon** to return to the default icon. The icon is shown in the navigator, the custom objects list, context menus, the webhook event list and the screen designer.
+Go to **Settings and maintenance** > **System design** > **Tables**, open the custom object, and select **Icon**. The **Select icon** dialog has three tabs: **Default icons** with 54 curated icons, **Full icon library** with search and categories, and **Custom icons** where you upload your own SVG file (up to 50 KB). Select **Apply icon** to save your choice, or **Remove icon** to return to the default icon. The icon is shown in the navigator, the custom objects list, context menus, the webhook event list, and the screen designer.
 
-![Select icon dialog with the Default icons, Full icon library and Custom icons tabs -screen][img28]
+![Select icon dialog with the Default icons, Full icon library, and Custom icons tabs -screenshot][img28]
 
-Read more about [Custom objects in Docs][21].
+Learn more about [custom objects][21].
 
 </Update>
 
@@ -161,7 +240,7 @@ Be sure every submission from your visitors reaches SuperOffice. A form that gro
 
 To check if the form is too large, go to **Marketing** > **Forms**, open your form in the form builder, and upload an image. The form size is checked against the maximum allowed, which is 10 MB for the whole form. If the form is too large, the upload stops with the message **File is too large**. Swap, for example, a high-resolution photo on the thank-you page for a smaller version, and upload again.
 
-Learn more about [forms - Thank you page][20].
+Learn more about [the thank-you page in forms][20].
 
 ### Requests - Oldest request becomes the primary request when merging <Badge icon="ticket" color="green">Service</Badge>
 
@@ -181,15 +260,15 @@ The behavior is controlled by the preference **Use the oldest request as the mai
 
 URLs stored in extra fields are displayed as **clickable links in read mode**, so it's easy to open a record in an external system with one click, straight from the request, message, or custom object card. Customers and partners often store a unique URL for each record, such as an order or case in another system, in a text extra field, and the Screen Designer link function only covers a fixed URL plus a variable, not a different link for each record.
 
-The links are available in **Short text** and **Long text** extra fields on requests, messages, and custom object cards. Only Extra fields created in System design can be used: the user-defined fields on Company, Contact, Project, and Sale cannot be used for links.
+The links are available in **Short text** and **Long text** extra fields on requests, messages, and custom object cards. Only extra fields created in System design can be used: the user-defined fields on Company, Contact, Project, and Sale cannot be used for links.
 
 Type or paste a URL that starts with `www.` or `http(s)://` into the field and save. In read mode, the URL is displayed as a clickable link that opens in a new tab. In edit mode, the field is a normal text field. For example, an extra field named **Order link** containing `https://erp.example.com/orders/48213` opens that order in your ERP system.
 
 ![Request showing a URL in an extra field displayed as a clickable link -screenshot][img22]
 
-### Licences - See your available apps in App store <Badge icon="gear" color="orange">Settings and maintenance</Badge>
+### Licences - See your available apps in App Store <Badge icon="gear" color="orange">Settings and maintenance</Badge>
 
-See all the apps available for your CRM Suite license in one overview. Select **My Apps** on the **Licences** screen in **Settings and maintenance** to open SuperOffice App Store, where you can also compare your installed apps with what is available for your SuperOffice installation.
+See all the apps available for your CRM Suite license in one overview. Select **My Apps** on the **Licences** screen in **Settings and maintenance** to open the SuperOffice App Store, where you can also compare your installed apps with what is available for your SuperOffice installation.
 
 ![In Settings and maintenance Licences screen shows a button for My Apps -screenshot][img23]
 
@@ -206,14 +285,14 @@ Without quick reply, responding to a request means opening the request in full s
 
 You'll find **Quick reply** whenever you preview a request from a request list or in split view. Selecting it opens a compact reply editor in place, and any reply you send this way registers on the request just as one sent from the full request view does, including status updates, with the list refreshing automatically.
 
-![Request list with preview gives a quick reply options -screenshot][img15]
+![Request list with preview and Quick reply options -screenshot][img15]
 
 * If you cancel or move to another request with unsent text, you're asked before it's discarded.
 * **Quick reply** isn't shown on requests marked as spam, deleted, or merged, so you're only ever offered an action that applies.
 
 ### Mailings - AI features in email editor are being temporarily removed <Badge icon="bullseye" color="purple">Marketing</Badge>
 
-The current AI features for generating images and text will be temporarily removed. These capabilities are based on older technology and will be replaced over time with more modern AI solution. We will share more information as these improvements become available.
+The current AI features for generating images and text will be temporarily removed. These capabilities are based on older technology and will be replaced over time with more modern AI solutions. We will share more information as these improvements become available.
 
 ### Forms - Conditional fields in Forms <Badge icon="bullseye" color="purple">Marketing</Badge>
 
@@ -253,7 +332,7 @@ Manually matching a form's colors, borders, and corner radius to a website takes
 
 ![Mailing Form with custom styling, both from a https page or specific css styling -screenshot][img14]
 
-Go to **Marketing** > **Forms** > **edit a form** > **Style** tab > **Custom styling**, enter a website URL, and select **Generate CSS**. The **AI analyses** the site and proposes Cascading Style Sheets (CSS) code, which you can preview before applying. Selecting **Apply now** overrides the form's default styling with the result: it changes only colors, borders, and rounded corners, while other styling, such as font or layout (width, height, and so on), is set in the basic styling section or added as additional CSS properties.
+Go to **Marketing** > **Forms** > **edit a form** > **Style** tab > **Custom styling**, enter a website URL, and select **Generate CSS**. AI analyzes the site and proposes Cascading Style Sheets (CSS) code, which you can preview before applying. Selecting **Apply now** overrides the form's default styling with the result: it changes only colors, borders, and rounded corners, while other styling, such as font or layout (width, height, and so on), is set in the basic styling section or added as additional CSS properties.
 
 Learn more about [custom styling with AI][17].
 
@@ -272,11 +351,11 @@ Select a dropdown-type extra field as a condition on a Form-submission trigger, 
 
 ### Multiple DKIM for Mailgun <Badge icon="gear" color="orange">Settings and maintenance</Badge>
 
-Send outgoing mail in Service and Marketing **from several domains** - such as separate brands or country-specific addresses - with each domain signed by its own DKIM key, instead of sharing one key across your SuperOffice environment.
+Send outgoing mail in Service and Marketing **from several domains**, such as separate brands or country-specific addresses, with each domain signed by its own DKIM key, instead of sharing one key across your SuperOffice environment.
 
 Without multiple DKIM, all outgoing mail is signed with a single domain's DKIM key, even when it is sent from a different brand or country-specific address. This **weakens DKIM and DMARC verification** for any domain other than the one the key belongs to, which can affect deliverability.
 
-To set this up, **request a DKIM setup** for each sending domain using the [Order DKIM key form][9], listing the domains involved - for example brand1.com, brand2.com, and brand3.no. **SuperOffice Operations** will create the domains in Mailgun, generate a DKIM key for each one, and send you the DNS records to add. Your DNS administrator adds these records following the [DKIM][10] and [SPF][11] setup guides. Once SuperOffice Operations **confirms the records are valid**, the domain is ready to use.
+To set this up, **request a DKIM setup** for each sending domain using the [Order DKIM key form][9], listing the domains involved, for example brand1.com, brand2.com, and brand3.no. **SuperOffice Operations** will create the domains in Mailgun, generate a DKIM key for each one, and send you the DNS records to add. Your DNS administrator adds these records following the [DKIM][10] and [SPF][11] setup guides. Once SuperOffice Operations **confirms the records are valid**, the domain is ready to use.
 
 <Note>
 Remember to add the different domains in **Settings and maintenance** > **Lists** > **Mailing domains**, and add your different mailboxes in **Settings and maintenance** > **Requests** > **E-mail**.
@@ -293,7 +372,7 @@ Learn more about [multiple DKIM records][12].
 
 ### Dashboard - Measure sale cycles <Badge icon="user" color="blue">Sales</Badge> {#12.2-core-1}
 
-Understanding how long deals take to close helps you spot what's working and where deals stall. The **Sale cycle** field shows the number of days from when a sale is created until it's set to **Sold** or **Lost** - the count appears once the sale reaches one of these statuses, rather than running while it's still open. For open sales, use the **Days in stage** field instead.
+Understanding how long deals take to close helps you spot what's working and where deals stall. The **Sale cycle** field shows the number of days from when a sale is created until it's set to **Sold** or **Lost**. The count appears once the sale reaches one of these statuses, rather than running while it's still open. For open sales, use the **Days in stage** field instead.
 
 Without this, tracking cycle length across reps, teams, and segments means piecing information together by hand. The **Sale cycle** field puts this on the dashboard, so the pattern is visible at a glance rather than something you have to dig for.
 
@@ -306,13 +385,13 @@ Two ready-made tile templates in the **Library** make it easy to get started:
 
 For example, a sales manager could add the group tile to compare how cycle length trends across teams and use that to sharpen forecasting.
 
-![Dashboard with My average and my groups sale cycle -screenshot][img1]
+![Dashboard with My average and My group's sale cycle -screenshot][img1]
 
 ![Dashboard tile edit for sale cycle -screenshot][img2]
 
 #### Find - Sale cycle as criteria and column
 
-The **Sale cycle** criteria and column let you see how long a sale has been open. Because the field shows a number of days, you can search between, above, or below any figure you choose.
+The **Sale cycle** criterion and column let you see how long a sale has been open. Because the field shows a number of days, you can search between, above, or below any figure you choose.
 
 Adding **Sale cycle** as a column in your sale selections gives you a quick view of how long each sale has been in progress, right alongside the rest of your results.
 
@@ -324,7 +403,7 @@ The **Sale cycle** shows 0 days until the sale is set to **Sold** or **Lost**. F
 
 ### Email and Document - Download the email or document file {#12.2-core-2}
 
-Sometimes you need a copy of an email or document outside SuperOffice - to forward it another way, archive it locally, or open it in a different tool. You can now [**download** the email or document file][18] from any archive where you see it, and from the [document dialog][19].
+Sometimes you need a copy of an email or document outside SuperOffice, for example to forward it another way, archive it locally, or open it in a different tool. You can now [**download** the email or document file][18] from any archive where you see it, and from the [document dialog][19].
 
 Downloading an email lets you open the stored message in your local email client. As **Outlook Mail Link (OML)** is phased out, this gives you a straightforward way to keep working with emails in your local Outlook installation.
 
@@ -342,7 +421,7 @@ An email in the **Inbox** also has the **Download** option in the **Task** menu.
 
 ![Download the email or document from Task button -screenshot][img7]
 
-### Mailing - View numbers with two decimal in Summary <Badge icon="bullseye" color="purple">Marketing</Badge>
+### Mailing - View numbers with two decimals in Summary <Badge icon="bullseye" color="purple">Marketing</Badge>
 
 A mailing's **Open rate** and **Click-through rate** are shown to two decimal places, giving an exact read on how recipients responded rather than a rounded approximation.
 
@@ -357,7 +436,7 @@ Both rates are calculated as a percentage of the number of recipients the mailin
 Learn more about [mailing reports][13].
 
 <Tip>
-You can also set up the **Dashboard tiles** (Mailing - Average xx tiles) with decimal to get more accurate numbers.
+You can also set up the **Dashboard tiles** (Mailing - Average xx tiles) with decimals to get more accurate numbers.
 </Tip>
 
 </Update>
@@ -373,9 +452,9 @@ Go to **Settings and maintenance** > **System design** > **Webhooks** to see all
 
 ![Settings - Webhooks panel overview -screenshot][img8]
 
-Health status is color-coded: green for healthy, amber for active with failures, grey for manually stopped, and red for automatically deactivated.
+Health status is color-coded: green for healthy, amber for active with failures, gray for manually stopped, and red for automatically deactivated.
 
-To **create and edit webhooks** you get a guided form. Select the events to subscribe to by entity type, set the destination as an external HTTPS URL or a CRMScript, and test the connection inline before saving. A primary error notification email address is required - the form cannot be submitted without one. Additional CRM users (in your company) and external email addresses can be added as recipients, and you can choose whether to be notified by email, in-app, or both.
+To **create and edit webhooks** you get a guided form. Select the events to subscribe to by entity type, set the destination as an external HTTPS URL or a CRMScript, and test the connection inline before saving. A primary error notification email address is required, and the form can't be submitted without one. Additional CRM users (in your company) and external email addresses can be added as recipients, and you can choose whether to be notified by email, in-app, or both.
 
 The **context menu** gives you options to edit, copy, toggle the active/stopped state, restart, or delete a webhook. Copying a webhook creates a duplicate with a "(copy)" suffix in stopped state.
 
@@ -387,7 +466,7 @@ After 9 consecutive delivery failures, the system automatically deactivates the 
 
 When a webhook is automatically deactivated, all users configured to receive notifications for that webhook get an in-app banner notification with a direct link to the delivery log for that webhook.
 
-The **Events** tab shows the full delivery history - timestamp, status, attempt count, and error code. Failed events can be retried individually. The list can be exported to CSV.
+The **Events** tab shows the full delivery history: timestamp, status, attempt count, and error code. Failed events can be retried individually. The list can be exported to CSV.
 
 Read more about [managing webhooks][7].
 
@@ -448,6 +527,12 @@ Some features are available to selected customers as part of ongoing pilots. See
 [20]: /en/marketing/forms/learn/create#thank-you-page
 [21]: /en/custom-objects/learn/index
 [22]: /en/admin/license/crm-suite
+[23]: /en/request/learn/reply
+[24]: /en/request/admin/status/index
+[25]: /en/learn/section-tabs/configure-columns
+[26]: /en/learn/section-tabs/group
+[27]: /en/learn/section-tabs/filter
+[28]: /en/request/admin/status/index#default
 
 [img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
 [img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
@@ -477,3 +562,7 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img26]: /media/loc/en/sale/sale-copy-sale-dialog.png
 [img27]: /media/loc/en/request/knowledge-base-blocked-email-addresses-clear-bounce-flag.png
 [img28]: /media/loc/en/custom-objects/admin-system-design-tables-properties-select-icon.png
+[img29]: /media/loc/en/request/requests-reply-tools-attachment-insert-button.png
+[img30]: /media/loc/en/request/requests-status-postponed-options.png
+[img31]: /media/loc/en/admin/admin-requests-request-status-postponed.png
+[img32]: /media/loc/en/marketing/marketing-mailings-list-customise.png
