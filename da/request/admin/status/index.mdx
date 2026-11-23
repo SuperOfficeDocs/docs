@@ -2,9 +2,9 @@
 uid: help-da-request-status
 title: Sagsstatus
 description: Alle sager i SuperOffice har en status, såsom Åben, Lukket eller Udsat. Lær, hvordan du administrerer sagsstatusser i Indstillinger og vedligeholdelse.
-keywords: ['sagsstatus', 'status', 'sager', 'statusindstillinger', 'standardstatus']
+keywords: ['sagsstatus', 'status', 'sager', 'statusindstillinger', 'standardstatus', 'udsættelsesindstillinger', 'tilføj udsættelsesindstilling']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: concept
 tier: starter
@@ -16,6 +16,7 @@ userflow_index: true
 related:
   - /da/request/admin/status/create
   - /da/request/admin/status/delete
+  - /da/request/learn/postpone
   - Opsæt Svar næste sag i køen: /da/request/admin/next-in-queue
 language: da
 ---
@@ -33,6 +34,7 @@ Du kan f.eks. oprette en ny status, der hedder "Venter på svar", og som er en m
 | Standard | Angiver, om dette er en standardstatus for den interne status. |
 | Køstatus | Angiver, om sager med denne status skal anbringes i køen. Dette er relevant, hvis du bruger funktionen **Svar næste sag i køen** . |
 | Registrer tid som | Bruges til at rapportere tidsforbrug i forskellige faser af sagsbehandlingen. Systemet beregner den brugte tid i forhold til definerede "åbningstider" og hele 24-timers perioden. Vælg mellem: i kø og afventer behandling; i den interne beslutningsfase; i den eksterne beslutningsfase |
+| [Udsættelsesindstillinger][8] | Kun for statusser med den interne status **Udsat**. De indstillinger, brugerne kan vælge imellem, når de udsætter en sag. |
 
 ## Standardstatus for nye sager og svar {#default}
 
@@ -53,14 +55,40 @@ Når du svarer på en sag, sættes statussen i denne rækkefølge:
 
 En sagstypes **Tilgængelige statusser** begrænser standardstatusserne. En standardstatus fra en kategori eller præference, der ikke er på listen, springes over.
 
-En standardstatus kan være en udsat status med et udsættelsesvalg, for eksempel **1 uge**. Valget kommer fra den samme indstilling som statussen, og fanen **Ny sag** viser det, før du gemmer.
+En standardstatus kan være en udsat status med et udsættelsesvalg, for eksempel **Udsæt en uge**. Valget kommer fra den samme indstilling som statussen, og fanen **Ny sag** viser det, før du gemmer.
 
 <Note>
 [Opdelte sager][4] og [opdelte meddelelser][5] beholder den oprindelige sags status og udsættelsesdato. Sager, der oprettes fra indgående e-mail, får statussen **Aktiv**. Hvis et [e-mail-filter][3] har **Afslut sagen** markeret, får de i stedet statussen **Afsluttet**. Standardstatusser bruges ikke i disse tilfælde.
 </Note>
+
+## Udsættelsesindstillinger {#postpone}
+
+Hver status med den interne status **Udsat** har sin egen liste over indstillinger. Brugerne ser listen, når de [udsætter en sag][6], så du kan tilbyde de intervaller, dit team bruger, og skjule dem, det ikke bruger.
+
+![Udsættelsesindstillinger på en sagsstatus med den interne status Udsat -screenshot][img1]
+
+| Kolonne | Beskrivelse |
+|---|---|
+| Indstilling | Det navn, brugerne ser i udsættelsesmenuen. |
+| Regel | Hvordan tidspunktet beregnes, for eksempel **Efter et tidsinterval** eller **Næste arbejdsdag**. |
+| Værdi | Intervallet eller tidspunktet, for eksempel **24 timer** eller **Man 08:00**. |
+| Arbejdstid | Om weekender og ikke-arbejdstid springes over. |
+| Aktiv | Om indstillingen vises i udsættelsesmenuen. |
+
+Du kan slå **Standard**-indstillinger fra, men du kan ikke redigere eller slette dem. **Angivet**, hvor brugerne selv indtaster en dato, er altid sidst i menuen. Du kan også [tilføje dine egne indstillinger][9].
+
+Et supportteam tilføjer for eksempel **I morgen eftermiddag** (**Næste arbejdsdag** kl. 13:00) og slår **Udsæt en måned** fra, fordi de aldrig bruger den.
+
+Arbejdsdage og ikke-arbejdstid følger åbningstiderne på sagens [prioritet][7] (**Tidsramme**), og prioritetens helligdage springes over. Hvis der ikke er angivet åbningstider, bruges mandag til fredag.
 
 [1]: /da/request/admin/category/create
 [2]: /da/request/admin/type/index
 [3]: /da/email/admin/mailbox/create-email-filter
 [4]: /da/request/learn/split-request
 [5]: /da/request/learn/split-message
+[6]: /da/request/learn/postpone
+[7]: /da/request/admin/priority/create
+[8]: #postpone
+[9]: /da/request/admin/status/create#postpone
+
+[img1]: /media/loc/en/request/request-status-postpone-options.png

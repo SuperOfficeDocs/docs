@@ -2,9 +2,9 @@
 uid: help-de-request-reply
 title: Einer Person antworten
 description: In dieser Anleitung lernen Sie, wie Sie alle eingehenden Anfragen in SuperOffice beantworten können.
-keywords: ['Anfrage', 'Antwortvorlage', 'Antwort', 'Antworten', 'Kommentar', 'intern', 'extern', 'Antwortstatus']
+keywords: ['Anfrage', 'Antwortvorlage', 'Antwort', 'Antworten', 'Kommentar', 'intern', 'extern', 'Antwortstatus', 'Anhang in der Vorschau anzeigen', 'Anhang einfügen', 'Anhangsvorschau']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -51,6 +51,7 @@ Legen Sie die *Anzahl der erweiterten Nachrichten*-Einstellung fest (unter <i cl
     ![Anfrage beantworten -screenshot][img3]
 
 1. Klicken Sie auf <i class="ph ph-paperclip" aria-label="Anhänge"></i>, um relevante Dokumente anzufügen.
+    * Um Dateien wiederzuverwenden, die bereits zur Anfrage gehören, [zeigen Sie sie in der Vorschau an und fügen Sie sie ein][15].
 
 1. Klicken Sie auf **Speichern**, um die Mitteilung zu senden.
     * Wenn die [globale Einstellung][11] **Anonymisierung der Benutzer bei Antworten** aktiviert ist, wird Ihr Name aus ausgehenden Nachrichten entfernt.
@@ -62,6 +63,8 @@ Wenn Sie in der Anfrageansicht zu einer anderen Registerkarte wechseln, bevor Si
 ### Status beim Antworten {#status}
 
 Der Status wird aus dem **Standardstatus für neue Nachrichten** der Kategorie übernommen, sofern der Anfragetyp diesen Status zulässt. Andernfalls wird die gleichnamige Einstellung in Ihren persönlichen Einstellungen verwendet, sofern der Anfragetyp diesen Status zulässt. Wenn keines davon zutrifft, bleibt der Status unverändert. Siehe [Reihenfolge der Standardstatus][13].
+
+Um die Anfrage beim Antworten aufzuschieben, setzen Sie den Status auf **Aufgeschoben** und wählen Sie eine der [Aufschuboptionen][14] aus.
 
 ## Schnellantwort aus einer Vorschau {#quick-reply}
 
@@ -81,6 +84,25 @@ Wenn Sie abbrechen oder eine andere Anfrage auswählen, während Ihre Antwort no
 </Tip>
 
 Diese Option steht bei Anfragen, die als Spam markiert, gelöscht oder zusammengeführt wurden, nicht zur Verfügung.
+
+## Anhänge in der Vorschau anzeigen und einfügen {#attachment-preview}
+
+Verwenden Sie Dateien wieder, die bereits zur Anfrage gehören. Wählen Sie die Anhänge im **Eigenschaften**-Panel aus und fügen Sie sie in Ihre Antwort ein. Um zu prüfen, was eine Datei enthält, bevor Sie sie auswählen, zeigen Sie sie in der Vorschau an.
+
+<Note>
+Die Schaltfläche <i class="ph ph-paperclip" aria-label="Anhänge"></i> im **Eigenschaften**-Panel wird nur angezeigt, wenn die Anfrage Anhänge hat. Sie ist nicht dieselbe wie die Büroklammer unter der Mitteilung, mit der Sie neue Dateien anfügen.
+
+Bilder, PDF- und Word-Dateien werden in der Vorschau angezeigt. Für Dateien, die nicht in der Vorschau angezeigt werden können, zum Beispiel Excel- und PowerPoint-Dateien, wird stattdessen die Schaltfläche **Herunterladen** angezeigt.
+</Note>
+
+1. Klicken Sie im **Eigenschaften**-Panel auf <i class="ph ph-paperclip" aria-label="Anhänge"></i>.
+
+1. Aktivieren Sie die Anhänge, die Sie wiederverwenden möchten, oder aktivieren Sie **Alle Anhänge**.
+    * Um eine Datei in der Vorschau anzuzeigen, klicken Sie auf <i class="ph ph-eye" aria-label="Vorschau"></i>. Aktivieren Sie in der Vorschau das Kontrollkästchen, um die Datei auszuwählen, wechseln Sie mit den Pfeilen zwischen den Anhängen oder klicken Sie auf **Zur Nachricht**, um die Nachricht anzuzeigen, aus der die Datei stammt. Klicken Sie auf **Fertig**, um zur Liste zurückzukehren.
+
+1. Klicken Sie auf **Einfügen**, um die ausgewählten Dateien zur Antwort hinzuzufügen.
+
+![Anhänge-Panel mit einer aktivierten Datei und der Schaltfläche Einfügen -screenshot][img9]
 
 ## Antwortvorlagen einfügen {#reply-templ}
 
@@ -191,6 +213,8 @@ Der erfasste Zeitaufwand wird in jeder Mitteilung angezeigt, und die Bearbeitung
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
 [13]: ../admin/status/index#default
+[14]: ./postpone
+[15]: #attachment-preview
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
@@ -198,3 +222,4 @@ Der erfasste Zeitaufwand wird in jeder Mitteilung angezeigt, und die Bearbeitung
 [img6]: ../../../media/loc/en/request/insert-message-with-attachments.png
 [img7]: ../../../media/loc/en/request/request-reply-anonymise-user.png
 [img8]: ../../../media/loc/en/request/request-preview-quick-reply.png
+[img9]: /media/loc/en/request/requests-reply-tools-attachment-insert-button.png

@@ -571,6 +571,7 @@
           "de/request/learn/split-request",
           "de/request/learn/merge",
           "de/request/learn/split-message",
+          "de/request/learn/postpone",
           "de/request/learn/close",
           "de/request/learn/delete",
           {

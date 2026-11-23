@@ -2,9 +2,9 @@
 uid: help-da-request-reply
 title: Svar til person
 description: I denne guide lærer du, hvordan du besvarer alle indgående sager i SuperOffice.
-keywords: ['svar på sag', 'svar', 'svar til alle', 'tilføj meddelelse', 'tilføj kommentar', 'kommentar', 'intern', 'ekstern', 'sag', 'svarstatus']
+keywords: ['svar på sag', 'svar', 'svar til alle', 'tilføj meddelelse', 'tilføj kommentar', 'kommentar', 'intern', 'ekstern', 'sag', 'svarstatus', 'forhåndsvis vedhæftet fil', 'indsæt vedhæftet fil']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -51,6 +51,7 @@ Indstil *Antal ekspanderede meddelelser* præferencen (under <i class="ph ph-use
     ![Sådan svar du på en sag -screenshot][img3]
 
 1. Klik på <i class="ph ph-paperclip" aria-label="Attachments"></i> for at tilføje relevante dokumenter som vedhæftede filer.
+    * Hvis du vil genbruge filer, der allerede findes på sagen, kan du [forhåndsvise og indsætte dem][15].
 
 1. Klik på **Gem** for at sende meddelelsen.
     * Hvis den [global preference][11] **Anonymiser brugere ved svar** er aktiveret, vil dit navn blive fjernet fra udgående meddelelser.
@@ -62,6 +63,8 @@ Hvis du skifter til en anden fane på Sagsskærmen, før du sender meddelelsen, 
 ### Status, når du svarer {#status}
 
 Statussen sættes ud fra kategoriens **Standardstatus for ny meddelelse**, hvis sagstypen tillader det. Ellers bruges den samme indstilling i dine præferencer, hvis sagstypen tillader det. Hvis ingen af dem gælder, forbliver statussen uændret. Se [rækkefølge for standardstatus][13].
+
+Hvis du vil udsætte sagen, mens du svarer, skal du sætte statussen til **Udsat** og vælge en af [udsættelsesindstillingerne][14].
 
 ## Hurtigsvar fra en forhåndsvisning {#quick-reply}
 
@@ -81,6 +84,25 @@ Hvis du annullerer eller vælger en anden sag, mens dit svar har utilsendt tekst
 </Tip>
 
 Denne mulighed er ikke tilgængelig på sager markeret som spam, slettet eller flettet.
+
+## Forhåndsvis og indsæt vedhæftede filer {#attachment-preview}
+
+Genbrug filer, der allerede findes på sagen. Vælg de vedhæftede filer i **Egenskaber**-panelet, og indsæt dem i dit svar. Hvis du vil se, hvad en fil indeholder, før du vælger den, kan du forhåndsvise den.
+
+<Note>
+Knappen <i class="ph ph-paperclip" aria-label="Attachments"></i> i **Egenskaber**-panelet vises kun, når sagen har vedhæftede filer. Det er ikke den samme som papirclipsen under meddelelsen, som vedhæfter nye filer.
+
+Billeder, PDF- og Word-filer vises i forhåndsvisningen. Filer, der ikke kan forhåndsvises, for eksempel Excel- og PowerPoint-filer, viser i stedet knappen **Download**.
+</Note>
+
+1. I **Egenskaber**-panelet klik på <i class="ph ph-paperclip" aria-label="Attachments"></i>.
+
+1. Marker de vedhæftede filer, du vil genbruge, eller marker **Alle vedhæftede filer**.
+    * Hvis du vil forhåndsvise en fil, skal du klikke på <i class="ph ph-eye" aria-label="Preview"></i>. I forhåndsvisningen kan du markere afkrydsningsfeltet for at vælge filen, bruge pilene til at skifte mellem vedhæftede filer eller klikke på **Gå til meddelelse** for at se den meddelelse, filen kom fra. Klik på **Udført** for at vende tilbage til listen.
+
+1. Klik på **Indsæt** for at tilføje de valgte filer til svaret.
+
+![Panelet Vedhæftede filer med en markeret fil og knappen Indsæt -screenshot][img9]
 
 ## Indsæt svarskabeloner {#reply-templ}
 
@@ -185,6 +207,8 @@ Den registrerede tid vises i hver meddelelsesoverskrift, og svartiden kan findes
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
 [13]: ../admin/status/index#default
+[14]: ./postpone
+[15]: #attachment-preview
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
@@ -192,3 +216,4 @@ Den registrerede tid vises i hver meddelelsesoverskrift, og svartiden kan findes
 [img6]: ../../../media/loc/en/request/insert-message-with-attachments.png
 [img7]: ../../../media/loc/en/request/request-reply-anonymise-user.png
 [img8]: ../../../media/loc/en/request/request-preview-quick-reply.png
+[img9]: ../../../media/loc/en/request/requests-reply-tools-attachment-insert-button.png

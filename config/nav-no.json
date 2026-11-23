@@ -571,6 +571,7 @@
           "no/request/learn/split-request",
           "no/request/learn/merge",
           "no/request/learn/split-message",
+          "no/request/learn/postpone",
           "no/request/learn/close",
           "no/request/learn/delete",
           {

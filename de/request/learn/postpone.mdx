@@ -1,0 +1,61 @@
+---
+title: Anfragen aufschieben
+description: So schieben Sie eine Anfrage in SuperOffice auf einen späteren Zeitpunkt auf, zum Beispiel auf den nächsten Werktag.
+keywords: ['Anfrage aufschieben', 'Status auf aufgeschoben setzen', 'aufgeschoben', 'Optionen zum Aufschieben', 'Aufschuboption', 'nächster Werktag', 'nächste Woche', 'Anfrage zurückstellen']
+author: digitaldiina
+date: 11.23.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /de/request/learn/close
+  - /de/request/learn/reply
+  - Optionen zum Aufschieben: /de/request/admin/status/index#postpone
+language: de
+---
+
+Wenn Sie eine Anfrage aufschieben, setzen Sie ihren [Status][1] bis zu einem von Ihnen gewählten Zeitpunkt auf **Aufgeschoben**. Danach wird die Anfrage wieder auf **Geöffnet** gesetzt. Schieben Sie eine Anfrage zum Beispiel auf, während Sie auf die Antwort des Kunden warten.
+
+## Eine Anfrage aufschieben
+
+1. [Öffnen Sie die Anfrage][2].
+
+1. Klicken Sie im Bereich **Eigenschaften der Anfrage** auf das Feld **Status**.
+
+1. Erweitern Sie **Aufgeschoben** und wählen Sie eine Option aus, zum Beispiel **Nächster Werktag** oder **Um eine Woche aufschieben**.
+    * Um einen eigenen Zeitpunkt festzulegen, wählen Sie **Angegeben**, geben Sie ein Datum und eine Uhrzeit ein und klicken Sie auf **Festlegen**.
+
+    ![Statusmenü mit den erweiterten Aufschuboptionen unter Aufgeschoben -screenshot][img1]
+
+Dieselben Aufschuboptionen sind verfügbar, wenn Sie eine Anfrage in der Board-Ansicht auf **Aufgeschoben** verschieben und wenn Sie den Status beim [Antworten][3] oder bei einer Schnellantwort ändern.
+
+## Optionen zum Aufschieben
+
+Jeder Status mit dem internen Status **Aufgeschoben** hat eine eigene Liste von Optionen, die Ihr Administrator [ändern][4] kann. Optionen mit einer festen Uhrzeit zeigen diese rechts an, zum Beispiel **08:00** oder **Mo 08:00**.
+
+| Option | Schiebt die Anfrage auf bis |
+|---|---|
+| Um eine Stunde aufschieben | Eine Stunde ab jetzt. |
+| 24 Stunden | Dieselbe Uhrzeit morgen. |
+| Nächster Werktag | 08:00 am nächsten Werktag. Wenn Sie an einem Freitag aufschieben, ist dies Montag um 08:00. |
+| Nächste Woche | Montag nächster Woche um 08:00. |
+| Um eine Woche aufschieben | Dieselbe Uhrzeit in einer Woche. |
+| Um einen Monat aufschieben | Dieselbe Uhrzeit in einem Monat. |
+| Angegeben | Das Datum und die Uhrzeit, die Sie eingeben. Steht immer am Ende der Liste. |
+
+**24 Stunden**, **Um eine Woche aufschieben** und **Um einen Monat aufschieben** verwenden die reine Uhrzeit und können auf ein Wochenende fallen.
+
+### Werktage
+
+Werktage richten sich nach den Öffnungszeiten der [Priorität][5] der Anfrage (**Zeitrahmen**). Geschlossene Tage und die Feiertage der Priorität werden übersprungen. Wenn keine Öffnungszeiten festgelegt sind, gelten Montag bis Freitag als Werktage. Uhrzeiten wie 08:00 richten sich nach Ihrer bevorzugten Zeitzone.
+
+[1]: ../admin/status/index
+[2]: index#open
+[3]: reply#status
+[4]: ../admin/status/index#postpone
+[5]: ../admin/priority/create
+
+[img1]: /media/loc/en/request/requests-status-postponed-options.png
