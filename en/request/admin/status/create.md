@@ -61,16 +61,24 @@ Each status with internal status **Postponed** has its own list of options that 
 
 1. Under **Postpone options**, click **Add option**.
 
-1. Enter a name and choose a rule:
+1. In the **Name** field, enter the name users see in the postpone menu.
 
-    * **After a time interval:** 1 to 999 hours, days, weeks, or months. Optionally skip weekends and non-working hours.
+1. In the **Type** list, choose how the time is calculated:
+
+    * **After a time interval:** Enter an **Amount** from 1 to 999 and select a **Unit**: hours, days, weeks, or months. Check **Skip weekends and non-working hours** to count only working time.
     * **Next working day:** At a chosen time.
     * **Weekday next week:** A chosen weekday at a chosen time.
 
     The time defaults to 08:00.
+
+    ![Add postpone option dialog with Name, Type, Amount, and Unit -screenshot][img1]
+
+1. Click **Save** to add the option to the list.
 
 1. Drag the options to set their order in the menu.
 
 1. Click **Save**. The options are saved with the status.
 
 [1]: #add-postpone-option
+
+[img1]: /media/loc/en/admin/admin-requests-request-status-add-postpone-option.png
