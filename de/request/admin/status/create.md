@@ -14,6 +14,7 @@ audience_tooltip: Einstellungen und Verwaltung
 redirect_from: /de/request/learn/status/create
 userflow_index: true
 related:
+  - /de/request/admin/next-in-queue
   - /de/request/learn/postpone
 language: de
 ---
@@ -42,7 +43,7 @@ language: de
     * In interner Entscheidungsphase
     * In externer Entscheidungsphase
 
-1. Wenn der interne Status **Aufgeschoben** ist, [fügen Sie die Aufschuboptionen hinzu][2], aus denen Benutzer wählen können.
+1. Wenn der interne Status **Aufgeschoben** ist, [fügen Sie die Aufschuboptionen hinzu][1], aus denen Benutzer wählen können.
 
 1. Klicken Sie auf **Speichern**. Der Anfragestatus wird erstellt.
 
@@ -74,11 +75,6 @@ Jeder Status mit dem internen Status **Aufgeschoben** hat eine eigene Liste von 
 
 1. Klicken Sie auf **Speichern**. Die Optionen werden mit dem Status gespeichert.
 
-## Zugehörige Inhalte
-
-* [So richten Sie "Nächste Anfrage in der Warteschlange abrufen" ein][1]
-
-[1]: ../next-in-queue
-[2]: #postpone
+[1]: #postpone
 
 [img1]: /media/loc/en/request/request-status-add-postpone-option.png
