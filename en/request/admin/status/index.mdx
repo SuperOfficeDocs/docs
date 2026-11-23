@@ -64,39 +64,19 @@ A default status can be a postponed status with a postpone option, such as **1 w
 
 ## Postpone options {#postpone}
 
-Each status with internal status **Postponed** has its own list of postpone options. Users see the list when they [postpone a request][6], so you can offer the intervals your team uses and hide the ones it does not.
+Each status with internal status **Postponed** has its own list of options. Users see the list when they [postpone a request][6], so you can offer the intervals your team uses and hide the ones it does not.
 
 ![Postpone options on a request status with internal status Postponed -screenshot][img1]
 
-The list has these columns:
+| Column | Description |
+|---|---|
+| Option | The name users see in the postpone menu. |
+| Rule | How the time is calculated, such as **After a time interval** or **Next working day**. |
+| Value | The interval or time, such as **24 hours** or **Mon 08:00**. |
+| Working time | Whether weekends and non-working hours are skipped. |
+| Active | Whether the option is shown in the postpone menu. |
 
-* **Option:** The name users see in the postpone menu.
-* **Rule:** How the time is calculated, such as **After a time interval** or **Next working day**.
-* **Value:** The interval or time, such as **24 hours** or **Mon 08:00**.
-* **Working time:** Whether weekends and non-working hours are skipped.
-* **Active:** Whether the option is shown in the postpone menu.
-
-Standard options are marked **Standard**. You can switch them off, but you cannot edit or delete them. **Specified**, where users enter their own date, is always last in the menu.
-
-### Add a postpone option
-
-1. Click the **Requests** button in the navigator and select the **Request status** tab.
-
-1. Select a status with internal status **Postponed**.
-
-1. Under **Postpone options**, click **Add option**.
-
-1. Enter a name and choose a rule:
-
-    * **After a time interval:** 1 to 999 hours, days, weeks, or months. Optionally skip weekends and non-working hours.
-    * **Next working day:** At a chosen time.
-    * **Weekday next week:** A chosen weekday at a chosen time.
-
-    The time defaults to 08:00.
-
-1. Drag the options to set their order in the menu.
-
-1. Click **Save**. The options are saved with the status.
+Standard options are marked **Standard**. You can switch them off, but you cannot edit or delete them. **Specified**, where users enter their own date, is always last in the menu. You can also [add your own options][9].
 
 For example, a support team adds **Tomorrow afternoon** (**Next working day** at 13:00) and switches off **1 month**, which they never use.
 
@@ -110,5 +90,6 @@ Working days and non-working hours follow the opening hours on the request's [pr
 [6]: /en/request/learn/postpone
 [7]: /en/request/admin/priority/create
 [8]: #postpone
+[9]: /en/request/admin/status/create#add-postpone-option
 
 [img1]: /media/loc/en/admin/admin-requests-request-status-postponed.png
