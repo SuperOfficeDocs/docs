@@ -49,15 +49,11 @@ language: en
 
 1. If required, adjust the position of the status using the arrow buttons below the list of statuses. The rank here specifies the order in the **Status** list box when creating a new request. Place the most frequently used statuses at the top.
 
-## Add a postpone option {#add-postpone-option}
+## Add a postpone option {#postpone}
 
 Each status with internal status **Postponed** has its own list of options that users choose from when they postpone a request.
 
-1. Go to **Settings and maintenance** and click <i class="ph ph-ticket" aria-hidden="true"></i> **Requests** in the navigator.
-
-1. Select the **Request status** tab.
-
-1. Select a status with internal status **Postponed**.
+1. In the **Request status** tab, select a status with internal status **Postponed**.
 
 1. Under **Postpone options**, click **Add option**.
 
@@ -79,6 +75,6 @@ Each status with internal status **Postponed** has its own list of options that 
 
 1. Click **Save**. The options are saved with the status.
 
-[1]: #add-postpone-option
+[1]: #postpone
 
 [img1]: /media/loc/en/admin/admin-requests-request-status-add-postpone-option.png
