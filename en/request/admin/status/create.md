@@ -77,4 +77,4 @@ Each status with internal status **Postponed** has its own list of options that 
 
 [1]: #postpone
 
-[img1]: /media/loc/en/admin/admin-requests-request-status-add-postpone-option.png
+[img1]: /media/loc/en/request/request-status-add-postpone-option.png
