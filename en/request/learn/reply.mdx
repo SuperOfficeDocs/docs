@@ -2,9 +2,9 @@
 uid: help-en-request-reply
 title: Reply to contact
 description: In this guide you will learn how to reply to all incoming requests in SuperOffice.
-keywords: ['reply to request', 'reply all', 'add message', 'add comment', 'comment', 'internal', 'external', 'reply status']
+keywords: ['reply to request', 'reply all', 'add message', 'add comment', 'comment', 'internal', 'external', 'reply status', 'preview attachment', 'insert attachment']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -62,6 +62,8 @@ If you switch to another tab on the Request screen before you send the message, 
 ### Status when you reply {#status}
 
 The status is set from the category's **Default status for new message**, if the request type allows it. Otherwise, the same setting in your preferences is used, if the request type allows it. If neither applies, the status is unchanged. See [default status order][13].
+
+To postpone the request while you reply, choose a postponed status and one of its [postpone options][14].
 
 ## Quick reply from a preview {#quick-reply}
 
@@ -130,6 +132,27 @@ You can insert an earlier message into your current reply.
 
 1. Edit the text as needed.
 
+## Preview and insert attachments {#attachment-preview}
+
+Reuse files that are already on the request. A preview shows what an attachment contains before you add it to your reply.
+
+1. Start a reply.
+
+1. In the right-side panel, click <i class="ph ph-paperclip" aria-label="Attachments"></i>. The **Attachments** panel lists the files on the request.
+
+1. Click <i class="ph ph-eye" aria-label="Preview"></i> on an attachment. The preview shows the file name, date, size, and position in the list, for example "3 of 8".
+    * Images, PDF, and Word files are shown in the preview.
+    * Files that cannot be previewed, such as Excel and PowerPoint files, show a **Download** button instead.
+
+1. Use the arrows to move to the previous or next attachment, and check **Selected** for each file you want.
+    * To see the message an attachment came from, click **Go to message**. The preview closes.
+
+1. Click **Done**. You return to the list with the files you selected checked.
+
+1. Click **Insert** to add the checked files to the reply.
+
+![Attachments panel with a checked file and the Insert button -screenshot][img9]
+
 ## Add a message to multiple requests
 
 You can reply to several requests simultaneously, for example, if multiple inquiries relate to the same issue.
@@ -185,6 +208,7 @@ Time spent is displayed in each message header, and the time to reply is availab
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
 [13]: ../admin/status/index#default
+[14]: ./postpone
 [img1]: /media/loc/en/request/insert-reply-template.png
 [img3]: /media/loc/en/request/message-to-external.png
 [img4]: /media/loc/en/request/reply-to-a-customer.png
@@ -192,3 +216,4 @@ Time spent is displayed in each message header, and the time to reply is availab
 [img6]: /media/loc/en/request/insert-message-with-attachments.png
 [img7]: /media/loc/en/request/request-reply-anonymise-user.png
 [img8]: /media/loc/en/request/request-preview-quick-reply.png
+[img9]: /media/loc/en/request/requests-reply-tools-attachment-insert-button.png

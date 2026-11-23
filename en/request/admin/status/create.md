@@ -2,10 +2,10 @@
 uid: help-en-request-status-create
 title: Create request status
 description: Create request status
-keywords: ['add request status', 'new request status', 'Internal status', 'Queue status', 'track time']
+keywords: ['add request status', 'new request status', 'Internal status', 'Queue status', 'track time', 'postpone options']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.23.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -42,6 +42,10 @@ language: en
     * At internal decision stage
     * At external decision stage
 
+1. If the internal status is **Postponed**, set up the [postpone options][1] users can choose from.
+
 1. Click **Save**. The request status is created.
 
 1. If required, adjust the position of the status using the arrow buttons below the list of statuses. The rank here specifies the order in the **Status** list box when creating a new request. Place the most frequently used statuses at the top.
+
+[1]: index#postpone

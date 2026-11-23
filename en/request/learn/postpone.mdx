@@ -1,0 +1,63 @@
+---
+title: Postpone requests
+description: How to postpone a request in SuperOffice until a later time, such as the next working day.
+keywords: ['postpone request', 'set status postponed', 'postponed', 'postpone options', 'next working day', 'next week', 'snooze request']
+author: digitaldiina
+date: 11.23.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /en/request/learn/close
+  - /en/request/learn/reply
+  - Postpone options: /en/request/admin/status/index#postpone
+language: en
+---
+
+To postpone a request means changing its [status][1] to a status with internal status **Postponed**. The request comes back as **Open** at the time you choose, for example when you are waiting for the customer to reply.
+
+## Postpone one request
+
+1. [Open the request][2].
+
+1. In the **Request properties** panel, click the **Status** field.
+
+1. Expand **Postponed** and select an option:
+
+    * Select one of the listed options, such as **Next working day** or **1 week**.
+    * Select **Specified**, enter a date and time, and click **Set**.
+
+    ![Status menu with the postpone options expanded under Postponed -screenshot][img1]
+
+The same postpone options are available in the postpone dialog on the request board, and when you change the status while [replying][3] or using quick reply.
+
+## Postpone options
+
+Each status with internal status **Postponed** has its own list of options, which your administrator can [change][4]. Options with a fixed time show it on the right, for example **08:00** or **Mon 08:00**.
+
+| Option | Postpones the request until |
+|---|---|
+| 1 hour | One hour from now. |
+| 24 hours | The same time tomorrow. |
+| Next working day | 08:00 on the next working day. If you postpone on a Friday, this is Monday at 08:00. |
+| Next week | Monday next week at 08:00. |
+| 1 week | The same time one week from now. |
+| 1 month | The same time one month from now. |
+| Specified | The date and time you enter. Always last in the list. |
+
+**24 hours**, **1 week**, and **1 month** use plain clock time and can end on a weekend.
+
+### Working days
+
+Working days follow the opening hours on the request's [priority][5] (**Time frame**). Closed days and the priority's holidays are skipped. If no opening hours are set, Monday to Friday is used. Times such as 08:00 follow your preferred time zone.
+
+[1]: ../admin/status/index
+[2]: index#open
+[3]: reply#status
+[4]: ../admin/status/index#postpone
+[5]: ../admin/priority/create
+
+[img1]: /media/loc/en/request/requests-status-postponed-options.png

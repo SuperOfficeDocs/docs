@@ -2,9 +2,9 @@
 uid: help-en-request-status
 title: Request status
 description: Request status
-keywords: ['Request status tab', 'default status']
+keywords: ['Request status tab', 'default status', 'postpone options', 'add postpone option']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -17,6 +17,7 @@ userflow_index: true
 related:
   - /en/request/admin/status/create
   - /en/request/admin/status/delete
+  - /en/request/learn/postpone
   - Set up Get next request in queue: /en/request/admin/next-in-queue
 language: en
 ---
@@ -34,6 +35,7 @@ For example, you can create a new status called "Waiting for reply" as a more de
 | Default | Indicates if this is a default status for the internal status. |
 | Queue status | Indicates if requests with this status should be placed in the queue. Relevant if you use the **Get next request in queue** function. |
 | Track time as | Used to report time usage in various phases of request management. The system calculates time used both in relation to defined "opening hours" and the whole 24-hour period. Choose from: in queue and awaiting processing; at internal decision stage; at external decision stage |
+| Postpone options | Only for statuses with internal status **Postponed**. The options users can choose from when they [postpone a request][6]. See [Postpone options][8]. |
 
 ## Default status for new requests and replies {#default}
 
@@ -60,8 +62,53 @@ A default status can be a postponed status with a postpone option, such as **1 w
 [Split requests][4] and [split messages][5] keep the status and postpone date of the original request. Requests created from incoming email are set to **Open**. If an [email filter][3] has **Close request** checked, they are set to **Closed** instead. Default statuses are not used in these cases.
 </Note>
 
+## Postpone options {#postpone}
+
+Each status with internal status **Postponed** has its own list of postpone options. Users see the list when they [postpone a request][6], so you can offer the intervals your team uses and hide the ones it does not.
+
+![Postpone options on a request status with internal status Postponed -screenshot][img1]
+
+The list has these columns:
+
+* **Option:** The name users see in the postpone menu.
+* **Rule:** How the time is calculated, such as **After a time interval** or **Next working day**.
+* **Value:** The interval or time, such as **24 hours** or **Mon 08:00**.
+* **Working time:** Whether weekends and non-working hours are skipped.
+* **Active:** Whether the option is shown in the postpone menu.
+
+Standard options are marked **Standard**. You can switch them off, but you cannot edit or delete them. **Specified**, where users enter their own date, is always last in the menu.
+
+### Add a postpone option
+
+1. Click the **Requests** button in the navigator and select the **Request status** tab.
+
+1. Select a status with internal status **Postponed**.
+
+1. Under **Postpone options**, click **Add option**.
+
+1. Enter a name and choose a rule:
+
+    * **After a time interval:** 1 to 999 hours, days, weeks, or months. Optionally skip weekends and non-working hours.
+    * **Next working day:** At a chosen time.
+    * **Weekday next week:** A chosen weekday at a chosen time.
+
+    The time defaults to 08:00.
+
+1. Drag the options to set their order in the menu.
+
+1. Click **Save**. The options are saved with the status.
+
+For example, a support team adds **Tomorrow afternoon** (**Next working day** at 13:00) and switches off **1 month**, which they never use.
+
+Working days and non-working hours follow the opening hours on the request's [priority][7] (**Time frame**), and the priority's holidays are skipped. If no opening hours are set, Monday to Friday is used.
+
 [1]: /en/request/admin/category/create
 [2]: /en/request/admin/type/index
 [3]: /en/email/admin/mailbox/create-email-filter
 [4]: /en/request/learn/split-request
 [5]: /en/request/learn/split-message
+[6]: /en/request/learn/postpone
+[7]: /en/request/admin/priority/create
+[8]: #postpone
+
+[img1]: /media/loc/en/admin/admin-requests-request-status-postponed.png
