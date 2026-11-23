@@ -53,7 +53,7 @@ language: en
 
 Each status with internal status **Postponed** has its own list of options that users choose from when they postpone a request.
 
-1. Go to **Settings and maintenance** and click the **Requests** button in the navigator.
+1. Go to **Settings and maintenance** and click <i class="ph ph-ticket" aria-hidden="true"></i> **Requests** in the navigator.
 
 1. Select the **Request status** tab.
 
