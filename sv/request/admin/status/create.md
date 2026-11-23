@@ -50,7 +50,7 @@ language: sv
 
 ## Lägg till ett alternativ för senareläggning {#postpone}
 
-Varje status med intern status **Uppskjutet** har en egen lista med alternativ som användarna väljer mellan när de skjuter upp ett ärende.
+Varje status med intern status **Uppskjutet** har en egen lista med alternativ som användarna väljer mellan när de senarelägger ett ärende.
 
 1. På fliken **Ärendestatus** väljer du en status med intern status **Uppskjutet**.
 
