@@ -12,6 +12,7 @@ tier: starter
 audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/request/learn/status/create
+userflow_index: true
 related:
   - /sv/request/admin/next-in-queue
   - /sv/request/learn/postpone
