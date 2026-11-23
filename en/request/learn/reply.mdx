@@ -2,9 +2,9 @@
 uid: help-en-request-reply
 title: Reply to contact
 description: In this guide you will learn how to reply to all incoming requests in SuperOffice.
-keywords: ['reply to request', 'reply all', 'add message', 'add comment', 'comment', 'internal', 'external', 'reply status']
+keywords: ['reply to request', 'reply all', 'add message', 'add comment', 'comment', 'internal', 'external', 'reply status', 'preview attachment', 'insert attachment']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -51,6 +51,7 @@ Set the *No. of expanded messages* preference (under <i class="ph ph-user-circle
     ![Replying to a request -screenshot][img3]
 
 1. Click <i class="ph ph-paperclip" aria-label="Attachments"></i> to attach relevant documents.
+    * To reuse files that are already on the request, [preview and insert them][15].
 
 1. Click **Save** to send the message.
     * If the **Anonymise users on reply** [global preference][11] is enabled, your name will be removed from outbound messages.
@@ -62,6 +63,8 @@ If you switch to another tab on the Request screen before you send the message, 
 ### Status when you reply {#status}
 
 The status is set from the category's **Default status for new message**, if the request type allows it. Otherwise, the same setting in your preferences is used, if the request type allows it. If neither applies, the status is unchanged. See [default status order][13].
+
+To postpone the request while you reply, set the status to **Postponed** and select one of the [postpone options][14].
 
 ## Quick reply from a preview {#quick-reply}
 
@@ -81,6 +84,25 @@ If you cancel or select another request while your reply has unsent text, you ar
 </Tip>
 
 This option is not offered on requests marked as spam, deleted, or merged.
+
+## Preview and insert attachments {#attachment-preview}
+
+Reuse files that are already on the request. Select the attachments in the **Properties** panel and insert them into your reply. To check what a file contains before you select it, preview it.
+
+<Note>
+The <i class="ph ph-paperclip" aria-label="Attachments"></i> button in the **Properties** panel is shown only when the request has attachments. It is not the same as the paperclip below the message, which attaches new files.
+
+Images, PDF, and Word files are shown in the preview. Files that cannot be previewed, such as Excel and PowerPoint files, show a **Download** button instead.
+</Note>
+
+1. In the **Properties** panel, click <i class="ph ph-paperclip" aria-label="Attachments"></i>.
+
+1. Check the attachments you want to reuse, or check **All attachments**.
+    * To preview a file, click <i class="ph ph-eye" aria-label="Preview"></i>. In the preview, check the box to select the file, use the arrows to move between attachments, or click **Go to message** to see the message the file came from. Click **Done** to return to the list.
+
+1. Click **Insert** to add the selected files to the reply.
+
+![Attachments panel with a checked file and the Insert button -screenshot][img9]
 
 ## Insert reply templates {#reply-templ}
 
@@ -185,6 +207,8 @@ Time spent is displayed in each message header, and the time to reply is availab
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
 [13]: ../admin/status/index#default
+[14]: ./postpone
+[15]: #attachment-preview
 [img1]: /media/loc/en/request/insert-reply-template.png
 [img3]: /media/loc/en/request/message-to-external.png
 [img4]: /media/loc/en/request/reply-to-a-customer.png
@@ -192,3 +216,4 @@ Time spent is displayed in each message header, and the time to reply is availab
 [img6]: /media/loc/en/request/insert-message-with-attachments.png
 [img7]: /media/loc/en/request/request-reply-anonymise-user.png
 [img8]: /media/loc/en/request/request-preview-quick-reply.png
+[img9]: /media/loc/en/request/requests-reply-tools-attachment-insert-button.png

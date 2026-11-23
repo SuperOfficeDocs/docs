@@ -2,9 +2,9 @@
 uid: help-sv-request-status
 title: Ärendestatus
 description: Ärendestatus
-keywords: ['ärendestatus', 'fliken Ärendestatus', 'ärende', 'status', 'standardstatus']
+keywords: ['ärendestatus', 'fliken Ärendestatus', 'ärende', 'status', 'standardstatus', 'alternativ för senareläggning', 'lägg till alternativ för senareläggning']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -17,6 +17,7 @@ userflow_index: true
 related:
   - /sv/request/admin/status/create
   - /sv/request/admin/status/delete
+  - /sv/request/learn/postpone
   - Konfigurera Hämta nästa ärende i kön: /sv/request/admin/next-in-queue
 language: sv
 ---
@@ -34,6 +35,7 @@ Du kan exempelvis skapa en ny status kallad "Väntar på svar" som en mer detalj
 | Standard | Anger om detta är en standardstatus för intern status. |
 | Köstatus | Anger om ärenden med denna status ska placeras i kön. Aktuellt om du använder funktionen **Hämta nästa ärende i kön**. |
 | Spåra tid som | Används för att rapportera hur mycket tid som går åt i olika faser av ärendehanteringen. Systemet beräknar den använda tiden i förhållande till både definierade "öppettider" och hela 24-timmarsperioden. Välj mellan: i kö och väntar på handläggning; i intern beslutsfas; i extern beslutsfas |
+| [Alternativ för senareläggning][8] | Endast för statusar med intern status **Uppskjutet**. De alternativ som användarna kan välja mellan när de senarelägger ett ärende. |
 
 ## Standardstatus för nya ärenden och svar {#default}
 
@@ -54,14 +56,40 @@ När du svarar på ett ärende anges statusen i den här ordningen:
 
 En ärendetyps **Tillgängliga statusar** begränsar standardvärdena. En standardstatus från en kategori eller inställning som inte finns i listan hoppas över.
 
-En standardstatus kan vara en uppskjuten status med ett uppskjutningsalternativ, till exempel **1 vecka**. Alternativet kommer från samma inställning som statusen, och fliken **Nytt ärende** visar det innan du sparar.
+En standardstatus kan vara en uppskjuten status med ett alternativ för senareläggning, till exempel **Senarelägg en vecka**. Alternativet kommer från samma inställning som statusen, och fliken **Nytt ärende** visar det innan du sparar.
 
 <Note>
-[Delade ärenden][4] och [delade meddelanden][5] behåller det ursprungliga ärendets status och uppskjutningsdatum. Ärenden som skapas från inkommande e-post får statusen **Aktivt**. Om ett [e-postfilter][3] har **Stäng ärende** markerat får de i stället statusen **Avslutat**. Standardstatus används inte i dessa fall.
+[Delade ärenden][4] och [delade meddelanden][5] behåller det ursprungliga ärendets status och datum för senareläggning. Ärenden som skapas från inkommande e-post får statusen **Aktivt**. Om ett [e-postfilter][3] har **Stäng ärende** markerat får de i stället statusen **Avslutat**. Standardstatus används inte i dessa fall.
 </Note>
+
+## Alternativ för senareläggning {#postpone}
+
+Varje status med intern status **Uppskjutet** har en egen lista med alternativ. Användarna ser listan när de [senarelägger ett ärende][6], så du kan erbjuda de intervall som ditt team använder och dölja dem som det inte använder.
+
+![Alternativ för senareläggning för en ärendestatus med intern status Uppskjutet -screenshot][img1]
+
+| Kolumn | Beskrivning |
+|---|---|
+| Alternativ | Namnet som användarna ser i menyn för senareläggning. |
+| Regel | Hur tiden beräknas, till exempel **Efter en viss tid** eller **Nästa arbetsdag**. |
+| Värde | Intervallet eller tiden, till exempel **24 timmar** eller **mån 08:00**. |
+| Arbetstid | Om helger och tider utanför arbetstid hoppas över. |
+| Aktiv | Om alternativet visas i menyn för senareläggning. |
+
+Du kan stänga av alternativ av typen **Standard**, men du kan inte redigera eller ta bort dem. **Angiven** finns inte i listan. Alternativet är alltid sist i menyn för senareläggning, och du kan inte stänga av det. Du kan också [lägga till egna alternativ][9].
+
+Ett supportteam lägger till exempel till **I morgon eftermiddag** (**Nästa arbetsdag** kl. 13:00) och stänger av **Senarelägg en månad**, som de aldrig använder.
+
+Arbetsdagar och tider utanför arbetstid följer öppettiderna för ärendets [prioritet][7] (**Tidsram**), och prioritetens helgdagar hoppas över. Om inga öppettider har angetts används måndag till fredag.
 
 [1]: /sv/request/admin/category/create
 [2]: /sv/request/admin/type/index
 [3]: /sv/email/admin/mailbox/create-email-filter
 [4]: /sv/request/learn/split-request
 [5]: /sv/request/learn/split-message
+[6]: /sv/request/learn/postpone
+[7]: /sv/request/admin/priority/create
+[8]: #postpone
+[9]: /sv/request/admin/status/create#postpone
+
+[img1]: /media/loc/en/request/request-status-postpone-options.png

@@ -1,0 +1,61 @@
+---
+title: Utsette saker
+description: Hvordan utsette en sak i SuperOffice til et senere tidspunkt, for eksempel neste arbeidsdag.
+keywords: ['utsette sak', 'sett status til utsatt', 'utsatt', 'alternativer for utsettelse', 'neste arbeidsdag', 'neste uke', 'slumre sak']
+author: digitaldiina
+date: 11.23.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /no/request/learn/close
+  - /no/request/learn/reply
+  - Alternativer for utsettelse: /no/request/admin/status/index#postpone
+language: no
+---
+
+Når du utsetter en sak, setter du [statusen][1] til **Utsatt** frem til et tidspunkt du velger. På det tidspunktet endres statusen tilbake til **Aktiv**. Du kan for eksempel utsette en sak mens du venter på svar fra kunden.
+
+## Utsette én sak
+
+1. [Åpne saken][2].
+
+1. I sidepanelet **Egenskaper for sak** klikker du på feltet **Status**.
+
+1. Utvid **Utsatt** og velg et alternativ, for eksempel **Neste arbeidsdag** eller **Utsett en uke**.
+    * Hvis du vil velge et eget tidspunkt, velger du **Spesifisert**, angir dato og klokkeslett og klikker på **Angi**.
+
+    ![Statusmenyen med alternativene for utsettelse utvidet under Utsatt -screenshot][img1]
+
+De samme alternativene for utsettelse er tilgjengelige når du flytter en sak til **Utsatt** i tavlevisning, og når du endrer statusen mens du [svarer][3] eller bruker hurtigsvar.
+
+## Alternativer for utsettelse
+
+Hver status med intern status **Utsatt** har sin egen liste med alternativer, som administratoren kan [endre][4]. Alternativer med et fast tidspunkt viser det til høyre, for eksempel **08:00** eller **man 08:00**.
+
+| Alternativ | Utsetter saken til |
+|---|---|
+| Utsett en time | Én time fra nå. |
+| 24 timer | Samme tidspunkt i morgen. |
+| Neste arbeidsdag | 08:00 neste arbeidsdag. Hvis du utsetter på en fredag, blir det mandag kl. 08:00. |
+| Neste uke | Mandag neste uke kl. 08:00. |
+| Utsett en uke | Samme tidspunkt én uke fra nå. |
+| Utsett en måned | Samme tidspunkt én måned fra nå. |
+| Spesifisert | Datoen og klokkeslettet du angir. Alltid sist i listen. |
+
+**24 timer**, **Utsett en uke** og **Utsett en måned** bruker vanlig klokketid og kan ende på en helg.
+
+### Arbeidsdager
+
+Arbeidsdager følger åpningstidene på sakens [prioritet][5] (**Tidsramme**). Stengte dager og prioritetens helligdager hoppes over. Hvis ingen åpningstider er angitt, brukes mandag til fredag. Tidspunkter som 08:00 følger den foretrukne tidssonen din.
+
+[1]: ../admin/status/index
+[2]: index#open
+[3]: reply#status
+[4]: ../admin/status/index#postpone
+[5]: ../admin/priority/create
+
+[img1]: /media/loc/en/request/requests-status-postponed-options.png

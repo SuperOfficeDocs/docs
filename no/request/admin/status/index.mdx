@@ -2,9 +2,9 @@
 uid: help-no-request-status
 title: Saksstatus
 description: Saksstatus
-keywords: ['saksstatus', 'Saksstatus-fanen', 'sak', 'status', 'standardstatus']
+keywords: ['saksstatus', 'Saksstatus-fanen', 'sak', 'status', 'standardstatus', 'alternativer for utsettelse', 'legge til alternativ for utsettelse']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -17,6 +17,7 @@ userflow_index: true
 related:
   - /no/request/admin/status/create
   - /no/request/admin/status/delete
+  - /no/request/learn/postpone
   - Sett opp Hent neste sak i køen: /no/request/admin/next-in-queue
 language: no
 ---
@@ -36,6 +37,7 @@ For eksempel kan du opprette en ny status kalt "Venter på svar" som en mer deta
 | Standard | Angir om dette er standardstatusen for den interne statusen. |
 | Køstatus | Angir om saker med denne statusen skal plasseres i køen. Dette er relevant hvis du bruker funksjonen **Hent neste sak i køen**. |
 | Registrer tid som | Brukes til å rapportere tidsbruk i ulike faser av saksbehandlingen. Systemet beregner tidsbruk både ut fra fastsatte "åpningstider" og et 24-timers døgn. Velg mellom: i kø og venter på behandling, på internt beslutningsstadium, eller på eksternt beslutningsstadium. |
+| [Alternativer for utsettelse][8] | Bare for statuser med intern status **Utsatt**. Alternativene brukerne kan velge mellom når de utsetter en sak. |
 
 ## Standardstatus for nye saker og svar {#default}
 
@@ -56,14 +58,40 @@ Når du svarer på en sak, settes statusen i denne rekkefølgen:
 
 En sakstypes **Tilgjengelige statuser** begrenser standardverdiene. En standardstatus fra en kategori eller preferanse som ikke står i listen, hoppes over.
 
-En standardstatus kan være en utsatt status med et utsettelsesvalg, for eksempel **1 uke**. Valget kommer fra samme innstilling som statusen, og fanen **Ny sak** viser det før du lagrer.
+En standardstatus kan være en utsatt status med et utsettelsesvalg, for eksempel **Utsett en uke**. Valget kommer fra samme innstilling som statusen, og fanen **Ny sak** viser det før du lagrer.
 
 <Note>
 [Delte saker][4] og [delte meldinger][5] beholder statusen og utsettelsesdatoen til den opprinnelige saken. Saker som opprettes fra innkommende e-post, får statusen **Aktiv**. Hvis et [e-postfilter][3] har **Avslutt sak** avmerket, får de i stedet statusen **Avsluttet**. Standardstatuser brukes ikke i disse tilfellene.
 </Note>
+
+## Alternativer for utsettelse {#postpone}
+
+Hver status med intern status **Utsatt** har sin egen liste med alternativer. Brukerne ser listen når de [utsetter en sak][6], så du kan tilby intervallene teamet ditt bruker, og skjule dem det ikke bruker.
+
+![Alternativer for utsettelse på en saksstatus med intern status Utsatt -screenshot][img1]
+
+| Kolonne | Beskrivelse |
+|---|---|
+| Alternativ | Navnet brukerne ser i utsettelsesmenyen. |
+| Regel | Hvordan tidspunktet beregnes, for eksempel **Etter et tidsintervall** eller **Neste arbeidsdag**. |
+| Verdi | Intervallet eller tidspunktet, for eksempel **24 timer** eller **man 08:00**. |
+| Arbeidstid | Om helger og tid utenfor arbeidstiden hoppes over. |
+| Aktiv | Om alternativet vises i utsettelsesmenyen. |
+
+Du kan slå av **Standard**-alternativer, men du kan ikke redigere eller slette dem. **Spesifisert** står ikke i listen. Det står alltid sist i utsettelsesmenyen, og du kan ikke slå det av. Du kan også [legge til egne alternativer][9].
+
+For eksempel legger et supportteam til **I morgen ettermiddag** (**Neste arbeidsdag** kl. 13:00) og slår av **Utsett en måned**, som de aldri bruker.
+
+Arbeidsdager og tid utenfor arbeidstiden følger åpningstidene på sakens [prioritet][7] (**Tidsramme**), og prioritetens helligdager hoppes over. Hvis ingen åpningstider er angitt, brukes mandag til fredag.
 
 [1]: /no/request/admin/category/create
 [2]: /no/request/admin/type/index
 [3]: /no/email/admin/mailbox/create-email-filter
 [4]: /no/request/learn/split-request
 [5]: /no/request/learn/split-message
+[6]: /no/request/learn/postpone
+[7]: /no/request/admin/priority/create
+[8]: #postpone
+[9]: /no/request/admin/status/create#postpone
+
+[img1]: /media/loc/en/request/request-status-postpone-options.png

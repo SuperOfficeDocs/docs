@@ -1,0 +1,61 @@
+---
+title: Udsæt sager
+description: Sådan udsætter du en sag i SuperOffice til et senere tidspunkt, for eksempel næste arbejdsdag.
+keywords: ['udsæt sag', 'indstil status udsat', 'udsat', 'udsættelsesindstillinger', 'næste arbejdsdag', 'næste uge', 'snooze sag']
+author: digitaldiina
+date: 11.23.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /da/request/learn/close
+  - /da/request/learn/reply
+  - Udsættelsesindstillinger: /da/request/admin/status/index#postpone
+language: da
+---
+
+Når du udsætter en sag, sætter du dens [status][1] til **Udsat** indtil et tidspunkt, du vælger. På det tidspunkt skifter statussen tilbage til **Aktiv**. Du kan for eksempel udsætte en sag, mens du venter på, at kunden svarer.
+
+## Udsæt en enkelt sag
+
+1. [Åbn sagen][2].
+
+1. Klik på feltet **Status** i sidepanelet **Egenskaber for sag**.
+
+1. Udvid **Udsat**, og vælg en indstilling, for eksempel **Næste arbejdsdag** eller **Udsæt en uge**.
+    * Hvis du vil vælge dit eget tidspunkt, skal du vælge **Angivet**, indtaste en dato og et klokkeslæt og klikke på **Angiv**.
+
+    ![Statusmenuen med udsættelsesindstillingerne udvidet under Udsat -screenshot][img1]
+
+De samme udsættelsesindstillinger er tilgængelige, når du flytter en sag til **Udsat** i tavlevisning, og når du ændrer status, mens du [svarer][3] eller bruger hurtigsvar.
+
+## Udsættelsesindstillinger
+
+Hver status med den interne status **Udsat** har sin egen liste over indstillinger, som din administrator kan [ændre][4]. Indstillinger med et fast tidspunkt viser det til højre, for eksempel **08:00** eller **Man 08:00**.
+
+| Indstilling | Udsætter sagen indtil |
+|---|---|
+| Udsæt en time | Om en time. |
+| 24 timer | Samme tidspunkt i morgen. |
+| Næste arbejdsdag | Kl. 08:00 på næste arbejdsdag. Hvis du udsætter på en fredag, er det mandag kl. 08:00. |
+| Næste uge | Mandag i næste uge kl. 08:00. |
+| Udsæt en uge | Samme tidspunkt om en uge. |
+| Udsæt en måned | Samme tidspunkt om en måned. |
+| Angivet | Den dato og det klokkeslæt, du indtaster. Altid sidst på listen. |
+
+**24 timer**, **Udsæt en uge** og **Udsæt en måned** bruger almindelig klokketid og kan ende i en weekend.
+
+### Arbejdsdage
+
+Arbejdsdage følger åbningstiderne på sagens [prioritet][5] (**Tidsramme**). Lukkedage og prioritetens helligdage springes over. Hvis der ikke er angivet åbningstider, bruges mandag til fredag. Tidspunkter som 08:00 følger din foretrukne tidszone.
+
+[1]: ../admin/status/index
+[2]: index#open
+[3]: reply#status
+[4]: ../admin/status/index#postpone
+[5]: ../admin/priority/create
+
+[img1]: /media/loc/en/request/requests-status-postponed-options.png

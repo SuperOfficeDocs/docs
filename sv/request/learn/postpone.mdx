@@ -1,0 +1,61 @@
+---
+title: Senarelägga ärenden
+description: Så här senarelägger du ett ärende i SuperOffice till en senare tidpunkt, till exempel nästa arbetsdag.
+keywords: ['skjut upp ärende', 'senarelägg ärende', 'sätt status uppskjutet', 'uppskjutet', 'alternativ för senareläggning', 'nästa arbetsdag', 'kommande vecka', 'snooza ärende']
+author: digitaldiina
+date: 11.23.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /sv/request/learn/close
+  - /sv/request/learn/reply
+  - Alternativ för senareläggning: /sv/request/admin/status/index#postpone
+language: sv
+---
+
+När du senarelägger ett ärende sätter du dess [status][1] till **Uppskjutet** fram till en tidpunkt som du väljer. Vid den tidpunkten ändras statusen tillbaka till **Aktivt**. Senarelägg till exempel ett ärende medan du väntar på att kunden ska svara.
+
+## Senarelägg ett enskilt ärende
+
+1. [Öppna ärendet][2].
+
+1. I sidofältet **egenskaper för ärende** klickar du på fältet **Status**.
+
+1. Expandera **Uppskjutet** och välj ett alternativ, till exempel **Nästa arbetsdag** eller **Senarelägg en vecka**.
+    * Om du vill välja en egen tidpunkt väljer du **Angiven**, anger datum och tid och klickar på **Ange**.
+
+    ![Statusmeny med alternativen för senareläggning expanderade under Uppskjutet -screenshot][img1]
+
+Samma alternativ för senareläggning finns när du flyttar ett ärende till **Uppskjutet** i tavlevyn, och när du ändrar statusen medan du [svarar][3] eller använder snabbsvar.
+
+## Alternativ för senareläggning
+
+Varje status med intern status **Uppskjutet** har en egen lista med alternativ, som din administratör kan [ändra][4]. Alternativ med en fast tid visar den till höger, till exempel **08:00** eller **mån 08:00**.
+
+| Alternativ | Senarelägger ärendet till |
+|---|---|
+| Senarelägg en timme | En timme från nu. |
+| 24 timmar | Samma tid i morgon. |
+| Nästa arbetsdag | 08:00 nästa arbetsdag. Om du senarelägger ett ärende på en fredag blir det måndag kl. 08:00. |
+| Kommande vecka | Måndag nästa vecka kl. 08:00. |
+| Senarelägg en vecka | Samma tid om en vecka. |
+| Senarelägg en månad | Samma tid om en månad. |
+| Angiven | Det datum och den tid som du anger. Alltid sist i listan. |
+
+**24 timmar**, **Senarelägg en vecka** och **Senarelägg en månad** använder vanlig klocktid och kan hamna på en helg.
+
+### Arbetsdagar
+
+Arbetsdagarna följer öppettiderna för ärendets [prioritet][5] (**Tidsram**). Stängda dagar och prioritetens helgdagar hoppas över. Om inga öppettider har angetts används måndag till fredag. Tider som 08:00 följer din föredragna tidszon.
+
+[1]: ../admin/status/index
+[2]: index#open
+[3]: reply#status
+[4]: ../admin/status/index#postpone
+[5]: ../admin/priority/create
+
+[img1]: /media/loc/en/request/requests-status-postponed-options.png

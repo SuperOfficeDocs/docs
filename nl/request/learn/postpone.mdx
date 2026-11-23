@@ -1,0 +1,61 @@
+---
+title: Verzoeken uitstellen
+description: Hoe u een verzoek in SuperOffice uitstelt tot een later tijdstip, zoals de volgende werkdag.
+keywords: ['verzoek uitstellen', 'status instellen op uitgesteld', 'uitgesteld', 'opties voor uitstellen', 'volgende werkdag', 'volgende week', 'verzoek sluimeren']
+author: digitaldiina
+date: 11.23.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /nl/request/learn/close
+  - /nl/request/learn/reply
+  - Opties voor uitstellen: /nl/request/admin/status/index#postpone
+language: nl
+---
+
+Wanneer u een verzoek uitstelt, stelt u de [status][1] ervan in op **Uitgesteld** tot een tijdstip dat u kiest. Op dat tijdstip verandert de status terug naar **Openstaand**. Stel bijvoorbeeld een verzoek uit terwijl u wacht op een antwoord van de klant.
+
+## Eén verzoek uitstellen
+
+1. [Open het verzoek][2].
+
+1. Klik in het paneel **Verzoekeigenschappen** op het veld **Status**.
+
+1. Vouw **Uitgesteld** uit en selecteer een optie, zoals **Volgende werkdag** of **Een week uitstellen**.
+    * Als u zelf een tijdstip wilt kiezen, selecteert u **Opgegeven**, voert u een datum en tijd in en klikt u op **Instellen**.
+
+    ![Statusmenu met de opties voor uitstellen uitgevouwen onder Uitgesteld -screenshot][img1]
+
+Dezelfde opties voor uitstellen zijn beschikbaar wanneer u een verzoek in de boardweergave naar **Uitgesteld** verplaatst, en wanneer u de status wijzigt tijdens het [beantwoorden][3] of bij een snel antwoord.
+
+## Opties voor uitstellen
+
+Elke status met de interne status **Uitgesteld** heeft een eigen lijst met opties, die uw beheerder kan [wijzigen][4]. Opties met een vast tijdstip tonen dit aan de rechterkant, bijvoorbeeld **08:00** of **Ma 08:00**.
+
+| Optie | Stelt het verzoek uit tot |
+|---|---|
+| Een uur uitstellen | Een uur vanaf nu. |
+| 24 uur | Morgen op hetzelfde tijdstip. |
+| Volgende werkdag | 08:00 op de volgende werkdag. Als u op een vrijdag uitstelt, is dit maandag om 08:00. |
+| Volgende week | Maandag volgende week om 08:00. |
+| Een week uitstellen | Hetzelfde tijdstip over een week. |
+| Een maand uitstellen | Hetzelfde tijdstip over een maand. |
+| Opgegeven | De datum en tijd die u invoert. Staat altijd als laatste in de lijst. |
+
+**24 uur**, **Een week uitstellen** en **Een maand uitstellen** gebruiken gewone kloktijd en kunnen in een weekend eindigen.
+
+### Werkdagen
+
+Werkdagen volgen de openingstijden van de [prioriteit][5] van het verzoek (**Tijdsperiode**). Gesloten dagen en de feestdagen van de prioriteit worden overgeslagen. Als er geen openingstijden zijn ingesteld, wordt maandag tot en met vrijdag gebruikt. Tijden zoals 08:00 volgen uw voorkeurstijdzone.
+
+[1]: ../admin/status/index
+[2]: index#open
+[3]: reply#status
+[4]: ../admin/status/index#postpone
+[5]: ../admin/priority/create
+
+[img1]: /media/loc/en/request/requests-status-postponed-options.png

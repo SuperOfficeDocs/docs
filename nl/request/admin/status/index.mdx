@@ -2,11 +2,12 @@
 uid: help-nl-request-status
 title: Verzoekstatus
 description: Verzoekstatus
-keywords: ['verzoek', 'status', 'verzoekstatus', 'tabblad Verzoekstatus', 'standaardstatus']
+keywords: ['verzoek', 'status', 'verzoekstatus', 'tabblad Verzoekstatus', 'standaardstatus', 'opties voor uitstellen', 'optie voor uitstellen toevoegen']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: concept
+license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
@@ -16,6 +17,7 @@ userflow_index: true
 related:
   - /nl/request/admin/status/create
   - /nl/request/admin/status/delete
+  - /nl/request/learn/postpone
   - Instellen van Volgende verzoek in wachtrij ophalen: /nl/request/admin/next-in-queue
 language: nl
 ---
@@ -33,6 +35,7 @@ U kunt bijvoorbeeld een nieuwe status maken met de naam 'Wacht op antwoord', als
 | Standaard | Geeft aan of dit een standaardstatus is voor de interne status. |
 | Wachtrijstatus | Geeft aan of verzoeken met deze status in de wachtrij geplaatst moeten worden. Dit is relevant als u de functie **Volgende in wachtrij ophalen** gebruikt. |
 | Tijd traceren als | Wordt gebruikt om tijdsgebruik in verschillende fasen van het verzoekbeheer te rapporteren. Het systeem berekent de tijd zowel in relatie tot bepaalde 'openingstijden' en de gehele periode van 24 uur. Kies uit: in de wachtrij en wachtend op verwerking, in de interne beslissingsfase, in de externe beslissingsfase |
+| [Opties voor uitstellen][8] | Alleen voor statussen met de interne status **Uitgesteld**. De opties waaruit gebruikers kunnen kiezen wanneer ze een verzoek uitstellen. |
 
 ## Standaardstatus voor nieuwe verzoeken en antwoorden {#default}
 
@@ -53,14 +56,40 @@ Wanneer u een verzoek beantwoordt, wordt de status in deze volgorde ingesteld:
 
 De **Beschikbare statussen** van een verzoektype beperken de standaardwaarden. Een standaardwaarde van een categorie of voorkeur die niet in de lijst staat, wordt overgeslagen.
 
-Een standaardstatus kan een uitgestelde status zijn met een uitsteloptie, zoals **1 week**. De optie komt uit dezelfde instelling als de status, en het tabblad **Nieuw verzoek** toont deze voordat u opslaat.
+Een standaardstatus kan een uitgestelde status zijn met een uitsteloptie, zoals **Een week uitstellen**. De optie komt uit dezelfde instelling als de status, en het tabblad **Nieuw verzoek** toont deze voordat u opslaat.
 
 <Note>
 [Opgesplitste verzoeken][4] en [opgesplitste berichten][5] behouden de status en de uitsteldatum van het oorspronkelijke verzoek. Verzoeken die vanuit inkomende e-mail worden gemaakt, krijgen de status **Openstaand**. Als **Verzoek sluiten** is ingeschakeld in een [e-mailfilter][3], krijgen ze in plaats daarvan de status **Gesloten**. Standaardstatussen worden in deze gevallen niet gebruikt.
 </Note>
+
+## Opties voor uitstellen {#postpone}
+
+Elke status met de interne status **Uitgesteld** heeft een eigen lijst met opties. Gebruikers zien de lijst wanneer ze [een verzoek uitstellen][6], zodat u de intervallen kunt aanbieden die uw team gebruikt en de intervallen kunt verbergen die het niet gebruikt.
+
+![Opties voor uitstellen bij een verzoekstatus met de interne status Uitgesteld -screenshot][img1]
+
+| Kolom | Beschrijving |
+|---|---|
+| Optie | De naam die gebruikers zien in het menu voor uitstellen. |
+| Regel | Hoe de tijd wordt berekend, zoals **Na een tijdinterval** of **Volgende werkdag**. |
+| Waarde | Het interval of tijdstip, zoals **24 uur** of **Ma 08:00**. |
+| Werktijd | Of weekends en niet-werkuren worden overgeslagen. |
+| Actief | Of de optie wordt weergegeven in het menu voor uitstellen. |
+
+U kunt **Standaard**-opties uitschakelen, maar u kunt ze niet bewerken of verwijderen. **Opgegeven** staat niet in de lijst. Deze optie staat altijd als laatste in het menu voor uitstellen en u kunt deze niet uitschakelen. U kunt ook [eigen opties toevoegen][9].
+
+Een supportteam voegt bijvoorbeeld **Morgenmiddag** toe (**Volgende werkdag** om 13:00) en schakelt **Een maand uitstellen** uit, omdat het team die optie nooit gebruikt.
+
+Werkdagen en niet-werkuren volgen de openingstijden van de [prioriteit][7] van het verzoek (**Tijdsperiode**), en de feestdagen van de prioriteit worden overgeslagen. Als er geen openingstijden zijn ingesteld, wordt maandag tot en met vrijdag gebruikt.
 
 [1]: /nl/request/admin/category/create
 [2]: /nl/request/admin/type/index
 [3]: /nl/email/admin/mailbox/create-email-filter
 [4]: /nl/request/learn/split-request
 [5]: /nl/request/learn/split-message
+[6]: /nl/request/learn/postpone
+[7]: /nl/request/admin/priority/create
+[8]: #postpone
+[9]: /nl/request/admin/status/create#postpone
+
+[img1]: /media/loc/en/request/request-status-postpone-options.png

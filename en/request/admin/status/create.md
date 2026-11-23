@@ -2,10 +2,10 @@
 uid: help-en-request-status-create
 title: Create request status
 description: Create request status
-keywords: ['add request status', 'new request status', 'Internal status', 'Queue status', 'track time']
+keywords: ['add request status', 'new request status', 'Internal status', 'Queue status', 'track time', 'postpone options']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 11.23.2026
+so_version: 12.7
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -15,10 +15,11 @@ redirect_from: /en/request/learn/status/create
 userflow_index: true
 related:
   - /en/request/admin/next-in-queue
+  - /en/request/learn/postpone
 language: en
 ---
 
-## Steps
+## Add status
 
 1. Click the **Requests** button in the navigator.
 
@@ -42,6 +43,38 @@ language: en
     * At internal decision stage
     * At external decision stage
 
+1. If the internal status is **Postponed**, [add the postpone options][1] users can choose from.
+
 1. Click **Save**. The request status is created.
 
 1. If required, adjust the position of the status using the arrow buttons below the list of statuses. The rank here specifies the order in the **Status** list box when creating a new request. Place the most frequently used statuses at the top.
+
+## Add a postpone option {#postpone}
+
+Each status with internal status **Postponed** has its own list of options that users choose from when they postpone a request.
+
+1. In the **Request status** tab, select a status with internal status **Postponed**.
+
+1. Under **Postpone options**, click **Add option**.
+
+1. In the **Name** field, enter the name users see in the postpone menu.
+
+1. In the **Type** list, choose how the time is calculated:
+
+    * **After a time interval:** Enter an **Amount** from 1 to 999 and select a **Unit**: hours, days, weeks, or months. Check **Skip weekends and non-working hours** to count only working time.
+    * **Next working day:** At a chosen time.
+    * **Weekday next week:** A chosen weekday at a chosen time.
+
+    The time defaults to 08:00.
+
+    ![Add postpone option dialog with Name, Type, Amount, and Unit -screenshot][img1]
+
+1. Click **Save** to add the option to the list.
+
+1. Drag the options to set their order in the menu.
+
+1. Click **Save**. The options are saved with the status.
+
+[1]: #postpone
+
+[img1]: /media/loc/en/request/request-status-add-postpone-option.png

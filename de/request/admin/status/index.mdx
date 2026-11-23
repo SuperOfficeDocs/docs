@@ -2,9 +2,9 @@
 uid: help-de-request-status
 title: Anfragestatus
 description: Anfragestatus
-keywords: ['Anfragestatus', 'Anfragestatus-Registerkarte', 'Anfrage', 'Status', 'Standardstatus']
+keywords: ['Anfragestatus', 'Anfragestatus-Registerkarte', 'Anfrage', 'Status', 'Standardstatus', 'Optionen zum Aufschieben', 'Aufschuboption hinzufügen']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -17,6 +17,7 @@ userflow_index: true
 related:
   - /de/request/admin/status/create
   - /de/request/admin/status/delete
+  - /de/request/learn/postpone
   - Nächste Anfrage in der Warteschlange abrufen einrichten: /de/request/admin/next-in-queue
 language: de
 ---
@@ -34,6 +35,7 @@ Sie könnten beispielsweise den neuen Status "Warten auf Antwort" als Variante z
 | Standard | Gibt an, ob es sich um einen Standardstatus für den internen Status handelt. |
 | Warteschlangenstatus | Gibt an, ob Anfragen mit diesem Status in die Warteschlange gestellt werden sollen. Relevant, wenn Sie die Funktion **Nächste Anfrage in der Warteschlange anzeigen** verwenden. |
 | Zeit nachverfolgen als | Wird verwendet, um den Zeitverbrauch in mehreren Stufen der Anfragenverwaltung zu melden. Das System berechnet den Zeitverbrauch bezüglich der definierten "Geschäftszeiten" sowie des gesamten 24-Stunden-Zeitraums. Wählen Sie aus: in der Warteschlange und in Erwartung der Verarbeitung; in der Phase der internen Entscheidung; in der Phase der externen Entscheidung |
+| [Optionen zum Aufschieben][8] | Nur für Status mit dem internen Status **Aufgeschoben**. Die Optionen, aus denen Benutzer wählen können, wenn sie eine Anfrage aufschieben. |
 
 ## Standardstatus für neue Anfragen und Antworten {#default}
 
@@ -54,14 +56,40 @@ Wenn Sie auf eine Anfrage antworten, wird der Status in dieser Reihenfolge festg
 
 Die Liste **Verfügbare Statuskategorien** eines Anfragetyps schränkt die Standardstatus ein. Ein Standardstatus einer Kategorie oder Einstellung, der nicht in dieser Liste enthalten ist, wird übersprungen.
 
-Ein Standardstatus kann ein aufgeschobener Status mit einer Aufschuboption wie **1 Woche** sein. Die Option stammt aus derselben Einstellung wie der Status, und die Registerkarte **Neue Anfrage** zeigt sie an, bevor Sie speichern.
+Ein Standardstatus kann ein aufgeschobener Status mit einer Aufschuboption wie **Um eine Woche aufschieben** sein. Die Option stammt aus derselben Einstellung wie der Status, und die Registerkarte **Neue Anfrage** zeigt sie an, bevor Sie speichern.
 
 <Note>
 [Aufgeteilte Anfragen][4] und [aufgeteilte Nachrichten][5] behalten den Status und das Aufschubdatum der ursprünglichen Anfrage. Anfragen, die aus eingehenden E-Mails erstellt werden, erhalten den Status **Geöffnet**. Wenn bei einem [E-Mail-Filter][3] **Anfrage abschließen** aktiviert ist, erhalten sie stattdessen den Status **Geschlossen**. In diesen Fällen werden keine Standardstatus verwendet.
 </Note>
+
+## Optionen zum Aufschieben {#postpone}
+
+Jeder Status mit dem internen Status **Aufgeschoben** hat eine eigene Liste von Optionen. Benutzer sehen die Liste, wenn sie [eine Anfrage aufschieben][6]. So können Sie die Intervalle anbieten, die Ihr Team verwendet, und die übrigen ausblenden.
+
+![Optionen zum Aufschieben bei einem Anfragestatus mit dem internen Status Aufgeschoben -screenshot][img1]
+
+| Spalte | Beschreibung |
+|---|---|
+| Option | Der Name, den Benutzer im Menü zum Aufschieben sehen. |
+| Regel | Wie der Zeitpunkt berechnet wird, zum Beispiel **Nach einem Zeitintervall** oder **Nächster Werktag**. |
+| Wert | Das Intervall oder die Uhrzeit, zum Beispiel **24 Stunden** oder **Mo 08:00**. |
+| Arbeitszeit | Ob Wochenenden und Zeiten außerhalb der Arbeitszeiten übersprungen werden. |
+| Aktiv | Ob die Option im Menü zum Aufschieben angezeigt wird. |
+
+Sie können **Standard**-Optionen deaktivieren, aber nicht bearbeiten oder löschen. **Angegeben** ist nicht in der Liste. Die Option steht im Menü zum Aufschieben immer an letzter Stelle und kann nicht deaktiviert werden. Sie können auch [eigene Optionen hinzufügen][9].
+
+Ein Support-Team fügt zum Beispiel **Morgen Nachmittag** (**Nächster Werktag** um 13:00) hinzu und deaktiviert **Um einen Monat aufschieben**, weil es diese Option nie verwendet.
+
+Werktage und Zeiten außerhalb der Arbeitszeiten richten sich nach den Öffnungszeiten der [Priorität][7] der Anfrage (**Zeitrahmen**), und die Feiertage der Priorität werden übersprungen. Wenn keine Öffnungszeiten festgelegt sind, gelten Montag bis Freitag als Werktage.
 
 [1]: /de/request/admin/category/create
 [2]: /de/request/admin/type/index
 [3]: /de/email/admin/mailbox/create-email-filter
 [4]: /de/request/learn/split-request
 [5]: /de/request/learn/split-message
+[6]: /de/request/learn/postpone
+[7]: /de/request/admin/priority/create
+[8]: #postpone
+[9]: /de/request/admin/status/create#postpone
+
+[img1]: /media/loc/en/request/request-status-postpone-options.png

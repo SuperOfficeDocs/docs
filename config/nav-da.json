@@ -571,6 +571,7 @@
           "da/request/learn/split-request",
           "da/request/learn/merge",
           "da/request/learn/split-message",
+          "da/request/learn/postpone",
           "da/request/learn/close",
           "da/request/learn/delete",
           {

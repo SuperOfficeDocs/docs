@@ -2,9 +2,9 @@
 uid: help-sv-request-reply
 title: Svara kontakt
 description: I den här guiden får du lära dig hur du svarar på alla inkommande ärenden i SuperOffice.
-keywords: ['ärende', 'svara på ärende', 'svara', 'svara alla', 'lägga till meddelande', 'lägga till kommentar', 'kommentar', 'internt', 'externt', 'svarsstatus']
+keywords: ['ärende', 'svara på ärende', 'svara', 'svara alla', 'lägga till meddelande', 'lägga till kommentar', 'kommentar', 'internt', 'externt', 'svarsstatus', 'förhandsgranska bilaga', 'infoga bilaga']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -51,6 +51,7 @@ Ställ in *Antal expanderade meddelanden*-inställningen (under <i class="ph ph-
     ![Svara på ett ärende -screenshot][img3]
 
 1. Klicka på <i class="ph ph-paperclip" aria-label="Bilagor"></i> för att bifoga relevanta dokument.
+    * Om du vill återanvända filer som redan finns i ärendet kan du [förhandsgranska och infoga dem][15].
 
 1. Klicka på **Spara** för att skicka meddelandet.
     * Om den [globala inställningen][11] **Anonymisera anvendare vid svar** är aktiverad kommer ditt namn att tas bort från utgående meddelanden.
@@ -62,6 +63,8 @@ Om du byter till en annan flik på ärendeskärmen innan du skickar meddelandet 
 ### Status när du svarar {#status}
 
 Statusen anges från kategorins **Standardstatus för nytt meddelande**, om ärendetypen tillåter det. Annars används samma inställning i dina personliga inställningar, om ärendetypen tillåter det. Om inget av detta gäller ändras inte statusen. Se [ordning för standardstatus][13].
+
+Om du vill senarelägga ärendet medan du svarar sätter du statusen till **Uppskjutet** och väljer ett av [alternativen för senareläggning][14].
 
 ## Snabbsvar från en förhandsgranskning {#quick-reply}
 
@@ -81,6 +84,25 @@ Om du avbryter eller väljer ett annat ärende medan ditt svar har oskickad text
 </Tip>
 
 Detta alternativ erbjuds inte för ärenden som är markerade som skräppost, borttagna eller hopslagna.
+
+## Förhandsgranska och infoga bilagor {#attachment-preview}
+
+Återanvänd filer som redan finns i ärendet. Välj bilagorna i panelen **Egenskaper** och infoga dem i ditt svar. Om du vill kontrollera vad en fil innehåller innan du väljer den kan du förhandsgranska den.
+
+<Note>
+Knappen <i class="ph ph-paperclip" aria-label="Bilagor"></i> i panelen **Egenskaper** visas bara när ärendet har bilagor. Den är inte samma som gemet under meddelandet, som bifogar nya filer.
+
+Bilder, PDF-filer och Word-filer visas i förhandsgranskningen. Filer som inte kan förhandsgranskas, till exempel Excel- och PowerPoint-filer, visar i stället knappen **Ladda ned**.
+</Note>
+
+1. I panelen **Egenskaper** klickar du på <i class="ph ph-paperclip" aria-label="Bilagor"></i>.
+
+1. Markera de bilagor du vill återanvända, eller markera **Alla bilagor**.
+    * Om du vill förhandsgranska en fil klickar du på <i class="ph ph-eye" aria-label="Förhandsgranska"></i>. I förhandsgranskningen kan du markera rutan för att välja filen, använda pilarna för att växla mellan bilagor eller klicka på **Gå till meddelande** för att se meddelandet som filen kom från. Klicka på **Klar** för att gå tillbaka till listan.
+
+1. Klicka på **Infoga** för att lägga till de valda filerna i svaret.
+
+![Panelen Bilagor med en markerad fil och knappen Infoga -screenshot][img9]
 
 ## Lägga till svarsmallar i meddelanden {#reply-templ}
 
@@ -185,6 +207,8 @@ Den registrerade tiden visas i varje meddelandehuvud, och svarstiden finns tillg
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
 [13]: ../admin/status/index#default
+[14]: ./postpone
+[15]: #attachment-preview
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
@@ -192,3 +216,4 @@ Den registrerade tiden visas i varje meddelandehuvud, och svarstiden finns tillg
 [img6]: ../../../media/loc/en/request/insert-message-with-attachments.png
 [img7]: ../../../media/loc/en/request/request-reply-anonymise-user.png
 [img8]: ../../../media/loc/en/request/request-preview-quick-reply.png
+[img9]: ../../../media/loc/en/request/requests-reply-tools-attachment-insert-button.png

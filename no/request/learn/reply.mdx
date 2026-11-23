@@ -2,9 +2,9 @@
 uid: help-no-request-reply
 title: Svar til person
 description: I denne veiledningen lærer du hvordan du svarer på alle innkommende saker i SuperOffice.
-keywords: ['svare på sak', 'svare', 'svar til alle', 'legge til melding', 'legge til kommentar', 'kommentar', 'intern', 'ekstern', 'sak', 'svarstatus']
+keywords: ['svare på sak', 'svare', 'svar til alle', 'legge til melding', 'legge til kommentar', 'kommentar', 'intern', 'ekstern', 'sak', 'svarstatus', 'forhåndsvise vedlegg', 'sette inn vedlegg']
 author: digitaldiina
-date: 11.18.2026
+date: 11.23.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -51,6 +51,7 @@ Angi *Antall ekspanderte meldinger*-innstillingen (under <i class="ph ph-user-ci
     ![Svare på en sak -screenshot][img3]
 
 1. Klikk på <i class="ph ph-paperclip" aria-label="Vedlegg"></i> for å legge ved relevante dokumenter.
+    * Hvis du vil bruke filer som allerede ligger på saken, kan du [forhåndsvise og sette dem inn][15].
 
 1. Klikk på **Lagre** for å sende meldingen.
     * Hvis den [globale preferansen][11] **Anonymisere brukere ved svar** er aktivert, vil navnet ditt bli fjernet fra utgående meldinger.
@@ -62,6 +63,8 @@ Hvis du bytter til en annen fane på Saksskjermen før du sender meldingen, beho
 ### Status når du svarer {#status}
 
 Statusen settes fra kategoriens **Standardstatus for ny melding**, hvis sakstypen tillater det. Ellers brukes den samme innstillingen i preferansene dine, hvis sakstypen tillater det. Hvis ingen av disse gjelder, endres ikke statusen. Se [rekkefølge for standardstatus][13].
+
+Hvis du vil utsette saken mens du svarer, setter du statusen til **Utsatt** og velger ett av [alternativene for utsettelse][14].
 
 ## Hurtigsvar fra en forhåndsvisning {#quick-reply}
 
@@ -81,6 +84,25 @@ Hvis du avbryter eller velger en annen sak mens svaret ditt har usendt tekst, bl
 </Tip>
 
 Dette alternativet er ikke tilgjengelig for saker som er markert som spam, slettet eller sammenslått.
+
+## Forhåndsvise og sette inn vedlegg {#attachment-preview}
+
+Gjenbruk filer som allerede ligger på saken. Velg vedleggene i panelet **Egenskaper** og sett dem inn i svaret ditt. Hvis du vil se hva en fil inneholder før du velger den, kan du forhåndsvise den.
+
+<Note>
+Knappen <i class="ph ph-paperclip" aria-label="Vedlegg"></i> i panelet **Egenskaper** vises bare når saken har vedlegg. Den er ikke den samme som bindersen under meldingen, som legger ved nye filer.
+
+Bilder, PDF- og Word-filer vises i forhåndsvisningen. Filer som ikke kan forhåndsvises, for eksempel Excel- og PowerPoint-filer, viser i stedet en **Last ned**-knapp.
+</Note>
+
+1. Klikk på <i class="ph ph-paperclip" aria-label="Vedlegg"></i> i panelet **Egenskaper**.
+
+1. Merk av for vedleggene du vil gjenbruke, eller merk av for **Alle vedlegg**.
+    * Hvis du vil forhåndsvise en fil, klikker du på <i class="ph ph-eye" aria-label="Forhåndsvis"></i>. I forhåndsvisningen kan du merke av i boksen for å velge filen, bruke pilene til å bla mellom vedleggene eller klikke på **Gå til melding** for å se meldingen filen kom fra. Klikk på **Ferdig** for å gå tilbake til listen.
+
+1. Klikk på **Sett inn** for å legge til de valgte filene i svaret.
+
+![Vedleggspanelet med en avmerket fil og Sett inn-knappen -screenshot][img9]
 
 ## Bruke svarmaler {#reply-templ}
 
@@ -185,6 +207,8 @@ Tidsbruken vises i meldingsoverskriften, og svartiden er tilgjengelig i fanen **
 [11]: ../../admin/preferences/service-settings
 [12]: ./mentions
 [13]: ../admin/status/index#default
+[14]: ./postpone
+[15]: #attachment-preview
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
@@ -192,3 +216,4 @@ Tidsbruken vises i meldingsoverskriften, og svartiden er tilgjengelig i fanen **
 [img6]: ../../../media/loc/en/request/insert-message-with-attachments.png
 [img7]: ../../../media/loc/en/request/request-reply-anonymise-user.png
 [img8]: ../../../media/loc/en/request/request-preview-quick-reply.png
+[img9]: ../../../media/loc/en/request/requests-reply-tools-attachment-insert-button.png

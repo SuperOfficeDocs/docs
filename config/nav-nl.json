@@ -571,6 +571,7 @@
           "nl/request/learn/split-request",
           "nl/request/learn/merge",
           "nl/request/learn/split-message",
+          "nl/request/learn/postpone",
           "nl/request/learn/close",
           "nl/request/learn/delete",
           {
