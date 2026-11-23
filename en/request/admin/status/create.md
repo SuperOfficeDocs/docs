@@ -19,7 +19,7 @@ related:
 language: en
 ---
 
-## Steps
+## Add status
 
 1. Click the **Requests** button in the navigator.
 
