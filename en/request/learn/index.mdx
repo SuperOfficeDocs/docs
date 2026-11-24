@@ -4,7 +4,7 @@ title: Requests and SuperOffice Service
 description: Introduction to requests in SuperOffice
 keywords: ['request management', 'request', 'ticket', 'request screen', 'request card', 'Overview', 'left panel', 'active tabs', 'pinned requests', 'slide-in panel', 'standard lists', 'automatically close tab', 'several active tabs', 'close all tabs', 'too many tabs', 'unsaved changes']
 author: digitaldiina
-date: 11.23.2026
+date: 11.24.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -31,7 +31,7 @@ Our ticketing system allows you to efficiently handle incoming requests and help
 
 Each question and query can be defined as a request. These questions range from support issues, questions about the product and services, or questions about invoices. Whenever a request comes in, you want to handle them as quickly and efficiently as possible and professional customer service. Previewing a request from a list also lets you send a [quick reply][28] without leaving it, so you can keep moving through a busy queue.
 
-![The Request screen with the Last requests list and a preview of the selected request -screenshot][img1]
+![The Request screen with the Unassigned requests list and a preview of the selected request -screenshot][img1]
 
 <Note>
 
@@ -73,13 +73,13 @@ The Request screen is where you work with your requests. It has three areas:
 
 ### What you see the first time {#first-time}
 
-The first time you open the Request screen, the horizontal tabs you had open are copied to the left panel. Pinned tabs stay pinned. The **Overview** tab opens if you have no active tab. Your old tabs are not changed.
+The first time you open the Request screen, the horizontal tabs you had open are copied to the left panel. Pinned tabs stay pinned. The **Overview** tab opens if you have no open tabs. Your old tabs are not changed.
 
 ## Get an overview of your requests {#overview}
 
 The **Overview** tab shows your work in up to four columns of request cards. By default, the columns are **Unassigned requests**, **Own open requests**, **My favourites**, and **Last requests**. Each card shows the request type, the request ID, the title, the company, and the status.
 
-![The Overview tab with the columns Unassigned requests, Own open requests, My favourites, and Last requests -screenshot][img4]
+![The Overview tab with the columns Unassigned requests, Own open requests, and Last requests -screenshot][img4]
 
 1. Click **Overview** in the left panel.
 
@@ -99,17 +99,17 @@ To work with the **Overview** tab:
 
 ### Change the columns on the Overview tab {#edit-overview}
 
-1. Click the gear button (<i class="ph ph-gear" aria-label="Gear"></i>) to open **Edit overview**.
+1. Click the pencil (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) in the header of the **Overview** tab to open **Edit overview**.
 
 1. Choose how many columns you want, from one to four. With four columns, you can show them side by side or as a 2 × 2 grid.
 
-1. Choose what fills each column. Under **Selections**, search for a selection or a standard list, and drag it onto a column. To empty a column, click <i class="ph ph-x" aria-label="Close icon"></i> in its header.
+1. Choose what fills each column. Under **Selections**, search for a selection or a standard list, and drag it onto a column. The selections in use are listed first. To empty a column, click <i class="ph ph-x" aria-label="Close icon"></i> in its header, or click <i class="ph ph-x-circle" aria-label="Remove icon"></i> next to its selection in the list.
 
 1. Check the preview, and then click **Save**. Click **Discard** to drop your changes.
 
-To go back to the columns you got from the start, click **Revert to default**.
+To go back to the columns you got from the start, click **Reset** at the bottom of the **Edit overview** panel.
 
-![The Overview tab in edit mode, with the Edit overview panel for columns, arrangement, and selections -screenshot][img7]
+![The Overview tab in edit mode, with the Edit overview panel for columns and selections -screenshot][img7]
 
 <Note>
 
@@ -119,17 +119,17 @@ The setup of your **Overview** tab is saved in the browser you use. It does not 
 
 ### Change what the cards show {#edit-fields}
 
-![The column menu with the options Edit fields and Edit selections -screenshot][img8]
+1. In **Edit overview**, click the pencil (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) in the header of the column. The **Edit fields** dialog opens.
 
-1. Open the menu of the column and click **Edit fields**.
+1. Choose the **Heading** of the card, and optionally a **Badge**.
 
-1. Choose the heading of the card, and optionally a badge, from the list of fields. Search the list to find a field.
+1. Under **Fields**, click **Add field** to add up to six fields to the card. To remove a field, click <i class="ph ph-x-circle" aria-label="Remove icon"></i>.
 
-1. Choose up to six more fields to show on the card. Drag the fields to change their order.
+1. Click **Done**, and then **Save** in the header. Click **Revert to default** in the dialog to restore the fields of this column only.
 
-1. Click **Save**. Click **Revert to default** to restore the fields of this column only.
+![The Edit fields dialog for the Last requests column, with Heading, Badge, and Fields -screenshot][img8]
 
-The left panel is hidden and the preview panel closes while you edit.
+The preview panel closes while you edit.
 
 ### Preview and update a request from the Overview tab {#slide-in}
 
@@ -143,9 +143,11 @@ To make the panel wider or narrower, point to its left edge and drag the dots th
 
 ## Work with the tabs in the left panel {#tabs}
 
-Each section of the left panel has an **Active** group and a **Pinned** group. You can keep many requests and selections open in the **Active** group at the same time. A tab is either active or pinned, never both. Your tabs are saved, so they are there when you sign in from another browser.
+The left panel has a **Pinned** group for the requests and selections you have pinned, and a **Tabs** group for the ones you have open. You can keep many requests and selections open at the same time. A tab is either in **Tabs** or in **Pinned**, never both. Your tabs are saved, so they are there when you sign in from another browser.
 
-![The left panel of the Request screen with the Selections and Requests sections, each with an Active and a Pinned group -screenshot][img5]
+To pin a request, click the pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) in the header of the request. You can also pin a tab from its menu. See [Pin and unpin tabs][39].
+
+![The left panel of the Request screen with the Pinned and Tabs groups -screenshot][img5]
 
 ### Open another tab {#open-tab}
 
@@ -153,7 +155,7 @@ Open a request or a selection from the left panel, from the search dialog, or fr
 
 <Note>
 
-You can have up to 50 tabs open, counting active and pinned tabs. If you try to open more, the **Too many tabs** dialog appears and nothing is opened. Close the tabs you no longer need, and try again.
+You can have up to 50 tabs open, counting the tabs in both groups. When you open one more, the oldest tab closes automatically.
 
 </Note>
 
@@ -163,13 +165,13 @@ You can have up to 50 tabs open, counting active and pinned tabs. If you try to 
 
 1. Choose an option:
 
-    * **Close all:** Closes all active tabs in the group.
+    * **Close all:** Closes all tabs in the **Tabs** group.
 
-    * **Close all tabs but this:** Closes all active tabs in the group except this one.
+    * **Close all tabs but this:** Closes all tabs in the **Tabs** group except this one.
 
 For pinned tabs, use **Unpin and close all** or **Unpin and close all but this**. When you close the tab you are on, the tab next to it opens. When you close the last tab, the **Overview** tab opens.
 
-![The menu of an active tab with the options Pin, Close, Close all, and Close all tabs but this -screenshot][img6]
+![The menu of a tab in the Tabs group with the options Pin, Close, Close all, and Close all tabs but this -screenshot][img6]
 
 ### Keep track of unsaved changes {#unsaved}
 
@@ -207,17 +209,22 @@ Tabs that close automatically never ask you to confirm.
 
 The Request card shows one request at a time, as a tab on the Request screen. It has the following sections:
 
-* At the top of the card, the **request header** contains basic information about the request, like id, title, contact and deadline.
-* The **request properties** sidebar contains fields for Owner, Status, Category, Priority, Access level and Tags, all fields are editable with **Save** and **Cancel** buttons.
-* Below the header is a row of buttons for performing tasks associated with requests, such as Reply, Reply all, Forward, and Add comment.
-* The **Messages** tab displays the messages related to the request.
+* At the top of the card, the **request header** shows the title, the contact, and the company of the request.
+* The **request properties** sidebar contains fields for Request type, Status, Owner, Category, Priority, Access level and Tags, all fields are editable with **Save** and **Cancel** buttons.
+* The **Messages** tab displays the messages related to the request. At the top of the tab are buttons for Reply, Reply all, Forward, and Add comment.
 * The **Details** tab contains an overview of the data registered for the request.
-* The **Relations** tab shows [linked requests][21] (parent, child, or related).
 * The **Change log** tab contains the history of this request. The request log shows everything that has happened to this request since it was first registered.
+* The **Related requests** tab shows [linked requests][21] (parent, child, or related).
 
 ### Request header
 
-The header of the request contains the properties defined when the [request was created][4]. The header consists of the request title, contact, deadline and request ID. In addition, you can click <i class="ph ph-star" aria-label="Star icon"></i> to set the request as a favorite. The request will then be accessible via **My favorites** on **Requests** in the Navigator, and in the **My favorites** tile on a [dashboard][17].
+The header of the request shows the title, the contact, and the company defined when the [request was created][4]. It also has these buttons:
+
+* <i class="ph ph-star" aria-label="Star icon"></i>: Sets the request as a favorite. The request is then accessible via **My favorites** on **Requests** in the Navigator, and in the **My favorites** tile on a [dashboard][17].
+* <i class="ph ph-push-pin" aria-label="Pin icon"></i>: Pins the request in the left panel.
+* <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i>: Reloads the request.
+* <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>: Edits the request.
+* <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>: Opens the **Task** button menu. See [Task options](#task-options).
 
 ### Messages tab
 
@@ -244,7 +251,7 @@ Internal messages are marked with <i class="ph ph-dots-three" aria-label="Three 
 
 #### Message tasks
 
-Click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> on a message to access additional options for the message:
+Click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) on a message to access additional options for the message:
 
 * **Change**: Click here to [edit][9] or delete the message.
 * **Reply**: Click here to reply the contact in the To field.
@@ -277,6 +284,8 @@ This screen shows the log for this request. All events are recorded, including w
 
 The request properties sidebar contains the following options:
 
+* **Request type**: The [type][40] of the request. You can change the request type here.
+
 * **Status**: Shows the status of the request. You can change the status here.
   * **Open**: The request is in progress.
   * **Closed**: The request was fully answered.
@@ -294,16 +303,18 @@ The request properties sidebar contains the following options:
 
 * **Tags**: In the **Tags** list box, [select relevant tags][22] for this request.
 
-### Task options
+### Task options {#task-options}
 
-**Task** button: Click this button to access the following options:
+Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>) in the header of the request to access the following options:
 
 * **Edit**: Click here to edit the properties for this request. For example, you can assign the request to another request handler if you need to [ask a colleague for advice][7].
 * **Accept**: Click here to [take over the request][1]. You will then be the request's new owner.
+* **Relate**: Click here to [link the request][21] to another request.
 * **Split**: If a single request contains several questions, for example, if the customer first asks a technical question and then uses the opportunity to raise an invoicing query, you can [split the request][11] into two using this button.
 * **Merge**: Click here to merge this request with one or more other requests. For example, if multiple contacts in the same company report the same technical issue (via phone, web forms and email), you can [merge these requests][16] into one request that will be processed. The oldest request becomes the primary request by default.
 * **Print**: Click here to print the request.
 * **Delete**: Click here to delete the request.
+* **Mark as Spam**: Click here to [mark the request as spam][27].
 
 ## Request management {#request-mgt}
 
@@ -442,6 +453,8 @@ Some settings that affect support agents include:
 [36]: /en/request/learn/mentions
 [37]: /en/request/admin/status/index#default
 [38]: /en/request/learn/postpone
+[39]: /en/learn/basics/overview-pages#pin-unpin
+[40]: /en/request/admin/type/index
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/service-dashboard.png
@@ -449,4 +462,4 @@ Some settings that affect support agents include:
 [img5]: /media/loc/en/request/request-screen-left-panel.png
 [img6]: /media/loc/en/request/request-screen-tab-menu.png
 [img7]: /media/loc/en/request/request-screen-edit-overview.png
-[img8]: /media/loc/en/request/request-screen-column-menu.png
+[img8]: /media/loc/en/request/request-screen-edit-fields.png
