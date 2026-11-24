@@ -1,0 +1,151 @@
+---
+title: Supported fields for Visma Net
+sidebarTitle: Supported fields
+description: Search and filter the Visma Net fields that DataBridge supports for export from and import into Visma Net Financials.
+keywords: ['ConnectERP', 'Visma Net', 'fields', 'DataBridge', 'export', 'import', 'customer', 'vendor', 'inventory', 'sales order', 'Visma.net']
+author: marcelspapens
+date: 11.24.2026
+content_type: reference
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related:
+  - /integrations/connect-erp/visma-net/plan-the-integration
+  - /integrations/connect-erp/visma-net/troubleshooting
+language: en
+userflow_index: true
+---
+
+import FieldTable from "/components/field-table.jsx";
+
+export const fieldRows = [
+  { d: "Export", e: "Customer", g: "General", f: ["Customer ID", "Customer Name", "Status", "Customer Class ID/Description", "Price Class ID/Description", "Corporate ID", "Account Reference", "GLN", "Tax Registration ID", "Currency ID", "Created Date Time", "Last Modified Date Time"] },
+  { d: "Export", e: "Customer", g: "Credit and terms", f: ["Credit Limit", "Credit Days Past Due", "Credit Verification", "Terms ID/Description", "Statement Type"] },
+  { d: "Export", e: "Customer", g: "Invoicing", f: ["Accept Auto Invoices", "Exclude Debt Collection", "Invoice To Default Location", "Print Invoices", "Print Statements", "Print Multi Currency Statements", "Print Dunning Letters", "Send Invoices by Email", "Send Statements by Email", "Send Dunning Letters by Email"] },
+  { d: "Export", e: "Customer", g: "Location and tax", f: ["Default Location ID/Name/Country ID", "Tax Zone ID/Description", "Default Tax Category", "Default Tax Category Number/Description", "Notes"] },
+  { d: "Export", e: "Customer", g: "Addresses (Main, Bill-To, Shipping)", f: ["Address Line 1-3", "City", "Postal Code", "Country ID/Name", "State ID/Name"] },
+  { d: "Export", e: "Customer", g: "Contacts (Main, Bill-To, Shipping)", f: ["Company Name", "Attention", "Email", "Phone 1/2", "Fax", "Web"] },
+  { d: "Export", e: "Customer", g: "Customer balance", f: ["Balance", "Unreleased balance", "Loan", "Sales this period/year", "Discount this period/year"] },
+  { d: "Export", e: "Customer", g: "Default salesperson", f: ["ID", "Name", "Commission %", "Location ID/Name"] },
+  { d: "Export", e: "Customer", g: "Attributes", f: ["Attributes (dynamic, differ per Visma Net environment)"] },
+  { d: "Export", e: "Vendor", g: "General", f: ["Vendor ID", "Vendor Name", "Status", "Vendor Class ID/Description", "Parent Record Number/Name", "Corporate ID", "Account Reference", "Tax Registration ID", "NACE Code", "Number Of Employees", "Currency ID", "Document Language", "Note", "Last Modified Date Time", "Landed Cost Vendor"] },
+  { d: "Export", e: "Vendor", g: "Payment", f: ["Credit Terms ID/Description", "Payment Method ID/Description", "Payment By", "Payment Lead Time", "Payment Ref Display Mask", "Pay Separately", "Cash Account", "Account Used For Payment", "Charge Bearer", "Apply Retainage", "Retainage Percent", "Retainage Cash Account"] },
+  { d: "Export", e: "Vendor", g: "Location and tax", f: ["Location ID/Name/Country ID", "Tax Zone ID/Description", "Default Tax Category", "Default Tax Category Number/Description"] },
+  { d: "Export", e: "Vendor", g: "Addresses (Main, Remittance, Shipper's)", f: ["Address Line 1-3", "City", "Postal Code", "Country ID/Name", "State ID/Name"] },
+  { d: "Export", e: "Vendor", g: "Contacts (Main, Remittance, Shipper's)", f: ["Company Name", "Attention", "Email", "Phone 1/2", "Fax", "Web"] },
+  { d: "Export", e: "Vendor", g: "Vendor balance", f: ["Purchase balance", "Purchases this period (incl. and excl. VAT)", "Purchases this year (incl. and excl. VAT)", "Purchases for approval (incl. and excl. VAT)", "Unreleased purchases (incl. and excl. VAT)"] },
+  { d: "Export", e: "Vendor", g: "Attributes", f: ["Attributes (dynamic, differ per Visma Net environment)"] },
+  { d: "Export", e: "Contact", g: "General", f: ["Contact ID", "Display Name", "Title", "First Name", "Last Name", "Job Title", "Business Account", "Business Account Type", "Active", "Same As Account"] },
+  { d: "Export", e: "Contact", g: "Communication", f: ["Email", "Phone 1-3", "Fax", "Web", "Contact Method"] },
+  { d: "Export", e: "Contact", g: "Consent", f: ["Do Not Call", "Do Not Email", "Do Not Fax", "Do Not Mail", "No Marketing", "No Mass Mail"] },
+  { d: "Export", e: "Contact", g: "Address", f: ["Address Line 1-3", "City", "Postal Code", "Country ID/Name", "County ID/Name"] },
+  { d: "Export", e: "Inventory", g: "General", f: ["Inventory ID", "Inventory Number", "Description", "Body", "Note", "Type", "Status", "Stock Item", "Kit Item", "Base Unit", "Sales Unit", "Purchase Unit", "Last Modified Date Time", "Timestamp", "Effective Date"] },
+  { d: "Export", e: "Inventory", g: "Price and cost", f: ["Default Price", "Recommended Price", "Current Cost", "Last Cost", "Pending Cost", "Pending Cost Date"] },
+  { d: "Export", e: "Inventory", g: "Cost price statistics", f: ["Average Cost", "Last Cost", "Max Cost", "Min Cost"] },
+  { d: "Export", e: "Inventory", g: "Classes and codes", f: ["Item Class ID/Description", "Posting Class ID/Description", "Price Class ID/Description", "Lot Serial Class ID/Description", "VAT Code ID/Description", "Price Manager ID/Name", "Price Workgroup ID"] },
+  { d: "Export", e: "Inventory", g: "Warehouse", f: ["Default Warehouse ID/Description", "Issue From ID/Description", "Receipt To ID/Description"] },
+  { d: "Export", e: "Inventory", g: "Packaging", f: ["Base Item Volume", "Base Item Weight", "Volume UOM", "Weight UOM"] },
+  { d: "Export", e: "Inventory", g: "Intrastat", f: ["CN8", "Country Of Origin", "Supplementary Measure Unit"] },
+  { d: "Export", e: "Inventory", g: "Accounts", f: ["COGS Account Number/Description/Type", "Expense Account Number/Description/Type", "Expense Accrual Account Number/Description/Type", "Expense EU Account Number/Description/Type", "Expense Import Account Number/Description/Type", "Expense Non Taxable Account Number/Description/Type", "Inventory Account Number/Description/Type", "Sales Account Number/Description/Type", "Sales EU Account Number/Description/Type", "Sales Export Account Number/Description/Type", "Sales Non Taxable Account Number/Description/Type"] },
+  { d: "Export", e: "Inventory", g: "Subaccounts", f: ["COGS Subaccount ID/Description/Active", "Expense Subaccount ID/Description/Active", "Sales Subaccount ID/Description/Active"] },
+  { d: "Export", e: "Inventory", g: "Attributes", f: ["Attributes (dynamic, differ per Visma Net environment)"] },
+  { d: "Export", e: "Sales Price", g: "General", f: ["Record ID", "Price Code", "Price Type", "Inventory ID", "Description", "Price", "Currency", "UoM", "Break Qty", "VAT", "Promotion", "Effective Date", "Expiration Date", "Last Modified Date Time"] },
+  { d: "Export", e: "Sales Price", g: "Inventory", f: ["All Inventory fields, with the prefix Inventory"] },
+  { d: "Export", e: "Sales Order", g: "General", f: ["Order ID", "Type", "Status", "Status Details (Description, Hold, Cancelled)", "Date", "Request On", "Cancel By", "Description", "Note", "Currency", "Order Qty", "Order Total", "Tax Total", "Created By", "Last Modified", "Location", "Emailed", "Original Order ID", "Original Order Type", "Origin Order ID", "Origin Order Type"] },
+  { d: "Export", e: "Sales Order", g: "Customer", f: ["Customer ID/Name/Order/Ref No/Internal ID/Contact ID", "Customer Location (ID, Name, Internal ID, Corporate ID, Country ID, GLN, Tax Registration ID, Warehouse ID)", "Customer Tax Zone ID/Description", "Parent Customer ID/Name/Internal ID", "Owner ID/Internal ID"] },
+  { d: "Export", e: "Sales Order", g: "Organization", f: ["Branch", "Sales Person", "Project ID/Description/Internal ID"] },
+  { d: "Export", e: "Sales Order", g: "Financial information", f: ["Invoice ID/Date", "Due Date", "Cash Discount Date", "Post Period", "Terms ID/Description", "Invoice Separately"] },
+  { d: "Export", e: "Sales Order", g: "Payment settings", f: ["Cash Account ID", "Payment Method ID/Description", "Payment Reference"] },
+  { d: "Export", e: "Sales Order", g: "Print", f: ["Description On Invoice", "Note On External Documents", "Note On Internal Documents"] },
+  { d: "Export", e: "Sales Order", g: "Billing and Shipping address", f: ["ID", "Address Line 1-3", "City", "Postal Code", "Country ID/Name", "County ID/Name", "Overrides Default"] },
+  { d: "Export", e: "Sales Order", g: "Billing and Shipping contact", f: ["ID", "Name", "Attention", "Email", "Phone 1/2", "Fax", "Overrides Default"] },
+  { d: "Export", e: "Sales Order", g: "Shipping", f: ["Rule", "Priority", "Scheduled Date", "Ship Separately", "Insurance", "Residential Delivery", "Saturday Delivery", "Ship Via", "Terms", "Zone", "FOB Point", "Preferred Warehouse", "Intrastat Transaction Type"] },
+  { d: "Export", e: "Sales Order", g: "Freight", f: ["Amount", "Cost", "Premium Amount", "Volume", "Weight", "Tax Category ID"] },
+  { d: "Export", e: "Sales Order", g: "Totals (each also in base currency)", f: ["Order", "Tax", "Taxable", "Tax Exempt", "Discount", "Cost", "Excise Duty", "Freight", "Freight Cost", "Payment", "Unbilled", "Unshipped"] },
+  { d: "Export", e: "Sales Order", g: "Other", f: ["ROT/RUT fields", "Use Replacement Cost For Margin And Profit", "Custom Fields (Str 1-5, Int 1-2, Dec 1-2, DateTimeUtc 1)"] },
+  { d: "Export", e: "Sales Order Lines", g: "General", f: ["Line ID", "Sort Order", "Line Type", "Operation", "Inventory ID/Description/Base Unit", "Inventory Alternate ID", "Description", "Note"] },
+  { d: "Export", e: "Sales Order Lines", g: "Quantity and price", f: ["Quantity", "Base Order Quantity", "Base Open Quantity", "Base Billed Quantity", "Quantity On Shipments", "Unit Of Measure", "Unit Price", "Discounted Unit Price", "Unit Cost", "Replacement Unit Cost", "Extended Price", "Line Total Before Discount", "Amount Not Invoiced"] },
+  { d: "Export", e: "Sales Order Lines", g: "Discount", f: ["Discount Percent", "Discount Amount", "Discount Code", "Discount Sequence ID", "Has Manual Price", "Has Manual Discount", "Free Item", "Excise Duty"] },
+  { d: "Export", e: "Sales Order Lines", g: "Dates and shipping", f: ["Order Date", "Request Date", "Ship Date", "Shipping Rule", "Overship Threshold", "Undership Threshold", "Completed", "Open Line", "Commissionable", "Auto Create Issue"] },
+  { d: "Export", e: "Sales Order Lines", g: "Organization", f: ["Warehouse ID", "Warehouse Location", "Branch", "Sales Person", "Sales Account ID", "Tax Category ID", "Project Task ID", "Reason Code"] },
+  { d: "Export", e: "Sales Order Lines", g: "References", f: ["Invoice Number", "Invoice Line Number", "Invoice Type", "Purchase Order Source", "Kit Assembly Reference Number", "External Link"] },
+  { d: "Export", e: "Sales Order Lines", g: "Supplier", f: ["ID", "Name", "Currency ID", "Price", "UoM", "Supplier Price"] },
+  { d: "Export", e: "Sales Order Lines", g: "Other", f: ["ROT/RUT fields", "Custom Fields"] },
+  { d: "Export", e: "Location", g: "General", f: ["Location ID/Name", "Internal ID", "Active", "Business Account ID/Name", "Corporate ID", "EDI Code", "GLN", "Tax Registration ID"] },
+  { d: "Export", e: "Location", g: "Tax", f: ["Tax Zone ID/Description", "Default Tax Category"] },
+  { d: "Export", e: "Location", g: "Address", f: ["Address Line 1-3", "City", "Postal Code", "Country ID/Name", "State ID/Name"] },
+  { d: "Export", e: "Location", g: "Contact", f: ["Name", "Attention", "Email", "Phone 1/2", "Fax", "Web"] },
+  { d: "Export", e: "Project", g: "General", f: ["Project ID", "Internal ID", "Public ID", "Description", "Status", "Hold", "Start Date", "End Date", "Last Billing Date", "Next Billing Date", "Billing Period", "Last Modified Date Time"] },
+  { d: "Export", e: "Project", g: "Customer and organization", f: ["Customer Number/Name", "Customer Location ID/Name", "Branch Number/Name", "Template Number/Description/Status", "System Template"] },
+  { d: "Export", e: "Project", g: "Rules", f: ["Allocation Rule ID/Description/Active", "Billing Rule ID/Description/Active", "Rate Table", "Auto Allocate", "Automatic Release AR", "Restrict Employees", "Restrict Equipment"] },
+  { d: "Export", e: "Project", g: "Accounts (each with Number/Description/Type, and a Subaccount with ID/Description/Active)", f: ["Assets", "Liability", "Income", "Expenses", "Default Account", "Accrual Account"] },
+  { d: "Export", e: "Project", g: "Project manager", f: ["Employee ID/Number/Name/Login/User ID", "Status", "Department", "Calendar ID", "Employee Class", "Branch", "Address fields", "Contact fields"] },
+  { d: "Import", e: "Customer", g: "General", f: ["Customer ID (key)", "Customer Name (required)", "Status", "Customer Class", "Price Class ID", "Corporate ID", "Account Ref.#", "GLN", "Tax Registration ID", "Tax Zone", "Currency ID", "Note"] },
+  { d: "Import", e: "Customer", g: "Credit and terms", f: ["Credit Limit", "Credit Days Past Due", "Credit Verification", "Terms", "Statement Type"] },
+  { d: "Import", e: "Customer", g: "Invoicing", f: ["Accept Auto Invoices", "Invoice To Default Location", "Print Invoices", "Print Statements", "Print Multi Currency Statements", "Send Invoices By Email", "Send Statements By Email"] },
+  { d: "Import", e: "Customer", g: "Addresses (Main, Bill-To, Shipping)", f: ["Address Line 1-3", "City", "Postal Code", "Country", "State"] },
+  { d: "Import", e: "Customer", g: "Contacts (Main, Bill-To, Shipping)", f: ["Company Name", "Attention", "Email", "Phone 1/2", "Fax", "Web"] },
+  { d: "Import", e: "Customer", g: "Attributes", f: ["Attributes (dynamic, differ per Visma Net environment)"] },
+  { d: "Import", e: "Vendor", g: "General", f: ["Vendor ID (key)", "Vendor Name (required)", "Status", "Vendor Class", "Parent Account", "Corporate ID", "Account Ref.#", "Tax Registration ID", "Tax Zone", "Currency ID", "Enable Currency (Rate) Override", "Document Language", "Note"] },
+  { d: "Import", e: "Vendor", g: "Payment", f: ["Terms", "Payment Method", "Payment By", "Payment Lead Time", "Payment Ref Display Mask", "Pay Separately", "Cash Account", "Account Used For Payment", "Charge Bearer", "Apply Retainage", "Retainage Percent", "Retainage Cash Account"] },
+  { d: "Import", e: "Vendor", g: "GL accounts", f: ["Expense", "Expense import", "Expense non-taxable", "Expense EU", "Expense Sub."] },
+  { d: "Import", e: "Vendor", g: "Addresses (Main, Remittance, Shipper's)", f: ["Address Line 1-3", "City", "Postal Code", "Country", "State"] },
+  { d: "Import", e: "Vendor", g: "Contacts (Main, Remittance, Shipper's)", f: ["Company Name", "Attention", "Email", "Phone 1/2", "Fax", "Web"] },
+  { d: "Import", e: "Vendor", g: "Attributes", f: ["Attributes (dynamic, differ per Visma Net environment)"] },
+  { d: "Import", e: "Contact", g: "General", f: ["Contact ID (key)", "Title", "First Name", "Last Name", "Job Title", "Business Account", "Active", "Same As Account"] },
+  { d: "Import", e: "Contact", g: "Communication", f: ["Email", "Phone 1-3", "Fax", "Web"] },
+  { d: "Import", e: "Contact", g: "Address", f: ["Address Line 1-3", "City", "Postal Code", "Country", "County"] },
+  { d: "Import", e: "AR Invoice", g: "General", f: ["Reference Nbr. (key)", "Customer ID", "Contact ID", "Date", "Due Date", "Cash Discount Date", "Post Period", "Terms", "Currency", "Exchange Rate", "Branch", "Location", "Project", "Salesperson ID", "Customer Order", "External Reference", "Customer Tax Zone"] },
+  { d: "Import", e: "AR Invoice", g: "Payment", f: ["Payment Method", "Payment Ref. Nbr.", "Cash Account"] },
+  { d: "Import", e: "AR Invoice", g: "Status and text", f: ["Hold", "Send to Autoinvoice", "Invoice text", "Note"] },
+  { d: "Import", e: "AR Invoice", g: "Billing address", f: ["Address Line 1-3", "City", "Postal Code", "Country", "State", "Override Address"] },
+  { d: "Import", e: "AR Invoice", g: "Billing contact", f: ["Business Name", "Attention", "Email", "Phone 1", "Override Contact"] },
+  { d: "Import", e: "AR Invoice Line", g: "General", f: ["Line Number", "Inventory ID", "Transaction Descr.", "Quantity", "UOM", "Unit Price", "Ext. Price"] },
+  { d: "Import", e: "AR Invoice Line", g: "Discount", f: ["Discount Percent", "Discount Amount", "Discount Code", "Manual Discount"] },
+  { d: "Import", e: "AR Invoice Line", g: "Accounting", f: ["Account", "Branch", "Tax Category", "Salesperson ID", "Project Task", "Deferral Code", "Term Start Date", "Term End Date"] },
+  { d: "Import", e: "AR Invoice Line", g: "Note", f: ["Note"] },
+  { d: "Import", e: "Sales Order", g: "General", f: ["Order Type (required)", "Order Nbr. (key)", "Status", "Date", "Requested On", "Description"] },
+  { d: "Import", e: "Sales Order", g: "Customer", f: ["Customer ID (required)", "Location ID", "Contact ID", "Customer Order", "External Reference"] },
+  { d: "Import", e: "Sales Order", g: "Organization", f: ["Salesperson ID", "Project ID"] },
+  { d: "Import", e: "Sales Order", g: "Billing and Shipping address", f: ["Address Line 1-3", "Postal Code", "City", "Country ID", "State ID"] },
+  { d: "Import", e: "Sales Order Lines", g: "General", f: ["Inventory ID (required)", "Description", "Warehouse ID", "Salesperson ID", "Requested On"] },
+  { d: "Import", e: "Sales Order Lines", g: "Quantity and price", f: ["Unit Of Measure", "Quantity", "Open Quantity", "Unit Price", "Unit Cost"] },
+  { d: "Import", e: "Sales Order Lines", g: "Discount (percent or amount)", f: ["Discount Percent", "Discount Amount"] },
+  { d: "Import", e: "Sales Order Lines", g: "Subaccount", f: ["Subaccount segments (dynamic, differ per Visma Net environment)"] },
+  { d: "Import", e: "Project", g: "General", f: ["Project ID (key)", "Customer ID", "Description", "Status", "Hold", "Start Date", "End Date", "Template", "Branch", "Customer Location", "Project Manager"] },
+  { d: "Import", e: "Project", g: "Billing and allocation", f: ["Billing Period", "Billing Rule", "Allocation Rule", "Rate Table", "Default Account", "Accrual Account"] },
+  { d: "Import", e: "Project", g: "Options", f: ["Auto Allocate", "Automatically Release AR Documents", "Restrict Employees", "Restrict Equipment"] }
+];
+
+This page lists the Visma Net fields that DataBridge supports. You choose which of these fields to use when you configure a DataBridge integration. Field names are the names that DataBridge shows in the user interface.
+
+* **Export:** Visma Net is the source. DataBridge reads the fields from Visma Net and writes them to SuperOffice.
+* **Import:** Visma Net is the destination. DataBridge writes the fields to Visma Net.
+
+## Entities per direction {#entities}
+
+| Entity | Export | Import |
+|---|---|---|
+| Customer | Yes | Yes |
+| Vendor (supplier) | Yes | Yes |
+| Contact | Yes | Yes |
+| Inventory (product) | Yes | No |
+| Sales Price | Yes | No |
+| Sales Order and Sales Order Lines | Yes | Yes |
+| Location | Yes | No |
+| Project | Yes | Yes |
+| AR Invoice and AR Invoice Line | No | Yes |
+
+<Note>
+Sales Order and Sales Order Lines are only available when your Visma Net environment has the Sales module.
+</Note>
+
+## Search and filter the fields {#fields}
+
+Type in the search box to find a field. All the words that you type must match the field name, the entity, or the field group. For example, **customer email** finds the email fields of the Customer entity. Use **Direction** and **Entity** to narrow the list, and select a column header to sort.
+
+In the field names, a slash separates fields that come as a pair. For example, **Customer Class ID/Description** stands for the two fields Customer Class ID and Customer Class Description. Names such as **Address Line 1-3** stand for a series of fields. In the import fields, **Key** marks the field that DataBridge uses to find an existing record, and **Required** marks a field that Visma Net needs to create a record.
+
+<FieldTable rows={fieldRows} />
+
+Which Attributes and Subaccount segments are available depends on your Visma Net environment.
