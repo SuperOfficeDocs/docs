@@ -67,91 +67,7 @@ The Request screen is where you work with your requests. It has three areas:
 
 The first time you open the Request screen, the horizontal tabs you had open are copied to the left panel. Pinned tabs stay pinned. The **Overview** tab opens if you have no open tabs. Your old tabs are not changed.
 
-## Get an overview of your requests {#overview}
-
-The **Overview** tab shows your work in up to four columns of request cards. By default, the columns are **Unassigned requests**, **Own open requests**, **My favourites**, and **Last requests**. Each card shows the request type, the request ID, the title, the company, and the status.
-
-![The Overview tab with the columns Unassigned requests, Own open requests, and Last requests -screenshot][img4]
-
-1. Click **Overview** in the left panel.
-
-1. Use the cards to find the requests that need your attention. A colored badge on the request type icon shows the status. Red means the deadline has passed, green means closed, and gray means postponed.
-
-1. Click a card to [preview and update the request](#slide-in), or double-click it to open it in a tab.
-
-To work with the **Overview** tab:
-
-* **See more requests:** A column shows up to 20 requests. Click **See all requests** to open the full list or selection in a tab.
-
-* **Sort a column:** Use the sort button to sort by request ID, creation date, owner, last change, or priority.
-
-* **Open a contact or company:** Click the name on a card.
-
-* **Reload the **Overview** tab:** Click the reload button. A column also reloads when you change one of its requests in the same browser. Changes made by other users do not appear until you reload.
-
-To change the columns or what the cards show, see [Personalize request handling][41].
-
-### Preview and update a request from the Overview tab {#slide-in}
-
-1. Click a card. The request opens in a panel on the right, with the latest messages, the request details, and the reply buttons.
-
-1. Change the owner, status, category, priority, or tags directly in the panel.
-
-1. To keep working on the request, click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and then **Open in full view**. Choose **Pin request** to add it to the **Pinned** group.
-
-To make the panel wider or narrower, point to its left edge and drag the dots that appear. The panel closes when you click <i class="ph ph-x" aria-label="Close icon"></i>. It also closes when you leave the **Overview** tab or open an editor.
-
-## Work with the tabs in the left panel {#tabs}
-
-The left panel has two groups. **Pinned** holds the requests and selections you have pinned, and **Tabs** holds the ones you have open. You can keep many requests and selections open at the same time. A tab is either in **Tabs** or in **Pinned**, never both. Your tabs are saved, so they are there when you sign in from another browser.
-
-To pin a request, click the pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) in the header of the request. You can also pin a tab from its menu. See [Pin and unpin tabs][39].
-
-![The left panel of the Request screen with the Pinned and Tabs groups -screenshot][img5]
-
-![The menu of a tab in the Tabs group with the options Pin, Close, Close all, and Close all tabs but this -screenshot][img6]
-
-### Open another tab {#open-tab}
-
-Open a request or a selection from the left panel, from the search dialog, or from a link in SuperOffice CRM. It opens in a new tab right after the tab you are on. The other tabs stay open, and each keeps its own unsent reply, edit mode, and scroll position.
-
-<Note>
-
-You can have up to 50 tabs open, counting the tabs in both groups. When you open one more, the oldest tab closes automatically.
-
-</Note>
-
-### Keep track of unsaved changes {#unsaved}
-
-A pencil (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) at the end of a tab means the request has unsaved changes. For example, you have an unsent reply, or you are editing the request.
-
-When you close a tab with unsaved changes, you are asked to confirm. If you confirm, the changes are discarded.
-
-### Spot requests that others work on or have changed {#row-status}
-
-Each request tab shows the ID and title, and the contact person and company below.
-
-If your system has Live UI turned on, you can see who else works on a request. A presence icon replaces the request type icon while another user views or edits it. When another user has changed the request since you opened it, a changed icon is shown instead. Point to the icon to see the names. If the tab of a selection or list shows the changed icon with **The archive might be out of sync**, reload it. The mark disappears when you reload the request or list.
-
-### Close request tabs automatically {#auto-close}
-
-A request tab closes by itself in these situations:
-
-* The request is deleted, marked as spam, or merged into another request. The tab closes even if it is pinned. Merging from the [request card][16] opens the surviving request in its place.
-
-* You add a message to the request, or set its status to **Closed**, and you have turned on the matching preference. Pinned tabs stay open.
-
-To close tabs automatically:
-
-1. Click <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Preferences**.
-
-1. Click the **Request** group.
-
-1. Set **Automatically close tab when adding a message to request** or **Automatically close tab when changing request status to closed** to **Yes**.
-
-1. Click **Save**.
-
-Tabs that close automatically never ask you to confirm.
+To get an overview of your requests and work with them in tabs, see [Work with requests][42].
 
 ## The Request card {#request-card}
 
@@ -259,61 +175,12 @@ Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-labe
 * **Delete**: Click here to delete the request.
 * **Mark as Spam**: Click here to [mark the request as spam][27].
 
-## Request management {#request-mgt}
-
-Incoming requests can arrive through many channels, and there is more than one way to register and reply to them. How request handling progresses will vary from request to request.
-
-A contact service system is all about providing your contacts the answers they are looking for and saving their contact information. Whenever you reply to a contact, they will receive an email from you. Which is why it is important to [create your email signature][15].
-
-### Typical tasks
-
-* [Take responsibility for requests][1]
-* [Ask another request handler for help][7]
-* [Reply to contact][2]
-* [Edit message][9]
-* [Split requests][11]
-* [Forward messages or multiple requests to external parties][8]
-* [Add requests to the favorites list][18]
-* [Close requests][3]
-* [Mark requests as spam][27]
-
-Different companies have different routines for request handling and can use SuperOffice Service in different ways. Below we have set up two real-life scenarios showing some of the available options. These scenarios will show you how you can reply efficiently when a contact has submitted a request by email and when a contact calls in with a problem or a question.
-
-![Dashboard for Requests with lists of own open requests and a queue for unassigned requests. Here you can pick a request to handle -screenshot][img3]
-
-### Scenario 1: The contact submits the request by email
-
-1. The contact writes an email to support@company.com or fills out a form in a user-support portal.
-1. The contact receives [automatic acknowledgement][23] of receipt of the enquiry.
-1. The enquiry from the contact is automatically registered as a request in SuperOffice CRM.
-1. The request ends up with a request handler in SuperOffice CRM. See [Assign requests][6] and [Find requests][10].
-1. The request handler reads through the request.
-1. The request handler is unable to fulfil the request on their own and does one of the following:
-    * [Asks a colleague][7].
-    * [Gets help from outside][8].
-1. The request handler [sends a response to the contact][2].
-1. The request handler [closes the request][3] and proceeds to deal with other requests.
-
-### Scenario 2: The contact calls the request handler
-
-1. The contact has a problem with a product and calls user-support.
-1. The request handler who answers the call [registers the request][4].
-1. The request handler is unable to fulfil the request on their own and does one of the following:
-    * [Asks a colleague][7].
-    * [Gets help from outside][8].
-1. The request handler [sends a response to the contact][2].
-1. The request handler [closes the request][3] and proceeds to deal with other requests.
-
 [1]: /en/request/learn/accept
-[2]: /en/request/learn/reply
-[3]: /en/request/learn/close
 [4]: /en/request/learn/create
 [5]: /en/request/learn/flag-message
-[6]: /en/request/learn/assign
 [7]: /en/request/learn/transfer
 [8]: /en/request/learn/forward
 [9]: /en/request/learn/edit-message
-[10]: /en/request/learn/find
 [35]: /en/request/learn/find#list
 [11]: /en/request/learn/split-request
 [16]: /en/request/learn/merge
@@ -326,21 +193,15 @@ Different companies have different routines for request handling and can use Sup
 [12]: /en/search-options/learn/index
 [13]: /en/company/learn/index
 [14]: /en/contact/learn/index
-[15]: /en/learn/getting-started/edit-email-signature
 [18]: /en/learn/basics/fav
-[23]: /en/knowledge-base/learn/reply-templates/index
 [27]: /en/request/learn/spam
 [28]: /en/request/learn/reply#quick-reply
 [30]: /en/learn/basics/overview-pages
 [31]: /en/learn/getting-started/main-screen/side-panel
 [36]: /en/request/learn/mentions
 [38]: /en/request/learn/postpone
-[39]: /en/learn/basics/overview-pages#pin-unpin
 [40]: /en/request/admin/type/index
 [41]: /en/request/learn/personalize
+[42]: /en/request/learn/work-with-requests
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
-[img3]: /media/loc/en/request/service-dashboard.png
-[img4]: /media/loc/en/request/request-screen-overview.png
-[img5]: /media/loc/en/request/request-screen-left-panel.png
-[img6]: /media/loc/en/request/request-screen-tab-menu.png

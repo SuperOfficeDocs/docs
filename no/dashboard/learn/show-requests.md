@@ -4,7 +4,7 @@ title: Bruke saker i figurer
 description: I denne veiledningen lærer du hvordan du får en rask oversikt over alle åpne saker i SuperOffice-dashbord.
 keywords: ['dashbord', 'sak']
 author: digitaldiina
-date: 11.18.2026
+date: 11.24.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -14,7 +14,7 @@ related:
   - Opprette et nytt dashbord: /no/dashboard/learn/create
   - Redigere dashbordfigurer: /no/dashboard/learn/working-with-tiles
   - /no/request/learn/create
-  - Håndtere sak: /no/request/learn/index#request-mgt
+  - Håndtere sak: /no/request/learn/work-with-requests#request-mgt
   - Finne saker: /no/request/learn/find
 language: no
 ---

@@ -4,7 +4,7 @@ title: Anfragen in Kacheln verwenden
 description: In dieser Anleitung lernen Sie, wie Sie sich einen schnellen Überblick über alle offenen Anfragen in SuperOffice-Dashboards erhalten können.
 keywords: ['Dashboard', 'Anfrage']
 author: digitaldiina
-date: 11.18.2026
+date: 11.24.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -69,7 +69,7 @@ Listet Anfragen auf, die noch niemandem zugeordnet sind. Wenn Sie die [Verantwor
 [2]: ../../request/learn/accept
 [4]: ../../request/learn/create
 [5]: ../../request/learn/find
-[6]: ../../request/learn/index#request-mgt
+[6]: ../../request/learn/work-with-requests#request-mgt
 [7]: ./working-with-tiles#edit
 
 [img1]: ../../../media/loc/en/request/service-dashboard.png

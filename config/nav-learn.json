@@ -567,6 +567,7 @@
     "root": "en/request/learn/index",
     "pages": [
       "en/request/index",
+      "en/request/learn/work-with-requests",
       "en/request/learn/handle-request-ai",
       "en/request/learn/find",
       "en/request/learn/create",

@@ -4,7 +4,7 @@ title: Using requests in tiles
 description: In this how-to guide you will learn how to get a quick overview of all open requests in SuperOffice dashboards.
 keywords: ['dashboard', 'request', 'tile']
 author: digitaldiina
-date: 11.21.2025
+date: 11.24.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -14,7 +14,7 @@ related:
   - /en/dashboard/learn/create
   - Edit dashboard tiles: /en/dashboard/learn/working-with-tiles
   - /en/request/learn/create
-  - Request management: /en/request/learn/index#request-mgt
+  - Request management: /en/request/learn/work-with-requests#request-mgt
   - Find requests: /en/request/learn/find
 language: en
 ---
