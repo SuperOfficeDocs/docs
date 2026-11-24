@@ -1663,3 +1663,250 @@ html:not(.dark) .prose td {
     max-width: 110.4rem !important; /* matches #body-content's shell width, not 80rem * 1.2 */
   }
 }
+
+/* ─── FIELD TABLE (components/field-table.jsx) ─── */
+.field-table {
+  margin: 1.5rem 0;
+}
+
+.field-table-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.field-table-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.field-table-control-search {
+  flex: 1 1 16rem;
+}
+
+.field-table-control > label,
+.field-table-control > span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--so-green);
+}
+
+.dark .field-table-control > label,
+.dark .field-table-control > span {
+  color: var(--coast-blue);
+}
+
+.field-table input[type="search"],
+.field-table select {
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--charcoal);
+  background-color: var(--white);
+  border: 1px solid var(--dune-white-darker-2);
+  border-radius: 8px;
+}
+
+.dark .field-table input[type="search"],
+.dark .field-table select {
+  color: var(--dune-white);
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.field-table input[type="search"]:focus-visible,
+.field-table select:focus-visible,
+.field-table button:focus-visible,
+.field-table-scroll:focus-visible {
+  outline: 2px solid var(--so-green-hover);
+  outline-offset: 2px;
+}
+
+.dark .field-table input[type="search"]:focus-visible,
+.dark .field-table select:focus-visible,
+.dark .field-table button:focus-visible,
+.dark .field-table-scroll:focus-visible {
+  outline-color: var(--coast-blue);
+}
+
+.field-table-segments {
+  display: inline-flex;
+  height: 2.5rem;
+  border: 1px solid var(--dune-white-darker-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dark .field-table-segments {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.field-table-segments button {
+  padding: 0 1rem;
+  font-size: 0.9375rem;
+  color: var(--charcoal);
+  background-color: var(--white);
+  border: none;
+  border-right: 1px solid var(--dune-white-darker-2);
+  cursor: pointer;
+}
+
+.field-table-segments button:last-child {
+  border-right: none;
+}
+
+.field-table-segments button.is-active {
+  color: var(--white);
+  background-color: var(--so-green);
+}
+
+.dark .field-table-segments button {
+  color: var(--dune-white);
+  background-color: rgba(255, 255, 255, 0.06);
+  border-right-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .field-table-segments button.is-active {
+  color: var(--charcoal);
+  background-color: var(--coast-blue);
+}
+
+.field-table-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.875rem;
+  color: var(--so-green);
+}
+
+.dark .field-table-status {
+  color: var(--coast-blue);
+}
+
+.field-table-clear {
+  padding: 0;
+  font-size: 0.875rem;
+  color: inherit;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.field-table-scroll {
+  max-height: 36rem;
+  overflow: auto;
+  border: 1px solid var(--dune-white-darker-2);
+  border-radius: 8px;
+}
+
+.dark .field-table-scroll {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.field-table-scroll table {
+  width: 100%;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9375rem;
+}
+
+.field-table-scroll th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0;
+  text-align: left;
+  background-color: var(--dune-white-darker-1);
+  border-bottom: 1px solid var(--dune-white-darker-2);
+}
+
+.dark .field-table-scroll th {
+  background-color: #2a2a2d;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.field-table-scroll th button {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--charcoal);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark .field-table-scroll th button {
+  color: var(--dune-white);
+}
+
+.field-table-scroll td {
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--dune-white-darker-1);
+}
+
+.dark .field-table-scroll td {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.field-table-scroll tbody tr:hover td {
+  background-color: rgba(var(--dune-white-rgb), 0.6);
+}
+
+.dark .field-table-scroll tbody tr:hover td {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.field-table-scroll mark {
+  padding: 0 0.1em;
+  color: inherit;
+  background-color: var(--meadow-green);
+  border-radius: 2px;
+}
+
+.dark .field-table-scroll mark {
+  color: var(--charcoal);
+  background-color: var(--meadow-green);
+}
+
+.field-table-badge,
+.field-table-direction {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border-radius: 999px;
+}
+
+.field-table-badge {
+  margin-left: 0.5rem;
+  color: var(--plum-red-darker);
+  background-color: var(--heather-lilac);
+}
+
+.field-table-direction-export {
+  color: var(--so-green);
+  background-color: var(--meadow-green);
+}
+
+.field-table-direction-import {
+  color: var(--charcoal);
+  background-color: var(--coast-blue);
+}
+
+.field-table-empty {
+  padding: 1.5rem 0.75rem !important;
+  text-align: center;
+}
