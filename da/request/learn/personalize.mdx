@@ -1,0 +1,119 @@
+---
+title: Tilpas sagsbehandlingen
+sidebarTitle: "Tilpas"
+description: Skift, hvad fanen Oversigt viser, angiv dine præferencer for sager og din tilgængelighedsstatus, og find de globale indstillinger for SuperOffice Service.
+keywords: ['præferencer for sager', 'personlige indstillinger', 'rediger oversigt', 'rediger felter', 'kolonner i oversigten', 'felter på kort', 'tilgængelighedsstatus', 'til stede', 'ikke til stede', 'fraværsbesked', 'globale præferencer', 'ekspanderede meddelelser']
+author: digitaldiina
+date: 11.24.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /da/request/learn/index
+  - /da/request/learn/assign
+  - /da/learn/basics/overview-pages
+language: da
+---
+
+Tilpas SuperOffice Service til den måde, du arbejder på. Skift, hvad fanen **Oversigt** viser, angiv dine præferencer for sager, og vis andre, om du er tilgængelig for nye sager.
+
+## Skift kolonnerne på fanen Oversigt {#edit-overview}
+
+1. Klik på blyanten (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) i overskriften på fanen **Oversigt** for at åbne **Rediger oversigt**.
+
+1. Vælg, hvor mange kolonner du vil have, fra en til fire. Med fire kolonner kan du vise dem side om side eller som et 2 × 2-gitter.
+
+1. Vælg, hvad hver kolonne skal indeholde. Søg under **Udvalg** efter et udvalg eller en standardliste, og træk det over på en kolonne. De udvalg, der er i brug, vises først. Klik på <i class="ph ph-x" aria-label="Close icon"></i> i kolonnens overskrift for at tømme en kolonne, eller klik på <i class="ph ph-x-circle" aria-label="Remove icon"></i> ved siden af dens udvalg på listen.
+
+1. Tjek forhåndsvisningen, og klik derefter på **Gem**. Klik på **Kassér** for at kassere dine ændringer.
+
+Hvis du vil tilbage til de kolonner, du fik fra start, skal du klikke på **Nulstil** nederst i panelet **Rediger oversigt**.
+
+![Fanen Oversigt i redigeringstilstand med panelet Rediger oversigt til kolonner og udvalg -screenshot][img1]
+
+<Note>
+
+Opsætningen af din fane Oversigt gemmes i den browser, du bruger. Den følger ikke med til en anden browser eller enhed.
+
+</Note>
+
+## Skift, hvad kortene viser {#edit-fields}
+
+1. Klik på blyanten (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) i kolonnens overskrift i **Rediger oversigt**. Dialogen **Rediger felter** åbnes.
+
+1. Vælg kortets **Overskrift** og eventuelt et **Mærke**.
+
+1. Klik på **Tilføj felt** under **Felter** for at tilføje op til seks felter til kortet. Klik på <i class="ph ph-x-circle" aria-label="Remove icon"></i> for at fjerne et felt.
+
+1. Klik på **Færdig** og derefter på **Gem** i overskriften. Klik på **Nulstil til standard** i dialogen for kun at gendanne felterne i denne kolonne.
+
+![Dialogen Rediger felter for kolonnen Seneste sager med Overskrift, Mærke og Felter -screenshot][img2]
+
+Forhåndsvisningspanelet lukkes, mens du redigerer.
+
+## Personlige præferencer {#preferences}
+
+Du kan tilpasse sager, så de passer til din arbejdsproces:
+
+1. Gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** > **Præferencer**.
+
+1. Vælg **Sag**, og juster indstillinger som:
+    * Vis den sidste meddelelse øverst.
+    * Brug den ældste sag som hovedsag ved fusionering.
+    * Visning af eksempel på billedvedhæftning i meddelelser.
+    * Antal ekspanderede meddelelser.
+    * Indsæt sidste meddelelse automatisk.
+    * Vis kun egne kategorier.
+    * Luk automatisk fanen, når du føjer en meddelelse til sagen.
+    * Luk automatisk fanen, når status for sagen ændres til Lukket.
+    * Standardejer og -kategori for nye sager.
+    * Standardstatus for ny sag og Standardstatus for ny meddelelse. Se [rækkefølge for standardstatus][1].
+
+1. Vælg **Besked via e-mail**, og juster indstillinger som:
+    * Nye sager eller meddelelser.
+    * Sag eskaleret.
+
+1. Klik på **Gem** for at anvende dine ændringer.
+
+## Din tilgængelighedsstatus {#available}
+
+Din tilgængelighedsstatus bestemmer, om du modtager sager via automatisk tildeling. Den påvirker også tildelingen af personer.
+
+Klik på <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** i topmenuen, og vælg **Din tilgængelighedsstatus** for at opdatere din status.
+
+* **Til stede:** Du er tilgængelig for automatisk tildeling af sager og personer.
+* **Ikke til stede:** Nye sager tildeles ikke til dig. Din fraværsbesked vises ved dit navn, når nogen manuelt tildeler en sag.
+
+<Tip>
+Hvis en sagsbehandler glemmer at opdatere sin status eller er uventet fraværende, kan en administrator ændre sagsbehandlerens tilgængelighedsstatus på vedkommendes vegne i **Indstillinger og vedligeholdelse** > **Brugere**.
+</Tip>
+
+Hvordan sager fordeles igen, når en bruger ikke er til stede, afhænger af den [fordelingsregel][2], der er konfigureret for kategorien.
+
+## Globale præferencer {#global}
+
+Administratorer kan tilpasse Service for alle brugere i Indstillinger og vedligeholdelse.
+
+1. I **Indstillinger og vedligeholdelse** skal du vælge <i class="ph ph-gear" aria-hidden="true"></i> **Præferencer** i navigatoren.
+1. Gå til fanen **Globale præferencer** og rul ned til sektionen **SuperOffice Service systemindstillinger**.
+
+Nogle indstillinger, der påvirker supportagenter, inkluderer:
+
+* Anonymiser brugere ved svar
+* Standard Fra-adresse
+* Standardstil for udgående e-mail
+* Eksternt adgangsniveau som standard
+* Ny status ved accept af en sag
+* Send e-mailbesked om åbne sager
+
+[Se den fulde liste][3]
+
+[1]: /da/request/admin/status/index#default
+[2]: /da/request/learn/assign
+[3]: /da/admin/preferences/service-settings
+
+[img1]: /media/loc/en/request/request-screen-edit-overview.png
+[img2]: /media/loc/en/request/request-screen-edit-fields.png

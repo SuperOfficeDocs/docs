@@ -574,6 +574,7 @@
           "nl/request/learn/postpone",
           "nl/request/learn/close",
           "nl/request/learn/delete",
+          "nl/request/learn/personalize",
           {
             "group": "Voor beheerders",
             "root": "nl/request/admin/index",

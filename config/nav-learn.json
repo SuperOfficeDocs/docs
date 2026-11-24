@@ -587,6 +587,7 @@
       "en/request/learn/postpone",
       "en/request/learn/close",
       "en/request/learn/delete",
+      "en/request/learn/personalize",
       {
         "group": "For administrators",
         "root": "en/request/admin/index",

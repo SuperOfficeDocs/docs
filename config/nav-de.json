@@ -574,6 +574,7 @@
           "de/request/learn/postpone",
           "de/request/learn/close",
           "de/request/learn/delete",
+          "de/request/learn/personalize",
           {
             "group": "Für Admins",
             "root": "de/request/admin/index",

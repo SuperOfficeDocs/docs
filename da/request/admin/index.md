@@ -4,7 +4,7 @@ title: Forskellige indstillinger for Service
 description: Systemindstillinger
 keywords: ['Tjeneste']
 author: digitaldiina
-date: 06.10.2026
+date: 11.24.2026
 so_version: 12.0
 content_type: reference
 license: serviceessentials
@@ -48,7 +48,7 @@ I denne del af SuperOffice Service kan du konfigurere indstillingerne for Servic
 [11]: /da/admin/preferences/service-settings
 [12]: /da/admin/user-management/role/index
 [13]: /da/admin/user-management/index
-[7]: /da/request/learn/index#available
+[7]: /da/request/learn/personalize#available
 [15]: /da/ui/blogic/learn/index
 [16]: /da/ui/blogic/learn/profiles/index
 
