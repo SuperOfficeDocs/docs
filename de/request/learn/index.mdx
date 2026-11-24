@@ -4,7 +4,7 @@ title: Anfragen und SuperOffice Service
 description: Einführung zu Anfragen in SuperOffice
 keywords: ['Anfragenmanagement', 'Anfrage', 'Ticket', 'Service', 'Anfrageansicht', 'Anfragekarte', 'Übersicht', 'linkes Panel', 'aktive Registerkarten', 'angeheftete Anfragen', 'Vorschaupanel', 'Standardlisten', 'Registerkarte automatisch schließen', 'mehrere aktive Registerkarten', 'alle Registerkarten schließen', 'zu viele Registerkarten', 'nicht gespeicherte Änderungen']
 author: digitaldiina
-date: 11.23.2026
+date: 11.24.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -31,7 +31,7 @@ Unser Ticketing-System ermöglicht Ihnen eine effiziente Bearbeitung eingehender
 
 Jede Kundenanfrage kann als Anfrage definiert werden. Diese reichen von Supportanfragen über Produkt- und Serviceanfragen bis hin zu Rechnungsanfragen. Ihr Ziel ist es, jede eingehende Anfrage so schnell, effizient und professionell wie möglich zu bearbeiten. Die Vorschau einer Anfrage aus einer Liste ermöglicht Ihnen außerdem, eine [Schnellantwort][28] zu senden, ohne die Liste zu verlassen, sodass Sie eine stark ausgelastete Warteschlange durcharbeiten können.
 
-![Anfrageansicht mit der Liste Letzte Anfragen und einer Vorschau der ausgewählten Anfrage -screenshot][img1]
+![Anfrageansicht mit der Liste Nicht zugeordnete Anfragen und einer Vorschau der ausgewählten Anfrage -screenshot][img1]
 
 <Note>
 
@@ -73,13 +73,13 @@ Die Anfrageansicht ist der Ort, an dem Sie mit Ihren Anfragen arbeiten. Sie hat 
 
 ### Was Sie beim ersten Mal sehen {#first-time}
 
-Wenn Sie die Anfrageansicht zum ersten Mal öffnen, werden die horizontalen Registerkarten, die Sie geöffnet hatten, in das linke Panel kopiert. Angeheftete Registerkarten bleiben angeheftet. Die Registerkarte **Übersicht** wird geöffnet, wenn Sie keine aktive Registerkarte haben. Ihre alten Registerkarten werden nicht geändert.
+Wenn Sie die Anfrageansicht zum ersten Mal öffnen, werden die horizontalen Registerkarten, die Sie geöffnet hatten, in das linke Panel kopiert. Angeheftete Registerkarten bleiben angeheftet. Die Registerkarte **Übersicht** wird geöffnet, wenn Sie keine Registerkarten geöffnet haben. Ihre alten Registerkarten werden nicht geändert.
 
 ## Einen Überblick über Ihre Anfragen erhalten {#overview}
 
 Die Registerkarte **Übersicht** zeigt Ihre Arbeit in bis zu vier Spalten mit Anfragen als Karten. Standardmäßig sind die Spalten **Nicht zugeordnete Anfragen**, **Eigene unbearbeitete Anfragen**, **Meine Favoriten** und **Letzte Anfragen**. Jede Karte zeigt den Anfragetyp, die Anfrage-ID, den Titel, die Firma und den Status.
 
-![Registerkarte Übersicht mit den Spalten Nicht zugeordnete Anfragen, Eigene unbearbeitete Anfragen, Meine Favoriten und Letzte Anfragen -screenshot][img4]
+![Registerkarte Übersicht mit den Spalten Nicht zugeordnete Anfragen, Eigene unbearbeitete Anfragen und Letzte Anfragen -screenshot][img4]
 
 1. Klicken Sie im linken Panel auf **Übersicht**.
 
@@ -99,17 +99,17 @@ So arbeiten Sie mit der Registerkarte **Übersicht**:
 
 ### Die Spalten der Registerkarte Übersicht ändern {#edit-overview}
 
-1. Klicken Sie auf die Zahnradschaltfläche (<i class="ph ph-gear" aria-label="Gear"></i>), um **Übersicht bearbeiten** zu öffnen.
+1. Klicken Sie in der Kopfzeile der Registerkarte **Übersicht** auf den Stift (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>), um **Übersicht bearbeiten** zu öffnen.
 
 1. Wählen Sie, wie viele Spalten Sie möchten, von einer bis vier. Bei vier Spalten können Sie sie nebeneinander oder als 2 × 2-Raster anzeigen.
 
-1. Wählen Sie, was jede Spalte füllt. Suchen Sie unter **Selektionen** nach einer Selektion oder einer Standardliste und ziehen Sie sie auf eine Spalte. Um eine Spalte zu leeren, klicken Sie in ihrer Kopfzeile auf <i class="ph ph-x" aria-label="Close icon"></i>.
+1. Wählen Sie, was jede Spalte füllt. Suchen Sie unter **Selektionen** nach einer Selektion oder einer Standardliste und ziehen Sie sie auf eine Spalte. Die verwendeten Selektionen werden zuerst aufgeführt. Um eine Spalte zu leeren, klicken Sie in ihrer Kopfzeile auf <i class="ph ph-x" aria-label="Close icon"></i>, oder klicken Sie in der Liste neben ihrer Selektion auf <i class="ph ph-x-circle" aria-label="Remove icon"></i>.
 
 1. Prüfen Sie die Vorschau und klicken Sie dann auf **Speichern**. Klicken Sie auf **Verwerfen**, um Ihre Änderungen zu verwerfen.
 
-Um zu den Spalten zurückzukehren, die Sie anfangs hatten, klicken Sie auf **Auf Standard zurücksetzen**.
+Um zu den Spalten zurückzukehren, die Sie anfangs hatten, klicken Sie unten im Bereich **Übersicht bearbeiten** auf **Zurücksetzen**.
 
-![Registerkarte Übersicht im Bearbeitungsmodus mit dem Bereich Übersicht bearbeiten für Spalten, Anordnung und Selektionen -screenshot][img7]
+![Registerkarte Übersicht im Bearbeitungsmodus mit dem Bereich Übersicht bearbeiten für Spalten und Selektionen -screenshot][img7]
 
 <Note>
 
@@ -119,17 +119,17 @@ Das Setup Ihrer Registerkarte **Übersicht** wird in dem Browser gespeichert, de
 
 ### Ändern, was die Karten anzeigen {#edit-fields}
 
-![Das Spaltenmenü mit den Optionen Felder bearbeiten und Selektionen bearbeiten -screenshot][img8]
+1. Klicken Sie in **Übersicht bearbeiten** in der Kopfzeile der Spalte auf den Stift (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>). Das Dialogfeld **Felder bearbeiten** wird geöffnet.
 
-1. Öffnen Sie das Menü der Spalte und klicken Sie auf **Felder bearbeiten**.
+1. Wählen Sie die **Überschrift** der Karte und optional ein **Badge**.
 
-1. Wählen Sie aus der Feldliste die Überschrift der Karte und optional ein Badge. Durchsuchen Sie die Liste, um ein Feld zu finden.
+1. Klicken Sie unter **Felder** auf **Feld hinzufügen**, um der Karte bis zu sechs Felder hinzuzufügen. Um ein Feld zu entfernen, klicken Sie auf <i class="ph ph-x-circle" aria-label="Remove icon"></i>.
 
-1. Wählen Sie bis zu sechs weitere Felder, die auf der Karte angezeigt werden. Ziehen Sie die Felder, um ihre Reihenfolge zu ändern.
+1. Klicken Sie auf **Fertig** und dann in der Kopfzeile auf **Speichern**. Klicken Sie im Dialogfeld auf **Auf Standard zurücksetzen**, um nur die Felder dieser Spalte wiederherzustellen.
 
-1. Klicken Sie auf **Speichern**. Klicken Sie auf **Auf Standard zurücksetzen**, um nur die Felder dieser Spalte wiederherzustellen.
+![Das Dialogfeld Felder bearbeiten für die Spalte Letzte Anfragen mit Überschrift, Badge und Feldern -screenshot][img8]
 
-Das linke Panel wird ausgeblendet und das Vorschaupanel geschlossen, während Sie bearbeiten.
+Das Vorschaupanel wird geschlossen, während Sie bearbeiten.
 
 ### Eine Anfrage auf der Registerkarte Übersicht in der Vorschau anzeigen und aktualisieren {#slide-in}
 
@@ -143,9 +143,11 @@ Um das Panel breiter oder schmaler zu machen, zeigen Sie auf seinen linken Rand 
 
 ## Mit den Registerkarten im linken Panel arbeiten {#tabs}
 
-Jeder Abschnitt des linken Panels hat eine Gruppe **Aktiv** und eine Gruppe **Angeheftet**. Sie können viele Anfragen und Selektionen gleichzeitig in der Gruppe **Aktiv** geöffnet halten. Eine Registerkarte ist entweder aktiv oder angeheftet, nie beides. Ihre Registerkarten werden gespeichert, sodass sie da sind, wenn Sie sich in einem anderen Browser anmelden.
+Das linke Panel hat zwei Gruppen. **Angeheftet** enthält die Anfragen und Selektionen, die Sie angeheftet haben, und **Registerkarten** enthält die, die Sie geöffnet haben. Sie können viele Anfragen und Selektionen gleichzeitig geöffnet halten. Eine Registerkarte ist entweder in **Registerkarten** oder in **Angeheftet**, nie in beiden. Ihre Registerkarten werden gespeichert, sodass sie da sind, wenn Sie sich in einem anderen Browser anmelden.
 
-![Das linke Panel der Anfrageansicht mit den Abschnitten Selektionen und Anfragen, jeweils mit einer Gruppe Aktiv und einer Gruppe Angeheftet -screenshot][img5]
+Um eine Anfrage anzuheften, klicken Sie in der Kopfzeile der Anfrage auf das Pinnsymbol (<i class="ph ph-push-pin" aria-label="Pin icon"></i>). Sie können eine Registerkarte auch über ihr Menü anheften. Siehe [Registerkarten anheften und lösen][39].
+
+![Das linke Panel der Anfrageansicht mit den Gruppen Angeheftet und Registerkarten -screenshot][img5]
 
 ### Eine weitere Registerkarte öffnen {#open-tab}
 
@@ -153,7 +155,7 @@ Jeder Abschnitt des linken Panels hat eine Gruppe **Aktiv** und eine Gruppe **An
 
 <Note>
 
-Sie können bis zu 50 Registerkarten gleichzeitig geöffnet haben, aktive und angeheftete zusammengezählt. Wenn Sie versuchen, mehr zu öffnen, wird das Dialogfeld **Zu viele Registerkarten** angezeigt, und es wird nichts geöffnet. Schließen Sie die Registerkarten, die Sie nicht mehr benötigen, und versuchen Sie es erneut.
+Sie können bis zu 50 Registerkarten gleichzeitig geöffnet haben, die Registerkarten beider Gruppen zusammengezählt. Wenn Sie eine weitere öffnen, wird die älteste Registerkarte automatisch geschlossen.
 
 </Note>
 
@@ -163,13 +165,13 @@ Sie können bis zu 50 Registerkarten gleichzeitig geöffnet haben, aktive und an
 
 1. Wählen Sie eine Option:
 
-    * **Alle schließen:** Schließt alle aktiven Registerkarten in der Gruppe.
+    * **Alle schließen:** Schließt alle Registerkarten in der Gruppe **Registerkarten**.
 
-    * **Alle außer diesem schließen:** Schließt alle aktiven Registerkarten in der Gruppe außer dieser.
+    * **Alle außer diesem schließen:** Schließt alle Registerkarten in der Gruppe **Registerkarten** außer dieser.
 
 Für angeheftete Registerkarten verwenden Sie **Alle lösen und schließen** oder **Alle außer diesem lösen und schließen**. Wenn Sie die aktuelle Registerkarte schließen, wird die benachbarte Registerkarte geöffnet. Wenn Sie die letzte Registerkarte schließen, wird die Registerkarte **Übersicht** geöffnet.
 
-![Das Menü einer aktiven Registerkarte mit den Optionen Anheften, Schließen, Alle schließen und Alle außer diesem schließen -screenshot][img6]
+![Das Menü einer Registerkarte in der Gruppe Registerkarten mit den Optionen Anheften, Schließen, Alle schließen und Alle außer diesem schließen -screenshot][img6]
 
 ### Nicht gespeicherte Änderungen im Blick behalten {#unsaved}
 
@@ -207,17 +209,22 @@ Registerkarten, die automatisch geschlossen werden, fragen nie nach Bestätigung
 
 Die Anfragekarte zeigt jeweils eine Anfrage, als Registerkarte in der Anfrageansicht. Sie enthält folgende Abschnitte:
 
-* Oben auf der Karte enthält die **Kopfzeile der Anfrage** grundlegende Informationen über die Anfrage, wie ID, Titel, Person und Bearbeitungsfrist.
-* Die Seitenleiste der **Anfrageneigenschaften** enthält Felder für Eigentümer, Status, Kategorie, Priorität, Zugriffsebene und Tags. Alle Felder können mit den Schaltflächen **Speichern** und **Abbrechen** bearbeitet werden.
-* Unter der Kopfzeile befindet sich eine Zeile mit Schaltflächen für Aufgaben im Zusammenhang mit Anfragen, wie Antworten, Allen antworten, Weiterleiten und Kommentar hinzufügen.
-* Auf der Registerkarte **Nachrichten** werden die mit der Anfrage verknüpften Nachrichten angezeigt.
+* Oben auf der Karte zeigt die **Kopfzeile der Anfrage** den Titel, die Person und die Firma der Anfrage.
+* Die Seitenleiste der **Anfrageneigenschaften** enthält die Felder Anfrageart, Status, Eigentümer, Kategorie, Priorität, Zugriffsebene und Tags. Alle Felder können mit den Schaltflächen **Speichern** und **Abbrechen** bearbeitet werden.
+* Auf der Registerkarte **Nachrichten** werden die mit der Anfrage verknüpften Nachrichten angezeigt. Oben auf der Registerkarte befinden sich Schaltflächen für Antworten, Allen antworten, Weiterleiten und Kommentar hinzufügen.
 * Die Registerkarte **Details** enthält eine Übersicht über die für die Anfrage erfassten Daten.
-* Die Registerkarte **Beziehungen** zeigt [verknüpfte Anfragen][21] (übergeordnet, untergeordnet oder verwandt).
 * Die Registerkarte **Änderungsprotokoll** enthält den Verlauf dieser Anfrage. Das Anfrageprotokoll zeigt den Verlauf dieser Anfrage seit der ersten Erfassung.
+* Die Registerkarte **Verknüpfte Anfragen** zeigt [verknüpfte Anfragen][21] (übergeordnet, untergeordnet oder verwandt).
 
 ### Kopfzeile der Anfrage
 
-Die Kopfzeile der Anfrage enthält die Eigenschaften, die während des Vorgangs [Anfrage wurde erstellt][4] definiert wurden. Die Kopfzeile umfasst den Titel der Anfrage, die Person, die Bearbeitungsfrist und die Anfrage-ID. Zusätzlich können Sie auf <i class="ph ph-star" aria-label="Star icon"></i> klicken und die Anfrage als Favoriten einstellen. Die Anfrage ist dann im Navigator über **Meine Favoriten** unter **Anfragen** und in der Kachel **Meine Favoriten** im [Dashboard][17] verfügbar.
+Die Kopfzeile der Anfrage zeigt den Titel, die Person und die Firma, die beim [Erstellen der Anfrage][4] definiert wurden. Sie hat außerdem folgende Schaltflächen:
+
+* <i class="ph ph-star" aria-label="Star icon"></i>: Legt die Anfrage als Favoriten fest. Die Anfrage ist dann im Navigator über **Meine Favoriten** unter **Anfragen** und in der Kachel **Meine Favoriten** im [Dashboard][17] verfügbar.
+* <i class="ph ph-push-pin" aria-label="Pin icon"></i>: Heftet die Anfrage im linken Panel an.
+* <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i>: Lädt die Anfrage neu.
+* <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>: Bearbeitet die Anfrage.
+* <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>: Öffnet das Menü der Schaltfläche **Aufgabe**. Siehe [Aufgabenoptionen](#task-options).
 
 ### Registerkarte Nachrichten
 
@@ -244,7 +251,7 @@ Interne Nachrichten werden mit dem Symbol <i class="ph ph-dots-three" aria-label
 
 #### Mitteilungsaufgaben
 
-Klicken Sie auf <i class="ph ph-dots-three-circle-vertical" aria-label="Aufgabe"></i> in einer Nachricht, um auf zusätzliche Optionen für die Nachricht zuzugreifen:
+Klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) in einer Nachricht, um auf zusätzliche Optionen für die Nachricht zuzugreifen:
 
 * **Ändern**: Klicken Sie hier, um die Nachricht zu [bearbeiten][9] oder zu löschen.
 * **Antworten**: Klicken Sie hier, um der Person im Feld An zu antworten.
@@ -277,6 +284,8 @@ In dieser Ansicht werden die Protokolleinträge für die Anfrage angezeigt. Zu s
 
 Die Seitenleiste Eigenschaften der Anfrage enthält folgende Optionen:
 
+* **Anfrageart**: Die [Art][40] der Anfrage. Sie können die Anfrageart hier ändern.
+
 * **Status**: Zeigt den Status der Anfrage an. Sie können den Status hier ändern.
   * **Geöffnet**: Die Anfrage ist noch nicht abgeschlossen.
   * **Geschlossen**: Die Anfrage wurde vollständig beantwortet.
@@ -294,16 +303,18 @@ Die Seitenleiste Eigenschaften der Anfrage enthält folgende Optionen:
 
 * **Tags**: Im Listenfeld **Tags** müssen Sie für diese Anfrage [relevante Tags auswählen][22].
 
-### Aufgabenoptionen
+### Aufgabenoptionen {#task-options}
 
-Der Schaltfläche **Aufgabe**: Klicken Sie auf diese Schaltfläche, um auf folgende Optionen zuzugreifen:
+Klicken Sie in der Kopfzeile der Anfrage auf die Schaltfläche **Aufgabe** (<i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>), um auf folgende Optionen zuzugreifen:
 
 * **Bearbeiten**: Klicken Sie hier, um die Eigenschaften dieser Anfrage zu bearbeiten. Sie können die Anfrage beispielsweise einem anderen Bearbeiter zuweisen, wenn Sie einen [Kollegen um Rat fragen][7] müssen.
 * **Annehmen**: Klicken Sie hier, damit Sie die [Anfrage übernehmen][1] können. Sie werden dann zum neuen Eigentümer der Anfrage.
+* **Verknüpfen**: Klicken Sie hier, um die [Anfrage mit einer anderen Anfrage zu verknüpfen][21].
 * **Aufteilen**: Wenn eine Anfrage mehrere Fragen enthält, beispielsweise, wenn der Kunde zuerst eine technische Frage stellt und dann die Gelegenheit nutzt, um eine Frage bezüglich einer Rechnung zu stellen, können Sie mithilfe dieser Schaltfläche die [Anfrage aufteilen][11].
 * **Zusammenführen**: Klicken Sie hier, um die Anfrage mit einer oder mehreren Anfragen zusammenzuführen. Wenn mehrere Personen in derselben Firma dasselbe technische Problem gemeldet haben (telefonisch, über Web-Formulare und E-Mail), können Sie diese [Anfragen zusammenführen][16], damit eine zu verarbeitende Anfrage entsteht. Standardmäßig wird die älteste Anfrage zur primären Anfrage.
 * **Drucken**: Klicken Sie hier, um die Anfrage zu drucken.
 * **Löschen**: Klicken Sie hier, um die Anfrage zu löschen.
+* **Als Spam markieren**: Klicken Sie hier, um die [Anfrage als Spam zu markieren][27].
 
 ## Anfragenmanagement {#request-mgt}
 
@@ -442,6 +453,8 @@ Einige Einstellungen, die Support-Agenten betreffen, umfassen:
 [36]: /de/request/learn/mentions
 [37]: /de/request/admin/status/index#default
 [38]: /de/request/learn/postpone
+[39]: /de/learn/basics/overview-pages#pin-unpin
+[40]: /de/request/admin/type/index
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/service-dashboard.png
@@ -449,4 +462,4 @@ Einige Einstellungen, die Support-Agenten betreffen, umfassen:
 [img5]: /media/loc/en/request/request-screen-left-panel.png
 [img6]: /media/loc/en/request/request-screen-tab-menu.png
 [img7]: /media/loc/en/request/request-screen-edit-overview.png
-[img8]: /media/loc/en/request/request-screen-column-menu.png
+[img8]: /media/loc/en/request/request-screen-edit-fields.png

@@ -2,10 +2,10 @@
 title: Mit Übersichtsseiten arbeiten
 sidebarTitle: "Übersichtsseiten"
 description: Übersichtsseiten kombinieren ein linkes Panel mit vertikalen Registerkarten, Selektionen in der Listen- oder Board-Ansicht und den Datensatz, an dem Sie arbeiten.
-keywords: ['Übersichtsseite', 'Verkaufsübersicht', 'Startseite', 'Sale screen', 'Verkaufsansicht', 'neue Verkaufsansicht', 'Request screen', 'Anfrageansicht', 'Übersicht', 'linkes Panel', 'vertikale Registerkarten', 'In Registerkarten suchen', 'Seitenleiste', 'angeheftet', 'anheften', 'lösen', 'Selektion', 'Board-Ansicht', 'Listenansicht', 'Filter', 'aktuell', 'zuletzt verwendet', 'zuletzt angezeigte Registerkarte', 'active', 'active tab']
+keywords: ['Übersichtsseite', 'Verkaufsübersicht', 'Startseite', 'Sale screen', 'Verkaufsansicht', 'neue Verkaufsansicht', 'Request screen', 'Anfrageansicht', 'Übersicht', 'linkes Panel', 'vertikale Registerkarten', 'In Registerkarten suchen', 'Seitenleiste', 'angeheftet', 'anheften', 'lösen', 'Selektion', 'Board-Ansicht', 'Listenansicht', 'Filter', 'aktuell', 'zuletzt verwendet', 'Registerkarten', 'geöffnete Registerkarten', 'active tab', 'In Anfragen und Selektionen suchen', 'In Verkäufen und Selektionen suchen']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.24.2026
+so_version: 12.7
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -43,9 +43,9 @@ Eine Übersichtsseite ist eine Ansicht, in der Sie Ihre Selektionen sehen, einen
 
 * **Klicken Sie irgendwo in SuperOffice CRM auf einen Link zu einem Datensatz.** Zum Beispiel in der Board-Ansicht, einer Bereichsregisterkarte oder der Seitenleiste. Der Datensatz wird in der Übersichtsseite geöffnet und zu Ihrem aktuellen Datensatz.
 
-* **Klicken Sie auf die Schaltfläche Neu, um einen Datensatz des Typs zu erstellen, für den die Ansicht gedacht ist.** Der neue Datensatz wird in der Übersichtsseite geöffnet. Wenn Sie ihn speichern, wird er in der zuletzt angezeigten Registerkarte geöffnet und zu Ihrem aktuellen Datensatz.
+* **Klicken Sie auf die Schaltfläche Neu, um einen Datensatz des Typs zu erstellen, für den die Ansicht gedacht ist.** Der neue Datensatz wird in einer Registerkarte in der Übersichtsseite geöffnet. Wenn Sie ihn speichern, wird er zu Ihrem aktuellen Datensatz.
 
-    In der Anfrageansicht wird eine neue Anfrage in einer Registerkarte **Neue Anfrage** oben in der Gruppe **Aktiv** geöffnet. Sie können jeweils nur eine Registerkarte **Neue Anfrage** geöffnet haben, und sie kann nicht angeheftet werden. Wenn Sie speichern, wird die Registerkarte zur gespeicherten Anfrage.
+    In der Anfrageansicht wird eine neue Anfrage in einer Registerkarte **Neue Anfrage** oben in der Gruppe **Registerkarten** geöffnet. Sie können jeweils nur eine Registerkarte **Neue Anfrage** geöffnet haben, und sie kann nicht angeheftet werden. Wenn Sie speichern, wird die Registerkarte zur gespeicherten Anfrage.
 
 ## Layout einer Übersichtsseite {#areas}
 
@@ -59,17 +59,19 @@ Eine Übersichtsseite ist eine Ansicht, in der Sie Ihre Selektionen sehen, einen
 
 ### Das linke Panel {#left-panel}
 
-Das linke Panel zeigt Ihre Selektionen und Datensätze als vertikale Registerkarten. Die Registerkarten sind in Gruppen organisiert. In der Verkaufsansicht sind das die Gruppen **Selektionen** und **Verkäufe**. In der Anfrageansicht sind **Selektionen** und **Anfragen** Abschnitte, und jeder Abschnitt hat eine Gruppe **Aktiv** und eine Gruppe **Angeheftet**.
+Das linke Panel zeigt Ihre Selektionen und Datensätze als vertikale Registerkarten in zwei Gruppen:
 
-![Das linke Panel mit den Gruppen Selektionen und Verkäufe -screenshot][img2]
+* **Angeheftet:** Die Selektionen und Datensätze, die Sie angeheftet haben. Die Gruppe wird über **Registerkarten** angezeigt, wenn Sie Ihre erste Registerkarte anheften.
 
-Jede Gruppe kann eine zuletzt angezeigte Registerkarte und beliebig viele angeheftete Registerkarten haben. Die zuletzt angezeigte Registerkarte befindet sich direkt unter der Gruppenüberschrift und hat keine Beschriftung. Sie enthält die Selektion oder den Datensatz, den Sie zuletzt geöffnet haben und der nicht angeheftet ist, und sie wird ersetzt, wenn Sie eine andere Selektion oder einen anderen Datensatz öffnen, der nicht angeheftet ist. Wenn Sie eine angeheftete Registerkarte öffnen, wird sie nicht ersetzt.
+* **Registerkarten:** Die Selektionen und Datensätze, die Sie geöffnet haben. Sie können mehrere gleichzeitig geöffnet haben.
 
-Angeheftete Registerkarten stehen unter der Überschrift **Angeheftet**, die die Anzahl der angehefteten Registerkarten anzeigt. Klicken Sie auf die Überschrift, um die Liste ein- oder auszuklappen. Angeheftete Registerkarten bleiben bestehen, bis Sie sie schließen, und sie werden nicht automatisch sortiert. Verwenden Sie daher **In Registerkarten suchen**, um die gewünschte Registerkarte zu finden. Ziehen Sie Registerkarten per Drag-and-Drop, um sie manuell neu anzuordnen oder eine Registerkarte zwischen der zuletzt angezeigten Registerkarte und der Liste der angehefteten Registerkarten zu verschieben.
+![Das linke Panel mit den Gruppen Angeheftet und Registerkarten -screenshot][img2]
 
 Klicken Sie auf den Namen einer Registerkarte, um sie im Hauptbereich zu öffnen. Die Registerkarte für die Selektion oder den Datensatz, die bzw. der im Hauptbereich angezeigt wird, ist hervorgehoben.
 
-In der Anfrageansicht kann eine Gruppe **Aktiv** mehrere Registerkarten enthalten, statt einer einzelnen zuletzt angezeigten Registerkarte. Siehe [Mit den Registerkarten im linken Panel arbeiten][11].
+Angeheftete Registerkarten bleiben bestehen, bis Sie sie schließen. Klicken Sie auf eine Gruppenüberschrift, um deren Registerkarten aus- oder einzublenden. Ziehen Sie Registerkarten per Drag-and-Drop, um sie neu anzuordnen.
+
+In der Anfrageansicht stehen **Übersicht**, **Anfrage suchen** und **Erwähnungen** über den Gruppen. Weitere Informationen zu Anfrage-Registerkarten finden Sie unter [Mit den Registerkarten im linken Panel arbeiten][11].
 
 ### Das linke Panel ein- oder ausblenden {#collapse}
 
@@ -77,9 +79,9 @@ In der Anfrageansicht kann eine Gruppe **Aktiv** mehrere Registerkarten enthalte
 
 1. Klicken Sie erneut auf die Schaltfläche (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>), um das Panel einzublenden. Das Panel wird nicht geöffnet, wenn Sie darauf zeigen.
 
-Wenn das Panel ausgeblendet ist, klicken Sie auf das Symbol einer Gruppe, um das zugehörige Menü **Weitere Optionen** zu öffnen, mit einem Suchfeld und Ihren zuletzt angezeigten und angehefteten Registerkarten. In der Anfrageansicht listet das Menü Ihre aktiven und angehefteten Registerkarten auf. Das ausgeblendete Panel hat außerdem Schaltflächen für das Suchfeld, die Registerkarte **Übersicht**, Anfrage suchen und [Erwähnungen][12].
+Wenn das Panel ausgeblendet ist, zeigt es stattdessen eine Spalte mit Schaltflächen, beginnend mit dem Suchfeld. In der Anfrageansicht hat es außerdem Schaltflächen für die Registerkarte **Übersicht**, Anfrage suchen und [Erwähnungen][12].
 
-![Das ausgeblendete linke Panel mit einem Symbol für das Suchfeld und je einem Symbol pro Gruppe -screenshot][img7]
+![Das ausgeblendete linke Panel mit Schaltflächen für das Suchfeld und die Registerkarten -screenshot][img7]
 
 Auch die Seitenleiste hat eine Schaltfläche zum Ein- und Ausblenden, oben rechts auf dem Bildschirm. Dasselbe Symbol wird für den Navigator, das linke Panel und die Seitenleiste verwendet.
 
@@ -103,8 +105,8 @@ Mit den Symbolen oben im Dialogfeld wechseln Sie zwischen drei Ansichten:
 
 | Symbol | Ansicht | Beschreibung |
 |:-:|---|---|
-| <i class="ph ph-clock" aria-label="Uhr-Symbol"></i> | **[Verlauf][6]** | Zeigt zuerst Ihre Standardselektionen und danach die Verkäufe und Selektionen, die Sie zuletzt geöffnet haben. Das Dialogfeld wird in dieser Ansicht geöffnet. |
-| <i class="ph ph-star" aria-label="Stern-Symbol"></i> | **[Favoriten][3]** | Zeigt die Selektionen und Verkäufe, die Sie als Favoriten festgelegt haben. |
+| <i class="ph ph-clock" aria-label="Uhr-Symbol"></i> | **[Verlauf][6]** | Zeigt die Datensätze und Selektionen, die Sie zuletzt geöffnet haben, jeweils nach Typ unter einer eigenen Überschrift. In der Anfrageansicht stehen die Standardlisten an erster Stelle. Das Dialogfeld wird in dieser Ansicht geöffnet. |
+| <i class="ph ph-star" aria-label="Stern-Symbol"></i> | **[Favoriten][3]** | Zeigt die Datensätze und Selektionen, die Sie als Favoriten festgelegt haben. |
 | <i class="ph ph-magnifying-glass" aria-label="Such-Symbol"></i> | **Suchen** | Zeigt die Ergebnisse der letzten Suche. |
 
 So finden und öffnen Sie eine Selektion oder einen Datensatz:
@@ -115,17 +117,7 @@ So finden und öffnen Sie eine Selektion oder einen Datensatz:
 
 1. Wählen Sie die Selektion oder den Datensatz aus, die bzw. den Sie im Hauptbereich öffnen möchten.
 
-### Eine bereits geöffnete Registerkarte finden
-
-So durchsuchen Sie nur die Registerkarten einer Gruppe, z. B. die Registerkarten unter **Selektionen** oder **Verkäufe**:
-
-1. Klicken Sie neben der Gruppenüberschrift auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen).
-
-1. Geben Sie Text in **In Registerkarten suchen** ein, um die Liste einzugrenzen.
-
-1. Wählen Sie eine Registerkarte aus, um sie zu öffnen.
-
-![Das Menü der Gruppe Verkäufe mit dem Feld In Registerkarten suchen und den Registerkarten der Gruppe -screenshot][img5]
+Das Suchfeld findet auch die Registerkarten, die Sie bereits geöffnet oder angeheftet haben.
 
 ## Registerkarten anheften und lösen {#pin-unpin}
 
@@ -139,29 +131,41 @@ Angeheftete Registerkarten sind von Ihren [Favoriten][3] getrennt.
 
 ### Eine Registerkarte anheften {#pin}
 
-1. Zeigen Sie auf die zuletzt angezeigte Registerkarte oder eine aktive Registerkarte.
+1. Zeigen Sie auf eine Registerkarte in der Gruppe **Registerkarten**, und klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen).
 
-1. Klicken Sie auf das Pinnsymbol (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), oder klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und dann auf **Anheften**.
+1. Klicken Sie auf **Anheften**.
 
-Die Registerkarte wird an den Anfang der Liste der angehefteten Registerkarten verschoben.
+Die Registerkarte wird an das Ende der Gruppe **Angeheftet** verschoben.
+
+In der Anfrageansicht können Sie auch in der Kopfzeile der Anfrage auf das Pinnsymbol (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) klicken.
+
+![Das Menü einer Registerkarte in der Gruppe Registerkarten mit den Optionen Anheften, Schließen, Alle schließen und Alle außer diesem schließen -screenshot][img8]
 
 ### Eine Registerkarte schließen {#close}
 
-1. Zeigen Sie auf die Registerkarte. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) wird angezeigt, und eine angeheftete Registerkarte zeigt zusätzlich <i class="ph ph-x" aria-label="Close icon"></i>.
+1. Zeigen Sie auf die Registerkarte. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und <i class="ph ph-x" aria-label="Close icon"></i> werden angezeigt.
 
-1. Klicken Sie auf <i class="ph ph-x" aria-label="Close icon"></i>, oder klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und wählen Sie eine Option.
+1. Klicken Sie auf <i class="ph ph-x" aria-label="Close icon"></i>, um die Registerkarte zu schließen, oder klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und wählen Sie eine Option.
 
-    * **Schließen:** Schließt die zuletzt angezeigte Registerkarte. In der Anfrageansicht schließt es die aktive Registerkarte.
+    Für eine Registerkarte in der Gruppe **Registerkarten**:
+
+    * **Schließen:** Schließt die Registerkarte.
+
+    * **Alle schließen:** Schließt alle Registerkarten in der Gruppe **Registerkarten**.
+
+    * **Alle außer diesem schließen:** Schließt alle Registerkarten in der Gruppe **Registerkarten** außer dieser.
+
+    Für eine Registerkarte in der Gruppe **Angeheftet**:
 
     * **Lösen und schließen:** Schließt die angeheftete Registerkarte.
 
-    * **Alle lösen und schließen:** Schließt alle angehefteten Registerkarten in der Gruppe.
+    * **Alle lösen und schließen:** Schließt alle angehefteten Registerkarten.
 
-    * **Alle außer diesem lösen und schließen:** Schließt alle angehefteten Registerkarten in der Gruppe außer dieser.
+    * **Alle außer diesem lösen und schließen:** Schließt alle angehefteten Registerkarten außer dieser.
 
 ![Das Menü für eine angeheftete Registerkarte mit den Optionen Lösen und schließen, Alle lösen und schließen sowie Alle außer diesem lösen und schließen -screenshot][img3]
 
-Wenn Sie die geöffnete Registerkarte schließen, wird die nächste Registerkarte geöffnet: die darunter in der Liste der angehefteten Registerkarten oder, wenn darunter keine steht, die darüber. Wenn Sie die zuletzt angezeigte Registerkarte schließen, wird die erste angeheftete Registerkarte geöffnet.
+Wenn Sie die Registerkarte schließen, auf der Sie sich befinden, wird die Registerkarte daneben geöffnet.
 
 ## Selektionen {#selections}
 
@@ -189,7 +193,7 @@ Die Schaltflächen **Bearbeiten** und **Aufgabe** sind in der Übersichtsseite n
 
 ### Den Datensatz einer Selektion anzeigen
 
-1. Zeigen Sie auf die Selektionsregisterkarte, zuletzt angezeigt oder angeheftet.
+1. Zeigen Sie auf die Selektionsregisterkarte.
 
 1. Klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Weitere Optionen) und dann auf **Datensatz anzeigen**. Der Datensatz der Selektion wird angezeigt.
 
@@ -197,11 +201,11 @@ Die Schaltflächen **Bearbeiten** und **Aufgabe** sind in der Übersichtsseite n
 
 ### Einen Datensatz aus einer Selektion öffnen
 
-1. Doppelklicken Sie in der Board-Ansicht auf eine Karte, oder klicken Sie auf ihren Titel. Der Datensatz wird im Hauptbereich geöffnet und im linken Panel angezeigt. Wenn der Datensatz nicht angeheftet ist, wird er in der zuletzt angezeigten Registerkarte angezeigt. Wenn er angeheftet ist, ist seine angeheftete Registerkarte hervorgehoben.
+1. Doppelklicken Sie in der Board-Ansicht auf eine Karte, oder klicken Sie auf ihren Titel. Der Datensatz wird im Hauptbereich geöffnet und im linken Panel angezeigt. Wenn Sie ihn bereits geöffnet oder angeheftet haben, ist seine Registerkarte hervorgehoben. Andernfalls wird er in einer neuen Registerkarte in der Gruppe **Registerkarten** geöffnet.
 
 1. Um zur Selektion zurückzukehren, wählen Sie sie im linken Panel aus. Sie können auch die Schaltflächen Zurück (<i class="ph ph-caret-circle-left" aria-label="Back"></i>) und Vorwärts (<i class="ph ph-caret-circle-right" aria-label="Forward"></i>) oder die Schaltfläche [Letzte Navigation][8] (<i class="ph ph-clock" aria-label="Recent navigation"></i>) in der oberen Leiste verwenden. Das geht schneller, als sich zu merken, welche Selektion Sie angesehen haben.
 
-Wenn Sie eine Karte auswählen, um sie in der Seitenleiste in der Vorschau anzuzeigen, ändert sich die zuletzt angezeigte Registerkarte nicht.
+Wenn Sie eine Karte auswählen, um sie in der Seitenleiste in der Vorschau anzuzeigen, wird keine Registerkarte geöffnet.
 
 [1]: /de/learn/getting-started/main-screen/side-panel
 [2]: /de/sale/learn/index
@@ -219,6 +223,6 @@ Wenn Sie eine Karte auswählen, um sie in der Seitenleiste in der Vorschau anzuz
 [img2]: /media/loc/en/learn/left-panel.png
 [img3]: /media/loc/en/learn/unpin-sale.png
 [img4]: /media/loc/en/learn/selection-menu.png
-[img5]: /media/loc/en/learn/sale-search-in-tabs.png
 [img6]: /media/loc/en/learn/search-in-sales.png
 [img7]: /media/loc/en/learn/left-panel-hidden.png
+[img8]: /media/loc/en/learn/tab-menu.png

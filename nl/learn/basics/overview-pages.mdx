@@ -2,10 +2,10 @@
 title: Werken met overzichtspagina's
 sidebarTitle: "Overzichtspagina's"
 description: Overzichtspagina's combineren een linkerpaneel met verticale tabbladen, selecties in lijst- of boardweergave en het record waarmee u werkt.
-keywords: ['overzichtspagina', 'verkoopoverzicht', 'startpagina', 'Sale screen', 'Verkoopscherm', 'nieuw Verkoopscherm', 'verzoekscherm', 'Overzicht', 'linkerpaneel', 'verticale tabbladen', 'zoeken in tabbladen', 'zijbalk', 'vastgemaakt', 'vastmaken', 'losmaken', 'selectie', 'boardweergave', 'lijstweergave', 'filter', 'huidig', 'recent', 'laatst bekeken tabblad', 'active', 'active tab']
+keywords: ['overzichtspagina', 'verkoopoverzicht', 'startpagina', 'Sale screen', 'Verkoopscherm', 'nieuw Verkoopscherm', 'verzoekscherm', 'Overzicht', 'linkerpaneel', 'verticale tabbladen', 'zoeken in tabbladen', 'zijbalk', 'vastgemaakt', 'vastmaken', 'losmaken', 'selectie', 'boardweergave', 'lijstweergave', 'filter', 'huidig', 'recent', 'tabbladen', 'open tabbladen', 'active tab', 'zoeken in verzoeken en selecties', 'zoeken in verkopen en selecties']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.24.2026
+so_version: 12.7
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -43,9 +43,9 @@ Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verk
 
 * **Klik ergens in SuperOffice CRM op een koppeling naar een record.** Bijvoorbeeld in de boardweergave, een sectietabblad of het zijpaneel. Het record wordt geopend in de overzichtspagina en wordt uw huidige record.
 
-* **Klik op de knop Nieuw om een record te maken van het type waarvoor het scherm is bedoeld.** Het nieuwe record wordt geopend in de overzichtspagina. Wanneer u het opslaat, wordt het geopend in het laatst bekeken tabblad en wordt het uw huidige record.
+* **Klik op de knop Nieuw om een record te maken van het type waarvoor het scherm is bedoeld.** Het nieuwe record wordt geopend in een tabblad in de overzichtspagina. Wanneer u het opslaat, wordt het uw huidige record.
 
-    Op het Verzoekscherm wordt een nieuw verzoek geopend in een tabblad **Nieuw verzoek** bovenaan de groep **Actief**. U kunt maar één tabblad **Nieuw verzoek** tegelijk open hebben en het kan niet worden vastgemaakt. Wanneer u opslaat, wordt het tabblad het opgeslagen verzoek.
+    Op het Verzoekscherm wordt een nieuw verzoek geopend in een tabblad **Nieuw verzoek** bovenaan de groep **Tabbladen**. U kunt maar één tabblad **Nieuw verzoek** tegelijk open hebben en het kan niet worden vastgemaakt. Wanneer u opslaat, wordt het tabblad het opgeslagen verzoek.
 
 ## Indeling van een overzichtspagina {#areas}
 
@@ -59,17 +59,19 @@ Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verk
 
 ### Het linkerpaneel {#left-panel}
 
-Het linkerpaneel toont uw selecties en records als verticale tabbladen. De tabbladen zijn geordend in groepen. Op het Verkoopscherm zijn de groepen **Selecties** en **Verkopen**. Op het Verzoekscherm zijn **Selecties** en **Verzoeken** secties en elke sectie heeft een groep **Actief** en een groep **Vastgemaakt**.
+Het linkerpaneel toont uw selecties en records als verticale tabbladen, in twee groepen:
 
-![Het linkerpaneel met de groepen Selecties en Verkopen -screenshot][img2]
+* **Vastgemaakt:** De selecties en records die u hebt vastgemaakt. De groep verschijnt boven **Tabbladen** wanneer u uw eerste tabblad vastmaakt.
 
-Elke groep kan één laatst bekeken tabblad en zoveel vastgemaakte tabbladen hebben als u wilt. Het laatst bekeken tabblad staat direct onder de groepskop en heeft geen label. Het bevat de selectie of het record dat u het laatst hebt geopend en dat niet is vastgemaakt, en wordt vervangen wanneer u een andere opent die niet is vastgemaakt. Als u een vastgemaakt tabblad opent, wordt het niet vervangen.
+* **Tabbladen:** De selecties en records die u hebt geopend. U kunt er meerdere tegelijk open hebben.
 
-Vastgemaakte tabbladen staan onder de kop **Vastgemaakt**, die het aantal toont. Selecteer de kop om de lijst samen te vouwen of uit te vouwen. Vastgemaakte tabbladen blijven staan totdat u ze sluit en ze worden niet automatisch gesorteerd, dus gebruik **Zoeken in tabbladen** om het gewenste tabblad te vinden. Sleep tabbladen en zet ze neer om ze handmatig te rangschikken, of om een tabblad te verplaatsen tussen het laatst bekeken tabblad en de lijst met vastgemaakte tabbladen.
+![Het linkerpaneel met de groepen Vastgemaakt en Tabbladen -screenshot][img2]
 
 Klik op de naam van een tabblad om het te openen in het hoofdgebied. Het tabblad van de selectie of het record dat in het hoofdgebied wordt getoond, is gemarkeerd.
 
-Op het Verzoekscherm kan een groep **Actief** meerdere tabbladen bevatten, in plaats van één laatst bekeken tabblad. Zie [Werken met de tabbladen in het linkerpaneel][11].
+Vastgemaakte tabbladen blijven staan totdat u ze sluit. Klik op een groepskop om de tabbladen ervan te verbergen of te tonen. Sleep tabbladen en zet ze neer om ze te rangschikken.
+
+Op het Verzoekscherm staan **Overzicht**, **Verzoek zoeken** en **Vermeldingen** boven de groepen. Zie [Werken met de tabbladen in het linkerpaneel][11] voor meer informatie over verzoektabbladen.
 
 ### Het linkerpaneel tonen of verbergen {#collapse}
 
@@ -77,9 +79,9 @@ Op het Verzoekscherm kan een groep **Actief** meerdere tabbladen bevatten, in pl
 
 1. Klik opnieuw op de knop (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) om het paneel te tonen. Het paneel wordt niet geopend wanneer u de muisaanwijzer erop plaatst.
 
-Wanneer het paneel is verborgen, klikt u op het pictogram van een groep om het menu **Meer opties** te openen, met een zoekveld en uw laatst bekeken en vastgemaakte tabbladen. Op het Verzoekscherm toont het menu uw actieve en vastgemaakte tabbladen. Het verborgen paneel heeft ook knoppen voor het zoekveld, het tabblad **Overzicht**, Verzoek zoeken en [Vermeldingen][12].
+Wanneer het paneel is verborgen, toont het in plaats daarvan een kolom met knoppen, te beginnen met het zoekveld. Op het Verzoekscherm heeft het ook knoppen voor het tabblad **Overzicht**, Verzoek zoeken en [Vermeldingen][12].
 
-![Het verborgen linkerpaneel met een pictogram voor het zoekveld en een pictogram per groep -screenshot][img7]
+![Het verborgen linkerpaneel met knoppen voor het zoekveld en de tabbladen -screenshot][img7]
 
 Het zijpaneel heeft ook een knop om het te tonen of te verbergen, rechtsboven in het scherm. Hetzelfde pictogram wordt gebruikt voor de Navigator, het linkerpaneel en het zijpaneel.
 
@@ -103,8 +105,8 @@ Gebruik de pictogrammen bovenaan het dialoogvenster om te wisselen tussen drie w
 
 | Pictogram | Weergave | Beschrijving |
 |:-:|---|---|
-| <i class="ph ph-clock" aria-label="Klokpictogram"></i> | **[Historie][6]** | Toont eerst uw standaardselecties en daarna de verkopen en selecties die u recent hebt geopend. Het dialoogvenster wordt in deze weergave geopend. |
-| <i class="ph ph-star" aria-label="Sterpictogram"></i> | **[Favorieten][3]** | Toont de selecties en verkopen die u als favoriet hebt ingesteld. |
+| <i class="ph ph-clock" aria-label="Clock icon"></i> | **[Historie][6]** | Toont de records en selecties die u recent hebt geopend, elk type onder een eigen kop. Op het Verzoekscherm staan de standaardlijsten bovenaan. Het dialoogvenster wordt in deze weergave geopend. |
+| <i class="ph ph-star" aria-label="Star icon"></i> | **[Favorieten][3]** | Toont de records en selecties die u als favoriet hebt ingesteld. |
 | <i class="ph ph-magnifying-glass" aria-label="Vergrootglas"></i> | **Zoeken** | Toont de resultaten van de laatste zoekopdracht. |
 
 Een selectie of een record zoeken en openen:
@@ -115,17 +117,7 @@ Een selectie of een record zoeken en openen:
 
 1. Kies de selectie of het record dat u wilt openen in het hoofdgebied.
 
-### Een tabblad zoeken dat u al hebt geopend
-
-Zo zoekt u alleen in de tabbladen van één groep, bijvoorbeeld de tabbladen in **Selecties** of **Verkopen**:
-
-1. Klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) naast de groepskop.
-
-1. Voer tekst in bij **Zoeken in tabbladen** om de lijst te beperken.
-
-1. Selecteer een tabblad om het te openen.
-
-![Het menu van de groep Verkopen met het veld Zoeken in tabbladen en de tabbladen in de groep -screenshot][img5]
+Het zoekveld vindt ook de tabbladen die u al hebt geopend of vastgemaakt.
 
 ## Tabbladen vastmaken en losmaken {#pin-unpin}
 
@@ -139,29 +131,41 @@ Vastgemaakte tabbladen staan los van uw [favorieten][3].
 
 ### Een tabblad vastmaken {#pin}
 
-1. Plaats de muisaanwijzer op het laatst bekeken tabblad of een actief tabblad.
+1. Plaats de muisaanwijzer op een tabblad in de groep **Tabbladen** en klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties).
 
-1. Selecteer het speldpictogram (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), of klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en vervolgens **Vastmaken**.
+1. Klik op **Vastmaken**.
 
-Het tabblad wordt bovenaan de lijst met vastgemaakte tabbladen geplaatst.
+Het tabblad wordt onderaan de groep **Vastgemaakt** geplaatst.
+
+Op het Verzoekscherm kunt u ook op het speldpictogram (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) in de koptekst van het verzoek klikken.
+
+![Het menu van een tabblad in de groep Tabbladen met de opties Vastmaken, Sluiten, Alles sluiten en Alle tabbladen behalve dit sluiten -screenshot][img8]
 
 ### Een tabblad sluiten {#close}
 
-1. Plaats de muisaanwijzer op het tabblad. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) verschijnt, en een vastgemaakt tabblad toont ook <i class="ph ph-x" aria-label="Close icon"></i>.
+1. Plaats de muisaanwijzer op het tabblad. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en <i class="ph ph-x" aria-label="Close icon"></i> verschijnen.
 
-1. Selecteer <i class="ph ph-x" aria-label="Close icon"></i>, of klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en kies een optie.
+1. Klik op <i class="ph ph-x" aria-label="Close icon"></i> om het tabblad te sluiten, of klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en kies een optie.
 
-    * **Sluiten:** Sluit het laatst bekeken tabblad. Op het Verzoekscherm sluit dit het actieve tabblad.
+    Voor een tabblad in de groep **Tabbladen**:
+
+    * **Sluiten:** Sluit het tabblad.
+
+    * **Alles sluiten:** Sluit alle tabbladen in de groep **Tabbladen**.
+
+    * **Alle tabbladen behalve dit sluiten:** Sluit alle tabbladen in de groep **Tabbladen**, behalve dit tabblad.
+
+    Voor een tabblad in de groep **Vastgemaakt**:
 
     * **Losmaken en sluiten:** Sluit het vastgemaakte tabblad.
 
-    * **Alles losmaken en sluiten:** Sluit alle vastgemaakte tabbladen in de groep.
+    * **Alles losmaken en sluiten:** Sluit alle vastgemaakte tabbladen.
 
-    * **Alles behalve dit losmaken en sluiten:** Sluit alle vastgemaakte tabbladen in de groep, behalve dit tabblad.
+    * **Alles behalve dit losmaken en sluiten:** Sluit alle vastgemaakte tabbladen, behalve dit tabblad.
 
 ![Het menu voor een vastgemaakt tabblad met de opties Losmaken en sluiten, Alles losmaken en sluiten en Alles behalve dit losmaken en sluiten -screenshot][img3]
 
-Wanneer u het tabblad sluit dat is geopend, wordt het volgende tabblad geopend: het tabblad eronder in de lijst met vastgemaakte tabbladen, of het tabblad erboven als er geen tabblad onder staat. Wanneer u het laatst bekeken tabblad sluit, wordt het eerste vastgemaakte tabblad geopend.
+Wanneer u het tabblad sluit waarop u zich bevindt, wordt het tabblad ernaast geopend.
 
 ## Selecties {#selections}
 
@@ -189,7 +193,7 @@ De knoppen **Bewerken** en **Taak** zijn niet beschikbaar op de overzichtspagina
 
 ### De dataset van een selectie weergeven
 
-1. Plaats de muisaanwijzer op het selectietabblad, laatst bekeken of vastgemaakt.
+1. Plaats de muisaanwijzer op het selectietabblad.
 
 1. Klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en vervolgens op **Dataset weergeven**. De dataset van de selectie wordt getoond.
 
@@ -197,11 +201,11 @@ De knoppen **Bewerken** en **Taak** zijn niet beschikbaar op de overzichtspagina
 
 ### Een record openen vanuit een selectie
 
-1. Dubbelklik in de boardweergave op een kaart of selecteer de titel ervan. Het record wordt geopend in het hoofdgebied Als het record niet is vastgemaakt, verschijnt het in het laatst bekeken tabblad in het linkerpaneel. Als het is vastgemaakt, is het bijbehorende vastgemaakte tabblad gemarkeerd.
+1. Dubbelklik in de boardweergave op een kaart of selecteer de titel ervan. Het record wordt geopend in het hoofdgebied. Als u het al hebt geopend of vastgemaakt, is het bijbehorende tabblad gemarkeerd. Anders wordt het geopend in een nieuw tabblad in de groep **Tabbladen**.
 
 1. Als u terug wilt naar de selectie, kiest u deze in het linkerpaneel. U kunt ook de knoppen Terug (<i class="ph ph-caret-circle-left" aria-label="Back"></i>) en Vooruit (<i class="ph ph-caret-circle-right" aria-label="Forward"></i>) of de knop [Recente navigatie][8] (<i class="ph ph-clock" aria-label="Recent navigation"></i>) in de bovenbalk gebruiken. Dat gaat sneller dan onthouden naar welke selectie u keek.
 
-Als u een kaart selecteert om een voorbeeld ervan te bekijken in het zijpaneel, verandert het laatst bekeken tabblad niet.
+Als u een kaart selecteert om een voorbeeld ervan te bekijken in het zijpaneel, wordt er geen tabblad geopend.
 
 [1]: /nl/learn/getting-started/main-screen/side-panel
 [2]: /nl/sale/learn/index
@@ -219,6 +223,6 @@ Als u een kaart selecteert om een voorbeeld ervan te bekijken in het zijpaneel, 
 [img2]: /media/loc/en/learn/left-panel.png
 [img3]: /media/loc/en/learn/unpin-sale.png
 [img4]: /media/loc/en/learn/selection-menu.png
-[img5]: /media/loc/en/learn/sale-search-in-tabs.png
 [img6]: /media/loc/en/learn/search-in-sales.png
 [img7]: /media/loc/en/learn/left-panel-hidden.png
+[img8]: /media/loc/en/learn/tab-menu.png

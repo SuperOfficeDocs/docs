@@ -2,10 +2,10 @@
 title: Arbejd med oversigtssider
 sidebarTitle: "Oversigtssider"
 description: Oversigtssider kombinerer et venstrepanel med lodrette faner, udvalg i liste- eller tavlevisning og den post, du arbejder med.
-keywords: ['oversigtsside', 'salgsoversigt', 'startside', 'Sale screen', 'salgsskærm', 'ny Salgsskærm', 'sagsskærmen', 'Oversigt', 'venstrepanel', 'lodrette faner', 'søg i faner', 'sidebjælke', 'fastgjort', 'fastgør', 'frigør', 'udvalg', 'tavlevisning', 'listevisning', 'filter', 'aktuel', 'seneste', 'senest viste fane', 'active', 'active tab']
+keywords: ['oversigtsside', 'salgsoversigt', 'startside', 'Sale screen', 'salgsskærm', 'ny Salgsskærm', 'sagsskærmen', 'Oversigt', 'venstrepanel', 'lodrette faner', 'søg i faner', 'sidebjælke', 'fastgjort', 'fastgør', 'frigør', 'udvalg', 'tavlevisning', 'listevisning', 'filter', 'aktuel', 'seneste', 'faner', 'åbne faner', 'active tab', 'søg i sager og udvalg', 'søg i salg og udvalg']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.24.2026
+so_version: 12.7
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -43,9 +43,9 @@ Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2] og
 
 * **Klik på et link til en post et vilkårligt sted i SuperOffice CRM.** F.eks. i tavlevisningen, i en detaljefane eller i sidepanelet. Posten åbnes i oversigtssiden og bliver din aktuelle post.
 
-* **Klik på knappen Ny for at oprette en post af den type, skærmbilledet er til.** Den nye post åbnes i oversigtssiden. Når du gemmer den, åbnes den i den senest viste fane og bliver din aktuelle post.
+* **Klik på knappen Ny for at oprette en post af den type, skærmbilledet er til.** Den nye post åbnes i en fane i oversigtssiden. Når du gemmer den, bliver den din aktuelle post.
 
-    På Sagsskærmen åbnes en ny sag i fanen **Ny sag** øverst i gruppen **Aktive**. Du kan kun have én fane **Ny sag** åben ad gangen, og den kan ikke fastgøres. Når du gemmer, bliver fanen til den gemte sag.
+    På Sagsskærmen åbnes en ny sag i fanen **Ny sag** øverst i gruppen **Faner**. Du kan kun have én fane **Ny sag** åben ad gangen, og den kan ikke fastgøres. Når du gemmer, bliver fanen til den gemte sag.
 
 ## Oversigtssidens layout {#areas}
 
@@ -59,17 +59,19 @@ Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2] og
 
 ### Venstrepanelet {#left-panel}
 
-Venstrepanelet viser dine udvalg og poster som lodrette faner. Fanerne er organiseret i grupper. På salgsskærmen er grupperne **Udvalg** og **Salg**. På Sagsskærmen er **Udvalg** og **Sager** sektioner, og hver sektion har en gruppe **Aktive** og en gruppe **Fastgjort**.
+Venstrepanelet viser dine udvalg og poster som lodrette faner i to grupper:
 
-![Venstrepanelet med grupperne Udvalg og Salg -screenshot][img2]
+* **Fastgjort:** De udvalg og poster, du har fastgjort. Gruppen vises over **Faner**, når du fastgør din første fane.
 
-Hver gruppe kan have én senest viste fane og lige så mange fastgjorte faner, som du vil. Den senest viste fane står direkte under gruppeoverskriften og har ingen etiket. Den indeholder det udvalg eller den post, du åbnede sidst, og som ikke er fastgjort, og den erstattes, når du åbner et andet udvalg eller en anden post, der ikke er fastgjort. Når du åbner en fastgjort fane, erstattes den ikke.
+* **Faner:** De udvalg og poster, du har åbne. Du kan have flere åbne på samme tid.
 
-Fastgjorte faner står under overskriften **Fastgjort**, som viser antallet af fastgjorte faner. Vælg overskriften for at skjule eller udvide listen. Fastgjorte faner forbliver, indtil du lukker dem, og sorteres ikke automatisk, så brug **Søg i faner** for at finde den, du vil have. Træk og slip faner for at ordne dem manuelt, eller for at flytte en fane mellem den senest viste fane og listen over fastgjorte faner.
+![Venstrepanelet med grupperne Fastgjort og Faner -screenshot][img2]
 
 Klik på et fanenavn for at åbne det i hovedområdet. Fanen for det udvalg eller den post, der vises i hovedområdet, er fremhævet.
 
-På Sagsskærmen kan en gruppe **Aktive** rumme flere faner i stedet for en enkelt senest viste fane. Se [Arbejd med fanerne i venstrepanelet][11].
+Fastgjorte faner forbliver, indtil du lukker dem. Klik på en gruppeoverskrift for at skjule eller vise dens faner. Træk og slip faner for at ordne dem.
+
+På Sagsskærmen står **Oversigt**, **Find sag** og **Omtaler** over grupperne. Du kan læse mere om sagsfaner under [Arbejd med fanerne i venstrepanelet][11].
 
 ### Vis eller skjul venstrepanelet {#collapse}
 
@@ -77,9 +79,9 @@ På Sagsskærmen kan en gruppe **Aktive** rumme flere faner i stedet for en enke
 
 1. Klik på knappen (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) igen for at vise panelet. Panelet åbnes ikke, når du peger på det.
 
-Når panelet er skjult, kan du klikke på ikonet for en gruppe for at åbne gruppens menu **Flere valgmuligheder**, med et søgefelt og dine senest viste og fastgjorte faner. På Sagsskærmen viser menuen dine aktive og fastgjorte faner. Det skjulte panel har også knapper til søgefeltet, fanen **Oversigt**, Find sag og [Omtaler][12].
+Når panelet er skjult, viser det i stedet en kolonne med knapper, startende med søgefeltet. På Sagsskærmen har det også knapper til fanen **Oversigt**, Find sag og [Omtaler][12].
 
-![Det skjulte venstrepanel med et ikon til søgefeltet og ét ikon for hver gruppe -screenshot][img7]
+![Det skjulte venstrepanel med knapper til søgefeltet og fanerne -screenshot][img7]
 
 Sidepanelet har også en knap til at vise og skjule det, øverst til højre på skærmen. Det samme ikon bruges til Navigatoren, venstrepanelet og sidepanelet.
 
@@ -103,8 +105,8 @@ Brug ikonerne øverst i dialogen til at skifte mellem tre visninger:
 
 | Ikon | Visning | Beskrivelse |
 |:-:|---|---|
-| <i class="ph ph-clock" aria-label="Historik ikon"></i> | **[Historik][6]** | Viser først dine standardudvalg og derefter de salg og udvalg, du har åbnet for nylig. Dialogen åbnes i denne visning. |
-| <i class="ph ph-star" aria-label="Favoritter ikon"></i> | **[Foretrukne][3]** | Viser de udvalg og salg, du har markeret som favoritter. |
+| <i class="ph ph-clock" aria-label="Clock icon"></i> | **[Historik][6]** | Viser de poster og udvalg, du har åbnet for nylig, med hver type under sin egen overskrift. På Sagsskærmen vises standardlisterne først. Dialogen åbnes i denne visning. |
+| <i class="ph ph-star" aria-label="Star icon"></i> | **[Foretrukne][3]** | Viser de poster og udvalg, du har markeret som favoritter. |
 | <i class="ph ph-magnifying-glass" aria-label="Søg ikon"></i> | **Søg** | Viser resultaterne af den seneste søgning. |
 
 Sådan finder og åbner du et udvalg eller en post:
@@ -115,17 +117,7 @@ Sådan finder og åbner du et udvalg eller en post:
 
 1. Vælg det udvalg eller den post, du vil åbne i hovedområdet.
 
-### Find en fane, du allerede har åbnet
-
-Sådan søger du kun i fanerne i én gruppe, f.eks. fanerne i **Udvalg** eller **Salg**:
-
-1. Klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) ved siden af gruppeoverskriften.
-
-1. Indtast tekst i **Søg i faner** for at indsnævre listen.
-
-1. Vælg en fane for at åbne den.
-
-![Menuen for gruppen Salg med feltet Søg i faner og fanerne i gruppen -screenshot][img5]
+Søgefeltet finder også de faner, du allerede har åbne eller fastgjort.
 
 ## Fastgør og frigør faner {#pin-unpin}
 
@@ -139,29 +131,41 @@ Fastgjorte faner er adskilt fra dine [favoritter][3].
 
 ### Fastgør en fane {#pin}
 
-1. Peg på den senest viste fane eller en aktiv fane.
+1. Peg på en fane i gruppen **Faner**, og klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder).
 
-1. Vælg nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), eller klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og derefter **Fastgør**.
+1. Klik på **Fastgør**.
 
-Fanen flyttes til toppen af listen over fastgjorte faner.
+Fanen flyttes til slutningen af gruppen **Fastgjort**.
+
+På Sagsskærmen kan du også klikke på nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) i sagens overskrift.
+
+![Menuen for en fane i gruppen Faner med valgmulighederne Fastgør, Luk, Luk alle og Luk alle faner undtagen denne -screenshot][img8]
 
 ### Luk en fane {#close}
 
-1. Peg på fanen. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) vises, og en fastgjort fane viser også <i class="ph ph-x" aria-label="Close icon"></i>.
+1. Peg på fanen. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og <i class="ph ph-x" aria-label="Close icon"></i> vises.
 
-1. Vælg <i class="ph ph-x" aria-label="Close icon"></i>, eller klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og vælg en valgmulighed.
+1. Klik på <i class="ph ph-x" aria-label="Close icon"></i> for at lukke fanen, eller klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og vælg en valgmulighed.
 
-    * **Luk:** Lukker den senest viste fane. På Sagsskærmen lukker den den aktive fane.
+    For en fane i gruppen **Faner**:
+
+    * **Luk:** Lukker fanen.
+
+    * **Luk alle:** Lukker alle faner i gruppen **Faner**.
+
+    * **Luk alle faner undtagen denne:** Lukker alle faner i gruppen **Faner** undtagen denne.
+
+    For en fane i gruppen **Fastgjort**:
 
     * **Frigør og luk:** Lukker den fastgjorte fane.
 
-    * **Frigør og luk alle:** Lukker alle fastgjorte faner i gruppen.
+    * **Frigør og luk alle:** Lukker alle fastgjorte faner.
 
-    * **Frigør og luk alle undtagen denne:** Lukker alle fastgjorte faner i gruppen undtagen denne.
+    * **Frigør og luk alle undtagen denne:** Lukker alle fastgjorte faner undtagen denne.
 
 ![Menuen for en fastgjort fane med valgmulighederne Frigør og luk, Frigør og luk alle og Frigør og luk alle undtagen denne -screenshot][img3]
 
-Når du lukker den fane, der er åben, åbnes den næste fane: den under den på listen over fastgjorte faner, eller den over, hvis der ikke er nogen under. Når du lukker den senest viste fane, åbnes den første fastgjorte fane.
+Når du lukker den fane, du står på, åbnes fanen ved siden af.
 
 ## Udvalg {#selections}
 
@@ -189,7 +193,7 @@ Knapperne **Rediger** og **Opgave** er ikke tilgængelige på oversigtssiden. Hv
 
 ### Vis datasættet for et udvalg
 
-1. Peg på udvalgsfanen, senest viste eller fastgjort.
+1. Peg på udvalgsfanen.
 
 1. Klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og derefter **Vis datasæt**. Udvalgets datasæt vises.
 
@@ -197,11 +201,11 @@ Knapperne **Rediger** og **Opgave** er ikke tilgængelige på oversigtssiden. Hv
 
 ### Åbn en post fra et udvalg
 
-1. Dobbeltklik på et kort i tavlevisning, eller vælg dets titel. Posten åbnes i hovedområdet. Hvis posten ikke er fastgjort, vises den i den senest viste fane i venstrepanelet. Hvis den er fastgjort, er dens fastgjorte fane fremhævet.
+1. Dobbeltklik på et kort i tavlevisning, eller vælg dets titel. Posten åbnes i hovedområdet. Hvis du allerede har den åben eller fastgjort, er dens fane fremhævet. Ellers åbnes den i en ny fane i gruppen **Faner**.
 
 1. Du kommer tilbage til udvalget ved at vælge det i venstrepanelet. Du kan også bruge knapperne Tilbage (<i class="ph ph-caret-circle-left" aria-label="Back"></i>) og Frem (<i class="ph ph-caret-circle-right" aria-label="Forward"></i>) eller knappen [Seneste navigation][8] (<i class="ph ph-clock" aria-label="Recent navigation"></i>) i den øverste bjælke, hvilket er hurtigere end at huske, hvilket udvalg du kiggede på.
 
-Hvis du vælger et kort for at få vist et eksempel i sidepanelet, ændres den senest viste fane ikke.
+Hvis du vælger et kort for at få vist et eksempel i sidepanelet, åbnes der ikke en fane.
 
 [1]: /da/learn/getting-started/main-screen/side-panel
 [2]: /da/sale/learn/index
@@ -219,6 +223,6 @@ Hvis du vælger et kort for at få vist et eksempel i sidepanelet, ændres den s
 [img2]: /media/loc/en/learn/left-panel.png
 [img3]: /media/loc/en/learn/unpin-sale.png
 [img4]: /media/loc/en/learn/selection-menu.png
-[img5]: /media/loc/en/learn/sale-search-in-tabs.png
 [img6]: /media/loc/en/learn/search-in-sales.png
 [img7]: /media/loc/en/learn/left-panel-hidden.png
+[img8]: /media/loc/en/learn/tab-menu.png
