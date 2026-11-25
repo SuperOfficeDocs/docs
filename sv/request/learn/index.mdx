@@ -2,7 +2,7 @@
 uid: help-sv-request
 title: Ärenden och SuperOffice Service
 description: Introduktion till ärenden i SuperOffice
-keywords: ['ärendehantering', 'ärende', 'ticket', 'service', 'ärendeskärm', 'ärendekort', 'Översikt', 'vänsterpanel', 'aktiva flikar', 'fastnålade ärenden', 'förhandsgranskningspanel', 'standardlistor', 'stäng flik automatiskt', 'flera aktiva flikar', 'stäng alla flikar', 'för många flikar', 'osparade ändringar', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
+keywords: ['ärendehantering', 'ärende', 'ticket', 'ärendeskärm', 'ärendekort', 'Översikt', 'vänsterpanel', 'aktiva flikar', 'fastnålade ärenden', 'förhandsgranskningspanel', 'standardlistor', 'stäng flik automatiskt', 'flera aktiva flikar', 'stäng alla flikar', 'för många flikar', 'osparade ändringar', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
 date: 11.25.2026
 so_version: 12.7
@@ -17,7 +17,7 @@ redirect_from:
 boost: 1.5
 related:
   - Arbeta med översiktssidor: /sv/learn/basics/overview-pages
-  - /sv/request/learn/create
+  - Skapa ett ärende: /sv/request/learn/create
   - Ta ansvar för ett ärende: /sv/request/learn/accept
   - Svara på ett ärende: /sv/request/learn/reply
   - Automatisk tilldelning av ärenden: /sv/request/learn/assign
@@ -29,7 +29,7 @@ language: sv
 
 Vårt ärendesystem gör att du effektivt kan hantera inkommande ärenden och leverera enastående kundservice varje dag. Den här samlingen med guider hjälper dig att hålla reda på, besvara och analysera alla inkommande frågor och förfrågningar i SuperOffice Service - oavsett om de kommer in via telefon, e-post, chatt, webbformulär eller andra kanaler.
 
-**Ärenden** är en av huvudfunktionerna i SuperOffice. Här hanterar du ärenden och förfrågningar i systemet. Du kan skapa interna och externa ärenden, svara på inkommande frågor och få en översikt över alla ärenden i systemet.
+**Ärenden** är en av huvudfunktionerna i SuperOffice. Här hanterar du ärenden och förfrågningar i systemet. Du kan också skapa interna och externa ärenden, svara på inkommande frågor och få en översikt över statusen för alla ärenden i systemet.
 
 Varje fråga eller förfrågan kan registreras som ett ärende. Det kan vara supportfrågor, frågor om produkter och tjänster eller frågor om fakturor. När ett ärende kommer in vill du hantera det så snabbt och effektivt som möjligt för att säkerställa professionell kundservice. Genom att förhandsgranska ett ärende från en lista kan du även skicka ett [snabbsvar][28] utan att lämna listan, så att du kan fortsätta arbeta dig igenom en pressad kö.
 
@@ -86,7 +86,7 @@ Se [Arbeta med ärenden][42] om du vill få en överblick över dina ärenden oc
 
 Ärendets huvud visar titel, kontakt och företag som definierades när [ärendet skapades][4]. Det har också dessa knappar:
 
-* <i class="ph ph-star" aria-label="Star icon"></i>: Anger ärendet som en favorit. Ärendet blir då tillgängligt via **Mina favoriter** på **Ärendehantering** i navigatorn och på panelen **Mina favoriter** på [dashboarden][17].
+* <i class="ph ph-star" aria-label="Star icon"></i>: Anger ärendet som en favorit. Ärendet blir då tillgängligt via **Mina favoriter** på **Ärenden** i navigatorn och på panelen **Mina favoriter** på [dashboarden][17].
 * <i class="ph ph-push-pin" aria-label="Pin icon"></i>: Nålar fast ärendet i vänsterpanelen.
 * <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i>: Läser in ärendet på nytt.
 * <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>: Redigerar ärendet.
@@ -125,7 +125,7 @@ Klicka på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (
 
 #### Request Insight {#sentiment}
 
-Request Insight analyserar sentimentet i inkommande e-postärenden, så att du kan prioritera den kund som behöver dig mest. En emoticon i meddelandets huvud visar det identifierade sentimentet:
+Request Insight analyserar sentimentet i inkommande e-postärenden, så att du kan prioritera den kund som behöver dig först. En emoticon i meddelandets huvud visar det identifierade sentimentet:
 
 * Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
@@ -184,7 +184,7 @@ Panelen **Egenskaper för ärende** har följande fält:
 
 #### Category Insight {#categorization}
 
-Category Insight använder en tränad modell för att föreslå en kategori för inkommande e-postärenden utifrån meddelandets innehåll. Förslaget tillämpas först när du godkänner det.
+Category Insight analyserar inkommande e-postärenden och föreslår en kategori utifrån innehållet. Kategorin tillämpas inte automatiskt.
 
 <Note>
 Category Insight kräver SuperOffice AI Platform och en Categorization-licens eller CRM Suite Growth. Ser du inga förslag? Be administratören att [träna modellen och aktivera förslag][44].

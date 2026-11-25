@@ -2,7 +2,7 @@
 uid: help-da-request
 title: Sager og SuperOffice Service
 description: Introduktion til sager i SuperOffice
-keywords: ['sag', 'ticket', 'service', 'sagsskærmen', 'sagskort', 'Oversigt', 'venstrepanel', 'aktive faner', 'fastgjorte sager', 'panel til forhåndsvisning', 'standardlister', 'luk fane automatisk', 'flere aktive faner', 'luk alle faner', 'for mange faner', 'ikke-gemte ændringer', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
+keywords: ['sagshåndtering', 'sag', 'ticket', 'sagsskærmen', 'sagskort', 'Oversigt', 'venstrepanel', 'aktive faner', 'fastgjorte sager', 'panel til forhåndsvisning', 'standardlister', 'luk fane automatisk', 'flere aktive faner', 'luk alle faner', 'for mange faner', 'ikke-gemte ændringer', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
 date: 11.25.2026
 so_version: 12.7
@@ -43,7 +43,7 @@ Sagsskærmen bliver introduceret gradvist. Hvis du endnu ikke kan se den, arbejd
 
 ## Hvor kan jeg få adgang til sager? {#open}
 
-* Detaljekort i Firma, Person, Salg og Projekt
+* Detaljefaner i skærmbillederne Firma, Person, Salg og Projekt.
 * [Standardlister][35], f.eks. **Egne aktive sager**
 * [Søgning][12]
 * [Favoritter][18]
@@ -84,7 +84,7 @@ Sagskortet viser én sag ad gangen som en fane på Sagsskærmen. Det har følgen
 
 ### Sagsoverskrift {#header}
 
-Sagens header viser den titel, person og det firma, der blev angivet, da [sagen blev oprettet][4]. Den har også disse knapper:
+Sagens overskrift viser den titel, person og det firma, der blev angivet, da [sagen blev oprettet][4]. Den har også disse knapper:
 
 * <i class="ph ph-star" aria-label="Star icon"></i>: Angiver sagen som en foretrukken. Sagen er derefter tilgængelig via **Mine foretrukne** på **Sager** i Navigator og i ruden **Mine foretrukne** på et [dashboard][17].
 * <i class="ph ph-push-pin" aria-label="Pin icon"></i>: Fastgør sagen i venstrepanelet.
@@ -100,7 +100,7 @@ Du kan ændre, hvor mange meddelelser der er ekspanderet. Se [Tilpas sagsbehandl
 
 #### Meddelelsestyper
 
-Der er typer meddelelser:
+Der er tre typer meddelelser:
 
 * **Henvendelser** fra personer eller andre eksterne parter
 * **Svar** på disse henvendelser, eventuelt med spørgsmål om flere detaljer
@@ -116,7 +116,7 @@ Klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Fl
 
 * **Rediger**: Klik her for at [redigere][9] eller slette meddelelsen.
 * **Svar**: Klik her for at svare personen i feltet Til.
-* **Svar til alle**: Klik her for at svare alle personer i felterne til, Cc og Bcc.
+* **Svar til alle**: Klik her for at svare alle personer i felterne Til, Cc og Bcc.
 * **Videresend**: Klik her for at [videresende meddelelsen][8].
 * **E-mail-header**: Klik her for at få vist e-mail-headeren.
 * **Vis**: Klik her for at få vist meddelelsen i et nyt vindue/en ny fane.
@@ -184,7 +184,7 @@ Panelet **Egenskaber for sag** har følgende felter:
 
 #### Category Insight {#categorization}
 
-Category Insight bruger en trænet model til at foreslå en kategori for indgående e-mail-sager ud fra beskedens indhold. Forslaget anvendes først, når du godkender det.
+Category Insight analyserer indgående e-mailsager og foreslår en kategori ud fra indholdet. Kategorien anvendes ikke automatisk.
 
 <Note>
 Category Insight kræver SuperOffice AI Platform og en Categorization-licens eller CRM Suite Growth. Ser du ingen forslag? Bed din administrator om at [træne modellen og aktivere forslag][44].
@@ -200,7 +200,7 @@ Hvis ingen kategori passer, vises intet forslag. Du kan stadig selv vælge en ka
 
 #### Summary Assist {#summary}
 
-Summary Assist opsummerer beskederne i en sag, så du kan handle uden at læse hele forløbet.
+Summary Assist opsummerer meddelelserne i en sag, så du kan handle uden at læse hele forløbet.
 
 <Note>
 Summary Assist kræver en Text Services-licens eller CRM Suite Core. Kan du ikke se funktionen? Bed din administrator om at [aktivere tekstanalyse][43].
@@ -210,7 +210,7 @@ Med CRM Suite finder du Summary Assist i panelet **Reply Assist**:
 
 1. Klik på <i class="ph ph-sparkle" aria-label="Reply Assist"></i> i ikonlinjen til højre i panelet **Egenskaber for sag** for at skifte til **Reply Assist**.
 1. Klik på **Opsummer**.
-1. Gennemgå resuméet af sagens beskeder.
+1. Gennemgå resuméet af sagens meddelelser.
 
 Hvis du vil lave et udkast til et svar fra samme panel, kan du se [Reply Assist][45].
 

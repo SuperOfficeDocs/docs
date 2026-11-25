@@ -2,7 +2,7 @@
 uid: help-no-request
 title: Saker og SuperOffice Service
 description: Introduksjon til saker i SuperOffice
-keywords: ['sak', 'service', 'saksskjerm', 'sakskort', 'Oversikt', 'venstrepanel', 'aktive faner', 'festede saker', 'forhåndsvisningspanel', 'standardlister', 'lukke fane automatisk', 'flere aktive faner', 'lukk alle faner', 'for mange faner', 'ulagrede endringer', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
+keywords: ['sakshåndtering', 'sak', 'henvendelse', 'saksskjerm', 'sakskort', 'Oversikt', 'venstrepanel', 'aktive faner', 'festede saker', 'forhåndsvisningspanel', 'standardlister', 'lukke fane automatisk', 'flere aktive faner', 'lukk alle faner', 'for mange faner', 'ulagrede endringer', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
 date: 11.25.2026
 so_version: 12.7
@@ -43,7 +43,7 @@ Saksskjermen innføres gradvis. Hvis du ikke ser den ennå, jobber du med flere 
 
 ## Hvor får jeg tilgang til saker? {#open}
 
-* Arkiver i alle hovedkort, som Firma, Salg, Prosjekt
+* Detaljkort på skjermene Firma, Person, Salg og Prosjekt.
 * [Standardlister][35], for eksempel **Egne aktive saker**
 * [Søk][12]
 * [Favoritter][18]
@@ -53,7 +53,7 @@ En sak du åpner herfra, åpnes i en fane på Saksskjermen. Se alle måter å sl
 
 ### Personer {#customers}
 
-Saker kan knyttes til [personer][14], som igjen kan tilhøre et [firma][13]. Dette betyr at saker ikke kan knyttes direkte til firmaer (bare indirekte via personer). Når nye e-postmeldinger importeres og lagres som saker, knyttes saken automatisk til riktig person via e-postadressen. Når du viser en sak, kan enkelt se hvem som er personen, og hvis du klikker på personens navn, kan du se hvilke saker som er registrert på denne personen. På denne måten får du raskt oversikt over tidligere kommunikasjon med samme person.
+Saker kan knyttes til [personer][14], som igjen kan tilhøre et [firma][13]. Dette betyr at saker ikke kan knyttes direkte til firmaer (bare indirekte via personer). Når nye e-postmeldinger importeres og lagres som saker, knyttes saken automatisk til riktig person via e-postadressen. Når du viser en sak, kan du enkelt se hvem som er personen, og hvis du klikker på personens navn, kan du se hvilke andre saker som er registrert på denne personen. På denne måten får du raskt oversikt over tidligere kommunikasjon med samme person.
 
 ## Saksskjermen {#request-screen}
 
@@ -112,7 +112,7 @@ Interne meldinger er merket med <i class="ph ph-dots-three" aria-label="Three do
 
 #### Meldingsoppgaver
 
-Klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) på en melding for å tilgang til flere alternativer for meldingen:
+Klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) på en melding for å få tilgang til flere alternativer for meldingen:
 
 * **Endre**: Klikk her for å [redigere][9] eller slette meldingen.
 * **Svar**: Klikk her for å svare personen i Til-feltet.
@@ -125,7 +125,7 @@ Klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (F
 
 #### Request Insight {#sentiment}
 
-Request Insight analyserer sentimentet i innkommende e-postsaker, slik at du kan prioritere kunden som trenger deg mest. Et uttrykksikon i toppteksten til meldingen indikerer det oppdagede sentimentet:
+Request Insight analyserer sentimentet i innkommende e-postsaker, slik at du kan prioritere kunden som trenger deg først. Et uttrykksikon i toppteksten til meldingen indikerer det oppdagede sentimentet:
 
 * Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Nøytral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
@@ -184,13 +184,13 @@ Panelet **Egenskaper for sak** har følgende felt:
 
 #### Category Insight {#categorization}
 
-Category Insight bruker en trent modell til å foreslå en kategori for innkommende e-postsaker basert på meldingsinnholdet. Forslaget brukes først når du godkjenner det.
+Category Insight analyserer innkommende e-postsaker og foreslår en kategori basert på innholdet. Kategorien brukes ikke automatisk.
 
 <Note>
 Category Insight krever SuperOffice AI Platform og en Categorization-lisens eller CRM Suite Growth. Ser du ingen forslag? Be administratoren om å [trene modellen og aktivere forslag][44].
 </Note>
 
-1. Åpne en innkommende sak, og se etter den foreslåtte kategorien nederst i saken.
+1. Åpne en innkommende e-postsak, og se etter den foreslåtte kategorien i bunnteksten til saken.
 1. Vurder forslaget, og velg kategorilenken hvis kategorien passer for saken.
 1. Kontroller kategorien på saken. Forslaget forsvinner når du har brukt det.
 
@@ -221,7 +221,7 @@ Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-
 * **Rediger**: Klikk her for å endre egenskapene for denne saken. Du kan f.eks. tildele saken til en annen saksbehandler hvis du trenger å [be en kollega om råd][7].
 * **Godta**: Klikk her for å [overta saken][1]. Du blir da sakens nye eier.
 * **Relater**: Klikk her for å [knytte saken][21] til en annen sak.
-* **Delt**: Dersom det er flere spørsmål i samme sak, f.eks. hvis kunden først spør om noe teknisk og senere også benytter anledningen til å stille et fakturaspørsmål, kan du [dele saken][11] i to ved å klikke på denne knappen.
+* **Del**: Dersom det er flere spørsmål i samme sak, f.eks. hvis kunden først spør om noe teknisk og senere også benytter anledningen til å stille et fakturaspørsmål, kan du [dele saken][11] i to ved å klikke på denne knappen.
 * **Slå sammen**: Klikk her for å slå sammen denne saken med én eller flere andre saker. Hvis for eksempel flere personer i samme firma rapporterer samme tekniske problem (via telefon, webskjemaer og e-post), [kan du slå sammen disse sakene][16] til én sak som skal behandles. Den eldste saken blir som standard primærsaken.
 * **Utskrift**: Klikk her for å skrive ut saken.
 * **Slett**: Klikk her for å slette saken.
@@ -235,7 +235,7 @@ Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-
 [9]: /no/request/learn/edit-message
 [35]: /no/request/learn/find#list
 [11]: /no/request/learn/split-request
-[12]: /no/request/learn/find
+[12]: /no/search-options/learn/index
 [16]: /no/request/learn/merge
 [17]: /no/dashboard/learn/show-requests
 [19]: /no/request/learn/split-message
