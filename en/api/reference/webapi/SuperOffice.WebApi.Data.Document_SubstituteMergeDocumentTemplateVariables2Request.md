@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_SubstituteMergeDocumentTemplateVariables2Request"></a> Class Document\_SubstituteMergeDocumentTemplateVariables2Request
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_SubstituteMergeDocumentTemplateVariables2Request
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_SubstituteMergeDocumentTemplateVariables2Request](SuperOffice.WebApi.Data.Document\_SubstituteMergeDocumentTemplateVariables2Request.md)
+[Document\_SubstituteMergeDocumentTemplateVariables2Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_SubstituteMergeDocumentTemplateVariables2Request)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public StringDictionary CustomTags { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_Document_SubstituteMergeDocumentTemplateVariables2Request_DocumentId"></a> DocumentId
 

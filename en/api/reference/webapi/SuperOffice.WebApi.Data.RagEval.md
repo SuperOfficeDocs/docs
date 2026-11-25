@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RagEval"></a> Class RagEval
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RagEval.
@@ -13,7 +13,7 @@ public class RagEval
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RagEval](SuperOffice.WebApi.Data.RagEval.md)
+[RagEval](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagEval)
 
 #### Inherited Members
 
@@ -195,5 +195,5 @@ public virtual int TestCaseId { get; set; }
 
 ## See Also
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 

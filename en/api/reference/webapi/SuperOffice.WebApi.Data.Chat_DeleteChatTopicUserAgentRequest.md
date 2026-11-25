@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Chat_DeleteChatTopicUserAgentRequest"></a> Class Chat\_DeleteChatTopicUserAgentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Chat_DeleteChatTopicUserAgentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Chat\_DeleteChatTopicUserAgentRequest](SuperOffice.WebApi.Data.Chat\_DeleteChatTopicUserAgentRequest.md)
+[Chat\_DeleteChatTopicUserAgentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Chat_DeleteChatTopicUserAgentRequest)
 
 #### Inherited Members
 

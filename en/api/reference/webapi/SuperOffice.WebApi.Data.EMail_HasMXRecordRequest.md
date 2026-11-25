@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_HasMXRecordRequest"></a> Class EMail\_HasMXRecordRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_HasMXRecordRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_HasMXRecordRequest](SuperOffice.WebApi.Data.EMail\_HasMXRecordRequest.md)
+[EMail\_HasMXRecordRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_HasMXRecordRequest)
 
 #### Inherited Members
 

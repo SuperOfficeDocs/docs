@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FieldValueInfo"></a> Class FieldValueInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FieldValueInfo.
@@ -13,7 +13,7 @@ public class FieldValueInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)
+[FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)
 
 #### Inherited Members
 
@@ -59,7 +59,7 @@ public virtual ControlInfo[] ControlInfos { get; set; }
 
 #### Property Value
 
- [ControlInfo](SuperOffice.WebApi.Data.ControlInfo.md)\[\]
+ [ControlInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ControlInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_FieldValueInfo_CurrentOperationType"></a> CurrentOperationType
 
@@ -211,7 +211,7 @@ public virtual OperationInfo[] OperationInfos { get; set; }
 
 #### Property Value
 
- [OperationInfo](SuperOffice.WebApi.Data.OperationInfo.md)\[\]
+ [OperationInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.OperationInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_FieldValueInfo_ValueType"></a> ValueType
 
@@ -239,5 +239,5 @@ public virtual string[] Values { get; set; }
 
 ## See Also
 
-[BulkUpdateAgent](SuperOffice.WebApi.Agents.BulkUpdateAgent.md)
+[BulkUpdateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BulkUpdateAgent)
 

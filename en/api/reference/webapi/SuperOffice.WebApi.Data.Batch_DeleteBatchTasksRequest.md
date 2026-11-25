@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Batch_DeleteBatchTasksRequest"></a> Class Batch\_DeleteBatchTasksRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Batch_DeleteBatchTasksRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Batch\_DeleteBatchTasksRequest](SuperOffice.WebApi.Data.Batch\_DeleteBatchTasksRequest.md)
+[Batch\_DeleteBatchTasksRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Batch_DeleteBatchTasksRequest)
 
 #### Inherited Members
 

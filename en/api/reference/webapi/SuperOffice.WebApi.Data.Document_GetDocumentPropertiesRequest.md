@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetDocumentPropertiesRequest"></a> Class Document\_GetDocumentPropertiesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetDocumentPropertiesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetDocumentPropertiesRequest](SuperOffice.WebApi.Data.Document\_GetDocumentPropertiesRequest.md)
+[Document\_GetDocumentPropertiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetDocumentPropertiesRequest)
 
 #### Inherited Members
 

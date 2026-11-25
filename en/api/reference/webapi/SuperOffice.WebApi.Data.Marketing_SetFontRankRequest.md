@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_SetFontRankRequest"></a> Class Marketing\_SetFontRankRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_SetFontRankRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_SetFontRankRequest](SuperOffice.WebApi.Data.Marketing\_SetFontRankRequest.md)
+[Marketing\_SetFontRankRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_SetFontRankRequest)
 
 #### Inherited Members
 

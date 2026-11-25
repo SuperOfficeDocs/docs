@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetArchiveListRequest"></a> Class Archive\_GetArchiveListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetArchiveListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetArchiveListRequest](SuperOffice.WebApi.Data.Archive\_GetArchiveListRequest.md)
+[Archive\_GetArchiveListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetArchiveListRequest)
 
 #### Inherited Members
 
@@ -90,7 +90,7 @@ public ArchiveRestrictionInfo[] Restriction { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Archive_GetArchiveListRequest_SortOrder"></a> SortOrder
 
@@ -100,5 +100,5 @@ public ArchiveOrderByInfo[] SortOrder { get; set; }
 
 #### Property Value
 
- [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+ [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 

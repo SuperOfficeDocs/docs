@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Saint_RegenerateCountersRequest"></a> Class Saint\_RegenerateCountersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Saint_RegenerateCountersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Saint\_RegenerateCountersRequest](SuperOffice.WebApi.Data.Saint\_RegenerateCountersRequest.md)
+[Saint\_RegenerateCountersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Saint_RegenerateCountersRequest)
 
 #### Inherited Members
 

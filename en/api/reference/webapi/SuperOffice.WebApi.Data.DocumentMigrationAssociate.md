@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigrationAssociate"></a> Class DocumentMigrationAssociate
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DocumentMigrationAssociate.
@@ -13,7 +13,7 @@ public class DocumentMigrationAssociate
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigrationAssociate](SuperOffice.WebApi.Data.DocumentMigrationAssociate.md)
+[DocumentMigrationAssociate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationAssociate)
 
 #### Inherited Members
 
@@ -63,5 +63,5 @@ public virtual string EmailAddress { get; set; }
 
 ## See Also
 
-[DocumentMigrationAgent](SuperOffice.WebApi.Agents.DocumentMigrationAgent.md)
+[DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent)
 

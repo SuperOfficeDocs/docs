@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TenantState"></a> Enum TenantState
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Is the Online Tenant running, or down for maintenance?

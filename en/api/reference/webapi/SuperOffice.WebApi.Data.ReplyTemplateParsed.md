@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ReplyTemplateParsed"></a> Class ReplyTemplateParsed
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ReplyTemplateParsed.
@@ -13,13 +13,13 @@ public class ReplyTemplateParsed : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ReplyTemplateParsed](SuperOffice.WebApi.Data.ReplyTemplateParsed.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ReplyTemplateParsed](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReplyTemplateParsed)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual AttachmentEntity[] Attachments { get; set; }
 
 #### Property Value
 
- [AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]
+ [AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ReplyTemplateParsed_HtmlParsed"></a> HtmlParsed
 
@@ -102,5 +102,5 @@ public virtual string Subject { get; set; }
 
 ## See Also
 
-[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
+[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_SaveCRMScriptEntityWithoutCompileRequest"></a> Class CRMScript\_SaveCRMScriptEntityWithoutCompileRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_SaveCRMScriptEntityWithoutCompileRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_SaveCRMScriptEntityWithoutCompileRequest](SuperOffice.WebApi.Data.CRMScript\_SaveCRMScriptEntityWithoutCompileRequest.md)
+[CRMScript\_SaveCRMScriptEntityWithoutCompileRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_SaveCRMScriptEntityWithoutCompileRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public CRMScriptEntity CrmScriptEntity { get; set; }
 
 #### Property Value
 
- [CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)
+ [CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)
 

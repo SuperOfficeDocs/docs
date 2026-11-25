@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GuessCategoryRequest"></a> Class AI\_GuessCategoryRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GuessCategoryRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GuessCategoryRequest](SuperOffice.WebApi.Data.AI\_GuessCategoryRequest.md)
+[AI\_GuessCategoryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GuessCategoryRequest)
 
 #### Inherited Members
 

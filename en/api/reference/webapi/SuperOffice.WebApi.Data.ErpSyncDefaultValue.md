@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSyncDefaultValue"></a> Class ErpSyncDefaultValue
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ErpSyncDefaultValue.
@@ -13,13 +13,13 @@ public class ErpSyncDefaultValue : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -52,11 +52,11 @@ public FieldAccess? Access { get; set; }
 
 #### Property Value
 
- [FieldAccess](SuperOffice.WebApi.Data.FieldAccess.md)?
+ [FieldAccess](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldAccess)?
 
 #### See Also
 
-[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md).[Access\_String](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md\#SuperOffice\_WebApi\_Data\_ErpSyncDefaultValue\_Access\_String)
+[ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue).[Access\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue#SuperOffice_WebApi_Data_ErpSyncDefaultValue_Access_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncDefaultValue_Access_String"></a> Access\_String
 
@@ -74,7 +74,7 @@ public string Access_String { get; set; }
 
 #### See Also
 
-[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md).[Access](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md\#SuperOffice\_WebApi\_Data\_ErpSyncDefaultValue\_Access)
+[ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue).[Access](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue#SuperOffice_WebApi_Data_ErpSyncDefaultValue_Access)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncDefaultValue_DefaultValue"></a> DefaultValue
 
@@ -124,11 +124,11 @@ public FieldMetadataType? FieldType { get; set; }
 
 #### Property Value
 
- [FieldMetadataType](SuperOffice.WebApi.Data.FieldMetadataType.md)?
+ [FieldMetadataType](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldMetadataType)?
 
 #### See Also
 
-[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md).[FieldType\_String](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md\#SuperOffice\_WebApi\_Data\_ErpSyncDefaultValue\_FieldType\_String)
+[ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue).[FieldType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue#SuperOffice_WebApi_Data_ErpSyncDefaultValue_FieldType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncDefaultValue_FieldType_String"></a> FieldType\_String
 
@@ -146,7 +146,7 @@ public string FieldType_String { get; set; }
 
 #### See Also
 
-[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md).[FieldType](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md\#SuperOffice\_WebApi\_Data\_ErpSyncDefaultValue\_FieldType)
+[ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue).[FieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue#SuperOffice_WebApi_Data_ErpSyncDefaultValue_FieldType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncDefaultValue_FirstSyncDefaultValue"></a> FirstSyncDefaultValue
 
@@ -210,5 +210,5 @@ public virtual bool PromptUser { get; set; }
 
 ## See Also
 
-[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
+[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
 

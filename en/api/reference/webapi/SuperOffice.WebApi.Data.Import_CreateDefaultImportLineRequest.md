@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Import_CreateDefaultImportLineRequest"></a> Class Import\_CreateDefaultImportLineRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Import_CreateDefaultImportLineRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Import\_CreateDefaultImportLineRequest](SuperOffice.WebApi.Data.Import\_CreateDefaultImportLineRequest.md)
+[Import\_CreateDefaultImportLineRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Import_CreateDefaultImportLineRequest)
 
 #### Inherited Members
 

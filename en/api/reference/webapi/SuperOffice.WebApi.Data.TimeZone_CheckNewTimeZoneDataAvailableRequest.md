@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TimeZone_CheckNewTimeZoneDataAvailableRequest"></a> Class TimeZone\_CheckNewTimeZoneDataAvailableRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class TimeZone_CheckNewTimeZoneDataAvailableRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TimeZone\_CheckNewTimeZoneDataAvailableRequest](SuperOffice.WebApi.Data.TimeZone\_CheckNewTimeZoneDataAvailableRequest.md)
+[TimeZone\_CheckNewTimeZoneDataAvailableRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZone_CheckNewTimeZoneDataAvailableRequest)
 
 #### Inherited Members
 

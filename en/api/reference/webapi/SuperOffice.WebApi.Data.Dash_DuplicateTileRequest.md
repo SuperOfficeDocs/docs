@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_DuplicateTileRequest"></a> Class Dash\_DuplicateTileRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_DuplicateTileRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_DuplicateTileRequest](SuperOffice.WebApi.Data.Dash\_DuplicateTileRequest.md)
+[Dash\_DuplicateTileRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_DuplicateTileRequest)
 
 #### Inherited Members
 

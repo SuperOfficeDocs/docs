@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Recipient"></a> Class Recipient
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Recipient.
@@ -13,7 +13,7 @@ public class Recipient
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Recipient](SuperOffice.WebApi.Data.Recipient.md)
+[Recipient](/en/api/reference/webapi/SuperOffice.WebApi.Data.Recipient)
 
 #### Inherited Members
 
@@ -61,11 +61,11 @@ public RecipientType? Type { get; set; }
 
 #### Property Value
 
- [RecipientType](SuperOffice.WebApi.Data.RecipientType.md)?
+ [RecipientType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecipientType)?
 
 #### See Also
 
-[Recipient](SuperOffice.WebApi.Data.Recipient.md).[Type\_String](SuperOffice.WebApi.Data.Recipient.md\#SuperOffice\_WebApi\_Data\_Recipient\_Type\_String)
+[Recipient](/en/api/reference/webapi/SuperOffice.WebApi.Data.Recipient).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Recipient#SuperOffice_WebApi_Data_Recipient_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_Recipient_Type_String"></a> Type\_String
 
@@ -83,7 +83,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[Recipient](SuperOffice.WebApi.Data.Recipient.md).[Type](SuperOffice.WebApi.Data.Recipient.md\#SuperOffice\_WebApi\_Data\_Recipient\_Type)
+[Recipient](/en/api/reference/webapi/SuperOffice.WebApi.Data.Recipient).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.Recipient#SuperOffice_WebApi_Data_Recipient_Type)
 
 ### <a id="SuperOffice_WebApi_Data_Recipient_Value"></a> Value
 

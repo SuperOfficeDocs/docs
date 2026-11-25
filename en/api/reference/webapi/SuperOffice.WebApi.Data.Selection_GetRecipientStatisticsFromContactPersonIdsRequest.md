@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetRecipientStatisticsFromContactPersonIdsRequest"></a> Class Selection\_GetRecipientStatisticsFromContactPersonIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetRecipientStatisticsFromContactPersonIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetRecipientStatisticsFromContactPersonIdsRequest](SuperOffice.WebApi.Data.Selection\_GetRecipientStatisticsFromContactPersonIdsRequest.md)
+[Selection\_GetRecipientStatisticsFromContactPersonIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetRecipientStatisticsFromContactPersonIdsRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ContactPersonId[] ContactPersonIds { get; set; }
 
 #### Property Value
 
- [ContactPersonId](SuperOffice.WebApi.Data.ContactPersonId.md)\[\]
+ [ContactPersonId](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactPersonId)\[\]
 

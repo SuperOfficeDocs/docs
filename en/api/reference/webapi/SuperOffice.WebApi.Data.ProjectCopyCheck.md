@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ProjectCopyCheck"></a> Class ProjectCopyCheck
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ProjectCopyCheck.
@@ -13,7 +13,7 @@ public class ProjectCopyCheck
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ProjectCopyCheck](SuperOffice.WebApi.Data.ProjectCopyCheck.md)
+[ProjectCopyCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyCheck)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual StringDictionary FieldErrors { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyCheck_Image"></a> Image
 
@@ -59,7 +59,7 @@ public virtual CopyPartCheck Image { get; set; }
 
 #### Property Value
 
- [CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md)
+ [CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyCheck_Links"></a> Links
 
@@ -71,7 +71,7 @@ public virtual CopyPartCheck Links { get; set; }
 
 #### Property Value
 
- [CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md)
+ [CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyCheck_Members"></a> Members
 
@@ -83,7 +83,7 @@ public virtual CopyPartCheck Members { get; set; }
 
 #### Property Value
 
- [CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md)
+ [CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectCopyCheck_Note"></a> Note
 
@@ -95,9 +95,9 @@ public virtual CopyPartCheck Note { get; set; }
 
 #### Property Value
 
- [CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md)
+ [CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck)
 
 ## See Also
 
-[ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md)
+[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_ExecuteDocumentCommandRequest"></a> Class Document\_ExecuteDocumentCommandRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_ExecuteDocumentCommandRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_ExecuteDocumentCommandRequest](SuperOffice.WebApi.Data.Document\_ExecuteDocumentCommandRequest.md)
+[Document\_ExecuteDocumentCommandRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_ExecuteDocumentCommandRequest)
 
 #### Inherited Members
 

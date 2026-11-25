@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_GetFunctionalRightsRequest"></a> Class User\_GetFunctionalRightsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_GetFunctionalRightsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_GetFunctionalRightsRequest](SuperOffice.WebApi.Data.User\_GetFunctionalRightsRequest.md)
+[User\_GetFunctionalRightsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_GetFunctionalRightsRequest)
 
 #### Inherited Members
 

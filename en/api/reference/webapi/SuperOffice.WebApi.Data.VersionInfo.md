@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_VersionInfo"></a> Class VersionInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for VersionInfo.
@@ -13,7 +13,7 @@ public class VersionInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[VersionInfo](SuperOffice.WebApi.Data.VersionInfo.md)
+[VersionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.VersionInfo)
 
 #### Inherited Members
 
@@ -147,5 +147,5 @@ public virtual string VersionId { get; set; }
 
 ## See Also
 
-[DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md)
+[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent)
 

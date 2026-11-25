@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CopyPartAvailability"></a> Enum CopyPartAvailability
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Whether one optional part of a copy can be copied, as checked before the copy is saved. Not a stored field: this only travels in the copy check carriers returned by the copy check operations.

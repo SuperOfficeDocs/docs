@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_GetFieldValuesFromCrmRequest"></a> Class ErpSync\_GetFieldValuesFromCrmRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_GetFieldValuesFromCrmRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_GetFieldValuesFromCrmRequest](SuperOffice.WebApi.Data.ErpSync\_GetFieldValuesFromCrmRequest.md)
+[ErpSync\_GetFieldValuesFromCrmRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_GetFieldValuesFromCrmRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public CrmActorType ActorTypeCrm { get; set; }
 
 #### Property Value
 
- [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+ [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_GetFieldValuesFromCrmRequest_RecordId"></a> RecordId
 

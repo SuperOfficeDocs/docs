@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_FigureOutListIdFromListTableIdAndUDListDefinitionIdRequest"></a> Class UserDefinedFieldInfo\_FigureOutListIdFromListTableIdAndUDListDefinitionIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_FigureOutListIdFromListTableIdAndUDListDefinit
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_FigureOutListIdFromListTableIdAndUDListDefinitionIdRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_FigureOutListIdFromListTableIdAndUDListDefinitionIdRequest.md)
+[UserDefinedFieldInfo\_FigureOutListIdFromListTableIdAndUDListDefinitionIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_FigureOutListIdFromListTableIdAndUDListDefinitionIdRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public UserDefinedFieldInfo Info { get; set; }
 
 #### Property Value
 
- [UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)
+ [UserDefinedFieldInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo)
 

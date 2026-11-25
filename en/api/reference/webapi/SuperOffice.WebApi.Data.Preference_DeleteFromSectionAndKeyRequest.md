@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_DeleteFromSectionAndKeyRequest"></a> Class Preference\_DeleteFromSectionAndKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_DeleteFromSectionAndKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_DeleteFromSectionAndKeyRequest](SuperOffice.WebApi.Data.Preference\_DeleteFromSectionAndKeyRequest.md)
+[Preference\_DeleteFromSectionAndKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_DeleteFromSectionAndKeyRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketBatchReplyData"></a> Class TicketBatchReplyData
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketBatchReplyData.
@@ -13,7 +13,7 @@ public class TicketBatchReplyData
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketBatchReplyData](SuperOffice.WebApi.Data.TicketBatchReplyData.md)
+[TicketBatchReplyData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBatchReplyData)
 
 #### Inherited Members
 
@@ -97,11 +97,11 @@ public TicketSecurityLevel? Slevel { get; set; }
 
 #### Property Value
 
- [TicketSecurityLevel](SuperOffice.WebApi.Data.TicketSecurityLevel.md)?
+ [TicketSecurityLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSecurityLevel)?
 
 #### See Also
 
-[TicketBatchReplyData](SuperOffice.WebApi.Data.TicketBatchReplyData.md).[Slevel\_String](SuperOffice.WebApi.Data.TicketBatchReplyData.md\#SuperOffice\_WebApi\_Data\_TicketBatchReplyData\_Slevel\_String)
+[TicketBatchReplyData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBatchReplyData).[Slevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBatchReplyData#SuperOffice_WebApi_Data_TicketBatchReplyData_Slevel_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketBatchReplyData_Slevel_String"></a> Slevel\_String
 
@@ -119,7 +119,7 @@ public string Slevel_String { get; set; }
 
 #### See Also
 
-[TicketBatchReplyData](SuperOffice.WebApi.Data.TicketBatchReplyData.md).[Slevel](SuperOffice.WebApi.Data.TicketBatchReplyData.md\#SuperOffice\_WebApi\_Data\_TicketBatchReplyData\_Slevel)
+[TicketBatchReplyData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBatchReplyData).[Slevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBatchReplyData#SuperOffice_WebApi_Data_TicketBatchReplyData_Slevel)
 
 ### <a id="SuperOffice_WebApi_Data_TicketBatchReplyData_TicketIds"></a> TicketIds
 
@@ -147,5 +147,5 @@ public virtual int TimeSpent { get; set; }
 
 ## See Also
 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
 

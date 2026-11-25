@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CopyPartResult"></a> Enum CopyPartResult
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Outcome of one optional part of a copy operation. Not a stored field: this only ever travels in the copy result objects on carriers returned by copy operations.

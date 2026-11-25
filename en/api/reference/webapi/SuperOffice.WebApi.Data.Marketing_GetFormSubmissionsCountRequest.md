@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_GetFormSubmissionsCountRequest"></a> Class Marketing\_GetFormSubmissionsCountRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_GetFormSubmissionsCountRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_GetFormSubmissionsCountRequest](SuperOffice.WebApi.Data.Marketing\_GetFormSubmissionsCountRequest.md)
+[Marketing\_GetFormSubmissionsCountRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_GetFormSubmissionsCountRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public FormSubmissionStatus Status { get; set; }
 
 #### Property Value
 
- [FormSubmissionStatus](SuperOffice.WebApi.Data.FormSubmissionStatus.md)
+ [FormSubmissionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormSubmissionStatus)
 

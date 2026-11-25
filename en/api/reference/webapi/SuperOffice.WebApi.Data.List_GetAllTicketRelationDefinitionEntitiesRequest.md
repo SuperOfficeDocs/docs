@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetAllTicketRelationDefinitionEntitiesRequest"></a> Class List\_GetAllTicketRelationDefinitionEntitiesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetAllTicketRelationDefinitionEntitiesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetAllTicketRelationDefinitionEntitiesRequest](SuperOffice.WebApi.Data.List\_GetAllTicketRelationDefinitionEntitiesRequest.md)
+[List\_GetAllTicketRelationDefinitionEntitiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetAllTicketRelationDefinitionEntitiesRequest)
 
 #### Inherited Members
 

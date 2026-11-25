@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketPostponeRule"></a> Enum TicketPostponeRule
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 How the activation time of a postponed ticket is calculated

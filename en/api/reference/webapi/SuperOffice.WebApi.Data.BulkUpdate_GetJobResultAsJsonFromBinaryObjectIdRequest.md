@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BulkUpdate_GetJobResultAsJsonFromBinaryObjectIdRequest"></a> Class BulkUpdate\_GetJobResultAsJsonFromBinaryObjectIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BulkUpdate_GetJobResultAsJsonFromBinaryObjectIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BulkUpdate\_GetJobResultAsJsonFromBinaryObjectIdRequest](SuperOffice.WebApi.Data.BulkUpdate\_GetJobResultAsJsonFromBinaryObjectIdRequest.md)
+[BulkUpdate\_GetJobResultAsJsonFromBinaryObjectIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BulkUpdate_GetJobResultAsJsonFromBinaryObjectIdRequest)
 
 #### Inherited Members
 

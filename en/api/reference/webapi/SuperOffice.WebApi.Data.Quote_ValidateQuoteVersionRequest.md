@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_ValidateQuoteVersionRequest"></a> Class Quote\_ValidateQuoteVersionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_ValidateQuoteVersionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_ValidateQuoteVersionRequest](SuperOffice.WebApi.Data.Quote\_ValidateQuoteVersionRequest.md)
+[Quote\_ValidateQuoteVersionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_ValidateQuoteVersionRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public QuoteVersionButtonAction Action { get; set; }
 
 #### Property Value
 
- [QuoteVersionButtonAction](SuperOffice.WebApi.Data.QuoteVersionButtonAction.md)
+ [QuoteVersionButtonAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonAction)
 
 ### <a id="SuperOffice_WebApi_Data_Quote_ValidateQuoteVersionRequest_QuoteVersionId"></a> QuoteVersionId
 

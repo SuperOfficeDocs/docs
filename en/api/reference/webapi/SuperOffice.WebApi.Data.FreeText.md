@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FreeText"></a> Class FreeText
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FreeText.
@@ -13,13 +13,13 @@ public class FreeText : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[FreeText](SuperOffice.WebApi.Data.FreeText.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -100,11 +100,11 @@ public FreeTextOperator? MultiWordOperator { get; set; }
 
 #### Property Value
 
- [FreeTextOperator](SuperOffice.WebApi.Data.FreeTextOperator.md)?
+ [FreeTextOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeTextOperator)?
 
 #### See Also
 
-[FreeText](SuperOffice.WebApi.Data.FreeText.md).[MultiWordOperator\_String](SuperOffice.WebApi.Data.FreeText.md\#SuperOffice\_WebApi\_Data\_FreeText\_MultiWordOperator\_String)
+[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText).[MultiWordOperator\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText#SuperOffice_WebApi_Data_FreeText_MultiWordOperator_String)
 
 ### <a id="SuperOffice_WebApi_Data_FreeText_MultiWordOperator_String"></a> MultiWordOperator\_String
 
@@ -122,7 +122,7 @@ public string MultiWordOperator_String { get; set; }
 
 #### See Also
 
-[FreeText](SuperOffice.WebApi.Data.FreeText.md).[MultiWordOperator](SuperOffice.WebApi.Data.FreeText.md\#SuperOffice\_WebApi\_Data\_FreeText\_MultiWordOperator)
+[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText).[MultiWordOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText#SuperOffice_WebApi_Data_FreeText_MultiWordOperator)
 
 ### <a id="SuperOffice_WebApi_Data_FreeText_Occurrences"></a> Occurrences
 
@@ -148,11 +148,11 @@ public FreeTextOperator? SingleWordOperator { get; set; }
 
 #### Property Value
 
- [FreeTextOperator](SuperOffice.WebApi.Data.FreeTextOperator.md)?
+ [FreeTextOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeTextOperator)?
 
 #### See Also
 
-[FreeText](SuperOffice.WebApi.Data.FreeText.md).[SingleWordOperator\_String](SuperOffice.WebApi.Data.FreeText.md\#SuperOffice\_WebApi\_Data\_FreeText\_SingleWordOperator\_String)
+[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText).[SingleWordOperator\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText#SuperOffice_WebApi_Data_FreeText_SingleWordOperator_String)
 
 ### <a id="SuperOffice_WebApi_Data_FreeText_SingleWordOperator_String"></a> SingleWordOperator\_String
 
@@ -170,9 +170,9 @@ public string SingleWordOperator_String { get; set; }
 
 #### See Also
 
-[FreeText](SuperOffice.WebApi.Data.FreeText.md).[SingleWordOperator](SuperOffice.WebApi.Data.FreeText.md\#SuperOffice\_WebApi\_Data\_FreeText\_SingleWordOperator)
+[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText).[SingleWordOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText#SuperOffice_WebApi_Data_FreeText_SingleWordOperator)
 
 ## See Also
 
-[FreeTextAgent](SuperOffice.WebApi.Agents.FreeTextAgent.md)
+[FreeTextAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FreeTextAgent)
 

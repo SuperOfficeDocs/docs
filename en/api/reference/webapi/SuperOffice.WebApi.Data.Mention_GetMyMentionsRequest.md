@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Mention_GetMyMentionsRequest"></a> Class Mention\_GetMyMentionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Mention_GetMyMentionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Mention\_GetMyMentionsRequest](SuperOffice.WebApi.Data.Mention\_GetMyMentionsRequest.md)
+[Mention\_GetMyMentionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_GetMyMentionsRequest)
 
 #### Inherited Members
 

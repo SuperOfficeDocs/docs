@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SaleCopyOptions"></a> Class SaleCopyOptions
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SaleCopyOptions.
@@ -13,7 +13,7 @@ public class SaleCopyOptions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SaleCopyOptions](SuperOffice.WebApi.Data.SaleCopyOptions.md)
+[SaleCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyOptions)
 
 #### Inherited Members
 
@@ -87,5 +87,5 @@ public virtual bool CopyStakeholders { get; set; }
 
 ## See Also
 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)
 

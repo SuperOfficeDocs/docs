@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_TranslateRequest"></a> Class AI\_TranslateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_TranslateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_TranslateRequest](SuperOffice.WebApi.Data.AI\_TranslateRequest.md)
+[AI\_TranslateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_TranslateRequest)
 
 #### Inherited Members
 

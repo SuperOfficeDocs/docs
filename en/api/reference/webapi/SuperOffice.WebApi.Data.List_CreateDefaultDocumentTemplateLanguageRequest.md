@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_CreateDefaultDocumentTemplateLanguageRequest"></a> Class List\_CreateDefaultDocumentTemplateLanguageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_CreateDefaultDocumentTemplateLanguageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_CreateDefaultDocumentTemplateLanguageRequest](SuperOffice.WebApi.Data.List\_CreateDefaultDocumentTemplateLanguageRequest.md)
+[List\_CreateDefaultDocumentTemplateLanguageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_CreateDefaultDocumentTemplateLanguageRequest)
 
 #### Inherited Members
 

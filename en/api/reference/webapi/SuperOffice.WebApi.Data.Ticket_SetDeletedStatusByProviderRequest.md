@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SetDeletedStatusByProviderRequest"></a> Class Ticket\_SetDeletedStatusByProviderRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SetDeletedStatusByProviderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SetDeletedStatusByProviderRequest](SuperOffice.WebApi.Data.Ticket\_SetDeletedStatusByProviderRequest.md)
+[Ticket\_SetDeletedStatusByProviderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SetDeletedStatusByProviderRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 

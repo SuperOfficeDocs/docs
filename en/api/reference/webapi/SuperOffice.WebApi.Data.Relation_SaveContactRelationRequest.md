@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Relation_SaveContactRelationRequest"></a> Class Relation\_SaveContactRelationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Relation_SaveContactRelationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Relation\_SaveContactRelationRequest](SuperOffice.WebApi.Data.Relation\_SaveContactRelationRequest.md)
+[Relation\_SaveContactRelationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Relation_SaveContactRelationRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ContactRelationEntity ContactRelationEntity { get; set; }
 
 #### Property Value
 
- [ContactRelationEntity](SuperOffice.WebApi.Data.ContactRelationEntity.md)
+ [ContactRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactRelationEntity)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_DeleteCredentialRequest"></a> Class User\_DeleteCredentialRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_DeleteCredentialRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_DeleteCredentialRequest](SuperOffice.WebApi.Data.User\_DeleteCredentialRequest.md)
+[User\_DeleteCredentialRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_DeleteCredentialRequest)
 
 #### Inherited Members
 

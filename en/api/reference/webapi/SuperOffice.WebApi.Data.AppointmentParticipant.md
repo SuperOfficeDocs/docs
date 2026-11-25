@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AppointmentParticipant"></a> Class AppointmentParticipant
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AppointmentParticipant.
@@ -13,7 +13,7 @@ public class AppointmentParticipant
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AppointmentParticipant](SuperOffice.WebApi.Data.AppointmentParticipant.md)
+[AppointmentParticipant](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentParticipant)
 
 #### Inherited Members
 
@@ -97,11 +97,11 @@ public InvitationStatus? InvitationStatus { get; set; }
 
 #### Property Value
 
- [InvitationStatus](SuperOffice.WebApi.Data.InvitationStatus.md)?
+ [InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.InvitationStatus)?
 
 #### See Also
 
-[AppointmentParticipant](SuperOffice.WebApi.Data.AppointmentParticipant.md).[InvitationStatus\_String](SuperOffice.WebApi.Data.AppointmentParticipant.md\#SuperOffice\_WebApi\_Data\_AppointmentParticipant\_InvitationStatus\_String)
+[AppointmentParticipant](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentParticipant).[InvitationStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentParticipant#SuperOffice_WebApi_Data_AppointmentParticipant_InvitationStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_AppointmentParticipant_InvitationStatus_String"></a> InvitationStatus\_String
 
@@ -119,7 +119,7 @@ public string InvitationStatus_String { get; set; }
 
 #### See Also
 
-[AppointmentParticipant](SuperOffice.WebApi.Data.AppointmentParticipant.md).[InvitationStatus](SuperOffice.WebApi.Data.AppointmentParticipant.md\#SuperOffice\_WebApi\_Data\_AppointmentParticipant\_InvitationStatus)
+[AppointmentParticipant](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentParticipant).[InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentParticipant#SuperOffice_WebApi_Data_AppointmentParticipant_InvitationStatus)
 
 ### <a id="SuperOffice_WebApi_Data_AppointmentParticipant_IsOwner"></a> IsOwner
 
@@ -147,5 +147,5 @@ public virtual int PersonId { get; set; }
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

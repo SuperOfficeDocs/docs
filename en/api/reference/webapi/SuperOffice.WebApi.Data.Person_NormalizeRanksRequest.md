@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_NormalizeRanksRequest"></a> Class Person\_NormalizeRanksRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_NormalizeRanksRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_NormalizeRanksRequest](SuperOffice.WebApi.Data.Person\_NormalizeRanksRequest.md)
+[Person\_NormalizeRanksRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_NormalizeRanksRequest)
 
 #### Inherited Members
 

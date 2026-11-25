@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveTicketStatusPostponeOptionsRequest"></a> Class List\_SaveTicketStatusPostponeOptionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveTicketStatusPostponeOptionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveTicketStatusPostponeOptionsRequest](SuperOffice.WebApi.Data.List\_SaveTicketStatusPostponeOptionsRequest.md)
+[List\_SaveTicketStatusPostponeOptionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveTicketStatusPostponeOptionsRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TicketPostponeOption[] PostponeOptions { get; set; }
 
 #### Property Value
 
- [TicketPostponeOption](SuperOffice.WebApi.Data.TicketPostponeOption.md)\[\]
+ [TicketPostponeOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPostponeOption)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_List_SaveTicketStatusPostponeOptionsRequest_TicketStatusId"></a> TicketStatusId
 

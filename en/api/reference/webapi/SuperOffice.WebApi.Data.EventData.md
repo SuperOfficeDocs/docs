@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EventData"></a> Class EventData
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for EventData.
@@ -13,13 +13,13 @@ public class EventData : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[EventData](SuperOffice.WebApi.Data.EventData.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -74,7 +74,7 @@ public virtual StringDictionary CgiVariables { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_EventData_Exception"></a> Exception
 
@@ -98,7 +98,7 @@ public virtual StringDictionary Headers { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_EventData_InputValues"></a> InputValues
 
@@ -110,7 +110,7 @@ public virtual StringDictionary InputValues { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_EventData_Message"></a> Message
 
@@ -146,7 +146,7 @@ public virtual StringDictionary OutputValues { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_EventData_ParserValues"></a> ParserValues
 
@@ -158,7 +158,7 @@ public virtual StringDictionary ParserValues { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_EventData_ShowDialog"></a> ShowDialog
 
@@ -182,7 +182,7 @@ public virtual StringDictionary StateValues { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_EventData_TraceExecution"></a> TraceExecution
 
@@ -208,11 +208,11 @@ public EventHandlerType? Type { get; set; }
 
 #### Property Value
 
- [EventHandlerType](SuperOffice.WebApi.Data.EventHandlerType.md)?
+ [EventHandlerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventHandlerType)?
 
 #### See Also
 
-[EventData](SuperOffice.WebApi.Data.EventData.md).[Type\_String](SuperOffice.WebApi.Data.EventData.md\#SuperOffice\_WebApi\_Data\_EventData\_Type\_String)
+[EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData#SuperOffice_WebApi_Data_EventData_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_EventData_Type_String"></a> Type\_String
 
@@ -230,9 +230,9 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[EventData](SuperOffice.WebApi.Data.EventData.md).[Type](SuperOffice.WebApi.Data.EventData.md\#SuperOffice\_WebApi\_Data\_EventData\_Type)
+[EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData#SuperOffice_WebApi_Data_EventData_Type)
 
 ## See Also
 
-[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
+[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
 

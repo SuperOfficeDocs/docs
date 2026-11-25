@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetSelectionForFindRequest"></a> Class Selection\_GetSelectionForFindRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetSelectionForFindRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetSelectionForFindRequest](SuperOffice.WebApi.Data.Selection\_GetSelectionForFindRequest.md)
+[Selection\_GetSelectionForFindRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetSelectionForFindRequest)
 
 #### Inherited Members
 

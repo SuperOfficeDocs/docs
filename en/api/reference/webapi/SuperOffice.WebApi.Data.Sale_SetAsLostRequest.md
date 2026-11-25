@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_SetAsLostRequest"></a> Class Sale\_SetAsLostRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_SetAsLostRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_SetAsLostRequest](SuperOffice.WebApi.Data.Sale\_SetAsLostRequest.md)
+[Sale\_SetAsLostRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_SetAsLostRequest)
 
 #### Inherited Members
 

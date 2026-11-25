@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_RequiredDynamicLoad"></a> Class UserPreferenceStrings.RequiredDynamicLoad
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Required dynamic load:  Add new preference section for NetServer only [RequiredDynamicLoad] name = regexp
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.RequiredDynamicLoad
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.RequiredDynamicLoad](SuperOffice.WebApi.Data.UserPreferenceStrings.RequiredDynamicLoad.md)
+[UserPreferenceStrings.RequiredDynamicLoad](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.RequiredDynamicLoad)
 
 #### Inherited Members
 

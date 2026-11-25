@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword"></a> Class AuthorizationUsernamePassword
 
-Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Username and password <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> using Basic scheme.
@@ -12,11 +12,11 @@ public class AuthorizationUsernamePassword : IAuthorization
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AuthorizationUsernamePassword](SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword.md)
+[AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword)
 
 #### Implements
 
-[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)
+[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)
 
 #### Inherited Members
 
@@ -60,7 +60,7 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\>\>
 
 ## Methods
 

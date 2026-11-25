@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserAndInstallationLicenceStatus"></a> Class UserAndInstallationLicenceStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for UserAndInstallationLicenceStatus.
@@ -13,7 +13,7 @@ public class UserAndInstallationLicenceStatus
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserAndInstallationLicenceStatus](SuperOffice.WebApi.Data.UserAndInstallationLicenceStatus.md)
+[UserAndInstallationLicenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserAndInstallationLicenceStatus)
 
 #### Inherited Members
 
@@ -111,5 +111,5 @@ public virtual string[] UserLicenses { get; set; }
 
 ## See Also
 
-[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
+[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
 

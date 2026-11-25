@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_CreateSaleEntityFromExistingRequest"></a> Class Sale\_CreateSaleEntityFromExistingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_CreateSaleEntityFromExistingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_CreateSaleEntityFromExistingRequest](SuperOffice.WebApi.Data.Sale\_CreateSaleEntityFromExistingRequest.md)
+[Sale\_CreateSaleEntityFromExistingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_CreateSaleEntityFromExistingRequest)
 
 #### Inherited Members
 

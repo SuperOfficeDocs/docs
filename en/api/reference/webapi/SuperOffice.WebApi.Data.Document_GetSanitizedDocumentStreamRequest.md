@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetSanitizedDocumentStreamRequest"></a> Class Document\_GetSanitizedDocumentStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetSanitizedDocumentStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetSanitizedDocumentStreamRequest](SuperOffice.WebApi.Data.Document\_GetSanitizedDocumentStreamRequest.md)
+[Document\_GetSanitizedDocumentStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetSanitizedDocumentStreamRequest)
 
 #### Inherited Members
 

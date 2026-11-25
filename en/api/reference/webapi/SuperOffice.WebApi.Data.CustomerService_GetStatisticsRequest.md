@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_GetStatisticsRequest"></a> Class CustomerService\_GetStatisticsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_GetStatisticsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_GetStatisticsRequest](SuperOffice.WebApi.Data.CustomerService\_GetStatisticsRequest.md)
+[CustomerService\_GetStatisticsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_GetStatisticsRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public StatusScreenPanelType[] Functions { get; set; }
 
 #### Property Value
 
- [StatusScreenPanelType](SuperOffice.WebApi.Data.StatusScreenPanelType.md)\[\]
+ [StatusScreenPanelType](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusScreenPanelType)\[\]
 

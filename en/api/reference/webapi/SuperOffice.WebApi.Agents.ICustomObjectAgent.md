@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Agents_ICustomObjectAgent"></a> Interface ICustomObjectAgent
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent for working with Custom Objects (extra tables): read schema and full CRUD over rows. Purpose-built replacement for using DatabaseTableAgent against custom objects.
@@ -11,7 +11,7 @@ public interface ICustomObjectAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,17 +30,17 @@ Task<FieldInfoBase[]> CreateCustomFieldDefinitionsAsync(string tableName, FieldI
 
 Database table name: a Custom Object ('y_equipment') or one of the standard tables that can have custom fields: person, contact, ticket, ej_message, ejuser, ej_category, kb_entry, kb_category.
 
-`fields` [FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]
+`fields` [FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\[\]
 
 The custom field definitions to add. Each element must carry FieldType so the matching FieldInfo* type is used.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\[\]\>
 
 The created custom field definitions.
 
@@ -58,17 +58,17 @@ Task<CustomObject> CreateCustomObjectAsync(string objectName, CustomObject row, 
 
 Database table name of the Custom Object, e.g. 'y_equipment'.
 
-`row` [CustomObject](SuperOffice.WebApi.Data.CustomObject.md)
+`row` [CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)
 
 The Custom Object row to insert.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](SuperOffice.WebApi.Data.CustomObject.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)\>
 
 The inserted Custom Object row, with server-assigned values (e.g. primary key) filled in.
 
@@ -82,17 +82,17 @@ Task<CustomObjectDefinition> CreateCustomObjectDefinitionAsync(CustomObjectDefin
 
 #### Parameters
 
-`customObjectDefinition` [CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)
+`customObjectDefinition` [CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)
 
 The Custom Object Definition to create.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)\>
 
 The created Custom Object Definition, with server-assigned values (e.g. Id, IconHint) filled in.
 
@@ -110,13 +110,13 @@ Task<CustomObject> CreateDefaultCustomObjectAsync(string objectName, RequestOpti
 
 Database table name of the Custom Object, e.g. 'y_equipment'.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](SuperOffice.WebApi.Data.CustomObject.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)\>
 
 A new Custom Object row pre-populated with default values. Not yet persisted.
 
@@ -130,13 +130,13 @@ Task<CustomObjectDefinition> CreateDefaultCustomObjectDefinitionAsync(RequestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)\>
 
 A new Custom Object Definition with default values. Not persisted.
 
@@ -158,7 +158,7 @@ Database table name: a Custom Object ('y_equipment') or one of the standard tabl
 
 Database column name of the field to delete, e.g. 'x_type'.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -186,7 +186,7 @@ Database table name of the Custom Object, e.g. 'y_equipment'.
 
 Primary key of the row to delete.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -210,7 +210,7 @@ Task DeleteCustomObjectDefinitionAsync(string objectName, RequestOptions request
 
 Database table name of the Custom Object to delete, e.g. 'y_equipment'.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -238,13 +238,13 @@ Database table name: a Custom Object ('y_equipment') or one of the standard tabl
 
 Database column name of the field, e.g. 'x_type'.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\>
 
 The custom field definition, or null if the table or the field does not exist.
 
@@ -262,13 +262,13 @@ Task<FieldInfoBase[]> GetCustomFieldDefinitionsAsync(string tableName, RequestOp
 
 Database table name: a Custom Object ('y_equipment') or one of the standard tables that can have custom fields: person, contact, ticket, ej_message, ejuser, ej_category, kb_entry, kb_category.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\[\]\>
 
 The custom field definitions, or null if the table is neither a Custom Object nor a standard table that can have custom fields.
 
@@ -290,13 +290,13 @@ Database table name of the Custom Object, e.g. 'y_equipment'.
 
 Primary key of the row to fetch.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](SuperOffice.WebApi.Data.CustomObject.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)\>
 
 The Custom Object row, or null if no row with that id exists.
 
@@ -314,13 +314,13 @@ Task<CustomObjectDefinition> GetCustomObjectDefinitionAsync(string objectName, R
 
 Database table name of the Custom Object, e.g. 'y_equipment'.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)\>
 
 The Custom Object Definition, or null if no Custom Object with that name exists. Standard tables such as 'ticket' are not Custom Objects.
 
@@ -334,13 +334,13 @@ Task<StringDictionary> GetCustomObjectsIconsAsync(RequestOptions requestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
 
 Map of table name to SVG icon data URI.
 
@@ -354,13 +354,13 @@ Task<CustomObjectMetadata[]> GetCustomObjectsMetadataAsync(RequestOptions reques
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectMetadata](SuperOffice.WebApi.Data.CustomObjectMetadata.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectMetadata](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectMetadata)\[\]\>
 
 Metadata for all custom object tables.
 
@@ -382,7 +382,7 @@ Database table name of the Custom Object.
 
 True to check for a custom edit screen; false to check for a custom view screen.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -406,17 +406,17 @@ Task<FieldInfoBase[]> SaveCustomFieldDefinitionsAsync(string tableName, FieldInf
 
 Database table name: a Custom Object ('y_equipment') or one of the standard tables that can have custom fields: person, contact, ticket, ej_message, ejuser, ej_category, kb_entry, kb_category.
 
-`fields` [FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]
+`fields` [FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\[\]
 
 The custom field definitions to create or update. Each element must carry FieldType so the matching FieldInfo* type is used.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\[\]\>
 
 The saved custom field definitions.
 
@@ -438,17 +438,17 @@ Database table name: a Custom Object ('y_equipment') or one of the standard tabl
 
 Database column name of the field to update, e.g. 'x_type'.
 
-`field` [FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)
+`field` [FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)
 
 The custom field definition with the new values. Must carry FieldType so the matching FieldInfo* type is used.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\>
 
 The updated custom field definition, or null if the table or the field does not exist.
 
@@ -470,17 +470,17 @@ Database table name of the Custom Object, e.g. 'y_equipment'.
 
 Primary key of the row to update.
 
-`row` [CustomObject](SuperOffice.WebApi.Data.CustomObject.md)
+`row` [CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)
 
 The Custom Object row with the new values.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](SuperOffice.WebApi.Data.CustomObject.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)\>
 
 The updated Custom Object row, or null if no row with that id exists.
 
@@ -498,17 +498,17 @@ Task<CustomObjectDefinition> UpdateCustomObjectDefinitionAsync(string objectName
 
 Database table name of the Custom Object to update, e.g. 'y_equipment'.
 
-`customObjectDefinition` [CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)
+`customObjectDefinition` [CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)
 
 The Custom Object Definition with the new table properties.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)\>
 
 The updated Custom Object Definition, or null if no Custom Object with that name exists.
 

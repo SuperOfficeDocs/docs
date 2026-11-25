@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_CheckProjectEntityCopyRequest"></a> Class Project\_CheckProjectEntityCopyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_CheckProjectEntityCopyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_CheckProjectEntityCopyRequest](SuperOffice.WebApi.Data.Project\_CheckProjectEntityCopyRequest.md)
+[Project\_CheckProjectEntityCopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_CheckProjectEntityCopyRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ProjectEntity ProjectEntity { get; set; }
 
 #### Property Value
 
- [ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)
+ [ProjectEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Project_CheckProjectEntityCopyRequest_SourceProjectId"></a> SourceProjectId
 

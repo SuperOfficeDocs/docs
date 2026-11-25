@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Wizard"></a> Class UserPreferenceStrings.Wizard
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Wizard
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Wizard
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Wizard](SuperOffice.WebApi.Data.UserPreferenceStrings.Wizard.md)
+[UserPreferenceStrings.Wizard](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Wizard)
 
 #### Inherited Members
 

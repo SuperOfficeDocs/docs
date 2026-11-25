@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DashTileDefinition"></a> Class DashTileDefinition
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DashTileDefinition.
@@ -13,13 +13,13 @@ public class DashTileDefinition : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -71,11 +71,11 @@ public DashTileCurrencyMode? CurrencyMode { get; set; }
 
 #### Property Value
 
- [DashTileCurrencyMode](SuperOffice.WebApi.Data.DashTileCurrencyMode.md)?
+ [DashTileCurrencyMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileCurrencyMode)?
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[CurrencyMode\_String](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_CurrencyMode\_String)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[CurrencyMode\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_CurrencyMode_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_CurrencyMode_String"></a> CurrencyMode\_String
 
@@ -93,7 +93,7 @@ public string CurrencyMode_String { get; set; }
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[CurrencyMode](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_CurrencyMode)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[CurrencyMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_CurrencyMode)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_DashboardTileDefinitionId"></a> DashboardTileDefinitionId
 
@@ -167,11 +167,11 @@ public DashTileEntityType? EntityType { get; set; }
 
 #### Property Value
 
- [DashTileEntityType](SuperOffice.WebApi.Data.DashTileEntityType.md)?
+ [DashTileEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileEntityType)?
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[EntityType\_String](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_EntityType\_String)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[EntityType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_EntityType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_EntityType_String"></a> EntityType\_String
 
@@ -189,7 +189,7 @@ public string EntityType_String { get; set; }
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[EntityType](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_EntityType)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[EntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_EntityType)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_LayoutConfig"></a> LayoutConfig
 
@@ -215,11 +215,11 @@ public DashTileMeasure? Measure { get; set; }
 
 #### Property Value
 
- [DashTileMeasure](SuperOffice.WebApi.Data.DashTileMeasure.md)?
+ [DashTileMeasure](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileMeasure)?
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[Measure\_String](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_Measure\_String)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[Measure\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_Measure_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_MeasureByField"></a> MeasureByField
 
@@ -261,7 +261,7 @@ public string Measure_String { get; set; }
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[Measure](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_Measure)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[Measure](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_Measure)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_Name"></a> Name
 
@@ -335,11 +335,11 @@ public DashTileType? TileType { get; set; }
 
 #### Property Value
 
- [DashTileType](SuperOffice.WebApi.Data.DashTileType.md)?
+ [DashTileType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileType)?
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[TileType\_String](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_TileType\_String)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[TileType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_TileType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_TileType_String"></a> TileType\_String
 
@@ -357,7 +357,7 @@ public string TileType_String { get; set; }
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[TileType](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_TileType)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[TileType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_TileType)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_Usage"></a> Usage
 
@@ -371,11 +371,11 @@ public DashTileUsage? Usage { get; set; }
 
 #### Property Value
 
- [DashTileUsage](SuperOffice.WebApi.Data.DashTileUsage.md)?
+ [DashTileUsage](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileUsage)?
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[Usage\_String](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_Usage\_String)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[Usage\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_Usage_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashTileDefinition_Usage_String"></a> Usage\_String
 
@@ -393,9 +393,9 @@ public string Usage_String { get; set; }
 
 #### See Also
 
-[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md).[Usage](SuperOffice.WebApi.Data.DashTileDefinition.md\#SuperOffice\_WebApi\_Data\_DashTileDefinition\_Usage)
+[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition).[Usage](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition#SuperOffice_WebApi_Data_DashTileDefinition_Usage)
 
 ## See Also
 
-[DashAgent](SuperOffice.WebApi.Agents.DashAgent.md)
+[DashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashAgent)
 

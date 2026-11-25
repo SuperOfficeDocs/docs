@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RagStatus"></a> Class RagStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RagStatus.
@@ -13,7 +13,7 @@ public class RagStatus
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RagStatus](SuperOffice.WebApi.Data.RagStatus.md)
+[RagStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatus)
 
 #### Inherited Members
 
@@ -131,7 +131,7 @@ public virtual RagStatusChunks StatusAll { get; set; }
 
 #### Property Value
 
- [RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
+ [RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
 
 ### <a id="SuperOffice_WebApi_Data_RagStatus_StatusDocuments"></a> StatusDocuments
 
@@ -143,7 +143,7 @@ public virtual RagStatusChunks StatusDocuments { get; set; }
 
 #### Property Value
 
- [RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
+ [RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
 
 ### <a id="SuperOffice_WebApi_Data_RagStatus_StatusFAQ"></a> StatusFAQ
 
@@ -155,7 +155,7 @@ public virtual RagStatusChunks StatusFAQ { get; set; }
 
 #### Property Value
 
- [RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
+ [RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
 
 ### <a id="SuperOffice_WebApi_Data_RagStatus_StatusNone"></a> StatusNone
 
@@ -167,7 +167,7 @@ public virtual RagStatusChunks StatusNone { get; set; }
 
 #### Property Value
 
- [RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
+ [RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
 
 ### <a id="SuperOffice_WebApi_Data_RagStatus_StatusProduct"></a> StatusProduct
 
@@ -179,7 +179,7 @@ public virtual RagStatusChunks StatusProduct { get; set; }
 
 #### Property Value
 
- [RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
+ [RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
 
 ### <a id="SuperOffice_WebApi_Data_RagStatus_StatusTicket"></a> StatusTicket
 
@@ -191,7 +191,7 @@ public virtual RagStatusChunks StatusTicket { get; set; }
 
 #### Property Value
 
- [RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
+ [RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
 
 ### <a id="SuperOffice_WebApi_Data_RagStatus_StatusWebpage"></a> StatusWebpage
 
@@ -203,9 +203,9 @@ public virtual RagStatusChunks StatusWebpage { get; set; }
 
 #### Property Value
 
- [RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
+ [RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
 
 ## See Also
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 

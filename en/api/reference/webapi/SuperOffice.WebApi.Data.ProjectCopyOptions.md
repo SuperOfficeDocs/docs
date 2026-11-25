@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ProjectCopyOptions"></a> Class ProjectCopyOptions
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ProjectCopyOptions.
@@ -13,7 +13,7 @@ public class ProjectCopyOptions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ProjectCopyOptions](SuperOffice.WebApi.Data.ProjectCopyOptions.md)
+[ProjectCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectCopyOptions)
 
 #### Inherited Members
 
@@ -87,5 +87,5 @@ public virtual bool CopyNote { get; set; }
 
 ## See Also
 
-[ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md)
+[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Batch_GetSystemBatchTaskInfosByNameRequest"></a> Class Batch\_GetSystemBatchTaskInfosByNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Batch_GetSystemBatchTaskInfosByNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Batch\_GetSystemBatchTaskInfosByNameRequest](SuperOffice.WebApi.Data.Batch\_GetSystemBatchTaskInfosByNameRequest.md)
+[Batch\_GetSystemBatchTaskInfosByNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Batch_GetSystemBatchTaskInfosByNameRequest)
 
 #### Inherited Members
 

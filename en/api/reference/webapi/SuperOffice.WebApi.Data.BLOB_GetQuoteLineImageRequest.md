@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_GetQuoteLineImageRequest"></a> Class BLOB\_GetQuoteLineImageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_GetQuoteLineImageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_GetQuoteLineImageRequest](SuperOffice.WebApi.Data.BLOB\_GetQuoteLineImageRequest.md)
+[BLOB\_GetQuoteLineImageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_GetQuoteLineImageRequest)
 
 #### Inherited Members
 

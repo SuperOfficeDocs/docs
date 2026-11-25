@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TargetGroup"></a> Class TargetGroup
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TargetGroup.
@@ -13,13 +13,13 @@ public class TargetGroup : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TargetGroup](SuperOffice.WebApi.Data.TargetGroup.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -59,11 +59,11 @@ public TargetEntityType? EntityType { get; set; }
 
 #### Property Value
 
- [TargetEntityType](SuperOffice.WebApi.Data.TargetEntityType.md)?
+ [TargetEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetEntityType)?
 
 #### See Also
 
-[TargetGroup](SuperOffice.WebApi.Data.TargetGroup.md).[EntityType\_String](SuperOffice.WebApi.Data.TargetGroup.md\#SuperOffice\_WebApi\_Data\_TargetGroup\_EntityType\_String)
+[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup).[EntityType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup#SuperOffice_WebApi_Data_TargetGroup_EntityType_String)
 
 ### <a id="SuperOffice_WebApi_Data_TargetGroup_EntityType_String"></a> EntityType\_String
 
@@ -81,7 +81,7 @@ public string EntityType_String { get; set; }
 
 #### See Also
 
-[TargetGroup](SuperOffice.WebApi.Data.TargetGroup.md).[EntityType](SuperOffice.WebApi.Data.TargetGroup.md\#SuperOffice\_WebApi\_Data\_TargetGroup\_EntityType)
+[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup).[EntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup#SuperOffice_WebApi_Data_TargetGroup_EntityType)
 
 ### <a id="SuperOffice_WebApi_Data_TargetGroup_PeriodType"></a> PeriodType
 
@@ -95,11 +95,11 @@ public TargetPeriodType? PeriodType { get; set; }
 
 #### Property Value
 
- [TargetPeriodType](SuperOffice.WebApi.Data.TargetPeriodType.md)?
+ [TargetPeriodType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetPeriodType)?
 
 #### See Also
 
-[TargetGroup](SuperOffice.WebApi.Data.TargetGroup.md).[PeriodType\_String](SuperOffice.WebApi.Data.TargetGroup.md\#SuperOffice\_WebApi\_Data\_TargetGroup\_PeriodType\_String)
+[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup).[PeriodType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup#SuperOffice_WebApi_Data_TargetGroup_PeriodType_String)
 
 ### <a id="SuperOffice_WebApi_Data_TargetGroup_PeriodType_String"></a> PeriodType\_String
 
@@ -117,7 +117,7 @@ public string PeriodType_String { get; set; }
 
 #### See Also
 
-[TargetGroup](SuperOffice.WebApi.Data.TargetGroup.md).[PeriodType](SuperOffice.WebApi.Data.TargetGroup.md\#SuperOffice\_WebApi\_Data\_TargetGroup\_PeriodType)
+[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup).[PeriodType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup#SuperOffice_WebApi_Data_TargetGroup_PeriodType)
 
 ### <a id="SuperOffice_WebApi_Data_TargetGroup_TargetAssignments"></a> TargetAssignments
 
@@ -129,7 +129,7 @@ public virtual TargetAssignment[] TargetAssignments { get; set; }
 
 #### Property Value
 
- [TargetAssignment](SuperOffice.WebApi.Data.TargetAssignment.md)\[\]
+ [TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TargetGroup_TargetDimension"></a> TargetDimension
 
@@ -141,7 +141,7 @@ public virtual TargetDimension TargetDimension { get; set; }
 
 #### Property Value
 
- [TargetDimension](SuperOffice.WebApi.Data.TargetDimension.md)
+ [TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)
 
 ### <a id="SuperOffice_WebApi_Data_TargetGroup_TargetGroupId"></a> TargetGroupId
 
@@ -169,5 +169,5 @@ public virtual int Year { get; set; }
 
 ## See Also
 
-[TargetsAgent](SuperOffice.WebApi.Agents.TargetsAgent.md)
+[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent)
 

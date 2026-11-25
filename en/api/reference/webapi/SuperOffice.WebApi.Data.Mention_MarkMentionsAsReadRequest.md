@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Mention_MarkMentionsAsReadRequest"></a> Class Mention\_MarkMentionsAsReadRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Mention_MarkMentionsAsReadRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Mention\_MarkMentionsAsReadRequest](SuperOffice.WebApi.Data.Mention\_MarkMentionsAsReadRequest.md)
+[Mention\_MarkMentionsAsReadRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Mention_MarkMentionsAsReadRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ShipmentMessageEntity"></a> Class ShipmentMessageEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ShipmentMessageEntity.
@@ -13,13 +13,13 @@ public class ShipmentMessageEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -95,11 +95,11 @@ public DesignType? Designtype { get; set; }
 
 #### Property Value
 
- [DesignType](SuperOffice.WebApi.Data.DesignType.md)?
+ [DesignType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DesignType)?
 
 #### See Also
 
-[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md).[Designtype\_String](SuperOffice.WebApi.Data.ShipmentMessageEntity.md\#SuperOffice\_WebApi\_Data\_ShipmentMessageEntity\_Designtype\_String)
+[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity).[Designtype\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity#SuperOffice_WebApi_Data_ShipmentMessageEntity_Designtype_String)
 
 ### <a id="SuperOffice_WebApi_Data_ShipmentMessageEntity_Designtype_String"></a> Designtype\_String
 
@@ -117,7 +117,7 @@ public string Designtype_String { get; set; }
 
 #### See Also
 
-[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md).[Designtype](SuperOffice.WebApi.Data.ShipmentMessageEntity.md\#SuperOffice\_WebApi\_Data\_ShipmentMessageEntity\_Designtype)
+[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity).[Designtype](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity#SuperOffice_WebApi_Data_ShipmentMessageEntity_Designtype)
 
 ### <a id="SuperOffice_WebApi_Data_ShipmentMessageEntity_DocumentMessage"></a> DocumentMessage
 
@@ -143,11 +143,11 @@ public ShipmentMessageType? Flags { get; set; }
 
 #### Property Value
 
- [ShipmentMessageType](SuperOffice.WebApi.Data.ShipmentMessageType.md)?
+ [ShipmentMessageType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageType)?
 
 #### See Also
 
-[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md).[Flags\_String](SuperOffice.WebApi.Data.ShipmentMessageEntity.md\#SuperOffice\_WebApi\_Data\_ShipmentMessageEntity\_Flags\_String)
+[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity).[Flags\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity#SuperOffice_WebApi_Data_ShipmentMessageEntity_Flags_String)
 
 ### <a id="SuperOffice_WebApi_Data_ShipmentMessageEntity_Flags_String"></a> Flags\_String
 
@@ -165,7 +165,7 @@ public string Flags_String { get; set; }
 
 #### See Also
 
-[ShipmentMessageEntity](SuperOffice.WebApi.Data.ShipmentMessageEntity.md).[Flags](SuperOffice.WebApi.Data.ShipmentMessageEntity.md\#SuperOffice\_WebApi\_Data\_ShipmentMessageEntity\_Flags)
+[ShipmentMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity).[Flags](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentMessageEntity#SuperOffice_WebApi_Data_ShipmentMessageEntity_Flags)
 
 ### <a id="SuperOffice_WebApi_Data_ShipmentMessageEntity_FolderId"></a> FolderId
 
@@ -349,5 +349,5 @@ public virtual short UpdatedCount { get; set; }
 
 ## See Also
 
-[MarketingAgent](SuperOffice.WebApi.Agents.MarketingAgent.md)
+[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent)
 

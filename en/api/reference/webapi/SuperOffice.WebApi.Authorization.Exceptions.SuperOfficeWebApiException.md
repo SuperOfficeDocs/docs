@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiException"></a> Class SuperOfficeWebApiException
 
-Namespace: [SuperOffice.WebApi.Authorization.Exceptions](SuperOffice.WebApi.Authorization.Exceptions.md)  
+Namespace: [SuperOffice.WebApi.Authorization.Exceptions](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Thrown when bad things happen in the API. Contains the HTTP error and any body we can read.
@@ -13,12 +13,12 @@ public class SuperOfficeWebApiException : Exception, ISerializable
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Exception](https://learn.microsoft.com/dotnet/api/system.exception) ← 
-[SuperOfficeWebApiException](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException.md)
+[SuperOfficeWebApiException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException)
 
 #### Derived
 
-[SuperOfficeWebApiUnauthorizedException](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException.md), 
-[SuperOfficeWebApiWrongSubdomainException](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiWrongSubdomainException.md)
+[SuperOfficeWebApiUnauthorizedException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException), 
+[SuperOfficeWebApiWrongSubdomainException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiWrongSubdomainException)
 
 #### Implements
 

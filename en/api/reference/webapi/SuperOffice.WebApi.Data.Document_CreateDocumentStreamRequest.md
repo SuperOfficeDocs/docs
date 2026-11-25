@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_CreateDocumentStreamRequest"></a> Class Document\_CreateDocumentStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_CreateDocumentStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_CreateDocumentStreamRequest](SuperOffice.WebApi.Data.Document\_CreateDocumentStreamRequest.md)
+[Document\_CreateDocumentStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_CreateDocumentStreamRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public DocumentEntity DocumentEntity { get; set; }
 
 #### Property Value
 
- [DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)
+ [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Document_CreateDocumentStreamRequest_OverwriteExistingData"></a> OverwriteExistingData
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_DeleteExpiredRequest"></a> Class Contact\_DeleteExpiredRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_DeleteExpiredRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_DeleteExpiredRequest](SuperOffice.WebApi.Data.Contact\_DeleteExpiredRequest.md)
+[Contact\_DeleteExpiredRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_DeleteExpiredRequest)
 
 #### Inherited Members
 

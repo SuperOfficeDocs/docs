@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetHeadingsRequest"></a> Class List\_GetHeadingsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetHeadingsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetHeadingsRequest](SuperOffice.WebApi.Data.List\_GetHeadingsRequest.md)
+[List\_GetHeadingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetHeadingsRequest)
 
 #### Inherited Members
 

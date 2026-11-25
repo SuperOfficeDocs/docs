@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_SetLandingPageOverviewSettingsRequest"></a> Class Configuration\_SetLandingPageOverviewSettingsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_SetLandingPageOverviewSettingsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_SetLandingPageOverviewSettingsRequest](SuperOffice.WebApi.Data.Configuration\_SetLandingPageOverviewSettingsRequest.md)
+[Configuration\_SetLandingPageOverviewSettingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SetLandingPageOverviewSettingsRequest)
 
 #### Inherited Members
 

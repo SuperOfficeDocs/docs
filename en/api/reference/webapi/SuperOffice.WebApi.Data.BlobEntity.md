@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BlobEntity"></a> Class BlobEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for BlobEntity.
@@ -12,13 +12,13 @@ public class BlobEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -92,7 +92,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_BlobEntity_CreatedDate"></a> CreatedDate
 
@@ -188,7 +188,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_BlobEntity_UpdatedDate"></a> UpdatedDate
 
@@ -204,5 +204,5 @@ public virtual DateTime UpdatedDate { get; set; }
 
 ## See Also
 
-[BLOBAgent](SuperOffice.WebApi.Agents.BLOBAgent.md)
+[BLOBAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BLOBAgent)
 

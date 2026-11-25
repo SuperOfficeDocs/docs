@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_UpsertRecentNavigationRequest"></a> Class ViewState\_UpsertRecentNavigationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_UpsertRecentNavigationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_UpsertRecentNavigationRequest](SuperOffice.WebApi.Data.ViewState\_UpsertRecentNavigationRequest.md)
+[ViewState\_UpsertRecentNavigationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_UpsertRecentNavigationRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public NavigationElement[] Elements { get; set; }
 
 #### Property Value
 
- [NavigationElement](SuperOffice.WebApi.Data.NavigationElement.md)\[\]
+ [NavigationElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.NavigationElement)\[\]
 

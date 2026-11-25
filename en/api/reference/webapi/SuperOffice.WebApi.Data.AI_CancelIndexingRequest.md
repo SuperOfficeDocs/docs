@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_CancelIndexingRequest"></a> Class AI\_CancelIndexingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_CancelIndexingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_CancelIndexingRequest](SuperOffice.WebApi.Data.AI\_CancelIndexingRequest.md)
+[AI\_CancelIndexingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_CancelIndexingRequest)
 
 #### Inherited Members
 

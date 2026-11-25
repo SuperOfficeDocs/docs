@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_CacheFolderListRequest"></a> Class EMail\_CacheFolderListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_CacheFolderListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_CacheFolderListRequest](SuperOffice.WebApi.Data.EMail\_CacheFolderListRequest.md)
+[EMail\_CacheFolderListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_CacheFolderListRequest)
 
 #### Inherited Members
 

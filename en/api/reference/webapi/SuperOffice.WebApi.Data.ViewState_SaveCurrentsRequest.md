@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_SaveCurrentsRequest"></a> Class ViewState\_SaveCurrentsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_SaveCurrentsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_SaveCurrentsRequest](SuperOffice.WebApi.Data.ViewState\_SaveCurrentsRequest.md)
+[ViewState\_SaveCurrentsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_SaveCurrentsRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public History[] Currents { get; set; }
 
 #### Property Value
 
- [History](SuperOffice.WebApi.Data.History.md)\[\]
+ [History](/en/api/reference/webapi/SuperOffice.WebApi.Data.History)\[\]
 

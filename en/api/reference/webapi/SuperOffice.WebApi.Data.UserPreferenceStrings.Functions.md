@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions"></a> Class UserPreferenceStrings.Functions
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Functions
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Functions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Functions](SuperOffice.WebApi.Data.UserPreferenceStrings.Functions.md)
+[UserPreferenceStrings.Functions](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Functions)
 
 #### Inherited Members
 

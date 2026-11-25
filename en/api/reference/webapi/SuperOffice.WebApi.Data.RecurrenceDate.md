@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecurrenceDate"></a> Class RecurrenceDate
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RecurrenceDate.
@@ -13,7 +13,7 @@ public class RecurrenceDate
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RecurrenceDate](SuperOffice.WebApi.Data.RecurrenceDate.md)
+[RecurrenceDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDate)
 
 #### Inherited Members
 

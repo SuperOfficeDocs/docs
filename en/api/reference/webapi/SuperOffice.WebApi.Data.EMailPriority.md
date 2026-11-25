@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMailPriority"></a> Enum EMailPriority
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 This Enum is used by:  email_item.priority; NewsFeedItem.Priority

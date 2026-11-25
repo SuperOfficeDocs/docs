@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_DeleteProjectEventEntityFromProjectIdRequest"></a> Class Project\_DeleteProjectEventEntityFromProjectIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_DeleteProjectEventEntityFromProjectIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_DeleteProjectEventEntityFromProjectIdRequest](SuperOffice.WebApi.Data.Project\_DeleteProjectEventEntityFromProjectIdRequest.md)
+[Project\_DeleteProjectEventEntityFromProjectIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_DeleteProjectEventEntityFromProjectIdRequest)
 
 #### Inherited Members
 

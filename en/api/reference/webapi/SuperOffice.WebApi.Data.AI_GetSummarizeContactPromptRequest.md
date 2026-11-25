@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GetSummarizeContactPromptRequest"></a> Class AI\_GetSummarizeContactPromptRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GetSummarizeContactPromptRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GetSummarizeContactPromptRequest](SuperOffice.WebApi.Data.AI\_GetSummarizeContactPromptRequest.md)
+[AI\_GetSummarizeContactPromptRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GetSummarizeContactPromptRequest)
 
 #### Inherited Members
 

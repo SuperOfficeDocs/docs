@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Pocket_SendPushNotificationRequest"></a> Class Pocket\_SendPushNotificationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Pocket_SendPushNotificationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Pocket\_SendPushNotificationRequest](SuperOffice.WebApi.Data.Pocket\_SendPushNotificationRequest.md)
+[Pocket\_SendPushNotificationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Pocket_SendPushNotificationRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public PocketNotificationMessage Message { get; set; }
 
 #### Property Value
 
- [PocketNotificationMessage](SuperOffice.WebApi.Data.PocketNotificationMessage.md)
+ [PocketNotificationMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketNotificationMessage)
 

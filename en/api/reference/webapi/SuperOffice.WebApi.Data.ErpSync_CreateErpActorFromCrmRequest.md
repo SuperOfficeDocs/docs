@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_CreateErpActorFromCrmRequest"></a> Class ErpSync\_CreateErpActorFromCrmRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_CreateErpActorFromCrmRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_CreateErpActorFromCrmRequest](SuperOffice.WebApi.Data.ErpSync\_CreateErpActorFromCrmRequest.md)
+[ErpSync\_CreateErpActorFromCrmRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_CreateErpActorFromCrmRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public CrmActorType CrmActorType { get; set; }
 
 #### Property Value
 
- [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+ [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_CreateErpActorFromCrmRequest_CrmEntityId"></a> CrmEntityId
 
@@ -70,7 +70,7 @@ public ErpActorType ErpActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+ [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_CreateErpActorFromCrmRequest_ErpFieldKeyValues"></a> ErpFieldKeyValues
 
@@ -80,5 +80,5 @@ public StringDictionary ErpFieldKeyValues { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 

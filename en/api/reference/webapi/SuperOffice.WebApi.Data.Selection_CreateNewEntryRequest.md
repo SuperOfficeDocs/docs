@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_CreateNewEntryRequest"></a> Class Selection\_CreateNewEntryRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_CreateNewEntryRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_CreateNewEntryRequest](SuperOffice.WebApi.Data.Selection\_CreateNewEntryRequest.md)
+[Selection\_CreateNewEntryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_CreateNewEntryRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public DuplicateEntry Duplicate { get; set; }
 
 #### Property Value
 
- [DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)
+ [DuplicateEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateEntry)
 

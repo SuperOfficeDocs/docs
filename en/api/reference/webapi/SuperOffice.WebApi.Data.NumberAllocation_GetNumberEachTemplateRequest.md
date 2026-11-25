@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NumberAllocation_GetNumberEachTemplateRequest"></a> Class NumberAllocation\_GetNumberEachTemplateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class NumberAllocation_GetNumberEachTemplateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NumberAllocation\_GetNumberEachTemplateRequest](SuperOffice.WebApi.Data.NumberAllocation\_GetNumberEachTemplateRequest.md)
+[NumberAllocation\_GetNumberEachTemplateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NumberAllocation_GetNumberEachTemplateRequest)
 
 #### Inherited Members
 

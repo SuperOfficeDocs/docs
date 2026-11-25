@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DatabaseTable_TruncateRequest"></a> Class DatabaseTable\_TruncateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DatabaseTable_TruncateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DatabaseTable\_TruncateRequest](SuperOffice.WebApi.Data.DatabaseTable\_TruncateRequest.md)
+[DatabaseTable\_TruncateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DatabaseTable_TruncateRequest)
 
 #### Inherited Members
 

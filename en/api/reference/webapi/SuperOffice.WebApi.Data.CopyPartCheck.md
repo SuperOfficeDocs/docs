@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CopyPartCheck"></a> Class CopyPartCheck
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CopyPartCheck.
@@ -13,7 +13,7 @@ public class CopyPartCheck
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md)
+[CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck)
 
 #### Inherited Members
 
@@ -73,11 +73,11 @@ public CopyPartAvailability? State { get; set; }
 
 #### Property Value
 
- [CopyPartAvailability](SuperOffice.WebApi.Data.CopyPartAvailability.md)?
+ [CopyPartAvailability](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartAvailability)?
 
 #### See Also
 
-[CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md).[State\_String](SuperOffice.WebApi.Data.CopyPartCheck.md\#SuperOffice\_WebApi\_Data\_CopyPartCheck\_State\_String)
+[CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck).[State\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck#SuperOffice_WebApi_Data_CopyPartCheck_State_String)
 
 ### <a id="SuperOffice_WebApi_Data_CopyPartCheck_State_String"></a> State\_String
 
@@ -95,9 +95,9 @@ public string State_String { get; set; }
 
 #### See Also
 
-[CopyPartCheck](SuperOffice.WebApi.Data.CopyPartCheck.md).[State](SuperOffice.WebApi.Data.CopyPartCheck.md\#SuperOffice\_WebApi\_Data\_CopyPartCheck\_State)
+[CopyPartCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck).[State](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartCheck#SuperOffice_WebApi_Data_CopyPartCheck_State)
 
 ## See Also
 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)
 

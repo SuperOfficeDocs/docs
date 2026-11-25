@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Filter"></a> Class UserPreferenceStrings.Filter
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Filter (these are available only in PointyHairedBossMode in admin and thus cannot be easily edited)
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Filter
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Filter](SuperOffice.WebApi.Data.UserPreferenceStrings.Filter.md)
+[UserPreferenceStrings.Filter](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Filter)
 
 #### Inherited Members
 

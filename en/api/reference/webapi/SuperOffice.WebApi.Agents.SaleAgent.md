@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Agents_SaleAgent"></a> Class SaleAgent
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Sale data services
@@ -12,41 +12,41 @@ public class SaleAgent : AgentBase, ISaleAgent, IAgentBase, IDisposable
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)
 
 #### Implements
 
-[ISaleAgent](SuperOffice.WebApi.Agents.ISaleAgent.md), 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[ISaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ISaleAgent), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
-[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
-[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
-[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
-[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
-[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
-[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
-[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
-[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
-[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
+[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
+[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
+[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
+[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
+[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
+[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
+[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
+[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
+[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
+[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -93,7 +93,7 @@ public SaleAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 Base URL and authentication values.
 
@@ -113,9 +113,9 @@ public Task AddSaleStakeholdersAsync(int saleId, SaleStakeholder[] saleStakehold
 
 `saleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`saleStakeholders` [SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]
+`saleStakeholders` [SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -133,7 +133,7 @@ public Task BatchUpdateNextDueDateAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -151,7 +151,7 @@ public Task<SaleCopyCheck> CheckSaleEntityCopyAsync(SaleEntity saleEntity, int s
 
 #### Parameters
 
-`saleEntity` [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
+`saleEntity` [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 The prepared copy as the user has edited it. Null checks the copy as CreateSaleEntityFromExisting prepares it.
 
@@ -159,13 +159,13 @@ The prepared copy as the user has edited it. Null checks the copy as CreateSaleE
 
 The sale that the copy is prepared from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleCopyCheck](SuperOffice.WebApi.Data.SaleCopyCheck.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleCopyCheck](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyCheck)\>
 
 Whether each optional part can be copied, and errors in the fields the user can edit
 
@@ -180,13 +180,13 @@ public Task<SaleEntity> CreateDefaultSaleEntityAsync(RequestOptions requestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\>
 
 A blank SaleEntity
 
@@ -204,13 +204,13 @@ public Task<SaleEntity> CreateDefaultSaleEntityBySaleTypeIdAsync(int saleTypeId,
 
 The sale type to take defaults from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\>
 
 New SaleEntity carrying defaults for the given sale type
 
@@ -225,13 +225,13 @@ public Task<SaleStakeholder> CreateDefaultSaleStakeholderAsync(RequestOptions re
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\>
 
 A blank SaleStakeholder
 
@@ -246,13 +246,13 @@ public Task<SaleSummary> CreateDefaultSaleSummaryAsync(RequestOptions requestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummary)\>
 
 A blank SaleSummary
 
@@ -270,13 +270,13 @@ public Task<SaleEntity> CreateSaleEntityFromExistingAsync(int saleId, RequestOpt
 
 The id of the source sale
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\>
 
 Unsaved copy of the source sale, with SaleId = 0
 
@@ -294,7 +294,7 @@ public Task DeleteSaleEntityAsync(int saleEntityId, RequestOptions requestOption
 
 The identity of the SaleEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -316,7 +316,7 @@ public Task DeleteSaleStakeholderAsync(int saleStakeholderId, RequestOptions req
 
 The identity of the SaleStakeholder
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -334,7 +334,7 @@ public Task DeleteSaleStakeholdersAsync(int[] saleStakeholderIds, RequestOptions
 
 `saleStakeholderIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -360,7 +360,7 @@ Date to count the duration from, normally today
 
 The sale type whose duration to apply
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -384,13 +384,13 @@ public Task<Sale[]> GetMyOpportunitiesAsync(int count, RequestOptions requestOpt
 
 The number of sales that is returned. -1 returns all.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 Array of open sales (opportunities).
 
@@ -408,7 +408,7 @@ public Task<DateTime> GetNextDueDateAsync(int saleId, RequestOptions requestOpti
 
 Sale id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -432,7 +432,7 @@ public Task<int> GetNextSaleStageAsync(int saleId, bool includeCurrentStage, Req
 
 `includeCurrentStage` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -454,13 +454,13 @@ public Task<Sale[]> GetOpenSalesForContactAsync(int contactId, RequestOptions re
 
 The ID of the contact whose sales we want.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 Aray of sales.
 
@@ -478,7 +478,7 @@ public Task<int> GetProbabilityFromStageAsync(int stageId, RequestOptions reques
 
 Probability list id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -506,13 +506,13 @@ The amount limit in the local currency.
 
 The maximum number of items to return. If -1 all are returned.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 Array of all recent sales.
 
@@ -530,13 +530,13 @@ public Task<Sale> GetSaleAsync(int saleId, RequestOptions requestOptions = null)
 
 The identifier of the Sale object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\>
 
 Sale
 
@@ -554,13 +554,13 @@ public Task<SaleEntity> GetSaleEntityAsync(int saleEntityId, RequestOptions requ
 
 The identifier of the SaleEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\>
 
 SaleEntity
 
@@ -578,13 +578,13 @@ public Task<Sale[]> GetSaleListAsync(int[] saleIds, RequestOptions requestOption
 
 The identifiers of the Sale object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 Array of Sale objects
 
@@ -602,13 +602,13 @@ public Task<SaleStakeholder> GetSaleStakeholderAsync(int saleStakeholderId, Requ
 
 The identifier of the SaleStakeholder object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\>
 
 SaleStakeholder
 
@@ -622,13 +622,13 @@ public Task<SaleStakeholder[]> GetSaleStakeholderByIdAsync(int[] saleStakeholder
 
 `saleStakeholderIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]\>
 
 ### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholderListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSaleStakeholderListAsync\(int\[\], RequestOptions\)
 
@@ -644,13 +644,13 @@ public Task<SaleStakeholder[]> GetSaleStakeholderListAsync(int[] saleStakeholder
 
 The identifiers of the SaleStakeholder object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]\>
 
 Array of SaleStakeholder objects
 
@@ -664,13 +664,13 @@ public Task<SaleStakeholder[]> GetSaleStakeholdersAsync(int saleId, RequestOptio
 
 `saleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]\>
 
 ### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSalesByDateAsync_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_Data_SaleStatus_SuperOffice_WebApi_RequestOptions_"></a> GetSalesByDateAsync\(DateTime, DateTime, int, SaleStatus, RequestOptions\)
 
@@ -694,17 +694,17 @@ The end of the time interval.
 
 The amount limit in the local currency.  -1 means no amount limit
 
-`status` [SaleStatus](SuperOffice.WebApi.Data.SaleStatus.md)
+`status` [SaleStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStatus)
 
 The sale status (Lost, Open, Sold, Unknown). SaleStatus.Unknown means no status filtering.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 Array of sales.
 
@@ -726,13 +726,13 @@ The ID of the contact whose sales we want.
 
 If true, only get open sales.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 List of sales matching query
 
@@ -754,13 +754,13 @@ The ID of the person whose sales we want.
 
 If true, only get open sales.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 List of sales matching query
 
@@ -778,13 +778,13 @@ public Task<SaleSummary> GetSummaryByAssociateAsync(int associateId, DateTime fr
 
 `toDate` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummary)\>
 
 ### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByContactAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> GetSummaryByContactAsync\(int, DateTime, DateTime, RequestOptions\)
 
@@ -800,13 +800,13 @@ public Task<SaleSummary> GetSummaryByContactAsync(int contactId, DateTime fromDa
 
 `toDate` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummary)\>
 
 ### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByGroupAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> GetSummaryByGroupAsync\(int, DateTime, DateTime, RequestOptions\)
 
@@ -822,13 +822,13 @@ public Task<SaleSummary> GetSummaryByGroupAsync(int groupId, DateTime fromDate, 
 
 `toDate` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummary)\>
 
 ### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetUpcomingSalesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUpcomingSalesAsync\(int, int, RequestOptions\)
 
@@ -848,13 +848,13 @@ The amount weighted by the probability that the sale is closed (amount * probabi
 
 The maximum number of items to return. If -1 all are returned.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)\[\]\>
 
 Array of upcoming sales.
 
@@ -868,7 +868,7 @@ public Task<bool> HasGuideActivitiesAsync(int saleId, RequestOptions requestOpti
 
 `saleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -890,7 +890,7 @@ public Task<bool> HasGuideAsync(int saleId, RequestOptions requestOptions = null
 
 Sale id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -910,7 +910,7 @@ public Task<bool> HasStakeholderSettingAsync(int saleId, RequestOptions requestO
 
 `saleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -936,7 +936,7 @@ SaleId
 
 Number value to check for uniqueness/required
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -956,7 +956,7 @@ public Task<bool> OfferAutoNextStageOnApppointmentCompletedAsync(int appointment
 
 `appointmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -978,7 +978,7 @@ public Task<bool> SaleHasQuoteAsync(int saleId, RequestOptions requestOptions = 
 
 The id of the sale
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -998,17 +998,17 @@ public Task<SaleEntity> SaveSaleEntityAsync(SaleEntity saleEntity, RequestOption
 
 #### Parameters
 
-`saleEntity` [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
+`saleEntity` [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 The SaleEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)\>
 
 New or updated SaleEntity
 
@@ -1022,7 +1022,7 @@ public Task<SaleCopyResult> SaveSaleEntityCopyAsync(SaleEntity saleEntity, int s
 
 #### Parameters
 
-`saleEntity` [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
+`saleEntity` [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 The prepared copy, with SaleId = 0
 
@@ -1030,17 +1030,17 @@ The prepared copy, with SaleId = 0
 
 The sale that the copy was prepared from
 
-`options` [SaleCopyOptions](SuperOffice.WebApi.Data.SaleCopyOptions.md)
+`options` [SaleCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyOptions)
 
 Which optional parts to copy alongside the sale. Null copies the sale alone.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult)\>
 
 The new sale id, and what became of each optional part
 
@@ -1054,17 +1054,17 @@ public Task<SaleStakeholder> SaveSaleStakeholderAsync(SaleStakeholder saleStakeh
 
 #### Parameters
 
-`saleStakeholder` [SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)
+`saleStakeholder` [SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)
 
 The SaleStakeholder that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\>
 
 New or updated SaleStakeholder
 
@@ -1082,7 +1082,7 @@ public Task SetAsLostAsync(int[] saleIds, RequestOptions requestOptions = null)
 
 Array of sale ids to be marked as lost. All normal write access rules apply.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1108,7 +1108,7 @@ Array of sale ids to be marked as lost. All normal write access rules apply.
 
 The ID of the lost reason.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1130,7 +1130,7 @@ public Task SetAsSoldAsync(int[] saleIds, RequestOptions requestOptions = null)
 
 Array of sale ids to be marked as lost. All the normal write access rules apply.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1156,7 +1156,7 @@ Array of sale ids to be marked as lost. All the normal write access rules apply.
 
 The ID of the sold reason.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1172,15 +1172,15 @@ public Task<SaleStakeholder[]> UpdateSaleStakeholdersAsync(SaleStakeholder[] sta
 
 #### Parameters
 
-`stakeholders` [SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]
+`stakeholders` [SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]\>
 
 ### <a id="SuperOffice_WebApi_Agents_SaleAgent_ValidateSaleEntityAsync_SuperOffice_WebApi_Data_SaleEntity_SuperOffice_WebApi_RequestOptions_"></a> ValidateSaleEntityAsync\(SaleEntity, RequestOptions\)
 
@@ -1192,17 +1192,17 @@ public Task<StringDictionary> ValidateSaleEntityAsync(SaleEntity saleEntity, Req
 
 #### Parameters
 
-`saleEntity` [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
+`saleEntity` [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 Entity to be checked for errors.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
 
 Error messages tagged by field.
 

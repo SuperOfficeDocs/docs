@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_CreateCustomObjectDefinitionRequest"></a> Class CustomObject\_CreateCustomObjectDefinitionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_CreateCustomObjectDefinitionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_CreateCustomObjectDefinitionRequest](SuperOffice.WebApi.Data.CustomObject\_CreateCustomObjectDefinitionRequest.md)
+[CustomObject\_CreateCustomObjectDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_CreateCustomObjectDefinitionRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public CustomObjectDefinition CustomObjectDefinition { get; set; }
 
 #### Property Value
 
- [CustomObjectDefinition](SuperOffice.WebApi.Data.CustomObjectDefinition.md)
+ [CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition)
 

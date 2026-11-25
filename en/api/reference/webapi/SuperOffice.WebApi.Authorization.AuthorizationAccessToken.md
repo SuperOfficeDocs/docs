@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken"></a> Class AuthorizationAccessToken
 
-Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.AccessToken.dll  
 
 OAuth 2.0 access token (and refresh token) <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref>. 
@@ -14,7 +14,7 @@ public class AuthorizationAccessToken : IAuthorization
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AuthorizationAccessToken](SuperOffice.WebApi.Authorization.AuthorizationAccessToken.md)
+[AuthorizationAccessToken](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationAccessToken)
 
 #### Implements
 

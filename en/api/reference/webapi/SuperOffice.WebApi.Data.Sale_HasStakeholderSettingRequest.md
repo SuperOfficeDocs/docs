@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_HasStakeholderSettingRequest"></a> Class Sale\_HasStakeholderSettingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_HasStakeholderSettingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_HasStakeholderSettingRequest](SuperOffice.WebApi.Data.Sale\_HasStakeholderSettingRequest.md)
+[Sale\_HasStakeholderSettingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_HasStakeholderSettingRequest)
 
 #### Inherited Members
 

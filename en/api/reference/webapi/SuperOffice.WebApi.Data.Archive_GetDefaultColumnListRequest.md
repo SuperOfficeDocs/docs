@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetDefaultColumnListRequest"></a> Class Archive\_GetDefaultColumnListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetDefaultColumnListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetDefaultColumnListRequest](SuperOffice.WebApi.Data.Archive\_GetDefaultColumnListRequest.md)
+[Archive\_GetDefaultColumnListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetDefaultColumnListRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_ChangeOwnPasswordRequest"></a> Class User\_ChangeOwnPasswordRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_ChangeOwnPasswordRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_ChangeOwnPasswordRequest](SuperOffice.WebApi.Data.User\_ChangeOwnPasswordRequest.md)
+[User\_ChangeOwnPasswordRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_ChangeOwnPasswordRequest)
 
 #### Inherited Members
 

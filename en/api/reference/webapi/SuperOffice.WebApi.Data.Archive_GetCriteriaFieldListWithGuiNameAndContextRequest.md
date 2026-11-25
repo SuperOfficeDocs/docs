@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetCriteriaFieldListWithGuiNameAndContextRequest"></a> Class Archive\_GetCriteriaFieldListWithGuiNameAndContextRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetCriteriaFieldListWithGuiNameAndContextRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetCriteriaFieldListWithGuiNameAndContextRequest](SuperOffice.WebApi.Data.Archive\_GetCriteriaFieldListWithGuiNameAndContextRequest.md)
+[Archive\_GetCriteriaFieldListWithGuiNameAndContextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetCriteriaFieldListWithGuiNameAndContextRequest)
 
 #### Inherited Members
 

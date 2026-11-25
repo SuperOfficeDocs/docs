@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_License"></a> Class UserPreferenceStrings.License
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 License counters to track when to upgrade license
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.License
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.License](SuperOffice.WebApi.Data.UserPreferenceStrings.License.md)
+[UserPreferenceStrings.License](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.License)
 
 #### Inherited Members
 

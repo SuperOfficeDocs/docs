@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DatabaseTable_ReadRowRequest"></a> Class DatabaseTable\_ReadRowRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DatabaseTable_ReadRowRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DatabaseTable\_ReadRowRequest](SuperOffice.WebApi.Data.DatabaseTable\_ReadRowRequest.md)
+[DatabaseTable\_ReadRowRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DatabaseTable_ReadRowRequest)
 
 #### Inherited Members
 

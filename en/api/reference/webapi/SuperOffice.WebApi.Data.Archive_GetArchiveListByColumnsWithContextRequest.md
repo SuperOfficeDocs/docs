@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetArchiveListByColumnsWithContextRequest"></a> Class Archive\_GetArchiveListByColumnsWithContextRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetArchiveListByColumnsWithContextRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetArchiveListByColumnsWithContextRequest](SuperOffice.WebApi.Data.Archive\_GetArchiveListByColumnsWithContextRequest.md)
+[Archive\_GetArchiveListByColumnsWithContextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetArchiveListByColumnsWithContextRequest)
 
 #### Inherited Members
 
@@ -100,7 +100,7 @@ public ArchiveRestrictionInfo[] Restriction { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Archive_GetArchiveListByColumnsWithContextRequest_SortOrder"></a> SortOrder
 
@@ -110,5 +110,5 @@ public ArchiveOrderByInfo[] SortOrder { get; set; }
 
 #### Property Value
 
- [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+ [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 

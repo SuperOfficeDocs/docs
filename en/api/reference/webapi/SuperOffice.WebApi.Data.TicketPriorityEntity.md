@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketPriorityEntity"></a> Class TicketPriorityEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketPriorityEntity.
@@ -13,13 +13,13 @@ public class TicketPriorityEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -59,11 +59,11 @@ public TicketPriorityEscalateEvent? ChangedOwner { get; set; }
 
 #### Property Value
 
- [TicketPriorityEscalateEvent](SuperOffice.WebApi.Data.TicketPriorityEscalateEvent.md)?
+ [TicketPriorityEscalateEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateEvent)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[ChangedOwner\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_ChangedOwner\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[ChangedOwner\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_ChangedOwner_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_ChangedOwner_String"></a> ChangedOwner\_String
 
@@ -81,7 +81,7 @@ public string ChangedOwner_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[ChangedOwner](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_ChangedOwner)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[ChangedOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_ChangedOwner)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_Deadline"></a> Deadline
 
@@ -105,7 +105,7 @@ public virtual TicketPriorityEscalationLevelEntity[] EscalationLevels { get; set
 
 #### Property Value
 
- [TicketPriorityEscalationLevelEntity](SuperOffice.WebApi.Data.TicketPriorityEscalationLevelEntity.md)\[\]
+ [TicketPriorityEscalationLevelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalationLevelEntity)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_Flags"></a> Flags
 
@@ -119,11 +119,11 @@ public TicketPriorityFlags? Flags { get; set; }
 
 #### Property Value
 
- [TicketPriorityFlags](SuperOffice.WebApi.Data.TicketPriorityFlags.md)?
+ [TicketPriorityFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityFlags)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[Flags\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_Flags\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[Flags\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_Flags_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_Flags_String"></a> Flags\_String
 
@@ -141,7 +141,7 @@ public string Flags_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[Flags](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_Flags)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[Flags](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_Flags)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_FriStart"></a> FriStart
 
@@ -263,11 +263,11 @@ public TicketPriorityStatus? Status { get; set; }
 
 #### Property Value
 
- [TicketPriorityStatus](SuperOffice.WebApi.Data.TicketPriorityStatus.md)?
+ [TicketPriorityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityStatus)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[Status\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_Status\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_Status_String"></a> Status\_String
 
@@ -285,7 +285,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[Status](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_Status)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_Status)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_SunStart"></a> SunStart
 
@@ -347,11 +347,11 @@ public TicketPriorityEscalateEvent? TicketChangedPriority { get; set; }
 
 #### Property Value
 
- [TicketPriorityEscalateEvent](SuperOffice.WebApi.Data.TicketPriorityEscalateEvent.md)?
+ [TicketPriorityEscalateEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateEvent)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketChangedPriority\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketChangedPriority\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketChangedPriority\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketChangedPriority_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketChangedPriority_String"></a> TicketChangedPriority\_String
 
@@ -369,7 +369,7 @@ public string TicketChangedPriority_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketChangedPriority](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketChangedPriority)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketChangedPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketChangedPriority)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketClosed"></a> TicketClosed
 
@@ -383,11 +383,11 @@ public TicketPriorityEscalateEvent? TicketClosed { get; set; }
 
 #### Property Value
 
- [TicketPriorityEscalateEvent](SuperOffice.WebApi.Data.TicketPriorityEscalateEvent.md)?
+ [TicketPriorityEscalateEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateEvent)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketClosed\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketClosed\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketClosed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketClosed_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketClosed_String"></a> TicketClosed\_String
 
@@ -405,7 +405,7 @@ public string TicketClosed_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketClosed](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketClosed)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketClosed](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketClosed)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNew"></a> TicketNew
 
@@ -419,11 +419,11 @@ public TicketPriorityEscalateEvent? TicketNew { get; set; }
 
 #### Property Value
 
- [TicketPriorityEscalateEvent](SuperOffice.WebApi.Data.TicketPriorityEscalateEvent.md)?
+ [TicketPriorityEscalateEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateEvent)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketNew\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketNew\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketNew\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNew_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNew_String"></a> TicketNew\_String
 
@@ -441,7 +441,7 @@ public string TicketNew_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketNew](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketNew)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketNew](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNew)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNewinfo"></a> TicketNewinfo
 
@@ -455,11 +455,11 @@ public TicketPriorityEscalateEvent? TicketNewinfo { get; set; }
 
 #### Property Value
 
- [TicketPriorityEscalateEvent](SuperOffice.WebApi.Data.TicketPriorityEscalateEvent.md)?
+ [TicketPriorityEscalateEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateEvent)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketNewinfo\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketNewinfo\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketNewinfo\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNewinfo_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNewinfo_String"></a> TicketNewinfo\_String
 
@@ -477,7 +477,7 @@ public string TicketNewinfo_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketNewinfo](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketNewinfo)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketNewinfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketNewinfo)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketPriorityId"></a> TicketPriorityId
 
@@ -503,11 +503,11 @@ public TicketPriorityEscalateEvent? TicketRead { get; set; }
 
 #### Property Value
 
- [TicketPriorityEscalateEvent](SuperOffice.WebApi.Data.TicketPriorityEscalateEvent.md)?
+ [TicketPriorityEscalateEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateEvent)?
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketRead\_String](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketRead\_String)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketRead\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketRead_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TicketRead_String"></a> TicketRead\_String
 
@@ -525,7 +525,7 @@ public string TicketRead_String { get; set; }
 
 #### See Also
 
-[TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md).[TicketRead](SuperOffice.WebApi.Data.TicketPriorityEntity.md\#SuperOffice\_WebApi\_Data\_TicketPriorityEntity\_TicketRead)
+[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity).[TicketRead](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity#SuperOffice_WebApi_Data_TicketPriorityEntity_TicketRead)
 
 ### <a id="SuperOffice_WebApi_Data_TicketPriorityEntity_TueStart"></a> TueStart
 
@@ -577,5 +577,5 @@ public virtual DateTime WedStop { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 

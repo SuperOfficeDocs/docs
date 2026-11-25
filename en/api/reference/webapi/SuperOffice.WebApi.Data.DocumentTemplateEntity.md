@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity"></a> Class DocumentTemplateEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DocumentTemplateEntity.
@@ -13,13 +13,13 @@ public class DocumentTemplateEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -95,11 +95,11 @@ public DocTmplDirection? Direction { get; set; }
 
 #### Property Value
 
- [DocTmplDirection](SuperOffice.WebApi.Data.DocTmplDirection.md)?
+ [DocTmplDirection](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplDirection)?
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[Direction\_String](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_Direction\_String)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[Direction\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_Direction_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_Direction_String"></a> Direction\_String
 
@@ -117,7 +117,7 @@ public string Direction_String { get; set; }
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[Direction](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_Direction)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[Direction](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_Direction)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_DocumentTemplateId"></a> DocumentTemplateId
 
@@ -203,11 +203,11 @@ public DocTmplInvitationType? InvitationDocType { get; set; }
 
 #### Property Value
 
- [DocTmplInvitationType](SuperOffice.WebApi.Data.DocTmplInvitationType.md)?
+ [DocTmplInvitationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplInvitationType)?
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[InvitationDocType\_String](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_InvitationDocType\_String)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[InvitationDocType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_InvitationDocType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_InvitationDocType_String"></a> InvitationDocType\_String
 
@@ -225,7 +225,7 @@ public string InvitationDocType_String { get; set; }
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[InvitationDocType](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_InvitationDocType)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[InvitationDocType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_InvitationDocType)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_IsDefaultPublished"></a> IsDefaultPublished
 
@@ -299,11 +299,11 @@ public DocTmplPrivacyType? PrivacyDocType { get; set; }
 
 #### Property Value
 
- [DocTmplPrivacyType](SuperOffice.WebApi.Data.DocTmplPrivacyType.md)?
+ [DocTmplPrivacyType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplPrivacyType)?
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[PrivacyDocType\_String](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_PrivacyDocType\_String)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[PrivacyDocType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_PrivacyDocType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_PrivacyDocType_String"></a> PrivacyDocType\_String
 
@@ -321,7 +321,7 @@ public string PrivacyDocType_String { get; set; }
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[PrivacyDocType](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_PrivacyDocType)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[PrivacyDocType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_PrivacyDocType)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_QuoteDocType"></a> QuoteDocType
 
@@ -335,11 +335,11 @@ public DocTmplQuoteType? QuoteDocType { get; set; }
 
 #### Property Value
 
- [DocTmplQuoteType](SuperOffice.WebApi.Data.DocTmplQuoteType.md)?
+ [DocTmplQuoteType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplQuoteType)?
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[QuoteDocType\_String](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_QuoteDocType\_String)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[QuoteDocType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_QuoteDocType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_QuoteDocType_String"></a> QuoteDocType\_String
 
@@ -357,7 +357,7 @@ public string QuoteDocType_String { get; set; }
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[QuoteDocType](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_QuoteDocType)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[QuoteDocType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_QuoteDocType)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_Rank"></a> Rank
 
@@ -383,11 +383,11 @@ public DocTmplType? RecordType { get; set; }
 
 #### Property Value
 
- [DocTmplType](SuperOffice.WebApi.Data.DocTmplType.md)?
+ [DocTmplType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplType)?
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[RecordType\_String](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_RecordType\_String)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[RecordType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_RecordType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_RecordType_String"></a> RecordType\_String
 
@@ -405,7 +405,7 @@ public string RecordType_String { get; set; }
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[RecordType](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_RecordType)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[RecordType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_RecordType)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_SaveInDb"></a> SaveInDb
 
@@ -443,11 +443,11 @@ public SenderMailMode? SenderEmailMode { get; set; }
 
 #### Property Value
 
- [SenderMailMode](SuperOffice.WebApi.Data.SenderMailMode.md)?
+ [SenderMailMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.SenderMailMode)?
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[SenderEmailMode\_String](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_SenderEmailMode\_String)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[SenderEmailMode\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_SenderEmailMode_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_SenderEmailMode_String"></a> SenderEmailMode\_String
 
@@ -465,7 +465,7 @@ public string SenderEmailMode_String { get; set; }
 
 #### See Also
 
-[DocumentTemplateEntity](SuperOffice.WebApi.Data.DocumentTemplateEntity.md).[SenderEmailMode](SuperOffice.WebApi.Data.DocumentTemplateEntity.md\#SuperOffice\_WebApi\_Data\_DocumentTemplateEntity\_SenderEmailMode)
+[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity).[SenderEmailMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity#SuperOffice_WebApi_Data_DocumentTemplateEntity_SenderEmailMode)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplateEntity_ShowCurrents"></a> ShowCurrents
 
@@ -493,5 +493,5 @@ public virtual string Tooltip { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 

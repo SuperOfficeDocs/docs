@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPresenceStatus"></a> Class UserPresenceStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for UserPresenceStatus.
@@ -13,7 +13,7 @@ public class UserPresenceStatus
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md)
+[UserPresenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPresenceStatus)
 
 #### Inherited Members
 
@@ -61,11 +61,11 @@ public EjUserStatus? Status { get; set; }
 
 #### Property Value
 
- [EjUserStatus](SuperOffice.WebApi.Data.EjUserStatus.md)?
+ [EjUserStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.EjUserStatus)?
 
 #### See Also
 
-[UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md).[Status\_String](SuperOffice.WebApi.Data.UserPresenceStatus.md\#SuperOffice\_WebApi\_Data\_UserPresenceStatus\_Status\_String)
+[UserPresenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPresenceStatus).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPresenceStatus#SuperOffice_WebApi_Data_UserPresenceStatus_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_UserPresenceStatus_Status_String"></a> Status\_String
 
@@ -83,9 +83,9 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md).[Status](SuperOffice.WebApi.Data.UserPresenceStatus.md\#SuperOffice\_WebApi\_Data\_UserPresenceStatus\_Status)
+[UserPresenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPresenceStatus).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPresenceStatus#SuperOffice_WebApi_Data_UserPresenceStatus_Status)
 
 ## See Also
 
-[UserAgent](SuperOffice.WebApi.Agents.UserAgent.md)
+[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent)
 

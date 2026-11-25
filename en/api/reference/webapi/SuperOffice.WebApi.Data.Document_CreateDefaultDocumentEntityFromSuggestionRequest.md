@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_CreateDefaultDocumentEntityFromSuggestionRequest"></a> Class Document\_CreateDefaultDocumentEntityFromSuggestionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_CreateDefaultDocumentEntityFromSuggestionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_CreateDefaultDocumentEntityFromSuggestionRequest](SuperOffice.WebApi.Data.Document\_CreateDefaultDocumentEntityFromSuggestionRequest.md)
+[Document\_CreateDefaultDocumentEntityFromSuggestionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_CreateDefaultDocumentEntityFromSuggestionRequest)
 
 #### Inherited Members
 

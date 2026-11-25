@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_ExecuteScriptByStringRequest"></a> Class CRMScript\_ExecuteScriptByStringRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_ExecuteScriptByStringRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_ExecuteScriptByStringRequest](SuperOffice.WebApi.Data.CRMScript\_ExecuteScriptByStringRequest.md)
+[CRMScript\_ExecuteScriptByStringRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_ExecuteScriptByStringRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EventData EventData { get; set; }
 
 #### Property Value
 
- [EventData](SuperOffice.WebApi.Data.EventData.md)
+ [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScript_ExecuteScriptByStringRequest_Parameters"></a> Parameters
 
@@ -50,7 +50,7 @@ public StringDictionary Parameters { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScript_ExecuteScriptByStringRequest_Script"></a> Script
 

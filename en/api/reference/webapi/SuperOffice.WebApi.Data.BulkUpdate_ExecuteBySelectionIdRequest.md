@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BulkUpdate_ExecuteBySelectionIdRequest"></a> Class BulkUpdate\_ExecuteBySelectionIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BulkUpdate_ExecuteBySelectionIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BulkUpdate\_ExecuteBySelectionIdRequest](SuperOffice.WebApi.Data.BulkUpdate\_ExecuteBySelectionIdRequest.md)
+[BulkUpdate\_ExecuteBySelectionIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BulkUpdate_ExecuteBySelectionIdRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public FieldValueInfo[] FieldValueInfos { get; set; }
 
 #### Property Value
 
- [FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]
+ [FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_BulkUpdate_ExecuteBySelectionIdRequest_IsShadow"></a> IsShadow
 

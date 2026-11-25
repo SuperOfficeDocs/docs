@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSyncFieldMapping"></a> Class ErpSyncFieldMapping
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ErpSyncFieldMapping.
@@ -13,13 +13,13 @@ public class ErpSyncFieldMapping : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ErpSyncFieldMapping](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ErpSyncFieldMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -52,11 +52,11 @@ public FieldAccess? Access { get; set; }
 
 #### Property Value
 
- [FieldAccess](SuperOffice.WebApi.Data.FieldAccess.md)?
+ [FieldAccess](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldAccess)?
 
 #### See Also
 
-[ErpSyncFieldMapping](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md).[Access\_String](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md\#SuperOffice\_WebApi\_Data\_ErpSyncFieldMapping\_Access\_String)
+[ErpSyncFieldMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping).[Access\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping#SuperOffice_WebApi_Data_ErpSyncFieldMapping_Access_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncFieldMapping_Access_String"></a> Access\_String
 
@@ -74,7 +74,7 @@ public string Access_String { get; set; }
 
 #### See Also
 
-[ErpSyncFieldMapping](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md).[Access](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md\#SuperOffice\_WebApi\_Data\_ErpSyncFieldMapping\_Access)
+[ErpSyncFieldMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping).[Access](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping#SuperOffice_WebApi_Data_ErpSyncFieldMapping_Access)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncFieldMapping_AlreadyMapped"></a> AlreadyMapped
 
@@ -184,11 +184,11 @@ public FieldMetadataType? FieldType { get; set; }
 
 #### Property Value
 
- [FieldMetadataType](SuperOffice.WebApi.Data.FieldMetadataType.md)?
+ [FieldMetadataType](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldMetadataType)?
 
 #### See Also
 
-[ErpSyncFieldMapping](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md).[FieldType\_String](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md\#SuperOffice\_WebApi\_Data\_ErpSyncFieldMapping\_FieldType\_String)
+[ErpSyncFieldMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping).[FieldType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping#SuperOffice_WebApi_Data_ErpSyncFieldMapping_FieldType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncFieldMapping_FieldType_String"></a> FieldType\_String
 
@@ -206,7 +206,7 @@ public string FieldType_String { get; set; }
 
 #### See Also
 
-[ErpSyncFieldMapping](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md).[FieldType](SuperOffice.WebApi.Data.ErpSyncFieldMapping.md\#SuperOffice\_WebApi\_Data\_ErpSyncFieldMapping\_FieldType)
+[ErpSyncFieldMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping).[FieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldMapping#SuperOffice_WebApi_Data_ErpSyncFieldMapping_FieldType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncFieldMapping_ListReference"></a> ListReference
 
@@ -294,5 +294,5 @@ public virtual bool SyncToErp { get; set; }
 
 ## See Also
 
-[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
+[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
 

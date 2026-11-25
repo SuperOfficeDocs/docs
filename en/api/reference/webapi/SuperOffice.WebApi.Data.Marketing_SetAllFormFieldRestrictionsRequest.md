@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_SetAllFormFieldRestrictionsRequest"></a> Class Marketing\_SetAllFormFieldRestrictionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_SetAllFormFieldRestrictionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_SetAllFormFieldRestrictionsRequest](SuperOffice.WebApi.Data.Marketing\_SetAllFormFieldRestrictionsRequest.md)
+[Marketing\_SetAllFormFieldRestrictionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_SetAllFormFieldRestrictionsRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public FormFieldRestriction[] FormFieldRestrictions { get; set; }
 
 #### Property Value
 
- [FormFieldRestriction](SuperOffice.WebApi.Data.FormFieldRestriction.md)\[\]
+ [FormFieldRestriction](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestriction)\[\]
 

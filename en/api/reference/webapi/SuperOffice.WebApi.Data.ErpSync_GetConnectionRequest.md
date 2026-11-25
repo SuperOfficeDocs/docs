@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_GetConnectionRequest"></a> Class ErpSync\_GetConnectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_GetConnectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_GetConnectionRequest](SuperOffice.WebApi.Data.ErpSync\_GetConnectionRequest.md)
+[ErpSync\_GetConnectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_GetConnectionRequest)
 
 #### Inherited Members
 

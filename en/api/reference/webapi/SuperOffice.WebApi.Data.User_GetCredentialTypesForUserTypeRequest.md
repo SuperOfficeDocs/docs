@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_GetCredentialTypesForUserTypeRequest"></a> Class User\_GetCredentialTypesForUserTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_GetCredentialTypesForUserTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_GetCredentialTypesForUserTypeRequest](SuperOffice.WebApi.Data.User\_GetCredentialTypesForUserTypeRequest.md)
+[User\_GetCredentialTypesForUserTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_GetCredentialTypesForUserTypeRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public UserType UserType { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_GetAllPriceListsRequest"></a> Class Quote\_GetAllPriceListsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_GetAllPriceListsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_GetAllPriceListsRequest](SuperOffice.WebApi.Data.Quote\_GetAllPriceListsRequest.md)
+[Quote\_GetAllPriceListsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_GetAllPriceListsRequest)
 
 #### Inherited Members
 

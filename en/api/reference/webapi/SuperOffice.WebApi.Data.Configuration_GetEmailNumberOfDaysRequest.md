@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetEmailNumberOfDaysRequest"></a> Class Configuration\_GetEmailNumberOfDaysRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetEmailNumberOfDaysRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetEmailNumberOfDaysRequest](SuperOffice.WebApi.Data.Configuration\_GetEmailNumberOfDaysRequest.md)
+[Configuration\_GetEmailNumberOfDaysRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetEmailNumberOfDaysRequest)
 
 #### Inherited Members
 

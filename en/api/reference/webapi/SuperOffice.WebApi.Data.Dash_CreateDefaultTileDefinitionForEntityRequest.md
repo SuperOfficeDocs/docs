@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_CreateDefaultTileDefinitionForEntityRequest"></a> Class Dash\_CreateDefaultTileDefinitionForEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_CreateDefaultTileDefinitionForEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_CreateDefaultTileDefinitionForEntityRequest](SuperOffice.WebApi.Data.Dash\_CreateDefaultTileDefinitionForEntityRequest.md)
+[Dash\_CreateDefaultTileDefinitionForEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_CreateDefaultTileDefinitionForEntityRequest)
 
 #### Inherited Members
 

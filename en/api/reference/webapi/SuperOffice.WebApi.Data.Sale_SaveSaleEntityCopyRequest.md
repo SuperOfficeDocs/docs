@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_SaveSaleEntityCopyRequest"></a> Class Sale\_SaveSaleEntityCopyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_SaveSaleEntityCopyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_SaveSaleEntityCopyRequest](SuperOffice.WebApi.Data.Sale\_SaveSaleEntityCopyRequest.md)
+[Sale\_SaveSaleEntityCopyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_SaveSaleEntityCopyRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public SaleCopyOptions Options { get; set; }
 
 #### Property Value
 
- [SaleCopyOptions](SuperOffice.WebApi.Data.SaleCopyOptions.md)
+ [SaleCopyOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyOptions)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_SaveSaleEntityCopyRequest_SaleEntity"></a> SaleEntity
 
@@ -50,7 +50,7 @@ public SaleEntity SaleEntity { get; set; }
 
 #### Property Value
 
- [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
+ [SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_SaveSaleEntityCopyRequest_SourceSaleId"></a> SourceSaleId
 

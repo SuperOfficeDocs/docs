@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_SendConsentConfirmationEmailRequest"></a> Class Person\_SendConsentConfirmationEmailRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_SendConsentConfirmationEmailRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_SendConsentConfirmationEmailRequest](SuperOffice.WebApi.Data.Person\_SendConsentConfirmationEmailRequest.md)
+[Person\_SendConsentConfirmationEmailRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_SendConsentConfirmationEmailRequest)
 
 #### Inherited Members
 

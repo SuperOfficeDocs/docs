@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketPostponeStandard"></a> Enum TicketPostponeStandard
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Built-in postpone option a ticket_status_postpone row represents

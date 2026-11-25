@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_MarkEmailsAsReadRequest"></a> Class EMail\_MarkEmailsAsReadRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_MarkEmailsAsReadRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_MarkEmailsAsReadRequest](SuperOffice.WebApi.Data.EMail\_MarkEmailsAsReadRequest.md)
+[EMail\_MarkEmailsAsReadRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_MarkEmailsAsReadRequest)
 
 #### Inherited Members
 

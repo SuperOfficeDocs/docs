@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_GenerateQuoteDocumentsRequest"></a> Class Quote\_GenerateQuoteDocumentsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_GenerateQuoteDocumentsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_GenerateQuoteDocumentsRequest](SuperOffice.WebApi.Data.Quote\_GenerateQuoteDocumentsRequest.md)
+[Quote\_GenerateQuoteDocumentsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_GenerateQuoteDocumentsRequest)
 
 #### Inherited Members
 

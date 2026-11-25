@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetAnyConfigurationRequest"></a> Class Configuration\_GetAnyConfigurationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetAnyConfigurationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetAnyConfigurationRequest](SuperOffice.WebApi.Data.Configuration\_GetAnyConfigurationRequest.md)
+[Configuration\_GetAnyConfigurationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetAnyConfigurationRequest)
 
 #### Inherited Members
 

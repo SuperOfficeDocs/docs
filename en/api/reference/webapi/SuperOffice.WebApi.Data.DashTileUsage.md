@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DashTileUsage"></a> Enum DashTileUsage
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Defines where a DashTileDefinition can be used

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetNextInQueueRequest"></a> Class Ticket\_GetNextInQueueRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetNextInQueueRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetNextInQueueRequest](SuperOffice.WebApi.Data.Ticket\_GetNextInQueueRequest.md)
+[Ticket\_GetNextInQueueRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetNextInQueueRequest)
 
 #### Inherited Members
 

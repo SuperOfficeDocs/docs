@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_GetMyActiveContactsRequest"></a> Class Contact\_GetMyActiveContactsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_GetMyActiveContactsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_GetMyActiveContactsRequest](SuperOffice.WebApi.Data.Contact\_GetMyActiveContactsRequest.md)
+[Contact\_GetMyActiveContactsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_GetMyActiveContactsRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ContactAction ActionType { get; set; }
 
 #### Property Value
 
- [ContactAction](SuperOffice.WebApi.Data.ContactAction.md)
+ [ContactAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactAction)
 
 ### <a id="SuperOffice_WebApi_Data_Contact_GetMyActiveContactsRequest_ActivityStartTime"></a> ActivityStartTime
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_GetLiveUiConfigRequest"></a> Class ViewState\_GetLiveUiConfigRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_GetLiveUiConfigRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_GetLiveUiConfigRequest](SuperOffice.WebApi.Data.ViewState\_GetLiveUiConfigRequest.md)
+[ViewState\_GetLiveUiConfigRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_GetLiveUiConfigRequest)
 
 #### Inherited Members
 

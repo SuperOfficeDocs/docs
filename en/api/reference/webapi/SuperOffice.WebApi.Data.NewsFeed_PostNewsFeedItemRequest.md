@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeed_PostNewsFeedItemRequest"></a> Class NewsFeed\_PostNewsFeedItemRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class NewsFeed_PostNewsFeedItemRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeed\_PostNewsFeedItemRequest](SuperOffice.WebApi.Data.NewsFeed\_PostNewsFeedItemRequest.md)
+[NewsFeed\_PostNewsFeedItemRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_PostNewsFeedItemRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public NewsFeedItem NewsFeedItem { get; set; }
 
 #### Property Value
 
- [NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)
+ [NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeed_PostNewsFeedItemRequest_ToAll"></a> ToAll
 

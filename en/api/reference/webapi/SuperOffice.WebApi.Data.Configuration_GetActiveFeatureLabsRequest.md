@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetActiveFeatureLabsRequest"></a> Class Configuration\_GetActiveFeatureLabsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetActiveFeatureLabsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetActiveFeatureLabsRequest](SuperOffice.WebApi.Data.Configuration\_GetActiveFeatureLabsRequest.md)
+[Configuration\_GetActiveFeatureLabsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetActiveFeatureLabsRequest)
 
 #### Inherited Members
 

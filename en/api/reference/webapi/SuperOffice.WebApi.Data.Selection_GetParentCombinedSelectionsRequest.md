@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetParentCombinedSelectionsRequest"></a> Class Selection\_GetParentCombinedSelectionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetParentCombinedSelectionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetParentCombinedSelectionsRequest](SuperOffice.WebApi.Data.Selection\_GetParentCombinedSelectionsRequest.md)
+[Selection\_GetParentCombinedSelectionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetParentCombinedSelectionsRequest)
 
 #### Inherited Members
 

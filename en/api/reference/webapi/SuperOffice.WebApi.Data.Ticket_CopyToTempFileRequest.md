@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_CopyToTempFileRequest"></a> Class Ticket\_CopyToTempFileRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_CopyToTempFileRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_CopyToTempFileRequest](SuperOffice.WebApi.Data.Ticket\_CopyToTempFileRequest.md)
+[Ticket\_CopyToTempFileRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_CopyToTempFileRequest)
 
 #### Inherited Members
 

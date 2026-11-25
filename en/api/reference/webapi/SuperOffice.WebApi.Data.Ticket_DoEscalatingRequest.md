@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_DoEscalatingRequest"></a> Class Ticket\_DoEscalatingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_DoEscalatingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_DoEscalatingRequest](SuperOffice.WebApi.Data.Ticket\_DoEscalatingRequest.md)
+[Ticket\_DoEscalatingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_DoEscalatingRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TicketPriorityEscalateAction Action { get; set; }
 
 #### Property Value
 
- [TicketPriorityEscalateAction](SuperOffice.WebApi.Data.TicketPriorityEscalateAction.md)
+ [TicketPriorityEscalateAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateAction)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_DoEscalatingRequest_TicketId"></a> TicketId
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetEMarketingUrlRequest"></a> Class Configuration\_GetEMarketingUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetEMarketingUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetEMarketingUrlRequest](SuperOffice.WebApi.Data.Configuration\_GetEMarketingUrlRequest.md)
+[Configuration\_GetEMarketingUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetEMarketingUrlRequest)
 
 #### Inherited Members
 

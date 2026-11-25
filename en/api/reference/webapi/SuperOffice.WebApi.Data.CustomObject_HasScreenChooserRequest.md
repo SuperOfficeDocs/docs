@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_HasScreenChooserRequest"></a> Class CustomObject\_HasScreenChooserRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_HasScreenChooserRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_HasScreenChooserRequest](SuperOffice.WebApi.Data.CustomObject\_HasScreenChooserRequest.md)
+[CustomObject\_HasScreenChooserRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_HasScreenChooserRequest)
 
 #### Inherited Members
 

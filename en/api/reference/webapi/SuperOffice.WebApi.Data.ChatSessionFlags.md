@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatSessionFlags"></a> Enum ChatSessionFlags
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Value for field 'flags' in table 'chat_session'.

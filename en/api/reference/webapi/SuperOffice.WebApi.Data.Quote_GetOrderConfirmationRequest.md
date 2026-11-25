@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_GetOrderConfirmationRequest"></a> Class Quote\_GetOrderConfirmationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_GetOrderConfirmationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_GetOrderConfirmationRequest](SuperOffice.WebApi.Data.Quote\_GetOrderConfirmationRequest.md)
+[Quote\_GetOrderConfirmationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_GetOrderConfirmationRequest)
 
 #### Inherited Members
 

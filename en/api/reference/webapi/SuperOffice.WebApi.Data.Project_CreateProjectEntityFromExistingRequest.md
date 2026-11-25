@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_CreateProjectEntityFromExistingRequest"></a> Class Project\_CreateProjectEntityFromExistingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_CreateProjectEntityFromExistingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_CreateProjectEntityFromExistingRequest](SuperOffice.WebApi.Data.Project\_CreateProjectEntityFromExistingRequest.md)
+[Project\_CreateProjectEntityFromExistingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_CreateProjectEntityFromExistingRequest)
 
 #### Inherited Members
 

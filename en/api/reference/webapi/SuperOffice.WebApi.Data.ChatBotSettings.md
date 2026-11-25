@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatBotSettings"></a> Class ChatBotSettings
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatBotSettings.
@@ -13,7 +13,7 @@ public class ChatBotSettings
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ChatBotSettings](SuperOffice.WebApi.Data.ChatBotSettings.md)
+[ChatBotSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatBotSettings)
 
 #### Inherited Members
 
@@ -99,5 +99,5 @@ public virtual int BotSessionCreatedScriptId { get; set; }
 
 ## See Also
 
-[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md)
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent)
 

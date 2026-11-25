@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatTopicAgent"></a> Class ChatTopicAgent
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatTopicAgent.
@@ -13,7 +13,7 @@ public class ChatTopicAgent
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)
+[ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)
 
 #### Inherited Members
 
@@ -107,9 +107,9 @@ public virtual Associate User { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ## See Also
 
-[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md)
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent)
 

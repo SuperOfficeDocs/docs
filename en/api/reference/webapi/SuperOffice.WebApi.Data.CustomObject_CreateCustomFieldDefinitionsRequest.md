@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_CreateCustomFieldDefinitionsRequest"></a> Class CustomObject\_CreateCustomFieldDefinitionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_CreateCustomFieldDefinitionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_CreateCustomFieldDefinitionsRequest](SuperOffice.WebApi.Data.CustomObject\_CreateCustomFieldDefinitionsRequest.md)
+[CustomObject\_CreateCustomFieldDefinitionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_CreateCustomFieldDefinitionsRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public FieldInfoBase[] Fields { get; set; }
 
 #### Property Value
 
- [FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]
+ [FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_CustomObject_CreateCustomFieldDefinitionsRequest_TableName"></a> TableName
 

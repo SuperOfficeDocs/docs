@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SaleBoardViewSettings"></a> Class SaleBoardViewSettings
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SaleBoardViewSettings.
@@ -13,24 +13,24 @@ public class SaleBoardViewSettings : BoardViewSettingsBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md) ← 
-[SaleBoardViewSettings](SuperOffice.WebApi.Data.SaleBoardViewSettings.md)
+[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase) ← 
+[SaleBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings)
 
 #### Inherited Members
 
-[BoardViewSettingsBase.BoardViewSettingsId](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_BoardViewSettingsId), 
-[BoardViewSettingsBase.EntityType\_String](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_EntityType\_String), 
-[BoardViewSettingsBase.EntityType](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_EntityType), 
-[BoardViewSettingsBase.AssociateId](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_AssociateId), 
-[BoardViewSettingsBase.SelectionId](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_SelectionId), 
-[BoardViewSettingsBase.HideEmptyGroups](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_HideEmptyGroups), 
-[BoardViewSettingsBase.GroupBy](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_GroupBy), 
-[BoardViewSettingsBase.SubGroupBy](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_SubGroupBy), 
-[BoardViewSettingsBase.SortBy](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_SortBy), 
-[BoardViewSettingsBase.SortDesc](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_SortDesc), 
-[BoardViewSettingsBase.SumBy](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_SumBy), 
-[BoardViewSettingsBase.ColorBy](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_ColorBy), 
-[BoardViewSettingsBase.Filters](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_Filters), 
+[BoardViewSettingsBase.BoardViewSettingsId](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_BoardViewSettingsId), 
+[BoardViewSettingsBase.EntityType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_EntityType_String), 
+[BoardViewSettingsBase.EntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_EntityType), 
+[BoardViewSettingsBase.AssociateId](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_AssociateId), 
+[BoardViewSettingsBase.SelectionId](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_SelectionId), 
+[BoardViewSettingsBase.HideEmptyGroups](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_HideEmptyGroups), 
+[BoardViewSettingsBase.GroupBy](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_GroupBy), 
+[BoardViewSettingsBase.SubGroupBy](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_SubGroupBy), 
+[BoardViewSettingsBase.SortBy](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_SortBy), 
+[BoardViewSettingsBase.SortDesc](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_SortDesc), 
+[BoardViewSettingsBase.SumBy](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_SumBy), 
+[BoardViewSettingsBase.ColorBy](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_ColorBy), 
+[BoardViewSettingsBase.Filters](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_Filters), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -63,11 +63,11 @@ public BoardViewBadgeType? BadgeType { get; set; }
 
 #### Property Value
 
- [BoardViewBadgeType](SuperOffice.WebApi.Data.BoardViewBadgeType.md)?
+ [BoardViewBadgeType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewBadgeType)?
 
 #### See Also
 
-[SaleBoardViewSettings](SuperOffice.WebApi.Data.SaleBoardViewSettings.md).[BadgeType\_String](SuperOffice.WebApi.Data.SaleBoardViewSettings.md\#SuperOffice\_WebApi\_Data\_SaleBoardViewSettings\_BadgeType\_String)
+[SaleBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings).[BadgeType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings#SuperOffice_WebApi_Data_SaleBoardViewSettings_BadgeType_String)
 
 ### <a id="SuperOffice_WebApi_Data_SaleBoardViewSettings_BadgeType_String"></a> BadgeType\_String
 
@@ -85,7 +85,7 @@ public string BadgeType_String { get; set; }
 
 #### See Also
 
-[SaleBoardViewSettings](SuperOffice.WebApi.Data.SaleBoardViewSettings.md).[BadgeType](SuperOffice.WebApi.Data.SaleBoardViewSettings.md\#SuperOffice\_WebApi\_Data\_SaleBoardViewSettings\_BadgeType)
+[SaleBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings).[BadgeType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings#SuperOffice_WebApi_Data_SaleBoardViewSettings_BadgeType)
 
 ### <a id="SuperOffice_WebApi_Data_SaleBoardViewSettings_HideClosedSales"></a> HideClosedSales
 
@@ -101,5 +101,5 @@ public virtual bool HideClosedSales { get; set; }
 
 ## See Also
 
-[SelectionAgent](SuperOffice.WebApi.Agents.SelectionAgent.md)
+[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent)
 
