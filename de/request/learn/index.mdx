@@ -2,9 +2,9 @@
 uid: help-de-request
 title: Anfragen und SuperOffice Service
 description: Einführung zu Anfragen in SuperOffice
-keywords: ['Anfragenmanagement', 'Anfrage', 'Ticket', 'Service', 'Anfrageansicht', 'Anfragekarte', 'Übersicht', 'linkes Panel', 'aktive Registerkarten', 'angeheftete Anfragen', 'Vorschaupanel', 'Standardlisten', 'Registerkarte automatisch schließen', 'mehrere aktive Registerkarten', 'alle Registerkarten schließen', 'zu viele Registerkarten', 'nicht gespeicherte Änderungen']
+keywords: ['Anfragenmanagement', 'Anfrage', 'Ticket', 'Service', 'Anfrageansicht', 'Anfragekarte', 'Übersicht', 'linkes Panel', 'aktive Registerkarten', 'angeheftete Anfragen', 'Vorschaupanel', 'Standardlisten', 'Registerkarte automatisch schließen', 'mehrere aktive Registerkarten', 'alle Registerkarten schließen', 'zu viele Registerkarten', 'nicht gespeicherte Änderungen', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
-date: 11.24.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -22,6 +22,8 @@ related:
   - Antwort an Kunden senden: /de/request/learn/reply
   - Automatische Zuweisung von Anfragen: /de/request/learn/assign
   - 7 Tipps für einen erstklassigen Kundenservice mit SuperOffice Service - Blog: https://community.superoffice.com/en/learning/best-practices-tips/service/7-tips-to-provide-best-in-class-customer-service-with-superoffice-service/
+  - Wie man KI-Services verwendet: /de/ai/learn/index
+  - KI-basierte Kategorisierung einrichten: /de/ai/admin/set-up-categorization
 language: de
 ---
 
@@ -123,6 +125,26 @@ Klicken Sie auf <i class="ph ph-dots-three-vertical" aria-label="More options"><
 
 Oben auf der Registerkarte **Nachrichten** können Sie Antworten senden und Nachrichten weiterleiten sowie Kommentare als interne Nachrichten hinzufügen.
 
+#### Request Insight {#sentiment}
+
+Request Insight analysiert das Sentiment eingehender E-Mail-Anfragen, damit Sie den Kunden priorisieren können, der Sie am dringendsten braucht. Ein Emoticon in der Kopfzeile der Nachricht zeigt die erkannte Stimmung an:
+
+* Negatives <i class="ph ph-smiley-sad" aria-hidden="true"></i>
+* Neutrales <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positives <i class="ph ph-smiley" aria-hidden="true"></i>
+
+<Note>
+Request Insight erfordert eine Text Services-Lizenz oder CRM Suite Core. Sehen Sie das Emoticon nicht? Bitten Sie Ihren Administrator, [die Textanalyse zu aktivieren][43].
+</Note>
+
+#### Translation Assist {#translate}
+
+Translation Assist erkennt die Sprache einer eingehenden Anfrage und zeigt sie unter der Nachricht an. Ist die Nachricht in einer Sprache, die Sie nicht lesen können, klicken Sie unter der Nachricht auf **Übersetzen aus** ***Sprache***. Betreff und Text der Nachricht werden übersetzt und unter der ursprünglichen Nachricht hinzugefügt.
+
+<Note>
+Translation Assist erfordert eine Text Services-Lizenz oder CRM Suite Core. Sehen Sie die erkannte Sprache nicht? Bitten Sie Ihren Administrator, [die Textanalyse zu aktivieren][43].
+</Note>
+
 ### Registerkarte Details
 
 Die Registerkarte **Details** enthält eine Übersicht über alle Felder für die Anfrage.
@@ -161,6 +183,38 @@ Die Seitenleiste Eigenschaften der Anfrage enthält folgende Optionen:
   * **Intern**: Wählen Sie diese Option, wenn die Person keinen Zugriff auf die Anfrage erhalten soll. Die Anfrage wird im SuperOffice Kundenzentrum aufgeführt, aber die Person kann keine Details oder Nachrichten zur Anfrage anzeigen.
 
 * **Tags**: Im Listenfeld **Tags** müssen Sie für diese Anfrage [relevante Tags auswählen][22].
+
+#### Category Insight {#categorization}
+
+Category Insight analysiert eingehende E-Mail-Anfragen und schlägt anhand ihres Inhalts eine Kategorie vor. Die Kategorie wird nicht automatisch angewendet.
+
+<Note>
+Category Insight erfordert die SuperOffice AI Platform und eine Categorization-Lizenz oder CRM Suite Growth. Sehen Sie keine Vorschläge? Bitten Sie Ihren Administrator, [das Modell zu trainieren und Vorschläge zu aktivieren][44].
+</Note>
+
+1. Öffnen Sie eine eingehende E-Mail-Anfrage und suchen Sie in der Fußzeile der Anfrage nach einer vorgeschlagenen Kategorie.
+1. Prüfen Sie den Vorschlag. Passt er zur Anfrage, wählen Sie den Kategorielink aus, um ihn anzuwenden.
+1. Prüfen Sie die Kategorie der Anfrage. Nach dem Anwenden verschwindet der Vorschlag.
+
+![Vorgeschlagene Kategorie in der Fußzeile einer Anfrage -screenshot][img3]
+
+Wenn keine Kategorie passt, wird kein Vorschlag angezeigt. Sie können die Kategorie weiterhin selbst auswählen.
+
+#### Summary Assist {#summary}
+
+Summary Assist fasst die Nachrichten einer Anfrage zusammen, damit Sie handeln können, ohne den gesamten Verlauf zu lesen.
+
+<Note>
+Summary Assist erfordert eine Text Services-Lizenz oder CRM Suite Core. Sehen Sie die Funktion nicht? Bitten Sie Ihren Administrator, [die Textanalyse zu aktivieren][43].
+</Note>
+
+Mit CRM Suite finden Sie Summary Assist im Bereich **Reply Assist**:
+
+1. Klicken Sie im Bereich **Eigenschaften der Anfrage** in der Symbolleiste rechts auf <i class="ph ph-sparkle" aria-label="Reply Assist"></i>, um zu **Reply Assist** zu wechseln.
+1. Klicken Sie auf **Zusammenfassen**.
+1. Prüfen Sie die Zusammenfassung der Nachrichten der Anfrage.
+
+Informationen zum Erstellen eines Antwortentwurfs im selben Bereich finden Sie unter [Reply Assist][45].
 
 ### Aufgabenoptionen {#task-options}
 
@@ -203,5 +257,9 @@ Klicken Sie in der Kopfzeile der Anfrage auf die Schaltfläche **Aufgabe** (<i c
 [40]: /de/request/admin/type/index
 [41]: /de/request/learn/personalize
 [42]: /de/request/learn/work-with-requests
+[43]: /de/ai/admin/index#enable-text-analysis
+[44]: /de/ai/admin/set-up-categorization
+[45]: /de/request/learn/reply#reply-assist
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
+[img3]: /media/loc/en/request/suggested-category-demo.png

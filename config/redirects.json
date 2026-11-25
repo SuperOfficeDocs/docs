@@ -3597,8 +3597,8 @@
     "destination": "/da/request/learn/forward"
   },
   {
-    "source": "/da/request/learn/handle-request-ai.html",
-    "destination": "/da/request/learn/handle-request-ai"
+    "source": "/da/request/learn/handle-request-ai*",
+    "destination": "/da/request/learn/index"
   },
   {
     "source": "/da/request/learn/howto/*",
@@ -7961,8 +7961,8 @@
     "destination": "/de/request/learn/forward"
   },
   {
-    "source": "/de/request/learn/handle-request-ai.html",
-    "destination": "/de/request/learn/handle-request-ai"
+    "source": "/de/request/learn/handle-request-ai*",
+    "destination": "/de/request/learn/index"
   },
   {
     "source": "/de/request/learn/howto/*",
@@ -17209,8 +17209,8 @@
     "destination": "/en/request/learn/forward"
   },
   {
-    "source": "/en/request/learn/handle-request-ai.html",
-    "destination": "/en/request/learn/handle-request-ai"
+    "source": "/en/request/learn/handle-request-ai*",
+    "destination": "/en/request/learn/index"
   },
   {
     "source": "/en/request/learn/howto/*",
@@ -22761,8 +22761,8 @@
     "destination": "/nl/request/learn/forward"
   },
   {
-    "source": "/nl/request/learn/handle-request-ai.html",
-    "destination": "/nl/request/learn/handle-request-ai"
+    "source": "/nl/request/learn/handle-request-ai*",
+    "destination": "/nl/request/learn/index"
   },
   {
     "source": "/nl/request/learn/howto/*",
@@ -27117,8 +27117,8 @@
     "destination": "/no/request/learn/forward"
   },
   {
-    "source": "/no/request/learn/handle-request-ai.html",
-    "destination": "/no/request/learn/handle-request-ai"
+    "source": "/no/request/learn/handle-request-ai*",
+    "destination": "/no/request/learn/index"
   },
   {
     "source": "/no/request/learn/howto/*",
@@ -31989,8 +31989,8 @@
     "destination": "/sv/request/learn/forward"
   },
   {
-    "source": "/sv/request/learn/handle-request-ai.html",
-    "destination": "/sv/request/learn/handle-request-ai"
+    "source": "/sv/request/learn/handle-request-ai*",
+    "destination": "/sv/request/learn/index"
   },
   {
     "source": "/sv/request/learn/howto/*",

@@ -2,9 +2,9 @@
 uid: help-nl-request
 title: Verzoeken en SuperOffice Service
 description: Inleiding tot verzoeken in SuperOffice
-keywords: ['verzoek', 'ticket', 'service', 'verzoekscherm', 'verzoekkaart', 'Overzicht', 'linkerpaneel', 'actieve tabbladen', 'vastgemaakte verzoeken', 'uitschuifpaneel', 'standaardlijsten', 'tabblad automatisch sluiten', 'meerdere actieve tabbladen', 'alle tabbladen sluiten', 'te veel tabbladen', 'niet-opgeslagen wijzigingen']
+keywords: ['verzoek', 'ticket', 'service', 'verzoekscherm', 'verzoekkaart', 'Overzicht', 'linkerpaneel', 'actieve tabbladen', 'vastgemaakte verzoeken', 'uitschuifpaneel', 'standaardlijsten', 'tabblad automatisch sluiten', 'meerdere actieve tabbladen', 'alle tabbladen sluiten', 'te veel tabbladen', 'niet-opgeslagen wijzigingen', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
-date: 11.24.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -22,6 +22,8 @@ related:
   - Verzoeken beantwoorden: /nl/request/learn/reply
   - Verzoeken toewijzen: /nl/request/learn/assign
   - 7 tips om de beste klantenservice te bieden met SuperOffice Service - blog: https://community.superoffice.com/en/learning/best-practices-tips/service/7-tips-to-provide-best-in-class-customer-service-with-superoffice-service/
+  - Het gebruik van AI-services: /nl/ai/learn/index
+  - AI-gebaseerde categorisering instellen: /nl/ai/admin/set-up-categorization
 language: nl
 ---
 
@@ -123,6 +125,26 @@ Klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Mee
 
 Bovenaan het tabblad **Berichten** kunt u berichten beantwoorden en berichten doorsturen en u kunt ook opmerkingen als interne berichten toevoegen.
 
+#### Request Insight {#sentiment}
+
+Request Insight analyseert het sentiment van inkomende e-mailverzoeken, zodat u de klant kunt prioriteren die u het eerst nodig heeft. Een emoticon in de koptekst van het bericht geeft het gedetecteerde sentiment aan:
+
+* Negatief <i class="ph ph-smiley-sad" aria-hidden="true"></i>
+* Neutraal <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positief <i class="ph ph-smiley" aria-hidden="true"></i>
+
+<Note>
+Voor Request Insight is een Text Services-licentie of CRM Suite Core vereist. Ziet u de emoticon niet? Vraag uw beheerder om [tekstanalyse in te schakelen][43].
+</Note>
+
+#### Translation Assist {#translate}
+
+Translation Assist detecteert de taal van een inkomend verzoek en toont deze onder het bericht. Is het bericht in een taal die u niet kunt lezen, selecteer dan **Vertalen uit** ***taal*** onder het bericht. Het onderwerp en de hoofdtekst worden vertaald en onder het oorspronkelijke bericht toegevoegd.
+
+<Note>
+Voor Translation Assist is een Text Services-licentie of CRM Suite Core vereist. Ziet u de gedetecteerde taal niet? Vraag uw beheerder om [tekstanalyse in te schakelen][43].
+</Note>
+
 ### Het tabblad Details
 
 Het tabblad **Details** bevat een overzicht van alle velden voor het verzoek.
@@ -161,6 +183,38 @@ De zijbalk met verzoekeigenschappen bevat de volgende opties:
   * **Intern**: selecteer deze optie als de persoon geen toegang moet krijgen tot het verzoek. Het verzoek wordt weergegeven in SuperOffice Customer Centre, maar de persoon kan de verzoekgegevens of -berichten niet weergeven.
 
 * **Labels**: Selecteer in de keuzelijst **Labels** de[relevante labels][22] voor dit verzoek.
+
+#### Category Insight {#categorization}
+
+Category Insight gebruikt een getraind model om op basis van de berichtinhoud een categorie voor inkomende e-mailverzoeken voor te stellen. De suggestie wordt pas toegepast wanneer u deze bevestigt.
+
+<Note>
+Category Insight vereist het SuperOffice AI Platform en een Categorization-licentie of CRM Suite Growth. Ziet u geen suggesties? Vraag uw beheerder om [het model te trainen en suggesties in te schakelen][44].
+</Note>
+
+1. Open een inkomend verzoek en zoek de voorgestelde categorie onderaan het verzoek.
+1. Controleer de suggestie en selecteer de categorielink als de categorie bij het verzoek past.
+1. Controleer of de categorie is bijgewerkt. Na het toepassen verdwijnt de suggestie.
+
+![Voorgestelde categorie in een verzoek -screenshot][img3]
+
+Als er geen passende categorie is, verschijnt er geen suggestie. U kunt nog steeds zelf een categorie kiezen.
+
+#### Summary Assist {#summary}
+
+Summary Assist vat de berichten in een verzoek samen, zodat u kunt handelen zonder de volledige geschiedenis te lezen.
+
+<Note>
+Voor Summary Assist is een Text Services-licentie of CRM Suite Core vereist. Ziet u de functie niet? Vraag uw beheerder om [tekstanalyse in te schakelen][43].
+</Note>
+
+Met CRM Suite vindt u Summary Assist in het paneel **Reply Assist**:
+
+1. Klik in het paneel **Verzoekeigenschappen** op <i class="ph ph-sparkle" aria-label="Reply Assist"></i> in de pictogrambalk rechts om naar **Reply Assist** te gaan.
+1. Klik op **Samenvatten**.
+1. Bekijk de samenvatting van de berichten van het verzoek.
+
+Zie [Reply Assist][45] als u vanuit hetzelfde paneel een antwoord wilt opstellen.
 
 ### Taakopties {#task-options}
 
@@ -203,5 +257,9 @@ Klik op de knop **Taak** (<i class="ph ph-dots-three-circle-vertical" aria-label
 [40]: /nl/request/admin/type/index
 [41]: /nl/request/learn/personalize
 [42]: /nl/request/learn/work-with-requests
+[43]: /nl/ai/admin/index#enable-text-analysis
+[44]: /nl/ai/admin/set-up-categorization
+[45]: /nl/request/learn/reply#reply-assist
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
+[img3]: /media/loc/en/request/suggested-category-demo.png

@@ -2,9 +2,9 @@
 uid: help-en-request
 title: Requests and SuperOffice Service
 description: Introduction to requests in SuperOffice
-keywords: ['request management', 'request', 'ticket', 'request screen', 'request card', 'Overview', 'left panel', 'active tabs', 'pinned requests', 'slide-in panel', 'standard lists', 'automatically close tab', 'several active tabs', 'close all tabs', 'too many tabs', 'unsaved changes']
+keywords: ['request management', 'request', 'ticket', 'request screen', 'request card', 'Overview', 'left panel', 'active tabs', 'pinned requests', 'slide-in panel', 'standard lists', 'automatically close tab', 'several active tabs', 'close all tabs', 'too many tabs', 'unsaved changes', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
-date: 11.24.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -22,6 +22,8 @@ related:
   - Reply: /en/request/learn/reply
   - Automatic assignment: /en/request/learn/assign
   - 7 tips to provide best-in-class customer service with SuperOffice Service - blog: https://community.superoffice.com/en/learning/best-practices-tips/service/7-tips-to-provide-best-in-class-customer-service-with-superoffice-service/
+  - How to use AI services: /en/ai/learn/index
+  - Set up AI-based categorization: /en/ai/admin/set-up-categorization
 language: en
 ---
 
@@ -123,6 +125,26 @@ Click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More 
 
 At the top of the **Messages** tab, you can send replies and forward messages, and you can also add comments as internal messages.
 
+#### Request Insight {#sentiment}
+
+Request Insight analyzes the sentiment of incoming email requests, so you can prioritize the customer who needs you first. An emoticon in the message header shows the detected sentiment:
+
+* Negative <i class="ph ph-smiley-sad" aria-hidden="true"></i>
+* Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positive <i class="ph ph-smiley" aria-hidden="true"></i>
+
+<Note>
+Request Insight requires a Text Services license, or CRM Suite Core. If you do not see the emoticon, ask your administrator to [enable text analysis][43].
+</Note>
+
+#### Translation Assist {#translate}
+
+Translation Assist detects the language of an incoming request and shows it below the message. If the message is in a language you cannot read, select **Translate from** ***language*** below the message. The subject and body are translated and added below the original message.
+
+<Note>
+Translation Assist requires a Text Services license, or CRM Suite Core. If you do not see the detected language, ask your administrator to [enable text analysis][43].
+</Note>
+
 ### Details tab
 
 The **Details** tab contains an overview of all the fields for the request.
@@ -161,6 +183,38 @@ The request properties sidebar contains the following options:
   * **Internal**: Select this option if the contact is not to have access to the request. The request will be listed in SuperOffice Customer Centre, but the contact cannot view the request details or messages.
 
 * **Tags**: In the **Tags** list box, [select relevant tags][22] for this request.
+
+#### Category Insight {#categorization}
+
+Category Insight analyzes incoming email requests and suggests a category based on their content. It does not apply the category automatically.
+
+<Note>
+Category Insight requires the SuperOffice AI Platform and a Categorization license, or CRM Suite Growth. If you do not see suggestions, ask your administrator to [train the model and enable suggestions][44].
+</Note>
+
+1. Open an incoming email request and look for a suggested category in the request footer.
+1. Review the suggestion. If it fits the request, select the category link to apply it.
+1. Check the category on the request. The suggestion disappears after you apply it.
+
+![Suggested category in a request footer -screenshot][img3]
+
+If no category matches, no suggestion appears. You can still choose a category yourself.
+
+#### Summary Assist {#summary}
+
+Summary Assist summarizes the messages in a request, so you can act on it without reading the full thread.
+
+<Note>
+Summary Assist requires a Text Services license, or CRM Suite Core. If you do not see it, ask your administrator to [enable text analysis][43].
+</Note>
+
+With CRM Suite, you find Summary Assist in the **Reply Assist** panel:
+
+1. In the **Request properties** panel, click <i class="ph ph-sparkle" aria-label="Reply Assist"></i> in the icon bar on the right to switch to **Reply Assist**.
+1. Click **Summarise**.
+1. Review the summary of the request's messages.
+
+To draft a reply from the same panel, see [Reply Assist][45].
 
 ### Task options {#task-options}
 
@@ -203,5 +257,9 @@ Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-labe
 [40]: /en/request/admin/type/index
 [41]: /en/request/learn/personalize
 [42]: /en/request/learn/work-with-requests
+[43]: /en/ai/admin/index#enable-text-analysis
+[44]: /en/ai/admin/set-up-categorization
+[45]: /en/request/learn/reply#reply-assist
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
+[img3]: /media/loc/en/request/suggested-category-demo.png

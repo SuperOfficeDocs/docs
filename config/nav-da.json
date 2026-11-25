@@ -555,7 +555,6 @@
         "pages": [
           "da/request/index",
           "da/request/learn/work-with-requests",
-          "da/request/learn/handle-request-ai",
           "da/request/learn/find",
           "da/request/learn/create",
           "da/request/learn/edit-message",

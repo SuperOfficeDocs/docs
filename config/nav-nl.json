@@ -555,7 +555,6 @@
         "pages": [
           "nl/request/index",
           "nl/request/learn/work-with-requests",
-          "nl/request/learn/handle-request-ai",
           "nl/request/learn/find",
           "nl/request/learn/create",
           "nl/request/learn/edit-message",

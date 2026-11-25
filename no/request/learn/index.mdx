@@ -2,9 +2,9 @@
 uid: help-no-request
 title: Saker og SuperOffice Service
 description: Introduksjon til saker i SuperOffice
-keywords: ['sak', 'service', 'saksskjerm', 'sakskort', 'Oversikt', 'venstrepanel', 'aktive faner', 'festede saker', 'forhåndsvisningspanel', 'standardlister', 'lukke fane automatisk', 'flere aktive faner', 'lukk alle faner', 'for mange faner', 'ulagrede endringer']
+keywords: ['sak', 'service', 'saksskjerm', 'sakskort', 'Oversikt', 'venstrepanel', 'aktive faner', 'festede saker', 'forhåndsvisningspanel', 'standardlister', 'lukke fane automatisk', 'flere aktive faner', 'lukk alle faner', 'for mange faner', 'ulagrede endringer', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
-date: 11.24.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -22,6 +22,8 @@ related:
   - Svar: /no/request/learn/reply
   - Automatisk tildeling: /no/request/learn/assign
   - 7 tips for å tilby kundeservice i verdensklasse med SuperOffice Service - blogg: https://community.superoffice.com/en/learning/best-practices-tips/service/7-tips-to-provide-best-in-class-customer-service-with-superoffice-service/
+  - Slik bruker du AI-tjenester: /no/ai/learn/index
+  - Sett opp AI-basert kategorisering: /no/ai/admin/set-up-categorization
 language: no
 ---
 
@@ -123,6 +125,26 @@ Klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (F
 
 Øverst i fanen **Meldinger** kan du sende svar og videresende meldinger, og du kan også legge til kommentarer som interne meldinger.
 
+#### Request Insight {#sentiment}
+
+Request Insight analyserer sentimentet i innkommende e-postsaker, slik at du kan prioritere kunden som trenger deg mest. Et uttrykksikon i toppteksten til meldingen indikerer det oppdagede sentimentet:
+
+* Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
+* Nøytral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positiv <i class="ph ph-smiley" aria-hidden="true"></i>
+
+<Note>
+Request Insight krever en Text Services-lisens eller CRM Suite Core. Ser du ikke uttrykksikonet? Be administratoren om å [aktivere tekstanalyse][43].
+</Note>
+
+#### Translation Assist {#translate}
+
+Translation Assist gjenkjenner språket i en innkommende sak og viser det under meldingen. Hvis meldingen er på et språk du ikke kan lese, klikker du på **Oversett fra** ***språk*** under meldingen. Emnet og brødteksten oversettes og legges til under den opprinnelige meldingen.
+
+<Note>
+Translation Assist krever en Text Services-lisens eller CRM Suite Core. Ser du ikke det gjenkjente språket? Be administratoren om å [aktivere tekstanalyse][43].
+</Note>
+
 ### Fanen Detaljer
 
 Fanen **Detaljer** inneholder en oversikt over alle feltene for saken.
@@ -161,6 +183,38 @@ Sidestolpen Egenskaper for sak inneholder følgende alternativer:
   * **Internt**: Velg dette hvis personen ikke skal ha tilgang til saken. Saken blir oppført i SuperOffice Kundesenter, men personen kan ikke vise saksdetaljer eller meldinger.
 
 * **Emneknagger**: [Velg relevante emneknagger][22] for denne saken i listen **Emneknagger**.
+
+#### Category Insight {#categorization}
+
+Category Insight bruker en trent modell til å foreslå en kategori for innkommende e-postsaker basert på meldingsinnholdet. Forslaget brukes først når du godkjenner det.
+
+<Note>
+Category Insight krever SuperOffice AI Platform og en Categorization-lisens eller CRM Suite Growth. Ser du ingen forslag? Be administratoren om å [trene modellen og aktivere forslag][44].
+</Note>
+
+1. Åpne en innkommende sak, og se etter den foreslåtte kategorien nederst i saken.
+1. Vurder forslaget, og velg kategorilenken hvis kategorien passer for saken.
+1. Kontroller kategorien på saken. Forslaget forsvinner når du har brukt det.
+
+![Foreslått kategori i en sak -screenshot][img3]
+
+Hvis ingen kategori passer, vises ikke noe forslag. Du kan fortsatt velge en kategori selv.
+
+#### Summary Assist {#summary}
+
+Summary Assist oppsummerer meldingene i en sak, slik at du kan handle uten å lese hele forløpet.
+
+<Note>
+Summary Assist krever en Text Services-lisens eller CRM Suite Core. Ser du ikke funksjonen? Be administratoren om å [aktivere tekstanalyse][43].
+</Note>
+
+Med CRM Suite finner du Summary Assist i panelet **Reply Assist**:
+
+1. Klikk på <i class="ph ph-sparkle" aria-label="Reply Assist"></i> i ikonlinjen til høyre i panelet **Egenskaper for saker** for å bytte til **Reply Assist**.
+1. Klikk på **Oppsummer**.
+1. Gå gjennom sammendraget av sakens meldinger.
+
+Hvis du vil lage et utkast til svar fra samme panel, se [Reply Assist][45].
 
 ### Alternativer for oppgave {#task-options}
 
@@ -203,6 +257,10 @@ Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-
 [40]: /no/request/admin/type/index
 [41]: /no/request/learn/personalize
 [42]: /no/request/learn/work-with-requests
+[43]: /no/ai/admin/index#enable-text-analysis
+[44]: /no/ai/admin/set-up-categorization
+[45]: /no/request/learn/reply#reply-assist
 
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
+[img3]: /media/loc/en/request/suggested-category-demo.png

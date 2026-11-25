@@ -2,9 +2,9 @@
 uid: help-no-request-reply
 title: Svar til person
 description: I denne veiledningen lærer du hvordan du svarer på alle innkommende saker i SuperOffice.
-keywords: ['svare på sak', 'svare', 'svar til alle', 'legge til melding', 'legge til kommentar', 'kommentar', 'intern', 'ekstern', 'sak', 'svarstatus', 'forhåndsvise vedlegg', 'sette inn vedlegg']
+keywords: ['svare på sak', 'svare', 'svar til alle', 'legge til melding', 'legge til kommentar', 'kommentar', 'intern', 'ekstern', 'sak', 'svarstatus', 'forhåndsvise vedlegg', 'sette inn vedlegg', 'Reply Assist', 'svarforslag']
 author: digitaldiina
-date: 11.23.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -65,6 +65,23 @@ Hvis du bytter til en annen fane på Saksskjermen før du sender meldingen, beho
 Statusen settes fra kategoriens **Standardstatus for ny melding**, hvis sakstypen tillater det. Ellers brukes den samme innstillingen i preferansene dine, hvis sakstypen tillater det. Hvis ingen av disse gjelder, endres ikke statusen. Se [rekkefølge for standardstatus][13].
 
 Hvis du vil utsette saken mens du svarer, setter du statusen til **Utsatt** og velger ett av [alternativene for utsettelse][14].
+
+## Lag et utkast til svar med Reply Assist {#reply-assist}
+
+I stedet for en tom side foreslår Reply Assist et skreddersydd svar på en innkommende sak. Utkastet bygges fra ditt eget CRM-innhold: tidligere saker, svarmaler, spørsmål og svar (FAQ), dokumenter og, valgfritt, nettinnhold.
+
+<Note>
+Reply Assist krever [CRM Suite Plus][16] eller høyere.
+</Note>
+
+1. [Åpne saken][1].
+1. Klikk på <i class="ph ph-sparkle" aria-label="Reply Assist"></i> i ikonlinjen til høyre i panelet **Egenskaper for saker** for å bytte til **Reply Assist**.
+1. Klikk på **Generer svar**.
+1. Gå gjennom forslaget. Som med alle SuperOffice AI-funksjoner lagres eller sendes ingenting automatisk.
+
+![Reply Assists foreslåtte svar på en sak -screenshot][img10]
+
+I samme panel gir **Oppsummer** deg et sammendrag av sakens meldinger. Se [Summary Assist][17].
 
 ## Hurtigsvar fra en forhåndsvisning {#quick-reply}
 
@@ -209,6 +226,8 @@ Tidsbruken vises i meldingsoverskriften, og svartiden er tilgjengelig i fanen **
 [13]: ../admin/status/index#default
 [14]: ./postpone
 [15]: #attachment-preview
+[16]: ../../admin/license/crm-suite#plans
+[17]: ./index#summary
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
@@ -217,3 +236,4 @@ Tidsbruken vises i meldingsoverskriften, og svartiden er tilgjengelig i fanen **
 [img7]: ../../../media/loc/en/request/request-reply-anonymise-user.png
 [img8]: ../../../media/loc/en/request/request-preview-quick-reply.png
 [img9]: ../../../media/loc/en/request/requests-reply-tools-attachment-insert-button.png
+[img10]: ../../../media/loc/en/request/reply-assist.png

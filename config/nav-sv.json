@@ -555,7 +555,6 @@
         "pages": [
           "sv/request/index",
           "sv/request/learn/work-with-requests",
-          "sv/request/learn/handle-request-ai",
           "sv/request/learn/find",
           "sv/request/learn/create",
           "sv/request/learn/edit-message",

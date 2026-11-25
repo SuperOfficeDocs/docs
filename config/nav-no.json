@@ -555,7 +555,6 @@
         "pages": [
           "no/request/index",
           "no/request/learn/work-with-requests",
-          "no/request/learn/handle-request-ai",
           "no/request/learn/find",
           "no/request/learn/create",
           "no/request/learn/edit-message",
