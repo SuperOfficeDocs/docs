@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TargetRevisionHistory"></a> Class TargetRevisionHistory
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TargetRevisionHistory.
@@ -13,13 +13,13 @@ public class TargetRevisionHistory : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TargetRevisionHistory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevisionHistory)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TargetRevisionHistory](SuperOffice.WebApi.Data.TargetRevisionHistory.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual TargetRevision[] Revisions { get; set; }
 
 #### Property Value
 
- [TargetRevision](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision)\[\]
+ [TargetRevision](SuperOffice.WebApi.Data.TargetRevision.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TargetRevisionHistory_TargetGroupId"></a> TargetGroupId
 
@@ -78,5 +78,5 @@ public virtual int Year { get; set; }
 
 ## See Also
 
-[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent)
+[TargetsAgent](SuperOffice.WebApi.Agents.TargetsAgent.md)
 

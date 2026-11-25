@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ContactSummary"></a> Class ContactSummary
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ContactSummary.
@@ -13,7 +13,7 @@ public class ContactSummary
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ContactSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactSummary)
+[ContactSummary](SuperOffice.WebApi.Data.ContactSummary.md)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual ChatSummaryItem[] Chats { get; set; }
 
 #### Property Value
 
- [ChatSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSummaryItem)\[\]
+ [ChatSummaryItem](SuperOffice.WebApi.Data.ChatSummaryItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactSummary_Contact"></a> Contact
 
@@ -59,7 +59,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
+ [Contact](SuperOffice.WebApi.Data.Contact.md)
 
 ### <a id="SuperOffice_WebApi_Data_ContactSummary_Documents"></a> Documents
 
@@ -71,7 +71,7 @@ public virtual ActivitySummaryItem[] Documents { get; set; }
 
 #### Property Value
 
- [ActivitySummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummaryItem)\[\]
+ [ActivitySummaryItem](SuperOffice.WebApi.Data.ActivitySummaryItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactSummary_Followups"></a> Followups
 
@@ -83,7 +83,7 @@ public virtual ActivitySummaryItem[] Followups { get; set; }
 
 #### Property Value
 
- [ActivitySummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivitySummaryItem)\[\]
+ [ActivitySummaryItem](SuperOffice.WebApi.Data.ActivitySummaryItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactSummary_Sales"></a> Sales
 
@@ -95,7 +95,7 @@ public virtual SaleSummaryItem[] Sales { get; set; }
 
 #### Property Value
 
- [SaleSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleSummaryItem)\[\]
+ [SaleSummaryItem](SuperOffice.WebApi.Data.SaleSummaryItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ContactSummary_Tickets"></a> Tickets
 
@@ -107,9 +107,9 @@ public virtual TicketSummaryItem[] Tickets { get; set; }
 
 #### Property Value
 
- [TicketSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSummaryItem)\[\]
+ [TicketSummaryItem](SuperOffice.WebApi.Data.TicketSummaryItem.md)\[\]
 
 ## See Also
 
-[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent)
+[ContactAgent](SuperOffice.WebApi.Agents.ContactAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Chat_IsWithinOpeningHoursRequest"></a> Class Chat\_IsWithinOpeningHoursRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Chat_IsWithinOpeningHoursRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Chat\_IsWithinOpeningHoursRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Chat_IsWithinOpeningHoursRequest)
+[Chat\_IsWithinOpeningHoursRequest](SuperOffice.WebApi.Data.Chat\_IsWithinOpeningHoursRequest.md)
 
 #### Inherited Members
 

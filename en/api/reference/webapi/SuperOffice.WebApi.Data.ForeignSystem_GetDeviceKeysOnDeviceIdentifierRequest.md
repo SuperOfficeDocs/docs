@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_GetDeviceKeysOnDeviceIdentifierRequest"></a> Class ForeignSystem\_GetDeviceKeysOnDeviceIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_GetDeviceKeysOnDeviceIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_GetDeviceKeysOnDeviceIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_GetDeviceKeysOnDeviceIdentifierRequest)
+[ForeignSystem\_GetDeviceKeysOnDeviceIdentifierRequest](SuperOffice.WebApi.Data.ForeignSystem\_GetDeviceKeysOnDeviceIdentifierRequest.md)
 
 #### Inherited Members
 

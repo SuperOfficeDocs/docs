@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest"></a> Class Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest)
+[Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest](SuperOffice.WebApi.Data.Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public BoardViewEntityType EntityType { get; set; }
 
 #### Property Value
 
- [BoardViewEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewEntityType)
+ [BoardViewEntityType](SuperOffice.WebApi.Data.BoardViewEntityType.md)
 

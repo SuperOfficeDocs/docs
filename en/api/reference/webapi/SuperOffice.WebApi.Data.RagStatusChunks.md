@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RagStatusChunks"></a> Class RagStatusChunks
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RagStatusChunks.
@@ -13,7 +13,7 @@ public class RagStatusChunks
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RagStatusChunks](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatusChunks)
+[RagStatusChunks](SuperOffice.WebApi.Data.RagStatusChunks.md)
 
 #### Inherited Members
 
@@ -63,5 +63,5 @@ public virtual int NumberOfDocuments { get; set; }
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

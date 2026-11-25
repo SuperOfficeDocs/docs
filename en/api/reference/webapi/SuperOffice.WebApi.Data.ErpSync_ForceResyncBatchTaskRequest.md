@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_ForceResyncBatchTaskRequest"></a> Class ErpSync\_ForceResyncBatchTaskRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_ForceResyncBatchTaskRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_ForceResyncBatchTaskRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_ForceResyncBatchTaskRequest)
+[ErpSync\_ForceResyncBatchTaskRequest](SuperOffice.WebApi.Data.ErpSync\_ForceResyncBatchTaskRequest.md)
 
 #### Inherited Members
 

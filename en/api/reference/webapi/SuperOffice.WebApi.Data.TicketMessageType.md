@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketMessageType"></a> Enum TicketMessageType
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Indicates if the field body contains plain or html text

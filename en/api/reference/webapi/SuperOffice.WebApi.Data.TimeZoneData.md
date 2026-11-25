@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TimeZoneData"></a> Class TimeZoneData
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TimeZoneData.
@@ -13,7 +13,7 @@ public class TimeZoneData
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)
+[TimeZoneData](SuperOffice.WebApi.Data.TimeZoneData.md)
 
 #### Inherited Members
 
@@ -105,7 +105,7 @@ public virtual TimeZoneRuleDictionary TimeZoneDSTRules { get; set; }
 
 #### Property Value
 
- [TimeZoneRuleDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneRuleDictionary)
+ [TimeZoneRuleDictionary](SuperOffice.WebApi.Data.TimeZoneRuleDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_TimeZoneData_TimeZoneSTDRules"></a> TimeZoneSTDRules
 
@@ -117,9 +117,9 @@ public virtual TimeZoneRuleDictionary TimeZoneSTDRules { get; set; }
 
 #### Property Value
 
- [TimeZoneRuleDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneRuleDictionary)
+ [TimeZoneRuleDictionary](SuperOffice.WebApi.Data.TimeZoneRuleDictionary.md)
 
 ## See Also
 
-[TimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TimeZoneAgent)
+[TimeZoneAgent](SuperOffice.WebApi.Agents.TimeZoneAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ArchiveColumnInfo"></a> Class ArchiveColumnInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ArchiveColumnInfo.
@@ -13,7 +13,7 @@ public class ArchiveColumnInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo)
+[ArchiveColumnInfo](SuperOffice.WebApi.Data.ArchiveColumnInfo.md)
 
 #### Inherited Members
 
@@ -195,5 +195,5 @@ public virtual string Width { get; set; }
 
 ## See Also
 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent)
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md)
 

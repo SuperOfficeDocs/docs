@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_PopulateRestrictionValuesRequest"></a> Class Find\_PopulateRestrictionValuesRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_PopulateRestrictionValuesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_PopulateRestrictionValuesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_PopulateRestrictionValuesRequest)
+[Find\_PopulateRestrictionValuesRequest](SuperOffice.WebApi.Data.Find\_PopulateRestrictionValuesRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+ [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 

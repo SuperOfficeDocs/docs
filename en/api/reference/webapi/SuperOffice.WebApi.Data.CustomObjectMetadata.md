@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObjectMetadata"></a> Class CustomObjectMetadata
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CustomObjectMetadata.
@@ -13,7 +13,7 @@ public class CustomObjectMetadata
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObjectMetadata](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectMetadata)
+[CustomObjectMetadata](SuperOffice.WebApi.Data.CustomObjectMetadata.md)
 
 #### Inherited Members
 
@@ -131,7 +131,7 @@ public virtual CustomObjectRelation[] Relations { get; set; }
 
 #### Property Value
 
- [CustomObjectRelation](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectRelation)\[\]
+ [CustomObjectRelation](SuperOffice.WebApi.Data.CustomObjectRelation.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_CustomObjectMetadata_TableName"></a> TableName
 
@@ -147,5 +147,5 @@ public virtual string TableName { get; set; }
 
 ## See Also
 
-[CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent)
+[CustomObjectAgent](SuperOffice.WebApi.Agents.CustomObjectAgent.md)
 

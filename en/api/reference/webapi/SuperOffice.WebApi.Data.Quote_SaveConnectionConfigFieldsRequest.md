@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_SaveConnectionConfigFieldsRequest"></a> Class Quote\_SaveConnectionConfigFieldsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_SaveConnectionConfigFieldsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_SaveConnectionConfigFieldsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_SaveConnectionConfigFieldsRequest)
+[Quote\_SaveConnectionConfigFieldsRequest](SuperOffice.WebApi.Data.Quote\_SaveConnectionConfigFieldsRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public StringDictionary ConnectionConfigFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_Quote_SaveConnectionConfigFieldsRequest_QuoteConnectionId"></a> QuoteConnectionId
 

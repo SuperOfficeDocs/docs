@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_SaveImageStreamRequest"></a> Class BLOB\_SaveImageStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_SaveImageStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_SaveImageStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_SaveImageStreamRequest)
+[BLOB\_SaveImageStreamRequest](SuperOffice.WebApi.Data.BLOB\_SaveImageStreamRequest.md)
 
 #### Inherited Members
 
@@ -60,5 +60,5 @@ public BlobLinkType Type { get; set; }
 
 #### Property Value
 
- [BlobLinkType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobLinkType)
+ [BlobLinkType](SuperOffice.WebApi.Data.BlobLinkType.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SetEmarketingStrictModeRequest"></a> Class List\_SetEmarketingStrictModeRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SetEmarketingStrictModeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SetEmarketingStrictModeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetEmarketingStrictModeRequest)
+[List\_SetEmarketingStrictModeRequest](SuperOffice.WebApi.Data.List\_SetEmarketingStrictModeRequest.md)
 
 #### Inherited Members
 

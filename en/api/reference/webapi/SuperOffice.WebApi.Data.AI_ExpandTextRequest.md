@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_ExpandTextRequest"></a> Class AI\_ExpandTextRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_ExpandTextRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_ExpandTextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_ExpandTextRequest)
+[AI\_ExpandTextRequest](SuperOffice.WebApi.Data.AI\_ExpandTextRequest.md)
 
 #### Inherited Members
 

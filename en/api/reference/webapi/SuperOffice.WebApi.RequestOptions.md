@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_RequestOptions"></a> Class RequestOptions
 
-Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
+Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Customize this particular request with special language code or timezone specifics.
@@ -12,11 +12,11 @@ public class RequestOptions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+[RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 #### Derived
 
-[WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
+[WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
 #### Inherited Members
 
@@ -119,7 +119,19 @@ public StringDictionary CustomHeaders { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+
+### <a id="SuperOffice_WebApi_RequestOptions_ImpersonateUserName"></a> ImpersonateUserName
+
+User name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user.
+
+```csharp
+public string ImpersonateUserName { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### <a id="SuperOffice_WebApi_RequestOptions_LanguageCode"></a> LanguageCode
 

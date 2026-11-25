@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_ZFD"></a> Class UserPreferenceStrings.ZFD
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Preferences for Zero Footprint Documents
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.ZFD
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.ZFD](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ZFD)
+[UserPreferenceStrings.ZFD](SuperOffice.WebApi.Data.UserPreferenceStrings.ZFD.md)
 
 #### Inherited Members
 

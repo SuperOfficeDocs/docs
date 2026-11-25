@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DashboardTileOption"></a> Class DashboardTileOption
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DashboardTileOption.
@@ -13,13 +13,13 @@ public class DashboardTileOption : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[DashboardTileOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileOption)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[DashboardTileOption](SuperOffice.WebApi.Data.DashboardTileOption.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -74,7 +74,7 @@ public virtual MDOListItem[] ListItems { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTileOption_ListName"></a> ListName
 
@@ -112,11 +112,11 @@ public DashboardTileOptionType? Type { get; set; }
 
 #### Property Value
 
- [DashboardTileOptionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileOptionType)?
+ [DashboardTileOptionType](SuperOffice.WebApi.Data.DashboardTileOptionType.md)?
 
 #### See Also
 
-[DashboardTileOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileOption).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileOption#SuperOffice_WebApi_Data_DashboardTileOption_Type_String)
+[DashboardTileOption](SuperOffice.WebApi.Data.DashboardTileOption.md).[Type\_String](SuperOffice.WebApi.Data.DashboardTileOption.md\#SuperOffice\_WebApi\_Data\_DashboardTileOption\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTileOption_Type_String"></a> Type\_String
 
@@ -134,7 +134,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[DashboardTileOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileOption).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileOption#SuperOffice_WebApi_Data_DashboardTileOption_Type)
+[DashboardTileOption](SuperOffice.WebApi.Data.DashboardTileOption.md).[Type](SuperOffice.WebApi.Data.DashboardTileOption.md\#SuperOffice\_WebApi\_Data\_DashboardTileOption\_Type)
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTileOption_Value"></a> Value
 
@@ -150,5 +150,5 @@ public virtual string Value { get; set; }
 
 ## See Also
 
-[DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent)
+[DashboardAgent](SuperOffice.WebApi.Agents.DashboardAgent.md)
 

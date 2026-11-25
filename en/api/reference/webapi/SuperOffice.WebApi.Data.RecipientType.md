@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecipientType"></a> Enum RecipientType
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Recipient type

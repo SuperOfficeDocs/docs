@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FieldInfoBase"></a> Class FieldInfoBase
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FieldInfoBase.
@@ -28,25 +28,25 @@ public class FieldInfoBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)
+[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)
 
 #### Derived
 
-[FieldInfoAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoAttachment), 
-[FieldInfoBlob](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBlob), 
-[FieldInfoBool](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBool), 
-[FieldInfoDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDate), 
-[FieldInfoDateTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDateTime), 
-[FieldInfoDecimal](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDecimal), 
-[FieldInfoDynamicLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDynamicLink), 
-[FieldInfoInt](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoInt), 
-[FieldInfoListText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoListText), 
-[FieldInfoLongText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoLongText), 
-[FieldInfoMdoList](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoMdoList), 
-[FieldInfoRelation](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoRelation), 
-[FieldInfoShortText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoShortText), 
-[FieldInfoTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoTime), 
-[FieldInfoTimeSpan](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoTimeSpan)
+[FieldInfoAttachment](SuperOffice.WebApi.Data.FieldInfoAttachment.md), 
+[FieldInfoBlob](SuperOffice.WebApi.Data.FieldInfoBlob.md), 
+[FieldInfoBool](SuperOffice.WebApi.Data.FieldInfoBool.md), 
+[FieldInfoDate](SuperOffice.WebApi.Data.FieldInfoDate.md), 
+[FieldInfoDateTime](SuperOffice.WebApi.Data.FieldInfoDateTime.md), 
+[FieldInfoDecimal](SuperOffice.WebApi.Data.FieldInfoDecimal.md), 
+[FieldInfoDynamicLink](SuperOffice.WebApi.Data.FieldInfoDynamicLink.md), 
+[FieldInfoInt](SuperOffice.WebApi.Data.FieldInfoInt.md), 
+[FieldInfoListText](SuperOffice.WebApi.Data.FieldInfoListText.md), 
+[FieldInfoLongText](SuperOffice.WebApi.Data.FieldInfoLongText.md), 
+[FieldInfoMdoList](SuperOffice.WebApi.Data.FieldInfoMdoList.md), 
+[FieldInfoRelation](SuperOffice.WebApi.Data.FieldInfoRelation.md), 
+[FieldInfoShortText](SuperOffice.WebApi.Data.FieldInfoShortText.md), 
+[FieldInfoTime](SuperOffice.WebApi.Data.FieldInfoTime.md), 
+[FieldInfoTimeSpan](SuperOffice.WebApi.Data.FieldInfoTimeSpan.md)
 
 #### Inherited Members
 
@@ -69,6 +69,18 @@ public FieldInfoBase()
 ```
 
 ## Properties
+
+### <a id="SuperOffice_WebApi_Data_FieldInfoBase_ApplyDefaultValue"></a> ApplyDefaultValue
+
+Extra fields only: true if new rows get DefaultValue; false leaves the field empty even when DefaultValue is set (0 and false are real defaults). Ignored for relation, Link and Attachment fields. Mirrors the UseDefault extra-field flag. Not used on user-defined fields.
+
+```csharp
+public virtual bool ApplyDefaultValue { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="SuperOffice_WebApi_Data_FieldInfoBase_Description"></a> Description
 
@@ -118,11 +130,11 @@ public CustomFieldType? FieldType { get; set; }
 
 #### Property Value
 
- [CustomFieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomFieldType)?
+ [CustomFieldType](SuperOffice.WebApi.Data.CustomFieldType.md)?
 
 #### See Also
 
-[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase).[FieldType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase#SuperOffice_WebApi_Data_FieldInfoBase_FieldType_String)
+[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md).[FieldType\_String](SuperOffice.WebApi.Data.FieldInfoBase.md\#SuperOffice\_WebApi\_Data\_FieldInfoBase\_FieldType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_FieldInfoBase_FieldType_String"></a> FieldType\_String
 
@@ -140,7 +152,7 @@ public string FieldType_String { get; set; }
 
 #### See Also
 
-[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase).[FieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase#SuperOffice_WebApi_Data_FieldInfoBase_FieldType)
+[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md).[FieldType](SuperOffice.WebApi.Data.FieldInfoBase.md\#SuperOffice\_WebApi\_Data\_FieldInfoBase\_FieldType)
 
 ### <a id="SuperOffice_WebApi_Data_FieldInfoBase_HideField"></a> HideField
 
@@ -166,6 +178,18 @@ public virtual bool HideLabel { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
+### <a id="SuperOffice_WebApi_Data_FieldInfoBase_IsDefaultListColumn"></a> IsDefaultListColumn
+
+Custom-object fields only: true if the field is one of the default columns where rows of the custom object are listed (archive default columns, previews, bulk update); users can still add or remove columns. Mirrors the ViewInList extra-field flag. Not used on standard tables or user-defined fields.
+
+```csharp
+public virtual bool IsDefaultListColumn { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
 ### <a id="SuperOffice_WebApi_Data_FieldInfoBase_IsDisplayField"></a> IsDisplayField
 
 Flag indicating that this field is chosen as DisplayField for a table it belongs
@@ -184,6 +208,18 @@ Should this field be shown to external users via customer center?
 
 ```csharp
 public virtual bool IsExternal { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="SuperOffice_WebApi_Data_FieldInfoBase_IsFreetextSource"></a> IsFreetextSource
+
+Custom-object fields only: true if the field's values are freetext-indexed, so rows can be found by text in this field; it also makes relation pickers on this custom object search as you type. The display field is always indexed, whether or not this is set. Mirrors the ViewInSearch extra-field flag. Not used on standard tables or user-defined fields.
+
+```csharp
+public virtual bool IsFreetextSource { get; set; }
 ```
 
 #### Property Value
@@ -250,6 +286,18 @@ public virtual string ShortLabel { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_FieldInfoBase_ShowInSideCard"></a> ShowInSideCard
+
+Request (ticket) extra fields only: true if the field is shown in the Request side card, next to the built-in properties, instead of the details area. Ignored for other tables. Mirrors the ShowWithProperties extra-field flag. Not used on user-defined fields.
+
+```csharp
+public virtual bool ShowInSideCard { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
 ### <a id="SuperOffice_WebApi_Data_FieldInfoBase_TemplateVariableName"></a> TemplateVariableName
 
 Template variable name: 'cs01', 'cl02' etc. Null for extra fields.
@@ -264,5 +312,5 @@ public virtual string TemplateVariableName { get; set; }
 
 ## See Also
 
-[UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent)
+[UserDefinedFieldInfoAgent](SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent.md)
 

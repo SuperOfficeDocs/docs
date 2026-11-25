@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveHeadingsFromNameRequest"></a> Class List\_SaveHeadingsFromNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveHeadingsFromNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveHeadingsFromNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveHeadingsFromNameRequest)
+[List\_SaveHeadingsFromNameRequest](SuperOffice.WebApi.Data.List\_SaveHeadingsFromNameRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public HeadingEntity[] Entities { get; set; }
 
 #### Property Value
 
- [HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]
+ [HeadingEntity](SuperOffice.WebApi.Data.HeadingEntity.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_List_SaveHeadingsFromNameRequest_Name"></a> Name
 

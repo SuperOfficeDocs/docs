@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetVideoMeetingConnectedStateRequest"></a> Class Appointment\_GetVideoMeetingConnectedStateRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetVideoMeetingConnectedStateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetVideoMeetingConnectedStateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetVideoMeetingConnectedStateRequest)
+[Appointment\_GetVideoMeetingConnectedStateRequest](SuperOffice.WebApi.Data.Appointment\_GetVideoMeetingConnectedStateRequest.md)
 
 #### Inherited Members
 

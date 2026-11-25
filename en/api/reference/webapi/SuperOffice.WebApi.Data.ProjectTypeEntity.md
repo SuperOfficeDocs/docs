@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ProjectTypeEntity"></a> Class ProjectTypeEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ProjectTypeEntity.
@@ -12,13 +12,13 @@ public class ProjectTypeEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ProjectTypeEntity](SuperOffice.WebApi.Data.ProjectTypeEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -70,11 +70,11 @@ public DurationUnit? DurationUnit { get; set; }
 
 #### Property Value
 
- [DurationUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.DurationUnit)?
+ [DurationUnit](SuperOffice.WebApi.Data.DurationUnit.md)?
 
 #### See Also
 
-[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity).[DurationUnit\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity#SuperOffice_WebApi_Data_ProjectTypeEntity_DurationUnit_String)
+[ProjectTypeEntity](SuperOffice.WebApi.Data.ProjectTypeEntity.md).[DurationUnit\_String](SuperOffice.WebApi.Data.ProjectTypeEntity.md\#SuperOffice\_WebApi\_Data\_ProjectTypeEntity\_DurationUnit\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectTypeEntity_DurationUnit_String"></a> DurationUnit\_String
 
@@ -92,7 +92,7 @@ public string DurationUnit_String { get; set; }
 
 #### See Also
 
-[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity).[DurationUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity#SuperOffice_WebApi_Data_ProjectTypeEntity_DurationUnit)
+[ProjectTypeEntity](SuperOffice.WebApi.Data.ProjectTypeEntity.md).[DurationUnit](SuperOffice.WebApi.Data.ProjectTypeEntity.md\#SuperOffice\_WebApi\_Data\_ProjectTypeEntity\_DurationUnit)
 
 ### <a id="SuperOffice_WebApi_Data_ProjectTypeEntity_HasGuide"></a> HasGuide
 
@@ -176,7 +176,7 @@ public virtual SelectableMDOListItem[] Stages { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
+ [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ProjectTypeEntity_Tooltip"></a> Tooltip
 
@@ -192,5 +192,5 @@ public virtual string Tooltip { get; set; }
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

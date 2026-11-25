@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SetRankOnHeadingsRequest"></a> Class List\_SetRankOnHeadingsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SetRankOnHeadingsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SetRankOnHeadingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetRankOnHeadingsRequest)
+[List\_SetRankOnHeadingsRequest](SuperOffice.WebApi.Data.List\_SetRankOnHeadingsRequest.md)
 
 #### Inherited Members
 

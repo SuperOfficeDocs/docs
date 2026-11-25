@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AttachmentPreview"></a> Class AttachmentPreview
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AttachmentPreview.
@@ -13,13 +13,13 @@ public class AttachmentPreview : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[AttachmentPreview](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentPreview)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[AttachmentPreview](SuperOffice.WebApi.Data.AttachmentPreview.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -62,7 +62,7 @@ public virtual AttachmentEntity[] EmailAttachmentsInfo { get; set; }
 
 #### Property Value
 
- [AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\[\]
+ [AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_AttachmentPreview_EmailCc"></a> EmailCc
 
@@ -162,5 +162,5 @@ public virtual int Size { get; set; }
 
 ## See Also
 
-[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
+[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dash_AddNewTileToDashboardRequest"></a> Class Dash\_AddNewTileToDashboardRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dash_AddNewTileToDashboardRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dash\_AddNewTileToDashboardRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_AddNewTileToDashboardRequest)
+[Dash\_AddNewTileToDashboardRequest](SuperOffice.WebApi.Data.Dash\_AddNewTileToDashboardRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public DashTileDefinition DashTileDefinition { get; set; }
 
 #### Property Value
 
- [DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)
+ [DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)
 
 ### <a id="SuperOffice_WebApi_Data_Dash_AddNewTileToDashboardRequest_DashboardId"></a> DashboardId
 

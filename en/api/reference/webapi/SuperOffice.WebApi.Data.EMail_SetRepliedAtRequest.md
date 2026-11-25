@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_SetRepliedAtRequest"></a> Class EMail\_SetRepliedAtRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_SetRepliedAtRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_SetRepliedAtRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_SetRepliedAtRequest)
+[EMail\_SetRepliedAtRequest](SuperOffice.WebApi.Data.EMail\_SetRepliedAtRequest.md)
 
 #### Inherited Members
 

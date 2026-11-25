@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_GetSmsConfigRequest"></a> Class CustomerService\_GetSmsConfigRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_GetSmsConfigRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_GetSmsConfigRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_GetSmsConfigRequest)
+[CustomerService\_GetSmsConfigRequest](SuperOffice.WebApi.Data.CustomerService\_GetSmsConfigRequest.md)
 
 #### Inherited Members
 

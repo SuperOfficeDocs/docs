@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_GetFencingInfoRequest"></a> Class License\_GetFencingInfoRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_GetFencingInfoRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_GetFencingInfoRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_GetFencingInfoRequest)
+[License\_GetFencingInfoRequest](SuperOffice.WebApi.Data.License\_GetFencingInfoRequest.md)
 
 #### Inherited Members
 

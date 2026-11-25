@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PocketNotificationMessage"></a> Class PocketNotificationMessage
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PocketNotificationMessage.
@@ -13,7 +13,7 @@ public class PocketNotificationMessage
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PocketNotificationMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketNotificationMessage)
+[PocketNotificationMessage](SuperOffice.WebApi.Data.PocketNotificationMessage.md)
 
 #### Inherited Members
 
@@ -71,7 +71,7 @@ public virtual StringDictionary ExtraValues { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_PocketNotificationMessage_Message"></a> Message
 
@@ -145,11 +145,11 @@ public NotificationMessageType? Type { get; set; }
 
 #### Property Value
 
- [NotificationMessageType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationMessageType)?
+ [NotificationMessageType](SuperOffice.WebApi.Data.NotificationMessageType.md)?
 
 #### See Also
 
-[PocketNotificationMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketNotificationMessage).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketNotificationMessage#SuperOffice_WebApi_Data_PocketNotificationMessage_Type_String)
+[PocketNotificationMessage](SuperOffice.WebApi.Data.PocketNotificationMessage.md).[Type\_String](SuperOffice.WebApi.Data.PocketNotificationMessage.md\#SuperOffice\_WebApi\_Data\_PocketNotificationMessage\_Type\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PocketNotificationMessage_Type_String"></a> Type\_String
 
@@ -167,7 +167,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[PocketNotificationMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketNotificationMessage).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketNotificationMessage#SuperOffice_WebApi_Data_PocketNotificationMessage_Type)
+[PocketNotificationMessage](SuperOffice.WebApi.Data.PocketNotificationMessage.md).[Type](SuperOffice.WebApi.Data.PocketNotificationMessage.md\#SuperOffice\_WebApi\_Data\_PocketNotificationMessage\_Type)
 
 ### <a id="SuperOffice_WebApi_Data_PocketNotificationMessage_Url"></a> Url
 
@@ -183,5 +183,5 @@ public virtual string Url { get; set; }
 
 ## See Also
 
-[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent)
+[PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md)
 

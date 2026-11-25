@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetCsCgiUrlRequest"></a> Class Configuration\_GetCsCgiUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetCsCgiUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetCsCgiUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetCsCgiUrlRequest)
+[Configuration\_GetCsCgiUrlRequest](SuperOffice.WebApi.Data.Configuration\_GetCsCgiUrlRequest.md)
 
 #### Inherited Members
 

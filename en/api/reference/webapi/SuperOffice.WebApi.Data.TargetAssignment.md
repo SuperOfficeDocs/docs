@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TargetAssignment"></a> Class TargetAssignment
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TargetAssignment.
@@ -13,13 +13,13 @@ public class TargetAssignment : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TargetAssignment](SuperOffice.WebApi.Data.TargetAssignment.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -51,7 +51,7 @@ public virtual Currency Currency { get; set; }
 
 #### Property Value
 
- [Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)
+ [Currency](SuperOffice.WebApi.Data.Currency.md)
 
 ### <a id="SuperOffice_WebApi_Data_TargetAssignment_DimensionListItem"></a> DimensionListItem
 
@@ -111,7 +111,7 @@ public virtual Associate TargetAssociate { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_TargetAssignment_TargetContact"></a> TargetContact
 
@@ -123,7 +123,7 @@ public virtual Contact TargetContact { get; set; }
 
 #### Property Value
 
- [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
+ [Contact](SuperOffice.WebApi.Data.Contact.md)
 
 ### <a id="SuperOffice_WebApi_Data_TargetAssignment_TargetUserGroup"></a> TargetUserGroup
 
@@ -135,7 +135,7 @@ public virtual UserGroup TargetUserGroup { get; set; }
 
 #### Property Value
 
- [UserGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserGroup)
+ [UserGroup](SuperOffice.WebApi.Data.UserGroup.md)
 
 ### <a id="SuperOffice_WebApi_Data_TargetAssignment_Values"></a> Values
 
@@ -151,5 +151,5 @@ public virtual double[] Values { get; set; }
 
 ## See Also
 
-[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent)
+[TargetsAgent](SuperOffice.WebApi.Agents.TargetsAgent.md)
 

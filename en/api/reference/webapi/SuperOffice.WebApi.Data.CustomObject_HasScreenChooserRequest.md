@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_HasScreenChooserRequest"></a> Class CustomObject\_HasScreenChooserRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_HasScreenChooserRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_HasScreenChooserRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_HasScreenChooserRequest)
+[CustomObject\_HasScreenChooserRequest](SuperOffice.WebApi.Data.CustomObject\_HasScreenChooserRequest.md)
 
 #### Inherited Members
 
@@ -32,16 +32,6 @@ public CustomObject_HasScreenChooserRequest()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_CustomObject_HasScreenChooserRequest_DefinitionName"></a> DefinitionName
-
-```csharp
-public string DefinitionName { get; set; }
-```
-
-#### Property Value
-
- [string](https://learn.microsoft.com/dotnet/api/system.string)
-
 ### <a id="SuperOffice_WebApi_Data_CustomObject_HasScreenChooserRequest_Edit"></a> Edit
 
 ```csharp
@@ -51,4 +41,14 @@ public bool Edit { get; set; }
 #### Property Value
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="SuperOffice_WebApi_Data_CustomObject_HasScreenChooserRequest_ObjectName"></a> ObjectName
+
+```csharp
+public string ObjectName { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 

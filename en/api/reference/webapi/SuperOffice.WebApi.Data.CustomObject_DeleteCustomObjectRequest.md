@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_DeleteCustomObjectRequest"></a> Class CustomObject\_DeleteCustomObjectRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_DeleteCustomObjectRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_DeleteCustomObjectRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_DeleteCustomObjectRequest)
+[CustomObject\_DeleteCustomObjectRequest](SuperOffice.WebApi.Data.CustomObject\_DeleteCustomObjectRequest.md)
 
 #### Inherited Members
 
@@ -32,16 +32,6 @@ public CustomObject_DeleteCustomObjectRequest()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_CustomObject_DeleteCustomObjectRequest_DefinitionName"></a> DefinitionName
-
-```csharp
-public string DefinitionName { get; set; }
-```
-
-#### Property Value
-
- [string](https://learn.microsoft.com/dotnet/api/system.string)
-
 ### <a id="SuperOffice_WebApi_Data_CustomObject_DeleteCustomObjectRequest_Id"></a> Id
 
 ```csharp
@@ -51,4 +41,14 @@ public int Id { get; set; }
 #### Property Value
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="SuperOffice_WebApi_Data_CustomObject_DeleteCustomObjectRequest_ObjectName"></a> ObjectName
+
+```csharp
+public string ObjectName { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 

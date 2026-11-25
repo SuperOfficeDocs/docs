@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketMessage"></a> Class TicketMessage
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketMessage.
@@ -13,13 +13,13 @@ public class TicketMessage : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -71,11 +71,11 @@ public BadgeType? Badge { get; set; }
 
 #### Property Value
 
- [BadgeType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BadgeType)?
+ [BadgeType](SuperOffice.WebApi.Data.BadgeType.md)?
 
 #### See Also
 
-[TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage).[Badge\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage#SuperOffice_WebApi_Data_TicketMessage_Badge_String)
+[TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md).[Badge\_String](SuperOffice.WebApi.Data.TicketMessage.md\#SuperOffice\_WebApi\_Data\_TicketMessage\_Badge\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessage_Badge_String"></a> Badge\_String
 
@@ -93,7 +93,7 @@ public string Badge_String { get; set; }
 
 #### See Also
 
-[TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage).[Badge](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage#SuperOffice_WebApi_Data_TicketMessage_Badge)
+[TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md).[Badge](SuperOffice.WebApi.Data.TicketMessage.md\#SuperOffice\_WebApi\_Data\_TicketMessage\_Badge)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessage_ChangedAt"></a> ChangedAt
 
@@ -213,7 +213,7 @@ public virtual TicketMessageHeader[] MessageHeaders { get; set; }
 
 #### Property Value
 
- [TicketMessageHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader)\[\]
+ [TicketMessageHeader](SuperOffice.WebApi.Data.TicketMessageHeader.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessage_NumAttachments"></a> NumAttachments
 
@@ -287,11 +287,11 @@ public TicketSecurityLevel? Slevel { get; set; }
 
 #### Property Value
 
- [TicketSecurityLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSecurityLevel)?
+ [TicketSecurityLevel](SuperOffice.WebApi.Data.TicketSecurityLevel.md)?
 
 #### See Also
 
-[TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage).[Slevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage#SuperOffice_WebApi_Data_TicketMessage_Slevel_String)
+[TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md).[Slevel\_String](SuperOffice.WebApi.Data.TicketMessage.md\#SuperOffice\_WebApi\_Data\_TicketMessage\_Slevel\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessage_Slevel_String"></a> Slevel\_String
 
@@ -309,7 +309,7 @@ public string Slevel_String { get; set; }
 
 #### See Also
 
-[TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage).[Slevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage#SuperOffice_WebApi_Data_TicketMessage_Slevel)
+[TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md).[Slevel](SuperOffice.WebApi.Data.TicketMessage.md\#SuperOffice\_WebApi\_Data\_TicketMessage\_Slevel)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessage_TicketMessageId"></a> TicketMessageId
 
@@ -325,5 +325,5 @@ public virtual int TicketMessageId { get; set; }
 
 ## See Also
 
-[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
+[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
 

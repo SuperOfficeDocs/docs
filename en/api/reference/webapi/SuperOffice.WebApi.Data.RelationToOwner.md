@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RelationToOwner"></a> Class RelationToOwner
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RelationToOwner.
@@ -12,13 +12,13 @@ public class RelationToOwner : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[RelationToOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationToOwner)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[RelationToOwner](SuperOffice.WebApi.Data.RelationToOwner.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -77,5 +77,5 @@ public virtual string Value { get; set; }
 
 ## See Also
 
-[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent)
+[UserAgent](SuperOffice.WebApi.Agents.UserAgent.md)
 

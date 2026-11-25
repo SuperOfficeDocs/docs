@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RagAnswer"></a> Class RagAnswer
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RagAnswer.
@@ -13,7 +13,7 @@ public class RagAnswer
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RagAnswer](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagAnswer)
+[RagAnswer](SuperOffice.WebApi.Data.RagAnswer.md)
 
 #### Inherited Members
 
@@ -59,7 +59,7 @@ public virtual RagResult[] Source { get; set; }
 
 #### Property Value
 
- [RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult)\[\]
+ [RagResult](SuperOffice.WebApi.Data.RagResult.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_RagAnswer_TrackingId"></a> TrackingId
 
@@ -75,5 +75,5 @@ public virtual string TrackingId { get; set; }
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

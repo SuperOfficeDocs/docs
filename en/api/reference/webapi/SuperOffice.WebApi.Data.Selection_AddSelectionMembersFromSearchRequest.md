@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_AddSelectionMembersFromSearchRequest"></a> Class Selection\_AddSelectionMembersFromSearchRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_AddSelectionMembersFromSearchRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_AddSelectionMembersFromSearchRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_AddSelectionMembersFromSearchRequest)
+[Selection\_AddSelectionMembersFromSearchRequest](SuperOffice.WebApi.Data.Selection\_AddSelectionMembersFromSearchRequest.md)
 
 #### Inherited Members
 

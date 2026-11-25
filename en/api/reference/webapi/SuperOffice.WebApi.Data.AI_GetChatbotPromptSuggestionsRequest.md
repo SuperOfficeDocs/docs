@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GetChatbotPromptSuggestionsRequest"></a> Class AI\_GetChatbotPromptSuggestionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GetChatbotPromptSuggestionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GetChatbotPromptSuggestionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GetChatbotPromptSuggestionsRequest)
+[AI\_GetChatbotPromptSuggestionsRequest](SuperOffice.WebApi.Data.AI\_GetChatbotPromptSuggestionsRequest.md)
 
 #### Inherited Members
 

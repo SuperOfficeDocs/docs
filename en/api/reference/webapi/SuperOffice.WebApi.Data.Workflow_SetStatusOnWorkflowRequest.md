@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_SetStatusOnWorkflowRequest"></a> Class Workflow\_SetStatusOnWorkflowRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_SetStatusOnWorkflowRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_SetStatusOnWorkflowRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_SetStatusOnWorkflowRequest)
+[Workflow\_SetStatusOnWorkflowRequest](SuperOffice.WebApi.Data.Workflow\_SetStatusOnWorkflowRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public WorkflowDefinitionStatus Status { get; set; }
 
 #### Property Value
 
- [WorkflowDefinitionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowDefinitionStatus)
+ [WorkflowDefinitionStatus](SuperOffice.WebApi.Data.WorkflowDefinitionStatus.md)
 

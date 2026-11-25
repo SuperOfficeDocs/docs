@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_ToolTips"></a> Class UserPreferenceStrings.ToolTips
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Tooltips in the application
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.ToolTips
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.ToolTips](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ToolTips)
+[UserPreferenceStrings.ToolTips](SuperOffice.WebApi.Data.UserPreferenceStrings.ToolTips.md)
 
 #### Inherited Members
 

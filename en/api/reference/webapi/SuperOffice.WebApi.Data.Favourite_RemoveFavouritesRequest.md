@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Favourite_RemoveFavouritesRequest"></a> Class Favourite\_RemoveFavouritesRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Favourite_RemoveFavouritesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Favourite\_RemoveFavouritesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Favourite_RemoveFavouritesRequest)
+[Favourite\_RemoveFavouritesRequest](SuperOffice.WebApi.Data.Favourite\_RemoveFavouritesRequest.md)
 
 #### Inherited Members
 

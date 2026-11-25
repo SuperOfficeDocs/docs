@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AppointmentExternalOwner"></a> Enum AppointmentExternalOwner
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 An external owner system for appointments (Outlook, Google...)

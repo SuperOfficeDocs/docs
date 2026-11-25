@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ArchiveOrderByInfo"></a> Class ArchiveOrderByInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ArchiveOrderByInfo.
@@ -13,7 +13,7 @@ public class ArchiveOrderByInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)
+[ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)
 
 #### Inherited Members
 
@@ -49,11 +49,11 @@ public OrderBySortType? Direction { get; set; }
 
 #### Property Value
 
- [OrderBySortType](/en/api/reference/webapi/SuperOffice.WebApi.Data.OrderBySortType)?
+ [OrderBySortType](SuperOffice.WebApi.Data.OrderBySortType.md)?
 
 #### See Also
 
-[ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo).[Direction\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo#SuperOffice_WebApi_Data_ArchiveOrderByInfo_Direction_String)
+[ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md).[Direction\_String](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md\#SuperOffice\_WebApi\_Data\_ArchiveOrderByInfo\_Direction\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ArchiveOrderByInfo_Direction_String"></a> Direction\_String
 
@@ -71,7 +71,7 @@ public string Direction_String { get; set; }
 
 #### See Also
 
-[ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo).[Direction](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo#SuperOffice_WebApi_Data_ArchiveOrderByInfo_Direction)
+[ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md).[Direction](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md\#SuperOffice\_WebApi\_Data\_ArchiveOrderByInfo\_Direction)
 
 ### <a id="SuperOffice_WebApi_Data_ArchiveOrderByInfo_Name"></a> Name
 
@@ -87,5 +87,5 @@ public virtual string Name { get; set; }
 
 ## See Also
 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent)
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md)
 

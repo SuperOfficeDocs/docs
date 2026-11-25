@@ -334,6 +334,8 @@
     href: SuperOffice.WebApi.Data.AI_AnswerRequest.md
   - name: AI_AnswerUsingContextRequest
     href: SuperOffice.WebApi.Data.AI_AnswerUsingContextRequest.md
+  - name: AI_CancelEvalRequest
+    href: SuperOffice.WebApi.Data.AI_CancelEvalRequest.md
   - name: AI_CancelIndexingRequest
     href: SuperOffice.WebApi.Data.AI_CancelIndexingRequest.md
   - name: AI_ClearChatbotTurnsRequest
@@ -386,8 +388,12 @@
     href: SuperOffice.WebApi.Data.AI_RephraseTextRequest.md
   - name: AI_SearchRequest
     href: SuperOffice.WebApi.Data.AI_SearchRequest.md
+  - name: AI_StartEvalRequest
+    href: SuperOffice.WebApi.Data.AI_StartEvalRequest.md
   - name: AI_StartRagIndexingRequest
     href: SuperOffice.WebApi.Data.AI_StartRagIndexingRequest.md
+  - name: AI_StatusEvalRequest
+    href: SuperOffice.WebApi.Data.AI_StatusEvalRequest.md
   - name: AI_SummarizeContactRequest
     href: SuperOffice.WebApi.Data.AI_SummarizeContactRequest.md
   - name: AI_SummarizeSaleRequest
@@ -430,6 +436,8 @@
     href: SuperOffice.WebApi.Data.AppointmentInfo.md
   - name: AppointmentMoveData
     href: SuperOffice.WebApi.Data.AppointmentMoveData.md
+  - name: AppointmentParticipant
+    href: SuperOffice.WebApi.Data.AppointmentParticipant.md
   - name: AppointmentSaveData
     href: SuperOffice.WebApi.Data.AppointmentSaveData.md
   - name: AppointmentSyncData
@@ -498,6 +506,8 @@
     href: SuperOffice.WebApi.Data.Appointment_GetAppointmentFromUIDRequest.md
   - name: Appointment_GetAppointmentHaveParticipantsWithEmailRequest
     href: SuperOffice.WebApi.Data.Appointment_GetAppointmentHaveParticipantsWithEmailRequest.md
+  - name: Appointment_GetAppointmentParticipantsRequest
+    href: SuperOffice.WebApi.Data.Appointment_GetAppointmentParticipantsRequest.md
   - name: Appointment_GetAppointmentRecordsRequest
     href: SuperOffice.WebApi.Data.Appointment_GetAppointmentRecordsRequest.md
   - name: Appointment_GetAppointmentsByTaskHeadingRequest
@@ -584,6 +594,8 @@
     href: SuperOffice.WebApi.Data.Appointment_GetRedLetterInformationListByDatesAndAssociateRequest.md
   - name: Appointment_GetTaskListItemsRequest
     href: SuperOffice.WebApi.Data.Appointment_GetTaskListItemsRequest.md
+  - name: Appointment_GetTicketAppointmentsRequest
+    href: SuperOffice.WebApi.Data.Appointment_GetTicketAppointmentsRequest.md
   - name: Appointment_GetUIDFromAppointmentIdRequest
     href: SuperOffice.WebApi.Data.Appointment_GetUIDFromAppointmentIdRequest.md
   - name: Appointment_GetVideoMeetingConnectedStateRequest
@@ -690,6 +702,14 @@
     href: SuperOffice.WebApi.Data.Archive_GetAvailableColumnsRequest.md
   - name: Archive_GetAvailableEntitiesRequest
     href: SuperOffice.WebApi.Data.Archive_GetAvailableEntitiesRequest.md
+  - name: Archive_GetCriteriaFieldListRequest
+    href: SuperOffice.WebApi.Data.Archive_GetCriteriaFieldListRequest.md
+  - name: Archive_GetCriteriaFieldListWithGuiNameAndContextRequest
+    href: SuperOffice.WebApi.Data.Archive_GetCriteriaFieldListWithGuiNameAndContextRequest.md
+  - name: Archive_GetCriteriaFieldListWithGuiNameRequest
+    href: SuperOffice.WebApi.Data.Archive_GetCriteriaFieldListWithGuiNameRequest.md
+  - name: Archive_GetDefaultColumnListRequest
+    href: SuperOffice.WebApi.Data.Archive_GetDefaultColumnListRequest.md
   - name: Archive_GetGroupAssociateIdsRequest
     href: SuperOffice.WebApi.Data.Archive_GetGroupAssociateIdsRequest.md
   - name: Archive_GetProviderNamesRequest
@@ -1228,20 +1248,36 @@
     href: SuperOffice.WebApi.Data.CurrencyEntity.md
   - name: CustomCommand
     href: SuperOffice.WebApi.Data.CustomCommand.md
+  - name: CustomFieldDefinition
+    href: SuperOffice.WebApi.Data.CustomFieldDefinition.md
   - name: CustomObject
     href: SuperOffice.WebApi.Data.CustomObject.md
   - name: CustomObjectDefinition
     href: SuperOffice.WebApi.Data.CustomObjectDefinition.md
-  - name: CustomObjectField
-    href: SuperOffice.WebApi.Data.CustomObjectField.md
   - name: CustomObjectMetadata
     href: SuperOffice.WebApi.Data.CustomObjectMetadata.md
   - name: CustomObjectRelation
     href: SuperOffice.WebApi.Data.CustomObjectRelation.md
+  - name: CustomObject_CreateCustomFieldDefinitionsRequest
+    href: SuperOffice.WebApi.Data.CustomObject_CreateCustomFieldDefinitionsRequest.md
+  - name: CustomObject_CreateCustomObjectDefinitionRequest
+    href: SuperOffice.WebApi.Data.CustomObject_CreateCustomObjectDefinitionRequest.md
+  - name: CustomObject_CreateCustomObjectRequest
+    href: SuperOffice.WebApi.Data.CustomObject_CreateCustomObjectRequest.md
+  - name: CustomObject_CreateDefaultCustomObjectDefinitionRequest
+    href: SuperOffice.WebApi.Data.CustomObject_CreateDefaultCustomObjectDefinitionRequest.md
   - name: CustomObject_CreateDefaultCustomObjectRequest
     href: SuperOffice.WebApi.Data.CustomObject_CreateDefaultCustomObjectRequest.md
+  - name: CustomObject_DeleteCustomFieldDefinitionRequest
+    href: SuperOffice.WebApi.Data.CustomObject_DeleteCustomFieldDefinitionRequest.md
+  - name: CustomObject_DeleteCustomObjectDefinitionRequest
+    href: SuperOffice.WebApi.Data.CustomObject_DeleteCustomObjectDefinitionRequest.md
   - name: CustomObject_DeleteCustomObjectRequest
     href: SuperOffice.WebApi.Data.CustomObject_DeleteCustomObjectRequest.md
+  - name: CustomObject_GetCustomFieldDefinitionRequest
+    href: SuperOffice.WebApi.Data.CustomObject_GetCustomFieldDefinitionRequest.md
+  - name: CustomObject_GetCustomFieldDefinitionsRequest
+    href: SuperOffice.WebApi.Data.CustomObject_GetCustomFieldDefinitionsRequest.md
   - name: CustomObject_GetCustomObjectDefinitionRequest
     href: SuperOffice.WebApi.Data.CustomObject_GetCustomObjectDefinitionRequest.md
   - name: CustomObject_GetCustomObjectRequest
@@ -1252,8 +1288,14 @@
     href: SuperOffice.WebApi.Data.CustomObject_GetCustomObjectsMetadataRequest.md
   - name: CustomObject_HasScreenChooserRequest
     href: SuperOffice.WebApi.Data.CustomObject_HasScreenChooserRequest.md
-  - name: CustomObject_SaveCustomObjectRequest
-    href: SuperOffice.WebApi.Data.CustomObject_SaveCustomObjectRequest.md
+  - name: CustomObject_SaveCustomFieldDefinitionsRequest
+    href: SuperOffice.WebApi.Data.CustomObject_SaveCustomFieldDefinitionsRequest.md
+  - name: CustomObject_UpdateCustomFieldDefinitionRequest
+    href: SuperOffice.WebApi.Data.CustomObject_UpdateCustomFieldDefinitionRequest.md
+  - name: CustomObject_UpdateCustomObjectDefinitionRequest
+    href: SuperOffice.WebApi.Data.CustomObject_UpdateCustomObjectDefinitionRequest.md
+  - name: CustomObject_UpdateCustomObjectRequest
+    href: SuperOffice.WebApi.Data.CustomObject_UpdateCustomObjectRequest.md
   - name: CustomerCenterConfig
     href: SuperOffice.WebApi.Data.CustomerCenterConfig.md
   - name: CustomerLanguage
@@ -3492,6 +3534,8 @@
     href: SuperOffice.WebApi.Data.RagAnswer.md
   - name: RagContextIds
     href: SuperOffice.WebApi.Data.RagContextIds.md
+  - name: RagEval
+    href: SuperOffice.WebApi.Data.RagEval.md
   - name: RagResult
     href: SuperOffice.WebApi.Data.RagResult.md
   - name: RagStatus

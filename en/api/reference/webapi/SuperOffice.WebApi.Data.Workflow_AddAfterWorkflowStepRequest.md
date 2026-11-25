@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_AddAfterWorkflowStepRequest"></a> Class Workflow\_AddAfterWorkflowStepRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_AddAfterWorkflowStepRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_AddAfterWorkflowStepRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_AddAfterWorkflowStepRequest)
+[Workflow\_AddAfterWorkflowStepRequest](SuperOffice.WebApi.Data.Workflow\_AddAfterWorkflowStepRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public WorkflowStepBase SubStep { get; set; }
 
 #### Property Value
 
- [WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase)
+ [WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md)
 
 ### <a id="SuperOffice_WebApi_Data_Workflow_AddAfterWorkflowStepRequest_WorkflowStepId"></a> WorkflowStepId
 

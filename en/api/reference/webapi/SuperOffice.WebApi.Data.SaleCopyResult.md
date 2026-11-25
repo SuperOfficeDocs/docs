@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_SaleCopyResult"></a> Class SaleCopyResult
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
-Assembly: SuperOffice.WebApi.dll
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SaleCopyResult.
 Result of saving a copied sale: the sale that was created, and what became of each optional part.
@@ -12,17 +12,17 @@ public class SaleCopyResult
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ←
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult)
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -49,11 +49,11 @@ public CopyPartResult? LinksResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
+ [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[LinksResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_LinksResult_String)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[LinksResult\_String](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_LinksResult\_String)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_LinksResult_String"></a> LinksResult\_String
 
@@ -71,7 +71,7 @@ public string LinksResult_String { get; set; }
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[LinksResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_LinksResult)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[LinksResult](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_LinksResult)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_NotesResult"></a> NotesResult
 
@@ -85,11 +85,11 @@ public CopyPartResult? NotesResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
+ [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[NotesResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_NotesResult_String)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[NotesResult\_String](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_NotesResult\_String)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_NotesResult_String"></a> NotesResult\_String
 
@@ -107,7 +107,7 @@ public string NotesResult_String { get; set; }
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[NotesResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_NotesResult)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[NotesResult](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_NotesResult)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_QuoteResult"></a> QuoteResult
 
@@ -121,11 +121,11 @@ public CopyPartResult? QuoteResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
+ [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[QuoteResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_QuoteResult_String)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[QuoteResult\_String](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_QuoteResult\_String)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_QuoteResult_String"></a> QuoteResult\_String
 
@@ -143,7 +143,7 @@ public string QuoteResult_String { get; set; }
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[QuoteResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_QuoteResult)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[QuoteResult](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_QuoteResult)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_SaleId"></a> SaleId
 
@@ -169,11 +169,11 @@ public CopyPartResult? StakeholderResult { get; set; }
 
 #### Property Value
 
- [CopyPartResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopyPartResult)?
+ [CopyPartResult](SuperOffice.WebApi.Data.CopyPartResult.md)?
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[StakeholderResult\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_StakeholderResult_String)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[StakeholderResult\_String](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_StakeholderResult\_String)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_StakeholderResult_String"></a> StakeholderResult\_String
 
@@ -191,7 +191,7 @@ public string StakeholderResult_String { get; set; }
 
 #### See Also
 
-[SaleCopyResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult).[StakeholderResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleCopyResult#SuperOffice_WebApi_Data_SaleCopyResult_StakeholderResult)
+[SaleCopyResult](SuperOffice.WebApi.Data.SaleCopyResult.md).[StakeholderResult](SuperOffice.WebApi.Data.SaleCopyResult.md\#SuperOffice\_WebApi\_Data\_SaleCopyResult\_StakeholderResult)
 
 ### <a id="SuperOffice_WebApi_Data_SaleCopyResult_Warnings"></a> Warnings
 
@@ -207,4 +207,5 @@ public virtual string[] Warnings { get; set; }
 
 ## See Also
 
-[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)
+[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
+

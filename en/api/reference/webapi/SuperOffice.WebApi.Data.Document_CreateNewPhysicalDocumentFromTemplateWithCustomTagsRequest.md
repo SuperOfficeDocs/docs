@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_CreateNewPhysicalDocumentFromTemplateWithCustomTagsRequest"></a> Class Document\_CreateNewPhysicalDocumentFromTemplateWithCustomTagsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_CreateNewPhysicalDocumentFromTemplateWithCustomTagsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_CreateNewPhysicalDocumentFromTemplateWithCustomTagsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_CreateNewPhysicalDocumentFromTemplateWithCustomTagsRequest)
+[Document\_CreateNewPhysicalDocumentFromTemplateWithCustomTagsRequest](SuperOffice.WebApi.Data.Document\_CreateNewPhysicalDocumentFromTemplateWithCustomTagsRequest.md)
 
 #### Inherited Members
 

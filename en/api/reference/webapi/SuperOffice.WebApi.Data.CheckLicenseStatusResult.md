@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CheckLicenseStatusResult"></a> Class CheckLicenseStatusResult
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CheckLicenseStatusResult.
@@ -13,7 +13,7 @@ public class CheckLicenseStatusResult
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CheckLicenseStatusResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckLicenseStatusResult)
+[CheckLicenseStatusResult](SuperOffice.WebApi.Data.CheckLicenseStatusResult.md)
 
 #### Inherited Members
 
@@ -49,11 +49,11 @@ public LicenseStatus? LicenseStatus { get; set; }
 
 #### Property Value
 
- [LicenseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseStatus)?
+ [LicenseStatus](SuperOffice.WebApi.Data.LicenseStatus.md)?
 
 #### See Also
 
-[CheckLicenseStatusResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckLicenseStatusResult).[LicenseStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckLicenseStatusResult#SuperOffice_WebApi_Data_CheckLicenseStatusResult_LicenseStatus_String)
+[CheckLicenseStatusResult](SuperOffice.WebApi.Data.CheckLicenseStatusResult.md).[LicenseStatus\_String](SuperOffice.WebApi.Data.CheckLicenseStatusResult.md\#SuperOffice\_WebApi\_Data\_CheckLicenseStatusResult\_LicenseStatus\_String)
 
 ### <a id="SuperOffice_WebApi_Data_CheckLicenseStatusResult_LicenseStatus_String"></a> LicenseStatus\_String
 
@@ -71,7 +71,7 @@ public string LicenseStatus_String { get; set; }
 
 #### See Also
 
-[CheckLicenseStatusResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckLicenseStatusResult).[LicenseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckLicenseStatusResult#SuperOffice_WebApi_Data_CheckLicenseStatusResult_LicenseStatus)
+[CheckLicenseStatusResult](SuperOffice.WebApi.Data.CheckLicenseStatusResult.md).[LicenseStatus](SuperOffice.WebApi.Data.CheckLicenseStatusResult.md\#SuperOffice\_WebApi\_Data\_CheckLicenseStatusResult\_LicenseStatus)
 
 ### <a id="SuperOffice_WebApi_Data_CheckLicenseStatusResult_Message"></a> Message
 
@@ -99,5 +99,5 @@ public virtual string Url { get; set; }
 
 ## See Also
 
-[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
+[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
 

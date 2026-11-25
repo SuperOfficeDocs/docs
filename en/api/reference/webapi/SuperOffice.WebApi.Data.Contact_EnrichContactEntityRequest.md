@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_EnrichContactEntityRequest"></a> Class Contact\_EnrichContactEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_EnrichContactEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_EnrichContactEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_EnrichContactEntityRequest)
+[Contact\_EnrichContactEntityRequest](SuperOffice.WebApi.Data.Contact\_EnrichContactEntityRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ContactEntity ContactEntity { get; set; }
 
 #### Property Value
 
- [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
+ [ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_Contact_EnrichContactEntityRequest_EnrichId"></a> EnrichId
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RelationDefinitionEntity"></a> Class RelationDefinitionEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RelationDefinitionEntity.
@@ -13,13 +13,13 @@ public class RelationDefinitionEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[RelationDefinitionEntity](SuperOffice.WebApi.Data.RelationDefinitionEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -71,11 +71,11 @@ public RelationTarget? Destination { get; set; }
 
 #### Property Value
 
- [RelationTarget](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationTarget)?
+ [RelationTarget](SuperOffice.WebApi.Data.RelationTarget.md)?
 
 #### See Also
 
-[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity).[Destination\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity#SuperOffice_WebApi_Data_RelationDefinitionEntity_Destination_String)
+[RelationDefinitionEntity](SuperOffice.WebApi.Data.RelationDefinitionEntity.md).[Destination\_String](SuperOffice.WebApi.Data.RelationDefinitionEntity.md\#SuperOffice\_WebApi\_Data\_RelationDefinitionEntity\_Destination\_String)
 
 ### <a id="SuperOffice_WebApi_Data_RelationDefinitionEntity_Destination_String"></a> Destination\_String
 
@@ -93,7 +93,7 @@ public string Destination_String { get; set; }
 
 #### See Also
 
-[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity).[Destination](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity#SuperOffice_WebApi_Data_RelationDefinitionEntity_Destination)
+[RelationDefinitionEntity](SuperOffice.WebApi.Data.RelationDefinitionEntity.md).[Destination](SuperOffice.WebApi.Data.RelationDefinitionEntity.md\#SuperOffice\_WebApi\_Data\_RelationDefinitionEntity\_Destination)
 
 ### <a id="SuperOffice_WebApi_Data_RelationDefinitionEntity_Name"></a> Name
 
@@ -155,11 +155,11 @@ public RelationTarget? Source { get; set; }
 
 #### Property Value
 
- [RelationTarget](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationTarget)?
+ [RelationTarget](SuperOffice.WebApi.Data.RelationTarget.md)?
 
 #### See Also
 
-[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity).[Source\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity#SuperOffice_WebApi_Data_RelationDefinitionEntity_Source_String)
+[RelationDefinitionEntity](SuperOffice.WebApi.Data.RelationDefinitionEntity.md).[Source\_String](SuperOffice.WebApi.Data.RelationDefinitionEntity.md\#SuperOffice\_WebApi\_Data\_RelationDefinitionEntity\_Source\_String)
 
 ### <a id="SuperOffice_WebApi_Data_RelationDefinitionEntity_Source_String"></a> Source\_String
 
@@ -177,7 +177,7 @@ public string Source_String { get; set; }
 
 #### See Also
 
-[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity).[Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity#SuperOffice_WebApi_Data_RelationDefinitionEntity_Source)
+[RelationDefinitionEntity](SuperOffice.WebApi.Data.RelationDefinitionEntity.md).[Source](SuperOffice.WebApi.Data.RelationDefinitionEntity.md\#SuperOffice\_WebApi\_Data\_RelationDefinitionEntity\_Source)
 
 ### <a id="SuperOffice_WebApi_Data_RelationDefinitionEntity_Tooltip"></a> Tooltip
 
@@ -193,5 +193,5 @@ public virtual string Tooltip { get; set; }
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

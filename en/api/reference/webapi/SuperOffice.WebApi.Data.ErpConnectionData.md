@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpConnectionData"></a> Class ErpConnectionData
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ErpConnectionData.
@@ -13,13 +13,13 @@ public class ErpConnectionData : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -76,11 +76,11 @@ public CrmActorType? CrmActorType { get; set; }
 
 #### Property Value
 
- [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)?
+ [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)?
 
 #### See Also
 
-[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData).[CrmActorType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData#SuperOffice_WebApi_Data_ErpConnectionData_CrmActorType_String)
+[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md).[CrmActorType\_String](SuperOffice.WebApi.Data.ErpConnectionData.md\#SuperOffice\_WebApi\_Data\_ErpConnectionData\_CrmActorType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionData_CrmActorType_String"></a> CrmActorType\_String
 
@@ -98,7 +98,7 @@ public string CrmActorType_String { get; set; }
 
 #### See Also
 
-[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData).[CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData#SuperOffice_WebApi_Data_ErpConnectionData_CrmActorType)
+[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md).[CrmActorType](SuperOffice.WebApi.Data.ErpConnectionData.md\#SuperOffice\_WebApi\_Data\_ErpConnectionData\_CrmActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionData_ErpActorType"></a> ErpActorType
 
@@ -112,11 +112,11 @@ public ErpActorType? ErpActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)?
+ [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)?
 
 #### See Also
 
-[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData).[ErpActorType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData#SuperOffice_WebApi_Data_ErpConnectionData_ErpActorType_String)
+[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md).[ErpActorType\_String](SuperOffice.WebApi.Data.ErpConnectionData.md\#SuperOffice\_WebApi\_Data\_ErpConnectionData\_ErpActorType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionData_ErpActorType_String"></a> ErpActorType\_String
 
@@ -134,7 +134,7 @@ public string ErpActorType_String { get; set; }
 
 #### See Also
 
-[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData).[ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData#SuperOffice_WebApi_Data_ErpConnectionData_ErpActorType)
+[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md).[ErpActorType](SuperOffice.WebApi.Data.ErpConnectionData.md\#SuperOffice\_WebApi\_Data\_ErpConnectionData\_ErpActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionData_ErpActorTypes"></a> ErpActorTypes
 
@@ -148,11 +148,11 @@ public ErpActorType?[] ErpActorTypes { get; set; }
 
 #### Property Value
 
- [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)?\[\]
+ [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)?\[\]
 
 #### See Also
 
-[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData).[ErpActorTypes\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData#SuperOffice_WebApi_Data_ErpConnectionData_ErpActorTypes_String)
+[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md).[ErpActorTypes\_String](SuperOffice.WebApi.Data.ErpConnectionData.md\#SuperOffice\_WebApi\_Data\_ErpConnectionData\_ErpActorTypes\_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionData_ErpActorTypes_String"></a> ErpActorTypes\_String
 
@@ -170,7 +170,7 @@ public string[] ErpActorTypes_String { get; set; }
 
 #### See Also
 
-[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData).[ErpActorTypes](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData#SuperOffice_WebApi_Data_ErpConnectionData_ErpActorTypes)
+[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md).[ErpActorTypes](SuperOffice.WebApi.Data.ErpConnectionData.md\#SuperOffice\_WebApi\_Data\_ErpConnectionData\_ErpActorTypes)
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionData_ErpConnectionId"></a> ErpConnectionId
 
@@ -194,9 +194,9 @@ public virtual FieldMetadata[] ErpFields { get; set; }
 
 #### Property Value
 
- [FieldMetadata](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldMetadata)\[\]
+ [FieldMetadata](SuperOffice.WebApi.Data.FieldMetadata.md)\[\]
 
 ## See Also
 
-[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
+[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
 

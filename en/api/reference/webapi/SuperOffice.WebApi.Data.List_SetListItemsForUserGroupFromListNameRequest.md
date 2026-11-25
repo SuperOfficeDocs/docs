@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SetListItemsForUserGroupFromListNameRequest"></a> Class List\_SetListItemsForUserGroupFromListNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SetListItemsForUserGroupFromListNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SetListItemsForUserGroupFromListNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetListItemsForUserGroupFromListNameRequest)
+[List\_SetListItemsForUserGroupFromListNameRequest](SuperOffice.WebApi.Data.List\_SetListItemsForUserGroupFromListNameRequest.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_DeleteTemporaryKeysOfDomainRequest"></a> Class Person\_DeleteTemporaryKeysOfDomainRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_DeleteTemporaryKeysOfDomainRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_DeleteTemporaryKeysOfDomainRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_DeleteTemporaryKeysOfDomainRequest)
+[Person\_DeleteTemporaryKeysOfDomainRequest](SuperOffice.WebApi.Data.Person\_DeleteTemporaryKeysOfDomainRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TemporaryKeyDomain Domain { get; set; }
 
 #### Property Value
 
- [TemporaryKeyDomain](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyDomain)
+ [TemporaryKeyDomain](SuperOffice.WebApi.Data.TemporaryKeyDomain.md)
 
 ### <a id="SuperOffice_WebApi_Data_Person_DeleteTemporaryKeysOfDomainRequest_PersonId"></a> PersonId
 

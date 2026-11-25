@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetBaseCurrencyRequest"></a> Class List\_GetBaseCurrencyRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetBaseCurrencyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetBaseCurrencyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetBaseCurrencyRequest)
+[List\_GetBaseCurrencyRequest](SuperOffice.WebApi.Data.List\_GetBaseCurrencyRequest.md)
 
 #### Inherited Members
 

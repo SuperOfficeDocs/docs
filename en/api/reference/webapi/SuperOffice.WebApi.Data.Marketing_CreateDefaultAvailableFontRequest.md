@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_CreateDefaultAvailableFontRequest"></a> Class Marketing\_CreateDefaultAvailableFontRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_CreateDefaultAvailableFontRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_CreateDefaultAvailableFontRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_CreateDefaultAvailableFontRequest)
+[Marketing\_CreateDefaultAvailableFontRequest](SuperOffice.WebApi.Data.Marketing\_CreateDefaultAvailableFontRequest.md)
 
 #### Inherited Members
 

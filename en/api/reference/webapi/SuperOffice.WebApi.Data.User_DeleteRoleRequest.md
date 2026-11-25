@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_DeleteRoleRequest"></a> Class User\_DeleteRoleRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_DeleteRoleRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_DeleteRoleRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_DeleteRoleRequest)
+[User\_DeleteRoleRequest](SuperOffice.WebApi.Data.User\_DeleteRoleRequest.md)
 
 #### Inherited Members
 

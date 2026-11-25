@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_GetCustomObjectDefinitionRequest"></a> Class CustomObject\_GetCustomObjectDefinitionRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_GetCustomObjectDefinitionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_GetCustomObjectDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_GetCustomObjectDefinitionRequest)
+[CustomObject\_GetCustomObjectDefinitionRequest](SuperOffice.WebApi.Data.CustomObject\_GetCustomObjectDefinitionRequest.md)
 
 #### Inherited Members
 
@@ -32,10 +32,10 @@ public CustomObject_GetCustomObjectDefinitionRequest()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_CustomObject_GetCustomObjectDefinitionRequest_DefinitionName"></a> DefinitionName
+### <a id="SuperOffice_WebApi_Data_CustomObject_GetCustomObjectDefinitionRequest_ObjectName"></a> ObjectName
 
 ```csharp
-public string DefinitionName { get; set; }
+public string ObjectName { get; set; }
 ```
 
 #### Property Value

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_PerformNeededCategoryUpdateRequest"></a> Class List\_PerformNeededCategoryUpdateRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_PerformNeededCategoryUpdateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_PerformNeededCategoryUpdateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_PerformNeededCategoryUpdateRequest)
+[List\_PerformNeededCategoryUpdateRequest](SuperOffice.WebApi.Data.List\_PerformNeededCategoryUpdateRequest.md)
 
 #### Inherited Members
 
@@ -70,5 +70,5 @@ public AutomatedCategoryUpdate Setting { get; set; }
 
 #### Property Value
 
- [AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)
+ [AutomatedCategoryUpdate](SuperOffice.WebApi.Data.AutomatedCategoryUpdate.md)
 

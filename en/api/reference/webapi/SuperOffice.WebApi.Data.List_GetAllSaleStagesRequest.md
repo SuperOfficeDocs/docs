@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetAllSaleStagesRequest"></a> Class List\_GetAllSaleStagesRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetAllSaleStagesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetAllSaleStagesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetAllSaleStagesRequest)
+[List\_GetAllSaleStagesRequest](SuperOffice.WebApi.Data.List\_GetAllSaleStagesRequest.md)
 
 #### Inherited Members
 

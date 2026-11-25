@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketRelationActionChild"></a> Class TicketRelationActionChild
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketRelationActionChild.
@@ -13,7 +13,7 @@ public class TicketRelationActionChild
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketRelationActionChild](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationActionChild)
+[TicketRelationActionChild](SuperOffice.WebApi.Data.TicketRelationActionChild.md)
 
 #### Inherited Members
 
@@ -61,11 +61,11 @@ public TicketSecurityLevel? Slevel { get; set; }
 
 #### Property Value
 
- [TicketSecurityLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSecurityLevel)?
+ [TicketSecurityLevel](SuperOffice.WebApi.Data.TicketSecurityLevel.md)?
 
 #### See Also
 
-[TicketRelationActionChild](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationActionChild).[Slevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationActionChild#SuperOffice_WebApi_Data_TicketRelationActionChild_Slevel_String)
+[TicketRelationActionChild](SuperOffice.WebApi.Data.TicketRelationActionChild.md).[Slevel\_String](SuperOffice.WebApi.Data.TicketRelationActionChild.md\#SuperOffice\_WebApi\_Data\_TicketRelationActionChild\_Slevel\_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationActionChild_Slevel_String"></a> Slevel\_String
 
@@ -83,7 +83,7 @@ public string Slevel_String { get; set; }
 
 #### See Also
 
-[TicketRelationActionChild](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationActionChild).[Slevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationActionChild#SuperOffice_WebApi_Data_TicketRelationActionChild_Slevel)
+[TicketRelationActionChild](SuperOffice.WebApi.Data.TicketRelationActionChild.md).[Slevel](SuperOffice.WebApi.Data.TicketRelationActionChild.md\#SuperOffice\_WebApi\_Data\_TicketRelationActionChild\_Slevel)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationActionChild_TicketId"></a> TicketId
 
@@ -99,5 +99,5 @@ public virtual int TicketId { get; set; }
 
 ## See Also
 
-[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
+[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
 

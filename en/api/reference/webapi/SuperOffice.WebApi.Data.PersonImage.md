@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PersonImage"></a> Class PersonImage
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PersonImage.
@@ -13,7 +13,7 @@ public class PersonImage
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PersonImage](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonImage)
+[PersonImage](SuperOffice.WebApi.Data.PersonImage.md)
 
 #### Inherited Members
 
@@ -63,5 +63,5 @@ public virtual int PersonId { get; set; }
 
 ## See Also
 
-[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent)
+[PersonAgent](SuperOffice.WebApi.Agents.PersonAgent.md)
 

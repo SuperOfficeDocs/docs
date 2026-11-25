@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_LandingPageEntity"></a> Class LandingPageEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for LandingPageEntity.
@@ -13,13 +13,13 @@ public class LandingPageEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[LandingPageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -93,7 +93,7 @@ public virtual MDOListItem[] PinnedEntities { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_LandingPageEntity_PinnedSelections"></a> PinnedSelections
 
@@ -105,7 +105,7 @@ public virtual MDOListItem[] PinnedSelections { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_LandingPageEntity_SelectionId"></a> SelectionId
 
@@ -129,9 +129,9 @@ public virtual LandingPageTab[] Tabs { get; set; }
 
 #### Property Value
 
- [LandingPageTab](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab)\[\]
+ [LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md)\[\]
 
 ## See Also
 
-[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent)
+[ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md)
 

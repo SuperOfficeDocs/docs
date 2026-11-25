@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AlarmData"></a> Class AlarmData
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AlarmData.
@@ -12,13 +12,13 @@ public class AlarmData : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -85,11 +85,11 @@ public AppointmentType? AppointmentType { get; set; }
 
 #### Property Value
 
- [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)?
+ [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)?
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[AppointmentType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_AppointmentType_String)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[AppointmentType\_String](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_AppointmentType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_AppointmentType_String"></a> AppointmentType\_String
 
@@ -107,7 +107,7 @@ public string AppointmentType_String { get; set; }
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_AppointmentType)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[AppointmentType](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_AppointmentType)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_AssignmentStatus"></a> AssignmentStatus
 
@@ -121,11 +121,11 @@ public AssignmentStatus? AssignmentStatus { get; set; }
 
 #### Property Value
 
- [AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssignmentStatus)?
+ [AssignmentStatus](SuperOffice.WebApi.Data.AssignmentStatus.md)?
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[AssignmentStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_AssignmentStatus_String)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[AssignmentStatus\_String](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_AssignmentStatus\_String)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_AssignmentStatus_String"></a> AssignmentStatus\_String
 
@@ -143,7 +143,7 @@ public string AssignmentStatus_String { get; set; }
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_AssignmentStatus)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[AssignmentStatus](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_AssignmentStatus)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_BookingType"></a> BookingType
 
@@ -157,11 +157,11 @@ public BookingType? BookingType { get; set; }
 
 #### Property Value
 
- [BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BookingType)?
+ [BookingType](SuperOffice.WebApi.Data.BookingType.md)?
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[BookingType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_BookingType_String)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[BookingType\_String](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_BookingType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_BookingType_String"></a> BookingType\_String
 
@@ -179,7 +179,7 @@ public string BookingType_String { get; set; }
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_BookingType)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[BookingType](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_BookingType)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_ContactDepartment"></a> ContactDepartment
 
@@ -263,11 +263,11 @@ public InvitationStatus? InvitationStatus { get; set; }
 
 #### Property Value
 
- [InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.InvitationStatus)?
+ [InvitationStatus](SuperOffice.WebApi.Data.InvitationStatus.md)?
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[InvitationStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_InvitationStatus_String)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[InvitationStatus\_String](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_InvitationStatus\_String)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_InvitationStatus_String"></a> InvitationStatus\_String
 
@@ -285,7 +285,7 @@ public string InvitationStatus_String { get; set; }
 
 #### See Also
 
-[AlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData).[InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AlarmData#SuperOffice_WebApi_Data_AlarmData_InvitationStatus)
+[AlarmData](SuperOffice.WebApi.Data.AlarmData.md).[InvitationStatus](SuperOffice.WebApi.Data.AlarmData.md\#SuperOffice\_WebApi\_Data\_AlarmData\_InvitationStatus)
 
 ### <a id="SuperOffice_WebApi_Data_AlarmData_JoinVideomeetUrl"></a> JoinVideomeetUrl
 
@@ -403,5 +403,5 @@ public virtual string TaskName { get; set; }
 
 ## See Also
 
-[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
+[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_SaveAvailableFontRequest"></a> Class Marketing\_SaveAvailableFontRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_SaveAvailableFontRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_SaveAvailableFontRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_SaveAvailableFontRequest)
+[Marketing\_SaveAvailableFontRequest](SuperOffice.WebApi.Data.Marketing\_SaveAvailableFontRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public AvailableFont Font { get; set; }
 
 #### Property Value
 
- [AvailableFont](/en/api/reference/webapi/SuperOffice.WebApi.Data.AvailableFont)
+ [AvailableFont](SuperOffice.WebApi.Data.AvailableFont.md)
 

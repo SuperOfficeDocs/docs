@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignAppEntity"></a> Class ForeignAppEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ForeignAppEntity.
@@ -12,13 +12,13 @@ public class ForeignAppEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -36,7 +36,7 @@ var foreignAppEntity = agent.GetForeignAppEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
+Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
             All ForeignAppEntity: <pre><code class="lang-csharp">"ForeignKeys"</code></pre>
 
 ## Constructors
@@ -61,7 +61,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_ForeignAppEntity_CreatedDate"></a> CreatedDate
 
@@ -85,7 +85,7 @@ public virtual ForeignDevice[] Devices { get; set; }
 
 #### Property Value
 
- [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\[\]
+ [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ForeignAppEntity_ForeignAppId"></a> ForeignAppId
 
@@ -121,7 +121,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_ForeignAppEntity_UpdatedDate"></a> UpdatedDate
 
@@ -137,7 +137,7 @@ public virtual DateTime UpdatedDate { get; set; }
 
 ## See Also
 
-[ForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ForeignSystemAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
+[ForeignSystemAgent](SuperOffice.WebApi.Agents.ForeignSystemAgent.md), 
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
 
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetBoardViewSettingsForSelectionRequest"></a> Class Selection\_GetBoardViewSettingsForSelectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetBoardViewSettingsForSelectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetBoardViewSettingsForSelectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetBoardViewSettingsForSelectionRequest)
+[Selection\_GetBoardViewSettingsForSelectionRequest](SuperOffice.WebApi.Data.Selection\_GetBoardViewSettingsForSelectionRequest.md)
 
 #### Inherited Members
 

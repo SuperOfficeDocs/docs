@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_RemovePhotoBackgroundRequest"></a> Class AI\_RemovePhotoBackgroundRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_RemovePhotoBackgroundRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_RemovePhotoBackgroundRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_RemovePhotoBackgroundRequest)
+[AI\_RemovePhotoBackgroundRequest](SuperOffice.WebApi.Data.AI\_RemovePhotoBackgroundRequest.md)
 
 #### Inherited Members
 

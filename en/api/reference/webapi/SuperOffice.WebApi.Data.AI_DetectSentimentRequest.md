@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_DetectSentimentRequest"></a> Class AI\_DetectSentimentRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_DetectSentimentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_DetectSentimentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_DetectSentimentRequest)
+[AI\_DetectSentimentRequest](SuperOffice.WebApi.Data.AI\_DetectSentimentRequest.md)
 
 #### Inherited Members
 

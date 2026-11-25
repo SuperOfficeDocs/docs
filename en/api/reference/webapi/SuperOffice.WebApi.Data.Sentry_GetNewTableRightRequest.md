@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sentry_GetNewTableRightRequest"></a> Class Sentry\_GetNewTableRightRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sentry_GetNewTableRightRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sentry\_GetNewTableRightRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sentry_GetNewTableRightRequest)
+[Sentry\_GetNewTableRightRequest](SuperOffice.WebApi.Data.Sentry\_GetNewTableRightRequest.md)
 
 #### Inherited Members
 
