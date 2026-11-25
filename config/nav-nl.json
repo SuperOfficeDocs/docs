@@ -554,6 +554,7 @@
         "root": "nl/request/learn/index",
         "pages": [
           "nl/request/index",
+          "nl/request/learn/personalize",
           "nl/request/learn/work-with-requests",
           "nl/request/learn/find",
           "nl/request/learn/create",
@@ -574,7 +575,6 @@
           "nl/request/learn/postpone",
           "nl/request/learn/close",
           "nl/request/learn/delete",
-          "nl/request/learn/personalize",
           {
             "group": "Voor beheerders",
             "root": "nl/request/admin/index",

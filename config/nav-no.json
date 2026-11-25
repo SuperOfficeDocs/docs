@@ -554,6 +554,7 @@
         "root": "no/request/learn/index",
         "pages": [
           "no/request/index",
+          "no/request/learn/personalize",
           "no/request/learn/work-with-requests",
           "no/request/learn/find",
           "no/request/learn/create",
@@ -574,7 +575,6 @@
           "no/request/learn/postpone",
           "no/request/learn/close",
           "no/request/learn/delete",
-          "no/request/learn/personalize",
           {
             "group": "For administratorer",
             "root": "no/request/admin/index",

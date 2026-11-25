@@ -554,6 +554,7 @@
         "root": "de/request/learn/index",
         "pages": [
           "de/request/index",
+          "de/request/learn/personalize",
           "de/request/learn/work-with-requests",
           "de/request/learn/find",
           "de/request/learn/create",
@@ -574,7 +575,6 @@
           "de/request/learn/postpone",
           "de/request/learn/close",
           "de/request/learn/delete",
-          "de/request/learn/personalize",
           {
             "group": "Für Admins",
             "root": "de/request/admin/index",

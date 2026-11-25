@@ -567,6 +567,7 @@
     "root": "en/request/learn/index",
     "pages": [
       "en/request/index",
+      "en/request/learn/personalize",
       "en/request/learn/work-with-requests",
       "en/request/learn/find",
       "en/request/learn/create",
@@ -587,7 +588,6 @@
       "en/request/learn/postpone",
       "en/request/learn/close",
       "en/request/learn/delete",
-      "en/request/learn/personalize",
       {
         "group": "For administrators",
         "root": "en/request/admin/index",
