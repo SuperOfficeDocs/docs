@@ -4,7 +4,7 @@ title: Brug af sager i ruder
 description: I denne vejledning lærer du, hvordan du får et hurtigt overblik over alle åbne sager i SuperOffice-dashboards.
 keywords: ['dashboard', 'sag', 'rude']
 author: digitaldiina
-date: 11.24.2026
+date: 11.25.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -14,7 +14,7 @@ related:
   - /da/dashboard/learn/create
   - Rediger dashboardruder: /da/dashboard/learn/working-with-tiles
   - /da/request/learn/create
-  - Sagshåndtering: /da/request/learn/work-with-requests#request-mgt
+  - Typiske scenarier: /da/request/learn/work-with-requests#request-mgt
   - Find anmodninger: /da/request/learn/find
 language: da
 ---
