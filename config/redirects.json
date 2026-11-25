@@ -3598,7 +3598,7 @@
   },
   {
     "source": "/da/request/learn/handle-request-ai*",
-    "destination": "/da/request/learn/index"
+    "destination": "/da/ai/learn/index"
   },
   {
     "source": "/da/request/learn/howto/*",
@@ -7962,7 +7962,7 @@
   },
   {
     "source": "/de/request/learn/handle-request-ai*",
-    "destination": "/de/request/learn/index"
+    "destination": "/de/ai/learn/index"
   },
   {
     "source": "/de/request/learn/howto/*",
@@ -17210,7 +17210,7 @@
   },
   {
     "source": "/en/request/learn/handle-request-ai*",
-    "destination": "/en/request/learn/index"
+    "destination": "/en/ai/learn/index"
   },
   {
     "source": "/en/request/learn/howto/*",
@@ -22762,7 +22762,7 @@
   },
   {
     "source": "/nl/request/learn/handle-request-ai*",
-    "destination": "/nl/request/learn/index"
+    "destination": "/nl/ai/learn/index"
   },
   {
     "source": "/nl/request/learn/howto/*",
@@ -27118,7 +27118,7 @@
   },
   {
     "source": "/no/request/learn/handle-request-ai*",
-    "destination": "/no/request/learn/index"
+    "destination": "/no/ai/learn/index"
   },
   {
     "source": "/no/request/learn/howto/*",
@@ -31990,7 +31990,7 @@
   },
   {
     "source": "/sv/request/learn/handle-request-ai*",
-    "destination": "/sv/request/learn/index"
+    "destination": "/sv/ai/learn/index"
   },
   {
     "source": "/sv/request/learn/howto/*",
