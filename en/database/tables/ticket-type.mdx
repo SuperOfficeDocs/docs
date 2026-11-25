@@ -38,6 +38,8 @@ A ticket (request) type
 |visible\_for\_groups|Array of references to the visible for groups|FKArray|Yes|
 |reply\_forward\_no\_signature|Do not insert user signature when replying or forwarding the message|Bool|No|
 |reply\_external\_as\_default|Set external access level when replying the message|Bool|No|
+|postpone\_option\_id|The postpone option used when default_status is a Postponed status. 0 = not set|FK [ticket_status_postpone](./ticket-status-postpone.mdx)|No|
+
 
 ![ticket_type table relationship diagram](/media/loc/en/database/tables/ticket_type.png)
 
@@ -65,9 +67,11 @@ A ticket (request) type
 |[ticket\_priority](./ticket-priority)  |This table contains the ticket priorities. |
 |[ticket\_rel\_def\_ticket\_type](./ticket-rel-def-ticket-type)  |Link table defining what Ticket types are involved in this relation. Will have M:N rows for a single relation definition |
 |[ticket\_status](./ticket-status)  |This table user defined ticket status values. |
+|[ticket\_status\_postpone](./ticket-status-postpone)  |Postpone options agents can choose when setting a ticket to this Postponed status. A status without rows offers the standard options |
 |[ticket\_type\_priority](./ticket-type-priority)  |Link table defining what Priorities are relevant to a particular Ticket type |
 |[ticket\_type\_status](./ticket-type-status)  |Link table defining what Statuses are relevant to a particular Ticket type |
 |[UserGroup](./usergroup)  |Secondary user groups |
+
 
 ## Replication Flags
 
@@ -76,3 +80,4 @@ A ticket (request) type
 ## Security Flags
 
 * No access control via user's Role.
+

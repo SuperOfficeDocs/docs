@@ -1,6 +1,6 @@
 ---
 title: ProjectStaticSelectionV2
-description:
+description: 
 keywords: ProjectStaticSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "ProjectStaticSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionStaticProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |saintDirection|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintIntention|listAny||  |
@@ -227,7 +224,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |sale/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/saleUdef/SuperOffice:1|string|| x |
@@ -332,7 +328,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |appointment/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointment/text|positiveString|| x |
@@ -437,7 +432,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |projectMember/updated|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/textId|int|| x |
@@ -542,7 +536,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |projectMember/restrictionAddress/state|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/restrictionAddress/wgs84latitude|decimal|| x |
@@ -647,7 +640,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
@@ -752,7 +744,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |projectMember/contactAssociate/ejUserId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/simultaneousEjUser|bool||  |
@@ -842,11 +833,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectStaticSelectionV2?$select=NumberOfNotCompletedActivitiesInPeriod,sale/personId,sale/projectId,sale/nextDueDate,sale/sale/textId
+GET /api/v1/archive/ProjectStaticSelectionV2?$select=projectUdef/SuperOffice:9,sale/associate/isActive,document/keywords,document/recordTypeText,projectMember/personExtra/y_rental/x_start
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

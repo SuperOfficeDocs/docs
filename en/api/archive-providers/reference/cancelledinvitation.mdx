@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "CancelledInvitation"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.CancelledInvitationProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.CancelledInvitationProvider">SuperOffice.CRM.ArchiveLists.CancelledInvitationProvider</see> inside NetServer's SODatabase assembly.
 
 This is the query provider for invitations, of subtype 'Cancelled'
 
@@ -17,13 +17,11 @@ A cancelled invitation is one that has been cancelled by the owner and is not ov
 This is an optional entity and is fetched only if the user checks the corresponding box.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"cancelled"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -127,7 +125,6 @@ This is an optional entity and is fetched only if the user checks the correspond
 |contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/description|string|| x |
@@ -232,7 +229,6 @@ This is an optional entity and is fetched only if the user checks the correspond
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_date|date|| x |
@@ -337,7 +333,6 @@ This is an optional entity and is fetched only if the user checks the correspond
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -442,7 +437,6 @@ This is an optional entity and is fetched only if the user checks the correspond
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -547,7 +541,6 @@ This is an optional entity and is fetched only if the user checks the correspond
 |project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUrl/URLDescription|string|| x |
@@ -652,7 +645,6 @@ This is an optional entity and is fetched only if the user checks the correspond
 |sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/originalStage|listAny|| x |
@@ -757,7 +749,6 @@ This is an optional entity and is fetched only if the user checks the correspond
 |associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/portraitThumbnail| *None* ||  |
@@ -780,11 +771,12 @@ This is an optional entity and is fetched only if the user checks the correspond
 ## Sample
 
 ```http!
-GET /api/v1/archive/CancelledInvitation?$select=getNoRows,invitedPersonId,contact/code,contact/NumberOfActivities,person/personAssociate/assocName
+GET /api/v1/archive/CancelledInvitation?$select=colorIndex,contact/hasInfoText,contact/contactAssociate/ejUserId,person/personHasInterests,person/personUpdatedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectGuideAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ProjectGuideAppointmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ProjectGuideAppointmentProvider">SuperOffice.CRM.ArchiveLists.ProjectGuideAppointmentProvider</see> inside NetServer's SODatabase assembly.
 
 Specific provider for Project Guide Items of type Appointment
 
@@ -17,7 +17,6 @@ This class provides the needed overrides and concrete implementations needed by 
 to drive the sentry calculations, as well as the specialization with the correct root extender
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"suggestedAppointment"||
@@ -26,7 +25,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |"milestone"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -130,7 +128,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/numEmployees|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/yearFounded|int|| x |
@@ -235,7 +232,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/contactUdef/SuperOffice:5|unlimitedDate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactUdef/SuperOffice:6|bool|| x |
@@ -340,7 +336,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/personCategoryGroup|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personCategoryRank|int|| x |
@@ -445,7 +440,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/personAssociate/fullName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personAssociate/contactId|int||  |
@@ -550,7 +544,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/project/nextMilestone|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/project/endDate|date|| x |
@@ -655,7 +648,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/sale/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/sale/registeredByFullName|associate|| x |
@@ -760,7 +752,6 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/associate/usergroupId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/associate/contactFullName|string|| x |
@@ -797,11 +788,12 @@ to drive the sentry calculations, as well as the specialization with the correct
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectGuideAppointment?$select=appointmentInstance/contact/country,appointmentInstance/contact/searchPhone/description,appointmentInstance/person/correspondingAssociate/isActiveText
+GET /api/v1/archive/ProjectGuideAppointment?$select=hasInstance,appointmentInstance/time,appointmentInstance/person/personPrivate/formattedNumber,appointmentInstance/person/personUdef/SuperOffice:10,appointmentInstance/project/endDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

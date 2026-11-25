@@ -1,7 +1,7 @@
 ---
 title: activelanguage
 keywords: mdoprovider mdo provider activelanguage
-description:
+description: 
 generated: true
 content_type: reference
 envir: online
@@ -9,12 +9,16 @@ envir: online
 
 ## "activelanguage" MDO List
 
-Implemented by the ActiveLanguageProvider class.
+
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.ActiveLanguageProvider">ActiveLanguageProvider</see> class.
 The name of the MDO list is 'activelanguage'.
 
-## Sample Request
 
-<div className="wrap-code-samples">
+
+
+## Sample Request
 
 ```http!
 GET /api/v1/MDOList/activelanguage
@@ -24,12 +28,7 @@ Accept-Language: *
 
 ```
 
-</div>
-
 ## Sample Code
-
-<div className="wrap-code-samples">
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("activelanguage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -37,8 +36,6 @@ foreach (var item in listProvider.RootItems) {
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
-
-</div>
 
 ## Sample Output
 
@@ -64,6 +61,7 @@ foreach (var item in listProvider.RootItems) {
 |1042|한국어|||
 |2052|中文|||
 |1041|日本語|||
+
 
 ## Related MDO Lists
 

@@ -1,6 +1,6 @@
 ---
 title: ContactPersonDynamicSelectionV2
-description: Contact + Person selection archive with OR-able selection groups. Each group is represented with the SaleSelectionDynamicProviderSingleCriteriaGroup.
+description: Contact + Person selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: ContactPersonDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,19 +9,17 @@ envir: onsite, online
 
 ## "ContactPersonDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Contact + Person selection archive with OR-able selection groups. Each group is represented with the [SaleSelectionDynamicProviderSingleCriteriaGroup](./saledynamicselectionsinglecriteriagroup).
+Contact + Person selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 |"person"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -125,7 +123,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |contactAssociate/fullName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/contactId|int||  |
@@ -230,7 +227,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sourceRelation/category|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/categoryGroup|listAny|| x |
@@ -335,7 +331,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/competitor|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/heading|stringorPK|| x |
@@ -440,7 +435,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |appointment/appointmentId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/endDate|date|| x |
@@ -545,7 +539,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |document/registeredByFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/registeredDate|date|| x |
@@ -650,7 +643,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |supportAssociateFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociateId|associate|| x |
@@ -755,7 +747,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personSourceRelation/title|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personCountry|listAny|| x |
@@ -860,7 +851,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personTargetRelation/isStakeholder|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/updatedByWorkflow|listAny|| x |
@@ -965,7 +955,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |workflowInstance/workflowInstanceCurrentStepDescription| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |workflowInstance/workflowInstanceCurrentStepId| *None* ||  |
@@ -991,11 +980,11 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |workflowInstance/emailFlow/workflowDefinitionStatusId|listAny|| x |
 |workflowInstance/emailFlow/jumpToFinish|bool|| x |
 |workflowInstance/emailFlow/startOnlyOnce|bool|| x |
-|workflowInstance/emailFlow/workflowEnrolledCount| *None* ||  |
-|workflowInstance/emailFlow/workflowInProgressCount| *None* ||  |
-|workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowEnrolledCount|int|| x |
+|workflowInstance/emailFlow/workflowInProgressCount|int|| x |
+|workflowInstance/emailFlow/workflowCompletedCount|int|| x |
+|workflowInstance/emailFlow/workflowSucceededCount|int|| x |
+|workflowInstance/emailFlow/workflowSuccessRate|decimal|| x |
 |workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
@@ -1070,7 +1059,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |request/realTimeSpentExternally|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/realTimeSpentInternally|timeSpan|| x |
@@ -1175,7 +1163,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |request/extra/x\_ticket\_time| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_boolean|bool|| x |
@@ -1280,7 +1267,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |projectMembers/NumberOfNotCompletedSales|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/NumberOfNotCompletedSalesInPeriod|int||  |
@@ -1385,7 +1371,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personAppointment/associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/portraitThumbnail| *None* ||  |
@@ -1490,7 +1475,6 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/quote/version/alternative/quoteline/updatedByFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/quote/version/alternative/quoteline/updatedDate|date|| x |
@@ -1509,11 +1493,12 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonDynamicSelectionV2?$select=streetAddress/wgs84latitude,NumberOfTickets,SaintStatus1,saintTicketStatus,targetRelation/department
+GET /api/v1/archive/ContactPersonDynamicSelectionV2?$select=contactPhone/description,contactExtra/x_contact_contact,NumberOfActivitiesInPeriod,targetRelation/hasInfoText,sale/who
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

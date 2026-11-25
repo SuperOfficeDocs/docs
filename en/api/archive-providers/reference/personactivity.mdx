@@ -9,52 +9,42 @@ envir: onsite, online
 
 ## "PersonActivity"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.PersonActivityArchiveProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.PersonActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.PersonActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Person card
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
-|"chat"||
 |"formSubmission"||
+|"chat"||
 |"document"||
 |"mailing"||
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
 |getNoRows|bool||  |
-|chatSessionId|int|| x |
-|firstMessage|string|| x |
-|lastMessage|string|| x |
-|whenRequested|datetime|| x |
-|whenStarted|datetime|| x |
-|whenEnded|datetime|| x |
-|duration|timeSpan||  |
-|timeInQueue|timeSpan|| x |
-|queueLength|int|| x |
-|rating|int|| x |
-|agent|ejUser|| x |
-|status|listAny|| x |
+|formSubmissionId|int|| x |
+|formSubmissionFormId|int|| x |
+|formSubmissionName|string|| x |
+|formSubmissionStatus|listAny|| x |
+|formSubmissionEmail|string|| x |
 |icon| *None* || x |
 |date|date|| x |
+|time| *None* ||  |
 |type|listAny|| x |
 |text|positiveString|| x |
 |associateId|associate|| x |
 |contactId|listAny|| x |
 |personId|listAny|| x |
+|updatedBy|associate|| x |
 |updatedDate|date|| x |
+|registeredBy|associate|| x |
 |registeredDate|date|| x |
 |recordTypeText| *None* || x |
-|chatTopic/chatTopicId|int|| x |
-|chatTopic/name|string|| x |
-|chatTopic/description|string|| x |
-|chatTopic/badgeHeader|string|| x |
 |associate/firstName|string|| x |
 |associate/lastName|string|| x |
 |associate/middleName|string|| x |
@@ -63,6 +53,7 @@ Activity archive provider for the Person card
 |associate/personId|int||  |
 |associate/mrMrs|string|| x |
 |associate/title|string|| x |
+|associate/associateDbId|associate|| x |
 |associate/contactName|string|| x |
 |associate/contactDepartment|string|| x |
 |associate/usergroup|userGroup|| x |
@@ -126,11 +117,6 @@ Activity archive provider for the Person card
 |person/personLinkedinUrl|string|| x |
 |person/ticketPriority|listAny|| x |
 |person/supportLanguage|listAny|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |person/supportAssociate|associate|| x |
 |person/supportAssociateFullName|associate|| x |
 |person/personAssociateId|associate|| x |
@@ -138,6 +124,10 @@ Activity archive provider for the Person card
 |person/personCategory|listAny|| x |
 |person/personCategoryGroup|listAny|| x |
 |person/personCategoryRank|int|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |person/personBusiness|listAny|| x |
 |person/leadStatus|listAny|| x |
 |person/leadstatusRank|int|| x |
@@ -231,11 +221,6 @@ Activity archive provider for the Person card
 |person/personExtra/y\_rental/x\_end|date|| x |
 |person/personExtra/y\_rental/x\_amount|int|| x |
 |person/personExtra/y\_rental/x\_contact|stringorPK|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/y\_equipment/x\_name|string|| x |
 |person/personExtra/y\_car/id|int|| x |
 |person/personAssociate/firstName|string|| x |
@@ -243,6 +228,10 @@ Activity archive provider for the Person card
 |person/personAssociate/middleName|string|| x |
 |person/personAssociate/fullName|string|| x |
 |person/personAssociate/contactId|int||  |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |person/personAssociate/personId|int||  |
 |person/personAssociate/mrMrs|string|| x |
 |person/personAssociate/title|string|| x |
@@ -336,11 +325,6 @@ Activity archive provider for the Person card
 |contact/updatedByFullName|associate|| x |
 |contact/updatedDate|date|| x |
 |contact/registeredBy|associate|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |contact/registeredByFullName|associate|| x |
 |contact/registeredDate|date|| x |
 |contact/contactSource|listAny|| x |
@@ -348,6 +332,10 @@ Activity archive provider for the Person card
 |contact/phone/formattedNumber|string||  |
 |contact/activeErpLinks|bool|| x |
 |contact/numEmployees|int|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |contact/yearFounded|int|| x |
 |contact/revenueYear|int|| x |
 |contact/revenueBasecurrency|decimal|| x |
@@ -441,11 +429,6 @@ Activity archive provider for the Person card
 |contact/contactAssociate/userName|string|| x |
 |contact/contactAssociate/personEmail|string|| x |
 |contact/contactAssociate/locationAddress|string|| x |
-
-## Supported Columns (cont.)
-
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isLocation|bool|| x |
 |contact/contactInterestIds|listInterest||  |
 |contact/contactUdef/SuperOffice:1|string|| x |
@@ -453,6 +436,10 @@ Activity archive provider for the Person card
 |contact/contactUdef/SuperOffice:3|int|| x |
 |contact/contactUdef/SuperOffice:4|date|| x |
 |contact/contactUdef/SuperOffice:5|unlimitedDate|| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:6|bool|| x |
 |contact/contactUdef/SuperOffice:7|listAny|| x |
 |contact/contactUdef/SuperOffice:8|decimal|| x |
@@ -508,15 +495,22 @@ Activity archive provider for the Person card
 |contact/saintIntention|listAny||  |
 |contact/saintTicketStatus|listAny||  |
 |contact/saintTicketCategory|listAny||  |
-|formSubmissionId|int|| x |
-|formSubmissionFormId|int|| x |
-|formSubmissionName|string|| x |
-|formSubmissionStatus|listAny|| x |
-|formSubmissionEmail|string|| x |
-|time| *None* ||  |
-|updatedBy|associate|| x |
-|registeredBy|associate|| x |
-|associate/associateDbId|associate|| x |
+|chatSessionId|int|| x |
+|firstMessage|string|| x |
+|lastMessage|string|| x |
+|whenRequested|datetime|| x |
+|whenStarted|datetime|| x |
+|whenEnded|datetime|| x |
+|duration|timeSpan||  |
+|timeInQueue|timeSpan|| x |
+|queueLength|int|| x |
+|rating|int|| x |
+|agent|ejUser|| x |
+|status|listAny|| x |
+|chatTopic/chatTopicId|int|| x |
+|chatTopic/name|string|| x |
+|chatTopic/description|string|| x |
+|chatTopic/badgeHeader|string|| x |
 |completed|bool|| x |
 |recordType|string|| x |
 |projectId|listAny|| x |
@@ -548,7 +542,6 @@ Activity archive provider for the Person card
 |project/number|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/type|listAny|| x |
@@ -653,7 +646,6 @@ Activity archive provider for the Person card
 |documentUdef/SuperOffice:2|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentUdef/SuperOffice:3|int|| x |
@@ -758,7 +750,6 @@ Activity archive provider for the Person card
 |sale/associate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/personEmail|string|| x |
@@ -799,6 +790,7 @@ Activity archive provider for the Person card
 |recipientStatus|listAny||  |
 |thumbnail| *None* ||  |
 |sortName| *None* || x |
+|sortDefault| *None* || x |
 |mailingAddr/mailingAddrId|int|| x |
 |emailFlow/emailFlowId|int|| x |
 |emailFlow/emailFlowHierarchyId|int|| x |
@@ -813,11 +805,11 @@ Activity archive provider for the Person card
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
@@ -860,12 +852,11 @@ Activity archive provider for the Person card
 |emailFlow/hierarchyFullname|string|| x |
 |emailFlow/hierarchyName|string|| x |
 |emailFlow/hierarchyParentId|int|| x |
-|emailFlow/hierarchyFullpathIds| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/hierarchyFullpathIds| *None* ||  |
 |historyRank|int|| x |
 |participating|bool||  |
 |appointmentId|int|| x |
@@ -918,11 +909,12 @@ Activity archive provider for the Person card
 ## Sample
 
 ```http!
-GET /api/v1/archive/PersonActivity?$select=contact/phone/formattedNumber,contact/email/emailLastSent,contact/postAddress/line3,contact/streetAddress/city,contact/contactAssociate/contactCategory
+GET /api/v1/archive/PersonActivity?$select=associate/fullName,person/personAssociate/role,contact/countryId,contact/contactAssociate/usergroupId,contact/contactAssociate/personEmail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

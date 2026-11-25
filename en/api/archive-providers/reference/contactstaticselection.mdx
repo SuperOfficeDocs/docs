@@ -1,6 +1,6 @@
 ---
 title: ContactStaticSelection
-description:
+description: 
 keywords: ContactStaticSelection archive provider
 generated: true
 content_type: reference
@@ -9,17 +9,15 @@ envir: onsite, online
 
 ## "ContactStaticSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionStaticProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionStaticProvider">SuperOffice.CRM.ArchiveLists.SelectionStaticProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"staticContact"||
 |"staticPerson"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -123,7 +121,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |contactAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/fullName|string|| x |
@@ -228,7 +225,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |sourceRelation/associateId| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/category| *None* ||  |
@@ -333,7 +329,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |sale/source| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/competitor| *None* ||  |
@@ -438,7 +433,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |appointment/registeredDate| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointmentId| *None* ||  |
@@ -543,7 +537,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |document/registeredBy| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/registeredByFullName| *None* ||  |
@@ -648,7 +641,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |supportAssociate|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |supportAssociateFullName|associate|| x |
@@ -753,7 +745,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personSourceRelation/lastName| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/middleName| *None* ||  |
@@ -858,7 +849,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personTargetRelation/personAssociateFullName| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/personCategory| *None* ||  |
@@ -963,7 +953,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/createdAt| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/createdDate| *None* ||  |
@@ -1068,7 +1057,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/ownedBy/otherGroups| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/ownedBy/userName| *None* ||  |
@@ -1173,7 +1161,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |projectMembers/projectUdef/SuperOffice:4| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/projectUdef/SuperOffice:5| *None* ||  |
@@ -1278,7 +1265,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personAppointment/associate/contactDepartment| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/usergroup| *None* ||  |
@@ -1317,11 +1303,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactStaticSelection?$select=deletedDate,contactPhone/formattedNumber,restrictionAddress/county,contactAssociate/assocName,LastTicket
+GET /api/v1/archive/ContactStaticSelection?$select=name,contactAssociate/simultaneousEjUser,sale/icon,sale/time,appointment/appointmentPublish/publishedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

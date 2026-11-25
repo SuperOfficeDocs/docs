@@ -9,19 +9,17 @@ envir: onsite, online
 
 ## "ContactSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.SelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"staticContact"||
 |"staticPerson"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -125,7 +123,6 @@ Implementation of the provider for the combined selection
 |contactAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/fullName|string|| x |
@@ -230,7 +227,6 @@ Implementation of the provider for the combined selection
 |sourceRelation/associateId| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/category| *None* ||  |
@@ -335,7 +331,6 @@ Implementation of the provider for the combined selection
 |sale/source| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/competitor| *None* ||  |
@@ -440,7 +435,6 @@ Implementation of the provider for the combined selection
 |appointment/registeredDate| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointmentId| *None* ||  |
@@ -545,7 +539,6 @@ Implementation of the provider for the combined selection
 |document/registeredBy| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/registeredByFullName| *None* ||  |
@@ -650,7 +643,6 @@ Implementation of the provider for the combined selection
 |supportAssociate|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |supportAssociateFullName|associate|| x |
@@ -755,7 +747,6 @@ Implementation of the provider for the combined selection
 |personSourceRelation/lastName| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/middleName| *None* ||  |
@@ -860,7 +851,6 @@ Implementation of the provider for the combined selection
 |personTargetRelation/personAssociateFullName| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/personCategory| *None* ||  |
@@ -965,7 +955,6 @@ Implementation of the provider for the combined selection
 |request/createdAt| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/createdDate| *None* ||  |
@@ -1070,7 +1059,6 @@ Implementation of the provider for the combined selection
 |request/ownedBy/otherGroups| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/ownedBy/userName| *None* ||  |
@@ -1175,7 +1163,6 @@ Implementation of the provider for the combined selection
 |projectMembers/projectUdef/SuperOffice:4| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/projectUdef/SuperOffice:5| *None* ||  |
@@ -1280,7 +1267,6 @@ Implementation of the provider for the combined selection
 |personAppointment/associate/contactDepartment| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/usergroup| *None* ||  |
@@ -1319,11 +1305,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactSelectionCombined?$select=NumberOfActivitiesInPeriod,SaintStatus2,sourceRelation/hasInterests,targetRelation/updatedDate,sale/registeredByFullName
+GET /api/v1/archive/ContactSelectionCombined?$select=selectionMemberId,mainContact,contactAssociate/isActiveText,saintActivityType,sourceRelation/csRelation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

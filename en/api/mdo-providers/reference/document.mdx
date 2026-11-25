@@ -8,11 +8,15 @@ envir: online
 ---
 
 ## "document" MDO List
-
 MDO list provider for documents.
 
-Implemented by the DocumentListProvider class.
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.DocumentListProvider">DocumentListProvider</see> class.
 The name of the MDO list is 'document'.
+
+
+
 
 ## Sample Request
 
@@ -25,7 +29,6 @@ Accept-Language: *
 ```
 
 ## Sample Code
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("document", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -59,6 +62,7 @@ foreach (var item in listProvider.RootItems) {
 |70|Document for Fish company||70|
 |13|GBrevGBB||13|
 |24|HBrevHDD||24|
+
 
 ## Related MDO Lists
 

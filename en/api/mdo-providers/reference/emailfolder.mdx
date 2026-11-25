@@ -1,25 +1,27 @@
 ---
 title: emailfolder
 keywords: mdoprovider mdo provider emailfolder
-description: EmailFolderProvider gives you the folder hierarchy of a given mail account
+description: EmailFolderProvider gives you the folder hierarchy of one of the current associate's mail accounts. Folders of other associates' accounts are never listed, not even for administrators.
 generated: true
 content_type: reference
 envir: online
 ---
 
 ## "emailfolder" MDO List
-EmailFolderProvider gives you the folder hierarchy of a given mail account
+EmailFolderProvider gives you the folder hierarchy of one of the current associate's mail accounts.
+Folders of other associates' accounts are never listed, not even for administrators.
 
 
 
-Implemented by the EmailFolderProvider class.
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.EmailFolderProvider">EmailFolderProvider</see> class.
 The name of the MDO list is 'emailfolder'.
 
 ## Additional Attributes
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|Id of the account for which you want the folders| accountId|0|
+|Id of one of your own mail accounts; other accounts give no folders| accountId|0|
+|Your own associate id: the folders of your mail account; other associates give no folders| associateId|0|
 |Use hierarchy| hierarchy|true|
 
 Separator: &

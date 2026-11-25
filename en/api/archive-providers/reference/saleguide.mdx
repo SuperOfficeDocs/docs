@@ -9,14 +9,13 @@ envir: onsite, online
 
 ## "SaleGuide"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleGuideProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleGuideProvider">SuperOffice.CRM.ArchiveLists.SaleGuideProvider</see> inside NetServer's SODatabase assembly.
 
 Provider for the Sale Guide, common to both Appointment and Document guide items and instances
 
 This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"suggestedAppointment"||
@@ -25,7 +24,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |"document"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -129,7 +127,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/yearFounded| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/revenueYear| *None* ||  |
@@ -234,7 +231,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/contactUdef/SuperOffice:6| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactUdef/SuperOffice:7| *None* ||  |
@@ -339,7 +335,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personCategoryRank| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personBusiness| *None* ||  |
@@ -444,7 +439,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personAssociate/contactId| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personAssociate/personId| *None* ||  |
@@ -549,7 +543,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/project/endDate| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/project/imageThumbnail| *None* ||  |
@@ -654,7 +647,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/sale/registeredByFullName| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/sale/registeredDate| *None* ||  |
@@ -759,7 +751,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/associate/contactFullName| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/associate/contactCategory| *None* ||  |
@@ -864,7 +855,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personRegisteredDate| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/portraitThumbnail| *None* ||  |
@@ -969,7 +959,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personExtra/x\_person\_appointment\_relation| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/personExtra/x\_person\_contact\_relation| *None* ||  |
@@ -1074,7 +1063,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/orgnr| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/stop| *None* ||  |
@@ -1179,7 +1167,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/contactAssociate/isActive| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/contactAssociate/isActiveText| *None* ||  |
@@ -1284,7 +1271,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/project/projectEvent/hasSignOn| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/project/projectEvent/hasSignOff| *None* ||  |
@@ -1389,7 +1375,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/associate/userName| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/associate/personEmail| *None* ||  |
@@ -1494,7 +1479,6 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/sale/associate/credentialDisplayValue| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/sale/associate/isActive| *None* ||  |
@@ -1519,11 +1503,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleGuide?$select=appointmentInstance/text,appointmentInstance/contact/email/emailId,appointmentInstance/person/personNumber,appointmentInstance/person/retired,appointmentInstance/person/correspondingAssociate/assocName
+GET /api/v1/archive/SaleGuide?$select=appointmentInstance/userGroup,appointmentInstance/appointmentId,appointmentInstance/contact/email/emailLastBounce,appointmentInstance/contact/postAddress/addressId,appointmentInstance/person/birthdate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "FindAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindAppointmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindAppointmentProvider">SuperOffice.CRM.ArchiveLists.FindAppointmentProvider</see> inside NetServer's SODatabase assembly.
 
 Find appointment provider
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Find appointment provider
 |contact/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailAddress|string|| x |
@@ -229,7 +226,6 @@ Find appointment provider
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_time| *None* || x |
@@ -334,7 +330,6 @@ Find appointment provider
 |person/personMobilePhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personPrivate/formattedNumber|string||  |
@@ -439,7 +434,6 @@ Find appointment provider
 |person/personAssociate/ejUserId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/simultaneousEjUser|bool||  |
@@ -544,7 +538,6 @@ Find appointment provider
 |project/projectAssociate/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/lastName|string|| x |
@@ -649,7 +642,6 @@ Find appointment provider
 |sale/stage|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/stageName| *None* || x |
@@ -754,7 +746,6 @@ Find appointment provider
 |associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/userName|string|| x |
@@ -775,11 +766,12 @@ Find appointment provider
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindAppointment?$select=invitedPersonId,contact/email/emailLastSent,person/email/emailAddress,person/personExtra/y_rental/x_contact,person/personAssociate/credentialType
+GET /api/v1/archive/FindAppointment?$select=contact/searchPhone/description,contact/contactAssociate/portraitThumbnail,contact/contactAssociate/userName,contact/LastDoByActivity,person/personPager/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -1,6 +1,6 @@
 ---
 title: Notification
-description:
+description: 
 keywords: Notification archive provider
 generated: true
 content_type: reference
@@ -9,10 +9,9 @@ envir: onsite, online
 
 ## "Notification"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.NotificationProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.NotificationProvider">SuperOffice.CRM.ArchiveLists.NotificationProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"appointmentNew"||
@@ -33,7 +32,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Noti
 |"assignmentPerson"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -60,6 +58,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Noti
 |isSystemUserAssignment| *None* ||  |
 |category| *None* ||  |
 |customUrl| *None* ||  |
+|expires| *None* ||  |
 |type| *None* ||  |
 |ownerContactId| *None* ||  |
 |updatedAssocId| *None* ||  |
@@ -73,11 +72,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Noti
 ## Sample
 
 ```http!
-GET /api/v1/archive/Notification?$select=location,hasConflict
+GET /api/v1/archive/Notification?$select=invitedPersonId,location,recurrencePattern
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

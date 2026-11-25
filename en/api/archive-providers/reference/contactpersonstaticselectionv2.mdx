@@ -1,6 +1,6 @@
 ---
 title: ContactPersonStaticSelectionV2
-description:
+description: 
 keywords: ContactPersonStaticSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,17 +9,15 @@ envir: onsite, online
 
 ## "ContactPersonStaticSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionStaticProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"staticContact"||
 |"staticPerson"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -123,7 +121,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |contactAssociate/middleName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/fullName|string|| x |
@@ -228,7 +225,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |sourceRelation/associateId| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/category| *None* || x |
@@ -333,7 +329,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |sale/source| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/competitor| *None* || x |
@@ -438,7 +433,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |appointment/registeredDate| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointmentId| *None* || x |
@@ -543,7 +537,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |document/registeredBy| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/registeredByFullName| *None* || x |
@@ -648,7 +641,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |supportAssociate|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |supportAssociateFullName|associate|| x |
@@ -753,7 +745,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |personSourceRelation/lastName| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/middleName| *None* || x |
@@ -858,7 +849,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |personTargetRelation/personAssociateFullName| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/personCategory| *None* || x |
@@ -963,7 +953,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |request/createdAt| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/createdDate| *None* || x |
@@ -1068,7 +1057,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |request/ownedBy/otherGroups| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/ownedBy/userName| *None* || x |
@@ -1173,7 +1161,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |projectMembers/projectUdef/SuperOffice:4| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/projectUdef/SuperOffice:5| *None* || x |
@@ -1278,7 +1265,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 |personAppointment/associate/contactDepartment| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/usergroup| *None* || x |
@@ -1317,11 +1303,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonStaticSelectionV2?$select=category,contactInfo/textId,position,personExtra/x_person_longtext,personTargetRelation/retired
+GET /api/v1/archive/ContactPersonStaticSelectionV2?$select=getAllRows,postAddress/wgs84longitude,streetAddress/formattedMultiLineAddress,contactExtra/x_contact_contact,sale/competitor
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

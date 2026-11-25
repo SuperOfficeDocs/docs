@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SaintProject"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport">SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport</see> inside NetServer's SODatabase assembly.
 
 Archive provider for Project Saint Status - same as Find Project, but adds ability to call up stored definitions via a statusDefId column
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |statusdefId|int||  |
@@ -124,7 +122,6 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |saintActivityType|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintDirection|listAny||  |
@@ -229,7 +226,6 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |sale/associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/isLocation|bool|| x |
@@ -334,7 +330,6 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |appointment/associate/locationAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/associate/isLocation|bool|| x |
@@ -439,7 +434,6 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/registered|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/updated|datetime|| x |
@@ -544,7 +538,6 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/restrictionAddress/zip|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/restrictionAddress/state|string|| x |
@@ -649,7 +642,6 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/correspondingAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
@@ -754,7 +746,6 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/contactAssociate/contactDepartment|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/usergroup|userGroup|| x |
@@ -846,11 +837,12 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaintProject?$select=appointment/associate/usergroup,document/associate/firstName,document/documentUdef/SuperOffice:4,projectMember/contactNoMail,projectMember/streetAddress/wgs84latitude
+GET /api/v1/archive/SaintProject?$select=projectMember/personAddress/wgs84latitude,projectMember/personAssociate/contactDepartment,projectMember/subscription,projectMember/contactAssociate/assocTooltip,projectMember/contactAssociate/personEmail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

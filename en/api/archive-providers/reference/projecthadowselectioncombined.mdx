@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ProjecthadowSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Implementation of the provider for the combined selection
 |saintDirection|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintIntention|listAny||  |
@@ -229,7 +226,6 @@ Implementation of the provider for the combined selection
 |sale/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/saleUdef/SuperOffice:1|string|| x |
@@ -334,7 +330,6 @@ Implementation of the provider for the combined selection
 |appointment/associate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointment/text|positiveString|| x |
@@ -439,7 +434,6 @@ Implementation of the provider for the combined selection
 |projectMember/updated|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/textId|int|| x |
@@ -544,7 +538,6 @@ Implementation of the provider for the combined selection
 |projectMember/restrictionAddress/state|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/restrictionAddress/wgs84latitude|decimal|| x |
@@ -649,7 +642,6 @@ Implementation of the provider for the combined selection
 |projectMember/correspondingAssociate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/portraitThumbnail| *None* ||  |
@@ -754,7 +746,6 @@ Implementation of the provider for the combined selection
 |projectMember/contactAssociate/ejUserId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/simultaneousEjUser|bool||  |
@@ -844,11 +835,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjecthadowSelectionCombined?$select=name,imageThumbnail,NumberOfSales,appointment/associate/isActive,document/associate/contactName
+GET /api/v1/archive/ProjecthadowSelectionCombined?$select=projectAssociate/contactCategory,saintTicketStatus,document/updatedByFullName,projectMember/isProjectMember,projectMember/personDirectFax/formattedNumber
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

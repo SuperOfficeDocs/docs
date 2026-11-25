@@ -1,16 +1,23 @@
 ---
 title: simplemailingstatus
 keywords: mdoprovider mdo provider simplemailingstatus
-description:
+description: Mailing statuses as users see them - each item groups one or more <see cref="T:SuperOffice.Data.ShipmentStatus" /> values, and its id is the status it is named after, so criteria saved before the grouping still resolve.
 generated: true
 content_type: reference
 envir: online
 ---
 
 ## "simplemailingstatus" MDO List
+Mailing statuses as users see them: each item groups one or more <see cref="T:SuperOffice.Data.ShipmentStatus" /> values,
+and its id is the status it is named after, so criteria saved before the grouping still resolve.
 
-Implemented by the SimpleMailingStatusProvider class.
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.SimpleMailingStatusProvider">SimpleMailingStatusProvider</see> class.
 The name of the MDO list is 'simplemailingstatus'.
+
+
+
 
 ## Sample Request
 
@@ -23,7 +30,6 @@ Accept-Language: *
 ```
 
 ## Sample Code
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("simplemailingstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -37,11 +43,13 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 |0||||
+|3||||
+|4||||
 |1||||
 |2||||
-|3||||
-|8||||
 |13||||
+|8||||
+
 
 ## Related MDO Lists
 

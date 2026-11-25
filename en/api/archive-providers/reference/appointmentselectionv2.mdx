@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "AppointmentSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection appouintment archive.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ This is the archive Provider for the Selection appouintment archive.
 |contact/email/emailAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailDescription|string|| x |
@@ -229,7 +226,6 @@ This is the archive Provider for the Selection appouintment archive.
 |contact/contactExtra/x\_contact\_time| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_boolean|bool|| x |
@@ -334,7 +330,6 @@ This is the archive Provider for the Selection appouintment archive.
 |person/personPrivate/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personPrivate/description|string|| x |
@@ -439,7 +434,6 @@ This is the archive Provider for the Selection appouintment archive.
 |person/personAssociate/simultaneousEjUser|bool||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/ejDisplayName|string|| x |
@@ -544,7 +538,6 @@ This is the archive Provider for the Selection appouintment archive.
 |project/projectAssociate/lastName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/middleName|string|| x |
@@ -649,7 +642,6 @@ This is the archive Provider for the Selection appouintment archive.
 |sale/stageName| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/saleStatus|listAny|| x |
@@ -754,7 +746,6 @@ This is the archive Provider for the Selection appouintment archive.
 |associate/userName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/personEmail|string|| x |
@@ -780,11 +771,12 @@ This is the archive Provider for the Selection appouintment archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentSelectionV2?$select=contact/mainContact,contact/streetAddress/wgs84longitude,contact/NumberOfNotCompletedActivities,project/type,sale/description
+GET /api/v1/archive/AppointmentSelectionV2?$select=contactId,appointmentPublish/isPublished,contact/registeredByFullName,person/personAssociate/credentialType,sale/associate/contactFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ConfigurableArchiveAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ConfigurableArchiveAppointmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ConfigurableArchiveAppointmentProvider">SuperOffice.CRM.ArchiveLists.ConfigurableArchiveAppointmentProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Configurable appointment Archive.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ This is the archive Provider for the Configurable appointment Archive.
 |contact/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailAddress|string|| x |
@@ -229,7 +226,6 @@ This is the archive Provider for the Configurable appointment Archive.
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_time| *None* || x |
@@ -334,7 +330,6 @@ This is the archive Provider for the Configurable appointment Archive.
 |person/personMobilePhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personPrivate/formattedNumber|string||  |
@@ -439,7 +434,6 @@ This is the archive Provider for the Configurable appointment Archive.
 |person/personAssociate/ejUserId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/simultaneousEjUser|bool||  |
@@ -544,7 +538,6 @@ This is the archive Provider for the Configurable appointment Archive.
 |project/projectAssociate/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/lastName|string|| x |
@@ -649,7 +642,6 @@ This is the archive Provider for the Configurable appointment Archive.
 |sale/stage|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/stageName| *None* || x |
@@ -754,7 +746,6 @@ This is the archive Provider for the Configurable appointment Archive.
 |associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/userName|string|| x |
@@ -775,11 +766,12 @@ This is the archive Provider for the Configurable appointment Archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveAppointment?$select=contact/updatedByFullName,contact/streetAddress/formattedMultiLineAddress,contact/contactAssociate/middleName,contact/contactAssociate/locationAddress,contact/LastSale
+GET /api/v1/archive/ConfigurableArchiveAppointment?$select=contact/associateId,contact/searchPhone/description,person/personId,person/email/emailHasBounced,project/registeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

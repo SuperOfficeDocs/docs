@@ -1,6 +1,6 @@
 ---
 title: ProjectShadowDynamicSelectionV2
-description: Project shadow selection archive with OR-able selection groups. Each group is represented with the ProjectShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Project shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: ProjectShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ProjectShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Project shadow selection archive with OR-able selection groups. Each group is represented with the [ProjectShadowSelectionDynamicProviderSingleCriteriaGroup](./projectshadowdynamicselectionsinglecriteriagroup).
+Project shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int||  |
@@ -124,7 +122,6 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintActivityType|listAny||  |
@@ -229,7 +226,6 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |sale/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/locationAddress|string|| x |
@@ -334,7 +330,6 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |appointment/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/associate/locationAddress|string|| x |
@@ -439,7 +434,6 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/registered|datetime|| x |
@@ -544,7 +538,6 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/restrictionAddress/city|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/restrictionAddress/zip|string|| x |
@@ -649,7 +642,6 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/isActive|bool|| x |
@@ -754,7 +746,6 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/contactAssociate/contactName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/contactDepartment|string|| x |
@@ -847,11 +838,12 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelectionV2?$select=projectAssociate/contactFullName,NumberOfSalesInPeriod,appointment/text,projectMember/hasInfoText,projectMember/personSourcedFrom
+GET /api/v1/archive/ProjectShadowDynamicSelectionV2?$select=projectUdef/SuperOffice:10,LastDoBySale,sale/associate/locationAddress,appointment/associate/credentialDisplayValue,projectMember/personAssociate/credentialDisplayValue
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

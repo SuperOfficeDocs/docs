@@ -1,6 +1,6 @@
 ---
 title: SelectionDynamicContactProvider
-description:
+description: 
 keywords: SelectionDynamicContactProvider archive provider
 generated: true
 content_type: reference
@@ -9,16 +9,14 @@ envir: onsite, online
 
 ## "SelectionDynamicContactProvider"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionDynamicContactProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionDynamicContactProvider">SuperOffice.CRM.ArchiveLists.SelectionDynamicContactProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"dynamicContact"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -122,7 +120,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |contactAssociate/personId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/mrMrs|string|| x |
@@ -227,7 +224,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |sourceRelation/companyCategoryRank|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/business|listAny|| x |
@@ -332,7 +328,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |sale/amount|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/amountWeighted|decimal|| x |
@@ -437,7 +432,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |appointment/priority|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/alarm|bool|| x |
@@ -542,7 +536,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |document/documentId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/keywords|string|| x |
@@ -647,7 +640,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personAssociateFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personCategory|listAny|| x |
@@ -752,7 +744,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personSourceRelation/personCountryId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personNoMail|bool|| x |
@@ -857,7 +848,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/createdByForm|listAny|| x |
@@ -962,7 +952,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |workflowInstance/workflowInstanceDropoutReason|string||  |
@@ -986,11 +975,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |workflowInstance/emailFlow/workflowDefinitionStatusId|listAny|| x |
 |workflowInstance/emailFlow/jumpToFinish|bool|| x |
 |workflowInstance/emailFlow/startOnlyOnce|bool|| x |
-|workflowInstance/emailFlow/workflowEnrolledCount| *None* ||  |
-|workflowInstance/emailFlow/workflowInProgressCount| *None* ||  |
-|workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowEnrolledCount|int|| x |
+|workflowInstance/emailFlow/workflowInProgressCount|int|| x |
+|workflowInstance/emailFlow/workflowCompletedCount|int|| x |
+|workflowInstance/emailFlow/workflowSucceededCount|int|| x |
+|workflowInstance/emailFlow/workflowSuccessRate|decimal|| x |
 |workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
@@ -1067,7 +1056,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/timeSpentQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/timeSpentExternally|timeSpan|| x |
@@ -1172,7 +1160,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |request/extra/x\_ticket\_timespan|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_short\_text|string|| x |
@@ -1277,7 +1264,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |projectMembers/LastSale|date||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/LastCompletedSale|date||  |
@@ -1382,7 +1368,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |personAppointment/associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/userName|string|| x |
@@ -1403,11 +1388,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/SelectionDynamicContactProvider?$select=contactPhone/description,targetRelation/business,sale/associate/title,sale/associate/usergroup,appointment/completed
+GET /api/v1/archive/SelectionDynamicContactProvider?$select=contactAssociate/userName,contactExtra/x_contact_contact,sale/sale/textId,appointment/endDate,appointment/appointment/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

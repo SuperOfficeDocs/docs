@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SubContactPersonDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.SubContactPersonSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SubContactPersonSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.SubContactPersonSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |contactAssociate/personId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/mrMrs|string|| x |
@@ -229,7 +226,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |sourceRelation/companyCategoryRank|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/business|listAny|| x |
@@ -334,7 +330,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |sale/amount|decimal|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/amountWeighted|decimal|| x |
@@ -439,7 +434,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |appointment/priority|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/alarm|bool|| x |
@@ -544,7 +538,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |document/documentId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/keywords|string|| x |
@@ -649,7 +642,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personAssociateFullName|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personCategory|listAny|| x |
@@ -754,7 +746,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personSourceRelation/personCountryId|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personNoMail|bool|| x |
@@ -859,7 +850,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personTargetRelation/whenUpdatedByWorkflow|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personTargetRelation/createdByForm|listAny|| x |
@@ -964,7 +954,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |workflowInstance/workflowInstanceLastCommunicationStepDescription| *None* ||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |workflowInstance/workflowInstanceDropoutReason|string||  |
@@ -988,11 +977,11 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |workflowInstance/emailFlow/workflowDefinitionStatusId|listAny|| x |
 |workflowInstance/emailFlow/jumpToFinish|bool|| x |
 |workflowInstance/emailFlow/startOnlyOnce|bool|| x |
-|workflowInstance/emailFlow/workflowEnrolledCount| *None* ||  |
-|workflowInstance/emailFlow/workflowInProgressCount| *None* ||  |
-|workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowEnrolledCount|int|| x |
+|workflowInstance/emailFlow/workflowInProgressCount|int|| x |
+|workflowInstance/emailFlow/workflowCompletedCount|int|| x |
+|workflowInstance/emailFlow/workflowSucceededCount|int|| x |
+|workflowInstance/emailFlow/workflowSuccessRate|decimal|| x |
 |workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
@@ -1069,7 +1058,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |request/timeSpentQueue|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/timeSpentExternally|timeSpan|| x |
@@ -1174,7 +1162,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |request/extra/x\_ticket\_timespan|timeSpan|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_short\_text|string|| x |
@@ -1279,7 +1266,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |projectMembers/LastSale|date||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/LastCompletedSale|date||  |
@@ -1384,7 +1370,6 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personAppointment/associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associate/userName|string|| x |
@@ -1405,11 +1390,12 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SubContactPersonDynamicSelectionSingleCriteriaGroup?$select=contactAssociate/contactName,contactUdef/SuperOffice:10,LastDoBySale,sale/saleUdef/SuperOffice:1,appointment/associate/personEmail
+GET /api/v1/archive/SubContactPersonDynamicSelectionSingleCriteriaGroup?$select=sharecapitalBasecurrency,searchPhone/description,postAddress/line2,streetAddress/formattedMultiLineAddress,contactAssociate/lastName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

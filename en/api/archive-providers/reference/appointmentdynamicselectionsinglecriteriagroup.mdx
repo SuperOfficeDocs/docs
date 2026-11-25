@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "AppointmentDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Appointment selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Appointment selection archive using the selectionId as criterionmapping.
 |contact/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailAddress|string|| x |
@@ -229,7 +226,6 @@ Appointment selection archive using the selectionId as criterionmapping.
 |contact/contactExtra/x\_contact\_datetime|datetime|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_time| *None* || x |
@@ -334,7 +330,6 @@ Appointment selection archive using the selectionId as criterionmapping.
 |person/personMobilePhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personPrivate/formattedNumber|string||  |
@@ -439,7 +434,6 @@ Appointment selection archive using the selectionId as criterionmapping.
 |person/personAssociate/ejUserId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/simultaneousEjUser|bool||  |
@@ -544,7 +538,6 @@ Appointment selection archive using the selectionId as criterionmapping.
 |project/projectAssociate/firstName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/lastName|string|| x |
@@ -649,7 +642,6 @@ Appointment selection archive using the selectionId as criterionmapping.
 |sale/stage|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/stageName| *None* || x |
@@ -754,7 +746,6 @@ Appointment selection archive using the selectionId as criterionmapping.
 |associate/otherGroups|userGroup||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/userName|string|| x |
@@ -775,11 +766,12 @@ Appointment selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentDynamicSelectionSingleCriteriaGroup?$select=person/personAssociateFullName,person/email/emailId,sale/visibleFor
+GET /api/v1/archive/AppointmentDynamicSelectionSingleCriteriaGroup?$select=contact/contactPhone/formattedNumber,contact/streetAddress/line2,contact/streetAddress/wgs84latitude,person/lastName,person/searchPhone/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

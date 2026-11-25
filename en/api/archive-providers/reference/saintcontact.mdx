@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "SaintContact"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaintContactProviderWithRestrictionGroupSupport inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaintContactProviderWithRestrictionGroupSupport">SuperOffice.CRM.ArchiveLists.SaintContactProviderWithRestrictionGroupSupport</see> inside NetServer's SODatabase assembly.
 
 Archive provider for Contact Saint Status - same as Find Contact, but adds ability to call up stored definitions via a statusDefId column
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"contact"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |statusdefId|int||  |
@@ -124,7 +122,6 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |contactAssociate/contactId|int||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/personId|int||  |
@@ -229,7 +226,6 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |sourceRelation/categoryGroup|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/companyCategoryRank|int|| x |
@@ -334,7 +330,6 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |sale/heading|stringorPK|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/amount|decimal|| x |
@@ -439,7 +434,6 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |appointment/endDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/priority|listAny|| x |
@@ -544,7 +538,6 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |document/registeredDate|date|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/documentId|int|| x |
@@ -649,7 +642,6 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |personAssociateId|associate|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociateFullName|associate|| x |
@@ -754,7 +746,6 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 |personAssociate/role|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/assocName|associate|| x |
@@ -821,11 +812,12 @@ Archive provider for Contact Saint Status - same as Find Contact, but adds abili
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaintContact?$select=contactUdef/SuperOffice:1,sale/associate/personId,personAssociate/contactDepartment
+GET /api/v1/archive/SaintContact?$select=contactAssociate/portraitThumbnail,targetRelation/name,targetRelation/nameDepartment,appointment/associate/simultaneousEjUser,appointment/appointment/textId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

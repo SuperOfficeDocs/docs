@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "AppointmentShadowDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic appointmnet provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"appointment"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |contact/searchPhone/formattedNumber|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/searchPhone/description|string|| x |
@@ -229,7 +226,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |contact/contactExtra/x\_contact\_dropdown|listAny|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_date|date|| x |
@@ -334,7 +330,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |person/personDirectPhone/description|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personMobilePhone/formattedNumber|string||  |
@@ -439,7 +434,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |person/personAssociate/assocTooltip|string||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/assocType|listAny|| x |
@@ -544,7 +538,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |project/projectUrl/URLAddress|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUrl/URLDescription|string|| x |
@@ -649,7 +642,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |sale/probPercent|int|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/originalStage|listAny|| x |
@@ -754,7 +746,6 @@ Shadow contact provider for the dynamic appointmnet provider.
 |associate/isActiveText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/portraitThumbnail| *None* ||  |
@@ -777,11 +768,12 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowDynamicSelection?$select=associateId,suggestedAppointmentId,person/hasInterests,person/personDirectPhone/formattedNumber,person/personAssociate/personEmail
+GET /api/v1/archive/AppointmentShadowDynamicSelection?$select=contact/updatedBy,contact/sourcedFrom,person/correspondingAssociate/lastName,project/NumberOfNotCompletedSales,sale/associate/contactFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

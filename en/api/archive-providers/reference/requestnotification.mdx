@@ -1,6 +1,6 @@
 ---
 title: RequestNotification
-description:
+description: 
 keywords: RequestNotification archive provider
 generated: true
 content_type: reference
@@ -9,10 +9,9 @@ envir: onsite, online
 
 ## "RequestNotification"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RequestNotificationProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RequestNotificationProvider">SuperOffice.CRM.ArchiveLists.RequestNotificationProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"ticketNew"||
@@ -25,7 +24,6 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Requ
 |"mention"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -39,15 +37,17 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Requ
 |updateType| *None* ||  |
 |category| *None* ||  |
 |customUrl| *None* ||  |
+|expires| *None* ||  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/RequestNotification?$select=associateId,originatorFullName
+GET /api/v1/archive/RequestNotification?$select=ticketId,notifyDateTime
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

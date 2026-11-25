@@ -9,18 +9,16 @@ envir: onsite, online
 
 ## "ProjectShadowDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic Project provider.
 
 ## Supported Entities
-
 | Name | Description |
 | ---- | ----- |
 |"project"||
 
 ## Supported Columns
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -124,7 +122,6 @@ Shadow contact provider for the dynamic Project provider.
 |saintAmountClass|listAny||  |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintActivityType|listAny||  |
@@ -229,7 +226,6 @@ Shadow contact provider for the dynamic Project provider.
 |sale/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/locationAddress|string|| x |
@@ -334,7 +330,6 @@ Shadow contact provider for the dynamic Project provider.
 |appointment/associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/associate/locationAddress|string|| x |
@@ -439,7 +434,6 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/hasInfoText|bool|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/registered|datetime|| x |
@@ -544,7 +538,6 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/restrictionAddress/city|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/restrictionAddress/zip|string|| x |
@@ -649,7 +642,6 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/correspondingAssociate/credentialDisplayValue| *None* || x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/isActive|bool|| x |
@@ -754,7 +746,6 @@ Shadow contact provider for the dynamic Project provider.
 |projectMember/contactAssociate/contactName|string|| x |
 
 ## Supported Columns (cont.)
-
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/contactDepartment|string|| x |
@@ -847,11 +838,12 @@ Shadow contact provider for the dynamic Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelection?$select=projectAssociate/ejUserId,sale/saleUdef/SuperOffice:6,projectMember/isProjectMember,projectMember/personAssociate/middleName,projectMember/correspondingAssociate/mrMrs
+GET /api/v1/archive/ProjectShadowDynamicSelection?$select=rowKind,sale/associate/isActive,appointment/who,document/snum,document/associate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

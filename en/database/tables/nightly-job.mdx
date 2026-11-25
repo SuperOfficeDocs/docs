@@ -29,6 +29,8 @@ Lock and scheduling status for NetServer nightly jobs; one row per job, ensuring
 |updated|Last updated when|UtcDateTime|No|
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
+|state|Job-specific state, such as the last table processed, used to continue from where the previous run stopped|String(255)|No|
+
 
 ![nightly_job table relationship diagram](/media/loc/en/database/tables/nightly_job.png)
 
@@ -46,6 +48,7 @@ Lock and scheduling status for NetServer nightly jobs; one row per job, ensuring
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -53,3 +56,4 @@ Lock and scheduling status for NetServer nightly jobs; one row per job, ensuring
 ## Security Flags
 
 * No access control via user's Role.
+
