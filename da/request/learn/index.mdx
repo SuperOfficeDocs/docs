@@ -49,7 +49,7 @@ Sagsskærmen bliver introduceret gradvist. Hvis du endnu ikke kan se den, arbejd
 * [Favoritter][18]
 * [Meddelelser markeret med flag][5]
 
-Når du dobbeltklikker på en række i søgeresultaterne, åbnes sagen i en fane på Sagsskærmen.
+En sag, du åbner herfra, åbnes i en fane på Sagsskærmen. Se alle måder at slå sager op på i [Find en sag][47].
 
 ### Personer {#customers}
 
@@ -59,7 +59,7 @@ Sager kan knyttes til [personer][14], som igen kan være tilknyttet et [firma][1
 
 Sagsskærmen er der, hvor du arbejder med dine sager. Den har tre områder:
 
-* **Venstrepanel:** Lodrette faner for de sager og udvalg, du arbejder med, og et søgefelt til at finde andre. Det har også punkterne **Oversigt**, **Find sag** og [Omtaler][36]. Fastgør de faner, du bruger hver dag. Se [Arbejd med oversigtssider][30] for at lære, hvordan venstrepanelet fungerer.
+* **Venstrepanel:** Lodrette faner for de sager og udvalg, du arbejder med, og et søgefelt til at finde andre. Det har også punkterne **Oversigt**, **Find sag** og [Omtaler][36]. Se [Arbejd med oversigtssider][30] for at lære, hvordan faner, fastgørelse og søgning fungerer.
 
 * **Hovedområde:** Viser fanen **Oversigt**, et udvalg eller en liste over sager i tavlevisning eller listevisning, eller én sag som et sagskort.
 
@@ -75,14 +75,14 @@ Se [Arbejd med sager][42] for at få overblik over dine sager og arbejde med dem
 
 Sagskortet viser én sag ad gangen som en fane på Sagsskærmen. Det har følgende sektioner:
 
-* Øverst på kortet viser **sagsheaderen** sagens titel, person og firma.
-* Sidepanelet **Egenskaber for sag** indeholder felterne Sagstype, Status, Ejer, Kategori, Prioritet, Adgangsniveau og Tags. Alle felter kan redigeres med knapperne **Gem** og **Afbryd**.
-* Fanen **Meddelelser** viser meddelelser vedrørende sagen. Øverst på fanen er der knapper til Svar, Svar til alle, Videresend og Tilføj kommentar.
-* Fanen **Detaljer** indeholder en oversigt over de registrerede data for sagen.
-* Fanen **Ændringslog** indeholder historikken for denne sag. Sagsloggen viser alt, hvad der er sket i denne sag, siden den blev registreret.
-* Fanen **Relaterede sager** viser [tilknyttede sager][21] (overordnet, underordnet eller relateret).
+* [Sagsoverskrift](#header): sagens titel, person og firma med knapper til at gøre sagen til favorit, fastgøre, genindlæse og redigere den samt menuen **Opgave**.
+* [Egenskaber for sag](#properties): de felter, der fordeler og prioriterer sagen, f.eks. Status, Ejer og Kategori.
+* Fanen [Meddelelser](#messages): meddelelserne i sagen med knapper til at svare, videresende og tilføje kommentarer.
+* Fanen [Detaljer](#details): alle felter, der er registreret for sagen.
+* Fanen [Ændringslog](#log): alt, hvad der er sket i sagen, siden den blev registreret.
+* Fanen **Relaterede sager**: [tilknyttede sager][21] (overordnet, underordnet eller relateret).
 
-### Sagsoverskrift
+### Sagsoverskrift {#header}
 
 Sagens header viser den titel, person og det firma, der blev angivet, da [sagen blev oprettet][4]. Den har også disse knapper:
 
@@ -92,9 +92,9 @@ Sagens header viser den titel, person og det firma, der blev angivet, da [sagen 
 * <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>: Redigerer sagen.
 * <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>: Åbner menuen for knappen **Opgave**. Se [Indstillinger for opgave](#task-options).
 
-### Fanen Meddelelser
+### Fanen Meddelelser {#messages}
 
-Fanen **Meddelelser** viser meddelelser vedrørende sagen.
+Fanen **Meddelelser** viser meddelelserne i sagen. Øverst på fanen kan du [svare][46], videresende og tilføje kommentarer som interne meddelelser.
 
 Du kan ændre, hvor mange meddelelser der er ekspanderet. Se [Tilpas sagsbehandlingen][41].
 
@@ -123,8 +123,6 @@ Klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Fl
 * **Opdel meddelelse**: Klik her for at [dele meddelelsen][19] og oprette en ny sag. Det er nyttigt, hvis meddelelsen indeholder to spørgsmål, der skal behandles af forskellige afdelinger, for eksempel et teknisk spørgsmål og et fakturaspørgsmål.
 * **Udskriv meddelelse**: Klik her, hvis du vil udskrive meddelelsen.
 
-Øverst på fanen **Meddelelser** kan du sende svar og videresende meddelelser, og du kan også tilføje kommentarer som interne meddelelser.
-
 #### Request Insight {#sentiment}
 
 Request Insight analyserer sentimentet i indgående e-mailsager, så du kan prioritere den kunde, der har mest brug for dig. Et humørikon i meddelelsens overskrift angiver den fundne følelse:
@@ -145,7 +143,7 @@ Translation Assist registrerer sproget i en indgående sag og viser det under me
 Translation Assist kræver en Text Services-licens eller CRM Suite Core. Kan du ikke se det registrerede sprog? Bed din administrator om at [aktivere tekstanalyse][43].
 </Note>
 
-### Fanen Detaljer
+### Fanen Detaljer {#details}
 
 Fanen **Detaljer** indeholder en oversigt over alle felter til sagen.
 
@@ -161,9 +159,9 @@ Dette skærmbillede viser loggen for sagen. Den indeholder alle hændelser i sag
 
 ![Ændringsloggen på en sag viser alle de forskellige ændringer, der er foretaget på sagen -screenshot][img2]
 
-### Sidepanelet Egenskaber for sag
+### Egenskaber for sag {#properties}
 
-Sidepanelet Egenskaber for sag indeholder følgende indstillinger:
+Panelet **Egenskaber for sag** har følgende felter:
 
 * **Sagstype**: Sagens [type][40]. Du kan ændre sagstypen her.
 
@@ -260,6 +258,8 @@ Klik på knappen **Opgave** (<i class="ph ph-dots-three-circle-vertical" aria-la
 [43]: /da/ai/admin/index#enable-text-analysis
 [44]: /da/ai/admin/set-up-categorization
 [45]: /da/request/learn/reply#reply-assist
+[46]: /da/request/learn/reply
+[47]: /da/request/learn/find
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/suggested-category-demo.png

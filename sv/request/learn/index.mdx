@@ -49,7 +49,7 @@ Varje fråga eller förfrågan kan registreras som ett ärende. Det kan vara sup
 * [Favoriter][18]
 * [Flaggade meddelanden][5]
 
-När du dubbelklickar på en rad i sökresultatet öppnas ärendet på en flik på ärendeskärmen.
+Ett ärende du öppnar härifrån öppnas på en flik på ärendeskärmen. Alla sätt att slå upp ärenden finns i [Söka efter ett ärende][47].
 
 ### Kontakter {#customers}
 
@@ -59,7 +59,7 @@ När du dubbelklickar på en rad i sökresultatet öppnas ärendet på en flik p
 
 På ärendeskärmen arbetar du med dina ärenden. Den har tre områden:
 
-* **Vänsterpanel:** Vertikala flikar för de ärenden och urval du arbetar med, och ett sökfält för att hitta andra. Den har också alternativen **Översikt**, **Sök ärende** och [Omnämnanden][36]. Nåla fast de flikar du använder varje dag. Se [Arbeta med översiktssidor][30] för hur vänsterpanelen fungerar.
+* **Vänsterpanel:** Vertikala flikar för de ärenden och urval du arbetar med, och ett sökfält för att hitta andra. Den har också alternativen **Översikt**, **Sök ärende** och [Omnämnanden][36]. Se [Arbeta med översiktssidor][30] för hur flikar, fastnålning och sökning fungerar.
 
 * **Huvudområde:** Visar fliken **Översikt**, ett urval eller en lista med ärenden i tavlevy eller listvy, eller ett ärende som ett ärendekort.
 
@@ -75,14 +75,14 @@ Se [Arbeta med ärenden][42] om du vill få en överblick över dina ärenden oc
 
 Ärendekortet visar ett ärende i taget, som en flik på ärendeskärmen. Det har följande delar:
 
-* Överst på kortet visar **ärendehuvudet** ärendets titel, kontakt och företag.
-* Sidofältet **egenskaper för ärende** innehåller fälten Ärendetyp, Status, Ägare, Kategori, Prioritet, Åtkomstnivå och Taggar. Alla fält kan redigeras med knapparna **Spara** och **Avbryt**.
-* Fliken **Meddelanden** visar de meddelanden som är kopplade till ärendet. Högst upp på fliken finns knappar för Svara, Svara alla, Vidarebefordra och Lägg till kommentar.
-* På fliken **Detaljer** visas en översikt över den information som finns registrerad för ärendet.
-* Fliken **Ändringslogg** innehåller historiken för detta ärende. Ärendeloggen visar allt som har skett i ärendet sedan det registrerades.
-* Fliken **Relaterade ärenden** visar [länkade ärenden][21] (överordnade, underordnade eller relaterade).
+* [Ärendehuvud](#header): titel, kontakt och företag, med knappar för att göra ärendet till favorit, nåla fast, läsa in igen och redigera det, och menyn **Uppgift**.
+* [Egenskaper för ärende](#properties): fälten som fördelar och prioriterar ärendet, till exempel Status, Ägare och Kategori.
+* Fliken [Meddelanden](#messages): meddelandena i ärendet, med knappar för att svara, vidarebefordra och lägga till kommentarer.
+* Fliken [Detaljer](#details): alla fält som är registrerade för ärendet.
+* Fliken [Ändringslogg](#log): allt som har hänt i ärendet sedan det registrerades.
+* Fliken **Relaterade ärenden**: [länkade ärenden][21] (överordnade, underordnade eller relaterade).
 
-### Ärendehuvud
+### Ärendehuvud {#header}
 
 Ärendets huvud visar titel, kontakt och företag som definierades när [ärendet skapades][4]. Det har också dessa knappar:
 
@@ -92,9 +92,9 @@ Se [Arbeta med ärenden][42] om du vill få en överblick över dina ärenden oc
 * <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>: Redigerar ärendet.
 * <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>: Öppnar menyn för knappen **Uppgift**. Se [Uppgiftsalternativ](#task-options).
 
-### Fliken Meddelanden
+### Fliken Meddelanden {#messages}
 
-Fliken **Meddelanden** visar de meddelanden som är kopplade till ärendet.
+Fliken **Meddelanden** visar meddelandena i ärendet. Längst upp på fliken kan du [svara][46], vidarebefordra och lägga till kommentarer som interna meddelanden.
 
 Du kan ändra hur många meddelanden som är expanderade. Se [Anpassa ärendehanteringen][41].
 
@@ -123,8 +123,6 @@ Klicka på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (
 * **Dela meddelande**: Klicka här om du vill [dela meddelandet][19] och skapa ett nytt ärende. Praktiskt om ett meddelande innehåller två frågor som bör behandlas av olika avdelningar, t.ex. en teknisk fråga och en fakturafråga.
 * **Skriv ut meddelande**: Klicka här om du vill skriva ut meddelandet.
 
-Längst upp på fliken **Meddelande** kan du skicka svar och vidarebefordra meddelanden och du kan även lägga till kommentarer som interna meddelanden.
-
 #### Request Insight {#sentiment}
 
 Request Insight analyserar sentimentet i inkommande e-postärenden, så att du kan prioritera den kund som behöver dig mest. En emoticon i meddelandets huvud visar det identifierade sentimentet:
@@ -145,7 +143,7 @@ Translation Assist identifierar språket i ett inkommande ärende och visar det 
 Translation Assist kräver en Text Services-licens eller CRM Suite Core. Ser du inte det identifierade språket? Be administratören [aktivera textanalys][43].
 </Note>
 
-### Fliken Detaljer
+### Fliken Detaljer {#details}
 
 På fliken **Detaljer** visas en översikt över alla fält som finns registrerad för ärendet.
 
@@ -161,9 +159,9 @@ På denna skärm visas loggen för ärendet. Alla händelser registreras, inkl. 
 
 ![Ändringsloggen för ett ärende visar alla olika ändringar som gjorts för ärendet -screenshot][img2]
 
-### Sidofältet egenskaper för ärende
+### Egenskaper för ärende {#properties}
 
-Sidofältet egenskaper för ärende innehåller följande alternativ:
+Panelen **Egenskaper för ärende** har följande fält:
 
 * **Ärendetyp**: Ärendets [typ][40]. Du kan ändra ärendetypen här.
 
@@ -244,6 +242,8 @@ Klicka på knappen **Uppgift** (<i class="ph ph-dots-three-circle-vertical" aria
 [43]: /sv/ai/admin/index#enable-text-analysis
 [44]: /sv/ai/admin/set-up-categorization
 [45]: /sv/request/learn/reply#reply-assist
+[46]: /sv/request/learn/reply
+[47]: /sv/request/learn/find
 [11]: /sv/request/learn/split-request
 [12]: /sv/search-options/learn/index
 [16]: /sv/request/learn/merge

@@ -49,7 +49,7 @@ Saksskjermen innføres gradvis. Hvis du ikke ser den ennå, jobber du med flere 
 * [Favoritter][18]
 * [Merkede meldinger][5]
 
-Når du dobbeltklikker på en rad i søkeresultatene, åpnes saken i en fane på Saksskjermen.
+En sak du åpner herfra, åpnes i en fane på Saksskjermen. Se alle måter å slå opp saker på i [Finn en sak][47].
 
 ### Personer {#customers}
 
@@ -59,7 +59,7 @@ Saker kan knyttes til [personer][14], som igjen kan tilhøre et [firma][13]. Det
 
 Saksskjermen er stedet der du jobber med sakene dine. Den har tre områder:
 
-* **Venstrepanel:** Vertikale faner for sakene og utvalgene du jobber med, og et søkefelt for å finne andre. Det har også oppføringene **Oversikt**, **Finn sak** og [Nevnelser][36]. Fest fanene du bruker hver dag. Se [Arbeid med oversiktssider][30] for hvordan venstrepanelet fungerer.
+* **Venstrepanel:** Vertikale faner for sakene og utvalgene du jobber med, og et søkefelt for å finne andre. Det har også oppføringene **Oversikt**, **Finn sak** og [Nevnelser][36]. Se [Arbeid med oversiktssider][30] for hvordan faner, festing og søk fungerer.
 
 * **Hovedområde:** Viser fanen **Oversikt**, et utvalg eller en liste med saker i tavlevisning eller listevisning, eller én sak som et sakskort.
 
@@ -75,14 +75,14 @@ Se [Arbeid med saker][42] for å få oversikt over sakene dine og arbeide med de
 
 Sakskortet viser én sak om gangen, som en fane på Saksskjermen. Det har følgende deler:
 
-* Øverst på kortet viser **toppteksten for saken** tittelen, personen og firmaet for saken.
-* Sidestolpen **Egenskaper for sak** inneholder feltene Sakstype, Status, Eier, Kategori, Prioritet, Tilgangsnivå og Emneknagger. Alle felt kan redigeres med **Lagre**- og **Avbryt**-knappene.
-* Fanen **Meldinger** viser meldingene som er knyttet til saken. Øverst i fanen er det knapper for Svar, Svar til alle, Videresend og Legg til kommentar.
-* Fanen **Detaljer** inneholder en oversikt over informasjonen som er registrert for saken.
-* Fanen **Endringslogg** inneholder historikken for denne saken. Saksloggen viser alt som har skjedd i denne saken siden den ble registrert.
-* Fanen **Relaterte saker** viser [tilknyttede saker][21] (overordnet, underordnet eller relatert).
+* [Topptekst for sak](#header): tittelen, personen og firmaet, med knapper for å gjøre saken til favoritt, feste, laste inn på nytt og redigere den, og menyen **Oppgave**.
+* [Egenskaper for sak](#properties): feltene som fordeler og prioriterer saken, for eksempel Status, Eier og Kategori.
+* Fanen [Meldinger](#messages): meldingene i saken, med knapper for å svare, videresende og legge til kommentarer.
+* Fanen [Detaljer](#details): alle feltene som er registrert for saken.
+* Fanen [Endringslogg](#log): alt som har skjedd i saken siden den ble registrert.
+* Fanen **Relaterte saker**: [tilknyttede saker][21] (overordnet, underordnet eller relatert).
 
-### Topptekst for sak
+### Topptekst for sak {#header}
 
 Toppteksten i saken viser tittelen, personen og firmaet som ble definert da [saken ble opprettet][4]. Den har også disse knappene:
 
@@ -92,9 +92,9 @@ Toppteksten i saken viser tittelen, personen og firmaet som ble definert da [sak
 * <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>: Redigerer saken.
 * <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>: Åpner menyen for **Oppgave**-knappen. Se [Alternativer for oppgave](#task-options).
 
-### Fanen Meldinger
+### Fanen Meldinger {#messages}
 
-Fanen **Meldinger** viser meldingene som er knyttet til saken.
+Fanen **Meldinger** viser meldingene i saken. Øverst i fanen kan du [svare][46], videresende og legge til kommentarer som interne meldinger.
 
 Du kan endre hvor mange meldinger som er ekspandert. Se [Tilpass saksbehandlingen][41].
 
@@ -123,8 +123,6 @@ Klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (F
 * **Del melding**: Klikk her for å [dele meldingen][19] og opprette en ny sak. Nyttig hvis en melding inneholder to saker som skal håndteres av ulike avdelinger, f.eks. et teknisk spørsmål og et fakturaspørsmål.
 * **Skriv ut melding**: Klikk her for å skrive ut meldingen.
 
-Øverst i fanen **Meldinger** kan du sende svar og videresende meldinger, og du kan også legge til kommentarer som interne meldinger.
-
 #### Request Insight {#sentiment}
 
 Request Insight analyserer sentimentet i innkommende e-postsaker, slik at du kan prioritere kunden som trenger deg mest. Et uttrykksikon i toppteksten til meldingen indikerer det oppdagede sentimentet:
@@ -145,7 +143,7 @@ Translation Assist gjenkjenner språket i en innkommende sak og viser det under 
 Translation Assist krever en Text Services-lisens eller CRM Suite Core. Ser du ikke det gjenkjente språket? Be administratoren om å [aktivere tekstanalyse][43].
 </Note>
 
-### Fanen Detaljer
+### Fanen Detaljer {#details}
 
 Fanen **Detaljer** inneholder en oversikt over alle feltene for saken.
 
@@ -161,9 +159,9 @@ Dette bildet viser loggen for denne saken. Alle hendelser registreres, inkludert
 
 ![Endringsloggen på en sak viser alle de forskjellige endringene som er gjort på saken -screenshot][img2]
 
-### Sidestolpen Egenskaper for saker
+### Egenskaper for sak {#properties}
 
-Sidestolpen Egenskaper for sak inneholder følgende alternativer:
+Panelet **Egenskaper for sak** har følgende felt:
 
 * **Sakstype**: [Typen][40] for saken. Du kan endre sakstypen her.
 
@@ -210,7 +208,7 @@ Summary Assist krever en Text Services-lisens eller CRM Suite Core. Ser du ikke 
 
 Med CRM Suite finner du Summary Assist i panelet **Reply Assist**:
 
-1. Klikk på <i class="ph ph-sparkle" aria-label="Reply Assist"></i> i ikonlinjen til høyre i panelet **Egenskaper for saker** for å bytte til **Reply Assist**.
+1. Klikk på <i class="ph ph-sparkle" aria-label="Reply Assist"></i> i ikonlinjen til høyre i panelet **Egenskaper for sak** for å bytte til **Reply Assist**.
 1. Klikk på **Oppsummer**.
 1. Gå gjennom sammendraget av sakens meldinger.
 
@@ -260,6 +258,8 @@ Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-
 [43]: /no/ai/admin/index#enable-text-analysis
 [44]: /no/ai/admin/set-up-categorization
 [45]: /no/request/learn/reply#reply-assist
+[46]: /no/request/learn/reply
+[47]: /no/request/learn/find
 
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png

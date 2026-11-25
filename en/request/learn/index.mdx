@@ -49,7 +49,7 @@ The Request screen is being introduced gradually. If you do not see it yet, you 
 * [Favorites][18]
 * [Flagged messages][5]
 
-When you double-click a row in the search results, the request opens in a tab on the Request screen.
+A request you open from any of these opens in a tab on the Request screen. For all the ways to look up requests, see [Find a request][47].
 
 ### Contacts {#customers}
 
@@ -59,7 +59,7 @@ Requests can be linked to [contacts][14], who in turn can belong to a [company][
 
 The Request screen is where you work with your requests. It has three areas:
 
-* **Left panel:** Vertical tabs for the requests and selections you work with, and a search field for finding others. It also has the entries **Overview**, **Find request**, and [Mentions][36]. Pin the tabs you use every day. See [Work with overview pages][30] for how the left panel works.
+* **Left panel:** Vertical tabs for the requests and selections you work with, and a search field for finding others. It also has the entries **Overview**, **Find request**, and [Mentions][36]. See [Work with overview pages][30] for how tabs, pinning, and search work.
 
 * **Main area:** Shows the **Overview** tab, a selection or list of requests in board view or list view, or one request as a Request card.
 
@@ -75,14 +75,14 @@ To get an overview of your requests and work with them in tabs, see [Work with r
 
 The Request card shows one request at a time, as a tab on the Request screen. It has the following sections:
 
-* At the top of the card, the **request header** shows the title, the contact, and the company of the request.
-* The **request properties** sidebar contains the fields Request type, Status, Owner, Category, Priority, Access level, and Tags. All fields are editable with **Save** and **Cancel** buttons.
-* The **Messages** tab displays the messages related to the request. At the top of the tab are buttons for Reply, Reply all, Forward, and Add comment.
-* The **Details** tab contains an overview of the data registered for the request.
-* The **Change log** tab contains the history of this request. The request log shows everything that has happened to this request since it was first registered.
-* The **Related requests** tab shows [linked requests][21] (parent, child, or related).
+* [Request header](#header): the title, contact, and company, with buttons to favorite, pin, reload, and edit the request, and the **Task** menu.
+* [Request properties](#properties): the fields that route and prioritize the request, such as Status, Owner, and Category.
+* [Messages](#messages) tab: the messages on the request, with buttons to reply, forward, and add comments.
+* [Details](#details) tab: all fields registered for the request.
+* [Change log](#log) tab: everything that has happened to the request since it was registered.
+* **Related requests** tab: [linked requests][21] (parent, child, or related).
 
-### Request header
+### Request header {#header}
 
 The header of the request shows the title, the contact, and the company defined when the [request was created][4]. It also has these buttons:
 
@@ -92,9 +92,9 @@ The header of the request shows the title, the contact, and the company defined 
 * <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>: Edits the request.
 * <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>: Opens the **Task** button menu. See [Task options](#task-options).
 
-### Messages tab
+### Messages tab {#messages}
 
-The **Messages** tab displays the messages related to the request.
+The **Messages** tab shows the messages on the request. At the top of the tab, you can [reply][46], forward, and add comments as internal messages.
 
 You can change how many messages are expanded. See [Personalize request handling][41].
 
@@ -123,8 +123,6 @@ Click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More 
 * **Split message**: Click here to [split the message][19] and create a new request. Useful if a message contains two issues that should be handled by different departments, for instance a technical question and an invoice question.
 * **Print message**: Click here to print the message.
 
-At the top of the **Messages** tab, you can send replies and forward messages, and you can also add comments as internal messages.
-
 #### Request Insight {#sentiment}
 
 Request Insight analyzes the sentiment of incoming email requests, so you can prioritize the customer who needs you first. An emoticon in the message header shows the detected sentiment:
@@ -145,7 +143,7 @@ Translation Assist detects the language of an incoming request and shows it belo
 Translation Assist requires a Text Services license, or CRM Suite Core. If you do not see the detected language, ask your administrator to [enable text analysis][43].
 </Note>
 
-### Details tab
+### Details tab {#details}
 
 The **Details** tab contains an overview of all the fields for the request.
 
@@ -161,9 +159,9 @@ This screen shows the log for this request. All events are recorded, including w
 
 ![The change log on a requests shows all the different changes done on the request -screenshot][img2]
 
-### Request properties sidebar
+### Request properties {#properties}
 
-The request properties sidebar contains the following options:
+The **Request properties** panel has the following fields:
 
 * **Request type**: The [type][40] of the request. You can change the request type here.
 
@@ -260,6 +258,8 @@ Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-labe
 [43]: /en/ai/admin/index#enable-text-analysis
 [44]: /en/ai/admin/set-up-categorization
 [45]: /en/request/learn/reply#reply-assist
+[46]: /en/request/learn/reply
+[47]: /en/request/learn/find
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
 [img3]: /media/loc/en/request/suggested-category-demo.png
