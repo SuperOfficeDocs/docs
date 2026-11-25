@@ -62,14 +62,14 @@ Listet Anfragen auf, die noch niemandem zugeordnet sind. Wenn Sie die [Verantwor
 * [Neues Dashboard erstellen][1]
 * [Dashboard-Kacheln bearbeiten][7]
 * [Anfrage erstellen][4]
-* [Typische Szenarien][6]
+* [Mit Anfragen arbeiten][6]
 * [Anfragen suchen][5]
 
 [1]: ./create
 [2]: ../../request/learn/accept
 [4]: ../../request/learn/create
 [5]: ../../request/learn/find
-[6]: ../../request/learn/work-with-requests#request-mgt
+[6]: ../../request/learn/work-with-requests
 [7]: ./working-with-tiles#edit
 
 [img1]: ../../../media/loc/en/request/service-dashboard.png

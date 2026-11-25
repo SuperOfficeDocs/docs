@@ -14,7 +14,7 @@ related:
   - /sv/dashboard/learn/create
   - Redigera dashboard-paneler: /sv/dashboard/learn/working-with-tiles
   - /sv/request/learn/create
-  - Typiska scenarier: /sv/request/learn/work-with-requests#request-mgt
+  - Arbeta med ärenden: /sv/request/learn/work-with-requests
   - Söka ärenden: /sv/request/learn/find
 language: sv
 ---

@@ -14,7 +14,7 @@ related:
   - /en/dashboard/learn/create
   - Edit dashboard tiles: /en/dashboard/learn/working-with-tiles
   - /en/request/learn/create
-  - Typical scenarios: /en/request/learn/work-with-requests#request-mgt
+  - Work with requests: /en/request/learn/work-with-requests
   - Find requests: /en/request/learn/find
 language: en
 ---

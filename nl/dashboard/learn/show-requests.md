@@ -14,7 +14,7 @@ related:
   - /nl/dashboard/learn/create
   - Dashboardtegels beverken: /nl/dashboard/learn/working-with-tiles
   - /nl/request/learn/create
-  - Typische scenario's: /nl/request/learn/work-with-requests#request-mgt
+  - Werken met verzoeken: /nl/request/learn/work-with-requests
   - Verzoeken zoeken: /nl/request/learn/find
 language: nl
 ---

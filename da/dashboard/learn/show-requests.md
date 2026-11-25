@@ -14,7 +14,7 @@ related:
   - /da/dashboard/learn/create
   - Rediger dashboardruder: /da/dashboard/learn/working-with-tiles
   - /da/request/learn/create
-  - Typiske scenarier: /da/request/learn/work-with-requests#request-mgt
+  - Arbejd med sager: /da/request/learn/work-with-requests
   - Find anmodninger: /da/request/learn/find
 language: da
 ---

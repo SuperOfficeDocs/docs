@@ -14,7 +14,7 @@ related:
   - Opprette et nytt dashbord: /no/dashboard/learn/create
   - Redigere dashbordfigurer: /no/dashboard/learn/working-with-tiles
   - /no/request/learn/create
-  - Typiske scenarier: /no/request/learn/work-with-requests#request-mgt
+  - Arbeid med saker: /no/request/learn/work-with-requests
   - Finne saker: /no/request/learn/find
 language: no
 ---
