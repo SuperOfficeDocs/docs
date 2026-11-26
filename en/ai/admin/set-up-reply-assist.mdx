@@ -55,10 +55,21 @@ A source is content Reply Assist can search when it suggests a reply.
     ![Add a source, with the five types of source -screenshot][img1]
 
 1. Enter a **Source name** and, optionally, a **Description**.
-1. Under **Selection**, choose the content to use, for example a [selection][3] of requests. The fields depend on the type of source.
+1. Choose the content to use. The fields depend on the type of source, see [Source fields][5].
 1. Click **Save**.
 
     ![The settings for a new request source -screenshot][img2]
+
+### Source fields {#fields}
+
+| Source | Fields |
+|---|---|
+| Requests, Documents | **Selection**: the [selection][3] of requests or documents to use. |
+| FAQ | **Path**: the knowledge base folder. **Access**: which access levels to include, for example **Accessible to registered customers**. **Workflow**: which statuses to include, for example **Published**. **Sample data** shows how many articles match. |
+| Reply templates | **Path**: the reply template folder. **Access**: which access levels to include. **Sample data** shows how many templates match. |
+| Web content | **Starting URL**: the page to start from. **Crawler mode** follows links on the site from that page, and **Single page only** reads just that page. Under **Advanced options**, **Skip URLs** leaves out pages, and **Skip CSS** and **Include CSS** leave out or keep parts of each page. |
+
+![The settings for a web content source, with Advanced options open -screenshot][img4]
 
 The source is listed under **Sources**. To change it later, click its pencil icon. A warning icon next to **Sources** means a source needs your attention, for example a missing selection.
 
@@ -93,7 +104,9 @@ Two [AI preferences][4] control how users get Reply Assist suggestions: whether 
 [2]: /en/ai/admin/index
 [3]: /en/search-options/selection/learn/create
 [4]: /en/ai/admin/index#preferences-tab
+[5]: #fields
 
 [img1]: /media/loc/en/ai/reply-assist-add-source.png
 [img2]: /media/loc/en/ai/reply-assist-source-settings.png
 [img3]: /media/loc/en/ai/reply-assist-settings.png
+[img4]: /media/loc/en/ai/reply-assist-web-source.png
