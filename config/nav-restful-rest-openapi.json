@@ -70,6 +70,13 @@
     }
   },
   {
+    "group": "CustomFieldDefinition",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-CustomFieldDefinition.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
     "group": "CustomObject",
     "openapi": {
       "source": "openapi/rest/openapi-v3-CustomObject.json",

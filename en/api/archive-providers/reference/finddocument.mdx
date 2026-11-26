@@ -748,7 +748,7 @@ Archive provider for finding documents
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindDocument?$select=mailMergeDraft,person/restrictionAddress/line1,contact/url/URLDescription,contact/saintDirection,project/projectAssociate/contactId
+GET /api/v1/archive/FindDocument?$select=person/personActiveErpLinks,person/correspondingAssociate/firstName,contact/country,contact/restrictionAddress/state,contact/contactUdef/SuperOffice:6
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

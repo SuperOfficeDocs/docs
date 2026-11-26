@@ -784,7 +784,7 @@ Link data provider for appointments, handles both addressing by source or by des
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksAppointments?$select=appointmentPublish/isPublished,contact/category,contact/searchPhone/description,contact/restrictionAddress/county,contact/contactAssociate/assocTooltip
+GET /api/v1/archive/LinksAppointments?$select=contact/updatedDate,contact/restrictionAddress/wgs84latitude,contact/contactExtra/x_contact_date,contact/saintAmountClass,person/personUdef/SuperOffice:6
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

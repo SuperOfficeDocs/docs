@@ -252,7 +252,7 @@ public virtual bool HasImage { get; set; }
 
 ### ImageDescription {#SuperOffice_WebApi_Data_ProjectEntity_ImageDescription}
 
-Description of the project image if it exists. (This is the image that is displayed in the CRM client)
+Name of the project's image in the project image library. Project images are shared: several projects can use the same image, and setting this value when the project is saved renames the image for all of them. An empty or null value clears the name, so send back the value that was read unless the image should be renamed. Ignored when the project has no image.
 
 ```csharp
 public virtual string ImageDescription { get; set; }

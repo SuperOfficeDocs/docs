@@ -42,11 +42,11 @@ SelectionTypeStore stays empty, as it does for mailings and forms).
 |workflowDefinitionStatusId|listAny|| x |
 |jumpToFinish|bool|| x |
 |startOnlyOnce|bool|| x |
-|workflowEnrolledCount| *None* ||  |
-|workflowInProgressCount| *None* ||  |
-|workflowCompletedCount| *None* ||  |
-|workflowSucceededCount| *None* ||  |
-|workflowSuccessRate| *None* ||  |
+|workflowEnrolledCount|int|| x |
+|workflowInProgressCount|int|| x |
+|workflowCompletedCount|int|| x |
+|workflowSucceededCount|int|| x |
+|workflowSuccessRate|decimal|| x |
 |workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
@@ -101,7 +101,7 @@ SelectionTypeStore stays empty, as it does for mailings and forms).
 ## Sample
 
 ```http!
-GET /api/v1/archive/FlowStaticSelectionV2?$select=registeredBy,workflowAssociate/contactDepartment
+GET /api/v1/archive/FlowStaticSelectionV2?$select=workflowAssociate/firstName,registeredBy,workflowAssociate/contactDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

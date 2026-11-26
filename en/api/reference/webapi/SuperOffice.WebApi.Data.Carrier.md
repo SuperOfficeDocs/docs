@@ -93,6 +93,7 @@ public class Carrier
 [Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency),
 [CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity),
 [CustomCommand](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomCommand),
+[CustomFieldDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomFieldDefinition),
 [CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject),
 [CustomObjectDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectDefinition),
 [CustomerCenterConfig](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerCenterConfig),

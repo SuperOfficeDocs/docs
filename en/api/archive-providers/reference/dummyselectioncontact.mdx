@@ -608,7 +608,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/DummySelectionContact?$select=targetRelation/yearFounded,sale/lossReason,sale/daysInStage,appointment/appointmentPublish/isPublished
+GET /api/v1/archive/DummySelectionContact?$select=contactExtra/x_contact_datetime,sourceRelation/contactId,sourceRelation/revenueYear,sale/soldReason,sale/saleUdef/SuperOffice:4
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -750,7 +750,7 @@ Document selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentDynamicSelection?$select=rowKind,person/personAddress/wgs84latitude,sale/stalledComment
+GET /api/v1/archive/DocumentDynamicSelection?$select=person/correspondingAssociate/usergroup,contact/revenueYear,contact/contactAssociate/contactId,contact/contactAssociate/contactFullName,contact/contactAssociate/ejStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -775,7 +775,7 @@ Activity archive provider for the Request card: appointments and to-dos linked t
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketActivity?$select=appointmentPublish/publishedBy,contact/streetAddress/formattedAddress,person/personAssociateFullName,project/startDate,project/projectAssociate/assocTooltip
+GET /api/v1/archive/TicketActivity?$select=endTime,contact/mainContact,contact/email/emailBounceCount,person/associateType,person/personExtra/x_person_priority_relation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

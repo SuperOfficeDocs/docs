@@ -427,7 +427,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Targ
 ## Sample
 
 ```http!
-GET /api/v1/archive/TargetValue?$select=targetValue,contact/contactAssociate/credentialDisplayValue,contact/contactSupportAssociate/assocName,contact/contactSupportPerson/personAssociateFullName
+GET /api/v1/archive/TargetValue?$select=contact/registeredByFullName,contact/contactSupportPerson/rank,contact/contactSupportPerson/personUpdatedDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

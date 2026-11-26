@@ -33,11 +33,11 @@ This is the index table for the free text search function. Each word in FreeText
 
 | Fields | Types | Description |
 |--------|-------|-------------|
-|table\_id, record\_id |TableNumber, RecordId |Index |
-|freetextwords\_id, ownertable\_id |FK, TableNumber |Clustered |
+|table\_id, record\_id, ownerrecord\_id, contact\_id, freetextindex\_id |TableNumber, RecordId, RecordId, FK, PK |Clustered |
+|freetextindex\_id |PK |Unique |
+|freetextwords\_id, ownertable\_id, ownerrecord\_id |FK, TableNumber, RecordId |Index |
 |contact\_id |FK |Index |
 |ownerrecord\_id, ownertable\_id, freetextwords\_id |RecordId, TableNumber, FK |Index |
-|table\_id, record\_id, ownerrecord\_id, contact\_id, freetextindex\_id |TableNumber, RecordId, RecordId, FK, PK |Index |
 
 ## Relationships
 

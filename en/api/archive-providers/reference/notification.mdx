@@ -60,6 +60,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Noti
 |isSystemUserAssignment| *None* ||  |
 |category| *None* ||  |
 |customUrl| *None* ||  |
+|expires| *None* ||  |
 |type| *None* ||  |
 |ownerContactId| *None* ||  |
 |updatedAssocId| *None* ||  |
@@ -73,7 +74,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Noti
 ## Sample
 
 ```http!
-GET /api/v1/archive/Notification?$select=location,hasConflict
+GET /api/v1/archive/Notification?$select=invitedPersonId,location,recurrencePattern
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

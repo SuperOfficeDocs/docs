@@ -1101,7 +1101,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimplePerson?$select=personAddress/formattedAddress,personUdef/SuperOffice:9,personTargetRelation/position,personContact/contactSupportPerson/personActiveErpLinks,personContact/contactSupportPerson/personUdef/SuperOffice:8
+GET /api/v1/archive/SimplePerson?$select=isStakeholder,personAddress/addressId,personContact/contactSupportPerson/mrMrs,personContact/contactSupportPerson/supportAssociateFullName,personContact/contactSupportPerson/leadstatusRank
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

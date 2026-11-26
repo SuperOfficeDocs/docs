@@ -753,7 +753,7 @@ This is the archive Provider for the Selection document archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentSelectionV2?$select=person/personAssociate/contactDepartment,contact/email/emailBounceCount,contact/restrictionAddress/county,project/updatedBy,project/projectEvent/eventDate
+GET /api/v1/archive/DocumentSelectionV2?$select=person/personInterestIds,person/personAssociate/assocType,person/correspondingAssociate/portraitThumbnail,contact/email/emailLastSent,contact/contactAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

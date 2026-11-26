@@ -873,6 +873,114 @@ Override language/culture codes on this request.
 
 Array of all entity types supported by the archive provider. MDOListItem.Name = DisplayName, Tooltip = DisplayTooltip, Type = code name, StyleHint = optional/mandatory, IconHint=DefaultShow
 
+### GetCriteriaFieldListAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IArchiveAgent_GetCriteriaFieldListAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Return list of the user-visible restriction columns supported by an archive provider in the 'selectioncardview' GUI view. A filtered sub-set of GetAvailableColumns.
+
+```csharp
+Task<MDOListItem[]> GetCriteriaFieldListAsync(string providerName, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`providerName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The name of the archive provider to use
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\&gt;
+
+Array of the user-visible columns supported by the archive provider.
+
+### GetCriteriaFieldListWithGuiNameAndContextAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IArchiveAgent_GetCriteriaFieldListWithGuiNameAndContextAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Return list of the user-visible restriction columns supported by an archive provider. A filtered sub-set of GetAvailableColumns.
+
+```csharp
+Task<MDOListItem[]> GetCriteriaFieldListWithGuiNameAndContextAsync(string providerName, string guiName, string context, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`providerName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The name of the archive provider to use
+
+`guiName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+GUI context - specifies the GUI name to filter the columns by
+
+`context` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Context parameter to further filter the columns
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\&gt;
+
+Array of the user-visible columns supported by the archive provider.
+
+### GetCriteriaFieldListWithGuiNameAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IArchiveAgent_GetCriteriaFieldListWithGuiNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Return list of the user-visible restriction columns supported by an archive provider, filtered by a specific GUI name. A filtered sub-set of GetAvailableColumns.
+
+```csharp
+Task<MDOListItem[]> GetCriteriaFieldListWithGuiNameAsync(string providerName, string guiName, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`providerName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The name of the archive provider to use
+
+`guiName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+GUI context - specifies the GUI name to filter the columns by
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\&gt;
+
+Array of the user-visible columns supported by the archive provider.
+
+### GetDefaultColumnListAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IArchiveAgent_GetDefaultColumnListAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Return list of the default user-visible columns for an archive provider in the 'selectioncardview' GUI view. A filtered sub-set of GetAvailableColumns.
+
+```csharp
+Task<MDOListItem[]> GetDefaultColumnListAsync(string providerName, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`providerName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The name of the archive provider to use
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\&gt;
+
+Array of the user-visible columns supported by the archive provider.
+
 ### GetGroupAssociateIdsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IArchiveAgent_GetGroupAssociateIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Returns the  associate ids that belongs to the given groups

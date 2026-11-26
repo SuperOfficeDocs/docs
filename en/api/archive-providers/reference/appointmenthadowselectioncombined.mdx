@@ -779,7 +779,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmenthadowSelectionCombined?$select=contact/department,contact/companyCategoryRank,person/personActiveErpLinks,person/correspondingAssociate/contactFullName,sale/contactId
+GET /api/v1/archive/AppointmenthadowSelectionCombined?$select=updatedDate,endTime,contact/contactAssociate/role,contact/contactExtra/x_contact_date,person/isProjectMember
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

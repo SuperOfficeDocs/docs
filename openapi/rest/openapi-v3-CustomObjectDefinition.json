@@ -11,24 +11,15 @@
     }
   },
   "paths": {
-    "/api/v1/CustomObjectDefinition/{definitionName}": {
+    "/api/v1/CustomObjectDefinition/Default": {
       "get": {
         "tags": [
           "CustomObjectDefinition"
         ],
-        "summary": "Get Custom Object Definition",
-        "description": "Returns the schema (table + field definitions) for a Custom Object Definition by its database table name.",
-        "operationId": "v1CustomObjectDefinition_GetCustomObjectDefinition",
+        "summary": "Create Default Custom Object Definition",
+        "description": "Returns an empty Custom Object Definition with default values.\n\nNot persisted.",
+        "operationId": "v1CustomObjectDefinition_CreateDefaultCustomObjectDefinition",
         "parameters": [
-          {
-            "name": "definitionName",
-            "in": "path",
-            "description": "Database table name of the Custom Object Definition, e.g. 'y_equipment'.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "Accept-Language",
             "in": "header",
@@ -69,6 +60,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -120,19 +120,492 @@
         ]
       }
     },
-    "/api/v1/CustomObjectDefinition/{definitionName}/Screen": {
+    "/api/v1/CustomObjectDefinition/{objectName}": {
+      "get": {
+        "tags": [
+          "CustomObjectDefinition"
+        ],
+        "summary": "Get Custom Object Definition",
+        "description": "Returns the schema (table + field definitions) for a Custom Object by its database table name.",
+        "operationId": "v1CustomObjectDefinition_GetCustomObjectDefinition",
+        "parameters": [
+          {
+            "name": "objectName",
+            "in": "path",
+            "description": "Database table name of the Custom Object, e.g. 'y_equipment'.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "CustomObjectDefinition"
+        ],
+        "summary": "Update Custom Object Definition",
+        "description": "Updates the table properties of an existing Custom Object.\n\nFields is ignored; use CreateCustomFieldDefinitions, UpdateCustomFieldDefinition and DeleteCustomFieldDefinition to change fields. Not implemented yet.",
+        "operationId": "v1CustomObjectDefinition_UpdateCustomObjectDefinition",
+        "parameters": [
+          {
+            "name": "objectName",
+            "in": "path",
+            "description": "Database table name of the Custom Object to update, e.g. 'y_equipment'.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            }
+          },
+          "description": "The Custom Object Definition with the new table properties.",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "CustomObjectDefinition"
+        ],
+        "summary": "Delete Custom Object Definition",
+        "description": "Deletes a Custom Object: drops the table with all its fields and rows.\n\nNot implemented yet.",
+        "operationId": "v1CustomObjectDefinition_DeleteCustomObjectDefinition",
+        "parameters": [
+          {
+            "name": "objectName",
+            "in": "path",
+            "description": "Database table name of the Custom Object to delete, e.g. 'y_equipment'.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/CustomObjectDefinition": {
+      "post": {
+        "tags": [
+          "CustomObjectDefinition"
+        ],
+        "summary": "Create Custom Object Definition",
+        "description": "Creates a Custom Object: the table together with the fields in Fields, all or nothing.\n\nFails if a Custom Object with that ObjectName already exists. Not implemented yet.",
+        "operationId": "v1CustomObjectDefinition_CreateCustomObjectDefinition",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+              }
+            }
+          },
+          "description": "The Custom Object Definition to create.",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/CustomObjectDefinition/{objectName}/Screen": {
       "get": {
         "tags": [
           "CustomObjectDefinition"
         ],
         "summary": "Has Screen Chooser",
-        "description": "Returns true if a screen chooser is configured for the given Custom Object Definition and mode.",
+        "description": "Returns true if a screen chooser is configured for the given Custom Object and mode.",
         "operationId": "v1CustomObjectDefinition_HasScreenChooser",
         "parameters": [
           {
-            "name": "definitionName",
+            "name": "objectName",
             "in": "path",
-            "description": "Database table name of the Custom Object Definition.",
+            "description": "Database table name of the Custom Object.",
             "required": true,
             "schema": {
               "type": "string"
@@ -187,6 +660,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -246,10 +728,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:65002"
+      "url": "http://localhost:58622"
     },
     {
-      "url": "https://localhost:65002"
+      "url": "https://localhost:58622"
     }
   ],
   "components": {
@@ -280,7 +762,7 @@
             "description": "Primary key in the extra-tables table.",
             "type": "integer"
           },
-          "Name": {
+          "ObjectName": {
             "description": "Database table name of the Custom Object, e.g. 'y_equipment'.",
             "type": "string"
           },
@@ -311,11 +793,52 @@
             "type": "integer"
           },
           "Fields": {
-            "description": "Field definitions for this Custom Object.",
+            "description": "Field definitions for this Custom Object, in rank order. Each element is a FieldInfo* type selected by FieldType.",
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectField"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
             }
+          },
+          "IconName": {
+            "description": "Name of a Phosphor icon, e.g. 'truck'. Takes priority over IconId; IconHint shows the resolved result.",
+            "type": "string"
+          },
+          "IsHidden": {
+            "description": "True if the Custom Object is left out of every list that offers custom objects (navigator, menu, Find, webhook events, lists). Its data is kept. Mirrors the Hidden extra-table flag.",
+            "type": "boolean"
+          },
+          "HideIdField": {
+            "description": "True if archives hide the id field (column and criterion), as long as another visible field exists. Mirrors the HideId extra-table flag.",
+            "type": "boolean"
+          },
+          "ShowInFind": {
+            "description": "True if the Custom Object is offered in Find. Ignored when IsHidden is set. Mirrors the ShowInFind extra-table flag.",
+            "type": "boolean"
+          },
+          "ShowInNavigator": {
+            "description": "True if the Custom Object gets a navigator button and main-menu entry. Ignored when IsHidden is set. Mirrors the ShowInNavigator extra-table flag.",
+            "type": "boolean"
+          },
+          "ParentField": {
+            "description": "Name of the field that points to the parent row, which makes the Custom Object a tree in relation lists. Empty: flat list.",
+            "type": "string"
+          },
+          "FullNameField": {
+            "description": "Name of the field holding each row's full path in the tree, e.g. 'Support/Hardware/Keyboards'; shown in relation lists and archives. Requires ParentField.",
+            "type": "string"
+          },
+          "SortField": {
+            "description": "Name of the field that orders rows in relation lists (dropdowns and pickers) before a search term is typed. Default 'id'. Archives sort independently.",
+            "type": "string"
+          },
+          "SortDescending": {
+            "description": "True to sort relation lists by SortField in descending order.",
+            "type": "boolean"
+          },
+          "HierarchyId": {
+            "format": "int32",
+            "description": "Folder (HierarchyEntity in the ExtraTables domain) the Custom Object is listed under in admin lists. 0: top level.",
+            "type": "integer"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
@@ -329,41 +852,99 @@
           }
         }
       },
-      "SuperOffice.CRM.Services.CustomObjectField": {
-        "description": "Describes one field on a Custom Object Definition.\r\n<para />\r\nCarrier object for CustomObjectField.\r\nServices for the CustomObjectField Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICustomObjectAgent\">CustomObject Agent</see>.",
+      "SuperOffice.CRM.Services.FieldInfoBase": {
+        "description": "Abstract basic information about database fields. May be custom or user-defined fields. The information can be used to build a user interface.\r\n<para />\r\nCarrier object for FieldInfoBase.\r\nServices for the FieldInfoBase Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IUserDefinedFieldInfoAgent\">UserDefinedFieldInfo Agent</see>.",
         "type": "object",
         "properties": {
-          "FieldName": {
-            "description": "Database column name of the field, e.g. 'x_equipment_type'.",
+          "FieldType": {
+            "description": "What sort of data does this field contain. 1 = int, 2 = short text, ...",
+            "enum": [
+              "Unknown",
+              "Integer",
+              "ShortText",
+              "LongText",
+              "Date",
+              "Blob",
+              "Checkbox",
+              "MdoList",
+              "Decimal",
+              "DateTime",
+              "Time",
+              "TimeSpan",
+              "RelationTo",
+              "Attachment",
+              "DynamicLink",
+              "ListText"
+            ],
             "type": "string"
           },
-          "FieldType": {
-            "description": "Field type, formatted as the string value of ExtraFieldType (e.g. 'string', 'int', 'datetime').",
+          "FieldName": {
+            "description": "Database name or prog-id: 'x_foobar' or 'SuperOffice:2'.",
             "type": "string"
           },
           "DisplayName": {
-            "description": "User-visible name of the field.",
+            "description": "Label for field. May be multi-lang string encoded.",
             "type": "string"
           },
           "Description": {
-            "description": "Description of the field.",
+            "description": "Optional tooltip text for this field",
             "type": "string"
           },
-          "UseDefaultValue": {
-            "description": "True if the field has a default value that should be used when creating new rows.",
+          "ShortLabel": {
+            "description": "Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.",
+            "type": "string"
+          },
+          "HideLabel": {
+            "description": "Hide the label if 1",
             "type": "boolean"
           },
-          "DefaultValue": {
-            "description": "Default value, formatted with CultureDataFormatter (e.g. '[I:1]' for an integer).",
-            "type": "string"
+          "HideField": {
+            "description": "Hide the field from the UI. Only allow API access.",
+            "type": "boolean"
+          },
+          "IsIndexed": {
+            "description": "Is this field indexed? 0 if no, index no. if yes",
+            "type": "boolean"
+          },
+          "IsMandatory": {
+            "description": "0 = no, 1 = yes (field must be filled out)",
+            "type": "boolean"
+          },
+          "IsReadOnly": {
+            "description": "0 = read/write, 1 = readonly (don't combine with mandatory  8-) )",
+            "type": "boolean"
+          },
+          "IsExternal": {
+            "description": "Should this field be shown to external users via customer center?",
+            "type": "boolean"
+          },
+          "IsDisplayField": {
+            "description": "Flag indicating that this field is chosen as DisplayField for a table it belongs",
+            "type": "boolean"
           },
           "Rank": {
             "format": "int32",
-            "description": "Display order of the field within the Custom Object Definition.",
+            "description": "Tab order, ranking within the custom fields.",
             "type": "integer"
           },
-          "IsDefault": {
-            "description": "True if the field is shown by default in list views (mirrors the ViewInList extra-field flag).",
+          "TemplateVariableName": {
+            "description": "Template variable name: 'cs01', 'cl02' etc. Null for extra fields.",
+            "type": "string"
+          },
+          "IsDefaultListColumn": {
+            "description": "Custom-object fields only: true if the field is one of the default columns where rows of the custom object are listed (archive default columns, previews, bulk update); users can still add or remove columns. Mirrors the ViewInList extra-field flag. Not used on standard tables or user-defined fields.",
+            "type": "boolean"
+          },
+          "ApplyDefaultValue": {
+            "description": "Extra fields only: true if new rows get DefaultValue; false leaves the field empty even when DefaultValue is set (0 and false are real defaults). Ignored for relation, Link and Attachment fields. Mirrors the UseDefault extra-field flag. Not used on user-defined fields.",
+            "type": "boolean"
+          },
+          "IsFreetextSource": {
+            "description": "Custom-object fields only: true if the field's values are freetext-indexed, so rows can be found by text in this field; it also makes relation pickers on this custom object search as you type. The display field is always indexed, whether or not this is set. Mirrors the ViewInSearch extra-field flag. Not used on standard tables or user-defined fields.",
+            "type": "boolean"
+          },
+          "ShowInSideCard": {
+            "description": "Request (ticket) extra fields only: true if the field is shown in the Request side card, next to the built-in properties, instead of the details area. Ignored for other tables. Mirrors the ShowWithProperties extra-field flag. Not used on user-defined fields.",
             "type": "boolean"
           }
         }

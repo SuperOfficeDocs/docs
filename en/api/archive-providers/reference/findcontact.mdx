@@ -818,7 +818,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindContact?$select=postAddress/line3,sale/associate/usergroupId,personDirectFax/formattedNumber,personAddress/line1,personUdef/SuperOffice:7
+GET /api/v1/archive/FindContact?$select=contactExtra/x_contact_boolean,sale/associate/credentialType,appointment/associateId,appointment/alarm,appointment/associate/assocName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -44,7 +44,6 @@ Visible for rights
 |updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
-
 ![CounterValue table relationship diagram](/media/loc/en/database/tables/CounterValue.png)
 
 <Countervalue />
@@ -59,6 +58,7 @@ Visible for rights
 |project\_id, sale\_status |FK, Enum |Index |
 |record\_type, direction, intent\_id |Enum, Enum, FK |Index |
 |sale\_status, amountClassId |Enum, FK |Index |
+|contact\_id, person\_id, project\_id, record\_type, direction, intent\_id, sale\_status, amountClassId |FK, FK, FK, Enum, Enum, FK, Enum, FK |Clustered |
 
 ## Relationships
 
@@ -71,7 +71,6 @@ Visible for rights
 |[person](./person)  |Persons |
 |[project](./project)  |Projects |
 
-
 ## Replication Flags
 
 * None
@@ -79,4 +78,3 @@ Visible for rights
 ## Security Flags
 
 * No access control via user's Role.
-

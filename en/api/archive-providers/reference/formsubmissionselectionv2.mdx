@@ -506,7 +506,7 @@ This is the archive Provider for the Selection FormSubmission archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionSelectionV2?$select=person/personInfo/infoText,person/correspondingAssociate/role,contact/postAddress/wgs84latitude,contact/postAddress/formattedMultiLineAddress,contact/restrictionAddress/addressId
+GET /api/v1/archive/FormSubmissionSelectionV2?$select=formSubmissionFormId,person/leadstatusRank,person/personUrl/URLAddress,person/personAddress/formattedAddress,person/personUdef/SuperOffice:6
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

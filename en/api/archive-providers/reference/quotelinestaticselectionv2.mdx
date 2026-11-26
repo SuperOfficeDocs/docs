@@ -799,7 +799,7 @@ Static archive Provider for the Selection quoteline archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineStaticSelectionV2?$select=alternative/version/approvedText,alternative/version/quote/sale/person/personHasInterests,alternative/version/quote/sale/person/position,alternative/version/quote/sale/person/personCountry,alternative/version/quote/sale/person/personUdef/SuperOffice:10
+GET /api/v1/archive/QuoteLineStaticSelectionV2?$select=alternative/version/approvedText,alternative/version/quote/sale/amount,alternative/version/quote/sale/description,alternative/version/quote/sale/saleCycle,alternative/version/quote/sale/person/personMobilePhone/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

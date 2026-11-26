@@ -777,7 +777,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentStaticSelectionV2?$select=time,appointmentPublish/publishedFrom,contact/sourcedFrom,person/personCategoryRank,person/phone/formattedNumber
+GET /api/v1/archive/AppointmentStaticSelectionV2?$select=person/correspondingAssociate/lastName,person/correspondingAssociate/contactId,project/registeredBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

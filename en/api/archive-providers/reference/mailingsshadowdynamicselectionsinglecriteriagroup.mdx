@@ -63,6 +63,7 @@ Shadow contact provider for the dynamic Mailings provider.
 |registeredDate|date|| x |
 |recordTypeText| *None* || x |
 |sortName| *None* || x |
+|sortDefault| *None* || x |
 |mailingAddr/mailingAddrId|int|| x |
 |mailingAddr/contact/contactId|int|| x |
 |mailingAddr/contact/name|stringorPK|| x |
@@ -121,12 +122,12 @@ Shadow contact provider for the dynamic Mailings provider.
 |mailingAddr/contact/postAddress/line2|string|| x |
 |mailingAddr/contact/postAddress/line3|string|| x |
 |mailingAddr/contact/postAddress/county|string|| x |
-|mailingAddr/contact/postAddress/city|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/contact/postAddress/city|string|| x |
 |mailingAddr/contact/postAddress/zip|string|| x |
 |mailingAddr/contact/postAddress/state|string|| x |
 |mailingAddr/contact/postAddress/wgs84latitude|decimal|| x |
@@ -226,12 +227,12 @@ Shadow contact provider for the dynamic Mailings provider.
 |mailingAddr/contact/NumberOfActivities|int||  |
 |mailingAddr/contact/NumberOfActivitiesInPeriod|int||  |
 |mailingAddr/contact/NumberOfNotCompletedActivities|int||  |
-|mailingAddr/contact/NumberOfNotCompletedActivitiesInPeriod|int||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/contact/NumberOfNotCompletedActivitiesInPeriod|int||  |
 |mailingAddr/contact/LastActivity|date||  |
 |mailingAddr/contact/LastCompletedActivity|date||  |
 |mailingAddr/contact/LastDoByActivity|date||  |
@@ -331,12 +332,12 @@ Shadow contact provider for the dynamic Mailings provider.
 |mailingAddr/person/personInfo/infoText|positiveString|| x |
 |mailingAddr/person/email/emailProtocol|string|| x |
 |mailingAddr/person/email/emailAddress|string|| x |
-|mailingAddr/person/email/emailDescription|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/person/email/emailDescription|string|| x |
 |mailingAddr/person/email/emailId|int|| x |
 |mailingAddr/person/email/emailLastSent|datetime|| x |
 |mailingAddr/person/email/emailBounceCount|int|| x |
@@ -436,12 +437,12 @@ Shadow contact provider for the dynamic Mailings provider.
 |mailingAddr/person/personAssociate/userName|string|| x |
 |mailingAddr/person/personAssociate/personEmail|string|| x |
 |mailingAddr/person/personAssociate/locationAddress|string|| x |
-|mailingAddr/person/personAssociate/isLocation|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/person/personAssociate/isLocation|bool|| x |
 |mailingAddr/person/correspondingAssociate/firstName|string|| x |
 |mailingAddr/person/correspondingAssociate/lastName|string|| x |
 |mailingAddr/person/correspondingAssociate/middleName|string|| x |
@@ -531,22 +532,22 @@ Shadow contact provider for the dynamic Mailings provider.
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
 |emailFlow/registeredBy|associate|| x |
 |emailFlow/registeredDate|date|| x |
-|emailFlow/workflowAssociate/firstName|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/workflowAssociate/firstName|string|| x |
 |emailFlow/workflowAssociate/lastName|string|| x |
 |emailFlow/workflowAssociate/middleName|string|| x |
 |emailFlow/workflowAssociate/fullName|string|| x |
@@ -646,12 +647,12 @@ Shadow contact provider for the dynamic Mailings provider.
 |project/projectAssociate/credentialDisplayValue| *None* || x |
 |project/projectAssociate/isActive|bool|| x |
 |project/projectAssociate/isActiveText|bool|| x |
-|project/projectAssociate/portraitThumbnail| *None* ||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/portraitThumbnail| *None* ||  |
 |project/projectAssociate/otherGroups|userGroup||  |
 |project/projectAssociate/userName|string|| x |
 |project/projectAssociate/personEmail|string|| x |
@@ -696,7 +697,7 @@ Shadow contact provider for the dynamic Mailings provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsShadowDynamicSelectionSingleCriteriaGroup?$select=mailingAddr/person/personExtra/x_person_timespan,emailFlow/workflowAssociate/personEmail,mailingAddr/contact/LastTicket
+GET /api/v1/archive/MailingsShadowDynamicSelectionSingleCriteriaGroup?$select=mailingAddr/contact/saintDirection,mailingAddr/person/correspondingAssociate/isActiveText,mailingAddr/person/withdrawnEmarketingConsent,project/name
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

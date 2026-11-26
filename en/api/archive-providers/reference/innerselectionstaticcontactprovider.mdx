@@ -716,7 +716,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=streetAddress/line1,sourceRelation/countryId,sale/saleType,isStakeholder
+GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=postAddress/formattedMultiLineAddress,streetAddress/county,contactExtra/x_contact_datetime,sourceRelation/updatedBy,targetRelation/numEmployees
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

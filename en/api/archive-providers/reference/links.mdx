@@ -1581,7 +1581,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 ## Sample
 
 ```http!
-GET /api/v1/archive/Links?$select=visibleInDiary,contact/hasInterests,contact/categoryGroup,contact/contactDeleted,contact/revenueBasecurrency
+GET /api/v1/archive/Links?$select=person/restrictionAddress/addressId,person/personAssociate/credentialType,person/correspondingAssociate/isActiveText,project/projectUdef/SuperOffice:3,sale/registeredByFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

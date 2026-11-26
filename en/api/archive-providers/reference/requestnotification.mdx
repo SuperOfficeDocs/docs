@@ -39,11 +39,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Requ
 |updateType| *None* ||  |
 |category| *None* ||  |
 |customUrl| *None* ||  |
+|expires| *None* ||  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/RequestNotification?$select=associateId,originatorFullName
+GET /api/v1/archive/RequestNotification?$select=ticketId,notifyDateTime
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

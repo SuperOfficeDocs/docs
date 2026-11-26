@@ -18,7 +18,7 @@ public interface IBLOBAgent : IAgentBase, IDisposable
 
 ### ChangeContactImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_ChangeContactImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
-Changes the contact image link. If the Binary object id is 0, any image link is removed from the contact.
+Changes the contact image link. If the Binary object id is 0, any image link is removed from the contact. A logo that is removed or replaced is deleted if nothing else links to it.
 
 ```csharp
 Task ChangeContactImageAsync(int contactId, int blobId, RequestOptions requestOptions = null)
@@ -43,6 +43,8 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
 ### ChangePersonImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBLOBAgent_ChangePersonImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Changes the person image link. If the Binary object id is 0, any image link is removed from the person. A photo that is removed or replaced is deleted if nothing else links to it.
 
 ```csharp
 Task ChangePersonImageAsync(int personId, int blobId, RequestOptions requestOptions = null)

@@ -56,11 +56,11 @@ Form selection archive with OR-able selection groups. Each group is represented 
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
@@ -104,7 +104,7 @@ Form selection archive with OR-able selection groups. Each group is represented 
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormDynamicSelectionV2?$select=emailFlow/mediumThumbnail,emailFlow/workflowLastTriggeredDate
+GET /api/v1/archive/FormDynamicSelectionV2?$select=associate/assocTooltip,emailFlow/mediumThumbnail,emailFlow/workflowLastTriggeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

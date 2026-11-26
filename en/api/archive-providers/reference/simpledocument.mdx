@@ -746,7 +746,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleDocument?$select=person/fullName,person/rank,person/personRegisteredBy,person/correspondingAssociate/locationAddress,person/hasStoreConsent
+GET /api/v1/archive/SimpleDocument?$select=person/restrictionAddress/wgs84longitude,person/personAssociate/title,person/withdrawnStoreConsent,person/hasEmarketingConsent,contact/streetAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

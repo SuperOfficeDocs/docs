@@ -18,6 +18,8 @@ AI - Artificial Intelligence
 
  [AI\_AnswerUsingContextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_AnswerUsingContextRequest)
 
+ [AI\_CancelEvalRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_CancelEvalRequest)
+
  [AI\_CancelIndexingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_CancelIndexingRequest)
 
  [AI\_ClearChatbotTurnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_ClearChatbotTurnsRequest)
@@ -70,7 +72,11 @@ AI - Artificial Intelligence
 
  [AI\_SearchRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_SearchRequest)
 
+ [AI\_StartEvalRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_StartEvalRequest)
+
  [AI\_StartRagIndexingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_StartRagIndexingRequest)
+
+ [AI\_StatusEvalRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_StatusEvalRequest)
 
  [AI\_SummarizeContactRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_SummarizeContactRequest)
 
@@ -155,6 +161,11 @@ Info about an appointment
 Carrier object for AppointmentMoveData.
 Parameter data for moving an appointment.
 
+ [AppointmentParticipant](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentParticipant)
+
+Carrier object for AppointmentParticipant.
+A participant of a meeting, with the name to show.
+
  [AppointmentSaveData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentSaveData)
 
 Carrier object for AppointmentSaveData.
@@ -227,6 +238,8 @@ Carrier object for AppointmentSyncData.
  [Appointment\_GetAppointmentFromUIDRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetAppointmentFromUIDRequest)
 
  [Appointment\_GetAppointmentHaveParticipantsWithEmailRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetAppointmentHaveParticipantsWithEmailRequest)
+
+ [Appointment\_GetAppointmentParticipantsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetAppointmentParticipantsRequest)
 
  [Appointment\_GetAppointmentRecordsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetAppointmentRecordsRequest)
 
@@ -313,6 +326,8 @@ Carrier object for AppointmentSyncData.
  [Appointment\_GetRedLetterInformationListByDatesAndAssociateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetRedLetterInformationListByDatesAndAssociateRequest)
 
  [Appointment\_GetTaskListItemsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetTaskListItemsRequest)
+
+ [Appointment\_GetTicketAppointmentsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetTicketAppointmentsRequest)
 
  [Appointment\_GetUIDFromAppointmentIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetUIDFromAppointmentIdRequest)
 
@@ -445,6 +460,14 @@ This class carries information about a restriction on the query of an archive pr
  [Archive\_GetAvailableColumnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetAvailableColumnsRequest)
 
  [Archive\_GetAvailableEntitiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetAvailableEntitiesRequest)
+
+ [Archive\_GetCriteriaFieldListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetCriteriaFieldListRequest)
+
+ [Archive\_GetCriteriaFieldListWithGuiNameAndContextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetCriteriaFieldListWithGuiNameAndContextRequest)
+
+ [Archive\_GetCriteriaFieldListWithGuiNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetCriteriaFieldListWithGuiNameRequest)
+
+ [Archive\_GetDefaultColumnListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetDefaultColumnListRequest)
 
  [Archive\_GetGroupAssociateIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetGroupAssociateIdsRequest)
 
@@ -1227,6 +1250,11 @@ Carrier object for CurrencyEntity.
 Carrier object for CustomCommand.
 Generic carrier object for entity commands.
 
+ [CustomFieldDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomFieldDefinition)
+
+Carrier object for CustomFieldDefinition.
+Custom (extra) field definitions on Custom Objects and on the standard tables that can have custom fields. Fields are described by FieldInfoBase and its FieldInfo* types, selected by FieldType.
+
  [CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)
 
 Carrier object for CustomObject.
@@ -1236,11 +1264,6 @@ A single row in a Custom Object table.
 
 Carrier object for CustomObjectDefinition.
 Schema definition for a Custom Object: the underlying table and its fields.
-
- [CustomObjectField](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectField)
-
-Carrier object for CustomObjectField.
-Describes one field on a Custom Object Definition.
 
  [CustomObjectMetadata](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectMetadata)
 
@@ -1252,9 +1275,25 @@ Bootstrap metadata for a Custom Object table.
 Carrier object for CustomObjectRelation.
 Describes a relation from a Custom Object to another entity.
 
+ [CustomObject\_CreateCustomFieldDefinitionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_CreateCustomFieldDefinitionsRequest)
+
+ [CustomObject\_CreateCustomObjectDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_CreateCustomObjectDefinitionRequest)
+
+ [CustomObject\_CreateCustomObjectRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_CreateCustomObjectRequest)
+
+ [CustomObject\_CreateDefaultCustomObjectDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_CreateDefaultCustomObjectDefinitionRequest)
+
  [CustomObject\_CreateDefaultCustomObjectRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_CreateDefaultCustomObjectRequest)
 
+ [CustomObject\_DeleteCustomFieldDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_DeleteCustomFieldDefinitionRequest)
+
+ [CustomObject\_DeleteCustomObjectDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_DeleteCustomObjectDefinitionRequest)
+
  [CustomObject\_DeleteCustomObjectRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_DeleteCustomObjectRequest)
+
+ [CustomObject\_GetCustomFieldDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_GetCustomFieldDefinitionRequest)
+
+ [CustomObject\_GetCustomFieldDefinitionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_GetCustomFieldDefinitionsRequest)
 
  [CustomObject\_GetCustomObjectDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_GetCustomObjectDefinitionRequest)
 
@@ -1266,7 +1305,13 @@ Describes a relation from a Custom Object to another entity.
 
  [CustomObject\_HasScreenChooserRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_HasScreenChooserRequest)
 
- [CustomObject\_SaveCustomObjectRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_SaveCustomObjectRequest)
+ [CustomObject\_SaveCustomFieldDefinitionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_SaveCustomFieldDefinitionsRequest)
+
+ [CustomObject\_UpdateCustomFieldDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_UpdateCustomFieldDefinitionRequest)
+
+ [CustomObject\_UpdateCustomObjectDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_UpdateCustomObjectDefinitionRequest)
+
+ [CustomObject\_UpdateCustomObjectRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_UpdateCustomObjectRequest)
 
  [CustomerCenterConfig](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerCenterConfig)
 
@@ -1428,12 +1473,12 @@ HTML data for dash tiles with TileType = HTML
 
  [Dash\_SaveDashTilesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash_SaveDashTilesRequest)
 
- [UserPreferenceStrings.Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Dashboard)
-
  [Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)
 
 Carrier object for Dashboard.
 Dashboard configuration
+
+ [UserPreferenceStrings.Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Dashboard)
 
  [DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)
 
@@ -3446,13 +3491,13 @@ The built-in payment terms list. Used by the SuperOffice Quote Connector to cate
 Carrier object for PaymentType.
 The built-in payment types list. Used by the SuperOffice Quote Connector in quote versions.
 
- [UserPreferenceStrings.Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Person)
-
-Person preferences
-
  [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 Carrier object for Person.
+
+ [UserPreferenceStrings.Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Person)
+
+Person preferences
 
  [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
@@ -4283,6 +4328,11 @@ Contains the answer to an AI search, with sources used.
 
 Carrier object for RagContextIds.
 Parameters specifying contact/person/project/sale/ticket ids for populating context.
+
+ [RagEval](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagEval)
+
+Carrier object for RagEval.
+Contains the result of an AI evaluation.
 
  [RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult)
 

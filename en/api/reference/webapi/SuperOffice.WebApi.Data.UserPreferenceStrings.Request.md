@@ -60,6 +60,18 @@ public const string DefaultMessageStatus = "defaultMessageStatus"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultMessageStatusPostponeOptionId"></a> DefaultMessageStatusPostponeOptionId
+
+(INTEGER) The postpone option (TicketStatusPostponeId) used when [DefaultMessageStatus](#SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultMessageStatus) is a Postponed status
+
+```csharp
+public const string DefaultMessageStatusPostponeOptionId = "defaultMessageStatusPostponeOptionId"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultOwner"></a> DefaultOwner
 
 (INTEGER) The default owner when creating a new request
@@ -78,6 +90,18 @@ public const string DefaultOwner = "defaultOwner"
 
 ```csharp
 public const string DefaultRequestStatus = "defaultRequestStatus"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultRequestStatusPostponeOptionId"></a> DefaultRequestStatusPostponeOptionId
+
+(INTEGER) The postpone option (TicketStatusPostponeId) used when [DefaultRequestStatus](#SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultRequestStatus) is a Postponed status
+
+```csharp
+public const string DefaultRequestStatusPostponeOptionId = "defaultRequestStatusPostponeOptionId"
 ```
 
 #### Field Value
