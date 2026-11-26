@@ -1,16 +1,13 @@
 ---
 title: templatevariables
 keywords: mdoprovider mdo provider templatevariables
-description: 
+description:
 generated: true
 content_type: reference
 envir: online
 ---
 
 ## "templatevariables" MDO List
-
-
-
 
 Implemented by the TemplateVariablesProvider class.
 The name of the MDO list is 'templatevariables'.
@@ -20,10 +17,6 @@ The name of the MDO list is 'templatevariables'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Include company variables. Default = true| includeCompanies|True|
-
-
-
-
 
 ## Sample Request
 
@@ -36,6 +29,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("templatevariables", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -68,7 +62,6 @@ foreach (var item in listProvider.RootItems) {
 |18|||{busi}|
 |19|||{numb}|
 |20|||{city}|
-
 
 ## Related MDO Lists
 

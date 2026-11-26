@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_WebApiOptions"></a> Class WebApiOptions
 
-Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)
+Assembly: SuperOffice.WebApi.dll
 
 Configure the WebAPI clients with the right URL, language, timeout, and compression flags.
 The language and timezones can be overridden per request.
@@ -12,26 +12,26 @@ public class WebApiOptions : RequestOptions
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions) ←
 [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 #### Inherited Members
 
-[RequestOptions.DefaultTimeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_DefaultTimeout), 
-[RequestOptions.LanguageCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_LanguageCode), 
-[RequestOptions.CultureCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CultureCode), 
-[RequestOptions.Timeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_Timeout), 
-[RequestOptions.TimeZone](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZone), 
-[RequestOptions.TimeZoneIncludeOffset](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZoneIncludeOffset), 
-[RequestOptions.ImpersonateUserName](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_ImpersonateUserName), 
-[RequestOptions.CustomHeaders](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CustomHeaders), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[RequestOptions.DefaultTimeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_DefaultTimeout),
+[RequestOptions.LanguageCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_LanguageCode),
+[RequestOptions.CultureCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CultureCode),
+[RequestOptions.Timeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_Timeout),
+[RequestOptions.TimeZone](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZone),
+[RequestOptions.TimeZoneIncludeOffset](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZoneIncludeOffset),
+[RequestOptions.ImpersonateUserName](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_ImpersonateUserName),
+[RequestOptions.CustomHeaders](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CustomHeaders),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -109,9 +109,9 @@ Determines whether base url is verified - end with /api, "https://example.com/Su
 ### <a id="SuperOffice_WebApi_WebApiOptions_Authorization"></a> Authorization
 
 Used to set the Authorization header scheme and value.
-Use <xref href="SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword" data-throw-if-not-resolved="false"></xref>, AuthorizationAccessToken, 
-<xref href="SuperOffice.WebApi.Authorization.AuthorizationTicket" data-throw-if-not-resolved="false"></xref>, <xref href="SuperOffice.WebApi.Authorization.AuthorizationImplicit" data-throw-if-not-resolved="false"></xref>
-AuthorizationSystemUserTicket or <xref href="SuperOffice.WebApi.AuthorizationUserToken" data-throw-if-not-resolved="false"></xref>.
+Use [AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword), AuthorizationAccessToken,
+[AuthorizationTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationTicket), [AuthorizationImplicit](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationImplicit)
+AuthorizationSystemUserTicket or [AuthorizationUserToken](/en/api/reference/webapi/SuperOffice.WebApi.AuthorizationUserToken).
 
 ```csharp
 public IAuthorization Authorization { get; set; }
@@ -161,7 +161,7 @@ public ILogger Logger { get; }
 ### <a id="SuperOffice_WebApi_WebApiOptions_ProgressListener"></a> ProgressListener
 
 Callback for progress during downloads.
-Copied to the agent during initialization - can be overridden on each agent using <xref href="SuperOffice.WebApi.Agents.AgentBase.ProgressListener" data-throw-if-not-resolved="false"></xref>.
+Copied to the agent during initialization - can be overridden on each agent using [ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.ProgressListener).
 
 ```csharp
 public IProgressListener ProgressListener { get; set; }
@@ -174,7 +174,7 @@ public IProgressListener ProgressListener { get; set; }
 ### <a id="SuperOffice_WebApi_WebApiOptions_UploadProgressListener"></a> UploadProgressListener
 
 Callback for progress during uploads.
-Copied to the agent during initialization - can be overridden on each agent using <xref href="SuperOffice.WebApi.Agents.AgentBase.UploadProgressListener" data-throw-if-not-resolved="false"></xref>.
+Copied to the agent during initialization - can be overridden on each agent using [UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener).
 
 ```csharp
 public IProgressListener UploadProgressListener { get; set; }
@@ -211,4 +211,3 @@ public WebApiOptions Clone()
  [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 A shallow copy of the current WebApiOptions.
-

@@ -36,7 +36,7 @@ var foreignAppEntity = agent.GetForeignAppEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All ForeignAppEntity: <pre><code class="lang-csharp">"ForeignKeys"</code></pre>
 
 ## Constructors

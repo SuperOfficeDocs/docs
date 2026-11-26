@@ -40,7 +40,6 @@ A ticket (request) type
 |reply\_external\_as\_default|Set external access level when replying the message|Bool|No|
 |postpone\_option\_id|The postpone option used when default_status is a Postponed status. 0 = not set|FK [ticket_status_postpone](./ticket-status-postpone.mdx)|No|
 
-
 ![ticket_type table relationship diagram](/media/loc/en/database/tables/ticket_type.png)
 
 <TicketType />
@@ -72,7 +71,6 @@ A ticket (request) type
 |[ticket\_type\_status](./ticket-type-status)  |Link table defining what Statuses are relevant to a particular Ticket type |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
-
 ## Replication Flags
 
 * None
@@ -80,4 +78,3 @@ A ticket (request) type
 ## Security Flags
 
 * No access control via user's Role.
-

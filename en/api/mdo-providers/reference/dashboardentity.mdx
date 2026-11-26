@@ -1,7 +1,7 @@
 ---
 title: dashboardentity
 keywords: mdoprovider mdo provider dashboardentity
-description: 
+description:
 generated: true
 content_type: reference
 envir: online
@@ -9,14 +9,8 @@ envir: online
 
 ## "dashboardentity" MDO List
 
-
-
-
 Implemented by the DashboardEntityList class.
 The name of the MDO list is 'dashboardentity'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +23,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("dashboardentity", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -52,7 +47,6 @@ foreach (var item in listProvider.RootItems) {
 |332|||chat_session|
 |485|||form_submission|
 |334|||s_shipment|
-
 
 ## Related MDO Lists
 

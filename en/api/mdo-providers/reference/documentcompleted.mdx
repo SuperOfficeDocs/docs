@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "documentcompleted" MDO List
+
 Document completed status list: Not done, Done.
-
-
 
 Implemented by the DocumentCompletedProvider class.
 The name of the MDO list is 'documentcompleted'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("documentcompleted", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -43,7 +40,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |0||||
 |1||||
-
 
 ## Related MDO Lists
 

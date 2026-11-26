@@ -1,8 +1,8 @@
 ---
 title: Agent API changes in 12.7
 description: Agent API release notes for SuperOffice 12.7
-date: 11.25.2026
-version: 12.7.1513
+date: 11.24.2026
+so_version: 12.7.1513
 content_type: release-note
 category: api
 ---
@@ -256,23 +256,17 @@ The following represent changes to the SuperOffice.WebApi assembly.
 * New items
   * Field `.CopilotRagEvalTag`
 
-
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.Request is Modified
 
 * New items
   * Field `.RequestDefaultMessageStatusPostponeOptionId`
   * Field `.RequestDefaultRequestStatusPostponeOptionId`
 
-
 #### SuperOffice.WebApi.RequestOptions is Modified
 
 * New items
   * Property `ImpersonateUserName`
 
-
 ## Web API Authorization
 
 The following represent changes to the SuperOffice.WebApi.Authorization assembly.
-
-
-

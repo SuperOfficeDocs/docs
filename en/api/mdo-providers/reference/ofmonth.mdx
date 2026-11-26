@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "ofmonth" MDO List
+
 MDO provider for the hard-coded list of "of" months in the recurrence dialog.
-
-
 
 Implemented by the OfMonthProvider class.
 The name of the MDO list is 'ofmonth'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ofmonth", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -53,7 +50,6 @@ foreach (var item in listProvider.RootItems) {
 |10||replacekey=$monthName|[SR_MONTH_OCTOBER]|
 |11||replacekey=$monthName|[SR_MONTH_NOVEMBER]|
 |12||replacekey=$monthName|[SR_MONTH_DECEMBER]|
-
 
 ## Related MDO Lists
 

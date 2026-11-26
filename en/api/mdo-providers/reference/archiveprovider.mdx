@@ -8,16 +8,12 @@ envir: online
 ---
 
 ## "archiveprovider" MDO List
+
 MDO provider for available archive providers for Configurable screens.
 The items will be added by scanning ArchiveProviderFactory.KnownArchiveProviders for this pattern;
 
-
-
 Implemented by the ArchiveProviderList class.
 The name of the MDO list is 'archiveprovider'.
-
-
-
 
 ## Sample Request
 
@@ -30,6 +26,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("archiveprovider", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -45,7 +42,6 @@ foreach (var item in listProvider.RootItems) {
 |0|||ProviderName=ConfigurableArchiveAppointment|
 |1|||ProviderName=Document|
 |2|||ProviderName=Sale|
-
 
 ## Related MDO Lists
 

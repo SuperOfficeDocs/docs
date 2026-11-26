@@ -44,7 +44,6 @@ Contains news feed items - published to one or more users, with one or more lang
 |FromCategoryIdentifier|Language-independent identifier for the agent type. To allow clients to filter for specific agents without worrying about translations. e.g. &apos;lead&apos; or &apos;dataQuality&apos;. Defaults to value based on the FromCategoryName if not set.|String(40)|No|
 |FromIdentifier|Language-independent identifier for the agent. To allow clients to filter for specific agents without worrying about translations. e.g. &apos;xyz123&apos; or &apos;543qew&apos;. Defaults to value based on the FromName if not set.|String(40)|No|
 
-
 ![NewsFeedItem table relationship diagram](/media/loc/en/database/tables/NewsFeedItem.png)
 
 <Newsfeeditem />
@@ -73,7 +72,6 @@ Contains news feed items - published to one or more users, with one or more lang
 |[project](./project)  |Projects |
 |[sale](./sale)  |Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.   |
 
-
 ## Replication Flags
 
 * None
@@ -81,4 +79,3 @@ Contains news feed items - published to one or more users, with one or more lang
 ## Security Flags
 
 * No access control via user's Role.
-

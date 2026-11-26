@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_FieldInfoBase"></a> Class FieldInfoBase
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 Carrier object for FieldInfoBase.
 Abstract basic information about database fields. May be custom or user-defined fields. The information can be used to build a user interface.
@@ -27,35 +27,35 @@ public class FieldInfoBase
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)
 
 #### Derived
 
-[FieldInfoAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoAttachment), 
-[FieldInfoBlob](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBlob), 
-[FieldInfoBool](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBool), 
-[FieldInfoDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDate), 
-[FieldInfoDateTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDateTime), 
-[FieldInfoDecimal](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDecimal), 
-[FieldInfoDynamicLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDynamicLink), 
-[FieldInfoInt](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoInt), 
-[FieldInfoListText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoListText), 
-[FieldInfoLongText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoLongText), 
-[FieldInfoMdoList](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoMdoList), 
-[FieldInfoRelation](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoRelation), 
-[FieldInfoShortText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoShortText), 
-[FieldInfoTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoTime), 
+[FieldInfoAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoAttachment),
+[FieldInfoBlob](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBlob),
+[FieldInfoBool](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBool),
+[FieldInfoDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDate),
+[FieldInfoDateTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDateTime),
+[FieldInfoDecimal](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDecimal),
+[FieldInfoDynamicLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDynamicLink),
+[FieldInfoInt](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoInt),
+[FieldInfoListText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoListText),
+[FieldInfoLongText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoLongText),
+[FieldInfoMdoList](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoMdoList),
+[FieldInfoRelation](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoRelation),
+[FieldInfoShortText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoShortText),
+[FieldInfoTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoTime),
 [FieldInfoTimeSpan](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoTimeSpan)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -313,4 +313,3 @@ public virtual string TemplateVariableName { get; set; }
 ## See Also
 
 [UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent)
-

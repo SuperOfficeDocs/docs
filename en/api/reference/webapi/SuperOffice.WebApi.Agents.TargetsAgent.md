@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_TargetsAgent"></a> Class TargetsAgent
+# Class TargetsAgent {#SuperOffice_WebApi_Agents_TargetsAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 Agent lets you configure targets, and retrieve targets
 
@@ -11,65 +11,65 @@ public class TargetsAgent : AgentBase, ITargetsAgent, IAgentBase, IDisposable
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ←
 [TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent)
 
 #### Implements
 
-[ITargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ITargetsAgent), 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[ITargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ITargetsAgent),
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
-[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
-[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
-[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
-[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
-[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
-[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
-[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
-[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
-[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json),
+[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary),
+[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config),
+[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client),
+[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient),
+[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_),
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_),
+[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest),
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_),
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_),
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_),
+[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_),
+[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose),
+[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration),
+[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client),
+[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest),
+[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource),
+[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener),
+[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (TargetsAgent agent = new TargetsAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent__ctor_System_Net_Http_HttpClient_"></a> TargetsAgent\(HttpClient\)
+### TargetsAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_TargetsAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent lets you configure targets, and retrieve targets
 
@@ -83,7 +83,7 @@ public TargetsAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> TargetsAgent\(WebApiOptions, HttpClient\)
+### TargetsAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_TargetsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent lets you configure targets, and retrieve targets
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetAssignmentAsync\(RequestOptions\)
+### CreateDefaultTargetAssignmentAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetAssignment.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -120,11 +120,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\&gt;
 
 A blank TargetAssignment
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForCompanyAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetAssignmentForCompanyAsync\(RequestOptions\)
+### CreateDefaultTargetAssignmentForCompanyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForCompanyAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the owner company.
 
@@ -140,11 +140,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\&gt;
 
 Default target assignment for the owner company.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForCompanyWithDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetAssignmentForCompanyWithDimensionAsync\(int, RequestOptions\)
+### CreateDefaultTargetAssignmentForCompanyWithDimensionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForCompanyWithDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the owner company, for the specified dimension.
 
@@ -164,11 +164,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\&gt;
 
 Default target assignments for the owner company.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync\(int, int, RequestOptions\)
+### CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the owner company, for the specified year and dimension.
 
@@ -192,11 +192,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\&gt;
 
 Default target assignments for the owner company.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetAssignmentForUserGroupAsync\(int, RequestOptions\)
+### CreateDefaultTargetAssignmentForUserGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the specified usergroup.
 
@@ -216,11 +216,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\&gt;
 
 Default target assignment for the specified usergroup.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync\(int, int, RequestOptions\)
+### CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the specified usergroup, for the specified dimension.
 
@@ -244,11 +244,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\&gt;
 
 Default target assignment for the specified usergroup.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync\(int, int, int, RequestOptions\)
+### CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the specified usergroup, for the specified year and dimension.
 
@@ -276,11 +276,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\[\]\&gt;
 
 Default target assignment for the specified usergroup.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetDimensionAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetDimensionAsync\(RequestOptions\)
+### CreateDefaultTargetDimensionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetDimensionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetDimension.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -297,11 +297,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\&gt;
 
 A blank TargetDimension
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetGroupAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetGroupAsync\(RequestOptions\)
+### CreateDefaultTargetGroupAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetGroupAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetGroup.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -318,11 +318,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\&gt;
 
 A blank TargetGroup
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetRevisionAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetRevisionAsync\(RequestOptions\)
+### CreateDefaultTargetRevisionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetRevisionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetRevision.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -339,11 +339,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetRevision](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetRevision](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevision)\&gt;
 
 A blank TargetRevision
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetRevisionHistoryAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTargetRevisionHistoryAsync\(RequestOptions\)
+### CreateDefaultTargetRevisionHistoryAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_CreateDefaultTargetRevisionHistoryAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetRevisionHistory.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -360,11 +360,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetRevisionHistory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevisionHistory)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetRevisionHistory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevisionHistory)\&gt;
 
 A blank TargetRevisionHistory
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_DeleteTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTargetDimensionAsync\(int, RequestOptions\)
+### DeleteTargetDimensionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_DeleteTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the TargetDimension
 
@@ -386,7 +386,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_DeleteTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTargetGroupAsync\(int, RequestOptions\)
+### DeleteTargetGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_DeleteTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the TargetGroup
 
@@ -408,7 +408,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_ExportTargetGroupToExcelAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ExportTargetGroupToExcelAsync\(int, RequestOptions\)
+### ExportTargetGroupToExcelAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_ExportTargetGroupToExcelAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Renders the given targetgroup to excel, and returns the path to the temporary file.
 
@@ -428,9 +428,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExportArchiveResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExportArchiveResult)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExportArchiveResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExportArchiveResult)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetAssignmentForYearAndDimensionAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTargetAssignmentForYearAndDimensionAsync\(int, TargetEntityType, TargetLevel, int, int, RequestOptions\)
+### GetTargetAssignmentForYearAndDimensionAsync\(int, TargetEntityType, TargetLevel, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetAssignmentForYearAndDimensionAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target assignment for the specified year, entity type and dimension.
 
@@ -466,11 +466,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\&gt;
 
 Target assignment for a specified entity for year and entity type. Null if not found.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetAssignmentForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTargetAssignmentForYearAsync\(int, TargetEntityType, TargetLevel, int, RequestOptions\)
+### GetTargetAssignmentForYearAsync\(int, TargetEntityType, TargetLevel, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetAssignmentForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target assignment for the specified year and entity type.
 
@@ -502,11 +502,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetAssignment](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetAssignment)\&gt;
 
 Target assignment for a specified entity for year and entity type. Null if not found.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTargetDimensionAsync\(int, RequestOptions\)
+### GetTargetDimensionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TargetDimension object.
 
@@ -526,11 +526,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\&gt;
 
 TargetDimension
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetDimensionsForEntityTypeAsync_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_"></a> GetTargetDimensionsForEntityTypeAsync\(TargetEntityType, RequestOptions\)
+### GetTargetDimensionsForEntityTypeAsync\(TargetEntityType, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetDimensionsForEntityTypeAsync_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target dimensions for the given entity type.
 
@@ -550,11 +550,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\[\]\&gt;
 
 Target dimensions for year and entity type.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTargetGroupAsync\(int, RequestOptions\)
+### GetTargetGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TargetGroup object.
 
@@ -574,11 +574,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\&gt;
 
 TargetGroup
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupForYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTargetGroupForYearAndDimensionAsync\(int, int, RequestOptions\)
+### GetTargetGroupForYearAndDimensionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupForYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target group for the specified year and dimension.
 
@@ -602,11 +602,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\&gt;
 
 Target Group for year and dimension.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_"></a> GetTargetGroupForYearAsync\(int, TargetEntityType, RequestOptions\)
+### GetTargetGroupForYearAsync\(int, TargetEntityType, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target group for the specified year and entity type.
 
@@ -630,11 +630,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\&gt;
 
 Target Group for year and entity type.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupIdsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTargetGroupIdsAsync\(int, RequestOptions\)
+### GetTargetGroupIdsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetGroupIdsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns ids of the target groups that use this dimension.
 
@@ -654,11 +654,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
 
 Target group ids.
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_GetTargetRevisionHistoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTargetRevisionHistoryAsync\(int, RequestOptions\)
+### GetTargetRevisionHistoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_GetTargetRevisionHistoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the revision history for a given TargetAssignmentInfo in chronological order.
 
@@ -678,11 +678,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetRevisionHistory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevisionHistory)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetRevisionHistory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetRevisionHistory)\&gt;
 
 Target revision history for the given TargetAssignmentInfo
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_SaveTargetDimensionAsync_SuperOffice_WebApi_Data_TargetDimension_SuperOffice_WebApi_RequestOptions_"></a> SaveTargetDimensionAsync\(TargetDimension, RequestOptions\)
+### SaveTargetDimensionAsync\(TargetDimension, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_SaveTargetDimensionAsync_SuperOffice_WebApi_Data_TargetDimension_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TargetDimension or creates a new TargetDimension if the id parameter is 0.
 
@@ -702,11 +702,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetDimension](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetDimension)\&gt;
 
 New or updated TargetDimension
 
-### <a id="SuperOffice_WebApi_Agents_TargetsAgent_SaveTargetGroupAsync_SuperOffice_WebApi_Data_TargetGroup_SuperOffice_WebApi_RequestOptions_"></a> SaveTargetGroupAsync\(TargetGroup, RequestOptions\)
+### SaveTargetGroupAsync\(TargetGroup, RequestOptions\) {#SuperOffice_WebApi_Agents_TargetsAgent_SaveTargetGroupAsync_SuperOffice_WebApi_Data_TargetGroup_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TargetGroup or creates a new TargetGroup if the id parameter is 0.
 
@@ -726,7 +726,6 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TargetGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetGroup)\&gt;
 
 New or updated TargetGroup
-

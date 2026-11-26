@@ -183,6 +183,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -286,6 +295,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -421,6 +439,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -541,6 +568,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -619,6 +655,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -693,6 +738,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -800,6 +854,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -876,6 +939,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -983,6 +1055,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1099,6 +1180,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1163,6 +1253,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1312,6 +1411,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1408,6 +1516,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1581,6 +1698,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1685,6 +1811,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1830,6 +1965,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1957,6 +2101,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2063,6 +2216,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -2188,6 +2350,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2284,6 +2455,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -2388,6 +2568,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2488,6 +2677,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2543,10 +2741,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:65002"
+      "url": "http://localhost:58622"
     },
     {
-      "url": "https://localhost:65002"
+      "url": "https://localhost:58622"
     }
   ],
   "components": {
@@ -3639,6 +3837,22 @@
           "TemplateVariableName": {
             "description": "Template variable name: 'cs01', 'cl02' etc. Null for extra fields.",
             "type": "string"
+          },
+          "IsDefaultListColumn": {
+            "description": "Custom-object fields only: true if the field is one of the default columns where rows of the custom object are listed (archive default columns, previews, bulk update); users can still add or remove columns. Mirrors the ViewInList extra-field flag. Not used on standard tables or user-defined fields.",
+            "type": "boolean"
+          },
+          "ApplyDefaultValue": {
+            "description": "Extra fields only: true if new rows get DefaultValue; false leaves the field empty even when DefaultValue is set (0 and false are real defaults). Ignored for relation, Link and Attachment fields. Mirrors the UseDefault extra-field flag. Not used on user-defined fields.",
+            "type": "boolean"
+          },
+          "IsFreetextSource": {
+            "description": "Custom-object fields only: true if the field's values are freetext-indexed, so rows can be found by text in this field; it also makes relation pickers on this custom object search as you type. The display field is always indexed, whether or not this is set. Mirrors the ViewInSearch extra-field flag. Not used on standard tables or user-defined fields.",
+            "type": "boolean"
+          },
+          "ShowInSideCard": {
+            "description": "Request (ticket) extra fields only: true if the field is shown in the Request side card, next to the built-in properties, instead of the details area. Ignored for other tables. Mirrors the ShowWithProperties extra-field flag. Not used on user-defined fields.",
+            "type": "boolean"
           }
         }
       },

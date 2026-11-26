@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request"></a> Class UserPreferenceStrings.Request
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)
+Assembly: SuperOffice.WebApi.dll
 
 ```csharp
 public static class UserPreferenceStrings.Request
@@ -9,17 +9,17 @@ public static class UserPreferenceStrings.Request
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [UserPreferenceStrings.Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Request)
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Fields
@@ -62,7 +62,7 @@ public const string DefaultMessageStatus = "defaultMessageStatus"
 
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultMessageStatusPostponeOptionId"></a> DefaultMessageStatusPostponeOptionId
 
-(INTEGER) The postpone option (TicketStatusPostponeId) used when <xref href="SuperOffice.WebApi.Data.UserPreferenceStrings.Request.DefaultMessageStatus" data-throw-if-not-resolved="false"></xref> is a Postponed status
+(INTEGER) The postpone option (TicketStatusPostponeId) used when [DefaultMessageStatus](#SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultMessageStatus) is a Postponed status
 
 ```csharp
 public const string DefaultMessageStatusPostponeOptionId = "defaultMessageStatusPostponeOptionId"
@@ -98,7 +98,7 @@ public const string DefaultRequestStatus = "defaultRequestStatus"
 
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultRequestStatusPostponeOptionId"></a> DefaultRequestStatusPostponeOptionId
 
-(INTEGER) The postpone option (TicketStatusPostponeId) used when <xref href="SuperOffice.WebApi.Data.UserPreferenceStrings.Request.DefaultRequestStatus" data-throw-if-not-resolved="false"></xref> is a Postponed status
+(INTEGER) The postpone option (TicketStatusPostponeId) used when [DefaultRequestStatus](#SuperOffice_WebApi_Data_UserPreferenceStrings_Request_DefaultRequestStatus) is a Postponed status
 
 ```csharp
 public const string DefaultRequestStatusPostponeOptionId = "defaultRequestStatusPostponeOptionId"
@@ -273,4 +273,3 @@ public const string UseLastCategory = "useLastCategory"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-

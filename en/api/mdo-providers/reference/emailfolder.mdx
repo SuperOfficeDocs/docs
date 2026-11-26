@@ -8,10 +8,9 @@ envir: online
 ---
 
 ## "emailfolder" MDO List
+
 EmailFolderProvider gives you the folder hierarchy of one of the current associate's mail accounts.
 Folders of other associates' accounts are never listed, not even for administrators.
-
-
 
 Implemented by the EmailFolderProvider class.
 The name of the MDO list is 'emailfolder'.
@@ -26,10 +25,6 @@ The name of the MDO list is 'emailfolder'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -41,6 +36,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("emailfolder", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -54,7 +50,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

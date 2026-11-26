@@ -8,15 +8,11 @@ envir: online
 ---
 
 ## "formfields" MDO List
+
 List of customizable fields for forms
-
-
 
 Implemented by the FormFieldsProvider class.
 The name of the MDO list is 'formfields'.
-
-
-
 
 ## Sample Request
 
@@ -29,6 +25,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("formfields", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -62,7 +59,6 @@ foreach (var item in listProvider.RootItems) {
 |54| Extra short text||fieldType=company_x_contact_shorttext|
 |66| page1adminonly||textLength=20&fieldType=company_SuperOffice:11|
 |65| page1marketingonly||textLength=20&fieldType=company_SuperOffice:10|
-
 
 ## Related MDO Lists
 

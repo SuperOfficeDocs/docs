@@ -15,17 +15,18 @@ Person subchannel for special purpose archive provider used to search for email 
 
 This channel will match on either the email address itself, or person.firstname or person.lastname
 
-
 The resulting rows will have entity name 'contact', but the primary key will always be
 the email_id.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"email"||
 |"person"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -129,6 +130,7 @@ the email_id.
 |personContact/associateId|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/category|listAny|| x |
@@ -212,4 +214,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

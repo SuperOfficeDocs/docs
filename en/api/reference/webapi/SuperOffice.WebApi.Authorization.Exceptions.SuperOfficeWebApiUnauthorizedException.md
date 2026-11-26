@@ -90,7 +90,7 @@ the real problem
 
 ### <a id="SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiUnauthorizedException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_"></a> SuperOfficeWebApiUnauthorizedException\(SerializationInfo, StreamingContext\)
 
-Mandatory constructor to support <xref href="System.SerializableAttribute" data-throw-if-not-resolved="false"></xref> ]
+Mandatory constructor to support [SerializableAttribute](https://learn.microsoft.com/dotnet/api/system.serializableattribute) ]
 
 ```csharp
 public SuperOfficeWebApiUnauthorizedException(SerializationInfo info, StreamingContext context)

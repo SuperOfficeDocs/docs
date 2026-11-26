@@ -13,25 +13,24 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Free
 
 Archive provider for freetext search on the Sale entity.
 
-
 Use the 'searchwords' restriction with one or more words to specify what to search for. The operator is ignored,
 the freetext search will apply the 'begins' operator to each word and 'AND' between them.
-
 
 It is possible to combine freetext search words with other restrictions and criteria native to the entity and
 its standard subproviders. Note however that this is not the same search as provided by the 'Find' providers, since
 they apply various special rules not present here.
 
-
 Freetext search will limit the number of hits to the first 1000. This clipping is applied before any other criteria,
 as well as before any ORDER BY, are applied.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"sale"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -135,6 +134,7 @@ as well as before any ORDER BY, are applied.
 |person/personRegisteredByFullName|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personRegisteredDate|date|| x |
@@ -239,6 +239,7 @@ as well as before any ORDER BY, are applied.
 |person/personExtra/x\_person\_request\_relation|stringorPK|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_appointment\_relation|stringorPK|| x |
@@ -343,6 +344,7 @@ as well as before any ORDER BY, are applied.
 |contact/code|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/orgnr|string|| x |
@@ -447,6 +449,7 @@ as well as before any ORDER BY, are applied.
 |contact/contactAssociate/credentialDisplayValue| *None* || x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isActive|bool|| x |
@@ -551,6 +554,7 @@ as well as before any ORDER BY, are applied.
 |associate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/locationAddress|string|| x |
@@ -655,6 +659,7 @@ as well as before any ORDER BY, are applied.
 |project/LastSale|date||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/LastCompletedSale|date||  |
@@ -759,6 +764,7 @@ as well as before any ORDER BY, are applied.
 |saleStakeholder/person/personAddress/line1|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personAddress/line2|string|| x |
@@ -863,6 +869,7 @@ as well as before any ORDER BY, are applied.
 |saleStakeholder/person/correspondingAssociate/associateDbId|associate|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/correspondingAssociate/contactName|string|| x |
@@ -967,6 +974,7 @@ as well as before any ORDER BY, are applied.
 |saleStakeholder/contact/streetAddress/line1|string|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/streetAddress/line2|string|| x |
@@ -1071,6 +1079,7 @@ as well as before any ORDER BY, are applied.
 |saleStakeholder/contact/LastSale|date||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/LastCompletedSale|date||  |
@@ -1175,6 +1184,7 @@ as well as before any ORDER BY, are applied.
 |quote/version/alternative/quoteline/updatedDate|date|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |quote/version/alternative/quoteline/registeredBy|associate|| x |
@@ -1200,4 +1210,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

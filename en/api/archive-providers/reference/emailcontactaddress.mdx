@@ -15,17 +15,18 @@ Contact subchannel for special purpose archive provider used to search for email
 
 This channel will match on either the email address itself, or contact.name
 
-
 The resulting rows will have entity name 'contact', but the primary key will always be
 the email_id.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"email"||
 |"contact"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -129,6 +130,7 @@ the email_id.
 |streetAddress/formattedAddress| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |streetAddress/formattedMultiLineAddress| *None* ||  |
@@ -233,6 +235,7 @@ the email_id.
 |contactSupportPerson/associateType| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/useAsMailingAddress|bool|| x |
@@ -337,6 +340,7 @@ the email_id.
 |contactUdef/SuperOffice:12|listAny|| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactUdef/SuperOffice:13|listAny|| x |
@@ -401,4 +405,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

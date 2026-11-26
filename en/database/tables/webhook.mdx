@@ -37,7 +37,6 @@ Webhook URL to call when events occur in the client or in NetServer. Also tracks
 |notify\_when|When to notify recipients. Bitflag: 1=FirstFailure, 2=Disabling.|Enum [WebhookNotifyWhen](./enums/webhooknotifywhen.mdx)|No|
 |developer\_portal\_id|ID of the Developer Portal application that registered this webhook, or 0 if not owned by a partner application.|Int|No|
 
-
 ![Webhook table relationship diagram](/media/loc/en/database/tables/Webhook.png)
 
 <Webhook />
@@ -54,7 +53,6 @@ Webhook URL to call when events occur in the client or in NetServer. Also tracks
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[Webhook\_notify](./webhook-notify)  |Notification recipients for webhook failure events. Each row defines one recipient (associate or ad-hoc email) that should be notified when a webhook fails. |
 
-
 ## Replication Flags
 
 * None
@@ -62,4 +60,3 @@ Webhook URL to call when events occur in the client or in NetServer. Also tracks
 ## Security Flags
 
 * No access control via user's Role.
-

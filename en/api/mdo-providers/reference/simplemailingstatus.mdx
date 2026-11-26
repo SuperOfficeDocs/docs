@@ -8,16 +8,12 @@ envir: online
 ---
 
 ## "simplemailingstatus" MDO List
+
 Mailing statuses as users see them: each item groups one or more [ShipmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentStatus) values,
 and its id is the status it is named after, so criteria saved before the grouping still resolve.
 
-
-
 Implemented by the SimpleMailingStatusProvider class.
 The name of the MDO list is 'simplemailingstatus'.
-
-
-
 
 ## Sample Request
 
@@ -30,6 +26,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("simplemailingstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -49,7 +46,6 @@ foreach (var item in listProvider.RootItems) {
 |2||||
 |13||||
 |8||||
-
 
 ## Related MDO Lists
 

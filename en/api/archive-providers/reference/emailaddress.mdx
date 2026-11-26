@@ -17,11 +17,11 @@ This provider combines two subchannels, one for Person and one for Contact relat
 Each channel will match on either the email address itself, or some relevant naming information
 (such as contact name or person name or whatever).
 
-
 The resulting rows will have entity names reflecting the type of match, but the primary key will always be
 the email_id.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"email"||
@@ -29,6 +29,7 @@ the email_id.
 |"contact"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool||  |
@@ -132,6 +133,7 @@ the email_id.
 |personContact/associateId| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/category| *None* ||  |
@@ -236,6 +238,7 @@ the email_id.
 |linkedinUrl| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |deletedDate| *None* ||  |
@@ -340,6 +343,7 @@ the email_id.
 |contactAssociate/isLocation| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportAssociate/firstName| *None* ||  |
@@ -444,6 +448,7 @@ the email_id.
 |contactSupportPerson/personUdef/SuperOffice:8| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/personUdef/SuperOffice:9| *None* ||  |
@@ -548,6 +553,7 @@ the email_id.
 |saintTicketCategory| *None* ||  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionMemberId| *None* ||  |
@@ -564,4 +570,3 @@ Accept-Language: sv
 ```
 
 See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-

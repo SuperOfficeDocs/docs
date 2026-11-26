@@ -1,7 +1,7 @@
-# <a id="SuperOffice_WebApi_Agents_AIAgent"></a> Class AIAgent
+# Class AIAgent {#SuperOffice_WebApi_Agents_AIAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)
+Assembly: SuperOffice.WebApi.dll
 
 AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
 
@@ -11,65 +11,65 @@ public class AIAgent : AgentBase, IAIAgent, IAgentBase, IDisposable
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ←
 [AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 
 #### Implements
 
-[IAIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAIAgent), 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAIAgent),
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase),
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
-[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
-[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
-[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
-[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
-[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
-[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
-[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
-[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
-[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json),
+[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary),
+[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config),
+[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client),
+[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient),
+[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_),
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_),
+[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest),
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_),
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_),
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_),
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_),
+[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_),
+[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose),
+[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration),
+[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client),
+[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest),
+[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource),
+[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener),
+[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (AIAgent agent = new AIAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent__ctor_System_Net_Http_HttpClient_"></a> AIAgent\(HttpClient\)
+### AIAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_AIAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
 
@@ -83,7 +83,7 @@ public AIAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> AIAgent\(WebApiOptions, HttpClient\)
+### AIAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_AIAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardImageAsync_System_Byte___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> AnalyzeBizCardImageAsync\(byte\[\], bool, RequestOptions\)
+### AnalyzeBizCardImageAsync\(byte\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardImageAsync_System_Byte___System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Returns contact and person information from an image. Merges results with matching database records if merge = true
 
@@ -127,11 +127,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BizCard](/en/api/reference/webapi/SuperOffice.WebApi.Data.BizCard)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BizCard](/en/api/reference/webapi/SuperOffice.WebApi.Data.BizCard)\&gt;
 
 Returns a Contact and a Person entity.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardTextAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> AnalyzeBizCardTextAsync\(string, bool, RequestOptions\)
+### AnalyzeBizCardTextAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardTextAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Extract contact and person information from text. Merge results with matching database records if merge = true
 
@@ -155,11 +155,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BizCard](/en/api/reference/webapi/SuperOffice.WebApi.Data.BizCard)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BizCard](/en/api/reference/webapi/SuperOffice.WebApi.Data.BizCard)\&gt;
 
 Returns a Contact and a Person entity.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_AnswerAcceptedAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> AnswerAcceptedAsync\(string, RequestOptions\)
+### AnswerAcceptedAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerAcceptedAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Signal that answer was inserted into response- feedback is logged and used to improve the answer algorithm.
 
@@ -183,7 +183,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_AnswerAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> AnswerAsync\(string, string, RagType, int, RequestOptions\)
+### AnswerAsync\(string, string, RagType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an answer.
 
@@ -215,11 +215,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RagAnswer](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagAnswer)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagAnswer](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagAnswer)\&gt;
 
 Generated answer based on query.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_AnswerFeedbackAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> AnswerFeedbackAsync\(string, bool, RequestOptions\)
+### AnswerFeedbackAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerFeedbackAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Send feedback on answer - feedback is logged and used to improve the answer algorithm.
 
@@ -247,7 +247,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_AnswerUsingContextAsync_System_String_System_String_SuperOffice_WebApi_Data_RagContextIds_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> AnswerUsingContextAsync\(string, string, RagContextIds, RagType, int, RequestOptions\)
+### AnswerUsingContextAsync\(string, string, RagContextIds, RagType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerUsingContextAsync_System_String_System_String_SuperOffice_WebApi_Data_RagContextIds_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an answer based on the query, and provided context.
 
@@ -283,11 +283,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RagAnswer](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagAnswer)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagAnswer](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagAnswer)\&gt;
 
 Generated answer based on query.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_CancelEvalAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> CancelEvalAsync\(string, RequestOptions\)
+### CancelEvalAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CancelEvalAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Stop an evaluation
 
@@ -307,11 +307,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The tag
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_CancelIndexingAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> CancelIndexingAsync\(string, RequestOptions\)
+### CancelIndexingAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CancelIndexingAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Cancel the current re-indexing job on a given namespace. Leaves data in inconsistent state, because removal of old data is skipped.
 
@@ -331,11 +331,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RagStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatus)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatus)\&gt;
 
 Status of the indexing run after cancellation.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_ClearChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> ClearChatbotTurnsAsync\(string, RequestOptions\)
+### ClearChatbotTurnsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_ClearChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Clears the stored history of chat messages for a given chat_id. Chat_id is usually derived from soproto + current id, but could also be arbitrary name
 
@@ -359,7 +359,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotDataSourceEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCopilotDataSourceEntityAsync\(RequestOptions\)
+### CreateDefaultCopilotDataSourceEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotDataSourceEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CopilotDataSourceEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -376,11 +376,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\&gt;
 
 A blank CopilotDataSourceEntity
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCopilotEntityAsync\(RequestOptions\)
+### CreateDefaultCopilotEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CopilotEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -397,11 +397,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\&gt;
 
 A blank CopilotEntity
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_CreateTextForAppointmentAsync_SuperOffice_WebApi_Data_AppointmentEntity_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateTextForAppointmentAsync\(AppointmentEntity, string, RequestOptions\)
+### CreateTextForAppointmentAsync\(AppointmentEntity, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CreateTextForAppointmentAsync_SuperOffice_WebApi_Data_AppointmentEntity_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate agenda text for an appointment based on appointment's company category, title, person, etc.
 
@@ -425,11 +425,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Agenda text in markdown format
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteCopilotDataSourceEntityAsync\(int, RequestOptions\)
+### DeleteCopilotDataSourceEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the CopilotDataSourceEntity
 
@@ -451,7 +451,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteCopilotEntityAsync\(int, RequestOptions\)
+### DeleteCopilotEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the CopilotEntity
 
@@ -473,7 +473,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_DetectLanguageAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DetectLanguageAsync\(string, RequestOptions\)
+### DetectLanguageAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DetectLanguageAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Given a (reasonably short) text, detect the language it is written in
 
@@ -493,11 +493,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 ISO Language code, such as NO, US, ES, FR
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_DetectSentimentAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DetectSentimentAsync\(string, RequestOptions\)
+### DetectSentimentAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DetectSentimentAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Detect the sentiment of a (reasonably short) text. Sentiment analysis may cause a translation to be made, since sentiment analysis only supports a limited set of languages
 
@@ -517,11 +517,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sentiment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sentiment)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sentiment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sentiment)\&gt;
 
 The sentiment information: score (-100 to +100) and confidence
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_ExpandTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> ExpandTextAsync\(string, int, string, RequestOptions\)
+### ExpandTextAsync\(string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_ExpandTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a longer version of a text
 
@@ -549,11 +549,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Expanded version of the text
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetChatbotPromptSuggestionsAsync_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetChatbotPromptSuggestionsAsync\(string, string, int, RequestOptions\)
+### GetChatbotPromptSuggestionsAsync\(string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetChatbotPromptSuggestionsAsync_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Return one or more suggested prompts as actions to display in an empty chat window
 
@@ -581,11 +581,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Contains zero or more BotActions, and welcome message in Bot response
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetChatbotResponseAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_Data_ChatbotTurn___System_String_SuperOffice_WebApi_RequestOptions_"></a> GetChatbotResponseAsync\(string, string, string, string, ChatbotTurn\[\], string, RequestOptions\)
+### GetChatbotResponseAsync\(string, string, string, string, ChatbotTurn\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetChatbotResponseAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_Data_ChatbotTurn___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return a chatbot response given prompt and previous turns. Stores the new turn in the history for the chatId
 
@@ -625,11 +625,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Returns new turn that client can append to its local history.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetChatbotTurnsAsync\(string, RequestOptions\)
+### GetChatbotTurnsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns stored history of chat messages for a given chat_id. Chat_id is usually derived from soproto + current id, but could also be arbitrary name.
 
@@ -649,11 +649,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\[\]\&gt;
 
 Array containing zero or more turns. If you got zero turns, call GetChatbotPromptSuggestions to get an initial turn from the bot.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCopilotDataSourceEntityAsync\(int, RequestOptions\)
+### GetCopilotDataSourceEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific CopilotDataSourceEntity object.
 
@@ -673,11 +673,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\&gt;
 
 CopilotDataSourceEntity
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCopilotEntityAsync\(int, RequestOptions\)
+### GetCopilotEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific CopilotEntity object.
 
@@ -697,11 +697,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\&gt;
 
 CopilotEntity
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromImageAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_"></a> GetFirstFormDesignCssFromImageAsync\(byte\[\], string, RequestOptions\)
+### GetFirstFormDesignCssFromImageAsync\(byte\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromImageAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Starts a form design analysis from an image, returning the properties for a single CSS class.
 
@@ -725,11 +725,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\&gt;
 
 Returns CSS properties for a single CSS class, and the internal state for the analyzer.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromUrlAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetFirstFormDesignCssFromUrlAsync\(string, string, RequestOptions\)
+### GetFirstFormDesignCssFromUrlAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromUrlAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Starts a form design analysis from a URL, returning the properties for a single CSS class.
 
@@ -753,11 +753,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\&gt;
 
 Returns CSS properties for a single CSS class, and the internal state for the analyzer.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromImageAsync_System_Byte___System_String___SuperOffice_WebApi_RequestOptions_"></a> GetFormDesignCssFromImageAsync\(byte\[\], string\[\], RequestOptions\)
+### GetFormDesignCssFromImageAsync\(byte\[\], string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromImageAsync_System_Byte___System_String___SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer CSS based on the look of a picture
 
@@ -781,11 +781,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)\&gt;
 
 Returns CSS rules. Confidence and Notes are not populated.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromUrlAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetFormDesignCssFromUrlAsync\(string, string\[\], RequestOptions\)
+### GetFormDesignCssFromUrlAsync\(string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromUrlAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer properties based on the look of a web page
 
@@ -809,11 +809,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)\&gt;
 
 Returns CSS rules. Confidence and Notes are not populated.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromImageAsync_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> GetFormDesignFromImageAsync\(byte\[\], RequestOptions\)
+### GetFormDesignFromImageAsync\(byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromImageAsync_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer properties based on the look of a picture
 
@@ -833,11 +833,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Returns a Form Designer properties.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetFormDesignFromUrlAsync\(string, RequestOptions\)
+### GetFormDesignFromUrlAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer properties based on the look of a web page
 
@@ -857,11 +857,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Returns a Form Designer properties.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetIndexingStatusAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetIndexingStatusAsync\(string, RequestOptions\)
+### GetIndexingStatusAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetIndexingStatusAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the current status.
 
@@ -881,11 +881,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RagStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatus)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatus)\&gt;
 
 Status of the indexing run - may be cancelled if another run is in progress.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetNextFormDesignCssAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetNextFormDesignCssAsync\(string, string, RequestOptions\)
+### GetNextFormDesignCssAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetNextFormDesignCssAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns another CSS class, continuing the CSS generation, one class at a time.
 
@@ -909,11 +909,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\&gt;
 
 Returns CSS properties for a single CSS class, and the updated internal state for the analyzer.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetSummarizeContactPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSummarizeContactPromptAsync\(int, int, string, string, RequestOptions\)
+### GetSummarizeContactPromptAsync\(int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetSummarizeContactPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return the prompt used to get a short summary of the activities on a contact. Does not call the chatbot for a response. Used for transfering a summary to a chat session.
 
@@ -945,11 +945,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Display text and Prompt used to generate a short summary of the activities on a contact.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetSummarizeSalePromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSummarizeSalePromptAsync\(int, int, string, string, RequestOptions\)
+### GetSummarizeSalePromptAsync\(int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetSummarizeSalePromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return the prompt used to get a short summary of the activities on a sale. Does not call the chatbot for a response. Used for transfering a summary to a chat session.
 
@@ -981,11 +981,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Display text and Prompt used to generate a short summary of the activities on a sale.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetSummarizeTicketPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSummarizeTicketPromptAsync\(int, int, string, string, RequestOptions\)
+### GetSummarizeTicketPromptAsync\(int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetSummarizeTicketPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return the prompt used to get a short summary of the messages on a ticket. Does not call the chatbot for a response. Used for transfering a summary to a chat session.
 
@@ -1017,11 +1017,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Display text and Prompt used to generate a short summary of the messages on a ticket.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GetTrainingStatusAsync_SuperOffice_WebApi_RequestOptions_"></a> GetTrainingStatusAsync\(RequestOptions\)
+### GetTrainingStatusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetTrainingStatusAsync_SuperOffice_WebApi_RequestOptions_}
 
 Calling the HugoAI endpoint to fetch the current training status.
 
@@ -1037,11 +1037,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CategorizationStatusResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategorizationStatusResponse)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CategorizationStatusResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategorizationStatusResponse)\&gt;
 
 Carrier to describe the current status of HugoAI categorization
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_GuessCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GuessCategoryAsync\(int, RequestOptions\)
+### GuessCategoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GuessCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Given a ticket's id, guess the ticket category it should be placed in. Currently this is based on the first message in the ticket
 
@@ -1061,11 +1061,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Suggested ticket category ID
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_ParseQueryIntoRestrictionsAsync_System_String_System_String_SuperOffice_WebApi_Data_NaturalLanguageSearch_SuperOffice_WebApi_RequestOptions_"></a> ParseQueryIntoRestrictionsAsync\(string, string, NaturalLanguageSearch, RequestOptions\)
+### ParseQueryIntoRestrictionsAsync\(string, string, NaturalLanguageSearch, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_ParseQueryIntoRestrictionsAsync_System_String_System_String_SuperOffice_WebApi_Data_NaturalLanguageSearch_SuperOffice_WebApi_RequestOptions_}
 
 Return archive restrictions based on a natural language query.
 
@@ -1093,11 +1093,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NaturalLanguageSearch](/en/api/reference/webapi/SuperOffice.WebApi.Data.NaturalLanguageSearch)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NaturalLanguageSearch](/en/api/reference/webapi/SuperOffice.WebApi.Data.NaturalLanguageSearch)\&gt;
 
 Returns archive restrictions and columns for the query. Pass this result in as the previous query on the next call to continue the conversation.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_RemovePhotoBackgroundAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_"></a> RemovePhotoBackgroundAsync\(byte\[\], string, RequestOptions\)
+### RemovePhotoBackgroundAsync\(byte\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_RemovePhotoBackgroundAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns an image with the background removed, leaving only the main subject
 
@@ -1121,11 +1121,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 Image with background removed
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_RephraseTextAsync_System_String_SuperOffice_WebApi_Data_AiTextStyle_System_String_SuperOffice_WebApi_RequestOptions_"></a> RephraseTextAsync\(string, AiTextStyle, string, RequestOptions\)
+### RephraseTextAsync\(string, AiTextStyle, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_RephraseTextAsync_System_String_SuperOffice_WebApi_Data_AiTextStyle_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a new version of a text
 
@@ -1153,11 +1153,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 New version of the text
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_SaveCopilotDataSourceEntityAsync_SuperOffice_WebApi_Data_CopilotDataSourceEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveCopilotDataSourceEntityAsync\(CopilotDataSourceEntity, RequestOptions\)
+### SaveCopilotDataSourceEntityAsync\(CopilotDataSourceEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SaveCopilotDataSourceEntityAsync_SuperOffice_WebApi_Data_CopilotDataSourceEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing CopilotDataSourceEntity or creates a new CopilotDataSourceEntity if the id parameter is 0.
 
@@ -1177,11 +1177,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\&gt;
 
 New or updated CopilotDataSourceEntity
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_SaveCopilotEntityAsync_SuperOffice_WebApi_Data_CopilotEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveCopilotEntityAsync\(CopilotEntity, RequestOptions\)
+### SaveCopilotEntityAsync\(CopilotEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SaveCopilotEntityAsync_SuperOffice_WebApi_Data_CopilotEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing CopilotEntity or creates a new CopilotEntity if the id parameter is 0.
 
@@ -1201,11 +1201,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\&gt;
 
 New or updated CopilotEntity
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_SearchAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SearchAsync\(string, string, RagType, int, RequestOptions\)
+### SearchAsync\(string, string, RagType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SearchAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns semantic search results from vector database.
 
@@ -1237,11 +1237,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult)\[\]\&gt;
 
 Array containing vector search results
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_StartEvalAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> StartEvalAsync\(string, string, RequestOptions\)
+### StartEvalAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_StartEvalAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns nothing.
 
@@ -1265,11 +1265,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Tag
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_StartRagIndexingAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> StartRagIndexingAsync\(string, string, RequestOptions\)
+### StartRagIndexingAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_StartRagIndexingAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Kicks off a batch task to update the RAG index
 
@@ -1293,11 +1293,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The batch task id
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_StatusEvalAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> StatusEvalAsync\(string, RequestOptions\)
+### StatusEvalAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_StatusEvalAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the status of an evaluation
 
@@ -1317,11 +1317,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RagEval](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagEval)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagEval](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagEval)\[\]\&gt;
 
 Array of evaluation results for the current tag - will be empty if results not available yet
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeContactAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SummarizeContactAsync\(int, int, string, RequestOptions\)
+### SummarizeContactAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeContactAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of the activities on a contact
 
@@ -1349,11 +1349,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Short summary of the activities on a contact - in HTML.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeSaleAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SummarizeSaleAsync\(int, int, string, RequestOptions\)
+### SummarizeSaleAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeSaleAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of the activities on a sale
 
@@ -1381,11 +1381,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Short summary of the activities on a sale - in HTML.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SummarizeTextAsync\(string, int, string, RequestOptions\)
+### SummarizeTextAsync\(string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of a text
 
@@ -1413,11 +1413,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Short summary of the text
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeTicketAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SummarizeTicketAsync\(int, int, string, RequestOptions\)
+### SummarizeTicketAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeTicketAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of the messages on a ticket
 
@@ -1445,11 +1445,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Short summary of the messages on a ticket - in HTML.
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_TrainCategoryGuesserAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> TrainCategoryGuesserAsync\(int, int, int, RequestOptions\)
+### TrainCategoryGuesserAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_TrainCategoryGuesserAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 The category guesser training API will be called with an array of CategorizationTrainingItem during the (background, Batch) execution of this call
 
@@ -1477,11 +1477,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Placeholder for result...  should this be a BatchTaskId?  maybe not useful?
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_TranslateAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> TranslateAsync\(string, string, RequestOptions\)
+### TranslateAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_TranslateAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Translate a text from one language to another. Language of the text is automatically detected.
 
@@ -1505,11 +1505,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Translated text
 
-### <a id="SuperOffice_WebApi_Agents_AIAgent_TranslateEntityAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> TranslateEntityAsync\(string, int, string, RequestOptions\)
+### TranslateEntityAsync\(string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_TranslateEntityAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve, format and translate text for an entity to a specified language
 
@@ -1537,7 +1537,6 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Translated text
-

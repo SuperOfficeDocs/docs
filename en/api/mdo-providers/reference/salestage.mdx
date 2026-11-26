@@ -8,10 +8,10 @@ envir: online
 ---
 
 ## "salestage" MDO List
+
 Provider for selecting a stage. AdditionalInfo is used as criteria to filter stages based on SaleType.
 
 Sold(-2) and Lost(-1) items are appended  at the end of the list.
-
 
 AdditionalInfo "SaleTypeID=123&amp;GetDeletedStages=true&amp;HideOptionalRows=false&amp;GetDeletedStageLinks=true"
 
@@ -30,10 +30,6 @@ The name of the MDO list is 'salestage'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -45,6 +41,7 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("salestage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -64,7 +61,6 @@ foreach (var item in listProvider.RootItems) {
 |3|Muntlig aksept||IsDeleted=False&Probability=90&SaleTypeStageLinkId=5&|
 |-2|||Probability=100|
 |-1|||Probability=0|
-
 
 ## Related MDO Lists
 
