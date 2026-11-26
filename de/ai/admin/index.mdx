@@ -1,10 +1,10 @@
 ---
 title: KI-Services einrichten
-description: Aktivieren Sie KI-Funktionen in SuperOffice und richten Sie anschließend jeden einzelnen KI-Service ein.
-keywords: ['KI-Funktionen aktivieren', 'globale KI-Einstellungen', 'KI-Einstellungen', 'Textanalyse']
+description: Aktivieren Sie KI-Funktionen in SuperOffice, legen Sie die KI-Einstellungen fest und richten Sie anschließend jeden einzelnen KI-Service ein.
+keywords: ['KI-Funktionen aktivieren', 'globale KI-Einstellungen', 'KI-Einstellungen', 'Textanalyse', 'KI-Agenten aktivieren', 'MCP-Zugriffskontrolle', 'Kontaktanreicherung', 'Leadfeeder', 'Credit-Limit', 'Webzugriff']
 author: digitaldiina, Claudia Dias
-date: 11.25.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: core
 category: automation
@@ -16,6 +16,7 @@ audience_tooltip: Einstellungen und Verwaltung
 userflow_index: true
 related:
   - /de/ai/learn/set-up-ai-agents
+  - /de/ai/admin/set-agent-limits
   - /de/ai/learn/index
   - Verwendung der Textanalyse: /de/request/learn/index
 language: de
@@ -29,7 +30,7 @@ Bevor Benutzer die KI-Funktionen von SuperOffice nutzen können, muss ein Admini
 1. Setzen Sie **KI-Funktionen in SuperOffice aktivieren** auf **Ja**.
 1. Klicken Sie auf **Speichern**.
 
-![KI-Funktionen in SuperOffice aktivieren auf Ja gesetzt, hervorgehoben in den globalen KI-Einstellungen -screenshot][img1]
+![Der Abschnitt KI in Globale Einstellungen -screenshot][img1]
 
 ## Textanalyse aktivieren {#enable-text-analysis}
 
@@ -39,10 +40,52 @@ Bevor Benutzer die KI-Funktionen von SuperOffice nutzen können, muss ein Admini
 
     ![Kontrollkästchen für die Textanalyse in den KI-Services -screenshot][img2]
 
+## Globale KI-Einstellungen {#global}
+
+Diese Einstellungen gelten für das gesamte System. Um sie zu ändern, gehen Sie zu **Einstellungen und Verwaltung** > **Einstellungen** > **Globale Einstellungen** und suchen Sie den Abschnitt **KI**.
+
+| Einstellung | Funktion |
+|---|---|
+| KI-Funktionen in SuperOffice aktivieren | Zeigt die KI-Schaltflächen und -Bereiche in SuperOffice an. Bei **Nein** werden sie ausgeblendet. Der Standardwert ist **Ja**. |
+| Leadfeeder-Nutzung zulassen | Ermöglicht es Agenten, Firmen mit Leadfeeder zu prüfen und anzureichern. |
+| Kontaktanreicherung zulassen | Ermöglicht es dem Data Quality Agent, beim Anreichern von Firmen Personen hinzuzufügen und zu aktualisieren. Bei **Nein** können Benutzer die Option **Kontakte anreichern** des Agenten nicht aktivieren. Dies gilt auch für die Kontaktanreicherung außerhalb der Agenten. Der Standardwert ist **Nein**. |
+| Maximale Nutzung von KI-Credits | Die Gesamtzahl der KI-Credits, die verbraucht werden können. Agenten erstellen keine Aufgaben mehr, wenn die Nutzung das Limit erreicht. |
+| Data Quality Agent aktivieren, Duplicate Agent aktivieren, Lead Agent aktivieren, Sales Assistant Agent aktivieren | Aktiviert oder deaktiviert jeden Agenten für alle Benutzer. Bei **Nein** erstellt der Agent keine Aufgaben mehr. |
+| Credit-Limit Data Quality Agents, Credit-Limit Duplicate Agents, Credit-Limit Lead Agents, Credit-Limit Sales Assistant Agents, Credit-Limit Leadfeeder | Das Credit-Limit für jeden Agenten und für Leadfeeder. Ein Agent erstellt keine Aufgaben mehr, wenn er sein Limit erreicht. |
+
+<Tip>
+Die Agentenschalter, Credit-Limits und zusätzlichen Credit-Pakete lassen sich einfacher auf der Registerkarte [Agent Limits][5] verwalten, die auch die in diesem Monat verbrauchten Credits anzeigt.
+</Tip>
+
+Der Abschnitt **SuperOffice Workspace Assist** enthält eine Einstellung:
+
+| Einstellung | Funktion |
+|---|---|
+| Workspace Assistant Zugriff auf das Web erlauben | Ermöglicht es [Workspace Assist][6], Informationen aus dem Web in seinen Antworten zu verwenden. |
+
+## KI-Einstellungen pro Benutzer {#preferences-tab}
+
+Diese Einstellungen können für die gesamte Datenbank, für eine Gruppe oder für einen einzelnen Benutzer festgelegt werden. Benutzer können für jede von ihnen auch eine eigene Einstellung haben. Wie Ebenen funktionieren, erfahren Sie unter [Ebenen für Einstellungsoptionen][7].
+
+1. Gehen Sie zu **Einstellungen und Verwaltung** > **Einstellungen** > **Einstellungen**.
+1. Wählen Sie **KI** in der Liste der Einstellungsgruppen aus.
+1. Wählen Sie eine Einstellung aus und fügen Sie unter **Aktive Einstellungen** Werte hinzu oder ändern Sie sie.
+
+![Die KI-Einstellungen auf der Registerkarte Einstellungen, mit KI-Agenten aktivieren ausgewählt -screenshot][img3]
+
+| Einstellung | Funktion |
+|---|---|
+| Antwort auf eine Nachricht automatisch generieren | Erstellt einen Vorschlag von [Reply Assist][8], wenn ein Benutzer bei einer Anfrage auf **Antworten** oder **Allen antworten** klickt. |
+| KI-Agenten aktivieren | Ermöglicht es Benutzern, eigene [KI-Agenten][2] einzurichten. Bei **Nein** wird das Symbol **Agenten** im Navigator ausgeblendet. Der Standardwert ist **Ja**. |
+| MCP-Zugriffskontrolle | Legt fest, was [MCP Connect][3]-Clients in SuperOffice tun können: lesen und aktualisieren (**Alle**, der Standardwert), nur lesen oder nichts. |
+| KI-Vorschlag von Reply Assist anzeigen | Zeigt den Vorschlag von [Reply Assist][8] an, wenn ein Benutzer auf eine Anfrage antwortet. |
+
 ## Einen einzelnen KI-Service einrichten
 
 * [KI-basierte Kategorisierung einrichten][1]
+* [Reply Assist einrichten][9]
 * [KI-Agenten einrichten][2]
+* [Agent-Limits festlegen][5]
 * [Mit dem MCP-Server verbinden][3]
 * [KI-Agenten-Widgets auf der Startseite anzeigen][4]
 
@@ -50,6 +93,12 @@ Bevor Benutzer die KI-Funktionen von SuperOffice nutzen können, muss ein Admini
 [2]: /de/ai/learn/set-up-ai-agents
 [3]: /de/ai/learn/mcp
 [4]: /de/learn/basics/start-page#admin-agents
+[5]: /de/ai/admin/set-agent-limits
+[6]: /de/ai/learn/workspace-assist
+[7]: /de/admin/preferences/index#levels
+[8]: /de/request/learn/reply#reply-assist
+[9]: /de/ai/admin/set-up-reply-assist
 
 [img1]: /media/loc/en/ai/global-ai-preferences.png
 [img2]: /media/loc/en/ai/enable-text-analysis.png
+[img3]: /media/loc/en/ai/enable-ai-agents.png

@@ -1,0 +1,103 @@
+---
+title: Ange agentgränser
+description: Pausa eller aktivera AI-agenter för alla, ange en månatlig kreditgräns per agent, lägg till extra kreditpaket och följ användningen av AI-krediter i Inställningar och underhåll.
+keywords: ['AI-krediter', 'kreditgräns', 'månatlig gräns', 'kreditpaket', 'pausa agenter', 'stäng av agenter', 'användningsprognos', 'Leadfeeder']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Inställningar och underhåll
+userflow_index: true
+related:
+  - /sv/ai/admin/index
+  - /sv/ai/learn/set-up-ai-agents
+  - /sv/admin/license/crm-suite
+language: sv
+---
+
+AI-agenter använder AI-krediter för det arbete de utför. På fliken **Agent Limits** kan en administratör aktivera eller avaktivera agenter för alla användare och ange en månatlig kreditgräns för varje agent. Fliken visar också hur många krediter agenterna använder den här månaden.
+
+## Krav
+
+* Åtkomst till **Inställningar och underhåll**.
+* [AI-funktioner aktiverade][1] för din organisation.
+* CRM Suite Growth eller högre för Data Quality Agent och Duplicate Agent. CRM Suite Plus eller högre för Lead Agent och Sales Assistant Agent.
+
+## Öppna Agent Limits {#open}
+
+1. Öppna **Inställningar och underhåll**.
+1. Välj **AI-tjänster** i Navigatorn.
+1. Välj fliken **Agent Limits**.
+
+![Fliken Agent Limits, med reglaget för AI-agenter, kreditanvändningen och ett kort per agent -screenshot][img1]
+
+## Pausa alla agenter {#pause}
+
+Reglaget **AI agents** högst upp på fliken gäller för alla agenter och alla användare.
+
+1. Klicka på reglaget **AI agents** för att stänga av det.
+
+Alla agenter pausas. Dina gränser behålls, så agenterna fortsätter med samma gränser när du slår på reglaget igen.
+
+## Aktivera eller avaktivera en agent {#agent}
+
+Varje agent har ett eget kort under **Agenter**, med ett reglage i det övre högra hörnet.
+
+1. Leta upp agentens kort.
+1. Klicka på reglaget för att avaktivera eller aktivera agenten.
+
+När en agent är avaktiverad slutar den skapa nya uppgifter för alla användare. Kortet **Leadfeeder enrichment** styr om agenter kan använda Leadfeeder för att verifiera och berika företag.
+
+## Ange en månatlig gräns för en agent {#limit}
+
+Som standard har en agent **No limit** och följer den totala gränsen för alla agenter. Lägg bara till en gräns för en agent som behöver ett eget tak.
+
+1. Klicka på **Set limit** på agentens kort.
+1. Under **Monthly limit** anger du det antal krediter som agenten får använda per månad.
+1. Klicka på **Verkställ**.
+
+    ![Ett agentkort med fältet Monthly limit, Remove limit, Avbryt och Verkställ -screenshot][img2]
+
+När en agent når sin gräns slutar den skapa nya uppgifter. Om du vill gå tillbaka till den totala gränsen klickar du på **Set limit** igen och sedan på **Remove limit**.
+
+## Lägg till extra kreditpaket {#packages}
+
+Din CRM Suite inkluderar en månatlig kvot av AI-krediter, baserad på antalet användare. Om dina agenter behöver fler kan du lägga till extra kreditpaket.
+
+1. Under **Extra credit packages for agents** klickar du på **Redigera**.
+1. Välj antalet paket i listan.
+1. Klicka på **Verkställ**.
+
+    ![Extra kreditpaket för agenter med 2 paket valda och den nya maximala användningsgränsen -screenshot][img3]
+
+Fliken visar månadspriset för de paket du väljer. Se [SuperOffice-priser][2] för den inkluderade kvoten per teamstorlek.
+
+## Följ kreditanvändningen {#usage}
+
+Högst upp på fliken visas krediterna för alla agenter tillsammans.
+
+| Fält | Vad det visar |
+|---|---|
+| Agent maximum usage limit | De krediter som alla agenter får använda per månad: de inkluderade krediterna plus eventuella extra paket. |
+| Agent usage this month | De krediter som har använts hittills den här månaden, av maxvärdet. |
+| Forecast | Det uppskattade antalet krediter som har använts vid månadens slut, och om användningen ser ut att hålla sig inom gränsen. |
+
+Varje agents kort visar vad ett förslag kostar i krediter, hur många instanser agenten har och hur många krediter den har använt.
+
+## Globala preferenser
+
+Agentreglagen och kreditgränserna finns också i AI-avsnittet i [Globala preferenser][3]. Använd fliken **Agent Limits** för att ändra dem.
+
+[1]: /sv/ai/admin/index
+[2]: https://www.superoffice.com/pricing/
+[3]: /sv/ai/admin/index#global
+
+[img1]: /media/loc/en/ai/agent-limits.png
+[img2]: /media/loc/en/ai/agent-limits-set-limit.png
+[img3]: /media/loc/en/ai/agent-limits-extra-packages.png

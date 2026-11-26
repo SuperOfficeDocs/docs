@@ -1,0 +1,103 @@
+---
+title: Agent-Limits festlegen
+description: Pausieren oder aktivieren Sie KI-Agenten für alle, legen Sie ein monatliches Credit-Limit pro Agent fest, fügen Sie zusätzliche Credit-Pakete hinzu und verfolgen Sie die Nutzung von KI-Credits in Einstellungen und Verwaltung.
+keywords: ['KI-Credits', 'Credit-Limit', 'monatliches Limit', 'Credit-Pakete', 'Agenten pausieren', 'Agenten deaktivieren', 'Nutzungsprognose', 'Leadfeeder']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Einstellungen und Verwaltung
+userflow_index: true
+related:
+  - /de/ai/admin/index
+  - /de/ai/learn/set-up-ai-agents
+  - /de/admin/license/crm-suite
+language: de
+---
+
+KI-Agenten verbrauchen für ihre Arbeit KI-Credits. Auf der Registerkarte **Agent Limits** kann ein Administrator Agenten für alle Benutzer aktivieren oder deaktivieren und für jeden Agenten ein monatliches Credit-Limit festlegen. Die Registerkarte zeigt außerdem, wie viele Credits die Agenten in diesem Monat verbrauchen.
+
+## Voraussetzungen
+
+* Zugriff auf **Einstellungen und Verwaltung**.
+* [KI-Funktionen aktiviert][1] für Ihre Organisation.
+* CRM Suite Growth oder höher für den Data Quality Agent und den Duplicate Agent. CRM Suite Plus oder höher für den Lead Agent und den Sales Assistant Agent.
+
+## Agent Limits öffnen {#open}
+
+1. Öffnen Sie **Einstellungen und Verwaltung**.
+1. Wählen Sie **KI-Services** im Navigator aus.
+1. Wählen Sie die Registerkarte **Agent Limits** aus.
+
+![Die Registerkarte Agent Limits mit dem Schalter für KI-Agenten, der Credit-Nutzung und einer Karte pro Agent -screenshot][img1]
+
+## Alle Agenten pausieren {#pause}
+
+Der Schalter **AI agents** oben auf der Registerkarte gilt für alle Agenten und alle Benutzer.
+
+1. Klicken Sie auf den Schalter **AI agents**, um ihn zu deaktivieren.
+
+Alle Agenten werden pausiert. Ihre Limits bleiben erhalten, sodass die Agenten mit denselben Limits weiterarbeiten, wenn Sie den Schalter wieder aktivieren.
+
+## Einen Agenten aktivieren oder deaktivieren {#agent}
+
+Jeder Agent hat unter **Agents** eine eigene Karte mit einem Schalter in der oberen rechten Ecke.
+
+1. Suchen Sie die Karte des Agenten.
+1. Klicken Sie auf den Schalter, um den Agenten zu deaktivieren oder zu aktivieren.
+
+Wenn ein Agent deaktiviert ist, erstellt er für keinen Benutzer mehr neue Aufgaben. Die Karte **Leadfeeder enrichment** legt fest, ob Agenten Leadfeeder verwenden können, um Firmen zu prüfen und anzureichern.
+
+## Ein monatliches Limit für einen Agenten festlegen {#limit}
+
+Standardmäßig hat ein Agent **No limit** und folgt dem Gesamtlimit für alle Agenten. Legen Sie nur dann ein Limit fest, wenn ein einzelner Agent eine eigene Obergrenze benötigt.
+
+1. Klicken Sie auf der Karte des Agenten auf **Set limit**.
+1. Geben Sie unter **Monthly limit** die Anzahl der Credits ein, die der Agent pro Monat verbrauchen darf.
+1. Klicken Sie auf **Übernehmen**.
+
+    ![Eine Agentenkarte mit dem Feld Monthly limit sowie Remove limit, Abbrechen und Übernehmen -screenshot][img2]
+
+Wenn ein Agent sein Limit erreicht, erstellt er keine neuen Aufgaben mehr. Um zum Gesamtlimit zurückzukehren, klicken Sie erneut auf **Set limit** und dann auf **Remove limit**.
+
+## Zusätzliche Credit-Pakete hinzufügen {#packages}
+
+Ihre CRM Suite enthält ein monatliches Kontingent an KI-Credits, das sich nach der Anzahl der Benutzer richtet. Wenn Ihre Agenten mehr benötigen, fügen Sie zusätzliche Credit-Pakete hinzu.
+
+1. Klicken Sie unter **Extra credit packages for agents** auf **Bearbeiten**.
+1. Wählen Sie die Anzahl der Pakete in der Liste aus.
+1. Klicken Sie auf **Übernehmen**.
+
+    ![Zusätzliche Credit-Pakete für Agenten mit 2 ausgewählten Paketen und dem neuen maximalen Nutzungslimit -screenshot][img3]
+
+Die Registerkarte zeigt den monatlichen Preis der ausgewählten Pakete an. Das enthaltene Kontingent pro Teamgröße finden Sie unter [SuperOffice-Preise][2].
+
+## Credit-Nutzung verfolgen {#usage}
+
+Oben auf der Registerkarte werden die Credits für alle Agenten zusammen angezeigt.
+
+| Feld | Anzeige |
+|---|---|
+| Agent maximum usage limit | Die Credits, die alle Agenten pro Monat verbrauchen können: die enthaltenen Credits plus zusätzliche Pakete. |
+| Agent usage this month | Die bisher in diesem Monat verbrauchten Credits im Verhältnis zum Maximum. |
+| Forecast | Die voraussichtlich bis Monatsende verbrauchten Credits und ob die Nutzung voraussichtlich innerhalb des Limits bleibt. |
+
+Die Karte jedes Agenten zeigt, wie viele Credits ein Vorschlag kostet, wie viele Instanzen der Agent hat und wie viele Credits er verbraucht hat.
+
+## Globale Einstellungen
+
+Die Agentenschalter und Credit-Limits sind auch im Abschnitt KI der [globalen Einstellungen][3] aufgeführt. Verwenden Sie die Registerkarte **Agent Limits**, um sie zu ändern.
+
+[1]: /de/ai/admin/index
+[2]: https://www.superoffice.com/pricing/
+[3]: /de/ai/admin/index#global
+
+[img1]: /media/loc/en/ai/agent-limits.png
+[img2]: /media/loc/en/ai/agent-limits-set-limit.png
+[img3]: /media/loc/en/ai/agent-limits-extra-packages.png

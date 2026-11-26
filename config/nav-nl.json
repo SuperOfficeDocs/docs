@@ -110,7 +110,9 @@
             "group": "Voor beheerders",
             "root": "nl/ai/admin/index",
             "pages": [
-              "nl/ai/admin/set-up-categorization"
+              "nl/ai/admin/set-agent-limits",
+              "nl/ai/admin/set-up-categorization",
+              "nl/ai/admin/set-up-reply-assist"
             ]
           }
         ]

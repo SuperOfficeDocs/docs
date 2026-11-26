@@ -4,8 +4,8 @@ title: Workspace Assist
 description: Nutzen Sie das KI-gestützte Seitenpanel von Workspace Assist für schnelle Antworten, Zusammenfassungen und Inhaltsvorschläge in SuperOffice CRM.
 keywords: ['KI', 'ChatGPT', 'OpenAI', 'Bing', 'Copilot']
 author: digitaldiina, Filip Norman
-date: 10.13.2026
-so_version: 12.5
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 license: aiplatform
 tier: core
@@ -13,7 +13,6 @@ category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /de/ai/learn/copilot
@@ -22,23 +21,24 @@ related:
   - Andere KI-Services: /de/ai/learn/index
   - /de/admin/license/crm-suite
   - Trust center | DSGVO & SuperOffice-Produkte: https://www.superoffice.com/trust-center/gdpr-and-crm/
-  - https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
 language: de
 ---
 
-Workspace Assist integriert nahtlos eine ChatGPT-ähnliche Benutzererfahrung in SuperOffice und bietet ein leistungsstarkes KI-Tool im CRM-Kontext. Unser Ziel ist es, generative KI nahtlos in SuperOffice CRM einzubetten, wodurch der Zugang zu externen Apps überflüssig wird und Ihr Workflow direkt innerhalb der Plattform verbessert wird.
+Workspace Assist ist ein KI-Chat im Seitenpanel von SuperOffice CRM. Es beantwortet Fragen zu dem Datensatz, mit dem Sie gerade arbeiten, anhand Ihrer eigenen CRM-Daten und hilft Ihnen beim Verfassen von Inhalten, ohne SuperOffice zu verlassen.
 
-Sie können Zeit sparen und Erkenntnisse gewinnen, indem Sie die verschiedenen vorgefertigten Fragen (Prompts) in den Ansichten Firma, Person, Kalender, Verkauf, Projekt, Anfrage und Selektion verwenden.
+Sie können eigene Fragen stellen oder die vorgefertigten Fragen (Prompts) in den Ansichten Firma, Person, Kalender, Verkauf, Projekt, Anfrage und Selektion verwenden.
 
 Workspace Assist ist im **Core**-Plan verfügbar. Die **Growth**- und **Plus**-Pläne schalten zusätzliche Funktionen frei.
 
 <Note>
-Für begrenzte Zeit ist diese Funktion auch über unser [AI lab-Programm][9] verfügbar. SuperOffice KI ist nur in der Cloud verfügbar.
+SuperOffice KI ist nur in der Cloud verfügbar.
 </Note>
 
-## Datenschutz und DSGVO
+## Ihre CRM-Daten und Datenschutz {#privacy}
 
-Workspace Assist weiß nichts über Ihre Kundendaten und wird Ihnen Antworten mit Hilfe eines großen Sprachmodells (LLM) wie Bing von Microsoft, ChatGPT von OpenAI oder Claude von Anthropic geben.
+Workspace Assist antwortet mit Hilfe eines großen Sprachmodells (LLM). Um Fragen zu Ihrem CRM zu beantworten, findet und liest es Daten mit denselben Tools wie [MCP Connect][2]. Es verwendet die Zugriffsrechte Ihres SuperOffice-Benutzers und findet daher nur Daten, auf die Sie bereits Zugriff haben.
+
+Wenn ein Administrator es zulässt, kann Workspace Assist in seinen Antworten auch Informationen aus dem Web verwenden. Siehe [Globale KI-Einstellungen][3].
 
 ## Erste Schritte
 
@@ -67,11 +67,11 @@ Workspace Assist ist in allen Ansichten mit dem [Seitenpanel][1] verfügbar. Sta
 
 Workspace Assist verwendet die Sprache Ihrer SuperOffice-Anwendung. Wenn Sie beispielsweise *Deutsch* in den **Lokalen Einstellungen** ausgewählt haben, antwortet Ihnen die KI auf Deutsch.
 
-Der Kontext ist immer das aktuell betrachtete Element. Wenn Sie beispielsweise die Firma "SuperOffice AS" betrachten, erzählt Ihnen die KI über SuperOffice. Wenn Sie zu "Visma" wechseln, erzählt die KI stattdessen über diese Firma. Wenn Sie zu **Projekt** wechseln, wird der Chat zurückgesetzt und Sie können projektbezogene Prompts auswählen. Und so weiter.
+Workspace Assist weiß immer, mit welchem Datensatz Sie gerade arbeiten. Bei einer Firma können Sie zum Beispiel fragen: "Gibt es offene Aufgaben bei diesem Kunden?" Wenn Sie zu einer anderen Firma wechseln, antwortet es stattdessen zu dieser Firma. Wenn Sie zu **Projekt** wechseln, wird der Chat zurückgesetzt und Sie können projektbezogene Prompts auswählen.
 
 ## Verfügbare Prompts
 
-Prompts können sich während der Pilotphase ohne vorherige Ankündigung ändern!
+Prompts können sich ohne Ankündigung ändern.
 
 ### Firma
 
@@ -113,7 +113,8 @@ Prompts können sich während der Pilotphase ohne vorherige Ankündigung ändern
 * Demnächst verfügbar
 
 [1]: ../../learn/getting-started/main-screen/side-panel
-[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
+[2]: /de/ai/learn/mcp
+[3]: /de/ai/admin/index#global
 [img2]: ../../../media/loc/en/ai/copilot-in-sidepanel-list.png
 [img3]: ../../../media/loc/en/ai/copilot-on-sale.png
 [img4]: ../../../media/loc/en/ai/copilot-about-superoffice.png

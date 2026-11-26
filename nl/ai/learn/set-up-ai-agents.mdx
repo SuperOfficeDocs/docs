@@ -3,15 +3,14 @@ title: AI-agents instellen
 description: Hoe u het gebied Agenten opent, een agent activeert en een instantie aanmaakt en beheert. Er is geen beheerderstoegang nodig. Agentinstanties zijn persoonlijk, per gebruiker.
 keywords: ['agentinstantie', 'agent activeren', 'instantie toevoegen', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: howto
-tier: plus
+tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -23,10 +22,6 @@ related:
 language: nl
 ---
 
-<Note>
-De AI-agents van SuperOffice komen binnenkort beschikbaar. Deze pagina beschrijft de instelstappen voor een functie die nog niet algemeen beschikbaar is.
-</Note>
-
 De AI-agents van SuperOffice werken op de achtergrond en stellen resultaten voor die een persoon moet goedkeuren. Alle agents bevinden zich in hetzelfde gebied **Agenten** en worden op dezelfde manier geactiveerd en beheerd. Deze pagina behandelt deze gedeelde stappen eenmalig. Daarna heeft elke agent zijn eigen instelpagina, bijvoorbeeld [Lead Agent instellen][2].
 
 ## Agentinstanties
@@ -35,8 +30,9 @@ Eén geconfigureerde, actieve kopie van een agent wordt een **instantie** genoem
 
 ## Vereisten
 
-* Uw organisatie moet **CRM Suite Plus** of hoger hebben.
+* Uw organisatie moet **CRM Suite Growth** of hoger hebben voor de Data Quality Agent en Duplicate Agent, en **CRM Suite Plus** of hoger voor de Lead Agent en Sales Assistant Agent.
 * Een beheerder moet [AI-functies inschakelen][1] in de algemene CRM-voorkeuren voordat het pictogram **Agenten** verschijnt.
+* AI-agents moeten voor u zijn ingeschakeld. Ze zijn standaard voor iedereen ingeschakeld, maar een beheerder kan [ze voor sommige gebruikers uitschakelen][4] of [alle agents pauzeren][5].
 
 <Note>
 Agentinstanties zelf zijn persoonlijk, per gebruiker. U hebt geen beheerderstoegang of **Instellingen en onderhoud** nodig om er een aan te maken of te beheren.
@@ -91,7 +87,7 @@ Selecteer **Over** in het drie-puntjesmenu voor een alleen-lezen overzicht, met 
 
 ## Taken filteren {#filter}
 
-Elke agent zet de items die u wilt beoordelen als threads op het tabblad **Chat**, naast een permanente thread **Algemene chat**. Selecteer <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> boven de threadlijst om te beperken wat wordt getoond.
+Elke agent zet de items die u moet beoordelen als threads op het tabblad **Chat**, naast een permanente thread **Algemene chat**. Selecteer <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> boven de threadlijst om te beperken wat wordt getoond.
 
 | Filter | Toont |
 |---|---|
@@ -178,6 +174,8 @@ Het verwijderen van een instantie is permanent en verwijdert alle bijbehorende g
 [1]: ../admin/index
 [2]: /nl/lead/learn/set-up-lead-agent
 [3]: /nl/learn/basics/start-page#agents
+[4]: ../admin/index#preferences-tab
+[5]: ../admin/set-agent-limits#pause
 
 [img1]: /media/loc/en/ai/inactive-agent.png
 [img2]: /media/loc/en/ai/agents-overview-starter-cards.png

@@ -1,11 +1,11 @@
 ---
 uid: help-no-ai-workspace-assist
 title: Workspace Assist
-description: Bruk Workspace Assists AI-drevne sidepanel for raske svar, sammendrag og innholdsforslag i hele SuperOffice CRM.
-keywords: ['AI', 'ChatGPT', 'OpenAI', 'Bing', 'Copilot']
+description: Bruk Workspace Assists KI-drevne sidepanel for raske svar, sammendrag og innholdsforslag i hele SuperOffice CRM.
+keywords: ['KI', 'AI', 'ChatGPT', 'OpenAI', 'Bing', 'Copilot']
 author: digitaldiina, Filip Norman
-date: 10.13.2026
-so_version: 12.5
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 license: aiplatform
 tier: core
@@ -13,7 +13,6 @@ category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/ai/learn/copilot
@@ -22,41 +21,42 @@ related:
   - Andre AI-tjenester: /no/ai/learn/index
   - /no/admin/license/crm-suite
   - Trust center | GDPR & SuperOffice-produkter: https://www.superoffice.com/trust-center/gdpr-and-crm/
-  - https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
 language: no
 ---
 
-Workspace Assist integrerer sømløst en ChatGPT-lignende brukeropplevelse med SuperOffice og gir et kraftig AI-verktøy innenfor CRM-konteksten. Vårt mål er å integrere generativ AI sømløst i SuperOffice CRM, og eliminere behovet for ekstern app-tilgang samtidig som arbeidsflyten forbedres direkte innenfor plattformen.
+Workspace Assist er en KI-chat i sidepanelet i SuperOffice CRM. Den svarer på spørsmål om posten du jobber med, ved hjelp av dine egne CRM-data, og hjelper deg med å skrive innhold uten å forlate SuperOffice.
 
-Du kan spare tid og få innsikt ved å bruke de ulike ferdiglagde spørsmålene (prompts) i skjermbildene Firma, Person, Dagbok, Salg, Prosjekt, Sak og Utvalg.
+Du kan stille dine egne spørsmål eller bruke de ferdiglagde spørsmålene (prompts) i skjermbildene Firma, Person, Dagbok, Salg, Prosjekt, Sak og Utvalg.
 
-Workspace Assist er tilgjengelig på **Core**-planen. **Growth**- og **Plus**-planene låser opp ytterligere funksjonalitet.
+Workspace Assist er tilgjengelig på Core-planen. Growth- og Plus-planene låser opp ytterligere funksjonalitet.
 
 <Note>
-For en begrenset periode er denne funksjonen også tilgjengelig gjennom vårt [AI lab-program][9]. SuperOffice AI er kun tilgjengelig i skyen.
+SuperOffice AI er kun tilgjengelig i skyen.
 </Note>
 
-## Personvern og GDPR
+## Dine CRM-data og personvern {#privacy}
 
-Workspace Assist vet ingenting om kundedataene dine og vil gi deg svar ved hjelp av en stor språkmodell (LLM) som Bing fra Microsoft, ChatGPT fra OpenAI eller Claude fra Anthropic.
+Workspace Assist svarer ved hjelp av en stor språkmodell (LLM). For å svare på spørsmål om CRM-en din finner og leser den data med de samme verktøyene som [MCP Connect][2]. Den bruker tilgangsrettighetene til SuperOffice-brukeren din, så den finner bare data du allerede har tilgang til.
+
+Hvis en administrator tillater det, kan Workspace Assist også bruke informasjon fra nettet i svarene sine. Se [globale KI-preferanser][3].
 
 ## Kom i gang
 
 Workspace Assist er tilgjengelig i alle skjermbilder med [sidepanelet][1]. Som standard viser sidepanelet en forhåndsvisning av den valgte posten.
 
-1. Gå til et firma, person, dagbok, salg, prosjekt, sak eller utvalg.
+1. Gå til et firma, en person, en dagbok, et salg, et prosjekt, en sak eller et utvalg.
 
 1. Klikk på <i class="ph ph-caret-down" aria-label="Chevron"></i> ved siden av sidepanelets navn og velg **Workspace Assist**.
 
     ![Aktiver Workspace Assist -screenshot][img2]
 
-1. Velg en av de forhåndsdefinerte promptene eller still hvilket som helst spørsmål for å få svar fra AI-teknologien.
+1. Velg en av de forhåndsdefinerte promptene eller still hvilket som helst spørsmål for å få svar fra KI-teknologien.
 
     ![Workspace Assist på et salg -screenshot][img3]
 
-1. Etter at AI har generert et svar, har du følgende alternativer:
+1. Etter at KI har generert et svar, har du følgende alternativer:
 
-    * Velg pluss- eller minus-ikonet for å få mer eller mindre tekst.
+    * Klikk på pluss- eller minus-ikonet for å få mer eller mindre tekst.
     * Kopier resultatet til utklippstavlen.
     * Still et annet spørsmål.
     * Tøm chatten.
@@ -65,45 +65,45 @@ Workspace Assist er tilgjengelig i alle skjermbilder med [sidepanelet][1]. Som s
 
 ## Kontekst og språk
 
-Workspace Assist bruker språket i SuperOffice-applikasjonen din. For eksempel, hvis du har valgt *Deutsch* i **Lokale innstillinger**, vil AI svare deg på tysk.
+Workspace Assist bruker språket i SuperOffice-applikasjonen din. For eksempel, hvis du har valgt *Deutsch* i **Lokale innstillinger**, vil KI svare deg på tysk.
 
-Konteksten er alltid det som vises for øyeblikket. For eksempel, når du ser på firmaet "SuperOffice AS", forteller AI deg om SuperOffice. Hvis du går til "Visma", forteller AI deg om det firmaet i stedet. Hvis du bytter til **Prosjekt**, blir chatten tilbakestilt og du kan velge prosjektrelaterte prompts. Og så videre.
+Workspace Assist vet alltid hvilken post du jobber med. For eksempel kan du på et firma spørre "Er det noen uferdige oppgaver på denne kunden?" Hvis du går til et annet firma, svarer den om det firmaet i stedet. Hvis du bytter til **Prosjekt**, blir chatten tilbakestilt og du kan velge prosjektrelaterte prompts.
 
 ## Tilgjengelige prompts
 
-Prompts kan endres uten forhåndsvarsel under piloten!
+Prompts kan endres uten varsel.
 
 ### Firma
 
-* **Firmadetaljer:** AI forteller deg om det gjeldende firmaet.
-* **Konkurrenter:** AI presenterer generell informasjon om konkurrenter og konkurranseanalyse.
-* **Virksomhet:** AI forteller deg om virksomheten firmaet er engasjert i.
+* **Firmadetaljer:** KI forteller deg om det gjeldende firmaet.
+* **Konkurrenter:** KI presenterer generell informasjon om konkurrenter og konkurranseanalyse.
+* **Virksomhet:** KI forteller deg om virksomheten firmaet er engasjert i.
 
 ### Person
 
-* **Firmadetaljer:** AI forteller deg om det gjeldende firmaet.
-* **Persondetaljer:** AI forteller deg om den gjeldende personen.
-* **Skriv pitch:** AI skriver en pitch rettet mot personen.
+* **Firmadetaljer:** KI forteller deg om det gjeldende firmaet.
+* **Persondetaljer:** KI forteller deg om den gjeldende personen.
+* **Skriv pitch:** KI skriver en pitch rettet mot personen.
 
 ### Dagbok
 
-* **I dag:** AI lister opp alle dine planlagte dagbokoppføringer for gjeldende dato.
+* **I dag:** KI lister opp alle dine planlagte dagbokoppføringer for gjeldende dato.
 
 ### Salg
 
-* **Firmadetaljer:** AI forteller deg om firmaet for det gjeldende salget.
-* **Konkurrenter:** AI presenterer generell informasjon om konkurrenter og konkurranseanalyse.
-* **Virksomhet:** AI forteller deg om virksomheten firmaet er engasjert i.
-* **Forslag:** AI utarbeider et forslag for salgsmuligheten.
+* **Firmadetaljer:** KI forteller deg om firmaet for det gjeldende salget.
+* **Konkurrenter:** KI presenterer generell informasjon om konkurrenter og konkurranseanalyse.
+* **Virksomhet:** KI forteller deg om virksomheten firmaet er engasjert i.
+* **Forslag:** KI utarbeider et forslag for salgsmuligheten.
 
 ### Prosjekt
 
-* **Prosjektplanlegging:** AI lager en prosjektplan for det gjeldende prosjektet.
-* **Ideer:** AI gir deg noen ideer om ting å vurdere for det gjeldende prosjektet basert på tittelen og beskrivelsen.
+* **Prosjektplanlegging:** KI lager en prosjektplan for det gjeldende prosjektet.
+* **Ideer:** KI gir deg noen ideer om ting å vurdere for det gjeldende prosjektet basert på tittelen og beskrivelsen.
 
 ### Saker
 
-* **Oppsummer:** AI analyserer saken og saksmeldinger, trekker ut nøkkelinformasjon og presenterer et kort, sammenhengende sammendrag.
+* **Oppsummer:** KI analyserer saken og saksmeldinger, trekker ut nøkkelinformasjon og presenterer et kort, sammenhengende sammendrag.
 
   * Hvis en sak inneholder 3 eller flere meldinger, kan du velge **Oppsummer** fra **Vis alle** dropdown-menyen i **Meldinger**-fanen på sakskortet.
   * Hvis saken har mer enn 5 meldinger, vil en separat **Oppsummer**-knapp også vises ved siden av **Legg til kommentar**-knappen.
@@ -113,7 +113,8 @@ Prompts kan endres uten forhåndsvarsel under piloten!
 * Kommer snart
 
 [1]: ../../learn/getting-started/main-screen/side-panel
-[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
+[2]: /no/ai/learn/mcp
+[3]: /no/ai/admin/index#global
 [img2]: ../../../media/loc/en/ai/copilot-in-sidepanel-list.png
 [img3]: ../../../media/loc/en/ai/copilot-on-sale.png
 [img4]: ../../../media/loc/en/ai/copilot-about-superoffice.png

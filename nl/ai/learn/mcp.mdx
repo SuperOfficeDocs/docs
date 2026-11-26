@@ -3,8 +3,8 @@ title: MCP Connect
 description: Verbind SuperOffice CRM met Claude, Microsoft Copilot of ChatGPT als live gegevensbron via het Model Context Protocol.
 keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI-integratie']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: plus
 category: automation
@@ -49,6 +49,8 @@ Stapsgewijze installatiehandleidingen voor elke client zijn beschikbaar op de [w
 
 Met deze tools kan de verbonden AI-client SuperOffice CRM-gegevens namens u zoeken en lezen. Ze zijn beschikbaar met CRM Suite Plus of hoger.
 
+Zoek- en lijsttools retourneren hun resultaten in pagina's. De AI-client kan zoveel resultaten ophalen als nodig, pagina voor pagina, zonder uw CRM te overbelasten.
+
 | Tools | Wat ze doen |
 |---|---|
 | `search_companies`, `get_company` | Vindt en leest bedrijfsrecords. |
@@ -56,11 +58,11 @@ Met deze tools kan de verbonden AI-client SuperOffice CRM-gegevens namens u zoek
 | `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Vindt en leest verkopen, hun verkoopgids, belanghebbenden en activiteitengeschiedenis. |
 | `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Vindt verzoeken en leest hun gesprek of administratieve gegevens. |
 | `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Vindt en leest projecten, hun leden en activiteitengeschiedenis. |
-| `search_appointments`, `get_appointment` | Vindt en leest vervolgactiviteiten in de agenda. |
+| `search_appointments`, `get_appointment`, `list_appointment_types` | Vindt en leest vervolgactiviteiten in de agenda en toont de beschikbare typen vervolgactiviteiten. |
 | `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Vindt documenten, waaronder e-mails en offertes, en leest de inhoud. |
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Toont de activiteitengeschiedenis voor een bedrijf, contactpersoon of gebruiker. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Vindt en leest rijen in [extra tabellen][8] (aangepaste objecten). |
-| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Bepaalt de identiteit van een gebruiker, doorzoekt externe handelsregisters en haalt server- en sessie-informatie op. |
+| `get_associate`, `search_associates`, `search_external_companies`, `whoami` | Vindt gebruikers en bepaalt de identiteit van een gebruiker, doorzoekt externe handelsregisters en haalt informatie over uw eigen sessie op. |
 
 ## Tools om bij te werken
 
@@ -68,11 +70,15 @@ Met deze tools kan de verbonden AI-client SuperOffice CRM-gegevens namens u zoek
 Voor de tools om bij te werken is CRM Suite Super vereist.
 </Note>
 
-Met deze tools kan de verbonden AI-client velden van een bestaand record namens u wijzigen. MCP Connect maakt geen nieuwe records aan.
+Met deze tools kan de verbonden AI-client velden van een bestaand record namens u wijzigen. MCP Connect maakt geen nieuwe records aan. Uw toegangsrechten in SuperOffice blijven van toepassing, dus de client kan alleen wijzigen wat u mag wijzigen.
 
 | Tools | Wat ze doen |
 |---|---|
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Werkt velden bij op een bestaand record. |
+
+## MCP-toegang beperken {#access}
+
+Een beheerder kan met de voorkeur **MCP-toegangsbeheer** beperken wat MCP Connect-clients kunnen doen: lezen en bijwerken (**Alle**, de standaardwaarde), alleen lezen of niets. De voorkeur kan worden ingesteld voor de hele database, voor een groep of voor één gebruiker. Zie [AI-voorkeuren per gebruiker][9].
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
@@ -82,3 +88,4 @@ Met deze tools kan de verbonden AI-client velden van een bestaand record namens 
 [6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
 [7]: /nl/admin/license/crm-suite
 [8]: /nl/custom-objects/learn/extra-table
+[9]: /nl/ai/admin/index#preferences-tab

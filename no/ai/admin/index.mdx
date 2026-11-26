@@ -1,10 +1,10 @@
 ---
 title: Sett opp AI-tjenester
-description: Aktiver AI-funksjoner i SuperOffice, og sett deretter opp hver enkelt AI-tjeneste.
-keywords: ['aktivere ai-funksjoner', 'ai globale preferanser', 'ai-innstillinger', 'tekstanalyse']
+description: Aktiver AI-funksjoner i SuperOffice, angi KI-preferansene, og sett deretter opp hver enkelt KI-tjeneste.
+keywords: ['aktivere ai-funksjoner', 'ai globale preferanser', 'ai-innstillinger', 'tekstanalyse', 'aktivere ai-agenter', 'MCP-tilgangskontroll', 'kontaktberikelse', 'Leadfeeder', 'kredittgrense', 'nettilgang']
 author: digitaldiina, Claudia Dias
-date: 11.25.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: core
 category: automation
@@ -16,40 +16,89 @@ audience_tooltip: Innstillinger og vedlikehold
 userflow_index: true
 related:
   - /no/ai/learn/set-up-ai-agents
+  - /no/ai/admin/set-agent-limits
   - /no/ai/learn/index
   - Bruk av tekstanalyse: /no/request/learn/index
 language: no
 ---
 
-Før brukere kan bruke SuperOffice AI-funksjonene, må en administrator aktivere AI-funksjoner for organisasjonen. Enkelte funksjoner, som AI-agenter, krever ytterligere oppsett.
+Før brukere kan bruke SuperOffice AI-funksjonene, må en administrator aktivere KI-funksjoner for organisasjonen. Enkelte funksjoner, som KI-agenter, krever ytterligere oppsett.
 
-## Aktiver AI-funksjoner
+## Aktiver KI-funksjoner
 
 1. Gå til **Innstillinger og vedlikehold** > **Preferanser** > **Globale preferanser** > **AI**.
 1. Sett **Aktiver AI-funksjoner i SuperOffice** til **Ja**.
 1. Klikk på **Lagre**.
 
-![Aktiver AI-funksjoner i SuperOffice satt til Ja, uthevet i globale AI-preferanser -screenshot][img1]
+![KI-delen i Globale preferanser -screenshot][img1]
 
 ## Aktiver tekstanalyse {#enable-text-analysis}
 
 1. Åpne **Innstillinger og vedlikehold**.
 1. Velg **AI-tjenester** i navigatoren.
-1. Under **Tekstanalyse** velger du avkrysningsboksene for funksjonene du vil bruke: **Språkgjenkjenning**, **Oversett melding** og **Sentimentanalyse**.
+1. Under **Tekstanalyse** velger du avmerkingsboksene for funksjonene du vil bruke: **Språkgjenkjenning**, **Oversett melding** og **Sentimentanalyse**.
 
     ![Avkrysningsbokser for tekstanalyse i AI-tjenester -screenshot][img2]
 
-## Sett opp en enkelt AI-tjeneste
+## Globale KI-preferanser {#global}
 
-* [Sett opp AI-basert kategorisering][1]
-* [Sett opp AI-agenter][2]
+Disse preferansene gjelder for hele systemet. For å endre dem går du til **Innstillinger og vedlikehold** > **Preferanser** > **Globale preferanser** og finner **AI**-delen.
+
+| Preferanse | Hva den gjør |
+|---|---|
+| Aktiver AI-funksjoner i SuperOffice | Viser KI-knappene og -panelene i SuperOffice. Når den er satt til **Nei**, skjules de. Standard er **Ja**. |
+| Tillat bruk av Leadfeeder | Lar agenter bruke Leadfeeder til å verifisere og berike firmaer. |
+| Tillat kontaktberikelse | Lar Data Quality Agent legge til og oppdatere personer når den beriker firmaer. Når den er satt til **Nei**, kan ikke brukere slå på agentens alternativ **Berik kontakter**. Dette gjelder også berikelse av personer utenfor agentene. Standard er **Nei**. |
+| Maksimal bruk av AI-kreditter | Det totale antallet KI-kreditter som kan brukes. Agenter slutter å opprette oppgaver når forbruket når grensen. |
+| Aktiver Data Quality Agent, Aktiver Duplicate Agent, Aktiver Lead Agent, Aktiver Sales Assistant Agent | Slår hver agent på eller av for alle brukere. Når den er satt til **Nei**, slutter agenten å opprette oppgaver. |
+| Kredittgrense Data Quality Agents, Kredittgrense Duplicate Agents, Kredittgrense Lead Agents, Kredittgrense Sales Assistant Agents, Kredittgrense Leadfeeder | Kredittgrensen for hver agent og for Leadfeeder. En agent slutter å opprette oppgaver når den når grensen sin. |
+
+<Tip>
+Agentbryterne, kredittgrensene og ekstra kredittpakker er enklere å administrere på fanen [Agent Limits][5], som også viser kredittene som er brukt denne måneden.
+</Tip>
+
+Delen **SuperOffice Workspace Assist** har én preferanse:
+
+| Preferanse | Hva den gjør |
+|---|---|
+| Tillat Workspace Assistant tilgang til nettet | Lar [Workspace Assist][6] bruke informasjon fra nettet i svarene sine. |
+
+## KI-preferanser per bruker {#preferences-tab}
+
+Disse preferansene kan angis for hele databasen, for en gruppe eller for én bruker. Brukere kan også ha sin egen innstilling for hver av dem. Se [Nivåer for innstillinger av preferanser][7] for hvordan nivåer fungerer.
+
+1. Gå til **Innstillinger og vedlikehold** > **Preferanser** > **Preferanser**.
+1. Velg **AI** i listen over preferansegrupper.
+1. Velg en preferanse, og legg deretter til eller endre innstillingene under **Aktive innstillinger**.
+
+![KI-preferansene i fanen Preferanser, med Aktiver AI-agenter valgt -screenshot][img3]
+
+| Preferanse | Hva den gjør |
+|---|---|
+| Generer svar på en melding automatisk | Genererer et [Reply Assist][8]-forslag når en bruker klikker på **Svar** eller **Svar til alle** på en sak. |
+| Aktiver AI-agenter | Lar brukere sette opp sine egne [KI-agenter][2]. Når den er satt til **Nei**, skjules **Agenter**-ikonet i navigatoren. Standard er **Ja**. |
+| MCP-tilgangskontroll | Styrer hva [MCP Connect][3]-klienter kan gjøre i SuperOffice: lese og oppdatere (**Alle**, standard), bare lese, eller ingenting. |
+| Vis forslag fra AI Reply Assist | Viser [Reply Assist][8]-forslaget når en bruker svarer på en sak. |
+
+## Sett opp en enkelt KI-tjeneste
+
+* [Sett opp KI-basert kategorisering][1]
+* [Sett opp Reply Assist][9]
+* [Sett opp KI-agenter][2]
+* [Angi agentgrenser][5]
 * [Koble til MCP-server][3]
-* [Vis AI-agentwidgeter på Startsiden][4]
+* [Vis KI-agentwidgeter på Startsiden][4]
 
 [1]: /no/ai/admin/set-up-categorization
 [2]: /no/ai/learn/set-up-ai-agents
 [3]: /no/ai/learn/mcp
 [4]: /no/learn/basics/start-page#admin-agents
+[5]: /no/ai/admin/set-agent-limits
+[6]: /no/ai/learn/workspace-assist
+[7]: /no/admin/preferences/index#levels
+[8]: /no/request/learn/reply#reply-assist
+[9]: /no/ai/admin/set-up-reply-assist
 
 [img1]: /media/loc/en/ai/global-ai-preferences.png
 [img2]: /media/loc/en/ai/enable-text-analysis.png
+[img3]: /media/loc/en/ai/enable-ai-agents.png

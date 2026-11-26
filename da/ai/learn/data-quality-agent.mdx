@@ -3,15 +3,14 @@ title: Data Quality Agent
 description: Hold de firmaer og personer, der allerede findes i dit CRM, nøjagtige, komplette og opdaterede, med hver foreslået ændring gennemgået og godkendt af dig.
 keywords: ['AI-agent', 'berigelse', 'GDPR-samtykke', 'afvist e-mail', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -78,7 +77,7 @@ Når agenten er aktiv, kan du tilføje agentens widget til din [Startside][6], s
 
 1. Vælg, hvor mange gennemgangsopgaver agenten skaber pr. dag (1-30). Standarden er 10.
 
-1. Aktivér valgfrit **Berig kontakter**. Når den er slået til, foreslår agenten også manglende kontaktpersoner og korrigerede afviste e-mailadresser, med e-mail- og telefonoplysninger, hvor den finder dem. Når den er slået fra, markerer den kun hullerne.
+1. Aktivér valgfrit **Berig kontakter**. Når den er slået til, foreslår agenten også manglende kontaktpersoner og korrigerede afviste e-mailadresser, med e-mail- og telefonoplysninger, hvor den finder dem. Når den er slået fra, markerer den kun hullerne. Denne indstilling er kun tilgængelig, når en administrator har sat **Tillad berigelse af kontakter** til **Ja** i de [globale AI-præferencer][7].
 
 1. Klik på **Næste**.
 
@@ -90,7 +89,7 @@ Når agenten er aktiv, kan du tilføje agentens widget til din [Startside][6], s
 
 * **Leadfeeder:** bruges til at verificere og berige firmaer. Slået til som standard. Faktureres altid til **2x credits** ved brug, via SuperOffices egen Leadfeeder-konto.
 
-1. Vælg, om du vil bruge **Leadfeeder** til at berige firmaer, eller kun stole på de indbyggede registre. Slået til som standard.
+1. Vælg, om du vil bruge **Leadfeeder** til at berige firmaer, eller kun stole på de indbyggede registre. Slået til som standard. Leadfeeder er kun tilgængelig, når en administrator tillader det i de [globale AI-præferencer][7].
 
 1. Klik på **Gem**.
 
@@ -172,6 +171,7 @@ Kun instansens ejer kan ændre dens indstillinger eller slette den.
 [4]: /da/ai/learn/set-up-ai-agents#bulk
 [5]: /da/ai/learn/set-up-ai-agents#rate
 [6]: /da/learn/basics/start-page#agents
+[7]: /da/ai/admin/index#global
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png

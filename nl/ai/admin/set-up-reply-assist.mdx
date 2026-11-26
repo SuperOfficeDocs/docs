@@ -1,0 +1,140 @@
+---
+title: Reply Assist instellen
+description: Kies de bronnen die Reply Assist gebruikt om antwoorden op verzoeken voor te stellen, geef het een rol en instructies en test het voordat gebruikers erop vertrouwen.
+keywords: ['antwoordsuggesties', 'AI-antwoord', 'bronnen', 'kennisdatabase', 'Veelgestelde vragen', 'antwoordsjablonen', 'webinhoud', 'instructies', 'test', 'Copilot']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Instellingen en onderhoud
+userflow_index: true
+related:
+  - Een antwoord opstellen met Reply Assist: /nl/request/learn/reply
+  - /nl/ai/admin/index
+  - Overige AI-diensten: /nl/ai/learn/index
+language: nl
+---
+
+[Reply Assist][1] stelt antwoorden voor op inkomende verzoeken. Elke suggestie wordt opgebouwd uit de bronnen die u kiest, zoals eerdere verzoeken, Veelgestelde vragen, antwoordsjablonen, documenten en webinhoud. Op het tabblad **Hulp bij het beantwoorden** in **AI-diensten** voegt een beheerder deze bronnen toe, legt vast hoe Reply Assist zich moet gedragen en test het resultaat.
+
+Sommige labels op deze schermen vermelden nog Copilot. Ze verwijzen naar Reply Assist.
+
+## Vereisten
+
+* Toegang tot **Instellingen en onderhoud**.
+* CRM Suite Plus of hoger.
+* [AI-functies ingeschakeld][2] voor uw organisatie.
+
+## Instellingen van Reply Assist openen {#open}
+
+1. Open **Instellingen en onderhoud**.
+1. Selecteer **AI-diensten** in de Navigator.
+1. Selecteer het tabblad **Hulp bij het beantwoorden**.
+
+## Een bron toevoegen {#source}
+
+Een bron is inhoud die Reply Assist kan doorzoeken wanneer het een antwoord voorstelt.
+
+1. Selecteer **Bronnen**.
+1. Klik onder **Add a source** op het type bron dat u wilt gebruiken:
+
+    | Bron | Wat Reply Assist gebruikt |
+    |---|---|
+    | Verzoeken | Een selectie van serviceverzoeken. |
+    | Veelgestelde vragen | Items van Veelgestelde vragen uit de kennisdatabase. |
+    | Antwoordsjablonen | Antwoordsjablonen uit de kennisdatabase. |
+    | Documenten | Een selectie van CRM-documenten. |
+    | Webinhoud | Inhoud van externe websites. |
+
+    ![Add a source, met de vijf typen bronnen -screenshot][img1]
+
+1. Vul **Naam bron** en eventueel **Beschrijving** in.
+1. Kies de inhoud die u wilt gebruiken. De velden zijn afhankelijk van het type bron. Zie [Bronvelden][5].
+1. Klik op **Opslaan**.
+
+    ![De instellingen voor een nieuwe verzoekbron -screenshot][img2]
+
+De bron wordt weergegeven onder **Bronnen**. Klik op het potloodpictogram van de bron om deze later te wijzigen. Een waarschuwingspictogram naast **Bronnen** betekent dat een bron uw aandacht nodig heeft, bijvoorbeeld een ontbrekende selectie.
+
+### Bronvelden {#fields}
+
+<Tabs>
+<Tab title="Verzoeken">
+* **Selection**: de [selectie][3] van verzoeken die u wilt gebruiken.
+</Tab>
+
+<Tab title="Veelgestelde vragen">
+* **Map**: de map in de kennisdatabase.
+* **Toegang**: welke toegangsniveaus u wilt opnemen, bijvoorbeeld **Toegankelijk voor geregistreerde klanten**.
+* **Workflow**: welke statussen u wilt opnemen, bijvoorbeeld **Gepubliceerd**.
+* **Sample data** toont hoeveel artikelen overeenkomen.
+
+![De instellingen voor een bron Veelgestelde vragen, met Map, Toegang en Workflow -screenshot][img5]
+</Tab>
+
+<Tab title="Antwoordsjablonen">
+* **Map**: de map met antwoordsjablonen.
+* **Toegang**: welke toegangsniveaus u wilt opnemen.
+* **Sample data** toont hoeveel sjablonen overeenkomen.
+
+![De instellingen voor een bron Antwoordsjablonen, met Map en Toegang -screenshot][img6]
+</Tab>
+
+<Tab title="Documenten">
+* **Selection**: de [selectie][3] van documenten die u wilt gebruiken.
+</Tab>
+
+<Tab title="Webinhoud">
+* **Start-URL**: de pagina waar u wilt beginnen.
+* **Crawlermodus** volgt vanaf die pagina links op de site, en **Alleen één pagina** leest alleen die pagina.
+* Onder **Geavanceerde opties** laat **URL's overslaan** pagina's weg, en laten **CSS overslaan** en **CSS opnemen** delen van elke pagina weg of behouden ze.
+
+![De instellingen voor een bron Webinhoud, met Geavanceerde opties geopend -screenshot][img4]
+</Tab>
+</Tabs>
+
+## Rol en instructies instellen {#settings}
+
+De rol en instructies vertellen Reply Assist wat het is en hoe het moet antwoorden.
+
+1. Selecteer **Instellingen**.
+1. Beschrijf onder **Copilot role** de rol van de assistent. Bijvoorbeeld: "U bent een assistent voor [bedrijf]. Uw taak is gebruikers te helpen hun verzoek te begrijpen, relevante informatie te vinden en nauwkeurige, behulpzame antwoorden te geven."
+1. Beschrijf onder **Instructions** hoe er moet worden geantwoord. Bijvoorbeeld: "Gebruik een professionele en vriendelijke toon. Baseer antwoorden altijd op beschikbare bronnen."
+1. Klik op **Opslaan**.
+
+## Reply Assist testen {#test}
+
+Test hoe Reply Assist uw bronnen vindt en gebruikt voordat gebruikers op de suggesties vertrouwen. Het testpaneel staat naast **Instellingen**.
+
+1. Voer een vraag in die een klant zou kunnen stellen, bijvoorbeeld "Wat is het retourbeleid?"
+1. Kies wat u wilt testen:
+    * **Search (show matching sources)** toont welke van uw bronnen overeenkomen met de vraag.
+    * **Answer (generate a response)** toont het antwoord dat Reply Assist zou voorstellen.
+1. Klik op **Test** en lees het **Result**.
+
+![Instellingen van Reply Assist, met de rol, instructies en het testpaneel -screenshot][img3]
+
+Is het resultaat niet wat u verwacht, pas dan de bronnen, rol of instructies aan en test opnieuw.
+
+## Suggesties per gebruiker beheren
+
+Twee [AI-voorkeuren][4] bepalen hoe gebruikers suggesties van Reply Assist krijgen: of er automatisch een antwoord wordt gegenereerd wanneer ze op **Beantwoorden** of **Allen beantwoorden** klikken, en of de suggestie wordt getoond.
+
+[1]: /nl/request/learn/reply#reply-assist
+[2]: /nl/ai/admin/index
+[3]: /nl/search-options/selection/learn/create
+[4]: /nl/ai/admin/index#preferences-tab
+[5]: #fields
+
+[img1]: /media/loc/en/ai/reply-assist-add-source.png
+[img2]: /media/loc/en/ai/reply-assist-source-settings.png
+[img3]: /media/loc/en/ai/reply-assist-settings.png
+[img4]: /media/loc/en/ai/reply-assist-web-source.png
+[img5]: /media/loc/en/ai/reply-assist-faq-source.png
+[img6]: /media/loc/en/ai/reply-assist-reply-template-source.png

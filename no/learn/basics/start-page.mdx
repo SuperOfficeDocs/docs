@@ -4,17 +4,16 @@ sidebarTitle: "Startside"
 description: Startsiden viser møtene og oppgavene dine, og salgene, sakene, utsendelsene og agentresultatene som trenger oppmerksomhet, i widgeter du selv velger og ordner.
 keywords: ['widget', 'fremhevet', 'oppgave', 'oppsummering', 'anbefalt oppsett', 'agent']
 author: digitaldiina
-date: 11.18.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: starter
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 boost: 1.1
 related:
   - Navigatoren: /no/learn/getting-started/main-screen/navigator
-  - Sett opp AI-agenter: /no/ai/learn/set-up-ai-agents
+  - Sett opp KI-agenter: /no/ai/learn/set-up-ai-agents
   - Om AI-tjenester: /no/ai/learn/index
   - /no/learn/basics/overview-pages
 language: no
@@ -207,7 +206,7 @@ Når ingen saker samsvarer med kriteriene, står det "Ingenting å fremheve akku
 | Prioritet | Saken har prioriteten du velger. | En prioritet fra listen | Av, **Høy** valgt |
 | Utsatt - forfaller nå | Saken ble utsatt, og tidspunktet for å ta den opp igjen har passert. | På eller av | Av |
 
-**Negativt sentiment** krever AI-tekstanalyse. Uten den er kriteriet nedtonet.
+**Negativt sentiment** krever KI-tekstanalyse. Uten den er kriteriet nedtonet.
 
 Hvis du deaktiverer alle kriteriene, aktiveres **Frist om 4 timer** igjen.
 
@@ -256,9 +255,9 @@ Hvis du deaktiverer alle kriteriene, aktiveres **Åpningsrate under 20 %** igjen
 | Vent før visning | Hvor mange dager etter at en utsendelse er ferdig sendt før den kontrolleres, 0–7. | 2 dager |
 | Vis bare de siste | Hvor langt tilbake det skal letes etter utsendelser: 7, 30, 60, 90, 180 eller 365 dager. Alltid minst én dag lenger enn **Vent før visning**. | 30 dager |
 
-## Widgeter for AI-agenter {#agents}
+## Widgeter for KI-agenter {#agents}
 
-Agentwidgetene viser hva [AI-agentene][2] dine har funnet, slik at du kan følge opp når du starter dagen. Hver agentwidget krever at agenten er aktiv, se [Sett opp AI-agenter][2].
+Agentwidgetene viser hva [KI-agentene][2] dine har funnet, slik at du kan følge opp når du starter dagen. Hver agentwidget krever at agenten er aktiv, se [Sett opp KI-agenter][2].
 
 ### Lead-agent {#lead-agent}
 
@@ -291,17 +290,17 @@ Viser hvor mange firmaer Data Quality Agent har oppdateringer for. Klikk på **V
 
 Du ser agentwidgetene når:
 
-* Administratoren din har [aktivert AI-funksjoner][6] for organisasjonen.
-* AI-agenter er slått på for deg. De er slått på for alle som standard, men administratoren kan slå dem av.
+* Administratoren din har [aktivert KI-funksjoner][6] for organisasjonen.
+* KI-agenter er slått på for deg. De er slått på for alle som standard, men administratoren kan [slå dem av][9].
 * Du har [aktivert agenten][2] i skjermbildet **Agenter**.
 
 <Tip>
-Hvis du ser <i class="ph ph-robot" aria-label="Agents icon"></i> **Agenter** i navigatoren, har du tilgang til AI-agenter. Hvis du ikke ser det, har du ikke tilgang, og agentwidgetene vises ikke.
+Hvis du ser <i class="ph ph-robot" aria-label="Agents icon"></i> **Agenter** i navigatoren, har du tilgang til KI-agenter. Hvis du ikke ser det, har du ikke tilgang, og agentwidgetene vises ikke.
 </Tip>
 
 ### Vis kriteriet Negativt sentiment {#admin-sentiment}
 
-Du kan bruke kriteriet **Negativt sentiment** i **Sak – Fremhevet** når administratoren har [slått på AI-tekstanalyse][7].
+Du kan bruke kriteriet **Negativt sentiment** i **Sak – Fremhevet** når administratoren har [slått på KI-tekstanalyse][7].
 
 [1]: /no/learn/getting-started/main-screen/navigator
 [2]: /no/ai/learn/set-up-ai-agents
@@ -311,6 +310,7 @@ Du kan bruke kriteriet **Negativt sentiment** i **Sak – Fremhevet** når admin
 [6]: /no/ai/admin/index
 [7]: /no/ai/admin/index#enable-text-analysis
 [8]: /no/ai/learn/data-quality-agent#review
+[9]: /no/ai/admin/index#preferences-tab
 
 [img1]: /media/loc/en/learn/start-page.png
 [img2]: /media/loc/en/learn/start-page-first-time.png

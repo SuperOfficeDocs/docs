@@ -1,0 +1,140 @@
+---
+title: Opsæt Reply Assist
+description: Vælg de kilder, Reply Assist bruger til at foreslå svar på sager, giv den en rolle og instruktioner, og test den, før brugerne forlader sig på den.
+keywords: ['svarforslag', 'AI-svar', 'kilder', 'vidensbase', 'FAQ', 'svarskabeloner', 'webindhold', 'instruktioner', 'test', 'Copilot']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Indstillinger og vedligeholdelse
+userflow_index: true
+related:
+  - Lav et udkast til svar med Reply Assist: /da/request/learn/reply
+  - /da/ai/admin/index
+  - Andre AI-tjenester: /da/ai/learn/index
+language: da
+---
+
+[Reply Assist][1] foreslår svar på indgående sager. Hvert forslag bygges ud fra de kilder, du vælger, såsom tidligere sager, FAQ'er, svarskabeloner, dokumenter og webindhold. På fanen **Hjælp til svar** i **AI-tjenester** tilføjer en administrator disse kilder, fortæller Reply Assist, hvordan den skal opføre sig, og tester resultatet.
+
+Nogle etiketter på disse skærmbilleder viser stadig Copilot. De henviser til Reply Assist.
+
+## Krav
+
+* Adgang til **Indstillinger og vedligeholdelse**.
+* CRM Suite Plus eller højere.
+* [AI-funktioner aktiveret][2] for din organisation.
+
+## Åbn indstillingerne for Reply Assist {#open}
+
+1. Åbn **Indstillinger og vedligeholdelse**.
+1. Vælg **AI-tjenester** i Navigator.
+1. Vælg fanen **Hjælp til svar**.
+
+## Tilføj en kilde {#source}
+
+En kilde er indhold, som Reply Assist kan søge i, når den foreslår et svar.
+
+1. Vælg **Kilder**.
+1. Under **Add a source** skal du klikke på den type kilde, du vil bruge:
+
+    | Kilde | Hvad Reply Assist bruger |
+    |---|---|
+    | Sager | Et udvalg af servicesager. |
+    | FAQ | FAQ'er fra vidensbasen. |
+    | Svarskabeloner | Svarskabeloner fra vidensbasen. |
+    | Dokumenter | Et udvalg af CRM-dokumenter. |
+    | Webindhold | Indhold fra eksterne websteder. |
+
+    ![Add a source med de fem kildetyper -screenshot][img1]
+
+1. Udfyld **Navn på kilde** og eventuelt **Beskrivelse**.
+1. Vælg det indhold, der skal bruges. Felterne afhænger af kildetypen. Se [Kildefelter][5].
+1. Klik på **Gem**.
+
+    ![Indstillingerne for en ny sagskilde -screenshot][img2]
+
+Kilden vises under **Kilder**. Hvis du vil ændre den senere, skal du klikke på dens blyantikon. Et advarselsikon ved siden af **Kilder** betyder, at en kilde kræver din opmærksomhed, for eksempel et manglende udvalg.
+
+### Kildefelter {#fields}
+
+<Tabs>
+<Tab title="Sager">
+* **Selection**: det [udvalg][3] af sager, der skal bruges.
+</Tab>
+
+<Tab title="FAQ">
+* **Mappe**: mappen i vidensbasen.
+* **Adgang**: hvilke adgangsniveauer der skal medtages, for eksempel **Tilgængelig for registrerede**.
+* **Workflow**: hvilke statusser der skal medtages, for eksempel **Udgivet**.
+* **Sample data** viser, hvor mange artikler der matcher.
+
+![Indstillingerne for en FAQ-kilde med Mappe, Adgang og Workflow -screenshot][img5]
+</Tab>
+
+<Tab title="Svarskabeloner">
+* **Mappe**: mappen med svarskabeloner.
+* **Adgang**: hvilke adgangsniveauer der skal medtages.
+* **Sample data** viser, hvor mange skabeloner der matcher.
+
+![Indstillingerne for en svarskabelonkilde med Mappe og Adgang -screenshot][img6]
+</Tab>
+
+<Tab title="Dokumenter">
+* **Selection**: det [udvalg][3] af dokumenter, der skal bruges.
+</Tab>
+
+<Tab title="Webindhold">
+* **Start-URL**: den side, der skal startes fra.
+* **Crawler-tilstand** følger links på webstedet fra den side, og **Kun en enkelt side** læser kun den side.
+* Under **Avancerede indstillinger** udelader **Spring URL'er over** sider, og **Spring CSS over** og **Medtag CSS** udelader eller beholder dele af hver side.
+
+![Indstillingerne for en webindholdskilde med Avancerede indstillinger åbnet -screenshot][img4]
+</Tab>
+</Tabs>
+
+## Angiv rolle og instruktioner {#settings}
+
+Rollen og instruktionerne fortæller Reply Assist, hvad den er, og hvordan den skal svare.
+
+1. Vælg **Indstillinger**.
+1. Under **Copilot role** skal du beskrive assistentens rolle. For eksempel: "Du er assistent for [firma]. Din opgave er at hjælpe brugerne med at forstå deres sag, finde relevante oplysninger og give præcise og nyttige svar."
+1. Under **Instructions** skal du beskrive, hvordan der skal svares. For eksempel: "Brug en professionel og venlig tone. Basér altid svarene på de tilgængelige kilder."
+1. Klik på **Gem**.
+
+## Test Reply Assist {#test}
+
+Test, hvordan Reply Assist finder og bruger dine kilder, før brugerne forlader sig på dens forslag. Testpanelet er ved siden af **Indstillinger**.
+
+1. Indtast et spørgsmål, som en kunde kunne stille, for eksempel "Hvad er returpolitikken?"
+1. Vælg, hvad der skal testes:
+    * **Search (show matching sources)** viser, hvilke af dine kilder der matcher spørgsmålet.
+    * **Answer (generate a response)** viser det svar, Reply Assist ville foreslå.
+1. Klik på **Test**, og læs **Result**.
+
+![Reply Assist Settings med rolle, instruktioner og testpanel -screenshot][img3]
+
+Hvis resultatet ikke er, som du forventer, skal du justere kilderne, rollen eller instruktionerne og teste igen.
+
+## Styr forslag pr. bruger
+
+To [AI-præferencer][4] styrer, hvordan brugerne får forslag fra Reply Assist: om et svar genereres automatisk, når de klikker på **Svar** eller **Svar til alle**, og om forslaget vises.
+
+[1]: /da/request/learn/reply#reply-assist
+[2]: /da/ai/admin/index
+[3]: /da/search-options/selection/learn/create
+[4]: /da/ai/admin/index#preferences-tab
+[5]: #fields
+
+[img1]: /media/loc/en/ai/reply-assist-add-source.png
+[img2]: /media/loc/en/ai/reply-assist-source-settings.png
+[img3]: /media/loc/en/ai/reply-assist-settings.png
+[img4]: /media/loc/en/ai/reply-assist-web-source.png
+[img5]: /media/loc/en/ai/reply-assist-faq-source.png
+[img6]: /media/loc/en/ai/reply-assist-reply-template-source.png

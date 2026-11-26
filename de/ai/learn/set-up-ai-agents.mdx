@@ -1,17 +1,16 @@
 ---
 title: KI-Agenten einrichten
-description: Wie Sie den Bereich Agenten öffnen, einen Agenten aktivieren sowie eine Instanz erstellen und verwalten. Ein Administratorzugriff ist nicht nötig, denn Agenteninstanzen sind persönlich und pro Benutzer angelegt.
+description: Wie Sie den Bereich Agenten öffnen, einen Agenten aktivieren sowie eine Instanz erstellen und verwalten. Ein Administratorzugriff ist nicht nötig. Agenteninstanzen sind persönlich und pro Benutzer angelegt.
 keywords: ['Agenteninstanz', 'Agent aktivieren', 'Instanz hinzufügen', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: howto
-tier: plus
+tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -23,10 +22,6 @@ related:
 language: de
 ---
 
-<Note>
-Die KI-Agenten von SuperOffice kommen in Kürze. Diese Seite beschreibt die Einrichtungsschritte für eine Funktion, die noch nicht allgemein verfügbar ist.
-</Note>
-
 Die KI-Agenten von SuperOffice arbeiten im Hintergrund und schlagen Ergebnisse vor, die eine Person genehmigt. Alle Agenten befinden sich im selben Bereich Agenten und werden auf dieselbe Weise aktiviert und verwaltet. Diese Seite behandelt diese gemeinsamen Schritte einmal. Danach hat jeder Agent seine eigene Einrichtungsseite, zum Beispiel [Lead Agent einrichten][2].
 
 ## Agenteninstanzen
@@ -35,8 +30,9 @@ Eine konfigurierte, laufende Kopie eines Agenten wird als **Instanz** bezeichnet
 
 ## Anforderungen
 
-* Ihre Organisation muss den Plan **CRM Suite Plus** oder höher haben.
+* Ihre Organisation muss für den Data Quality Agent und den Duplicate Agent den Plan **CRM Suite Growth** oder höher haben und für den Lead Agent und den Sales Assistant Agent den Plan **CRM Suite Plus** oder höher.
 * Ein Administrator muss in den globalen CRM-Einstellungen die [KI-Funktionen aktivieren][1], bevor das Symbol **Agenten** erscheint.
+* KI-Agenten müssen für Sie aktiviert sein. Sie sind standardmäßig für alle aktiviert, aber ein Administrator kann sie [für einige Benutzer deaktivieren][4] oder [alle Agenten pausieren][5].
 
 <Note>
 Agenteninstanzen selbst sind persönlich, pro Benutzer. Sie benötigen weder Administratorzugriff noch Zugriff auf **Einstellungen und Verwaltung**, um eine zu erstellen oder zu verwalten.
@@ -152,7 +148,7 @@ Klicken Sie auf <i class="ph ph-bell-slash" aria-label="Durchgestrichene Glocke"
 ## Eine Instanz deaktivieren
 
 1. Klicken Sie auf das Aufgabenmenü (<i class="ph ph-dots-three-vertical" aria-label="Drei-Punkte-Symbol"></i>).
-1. Wählen Sie den Schalter **Aktiv**.
+1. Klicken Sie auf den Schalter **Aktiv**.
 1. Klicken Sie auf **Deaktivieren**.
 
 <Warning>
@@ -178,6 +174,8 @@ Das Löschen einer Instanz ist endgültig und entfernt alle ihre Daten.
 [1]: ../admin/index
 [2]: /de/lead/learn/set-up-lead-agent
 [3]: /de/learn/basics/start-page#agents
+[4]: ../admin/index#preferences-tab
+[5]: ../admin/set-agent-limits#pause
 
 [img1]: /media/loc/en/ai/inactive-agent.png
 [img2]: /media/loc/en/ai/agents-overview-starter-cards.png

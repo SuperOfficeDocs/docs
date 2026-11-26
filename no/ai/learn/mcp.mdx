@@ -1,10 +1,10 @@
 ---
 title: MCP Connect
 description: Koble SuperOffice CRM til Claude, Microsoft Copilot eller ChatGPT som en datakilde i sanntid ved hjelp av Model Context Protocol.
-keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI-integrasjon']
+keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'KI-integrasjon']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: plus
 category: automation
@@ -20,12 +20,12 @@ related:
 language: no
 ---
 
-MCP Connect gjør SuperOffice CRM til en datakilde i sanntid for Claude, Microsoft Copilot og ChatGPT, koblet til gjennom den åpne Model Context Protocol (MCP). I stedet for å kopiere og lime inn CRM-data i en AI-chat, leser assistenten direkte fra dine egne firmaer, personer, salg, saker, prosjekter, oppfølginger og dokumenter, slik at svarene forblir forankret i dine reelle data.
+MCP Connect gjør SuperOffice CRM til en datakilde i sanntid for Claude, Microsoft Copilot og ChatGPT, koblet til gjennom den åpne Model Context Protocol (MCP). I stedet for å kopiere og lime inn CRM-data i en KI-chat, leser assistenten direkte fra dine egne firmaer, personer, salg, saker, prosjekter, oppfølginger og dokumenter, slik at svarene forblir forankret i dine reelle data.
 
 ## Hva MCP Connect gjør
 
-* Du slipper å kopiere utdaterte CRM-data inn i en AI-chat, siden assistenten leser direkte fra ditt eget miljø.
-* Fungerer på samme måte på tvers av AI-leverandører: Claude, Microsoft Copilot og ChatGPT kobler alle til gjennom den samme MCP Connect-serveren, slik at du ikke er låst til ett AI-verktøy.
+* Du slipper å kopiere utdaterte CRM-data inn i en KI-chat, siden assistenten leser direkte fra ditt eget miljø.
+* Fungerer på samme måte på tvers av KI-leverandører: Claude, Microsoft Copilot og ChatGPT kobler alle til gjennom den samme MCP Connect-serveren, slik at du ikke er låst til ett KI-verktøy.
 * Svarene forblir forankret i dine egne data, fordi hver lesing kommer direkte fra SuperOffice i stedet for fra det modellen husker.
 
 ## Krav
@@ -47,7 +47,9 @@ Veiledninger for oppsett, trinn for trinn, for hver klient finnes på [SuperOffi
 
 ## Leseverktøy
 
-Disse verktøyene lar den tilkoblede AI-klienten søke i og lese SuperOffice CRM-data på dine vegne. De er tilgjengelige med CRM Suite Plus eller høyere.
+Disse verktøyene lar den tilkoblede KI-klienten søke i og lese SuperOffice CRM-data på dine vegne. De er tilgjengelige med CRM Suite Plus eller høyere.
+
+Søke- og listeverktøy returnerer resultatene sine i sider. KI-klienten kan hente så mange resultater som den trenger, én side om gangen, uten å overbelaste CRM-en din.
 
 | Verktøy | Hva de gjør |
 |---|---|
@@ -56,11 +58,11 @@ Disse verktøyene lar den tilkoblede AI-klienten søke i og lese SuperOffice CRM
 | `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Finner og leser salg (salgsmuligheter), salgsguiden deres, interessenter og aktivitetshistorikk. |
 | `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Finner saker og leser samtalen eller metadataene deres. |
 | `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Finner og leser prosjekter, medlemmene deres og aktivitetshistorikk. |
-| `search_appointments`, `get_appointment` | Finner og leser oppfølginger i dagboken. |
+| `search_appointments`, `get_appointment`, `list_appointment_types` | Finner og leser oppfølginger i dagboken, og viser de tilgjengelige oppfølgingstypene. |
 | `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Finner dokumenter, inkludert e-poster og tilbud, og leser innholdet deres. |
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Viser aktivitetshistorikk for et firma, en person eller en bruker. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Finner og leser rader i [ekstratabeller][8] (egendefinerte objekter). |
-| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår opp en brukers identitet, søker i eksterne foretaksregistre og henter server- og sesjonsinformasjon. |
+| `get_associate`, `search_associates`, `search_external_companies`, `whoami` | Finner brukere og slår opp en brukers identitet, søker i eksterne foretaksregistre og henter informasjon om din egen sesjon. |
 
 ## Oppdateringsverktøy
 
@@ -68,11 +70,15 @@ Disse verktøyene lar den tilkoblede AI-klienten søke i og lese SuperOffice CRM
 Oppdateringsverktøy krever CRM Suite Super.
 </Note>
 
-Disse verktøyene lar den tilkoblede AI-klienten endre felt på en eksisterende post på dine vegne. MCP Connect oppretter ikke nye poster.
+Disse verktøyene lar den tilkoblede KI-klienten endre felt på en eksisterende post på dine vegne. MCP Connect oppretter ikke nye poster. Tilgangsrettighetene dine i SuperOffice gjelder fortsatt, så klienten kan bare endre det du har lov til å endre.
 
 | Verktøy | Hva de gjør |
 |---|---|
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Oppdaterer felt på en eksisterende post. |
+
+## Begrens MCP-tilgang {#access}
+
+En administrator kan begrense hva MCP Connect-klienter kan gjøre med preferansen **MCP-tilgangskontroll**: lese og oppdatere (**Alle**, standard), bare lese, eller ingenting. Preferansen kan angis for hele databasen, for en gruppe eller for én bruker. Se [KI-preferanser per bruker][9].
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
@@ -82,3 +88,4 @@ Disse verktøyene lar den tilkoblede AI-klienten endre felt på en eksisterende 
 [6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
 [7]: /no/admin/license/crm-suite
 [8]: /no/custom-objects/learn/extra-table
+[9]: /no/ai/admin/index#preferences-tab

@@ -110,7 +110,9 @@
             "group": "For administratorer",
             "root": "da/ai/admin/index",
             "pages": [
-              "da/ai/admin/set-up-categorization"
+              "da/ai/admin/set-agent-limits",
+              "da/ai/admin/set-up-categorization",
+              "da/ai/admin/set-up-reply-assist"
             ]
           }
         ]

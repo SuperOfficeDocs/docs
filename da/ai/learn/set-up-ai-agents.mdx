@@ -3,15 +3,14 @@ title: Opsæt AI-agenter
 description: Sådan åbner du Agenter-området, aktiverer en agent og opretter og administrerer en instans. Der kræves ikke administratoradgang. Agentinstanser er personlige, pr. bruger.
 keywords: ['agentinstans', 'aktivér agent', 'tilføj instans', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: howto
-tier: plus
+tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -23,10 +22,6 @@ related:
 language: da
 ---
 
-<Note>
-SuperOffices AI-agenter kommer snart. Denne side beskriver opsætningstrin for en funktion, der endnu ikke er generelt tilgængelig.
-</Note>
-
 SuperOffices AI-agenter arbejder i baggrunden og foreslår resultater, som en person skal godkende. Alle agenter findes i det samme **Agenter**-område og aktiveres og administreres på samme måde. Denne side beskriver de fælles trin. Derudover har hver agent sin egen opsætningsside, for eksempel [Opsæt Lead Agent][2].
 
 ## Agentinstanser
@@ -35,8 +30,9 @@ En konfigureret, kørende kopi af en agent kaldes en **instans**. Nogle agenter 
 
 ## Krav
 
-* Din organisation skal være på **CRM Suite Plus** eller derover.
+* Din organisation skal være på **CRM Suite Growth** eller højere for Data Quality Agent og Duplicate Agent, og på **CRM Suite Plus** eller højere for Lead Agent og Sales Assistant Agent.
 * En administrator skal [aktivere AI-funktioner][1] i de globale CRM-præferencer, før ikonet **Agenter** vises.
+* AI-agenter skal være slået til for dig. De er som standard slået til for alle, men en administrator kan [slå dem fra for nogle brugere][4] eller [sætte alle agenter på pause][5].
 
 <Note>
 Agentinstanser er selv personlige, pr. bruger. Du behøver ikke administratoradgang eller **Indstillinger og vedligeholdelse** for at oprette eller administrere en.
@@ -178,6 +174,8 @@ Sletning af en instans er permanent og fjerner al dens data.
 [1]: ../admin/index
 [2]: /da/lead/learn/set-up-lead-agent
 [3]: /da/learn/basics/start-page#agents
+[4]: ../admin/index#preferences-tab
+[5]: ../admin/set-agent-limits#pause
 
 [img1]: /media/loc/en/ai/inactive-agent.png
 [img2]: /media/loc/en/ai/agents-overview-starter-cards.png

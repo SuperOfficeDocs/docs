@@ -4,8 +4,8 @@ title: Workspace Assist
 description: Use Workspace Assist's AI-powered side panel for quick answers, summaries, and content suggestions across SuperOffice CRM.
 keywords: ['AI', 'ChatGPT', 'OpenAI', 'Bing', 'Copilot']
 author: digitaldiina, Filip Norman
-date: 10.13.2026
-so_version: 12.5
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 license: aiplatform
 tier: core
@@ -13,7 +13,6 @@ category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from:
@@ -24,23 +23,24 @@ related:
   - Other AI services: /en/ai/learn/index
   - /en/admin/license/crm-suite
   - Trust center | GDPR & SuperOffice Products: https://www.superoffice.com/trust-center/gdpr-and-crm/
-  - https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
 language: en
 ---
 
-Workspace Assist smoothly integrates a ChatGPT-like user experience with SuperOffice, providing a powerful AI tool within the CRM context. Our aim is to seamlessly embed generative AI within SuperOffice CRM, eliminating the need for external app access while enhancing your workflow directly within the platform.
+Workspace Assist is an AI chat in the side panel of SuperOffice CRM. It answers questions about the record you are working with, using your own CRM data, and helps you write content without leaving SuperOffice.
 
-You can save time and get insights using the different ready-made questions (prompts) in the Company, Contact, Diary, Sale, Project, Request, and Selection screen.
+You can ask your own questions or use the ready-made questions (prompts) in the Company, Contact, Diary, Sale, Project, Request, and Selection screens.
 
 Workspace Assist is available on the Core plan. The Growth and Plus plans unlock additional capability.
 
 <Note>
-For a limited time, this feature is also available through our [AI lab program][9]. SuperOffice AI is cloud only.
+SuperOffice AI is cloud only.
 </Note>
 
-## Privacy and GDPR
+## Your CRM data and privacy {#privacy}
 
-Workspace Assist does not know anything about your customer data and will provide you answers with the help of a large-language-model (LLM) such as Bing from Microsoft, ChatGPT from OpenAI, or Claude from Anthropic.
+Workspace Assist answers with the help of a large language model (LLM). To answer questions about your CRM, it finds and reads data with the same tools as [MCP Connect][2]. It uses your SuperOffice user's access rights, so it finds only data you already have access to.
+
+If an administrator allows it, Workspace Assist can also use information from the web in its answers. See [AI global preferences][3].
 
 ## Getting started
 
@@ -69,11 +69,11 @@ Workspace Assist is available in all screens with the [side panel][1]. By defaul
 
 Workspace Assist uses the language of your SuperOffice application. For example, if you have selected *Deutsch* in **Local settings**, the AI will answer you in German.
 
-The context is always the currently viewed item. For example, when viewing the company "SuperOffice AS", the AI tells you about SuperOffice. If you go to "Visma", AI tells you about that company instead. If you switch to **Project**, the chat is reset and you can select project-related prompts. And so on.
+Workspace Assist always knows which record you are working with. For example, on a company you can ask "Are there any incomplete tasks on this customer?" If you go to another company, it answers about that company instead. If you switch to **Project**, the chat is reset and you can select project-related prompts.
 
 ## Available prompts
 
-Prompts are subject to change without prior notice during the pilot!
+Prompts can change without notice.
 
 ### Company
 
@@ -115,7 +115,8 @@ Prompts are subject to change without prior notice during the pilot!
 * To come
 
 [1]: ../../learn/getting-started/main-screen/side-panel
-[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
+[2]: /en/ai/learn/mcp
+[3]: /en/ai/admin/index#global
 [img2]: /media/loc/en/ai/copilot-in-sidepanel-list.png
 [img3]: /media/loc/en/ai/copilot-on-sale.png
 [img4]: /media/loc/en/ai/copilot-about-superoffice.png

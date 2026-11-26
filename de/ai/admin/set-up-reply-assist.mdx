@@ -1,0 +1,140 @@
+---
+title: Reply Assist einrichten
+description: Wählen Sie die Quellen aus, die Reply Assist für Antwortvorschläge auf Anfragen verwendet, legen Sie eine Rolle und Anweisungen fest und testen Sie Reply Assist, bevor Benutzer sich darauf verlassen.
+keywords: ['Antwortvorschläge', 'KI-Antwort', 'Quellen', 'Wissensdatenbank', 'FAQ', 'Antwortvorlagen', 'Webinhalte', 'Anweisungen', 'Test', 'Copilot']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Einstellungen und Verwaltung
+userflow_index: true
+related:
+  - Antwortentwurf mit Reply Assist erstellen: /de/request/learn/reply
+  - /de/ai/admin/index
+  - Andere KI-Services: /de/ai/learn/index
+language: de
+---
+
+[Reply Assist][1] schlägt Antworten auf eingehende Anfragen vor. Jeder Vorschlag basiert auf den Quellen, die Sie auswählen, zum Beispiel früheren Anfragen, FAQs, Antwortvorlagen, Dokumenten und Webinhalten. Auf der Registerkarte **Reply Assist (Antworthilfe)** in **KI-Services** fügt ein Administrator diese Quellen hinzu, legt fest, wie sich Reply Assist verhalten soll, und testet das Ergebnis.
+
+Einige Beschriftungen in diesen Ansichten lauten noch Copilot. Sie beziehen sich auf Reply Assist.
+
+## Voraussetzungen
+
+* Zugriff auf **Einstellungen und Verwaltung**.
+* CRM Suite Plus oder höher.
+* [KI-Funktionen aktiviert][2] für Ihre Organisation.
+
+## Reply Assist-Einstellungen öffnen {#open}
+
+1. Öffnen Sie **Einstellungen und Verwaltung**.
+1. Wählen Sie **KI-Services** im Navigator aus.
+1. Wählen Sie die Registerkarte **Reply Assist (Antworthilfe)** aus.
+
+## Eine Quelle hinzufügen {#source}
+
+Eine Quelle ist ein Inhalt, den Reply Assist durchsuchen kann, wenn es eine Antwort vorschlägt.
+
+1. Wählen Sie **Quellen** aus.
+1. Klicken Sie unter **Add a source** auf die Art der Quelle, die Sie verwenden möchten:
+
+    | Quelle | Was Reply Assist verwendet |
+    |---|---|
+    | Anfragen | Eine Selektion von Service-Anfragen. |
+    | FAQ | FAQs aus der Wissensdatenbank. |
+    | Antwortvorlagen | Antwortvorlagen aus der Wissensdatenbank. |
+    | Dokumente | Eine Selektion von CRM-Dokumenten. |
+    | Webinhalte | Inhalte von externen Websites. |
+
+    ![Add a source mit den fünf Arten von Quellen -screenshot][img1]
+
+1. Füllen Sie **Name der Quelle** und optional **Beschreibung** aus.
+1. Wählen Sie den Inhalt aus, der verwendet werden soll. Die Felder hängen von der Art der Quelle ab. Siehe [Quellfelder][5].
+1. Klicken Sie auf **Speichern**.
+
+    ![Die Einstellungen für eine neue Anfragequelle -screenshot][img2]
+
+Die Quelle wird unter **Quellen** aufgeführt. Um sie später zu ändern, klicken Sie auf das Stiftsymbol der Quelle. Ein Warnsymbol neben **Quellen** bedeutet, dass eine Quelle Ihre Aufmerksamkeit erfordert, zum Beispiel weil eine Selektion fehlt.
+
+### Quellfelder {#fields}
+
+<Tabs>
+<Tab title="Anfragen">
+* **Selection**: die [Selektion][3] von Anfragen, die verwendet werden soll.
+</Tab>
+
+<Tab title="FAQ">
+* **Ordner**: der Ordner in der Wissensdatenbank.
+* **Zugriff**: welche Zugriffsebenen einbezogen werden, zum Beispiel **Für registrierte Benutzer zugänglich**.
+* **Workflow**: welche Status einbezogen werden, zum Beispiel **Veröffentlicht**.
+* **Sample data** zeigt, wie viele Artikel übereinstimmen.
+
+![Die Einstellungen für eine FAQ-Quelle mit Ordner, Zugriff und Workflow -screenshot][img5]
+</Tab>
+
+<Tab title="Antwortvorlagen">
+* **Ordner**: der Ordner mit den Antwortvorlagen.
+* **Zugriff**: welche Zugriffsebenen einbezogen werden.
+* **Sample data** zeigt, wie viele Vorlagen übereinstimmen.
+
+![Die Einstellungen für eine Antwortvorlagenquelle mit Ordner und Zugriff -screenshot][img6]
+</Tab>
+
+<Tab title="Dokumente">
+* **Selection**: die [Selektion][3] von Dokumenten, die verwendet werden soll.
+</Tab>
+
+<Tab title="Webinhalte">
+* **Start-URL**: die Seite, auf der begonnen wird.
+* **Crawler-Modus** folgt von dieser Seite aus den Links auf der Website, und **Nur eine Seite** liest nur diese Seite.
+* Unter **Erweiterte Optionen** schließt **URLs überspringen** Seiten aus, und **CSS überspringen** und **CSS einbeziehen** schließen Teile jeder Seite aus oder behalten sie bei.
+
+![Die Einstellungen für eine Webinhaltsquelle mit geöffneten erweiterten Optionen -screenshot][img4]
+</Tab>
+</Tabs>
+
+## Rolle und Anweisungen festlegen {#settings}
+
+Die Rolle und die Anweisungen teilen Reply Assist mit, was es ist und wie es antworten soll.
+
+1. Wählen Sie **Einstellungen** aus.
+1. Beschreiben Sie unter **Copilot role** die Rolle des Assistenten. Zum Beispiel: "Sie sind ein Assistent für [Firma]. Ihre Aufgabe ist es, Benutzern zu helfen, ihre Anfrage zu verstehen, relevante Informationen zu finden und genaue, hilfreiche Antworten zu geben."
+1. Beschreiben Sie unter **Instructions**, wie geantwortet werden soll. Zum Beispiel: "Verwenden Sie einen professionellen und freundlichen Ton. Stützen Sie Antworten immer auf die verfügbaren Quellen."
+1. Klicken Sie auf **Speichern**.
+
+## Reply Assist testen {#test}
+
+Testen Sie, wie Reply Assist Ihre Quellen findet und verwendet, bevor Benutzer sich auf die Vorschläge verlassen. Der Testbereich befindet sich neben **Einstellungen**.
+
+1. Geben Sie eine Frage ein, die ein Kunde stellen könnte, zum Beispiel "Wie lauten die Rückgabebedingungen?"
+1. Wählen Sie aus, was Sie testen möchten:
+    * **Search (show matching sources)** zeigt, welche Ihrer Quellen zur Frage passen.
+    * **Answer (generate a response)** zeigt die Antwort, die Reply Assist vorschlagen würde.
+1. Klicken Sie auf **Test** und lesen Sie das **Ergebnis**.
+
+![Reply Assist-Einstellungen mit Rolle, Anweisungen und Testbereich -screenshot][img3]
+
+Wenn das Ergebnis nicht Ihren Erwartungen entspricht, passen Sie die Quellen, die Rolle oder die Anweisungen an und testen Sie erneut.
+
+## Vorschläge pro Benutzer steuern
+
+Zwei [KI-Einstellungen][4] steuern, wie Benutzer Vorschläge von Reply Assist erhalten: ob automatisch eine Antwort generiert wird, wenn sie auf **Antworten** oder **Allen antworten** klicken, und ob der Vorschlag angezeigt wird.
+
+[1]: /de/request/learn/reply#reply-assist
+[2]: /de/ai/admin/index
+[3]: /de/search-options/selection/learn/create
+[4]: /de/ai/admin/index#preferences-tab
+[5]: #fields
+
+[img1]: /media/loc/en/ai/reply-assist-add-source.png
+[img2]: /media/loc/en/ai/reply-assist-source-settings.png
+[img3]: /media/loc/en/ai/reply-assist-settings.png
+[img4]: /media/loc/en/ai/reply-assist-web-source.png
+[img5]: /media/loc/en/ai/reply-assist-faq-source.png
+[img6]: /media/loc/en/ai/reply-assist-reply-template-source.png

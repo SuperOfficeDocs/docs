@@ -1,0 +1,103 @@
+---
+title: Angi agentgrenser
+description: Sett KI-agenter på pause eller slå dem på for alle, angi en månedlig kredittgrense per agent, legg til ekstra kredittpakker og følg med på bruken av KI-kreditter i Innstillinger og vedlikehold.
+keywords: ['KI-kreditter', 'kredittgrense', 'månedlig grense', 'kredittpakker', 'sette agenter på pause', 'slå av agenter', 'bruksprognose', 'Leadfeeder']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Innstillinger og vedlikehold
+userflow_index: true
+related:
+  - /no/ai/admin/index
+  - /no/ai/learn/set-up-ai-agents
+  - /no/admin/license/crm-suite
+language: no
+---
+
+KI-agenter bruker KI-kreditter på arbeidet de utfører. På fanen **Agent Limits** kan en administrator slå agenter på eller av for alle brukere og angi en månedlig kredittgrense for hver agent. Fanen viser også hvor mange kreditter agentene bruker denne måneden.
+
+## Krav
+
+* Tilgang til **Innstillinger og vedlikehold**.
+* [KI-funksjoner aktivert][1] for organisasjonen din.
+* CRM Suite Growth eller høyere for Data Quality Agent og Duplicate Agent. CRM Suite Plus eller høyere for Lead Agent og Sales Assistant Agent.
+
+## Åpne Agent Limits {#open}
+
+1. Åpne **Innstillinger og vedlikehold**.
+1. Velg **AI-tjenester** i navigatoren.
+1. Velg fanen **Agent Limits**.
+
+![Fanen Agent Limits, med bryteren KI-agenter, kredittforbruket og ett kort per agent -screenshot][img1]
+
+## Sett alle agenter på pause {#pause}
+
+Bryteren **AI-agenter** øverst på fanen gjelder for alle agenter og alle brukere.
+
+1. Klikk på bryteren **AI-agenter** for å slå den av.
+
+Alle agenter settes på pause. Grensene dine beholdes, slik at agentene fortsetter med de samme grensene når du slår bryteren på igjen.
+
+## Slå én agent på eller av {#agent}
+
+Hver agent har sitt eget kort under **Agenter**, med en bryter øverst til høyre.
+
+1. Finn kortet for agenten.
+1. Klikk på bryteren for å slå agenten av eller på.
+
+Når en agent er slått av, slutter den å opprette nye oppgaver for alle brukere. Kortet **Leadfeeder enrichment** styrer om agenter kan bruke Leadfeeder til å verifisere og berike firmaer.
+
+## Angi en månedlig grense for én agent {#limit}
+
+Som standard har en agent **No limit** og følger den totale grensen for alle agenter. Legg bare til en grense der én agent trenger sitt eget tak.
+
+1. Klikk på **Set limit** på kortet for agenten.
+1. Under **Monthly limit** skriver du inn antallet kreditter agenten kan bruke per måned.
+1. Klikk på **Bruk**.
+
+    ![Et agentkort med feltet Monthly limit, Remove limit, Avbryt og Bruk -screenshot][img2]
+
+Når en agent når grensen sin, slutter den å opprette nye oppgaver. For å gå tilbake til den totale grensen klikker du på **Set limit** igjen og deretter på **Remove limit**.
+
+## Legg til ekstra kredittpakker {#packages}
+
+CRM Suite-planen din inkluderer en månedlig kvote med KI-kreditter basert på antall brukere. Hvis agentene trenger flere, kan du legge til ekstra kredittpakker.
+
+1. Under **Extra credit packages for agents** klikker du på **Rediger**.
+1. Velg antall pakker i listen.
+1. Klikk på **Bruk**.
+
+    ![Extra credit packages for agents med 2 pakker valgt, og den nye maksimale bruksgrensen -screenshot][img3]
+
+Fanen viser månedsprisen for pakkene du velger. Se [SuperOffice-priser][2] for den inkluderte kvoten per teamstørrelse.
+
+## Følg med på kredittforbruket {#usage}
+
+Øverst på fanen vises kredittene for alle agentene samlet.
+
+| Felt | Hva det viser |
+|---|---|
+| Agent maximum usage limit | Kredittene alle agentene kan bruke per måned: de inkluderte kredittene pluss eventuelle ekstra pakker. |
+| Agent usage this month | Kredittene som er brukt så langt denne måneden, av maksimumet. |
+| Forecast | Anslått antall kreditter brukt ved slutten av måneden, og om forbruket ligger an til å holde seg innenfor grensen. |
+
+Kortet for hver agent viser hva ett forslag koster i kreditter, hvor mange instanser agenten har, og hvor mange kreditter den har brukt.
+
+## Globale preferanser
+
+Agentbryterne og kredittgrensene er også oppført i KI-delen av [globale preferanser][3]. Bruk fanen **Agent Limits** for å endre dem.
+
+[1]: /no/ai/admin/index
+[2]: https://www.superoffice.com/pricing/
+[3]: /no/ai/admin/index#global
+
+[img1]: /media/loc/en/ai/agent-limits.png
+[img2]: /media/loc/en/ai/agent-limits-set-limit.png
+[img3]: /media/loc/en/ai/agent-limits-extra-packages.png
