@@ -13,6 +13,7 @@ platform: web
 deployment: online
 audience: settings
 audience_tooltip: Instellingen en onderhoud
+userflow_index: true
 related:
   - /nl/ai/admin/index
   - /nl/ai/learn/set-up-ai-agents
@@ -20,8 +21,83 @@ related:
 language: nl
 ---
 
-<Note>
-Deze pagina is nog niet vertaald. Zie de [Engelse versie][1].
-</Note>
+AI-agents gebruiken AI-credits voor het werk dat ze doen. Op het tabblad **Agentlimieten** kan een beheerder agents in- of uitschakelen voor alle gebruikers en een maandelijkse creditlimiet voor elke agent instellen. Het tabblad toont ook hoeveel credits de agents deze maand gebruiken.
 
-[1]: /en/ai/admin/set-agent-limits
+## Vereisten
+
+* Toegang tot **Instellingen en onderhoud**.
+* [AI-functies ingeschakeld][1] voor uw organisatie.
+* CRM Suite Growth of hoger voor de Data Quality Agent en Duplicate Agent. CRM Suite Plus of hoger voor de Lead Agent en Sales Assistant Agent.
+
+## Agentlimieten openen {#open}
+
+1. Open **Instellingen en onderhoud**.
+1. Selecteer **AI-diensten** in de Navigator.
+1. Selecteer het tabblad **Agentlimieten**.
+
+![Het tabblad Agentlimieten, met de schakelaar AI agents, het creditgebruik en één kaart per agent -screenshot][img1]
+
+## Alle agents pauzeren {#pause}
+
+De schakelaar **AI agents** bovenaan het tabblad geldt voor elke agent en elke gebruiker.
+
+1. Klik op de schakelaar **AI agents** om deze uit te schakelen.
+
+Alle agents worden gepauzeerd. Uw limieten blijven behouden, zodat de agents met dezelfde limieten verdergaan wanneer u de schakelaar weer inschakelt.
+
+## Eén agent in- of uitschakelen {#agent}
+
+Elke agent heeft een eigen kaart onder **Agents**, met een schakelaar in de rechterbovenhoek.
+
+1. Zoek de kaart van de agent.
+1. Klik op de schakelaar om de agent uit of in te schakelen.
+
+Wanneer een agent is uitgeschakeld, maakt deze geen nieuwe taken meer aan voor alle gebruikers. De kaart **Leadfeeder enrichment** bepaalt of agents Leadfeeder kunnen gebruiken om bedrijven te verifiëren en te verrijken.
+
+## Een maandelijkse limiet voor één agent instellen {#limit}
+
+Standaard heeft een agent **No limit** en volgt deze de totale limiet voor alle agents. Voeg alleen een limiet toe wanneer één agent een eigen maximum nodig heeft.
+
+1. Klik op **Set limit** op de kaart van de agent.
+1. Voer onder **Monthly limit** het aantal credits in dat de agent per maand kan gebruiken.
+1. Klik op **Toepassen**.
+
+    ![Een agentkaart met het veld Monthly limit, Remove limit, Annuleren en Toepassen -screenshot][img2]
+
+Wanneer een agent zijn limiet bereikt, maakt deze geen nieuwe taken meer aan. Klik nogmaals op **Set limit** en vervolgens op **Remove limit** om terug te gaan naar de totale limiet.
+
+## Extra creditpakketten toevoegen {#packages}
+
+Uw CRM Suite bevat een maandelijks tegoed aan AI-credits, op basis van het aantal gebruikers. Hebben uw agents meer nodig, voeg dan extra creditpakketten toe.
+
+1. Klik onder **Extra credit packages for agents** op **Bewerken**.
+1. Selecteer het aantal pakketten in de lijst.
+1. Klik op **Toepassen**.
+
+    ![Extra credit packages for agents met 2 geselecteerde pakketten en de nieuwe maximale gebruikslimiet -screenshot][img3]
+
+Het tabblad toont de maandprijs van de pakketten die u kiest. Zie [SuperOffice-prijzen][2] voor het inbegrepen tegoed per teamgrootte.
+
+## Creditgebruik volgen {#usage}
+
+Bovenaan het tabblad staan de credits voor alle agents samen.
+
+| Veld | Wat het toont |
+|---|---|
+| Agent maximum usage limit | De credits die alle agents per maand kunnen gebruiken: de inbegrepen credits plus eventuele extra pakketten. |
+| Agent usage this month | De credits die deze maand tot nu toe zijn gebruikt, ten opzichte van het maximum. |
+| Forecast | Het geschatte aantal credits dat aan het einde van de maand is gebruikt, en of het gebruik binnen de limiet blijft. |
+
+De kaart van elke agent toont wat één suggestie kost in credits, hoeveel instanties de agent heeft en hoeveel credits deze heeft gebruikt.
+
+## Algemene voorkeuren
+
+De agentschakelaars en creditlimieten staan ook in de sectie AI van de [algemene voorkeuren][3]. Gebruik het tabblad **Agentlimieten** om ze te wijzigen.
+
+[1]: /nl/ai/admin/index
+[2]: https://www.superoffice.com/pricing/
+[3]: /nl/ai/admin/index#global
+
+[img1]: /media/loc/en/ai/agent-limits.png
+[img2]: /media/loc/en/ai/agent-limits-set-limit.png
+[img3]: /media/loc/en/ai/agent-limits-extra-packages.png

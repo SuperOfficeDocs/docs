@@ -13,6 +13,7 @@ platform: web
 deployment: online
 audience: settings
 audience_tooltip: Indstillinger og vedligeholdelse
+userflow_index: true
 related:
   - /da/ai/admin/index
   - /da/ai/learn/set-up-ai-agents
@@ -20,8 +21,83 @@ related:
 language: da
 ---
 
-<Note>
-Denne side er ikke oversat endnu. Se den [engelske version][1].
-</Note>
+AI-agenter bruger AI-credits til det arbejde, de udfører. På fanen **Agentgrænser** kan en administrator slå agenter til eller fra for alle brugere og angive en månedlig credit-grænse for hver agent. Fanen viser også, hvor mange credits agenterne bruger i denne måned.
 
-[1]: /en/ai/admin/set-agent-limits
+## Krav
+
+* Adgang til **Indstillinger og vedligeholdelse**.
+* [AI-funktioner aktiveret][1] for din organisation.
+* CRM Suite Growth eller højere for Data Quality Agent og Duplicate Agent. CRM Suite Plus eller højere for Lead Agent og Sales Assistant Agent.
+
+## Åbn Agentgrænser {#open}
+
+1. Åbn **Indstillinger og vedligeholdelse**.
+1. Vælg **AI-tjenester** i Navigator.
+1. Vælg fanen **Agentgrænser**.
+
+![Fanen Agentgrænser med kontakten AI agents, credit-forbruget og ét kort pr. agent -screenshot][img1]
+
+## Sæt alle agenter på pause {#pause}
+
+Kontakten **AI agents** øverst på fanen gælder for alle agenter og alle brugere.
+
+1. Klik på kontakten **AI agents** for at slå den fra.
+
+Alle agenter sættes på pause. Dine grænser bevares, så agenterne fortsætter med de samme grænser, når du slår kontakten til igen.
+
+## Slå én agent til eller fra {#agent}
+
+Hver agent har sit eget kort under **Agents** med en kontakt i øverste højre hjørne.
+
+1. Find agentens kort.
+1. Klik på kontakten for at slå agenten fra eller til.
+
+Når en agent er slået fra, holder den op med at oprette nye opgaver for alle brugere. Kortet **Leadfeeder enrichment** styrer, om agenter kan bruge Leadfeeder til at verificere og berige firmaer.
+
+## Angiv en månedlig grænse for én agent {#limit}
+
+Som standard har en agent **No limit** og følger den samlede grænse for alle agenter. Tilføj kun en grænse, når én agent har brug for sit eget loft.
+
+1. Klik på **Set limit** på agentens kort.
+1. Under **Monthly limit** skal du indtaste det antal credits, agenten kan bruge pr. måned.
+1. Klik på **Anvend**.
+
+    ![Et agentkort med feltet Monthly limit, Remove limit, Annuller og Anvend -screenshot][img2]
+
+Når en agent når sin grænse, holder den op med at oprette nye opgaver. Hvis du vil gå tilbage til den samlede grænse, skal du klikke på **Set limit** igen og derefter på **Remove limit**.
+
+## Tilføj ekstra credit-pakker {#packages}
+
+Din CRM Suite inkluderer en månedlig kvote af AI-credits, som afhænger af antallet af brugere. Hvis dine agenter har brug for flere, kan du tilføje ekstra credit-pakker.
+
+1. Under **Extra credit packages for agents** skal du klikke på **Rediger**.
+1. Vælg antallet af pakker på listen.
+1. Klik på **Anvend**.
+
+    ![Extra credit packages for agents med 2 pakker valgt og den nye maksimale forbrugsgrænse -screenshot][img3]
+
+Fanen viser månedsprisen for de pakker, du vælger. Se [SuperOffice-priser][2] for den inkluderede kvote pr. teamstørrelse.
+
+## Følg credit-forbruget {#usage}
+
+Øverst på fanen vises credits for alle agenter samlet.
+
+| Felt | Hvad det viser |
+|---|---|
+| Agent maximum usage limit | De credits, alle agenter kan bruge pr. måned: de inkluderede credits plus eventuelle ekstra pakker. |
+| Agent usage this month | De credits, der er brugt indtil nu i denne måned, ud af det maksimale antal. |
+| Forecast | Det forventede credit-forbrug ved månedens udgang, og om forbruget ser ud til at holde sig inden for grænsen. |
+
+Hvert agentkort viser, hvad ét forslag koster i credits, hvor mange instanser agenten har, og hvor mange credits den har brugt.
+
+## Globale præferencer
+
+Agentkontakterne og credit-grænserne findes også i AI-sektionen af de [globale præferencer][3]. Brug fanen **Agentgrænser** til at ændre dem.
+
+[1]: /da/ai/admin/index
+[2]: https://www.superoffice.com/pricing/
+[3]: /da/ai/admin/index#global
+
+[img1]: /media/loc/en/ai/agent-limits.png
+[img2]: /media/loc/en/ai/agent-limits-set-limit.png
+[img3]: /media/loc/en/ai/agent-limits-extra-packages.png

@@ -1,7 +1,7 @@
 ---
 title: Konfigurera Reply Assist
-description: Välj källorna för Reply Assist, ange roll och instruktioner och testa resultatet.
-keywords: ['källor', 'instruktioner', 'test', 'svarsförslag', 'Copilot']
+description: Välj de källor som Reply Assist använder för att föreslå svar på ärenden, ge det en roll och instruktioner och testa det innan användarna förlitar sig på det.
+keywords: ['svarsförslag', 'AI-svar', 'källor', 'kunskapsbas', 'FAQ', 'svarsmallar', 'webbinnehåll', 'instruktioner', 'test', 'Copilot']
 author: digitaldiina
 date: 11.26.2026
 so_version: 12.7
@@ -13,14 +13,128 @@ platform: web
 deployment: online
 audience: settings
 audience_tooltip: Inställningar och underhåll
+userflow_index: true
 related:
-  - /sv/request/learn/reply
+  - Skapa ett svarsutkast med Reply Assist: /sv/request/learn/reply
   - /sv/ai/admin/index
+  - Andra AI-tjänster: /sv/ai/learn/index
 language: sv
 ---
 
-<Note>
-Den här sidan är inte översatt ännu. Läs [den engelska versionen][1].
-</Note>
+[Reply Assist][1] föreslår svar på inkommande ärenden. Varje förslag byggs utifrån de källor du väljer, till exempel tidigare ärenden, vanliga frågor (FAQ), svarsmallar, dokument och webbinnehåll. På fliken **Reply Assist** i **AI-tjänster** lägger en administratör till dessa källor, talar om för Reply Assist hur det ska bete sig och testar resultatet.
 
-[1]: /en/ai/admin/set-up-reply-assist
+Vissa etiketter i de här skärmbilderna säger fortfarande Copilot. De avser Reply Assist.
+
+## Krav
+
+* Åtkomst till **Inställningar och underhåll**.
+* CRM Suite Plus eller högre.
+* [AI-funktioner aktiverade][2] för din organisation.
+
+## Öppna inställningarna för Reply Assist {#open}
+
+1. Öppna **Inställningar och underhåll**.
+1. Välj **AI-tjänster** i Navigatorn.
+1. Välj fliken **Reply Assist**.
+
+## Lägg till en källa {#source}
+
+En källa är innehåll som Reply Assist kan söka i när det föreslår ett svar.
+
+1. Välj **Sources**.
+1. Under **Lägg till en källa** klickar du på den typ av källa du vill använda:
+
+    | Källa | Vad Reply Assist använder |
+    |---|---|
+    | Ärenden | Ett urval av serviceärenden. |
+    | FAQ | Vanliga frågor (FAQ) från kunskapsbasen. |
+    | Svarsmallar | Svarsmallar från kunskapsbasen. |
+    | Dokument | Ett urval av CRM-dokument. |
+    | Webbinnehåll | Innehåll från externa webbplatser. |
+
+    ![Lägg till en källa, med de fem typerna av källor -screenshot][img1]
+
+1. Ange ett **Source name** och, om du vill, en **Beskrivning**.
+1. Välj det innehåll som ska användas. Fälten beror på typen av källa, se [Fält för källor][5].
+1. Klicka på **Spara**.
+
+    ![Inställningarna för en ny ärendekälla -screenshot][img2]
+
+Källan listas under **Sources**. Om du vill ändra den senare klickar du på dess pennikon. En varningsikon bredvid **Sources** betyder att en källa behöver åtgärdas, till exempel om ett urval saknas.
+
+### Fält för källor {#fields}
+
+<Tabs>
+<Tab title="Ärenden">
+* **Urval**: det [urval][3] av ärenden som ska användas.
+</Tab>
+
+<Tab title="FAQ">
+* **Path**: mappen i kunskapsbasen.
+* **Åtkomst**: vilka åtkomstnivåer som ska inkluderas, till exempel **Tillgängligt för registrerade kunder**.
+* **Arbetsflöde**: vilka statusar som ska inkluderas, till exempel **Publicerad**.
+* **Sample data** visar hur många artiklar som matchar.
+
+![Inställningarna för en FAQ-källa, med Path, Åtkomst och Arbetsflöde -screenshot][img5]
+</Tab>
+
+<Tab title="Svarsmallar">
+* **Path**: mappen för svarsmallar.
+* **Åtkomst**: vilka åtkomstnivåer som ska inkluderas.
+* **Sample data** visar hur många mallar som matchar.
+
+![Inställningarna för en svarsmallskälla, med Path och Åtkomst -screenshot][img6]
+</Tab>
+
+<Tab title="Dokument">
+* **Urval**: det [urval][3] av dokument som ska användas.
+</Tab>
+
+<Tab title="Webbinnehåll">
+* **Starting URL**: sidan att börja från.
+* **Crawler mode** följer länkar på webbplatsen från den sidan, och **Single page only** läser bara den sidan.
+* Under **Avancerade alternativ** utesluter **Skip URLs** sidor, och **Skip CSS** och **Include CSS** utesluter eller behåller delar av varje sida.
+
+![Inställningarna för en webbinnehållskälla, med Avancerade alternativ öppet -screenshot][img4]
+</Tab>
+</Tabs>
+
+## Ange roll och instruktioner {#settings}
+
+Rollen och instruktionerna talar om för Reply Assist vad det är och hur det ska svara.
+
+1. Välj **Inställningar**.
+1. Under **Copilot role** beskriver du assistentens roll. Till exempel: "Du är en assistent för [företag]. Din uppgift är att hjälpa användare att förstå sitt ärende, hitta relevant information och ge korrekta och användbara svar."
+1. Under **Instructions** beskriver du hur det ska svara. Till exempel: "Använd en professionell och vänlig ton. Basera alltid svaren på tillgängliga källor."
+1. Klicka på **Spara**.
+
+## Testa Reply Assist {#test}
+
+Testa hur Reply Assist hittar och använder dina källor innan användarna förlitar sig på dess förslag. Testpanelen finns bredvid **Inställningar**.
+
+1. Ange en fråga som en kund kan ställa, till exempel "Vilka är reglerna för returer?"
+1. Välj vad du vill testa:
+    * **Search (show matching sources)** visar vilka av dina källor som matchar frågan.
+    * **Answer (generate a response)** visar det svar som Reply Assist skulle föreslå.
+1. Klicka på **Test** och läs **Resultat**.
+
+![Inställningar för Reply Assist, med roll, instruktioner och testpanel -screenshot][img3]
+
+Om resultatet inte blir som du förväntar dig kan du justera källorna, rollen eller instruktionerna och testa igen.
+
+## Styr förslag per användare
+
+Två [AI-preferenser][4] styr hur användare får förslag från Reply Assist: om ett svar genereras automatiskt när de klickar på **Svara** eller **Svara alla**, och om förslaget visas.
+
+[1]: /sv/request/learn/reply#reply-assist
+[2]: /sv/ai/admin/index
+[3]: /sv/search-options/selection/learn/create
+[4]: /sv/ai/admin/index#preferences-tab
+[5]: #fields
+
+[img1]: /media/loc/en/ai/reply-assist-add-source.png
+[img2]: /media/loc/en/ai/reply-assist-source-settings.png
+[img3]: /media/loc/en/ai/reply-assist-settings.png
+[img4]: /media/loc/en/ai/reply-assist-web-source.png
+[img5]: /media/loc/en/ai/reply-assist-faq-source.png
+[img6]: /media/loc/en/ai/reply-assist-reply-template-source.png

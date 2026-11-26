@@ -1,7 +1,7 @@
 ---
 title: Sett opp Reply Assist
-description: Velg kildene for Reply Assist, angi rolle og instruksjoner, og test resultatet.
-keywords: ['kilder', 'instruksjoner', 'test', 'svarforslag', 'Copilot']
+description: Velg kildene Reply Assist bruker til å foreslå svar på saker, gi den en rolle og instruksjoner, og test den før brukerne tar den i bruk.
+keywords: ['svarforslag', 'AI-svar', 'kilder', 'kunnskapsbase', 'FAQ', 'svarmaler', 'nettinnhold', 'instruksjoner', 'test', 'Copilot']
 author: digitaldiina
 date: 11.26.2026
 so_version: 12.7
@@ -13,14 +13,128 @@ platform: web
 deployment: online
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
+userflow_index: true
 related:
-  - /no/request/learn/reply
+  - Lag et utkast til svar med Reply Assist: /no/request/learn/reply
   - /no/ai/admin/index
+  - Andre AI-tjenester: /no/ai/learn/index
 language: no
 ---
 
-<Note>
-Denne siden er ikke oversatt ennå. Se den [engelske versjonen][1].
-</Note>
+[Reply Assist][1] foreslår svar på innkommende saker. Hvert forslag bygges fra kildene du velger, for eksempel tidligere saker, FAQ-er, svarmaler, dokumenter og nettinnhold. På fanen **Reply Assist** i **AI-tjenester** legger en administrator til disse kildene, forteller Reply Assist hvordan den skal oppføre seg, og tester resultatet.
 
-[1]: /en/ai/admin/set-up-reply-assist
+Noen etiketter i disse skjermbildene sier fortsatt Copilot. De viser til Reply Assist.
+
+## Krav
+
+* Tilgang til **Innstillinger og vedlikehold**.
+* CRM Suite Plus eller høyere.
+* [AI-funksjoner aktivert][2] for organisasjonen din.
+
+## Åpne innstillingene for Reply Assist {#open}
+
+1. Åpne **Innstillinger og vedlikehold**.
+1. Velg **AI-tjenester** i navigatoren.
+1. Velg fanen **Reply Assist**.
+
+## Legg til en kilde {#source}
+
+En kilde er innhold Reply Assist kan søke i når den foreslår et svar.
+
+1. Velg **Kilder**.
+1. Under **Legg til en kilde** klikker du på kildetypen du vil bruke:
+
+    | Kilde | Hva Reply Assist bruker |
+    |---|---|
+    | Saker | Et utvalg av saker. |
+    | FAQ | FAQ-er fra kunnskapsbasen. |
+    | Svarmaler | Svarmaler fra kunnskapsbasen. |
+    | Dokumenter | Et utvalg av CRM-dokumenter. |
+    | Nettinnhold | Innhold fra eksterne nettsteder. |
+
+    ![Legg til en kilde, med de fem kildetypene -screenshot][img1]
+
+1. Skriv inn et **Source name** og eventuelt en **Beskrivelse**.
+1. Velg innholdet som skal brukes. Feltene avhenger av kildetypen, se [Kildefelt][5].
+1. Klikk på **Lagre**.
+
+    ![Innstillingene for en ny sakskilde -screenshot][img2]
+
+Kilden vises under **Kilder**. For å endre den senere klikker du på blyantikonet for kilden. Et varselikon ved siden av **Kilder** betyr at en kilde trenger oppmerksomhet, for eksempel et manglende utvalg.
+
+### Kildefelt {#fields}
+
+<Tabs>
+<Tab title="Saker">
+* **Utvalg**: [utvalget][3] av saker som skal brukes.
+</Tab>
+
+<Tab title="FAQ">
+* **Path**: mappen i kunnskapsbasen.
+* **Tilgang**: hvilke tilgangsnivåer som skal tas med, for eksempel **Tilgjengelig for registrerte kunder**.
+* **Arbeidsflyt**: hvilke statuser som skal tas med, for eksempel **Publisert**.
+* **Sample data** viser hvor mange artikler som samsvarer.
+
+![Innstillingene for en FAQ-kilde, med Path, Tilgang og Arbeidsflyt -screenshot][img5]
+</Tab>
+
+<Tab title="Svarmaler">
+* **Path**: mappen med svarmaler.
+* **Tilgang**: hvilke tilgangsnivåer som skal tas med.
+* **Sample data** viser hvor mange maler som samsvarer.
+
+![Innstillingene for en svarmalkilde, med Path og Tilgang -screenshot][img6]
+</Tab>
+
+<Tab title="Dokumenter">
+* **Utvalg**: [utvalget][3] av dokumenter som skal brukes.
+</Tab>
+
+<Tab title="Nettinnhold">
+* **Starting URL**: siden du vil starte fra.
+* **Crawler mode** følger lenker på nettstedet fra den siden, og **Single page only** leser bare den siden.
+* Under **Avanserte alternativer** utelater **Skip URLs** sider, og **Skip CSS** og **Include CSS** utelater eller beholder deler av hver side.
+
+![Innstillingene for en nettinnholdskilde, med Avanserte alternativer åpnet -screenshot][img4]
+</Tab>
+</Tabs>
+
+## Angi rolle og instruksjoner {#settings}
+
+Rollen og instruksjonene forteller Reply Assist hva den er og hvordan den skal svare.
+
+1. Velg **Innstillinger**.
+1. Under **Copilot role** beskriver du assistentens rolle. For eksempel: "Du er en assistent for [firma]. Oppgaven din er å hjelpe brukere med å forstå saken sin, finne relevant informasjon og gi presise og nyttige svar."
+1. Under **Instructions** beskriver du hvordan den skal svare. For eksempel: "Bruk en profesjonell og vennlig tone. Baser alltid svarene på tilgjengelige kilder."
+1. Klikk på **Lagre**.
+
+## Test Reply Assist {#test}
+
+Test hvordan Reply Assist finner og bruker kildene dine før brukerne stoler på forslagene. Testpanelet er ved siden av **Innstillinger**.
+
+1. Skriv inn et spørsmål en kunde kan stille, for eksempel "Hva er returpolicyen?"
+1. Velg hva du vil teste:
+    * **Search (show matching sources)** viser hvilke av kildene dine som samsvarer med spørsmålet.
+    * **Answer (generate a response)** viser svaret Reply Assist ville foreslått.
+1. Klikk på **Test** og les **Resultat**.
+
+![Innstillinger for Reply Assist, med rollen, instruksjonene og testpanelet -screenshot][img3]
+
+Hvis resultatet ikke er som forventet, justerer du kildene, rollen eller instruksjonene og tester på nytt.
+
+## Styr forslag per bruker
+
+To [AI-preferanser][4] styrer hvordan brukere får forslag fra Reply Assist: om et svar genereres automatisk når de klikker på **Svar** eller **Svar til alle**, og om forslaget vises.
+
+[1]: /no/request/learn/reply#reply-assist
+[2]: /no/ai/admin/index
+[3]: /no/search-options/selection/learn/create
+[4]: /no/ai/admin/index#preferences-tab
+[5]: #fields
+
+[img1]: /media/loc/en/ai/reply-assist-add-source.png
+[img2]: /media/loc/en/ai/reply-assist-source-settings.png
+[img3]: /media/loc/en/ai/reply-assist-settings.png
+[img4]: /media/loc/en/ai/reply-assist-web-source.png
+[img5]: /media/loc/en/ai/reply-assist-faq-source.png
+[img6]: /media/loc/en/ai/reply-assist-reply-template-source.png
