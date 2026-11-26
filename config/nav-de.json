@@ -111,7 +111,8 @@
             "root": "de/ai/admin/index",
             "pages": [
               "de/ai/admin/set-agent-limits",
-              "de/ai/admin/set-up-categorization"
+              "de/ai/admin/set-up-categorization",
+              "de/ai/admin/set-up-reply-assist"
             ]
           }
         ]

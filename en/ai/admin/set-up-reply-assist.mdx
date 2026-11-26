@@ -1,0 +1,99 @@
+---
+title: Set up Reply Assist
+description: Choose the sources Reply Assist uses to suggest replies to requests, give it a role and instructions, and test it before users rely on it.
+keywords: ['reply suggestions', 'AI reply', 'sources', 'knowledge base', 'FAQ', 'reply templates', 'web content', 'instructions', 'test', 'Copilot']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Settings and maintenance
+userflow_index: true
+related:
+  - Draft a reply with Reply Assist: /en/request/learn/reply
+  - /en/ai/admin/index
+  - Other AI services: /en/ai/learn/index
+language: en
+---
+
+[Reply Assist][1] suggests replies to incoming requests. It builds each suggestion from the sources you choose, such as earlier requests, FAQs, reply templates, documents, and web content. On the **Reply Assist** tab in **AI services**, an administrator adds those sources, tells Reply Assist how to behave, and tests the result.
+
+Some labels on these screens still say Copilot. They refer to Reply Assist.
+
+## Requirements
+
+* Access to **Settings and maintenance**.
+* CRM Suite Plus or above.
+* [AI functions enabled][2] for your organization.
+
+## Open Reply Assist settings {#open}
+
+1. Open **Settings and maintenance**.
+1. Select **AI services** from the Navigator.
+1. Select the **Reply Assist** tab.
+
+## Add a source {#source}
+
+A source is content Reply Assist can search when it suggests a reply.
+
+1. Select **Sources**.
+1. Under **Add a source**, click the type of source you want to use:
+
+    | Source | What Reply Assist uses |
+    |---|---|
+    | Requests | A selection of service requests. |
+    | FAQ | FAQs from the knowledge base. |
+    | Reply templates | Reply templates from the knowledge base. |
+    | Documents | A selection of CRM documents. |
+    | Web content | Content from external websites. |
+
+    ![Add a source, with the five types of source -screenshot][img1]
+
+1. Enter a **Source name** and, optionally, a **Description**.
+1. Under **Selection**, choose the content to use, for example a [selection][3] of requests. The fields depend on the type of source.
+1. Click **Save**.
+
+    ![The settings for a new request source -screenshot][img2]
+
+The source is listed under **Sources**. To change it later, click its pencil icon. A warning icon next to **Sources** means a source needs your attention, for example a missing selection.
+
+## Set role and instructions {#settings}
+
+The role and instructions tell Reply Assist what it is and how to answer.
+
+1. Select **Settings**.
+1. Under **Copilot role**, describe the assistant's role. For example: "You are an assistant for [company]. Your task is to help users understand their request, find relevant information, and provide accurate, helpful responses."
+1. Under **Instructions**, describe how to answer. For example: "Use a professional and friendly tone. Always base answers on available sources."
+1. Click **Save**.
+
+## Test Reply Assist {#test}
+
+Test how Reply Assist finds and uses your sources before users rely on its suggestions. The test panel is next to **Settings**.
+
+1. Enter a question a customer might ask, for example "What is the return policy?"
+1. Choose what to test:
+    * **Search (show matching sources)** shows which of your sources match the question.
+    * **Answer (generate a response)** shows the reply Reply Assist would suggest.
+1. Click **Test** and read the **Result**.
+
+![Reply Assist Settings, with the role, instructions, and test panel -screenshot][img3]
+
+If the result is not what you expect, adjust the sources, role, or instructions, and test again.
+
+## Control suggestions per user
+
+Two [AI preferences][4] control how users get Reply Assist suggestions: whether a reply is generated automatically when they click **Reply** or **Reply all**, and whether the suggestion is shown.
+
+[1]: /en/request/learn/reply#reply-assist
+[2]: /en/ai/admin/index
+[3]: /en/search-options/selection/learn/create
+[4]: /en/ai/admin/index#preferences-tab
+
+[img1]: /media/loc/en/ai/reply-assist-add-source.png
+[img2]: /media/loc/en/ai/reply-assist-source-settings.png
+[img3]: /media/loc/en/ai/reply-assist-settings.png
