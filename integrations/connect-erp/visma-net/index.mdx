@@ -3,13 +3,13 @@ title: Visma Net
 description: ConnectERP integration with Visma Net Financials for SuperOffice CRM.
 keywords: ['ConnectERP', 'ERP', 'integration', 'synchronization', 'DataBridge', 'Visma.net', 'Visma.net Financials', 'master data']
 author: marcelspapens
-date: 11.20.2026
+date: 11.24.2026
 content_type: concept
 category: integration
 topic: ConnectERP
 platform: Visma Net
 related:
-  - What's included per CRM Suite: /integrations/connect-erp/index#whats-included
+  - ConnectERP: /integrations/connect-erp/index
 language: en
 userflow_index: true
 ---
@@ -29,6 +29,29 @@ The [leading system][13] is the source of truth for an entity when the data in t
 | Invoices and order status | Visma Net (shown live in SuperOffice) |
 
 The leading system does not set the direction of the data flow. For example, Visma Net is the leading system for sales orders, but orders created in SuperOffice are still sent to Visma Net. In CRM Suite Growth and higher, you can change the leading system per entity.
+
+## What's included per CRM Suite {#whats-included}
+
+| Feature | CRM Suite Core | CRM Suite Growth and higher |
+|---|---|---|
+| Custom data flow direction | No | Yes |
+| Custom field mapping | No | Yes |
+| Custom leading system per entity | No | Yes |
+| Location sync | No | Yes (customizable) |
+| Order sync | No | Yes (customizable) |
+| Product sync | No | Yes (customizable) |
+| Project sync | No | Yes (customizable) |
+| Sales price sync | No | Yes (customizable) |
+| Supplier sync | No | Yes (customizable) |
+| Contact sync | Yes (fixed) | Yes (customizable) |
+| Customer sync | Yes (fixed) | Yes (customizable) |
+| Invoices panel | Yes | Yes |
+| Order history panel | Yes | Yes |
+| Orders panel | Yes | Yes |
+
+Location, project, and sales price sync aren't part of the default setup in this guide. You set them up as regular DataBridge integrations, without a default configuration.
+
+The three panels on the Company card show a list of orders, a list of invoices, and a graphical overview of the order history for the current year and the previous four years.
 
 ## Set up the integration
 
