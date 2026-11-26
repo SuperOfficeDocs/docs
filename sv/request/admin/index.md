@@ -4,7 +4,7 @@ title: Olika inställningar för Service
 description: Systeminställningar
 keywords: ['systeminställningar', 'service']
 author: digitaldiina
-date: 06.10.2026
+date: 11.24.2026
 so_version: 12.0
 content_type: reference
 tier: starter
@@ -47,7 +47,7 @@ I detta avsnitt kan du konfigurera inställningarna för Service så att de pass
 [11]: /sv/admin/preferences/service-settings
 [12]: /sv/admin/user-management/role/index
 [13]: /sv/admin/user-management/index
-[7]: /sv/request/learn/index#available
+[7]: /sv/request/learn/personalize#available
 [15]: /sv/ui/blogic/learn/index
 [16]: /sv/ui/blogic/learn/profiles/index
 

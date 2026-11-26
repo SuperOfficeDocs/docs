@@ -1384,7 +1384,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleSelectionCombined?$select=person/personInfo/infoText,person/personAddress/line2,person/personAssociate/title,contact/countryId,contact/restrictionAddress/wgs84latitude
+GET /api/v1/archive/SaleSelectionCombined?$select=soldReason,person/personDirectFax/formattedNumber,person/restrictionAddress/city,contact/yearFounded,associate/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

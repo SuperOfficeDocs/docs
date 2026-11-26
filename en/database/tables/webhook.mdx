@@ -35,6 +35,7 @@ Webhook URL to call when events occur in the client or in NetServer. Also tracks
 |description|Human-readable description of what this webhook does.|String(4000)|Yes|
 |notify\_via|How to notify recipients when this webhook changes state. 1=Email, 2=InApp.|Enum [WebhookNotifyVia](./enums/webhooknotifyvia.mdx)|No|
 |notify\_when|When to notify recipients. Bitflag: 1=FirstFailure, 2=Disabling.|Enum [WebhookNotifyWhen](./enums/webhooknotifywhen.mdx)|No|
+|developer\_portal\_id|ID of the Developer Portal application that registered this webhook, or 0 if not owned by a partner application.|Int|No|
 
 ![Webhook table relationship diagram](/media/loc/en/database/tables/Webhook.png)
 

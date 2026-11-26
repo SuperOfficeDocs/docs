@@ -1364,11 +1364,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |workflowInstance/emailFlow/workflowDefinitionStatusId| *None* || x |
 |workflowInstance/emailFlow/jumpToFinish| *None* || x |
 |workflowInstance/emailFlow/startOnlyOnce| *None* || x |
-|workflowInstance/emailFlow/workflowEnrolledCount| *None* ||  |
-|workflowInstance/emailFlow/workflowInProgressCount| *None* ||  |
-|workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowEnrolledCount| *None* || x |
+|workflowInstance/emailFlow/workflowInProgressCount| *None* || x |
+|workflowInstance/emailFlow/workflowCompletedCount| *None* || x |
+|workflowInstance/emailFlow/workflowSucceededCount| *None* || x |
+|workflowInstance/emailFlow/workflowSuccessRate| *None* || x |
 |workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy| *None* || x |
 |workflowInstance/emailFlow/updatedDate| *None* || x |
@@ -1409,7 +1409,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactSelection?$select=nameDepartment,sourceRelation/business,sourceRelation/yearFounded,sale/personId,appointment/suggestedAppointmentId
+GET /api/v1/archive/ContactSelection?$select=selectionMemberId,sourceRelation/associateId,appointment/projectId,appointment/appointment/internalNotesHtml,document/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

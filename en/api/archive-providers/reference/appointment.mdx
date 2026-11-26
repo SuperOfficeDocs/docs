@@ -778,7 +778,7 @@ subchannels, each split by a DoneNotDoneSplitter to get appointments that are no
 ## Sample
 
 ```http!
-GET /api/v1/archive/Appointment?$select=excludeParticipants,person/hasCompany,person/personExtra/x_person_priority_relation,person/correspondingAssociate/role,project/projectEvent/eventDate
+GET /api/v1/archive/Appointment?$select=contact/contactExtra/x_contact_default_integer,person/personRegisteredBy,person/restrictionAddress/wgs84longitude,person/personAssociate/contactFullName,person/personAssociate/assocName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

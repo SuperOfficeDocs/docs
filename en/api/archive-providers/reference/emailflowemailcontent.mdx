@@ -49,11 +49,11 @@ Lists all email flow message content
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
@@ -109,11 +109,11 @@ Lists all email flow message content
 |shipment/emailFlow/workflowDefinitionStatusId|listAny|| x |
 |shipment/emailFlow/jumpToFinish|bool|| x |
 |shipment/emailFlow/startOnlyOnce|bool|| x |
-|shipment/emailFlow/workflowEnrolledCount| *None* ||  |
-|shipment/emailFlow/workflowInProgressCount| *None* ||  |
-|shipment/emailFlow/workflowCompletedCount| *None* ||  |
-|shipment/emailFlow/workflowSucceededCount| *None* ||  |
-|shipment/emailFlow/workflowSuccessRate| *None* ||  |
+|shipment/emailFlow/workflowEnrolledCount|int|| x |
+|shipment/emailFlow/workflowInProgressCount|int|| x |
+|shipment/emailFlow/workflowCompletedCount|int|| x |
+|shipment/emailFlow/workflowSucceededCount|int|| x |
+|shipment/emailFlow/workflowSuccessRate|decimal|| x |
 |shipment/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |shipment/emailFlow/updatedBy|associate|| x |
 |shipment/emailFlow/updatedDate|date|| x |
@@ -274,7 +274,7 @@ Lists all email flow message content
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowEmailContent?$select=shipment/emailFlow/thumbnail,shipment/project/projectUdef/SuperOffice:3,shipment/emailFlow/workflowId
+GET /api/v1/archive/EmailFlowEmailContent?$select=shipment/updatedBy,shipment/emailFlow/workflowAssociate/usergroup,shipment/project/hasGuide,shipment/project/projectAssociate/contactDepartment,shipment/project/projectAssociate/isActive
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

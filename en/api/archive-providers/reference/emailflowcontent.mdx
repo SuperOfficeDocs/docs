@@ -50,11 +50,11 @@ Lists all email flow content
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
@@ -316,7 +316,7 @@ Lists all email flow content
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowContent?$select=emailFlow/workflowId,shipment/emailFlow/updatedBy,associate/mrMrs
+GET /api/v1/archive/EmailFlowContent?$select=shipment/updatedDate,shipment/emailFlow/workflowAssociate/contactCategory,shipment/project/imageThumbnail,shipment/project/projectAssociate/contactFullName,shipment/project/projectAssociate/otherGroups
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

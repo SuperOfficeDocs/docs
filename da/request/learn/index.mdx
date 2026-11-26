@@ -2,9 +2,9 @@
 uid: help-da-request
 title: Sager og SuperOffice Service
 description: Introduktion til sager i SuperOffice
-keywords: ['sag', 'ticket', 'service', 'sagsskærmen', 'sagskort', 'Oversigt', 'venstrepanel', 'aktive faner', 'fastgjorte sager', 'panel til forhåndsvisning', 'standardlister', 'luk fane automatisk', 'flere aktive faner', 'luk alle faner', 'for mange faner', 'ikke-gemte ændringer']
+keywords: ['sagshåndtering', 'sag', 'ticket', 'sagsskærmen', 'sagskort', 'Oversigt', 'venstrepanel', 'aktive faner', 'fastgjorte sager', 'panel til forhåndsvisning', 'standardlister', 'luk fane automatisk', 'flere aktive faner', 'luk alle faner', 'for mange faner', 'ikke-gemte ændringer', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
-date: 11.23.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -22,16 +22,17 @@ related:
   - Svar: /da/request/learn/reply
   - Tildel automatisk: /da/request/learn/assign
   - 7 tips til bedre kundeservice med SuperOffice Service - blog: https://community.superoffice.com/en/learning/best-practices-tips/service/7-tips-to-provide-best-in-class-customer-service-with-superoffice-service/
+  - Sådan bruger du AI-tjenester: /da/ai/learn/index
 language: da
 ---
 
 Vores ticket-system giver dig mulighed for effektivt at håndtere indgående sager og hjælper dig med at tilbyde fremragende kundeservice hver dag. Dette udvalg af vejledninger indeholder retningslinjer, der hjælper dig med at holde styr på, besvare og analysere alle indgående spørgsmål og forespørgsler ved hjælp af SuperOffice Service. Uanset om de kommer ind via telefon, e-mail, chat, webformular eller andre kanaler.
 
-**Sager** er en af de vigtigste funktioner i SuperOffice. Her behandler du sager og henvendelser i systemet. Du kan også oprette interne og eksterne sager, besvare indkommende henvendelser og få en oversigt over status for alle sager i systemet. Klik på knappen <i class="ph ph-ticket" aria-hidden="true"></i> **Sager** for at åbne Sagsskærmen, eller klik på teksten **Sager** for at åbne navigatorindstillingerne med søgning, historik og foretrukne.
+**Sager** er en af de vigtigste funktioner i SuperOffice. Her behandler du sager og henvendelser i systemet. Du kan også oprette interne og eksterne sager, besvare indkommende henvendelser og få en oversigt over status for alle sager i systemet.
 
 Hver forespørgsel eller henvendelse defineres som en sag. Disse kan spænde fra supportproblemer og produktspørgsmål til fakturaforespørgsler. Når en sag oprettes, skal den håndteres hurtigt og effektivt med professionel kundeservice. Forhåndsvisning af en sag fra en liste giver dig også mulighed for at sende et [hurtigsvar][28] uden at forlade listen, så du kan fortsætte gennem en travl kø.
 
-![Sagsskærmen med listen Seneste sager og en forhåndsvisning af den valgte sag -screenshot][img1]
+![Sagsskærmen med listen Ufordelte sager og en forhåndsvisning af den valgte sag -screenshot][img1]
 
 <Note>
 
@@ -41,13 +42,13 @@ Sagsskærmen bliver introduceret gradvist. Hvis du endnu ikke kan se den, arbejd
 
 ## Hvor kan jeg få adgang til sager? {#open}
 
-* Detaljekort i Firma, Person, Salg og Projekt
+* Detaljefaner i skærmbillederne Firma, Person, Salg og Projekt.
 * [Standardlister][35], f.eks. **Egne aktive sager**
 * [Søgning][12]
 * [Favoritter][18]
 * [Meddelelser markeret med flag][5]
 
-Når du dobbeltklikker på en række i søgeresultaterne, åbnes sagen i en fane på Sagsskærmen.
+En sag, du åbner herfra, åbnes i en fane på Sagsskærmen. Se alle måder at slå sager op på i [Find en sag][47].
 
 ### Personer {#customers}
 
@@ -57,182 +58,50 @@ Sager kan knyttes til [personer][14], som igen kan være tilknyttet et [firma][1
 
 Sagsskærmen er der, hvor du arbejder med dine sager. Den har tre områder:
 
-* **Venstrepanel:** Lodrette faner for de sager og udvalg, du arbejder med, og et søgefelt til at finde andre. Det har også punkterne **Oversigt**, **Find sag** og [Omtaler][36]. Fastgør de faner, du bruger hver dag. Se [Arbejd med oversigtssider][30] for at lære, hvordan venstrepanelet fungerer.
+* **Venstrepanel:** Lodrette faner for de sager og udvalg, du arbejder med, og et søgefelt til at finde andre. Det har også punkterne **Oversigt**, **Find sag** og [Omtaler][36]. Se [Arbejd med oversigtssider][30] for at lære, hvordan faner, fastgørelse og søgning fungerer.
 
 * **Hovedområde:** Viser fanen **Oversigt**, et udvalg eller en liste over sager i tavlevisning eller listevisning, eller én sag som et sagskort.
 
 * **Sidepanel:** [Sidepanelet][31] til højre viser firmaet og personen for den sag, du arbejder med. Det lukkes, mens fanen **Oversigt** vises, og åbnes igen, når du forlader fanen **Oversigt**, hvis det var åbent før.
 
-### Åbn Sagsskærmen {#open-screen}
-
-* Klik på ikonet **Sager** i [Navigatoren][32]. Sagsskærmen åbnes med den fane, du sidst brugte, eller med fanen **Oversigt**, hvis du ikke har nogen åbne faner.
-
-* Åbn en sag et vilkårligt sted i SuperOffice CRM, for eksempel ved at dobbeltklikke på den i et [detaljekort for Sager][33]. Sagen åbnes i en ny fane.
-
-* Klik på **Ny** > **Sag** for at [oprette en sag][4]. Den nye sag åbnes i fanen **Ny sag**.
-
 ### Det, du ser første gang {#first-time}
 
-Første gang du åbner Sagsskærmen, kopieres de vandrette faner, du havde åbnet, til venstrepanelet. Fastgjorte faner forbliver fastgjorte. Fanen **Oversigt** åbnes, hvis du ikke har nogen aktiv fane. Dine gamle faner ændres ikke.
+Første gang du åbner Sagsskærmen, kopieres de vandrette faner, du havde åbnet, til venstrepanelet. Fastgjorte faner forbliver fastgjorte. Fanen **Oversigt** åbnes, hvis du ikke har nogen åbne faner. Dine gamle faner ændres ikke.
 
-## Få overblik over dine sager {#overview}
-
-Fanen **Oversigt** viser dit arbejde i op til fire kolonner med sagskort. Som standard er kolonnerne **Ufordelte sager**, **Egne aktive sager**, **Mine foretrukne** og **Seneste sager**. Hvert kort viser sagstypen, sags-ID'et, titlen, firmaet og statussen.
-
-![Fanen Oversigt med kolonnerne Ufordelte sager, Egne aktive sager, Mine foretrukne og Seneste sager -screenshot][img4]
-
-1. Klik på **Oversigt** i venstrepanelet.
-
-1. Brug kortene til at finde de sager, der kræver din opmærksomhed. Et farvet badge på sagstypeikonet viser status. Rød betyder, at tidsfristen er overskredet, grøn betyder afsluttet, og grå betyder udsat.
-
-1. Klik på et kort for at [se og opdatere sagen](#slide-in), eller dobbeltklik på det for at åbne det i en fane.
-
-Sådan arbejder du med fanen **Oversigt**:
-
-* **Se flere sager:** En kolonne viser op til 20 sager. Klik på **Se alle sager** for at åbne den fulde liste eller det fulde udvalg i en fane.
-
-* **Sortér en kolonne:** Brug sorteringsknappen til at sortere efter sags-ID, oprettelsesdato, ejer, seneste ændring eller prioritet.
-
-* **Åbn en person eller et firma:** Klik på navnet på et kort.
-
-* **Genindlæs fanen **Oversigt**:** Klik på genindlæsningsknappen. En kolonne genindlæses også, når du ændrer en af dens sager i samme browser. Ændringer foretaget af andre brugere vises ikke, før du genindlæser.
-
-### Skift kolonnerne på fanen Oversigt {#edit-overview}
-
-1. Klik på tandhjulsknappen (<i class="ph ph-gear" aria-label="Gear"></i>) for at åbne **Rediger oversigt**.
-
-1. Vælg, hvor mange kolonner du vil have, fra en til fire. Med fire kolonner kan du vise dem side om side eller som et 2 × 2-gitter.
-
-1. Vælg, hvad hver kolonne skal indeholde. Søg under **Udvalg** efter et udvalg eller en standardliste, og træk det over på en kolonne. Klik på <i class="ph ph-x" aria-label="Close icon"></i> i kolonnens overskrift for at tømme en kolonne.
-
-1. Tjek forhåndsvisningen, og klik derefter på **Gem**. Klik på **Kassér** for at kassere dine ændringer.
-
-Hvis du vil tilbage til de kolonner, du fik fra start, skal du klikke på **Nulstil til standard**.
-
-![Fanen Oversigt i redigeringstilstand med panelet Rediger oversigt til kolonner, opstilling og udvalg -screenshot][img7]
-
-<Note>
-
-Opsætningen af din fane Oversigt gemmes i den browser, du bruger. Den følger ikke med til en anden browser eller enhed.
-
-</Note>
-
-### Skift, hvad kortene viser {#edit-fields}
-
-![Kolonnemenuen med valgmulighederne Rediger felter og Rediger udvalg -screenshot][img8]
-
-1. Åbn kolonnens menu, og klik på **Rediger felter**.
-
-1. Vælg kortets overskrift og eventuelt et badge fra listen over felter. Søg i listen for at finde et felt.
-
-1. Vælg op til seks felter mere, der skal vises på kortet. Træk felterne for at ændre rækkefølgen.
-
-1. Klik på **Gem**. Klik på **Nulstil til standard** for kun at gendanne felterne i denne kolonne.
-
-Venstrepanelet skjules, og forhåndsvisningspanelet lukkes, mens du redigerer.
-
-### Se og opdater en sag fra fanen Oversigt {#slide-in}
-
-1. Klik på et kort. Sagen åbnes i et panel til højre med de seneste meddelelser, sagsdetaljerne og svarknapperne.
-
-1. Skift ejer, status, kategori, prioritet eller tags direkte i panelet.
-
-1. Hvis du vil fortsætte arbejdet med sagen, skal du klikke på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) og derefter **Åbn i fuld visning**. Vælg **Fastgør sag** for at føje den til gruppen **Fastgjort**.
-
-Du kan gøre panelet bredere eller smallere ved at pege på dets venstre kant og trække i de prikker, der vises. Panelet lukkes, når du klikker på <i class="ph ph-x" aria-label="Close icon"></i>. Det lukkes også, når du forlader fanen **Oversigt** eller åbner en editor.
-
-## Arbejd med fanerne i venstrepanelet {#tabs}
-
-Hver sektion i venstrepanelet har en gruppe **Aktive** og en gruppe **Fastgjort**. Du kan have mange sager og udvalg åbne i gruppen **Aktive** på samme tid. En fane er enten aktiv eller fastgjort, aldrig begge dele. Dine faner gemmes, så de er der, når du logger ind fra en anden browser.
-
-![Venstrepanelet på Sagsskærmen med sektionerne Udvalg og Sager, hver med en gruppe Aktive og en gruppe Fastgjort -screenshot][img5]
-
-### Åbn endnu en fane {#open-tab}
-
-Åbn en sag eller et udvalg fra venstrepanelet, fra søgedialogen eller fra et link i SuperOffice CRM. Den åbnes i en ny fane lige efter den fane, du er på. De andre faner forbliver åbne, og hver fane beholder sit eget usendte svar, sin redigeringstilstand og sin rulleposition.
-
-<Note>
-
-Du kan have op til 50 faner åbne, når aktive og fastgjorte faner tælles med. Hvis du forsøger at åbne flere, vises dialogen **For mange faner**, og der åbnes intet. Luk de faner, du ikke længere har brug for, og prøv igen.
-
-</Note>
-
-### Luk flere faner på én gang {#close-active}
-
-1. Peg på fanen, og klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder).
-
-1. Vælg en valgmulighed:
-
-    * **Luk alle:** Lukker alle aktive faner i gruppen.
-
-    * **Luk alle faner undtagen denne:** Lukker alle aktive faner i gruppen undtagen denne.
-
-For fastgjorte faner skal du bruge **Frigør og luk alle** eller **Frigør og luk alle undtagen denne**. Når du lukker den fane, du er på, åbnes fanen ved siden af. Når du lukker den sidste fane, åbnes fanen **Oversigt**.
-
-![Menuen for en aktiv fane med valgmulighederne Fastgør, Luk, Luk alle og Luk alle faner undtagen denne -screenshot][img6]
-
-### Hold styr på ikke-gemte ændringer {#unsaved}
-
-En blyant (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) for enden af en fane betyder, at sagen har ikke-gemte ændringer. For eksempel har du et usendt svar, eller du redigerer sagen.
-
-Når du lukker en fane med ikke-gemte ændringer, bliver du bedt om at bekræfte. Hvis du bekræfter, kasseres ændringerne.
-
-### Se sager, som andre arbejder på eller har ændret {#row-status}
-
-Hver sagsfane viser ID og titel samt personen og firmaet nedenunder.
-
-Hvis dit system har Live UI slået til, kan du se, hvem der ellers arbejder på en sag. Et tilstedeværelsesikon erstatter sagstypeikonet, mens en anden bruger ser eller redigerer den. Når en anden bruger har ændret sagen, siden du åbnede den, vises i stedet et ikon for ændret. Peg på ikonet for at se navnene. Hvis fanen for et udvalg eller en liste viser ikonet for ændret med **Arkivet er muligvis ikke synkroniseret**, skal du genindlæse den. Markeringen forsvinder, når du genindlæser sagen eller listen.
-
-### Luk sagsfaner automatisk {#auto-close}
-
-En sagsfane lukkes af sig selv i disse situationer:
-
-* Sagen slettes, markeres som spam eller flettes ind i en anden sag. Fanen lukkes, også selvom den er fastgjort. Hvis du fletter fra [sagskortet][16], åbnes den bevarede sag i stedet.
-
-* Du tilføjer en meddelelse til sagen eller sætter dens status til **Afsluttet**, og du har slået den tilsvarende præference til. Fastgjorte faner forbliver åbne.
-
-Sådan lukker du faner automatisk:
-
-1. Klik på <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** > **Præferencer**.
-
-1. Klik på gruppen **Sag**.
-
-1. Sæt **Luk automatisk fanen, når du føjer en meddelelse til sagen** eller **Luk automatisk fanen, når status for sagen ændres til Lukket** til **Ja**.
-
-1. Klik på **Gem**.
-
-Faner, der lukkes automatisk, beder aldrig om bekræftelse.
+Se [Arbejd med sager][42] for at få overblik over dine sager og arbejde med dem i faner.
 
 ## Sagskortet {#request-card}
 
 Sagskortet viser én sag ad gangen som en fane på Sagsskærmen. Det har følgende sektioner:
 
-* Øverst på kortet indeholder **sagsheaderen** grundlæggende information om sagen som for eksempel ID, titel, person og tidsfrist.
-* Sidepanelet **Egenskaber for sag** indeholder felter for Ejer, Status, Kategori, Prioritet, Adgangsniveau og Tags, alle felter kan redigeres med knapperne **Gem** og **Afbryd**.
-* Nedenunder headeren finder du en række knapper, som du kan bruge til at udføre opgaver, der er knyttet til sager, som for eksempel Svar, Svar til alle, Videresend og Tilføj kommentar.
-* Fanen **Meddelelser** viser meddelelser vedrørende sagen.
-* Fanen **Detaljer** indeholder en oversigt over de registrerede data for sagen.
-* Fanen **Relationer** viser [tilknyttede sager][21] (overordnet, underordnet eller relateret).
-* Fanen **Ændringslog** indeholder historikken for denne sag. Sagsloggen viser alt, hvad der er sket i denne sag, siden den blev registreret.
+* [Sagsoverskrift](#header): sagens titel, person og firma med knapper til at gøre sagen til favorit, fastgøre, genindlæse og redigere den samt menuen **Opgave**.
+* [Egenskaber for sag](#properties): de felter, der fordeler og prioriterer sagen, f.eks. Status, Ejer og Kategori.
+* Fanen [Meddelelser](#messages): meddelelserne i sagen med knapper til at svare, videresende og tilføje kommentarer.
+* Fanen [Detaljer](#details): alle felter, der er registreret for sagen.
+* Fanen [Ændringslog](#log): alt, hvad der er sket i sagen, siden den blev registreret.
+* Fanen **Relaterede sager**: [tilknyttede sager][21] (overordnet, underordnet eller relateret).
 
-### Sagsoverskrift
+### Sagsoverskrift {#header}
 
-Sagens header indeholder de egenskaber, der blev angivet, da [sagen blev oprettet][4]. Headeren består af sagstitel, person, tidsfrist og sags-id. Desuden kan du klikke på <i class="ph ph-star" aria-label="Star icon"></i> for at angive sagen som et foretrukkent. Sagen vil derefter være tilgængelig via **Mine foretrukne** på **Sager** i Navigator og i ruden**Mine foretrukne** på et [dashboard][17].
+Sagens overskrift viser den titel, person og det firma, der blev angivet, da [sagen blev oprettet][4]. Den har også disse knapper:
 
-### Fanen Meddelelser
+| Ikon | Beskrivelse |
+|---|---|
+| <i class="ph ph-star" aria-label="Star icon"></i> | Angiver sagen som en foretrukken. Sagen er derefter tilgængelig via **Mine foretrukne** på **Sager** i Navigator og i ruden **Mine foretrukne** på et [dashboard][17]. |
+| <i class="ph ph-push-pin" aria-label="Pin icon"></i> | Fastgør sagen i venstrepanelet. |
+| <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> | Genindlæser sagen. |
+| <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i> | Redigerer sagen. |
+| <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i> | Åbner menuen for knappen **Opgave**. Se [Indstillinger for opgave](#task-options). |
 
-Fanen **Meddelelser** viser meddelelser vedrørende sagen.
+### Fanen Meddelelser {#messages}
 
-Du kan ændre,hvor mange meddelelser der vises, i **Personlige indstillinger**:
+Fanen **Meddelelser** viser meddelelserne i sagen. Øverst på fanen kan du [svare][46], videresende og tilføje kommentarer som interne meddelelser.
 
-1. Vælg <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** > **Præferencer**.
-1. Vælg gruppen for **Sag**.
-1. Angiv antal meddelelser i feltet **Antal ekspanderede meddelelser**.
-1. Klik på **OK**.
+Du kan ændre, hvor mange meddelelser der er ekspanderet. Se [Tilpas sagsbehandlingen][41].
 
 #### Meddelelsestyper
 
-Der er typer meddelelser:
+Der er tre typer meddelelser:
 
 * **Henvendelser** fra personer eller andre eksterne parter
 * **Svar** på disse henvendelser, eventuelt med spørgsmål om flere detaljer
@@ -244,20 +113,38 @@ Interne meddelelser er markeret med <i class="ph ph-dots-three" aria-label="Thre
 
 #### Meddelelsesopgaver
 
-Klik på <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> på en meddelelse for at få adgang til yderligere indstillinger for meddelelsen:
+Klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere valgmuligheder) på en meddelelse for at få adgang til yderligere indstillinger for meddelelsen:
 
-* **Rediger**: Klik her for at [redigere][9] eller slette meddelelsen.
-* **Svar**: Klik her for at svare personen i feltet Til.
-* **Svar til alle**: Klik her for at svare alle personer i felterne til, Cc og Bcc.
-* **Videresend**: Klik her for at [videresende meddelelsen][8].
-* **E-mail-header**: Klik her for at få vist e-mail-headeren.
-* **Vis**: Klik her for at få vist meddelelsen i et nyt vindue/en ny fane.
-* **Opdel meddelelse**: Klik her for at [dele meddelelsen][19] og oprette en ny sag. Det er nyttigt, hvis meddelelsen indeholder to spørgsmål, der skal behandles af forskellige afdelinger, for eksempel et teknisk spørgsmål og et fakturaspørgsmål.
-* **Udskriv meddelelse**: Klik her, hvis du vil udskrive meddelelsen.
+* **Rediger:** Klik her for at [redigere][9] eller slette meddelelsen.
+* **Svar:** Klik her for at svare personen i feltet Til.
+* **Svar til alle:** Klik her for at svare alle personer i felterne Til, Cc og Bcc.
+* **Videresend:** Klik her for at [videresende meddelelsen][8].
+* **E-mail-header:** Klik her for at få vist e-mail-headeren.
+* **Vis:** Klik her for at få vist meddelelsen i et nyt vindue/en ny fane.
+* **Opdel meddelelse:** Klik her for at [dele meddelelsen][19] og oprette en ny sag. Det er nyttigt, hvis meddelelsen indeholder to spørgsmål, der skal behandles af forskellige afdelinger, for eksempel et teknisk spørgsmål og et fakturaspørgsmål.
+* **Udskriv meddelelse:** Klik her, hvis du vil udskrive meddelelsen.
 
-Øverst på fanen **Meddelelser** kan du sende svar og videresende meddelelser, og du kan også tilføje kommentarer som interne meddelelser.
+#### Request Insight {#sentiment}
 
-### Fanen Detaljer
+Request Insight analyserer sentimentet i indgående e-mailsager, så du kan prioritere den kunde, der har mest brug for dig. Et humørikon i meddelelsens overskrift angiver den fundne følelse:
+
+* Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
+* Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positiv <i class="ph ph-smiley" aria-hidden="true"></i>
+
+<Note>
+Request Insight kræver en Text Services-licens eller CRM Suite Core. Kan du ikke se humørikonet? Bed din administrator om at [aktivere tekstanalyse][43].
+</Note>
+
+#### Translation Assist {#translate}
+
+Translation Assist registrerer sproget i en indgående sag og viser det under meddelelsen. Hvis meddelelsen er på et sprog, du ikke kan læse, skal du klikke på **oversætte fra** ***sprog*** under meddelelsen. Emnet og brødteksten oversættes og tilføjes under den oprindelige meddelelse.
+
+<Note>
+Translation Assist kræver en Text Services-licens eller CRM Suite Core. Kan du ikke se det registrerede sprog? Bed din administrator om at [aktivere tekstanalyse][43].
+</Note>
+
+### Fanen Detaljer {#details}
 
 Fanen **Detaljer** indeholder en oversigt over alle felter til sagen.
 
@@ -273,150 +160,80 @@ Dette skærmbillede viser loggen for sagen. Den indeholder alle hændelser i sag
 
 ![Ændringsloggen på en sag viser alle de forskellige ændringer, der er foretaget på sagen -screenshot][img2]
 
-### Sidepanelet Egenskaber for sag
+### Egenskaber for sag {#properties}
 
-Sidepanelet Egenskaber for sag indeholder følgende indstillinger:
+Panelet **Egenskaber for sag** har følgende felter:
 
-* **Status**: Viser status for sagen. Du kan ændre status her.
-  * **Aktiv**: Sagen er under behandling.
-  * **Afsluttet**: Sagen er løst.
-  * **Udsat**: Sagsbehandlingen blev [udsat][38] til en dato i fremtiden, hvor sagen sættes tilbage til **Aktiv**.
+* **Sagstype:** Sagens [type][40]. Du kan ændre sagstypen her.
 
-* **Ejer**: Hér vises navnet på den sagsbehandler, der har ansvaret for sagen. Du [kan ændre ejeren][7] her.
+* **Status:** Viser status for sagen. Du kan ændre status her.
+  * **Aktiv:** Sagen er under behandling.
+  * **Afsluttet:** Sagen er løst.
+  * **Udsat:** Sagsbehandlingen blev [udsat][38] til en dato i fremtiden, hvor sagen sættes tilbage til **Aktiv**.
 
-* **Kategori**: Den [kategori][25], som sagen hører til, vises her. Du kan ændre kategorien her.
+* **Ejer:** Hér vises navnet på den sagsbehandler, der har ansvaret for sagen. Du [kan ændre ejeren][7] her.
 
-* **Prioritet**: Vælg mellem **Lavt**, **Middel** og **Højt**, eller du kan få systemet til at tildele prioriteten automatisk. Det kan f.eks. gøres på grundlag af [eskaleringsniveauer][24], der er angivet for forskellige personer og firmaer.
+* **Kategori:** Den [kategori][25], som sagen hører til, vises her. Du kan ændre kategorien her.
 
-* **Adgangsniveau**: Vælg en af følgende valgmuligheder:
-  * **Eksternt**: Vælg denne indstilling, hvis personen skal have adgang til sagen via SuperOffice Kundecenter.
-  * **Intern**: Vælg denne indstilling, hvis personen ikke skal have adgang til sagen. Sagen vises i SuperOffice Kundecenter, men personen kan ikke se sagsdetaljerne eller meddelelserne.
+* **Prioritet:** Vælg mellem **Lavt**, **Middel** og **Højt**, eller du kan få systemet til at tildele prioriteten automatisk. Det kan f.eks. gøres på grundlag af [eskaleringsniveauer][24], der er angivet for forskellige personer og firmaer.
 
-* **Tags**: Gå til rullemenuen **Tags**, og [vælg de relevante tags][22] til denne sag.
+* **Adgangsniveau:** Vælg en af følgende valgmuligheder:
+  * **Eksternt:** Vælg denne indstilling, hvis personen skal have adgang til sagen via SuperOffice Kundecenter.
+  * **Intern:** Vælg denne indstilling, hvis personen ikke skal have adgang til sagen. Sagen vises i SuperOffice Kundecenter, men personen kan ikke se sagsdetaljerne eller meddelelserne.
 
-### Indstillinger for opgave
+* **Tags:** Gå til rullemenuen **Tags**, og [vælg de relevante tags][22] til denne sag.
 
-Knappen **Opgave**: Klik på denne knap for at få adgang til følgende valgmuligheder:
+#### Category Insight {#categorization}
 
-* **Rediger**: Klik her for at ændre egenskaberne for denne sag. Du kan for eksempel tildele sagen til en anden sagsbehandler, hvis du har brug for at [indhente råd fra en kollega][7].
-* **Accepter**: Klik her for at [overtage sagen][1]. Du bliver så sagens nye ejer.
-* **Del**: Hvis samme sag indeholder flere spørgsmål, for eksempel hvis kunden først spørger om noget teknisk og efterfølgende stiller et fakturaspørgsmål, kan du [dele sagen][11] i to ved at klikke på denne knap.
-* **Flet**: Klik her for at flette denne sag med en eller flere andre sager. Hvis flere personer i samme firma for eksempel rapporterer det samme tekniske problem (via telefon, webformularer og e-mail), kan du [flette disse sager][16] til én sag, som vil blive behandlet. Den ældste sag bliver som standard den primære sag.
-* **Udskriv**: Klik her, hvis du vil udskrive sagen.
-* **Slet**: Klik her for at slette sagen.
+Category Insight analyserer indgående e-mailsager og foreslår en kategori ud fra indholdet. Kategorien anvendes ikke automatisk.
 
-## Sagshåndtering {#request-mgt}
+<Note>
+Category Insight kræver SuperOffice AI Platform og en Categorization-licens eller CRM Suite Growth. Ser du ingen forslag? Bed din administrator om at [træne modellen og aktivere forslag][44].
+</Note>
 
-Indgående sager kan komme fra forskellige kanaler, og der er flere måder at registrere og besvare dem på. Processen varierer fra sag til sag.
+1. Åbn en indgående sag, og se efter den foreslåede kategori i sagens sidefod.
+1. Gennemgå forslaget, og vælg kategorilinket, hvis kategorien passer til sagen.
+1. Kontroller, at kategorien er opdateret. Forslaget forsvinder, når du har anvendt det.
 
-SuperOffice Service hjælper dig med at give personer de svar, de har brug for, samtidig med at deres kontaktoplysninger gemmes. Når du svarer på en sag, sendes en e-mail til personen. Derfor er det vigtigt at [oprette din e-mail-signatur][15].
+![Foreslået kategori i en sag -screenshot][img3]
 
-### Typiske opgaver
+Hvis ingen kategori passer, vises intet forslag. Du kan stadig selv vælge en kategori.
 
-* [Overtag ansvaret for sager][1]
-* [Bed en anden sagsbehandler om hjælp][7]
-* [Svar til person][2]
-* [Rediger meddelelse][9]
-* [Del sager][11]
-* [Videresend meddelelser eller flere sager til eksterne parter][8]
-* [Tilføj sager til listen over favoritter][18]
-* [Luk sager][3]
-* [Markér sager som spam][27]
+#### Summary Assist {#summary}
 
-Forskellige firmaer har forskellige rutiner for sagsbehandling og kan bruge SuperOffice Service på forskellige måder. Nedenfor har vi sat to scenarier fra den virkelige verden op, der viser nogle af de muligheder, der findes. Disse scenarier viser dig, hvordan du kan svare effektivt, når en person har sendt en sag via e-mail, og når en person ringer ind med et problem eller et spørgsmål.
+Summary Assist opsummerer meddelelserne i en sag, så du kan handle uden at læse hele forløbet.
 
-![Dashboard til sager med lister over egne åbne sager og en kø til ufordelte sager. Her kan du vælge en sag, der skal håndteres -screenshot][img3]
+<Note>
+Summary Assist kræver en Text Services-licens eller CRM Suite Core. Kan du ikke se funktionen? Bed din administrator om at [aktivere tekstanalyse][43].
+</Note>
 
-### Scenarie 1: Personen sender sagen via e-mail
+Med CRM Suite finder du Summary Assist i panelet **Reply Assist**:
 
-1. Personen skriver en mail til support@company.com eller udfylder en formular på en brugersupportportal.
-1. Personen modtager et [automatisk svar][23] om, at henvendelsen er modtaget.
-1. Henvendelsen fra personen registreres automatisk som en sag i SuperOffice CRM.
-1. Sagen ender hos en sagsbehandler i SuperOffice CRM. Se [Tildel sager][6] og [Find sager][10].
-1. Sagsbehandleren gennemlæser sagen.
-1. Sagsbehandleren kan ikke afslutte sagen alene og gør et af følgende:
-    * [Spørger en kollega][7].
-    * [Indhenter hjælp udefra][8].
-1. Sagsbehandleren [sender svar til personen][2].
-1. Sagsbehandleren [lukker sagen][3] og fortsætter til næste sag.
+1. Klik på <i class="ph ph-sparkle" aria-label="Reply Assist"></i> i ikonlinjen til højre i panelet **Egenskaber for sag** for at skifte til **Reply Assist**.
+1. Klik på **Opsummer**.
+1. Gennemgå resuméet af sagens meddelelser.
 
-### Scenarie 2: Personen ringer til support
+Hvis du vil lave et udkast til et svar fra samme panel, kan du se [Reply Assist][45].
 
-1. Personen har et problem og ringer til support.
-1. Sagsbehandleren, der besvarer opkaldet, [registrerer sagen][4].
-1. Sagsbehandleren har brug for hjælp og gør et af følgende:
-    * [Spørger en kollega][7].
-    * [Indhenter hjælp udefra][8].
-1. Sagsbehandleren [sender svar til personen][2].
-1. Sagsbehandleren [lukker sagen][3] og fortsætter til næste sag.
+### Indstillinger for opgave {#task-options}
 
-## Personlige præferencer
+Klik på knappen **Opgave** (<i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>) i sagens overskrift for at få adgang til følgende valgmuligheder:
 
-Du kan tilpasse sager, så de passer til din arbejdsproces:
-
-1. Gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** > **Præferencer**.
-
-1. Vælg **Sag**, og juster indstillinger som:
-    * Vis den sidste meddelelse øverst.
-    * Brug den ældste sag som hovedsag ved fusionering.
-    * Visning af eksempel på billedvedhæftning i meddelelser.
-    * Antal ekspanderede meddelelser.
-    * Indsæt sidste meddelelse automatisk.
-    * Vis kun egne kategorier.
-    * Luk automatisk fanen, når du føjer en meddelelse til sagen.
-    * Luk automatisk fanen, når status for sagen ændres til Lukket.
-    * Standardejer og -kategori for nye sager.
-    * Standardstatus for ny sag og Standardstatus for ny meddelelse. Se [rækkefølge for standardstatus][37].
-
-1. Vælg **Besked via e-mail**, og juster indstillinger som:
-    * Nye sager eller meddelelser.
-    * Sag eskaleret.
-
-1. Klik på **Gem** for at anvende dine ændringer.
-
-## Din tilgængelighedsstatus {#available}
-
-Din tilgængelighedsstatus bestemmer, om du modtager sager via automatisk tildeling. Den påvirker også tildelingen af personer.
-
-Klik på <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** i topmenuen, og vælg **Din tilgængelighedsstatus** for at opdatere din status.
-
-* **Til stede:** Du er tilgængelig for automatisk tildeling af sager og personer.
-* **Ikke til stede:** Nye sager tildeles ikke til dig. Din fraværsbesked vises ved dit navn, når nogen manuelt tildeler en sag.
-
-<Tip>
-Hvis en sagsbehandler glemmer at opdatere sin status eller er uventet fraværende, kan en administrator ændre sagsbehandlerens tilgængelighedsstatus på vedkommendes vegne i **Indstillinger og vedligeholdelse** > **Brugere**.
-</Tip>
-
-Hvordan sager fordeles igen, når en bruger ikke er til stede, afhænger af den [fordelingsregel][6], der er konfigureret for kategorien.
-
-## Globale præferencer
-
-Administratorer kan tilpasse Service for alle brugere i Indstillinger og vedligeholdelse.
-
-1. I **Indstillinger og vedligeholdelse** skal du vælge <i class="ph ph-gear" aria-hidden="true"></i> **Præferencer** i navigatoren.
-1. Gå til fanen **Globale præferencer** og rul ned til sektionen **SuperOffice Service systemindstillinger**.
-
-Nogle indstillinger, der påvirker supportagenter, inkluderer:
-
-* Anonymiser brugere ved svar
-* Standard Fra-adresse
-* Standardstil for udgående e-mail
-* Eksternt adgangsniveau som standard
-* Ny status ved accept af en sag
-* Send e-mailbesked om åbne sager
-
-[Se den fulde liste][26]
+* **Rediger:** Klik her for at ændre egenskaberne for denne sag. Du kan for eksempel tildele sagen til en anden sagsbehandler, hvis du har brug for at [indhente råd fra en kollega][7].
+* **Accepter:** Klik her for at [overtage sagen][1]. Du bliver så sagens nye ejer.
+* **Relater:** Klik her for at [knytte sagen][21] til en anden sag.
+* **Del:** Hvis samme sag indeholder flere spørgsmål, for eksempel hvis kunden først spørger om noget teknisk og efterfølgende stiller et fakturaspørgsmål, kan du [dele sagen][11] i to ved at klikke på denne knap.
+* **Flet:** Klik her for at flette denne sag med en eller flere andre sager. Hvis flere personer i samme firma for eksempel rapporterer det samme tekniske problem (via telefon, webformularer og e-mail), kan du [flette disse sager][16] til én sag, som vil blive behandlet. Den ældste sag bliver som standard den primære sag.
+* **Udskriv:** Klik her, hvis du vil udskrive sagen.
+* **Slet:** Klik her for at slette sagen.
+* **Marker som spam:** Klik her for at [markere sagen som spam][27].
 
 [1]: /da/request/learn/accept
-[2]: /da/request/learn/reply
-[3]: /da/request/learn/close
 [4]: /da/request/learn/create
 [5]: /da/request/learn/flag-message
-[6]: /da/request/learn/assign
 [7]: /da/request/learn/transfer
 [8]: /da/request/learn/forward
 [9]: /da/request/learn/edit-message
-[10]: /da/request/learn/find
 [35]: /da/request/learn/find#list
 [11]: /da/request/learn/split-request
 [12]: /da/search-options/learn/index
@@ -429,24 +246,21 @@ Nogle indstillinger, der påvirker supportagenter, inkluderer:
 [25]: /da/request/admin/category/index
 [13]: /da/company/learn/index
 [14]: /da/contact/learn/index
-[15]: /da/learn/getting-started/edit-email-signature
 [18]: /da/learn/basics/fav
-[23]: /da/knowledge-base/learn/reply-templates/index
-[26]: /da/admin/preferences/service-settings
 [27]: /da/request/learn/spam
 [28]: /da/request/learn/reply#quick-reply
 [30]: /da/learn/basics/overview-pages
 [31]: /da/learn/getting-started/main-screen/side-panel
-[32]: /da/learn/getting-started/main-screen/navigator
-[33]: /da/learn/section-tabs/requests-tab
 [36]: /da/request/learn/mentions
-[37]: /da/request/admin/status/index#default
 [38]: /da/request/learn/postpone
+[40]: /da/request/admin/type/index
+[41]: /da/request/learn/personalize
+[42]: /da/request/learn/work-with-requests
+[43]: /da/ai/admin/index#enable-text-analysis
+[44]: /da/ai/admin/set-up-categorization
+[45]: /da/request/learn/reply#reply-assist
+[46]: /da/request/learn/reply
+[47]: /da/request/learn/find
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
-[img3]: /media/loc/en/request/service-dashboard.png
-[img4]: /media/loc/en/request/request-screen-overview.png
-[img5]: /media/loc/en/request/request-screen-left-panel.png
-[img6]: /media/loc/en/request/request-screen-tab-menu.png
-[img7]: /media/loc/en/request/request-screen-edit-overview.png
-[img8]: /media/loc/en/request/request-screen-column-menu.png
+[img3]: /media/loc/en/request/suggested-category-demo.png

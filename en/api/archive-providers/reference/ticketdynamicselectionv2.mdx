@@ -815,7 +815,7 @@ Ticket selection archive with OR-able selection groups. Each group is represente
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketDynamicSelectionV2?$select=suggestedCategory,person/personAddress/formattedAddress,person/correspondingAssociate/assocType,person/correspondingAssociate/isActive,contact/postAddress/city
+GET /api/v1/archive/TicketDynamicSelectionV2?$select=origin,slevel,createdBy/fullName,createdBy/role,ownedBy/isLocation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

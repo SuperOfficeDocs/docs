@@ -751,7 +751,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentStaticSelection?$select=person/email/emailAddress,contact/countryId,contact/contactSource,contact/contactAssociate/ejStatus,contact/contactAssociate/userName
+GET /api/v1/archive/DocumentStaticSelection?$select=person/personId,person/personUrl/URLAddress,person/restrictionAddress/line1,person/personExtra/x_person_shorttext_list,contact/contactUdef/SuperOffice:3
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

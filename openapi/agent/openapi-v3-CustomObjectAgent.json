@@ -11,6 +11,946 @@
     }
   },
   "paths": {
+    "/api/v1/Agents/CustomObject/GetCustomFieldDefinitions": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Get Custom Field Definitions",
+        "description": "Returns all custom field definitions of a table, in rank order.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_GetCustomFieldDefinitions",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest"
+              }
+            }
+          },
+          "description": "TableName",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/GetCustomFieldDefinition": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Get Custom Field Definition",
+        "description": "Returns one custom field definition by table and field name.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_GetCustomFieldDefinition",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest"
+              }
+            }
+          },
+          "description": "TableName, FieldName",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/CreateCustomFieldDefinitions": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Create Custom Field Definitions",
+        "description": "Adds custom fields to a table.\n\nThe body is an array of field definitions: one column is added per element, all or nothing. Fails if any FieldName already exists. Not implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_CreateCustomFieldDefinitions",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest"
+              }
+            }
+          },
+          "description": "TableName, Fields",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/SaveCustomFieldDefinitions": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Save Custom Field Definitions",
+        "description": "Creates or updates custom fields on a table in one call: each element is added when its FieldName is new and updated when it exists, all or nothing.\n\nFields of the table that are not in the body are left alone. Not implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_SaveCustomFieldDefinitions",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest"
+              }
+            }
+          },
+          "description": "TableName, Fields",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/UpdateCustomFieldDefinition": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Update Custom Field Definition",
+        "description": "Updates one existing custom field.\n\nFieldName and FieldType cannot change. Not implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_UpdateCustomFieldDefinition",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest"
+              }
+            }
+          },
+          "description": "TableName, FieldName, Field",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/DeleteCustomFieldDefinition": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Delete Custom Field Definition",
+        "description": "Deletes a custom field: drops the column with its data and index.\n\nNot implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_DeleteCustomFieldDefinition",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest"
+              }
+            }
+          },
+          "description": "TableName, FieldName",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/CustomObject/CreateDefaultCustomObject": {
       "post": {
         "tags": [
@@ -73,6 +1013,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -113,7 +1062,7 @@
               }
             }
           },
-          "description": "DefinitionName",
+          "description": "ObjectName",
           "required": true
         },
         "responses": {
@@ -223,6 +1172,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -263,7 +1221,7 @@
               }
             }
           },
-          "description": "DefinitionName, Id",
+          "description": "ObjectName, Id",
           "required": true
         },
         "responses": {
@@ -311,14 +1269,14 @@
         ]
       }
     },
-    "/api/v1/Agents/CustomObject/SaveCustomObject": {
+    "/api/v1/Agents/CustomObject/CreateCustomObject": {
       "post": {
         "tags": [
           "CustomObject_Agent"
         ],
-        "summary": "Save Custom Object",
-        "description": "Saves a Custom Object row.\n\nIf the row has a primary key set it will be updated, otherwise a new row is inserted.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
-        "operationId": "v1CustomObjectAgent_SaveCustomObject",
+        "summary": "Create Custom Object",
+        "description": "Inserts a new Custom Object row.\n\nId in the row is ignored. Not implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_CreateCustomObject",
         "parameters": [
           {
             "name": "$select",
@@ -373,47 +1331,215 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest"
               }
             },
             "application/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest"
               }
             },
             "text/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest"
               }
             },
             "application/x-www-form-urlencoded": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest"
               }
             },
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest"
               }
             },
             "application/merge-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest"
               }
             }
           },
-          "description": "DefinitionName, Row",
+          "description": "ObjectName, Row",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/UpdateCustomObject": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Update Custom Object",
+        "description": "Updates an existing Custom Object row by primary key.\n\nNot implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_UpdateCustomObject",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest"
+              }
+            }
+          },
+          "description": "ObjectName, Id, Row",
           "required": true
         },
         "responses": {
@@ -487,6 +1613,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -527,7 +1662,7 @@
               }
             }
           },
-          "description": "DefinitionName, Id",
+          "description": "ObjectName, Id",
           "required": true
         },
         "responses": {
@@ -549,9 +1684,18 @@
           "CustomObject_Agent"
         ],
         "summary": "Create Default Custom Object Definition",
-        "description": "Loading default values into a new CustomObjectDefinition.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "description": "Returns an empty Custom Object Definition with default values.\n\nNot persisted.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1CustomObjectAgent_CreateDefaultCustomObjectDefinition",
         "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
           {
             "name": "Accept-Language",
             "in": "header",
@@ -592,6 +1736,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -649,7 +1802,7 @@
           "CustomObject_Agent"
         ],
         "summary": "Get Custom Object Definition",
-        "description": "Returns the schema (table + field definitions) for a Custom Object Definition by its database table name.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "description": "Returns the schema (table + field definitions) for a Custom Object by its database table name.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1CustomObjectAgent_GetCustomObjectDefinition",
         "parameters": [
           {
@@ -705,6 +1858,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -745,7 +1907,7 @@
               }
             }
           },
-          "description": "DefinitionName",
+          "description": "ObjectName",
           "required": true
         },
         "responses": {
@@ -793,13 +1955,422 @@
         ]
       }
     },
+    "/api/v1/Agents/CustomObject/CreateCustomObjectDefinition": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Create Custom Object Definition",
+        "description": "Creates a Custom Object: the table together with the fields in Fields, all or nothing.\n\nFails if a Custom Object with that ObjectName already exists. Not implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_CreateCustomObjectDefinition",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest"
+              }
+            }
+          },
+          "description": "CustomObjectDefinition",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/UpdateCustomObjectDefinition": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Update Custom Object Definition",
+        "description": "Updates the table properties of an existing Custom Object.\n\nFields is ignored; use CreateCustomFieldDefinitions, UpdateCustomFieldDefinition and DeleteCustomFieldDefinition to change fields. Not implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_UpdateCustomObjectDefinition",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest"
+              }
+            }
+          },
+          "description": "ObjectName, CustomObjectDefinition",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CustomObject/DeleteCustomObjectDefinition": {
+      "post": {
+        "tags": [
+          "CustomObject_Agent"
+        ],
+        "summary": "Delete Custom Object Definition",
+        "description": "Deletes a Custom Object: drops the table with all its fields and rows.\n\nNot implemented yet.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1CustomObjectAgent_DeleteCustomObjectDefinition",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest"
+              }
+            }
+          },
+          "description": "ObjectName",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/CustomObject/HasScreenChooser": {
       "post": {
         "tags": [
           "CustomObject_Agent"
         ],
         "summary": "Has Screen Chooser",
-        "description": "Returns true if a screen chooser is configured for the given Custom Object Definition and mode.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
+        "description": "Returns true if a screen chooser is configured for the given Custom Object and mode.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## The CustomObject agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1CustomObjectAgent_HasScreenChooser",
         "parameters": [
           {
@@ -855,6 +2426,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -895,7 +2475,7 @@
               }
             }
           },
-          "description": "DefinitionName, Edit",
+          "description": "ObjectName, Edit",
           "required": true
         },
         "responses": {
@@ -1001,6 +2581,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1132,6 +2721,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1205,10 +2803,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:65002"
+      "url": "http://localhost:58622"
     },
     {
-      "url": "https://localhost:65002"
+      "url": "https://localhost:58622"
     }
   ],
   "components": {
@@ -1230,11 +2828,186 @@
       }
     },
     "schemas": {
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionsRequest": {
+        "description": "GetCustomFieldDefinitions: Returns all custom field definitions of a table, in rank order.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.FieldInfoBase": {
+        "description": "Abstract basic information about database fields. May be custom or user-defined fields. The information can be used to build a user interface.\r\n<para />\r\nCarrier object for FieldInfoBase.\r\nServices for the FieldInfoBase Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IUserDefinedFieldInfoAgent\">UserDefinedFieldInfo Agent</see>.",
+        "type": "object",
+        "properties": {
+          "FieldType": {
+            "description": "What sort of data does this field contain. 1 = int, 2 = short text, ...",
+            "enum": [
+              "Unknown",
+              "Integer",
+              "ShortText",
+              "LongText",
+              "Date",
+              "Blob",
+              "Checkbox",
+              "MdoList",
+              "Decimal",
+              "DateTime",
+              "Time",
+              "TimeSpan",
+              "RelationTo",
+              "Attachment",
+              "DynamicLink",
+              "ListText"
+            ],
+            "type": "string"
+          },
+          "FieldName": {
+            "description": "Database name or prog-id: 'x_foobar' or 'SuperOffice:2'.",
+            "type": "string"
+          },
+          "DisplayName": {
+            "description": "Label for field. May be multi-lang string encoded.",
+            "type": "string"
+          },
+          "Description": {
+            "description": "Optional tooltip text for this field",
+            "type": "string"
+          },
+          "ShortLabel": {
+            "description": "Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.",
+            "type": "string"
+          },
+          "HideLabel": {
+            "description": "Hide the label if 1",
+            "type": "boolean"
+          },
+          "HideField": {
+            "description": "Hide the field from the UI. Only allow API access.",
+            "type": "boolean"
+          },
+          "IsIndexed": {
+            "description": "Is this field indexed? 0 if no, index no. if yes",
+            "type": "boolean"
+          },
+          "IsMandatory": {
+            "description": "0 = no, 1 = yes (field must be filled out)",
+            "type": "boolean"
+          },
+          "IsReadOnly": {
+            "description": "0 = read/write, 1 = readonly (don't combine with mandatory  8-) )",
+            "type": "boolean"
+          },
+          "IsExternal": {
+            "description": "Should this field be shown to external users via customer center?",
+            "type": "boolean"
+          },
+          "IsDisplayField": {
+            "description": "Flag indicating that this field is chosen as DisplayField for a table it belongs",
+            "type": "boolean"
+          },
+          "Rank": {
+            "format": "int32",
+            "description": "Tab order, ranking within the custom fields.",
+            "type": "integer"
+          },
+          "TemplateVariableName": {
+            "description": "Template variable name: 'cs01', 'cl02' etc. Null for extra fields.",
+            "type": "string"
+          },
+          "IsDefaultListColumn": {
+            "description": "Custom-object fields only: true if the field is one of the default columns where rows of the custom object are listed (archive default columns, previews, bulk update); users can still add or remove columns. Mirrors the ViewInList extra-field flag. Not used on standard tables or user-defined fields.",
+            "type": "boolean"
+          },
+          "ApplyDefaultValue": {
+            "description": "Extra fields only: true if new rows get DefaultValue; false leaves the field empty even when DefaultValue is set (0 and false are real defaults). Ignored for relation, Link and Attachment fields. Mirrors the UseDefault extra-field flag. Not used on user-defined fields.",
+            "type": "boolean"
+          },
+          "IsFreetextSource": {
+            "description": "Custom-object fields only: true if the field's values are freetext-indexed, so rows can be found by text in this field; it also makes relation pickers on this custom object search as you type. The display field is always indexed, whether or not this is set. Mirrors the ViewInSearch extra-field flag. Not used on standard tables or user-defined fields.",
+            "type": "boolean"
+          },
+          "ShowInSideCard": {
+            "description": "Request (ticket) extra fields only: true if the field is shown in the Request side card, next to the built-in properties, instead of the details area. Ignored for other tables. Mirrors the ShowWithProperties extra-field flag. Not used on user-defined fields.",
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomFieldDefinitionRequest": {
+        "description": "GetCustomFieldDefinition: Returns one custom field definition by table and field name.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          },
+          "FieldName": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomFieldDefinitionsRequest": {
+        "description": "CreateCustomFieldDefinitions: Adds custom fields to a table. The body is an array of field definitions: one column is added per element, all or nothing. Fails if any FieldName already exists. Not implemented yet.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          },
+          "Fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomFieldDefinitionsRequest": {
+        "description": "SaveCustomFieldDefinitions: Creates or updates custom fields on a table in one call: each element is added when its FieldName is new and updated when it exists, all or nothing. Fields of the table that are not in the body are left alone. Not implemented yet.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          },
+          "Fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomFieldDefinitionRequest": {
+        "description": "UpdateCustomFieldDefinition: Updates one existing custom field. FieldName and FieldType cannot change. Not implemented yet.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          },
+          "FieldName": {
+            "type": "string"
+          },
+          "Field": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomFieldDefinitionRequest": {
+        "description": "DeleteCustomFieldDefinition: Deletes a custom field: drops the column with its data and index. Not implemented yet.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          },
+          "FieldName": {
+            "type": "string"
+          }
+        }
+      },
       "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateDefaultCustomObjectRequest": {
         "description": "CreateDefaultCustomObject: Returns a new Custom Object row pre-populated with the default values declared by the Custom Object Definition. The row is not yet persisted.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
+          "ObjectName": {
             "type": "string"
           }
         }
@@ -1243,8 +3016,8 @@
         "description": "A single row in a Custom Object table.\r\n<para />\r\nCarrier object for CustomObject.\r\nServices for the CustomObject Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICustomObjectAgent\">CustomObject Agent</see>.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
-            "description": "Database table name of the Custom Object Definition this row belongs to, e.g. 'y_equipment'.",
+          "ObjectName": {
+            "description": "Database table name of the Custom Object this row belongs to, e.g. 'y_equipment'.",
             "type": "string"
           },
           "Id": {
@@ -1316,7 +3089,7 @@
         "description": "GetCustomObject: Returns a single Custom Object row by definition name and primary key.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
+          "ObjectName": {
             "type": "string"
           },
           "Id": {
@@ -1325,12 +3098,28 @@
           }
         }
       },
-      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.SaveCustomObjectRequest": {
-        "description": "SaveCustomObject: Saves a Custom Object row. If the row has a primary key set it will be updated, otherwise a new row is inserted.",
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectRequest": {
+        "description": "CreateCustomObject: Inserts a new Custom Object row. Id in the row is ignored. Not implemented yet.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
+          "ObjectName": {
             "type": "string"
+          },
+          "Row": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectRequest": {
+        "description": "UpdateCustomObject: Updates an existing Custom Object row by primary key. Not implemented yet.",
+        "type": "object",
+        "properties": {
+          "ObjectName": {
+            "type": "string"
+          },
+          "Id": {
+            "format": "int32",
+            "type": "integer"
           },
           "Row": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
@@ -1341,7 +3130,7 @@
         "description": "DeleteCustomObject: Deletes a single Custom Object row by primary key.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
+          "ObjectName": {
             "type": "string"
           },
           "Id": {
@@ -1359,7 +3148,7 @@
             "description": "Primary key in the extra-tables table.",
             "type": "integer"
           },
-          "Name": {
+          "ObjectName": {
             "description": "Database table name of the Custom Object, e.g. 'y_equipment'.",
             "type": "string"
           },
@@ -1390,11 +3179,52 @@
             "type": "integer"
           },
           "Fields": {
-            "description": "Field definitions for this Custom Object.",
+            "description": "Field definitions for this Custom Object, in rank order. Each element is a FieldInfo* type selected by FieldType.",
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectField"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
             }
+          },
+          "IconName": {
+            "description": "Name of a Phosphor icon, e.g. 'truck'. Takes priority over IconId; IconHint shows the resolved result.",
+            "type": "string"
+          },
+          "IsHidden": {
+            "description": "True if the Custom Object is left out of every list that offers custom objects (navigator, menu, Find, webhook events, lists). Its data is kept. Mirrors the Hidden extra-table flag.",
+            "type": "boolean"
+          },
+          "HideIdField": {
+            "description": "True if archives hide the id field (column and criterion), as long as another visible field exists. Mirrors the HideId extra-table flag.",
+            "type": "boolean"
+          },
+          "ShowInFind": {
+            "description": "True if the Custom Object is offered in Find. Ignored when IsHidden is set. Mirrors the ShowInFind extra-table flag.",
+            "type": "boolean"
+          },
+          "ShowInNavigator": {
+            "description": "True if the Custom Object gets a navigator button and main-menu entry. Ignored when IsHidden is set. Mirrors the ShowInNavigator extra-table flag.",
+            "type": "boolean"
+          },
+          "ParentField": {
+            "description": "Name of the field that points to the parent row, which makes the Custom Object a tree in relation lists. Empty: flat list.",
+            "type": "string"
+          },
+          "FullNameField": {
+            "description": "Name of the field holding each row's full path in the tree, e.g. 'Support/Hardware/Keyboards'; shown in relation lists and archives. Requires ParentField.",
+            "type": "string"
+          },
+          "SortField": {
+            "description": "Name of the field that orders rows in relation lists (dropdowns and pickers) before a search term is typed. Default 'id'. Archives sort independently.",
+            "type": "string"
+          },
+          "SortDescending": {
+            "description": "True to sort relation lists by SortField in descending order.",
+            "type": "boolean"
+          },
+          "HierarchyId": {
+            "format": "int32",
+            "description": "Folder (HierarchyEntity in the ExtraTables domain) the Custom Object is listed under in admin lists. 0: top level.",
+            "type": "integer"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
@@ -1408,59 +3238,50 @@
           }
         }
       },
-      "SuperOffice.CRM.Services.CustomObjectField": {
-        "description": "Describes one field on a Custom Object Definition.\r\n<para />\r\nCarrier object for CustomObjectField.\r\nServices for the CustomObjectField Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICustomObjectAgent\">CustomObject Agent</see>.",
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomObjectDefinitionRequest": {
+        "description": "GetCustomObjectDefinition: Returns the schema (table + field definitions) for a Custom Object by its database table name.",
         "type": "object",
         "properties": {
-          "FieldName": {
-            "description": "Database column name of the field, e.g. 'x_equipment_type'.",
+          "ObjectName": {
             "type": "string"
-          },
-          "FieldType": {
-            "description": "Field type, formatted as the string value of ExtraFieldType (e.g. 'string', 'int', 'datetime').",
-            "type": "string"
-          },
-          "DisplayName": {
-            "description": "User-visible name of the field.",
-            "type": "string"
-          },
-          "Description": {
-            "description": "Description of the field.",
-            "type": "string"
-          },
-          "UseDefaultValue": {
-            "description": "True if the field has a default value that should be used when creating new rows.",
-            "type": "boolean"
-          },
-          "DefaultValue": {
-            "description": "Default value, formatted with CultureDataFormatter (e.g. '[I:1]' for an integer).",
-            "type": "string"
-          },
-          "Rank": {
-            "format": "int32",
-            "description": "Display order of the field within the Custom Object Definition.",
-            "type": "integer"
-          },
-          "IsDefault": {
-            "description": "True if the field is shown by default in list views (mirrors the ViewInList extra-field flag).",
-            "type": "boolean"
           }
         }
       },
-      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.GetCustomObjectDefinitionRequest": {
-        "description": "GetCustomObjectDefinition: Returns the schema (table + field definitions) for a Custom Object Definition by its database table name.",
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.CreateCustomObjectDefinitionRequest": {
+        "description": "CreateCustomObjectDefinition: Creates a Custom Object: the table together with the fields in Fields, all or nothing. Fails if a Custom Object with that ObjectName already exists. Not implemented yet.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
+          "CustomObjectDefinition": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.UpdateCustomObjectDefinitionRequest": {
+        "description": "UpdateCustomObjectDefinition: Updates the table properties of an existing Custom Object. Fields is ignored; use CreateCustomFieldDefinitions, UpdateCustomFieldDefinition and DeleteCustomFieldDefinition to change fields. Not implemented yet.",
+        "type": "object",
+        "properties": {
+          "ObjectName": {
+            "type": "string"
+          },
+          "CustomObjectDefinition": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObjectDefinition"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.DeleteCustomObjectDefinitionRequest": {
+        "description": "DeleteCustomObjectDefinition: Deletes a Custom Object: drops the table with all its fields and rows. Not implemented yet.",
+        "type": "object",
+        "properties": {
+          "ObjectName": {
             "type": "string"
           }
         }
       },
       "SuperOffice.WebApi.v1.Carriers.CustomObjectCarriers.HasScreenChooserRequest": {
-        "description": "HasScreenChooser: Returns true if a screen chooser is configured for the given Custom Object Definition and mode.",
+        "description": "HasScreenChooser: Returns true if a screen chooser is configured for the given Custom Object and mode.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
+          "ObjectName": {
             "type": "string"
           },
           "Edit": {

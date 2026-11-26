@@ -125,7 +125,7 @@ MailingsAndFoldersProvider (mailingDescription / folderName both → name).
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormsAndFolders?$select=emailFlow/emailFlowId,associate/lastName,associate/contactFullName
+GET /api/v1/archive/FormsAndFolders?$select=associate/assocName,emailFlow/mediumThumbnail,emailFlow/workflowLastTriggeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

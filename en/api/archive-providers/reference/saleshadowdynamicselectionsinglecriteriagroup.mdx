@@ -1379,7 +1379,7 @@ Shadow contact provider for the dynamic sale provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowDynamicSelectionSingleCriteriaGroup?$select=saleType,person/personAssociate/ejStatus,contact/contactAssociate/personId,saleUdef/SuperOffice:8,document/projectId
+GET /api/v1/archive/SaleShadowDynamicSelectionSingleCriteriaGroup?$select=person/personExtra/y_car/id,contact/contactAssociate/contactFullName,project/projectAssociate/firstName,project/saintAmountClass,saleStakeholder/person/fullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

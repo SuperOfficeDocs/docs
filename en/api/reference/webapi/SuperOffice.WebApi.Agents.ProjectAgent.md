@@ -1304,7 +1304,7 @@ New or updated ProjectMember
 
 ### SaveProjectMembersFunctionAndCommentAsync\(int\[\], int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ProjectAgent_SaveProjectMembersFunctionAndCommentAsync_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
-Saves role and comment on an array of projectmembers represented by ids
+Saves role and comment on an array of projectmembers represented by ids. Requires update rights on each member, given by the project's owner and group; if any of the members can't be updated, nothing is saved. Ids that don't exist or that the user can't read are skipped.
 
 ```csharp
 public Task SaveProjectMembersFunctionAndCommentAsync(int[] projectMemberIds, int roleId, string comment, RequestOptions requestOptions = null)
@@ -1314,9 +1314,15 @@ public Task SaveProjectMembersFunctionAndCommentAsync(int[] projectMemberIds, in
 
 `projectMemberIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
 
+The project members to change. Ids that don't exist or that the user can't read are skipped.
+
 `roleId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
+The new role (project member type). -1 keeps each member's role, 0 removes it. A role that doesn't exist is rejected, unless the members already have it.
+
 `comment` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The new comment. An empty comment keeps each member's comment.
 
 `requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 

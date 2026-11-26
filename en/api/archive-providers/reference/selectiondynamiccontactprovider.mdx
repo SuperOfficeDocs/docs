@@ -986,11 +986,11 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 |workflowInstance/emailFlow/workflowDefinitionStatusId|listAny|| x |
 |workflowInstance/emailFlow/jumpToFinish|bool|| x |
 |workflowInstance/emailFlow/startOnlyOnce|bool|| x |
-|workflowInstance/emailFlow/workflowEnrolledCount| *None* ||  |
-|workflowInstance/emailFlow/workflowInProgressCount| *None* ||  |
-|workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowEnrolledCount|int|| x |
+|workflowInstance/emailFlow/workflowInProgressCount|int|| x |
+|workflowInstance/emailFlow/workflowCompletedCount|int|| x |
+|workflowInstance/emailFlow/workflowSucceededCount|int|| x |
+|workflowInstance/emailFlow/workflowSuccessRate|decimal|| x |
 |workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
@@ -1403,7 +1403,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/SelectionDynamicContactProvider?$select=contactPhone/description,targetRelation/business,sale/associate/title,sale/associate/usergroup,appointment/completed
+GET /api/v1/archive/SelectionDynamicContactProvider?$select=contactAssociate/userName,contactExtra/x_contact_contact,sale/sale/textId,appointment/endDate,appointment/appointment/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

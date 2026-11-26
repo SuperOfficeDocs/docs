@@ -1377,7 +1377,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindSale?$select=contact/revenueYear,contact/restrictionAddress/wgs84longitude,appointment/ownedExternally,appointment/visibleInDiary,appointment/appointmentUdef/SuperOffice:7
+GET /api/v1/archive/FindSale?$select=person/personInfo/infoText,contact/hasInfoText,contact/contactExtra/x_contact_request_relation,appointment/associate/ejUserId,document/associate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

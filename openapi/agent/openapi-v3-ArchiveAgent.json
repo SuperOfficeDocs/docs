@@ -73,6 +73,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -142,6 +151,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -260,6 +278,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -438,6 +465,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -588,6 +624,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -702,6 +747,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -784,6 +838,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -862,6 +925,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -984,6 +1056,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -1098,6 +1179,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -1180,6 +1270,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -1258,6 +1357,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1376,6 +1484,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1548,6 +1665,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -1712,6 +1838,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1884,6 +2019,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -2052,6 +2196,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -2202,6 +2355,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2325,6 +2487,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -2475,6 +2646,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -2647,6 +2827,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -2811,6 +3000,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -2983,6 +3181,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -3147,6 +3354,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -3319,6 +3535,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -3487,6 +3712,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -3633,6 +3867,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -3787,6 +4030,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -3875,6 +4127,714 @@
         ]
       }
     },
+    "/api/v1/Agents/Archive/GetDefaultColumnList": {
+      "post": {
+        "tags": [
+          "Archive_Agent"
+        ],
+        "summary": "Get Default Column List",
+        "description": "Return list of the default user-visible columns for an archive provider in the 'selectioncardview' GUI view.\n\nA filtered sub-set of GetAvailableColumns.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ArchiveAgent_GetDefaultColumnList",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest"
+              }
+            }
+          },
+          "description": "ProviderName",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Archive/GetCriteriaFieldList": {
+      "post": {
+        "tags": [
+          "Archive_Agent"
+        ],
+        "summary": "Get Criteria Field List",
+        "description": "Return list of the user-visible restriction columns supported by an archive provider in the 'selectioncardview' GUI view.\n\nA filtered sub-set of GetAvailableColumns.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ArchiveAgent_GetCriteriaFieldList",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest"
+              }
+            }
+          },
+          "description": "ProviderName",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Archive/GetCriteriaFieldListWithGuiName": {
+      "post": {
+        "tags": [
+          "Archive_Agent"
+        ],
+        "summary": "Get Criteria Field List With Gui Name",
+        "description": "Return list of the user-visible restriction columns supported by an archive provider, filtered by a specific GUI name.\n\nA filtered sub-set of GetAvailableColumns.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ArchiveAgent_GetCriteriaFieldListWithGuiName",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest"
+              }
+            }
+          },
+          "description": "ProviderName, GuiName",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Archive/GetCriteriaFieldListWithGuiNameAndContext": {
+      "post": {
+        "tags": [
+          "Archive_Agent"
+        ],
+        "summary": "Get Criteria Field List With Gui Name And Context",
+        "description": "Return list of the user-visible restriction columns supported by an archive provider.\n\nA filtered sub-set of GetAvailableColumns.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ArchiveAgent_GetCriteriaFieldListWithGuiNameAndContext",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest"
+              }
+            }
+          },
+          "description": "ProviderName, GuiName, Context",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/Archive/CreateDefaultArchiveListResult": {
       "post": {
         "tags": [
@@ -3924,6 +4884,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -4033,6 +5002,15 @@
             "name": "SO-AppToken",
             "in": "header",
             "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
             "required": false,
             "schema": {
               "type": "string"
@@ -4205,6 +5183,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -4319,10 +5306,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:65002"
+      "url": "http://localhost:58622"
     },
     {
-      "url": "https://localhost:65002"
+      "url": "https://localhost:58622"
     }
   ],
   "components": {
@@ -5581,6 +6568,51 @@
             "additionalProperties": {
               "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
             }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetDefaultColumnListRequest": {
+        "description": "GetDefaultColumnList: Return list of the default user-visible columns for an archive provider in the 'selectioncardview' GUI view. A filtered sub-set of GetAvailableColumns.",
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListRequest": {
+        "description": "GetCriteriaFieldList: Return list of the user-visible restriction columns supported by an archive provider in the 'selectioncardview' GUI view. A filtered sub-set of GetAvailableColumns.",
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameRequest": {
+        "description": "GetCriteriaFieldListWithGuiName: Return list of the user-visible restriction columns supported by an archive provider, filtered by a specific GUI name. A filtered sub-set of GetAvailableColumns.",
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string"
+          },
+          "GuiName": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ArchiveCarriers.GetCriteriaFieldListWithGuiNameAndContextRequest": {
+        "description": "GetCriteriaFieldListWithGuiNameAndContext: Return list of the user-visible restriction columns supported by an archive provider. A filtered sub-set of GetAvailableColumns.",
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string"
+          },
+          "GuiName": {
+            "type": "string"
+          },
+          "Context": {
+            "type": "string"
           }
         }
       },

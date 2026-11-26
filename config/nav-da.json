@@ -554,7 +554,8 @@
         "root": "da/request/learn/index",
         "pages": [
           "da/request/index",
-          "da/request/learn/handle-request-ai",
+          "da/request/learn/personalize",
+          "da/request/learn/work-with-requests",
           "da/request/learn/find",
           "da/request/learn/create",
           "da/request/learn/edit-message",

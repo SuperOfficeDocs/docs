@@ -889,7 +889,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/InnerSelectionStaticPersonProvider?$select=personUdef/SuperOffice:1,personTargetRelation/personCountry,correspondingAssociate/isActive,request/suggestedCategory,request/ownedBy/contactName
+GET /api/v1/archive/InnerSelectionStaticPersonProvider?$select=personPrivate/description,personInfo/textId,personExtra/x_person_integer,personSourceRelation/personActiveErpLinks,personTargetRelation/birthMonth
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -206,7 +206,7 @@ the email_id.
 ## Sample
 
 ```http!
-GET /api/v1/archive/emailpersonaddress?$select=personCountry,personContact/postAddress/line2,personCategoryGroup
+GET /api/v1/archive/emailpersonaddress?$select=associateType,personContact/name,personContact/category
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

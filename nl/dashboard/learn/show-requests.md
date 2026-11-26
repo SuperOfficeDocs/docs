@@ -4,7 +4,7 @@ title: Verzoeken in tegels gebruiken
 description: In deze handleiding leert u hoe u een snel overzicht krijgt van alle openstaande verzoeken in SuperOffice-dashboards.
 keywords: ['dashboard', 'verzoek']
 author: digitaldiina
-date: 11.18.2026
+date: 11.25.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -14,7 +14,7 @@ related:
   - /nl/dashboard/learn/create
   - Dashboardtegels beverken: /nl/dashboard/learn/working-with-tiles
   - /nl/request/learn/create
-  - Verzoekbeheer: /nl/request/learn/index#request-mgt
+  - Werken met verzoeken: /nl/request/learn/work-with-requests
   - Verzoeken zoeken: /nl/request/learn/find
 language: nl
 ---

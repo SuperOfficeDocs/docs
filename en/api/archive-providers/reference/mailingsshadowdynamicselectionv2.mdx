@@ -65,6 +65,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |registeredDate|date|| x |
 |recordTypeText| *None* || x |
 |sortName| *None* || x |
+|sortDefault| *None* || x |
 |mailingAddr/mailingAddrId|int|| x |
 |mailingAddr/contact/contactId|int|| x |
 |mailingAddr/contact/name|stringorPK|| x |
@@ -121,12 +122,12 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/postAddress/addressId|int|| x |
 |mailingAddr/contact/postAddress/line1|string|| x |
 |mailingAddr/contact/postAddress/line2|string|| x |
-|mailingAddr/contact/postAddress/line3|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/contact/postAddress/line3|string|| x |
 |mailingAddr/contact/postAddress/county|string|| x |
 |mailingAddr/contact/postAddress/city|string|| x |
 |mailingAddr/contact/postAddress/zip|string|| x |
@@ -226,12 +227,12 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/contactExtra/x\_contact\_contact|stringorPK|| x |
 |mailingAddr/contact/contactExtra/y\_organization/x\_name|string|| x |
 |mailingAddr/contact/NumberOfActivities|int||  |
-|mailingAddr/contact/NumberOfActivitiesInPeriod|int||  |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/contact/NumberOfActivitiesInPeriod|int||  |
 |mailingAddr/contact/NumberOfNotCompletedActivities|int||  |
 |mailingAddr/contact/NumberOfNotCompletedActivitiesInPeriod|int||  |
 |mailingAddr/contact/LastActivity|date||  |
@@ -331,12 +332,12 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/searchPhone/description|string|| x |
 |mailingAddr/person/personInfo/textId|int|| x |
 |mailingAddr/person/personInfo/infoText|positiveString|| x |
-|mailingAddr/person/email/emailProtocol|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/person/email/emailProtocol|string|| x |
 |mailingAddr/person/email/emailAddress|string|| x |
 |mailingAddr/person/email/emailDescription|string|| x |
 |mailingAddr/person/email/emailId|int|| x |
@@ -436,12 +437,12 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/personAssociate/portraitThumbnail| *None* ||  |
 |mailingAddr/person/personAssociate/otherGroups|userGroup||  |
 |mailingAddr/person/personAssociate/userName|string|| x |
-|mailingAddr/person/personAssociate/personEmail|string|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|mailingAddr/person/personAssociate/personEmail|string|| x |
 |mailingAddr/person/personAssociate/locationAddress|string|| x |
 |mailingAddr/person/personAssociate/isLocation|bool|| x |
 |mailingAddr/person/correspondingAssociate/firstName|string|| x |
@@ -533,20 +534,20 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
-|emailFlow/registeredBy|associate|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|emailFlow/registeredBy|associate|| x |
 |emailFlow/registeredDate|date|| x |
 |emailFlow/workflowAssociate/firstName|string|| x |
 |emailFlow/workflowAssociate/lastName|string|| x |
@@ -646,12 +647,12 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |project/projectAssociate/ejStatus|int||  |
 |project/projectAssociate/credentialType| *None* || x |
 |project/projectAssociate/credentialDisplayValue| *None* || x |
-|project/projectAssociate/isActive|bool|| x |
 
 ## Supported Columns (cont.)
 
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectAssociate/isActive|bool|| x |
 |project/projectAssociate/isActiveText|bool|| x |
 |project/projectAssociate/portraitThumbnail| *None* ||  |
 |project/projectAssociate/otherGroups|userGroup||  |
@@ -698,7 +699,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsShadowDynamicSelectionV2?$select=mailingAddr/contact/contactSource,mailingAddr/person/personExtra/x_person_longtext,mailingAddr/person/personAssociate/userName,emailFlow/jumpToFinish
+GET /api/v1/archive/MailingsShadowDynamicSelectionV2?$select=mailingAddr/contact/saintAmountClass,mailingAddr/person/correspondingAssociate/credentialDisplayValue,mailingAddr/person/withdrawnStoreConsent,project/completed
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

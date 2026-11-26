@@ -814,7 +814,7 @@ Ticket provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindTicket?$select=ticketId,ownedBy/contactDepartment,ownedBy/role,person/ticketPriority,person/correspondingAssociate/credentialDisplayValue
+GET /api/v1/archive/FindTicket?$select=closedAt,messageLanguage,person/personAddress/state,person/personAssociate/personEmail,person/correspondingAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

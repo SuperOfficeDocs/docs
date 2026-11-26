@@ -40,11 +40,11 @@ Flow selection archive with OR-able selection groups. Each group is represented 
 |workflowDefinitionStatusId|listAny|| x |
 |jumpToFinish|bool|| x |
 |startOnlyOnce|bool|| x |
-|workflowEnrolledCount| *None* ||  |
-|workflowInProgressCount| *None* ||  |
-|workflowCompletedCount| *None* ||  |
-|workflowSucceededCount| *None* ||  |
-|workflowSuccessRate| *None* ||  |
+|workflowEnrolledCount|int|| x |
+|workflowInProgressCount|int|| x |
+|workflowCompletedCount|int|| x |
+|workflowSucceededCount|int|| x |
+|workflowSuccessRate|decimal|| x |
 |workflowLastTriggeredDate| *None* ||  |
 |updatedBy|associate|| x |
 |updatedDate|date|| x |
@@ -92,7 +92,7 @@ Flow selection archive with OR-able selection groups. Each group is represented 
 ## Sample
 
 ```http!
-GET /api/v1/archive/FlowDynamicSelectionV2?$select=workflowSuccessRate,workflowAssociate/personId
+GET /api/v1/archive/FlowDynamicSelectionV2?$select=registeredBy,workflowSuccessRate,workflowAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
