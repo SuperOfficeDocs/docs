@@ -554,7 +554,8 @@
         "root": "sv/request/learn/index",
         "pages": [
           "sv/request/index",
-          "sv/request/learn/handle-request-ai",
+          "sv/request/learn/personalize",
+          "sv/request/learn/work-with-requests",
           "sv/request/learn/find",
           "sv/request/learn/create",
           "sv/request/learn/edit-message",

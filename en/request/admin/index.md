@@ -3,7 +3,7 @@ uid: help-en-service-settings
 title: Different settings for Service
 description: System settings
 author: digitaldiina
-date: 06.10.2026
+date: 11.24.2026
 so_version: 12.0
 content_type: reference
 license: serviceessentials
@@ -42,7 +42,7 @@ In this section, you can configure the settings for Service to tailor it to your
 [6]: /en/request/admin/status/index
 [8]: /en/request/admin/system-templates
 [9]: /en/request/admin/type/index
-[7]: /en/request/learn/index#available
+[7]: /en/request/learn/personalize#available
 [10]: /en/localization/learn/customer-languages
 [11]: /en/admin/preferences/service-settings
 [12]: /en/admin/user-management/role/index

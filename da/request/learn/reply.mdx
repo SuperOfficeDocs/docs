@@ -2,9 +2,9 @@
 uid: help-da-request-reply
 title: Svar til person
 description: I denne guide lærer du, hvordan du besvarer alle indgående sager i SuperOffice.
-keywords: ['svar på sag', 'svar', 'svar til alle', 'tilføj meddelelse', 'tilføj kommentar', 'kommentar', 'intern', 'ekstern', 'sag', 'svarstatus', 'forhåndsvis vedhæftet fil', 'indsæt vedhæftet fil']
+keywords: ['svar på sag', 'svar', 'svar til alle', 'tilføj meddelelse', 'tilføj kommentar', 'kommentar', 'intern', 'ekstern', 'sag', 'svarstatus', 'forhåndsvis vedhæftet fil', 'indsæt vedhæftet fil', 'Reply Assist', 'svarforslag']
 author: digitaldiina
-date: 11.23.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -65,6 +65,23 @@ Hvis du skifter til en anden fane på Sagsskærmen, før du sender meddelelsen, 
 Statussen sættes ud fra kategoriens **Standardstatus for ny meddelelse**, hvis sagstypen tillader det. Ellers bruges den samme indstilling i dine præferencer, hvis sagstypen tillader det. Hvis ingen af dem gælder, forbliver statussen uændret. Se [rækkefølge for standardstatus][13].
 
 Hvis du vil udsætte sagen, mens du svarer, skal du sætte statussen til **Udsat** og vælge en af [udsættelsesindstillingerne][14].
+
+## Lav et udkast til svar med Reply Assist {#reply-assist}
+
+I stedet for en tom side foreslår Reply Assist et skræddersyet svar på en indgående sag. Svaret bygges ud fra dit eget CRM-indhold: tidligere sager, svarskabeloner, FAQ-poster, dokumenter og, valgfrit, webindhold.
+
+<Note>
+Reply Assist kræver [CRM Suite Plus][16] eller højere.
+</Note>
+
+1. [Åbn sagen][1].
+1. Klik på <i class="ph ph-sparkle" aria-label="Reply Assist"></i> i ikonlinjen til højre i panelet **Egenskaber for sag** for at skifte til **Reply Assist**.
+1. Klik på **Generer svar**.
+1. Gennemgå forslaget. Som med alle SuperOffice AI-funktioner gemmes eller sendes intet automatisk.
+
+![Reply Assists forslag til svar på en sag -screenshot][img10]
+
+I samme panel giver **Opsummer** dig et resumé af sagens beskeder. Se [Summary Assist][17].
 
 ## Hurtigsvar fra en forhåndsvisning {#quick-reply}
 
@@ -209,6 +226,8 @@ Den registrerede tid vises i hver meddelelsesoverskrift, og svartiden kan findes
 [13]: ../admin/status/index#default
 [14]: ./postpone
 [15]: #attachment-preview
+[16]: ../../admin/license/crm-suite#plans
+[17]: ./index#summary
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
@@ -217,3 +236,4 @@ Den registrerede tid vises i hver meddelelsesoverskrift, og svartiden kan findes
 [img7]: ../../../media/loc/en/request/request-reply-anonymise-user.png
 [img8]: ../../../media/loc/en/request/request-preview-quick-reply.png
 [img9]: ../../../media/loc/en/request/requests-reply-tools-attachment-insert-button.png
+[img10]: ../../../media/loc/en/request/reply-assist.png

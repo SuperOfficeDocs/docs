@@ -1,0 +1,164 @@
+---
+title: Arbeid med saker
+description: Få oversikt over sakene dine, arbeid med flere saker i faner, og se hvordan en sak går fra den kommer inn til den lukkes.
+keywords: ['arbeid med saker', 'fanen Oversikt', 'saksoversikt', 'forhåndsvis sak', 'forhåndsvisningspanel', 'faner', 'festede saker', 'ulagrede endringer', 'Live UI', 'lukk fane automatisk', 'sakshåndtering', 'scenarier']
+author: digitaldiina
+date: 11.25.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /no/request/learn/index
+  - /no/request/learn/personalize
+  - /no/learn/basics/overview-pages
+  - /no/request/learn/find
+  - /no/request/learn/split-request
+  - /no/learn/basics/fav
+  - /no/request/learn/spam
+language: no
+---
+
+Få oversikt over sakene dine, hold flere saker åpne samtidig, og følg en sak fra den kommer inn til du lukker den.
+
+## Få oversikt over sakene dine {#overview}
+
+Fanen **Oversikt** viser arbeidet ditt i opptil fire kolonner med sakskort. Som standard er kolonnene **Ufordelte saker**, **Egne aktive saker**, **Mine favoritter** og **Siste saker**. Hvert kort viser sakstype, saks-ID, tittel, firma og status.
+
+![Fanen Oversikt med kolonnene Ufordelte saker, Egne aktive saker og Siste saker -screenshot][img1]
+
+1. Klikk på <i class="ph ph-ticket" aria-label="Request icon"></i> **Saker** i navigatoren.
+
+1. Klikk på **Oversikt** i venstrepanelet.
+
+1. Bruk kortene til å finne sakene som trenger oppmerksomhet. Et farget merke på sakstypeikonet viser statusen. Rødt betyr at fristen er passert, grønt betyr avsluttet, og grått betyr utsatt.
+
+1. Klikk på et kort for å [forhåndsvise og oppdatere saken](#slide-in), eller dobbeltklikk på det for å åpne det i en fane.
+
+Slik jobber du med fanen **Oversikt**:
+
+* **Se flere saker:** En kolonne viser opptil 20 saker. Klikk på **Se alle saker** for å åpne hele listen eller utvalget i en fane.
+
+* **Sorter en kolonne:** Bruk sorteringsknappen for å sortere etter saks-ID, opprettelsesdato, eier, siste endring eller prioritet.
+
+* **Åpne en person eller et firma:** Klikk på navnet på et kort.
+
+* **Last fanen Oversikt på nytt:** Klikk på <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i>. En kolonne lastes også på nytt når du endrer en av sakene i samme nettleser. Endringer fra andre brukere vises ikke før du laster på nytt.
+
+Se [Tilpass saksbehandlingen][1] for å endre kolonnene eller det kortene viser.
+
+### Forhåndsvise og oppdatere en sak fra fanen Oversikt {#slide-in}
+
+1. Klikk på et kort. Saken åpnes i et panel til høyre, med de nyeste meldingene, saksdetaljene og svarknappene.
+
+1. Endre eier, status, kategori, prioritet eller emneknagger direkte i panelet.
+
+1. For å fortsette å jobbe med saken klikker du på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og deretter på **Åpne i full visning**. Velg **Fest sak** for å legge den til i gruppen **Festet**.
+
+Du kan gjøre panelet bredere eller smalere ved å peke på venstre kant og dra i prikkene som vises. Panelet lukkes når du klikker på <i class="ph ph-x" aria-label="Close icon"></i>. Det lukkes også når du forlater fanen **Oversikt** eller åpner en editor.
+
+## Arbeid med fanene i venstrepanelet {#tabs}
+
+Venstrepanelet har to grupper. **Festet** inneholder sakene og utvalgene du har festet, og **Faner** inneholder de du har åpne. Du kan ha mange saker og utvalg åpne samtidig. En fane er enten i **Faner** eller i **Festet**, aldri begge deler. Fanene dine lagres, så de er der når du logger på fra en annen nettleser. Se [Arbeid med oversiktssider][18] for hvordan venstrepanelet fungerer.
+
+For å feste en sak klikker du på nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) i toppteksten til saken. Du kan også feste en fane fra menyen til fanen. Se [Fest og løsne faner][2].
+
+![Venstrepanelet på Saksskjermen med gruppene Festet og Faner -screenshot][img2]
+
+![Menyen for en fane i gruppen Faner med alternativene Fest, Lukk, Lukk alle og Lukk alle faner unntatt denne -screenshot][img3]
+
+### Åpne en annen fane {#open-tab}
+
+Åpne en sak eller et utvalg fra venstrepanelet, fra søkedialogen eller fra en lenke i SuperOffice CRM. Det åpnes i en ny fane rett etter fanen du er på. De andre fanene forblir åpne, og hver fane beholder sitt eget usendte svar, sin egen redigeringsmodus og sin egen rulleposisjon.
+
+<Note>
+
+Du kan ha opptil 50 faner åpne, fanene i begge gruppene til sammen. Når du åpner én til, lukkes den eldste fanen automatisk.
+
+</Note>
+
+### Holde oversikt over ulagrede endringer {#unsaved}
+
+En blyant (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) på slutten av en fane betyr at saken har ulagrede endringer. For eksempel har du et usendt svar, eller du redigerer saken.
+
+Når du lukker en fane med ulagrede endringer, blir du bedt om å bekrefte. Hvis du bekrefter, forkastes endringene.
+
+### Se saker som andre jobber med eller har endret {#row-status}
+
+Hver saksfane viser ID og tittel, og personen og firmaet under.
+
+Hvis Live UI er slått på i systemet ditt, kan du se hvem andre som jobber med en sak. Et tilstedeværelsesikon erstatter sakstypeikonet mens en annen bruker ser på eller redigerer saken. Når en annen bruker har endret saken siden du åpnet den, vises et endringsikon i stedet. Hold musepekeren over ikonet for å se navnene. Hvis fanen til et utvalg eller en liste viser endringsikonet med **Arkivet kan være ute av synk**, laster du det på nytt. Merket forsvinner når du laster saken eller listen på nytt.
+
+### Lukke saksfaner automatisk {#auto-close}
+
+En saksfane lukkes av seg selv i disse situasjonene:
+
+* Saken slettes, merkes som spam eller slås sammen med en annen sak. Fanen lukkes selv om den er festet. Hvis du slår sammen fra [sakskortet][3], åpnes den gjenværende saken i stedet.
+
+* Du legger til en melding i saken, eller setter statusen til **Avsluttet**, og du har slått på den tilsvarende preferansen. Festede faner forblir åpne.
+
+Slik lukker du faner automatisk:
+
+1. Klikk på <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **Preferanser**.
+
+1. Klikk på gruppen **Sak**.
+
+1. Sett **Lukk fanen automatisk når det legges til en melding på saken** eller **Lukk fanen automatisk når du endrer saksstatus til lukket** til **Ja**.
+
+1. Klikk på **Lagre**.
+
+Faner som lukkes automatisk, ber deg aldri om å bekrefte.
+
+## Typiske scenarier {#request-mgt}
+
+Innkommende saker kan komme gjennom mange kanaler, og det er mer enn én måte å registrere og svare på dem. Hvordan saksbehandlingen foregår, vil variere fra sak til sak.
+
+Et personservicesystem handler om å gi personer svarene de er ute etter, og å lagre personinformasjonen deres. Når du svarer til en person, vil vedkommende motta en e-post fra deg. Derfor er det viktig å [opprette e-postsignaturen din][4].
+
+Ulike firmaer har ulike rutiner for saksbehandling og kan bruke SuperOffice Service på forskjellige måter. Nedenfor har vi satt opp to scenarioer fra virkeligheten som viser noen av mulighetene som finnes. Disse scenarioene viser deg hvordan du kan svare effektivt når en person har sendt inn en sak via e-post, og når en person ringer inn med et problem eller et spørsmål.
+
+![Dashbord for saker med lister over egne aktive saker og en kø for ufordelte saker. Her kan du velge en sak du vil håndtere -screenshot][img4]
+
+### Scenario 1: Personen sender inn saken via e-post
+
+1. Personen skriver en e-post til support@company.com eller fyller ut et skjema i en brukerstøtteportal.
+1. Personen mottar et [automatisk svar][14] om at henvendelsen er mottatt.
+1. Henvendelsen fra personen blir automatisk registrert som en sak i SuperOffice CRM.
+1. Saken havner hos en saksbehandler i SuperOffice CRM. Se [Fordele saker][15] og [Finne saker][16].
+1. Saksbehandleren leser gjennom saken.
+1. Saksbehandleren klarer ikke å løse saken alene og gjør ett av følgende:
+    * [Spørre en kollega][6].
+    * [Innhente hjelp utenfra.][10]
+1. Saksbehandleren [sender et svar til personen][7].
+1. Saksbehandleren [avslutter saken][12] og fortsetter med andre saker.
+
+### Scenario 2: Personen ringer til saksbehandleren
+
+1. Personen har et problem med et produkt og ringer til brukerstøtte.
+1. Saksbehandleren som svarer på telefonen, [registrerer saken][17].
+1. Saksbehandleren klarer ikke å løse saken alene og gjør ett av følgende:
+    * [Spørre en kollega][6].
+    * [Innhente hjelp utenfra.][10]
+1. Saksbehandleren [sender et svar til personen][7].
+1. Saksbehandleren [avslutter saken][12] og fortsetter med andre saker.
+
+[1]: /no/request/learn/personalize
+[2]: /no/learn/basics/overview-pages#pin-unpin
+[3]: /no/request/learn/merge
+[4]: /no/learn/getting-started/edit-email-signature
+[6]: /no/request/learn/transfer
+[7]: /no/request/learn/reply
+[10]: /no/request/learn/forward
+[12]: /no/request/learn/close
+[14]: /no/knowledge-base/learn/reply-templates/index
+[15]: /no/request/learn/assign
+[16]: /no/request/learn/find
+[17]: /no/request/learn/create
+[18]: /no/learn/basics/overview-pages
+
+[img1]: /media/loc/en/request/request-screen-overview.png
+[img2]: /media/loc/en/request/request-screen-left-panel.png
+[img3]: /media/loc/en/request/request-screen-tab-menu.png
+[img4]: /media/loc/en/request/service-dashboard.png

@@ -2,10 +2,10 @@
 title: Arbeid med oversiktssider
 sidebarTitle: "Oversiktssider"
 description: Oversiktssider kombinerer et venstrepanel med vertikale faner, utvalg i liste- eller tavlevisning og posten du jobber med.
-keywords: ['oversiktsside', 'salgsoversikt', 'landingsside', 'Sale screen', 'salgsskjerm', 'ny Salgsskjerm', 'saksskjerm', 'Oversikt', 'venstrepanel', 'vertikale faner', 'søk i faner', 'sidefelt', 'festet', 'feste', 'løsne', 'utvalg', 'tavlevisning', 'listevisning', 'filter', 'gjeldende', 'nylig', 'sist vist fane', 'active', 'active tab']
+keywords: ['oversiktsside', 'salgsoversikt', 'landingsside', 'Sale screen', 'salgsskjerm', 'ny Salgsskjerm', 'saksskjerm', 'Oversikt', 'venstrepanel', 'vertikale faner', 'søk i faner', 'sidefelt', 'festet', 'feste', 'løsne', 'utvalg', 'tavlevisning', 'listevisning', 'filter', 'gjeldende', 'nylig', 'faner', 'åpne faner', 'aktiv fane', 'søk i saker og utvalg', 'søk i salg og utvalg']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.25.2026
+so_version: 12.7
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -43,9 +43,9 @@ Oversiktssider innføres gradvis, med [Salgsskjermen][2] og [Saksskjermen][9] f�
 
 * **Klikk på en lenke til en post et sted i SuperOffice CRM.** For eksempel i tavlevisningen, et detaljkort eller sidepanelet. Posten åpnes i oversiktssiden og blir din gjeldende post.
 
-* **Klikk på knappen Ny for å opprette en post av typen skjermen er for.** Den nye posten åpnes i oversiktssiden. Når du lagrer den, åpnes den i den sist viste fanen og blir din gjeldende post.
+* **Klikk på knappen Ny for å opprette en post av typen skjermen er for.** Den nye posten åpnes i en fane i oversiktssiden. Når du lagrer den, blir den din gjeldende post.
 
-    På Saksskjermen åpnes en ny sak i en fane som heter **Ny sak**, øverst i gruppen **Aktive**. Du kan bare ha én **Ny sak**-fane åpen om gangen, og den kan ikke festes. Når du lagrer, blir fanen til den lagrede saken.
+    På Saksskjermen åpnes en ny sak i en fane som heter **Ny sak**, øverst i gruppen **Faner**. Du kan bare ha én **Ny sak**-fane åpen om gangen, og den kan ikke festes. Når du lagrer, blir fanen til den lagrede saken.
 
 ## Layout for en oversiktsside {#areas}
 
@@ -59,17 +59,19 @@ Oversiktssider innføres gradvis, med [Salgsskjermen][2] og [Saksskjermen][9] f�
 
 ### Venstrepanelet {#left-panel}
 
-Venstrepanelet viser utvalgene og postene dine som vertikale faner. Fanene er ordnet i grupper. På Salgsskjermen er gruppene **Utvalg** og **Salg**. På Saksskjermen er **Utvalg** og **Saker** seksjoner, og hver seksjon har en gruppe **Aktive** og en gruppe **Festet**.
+Venstrepanelet viser utvalgene og postene dine som vertikale faner, i to grupper:
 
-![Venstrepanelet med gruppene Utvalg og Salg -screenshot][img2]
+* **Festet:** Utvalgene og postene du har festet. Gruppen vises over **Faner** når du fester den første fanen.
 
-Hver gruppe kan ha én sist vist fane og så mange festede faner du vil. Den sist viste fanen ligger direkte under gruppeoverskriften og har ingen etikett. Den inneholder utvalget eller posten du åpnet sist som ikke er festet, og den erstattes når du åpner et annet utvalg eller en annen post som ikke er festet. Når du åpner en festet fane, blir den ikke erstattet.
+* **Faner:** Utvalgene og postene du har åpne. Du kan ha flere åpne samtidig.
 
-Festede faner står under overskriften **Festet**, som viser antall festede faner. Velg overskriften for å skjule eller vise listen. Festede faner blir stående til du lukker dem og sorteres ikke automatisk, så bruk **Søk i faner** for å finne den du vil ha. Dra og slipp faner for å ordne dem manuelt, eller for å flytte en fane mellom den sist viste fanen og listen over festede faner.
+![Venstrepanelet med gruppene Festet og Faner -screenshot][img2]
 
 Klikk på et fanenavn for å åpne det i hovedområdet. Fanen for utvalget eller posten som vises i hovedområdet, er uthevet.
 
-På Saksskjermen kan en gruppe **Aktive** inneholde flere faner i stedet for én sist vist fane. Se [Arbeid med fanene i venstrepanelet][11].
+Festede faner blir stående til du lukker dem. Klikk på en gruppeoverskrift for å skjule eller vise fanene i gruppen. Dra og slipp faner for å ordne dem.
+
+På Saksskjermen står **Oversikt**, **Finn sak** og **Nevnelser** over gruppene. Se [Arbeid med fanene i venstrepanelet][11] for mer om saksfaner.
 
 ### Vise eller skjule venstrepanelet {#collapse}
 
@@ -77,15 +79,15 @@ På Saksskjermen kan en gruppe **Aktive** inneholde flere faner i stedet for én
 
 1. Klikk på veksleknappen (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) igjen for å vise panelet. Panelet åpnes ikke når du holder musepekeren over det.
 
-Når panelet er skjult, klikker du på ikonet for en gruppe for å åpne menyen **Flere alternativer**, med et søkefelt og dine sist viste og festede faner. På Saksskjermen viser menyen dine aktive og festede faner. Det skjulte panelet har også knapper for søkefeltet, fanen **Oversikt**, Finn sak og [Nevnelser][12].
+Når panelet er skjult, viser det i stedet en kolonne med knapper, med søkefeltet først. På Saksskjermen har det også knapper for fanen **Oversikt**, Finn sak og [Nevnelser][12].
 
-![Det skjulte venstrepanelet med et ikon for søkefeltet og ett ikon for hver gruppe -screenshot][img7]
+![Det skjulte venstrepanelet med knapper for søkefeltet og fanene -screenshot][img7]
 
 Sidepanelet har også en knapp for å vise og skjule det, øverst til høyre på skjermen. Det samme ikonet brukes for navigatoren, venstrepanelet og sidepanelet.
 
 ## Start fra fanen Oversikt {#overview}
 
-Skjermer som har en fane **Oversikt** i venstrepanelet, for eksempel Saksskjermen, starter der. Salgsskjermen har ingen fane Oversikt. Fanen **Oversikt** viser arbeidet ditt med et blikk, og derfra åpner du det du vil jobbe med.
+Skjermer som har en fane **Oversikt** i venstrepanelet, for eksempel Saksskjermen, starter der. Salgsskjermen har ingen fane **Oversikt**. Fanen **Oversikt** viser arbeidet ditt med et blikk, og derfra åpner du det du vil jobbe med.
 
 1. Klikk på **Oversikt** i venstrepanelet. Fanen **Oversikt** åpnes i hovedområdet.
 
@@ -103,8 +105,8 @@ Bruk ikonene øverst i dialogboksen for å bytte mellom tre visninger:
 
 | Ikon | Visning | Beskrivelse |
 |:-:|---|---|
-| <i class="ph ph-clock" aria-label="Klokke-ikon"></i> | **[Historikk][6]** | Viser standardutvalgene dine først, og deretter salgene og utvalgene du har åpnet nylig. Dialogboksen åpnes i denne visningen. |
-| <i class="ph ph-star" aria-label="Stjerne-ikon"></i> | **[Favoritter][3]** | Viser utvalgene og salgene du har merket som favoritter. |
+| <i class="ph ph-clock" aria-label="Klokke-ikon"></i> | **[Historikk][6]** | Viser postene og utvalgene du har åpnet nylig, hver type under sin egen overskrift. På Saksskjermen kommer standardlistene først. Dialogboksen åpnes i denne visningen. |
+| <i class="ph ph-star" aria-label="Stjerne-ikon"></i> | **[Favoritter][3]** | Viser postene og utvalgene du har merket som favoritter. |
 | <i class="ph ph-magnifying-glass" aria-label="Forstørrelsesglass-ikon"></i> | **Søk** | Viser søkeresultatene fra det siste søket. |
 
 Slik finner og åpner du et utvalg eller en post:
@@ -115,17 +117,7 @@ Slik finner og åpner du et utvalg eller en post:
 
 1. Velg utvalget eller posten du vil åpne i hovedområdet.
 
-### Finne en fane du allerede har åpen
-
-For å søke bare i fanene i én gruppe, for eksempel fanene i **Utvalg** eller **Salg**:
-
-1. Klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) ved siden av gruppeoverskriften.
-
-1. Skriv inn tekst i **Søk i faner** for å begrense listen.
-
-1. Velg en fane for å åpne den.
-
-![Menyen for gruppen Salg med feltet Søk i faner og fanene i gruppen -screenshot][img5]
+Søkefeltet finner også fanene du allerede har åpne eller festet.
 
 ## Fest og løsne faner {#pin-unpin}
 
@@ -139,33 +131,45 @@ Festede faner er atskilt fra [favorittene dine][3].
 
 ### Feste en fane {#pin}
 
-1. Hold musepekeren over den sist viste fanen eller en aktiv fane.
+1. Hold musepekeren over en fane i gruppen **Faner**, og klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer).
 
-1. Velg nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), eller klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og deretter **Fest**.
+1. Klikk på **Fest**.
 
-Fanen flyttes øverst i listen over festede faner.
+Fanen flyttes til slutten av gruppen **Festet**.
+
+På Saksskjermen kan du også klikke på nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) i toppteksten til saken.
+
+![Menyen for en fane i gruppen Faner med alternativene Fest, Lukk, Lukk alle og Lukk alle faner unntatt denne -screenshot][img8]
 
 ### Lukke en fane {#close}
 
-1. Hold musepekeren over fanen. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) vises, og en festet fane viser også <i class="ph ph-x" aria-label="Close icon"></i>.
+1. Hold musepekeren over fanen. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og <i class="ph ph-x" aria-label="Close icon"></i> vises.
 
-1. Velg <i class="ph ph-x" aria-label="Close icon"></i>, eller klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og velg et alternativ.
+1. Klikk på <i class="ph ph-x" aria-label="Close icon"></i> for å lukke fanen, eller klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og velg et alternativ.
 
-    * **Lukk:** Lukker den sist viste fanen. På Saksskjermen lukker den den aktive fanen.
+    For en fane i gruppen **Faner**:
+
+    * **Lukk:** Lukker fanen.
+
+    * **Lukk alle:** Lukker alle fanene i gruppen **Faner**.
+
+    * **Lukk alle faner unntatt denne:** Lukker alle fanene i gruppen **Faner** unntatt denne.
+
+    For en fane i gruppen **Festet**:
 
     * **Løsne og lukk:** Lukker den festede fanen.
 
-    * **Løsne og lukk alle:** Lukker alle festede faner i gruppen.
+    * **Løsne og lukk alle:** Lukker alle festede faner.
 
-    * **Løsne og lukk alle unntatt denne:** Lukker alle festede faner i gruppen unntatt denne.
+    * **Løsne og lukk alle unntatt denne:** Lukker alle festede faner unntatt denne.
 
 ![Menyen for en festet fane med alternativene Løsne og lukk, Løsne og lukk alle og Løsne og lukk alle unntatt denne -screenshot][img3]
 
-Når du lukker fanen som er åpen, åpnes den neste fanen: den under i listen over festede faner, eller den over hvis det ikke er noen under. Når du lukker den sist viste fanen, åpnes den første festede fanen.
+Når du lukker fanen du står på, åpnes fanen ved siden av.
 
 ## Utvalg {#selections}
 
-Når du velger et utvalg i venstrepanelet, åpnes det i visningen du brukte sist.
+Når du velger et utvalg i venstrepanelet, åpnes det i hovedområdet i visningen du brukte sist.
 
 ### Endre hvordan du ser et utvalg
 
@@ -183,13 +187,13 @@ Alle funksjonene i tavlevisning, som å dra kort mellom kolonner, oppgavemenyer 
 
 <Note>
 
-Knappene **Rediger** og **Oppgave** er ikke tilgjengelige på oversiktssiden. For å redigere selve utvalget eller bruke disse knappene holder du musepekeren over utvalgsfanen, klikker på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og deretter på **Åpne i utvalgspanelet**. Utvalget åpnes i Utvalgsskjermen, som om du hadde valgt **Utvalg** i [Navigatoren][7] og valgt utvalget.
+Knappene **Rediger** og **Oppgave** er ikke tilgjengelige på oversiktssiden. For å redigere selve utvalget eller bruke disse knappene holder du musepekeren over utvalgsfanen, klikker på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer) og deretter på **Åpne i utvalgspanelet**. Utvalget åpnes i Utvalgsskjermen, som om du hadde valgt **Utvalg** i [navigatoren][7] og valgt utvalget.
 
 </Note>
 
 ### Vise datasettet til et utvalg
 
-1. Hold musepekeren over utvalgsfanen, sist vist eller festet.
+1. Hold musepekeren over utvalgsfanen.
 
 1. Klikk på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Flere alternativer), og deretter **Vis datasett**. Datasettet til utvalget vises.
 
@@ -197,11 +201,11 @@ Knappene **Rediger** og **Oppgave** er ikke tilgjengelige på oversiktssiden. Fo
 
 ### Åpne en post fra et utvalg
 
-1. I tavlevisning dobbeltklikker du på et kort eller velger tittelen. Posten åpnes i hovedområdet Hvis posten ikke er festet, vises den i den sist viste fanen i venstrepanelet. Hvis den er festet, er den festede fanen uthevet.
+1. I tavlevisning dobbeltklikker du på et kort eller velger tittelen. Posten åpnes i hovedområdet. Hvis du allerede har den åpen eller festet, er fanen uthevet. Ellers åpnes den i en ny fane i gruppen **Faner**.
 
 1. For å gå tilbake til utvalget velger du det i venstrepanelet. Du kan også bruke knappene Tilbake (<i class="ph ph-caret-circle-left" aria-label="Back"></i>) og Fremover (<i class="ph ph-caret-circle-right" aria-label="Forward"></i>) eller knappen [Nylig navigasjon][8] (<i class="ph ph-clock" aria-label="Recent navigation"></i>) i toppfeltet. Det går raskere enn å huske hvilket utvalg du så på.
 
-Hvis du velger et kort for å forhåndsvise det i sidepanelet, endres ikke den sist viste fanen.
+Hvis du velger et kort for å forhåndsvise det i sidepanelet, åpnes ingen fane.
 
 [1]: /no/learn/getting-started/main-screen/side-panel
 [2]: /no/sale/learn/index
@@ -211,14 +215,14 @@ Hvis du velger et kort for å forhåndsvise det i sidepanelet, endres ikke den s
 [7]: /no/learn/getting-started/main-screen/navigator
 [8]: /no/learn/basics/recent-navigation
 [9]: /no/request/learn/index#request-screen
-[10]: /no/request/learn/index#overview
-[11]: /no/request/learn/index#tabs
+[10]: /no/request/learn/work-with-requests#overview
+[11]: /no/request/learn/work-with-requests#tabs
 [12]: /no/request/learn/mentions
 
 [img1]: /media/loc/en/learn/overview-page-areas.png
 [img2]: /media/loc/en/learn/left-panel.png
 [img3]: /media/loc/en/learn/unpin-sale.png
 [img4]: /media/loc/en/learn/selection-menu.png
-[img5]: /media/loc/en/learn/sale-search-in-tabs.png
 [img6]: /media/loc/en/learn/search-in-sales.png
 [img7]: /media/loc/en/learn/left-panel-hidden.png
+[img8]: /media/loc/en/learn/tab-menu.png
