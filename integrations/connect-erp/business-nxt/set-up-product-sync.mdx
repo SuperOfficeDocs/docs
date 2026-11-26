@@ -1,0 +1,53 @@
+---
+title: Set up product sync
+description: How to configure the product synchronization from Visma Business NXT into SuperOffice CRM.
+keywords: ['ConnectERP', 'Business NXT', 'price list', 'DataBridge', 'value mapping', 'Visma Business NXT', 'inventory', 'products']
+author: marcelspapens
+date: 11.25.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related: false
+language: en
+userflow_index: true
+---
+
+<Note>
+Product sync is available only in **CRM Suite Growth and higher**. Skip these steps for Core.
+</Note>
+
+Product sync synchronizes the Business NXT product catalog into the SuperOffice price list once per day. It only processes the products that changed since the previous run, and it skips products that have a price of zero. This makes sure that quote lines created in SuperOffice can resolve to a Business NXT product when the quote is sent to Business NXT.
+
+## Import the product sync integration
+
+### Integration 5: Business NXT Product Sync (Daily)
+
+The source of this integration is Business NXT, so it doesn't need a SuperOffice selection.
+
+1. Download and unzip *databridge-integrations-business-nxt.zip* from the [Downloads][1] section in Requirements.
+1. In DataBridge, import the *Business NXT Product Sync (Daily).ndb* file.
+1. Click **Connect** on the source side, log in to Business NXT, and accept the information on screen.
+1. Back in DataBridge, select your Business NXT company (administration) and click **Next**.
+1. In the **Source** tab, check that data from Business NXT is shown in the preview.
+1. In the **Data** tab, verify the fields and make sure there are no error messages.
+1. Edit the **transformations** for:
+    * VAT percentage
+    * Price list
+    * Price unit
+    * Product category and product type
+
+    Match these values to the lists configured in SuperOffice (as prepared in the [value mappings][2]).
+1. In the **Destination** tab, check the **Default values** section on the **Price list** and **Product** tabs, and select a value for each field.
+1. In the **Process** tab, verify the schedule and set **Start on** to a future date, so that the job doesn't start immediately after you save.
+1. Click **Save**.
+1. **Disable the integration immediately**. You'll enable it in [Verify and finalize][3].
+
+## Next step
+
+Continue with [Set up order sync][4].
+
+[1]: ./requirements#downloads
+[2]: ./plan-the-integration#value-mappings
+[3]: ./verify-finalize
+[4]: ./set-up-order-sync

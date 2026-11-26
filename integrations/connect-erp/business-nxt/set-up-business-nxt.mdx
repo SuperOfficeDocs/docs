@@ -1,0 +1,39 @@
+---
+title: Set up Business NXT
+description: Business NXT preparations required before setting up the ConnectERP integration in SuperOffice.
+keywords: ['ConnectERP', 'Business NXT', 'integration user', 'access groups', 'Visma Connect', 'company', 'administration', 'Visma Business NXT', 'prerequisites']
+author: marcelspapens
+date: 11.25.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related: false
+language: en
+userflow_index: true
+---
+
+Complete these steps in Business NXT before you configure SuperOffice. They are one-time preparations that apply to all CRM Suites.
+
+## 1. Prepare the integration user
+
+Prepare a Business NXT user account for the integration, and give it the access groups **Standard** and **System**.
+
+<Warning>
+Don't use a personal user account. If that employee leaves, the integration breaks.
+
+Use a neutral name such as *SuperOffice Integration* for this account, so it's clearly identifiable in Business NXT.
+</Warning>
+
+You use this user to log in to Business NXT from DataBridge and from Panels for SuperOffice. The login goes through Visma Connect.
+
+## 2. Choose the Business NXT company
+
+Business NXT organizes the data per company (administration). When you import the DataBridge integrations and when you add the panels, you log in to Business NXT and then select the company that the integration connects to. Decide which company this is before you start, and keep the name with the other values for the setup, such as the value mappings from [Plan the integration][1].
+
+## Next step
+
+Continue with [Set up company sync][2].
+
+[1]: ./plan-the-integration#value-mappings
+[2]: ./set-up-company-sync

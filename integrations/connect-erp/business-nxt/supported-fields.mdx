@@ -1,0 +1,1032 @@
+---
+title: Supported fields for Business NXT
+sidebarTitle: Supported fields
+description: The Business NXT fields that DataBridge supports for export from and import into Visma Business NXT, per entity.
+keywords: ['ConnectERP', 'Business NXT', 'Visma Business NXT', 'fields', 'DataBridge', 'export', 'import', 'customer', 'supplier', 'associate', 'product', 'order']
+author: marcelspapens
+date: 11.25.2026
+content_type: reference
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related:
+  - /integrations/connect-erp/business-nxt/plan-the-integration
+  - /integrations/connect-erp/business-nxt/troubleshooting
+language: en
+userflow_index: true
+---
+
+This page lists the Business NXT fields that DataBridge supports. You choose which of these fields to use when you configure a DataBridge integration.
+
+* **Export:** Business NXT is the source. DataBridge reads the fields from Business NXT and writes them to SuperOffice.
+* **Import:** Business NXT is the destination. DataBridge writes the fields to Business NXT.
+
+<Note>
+DataBridge loads the field names from your Business NXT environment. Where Visma publishes a label, this page uses it. For the other fields, this page gives a readable form of the field name, so the label in DataBridge can differ slightly.
+</Note>
+
+## Entities per direction {#entities}
+
+| Entity | Export | Import |
+|---|---|---|
+| Customer | Yes | Yes |
+| Supplier | Yes | Yes |
+| Associate | Yes | Yes |
+| Contact | Yes | Yes |
+| Product | Yes | No |
+| Product price and discount matrix | Yes | No |
+| Order | Yes | Yes |
+| Order line | Yes | Yes |
+| Organizational unit | Yes | Yes |
+
+### How the entities relate {#entity-composition}
+
+In Business NXT, an associate is the generic base entity for customers, suppliers, and contacts. The customer, supplier, associate, and contact entities share many fields, so the list shows these fields once.
+
+For import, the fields of **Associate, Customer and Supplier** apply to all three entities. **Contact** has its own fields.
+
+For export, the fields combine as follows:
+
+* **Customer:** the common fields plus the customer fields.
+* **Supplier:** the common fields plus the supplier fields.
+* **Associate:** the common fields plus the customer fields, the supplier fields, and **Our customer/supplier no.**
+* **Contact:** the common fields plus **Contact for**.
+
+For customers, suppliers, and associates, you can also include the contact fields. For contacts, you can include the fields of the linked customer and supplier.
+
+The **Product price and discount matrix** is a subentity of Product, and DataBridge exports only the list prices from it. **Order line** is a subentity of Order.
+
+An **organizational unit** entity exists for each unit that your Business NXT environment has configured, from 1 to 12. DataBridge shows each one under its own name, for example the name of your department or project. The list shows these units as one entity. For import, the unit number is a text field and required for units 7 to 12.
+
+## Fields per entity {#fields}
+
+Select the **Export** or **Import** tab, and find the entity. Each table lists the fields of one entity, grouped by field group. To find a field on this page, use the search of your browser (Ctrl+F) or the search of this site.
+
+In the field names, a slash and a plus stand for related fields:
+
+* **Address line 1-4** stands for a series of four fields.
+* **Required delivery date/week** stands for the two fields Required delivery date and Required delivery week.
+* **Incoming invoice proposed order total net/VAT amount/order total gross (val.)** stands for three separate fields.
+* **Price (val./dom./EUR)** stands for the price in the currency of the order (val.), in the domestic currency (dom.), and in euro (EUR).
+* **Net weight (+ per unit)** stands for the net weight and the net weight per unit.
+* **[Unit name] no.** stands for the number of an organizational unit, shown under the name that you gave the unit in Business NXT.
+
+In the import tables, the **Remark** column shows **Required** for a field that Business NXT needs to create a record.
+
+<Tabs>
+<Tab title="Export">
+
+### Customer, Supplier, Associate and Contact {#export-customer-supplier-associate-and-contact}
+
+| Field group | Field |
+|---|---|
+| General | Associate no. |
+| General | Name |
+| General | Short name |
+| General | Title |
+| General | Birth date |
+| General | Private person |
+| General | Person ID |
+| General | Organisation no. |
+| General | VAT reg. no. |
+| General | VAT registered |
+| General | Your ref. |
+| General | Contracting buyer's reference |
+| General | CRM ID |
+| General | Source no. |
+| General | External ID |
+| General | Changed externally |
+| General | User name |
+| General | Information category |
+| General | Sector |
+| General | District |
+| General | No. of employees |
+| General | Turnover |
+| General | Trade area |
+| General | Exempt from special tax |
+| General | Language no. |
+| General | Currency no. |
+| General | Currency no. 2 |
+| General | From date |
+| General | To date |
+| Address | Address line 1-4 |
+| Address | Post code |
+| Address | Postal area |
+| Address | Visiting post code |
+| Address | Visiting postal area |
+| Address | Country no. |
+| Contact details | E-mail address |
+| Contact details | Phone |
+| Contact details | Private phone |
+| Contact details | Mobile phone |
+| Contact details | Pager |
+| Contact details | Fax 1 |
+| Contact details | Fax 2 |
+| Contact details | Web page 1 |
+| Contact details | Web page 2 |
+| Related associates | Send to associate no. |
+| Related associates | Send in to associate no. |
+| Related associates | Ship to associate no. |
+| Related associates | Main associate no. |
+| Responsible and organization | Seller |
+| Responsible and organization | Buyer |
+| Responsible and organization | Official |
+| Responsible and organization | Approval official |
+| Responsible and organization | Org. unit 1-12 |
+| Groups and information | Group 1-12 |
+| Groups and information | Information 1-8 |
+| Credit | Credit limit |
+| Credit | Credit denied |
+| Credit | Credit evaluation |
+| Credit | Max. % of credit overdue |
+| Credit | Max. days overdue |
+| Credit | Credit note due days |
+| Credit | Credit card reservation addition |
+| Delivery and logistics | Delivery priority |
+| Delivery and logistics | Administration time |
+| Delivery and logistics | Lead time |
+| Delivery and logistics | Transport time |
+| Delivery and logistics | Total lead time |
+| Delivery and logistics | Production time |
+| Delivery and logistics | Transport agreement no. |
+| Delivery and logistics | Ton rate |
+| Delivery and logistics | Delivery note interval |
+| Delivery and logistics | Last delivery note date |
+| Delivery and logistics | Document delivery method 1-2 |
+| Banking and payment | Factoring no. |
+| Banking and payment | Factoring company no. |
+| Banking and payment | Bank account |
+| Banking and payment | Bank no. |
+| Banking and payment | Bank branch |
+| Banking and payment | Bank partner no. |
+| Banking and payment | IBAN |
+| Banking and payment | Swift code |
+| Banking and payment | Swift address 1-4 |
+| Banking and payment | Postal giro |
+| Banking and payment | Giro type |
+| Banking and payment | Giro no. check sum |
+| Banking and payment | Outlay account no. |
+| Banking and payment | Client responsible account no. 1-3 |
+| Banking and payment | Remittance priority |
+| Direct debit | Direct debiting from date |
+| Direct debit | Direct debiting to date |
+| Direct debit | Direct debiting status |
+| Direct debit | Max. direct debiting amount |
+| Direct debit | Direct debit message |
+| Reminders and interest | Max. no. of reminders |
+| Reminders and interest | Last reminder date |
+| Reminders and interest | No. of reminders sent |
+| Reminders and interest | Reminder printing date |
+| Reminders and interest | Reminder fee |
+| Reminders and interest | Interest rate |
+| Reminders and interest | Interest rate group |
+| Reminders and interest | Interest fee |
+| EFT | EFT separator |
+| EFT | EFT currency code |
+| EFT | EFT bank fee code |
+| EFT | EFT declaration code |
+| EFT | EFT payment method |
+| EFT | EFT form type |
+| EFT | External export grouping |
+| AutoInvoice and e-business | AutoInvoice operator no. |
+| AutoInvoice and e-business | AutoInvoice e-mail address |
+| AutoInvoice and e-business | AutoInvoice endpoint ID |
+| AutoInvoice and e-business | AutoInvoice endpoint scheme |
+| AutoInvoice and e-business | EAN loc. code |
+| AutoInvoice and e-business | E-business processing |
+| AutoInvoice and e-business | E-mail template group |
+| AutoInvoice and e-business | SMS provider |
+| AutoInvoice and e-business | Form ID |
+| AutoInvoice and e-business | Invoice note text no. |
+| AutoInvoice and e-business | Accounting cost |
+| AutoInvoice and e-business | Incoming invoice deviation tolerance % |
+| AutoInvoice and e-business | Incoming invoice deviation tolerance amount |
+| Pricing | Employee price group |
+| Pricing | Sales price addition |
+| Time and workflow | Time system user |
+| Time and workflow | Time zone |
+| Time and workflow | Normal time discrepancy |
+| Time and workflow | Time schedule group no. |
+| Time and workflow | Flow group |
+| Time and workflow | Attestation amount limit |
+| Time and workflow | Appointment flow balance |
+| Time and workflow | User in Zpider |
+| Time and workflow | Encryption key |
+| Time and workflow | Associate processing 1-2 |
+| Time and workflow | Associate template |
+| Memo and picture | Memo file name |
+| Memo and picture | Memo no. |
+| Memo and picture | Picture file name |
+| Country, language, and currency names | Country ISO code |
+| Country, language, and currency names | Country name |
+| Country, language, and currency names | Language name |
+| Country, language, and currency names | Currency ISO code |
+| Country, language, and currency names | Currency name |
+| Change log | Changed date |
+| Change log | Changed time |
+| Change log | Change time in ms |
+| Change log | Changed by user |
+| Change log | Created date |
+| Change log | Created time |
+| Change log | Created by user |
+| Change log | Edit status |
+| Change log | Locked by process no. |
+
+### Customer and Associate {#export-customer-and-associate}
+
+| Field group | Field |
+|---|---|
+| General | Customer no. |
+| General | Previously customer no. |
+| General | New customer no. |
+| General | Invoice customer no. |
+| General | Customer preferences 1-2 |
+| Pricing and discounts | Customer price group 1-3 |
+| Pricing and discounts | Total discount % customer |
+| Accounting and payment | General ledger account no. customer |
+| Accounting and payment | Account set customer |
+| Accounting and payment | Tax code customer |
+| Accounting and payment | Payment terms customer |
+| Accounting and payment | Payment method customer |
+| Accounting and payment | Cross account no. customer |
+| Accounting and payment | Matching method customer |
+| Delivery | Warehouse no. customer |
+| Delivery | Delivery method customer |
+| Delivery | Delivery terms customer |
+| Balance | Customer current balance - Outstanding amount |
+| Balance | Customer current balance - Number of open entries |
+
+### Supplier and Associate {#export-supplier-and-associate}
+
+| Field group | Field |
+|---|---|
+| General | Supplier no. |
+| General | Supplier no. series |
+| General | Previously supplier no. |
+| General | New supplier no. |
+| General | Supplier preferences 1-2 |
+| Pricing and discounts | Total discount % supplier |
+| Pricing and discounts | Price from supplier no. |
+| Accounting and payment | General ledger account no. supplier |
+| Accounting and payment | Account set supplier |
+| Accounting and payment | Tax code supplier |
+| Accounting and payment | Payment terms supplier |
+| Accounting and payment | Payment method supplier |
+| Accounting and payment | Cross account no. supplier |
+| Accounting and payment | Matching method supplier |
+| Accounting and payment | Remittance supplier no. |
+| Delivery | Warehouse no. supplier |
+| Delivery | Delivery method supplier |
+| Delivery | Delivery terms supplier |
+| Balance | Supplier current balance - Outstanding amount |
+| Balance | Supplier current balance - Number of open entries |
+
+### Associate {#export-associate}
+
+| Field group | Field |
+|---|---|
+| General | Our customer/supplier no. |
+
+### Contact {#export-contact}
+
+| Field group | Field |
+|---|---|
+| General | Contact for |
+
+### Product {#export-product}
+
+| Field group | Field |
+|---|---|
+| General | Product no. |
+| General | Description |
+| General | Product type 1-4 |
+| General | Product category no. 1-6 |
+| General | Visma ID |
+| General | Plan type |
+| General | Product is structure head |
+| General | Suspended |
+| General | Free 1-4 |
+| Identification and related products | EAN item no. |
+| Identification and related products | UNSPSC no. |
+| Identification and related products | Template product no. |
+| Identification and related products | Replacement product no. |
+| Identification and related products | Previously product no. |
+| Identification and related products | New product no. |
+| Responsible and organization | Official 1-2 |
+| Responsible and organization | Buyer |
+| Responsible and organization | Org. unit 1-12 |
+| Groups and information | Group 1-12 |
+| Groups and information | Group separators |
+| Groups and information | Information 1-8 |
+| Pricing and accounting | Tax and accounting group |
+| Pricing and accounting | Product price group 1-3 |
+| Pricing and accounting | Required margin |
+| Pricing and accounting | Cost price addition % |
+| Pricing and accounting | Price unit |
+| Pricing and accounting | Price quantity |
+| Pricing and accounting | Rounding amount |
+| Pricing and accounting | Exchange quantity |
+| Pricing and accounting | Payroll sort |
+| Pricing and accounting | Payroll rate no. |
+| Units and stock | Default sales units |
+| Units and stock | Stock measure |
+| Units and stock | Quantity per unit |
+| Units and stock | Factor 3 |
+| Units and stock | From |
+| Units and stock | To |
+| Units and stock | Normal warehouse no. |
+| Units and stock | Next serial no. |
+| Units and stock | Period key no. |
+| Dimensions and weight | Net weight |
+| Dimensions and weight | Tare |
+| Dimensions and weight | Gross weight |
+| Dimensions and weight | Volume |
+| Dimensions and weight | Length |
+| Dimensions and weight | Width |
+| Dimensions and weight | Height |
+| Dimensions and weight | Area |
+| Dimensions and weight | Density |
+| Customs and statistics | Customs statistics no. |
+| Customs and statistics | EU goods stat. no. |
+| Customs and statistics | Source country |
+| Processing | Processing method 1 |
+| Processing | Processing method 1b |
+| Processing | Processing method 1c |
+| Processing | Processing method 2 |
+| Processing | Processing method 2b |
+| Processing | Processing method 2c |
+| Processing | Processing method 3 |
+| Processing | Processing method 3b |
+| Processing | Processing method 3c |
+| Processing | Processing method 4 |
+| Processing | Processing method 4b |
+| Processing | Processing method 4c |
+| Processing | Processing method 5 |
+| Processing | Processing method 5b |
+| Processing | Processing method 5c |
+| Processing | Processing method 6 |
+| Processing | Processing method 7 |
+| Processing | Processing method 8 |
+| Processing | Transaction type |
+| Processing | Transaction information 1-4 |
+| Web and documents | Show on web |
+| Web and documents | Web page |
+| Web and documents | Scan document no. |
+| Web and documents | Scan status |
+| Web and documents | Incoming document no. |
+| Web and documents | Memo file name |
+| Web and documents | Memo no. |
+| Web and documents | Picture file name |
+| Change log | Changed date |
+| Change log | Changed time |
+| Change log | Change time in ms |
+| Change log | Changed by user |
+| Change log | Created date |
+| Change log | Created time |
+| Change log | Created by user |
+| Change log | Edit status |
+| Change log | Locked by process no. |
+
+### Product price and discount matrix {#export-product-price-and-discount-matrix}
+
+| Field group | Field |
+|---|---|
+| General | Line no. |
+| Sales prices | Sales price 1 (val./EUR) |
+| Sales prices | Sales price basis (val.) |
+| Sales prices | Sales price addition |
+| Purchase and cost prices | Purchase price (val./EUR) |
+| Purchase and cost prices | Cost price (val.) |
+| Purchase and cost prices | Compensation price (val./EUR) |
+| Purchase and cost prices | Hire price (val./EUR) |
+| Discounts | Sales discount amount 1 (val./EUR) |
+| Discounts | Sales discount % 1 |
+| Currency | Price Currency no./ISO code/name |
+| Currency | Cost Currency no./ISO code/name |
+
+### Order {#export-order}
+
+| Field group | Field |
+|---|---|
+| General | Order no. |
+| General | Main order no. |
+| General | Order type |
+| General | Order basis no. |
+| General | Order date |
+| General | Order week |
+| General | Label |
+| General | Order preferences |
+| General | Order status 1-2 |
+| General | Web page |
+| General | Free 1-4 |
+| Customer and contacts | Customer no. |
+| Customer and contacts | Supplier no. |
+| Customer and contacts | Invoice customer no. |
+| Customer and contacts | Name |
+| Customer and contacts | Contact |
+| Customer and contacts | Contact 2 |
+| Customer and contacts | Language no. |
+| Address | Address line 1-4 |
+| Address | Post code |
+| Address | Postal area |
+| Address | Country no. |
+| References | Our ref. |
+| References | Your ref. |
+| References | Requisition no. |
+| References | Cust/Suppl. order no. |
+| Responsible and organization | Seller/buyer |
+| Responsible and organization | Official |
+| Responsible and organization | Employee no. |
+| Responsible and organization | Org. unit 1-12 |
+| Responsible and organization | Finished by |
+| Classification | Information 1-6 |
+| Classification | Group 1-12 |
+| Classification | Transaction type |
+| Classification | Transaction group 1-4 |
+| Pricing and tax | Order price group |
+| Pricing and tax | Customer price group 1-3 |
+| Pricing and tax | Employee price group |
+| Pricing and tax | Payroll rate no. |
+| Pricing and tax | Total disc. % |
+| Pricing and tax | Tax code |
+| Pricing and tax | Trade area |
+| Pricing and tax | Exempt from special tax |
+| Pricing and tax | Account set |
+| Pricing and tax | Sales price addition |
+| Pricing and tax | Price in % of cost |
+| Pricing and tax | Price from supplier no. |
+| Pricing and tax | Deviate product no. |
+| Processing and status | Edit status |
+| Processing and status | Locked or transferred |
+| Processing and status | Locked by process no. |
+| Processing and status | Exclude processing or output |
+| Processing and status | Test result |
+| Processing and status | Ignore test result |
+| Processing and status | EDI status |
+| Processing and status | Capital asset processing |
+| Processing and status | Capital asset no. |
+| Processing and status | Period key no. |
+| Delivery | Delivery associate no. |
+| Delivery | Ship to associate no. |
+| Delivery | Delivery name |
+| Delivery | Delivery address 1-4 |
+| Delivery | Delivery post code |
+| Delivery | Delivery postal area |
+| Delivery | Delivery visiting post code |
+| Delivery | Delivery visiting postal area |
+| Delivery | Delivery country no. |
+| Delivery | Delivery language no. |
+| Delivery | Warehouse no. |
+| Delivery | Transfer to warehouse no. |
+| Delivery | Delivery terms |
+| Delivery | Delivery method |
+| Delivery | Delivery priority |
+| Delivery | Freight 1-4 |
+| Delivery | Freight processing |
+| Delivery | Customs |
+| Delivery | Transport agreement no. |
+| Delivery | Ton rate |
+| Delivery | Pack units |
+| Delivery | Consignment no. |
+| Weight and volume | Net weight |
+| Weight and volume | Tare |
+| Weight and volume | Gross weight |
+| Weight and volume | Gross weight total |
+| Weight and volume | Gross weight ready for consignment note |
+| Weight and volume | Gross weight on consignment note |
+| Weight and volume | Finished weight |
+| Weight and volume | Length |
+| Weight and volume | Area |
+| Weight and volume | Volume |
+| Weight and volume | Quantity in basis unit |
+| Dates | Required delivery date/week |
+| Dates | Confirmed delivery date/week |
+| Dates | Original confirmed delivery date/week |
+| Dates | Due date/week |
+| Dates | Settlement date/week |
+| Dates | Invoice date/week |
+| Dates | Expected return date/week |
+| Dates | Arrival or departure date/week |
+| Dates | Sent date/week |
+| Dates | Finish date/week |
+| Dates | Desired production start date |
+| Currency | Currency no. |
+| Currency | Exchange rate |
+| Currency | Exchange price |
+| Currency | Cost currency no. |
+| Currency | Cost exchange rate |
+| Payment and invoicing | Payment terms |
+| Payment and invoicing | Payment method |
+| Payment and invoicing | Card company |
+| Payment and invoicing | Masked card no. |
+| Payment and invoicing | Factoring no. |
+| Payment and invoicing | Fact. company no. |
+| Payment and invoicing | Remittance supplier no. |
+| Payment and invoicing | Invoice according to plan |
+| Payment and invoicing | Invoice reference |
+| Payment and invoicing | Invoice reference processing |
+| Payment and invoicing | Invoice no. |
+| Payment and invoicing | Credit note |
+| Payment and invoicing | CID code |
+| Payment and invoicing | Deduct client responsibility bank |
+| Order totals | Order total net (val./dom./EUR) |
+| Order totals | Order total gross (val./dom./EUR) |
+| Order totals | VAT amount (val./dom./EUR) |
+| Order totals | Total discount amount (val./dom./EUR) |
+| Order totals | Total discount amount exempt from total discount (val./dom.) |
+| Order totals | Sum before total and group discount (val./dom.) |
+| Order totals | Sum before group discount (val./dom./EUR) |
+| Order totals | Contract amount (val./dom./EUR) |
+| Order totals | Rounding (val./dom./EUR) |
+| Order totals | Special tax amount (val./dom./EUR) |
+| Order totals | Non-taxable amount (val./dom./EUR) |
+| Order totals | Order balance accretion (val./dom./EUR) |
+| Invoiced amounts | Invoiceable amount (val./EUR) |
+| Invoiced amounts | Invoiced amount now (val./EUR) |
+| Invoiced amounts | Invoiced amount so far (val./dom./EUR) |
+| Invoiced amounts | Invoiced amount incl. VAT so far (val.) |
+| Invoiced amounts | Invoiced amount in future (val./dom./EUR) |
+| Invoiced amounts | Invoiced amount total (val./dom./EUR) |
+| Costs and profit | Incurred cost (val./dom.) |
+| Costs and profit | Incurred cost so far (val./dom.) |
+| Costs and profit | Incurred cost in future (val./dom.) |
+| Costs and profit | Incurred cost total (val./dom.) |
+| Costs and profit | Grossprofit (dom.) |
+| Costs and profit | Gross profit so far (dom.) |
+| Costs and profit | Gross profit in future (dom.) |
+| Costs and profit | Gross profit total (dom.) |
+| Costs and profit | Margin |
+| Costs and profit | Margin so far |
+| Costs and profit | Margin in future |
+| Costs and profit | Margin total |
+| Costs and profit | Cost difference (dom.) |
+| Costs and profit | Cost difference so far (dom.) |
+| Costs and profit | Cost price addition (dom.) |
+| Costs and profit | Cost price addition so far (dom.) |
+| Documents and counts | Inquiry no. |
+| Documents and counts | Inquiry count |
+| Documents and counts | Quotation no. |
+| Documents and counts | Quotation count |
+| Documents and counts | Order confirmation no. |
+| Documents and counts | Confirmation count |
+| Documents and counts | Purchase order no. |
+| Documents and counts | Purchase count |
+| Documents and counts | Pick list no. |
+| Documents and counts | Pick list count |
+| Documents and counts | Packing slip no. |
+| Documents and counts | Packing slip count |
+| Documents and counts | Consignment note no. |
+| Documents and counts | Consignment note count |
+| Documents and counts | Invoice count |
+| Documents and counts | Production order no. |
+| Documents and counts | Production order count |
+| Documents and counts | Document delivery method 1-2 |
+| Incoming invoices and approval | Visma ID |
+| Incoming invoices and approval | Incoming document no. |
+| Incoming invoices and approval | Incoming accounting document no. |
+| Incoming invoices and approval | Incoming invoice proposed order total net/VAT amount/order total gross (val.) |
+| Incoming invoices and approval | Active approval task no. |
+| Memo | Memo file name |
+| Memo | Memo no. |
+| Change log | Created date |
+| Change log | Created time |
+| Change log | Created by user |
+| Change log | Changed date |
+| Change log | Changed time |
+| Change log | Change time in ms |
+| Change log | Changed by user |
+
+### Order line {#export-order-line}
+
+| Field group | Field |
+|---|---|
+| General | Order no. |
+| General | Line no. |
+| General | Sort sequence no. |
+| General | Structure level |
+| General | Structure head line no. |
+| General | Product no. |
+| General | Description |
+| General | Product type 1-4 |
+| General | Order type |
+| General | Order line status |
+| General | Reference |
+| General | Source type |
+| General | Free 1-4 |
+| General | Barcode |
+| General | Visma ID |
+| General | Visma external ID |
+| General | External ID |
+| Documents | Web page |
+| Documents | Picture file name |
+| Documents | Memo file name |
+| Documents | Memo no. |
+| Parties and organization | Customer no. |
+| Parties and organization | Supplier no. |
+| Parties and organization | Invoice customer no. |
+| Parties and organization | Delivery associate no. |
+| Parties and organization | Remittance supplier no. |
+| Parties and organization | Employee no. |
+| Parties and organization | Seller/buyer |
+| Parties and organization | Official |
+| Parties and organization | Resource no. |
+| Parties and organization | Org. unit 1-12 |
+| Payroll | Payroll rate no. |
+| Payroll | Payroll sort |
+| Payroll | Payroll information 1-2 |
+| Price groups and tax | Product price group 1-3 |
+| Price groups and tax | Customer price group 1-3 |
+| Price groups and tax | Employee price group |
+| Price groups and tax | Tax and accounting group |
+| Price groups and tax | Account set |
+| Price groups and tax | Tax code |
+| Price groups and tax | Special tax code |
+| Price groups and tax | VAT rate |
+| Processing and classification | Transaction type |
+| Processing and classification | Transaction group 1-4 |
+| Processing and classification | Transaction information 1-4 |
+| Processing and classification | Processing method 1-5 |
+| Processing and classification | Duplicated fields 1-2 |
+| Processing and classification | Group separators |
+| Processing and classification | Plan type |
+| Status and control | Edit status |
+| Status and control | Locked by process no. |
+| Status and control | EDI status |
+| Status and control | Scan status |
+| Status and control | Scan document no. |
+| Status and control | Notification sent before |
+| Status and control | Enter serial no. |
+| Status and control | Exempt from warehousing |
+| Status and control | Purchase product |
+| Status and control | Capital asset processing |
+| Status and control | Capital asset no. |
+| Status and control | Period key no. |
+| Print layout | Font name |
+| Print layout | Font size |
+| Print layout | Font style |
+| Customs and statistics | EU goods stat. no. |
+| Customs and statistics | Statistics value 1-2 |
+| Customs and statistics | Country no. |
+| Quantities and units | Quantity |
+| Quantities and units | Original quantity |
+| Quantities and units | Total quantity |
+| Quantities and units | Quantity per unit |
+| Quantities and units | Quantity in basis unit |
+| Quantities and units | Quantity per structure |
+| Quantities and units | Price quantity |
+| Quantities and units | Free quantity |
+| Quantities and units | Free quantity used |
+| Quantities and units | Exchange quantity |
+| Quantities and units | Unrealised quantity |
+| Quantities and units | Unit |
+| Quantities and units | Price unit |
+| Quantities and units | Stock measure |
+| Quantities and units | Factor 3 |
+| Quantities and units | From |
+| Quantities and units | To |
+| Quantities and units | Share |
+| Quantity status | Incurred |
+| Quantity status | Incurred finished |
+| Quantity status | Incurred total |
+| Quantity status | Incurred outstanding |
+| Quantity status | Outstanding |
+| Quantity status | Inquired |
+| Quantity status | Quoted |
+| Quantity status | Purchased |
+| Quantity status | Confirmed |
+| Quantity status | Picked |
+| Quantity status | Packed |
+| Quantity status | Consigned |
+| Quantity status | Finished |
+| Quantity status | Invoiced/realised |
+| Quantity status | Returned |
+| Quantity status | Compensate |
+| Quantity status | Discarded |
+| Quantity status | Allocated |
+| Quantity status | Not allocated |
+| Quantity status | Reserved |
+| Quantity status | Reserved from stock |
+| Quantity status | Reserved from inflow |
+| Quantity status | Not reserved |
+| Quantity status | Balance to pick |
+| Quantity status | Pick max |
+| Quantity status | Picked without reservation |
+| Quantity status | Cancelled |
+| Quantity status | Discontinued from range |
+| Actions now | Finish now |
+| Actions now | Pick now |
+| Actions now | Invoice now |
+| Actions now | Reserve now |
+| Actions now | Return now |
+| Actions now | Compensate now |
+| Actions now | Discard now |
+| Actions now | Confirm now |
+| Currency | Currency no. |
+| Currency | Exchange rate |
+| Currency | Cost currency no. |
+| Currency | Cost exchange rate |
+| Currency | Exchange value |
+| Prices and discounts | Cost price (val./dom.) |
+| Prices and discounts | Cost price addition % |
+| Prices and discounts | Cost price addition (dom.) |
+| Prices and discounts | Standard price (val./dom./EUR) |
+| Prices and discounts | Price (val./dom./EUR) |
+| Prices and discounts | Suggested price |
+| Prices and discounts | Price type |
+| Prices and discounts | Price factor |
+| Prices and discounts | Price after discount (val./dom./EUR) |
+| Prices and discounts | Compensation price (val./dom./EUR) |
+| Prices and discounts | Discount % 1-6 |
+| Prices and discounts | Discount amount 1-6 (val./dom./EUR) |
+| Prices and discounts | Distributed discounts (val./dom./EUR) |
+| Amounts | Amount before discount (val./dom./EUR) |
+| Amounts | Amount (val./dom./EUR) |
+| Amounts | Gross amount (val./dom./EUR) |
+| Amounts | Net amount (val./dom./EUR) |
+| Amounts | VAT amount (val./dom.) |
+| Amounts | VAT basis (val.) |
+| Amounts | Rounding amount (val.) |
+| Amounts | Non-taxable |
+| Invoiced amounts | Invoiceable amount (val./EUR) |
+| Invoiced amounts | Invoiced amount now (val./EUR) |
+| Invoiced amounts | Invoiced amount so far (val./dom./EUR) |
+| Invoiced amounts | Invoiced amount in future (val./dom./EUR) |
+| Invoiced amounts | Invoiced amount total (val./dom./EUR) |
+| Costs and profit | Incurred cost (val./dom.) |
+| Costs and profit | Incurred cost so far (val./dom.) |
+| Costs and profit | Incurred cost in future (val./dom.) |
+| Costs and profit | Incurred cost total (val./dom.) |
+| Costs and profit | Gross profit (dom.) |
+| Costs and profit | Gross profit so far (dom.) |
+| Costs and profit | Gross profit in future (dom.) |
+| Costs and profit | Gross profit total (dom.) |
+| Costs and profit | Margin |
+| Costs and profit | Margin so far |
+| Costs and profit | Margin in future |
+| Costs and profit | Margin total |
+| Warehouse | Warehouse no. |
+| Warehouse | Transfer to warehouse no. |
+| Warehouse | Location |
+| Warehouse | Transfer to location |
+| Warehouse | Shipment no. |
+| Warehouse | Transfer to shipment no. |
+| Warehouse | Serial no. |
+| Delivery and freight | Delivery method |
+| Delivery and freight | Delivery alternative no. |
+| Delivery and freight | Delivery limit |
+| Delivery and freight | Freight 1-4 |
+| Delivery and freight | Freight processing |
+| Delivery and freight | Customs |
+| Delivery and freight | Transport agreement no. |
+| Lead times | Transport time |
+| Lead times | Lead time |
+| Lead times | Outside lead time |
+| Lead times | Administration time |
+| Lead times | Total lead time |
+| Lead times | Production time |
+| Lead times | Assemble time |
+| Lead times | Disassemble time |
+| Lead times | Time to next |
+| Lead times | Hire period |
+| Weight and volume | Net weight (+ per unit) |
+| Weight and volume | Tare (+ per unit) |
+| Weight and volume | Gross weight (+ per unit) |
+| Weight and volume | Length (+ per unit) |
+| Weight and volume | Width per unit |
+| Weight and volume | Height per unit |
+| Weight and volume | Area (+ per unit) |
+| Weight and volume | Volume (+ per unit) |
+| Weight and volume | Density per unit |
+| Weekdays | Monday-Sunday |
+| Weekdays | Monday-Sunday quantity |
+| Dates | Transaction date/week |
+| Dates | Required delivery date/week |
+| Dates | Confirmed delivery date/week |
+| Dates | Original confirmed delivery date/week |
+| Dates | Settlement date/week |
+| Dates | Use by date/week |
+| Dates | Expected return date/week |
+| Dates | Arrival or departure date/week |
+| Dates | Sent date/week |
+| Dates | Finish date/week |
+| Dates | Finish at |
+| Dates | Manual finish date |
+| Dates | Desired production start date |
+| Dates | Realised year and week |
+| Dates | Year and period |
+| Dates | Accounting year and period |
+| Related documents | Allocated order no. |
+| Related documents | Allocated order line no. |
+| Related documents | Transferred to order no. |
+| Related documents | Production order |
+| Related documents | Invoice no. |
+| Related documents | Invoice reference |
+| Related documents | Voucher journal no. |
+| Related documents | Audit no. |
+| Incoming invoices | Incoming accounting document no. |
+| Incoming invoices | Incoming invoice proposed quantity/price/discount %/discount amount/amount/VAT amount (val.) |
+| Change log | Created date |
+| Change log | Created time |
+| Change log | Created by user |
+| Change log | Changed date |
+| Change log | Changed time |
+| Change log | Change time in ms |
+| Change log | Changed by user |
+| Change log | Finished by |
+
+### Organizational unit (1-12) {#export-organizational-unit-1-12}
+
+| Field group | Field |
+|---|---|
+| General | \[Unit name\] no. |
+| General | Name |
+| General | Principal |
+| General | Status |
+| General | Official |
+| General | Main unit |
+| General | Memo file name |
+| Relations | Associate no. 1 |
+| Relations | Customer no. |
+| Relations | Supplier no. |
+| Relations | Contact |
+| Address and contact details | Address line 1-4 |
+| Address and contact details | Post code |
+| Address and contact details | Postal area |
+| Address and contact details | Country no. |
+| Address and contact details | Currency no. |
+| Address and contact details | Web page |
+| Address and contact details | E-mail address |
+| Amounts | Amount 1 |
+| Amounts | Amount 2 |
+| Dates | Planned start date |
+| Dates | Planned end date |
+| Dates | Actual start date |
+| Dates | Actual end date |
+| Information | Information 1-8 |
+| Other organizational units | \[Other unit name\] no. (one field for each other configured organizational unit) |
+| Processing and change log | Org. unit processing |
+| Processing and change log | Edit status |
+| Processing and change log | Locked by process no. |
+| Processing and change log | Changed by user |
+| Processing and change log | Created by user |
+
+</Tab>
+<Tab title="Import">
+
+### Associate, Customer and Supplier {#import-associate-customer-and-supplier}
+
+| Field group | Field |
+|---|---|
+| General | Associate no. |
+| General | Name |
+| General | Short name |
+| General | CRM ID |
+| General | Birth date |
+| General | Organisation no. |
+| General | VAT reg. no. |
+| General | Your ref. |
+| General | Credit limit |
+| General | Currency no. |
+| General | Language no. |
+| General | Trade area |
+| Customer | Customer no. |
+| Customer | Account number series - Customer |
+| Customer | Tax code customer |
+| Customer | Payment method customer |
+| Customer | Payment terms customer |
+| Supplier | Supplier no. |
+| Supplier | Account number series - Supplier |
+| Supplier | Tax code supplier |
+| Supplier | Payment method supplier |
+| Supplier | Payment terms supplier |
+| Address | Address line 1-4 |
+| Address | Post code |
+| Address | Postal area |
+| Address | Visiting post code |
+| Address | Visiting postal area |
+| Address | Country no. |
+| Contact details | Phone |
+| Contact details | Mobile phone |
+| Contact details | Private phone |
+| Contact details | E-mail address |
+| Contact details | Fax 1 |
+| Contact details | Web page 1 |
+| Contact details | Web page 2 |
+| Send-to address | Send to Address line 1-4 |
+| Send-to address | Send to Post code |
+| Send-to address | Send to Postal area |
+| Send-to address | Send to Visiting post code |
+| Send-to address | Send to Visiting postal area |
+| Send-to address | Send to Country no. |
+| Send-to contact details | Send to Phone |
+| Send-to contact details | Send to Mobile phone |
+| Send-to contact details | Send to Private phone |
+| Send-to contact details | Send to E-mail address |
+| Send-to contact details | Send to Fax 1 |
+| Information | Information 1-8 |
+
+### Contact {#import-contact}
+
+| Field group | Field |
+|---|---|
+| General | Associate no. |
+| General | Name |
+| General | Short name |
+| General | Contact for |
+| General | Title |
+| General | Birth date |
+| General | CRM ID |
+| General | Organisation no. |
+| General | VAT reg. no. |
+| General | Your ref. |
+| General | Credit limit |
+| General | Currency no. |
+| General | Language no. |
+| General | Trade area |
+| Address | Address line 1-4 |
+| Address | Post code |
+| Address | Postal area |
+| Address | Visiting post code |
+| Address | Visiting postal area |
+| Address | Country no. |
+| Contact details | Phone |
+| Contact details | Mobile phone |
+| Contact details | Private phone |
+| Contact details | E-mail address |
+| Contact details | Fax 1 |
+| Contact details | Web page 1 |
+| Contact details | Web page 2 |
+| Information | Information 1-8 |
+
+### Order {#import-order}
+
+| Field group | Field |
+|---|---|
+| General | Order no. |
+| General | Order date |
+| General | Order type |
+| General | Customer no. |
+| General | Contact |
+| General | Cust/Suppl. order no. |
+| General | Country no. |
+| General | Currency no. |
+| General | Language no. |
+| References | Our ref. |
+| References | Your ref. |
+| Free fields and information | Free 1-4 |
+| Free fields and information | Information 1-6 |
+| Organizational units | \[Unit name\] no. (one field for each configured organizational unit) |
+
+### Order line {#import-order-line}
+
+| Field group | Field | Remark |
+|---|---|---|
+| General | Line no. |  |
+| General | Product no. | Required |
+| General | Quantity | Required |
+| General | Order line status |  |
+| General | Unit |  |
+| General | Description |  |
+| General | Transaction type |  |
+| Prices and discounts | Cost price (val.) |  |
+| Prices and discounts | Price (val.) |  |
+| Prices and discounts | Discount % 1 |  |
+| Prices and discounts | Discount amount 1 (val.) |  |
+| Free fields | Free 1-4 |  |
+| Organizational units | \[Unit name\] no. (one field for each configured organizational unit) |  |
+
+### Organizational unit (1-12) {#import-organizational-unit-1-12}
+
+| Field group | Field |
+|---|---|
+| General | \[Unit name\] no. |
+| General | Name |
+| General | Principal |
+| General | Status |
+| General | Official |
+| General | Main unit |
+| General | Memo file name |
+| Relations | Associate no. 1 |
+| Relations | Customer no. |
+| Relations | Supplier no. |
+| Relations | Contact |
+| Address and contact details | Address line 1-4 |
+| Address and contact details | Post code |
+| Address and contact details | Postal area |
+| Address and contact details | Country no. |
+| Address and contact details | Currency no. |
+| Address and contact details | Web page |
+| Address and contact details | E-mail address |
+| Amounts | Amount 1 |
+| Amounts | Amount 2 |
+| Dates | Planned start date |
+| Dates | Planned end date |
+| Dates | Actual start date |
+| Dates | Actual end date |
+| Information | Information 1-8 |
+| Other organizational units | \[Other unit name\] no. (one field for each other configured organizational unit) |
+
+</Tab>
+</Tabs>
+
+Which organizational units are available depends on your Business NXT environment.

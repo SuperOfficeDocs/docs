@@ -1,0 +1,171 @@
+---
+title: Set up contact sync
+description: How to configure the contact synchronization between SuperOffice and Visma Business NXT.
+keywords: ['ConnectERP', 'Business NXT', 'person sync', 'user-defined fields', 'DataBridge', 'CRMScript', 'Visma Business NXT', 'udef', 'contact person']
+author: marcelspapens
+date: 11.25.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related:
+  - /en/custom-objects/admin/add-udef
+  - /en/customization/screen-designer/admin/add-layout
+language: en
+userflow_index: true
+---
+
+Contact sync creates and updates contacts (persons) in Business NXT from SuperOffice. SuperOffice is the leading system for contacts. It's available in all CRM Suites.
+
+A user creates the contact with a button on the Contact card. Business NXT generates the contact ID and DataBridge writes it back to the contact in SuperOffice, which links the two records.
+
+<Note>
+Complete [Set up company sync][1] before you start the steps on this page. Contacts in Business NXT are linked to a customer via the ERP customer number, which a company gets only when it is synchronized with Business NXT.
+</Note>
+
+## 1. Create user-defined fields on the Contact card
+
+Go to **Settings and maintenance** > **Fields** > **Contact** > **Add** and create the following 2 fields. Set both to **Read only**.
+
+| # | Field name | Type | Prog ID |
+|---|---|---|---|
+| 1 | Linked to ERP | Checkbox | `CONTACTLINKEDTOERP` |
+| 2 | ERP Pers. Number | Number | `CONTACTERPPERSONNUMBER` |
+
+After adding both fields, click **Publish**.
+
+<Tip>
+Note the SuperOffice **template variables** generated for field #2 (ERP Pers. Number). You'll need that later.
+</Tip>
+
+## 2. Create the contact selection
+
+The **Business NXT Person Sync (Hourly)** integration uses the selection **DB – Linked ERP Contact Persons** as its data source. It identifies which contacts should be synchronized to Business NXT. The **Business NXT Person Sync (Button)** integration uses the selection **DB – Template: Companies** that you created in [Set up company sync][1].
+
+**Before creating this selection:**
+
+1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice CRM**.
+1. Open a (test) contact card in SuperOffice.
+1. Manually set the field **Linked to ERP** to **Yes/True**.
+
+**Create the selection:**
+
+1. Click **New** > **Selection** to [create a selection][9].
+1. Select **Find Contact**.
+1. [Add a criterion][7] with **Linked to ERP** as the field, **Equals** as the operator, and **Yes/True** as the value.
+1. Run the search and confirm the contact you just updated appears in the results.
+1. Save as a **dynamic selection** with the name **DB – Linked ERP Contact Persons**.
+
+![DB – Linked ERP Contact Persons selection with criteria Linked to ERP Is Yes -screenshot][img1]
+
+<Tip>
+Remember to reset the **Linked to ERP** field on the test contact after saving the selection if you don't want it permanently flagged.
+</Tip>
+
+## 3. Add the Contact CRMScript
+
+The CRMScript allows users to manually create or update a contact from SuperOffice in Business NXT.
+
+1. Go to **Settings and maintenance** > **CRMScript** > **New script**.
+1. Enter **Contact to Business NXT** as the name.
+1. Open the **Contact to Business NXT** *.txt* file from *crmscripts-business-nxt.zip* and paste the content into the [script editor][10].
+1. Set the configuration variables at the top of the script:
+
+    | Variable | Value |
+    |---|---|
+    | `erpPlatform` | The ERP name shown to users in dialogs, for example `"Business NXT"` |
+    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript) |
+
+1. Save the script.
+
+<Note>
+The script only works for a contact on a company that is already linked to Business NXT. If the company isn't linked, the script asks the user to create the company in Business NXT first.
+</Note>
+
+## 4. Create the Contact card screen layouts
+
+### Standard layout
+
+1. Go to **Settings and maintenance** > **Screen designer** > **Contact**.
+1. [Create a new layout][8] for all users, or edit the default layout.
+1. Add a new tab with the label **ERP (Business NXT)**, with 1 column.
+1. Add a label **Business NXT Information** and add the two ERP contact fields below it.
+1. Save and publish the layout.
+
+![Contact card: standard layout with ERP (Business NXT) tab showing the ERP person number -screenshot][img2]
+
+### Admin layout
+
+1. Create a second layout for users with edit rights, based on the default layout.
+1. Assign the layout to the user roles that need the extra Business NXT functionality.
+1. In the **ERP (Business NXT)** tab, change the tab layout to 2 columns.
+1. In the second column, add a label **Business NXT Actions**.
+1. Below the label, add a **button** with the name **Create/Update Person in Business NXT**. Set **Action** to **Execute CRMScript**, select the **Contact to Business NXT** script, and set **Mode** to **Always**. Enter **Create/update this contact in Business NXT** as the tooltip.
+1. Save and publish the layout.
+
+![Contact card: admin layout with Create/update Person in Business NXT button -screenshot][img3]
+
+<Warning>
+Assign the admin layout only to user groups that should be able to push data to Business NXT. This prevents accidental data creation by other users.
+</Warning>
+
+## 5. Import the contact sync integrations
+
+### Integration 3: Business NXT Person Sync (Button)
+
+This integration is triggered manually when a user clicks **Create/Update Person in Business NXT**.
+
+1. In DataBridge, import the *Business NXT Person Sync (Button).ndb* file.
+1. Click **Connect** on the destination side, log in to Business NXT, and accept the information on screen.
+1. Back in DataBridge, select your Business NXT company (administration) and click **Next**.
+1. In the **Source** tab, select the **DB – Template: Companies** selection as the data source and click **Next**.
+1. In the **Data** tab, verify the fields. DataBridge shows a warning that not all fields needed to create a company are mapped. This is expected: only the customer number is mapped, to link the contact to the customer.
+1. Click **Next** twice to go to the **Process** page.
+1. Copy the **Instant Job URL** by clicking the copy icon. Save it as the person URL. You'll need it in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript).
+1. Click **Next** and then **Save**.
+
+### Integration 4: Business NXT Person Sync (Hourly)
+
+This integration runs automatically every hour to synchronize linked contacts from SuperOffice to Business NXT. It only processes the contacts that changed since the previous run.
+
+1. Import the *Business NXT Person Sync (Hourly).ndb* file.
+1. Click **Connect** on the destination side, log in to Business NXT, and accept the information on screen.
+1. Back in DataBridge, select your Business NXT company (administration) and click **Next**.
+1. In the **Source** tab, select the **DB – Linked ERP Contact Persons** selection as the data source and click **Next**.
+1. In the **Data** tab, verify the fields. The same expected warning about the unmapped company fields shows. Check that the values in the Map List transformations match values in the Business NXT lists.
+1. In the **Process** tab, verify the schedule and set **Start on** to a future date, so that the job doesn't start immediately after you save.
+1. Click **Save**.
+1. **Disable the integration immediately**. You'll enable it in [Verify and finalize][2].
+
+## 6. Add the Instant Job URL to the CRMScript
+
+1. Go to **Settings and maintenance** > **CRMScript**.
+1. Open the **Contact to Business NXT** script.
+1. Set the `instantJobUrl` variable to the URL you copied from **Business NXT Person Sync (Button)**.
+1. Save.
+
+## Next step
+
+The [setup path][6] splits here, depending on the CRM Suite tier:
+
+| Step | Core | Growth and higher |
+|---|---|---|
+| 4. Set up contact sync | Done | Done |
+| 5. [Set up product sync][4] | Skip | Next |
+| 6. [Set up order sync][5] | Skip | After product sync |
+| 7. [Add panels][3] | Next | After order sync |
+
+[1]: ./set-up-company-sync
+[2]: ./verify-finalize
+[3]: ./add-panels
+[4]: ./set-up-product-sync
+[5]: ./set-up-order-sync
+[6]: ./index#set-up-the-integration
+[7]: /en/search-options/learn/search-criteria
+[8]: /en/customization/screen-designer/admin/add-layout
+[9]: /en/search-options/selection/learn/create
+[10]: /en/automation/crmscript/overview/envir-and-tools#how-to-add-a-script
+
+[img1]: /media/loc/en/integrations/connect-erp/selection-linked-erp-contacts.png
+[img2]: /media/loc/en/integrations/connect-erp/business-nxt-contact-card-standard-layout.png
+[img3]: /media/loc/en/integrations/connect-erp/business-nxt-contact-card-admin-layout.png

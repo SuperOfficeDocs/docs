@@ -1,0 +1,90 @@
+---
+title: Verify and finalize
+description: How to verify the ConnectERP integration with Visma Business NXT and finalize the setup.
+keywords: ['ConnectERP', 'Business NXT', 'test', 'automated sync', 'lock integrations', 'Visma Business NXT', 'go-live', 'testing']
+author: marcelspapens
+date: 11.25.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related: false
+language: en
+userflow_index: true
+---
+
+Run the verification tests before enabling the automated synchronizations. This confirms that all field mappings, scripts, and integrations are working correctly. Log in to SuperOffice as a user that has the admin layouts for Business NXT.
+
+| Verification | Core | Growth and higher |
+|---|---|---|
+| 1. Verify company sync | Yes | Yes |
+| 2. Verify contact sync | Yes | Yes |
+| 3. Verify product sync | No | Yes |
+| 4. Verify order sync | No | Yes |
+
+## 1. Verify company sync
+
+1. Create a new test company in SuperOffice and fill in all details on the **Company** tab.
+1. Open the Company card and go to the **ERP (Business NXT)** tab (admin layout).
+1. Click **Create Company in Business NXT**.
+1. Confirm that the **ERP Cust. Number** field is populated on the Company card in SuperOffice and that **Linked to ERP** is selected.
+1. Log in to Business NXT and verify that the customer was created with the correct details.
+1. Make a change to the customer in Business NXT.
+1. In DataBridge, run the **Business NXT Customer Sync (Hourly)** integration manually and confirm that the change appears on the Company card in SuperOffice.
+
+![SuperOffice Company card: ERP tab showing the ERP customer number and the last sync date after a successful sync -screenshot][img1]
+
+## 2. Verify contact sync
+
+1. Create a new contact on the test company in SuperOffice and fill in all details on the **Contact** tab.
+1. Open the Contact card and go to the **ERP (Business NXT)** tab (admin layout).
+1. Click **Create/Update Person in Business NXT**.
+1. Confirm that the **ERP Pers. Number** field is populated on the Contact card in SuperOffice and that **Linked to ERP** is selected.
+1. Log in to Business NXT and verify that the contact was created and linked to the customer.
+
+## 3. Verify product sync (Growth and higher only)
+
+1. Log in to DataBridge.
+1. Open the **Business NXT Product Sync (Daily)** integration.
+1. Open the **Process** page and set **Start on** to today's date.
+1. Click **Save**.
+1. Enable the integration from the mega menu.
+1. Open the **Jobs** tab and verify that a job is scheduled or running.
+1. When the job has run, open the price list in SuperOffice and confirm that products from Business NXT have been imported with the correct VAT rates and price lists.
+
+## 4. Verify order sync (Growth and higher only)
+
+1. Create a new sale in SuperOffice linked to the test company and the test contact.
+1. Create a quote for the sale with at least two products from the imported product list.
+1. Place an order for the sale, and set the sale status to **Sold**.
+1. Open the Sale card, go to the **ERP (Business NXT)** tab, and click **Create Order in Business NXT**.
+1. Confirm that the **ERP Order Number** field is populated on the Sale card.
+1. Log in to Business NXT and verify that the sales order was created and linked to the customer and the contact.
+
+## Enable automated synchronizations
+
+<Danger>
+If companies already exist in both SuperOffice and Business NXT, complete the [initial match of companies][1] before you enable the automated synchronizations. If the automated sync runs first, it may create duplicates instead of linking the existing records.
+</Danger>
+
+When all verification tests that apply to the CRM Suite pass, enable these integrations in DataBridge:
+
+1. Enable **Business NXT Customer Sync (Hourly)**.
+1. Enable **Business NXT Person Sync (Hourly)**.
+1. Growth and higher only: enable **Business NXT Product Sync (Daily)** if you didn't already enable it for the product sync verification.
+1. Growth and higher only: enable **Business NXT Sales Orders (Hourly)**.
+
+<Note>
+If a verification step fails, check the DataBridge job log for error details. Common issues are incorrect field mappings, missing value transformations, or incorrect Instant Job URLs in the CRMScripts. For known errors and their solutions, see [Troubleshoot ConnectERP for Business NXT][2].
+</Note>
+
+## Finalize
+
+**CRM Suite Core:** The implementing consultant locks all DataBridge integrations. The Core solution is a fixed configuration, and locking prevents accidental or unauthorized changes after the setup is handed over.
+
+**CRM Suite Growth and higher:** The customer and the consultant review the configured integrations together and confirm that all field mappings and data flows match the agreed requirements.
+
+[1]: ./initial-match
+[2]: ./troubleshooting
+
+[img1]: /media/loc/en/integrations/connect-erp/business-nxt-company-card-orders-panel.png

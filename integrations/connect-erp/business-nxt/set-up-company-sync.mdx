@@ -1,0 +1,173 @@
+---
+title: Set up company sync
+description: How to configure the company synchronization between SuperOffice and Visma Business NXT.
+keywords: ['ConnectERP', 'Business NXT', 'user-defined fields', 'DataBridge', 'CRMScript', 'screen designer', 'Visma Business NXT', 'udef', 'customer']
+author: marcelspapens
+date: 11.25.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related:
+  - /en/custom-objects/admin/add-udef
+  - /en/customization/screen-designer/admin/add-layout
+language: en
+userflow_index: true
+---
+
+Company sync creates a customer in Business NXT from a SuperOffice company, and keeps linked companies in SuperOffice up to date with the data from Business NXT. It's available in all CRM Suites.
+
+A user creates the customer with a button on the Company card. Business NXT generates the customer number and DataBridge writes it back to the company in SuperOffice, which links the two records. From then on, Business NXT is the leading system for the company. A company that is already linked can't be updated from SuperOffice.
+
+## 1. Create user-defined fields on the Company card
+
+Go to **Settings and maintenance** > **Fields** > **Company** > **Add** and create the following fields. Set all fields to **Read only**.
+
+<Note>
+Use the exact **Prog IDs** as specified. DataBridge and the CRMScripts rely on these identifiers to read and write the correct fields.
+</Note>
+
+| # | Field name | Type | Prog ID |
+|---|---|---|---|
+| 1 | Linked to ERP | Checkbox | `COMPANYLINKEDTOERP` |
+| 2 | ERP Cust. Number | Number | `COMPANYERPCUSTOMERNUMBER` |
+| 3 | Credit limit | Decimal | `COMPANYCREDITLIMIT` |
+| 4 | Payment Terms | Short text | `COMPANYPAYMENTTERMS` |
+| 5 | Last Sync Date | Date | `COMPANYLASTSYNCDATE` |
+| 6 | Currency | Short text | `COMPANYCURRENCY` |
+| 7 | Balance | Decimal | `COMPANYBALANCE` |
+| 8 | Total disc. % | Decimal | `COMPANYSUGGESTEDDISCOUNT` |
+| 9 | Turnover | Decimal | `COMPANYSALESYEAR` |
+| 10 | Credit suspension | Checkbox | `COMPANYCREDITSUSPENSION` |
+
+After adding all fields, click **Publish**.
+
+<Tip>
+Note the SuperOffice **template variables** generated for field #2 (ERP Cust. Number). You'll need that later.
+</Tip>
+
+## 2. Create the company selection
+
+DataBridge uses this selection as its "field template" for the integrations. It only gives DataBridge access to example data and to the fields and objects.
+
+1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice CRM**.
+1. Click **New** > **Selection** to [create a selection][7].
+1. Select **Find Company**.
+1. [Add a criterion][5] with **Company name** as the field, **Is not** as the operator, and a single space character as the value.
+1. Run the search and confirm that at least one result appears. DataBridge needs at least one result to work. If your company list is very large, use another criterion that still gives at least one result.
+1. Save as a **dynamic selection** with the name **DB – Template: Companies**.
+
+![Find Company with criteria Company name Is not (space) -screenshot][img1]
+
+## 3. Add the Company CRMScript
+
+The CRMScript allows users to manually create a company from SuperOffice in Business NXT.
+
+1. Download and unzip *crmscripts-business-nxt.zip* from the [Downloads][1] section in Requirements.
+1. Go to **Settings and maintenance** > **CRMScript** > **New script**.
+1. Enter **Company to Business NXT** as the name.
+1. Open the **Company to Business NXT** *.txt* file and paste the content into the [script editor][8].
+1. Set the configuration variables at the top of the script:
+
+    | Variable | Value |
+    |---|---|
+    | `erpPlatform` | The ERP name shown to users in dialogs. Some customers use their own name for Business NXT, and you can use that name here |
+    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript) |
+
+1. Save the script.
+
+## 4. Create the Company card screen layouts
+
+Create two screen layouts in SuperOffice: one for standard users (read-only ERP data) and one for admin users (with action button).
+
+### Standard layout
+
+1. Go to **Settings and maintenance** > **Screen designer** > **Company**.
+1. [Create a new layout][6] for all users, or edit the default layout.
+1. Add a new tab with the label **ERP (Business NXT)**, with 1 column.
+1. Add a label **Business NXT Key Figures** and add all 10 ERP user-defined fields below it.
+1. Save and publish the layout.
+
+![Company card: standard layout with ERP (Business NXT) tab and Business NXT Key Figures label -screenshot][img2]
+
+### Admin layout
+
+1. Create a second layout for users with edit rights, based on the default layout.
+1. Assign the layout to the user roles that need the extra Business NXT functionality.
+1. In the **ERP (Business NXT)** tab, change the tab layout to 2 columns.
+1. In the second column, add a label **Business NXT Actions**.
+1. Below the label, add a **button** with the name **Create Company in Business NXT**. Set **Action** to **Execute CRMScript**, select the **Company to Business NXT** script, and set **Mode** to **Always**. Enter **Create Company in Business NXT** as the tooltip.
+1. Save and publish the layout.
+
+![Company card: admin layout with Business NXT Actions label showing the Create Company in Business NXT button -screenshot][img3]
+
+<Warning>
+Assign the admin layout only to user groups that should be able to push data to Business NXT. This prevents accidental data creation by other users.
+</Warning>
+
+<Tip>
+The new user-defined fields also show on the **More** tab. Remove them from the **More** tab to avoid confusion.
+</Tip>
+
+## 5. Import the company sync integrations
+
+Download and unzip *databridge-integrations-business-nxt.zip* from the [Downloads][1] section in Requirements.
+
+<Note>
+DataBridge can show warnings (yellow background) and errors (red background) while you import an integration. Read the message and follow its instructions. An error usually means that a user-defined field doesn't have the Prog ID from this page, or that DataBridge doesn't know the field yet. A new field can take some time to show up in DataBridge. Delete the integration, check the field definitions, and import the integration again. The messages disappear after a few seconds, so take a screenshot when they show.
+</Note>
+
+### Integration 1: Business NXT Customer Sync (Button)
+
+This integration is triggered manually when a user clicks **Create Company in Business NXT**.
+
+1. In DataBridge, go to the **Integrations** page, click **import** in the **Start new integration** tile, and select the *Business NXT Customer Sync (Button).ndb* file.
+1. Click **Connect** on the destination side, log in to Business NXT, and accept the information on screen.
+1. Back in DataBridge, select your Business NXT company (administration) and click **Next**.
+1. In the **Source** tab, select the **DB – Template: Companies** selection as the data source and click **Next**.
+1. In the **Data** tab, verify the fields and make sure there are no error messages.
+1. Check that the values in the Map List transformations match values in the Business NXT lists, as prepared in the [value mappings][2].
+1. Click **Next** twice to go to the **Process** page.
+1. Copy the **Instant Job URL** by clicking the copy icon. Save it as the company URL. You'll need it in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript).
+1. Click **Next** and then **Save**.
+
+### Integration 2: Business NXT Customer Sync (Hourly)
+
+This integration runs automatically every hour to pull new and updated customers from Business NXT into SuperOffice. It only processes the customers that changed since the previous run, and it matches them on the Business NXT customer number stored on the SuperOffice company.
+
+1. Import the *Business NXT Customer Sync (Hourly).ndb* file.
+1. Click **Connect** on the source side, log in to Business NXT, and accept the information on screen.
+1. Back in DataBridge, select your Business NXT company (administration) and click **Next**.
+1. In the **Source** tab, check that data from Business NXT is shown in the preview.
+1. In the **Data** tab, verify the fields and make sure there are no error messages. Check that the values in the Map List and static field transformations match values in the SuperOffice lists.
+1. In the **Destination** tab, check the **Default values** section on the **Company** tab, and select a value for each field.
+1. In the **Process** tab, verify the schedule and set **Start on** to a future date, so that the job doesn't start immediately after you save.
+1. Click **Save**.
+1. **Disable the integration immediately** to prevent it from running before the setup is complete. You'll enable it in [Verify and finalize][3].
+
+![DataBridge integration: Disabled toggle -screenshot][img4]
+
+## 6. Add the Instant Job URL to the CRMScript
+
+1. Go to **Settings and maintenance** > **CRMScript**.
+1. Open the **Company to Business NXT** script.
+1. Set the `instantJobUrl` variable to the URL you copied from **Business NXT Customer Sync (Button)**.
+1. Save.
+
+## Next step
+
+Continue with [Set up contact sync][4].
+
+[1]: ./requirements#downloads
+[2]: ./plan-the-integration#value-mappings
+[3]: ./verify-finalize
+[4]: ./set-up-contact-sync
+[5]: /en/search-options/learn/search-criteria
+[6]: /en/customization/screen-designer/admin/add-layout
+[7]: /en/search-options/selection/learn/create
+[8]: /en/automation/crmscript/overview/envir-and-tools#how-to-add-a-script
+
+[img1]: /media/loc/en/integrations/connect-erp/selection-companies.png
+[img2]: /media/loc/en/integrations/connect-erp/business-nxt-company-card-standard-layout.png
+[img3]: /media/loc/en/integrations/connect-erp/business-nxt-company-card-admin-layout.png
+[img4]: /media/loc/en/integrations/connect-erp/business-nxt-databridge-disabled-toggle.png

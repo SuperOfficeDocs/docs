@@ -1,0 +1,160 @@
+---
+title: Set up order sync
+description: How to configure the sales order synchronization between SuperOffice CRM and Visma Business NXT.
+keywords: ['ConnectERP', 'Business NXT', 'sale', 'quote', 'user-defined fields', 'DataBridge', 'CRMScript', 'Visma Business NXT', 'udef']
+author: marcelspapens
+date: 11.25.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related:
+  - /en/custom-objects/admin/add-udef
+  - /en/customization/screen-designer/admin/add-layout
+language: en
+userflow_index: true
+---
+
+<Note>
+Order sync is available only in **CRM Suite Growth and higher**. Skip these steps for Core.
+</Note>
+
+Order sync synchronizes sales orders in both directions:
+
+* From SuperOffice to Business NXT on demand, when a user clicks **Create Order in Business NXT** on the Sale card. The complete quote, including all quote lines, is sent to Business NXT and created as a sales order.
+* From Business NXT to SuperOffice every hour, for orders that originate in Business NXT.
+
+An order that a user sends from SuperOffice can't be updated from SuperOffice afterwards. After the order is created in Business NXT, Business NXT is the leading system for it.
+
+## 1. Create user-defined fields on the Sale card
+
+Go to **Settings and maintenance** > **Fields** > **Sale** > **Add** and create the following fields. Set both to **Read only**.
+
+| # | Field name | Type | Prog ID |
+|---|---|---|---|
+| 1 | ERP Order Number | Short text | `SALEERPORDERNUMBER` |
+| 2 | Linked to ERP | Checkbox | `SALELINKEDTOERP` |
+
+After adding the fields, click **Publish**.
+
+<Tip>
+Note the SuperOffice **template variables** generated for field #1 (ERP Order Number). You'll need that later.
+</Tip>
+
+## 2. Add the Order CRMScript
+
+The CRMScript allows users to manually push a sale from SuperOffice to Business NXT as a sales order.
+
+1. Go to **Settings and maintenance** > **CRMScript** > **New script**.
+1. Enter **Order to Business NXT** as the name.
+1. Open the **Order to Business NXT** *.txt* file from *crmscripts-business-nxt.zip* and paste the content into the [script editor][6].
+1. Set the configuration variables at the top of the script:
+
+    | Variable | Value |
+    |---|---|
+    | `erpPlatform` | The ERP name shown to users in dialogs, for example `"Business NXT"` |
+    | `instantJobUrl` | Leave empty for now. You'll complete this in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript) |
+    | `allowOnlySaleWithStatusSold` | `true` to allow only sales with status **Sold** to be pushed; `false` to allow all statuses |
+
+1. Save the script.
+
+<Tip>
+Keep `allowOnlySaleWithStatusSold = true` to prevent accidental order creation in Business NXT from sales that don't have the status **Sold**.
+</Tip>
+
+The script only sends an order when all of these conditions are met:
+
+* The quote of the sale is marked as sold with the **Place order** feature.
+* The company on the sale is linked to Business NXT.
+* The sale has a contact, and the contact is linked to Business NXT.
+* The sale isn't sent to Business NXT yet.
+
+## 3. Create the Sale card screen layouts
+
+### Standard layout
+
+1. Go to **Settings and maintenance** > **Screen designer** > **Sale**.
+1. [Create a new layout][4] for all users, or edit the default layout.
+1. Add a new tab with the label **ERP (Business NXT)**, with 1 column.
+1. Add a label **Business NXT Information** and add the two ERP sale fields below it.
+1. Save and publish the layout.
+
+![Sale card: standard layout with ERP (Business NXT) tab showing the ERP Order Number -screenshot][img2]
+
+### Admin layout
+
+1. Create a second layout for users with edit rights, based on the default layout.
+1. Assign the layout to the user roles that need the extra Business NXT functionality.
+1. In the **ERP (Business NXT)** tab, change the tab layout to 2 columns.
+1. In the second column, add a label **Business NXT Actions**.
+1. Below the label, add a **button** with the name **Create Order in Business NXT**. Set **Action** to **Execute CRMScript**, select the **Order to Business NXT** script, and set **Mode** to **Always**. Enter **Create the order in Business NXT** as the tooltip.
+1. Save and publish the layout.
+
+![Sale card: admin layout with Create Order in Business NXT button -screenshot][img3]
+
+<Warning>
+Assign the admin layout only to user groups that should be able to push data to Business NXT. This prevents accidental data creation by other users.
+</Warning>
+
+## 4. Create the product selection
+
+DataBridge uses this selection as the field template for the **Business NXT Sales Orders (Button)** integration. It only gives DataBridge access to example data and to the fields and objects.
+
+1. Return to SuperOffice CRM: click the **Main menu** (<i class="ph ph-list" aria-hidden="true"></i>) and select **SuperOffice CRM**.
+1. Click **New** > **Selection** to [create a selection][5].
+1. Select **Find Product**.
+1. [Add a criterion][3] with **Code** as the field, **Is not** as the operator, and a single space character as the value.
+1. Run the search and confirm that at least one result appears. DataBridge needs at least one result to work.
+1. Save as a **dynamic selection** with the name **DB – Template: Quote**.
+
+![Find Product with criteria Code Is not (space) -screenshot][img1]
+
+## 5. Import the order sync integrations
+
+### Integration 6: Business NXT Sales Orders (Button)
+
+This integration is triggered manually when a user clicks **Create Order in Business NXT**.
+
+1. In DataBridge, import the *Business NXT Sales Orders (Button).ndb* file.
+1. Click **Connect** on the destination side, log in to Business NXT, and accept the information on screen.
+1. Back in DataBridge, select your Business NXT company (administration) and click **Next**.
+1. In the **Source** tab, select the **DB – Template: Quote** selection as the data source and click **Next**.
+1. In the **Data** tab, verify the fields and make sure there are no error messages.
+1. In the **Destination** tab, check the **Default values** section on the **Sales Order** and **Sales Order Line** tabs, and select a value for each field.
+1. In the **Process** tab, copy the **Instant Job URL** by clicking the copy icon. Save it as the order URL. You'll need it in [Add the Instant Job URL to the CRMScript](#6-add-the-instant-job-url-to-the-crmscript).
+1. Click **Next** and then **Save**.
+
+### Integration 7: Business NXT Sales Orders (Hourly)
+
+This integration runs automatically every hour to pull sales orders from Business NXT into SuperOffice. It creates a sale with a quote and its quote lines, and links it to the company on the ERP customer number.
+
+1. In DataBridge, import the *Business NXT Sales Orders (hourly).ndb* file.
+1. Click **Connect** on the source side, log in to Business NXT, and accept the information on screen.
+1. Back in DataBridge, select your Business NXT company (administration) and click **Next**.
+1. In the **Source** tab, check that data from Business NXT is shown in the preview.
+1. In the **Data** tab, verify the fields and make sure there are no error messages. Check that the static values in the transformations, such as the price list, the currency, and the sale heading, match values in SuperOffice.
+1. In the **Process** tab, verify the schedule and set **Start on** to a future date, so that the job doesn't start immediately after you save.
+1. Click **Save**.
+1. **Disable the integration immediately**. You'll enable it in [Verify and finalize][2].
+
+## 6. Add the Instant Job URL to the CRMScript
+
+1. Go to **Settings and maintenance** > **CRMScript**.
+1. Open the **Order to Business NXT** script.
+1. Set the `instantJobUrl` variable to the URL you copied from **Business NXT Sales Orders (Button)**.
+1. Save.
+
+## Next step
+
+Continue with [Add panels][1].
+
+[1]: ./add-panels
+[2]: ./verify-finalize
+[3]: /en/search-options/learn/search-criteria
+[4]: /en/customization/screen-designer/admin/add-layout
+[5]: /en/search-options/selection/learn/create
+[6]: /en/automation/crmscript/overview/envir-and-tools#how-to-add-a-script
+
+[img1]: /media/loc/en/integrations/connect-erp/selection-products.png
+[img2]: /media/loc/en/integrations/connect-erp/business-nxt-sale-card-standard-layout.png
+[img3]: /media/loc/en/integrations/connect-erp/business-nxt-sale-card-admin-layout.png

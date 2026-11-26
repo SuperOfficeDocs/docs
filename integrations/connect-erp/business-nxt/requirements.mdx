@@ -1,0 +1,74 @@
+---
+title: Requirements
+description: Subscriptions, Business NXT user, SuperOffice user rights, and files required for the ConnectERP integration with Visma Business NXT.
+keywords: ['ConnectERP', 'Business NXT', 'subscriptions', 'user rights', 'downloads', 'Visma Business NXT', 'prerequisites', 'license', 'permissions', 'Visma Connect']
+author: marcelspapens
+date: 11.25.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related:
+  - /integrations/connect-erp/business-nxt/plan-the-integration
+  - /integrations/connect-erp/business-nxt/set-up-business-nxt
+language: en
+userflow_index: true
+---
+
+Check that these requirements are met before you start the setup. Missing requirements and skipped preparations are the most common cause of a failed or incomplete integration.
+
+## Subscriptions
+
+* **Business NXT:** an active subscription
+* **SuperOffice CRM:** CRM Suite Core or higher
+* **ConnectERP:** an active ConnectERP subscription on the SuperOffice tenant, which the panels require
+* **SuperOffice Sales Premium:** at least one Sales Premium user subscription to use the quote features (Growth and higher, for [order sync][5])
+
+## Business NXT integration user
+
+The integration needs a Business NXT user that has the access groups **Standard** and **System**. You log in to Business NXT with this user from DataBridge and from Panels for SuperOffice. The login goes through Visma Connect, and all integrations and panels share the resulting access.
+
+You also need access to the Business NXT company (administration) that the integration connects to. You select it after you log in from DataBridge and from Panels for SuperOffice.
+
+See [Set up Business NXT][3] for the preparations in Business NXT.
+
+## SuperOffice user rights
+
+Users who need to manually push data to Business NXT must have **edit rights** on the relevant card:
+
+| Action | Required right |
+|---|---|
+| Create Company in Business NXT | Edit right on Company card |
+| Create/Update Person in Business NXT | Edit right on Contact card |
+| Create Order in Business NXT | Edit right on Sale card |
+
+Users without edit rights won't see the action buttons. Assign the admin screen layouts only to groups that need them.
+
+## Downloads {#downloads}
+
+Download all required files before you start the default setup. You can also use the provided integrations as a safe starting point for a custom configuration.
+
+<Note>
+Files are updated periodically. Always download the latest version before starting a new installation.
+</Note>
+
+### DataBridge integrations
+
+| File | Description | Last updated |
+|---|---|---|
+| <a href="/downloads/connect-erp/databridge-integrations-business-nxt.zip" download>databridge-integrations-business-nxt.zip</a> | The seven DataBridge integrations for the standard Business NXT integration | 25.11.2026 |
+| <a href="/downloads/connect-erp/databridge-integrations-initial-import-business-nxt.zip" download>databridge-integrations-initial-import-business-nxt.zip</a> | Three DataBridge integrations for the initial company match | 28.05.2025 |
+
+### CRMScripts
+
+| File | Description | Last updated |
+|---|---|---|
+| <a href="/downloads/connect-erp/crmscripts-business-nxt.zip" download>crmscripts-business-nxt.zip</a> | Three CRMScripts for manually pushing companies, contacts, and orders to Business NXT | 27.05.2025 |
+
+## Next step
+
+Continue with [Plan the integration][4].
+
+[3]: ./set-up-business-nxt
+[4]: ./plan-the-integration
+[5]: ./set-up-order-sync
