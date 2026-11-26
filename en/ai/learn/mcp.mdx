@@ -3,8 +3,8 @@ title: MCP Connect
 description: Connect SuperOffice CRM to Claude, Microsoft Copilot, or ChatGPT as a live data source using the Model Context Protocol.
 keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI integration']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: plus
 category: automation
@@ -49,6 +49,8 @@ Step-by-step setup guides for each client are available on the [SuperOffice MCP 
 
 These tools let the connected AI client search and read SuperOffice CRM data on your behalf. They are available with CRM Suite Plus or above.
 
+Search and list tools return their results in pages. The AI client can fetch as many results as it needs, one page at a time, without overloading your CRM.
+
 | Tools | What they do |
 |---|---|
 | `search_companies`, `get_company` | Find and read company records. |
@@ -56,11 +58,11 @@ These tools let the connected AI client search and read SuperOffice CRM data on 
 | `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Find and read sales (opportunities), their pipeline guide, stakeholders, and activity history. |
 | `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Find requests and read their conversation or bookkeeping details. |
 | `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Find and read projects, their members, and activity history. |
-| `search_appointments`, `get_appointment` | Find and read diary follow-ups. |
+| `search_appointments`, `get_appointment`, `list_appointment_types` | Find and read diary follow-ups, and list the available follow-up types. |
 | `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Find documents, including emails and quotes, and read their contents. |
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | List activity history for a company, contact, or user. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Find and read rows in custom tables ([custom objects][8]). |
-| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Resolve a user's identity, search external business registries, and get server/session information. |
+| `get_associate`, `search_associates`, `search_external_companies`, `whoami` | Find users and resolve a user's identity, search external business registries, and get information about your own session. |
 
 ## Update tools
 
@@ -68,7 +70,11 @@ These tools let the connected AI client search and read SuperOffice CRM data on 
 Update tools require CRM Suite Super.
 </Note>
 
-These tools let the connected AI client change fields on an existing record on your behalf. MCP Connect does not create new records.
+These tools let the connected AI client change fields on an existing record on your behalf. MCP Connect does not create new records. Your SuperOffice access rights still apply, so the client can only change what you are allowed to change.
+
+## Limit MCP access {#access}
+
+An administrator can limit what MCP Connect clients can do with the **MCP Access Control** preference: read and update (**All**, the default), only read, or nothing. The preference can be set for the whole database, for a group, or for one user. See [AI preferences per user][9].
 
 | Tools | What they do |
 |---|---|
@@ -82,3 +88,4 @@ These tools let the connected AI client change fields on an existing record on y
 [6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
 [7]: /en/admin/license/crm-suite
 [8]: /en/custom-objects/learn/extra-table
+[9]: /en/ai/admin/index#preferences-tab

@@ -104,6 +104,7 @@
         "group": "For administrators",
         "root": "en/ai/admin/index",
         "pages": [
+          "en/ai/admin/set-agent-limits",
           "en/ai/admin/set-up-categorization"
         ]
       }

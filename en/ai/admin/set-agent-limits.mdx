@@ -1,0 +1,96 @@
+---
+title: Set agent limits
+description: Pause or turn on AI agents for everyone, set a monthly credit limit per agent, add extra credit packages, and follow AI credit usage in Settings and maintenance.
+keywords: ['AI credits', 'credit limit', 'monthly limit', 'credit packages', 'pause agents', 'turn off agents', 'usage forecast', 'Leadfeeder']
+author: digitaldiina
+date: 11.26.2026
+so_version: 12.7
+content_type: howto
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Settings and maintenance
+userflow_index: true
+related:
+  - /en/ai/admin/index
+  - /en/ai/learn/set-up-ai-agents
+  - /en/admin/license/crm-suite
+language: en
+---
+
+AI agents use AI credits for the work they do. On the **Agent Limits** tab, an administrator can turn agents on or off for all users and set a monthly credit limit for each agent. The tab also shows how many credits the agents use this month.
+
+## Requirements
+
+* Access to **Settings and maintenance**.
+* [AI functions enabled][1] for your organization.
+* CRM Suite Growth or above for the Data Quality Agent and Duplicate Agent. CRM Suite Plus or above for the Lead Agent and Sales Assistant Agent.
+
+## Open Agent Limits {#open}
+
+1. Open **Settings and maintenance**.
+1. Select **AI services** from the Navigator.
+1. Select the **Agent Limits** tab.
+
+{/*
+Screenshot to come, alt text: The Agent Limits tab, with the AI agents switch, credit usage, and one card per agent -screenshot
+
+*/}
+
+## Pause all agents {#pause}
+
+The **AI agents** switch at the top of the tab applies to every agent and every user: Lead Agent, Sales Assistant Agent, Data Quality Agent, Duplicate Agent, and Leadfeeder enrichment.
+
+1. Click the **AI agents** switch to turn it off.
+
+All agents pause. Your limits are kept, so the agents continue with the same limits when you turn the switch back on.
+
+## Turn one agent on or off {#agent}
+
+Each agent has its own card under **Agents**, with a switch in the upper-right corner.
+
+1. Find the agent's card.
+1. Click the switch to turn the agent off or on.
+
+When an agent is off, it stops creating new tasks for all users. The **Leadfeeder enrichment** card controls whether agents can use Leadfeeder to verify and enrich companies.
+
+## Set a monthly limit for one agent {#limit}
+
+By default, an agent has **No limit** and follows the total limit for all agents. Add a limit only where one agent needs its own cap.
+
+1. Click **Set limit** on the agent's card.
+1. Enter the number of credits the agent can use per month.
+
+When an agent reaches its limit, it stops creating new tasks.
+
+## Add extra credit packages {#packages}
+
+Your CRM Suite includes a monthly allowance of AI credits, based on the number of users. If your agents need more, add extra credit packages.
+
+1. Under **Extra credit packages for agents**, click **Edit**.
+1. Select the number of packages.
+
+The tab shows the monthly price of the packages you choose. See [SuperOffice pricing][2] for the included allowance per team size.
+
+## Follow credit usage {#usage}
+
+The top of the tab shows the credits for all agents together.
+
+| Field | What it shows |
+|---|---|
+| Agent maximum usage limit | The credits all agents can use per month: the included credits plus any extra packages. |
+| Agent usage this month | The credits used so far this month, out of the maximum. |
+| Forecast | The estimated credits used by the end of the month, and whether usage is on track to stay within the limit. |
+
+Each agent's card shows what one suggestion costs in credits, how many instances the agent has, and how many credits it has used.
+
+## Global preferences
+
+The agent switches and credit limits are also listed in the AI section of [global preferences][3]. Use the **Agent Limits** tab to change them.
+
+[1]: /en/ai/admin/index
+[2]: https://www.superoffice.com/pricing/
+[3]: /en/ai/admin/index#global

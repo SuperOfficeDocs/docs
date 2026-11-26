@@ -3,15 +3,14 @@ title: Data Quality Agent
 description: Keep the companies and contacts already in your CRM accurate, complete, and up to date, with every proposed change reviewed and approved by you.
 keywords: ['AI agent', 'enrichment', 'GDPR consent', 'bounced email', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -78,7 +77,7 @@ Once the agent is active, you can add the **Data quality agent** widget to your 
 
 1. Select how many review tasks the agent creates per day (1-30). The default is 10.
 
-1. Optionally, enable **Enrich contacts**. When on, the agent also proposes missing contact persons and corrected bounced-email addresses, with email and phone details where it finds them. When off, it only flags the gaps.
+1. Optionally, enable **Enrich contacts**. When on, the agent also proposes missing contact persons and corrected bounced-email addresses, with email and phone details where it finds them. When off, it only flags the gaps. This option is available only when an administrator has set **Allow contact enrichment** to **Yes** in the [AI global preferences][7].
 
 1. Select **Next**.
 
@@ -90,7 +89,7 @@ Once the agent is active, you can add the **Data quality agent** widget to your 
 
 * **Leadfeeder:** used to verify and enrich companies. On by default, always billed at **2x credits** when used, using SuperOffice's own Leadfeeder account.
 
-1. Choose whether to use **Leadfeeder** to enrich companies, or rely on the built-in registries alone. On by default.
+1. Choose whether to use **Leadfeeder** to enrich companies, or rely on the built-in registries alone. On by default. Leadfeeder is available only when an administrator allows it in the [AI global preferences][7].
 
 1. Select **Save**.
 
@@ -172,6 +171,7 @@ Only the instance's owner can change its settings or delete it.
 [4]: /en/ai/learn/set-up-ai-agents#bulk
 [5]: /en/ai/learn/set-up-ai-agents#rate
 [6]: /en/learn/basics/start-page#agents
+[7]: /en/ai/admin/index#global
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png

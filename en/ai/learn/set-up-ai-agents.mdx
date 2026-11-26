@@ -3,15 +3,14 @@ title: Set up AI agents
 description: How to open the Agents area, activate an agent, and create and manage an instance. No admin access is needed. Agent instances are personal, per user.
 keywords: ['agent instance', 'activate agent', 'add instance', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: howto
-tier: plus
+tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -23,10 +22,6 @@ related:
 language: en
 ---
 
-<Note>
-SuperOffice's AI agents are coming soon. This page describes set-up steps for a feature that is not generally available yet.
-</Note>
-
 SuperOffice's AI agents work in the background and propose results for a person to approve. All agents live on the same **Agents** area and are activated and managed the same way. This page covers those shared steps once, then each agent has its own set-up page, for example [Set up Lead Agent][2].
 
 ## Agent instances
@@ -35,8 +30,9 @@ One configured, running copy of an agent is called an **instance**. Some agents 
 
 ## Requirements
 
-* Your organization must be on **CRM Suite Plus** or above.
+* Your organization must be on **CRM Suite Growth** or above for the Data Quality Agent and Duplicate Agent, and on **CRM Suite Plus** or above for the Lead Agent and Sales Assistant Agent.
 * An administrator must [enable AI functions][1] in CRM global preferences before the **Agents** icon appears.
+* AI agents must be turned on for you. They are on for everyone by default, but an administrator can [turn them off for some users][4] or [pause all agents][5].
 
 <Note>
 Agent instances themselves are personal, per user. You do not need admin access or **Settings and maintenance** to create or manage one.
@@ -178,6 +174,8 @@ Deleting an instance is permanent and removes all its data.
 [1]: ../admin/index
 [2]: /en/lead/learn/set-up-lead-agent
 [3]: /en/learn/basics/start-page#agents
+[4]: ../admin/index#preferences-tab
+[5]: ../admin/set-agent-limits#pause
 
 [img1]: /media/loc/en/ai/inactive-agent.png
 [img2]: /media/loc/en/ai/agents-overview-starter-cards.png
