@@ -1,10 +1,10 @@
 ---
 title: AI-diensten instellen
-description: Schakel AI-functies in SuperOffice in en stel vervolgens elke afzonderlijke AI-dienst in.
-keywords: ['ai-functies inschakelen', 'ai-algemene voorkeuren', 'ai-instellingen', 'tekstanalyse']
+description: Schakel AI-functies in SuperOffice in, stel de AI-voorkeuren in en stel vervolgens elke afzonderlijke AI-dienst in.
+keywords: ['ai-functies inschakelen', 'ai-algemene voorkeuren', 'ai-instellingen', 'tekstanalyse', 'ai-agents inschakelen', 'MCP-toegangsbeheer', 'verrijking van contactpersonen', 'Leadfeeder', 'creditlimiet', 'webtoegang']
 author: digitaldiina, Claudia Dias
-date: 11.25.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: core
 category: automation
@@ -16,6 +16,7 @@ audience_tooltip: Instellingen en onderhoud
 userflow_index: true
 related:
   - /nl/ai/learn/set-up-ai-agents
+  - /nl/ai/admin/set-agent-limits
   - /nl/ai/learn/index
   - Gebruik van tekstanalyse: /nl/request/learn/index
 language: nl
@@ -39,10 +40,49 @@ Voordat gebruikers de AI-mogelijkheden van SuperOffice kunnen gebruiken, moet ee
 
     ![Selectievakjes voor tekstanalyse in AI-diensten -screenshot][img2]
 
+## Algemene AI-voorkeuren {#global}
+
+Deze voorkeuren gelden voor het hele systeem. Ga om ze te wijzigen naar **Instellingen en onderhoud** > **Voorkeuren** > **Algemene voorkeuren** en zoek de sectie **AI**.
+
+| Voorkeur | Wat deze doet |
+|---|---|
+| AI-functies inschakelen in SuperOffice | Toont de AI-knoppen en -panelen in SuperOffice. Als deze is ingesteld op **Nee**, zijn ze verborgen. De standaardwaarde is **Ja**. |
+| Leadfeeder-gebruik toestaan | Hiermee kunnen agents Leadfeeder gebruiken om bedrijven te verifiëren en te verrijken. |
+| Verrijking van contactpersonen toestaan | Hiermee kan de Data Quality Agent contactpersonen toevoegen en bijwerken wanneer deze bedrijven verrijkt. Als deze is ingesteld op **Nee**, kunnen gebruikers de optie **Contactpersonen verrijken** van de agent niet inschakelen. Dit geldt ook voor verrijking van contactpersonen buiten de agents. De standaardwaarde is **Nee**. |
+| Maximaal gebruik van AI-credits | Het totale aantal AI-credits dat kan worden gebruikt. Agents maken geen taken meer aan wanneer het gebruik de limiet bereikt. |
+| Data Quality Agent inschakelen, Duplicate Agent inschakelen, Lead Agent inschakelen, Sales Assistant Agent inschakelen | Schakelt elke agent in of uit voor alle gebruikers. Als deze is ingesteld op **Nee**, maakt de agent geen taken meer aan. |
+| Creditlimiet Data Quality Agents, Creditlimiet Duplicate Agents, Creditlimiet Lead Agents, Creditlimiet Sales Assistant Agents, Creditlimiet Leadfeeder | De creditlimiet voor elke agent en voor Leadfeeder. Een agent maakt geen taken meer aan wanneer deze zijn limiet bereikt. |
+
+<Tip>
+De agentschakelaars, creditlimieten en extra creditpakketten zijn eenvoudiger te beheren op het tabblad [Agentlimieten][5], dat ook de credits toont die deze maand zijn gebruikt.
+</Tip>
+
+De sectie **SuperOffice Workspace Assist** heeft één voorkeur:
+
+| Voorkeur | Wat deze doet |
+|---|---|
+| Webtoegang voor Workspace Assistant toestaan | Hiermee kan [Workspace Assist][6] informatie van het web gebruiken in zijn antwoorden. |
+
+## AI-voorkeuren per gebruiker {#preferences-tab}
+
+Deze voorkeuren kunnen worden ingesteld voor de hele database, voor een groep of voor één gebruiker. Gebruikers kunnen ook voor elk ervan hun eigen instelling hebben. Zie [Niveaus voor voorkeursinstellingen][7] voor hoe niveaus werken.
+
+1. Ga naar **Instellingen en onderhoud** > **Voorkeuren** > **Voorkeuren**.
+1. Selecteer **AI** in de lijst met voorkeursgroepen.
+1. Selecteer een voorkeur en voeg vervolgens de instellingen ervan toe of wijzig ze onder **Actieve instellingen**.
+
+| Voorkeur | Wat deze doet |
+|---|---|
+| Automatisch een antwoord op een bericht genereren | Genereert een suggestie van [Reply Assist][8] wanneer een gebruiker bij een verzoek op **Beantwoorden** of **Allen beantwoorden** klikt. |
+| AI-agents inschakelen | Hiermee kunnen gebruikers hun eigen [AI-agents][2] instellen. Als deze is ingesteld op **Nee**, is het pictogram **Agenten** verborgen in de Navigator. De standaardwaarde is **Ja**. |
+| MCP-toegangsbeheer | Bepaalt wat [MCP Connect][3]-clients in SuperOffice kunnen doen: lezen en bijwerken (**Alle**, de standaardwaarde), alleen lezen of niets. |
+| AI Reply Assist-suggestie tonen | Toont de suggestie van [Reply Assist][8] wanneer een gebruiker een verzoek beantwoordt. |
+
 ## Een afzonderlijke AI-dienst instellen
 
 * [AI-gebaseerde categorisering instellen][1]
 * [AI-agents instellen][2]
+* [Agentlimieten instellen][5]
 * [Verbinding maken met de MCP-server][3]
 * [AI-agentwidgets op de Startpagina weergeven][4]
 
@@ -50,6 +90,10 @@ Voordat gebruikers de AI-mogelijkheden van SuperOffice kunnen gebruiken, moet ee
 [2]: /nl/ai/learn/set-up-ai-agents
 [3]: /nl/ai/learn/mcp
 [4]: /nl/learn/basics/start-page#admin-agents
+[5]: /nl/ai/admin/set-agent-limits
+[6]: /nl/ai/learn/workspace-assist
+[7]: /nl/admin/preferences/index#levels
+[8]: /nl/request/learn/reply#reply-assist
 
 [img1]: /media/loc/en/ai/global-ai-preferences.png
 [img2]: /media/loc/en/ai/enable-text-analysis.png

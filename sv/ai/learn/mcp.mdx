@@ -3,8 +3,8 @@ title: MCP Connect
 description: Anslut SuperOffice CRM till Claude, Microsoft Copilot eller ChatGPT som en live datakälla med hjälp av Model Context Protocol.
 keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI-integration']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: plus
 category: automation
@@ -49,6 +49,8 @@ Steg-för-steg-guider för varje klient finns på [SuperOffice MCP Server-webbpl
 
 Med de här verktygen kan den anslutna AI-klienten söka i och läsa SuperOffice CRM-data å dina vägnar. De finns med CRM Suite Plus eller högre.
 
+Sök- och listverktyg returnerar sina resultat sida för sida. AI-klienten kan hämta så många resultat som den behöver, en sida i taget, utan att överbelasta ditt CRM.
+
 | Verktyg | Vad de gör |
 |---|---|
 | `search_companies`, `get_company` | Hittar och läser företagsposter. |
@@ -56,11 +58,11 @@ Med de här verktygen kan den anslutna AI-klienten söka i och läsa SuperOffice
 | `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Hittar och läser försäljningar, deras säljguide, intressenter och aktivitetshistorik. |
 | `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Hittar ärenden och läser deras konversation eller bokföringsdetaljer. |
 | `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Hittar och läser projekt, deras medlemmar och aktivitetshistorik. |
-| `search_appointments`, `get_appointment` | Hittar och läser uppföljningar i kalendern. |
+| `search_appointments`, `get_appointment`, `list_appointment_types` | Hittar och läser uppföljningar i kalendern och listar de tillgängliga uppföljningstyperna. |
 | `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Hittar dokument, inklusive e-postmeddelanden och offerter, och läser innehållet. |
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Listar aktivitetshistorik för ett företag, en kontakt eller en användare. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Hittar och läser rader i [extratabeller (egendefinierade objekt)][8]. |
-| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår upp en användares identitet, söker i externa företagsregister och hämtar server- och sessionsinformation. |
+| `get_associate`, `search_associates`, `search_external_companies`, `whoami` | Hittar användare och slår upp en användares identitet, söker i externa företagsregister och hämtar information om din egen session. |
 
 ## Uppdateringsverktyg
 
@@ -68,11 +70,15 @@ Med de här verktygen kan den anslutna AI-klienten söka i och läsa SuperOffice
 Uppdateringsverktyg kräver CRM Suite Super.
 </Note>
 
-Med de här verktygen kan den anslutna AI-klienten ändra fält på en befintlig post å dina vägnar. MCP Connect skapar inte nya poster.
+Med de här verktygen kan den anslutna AI-klienten ändra fält på en befintlig post å dina vägnar. MCP Connect skapar inte nya poster. Dina åtkomsträttigheter i SuperOffice gäller fortfarande, så klienten kan bara ändra det som du har behörighet att ändra.
 
 | Verktyg | Vad de gör |
 |---|---|
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Uppdaterar fält på en befintlig post. |
+
+## Begränsa MCP-åtkomst {#access}
+
+En administratör kan begränsa vad MCP Connect-klienter kan göra med preferensen **MCP-åtkomstkontroll**: läsa och uppdatera (**Alla**, standardvärdet), bara läsa eller ingenting. Preferensen kan anges för hela databasen, för en grupp eller för en enskild användare. Se [AI-preferenser per användare][9].
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
@@ -82,3 +88,4 @@ Med de här verktygen kan den anslutna AI-klienten ändra fält på en befintlig
 [6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
 [7]: /sv/admin/license/crm-suite
 [8]: /sv/custom-objects/learn/extra-table
+[9]: /sv/ai/admin/index#preferences-tab

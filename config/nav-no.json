@@ -110,6 +110,7 @@
             "group": "For administratorer",
             "root": "no/ai/admin/index",
             "pages": [
+              "no/ai/admin/set-agent-limits",
               "no/ai/admin/set-up-categorization"
             ]
           }

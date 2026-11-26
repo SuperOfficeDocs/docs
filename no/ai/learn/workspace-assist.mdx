@@ -4,8 +4,8 @@ title: Workspace Assist
 description: Bruk Workspace Assists AI-drevne sidepanel for raske svar, sammendrag og innholdsforslag i hele SuperOffice CRM.
 keywords: ['AI', 'ChatGPT', 'OpenAI', 'Bing', 'Copilot']
 author: digitaldiina, Filip Norman
-date: 10.13.2026
-so_version: 12.5
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 license: aiplatform
 tier: core
@@ -13,7 +13,6 @@ category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/ai/learn/copilot
@@ -22,23 +21,24 @@ related:
   - Andre AI-tjenester: /no/ai/learn/index
   - /no/admin/license/crm-suite
   - Trust center | GDPR & SuperOffice-produkter: https://www.superoffice.com/trust-center/gdpr-and-crm/
-  - https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
 language: no
 ---
 
-Workspace Assist integrerer sømløst en ChatGPT-lignende brukeropplevelse med SuperOffice og gir et kraftig AI-verktøy innenfor CRM-konteksten. Vårt mål er å integrere generativ AI sømløst i SuperOffice CRM, og eliminere behovet for ekstern app-tilgang samtidig som arbeidsflyten forbedres direkte innenfor plattformen.
+Workspace Assist er en AI-chat i sidepanelet i SuperOffice CRM. Den svarer på spørsmål om posten du jobber med, ved hjelp av dine egne CRM-data, og hjelper deg med å skrive innhold uten å forlate SuperOffice.
 
-Du kan spare tid og få innsikt ved å bruke de ulike ferdiglagde spørsmålene (prompts) i skjermbildene Firma, Person, Dagbok, Salg, Prosjekt, Sak og Utvalg.
+Du kan stille dine egne spørsmål eller bruke de ferdiglagde spørsmålene (prompts) i skjermbildene Firma, Person, Dagbok, Salg, Prosjekt, Sak og Utvalg.
 
 Workspace Assist er tilgjengelig på **Core**-planen. **Growth**- og **Plus**-planene låser opp ytterligere funksjonalitet.
 
 <Note>
-For en begrenset periode er denne funksjonen også tilgjengelig gjennom vårt [AI lab-program][9]. SuperOffice AI er kun tilgjengelig i skyen.
+SuperOffice AI er kun tilgjengelig i skyen.
 </Note>
 
-## Personvern og GDPR
+## Dine CRM-data og personvern {#privacy}
 
-Workspace Assist vet ingenting om kundedataene dine og vil gi deg svar ved hjelp av en stor språkmodell (LLM) som Bing fra Microsoft, ChatGPT fra OpenAI eller Claude fra Anthropic.
+Workspace Assist svarer ved hjelp av en stor språkmodell (LLM). For å svare på spørsmål om CRM-en din finner og leser den data med de samme verktøyene som [MCP Connect][2]. Den bruker tilgangsrettighetene til SuperOffice-brukeren din, så den finner bare data du allerede har tilgang til.
+
+Hvis en administrator tillater det, kan Workspace Assist også bruke informasjon fra nettet i svarene sine. Se [globale AI-preferanser][3].
 
 ## Kom i gang
 
@@ -67,11 +67,11 @@ Workspace Assist er tilgjengelig i alle skjermbilder med [sidepanelet][1]. Som s
 
 Workspace Assist bruker språket i SuperOffice-applikasjonen din. For eksempel, hvis du har valgt *Deutsch* i **Lokale innstillinger**, vil AI svare deg på tysk.
 
-Konteksten er alltid det som vises for øyeblikket. For eksempel, når du ser på firmaet "SuperOffice AS", forteller AI deg om SuperOffice. Hvis du går til "Visma", forteller AI deg om det firmaet i stedet. Hvis du bytter til **Prosjekt**, blir chatten tilbakestilt og du kan velge prosjektrelaterte prompts. Og så videre.
+Workspace Assist vet alltid hvilken post du jobber med. For eksempel kan du på et firma spørre "Er det noen uferdige oppgaver på denne kunden?" Hvis du går til et annet firma, svarer den om det firmaet i stedet. Hvis du bytter til **Prosjekt**, blir chatten tilbakestilt og du kan velge prosjektrelaterte prompts.
 
 ## Tilgjengelige prompts
 
-Prompts kan endres uten forhåndsvarsel under piloten!
+Prompts kan endres uten varsel.
 
 ### Firma
 
@@ -113,7 +113,8 @@ Prompts kan endres uten forhåndsvarsel under piloten!
 * Kommer snart
 
 [1]: ../../learn/getting-started/main-screen/side-panel
-[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
+[2]: /no/ai/learn/mcp
+[3]: /no/ai/admin/index#global
 [img2]: ../../../media/loc/en/ai/copilot-in-sidepanel-list.png
 [img3]: ../../../media/loc/en/ai/copilot-on-sale.png
 [img4]: ../../../media/loc/en/ai/copilot-about-superoffice.png

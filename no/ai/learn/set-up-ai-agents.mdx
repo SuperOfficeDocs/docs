@@ -3,15 +3,14 @@ title: Sett opp AI-agenter
 description: Hvordan åpne Agenter-området, aktivere en agent, og opprette og administrere en instans. Ingen administratortilgang er nødvendig. Agentinstanser er personlige, per bruker.
 keywords: ['agentinstans', 'aktivere agent', 'legge til instans', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: howto
-tier: plus
+tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -23,10 +22,6 @@ related:
 language: no
 ---
 
-<Note>
-SuperOffices AI-agenter kommer snart. Denne siden beskriver oppsettstrinnene for en funksjon som ennå ikke er allment tilgjengelig.
-</Note>
-
 SuperOffices AI-agenter jobber i bakgrunnen og foreslår resultater som en person kan godkjenne. Alle agenter finnes i det samme **Agenter**-området, og aktiveres og administreres på samme måte. Denne siden dekker disse felles trinnene én gang, og hver agent har deretter sin egen oppsettside, for eksempel [Sett opp Lead Agent][2].
 
 ## Agentinstanser
@@ -35,8 +30,9 @@ SuperOffices AI-agenter jobber i bakgrunnen og foreslår resultater som en perso
 
 ## Krav
 
-* Organisasjonen din må ha **CRM Suite Plus** eller høyere.
+* Organisasjonen din må ha **CRM Suite Growth** eller høyere for Data Quality Agent og Duplicate Agent, og **CRM Suite Plus** eller høyere for Lead Agent og Sales Assistant Agent.
 * En administrator må [aktivere AI-funksjoner][1] i globale CRM-preferanser før **Agenter**-ikonet vises.
+* AI-agenter må være slått på for deg. De er slått på for alle som standard, men en administrator kan [slå dem av for enkelte brukere][4] eller [sette alle agenter på pause][5].
 
 <Note>
 Agentinstanser er i seg selv personlige, per bruker. Du trenger ikke administratortilgang eller **Innstillinger og vedlikehold** for å opprette eller administrere en.
@@ -178,6 +174,8 @@ Sletting av en instans er permanent og fjerner alle dataene.
 [1]: ../admin/index
 [2]: /no/lead/learn/set-up-lead-agent
 [3]: /no/learn/basics/start-page#agents
+[4]: ../admin/index#preferences-tab
+[5]: ../admin/set-agent-limits#pause
 
 [img1]: /media/loc/en/ai/inactive-agent.png
 [img2]: /media/loc/en/ai/agents-overview-starter-cards.png

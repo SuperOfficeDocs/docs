@@ -4,8 +4,8 @@ title: Workspace Assist
 description: Gebruik het AI-gestuurde zijpaneel van Workspace Assist voor snelle antwoorden, samenvattingen en contentsuggesties in SuperOffice CRM.
 keywords: ['AI', 'ChatGPT', 'OpenAI', 'Bing', 'Copilot']
 author: digitaldiina, Filip Norman
-date: 10.13.2026
-so_version: 12.5
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 license: aiplatform
 tier: core
@@ -13,7 +13,6 @@ category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /nl/ai/learn/copilot
@@ -22,23 +21,24 @@ related:
   - Andere AI-diensten: /nl/ai/learn/index
   - /nl/admin/license/crm-suite
   - Trust center | AVG & SuperOffice-producten: https://www.superoffice.com/trust-center/gdpr-and-crm/
-  - https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
 language: nl
 ---
 
-Workspace Assist integreert naadloos een ChatGPT-achtige gebruikerservaring met SuperOffice en biedt een krachtige AI-tool binnen de CRM-context. Ons doel is om generatieve AI naadloos in SuperOffice CRM in te bedden, waardoor de noodzaak voor externe app-toegang wordt weggenomen en uw workflow direct binnen het platform wordt verbeterd.
+Workspace Assist is een AI-chat in het zijpaneel van SuperOffice CRM. Het beantwoordt vragen over het record waarmee u werkt, met behulp van uw eigen CRM-gegevens, en helpt u content te schrijven zonder SuperOffice te verlaten.
 
-U kunt tijd besparen en inzichten verkrijgen door de verschillende kant-en-klare vragen (prompts) te gebruiken in de schermen Bedrijf, Persoon, Agenda, Verkoop, Project, Verzoek en Selectie.
+U kunt uw eigen vragen stellen of de kant-en-klare vragen (prompts) gebruiken in de schermen Bedrijf, Persoon, Agenda, Verkoop, Project, Verzoek en Selectie.
 
 Workspace Assist is beschikbaar in het **Core**-abonnement. De **Growth**- en **Plus**-abonnementen bieden extra mogelijkheden.
 
 <Note>
-Voor beperkte tijd is deze functie ook beschikbaar via ons [AI lab-programma][9]. SuperOffice AI is alleen beschikbaar in de cloud.
+SuperOffice AI is alleen beschikbaar in de cloud.
 </Note>
 
-## Privacy en AVG
+## Uw CRM-gegevens en privacy {#privacy}
 
-Workspace Assist weet niets over uw klantgegevens en zal u antwoorden geven met behulp van een groot taalmodel (LLM) zoals Bing van Microsoft, ChatGPT van OpenAI of Claude van Anthropic.
+Workspace Assist antwoordt met behulp van een groot taalmodel (LLM). Om vragen over uw CRM te beantwoorden, zoekt en leest het gegevens met dezelfde tools als [MCP Connect][2]. Het gebruikt de toegangsrechten van uw SuperOffice-gebruiker, dus het vindt alleen gegevens waartoe u al toegang hebt.
+
+Als een beheerder dit toestaat, kan Workspace Assist ook informatie van het web gebruiken in zijn antwoorden. Zie [Algemene AI-voorkeuren][3].
 
 ## Aan de slag
 
@@ -67,11 +67,11 @@ Workspace Assist is beschikbaar in alle schermen met het [zijpaneel][1]. Standaa
 
 Workspace Assist gebruikt de taal van uw SuperOffice-applicatie. Als u bijvoorbeeld *Deutsch* hebt geselecteerd in **Lokale instellingen**, zal de AI u in het Duits antwoorden.
 
-De context is altijd het momenteel bekeken item. Wanneer u bijvoorbeeld het bedrijf "SuperOffice AS" bekijkt, vertelt de AI u over SuperOffice. Als u naar "Visma" gaat, vertelt de AI u in plaats daarvan over dat bedrijf. Als u naar **Project** schakelt, wordt de chat gereset en kunt u projectgerelateerde prompts selecteren. Enzovoort.
+Workspace Assist weet altijd met welk record u werkt. Bij een bedrijf kunt u bijvoorbeeld vragen: "Zijn er onvoltooide taken bij deze klant?" Als u naar een ander bedrijf gaat, antwoordt het in plaats daarvan over dat bedrijf. Als u naar **Project** schakelt, wordt de chat gereset en kunt u projectgerelateerde prompts selecteren.
 
 ## Beschikbare prompts
 
-Prompts kunnen zonder voorafgaande kennisgeving worden gewijzigd tijdens de pilot!
+Prompts kunnen zonder voorafgaande kennisgeving worden gewijzigd.
 
 ### Bedrijf
 
@@ -113,7 +113,8 @@ Prompts kunnen zonder voorafgaande kennisgeving worden gewijzigd tijdens de pilo
 * Binnenkort beschikbaar
 
 [1]: ../../learn/getting-started/main-screen/side-panel
-[9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
+[2]: /nl/ai/learn/mcp
+[3]: /nl/ai/admin/index#global
 [img2]: ../../../media/loc/en/ai/copilot-in-sidepanel-list.png
 [img3]: ../../../media/loc/en/ai/copilot-on-sale.png
 [img4]: ../../../media/loc/en/ai/copilot-about-superoffice.png

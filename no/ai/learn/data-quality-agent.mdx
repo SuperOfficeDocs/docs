@@ -3,15 +3,14 @@ title: Data Quality Agent
 description: Hold firmaene og personene som allerede finnes i CRM-en din nøyaktige, komplette og oppdaterte, med hver foreslåtte endring gjennomgått og godkjent av deg.
 keywords: ['AI-agent', 'berikelse', 'GDPR-samtykke', 'returnert e-post', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -78,7 +77,7 @@ Når agenten er aktiv, kan du legge til agentens widget på [Startsiden][6], så
 
 1. Velg hvor mange gjennomgangsoppgaver agenten oppretter per dag (1-30). Standarden er 10.
 
-1. Aktiver eventuelt **Berik kontakter**. Når dette er på, foreslår agenten også manglende personer og korrigerte returnerte e-postadresser, med e-post- og telefondetaljer der den finner dem. Når det er av, flagger den bare manglene.
+1. Aktiver eventuelt **Berik kontakter**. Når dette er på, foreslår agenten også manglende personer og korrigerte returnerte e-postadresser, med e-post- og telefondetaljer der den finner dem. Når det er av, flagger den bare manglene. Dette alternativet er bare tilgjengelig når en administrator har satt **Tillat kontaktberikelse** til **Ja** i [globale AI-preferanser][7].
 
 1. Klikk på **Neste**.
 
@@ -90,7 +89,7 @@ Når agenten er aktiv, kan du legge til agentens widget på [Startsiden][6], så
 
 * **Leadfeeder:** brukes til å verifisere og berike firmaer. Slått på som standard. Faktureres alltid med **2x kreditter** ved bruk, via SuperOffices egen Leadfeeder-konto.
 
-1. Velg om du vil bruke **Leadfeeder** til å berike firmaer, eller bare bruke de innebygde registrene. Slått på som standard.
+1. Velg om du vil bruke **Leadfeeder** til å berike firmaer, eller bare bruke de innebygde registrene. Slått på som standard. Leadfeeder er bare tilgjengelig når en administrator tillater det i [globale AI-preferanser][7].
 
 1. Klikk på **Lagre**.
 
@@ -172,6 +171,7 @@ Bare instansens eier kan endre innstillingene eller slette den.
 [4]: /no/ai/learn/set-up-ai-agents#bulk
 [5]: /no/ai/learn/set-up-ai-agents#rate
 [6]: /no/learn/basics/start-page#agents
+[7]: /no/ai/admin/index#global
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png

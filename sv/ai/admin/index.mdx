@@ -1,10 +1,10 @@
 ---
 title: Konfigurera AI-tjänster
-description: Aktivera AI-funktioner i SuperOffice och konfigurera sedan varje enskild AI-tjänst.
-keywords: ['aktivera ai-funktioner', 'globala ai-inställningar', 'ai-inställningar', 'textanalys']
+description: Aktivera AI-funktioner i SuperOffice, ange AI-preferenserna och konfigurera sedan varje enskild AI-tjänst.
+keywords: ['aktivera ai-funktioner', 'globala ai-inställningar', 'ai-inställningar', 'textanalys', 'aktivera ai-agenter', 'MCP-åtkomstkontroll', 'berikning av kontakter', 'Leadfeeder', 'kreditgräns', 'webbåtkomst']
 author: digitaldiina, Claudia Dias
-date: 11.25.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: core
 category: automation
@@ -16,6 +16,7 @@ audience_tooltip: Inställningar och underhåll
 userflow_index: true
 related:
   - /sv/ai/learn/set-up-ai-agents
+  - /sv/ai/admin/set-agent-limits
   - /sv/ai/learn/index
   - Användning av textanalys: /sv/request/learn/index
 language: sv
@@ -39,10 +40,49 @@ Innan användare kan använda SuperOffice AI-funktioner måste en administratör
 
     ![Kryssrutor för textanalys i AI-tjänster -screenshot][img2]
 
+## Globala AI-preferenser {#global}
+
+Dessa preferenser gäller för hela systemet. Om du vill ändra dem går du till **Inställningar och underhåll** > **Preferenser** > **Globala preferenser** och letar upp avsnittet **AI**.
+
+| Preferens | Vad den gör |
+|---|---|
+| Aktivera AI-funktioner i SuperOffice | Visar AI-knapparna och AI-panelerna i SuperOffice. När preferensen är inställd på **Nej** döljs de. Standardvärdet är **Ja**. |
+| Tillåt användning av Leadfeeder | Låter agenter använda Leadfeeder för att verifiera och berika företag. |
+| Tillåt berikning av kontakter | Låter Data Quality Agent lägga till och uppdatera kontakter när den berikar företag. När preferensen är inställd på **Nej** kan användare inte aktivera agentens alternativ **Berika kontakter**. Detta gäller även berikning av kontakter utanför agenterna. Standardvärdet är **Nej**. |
+| Maximal användning av AI-krediter | Det totala antalet AI-krediter som får användas. Agenterna slutar skapa uppgifter när användningen når gränsen. |
+| Aktivera Data Quality Agent, Aktivera Duplicate Agent, Aktivera Lead Agent, Aktivera Sales Assistant Agent | Aktiverar eller avaktiverar varje agent för alla användare. När preferensen är inställd på **Nej** slutar agenten skapa uppgifter. |
+| Kreditgräns Data Quality Agents, Kreditgräns Duplicate Agents, Kreditgräns Lead Agents, Kreditgräns Sales Assistant Agents, Kreditgräns Leadfeeder | Kreditgränsen för varje agent och för Leadfeeder. En agent slutar skapa uppgifter när den når sin gräns. |
+
+<Tip>
+Agentreglagen, kreditgränserna och de extra kreditpaketen är enklare att hantera på fliken [Agentgränser][5], som också visar de krediter som har använts den här månaden.
+</Tip>
+
+Avsnittet **SuperOffice Workspace Assist** har en preferens:
+
+| Preferens | Vad den gör |
+|---|---|
+| Tillåt Workspace Assistant åtkomst till webben | Låter [Workspace Assist][6] använda information från webben i sina svar. |
+
+## AI-preferenser per användare {#preferences-tab}
+
+Dessa preferenser kan anges för hela databasen, för en grupp eller för en enskild användare. Användare kan också ha en egen inställning för var och en av dem. Information om hur nivåerna fungerar finns i [Nivåer för inställningar][7].
+
+1. Gå till **Inställningar och underhåll** > **Preferenser** > **Preferenser**.
+1. Välj **AI** i listan över preferensgrupper.
+1. Välj en preferens och lägg sedan till eller ändra dess inställningar under **Aktiva inställningar**.
+
+| Preferens | Vad den gör |
+|---|---|
+| Generera svar på ett meddelande automatiskt | Genererar ett förslag från [Reply Assist][8] när en användare klickar på **Svara** eller **Svara alla** i ett ärende. |
+| Aktivera AI-agenter | Låter användare konfigurera sina egna [AI-agenter][2]. När preferensen är inställd på **Nej** döljs ikonen **Agenter** i Navigatorn. Standardvärdet är **Ja**. |
+| MCP-åtkomstkontroll | Styr vad [MCP Connect][3]-klienter kan göra i SuperOffice: läsa och uppdatera (**Alla**, standardvärdet), bara läsa eller ingenting. |
+| Visa AI Reply Assist-förslag | Visar förslaget från [Reply Assist][8] när en användare svarar på ett ärende. |
+
 ## Konfigurera en enskild AI-tjänst
 
 * [Konfigurera AI-baserad kategorisering][1]
 * [Konfigurera AI-agenter][2]
+* [Ange agentgränser][5]
 * [Anslut till MCP-server][3]
 * [Visa AI-agentwidgetar på Startsidan][4]
 
@@ -50,6 +90,10 @@ Innan användare kan använda SuperOffice AI-funktioner måste en administratör
 [2]: /sv/ai/learn/set-up-ai-agents
 [3]: /sv/ai/learn/mcp
 [4]: /sv/learn/basics/start-page#admin-agents
+[5]: /sv/ai/admin/set-agent-limits
+[6]: /sv/ai/learn/workspace-assist
+[7]: /sv/admin/preferences/index#levels
+[8]: /sv/request/learn/reply#reply-assist
 
 [img1]: /media/loc/en/ai/global-ai-preferences.png
 [img2]: /media/loc/en/ai/enable-text-analysis.png

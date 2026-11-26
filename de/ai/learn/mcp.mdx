@@ -3,8 +3,8 @@ title: MCP Connect
 description: Verbinden Sie SuperOffice CRM über das Model Context Protocol als Live-Datenquelle mit Claude, Microsoft Copilot oder ChatGPT.
 keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'KI-Integration']
 author: digitaldiina
-date: 10.01.2026
-so_version: 12.4
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: plus
 category: automation
@@ -49,6 +49,8 @@ Schritt-für-Schritt-Anleitungen für jeden Client finden Sie auf der [SuperOffi
 
 Mit diesen Tools kann der verbundene KI-Client SuperOffice CRM-Daten in Ihrem Auftrag suchen und lesen. Sie sind ab CRM Suite Plus verfügbar.
 
+Such- und Listentools geben ihre Ergebnisse seitenweise zurück. Der KI-Client kann so viele Ergebnisse abrufen, wie er benötigt, eine Seite nach der anderen, ohne Ihr CRM zu überlasten.
+
 | Tools | Was sie tun |
 |---|---|
 | `search_companies`, `get_company` | Findet und liest Firmendatensätze. |
@@ -56,11 +58,11 @@ Mit diesen Tools kann der verbundene KI-Client SuperOffice CRM-Daten in Ihrem Au
 | `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Findet und liest Verkäufe, ihren Verkaufsleitfaden, Beteiligte und den Aktivitätsverlauf. |
 | `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Findet Anfragen und liest deren Konversation oder Metadaten. |
 | `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Findet und liest Projekte, ihre Mitglieder und den Aktivitätsverlauf. |
-| `search_appointments`, `get_appointment` | Findet und liest Folgeaufgaben im Kalender. |
+| `search_appointments`, `get_appointment`, `list_appointment_types` | Findet und liest Folgeaufgaben im Kalender und listet die verfügbaren Folgeaufgabentypen auf. |
 | `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Findet Dokumente, einschließlich E-Mails und Angebote, und liest ihren Inhalt. |
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Listet den Aktivitätsverlauf einer Firma, einer Person oder eines Benutzers auf. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Findet und liest Zeilen in [Zusatztabellen][8] (benutzerdefinierten Objekten). |
-| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Löst die Identität eines Benutzers auf, durchsucht externe Handelsregister und ruft Server- und Sitzungsinformationen ab. |
+| `get_associate`, `search_associates`, `search_external_companies`, `whoami` | Findet Benutzer und löst die Identität eines Benutzers auf, durchsucht externe Handelsregister und ruft Informationen zu Ihrer eigenen Sitzung ab. |
 
 ## Aktualisierungstools
 
@@ -68,11 +70,15 @@ Mit diesen Tools kann der verbundene KI-Client SuperOffice CRM-Daten in Ihrem Au
 Aktualisierungstools erfordern CRM Suite Super.
 </Note>
 
-Mit diesen Tools kann der verbundene KI-Client Felder eines bestehenden Datensatzes in Ihrem Auftrag ändern. MCP Connect legt keine neuen Datensätze an.
+Mit diesen Tools kann der verbundene KI-Client Felder eines bestehenden Datensatzes in Ihrem Auftrag ändern. MCP Connect legt keine neuen Datensätze an. Ihre SuperOffice-Zugriffsrechte gelten weiterhin, sodass der Client nur das ändern kann, was Sie ändern dürfen.
 
 | Tools | Was sie tun |
 |---|---|
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Aktualisiert Felder in einem bestehenden Datensatz. |
+
+## MCP-Zugriff einschränken {#access}
+
+Ein Administrator kann mit der Einstellung **MCP-Zugriffskontrolle** einschränken, was MCP Connect-Clients tun können: lesen und aktualisieren (**Alle**, der Standardwert), nur lesen oder nichts. Die Einstellung kann für die gesamte Datenbank, für eine Gruppe oder für einen einzelnen Benutzer festgelegt werden. Siehe [KI-Einstellungen pro Benutzer][9].
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
@@ -82,3 +88,4 @@ Mit diesen Tools kann der verbundene KI-Client Felder eines bestehenden Datensat
 [6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
 [7]: /de/admin/license/crm-suite
 [8]: /de/custom-objects/learn/extra-table
+[9]: /de/ai/admin/index#preferences-tab

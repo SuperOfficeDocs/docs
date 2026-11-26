@@ -3,15 +3,14 @@ title: Data Quality Agent
 description: Halten Sie die Firmen und Personen, die bereits in Ihrem CRM erfasst sind, korrekt, vollständig und aktuell, wobei jede vorgeschlagene Änderung von Ihnen geprüft und genehmigt wird.
 keywords: ['KI-Agent', 'Anreicherung', 'DSGVO-Einwilligung', 'unzustellbare E-Mail', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 11.16.2026
-so_version: 12.6
+date: 11.26.2026
+so_version: 12.7
 content_type: concept
 tier: growth
 category: automation
 topic: ai
 platform: web
 deployment: online
-pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -78,7 +77,7 @@ Wenn der Agent aktiv ist, können Sie das Widget des Agenten zu Ihrer [Startseit
 
 1. Wählen Sie, wie viele Prüfaufgaben der Agent pro Tag erstellt (1 bis 30). Der Standardwert ist 10.
 
-1. Aktivieren Sie optional **Kontakte anreichern**. Wenn aktiviert, schlägt der Agent auch fehlende Personen und korrigierte, unzustellbare E-Mail-Adressen vor, mit E-Mail- und Telefonangaben, wenn er sie findet. Ist die Option deaktiviert, kennzeichnet er nur die Lücken.
+1. Aktivieren Sie optional **Kontakte anreichern**. Wenn aktiviert, schlägt der Agent auch fehlende Personen und korrigierte, unzustellbare E-Mail-Adressen vor, mit E-Mail- und Telefonangaben, wenn er sie findet. Ist die Option deaktiviert, kennzeichnet er nur die Lücken. Diese Option ist nur verfügbar, wenn ein Administrator **Kontaktanreicherung zulassen** in den [globalen KI-Einstellungen][7] auf **Ja** gesetzt hat.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -90,7 +89,7 @@ Wenn der Agent aktiv ist, können Sie das Widget des Agenten zu Ihrer [Startseit
 
 * **Leadfeeder:** wird zur Prüfung und Anreicherung von Firmen verwendet. Standardmäßig aktiviert, bei Nutzung immer mit **2-fachen Credits** abgerechnet, über das eigene Leadfeeder-Konto von SuperOffice.
 
-1. Wählen Sie, ob **Leadfeeder** zur Anreicherung von Firmen verwendet werden soll oder ob Sie sich allein auf die integrierten Register verlassen möchten. Standardmäßig aktiviert.
+1. Wählen Sie, ob **Leadfeeder** zur Anreicherung von Firmen verwendet werden soll oder ob Sie sich allein auf die integrierten Register verlassen möchten. Standardmäßig aktiviert. Leadfeeder ist nur verfügbar, wenn ein Administrator es in den [globalen KI-Einstellungen][7] zulässt.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -172,6 +171,7 @@ Nur der Eigentümer der Instanz kann ihre Einstellungen ändern oder sie lösche
 [4]: /de/ai/learn/set-up-ai-agents#bulk
 [5]: /de/ai/learn/set-up-ai-agents#rate
 [6]: /de/learn/basics/start-page#agents
+[7]: /de/ai/admin/index#global
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png
