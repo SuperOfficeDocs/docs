@@ -142,6 +142,155 @@ A new request gets its status from the first of these that applies: the category
 
 Learn more about [default statuses][28].
 
+### Additional information for the pilot programs: AI Lab and Custom Objects
+
+There are multiple features added through these pilot programs. Since these features now is included in CRM Suite plans, the features needs to be added to the different releases where it was introduced.
+
+Here are the list of the different features and when it was introduced:
+
+* AI Lab pilot (available for CRM Suite Growth and higher):
+  * Company Insight (Release 11.5)
+  * Duplicate check (Release 11.5)
+  * Side panel - Workspace Assist
+  * Summary of request
+  * Follow-up - suggest text
+  * Request - text help
+  * Outlook - prefill data input
+* Custom Objects pilot (available for CRM Suite Growth and higher):
+  * Auto-generated archive tabs (Release 10.3.4)
+  * Enhanced search in Selections (Release 10.3.4)
+  * Extending search capabilities on relational fields (Release 10.3.4)
+  * Preview details of a Custom object in the Side Panel (Release 10.3.7)
+  * Search/Selection/Dashboard on Custom object without a relation to a standard entity (Release 10.3.7)
+  * Customize Archive layout containing Custom objects in the Screen Designer (Release 10.3.9)
+  * New component to show, edit and delete an item from Extra table (Release 10.3.9)
+  * Create a trigger on loading a Custom object to pre-fill fields based on CRMScripts (Release 10.3.9)
+  * Full Entity in Navigator (Release 11.5)
+  * Custom objects available in Screen Designer (Release 11.5)
+  * Access Rights for each Custom Object (Release 11.5)
+
+#### Company insight (Release 11.5)
+
+When you add a company, AI helps you [find the correct company][https://docs.superoffice.com/en/company/learn/create#company-insight] and fills in the related company information. Review the information and save the company when you are happy with it. If the company is already in SuperOffice, the company icon appears in front of the company name, so you can **avoid creating duplicates**.
+
+#### Side panel - Workspace Assist
+
+Get quick answers without leaving your work. The [**Workspace Assist**][https://docs.superoffice.com/en/ai/learn/workspace-assist] chat in the side panel helps you find information and get help with the task in front of you, whether you are working on a company, a sale or a request.
+
+The chat offers ready-made questions that match the screen you are on, so you can get started with a single click instead of thinking up the right wording. For example, on a Sale screen you can pick a suggested question to get help with the sale you are looking at. You can also ask Workspace Assist about anything else, as it gives you access to a version of ChatGPT. Use it to brainstorm ideas, explain a topic or help you word a message.
+
+#### Summary of request
+
+Get up to speed on a request in seconds. Long request threads can be time-consuming to read, especially when you pick up a request from a colleague or return to one after a break. Summary Assist summarises the messages in a request, so you can act on it without reading the full thread.
+
+You find it in the **Reply Assist** section of the reply tools in a request. Select **Summarise** and review the summary of the request's messages.
+
+Summary Assist requires a Text Services licence or CRM Suite Core. If you do not see it, ask your administrator to [enable text analysis][https://docs.superoffice.com/en/ai/admin/index#enable-text-analysis]. Learn more about [Summary Assist][https://docs.superoffice.com/en/request/learn/handle-request-ai#summary].
+
+#### Follow-up - suggest text
+
+Use SuperOffice [Writing Assist][https://docs.superoffice.com/en/request/learn/handle-request-ai#summary] in the **Follow-up** dialog to write clear, precise follow-ups in less time. You stay in control. Add more text, shorten it, choose a different style, or have your text corrected or rewritten.
+
+Follow-ups often hold the details your colleagues rely on later, but finding the right words takes time when you are between meetings. SuperOffice Workspace Assist helps you draft and polish the text, so you can move on to your next task.
+
+You find it in the **Follow-up** dialog, where Writing Assist works on the text in your follow-up. You decide what to ask for and how to shape the result. Add more text, make it shorter, choose a different style, or have your text corrected or rewritten. You can keep adjusting until the text suits you, and you decide what to save.
+
+#### Request - text help with Reply Assist
+
+Reply to requests faster, with clear and precise wording. Reply Assist helps you work with the text of your reply, so you can spend less time writing and more time helping your customer.
+
+You find it in the **Reply Assist** section of the reply tools in a request. You decide what to ask for. Add more text, make it shorter, choose a different style, or have your text corrected or rewritten.
+
+Learn more about [Reply Assist][https://docs.superoffice.com/en/request/learn/handle-request-ai#reply-assist].
+
+#### Outlook - prefill data input
+
+Check if this is correct, cannot find any documentation on this on Docs:
+Create new companies and contacts from an email with less typing. When you archive an email from someone who is not yet in SuperOffice, AI reads the email and suggests values for the fields when you create the company, so you can start from a filled-in form instead of an empty one.
+
+You find it in SuperOffice for Outlook. Select **Click to add new contact**, then **Create a new company and contact**. In the dialog, AI suggests values for the fields based on the content of the email. Review the suggestions, change what you need, and save.
+
+Learn more about [adding a contact in SuperOffice for Outlook][1].
+
+---
+
+We have also added SuperOffice Copilot AI features within the latest version of SuperOffice for Outlook. With it, you can get AI-based suggestions for data input in SuperOffice for Outlook. You find the feature under "new company" - when you click "create new company": Once you are in the "add new company" dialog - AI tries to identify the correct values for the fields - based upon info in the email you archive at the bottom.
+
+#### Auto-generated archive tabs (v1 Release 10.3.4)
+
+When adding a relational field to a standard entity or Custom object and enabling “Show one to many relations,” results in archives being automatically added to related standard entities.
+https://docs.superoffice.com/en/custom-objects/admin/create-extra-field#add-relation-foreign-key-fk
+
+#### Enhanced search in Selections (v1 Release 10.3.4)
+
+Our search capabilities now extend to Extra Tables, empowering you to create selections and search through custom objects directly from SuperOffice CRM. No longer confined to SuperOffice Service, you can effortlessly explore data across various Extra Tables pointing to an entity (Company, Contact, Sale, Project, Request, Activity).
+? https://docs.superoffice.com/en/custom-objects/admin/create-extra-field#field-properties
+
+#### Extending search capabilities on relational fields (v1 Release 10.3.4)
+
+Enjoy the convenience of searching across multiple columns, whether it is an entity or a relational field linked. Included in the search is a preview to give users more insight into each entity in results and make it easier to select the correct one.
+? https://docs.superoffice.com/en/custom-objects/admin/create-extra-field#add-relation-foreign-key-fk
+
+#### Preview details of a Custom object in the Side Panel (v2 Release 10.3.7)
+
+With this feature, you can preview all data from a Custom object in the Side Panel by selecting preview from the drop-down. This also enables easy navigation to related standard or Custom objects directly from the Side Panel. 
+https://docs.superoffice.com/en/learn/getting-started/main-screen/side-panel
+
+#### Search/Selection/Dashboard on Custom object without a relation to a standard entity (v2 Release 10.3.7)
+
+With this release, you can now search directly for your Custom tables/Custom objects and save them as selections or create Dashboards. This functionality no longer requires a relation to a standard entity, providing you with search results as a list of items from the Custom object. 
+https://docs.superoffice.com/en/custom-objects/learn/extra-table#new-from-version-10-3-4-pilot
+https://docs.superoffice.com/en/api/web-services/howto/custom-objects/custom-objects-search
+
+#### Customize Archive layout containing Custom objects in the Screen Designer (v3 Release 10.3.9)
+
+https://docs.superoffice.com/en/customization/screen-designer/admin/working-with-archives
+https://docs.superoffice.com/en/custom-objects/learn/index.html
+
+#### New component to show, edit and delete an item from Extra table (v3 Release 10.3.9)
+
+[Tutorial - custom database and UI](https://docs.superoffice.com/en/ui/blogic/tutorials/custom-db-and-ui.html)
+[Third-party tables](https://docs.superoffice.com/en/custom-objects/learn/extra-table)
+[Custom screens](https://docs.superoffice.com/en/ui/blogic/custom-screens/index.html)
+[Add screen element](https://docs.superoffice.com/en/ui/blogic/custom-screens/add-screen-element.html)
+[Form elements](https://docs.superoffice.com/en/ui/blogic/custom-screens/form-elements)
+[Screen designer](https://docs.superoffice.com/en/customization/screen-designer/admin/index)
+[CustomObjectAgent](https://docs.superoffice.com/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent)
+[How to update a row in a custom object](https://docs.superoffice.com/en/api/web-services/howto/custom-objects/rest-update-custom-object-row)
+
+#### Create a trigger on loading a Custom object to pre-fill fields based on CRMScripts (v3 Release 10.3.9)
+
+https://docs.superoffice.com/en/automation/trigger/reference/CRMScript.Event.Trigger
+https://docs.superoffice.com/en/custom-objects/learn/extra-table
+https://docs.superoffice.com/en/automation/trigger/create-trigger-script.md
+
+#### Full Entity in Navigator (v4 Release 11.5)
+
+You can now elevate your most important Custom Objects to full entity status in the Navigator. This means they appear alongside standard SuperOffice entities with complete search functionality, history tracking, and favorites support. They're also accessible from the New-icon in the top bar, making them as easy to work with as Contacts or Companies.
+[The Navigator](https://docs.superoffice.com/en/learn/getting-started/main-screen/navigator)
+[Add extra table](https://docs.superoffice.com/en/custom-objects/admin/create-extra-table.html)
+[Third-party tables](https://docs.superoffice.com/en/custom-objects/learn/extra-table)
+[Buttons on the top bar](https://docs.superoffice.com/en/learn/getting-started/main-screen/buttons-in-menu-bar)
+[customobjectfavourites](https://docs.superoffice.com/en/api/archive-providers/reference/customobjectfavourites)
+[Extra menus](https://docs.superoffice.com/en/ui/blogic/extra-menus)
+
+#### Available in Screen Designer (v4 Release 11.5)
+
+Design the layout of your Custom Objects using the familiar Screen Designer interface. This gives you complete control over how information is presented and allows you to assign different layouts for the same Custom Object based on User Group. This flexibility works for both full entity Custom Objects and modal versions.
+[Screen designer](https://docs.superoffice.com/en/customization/screen-designer/admin/index)
+[Add layout](https://docs.superoffice.com/en/customization/screen-designer/admin/add-layout.md)
+[Assign layout to group, type, or template](https://docs.superoffice.com/en/customization/screen-designer/admin/assign-layout.md)
+[Custom objects and fields](https://docs.superoffice.com/en/custom-objects/learn/index.html)
+[Extra fields](https://docs.superoffice.com/en/custom-objects/learn/extra-field.html)
+
+#### Access Rights for each Custom Object (v4 Release 11.5)
+
+Security and data governance get a major upgrade with role-based access controls for Custom Objects. You can now assign specific access rights (None, Read, Create, Update, Delete) to each Custom Object based on user roles, ensuring that team members see exactly what they need to see—and nothing they shouldn't.
+[Roles](https://docs.superoffice.com/en/admin/user-management/role/index.md)
+[Set data rights for a role](https://docs.superoffice.com/en/admin/user-management/learn/role/set-data-rights-for-role.html)
+[Add extra table](https://docs.superoffice.com/en/custom-objects/admin/create-extra-table.html)
+[Working with custom objects and fields in API](https://docs.superoffice.com/en/custom-objects/reference/index)
+
 </Update>
 
 <Update label="12.6" description="04.11.2026" tags={["Sales", "Service", "Settings and maintenance"]}>
