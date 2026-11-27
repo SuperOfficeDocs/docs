@@ -18,7 +18,8 @@
           "integrations/connect-erp/visma-net/add-panels",
           "integrations/connect-erp/visma-net/initial-match",
           "integrations/connect-erp/visma-net/verify-finalize",
-          "integrations/connect-erp/visma-net/troubleshooting"
+          "integrations/connect-erp/visma-net/troubleshooting",
+          "integrations/connect-erp/visma-net/supported-fields"
         ]
       }
     ]

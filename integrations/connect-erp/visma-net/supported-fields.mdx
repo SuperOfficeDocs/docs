@@ -1,0 +1,752 @@
+---
+title: Supported fields for Visma Net
+sidebarTitle: Supported fields
+description: The Visma Net fields that DataBridge supports for export from and import into Visma Net Financials, per entity.
+keywords: ['ConnectERP', 'Visma Net', 'fields', 'DataBridge', 'export', 'import', 'customer', 'vendor', 'inventory', 'sales order', 'Visma.net']
+author: marcelspapens
+date: 11.26.2026
+content_type: reference
+category: integration
+topic: ConnectERP
+platform: Visma Net
+related:
+  - /integrations/connect-erp/visma-net/plan-the-integration
+  - /integrations/connect-erp/visma-net/troubleshooting
+language: en
+userflow_index: true
+---
+
+This page lists the Visma Net fields that DataBridge supports. You choose which of these fields to use when you configure a DataBridge integration. Field names are the names that DataBridge shows in the user interface.
+
+* **Export:** Visma Net is the source. DataBridge reads the fields from Visma Net and writes them to SuperOffice.
+* **Import:** Visma Net is the destination. DataBridge writes the fields to Visma Net.
+
+## Entities per direction {#entities}
+
+| Entity | Export | Import |
+|---|---|---|
+| Customer | Yes | Yes |
+| Vendor (supplier) | Yes | Yes |
+| Contact | Yes | Yes |
+| Inventory (product) | Yes | No |
+| Sales Price | Yes | No |
+| Sales Order and Sales Order Lines | Yes | Yes |
+| Location | Yes | No |
+| Project | Yes | Yes |
+| AR Invoice and AR Invoice Line | No | Yes |
+
+<Note>
+Sales Order and Sales Order Lines are only available when your Visma Net environment has the Sales module.
+</Note>
+
+## Fields per entity {#fields}
+
+Select the **Export** or **Import** tab, and find the entity. Each table lists the fields of one entity, grouped by field group. To find a field on this page, use the search of your browser (Ctrl+F) or the search of this site.
+
+In the field names, a slash separates related fields. For example, **Customer Class ID/Description** stands for the two fields Customer Class ID and Customer Class Description. Names such as **Address Line 1-3** stand for a series of fields. In the import tables, the **Remark** column shows **Key** for the field that DataBridge uses to find an existing record, and **Required** for a field that Visma Net needs to create a record.
+
+<Tabs>
+<Tab title="Export">
+
+### Customer {#export-customer}
+
+| Field group | Field |
+|---|---|
+| General | Customer ID |
+| General | Customer Name |
+| General | Status |
+| General | Customer Class ID/Description |
+| General | Price Class ID/Description |
+| General | Corporate ID |
+| General | Account Reference |
+| General | GLN |
+| General | Tax Registration ID |
+| General | Currency ID |
+| General | Created Date Time |
+| General | Last Modified Date Time |
+| Credit and terms | Credit Limit |
+| Credit and terms | Credit Days Past Due |
+| Credit and terms | Credit Verification |
+| Credit and terms | Terms ID/Description |
+| Credit and terms | Statement Type |
+| Invoicing | Accept Auto Invoices |
+| Invoicing | Exclude Debt Collection |
+| Invoicing | Invoice To Default Location |
+| Invoicing | Print Invoices |
+| Invoicing | Print Statements |
+| Invoicing | Print Multi Currency Statements |
+| Invoicing | Print Dunning Letters |
+| Invoicing | Send Invoices By Email |
+| Invoicing | Send Statements By Email |
+| Invoicing | Send Dunning Letters By Email |
+| Location and tax | Default Location ID/Name/Country ID |
+| Location and tax | Tax Zone ID/Description |
+| Location and tax | Default Tax Category |
+| Location and tax | Default Tax Category Number/Description |
+| Location and tax | Notes |
+| Addresses (Main, Bill-To, Shipping) | Address Line 1-3 |
+| Addresses (Main, Bill-To, Shipping) | City |
+| Addresses (Main, Bill-To, Shipping) | Postal Code |
+| Addresses (Main, Bill-To, Shipping) | Country ID/Name |
+| Addresses (Main, Bill-To, Shipping) | State ID/Name |
+| Contacts (Main, Bill-To, Shipping) | Company Name |
+| Contacts (Main, Bill-To, Shipping) | Attention |
+| Contacts (Main, Bill-To, Shipping) | Email |
+| Contacts (Main, Bill-To, Shipping) | Phone 1/2 |
+| Contacts (Main, Bill-To, Shipping) | Fax |
+| Contacts (Main, Bill-To, Shipping) | Web |
+| Customer balance | Balance |
+| Customer balance | Unreleased balance |
+| Customer balance | Loan |
+| Customer balance | Sales this period/year |
+| Customer balance | Discount this period/year |
+| Default salesperson | ID |
+| Default salesperson | Name |
+| Default salesperson | Commission % |
+| Default salesperson | Location ID/Name |
+| Attributes | Attributes (dynamic, differ per Visma Net environment) |
+
+### Vendor {#export-vendor}
+
+| Field group | Field |
+|---|---|
+| General | Vendor ID |
+| General | Vendor Name |
+| General | Status |
+| General | Vendor Class ID/Description |
+| General | Parent Record Number/Name |
+| General | Corporate ID |
+| General | Account Reference |
+| General | Tax Registration ID |
+| General | NACE Code |
+| General | Number Of Employees |
+| General | Currency ID |
+| General | Document Language |
+| General | Note |
+| General | Last Modified Date Time |
+| General | Landed Cost Vendor |
+| Payment | Credit Terms ID/Description |
+| Payment | Payment Method ID/Description |
+| Payment | Payment By |
+| Payment | Payment Lead Time |
+| Payment | Payment Ref Display Mask |
+| Payment | Pay Separately |
+| Payment | Cash Account |
+| Payment | Account Used For Payment |
+| Payment | Charge Bearer |
+| Payment | Apply Retainage |
+| Payment | Retainage Percent |
+| Payment | Retainage Cash Account |
+| Location and tax | Location ID/Name/Country ID |
+| Location and tax | Tax Zone ID/Description |
+| Location and tax | Default Tax Category |
+| Location and tax | Default Tax Category Number/Description |
+| Addresses (Main, Remittance, Shipper's) | Address Line 1-3 |
+| Addresses (Main, Remittance, Shipper's) | City |
+| Addresses (Main, Remittance, Shipper's) | Postal Code |
+| Addresses (Main, Remittance, Shipper's) | Country ID/Name |
+| Addresses (Main, Remittance, Shipper's) | State ID/Name |
+| Contacts (Main, Remittance, Shipper's) | Company Name |
+| Contacts (Main, Remittance, Shipper's) | Attention |
+| Contacts (Main, Remittance, Shipper's) | Email |
+| Contacts (Main, Remittance, Shipper's) | Phone 1/2 |
+| Contacts (Main, Remittance, Shipper's) | Fax |
+| Contacts (Main, Remittance, Shipper's) | Web |
+| Vendor balance | Purchase balance |
+| Vendor balance | Purchases this period (incl. and excl. VAT) |
+| Vendor balance | Purchases this year (incl. and excl. VAT) |
+| Vendor balance | Purchases for approval (incl. and excl. VAT) |
+| Vendor balance | Unreleased purchases (incl. and excl. VAT) |
+| Attributes | Attributes (dynamic, differ per Visma Net environment) |
+
+### Contact {#export-contact}
+
+| Field group | Field |
+|---|---|
+| General | Contact ID |
+| General | Display Name |
+| General | Title |
+| General | First Name |
+| General | Last Name |
+| General | Job Title |
+| General | Business Account |
+| General | Business Account Type |
+| General | Active |
+| General | Same As Account |
+| Communication | Email |
+| Communication | Phone 1-3 |
+| Communication | Fax |
+| Communication | Web |
+| Communication | Contact Method |
+| Consent | Do Not Call |
+| Consent | Do Not Email |
+| Consent | Do Not Fax |
+| Consent | Do Not Mail |
+| Consent | No Marketing |
+| Consent | No Mass Mail |
+| Address | Address Line 1-3 |
+| Address | City |
+| Address | Postal Code |
+| Address | Country ID/Name |
+| Address | County ID/Name |
+
+### Inventory {#export-inventory}
+
+| Field group | Field |
+|---|---|
+| General | Inventory ID |
+| General | Inventory Number |
+| General | Description |
+| General | Body |
+| General | Note |
+| General | Type |
+| General | Status |
+| General | Stock Item |
+| General | Kit Item |
+| General | Base Unit |
+| General | Sales Unit |
+| General | Purchase Unit |
+| General | Last Modified Date Time |
+| General | Timestamp |
+| General | Effective Date |
+| Price and cost | Default Price |
+| Price and cost | Recommended Price |
+| Price and cost | Current Cost |
+| Price and cost | Last Cost |
+| Price and cost | Pending Cost |
+| Price and cost | Pending Cost Date |
+| Cost price statistics | Average Cost |
+| Cost price statistics | Last Cost |
+| Cost price statistics | Max Cost |
+| Cost price statistics | Min Cost |
+| Classes and codes | Item Class ID/Description |
+| Classes and codes | Posting Class ID/Description |
+| Classes and codes | Price Class ID/Description |
+| Classes and codes | Lot Serial Class ID/Description |
+| Classes and codes | VAT Code ID/Description |
+| Classes and codes | Price Manager ID/Name |
+| Classes and codes | Price Workgroup ID |
+| Warehouse | Default Warehouse ID/Description |
+| Warehouse | Issue From ID/Description |
+| Warehouse | Receipt To ID/Description |
+| Packaging | Base Item Volume |
+| Packaging | Base Item Weight |
+| Packaging | Volume UOM |
+| Packaging | Weight UOM |
+| Intrastat | CN8 |
+| Intrastat | Country Of Origin |
+| Intrastat | Supplementary Measure Unit |
+| Accounts | COGS Account Number/Description/Type |
+| Accounts | Expense Account Number/Description/Type |
+| Accounts | Expense Accrual Account Number/Description/Type |
+| Accounts | Expense EU Account Number/Description/Type |
+| Accounts | Expense Import Account Number/Description/Type |
+| Accounts | Expense Non Taxable Account Number/Description/Type |
+| Accounts | Inventory Account Number/Description/Type |
+| Accounts | Sales Account Number/Description/Type |
+| Accounts | Sales EU Account Number/Description/Type |
+| Accounts | Sales Export Account Number/Description/Type |
+| Accounts | Sales Non Taxable Account Number/Description/Type |
+| Subaccounts | COGS Subaccount ID/Description/Active |
+| Subaccounts | Expense Subaccount ID/Description/Active |
+| Subaccounts | Sales Subaccount ID/Description/Active |
+| Attributes | Attributes (dynamic, differ per Visma Net environment) |
+
+### Sales Price {#export-sales-price}
+
+| Field group | Field |
+|---|---|
+| General | Record ID |
+| General | Price Code |
+| General | Price Type |
+| General | Inventory ID |
+| General | Description |
+| General | Price |
+| General | Currency |
+| General | UoM |
+| General | Break Qty |
+| General | VAT |
+| General | Promotion |
+| General | Effective Date |
+| General | Expiration Date |
+| General | Last Modified Date Time |
+| Inventory | All Inventory fields, with the prefix Inventory |
+
+### Sales Order {#export-sales-order}
+
+| Field group | Field |
+|---|---|
+| General | Order ID |
+| General | Type |
+| General | Status |
+| General | Status Details (Description, Hold, Cancelled) |
+| General | Date |
+| General | Request On |
+| General | Cancel By |
+| General | Description |
+| General | Note |
+| General | Currency |
+| General | Order Qty |
+| General | Order Total |
+| General | Tax Total |
+| General | Created By |
+| General | Last Modified |
+| General | Location |
+| General | Emailed |
+| General | Original Order ID |
+| General | Original Order Type |
+| General | Origin Order ID |
+| General | Origin Order Type |
+| Customer | Customer ID/Name/Order/Ref No/Internal ID/Contact ID |
+| Customer | Customer Location (ID, Name, Internal ID, Corporate ID, Country ID, GLN, Tax Registration ID, Warehouse ID) |
+| Customer | Customer Tax Zone ID/Description |
+| Customer | Parent Customer ID/Name/Internal ID |
+| Customer | Owner ID/Internal ID |
+| Organization | Branch |
+| Organization | Sales Person |
+| Organization | Project ID/Description/Internal ID |
+| Financial information | Invoice ID/Date |
+| Financial information | Due Date |
+| Financial information | Cash Discount Date |
+| Financial information | Post Period |
+| Financial information | Terms ID/Description |
+| Financial information | Invoice Separately |
+| Payment settings | Cash Account ID |
+| Payment settings | Payment Method ID/Description |
+| Payment settings | Payment Reference |
+| Print | Description On Invoice |
+| Print | Note On External Documents |
+| Print | Note On Internal Documents |
+| Billing and Shipping address | ID |
+| Billing and Shipping address | Address Line 1-3 |
+| Billing and Shipping address | City |
+| Billing and Shipping address | Postal Code |
+| Billing and Shipping address | Country ID/Name |
+| Billing and Shipping address | County ID/Name |
+| Billing and Shipping address | Overrides Default |
+| Billing and Shipping contact | ID |
+| Billing and Shipping contact | Name |
+| Billing and Shipping contact | Attention |
+| Billing and Shipping contact | Email |
+| Billing and Shipping contact | Phone 1/2 |
+| Billing and Shipping contact | Fax |
+| Billing and Shipping contact | Overrides Default |
+| Shipping | Rule |
+| Shipping | Priority |
+| Shipping | Scheduled Date |
+| Shipping | Ship Separately |
+| Shipping | Insurance |
+| Shipping | Residential Delivery |
+| Shipping | Saturday Delivery |
+| Shipping | Ship Via |
+| Shipping | Terms |
+| Shipping | Zone |
+| Shipping | FOB Point |
+| Shipping | Preferred Warehouse |
+| Shipping | Intrastat Transaction Type |
+| Freight | Amount |
+| Freight | Cost |
+| Freight | Premium Amount |
+| Freight | Volume |
+| Freight | Weight |
+| Freight | Tax Category ID |
+| Totals (each also in base currency) | Order |
+| Totals (each also in base currency) | Tax |
+| Totals (each also in base currency) | Taxable |
+| Totals (each also in base currency) | Tax Exempt |
+| Totals (each also in base currency) | Discount |
+| Totals (each also in base currency) | Cost |
+| Totals (each also in base currency) | Excise Duty |
+| Totals (each also in base currency) | Freight |
+| Totals (each also in base currency) | Freight Cost |
+| Totals (each also in base currency) | Payment |
+| Totals (each also in base currency) | Unbilled |
+| Totals (each also in base currency) | Unshipped |
+| Other | ROT/RUT fields |
+| Other | Use Replacement Cost For Margin And Profit |
+| Other | Custom Fields (Str 1-5, Int 1-2, Dec 1-2, DateTimeUtc 1) |
+
+### Sales Order Lines {#export-sales-order-lines}
+
+| Field group | Field |
+|---|---|
+| General | Line ID |
+| General | Sort Order |
+| General | Line Type |
+| General | Operation |
+| General | Inventory ID/Description/Base Unit |
+| General | Inventory Alternate ID |
+| General | Description |
+| General | Note |
+| Quantity and price | Quantity |
+| Quantity and price | Base Order Quantity |
+| Quantity and price | Base Open Quantity |
+| Quantity and price | Base Billed Quantity |
+| Quantity and price | Quantity On Shipments |
+| Quantity and price | Unit Of Measure |
+| Quantity and price | Unit Price |
+| Quantity and price | Discounted Unit Price |
+| Quantity and price | Unit Cost |
+| Quantity and price | Replacement Unit Cost |
+| Quantity and price | Extended Price |
+| Quantity and price | Line Total Before Discount |
+| Quantity and price | Amount Not Invoiced |
+| Discount | Discount Percent |
+| Discount | Discount Amount |
+| Discount | Discount Code |
+| Discount | Discount Sequence ID |
+| Discount | Has Manual Price |
+| Discount | Has Manual Discount |
+| Discount | Free Item |
+| Discount | Excise Duty |
+| Dates and shipping | Order Date |
+| Dates and shipping | Request Date |
+| Dates and shipping | Ship Date |
+| Dates and shipping | Shipping Rule |
+| Dates and shipping | Overship Threshold |
+| Dates and shipping | Undership Threshold |
+| Dates and shipping | Completed |
+| Dates and shipping | Open Line |
+| Dates and shipping | Commissionable |
+| Dates and shipping | Auto Create Issue |
+| Organization | Warehouse ID |
+| Organization | Warehouse Location |
+| Organization | Branch |
+| Organization | Sales Person |
+| Organization | Sales Account ID |
+| Organization | Tax Category ID |
+| Organization | Project Task ID |
+| Organization | Reason Code |
+| References | Invoice Number |
+| References | Invoice Line Number |
+| References | Invoice Type |
+| References | Purchase Order Source |
+| References | Kit Assembly Reference Number |
+| References | External Link |
+| Supplier | ID |
+| Supplier | Name |
+| Supplier | Currency ID |
+| Supplier | Price |
+| Supplier | UoM |
+| Supplier | Supplier Price |
+| Other | ROT/RUT fields |
+| Other | Custom Fields |
+
+### Location {#export-location}
+
+| Field group | Field |
+|---|---|
+| General | Location ID/Name |
+| General | Internal ID |
+| General | Active |
+| General | Business Account ID/Name |
+| General | Corporate ID |
+| General | EDI Code |
+| General | GLN |
+| General | Tax Registration ID |
+| Tax | Tax Zone ID/Description |
+| Tax | Default Tax Category |
+| Address | Address Line 1-3 |
+| Address | City |
+| Address | Postal Code |
+| Address | Country ID/Name |
+| Address | State ID/Name |
+| Contact | Name |
+| Contact | Attention |
+| Contact | Email |
+| Contact | Phone 1/2 |
+| Contact | Fax |
+| Contact | Web |
+
+### Project {#export-project}
+
+| Field group | Field |
+|---|---|
+| General | Project ID |
+| General | Internal ID |
+| General | Public ID |
+| General | Description |
+| General | Status |
+| General | Hold |
+| General | Start Date |
+| General | End Date |
+| General | Last Billing Date |
+| General | Next Billing Date |
+| General | Billing Period |
+| General | Last Modified Date Time |
+| Customer and organization | Customer Number/Name |
+| Customer and organization | Customer Location ID/Name |
+| Customer and organization | Branch Number/Name |
+| Customer and organization | Template Number/Description/Status |
+| Customer and organization | System Template |
+| Rules | Allocation Rule ID/Description/Active |
+| Rules | Billing Rule ID/Description/Active |
+| Rules | Rate Table |
+| Rules | Auto Allocate |
+| Rules | Automatic Release AR |
+| Rules | Restrict Employees |
+| Rules | Restrict Equipment |
+| Accounts (each with Number/Description/Type, and a Subaccount with ID/Description/Active) | Assets |
+| Accounts (each with Number/Description/Type, and a Subaccount with ID/Description/Active) | Liability |
+| Accounts (each with Number/Description/Type, and a Subaccount with ID/Description/Active) | Income |
+| Accounts (each with Number/Description/Type, and a Subaccount with ID/Description/Active) | Expenses |
+| Accounts (each with Number/Description/Type, and a Subaccount with ID/Description/Active) | Default Account |
+| Accounts (each with Number/Description/Type, and a Subaccount with ID/Description/Active) | Accrual Account |
+| Project manager | Employee ID/Number/Name/Login/User ID |
+| Project manager | Status |
+| Project manager | Department |
+| Project manager | Calendar ID |
+| Project manager | Employee Class |
+| Project manager | Branch |
+| Project manager | Address fields |
+| Project manager | Contact fields |
+
+</Tab>
+<Tab title="Import">
+
+### Customer {#import-customer}
+
+| Field group | Field | Remark |
+|---|---|---|
+| General | Customer ID | Key |
+| General | Customer Name | Required |
+| General | Status |  |
+| General | Customer Class |  |
+| General | Price Class ID |  |
+| General | Corporate ID |  |
+| General | Account Ref.# |  |
+| General | GLN |  |
+| General | Tax Registration ID |  |
+| General | Tax Zone |  |
+| General | Currency ID |  |
+| General | Note |  |
+| Credit and terms | Credit Limit |  |
+| Credit and terms | Credit Days Past Due |  |
+| Credit and terms | Credit Verification |  |
+| Credit and terms | Terms |  |
+| Credit and terms | Statement Type |  |
+| Invoicing | Accept Auto Invoices |  |
+| Invoicing | Invoice To Default Location |  |
+| Invoicing | Print Invoices |  |
+| Invoicing | Print Statements |  |
+| Invoicing | Print Multi Currency Statements |  |
+| Invoicing | Send Invoices By Email |  |
+| Invoicing | Send Statements By Email |  |
+| Addresses (Main, Bill-To, Shipping) | Address Line 1-3 |  |
+| Addresses (Main, Bill-To, Shipping) | City |  |
+| Addresses (Main, Bill-To, Shipping) | Postal Code |  |
+| Addresses (Main, Bill-To, Shipping) | Country |  |
+| Addresses (Main, Bill-To, Shipping) | State |  |
+| Contacts (Main, Bill-To, Shipping) | Company Name |  |
+| Contacts (Main, Bill-To, Shipping) | Attention |  |
+| Contacts (Main, Bill-To, Shipping) | Email |  |
+| Contacts (Main, Bill-To, Shipping) | Phone 1/2 |  |
+| Contacts (Main, Bill-To, Shipping) | Fax |  |
+| Contacts (Main, Bill-To, Shipping) | Web |  |
+| Attributes | Attributes (dynamic, differ per Visma Net environment) |  |
+
+### Vendor {#import-vendor}
+
+| Field group | Field | Remark |
+|---|---|---|
+| General | Vendor ID | Key |
+| General | Vendor Name | Required |
+| General | Status |  |
+| General | Vendor Class |  |
+| General | Parent Account |  |
+| General | Corporate ID |  |
+| General | Account Ref.# |  |
+| General | Tax Registration ID |  |
+| General | Tax Zone |  |
+| General | Currency ID |  |
+| General | Enable Currency (Rate) Override |  |
+| General | Document Language |  |
+| General | Note |  |
+| Payment | Terms |  |
+| Payment | Payment Method |  |
+| Payment | Payment By |  |
+| Payment | Payment Lead Time |  |
+| Payment | Payment Ref Display Mask |  |
+| Payment | Pay Separately |  |
+| Payment | Cash Account |  |
+| Payment | Account Used For Payment |  |
+| Payment | Charge Bearer |  |
+| Payment | Apply Retainage |  |
+| Payment | Retainage Percent |  |
+| Payment | Retainage Cash Account |  |
+| GL accounts | Expense |  |
+| GL accounts | Expense import |  |
+| GL accounts | Expense non-taxable |  |
+| GL accounts | Expense EU |  |
+| GL accounts | Expense Sub. |  |
+| Addresses (Main, Remittance, Shipper's) | Address Line 1-3 |  |
+| Addresses (Main, Remittance, Shipper's) | City |  |
+| Addresses (Main, Remittance, Shipper's) | Postal Code |  |
+| Addresses (Main, Remittance, Shipper's) | Country |  |
+| Addresses (Main, Remittance, Shipper's) | State |  |
+| Contacts (Main, Remittance, Shipper's) | Company Name |  |
+| Contacts (Main, Remittance, Shipper's) | Attention |  |
+| Contacts (Main, Remittance, Shipper's) | Email |  |
+| Contacts (Main, Remittance, Shipper's) | Phone 1/2 |  |
+| Contacts (Main, Remittance, Shipper's) | Fax |  |
+| Contacts (Main, Remittance, Shipper's) | Web |  |
+| Attributes | Attributes (dynamic, differ per Visma Net environment) |  |
+
+### Contact {#import-contact}
+
+| Field group | Field |
+|---|---|
+| General | Contact ID |
+| General | Title |
+| General | First Name |
+| General | Last Name |
+| General | Job Title |
+| General | Business Account |
+| General | Active |
+| General | Same As Account |
+| Communication | Email |
+| Communication | Phone 1-3 |
+| Communication | Fax |
+| Communication | Web |
+| Address | Address Line 1-3 |
+| Address | City |
+| Address | Postal Code |
+| Address | Country |
+| Address | County |
+
+### AR Invoice {#import-ar-invoice}
+
+| Field group | Field |
+|---|---|
+| General | Reference Nbr. |
+| General | Customer ID |
+| General | Contact ID |
+| General | Date |
+| General | Due Date |
+| General | Cash Discount Date |
+| General | Post Period |
+| General | Terms |
+| General | Currency |
+| General | Exchange Rate |
+| General | Branch |
+| General | Location |
+| General | Project |
+| General | Salesperson ID |
+| General | Customer Order |
+| General | External Reference |
+| General | Customer Tax Zone |
+| Payment | Payment Method |
+| Payment | Payment Ref. Nbr. |
+| Payment | Cash Account |
+| Status and text | Hold |
+| Status and text | Send to Autoinvoice |
+| Status and text | Invoice text |
+| Status and text | Note |
+| Billing address | Address Line 1-3 |
+| Billing address | City |
+| Billing address | Postal Code |
+| Billing address | Country |
+| Billing address | State |
+| Billing address | Override Address |
+| Billing contact | Business Name |
+| Billing contact | Attention |
+| Billing contact | Email |
+| Billing contact | Phone 1 |
+| Billing contact | Override Contact |
+
+### AR Invoice Line {#import-ar-invoice-line}
+
+| Field group | Field |
+|---|---|
+| General | Line Number |
+| General | Inventory ID |
+| General | Transaction Descr. |
+| General | Quantity |
+| General | UoM |
+| General | Unit Price |
+| General | Ext. Price |
+| Discount | Discount Percent |
+| Discount | Discount Amount |
+| Discount | Discount Code |
+| Discount | Manual Discount |
+| Accounting | Account |
+| Accounting | Branch |
+| Accounting | Tax Category |
+| Accounting | Salesperson ID |
+| Accounting | Project Task |
+| Accounting | Deferral Code |
+| Accounting | Term Start Date |
+| Accounting | Term End Date |
+| Note | Note |
+
+### Sales Order {#import-sales-order}
+
+| Field group | Field | Remark |
+|---|---|---|
+| General | Order Type | Required |
+| General | Order Nbr. | Key |
+| General | Status |  |
+| General | Date |  |
+| General | Requested On |  |
+| General | Description |  |
+| Customer | Customer ID | Required |
+| Customer | Location ID |  |
+| Customer | Contact ID |  |
+| Customer | Customer Order |  |
+| Customer | External Reference |  |
+| Organization | Salesperson ID |  |
+| Organization | Project ID |  |
+| Billing and Shipping address | Address Line 1-3 |  |
+| Billing and Shipping address | Postal Code |  |
+| Billing and Shipping address | City |  |
+| Billing and Shipping address | Country ID |  |
+| Billing and Shipping address | State ID |  |
+
+### Sales Order Lines {#import-sales-order-lines}
+
+| Field group | Field |
+|---|---|
+| General | Inventory ID |
+| General | Description |
+| General | Warehouse ID |
+| General | Salesperson ID |
+| General | Requested On |
+| Quantity and price | Unit Of Measure |
+| Quantity and price | Quantity |
+| Quantity and price | Open Quantity |
+| Quantity and price | Unit Price |
+| Quantity and price | Unit Cost |
+| Discount (percent or amount) | Discount Percent |
+| Discount (percent or amount) | Discount Amount |
+| Subaccount | Subaccount segments (dynamic, differ per Visma Net environment) |
+
+### Project {#import-project}
+
+| Field group | Field |
+|---|---|
+| General | Project ID |
+| General | Customer ID |
+| General | Description |
+| General | Status |
+| General | Hold |
+| General | Start Date |
+| General | End Date |
+| General | Template |
+| General | Branch |
+| General | Customer Location |
+| General | Project Manager |
+| Billing and allocation | Billing Period |
+| Billing and allocation | Billing Rule |
+| Billing and allocation | Allocation Rule |
+| Billing and allocation | Rate Table |
+| Billing and allocation | Default Account |
+| Billing and allocation | Accrual Account |
+| Options | Auto Allocate |
+| Options | Automatically Release AR Documents |
+| Options | Restrict Employees |
+| Options | Restrict Equipment |
+
+</Tab>
+</Tabs>
+
+Which Attributes and Subaccount segments are available depends on your Visma Net environment.
