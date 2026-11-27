@@ -780,7 +780,7 @@ This is the archive Provider for the Selection appouintment archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentSelectionV2?$select=contact/mainContact,contact/streetAddress/wgs84longitude,contact/NumberOfNotCompletedActivities,project/type,sale/description
+GET /api/v1/archive/AppointmentSelectionV2?$select=contactId,appointmentPublish/isPublished,contact/registeredByFullName,person/personAssociate/credentialType,sale/associate/contactFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

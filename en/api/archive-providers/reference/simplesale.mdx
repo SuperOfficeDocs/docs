@@ -665,7 +665,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleSale?$select=contactId,saleTypeId,person/personAssociate/personEmail,person/correspondingAssociate/firstName,contact/restrictionAddress/zip
+GET /api/v1/archive/SimpleSale?$select=contact/restrictionAddress/zip,contact/contactAssociate/personId,contact/contactUdef/SuperOffice:1,project/number,project/projectUdef/SuperOffice:9
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

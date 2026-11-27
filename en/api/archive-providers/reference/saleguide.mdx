@@ -1519,7 +1519,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleGuide?$select=appointmentInstance/text,appointmentInstance/contact/email/emailId,appointmentInstance/person/personNumber,appointmentInstance/person/retired,appointmentInstance/person/correspondingAssociate/assocName
+GET /api/v1/archive/SaleGuide?$select=appointmentInstance/userGroup,appointmentInstance/appointmentId,appointmentInstance/contact/email/emailLastBounce,appointmentInstance/contact/postAddress/addressId,appointmentInstance/person/birthdate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

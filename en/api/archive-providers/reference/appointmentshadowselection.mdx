@@ -780,7 +780,7 @@ Shadow contact provider for the appointment provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowSelection?$select=contact/LastTicket,person/email/emailDescription,person/personAddress/line3,person/personExtra/x_person_hidden_integer,person/correspondingAssociate/contactFullName
+GET /api/v1/archive/AppointmentShadowSelection?$select=excludeParticipants,contact/name,contact/orgnr,contact/contactAssociate/contactFullName,contact/contactInterestIds
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

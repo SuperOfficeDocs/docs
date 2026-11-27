@@ -754,7 +754,7 @@ public const string ExtUseSameProjectRights = "ext-use-same-project-rights"
 
 ### <a id="SuperOffice_WebApi_Data_FunctionRightStrings_FormsOverrideApprovalText"></a> FormsOverrideApprovalText
 
-Can change the approval text (form submit) on a single form or form template.
+Can change the approval text on a single form or form template.
 
 ```csharp
 public const string FormsOverrideApprovalText = "forms-override-approval-text"

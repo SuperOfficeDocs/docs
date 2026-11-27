@@ -2,9 +2,9 @@
 uid: help-de-request-reply
 title: Einer Person antworten
 description: In dieser Anleitung lernen Sie, wie Sie alle eingehenden Anfragen in SuperOffice beantworten können.
-keywords: ['Anfrage', 'Antwortvorlage', 'Antwort', 'Antworten', 'Kommentar', 'intern', 'extern', 'Antwortstatus', 'Anhang in der Vorschau anzeigen', 'Anhang einfügen', 'Anhangsvorschau']
+keywords: ['Anfrage', 'Antwortvorlage', 'Antwort', 'Antworten', 'Kommentar', 'intern', 'extern', 'Antwortstatus', 'Anhang in der Vorschau anzeigen', 'Anhang einfügen', 'Anhangsvorschau', 'Reply Assist', 'Antwortvorschlag']
 author: digitaldiina
-date: 11.23.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: howto
 license: serviceessentials
@@ -65,6 +65,23 @@ Wenn Sie in der Anfrageansicht zu einer anderen Registerkarte wechseln, bevor Si
 Der Status wird aus dem **Standardstatus für neue Nachrichten** der Kategorie übernommen, sofern der Anfragetyp diesen Status zulässt. Andernfalls wird die gleichnamige Einstellung in Ihren persönlichen Einstellungen verwendet, sofern der Anfragetyp diesen Status zulässt. Wenn keines davon zutrifft, bleibt der Status unverändert. Siehe [Reihenfolge der Standardstatus][13].
 
 Um die Anfrage beim Antworten aufzuschieben, setzen Sie den Status auf **Aufgeschoben** und wählen Sie eine der [Aufschuboptionen][14] aus.
+
+## Antwortentwurf mit Reply Assist erstellen {#reply-assist}
+
+Anstatt einer leeren Seite schlägt Reply Assist eine passende Antwort auf eine eingehende Anfrage vor. Der Entwurf basiert auf Ihren eigenen CRM-Daten: frühere Anfragen, Antwortvorlagen, FAQ-Einträge, Dokumente und optional Webinhalte.
+
+<Note>
+Reply Assist erfordert [CRM Suite Plus][16] oder höher.
+</Note>
+
+1. [Öffnen Sie die Anfrage][1].
+1. Klicken Sie im Bereich **Eigenschaften der Anfrage** in der Symbolleiste rechts auf <i class="ph ph-sparkle" aria-label="Reply Assist"></i>, um zu **Reply Assist** zu wechseln.
+1. Klicken Sie auf **Antwort generieren**.
+1. Prüfen Sie den Vorschlag. Wie bei jeder SuperOffice KI-Funktion wird nichts automatisch gespeichert oder gesendet.
+
+![Von Reply Assist vorgeschlagene Antwort auf eine Anfrage -screenshot][img10]
+
+Im selben Bereich erhalten Sie mit **Zusammenfassen** eine Zusammenfassung der Nachrichten der Anfrage. Siehe [Summary Assist][17].
 
 ## Schnellantwort aus einer Vorschau {#quick-reply}
 
@@ -215,6 +232,8 @@ Der erfasste Zeitaufwand wird in jeder Mitteilung angezeigt, und die Bearbeitung
 [13]: ../admin/status/index#default
 [14]: ./postpone
 [15]: #attachment-preview
+[16]: ../../admin/license/crm-suite#plans
+[17]: ./index#summary
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png
@@ -223,3 +242,4 @@ Der erfasste Zeitaufwand wird in jeder Mitteilung angezeigt, und die Bearbeitung
 [img7]: ../../../media/loc/en/request/request-reply-anonymise-user.png
 [img8]: ../../../media/loc/en/request/request-preview-quick-reply.png
 [img9]: /media/loc/en/request/requests-reply-tools-attachment-insert-button.png
+[img10]: ../../../media/loc/en/request/reply-assist.png

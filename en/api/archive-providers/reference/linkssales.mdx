@@ -1201,7 +1201,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksSales?$select=sourcePersonRestrictionId,contact/NumberOfNotCompletedSales,project/imageThumbnail,project/projectAssociate/title,saleStakeholder/person/personPrivate/formattedNumber
+GET /api/v1/archive/LinksSales?$select=sourceProjectRestrictionId,time,person/personAssociate/locationAddress,person/correspondingAssociate/ejUserId,project/registeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

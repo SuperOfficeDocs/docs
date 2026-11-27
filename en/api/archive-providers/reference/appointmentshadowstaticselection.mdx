@@ -779,7 +779,7 @@ Shadow contact provider for the static appointment provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowStaticSelection?$select=text,contact/phone/formattedNumber,contact/contactUdef/SuperOffice:4,contact/contactExtra/y_organization/x_name,person/hasInfoText
+GET /api/v1/archive/AppointmentShadowStaticSelection?$select=colorIndex,contact/yearFounded,person/birthDay,person/personAddress/county,appointmentUdef/SuperOffice:1
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

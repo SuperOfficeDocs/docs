@@ -4,7 +4,7 @@ title: KI-Services
 description: Übersicht über Künstliche Intelligenz-Services in SuperOffice CRM
 keywords: ['KI', 'künstliche Intelligenz', 'KI-Plattform', 'maschinelles Lernen', 'Automatisierung', 'Insight', 'Assist', 'Agent', 'MCP', 'Instanz', 'Textanalyse']
 author: digitaldiina
-date: 11.09.2026
+date: 11.25.2026
 so_version: 12.6
 content_type: concept
 license: aiplatform
@@ -41,19 +41,19 @@ SuperOffice KI ist nur in CRM Online verfügbar. Lizenzanforderungen sind dienst
 | Service | Beschreibung | Lizenz |
 |---|---|---|
 | [KI-Zusammenfassungen in SuperOffice for Teams][6] | Erstellt eine Zusammenfassung einer Microsoft Teams-Unterhaltung beim Archivieren in SuperOffice. | AI Lab (Pilotfunktion) |
-| [Category Insight][2] | Schlägt eine Kategorie anhand des Anfrageninhalts vor. Ein Administrator [trainiert das Modell mit einer Selektion von Anfragen][18] und aktiviert Vorschläge. Der Bearbeiter prüft den Vorschlag, bevor er ihn anwendet. | Categorization oder CRM Suite Growth |
+| [Category Insight][2] | Schlägt eine Kategorie anhand des Anfrageninhalts vor. Ein Administrator [trainiert das Modell mit einer Selektion von Anfragen][18] und aktiviert Vorschläge. Der Bearbeiter prüft den Vorschlag, bevor er ihn anwendet. Wird in der Fußzeile der Anfrage angezeigt. | Categorization oder CRM Suite Growth |
 | [Chatbot Connector][3] | Ermöglicht die Integration mit externen Chatbots zur automatischen Bearbeitung eingehender Chats. | Chatbot |
 | [Company Insight][7] | Schlägt Firmendetails aus offiziellen Handelsregistern vor, wie Brreg, Virk, Companies House und Zefix, wenn Sie eine neue Firma erstellen. | CRM Suite Growth |
 | [Data Quality Agent][12] | Prüft und reichert die bereits in Ihrem CRM erfassten Firmen und Personen anhand vertrauenswürdiger Geschäftsquellen an, damit eine Person sie genehmigen kann. | CRM Suite Growth |
 | [Duplicate Agent][13] | Findet doppelte Firmen und Personen und verbindet verwaiste Personen wieder mit ihrer Firma, damit eine Person sie genehmigen kann. | CRM Suite Growth |
 | [Lead Agent][9] | Findet, recherchiert und qualifiziert neue Interessenten aus konfigurierten Nachrichtenquellen und bewertet sie anhand Ihres idealen Kundenprofils, damit eine Person sie genehmigen kann. | CRM Suite Plus |
 | [MCP Connect][14] | Verbindet SuperOffice CRM als Live-Datenquelle mit Claude, Microsoft Copilot oder ChatGPT zum Lesen und Aktualisieren. | CRM Suite Plus zum Lesen, CRM Suite Super zum Aktualisieren |
-| [Reply Assist][8] | Schlägt eine Antwort auf eine eingehende Anfrage basierend auf Ihren CRM-Daten vor, die Sie prüfen und senden können. | CRM Suite Plus |
-| [Request Insight][1] | Analysiert das Sentiment einer eingehenden Anfrage, damit Sie Ihre Antwort priorisieren können. | Text Services oder CRM Suite Core |
+| [Reply Assist][8] | Schlägt eine Antwort auf eine eingehende Anfrage basierend auf Ihren CRM-Daten vor, die Sie prüfen und senden können. Wird im Bereich **Eigenschaften der Anfrage** auf der Anfragekarte geöffnet. | CRM Suite Plus |
+| [Request Insight][1] | Analysiert das Sentiment einer eingehenden Anfrage, damit Sie Ihre Antwort priorisieren können. Wird als Emoticon in der Kopfzeile der Nachricht auf der Registerkarte **Nachrichten** angezeigt. | Text Services oder CRM Suite Core |
 | [Sales Assistant Agent][19] (Beta) | Beobachtet Ihre offenen Verkäufe und schlägt für diejenigen, die Aufmerksamkeit brauchen, einen priorisierten nächsten Schritt vor, damit eine Person ihn genehmigen kann. | CRM Suite Plus |
-| [Summary Assist][15] | Fasst die Nachrichten einer Anfrage zusammen, damit Sie handeln können, ohne den gesamten Verlauf zu lesen. | Text Services oder CRM Suite Core |
+| [Summary Assist][15] | Fasst die Nachrichten einer Anfrage zusammen, damit Sie handeln können, ohne den gesamten Verlauf zu lesen. Auf der Anfragekarte verfügbar. | Text Services oder CRM Suite Core |
 | [SuperNotes][5] | KI-gestützter Besprechungsassistent, der Besprechungen aufzeichnet, transkribiert und zusammenfasst und die Erkenntnisse mit SuperOffice verknüpft. | Separate Integration (nicht Teil der AI-Plattform) |
-| [Translation Assist][16] | Erkennt die Sprache einer eingehenden Anfrage und übersetzt sie in Ihre Sprache. | Text Services oder CRM Suite Core |
+| [Translation Assist][16] | Erkennt die Sprache einer eingehenden Anfrage und übersetzt sie in Ihre Sprache. Wird unter der Nachricht auf der Registerkarte **Nachrichten** angezeigt. | Text Services oder CRM Suite Core |
 | [Workspace Assist][4] | Nutzt generative KI zur Unterstützung von Benutzern bei der Inhaltserstellung und Aufgabenführung. | CRM Suite Core oder AI Lab (An-/Abmeldung in Einstellungen und Verwaltung) |
 | Writing Assist | Entwirft E-Mails, Notizen und Folgeaufgaben, die Sie bearbeiten und senden können. | CRM Suite Starter |
 
@@ -91,22 +91,22 @@ Einige KI-Aktionen verbrauchen KI-Credits, insbesondere Aktionen von Agenten wie
 
 1. Fahren Sie fort, um [Ihre Agenten auszuwählen, zu aktivieren und einzurichten][10].
 
-[1]: /de/request/learn/handle-request-ai#sentiment
-[2]: /de/request/learn/handle-request-ai#categorization
+[1]: /de/request/learn/index#sentiment
+[2]: /de/request/learn/index#categorization
 [3]: /de/chat/admin/channel-create#chatbot
 [4]: /de/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /de/company/learn/create#company-insight
-[8]: /de/request/learn/handle-request-ai#reply-assist
+[8]: /de/request/learn/reply#reply-assist
 [9]: /de/ai/learn/lead-agent
 [10]: /de/ai/learn/set-up-ai-agents
 [12]: /de/ai/learn/data-quality-agent
 [13]: /de/ai/learn/duplicate-agent
 [14]: /de/ai/learn/mcp
 
-[15]: /de/request/learn/handle-request-ai#summary
-[16]: /de/request/learn/handle-request-ai#translate
+[15]: /de/request/learn/index#summary
+[16]: /de/request/learn/index#translate
 [17]: /de/ai/admin/index#enable-text-analysis
 [18]: /de/ai/admin/set-up-categorization
 [19]: /de/ai/learn/sales-assistant-agent

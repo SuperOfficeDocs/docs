@@ -852,7 +852,7 @@ Shadow contact provider for the Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowSelection?$select=projectMember/department,projectMember/streetAddress/state,appointment/appointmentUdef/SuperOffice:6
+GET /api/v1/archive/ProjectShadowSelection?$select=projectAssociate/ejStatus,saintTicketCategory,sale/completed,sale/associate/isActive,document/registeredBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

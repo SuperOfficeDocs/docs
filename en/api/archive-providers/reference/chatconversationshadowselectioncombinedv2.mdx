@@ -513,7 +513,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationShadowSelectionCombinedV2?$select=chatTopic/name,person/title,person/personExtra/x_person_priority_relation
+GET /api/v1/archive/ChatConversationShadowSelectionCombinedV2?$select=person/leadStatus,person/correspondingAssociate/firstName,person/correspondingAssociate/portraitThumbnail,contact/contactUdef/SuperOffice:3
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

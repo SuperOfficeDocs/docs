@@ -2,10 +2,10 @@
 title: Work with overview pages
 sidebarTitle: "Overview pages"
 description: Overview pages combine a left panel of vertical tabs, selections in list or board view, and the record you are working on.
-keywords: ['overview page', 'sales overview', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'request screen', 'Overview', 'left panel', 'vertical tabs', 'search in tabs', 'sidebar', 'pinned', 'pin', 'unpin', 'selection', 'board view', 'list view', 'filter', 'current', 'recent', 'last-viewed tab', 'active', 'active tab']
+keywords: ['overview page', 'sales overview', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'request screen', 'Overview', 'left panel', 'vertical tabs', 'search in tabs', 'sidebar', 'pinned', 'pin', 'unpin', 'selection', 'board view', 'list view', 'filter', 'current', 'recent', 'tabs', 'open tabs', 'active tab', 'search in requests and selections', 'search in sales and selections']
 author: digitaldiina
-date: 11.05.2026
-so_version: 12.5
+date: 11.24.2026
+so_version: 12.7
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -43,9 +43,9 @@ Overview pages are being introduced gradually, starting with the [Sale screen][2
 
 * **Click a link to a record anywhere in SuperOffice CRM.** For example, in the board view, a section tab, or the side panel. The record opens in the overview page and becomes your current record.
 
-* **Click the New button to create a record of the type the screen is for.** The new record opens in the overview page. When you save it, it opens in the last-viewed tab and becomes your current record.
+* **Click the New button to create a record of the type the screen is for.** The new record opens in a tab in the overview page. When you save it, it becomes your current record.
 
-    On the Request screen, a new request opens in a **New request** tab at the top of the **Active** group. You can have only one **New request** tab open at a time, and it cannot be pinned. When you save, the tab becomes the saved request.
+    On the Request screen, a new request opens in a **New request** tab at the top of the **Tabs** group. You can have only one **New request** tab open at a time, and it cannot be pinned. When you save, the tab becomes the saved request.
 
 ## Overview page layout {#areas}
 
@@ -59,17 +59,19 @@ Overview pages are being introduced gradually, starting with the [Sale screen][2
 
 ### The left panel {#left-panel}
 
-The left panel shows your selections and records as vertical tabs. The tabs are organized in groups. On the Sale screen, the groups are **Selections** and **Sales**. On the Request screen, **Selections** and **Requests** are sections, and each section has an **Active** and a **Pinned** group.
+The left panel shows your selections and records as vertical tabs, in two groups:
 
-![The left panel with the Selections and Sales groups -screenshot][img2]
+* **Pinned:** The selections and records you have pinned. The group appears above **Tabs** when you pin your first tab.
 
-Each group can have one last-viewed tab and as many pinned tabs as you want. The last-viewed tab is directly below the group heading and has no label. It holds the selection or record you opened last that is not pinned, and it is replaced when you open another one that is not pinned. Opening a pinned tab does not replace it.
+* **Tabs:** The selections and records you have open. You can have several open at the same time.
 
-Pinned tabs are listed under the **Pinned** heading, which shows how many there are. Select the heading to collapse or expand the list. Pinned tabs stay until you close them and are not sorted automatically, so use **Search in tabs** to find the one you want. Drag and drop tabs to rearrange them manually, or to move a tab between the last-viewed tab and the pinned list.
+![The left panel with the Pinned and Tabs groups -screenshot][img2]
 
 Click a tab name to open it in the main area. The tab for the selection or record shown in the main area is highlighted.
 
-On the Request screen, an **Active** group can hold several tabs instead of a single last-viewed tab. See [Work with the tabs in the left panel][11].
+Pinned tabs stay until you close them. Click a group heading to hide or show its tabs. Drag and drop tabs to rearrange them.
+
+On the Request screen, **Overview**, **Find request**, and **Mentions** are listed above the groups. For more about request tabs, see [Work with the tabs in the left panel][11].
 
 ### Show or hide the left panel {#collapse}
 
@@ -77,9 +79,9 @@ On the Request screen, an **Active** group can hold several tabs instead of a si
 
 1. Click the toggle button (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) again to show the panel. The panel does not open when you point to it.
 
-When the panel is hidden, click the icon for a group to open its **More options** menu, with a search field and your last-viewed and pinned tabs. On the Request screen, the menu lists your active and pinned tabs. The hidden panel also has buttons for the search field, the **Overview** tab, Find request, and [Mentions][12].
+When the panel is hidden, it shows a column of buttons instead, starting with the search field. On the Request screen, it also has buttons for the **Overview** tab, Find request, and [Mentions][12].
 
-![The hidden left panel with an icon for the search field and one icon for each group -screenshot][img7]
+![The hidden left panel with buttons for the search field and the tabs -screenshot][img7]
 
 The side panel also has a button for showing and hiding it, in the upper-right corner of the screen. The same icon is used for the Navigator, the left panel, and the side panel.
 
@@ -103,8 +105,8 @@ Use the icons at the top of the dialog to switch between three views:
 
 | Icon | View | Description |
 |:-:|---|---|
-| <i class="ph ph-clock" aria-label="Clock icon"></i> | **[History][6]** | Shows your standard selections first, and then the sales and selections you have opened recently. The dialog opens in this view. |
-| <i class="ph ph-star" aria-label="Star icon"></i> | **[Favorites][3]** | Shows the selections and sales you have set as favorites. |
+| <i class="ph ph-clock" aria-label="Clock icon"></i> | **[History][6]** | Shows the records and selections you have opened recently, each type under its own heading. On the Request screen, the standard lists come first. The dialog opens in this view. |
+| <i class="ph ph-star" aria-label="Star icon"></i> | **[Favorites][3]** | Shows the records and selections you have set as favorites. |
 | <i class="ph ph-magnifying-glass" aria-label="Magnifying glass icon"></i> | **Search** | Shows the results of the last search. |
 
 To find and open a selection or a record:
@@ -115,17 +117,7 @@ To find and open a selection or a record:
 
 1. Choose the selection or record you want to open in the main area.
 
-### Find a tab you already have open
-
-To search only the tabs in one group, for example the tabs in **Selections** or **Sales**:
-
-1. Click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) next to the group heading.
-
-1. Enter text in **Search in tabs** to narrow the list.
-
-1. Select a tab to open it.
-
-![The Sales group menu with the Search in tabs field and the tabs in the group -screenshot][img5]
+The search field also finds the tabs you already have open or pinned.
 
 ## Pin and unpin tabs {#pin-unpin}
 
@@ -139,29 +131,41 @@ Pinned tabs are separate from your [favorites][3].
 
 ### Pin a tab {#pin}
 
-1. Point to the last-viewed tab or an active tab.
+1. Point to a tab in the **Tabs** group and click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options).
 
-1. Select the pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), or click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and then **Pin**.
+1. Click **Pin**.
 
-The tab moves to the top of the pinned list.
+The tab moves to the end of the **Pinned** group.
+
+On the Request screen, you can also click the pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>) in the header of the request.
+
+![The menu of a tab in the Tabs group with the options Pin, Close, Close all, and Close all tabs but this -screenshot][img8]
 
 ### Close a tab {#close}
 
-1. Point to the tab. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) appears, and a pinned tab also shows <i class="ph ph-x" aria-label="Close icon"></i>.
+1. Point to the tab. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and <i class="ph ph-x" aria-label="Close icon"></i> appear.
 
-1. Select <i class="ph ph-x" aria-label="Close icon"></i>, or click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and choose an option.
+1. Click <i class="ph ph-x" aria-label="Close icon"></i> to close the tab, or click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options) and choose an option.
 
-    * **Close:** Closes the last-viewed tab. On the Request screen, closes the active tab.
+    For a tab in the **Tabs** group:
+
+    * **Close:** Closes the tab.
+
+    * **Close all:** Closes all tabs in the **Tabs** group.
+
+    * **Close all tabs but this:** Closes all tabs in the **Tabs** group except this one.
+
+    For a tab in the **Pinned** group:
 
     * **Unpin and close:** Closes the pinned tab.
 
-    * **Unpin and close all:** Closes all pinned tabs in the group.
+    * **Unpin and close all:** Closes all pinned tabs.
 
-    * **Unpin and close all but this:** Closes all pinned tabs in the group except this one.
+    * **Unpin and close all but this:** Closes all pinned tabs except this one.
 
 ![The menu for a pinned tab with the options Unpin and close, Unpin and close all, and Unpin and close all but this -screenshot][img3]
 
-When you close the tab that is open, the next tab opens: the one below it in the pinned list, or the one above if there is none below. When you close the last-viewed tab, the first pinned tab opens.
+When you close the tab you are on, the tab next to it opens.
 
 ## Selections {#selections}
 
@@ -189,7 +193,7 @@ The **Edit** and **Task** buttons are not available on the overview page. To edi
 
 ### Show the dataset of a selection
 
-1. Point to the selection tab, last-viewed or pinned.
+1. Point to the selection tab.
 
 1. Click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (More options), and then **Show dataset**. The dataset of the selection is shown.
 
@@ -197,11 +201,11 @@ The **Edit** and **Task** buttons are not available on the overview page. To edi
 
 ### Open a record from a selection
 
-1. In board view, double-click a card or select its title. The record opens in the main area. If the record is not pinned, it appears in the last-viewed tab in the left panel. If it is pinned, its pinned tab is highlighted.
+1. In board view, double-click a card or select its title. The record opens in the main area. If you already have it open or pinned, its tab is highlighted. Otherwise, it opens in a new tab in the **Tabs** group.
 
 1. To go back to the selection, choose it in the left panel. You can also use the Back and Forward buttons (<i class="ph ph-caret-circle-left" aria-label="Back"></i>, <i class="ph ph-caret-circle-right" aria-label="Forward"></i>) or the [Recent navigation][8] button (<i class="ph ph-clock" aria-label="Recent navigation"></i>) in the top bar, which is faster than remembering which selection you were looking at.
 
-Selecting a card to preview it in the side panel does not change the last-viewed tab.
+Selecting a card to preview it in the side panel does not open a tab.
 
 [1]: /en/learn/getting-started/main-screen/side-panel
 [2]: /en/sale/learn/index
@@ -211,14 +215,14 @@ Selecting a card to preview it in the side panel does not change the last-viewed
 [7]: /en/learn/getting-started/main-screen/navigator
 [8]: /en/learn/basics/recent-navigation
 [9]: /en/request/learn/index#request-screen
-[10]: /en/request/learn/index#overview
-[11]: /en/request/learn/index#tabs
+[10]: /en/request/learn/work-with-requests#overview
+[11]: /en/request/learn/work-with-requests#tabs
 [12]: /en/request/learn/mentions
 
 [img1]: /media/loc/en/learn/overview-page-areas.png
 [img2]: /media/loc/en/learn/left-panel.png
 [img3]: /media/loc/en/learn/unpin-sale.png
 [img4]: /media/loc/en/learn/selection-menu.png
-[img5]: /media/loc/en/learn/sale-search-in-tabs.png
 [img6]: /media/loc/en/learn/search-in-sales.png
 [img7]: /media/loc/en/learn/left-panel-hidden.png
+[img8]: /media/loc/en/learn/tab-menu.png

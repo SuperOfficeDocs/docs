@@ -73,6 +73,18 @@ public const string CompanyVoice = "companyVoice"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_RagEvalTag"></a> RagEvalTag
+
+RAG Eval tracking id
+
+```csharp
+public const string RagEvalTag = "ragEvalTag"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_Section"></a> Section
 
 Section heading

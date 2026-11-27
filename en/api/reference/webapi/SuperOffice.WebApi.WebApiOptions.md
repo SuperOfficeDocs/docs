@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_WebApiOptions"></a> Class WebApiOptions
 
-Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)
+Assembly: SuperOffice.WebApi.dll
 
 Configure the WebAPI clients with the right URL, language, timeout, and compression flags.
 The language and timezones can be overridden per request.
@@ -12,25 +12,26 @@ public class WebApiOptions : RequestOptions
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
+[RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions) ←
 [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 #### Inherited Members
 
-[RequestOptions.DefaultTimeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_DefaultTimeout), 
-[RequestOptions.LanguageCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_LanguageCode), 
-[RequestOptions.CultureCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CultureCode), 
-[RequestOptions.Timeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_Timeout), 
-[RequestOptions.TimeZone](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZone), 
-[RequestOptions.TimeZoneIncludeOffset](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZoneIncludeOffset), 
-[RequestOptions.CustomHeaders](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CustomHeaders), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[RequestOptions.DefaultTimeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_DefaultTimeout),
+[RequestOptions.LanguageCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_LanguageCode),
+[RequestOptions.CultureCode](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CultureCode),
+[RequestOptions.Timeout](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_Timeout),
+[RequestOptions.TimeZone](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZone),
+[RequestOptions.TimeZoneIncludeOffset](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_TimeZoneIncludeOffset),
+[RequestOptions.ImpersonateUserName](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_ImpersonateUserName),
+[RequestOptions.CustomHeaders](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions#SuperOffice_WebApi_RequestOptions_CustomHeaders),
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -108,7 +109,7 @@ Determines whether base url is verified - end with /api, "https://example.com/Su
 ### <a id="SuperOffice_WebApi_WebApiOptions_Authorization"></a> Authorization
 
 Used to set the Authorization header scheme and value.
-Use [AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword), AuthorizationAccessToken, 
+Use [AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword), AuthorizationAccessToken,
 [AuthorizationTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationTicket), [AuthorizationImplicit](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationImplicit)
 AuthorizationSystemUserTicket or [AuthorizationUserToken](/en/api/reference/webapi/SuperOffice.WebApi.AuthorizationUserToken).
 
@@ -210,4 +211,3 @@ public WebApiOptions Clone()
  [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 A shallow copy of the current WebApiOptions.
-

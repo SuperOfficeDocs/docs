@@ -200,6 +200,30 @@ Override language/culture codes on this request.
 
 Generated answer based on query.
 
+### CancelEvalAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IAIAgent_CancelEvalAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Stop an evaluation
+
+```csharp
+Task<string> CancelEvalAsync(string namespaceName, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`namespaceName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Defines the search domain. e.g. 'ServiceCopilot'.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+
+The tag
+
 ### CancelIndexingAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IAIAgent_CancelIndexingAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Cancel the current re-indexing job on a given namespace. Leaves data in inconsistent state, because removal of old data is skipped.
@@ -1130,6 +1154,34 @@ Override language/culture codes on this request.
 
 Array containing vector search results
 
+### StartEvalAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IAIAgent_StartEvalAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Returns nothing.
+
+```csharp
+Task<string> StartEvalAsync(string namespaceName, string tag, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`namespaceName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Defines the search domain. e.g. 'ServiceCopilot'.
+
+`tag` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Unique identifier for this run.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+
+Tag
+
 ### StartRagIndexingAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IAIAgent_StartRagIndexingAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Kicks off a batch task to update the RAG index
@@ -1157,6 +1209,30 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The batch task id
+
+### StatusEvalAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IAIAgent_StatusEvalAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+
+Get the status of an evaluation
+
+```csharp
+Task<RagEval[]> StatusEvalAsync(string namespaceName, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`namespaceName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Defines the search domain. e.g. 'ServiceCopilot'.
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagEval](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagEval)\[\]\&gt;
+
+Array of evaluation results for the current tag - will be empty if results not available yet
 
 ### SummarizeContactAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IAIAgent_SummarizeContactAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 

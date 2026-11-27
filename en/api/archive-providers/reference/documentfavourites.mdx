@@ -110,7 +110,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Docu
 ## Sample
 
 ```http!
-GET /api/v1/archive/documentfavourites?$select=isReport,name,associate/firstName
+GET /api/v1/archive/documentfavourites?$select=who,associate/usergroupId,name
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

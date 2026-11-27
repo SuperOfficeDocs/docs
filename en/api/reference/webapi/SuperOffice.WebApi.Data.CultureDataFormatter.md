@@ -1151,6 +1151,32 @@ See also &lt;a href="http://msdn.microsoft.com/en-us/library/system.globalizatio
 
 [CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter).[MapCultureToSuperOfficeLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_MapCultureToSuperOfficeLanguage_System_String_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
 
+### MayContainMultiLanguageString\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_MayContainMultiLanguageString_System_String_}
+
+Cheap pre-check for [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_): false when the string has no colon directly followed by a quote.
+
+```csharp
+public static bool MayContainMultiLanguageString(string s)
+```
+
+#### Parameters
+
+`s` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The string to check
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+True if the string may hold a multi-language fragment
+
+#### Remarks
+
+The scanner changes text only after a fragment opens with a colon and a quote (&lt;code&gt;US:"&lt;/code&gt;); without one it gives back
+the input unchanged, apart from some embedded &lt;code&gt;'\0'&lt;/code&gt; characters it drops (it uses &lt;code&gt;'\0'&lt;/code&gt; to mean end of input).
+A caller that skips it keeps those characters. Keep this in step with `ScanMultiLanguage`.
+
 ### ParseEncoded\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncoded_System_String_}
 
 Inspect the marker and parse the content, returning a strongly typed object (double, int, byte[], DateTime etc)

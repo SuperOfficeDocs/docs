@@ -1,7 +1,7 @@
 # <a id="SuperOffice_WebApi_RequestOptions"></a> Class RequestOptions
 
-Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
-Assembly: SuperOffice.WebApi.dll  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)
+Assembly: SuperOffice.WebApi.dll
 
 Customize this particular request with special language code or timezone specifics.
 
@@ -11,7 +11,7 @@ public class RequestOptions
 
 #### Inheritance
 
-[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[object](https://learn.microsoft.com/dotnet/api/system.object) ←
 [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 #### Derived
@@ -20,12 +20,12 @@ public class RequestOptions
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
-[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring),
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)),
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)),
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals),
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode),
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype),
 [object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
 
 ## Constructors
@@ -121,6 +121,18 @@ public StringDictionary CustomHeaders { get; set; }
 
  [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
+### <a id="SuperOffice_WebApi_RequestOptions_ImpersonateUserName"></a> ImpersonateUserName
+
+User name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user.
+
+```csharp
+public string ImpersonateUserName { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_RequestOptions_LanguageCode"></a> LanguageCode
 
 Controls string parsing/substitution.
@@ -169,4 +181,3 @@ public TimeSpan Timeout { get; set; }
 #### Property Value
 
  [TimeSpan](https://learn.microsoft.com/dotnet/api/system.timespan)
-

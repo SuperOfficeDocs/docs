@@ -8,6 +8,98 @@ content_type: release-note
 envir: online
 ---
 
+<Update label="12.7" description="24.11.2026">
+
+### SuperOffice
+
+**Step 164 (updated)**
+
+Add functional right 'Can override approval text in forms'
+
+Adds the 'forms-override-approval-text' functional right; its name and tooltip, which the role admin needs to list it,
+come from SuperOffice_166. It is deliberately not linked to any role, not even admin-all: it must be granted
+explicitly per role in the role admin.
+
+**Step 166**
+
+Re-import the translated name and description of functional right 'forms-override-approval-text' in all languages
+
+Replaces the role admin name and tooltip (LocaleText typeId 11 and 12) of the 'forms-override-approval-text' functional right
+that step 164 imported, which was English in every language but Norwegian. The rows are deleted and re-imported, since IMP files only insert.
+
+**Step 167**
+
+Replace all freetextindex indexes with one layout: clustered (table_id, record_id, ownerrecord_id, contact_id, freetextindex_id), nonclustered primary key on freetextindex_id, (freetextwords_id, ownertable_id, ownerrecord_id), (contact_id) and (ownerrecord_id, ownertable_id, freetextwords_id). Deferred: applied right after a legacy freetext wipe, or at the start of a full merge on a nearly empty index
+
+Tenants have drifted into many different freetextindex layouts (no primary key, duplicate primary key indexes, legacy index names,
+other clustered indexes). This step declares one layout for all of them. Rebuilding the indexes of a large freetextindex would hold
+up an upgrade, so the replacement is deferred: each tenant switches right after its next legacy freetext wipe, or at the start of a
+full merge on a nearly empty index. It supersedes the deferred changes of step 165.
+
+* Modify table freetextindex
+
+**Step 168**
+
+Cluster countervalue on its natural key (contact_id, person_id, project_id, record_type, direction, intent_id, sale_status, amountClassId), making the primary key nonclustered, and drop its six nonclustered indexes. Deferred: applied by the SAINT counter regeneration while the table is empty
+
+The SAINT counter regeneration merges its results into COUNTERVALUE owner range by owner range, and SAINT criteria join it on the
+owner: clustering on the natural key (owner, then classification) makes both range seeks without key lookups, and replaces the six
+nonclustered indexes. Rebuilding a large COUNTERVALUE would hold up an upgrade, so every change is deferred: applied by the
+regeneration while the table is empty, after its wipe or before its first import.
+
+* Modify table CounterValue
+
+### ConsentManagement
+
+**Step 27**
+
+Fills the empty consentTextImplicit of the E-marketing purpose with the default approval text for forms with consent on submit.
+
+**Step 28**
+
+Translates the default approval text (form submit) of the E-marketing purpose in every language that still holds the untranslated text step 27 wrote; languages the customer has reworded are kept.
+
+Step 27 filled the E-marketing purpose's default approval text before it was translated: English in every language but Dutch.
+This step replaces each language segment that still holds one of those earlier default texts with the translation from
+step 27's resource, so a language the customer has reworded keeps its text.
+
+### CS
+
+**Step 77**
+
+Insert the standard postpone options for every Postponed ticket status that has no ticket_status_postpone rows
+
+**Step 78**
+
+Add the postpone option used with a Postponed default status: ej_category.postpone_option_id, ej_category.msg_postpone_option_id and ticket_type.postpone_option_id
+
+* Modify table ej\_category
+postpone\_option\_id, msg\_postpone\_option\_id
+* Modify table ticket\_type
+postpone\_option\_id
+
+### NightlyJob
+
+**Step 2**
+
+Add State fields to **nightly_job** table so jobs don't have to use a preference to store their state.
+
+* Modify table nightly\_job
+state
+
+### Webhooks
+
+**Step 6**
+
+Add **developer_portal_id** column to **Webhook** to store the owning partner application's permanent ID.
+
+Store the owning partner application's permanent Developer Portal ID on webhooks so ownership survives secret rotation.
+
+* Modify table Webhook
+developer\_portal\_id
+
+</Update>
+
 <Update label="12.6" description="04.11.2026">
 
 ### SuperOffice

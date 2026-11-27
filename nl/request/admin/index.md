@@ -4,7 +4,7 @@ title: Verschillende instellingen voor Service
 description: Systeeminstellingen
 keywords: ['Service']
 author: digitaldiina
-date: 06.10.2026
+date: 11.24.2026
 so_version: 12.0
 content_type: reference
 license: serviceessentials
@@ -19,7 +19,7 @@ related:
   - /nl/request/admin/relation-rules
   - /nl/admin/user-management/role/index
   - /nl/admin/user-management/index
-  - Beschikbaarheidsstatus: /nl/request/learn/index#available
+  - Beschikbaarheidsstatus: /nl/request/learn/personalize#available
   - Categorieën: /nl/request/admin/category/index
   - Prioriteiten: /nl/request/admin/priority/index
   - /nl/request/admin/status/index

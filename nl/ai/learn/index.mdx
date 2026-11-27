@@ -4,7 +4,7 @@ title: AI-diensten
 description: Overzicht van kunstmatige intelligentie-diensten in SuperOffice CRM
 keywords: ['AI', 'kunstmatige intelligentie', 'AI Platform', 'machine learning', 'automatisering', 'insight', 'assist', 'agent', 'mcp', 'instantie', 'tekstanalyse']
 author: digitaldiina
-date: 11.09.2026
+date: 11.25.2026
 so_version: 12.6
 content_type: concept
 license: aiplatform
@@ -41,19 +41,19 @@ SuperOffice AI is alleen beschikbaar in CRM Online. Licentievereisten zijn diens
 | Dienst | Beschrijving | Licentie |
 |---|---|---|
 | [AI-samenvattingen in SuperOffice for Teams][6] | Genereert een samenvatting van een Microsoft Teams-gesprek bij het archiveren in SuperOffice. | AI Lab (pilotfunctie) |
-| [Category Insight][2] | Stelt een categorie voor op basis van de inhoud van het verzoek. Een beheerder [traint het model met een selectie van verzoeken][18] en schakelt suggesties in. De behandelaar controleert de suggestie voordat deze wordt toegepast. | Categorization of CRM Suite Growth |
+| [Category Insight][2] | Stelt een categorie voor op basis van de inhoud van het verzoek. Een beheerder [traint het model met een selectie van verzoeken][18] en schakelt suggesties in. De behandelaar controleert de suggestie voordat deze wordt toegepast. Wordt onderaan het verzoek weergegeven. | Categorization of CRM Suite Growth |
 | [Chatbot Connector][3] | Maakt integratie met externe chatbots mogelijk om inkomende chats automatisch af te handelen. | Chatbot |
 | [Company Insight][7] | Stelt bedrijfsgegevens voor uit officiële handelsregisters, zoals Brreg, Virk, Companies House en Zefix, wanneer u een nieuw bedrijf maakt. | CRM Suite Growth |
 | [Data Quality Agent][12] | Controleert en verrijkt de bedrijven en contactpersonen die al in uw CRM staan aan de hand van betrouwbare zakelijke bronnen, zodat een persoon dit kan goedkeuren. | CRM Suite Growth |
 | [Duplicate Agent][13] | Vindt dubbele bedrijven en contactpersonen, en koppelt contactpersonen zonder bedrijf opnieuw aan hun bedrijf, zodat een persoon dit kan goedkeuren. | CRM Suite Growth |
 | [Lead Agent][9] | Vindt, onderzoekt en kwalificeert nieuwe prospects op basis van geconfigureerde nieuwsbronnen en beoordeelt ze aan de hand van uw ideale klantprofiel, zodat een persoon ze kan goedkeuren. | CRM Suite Plus |
 | [MCP Connect][14] | Verbindt SuperOffice CRM als live gegevensbron met Claude, Microsoft Copilot of ChatGPT om te lezen en bij te werken. | CRM Suite Plus om te lezen, CRM Suite Super om bij te werken |
-| [Reply Assist][8] | Stelt een antwoord voor op een inkomend verzoek op basis van uw CRM-inhoud, dat u kunt controleren en verzenden. | CRM Suite Plus |
-| [Request Insight][1] | Analyseert het sentiment van een inkomend verzoek, zodat u uw antwoord kunt prioriteren. | Text Services of CRM Suite Core |
+| [Reply Assist][8] | Stelt een antwoord voor op een inkomend verzoek op basis van uw CRM-inhoud, dat u kunt controleren en verzenden. Wordt geopend vanuit het paneel **Verzoekeigenschappen** op de verzoekkaart. | CRM Suite Plus |
+| [Request Insight][1] | Analyseert het sentiment van een inkomend verzoek, zodat u uw antwoord kunt prioriteren. Wordt als emoticon in de koptekst van het bericht op het tabblad **Berichten** weergegeven. | Text Services of CRM Suite Core |
 | [Sales Assistant Agent][19] (beta) | Houdt uw openstaande verkopen in de gaten en stelt voor de verkopen die aandacht nodig hebben een geprioriteerde volgende stap voor, zodat een persoon deze kan goedkeuren. | CRM Suite Plus |
-| [Summary Assist][15] | Vat de berichten in een verzoek samen, zodat u kunt handelen zonder de volledige geschiedenis te lezen. | Text Services of CRM Suite Core |
+| [Summary Assist][15] | Vat de berichten in een verzoek samen, zodat u kunt handelen zonder de volledige geschiedenis te lezen. Beschikbaar op de verzoekkaart. | Text Services of CRM Suite Core |
 | [SuperNotes][5] | AI-gestuurde vergaderassistent die vergaderingen opneemt, transcribeert en samenvat, en de inzichten koppelt aan SuperOffice. | Afzonderlijke integratie (geen deel van AI Platform) |
-| [Translation Assist][16] | Detecteert de taal van een inkomend verzoek en vertaalt het naar uw taal. | Text Services of CRM Suite Core |
+| [Translation Assist][16] | Detecteert de taal van een inkomend verzoek en vertaalt het naar uw taal. Wordt onder het bericht op het tabblad **Berichten** weergegeven. | Text Services of CRM Suite Core |
 | [Workspace Assist][4] | Gebruikt generatieve AI om gebruikers te helpen bij het maken van content en taakbegeleiding. | CRM Suite Core of AI Lab (aan-/afmelden in Instellingen en onderhoud) |
 | Writing Assist | Stelt e-mails, notities en vervolgactiviteiten op die u kunt bewerken en verzenden. | CRM Suite Starter |
 
@@ -93,22 +93,22 @@ Sommige AI-acties gebruiken AI-credits, vooral acties van agents zoals de Data Q
 
 1. Ga verder met [uw agents kiezen, activeren en instellen][10].
 
-[1]: /nl/request/learn/handle-request-ai#sentiment
-[2]: /nl/request/learn/handle-request-ai#categorization
+[1]: /nl/request/learn/index#sentiment
+[2]: /nl/request/learn/index#categorization
 [3]: /nl/chat/admin/channel-create#chatbot
 [4]: /nl/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /nl/company/learn/create#company-insight
-[8]: /nl/request/learn/handle-request-ai#reply-assist
+[8]: /nl/request/learn/reply#reply-assist
 [9]: /nl/ai/learn/lead-agent
 [10]: /nl/ai/learn/set-up-ai-agents
 [12]: /nl/ai/learn/data-quality-agent
 [13]: /nl/ai/learn/duplicate-agent
 [14]: /nl/ai/learn/mcp
 
-[15]: /nl/request/learn/handle-request-ai#summary
-[16]: /nl/request/learn/handle-request-ai#translate
+[15]: /nl/request/learn/index#summary
+[16]: /nl/request/learn/index#translate
 [17]: /nl/ai/admin/index#enable-text-analysis
 [18]: /nl/ai/admin/set-up-categorization
 [19]: /nl/ai/learn/sales-assistant-agent

@@ -799,7 +799,7 @@ This is the archive Provider for the Selection QuoteLine archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineSelectionV2?$select=alternative/earningPercent,alternative/version/approvedDate,alternative/version/quote/sale/credited,alternative/version/quote/sale/person/useAsMailingAddress,alternative/version/quote/sale/contact/contactInterestIds
+GET /api/v1/archive/QuoteLineSelectionV2?$select=productFamilyKey,alternative/version/quote/sale/person/personAssociate/contactName,alternative/version/quote/sale/contact/contactUdef/SuperOffice:1,alternative/version/quote/sale/associate/locationAddress,alternative/version/quote/connection/erpConnection/connector/url
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
