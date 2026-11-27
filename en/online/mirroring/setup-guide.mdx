@@ -2,9 +2,9 @@
 uid: mirroring_setup_guide
 title: Set up the Database Mirroring client
 description: Step-by-step setup and provisioning of the SuperOffice Database Mirroring client (outbound-only Replication Client).
-keywords: ['replication', 'setup', 'provisioning', 'windows service', 'appsettings']
+keywords: ['replication', 'setup', 'provisioning', 'windows service', 'appsettings', 'technical contact']
 author: Margrethe Romnes
-date: 05.27.2026
+date: 11.27.2026
 so_version: 12
 content_type: howto
 platform: web
@@ -29,6 +29,7 @@ This guide walks you through the complete setup:
 * [Step 4: Run a manual sync][5]
 * [Step 5: Install as a Windows Service][6]
 * [Step 6: Validate][7]
+* [Manage the technical contact][20] in Operation Center
 * [Configuration reference][8]
 * [Command reference][9]
 * [Logging and diagnostics][10]
@@ -117,13 +118,28 @@ Click **I approve** to continue.
 
 ### 3.2 Create the replication session
 
-After approval you are taken to the **Provision Replication Session** page. Your tenant identity is shown automatically. Enter a **Session Name** and click **Create session**.
+After approval you are taken to the **Provision Replication Session** page. Your tenant identity is shown automatically.
 
-![Provision Replication Session page - verify identity, enter session name, click "Create session" -screenshot][img2]
+1. Enter a **Session Name**.
+2. Under **Technical contact**, check the **Name**, **Email**, and **Phone** of the person SuperOffice should contact if replication stops working. All three fields are optional.
+3. Click **Create session**.
+
+![Provision Replication Session page - verify identity, enter session name and technical contact, click "Create session" -screenshot][img2]
 
 <Tip>
 Choose a descriptive session name (for example, **Production** or **MyMirror**). It becomes the **Replication ID** that is visible in Operation Center and forms part of the Windows Service name.
 </Tip>
+
+About the technical contact:
+
+* A tenant has one technical contact, and it applies to all its replication sessions (for example, Production and Test).
+* The fields are prefilled with the saved contact, if there is one. Otherwise, the page suggests your own name and email.
+* The contact is saved when you click **Create session**. Changing it here changes it for every session of the tenant.
+* To remove the contact, clear all three fields.
+* If you provision again and keep the prefilled values, the contact stays as it was.
+* The email address must be valid. Name and email can be up to 255 characters, and phone up to 50 characters.
+
+You can also [view and update the technical contact in Operation Center][20] later.
 
 ### 3.3 Wait for provisioning to complete
 
@@ -200,6 +216,33 @@ Confirm the setup is working correctly:
 * Check that the **`_ReplicationState`** table exists. It stores the encrypted session tokens and progress offsets.
 * Monitor the Windows Service status in **Services (services.msc)**. It should show **Running**.
 * Make a change in SuperOffice Online and verify it appears in the replica within seconds.
+
+## Manage the technical contact
+
+The technical contact is the person SuperOffice should get in touch with if replication stops working, for example if the client stops checking in, the client version is too old, or provisioning fails. You set it during [provisioning][4], and you can view and update it in Operation Center.
+
+<Note>
+SuperOffice doesn't send automatic emails or alerts to the technical contact. The contact is stored and shown in Operation Center.
+</Note>
+
+1. Sign in to **Operation Center (OC)** and open the customer's **Replication** tab.
+
+2. On the **Client Sessions** tab, find the **Technical contact** card above the list of sessions.
+
+    ![Technical contact card on the Client Sessions tab in Operation Center -screenshot][img6]
+
+    The card shows the contact's name, email, and phone, and when and by whom the contact was last updated.
+
+3. To change the contact, click **Edit Contact**, update **Name**, **Email**, and **Phone**, and save. To remove the contact, clear all three fields and save.
+
+If no contact is registered, the card shows a warning: *No technical contact is registered, so SuperOffice has nobody to contact if replication stops working.* The card appears when the customer has at least one replication session or a saved contact.
+
+### Access rights
+
+* **Read** access to **Customer** > **Replication** in Operation Center lets you view the contact.
+* **Write** access lets you edit it. Without it, the **Edit Contact** button isn't shown.
+
+Every change made in Operation Center is recorded in the access log as **Update Replication Contact**. The log records who changed the contact and when, but not the contact's personal data.
 
 ## Configuration reference
 
@@ -298,7 +341,7 @@ A few points worth knowing:
 
 * **Multiple environments on one host.** Test and Production clients can coexist by unzipping into separate folders, pointing each at its own replica database, and provisioning each independently. The installer derives unique service names from the session, so they do not collide.
 
-* **Monitoring from the SuperOffice side.** Operation Center surfaces session health, last check-in time, and connector diagnostics. Customers do not see this UI directly, but it is the primary signal SuperOffice operations use when reacting to incidents.
+* **Monitoring from the SuperOffice side.** Operation Center surfaces session health, last check-in time, and connector diagnostics. It is the primary signal SuperOffice operations use when reacting to incidents. Keep the [technical contact][20] up to date so SuperOffice can reach the right person.
 
 * **Lifecycle events.** Database moves, restores, suspensions, and resumptions are handled by the standard tenant operations sagas on the SuperOffice side. They reset offsets and trigger a fresh snapshot, which the client absorbs as upserts. You do not normally need to intervene.
 
@@ -331,9 +374,11 @@ A few points worth knowing:
 [17]: ./sql-server-schema
 [18]: ./force-resync
 [19]: ./troubleshooting
+[20]: #manage-the-technical-contact
 
 [img1]: /media/loc/en/online/replication-consent.png
-[img2]: /media/loc/en/online/replication-provision-session.png
+[img2]: /media/loc/en/online/replication-provision-technical-contact.png
 [img3]: /media/loc/en/online/replication-provision-progress.png
 [img4]: /media/loc/en/online/replication-provision-terminal.png
 [img5]: /media/loc/en/online/replication-sync-progress.png
+[img6]: /media/loc/en/online/replication-oc-technical-contact.png

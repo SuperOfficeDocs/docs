@@ -4,7 +4,7 @@ title: Troubleshooting Database Mirroring
 description: Diagnostic guidance for the Database Mirroring client - logs, service state, schema, and recovery.
 keywords: ['replication', 'diagnostics', 'event log']
 author: SuperOffice Product and Engineering
-date: 05.27.2026
+date: 11.27.2026
 so_version: 12
 content_type: howto
 platform: web
@@ -119,6 +119,8 @@ When opening a support case, include:
 * The relevant Event Log entries (export the filtered view as an `.evtx` or text).
 * The output of `validate`.
 * Your `appsettings.json` with secrets redacted.
+
+Also check that the [technical contact][8] in Operation Center is up to date, so SuperOffice can reach the right person.
 
 ## Legacy (WCF-based) mirroring {#legacy}
 
@@ -384,6 +386,7 @@ This indicates that the legacy SuperOffice mirroring service cannot validate the
 [5]: https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/bindings-and-security
 [6]: https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/wcf/transport-of-basichttpbinding
 [7]: https://www.nuget.org/packages/SuperOffice.Crm.Online.Mirroring
+[8]: ./setup-guide#manage-the-technical-contact
 
 [img1]: /media/loc/en/online/database-mirror-unavailable.png
 [img2]: /media/loc/en/online/database-mirror-service-iis-page.png

@@ -4,7 +4,7 @@ title: Migrate from the legacy mirroring service
 description: How to migrate from the legacy WCF-based Database Mirroring service to the new outbound-only client.
 keywords: ['database mirroring', 'replication', 'migration', 'cutover']
 author: Margrethe Romnes
-date: 05.27.2026
+date: 11.27.2026
 so_version: 12
 content_type: howto
 platform: web
@@ -60,6 +60,8 @@ SuperOffice.Online.Replication.Client.exe provision
 SuperOffice.Online.Replication.Client.exe validate
 SuperOffice.Online.Replication.Client.exe sync
 ```
+
+During `provision`, you're asked for a [technical contact][9]: the person SuperOffice should contact if replication stops working. The contact applies to all replication sessions for the tenant.
 
 The legacy mirroring service continues to feed the existing replica untouched.
 
@@ -123,6 +125,10 @@ On the **SuperOffice side**, the legacy mirroring is delivered as an app registe
 <Danger>
 Until SuperOffice has confirmed the change, the cloud continues to attempt outbound calls to the (now offline) legacy mirroring endpoint and sends failure notifications by email to the technical contact.
 </Danger>
+
+<Note>
+The new client doesn't send failure emails. Its [technical contact][9] is stored and shown in Operation Center only.
+</Note>
 
 This step is intentionally last and is only carried out once the new setup has stabilized - it makes a fast [rollback][3] possible.
 
@@ -204,3 +210,4 @@ The legacy service resumes populating the restored replica on its next cycle, wh
 [6]: ./sql-server-schema
 [7]: #what-does-not-carry-over
 [8]: /en/developer-portal/faq/8-mirroring
+[9]: ./setup-guide#manage-the-technical-contact
