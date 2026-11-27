@@ -989,11 +989,11 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |workflowInstance/emailFlow/workflowDefinitionStatusId|listAny|| x |
 |workflowInstance/emailFlow/jumpToFinish|bool|| x |
 |workflowInstance/emailFlow/startOnlyOnce|bool|| x |
-|workflowInstance/emailFlow/workflowEnrolledCount| *None* ||  |
-|workflowInstance/emailFlow/workflowInProgressCount| *None* ||  |
-|workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowEnrolledCount|int|| x |
+|workflowInstance/emailFlow/workflowInProgressCount|int|| x |
+|workflowInstance/emailFlow/workflowCompletedCount|int|| x |
+|workflowInstance/emailFlow/workflowSucceededCount|int|| x |
+|workflowInstance/emailFlow/workflowSuccessRate|decimal|| x |
 |workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy|associate|| x |
 |workflowInstance/emailFlow/updatedDate|date|| x |
@@ -1507,7 +1507,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonDynamicSelectionSingleCriteriaGroup?$select=contactAssociate/mrMrs,contactAssociate/otherGroups,contactUdef/SuperOffice:5,sale/saleUdef/SuperOffice:5,includePersonWithNoDMRestriction
+GET /api/v1/archive/ContactPersonDynamicSelectionSingleCriteriaGroup?$select=sale/stageRank,sale/saleUdef/SuperOffice:2,sale/saleUdef/SuperOffice:6,appointment/completed,appointment/appointmentId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

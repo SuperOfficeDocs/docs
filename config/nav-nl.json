@@ -554,7 +554,8 @@
         "root": "nl/request/learn/index",
         "pages": [
           "nl/request/index",
-          "nl/request/learn/handle-request-ai",
+          "nl/request/learn/personalize",
+          "nl/request/learn/work-with-requests",
           "nl/request/learn/find",
           "nl/request/learn/create",
           "nl/request/learn/edit-message",

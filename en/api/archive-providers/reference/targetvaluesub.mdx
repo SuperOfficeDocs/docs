@@ -429,7 +429,7 @@ Archive of TargetValue - used by .
 ## Sample
 
 ```http!
-GET /api/v1/archive/TargetValueSub?$select=contact/restrictionPostalAddress/line1,contact/contactAssociate/middleName,contact/contactSupportPerson/createdByForm,contact/contactSupportPerson/personUdef/SuperOffice:2,contact/contactSupportPerson/personExtra/x_person_appointment_relation
+GET /api/v1/archive/TargetValueSub?$select=contact/mainContact,contact/streetAddress/line3,contact/contactSupportPerson/personExtra/y_rental/x_end
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

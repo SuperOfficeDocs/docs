@@ -506,7 +506,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowSelectionCombinedV2?$select=person/firstName,person/personRegisteredDate,person/correspondingAssociate/isActiveText,contact/hasInfoText,contact/category
+GET /api/v1/archive/FormSubmissionShadowSelectionCombinedV2?$select=getNoRows,contact/restrictionAddress/formattedAddress,person/restrictionAddress/state
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -5,7 +5,7 @@ sidebarTitle: "Serviceeinstellungen"
 description: Systemeinstellungen
 keywords: ['Service']
 author: digitaldiina
-date: 06.10.2026
+date: 11.24.2026
 so_version: 12.0
 content_type: reference
 license: serviceessentials
@@ -49,7 +49,7 @@ In diesem Bereich können Sie die Einstellungen für **Service** konfigurieren, 
 [11]: /de/admin/preferences/service-settings
 [12]: /de/admin/user-management/role/index
 [13]: /de/admin/user-management/index
-[7]: /de/request/learn/index#available
+[7]: /de/request/learn/personalize#available
 [15]: /de/ui/blogic/learn/index
 [16]: /de/ui/blogic/learn/profiles/index
 

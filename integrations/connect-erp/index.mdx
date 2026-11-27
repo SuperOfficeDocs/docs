@@ -3,7 +3,7 @@ title: ConnectERP
 description: Introduction to ConnectERP, the ERP integration for SuperOffice CRM.
 keywords: ['ERP', 'integration', 'Visma', 'synchronization', 'CRM Suite', 'Core', 'Growth', 'Visma.net', 'accounting system', 'back office']
 author: marcelspapens
-date: 11.25.2026
+date: 11.27.2026
 content_type: concept
 category: integration
 topic: ConnectERP
@@ -17,11 +17,11 @@ ConnectERP connects SuperOffice CRM with ERP systems and synchronizes key busine
 ## Supported ERP systems
 
 * [Visma Net][1]
-* [Business NXT][10] (Visma Business NXT)
+* [Business NXT][11] (Visma Business NXT)
 * Tripletex
 * Fortnox
 
-More ERP systems are added periodically. This documentation currently covers Visma Net and Business NXT.
+More ERP systems are added periodically. This documentation currently covers Visma Net and Business NXT. Features per CRM Suite differ by ERP system. See [What's included for Visma Net][10].
 
 The example below shows a Company card with ConnectERP for Visma Net: the synchronized ERP fields on the **ERP (Visma Net)** tab, and the **Orders (Visma Net)** panel.
 
@@ -57,29 +57,6 @@ In addition to company and contact sync and the panels, Growth and higher includ
 
 If you have a SuperOffice CRM user plan instead of a CRM Suite, you can buy ConnectERP Standard or ConnectERP Professional as an add-on in the App Store: [ConnectERP for Visma Net][3].
 
-## What's included per CRM Suite {#whats-included}
-
-| Feature | CRM Suite Core | CRM Suite Growth and higher |
-|---|---|---|
-| Custom data flow direction | No | Yes |
-| Custom field mapping | No | Yes |
-| Custom leading system per entity | No | Yes |
-| Location sync | No | Yes (customizable) |
-| Order sync | No | Yes (customizable) |
-| Product sync | No | Yes (customizable) |
-| Project sync | No | Yes (customizable) |
-| Sales price sync | No | Yes (customizable) |
-| Supplier sync | No | Yes (customizable) |
-| Contact sync | Yes (fixed) | Yes (customizable) |
-| Customer sync | Yes (fixed) | Yes (customizable) |
-| Invoices panel | Yes | Yes |
-| Order history panel | Yes | Yes |
-| Orders panel | Yes | Yes |
-
-Location, project, and sales price sync aren't part of the default setup in this guide. You set them up as regular DataBridge integrations, without a default configuration.
-
-The three panels on the Company card show a list of orders, a list of invoices, and a graphical overview of the order history for the current year and the previous four years.
-
 ## Default setup
 
 This documentation describes a default setup, with downloadable DataBridge integrations and CRMScripts. In Growth and higher, you can adapt the default setup to your needs. In Core, SuperOffice supports the company and contact sync only with the default setup.
@@ -105,6 +82,7 @@ This documentation describes a default setup, with downloadable DataBridge integ
 [7]: #terminology
 [8]: /en/sale/admin/quote/price-list-and-products
 [9]: /en/sale/learn/quote/index
-[10]: /integrations/connect-erp/business-nxt/index
+[10]: /integrations/connect-erp/visma-net/index#whats-included
+[11]: /integrations/connect-erp/business-nxt/index
 
 [img1]: /media/loc/en/integrations/connect-erp/company-card-orders-panel.png

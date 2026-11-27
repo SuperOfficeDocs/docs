@@ -844,7 +844,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjecthadowSelectionCombinedV2?$select=name,sale/recordType,appointment/ownedExternally,document/text,projectMember/leadstatusRank
+GET /api/v1/archive/ProjecthadowSelectionCombinedV2?$select=projectAssociate/title,NumberOfActivitiesInPeriod,sale/currencyId,sale/reopenDate,sale/salePublish/publishedTo
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

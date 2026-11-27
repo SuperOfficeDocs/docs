@@ -63,6 +63,10 @@ public enum NotificationEventType
 
 13: A favourited ticket was updated
 
+`TicketMention = 15`
+
+15: A colleague @-mentioned the user in a request message
+
 `TicketTakenOver = 14`
 
 14: A ticket was taken over by someone else

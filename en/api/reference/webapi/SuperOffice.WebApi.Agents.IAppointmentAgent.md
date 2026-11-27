@@ -1039,6 +1039,30 @@ Override language/culture codes on this request.
 
 Array of Appointment objects
 
+### GetAppointmentParticipantsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IAppointmentAgent_GetAppointmentParticipantsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+
+Method that returns the participants of the meetings of the appointments specified, resources included. Any appointment id of a meeting can be given, and each occurrence of a recurring meeting has its own participants. Appointments without participants, and appointments the logged on user may only see a masked version of, give no participants.
+
+```csharp
+Task<AppointmentParticipant[]> GetAppointmentParticipantsAsync(int[] appointmentIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`appointmentIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Appointment ids, for example from GetTicketAppointments
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentParticipant](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentParticipant)\[\]\&gt;
+
+The participants, the owner first within each appointment
+
 ### GetAppointmentRecordsAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IAppointmentAgent_GetAppointmentRecordsAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all records involved in a booking and/or recurring appointments. MotherId can be zero for repeating appointments or bookings, and recurrenceRuleId can be zero for bookings that are not repeating.
@@ -2542,6 +2566,30 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)\[\]\&gt;
 
 An array of tasklist items
+
+### GetTicketAppointmentsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IAppointmentAgent_GetTicketAppointmentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Method that returns the appointments linked to the request (ticket) specified, ordered by start time. A meeting with participants is returned once, as the logged on user's own copy if they are invited, and each occurrence of a recurring appointment is returned. If the logged on user is not allowed to read the request, an empty array is returned.
+
+```csharp
+Task<Appointment[]> GetTicketAppointmentsAsync(int ticketId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The request (ticket) id
+
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
+
+Array of Appointments.
 
 ### GetUIDFromAppointmentIdAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IAppointmentAgent_GetUIDFromAppointmentIdAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 

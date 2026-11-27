@@ -4,7 +4,7 @@ title: Använda ärenden i paneler
 description: I den här guiden förklarar vi hur du får en snabb överblick över alla öppna ärenden på dashboards i SuperOffice.
 keywords: ['dashboard', 'ärende']
 author: digitaldiina
-date: 11.21.2025
+date: 11.25.2026
 so_version: 11.6
 content_type: howto
 tier: core
@@ -14,7 +14,7 @@ related:
   - /sv/dashboard/learn/create
   - Redigera dashboard-paneler: /sv/dashboard/learn/working-with-tiles
   - /sv/request/learn/create
-  - Hantera ärenden: /sv/request/learn/index#request-mgt
+  - Arbeta med ärenden: /sv/request/learn/work-with-requests
   - Söka ärenden: /sv/request/learn/find
 language: sv
 ---

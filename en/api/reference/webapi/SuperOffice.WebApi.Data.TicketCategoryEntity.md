@@ -146,6 +146,18 @@ public virtual TicketStatusEntity DefaultMessageStatus { get; set; }
 
  [TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)
 
+### DefaultMessageStatusPostponeOptionId {#SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultMessageStatusPostponeOptionId}
+
+Postpone option (TicketStatusPostponeId) used when DefaultMessageStatus is a Postponed status. 0 = not set. On save, 0 keeps the stored option while the status is unchanged, and -1 clears it
+
+```csharp
+public virtual int DefaultMessageStatusPostponeOptionId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
 ### DefaultTicketStatus {#SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultTicketStatus}
 
 Default status for new tickets, if 0 then there is a fallback to a user-dependent value
@@ -157,6 +169,18 @@ public virtual TicketStatusEntity DefaultTicketStatus { get; set; }
 #### Property Value
 
  [TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)
+
+### DefaultTicketStatusPostponeOptionId {#SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultTicketStatusPostponeOptionId}
+
+Postpone option (TicketStatusPostponeId) used when DefaultTicketStatus is a Postponed status. 0 = not set. On save, 0 keeps the stored option while the status is unchanged, and -1 clears it
+
+```csharp
+public virtual int DefaultTicketStatusPostponeOptionId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### DelegateMethod {#SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod}
 

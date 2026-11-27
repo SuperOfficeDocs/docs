@@ -803,7 +803,7 @@ Activity archive provider for the Diary (checklist)
 ## Sample
 
 ```http!
-GET /api/v1/archive/DiaryActivity?$select=registeredDate,person/email/emailBounceCount,person/correspondingAssociate/isActiveText,contact/streetAddress/wgs84longitude,contact/contactAssociate/contactDepartment
+GET /api/v1/archive/DiaryActivity?$select=snum,documentPublish/isPublished,person/correspondingAssociate/contactFullName,contact/code,project/registeredByFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

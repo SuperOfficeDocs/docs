@@ -2,9 +2,9 @@
 uid: help-nl-request
 title: Verzoeken en SuperOffice Service
 description: Inleiding tot verzoeken in SuperOffice
-keywords: ['verzoek', 'ticket', 'service', 'verzoekscherm', 'verzoekkaart', 'Overzicht', 'linkerpaneel', 'actieve tabbladen', 'vastgemaakte verzoeken', 'uitschuifpaneel', 'standaardlijsten', 'tabblad automatisch sluiten', 'meerdere actieve tabbladen', 'alle tabbladen sluiten', 'te veel tabbladen', 'niet-opgeslagen wijzigingen']
+keywords: ['verzoekbeheer', 'verzoek', 'ticket', 'verzoekscherm', 'verzoekkaart', 'Overzicht', 'linkerpaneel', 'actieve tabbladen', 'vastgemaakte verzoeken', 'uitschuifpaneel', 'standaardlijsten', 'tabblad automatisch sluiten', 'meerdere actieve tabbladen', 'alle tabbladen sluiten', 'te veel tabbladen', 'niet-opgeslagen wijzigingen', 'Request Insight', 'Translation Assist', 'Category Insight', 'Summary Assist', 'sentiment']
 author: digitaldiina
-date: 11.23.2026
+date: 11.25.2026
 so_version: 12.7
 content_type: concept
 license: serviceessentials
@@ -22,16 +22,17 @@ related:
   - Verzoeken beantwoorden: /nl/request/learn/reply
   - Verzoeken toewijzen: /nl/request/learn/assign
   - 7 tips om de beste klantenservice te bieden met SuperOffice Service - blog: https://community.superoffice.com/en/learning/best-practices-tips/service/7-tips-to-provide-best-in-class-customer-service-with-superoffice-service/
+  - Het gebruik van AI-services: /nl/ai/learn/index
 language: nl
 ---
 
 Ons ticketsysteem stelt u in staat om binnenkomende verzoeken efficiënt af te handelen en helpt u elke dag om een uitstekende klantenservice te bieden. Deze selectie van gidsen bevat richtlijnen om u te helpen bij het bijhouden, beantwoorden en analyseren van alle binnenkomende vragen en aanvragen met behulp van SuperOffice Service. Het maakt niet uit of ze binnenkomen via telefoon, e-mail, chat, webformulier of andere kanalen.
 
-**Verzoeken** is een van de belangrijkste functies van SuperOffice Service. Hier beheert u verzoeken en vragen die in het systeem staan. U kunt interne en externe verzoeken maken, binnenkomende vragen beantwoorden en een overzicht krijgen van de status van alle verzoeken in het systeem. Klik op de <i class="ph ph-ticket" aria-hidden="true"></i> **Verzoeken** knop om het Verzoekscherm te openen of klik op de tekst **Verzoeken** om de navigatieopties met zoeken, geschiedenis en favorieten te openen.
+**Verzoeken** is een van de belangrijkste functies van SuperOffice. Hier beheert u verzoeken en vragen die in het systeem staan. U kunt interne en externe verzoeken maken, binnenkomende vragen beantwoorden en een overzicht krijgen van de status van alle verzoeken in het systeem.
 
 Elke vraag en query kan worden gedefinieerd als een verzoek. Deze vragen variëren van ondersteuningsproblemen, vragen over het product en de diensten tot vragen over facturen. Wanneer er een verzoek binnenkomt, wilt u deze zo snel en efficiënt mogelijk afhandelen en een professionele klantenservice bieden. Door een verzoek vanuit een lijst te bekijken, kunt u ook een [snel antwoord][28] versturen zonder de lijst te verlaten, zodat u een druk bezette wachtrij kunt blijven doorwerken.
 
-![Het Verzoekscherm met de lijst Laatste verzoeken en een voorbeeld van het geselecteerde verzoek -screenshot][img1]
+![Het Verzoekscherm met de lijst Niet-toegewezen verzoeken en een voorbeeld van het geselecteerde verzoek -screenshot][img1]
 
 <Note>
 
@@ -41,194 +42,62 @@ Het Verzoekscherm wordt geleidelijk geïntroduceerd. Als u het nog niet ziet, we
 
 ## Waar heb ik toegang tot verzoeken? {#open}
 
-* Sectietabbladen in de schermen **Bedrijf**, **Persoon**, **Verkoop** en **Project**.
+* Sectietabbladen in de schermen Bedrijf, Persoon, Verkoop en Project.
 * [Standaardlijsten][35], zoals **Eigen openstaande verzoeken**
 * [Zoeken][12]
 * [Favorieten][18]
 * [Gemarkeerde berichten weergeven][5]
 
-Wanneer u dubbelklikt op een rij in de zoekresultaten, wordt het verzoek geopend in een tabblad op het Verzoekscherm.
+Een verzoek dat u hier opent, wordt geopend in een tabblad op het Verzoekscherm. Zie [Zoek een verzoek][47] voor alle manieren om verzoeken op te zoeken.
 
 ### Personen {#customers}
 
-Verzoeken kunnen worden gekoppeld aan [personen][14], die op hun beurt deel uitmaken van een [bedrijf][13]. Verzoeken kunnen niet rechtstreeks aan bedrijven worden gekoppeld, alleen via personen. Wanneer een nieuw e-mailbericht wordt geïmporteerd en opgeslagen als verzoek, wordt het automatisch gekoppeld aan de juiste persoon op basis van het e-mailadres. In het verzoekscherm ziet u eenvoudig wie de persoon is. Klik op de naam van de persoon om andere verzoeken van deze persoon te bekijken en een overzicht te krijgen van eerdere communicatie.
+Verzoeken kunnen worden gekoppeld aan [personen][14], die op hun beurt deel uitmaken van een [bedrijf][13]. Verzoeken kunnen niet rechtstreeks aan bedrijven worden gekoppeld, alleen via personen. Wanneer een nieuw e-mailbericht wordt geïmporteerd en opgeslagen als verzoek, wordt het automatisch gekoppeld aan de juiste persoon op basis van het e-mailadres. Wanneer u een verzoek bekijkt, ziet u eenvoudig wie de persoon is. Klik op de naam van de persoon om andere verzoeken van deze persoon te bekijken en een overzicht te krijgen van eerdere communicatie.
 
 ## Het Verzoekscherm {#request-screen}
 
 Het Verzoekscherm is waar u met uw verzoeken werkt. Het heeft drie gebieden:
 
-* **Linkerpaneel:** Verticale tabbladen voor de verzoeken en selecties waarmee u werkt, en een zoekveld om andere te vinden. Het bevat ook de items **Overzicht**, **Verzoek zoeken** en [Vermeldingen][36]. Maak de tabbladen vast die u dagelijks gebruikt. Zie [Werken met overzichtspagina's][30] voor de werking van het linkerpaneel.
+* **Linkerpaneel:** Verticale tabbladen voor de verzoeken en selecties waarmee u werkt, en een zoekveld om andere te vinden. Het bevat ook de items **Overzicht**, **Verzoek zoeken** en [Vermeldingen][36]. Zie [Werken met overzichtspagina's][30] voor de werking van tabbladen, vastmaken en zoeken.
 
 * **Hoofdgebied:** Toont het tabblad **Overzicht**, een selectie of lijst met verzoeken in boardweergave of lijstweergave, of één verzoek als verzoekkaart.
 
 * **Zijpaneel:** Het [zijpaneel][31] aan de rechterkant toont het bedrijf en de persoon van het verzoek waaraan u werkt. Het sluit terwijl het tabblad **Overzicht** wordt getoond en opent opnieuw wanneer u het tabblad **Overzicht** verlaat, als het eerder open was.
 
-### Het Verzoekscherm openen {#open-screen}
-
-* Klik op het pictogram **Verzoeken** in de [Navigator][32]. Het Verzoekscherm wordt geopend met het tabblad dat u het laatst hebt gebruikt, of met het tabblad **Overzicht** als u geen open tabbladen hebt.
-
-* Open een verzoek vanuit een willekeurige plek in SuperOffice CRM, bijvoorbeeld door erop te dubbelklikken in een [sectietabblad Verzoeken][33]. Het verzoek wordt geopend in een nieuw tabblad.
-
-* Klik op **Nieuw** > **Verzoek** om [een verzoek te maken][4]. Het nieuwe verzoek wordt geopend in een tabblad **Nieuw verzoek**.
-
 ### Wat u de eerste keer ziet {#first-time}
 
-De eerste keer dat u het Verzoekscherm opent, worden de horizontale tabbladen die u had geopend, gekopieerd naar het linkerpaneel. Vastgemaakte tabbladen blijven vastgemaakt. Het tabblad **Overzicht** wordt geopend als u geen actief tabblad hebt. Uw oude tabbladen worden niet gewijzigd.
+De eerste keer dat u het Verzoekscherm opent, worden de horizontale tabbladen die u had geopend, gekopieerd naar het linkerpaneel. Vastgemaakte tabbladen blijven vastgemaakt. Het tabblad **Overzicht** wordt geopend als u geen open tabbladen hebt. Uw oude tabbladen worden niet gewijzigd.
 
-## Een overzicht van uw verzoeken krijgen {#overview}
-
-Het tabblad **Overzicht** toont uw werk in maximaal vier kolommen met verzoekkaarten. Standaard zijn de kolommen **Niet-toegewezen verzoeken**, **Eigen openstaande verzoeken**, **Mijn favorieten** en **Laatste verzoeken**. Elke kaart toont het verzoektype, de verzoek-ID, de titel, het bedrijf en de status.
-
-![Het tabblad Overzicht met de kolommen Niet-toegewezen verzoeken, Eigen openstaande verzoeken, Mijn favorieten en Laatste verzoeken -screenshot][img4]
-
-1. Klik op **Overzicht** in het linkerpaneel.
-
-1. Gebruik de kaarten om de verzoeken te vinden die uw aandacht nodig hebben. Een gekleurde badge op het pictogram van het verzoektype toont de status. Rood betekent dat de deadline is verstreken, groen dat het verzoek is gesloten en grijs dat het is uitgesteld.
-
-1. Klik op een kaart om [het verzoek te bekijken en bij te werken](#slide-in), of dubbelklik erop om het in een tabblad te openen.
-
-Zo werkt u met het tabblad **Overzicht**:
-
-* **Meer verzoeken bekijken:** Een kolom toont maximaal 20 verzoeken. Klik op **Alle verzoeken weergeven** om de volledige lijst of selectie in een tabblad te openen.
-
-* **Een kolom sorteren:** Gebruik de sorteerknop om te sorteren op verzoek-ID, aanmaakdatum, eigenaar, laatste wijziging of prioriteit.
-
-* **Een persoon of bedrijf openen:** Klik op de naam op een kaart.
-
-* **Het tabblad **Overzicht** opnieuw laden:** Klik op de knop voor opnieuw laden. Een kolom wordt ook opnieuw geladen wanneer u in dezelfde browser een van de verzoeken in de kolom wijzigt. Wijzigingen van andere gebruikers verschijnen pas nadat u opnieuw hebt geladen.
-
-### De kolommen op het tabblad Overzicht wijzigen {#edit-overview}
-
-1. Klik op de tandwielknop (<i class="ph ph-gear" aria-label="Gear"></i>) om **Overzicht bewerken** te openen.
-
-1. Kies hoeveel kolommen u wilt, van één tot vier. Bij vier kolommen kunt u ze naast elkaar tonen of als 2 × 2-raster.
-
-1. Kies wat elke kolom vult. Zoek onder **Selecties** een selectie of een standaardlijst en sleep deze naar een kolom. Klik op <i class="ph ph-x" aria-label="Close icon"></i> in de kop van een kolom om deze leeg te maken.
-
-1. Controleer het voorbeeld en klik vervolgens op **Opslaan**. Klik op **Verwerpen** om uw wijzigingen te negeren.
-
-Klik op **Standaardinstellingen herstellen** om terug te gaan naar de kolommen die u in het begin had.
-
-![Het tabblad Overzicht in bewerkmodus met het paneel Overzicht bewerken voor kolommen, indeling en selecties -screenshot][img7]
-
-<Note>
-
-De instellingen van uw tabblad **Overzicht** worden opgeslagen in de browser die u gebruikt. Ze volgen u niet naar een andere browser of een ander apparaat.
-
-</Note>
-
-### Wijzigen wat de kaarten tonen {#edit-fields}
-
-![Het kolommenu met de opties Velden bewerken en Selecties bewerken -screenshot][img8]
-
-1. Open het menu van de kolom en klik op **Velden bewerken**.
-
-1. Kies de kop van de kaart en eventueel een badge uit de lijst met velden. Doorzoek de lijst om een veld te vinden.
-
-1. Kies maximaal zes extra velden om op de kaart te tonen. Sleep de velden om de volgorde te wijzigen.
-
-1. Klik op **Opslaan**. Klik op **Standaardinstellingen herstellen** om alleen de velden van deze kolom te herstellen.
-
-Het linkerpaneel wordt verborgen en het voorbeeldpaneel wordt gesloten terwijl u bewerkt.
-
-### Een verzoek bekijken en bijwerken vanuit het tabblad Overzicht {#slide-in}
-
-1. Klik op een kaart. Het verzoek wordt geopend in een paneel aan de rechterkant, met de laatste berichten, de verzoekgegevens en de antwoordknoppen.
-
-1. Wijzig de eigenaar, status, categorie, prioriteit of labels rechtstreeks in het paneel.
-
-1. Als u aan het verzoek wilt blijven werken, klikt u op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) en vervolgens op **Openen in volledige weergave**. Kies **Verzoek vastmaken** om het toe te voegen aan de groep **Vastgemaakt**.
-
-Om het paneel breder of smaller te maken, wijst u de linkerrand aan en sleept u de stippen die verschijnen. Het paneel sluit wanneer u op <i class="ph ph-x" aria-label="Close icon"></i> klikt. Het sluit ook wanneer u het tabblad **Overzicht** verlaat of een editor opent.
-
-## Werken met de tabbladen in het linkerpaneel {#tabs}
-
-Elke sectie van het linkerpaneel heeft een groep **Actief** en een groep **Vastgemaakt**. U kunt veel verzoeken en selecties tegelijk open houden in de groep **Actief**. Een tabblad is actief of vastgemaakt, nooit beide. Uw tabbladen worden opgeslagen, zodat ze er zijn wanneer u zich aanmeldt vanuit een andere browser.
-
-![Het linkerpaneel van het Verzoekscherm met de secties Selecties en Verzoeken, elk met een groep Actief en een groep Vastgemaakt -screenshot][img5]
-
-### Nog een tabblad openen {#open-tab}
-
-Open een verzoek of een selectie via het linkerpaneel, via het zoekdialoogvenster of via een koppeling in SuperOffice CRM. Het wordt geopend in een nieuw tabblad direct na het tabblad waarop u zich bevindt. De andere tabbladen blijven open en elk behoudt zijn eigen niet-verzonden antwoord, bewerkmodus en schuifpositie.
-
-<Note>
-
-U kunt maximaal 50 tabbladen open hebben, actieve en vastgemaakte tabbladen samen. Als u er meer probeert te openen, verschijnt het dialoogvenster **Te veel tabbladen** en wordt er niets geopend. Sluit de tabbladen die u niet meer nodig hebt en probeer het opnieuw.
-
-</Note>
-
-### Meerdere tabbladen tegelijk sluiten {#close-active}
-
-1. Plaats de muisaanwijzer op het tabblad en klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties).
-
-1. Kies een optie:
-
-    * **Alles sluiten:** Sluit alle actieve tabbladen in de groep.
-
-    * **Alle tabbladen behalve dit sluiten:** Sluit alle actieve tabbladen in de groep, behalve dit tabblad.
-
-Voor vastgemaakte tabbladen gebruikt u **Alles losmaken en sluiten** of **Alles behalve dit losmaken en sluiten**. Wanneer u het tabblad sluit waarop u zich bevindt, wordt het tabblad ernaast geopend. Wanneer u het laatste tabblad sluit, wordt het tabblad **Overzicht** geopend.
-
-![Het menu van een actief tabblad met de opties Vastmaken, Sluiten, Alles sluiten en Alle tabbladen behalve dit sluiten -screenshot][img6]
-
-### Niet-opgeslagen wijzigingen bijhouden {#unsaved}
-
-Een potlood (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) aan het einde van een tabblad betekent dat het verzoek niet-opgeslagen wijzigingen heeft. Bijvoorbeeld omdat u een niet-verzonden antwoord hebt, of omdat u het verzoek aan het bewerken bent.
-
-Wanneer u een tabblad met niet-opgeslagen wijzigingen sluit, wordt u om bevestiging gevraagd. Als u bevestigt, worden de wijzigingen verwijderd.
-
-### Verzoeken herkennen waaraan anderen werken of die anderen hebben gewijzigd {#row-status}
-
-Elk verzoektabblad toont de ID en titel, en daaronder de persoon en het bedrijf.
-
-Als Live UI in uw systeem is ingeschakeld, ziet u wie er nog meer aan een verzoek werkt. Een aanwezigheidspictogram vervangt het pictogram van het verzoektype terwijl een andere gebruiker het verzoek bekijkt of bewerkt. Wanneer een andere gebruiker het verzoek heeft gewijzigd sinds u het opende, wordt in plaats daarvan een wijzigingspictogram getoond. Plaats de muisaanwijzer op het pictogram om de namen te zien. Als het tabblad van een selectie of lijst het wijzigingspictogram toont met **Het archief is mogelijk niet gesynchroniseerd**, laadt u het opnieuw. De markering verdwijnt wanneer u het verzoek of de lijst opnieuw laadt.
-
-### Verzoektabbladen automatisch sluiten {#auto-close}
-
-Een verzoektabblad sluit vanzelf in deze situaties:
-
-* Het verzoek wordt verwijderd, als spam gemarkeerd of samengevoegd met een ander verzoek. Het tabblad sluit ook als het is vastgemaakt. Wanneer u samenvoegt vanaf de [verzoekkaart][16], wordt het overgebleven verzoek in zijn plaats geopend.
-
-* U voegt een bericht toe aan het verzoek, of stelt de status ervan in op **Gesloten**, en u hebt de bijbehorende voorkeur ingeschakeld. Vastgemaakte tabbladen blijven open.
-
-Tabbladen automatisch laten sluiten:
-
-1. Klik op <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **Voorkeuren**.
-
-1. Klik op de groep **Verzoek**.
-
-1. Stel **Tabblad automatisch sluiten bij toevoegen van een bericht aan het verzoek** of **Tabblad automatisch sluiten bij het wijzigen van de verzoekstatus in Gesloten** in op **Ja**.
-
-1. Klik op **Opslaan**.
-
-Tabbladen die automatisch sluiten, vragen nooit om bevestiging.
+Zie [Werken met verzoeken][42] om een overzicht van uw verzoeken te krijgen en ermee te werken in tabbladen.
 
 ## De Verzoekkaart {#request-card}
 
 De Verzoekkaart toont één verzoek tegelijk, als tabblad op het Verzoekscherm. De kaart bevat de volgende secties:
 
-* Boven aan de kaart vindt u de **koptekst van het verzoek** met basisinformatie over het verzoek, zoals ID, titel, persoon en deadline.
-* De zijbalk met **verzoekeigenschappen** bevat velden voor Eigenaar, Status, Categorie, Prioriteit, Toegangsniveau en Labels, alle velden kunnen worden bewerkt met de knoppen **Opslaan** en **Annuleren**.
-* Onder de koptekst staat een rij knoppen voor het uitvoeren van taken met betrekking tot verzoeken, zoals Beantwoorden, Allen beantwoorden, Doorsturen en Opmerking toevoegen.
-* Het tabblad **Berichten** geeft de berichten weer met betrekking tot het verzoek.
-* Het tabblad **Details** bevat een overzicht van de gegevens die zijn geregistreerd voor het verzoek.
-* Het tabblad **Relaties** toont [gekoppelde verzoeken][21] (bovenliggend, onderliggend of gerelateerd).
-* Het tabblad **Logboek** bevat de historie van dit verzoek. In dit logboek zijn alle handelingen met betrekking tot het verzoek opgenomen sinds het voor de eerste keer werd geregistreerd.
+* [Koptekst van verzoek](#header): de titel, de persoon en het bedrijf, met knoppen om het verzoek als favoriet in te stellen, vast te maken, opnieuw te laden en te bewerken, en het menu **Taak**.
+* [Verzoekeigenschappen](#properties): de velden waarmee het verzoek wordt toegewezen en geprioriteerd, zoals Status, Eigenaar en Categorie.
+* Tabblad [Berichten](#messages): de berichten van het verzoek, met knoppen om te beantwoorden, door te sturen en opmerkingen toe te voegen.
+* Tabblad [Details](#details): alle velden die voor het verzoek zijn geregistreerd.
+* Tabblad [Logboek](#log): alles wat er met het verzoek is gebeurd sinds het werd geregistreerd.
+* Tabblad **Gerelateerde verzoeken**: [gekoppelde verzoeken][21] (bovenliggend, onderliggend of gerelateerd).
 
-### Koptekst van verzoek
+### Koptekst van verzoek {#header}
 
-In de koptekst van het verzoek staan de eigenschappen die zijn gedefinieerd toen het [verzoek werd gemaakt][4]. De koptekst bestaat uit de verzoekstitel, persoon, deadline en verzoek-ID. Daarnaast kunt u op <i class="ph ph-star" aria-label="Star icon"></i> klikken om het verzoek in te stellen als een favoriet. Het verzoek zal dan toegankelijk zijn via **Mijn favorieten** op **Verzoeken** in de Navigator en in de tegel **Mijn favorieten** op een [dashboard][17].
+De koptekst van het verzoek toont de titel, de persoon en het bedrijf die zijn gedefinieerd toen het [verzoek werd gemaakt][4]. De koptekst heeft ook deze knoppen:
 
-### Tabblad Berichten
+| Pictogram | Beschrijving |
+|---|---|
+| <i class="ph ph-star" aria-label="Star icon"></i> | Stelt het verzoek in als favoriet. Het verzoek is dan toegankelijk via **Mijn favorieten** op **Verzoeken** in de Navigator en in de tegel **Mijn favorieten** op een [dashboard][17]. |
+| <i class="ph ph-push-pin" aria-label="Pin icon"></i> | Maakt het verzoek vast in het linkerpaneel. |
+| <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> | Laadt het verzoek opnieuw. |
+| <i class="ph ph-pencil-simple" aria-label="Pencil icon"></i> | Bewerkt het verzoek. |
+| <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i> | Opent het menu van de knop **Taak**. Zie [Taakopties](#task-options). |
 
-Het tabblad **Berichten** geeft de berichten weer met betrekking tot het verzoek.
+### Tabblad Berichten {#messages}
 
-In **Persoonlijke instellingen** kunt u wijzigen hoeveel berichten worden weergegeven:
+Het tabblad **Berichten** toont de berichten van het verzoek. Bovenaan het tabblad kunt u [beantwoorden][46], doorsturen en opmerkingen als interne berichten toevoegen.
 
-1. Kies het <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **Voorkeuren**.
-1. Selecteer de groep voor **Verzoek**.
-1. Geef in het veld **Aantal uitgebreide berichten** het aantal berichten op.
-1. Klik op **OK**.
+U kunt wijzigen hoeveel berichten uitgevouwen worden weergegeven. Zie [Verzoekafhandeling personaliseren][41].
 
 #### Berichttypen
 
@@ -244,24 +113,42 @@ Interne berichten worden aangegeven met <i class="ph ph-dots-three" aria-label="
 
 #### Berichttaken
 
-Klik op <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> op een bericht voor extra opties voor het bericht:
+Klik op <i class="ph ph-dots-three-vertical" aria-label="More options"></i> (Meer opties) op een bericht voor extra opties voor het bericht:
 
-* **Wijzigen**: klik hierop om het bericht te [bewerken][9] of te verwijderen.
-* **Beantwoord**: klik hierop om de persoon te beantwoorden in het veld Aan.
-* **Alles beantw.**: klik hierop om de alle personen te beantwoorden in de velden Aan, cC en Bcc.
-* **Volgende**: klik hierop om het[bericht door te sturen][8].
-* **E-mailkoptekst**: klik hierop om de koptekst van het bericht bekijken.
-* **Weergeven**: klik hierop om het bericht in een nieuw venster/tabblad weer te geven.
-* **Bericht opsplitsen**: klik hierop om het [bericht op te splitsen][19] en een nieuw verzoek te maken. Dit is handig als een bericht twee zaken bevat die door verschillende afdelingen moeten worden behandeld, bijvoorbeeld een technische vraag en een vraag over een factuur.
-* **Bericht afdrukken**: klik hierop om het bericht af te drukken.
+* **Wijzigen:** klik hierop om het bericht te [bewerken][9] of te verwijderen.
+* **Beantwoord:** klik hierop om de persoon te beantwoorden in het veld Aan.
+* **Alles beantw.:** klik hierop om alle personen te beantwoorden in de velden Aan, Cc en Bcc.
+* **Doorsturen:** klik hierop om het [bericht door te sturen][8].
+* **E-mailkoptekst:** klik hierop om de koptekst van het bericht bekijken.
+* **Weergeven:** klik hierop om het bericht in een nieuw venster/tabblad weer te geven.
+* **Bericht opsplitsen:** klik hierop om het [bericht op te splitsen][19] en een nieuw verzoek te maken. Dit is handig als een bericht twee zaken bevat die door verschillende afdelingen moeten worden behandeld, bijvoorbeeld een technische vraag en een vraag over een factuur.
+* **Bericht afdrukken:** klik hierop om het bericht af te drukken.
 
-Bovenaan het tabblad **Berichten** kunt u berichten beantwoorden en berichten doorsturen en u kunt ook opmerkingen als interne berichten toevoegen.
+#### Request Insight {#sentiment}
 
-### Het tabblad Details
+Request Insight analyseert het sentiment van inkomende e-mailverzoeken, zodat u de klant kunt prioriteren die u het eerst nodig heeft. Een emoticon in de koptekst van het bericht geeft het gedetecteerde sentiment aan:
+
+* Negatief <i class="ph ph-smiley-sad" aria-hidden="true"></i>
+* Neutraal <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positief <i class="ph ph-smiley" aria-hidden="true"></i>
+
+<Note>
+Voor Request Insight is een Text Services-licentie of CRM Suite Core vereist. Ziet u de emoticon niet? Vraag uw beheerder om [tekstanalyse in te schakelen][43].
+</Note>
+
+#### Translation Assist {#translate}
+
+Translation Assist detecteert de taal van een inkomend verzoek en toont deze onder het bericht. Is het bericht in een taal die u niet kunt lezen, selecteer dan **Vertalen uit** ***taal*** onder het bericht. Het onderwerp en de hoofdtekst worden vertaald en onder het oorspronkelijke bericht toegevoegd.
+
+<Note>
+Voor Translation Assist is een Text Services-licentie of CRM Suite Core vereist. Ziet u de gedetecteerde taal niet? Vraag uw beheerder om [tekstanalyse in te schakelen][43].
+</Note>
+
+### Het tabblad Details {#details}
 
 Het tabblad **Details** bevat een overzicht van alle velden voor het verzoek.
 
-### Logboek wijzigen {#log}
+### Logboek {#log}
 
 <Note>
 
@@ -273,150 +160,80 @@ Dit scherm bevat het logboek voor dit verzoek. Alle gebeurtenissen worden vastge
 
 ![Het logboek van een verzoek toont alle verschillende wijzigingen die op het verzoek zijn aangebracht -screenshot][img2]
 
-### Zijbalk verzoekeigenschappen
+### Verzoekeigenschappen {#properties}
 
-De zijbalk met verzoekeigenschappen bevat de volgende opties:
+Het paneel **Verzoekeigenschappen** bevat de volgende velden:
 
-* **Status**: hier wordt de status van het verzoek vermeld. U kunt de status hier veranderen.
-  * **Openstaand**: het verzoek is actief.
-  * **Gesloten**: het verzoek is volledig beantwoord.
-  * **Uitgesteld**: actie met betrekking tot het verzoek is [uitgesteld][38] tot een datum in de toekomst, waarna het verzoek weer de status **Openstaand** krijgt.
+* **Verzoektype:** Het [type][40] van het verzoek. U kunt het verzoektype hier wijzigen.
 
-* **Eigenaar**: de naam van de verzoekbehandelaar die verantwoordelijk is voor het verzoek. U kunt de [eigenaar hier wijzigen][7].
+* **Status:** hier wordt de status van het verzoek vermeld. U kunt de status hier veranderen.
+  * **Openstaand:** het verzoek is actief.
+  * **Gesloten:** het verzoek is volledig beantwoord.
+  * **Uitgesteld:** actie met betrekking tot het verzoek is [uitgesteld][38] tot een datum in de toekomst, waarna het verzoek weer de status **Openstaand** krijgt.
 
-* **Categorie**: hier wordt de [categorie][25] weergegeven waartoe het verzoek behoort. U kunt de categorie hier veranderen.
+* **Eigenaar:** de naam van de verzoekbehandelaar die verantwoordelijk is voor het verzoek. U kunt de [eigenaar hier wijzigen][7].
 
-* **Prioriteit**: Kies uit **Laag**, **Gemiddeld** en **Hoog**. U kunt er ook voor kiezen de prioriteit automatisch te laten toekennen. Dit kan bijvoorbeeld op basis van [escalatieniveaus][24] die voor verschillende personen en bedrijven zijn ingesteld.
+* **Categorie:** hier wordt de [categorie][25] weergegeven waartoe het verzoek behoort. U kunt de categorie hier veranderen.
 
-* **Toegangsniveau**: Selecteer een van de volgende opties:
-  * **Extern**: selecteer deze optie als de persoon toegang moet krijgen tot het verzoek via het SuperOffice Customer Centre.
-  * **Intern**: selecteer deze optie als de persoon geen toegang moet krijgen tot het verzoek. Het verzoek wordt weergegeven in SuperOffice Customer Centre, maar de persoon kan de verzoekgegevens of -berichten niet weergeven.
+* **Prioriteit:** Kies uit **Laag**, **Gemiddeld** en **Hoog**. U kunt er ook voor kiezen de prioriteit automatisch te laten toekennen. Dit kan bijvoorbeeld op basis van [escalatieniveaus][24] die voor verschillende personen en bedrijven zijn ingesteld.
 
-* **Labels**: Selecteer in de keuzelijst **Labels** de[relevante labels][22] voor dit verzoek.
+* **Toegangsniveau:** Selecteer een van de volgende opties:
+  * **Extern:** selecteer deze optie als de persoon toegang moet krijgen tot het verzoek via het SuperOffice Customer Centre.
+  * **Intern:** selecteer deze optie als de persoon geen toegang moet krijgen tot het verzoek. Het verzoek wordt weergegeven in SuperOffice Customer Centre, maar de persoon kan de verzoekgegevens of -berichten niet weergeven.
 
-### Taakopties
+* **Labels:** Selecteer in de keuzelijst **Labels** de [relevante labels][22] voor dit verzoek.
 
-De knop **Taak**: klik op deze knop om toegang te krijgen tot de volgende opties:
+#### Category Insight {#categorization}
 
-* **Bewerken**: klik hierop om de eigenschappen voor dit verzoek te bewerken. U kunt het verzoek bijvoorbeeld toewijzen aan een andere verzoekbehandelaar als u [een collega advies wilt vragen][7].
-* **Accepteren**: klik hierop om het [verzoek over te nemen][1]. U wordt dan de nieuwe eigenaar van het verzoek.
-* **Opsplitsen**: wanneer hetzelfde verzoek meerdere vragen bevat, bijvoorbeeld als de klant eerst een technische vraag stelt en vervolgens in hetzelfde e-mailbericht een vraag over facturering stelt, kunt u het [verzoek opsplitsen][11] met deze knop.
-* **Samenvoegen**: klik hierop als u dit verzoek wilt samenvoegen met een of meer andere verzoeken. Als bijvoorbeeld verschillende personen in hetzelfde bedrijf hetzelfde technische probleem rapporteren (via telefoon, webformulieren en e-mail), kunt u deze [verzoeken samenvoegen][16] tot één te verwerken verzoek. Het oudste verzoek wordt standaard het primaire verzoek.
-* **Afdrukken**: klik hierop om het verzoek af te drukken.
-* **Verwijderen**: klik hierop om het verzoek te verwijderen.
+Category Insight analyseert inkomende e-mailverzoeken en stelt op basis van de inhoud een categorie voor. De categorie wordt niet automatisch toegepast.
 
-## Verzoekbeheer {#request-mgt}
+<Note>
+Category Insight vereist het SuperOffice AI Platform en een Categorization-licentie of CRM Suite Growth. Ziet u geen suggesties? Vraag uw beheerder om [het model te trainen en suggesties in te schakelen][44].
+</Note>
 
-Binnenkomende verzoeken kunnen via vele kanalen binnenkomen en er is meer dan één manier om ze te registreren en te beantwoorden. De manier waarop verzoekafhandeling plaatsvindt, verschilt per verzoek.
+1. Open een inkomend e-mailverzoek en zoek de voorgestelde categorie onderaan het verzoek.
+1. Controleer de suggestie en selecteer de categorielink als de categorie bij het verzoek past.
+1. Controleer of de categorie is bijgewerkt. Na het toepassen verdwijnt de suggestie.
 
-Een contactservicesysteem draait om het bieden van de antwoorden die uw personen zoeken en het opslaan van hun contactgegevens. Wanneer u een persoon beantwoordt, ontvangt deze een e-mail van u. Daarom is het belangrijk om uw [e-mailhandtekening te maken][15].
+![Voorgestelde categorie in een verzoek -screenshot][img3]
 
-### Frequente taken
+Als er geen passende categorie is, verschijnt er geen suggestie. U kunt nog steeds zelf een categorie kiezen.
 
-* [Verantwoordelijkheid voor verzoeken nemen][1]
-* [Andere verzoekbehandelaar om hulp vragen][7]
-* [Beantwoorden aan klant][2]
-* [Bericht bewerken][9]
-* [Verzoeken opsplitsen][11]
-* [Berichten of meerdere verzoeken doorsturen naar externe partijen][8]
-* [Verzoeken aan de lijst met favorieten toevoegen][18]
-* [Verzoeken sluiten][3]
-* [Verzoeken markeren als spam][27]
+#### Summary Assist {#summary}
 
-Verschillende bedrijven hebben verschillende routines voor verzoekafhandeling en kunnen SuperOffice Service op verschillende manieren gebruiken. Hieronder staan twee praktijkgevallen die enkele van de beschikbare opties laten zien. Deze scenario's laten u zien hoe u efficiënt kunt antwoorden wanneer een persoon een verzoek per e-mail heeft ingediend en wanneer een persoon belt met een probleem of een vraag.
+Summary Assist vat de berichten in een verzoek samen, zodat u kunt handelen zonder de volledige geschiedenis te lezen.
 
-![Dashboard voor Verzoeken met lijsten van eigen openstaande verzoeken en een wachtrij voor niet-toegewezen verzoeken. Hier kunt u een verzoek kiezen om af te handelen -screenshot][img3]
+<Note>
+Voor Summary Assist is een Text Services-licentie of CRM Suite Core vereist. Ziet u de functie niet? Vraag uw beheerder om [tekstanalyse in te schakelen][43].
+</Note>
 
-### Scenario 1: De klant verstuurt een verzoek per e-mail
+Met CRM Suite vindt u Summary Assist in het paneel **Reply Assist**:
 
-1. De klant stuurt een e-mail naar support@company.com of vult een formulier in op een klantenportaal.
-1. De klant ontvangt een [automatische ontvangstbevestiging][23] van het verzoek.
-1. Het verzoek wordt automatisch geregistreerd in SuperOffice CRM.
-1. Het verzoek wordt toegewezen aan een verzoekbehandelaar. Zie [Verzoeken toewijzen][6] en [Verzoeken zoeken][10].
-1. De verzoekbehandelaar leest het verzoek.
-1. De verzoekbehandelaar kan het verzoek niet alleen beantwoorden en onderneemt een van de volgende acties:
-    * [Vraagt een collega om hulp][7].
-    * [Roept externe hulp in][8].
-1. De verzoekbehandelaar [stuurt een antwoord naar de klant][2].
-1. De verzoekbehandelaar [sluit het verzoek][3] en gaat verder met andere verzoeken.
+1. Klik in het paneel **Verzoekeigenschappen** op <i class="ph ph-sparkle" aria-label="Reply Assist"></i> in de pictogrambalk rechts om naar **Reply Assist** te gaan.
+1. Klik op **Samenvatten**.
+1. Bekijk de samenvatting van de berichten van het verzoek.
 
-### Scenario 2: De klant belt de klantenservice
+Zie [Reply Assist][45] als u vanuit hetzelfde paneel een antwoord wilt opstellen.
 
-1. De klant heeft een probleem met een product en belt de klantenservice.
-1. De verzoekbehandelaar die het gesprek aanneemt, [registreert het verzoek][14].
-1. De verzoekbehandelaar kan het verzoek niet alleen beantwoorden en onderneemt een van de volgende acties:
-    * [Vraagt een collega om hulp][7].
-    * [Roept externe hulp in][8].
-1. De verzoekbehandelaar [stuurt een antwoord naar de klant][2].
-1. De verzoekbehandelaar [sluit het verzoek][3] en gaat verder met andere verzoeken.
+### Taakopties {#task-options}
 
-## Persoonlijke voorkeuren instellen
+Klik op de knop **Taak** (<i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i>) in de koptekst van het verzoek om toegang te krijgen tot de volgende opties:
 
-U kunt verzoeken aanpassen aan uw workflow:
-
-1. Ga naar <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **Voorkeuren**.
-
-1. Selecteer **Verzoek** en pas instellingen aan zoals:
-    * Laatste bericht bovenaan weergeven.
-    * Gebruik bij het samenvoegen de oudste aanvraag als hoofdaanvraag.
-    * Afbeeldingsbijlagen weergeven in berichten.
-    * Aantal uitgebreide berichten.
-    * Automatisch laatste bericht citeren.
-    * Alleen eigen categorieën weergeven.
-    * Tabblad automatisch sluiten bij toevoegen van een bericht aan het verzoek.
-    * Tabblad automatisch sluiten bij het wijzigen van de verzoekstatus in Gesloten.
-    * Standaardeigenaar en -categorie voor nieuwe verzoeken.
-    * Standaardstatus van nieuw verzoek en Standaardstatus voor nieuw bericht. Zie [volgorde van standaardstatussen][37].
-
-1. Selecteer **Meldingen via e-mail** en pas instellingen aan zoals:
-    * Nieuwe verzoeken of berichten.
-    * Verzoek geëscaleerd.
-
-1. Klik op **Opslaan** om je wijzigingen toe te passen.
-
-## Uw beschikbaarheidsstatus {#available}
-
-Uw beschikbaarheidsstatus bepaalt of u verzoeken ontvangt via automatische toewijzing. Dit heeft ook invloed op de toewijzing van personen.
-
-Klik in de werkbalk op <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** en selecteer **Uw beschikbaarheidsstatus** om uw status bij te werken.
-
-* **Aanwezig:** U bent beschikbaar voor automatische toewijzing van verzoeken en personen.
-* **Afwezig:** Er worden geen nieuwe verzoeken aan u toegewezen. Uw afwezigheidsmelding wordt naast uw naam weergegeven wanneer iemand handmatig een item toewijst.
-
-<Tip>
-Als een medewerker vergeet de status bij te werken of onverwacht afwezig is, kan een beheerder de beschikbaarheidsstatus namens de medewerker wijzigen in **Instellingen en onderhoud** > **Gebruikers**.
-</Tip>
-
-Hoe verzoeken worden herverdeeld wanneer een gebruiker afwezig is, hangt af van de [toewijzingsmethode][6] die voor de categorie is geconfigureerd.
-
-## Globale voorkeuren
-
-Beheerders kunnen Service voor alle gebruikers aanpassen in Instellingen en onderhoud.
-
-1. In **Instellingen en onderhoud** selecteert u <i class="ph ph-gear" aria-hidden="true"></i> **Voorkeuren** in de navigator.
-1. Ga naar het tabblad **Globale voorkeuren** en scroll naar beneden naar de sectie **SuperOffice Service systeeminstellingen**.
-
-Enkele instellingen die ondersteuningsagenten beïnvloeden zijn:
-
-* Anonimiseer gebruikers bij antwoord
-* Standaard Van-adres
-* Standaardstijl voor uitgaande e-mail
-* Extern toegangsniveau als standaard
-* Nieuwe status bij accepteren van verzoek
-* E-mailmelding van geopende verzoeken verzenden
-
-[Bekijk de volledige lijst][26]
+* **Bewerken:** klik hierop om de eigenschappen voor dit verzoek te bewerken. U kunt het verzoek bijvoorbeeld toewijzen aan een andere verzoekbehandelaar als u [een collega advies wilt vragen][7].
+* **Accepteren:** klik hierop om het [verzoek over te nemen][1]. U wordt dan de nieuwe eigenaar van het verzoek.
+* **Relateren:** klik hierop om [het verzoek te koppelen][21] aan een ander verzoek.
+* **Opsplitsen:** wanneer hetzelfde verzoek meerdere vragen bevat, bijvoorbeeld als de klant eerst een technische vraag stelt en vervolgens een vraag over facturering stelt, kunt u het [verzoek in tweeën opsplitsen][11] met deze knop.
+* **Samenvoegen:** klik hierop als u dit verzoek wilt samenvoegen met een of meer andere verzoeken. Als bijvoorbeeld verschillende personen in hetzelfde bedrijf hetzelfde technische probleem rapporteren (via telefoon, webformulieren en e-mail), kunt u deze [verzoeken samenvoegen][16] tot één te verwerken verzoek. Het oudste verzoek wordt standaard het primaire verzoek.
+* **Afdrukken:** klik hierop om het verzoek af te drukken.
+* **Verwijderen:** klik hierop om het verzoek te verwijderen.
+* **Markeren als spam:** klik hierop om [het verzoek als spam te markeren][27].
 
 [1]: /nl/request/learn/accept
-[2]: /nl/request/learn/reply
-[3]: /nl/request/learn/close
 [4]: /nl/request/learn/create
 [5]: /nl/request/learn/flag-message
-[6]: /nl/request/learn/assign
 [7]: /nl/request/learn/transfer
 [8]: /nl/request/learn/forward
 [9]: /nl/request/learn/edit-message
-[10]: /nl/request/learn/find
 [35]: /nl/request/learn/find#list
 [11]: /nl/request/learn/split-request
 [12]: /nl/search-options/learn/index
@@ -429,24 +246,21 @@ Enkele instellingen die ondersteuningsagenten beïnvloeden zijn:
 [25]: /nl/request/admin/category/index
 [13]: /nl/company/learn/index
 [14]: /nl/contact/learn/index
-[15]: /nl/learn/getting-started/edit-email-signature
 [18]: /nl/learn/basics/fav
-[23]: /nl/knowledge-base/learn/reply-templates/index
-[26]: /nl/admin/preferences/service-settings
 [27]: /nl/request/learn/spam
 [28]: /nl/request/learn/reply#quick-reply
 [30]: /nl/learn/basics/overview-pages
 [31]: /nl/learn/getting-started/main-screen/side-panel
-[32]: /nl/learn/getting-started/main-screen/navigator
-[33]: /nl/learn/section-tabs/requests-tab
 [36]: /nl/request/learn/mentions
-[37]: /nl/request/admin/status/index#default
 [38]: /nl/request/learn/postpone
+[40]: /nl/request/admin/type/index
+[41]: /nl/request/learn/personalize
+[42]: /nl/request/learn/work-with-requests
+[43]: /nl/ai/admin/index#enable-text-analysis
+[44]: /nl/ai/admin/set-up-categorization
+[45]: /nl/request/learn/reply#reply-assist
+[46]: /nl/request/learn/reply
+[47]: /nl/request/learn/find
 [img1]: /media/loc/en/request/request-screen-selection.png
 [img2]: /media/loc/en/request/request-change-log.png
-[img3]: /media/loc/en/request/service-dashboard.png
-[img4]: /media/loc/en/request/request-screen-overview.png
-[img5]: /media/loc/en/request/request-screen-left-panel.png
-[img6]: /media/loc/en/request/request-screen-tab-menu.png
-[img7]: /media/loc/en/request/request-screen-edit-overview.png
-[img8]: /media/loc/en/request/request-screen-column-menu.png
+[img3]: /media/loc/en/request/suggested-category-demo.png

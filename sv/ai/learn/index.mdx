@@ -4,7 +4,7 @@ title: AI-tjänster
 description: Översikt över artificiell intelligens-tjänster i SuperOffice CRM
 keywords: ['AI', 'artificiell intelligens', 'AI Platform', 'maskininlärning', 'automatisering', 'insikt', 'assist', 'agent', 'mcp', 'instans', 'textanalys']
 author: digitaldiina
-date: 11.09.2026
+date: 11.25.2026
 so_version: 12.6
 content_type: concept
 license: aiplatform
@@ -41,19 +41,19 @@ SuperOffice AI är endast tillgängligt i CRM Online. Licenskrav är tjänstespe
 | Tjänst | Beskrivning | Licens |
 |---|---|---|
 | [AI-sammanfattningar i SuperOffice for Teams][6] | Genererar en sammanfattning av en Microsoft Teams-konversation vid arkivering i SuperOffice. | AI Lab (pilotfunktion) |
-| [Category Insight][2] | Föreslår en kategori utifrån ärendets innehåll. En administratör [tränar modellen med ett urval av ärenden][18] och aktiverar förslag. Handläggaren granskar förslaget innan det används. | Categorization eller CRM Suite Growth |
+| [Category Insight][2] | Föreslår en kategori utifrån ärendets innehåll. En administratör [tränar modellen med ett urval av ärenden][18] och aktiverar förslag. Handläggaren granskar förslaget innan det används. Visas längst ned i ärendet. | Categorization eller CRM Suite Growth |
 | [Chatbot Connector][3] | Möjliggör integration med externa chatbotar för automatisk hantering av inkommande chattar. | Chatbot |
 | [Company Insight][7] | Föreslår företagsuppgifter från officiella företagsregister, till exempel Brreg, Virk, Companies House och Zefix, när du skapar ett nytt företag. | CRM Suite Growth |
 | [Data Quality Agent][12] | Verifierar och berikar företag och kontakter som redan finns i ditt CRM mot tillförlitliga företagskällor, för godkännande av en person. | CRM Suite Growth |
 | [Duplicate Agent][13] | Hittar dubblerade företag och kontakter och kopplar kontakter utan företag till rätt företag, för godkännande av en person. | CRM Suite Growth |
 | [Lead Agent][9] | Hittar, undersöker och kvalificerar nya prospekt från konfigurerade nyhetskällor och bedömer dem mot din ideala kundprofil, för godkännande av en person. | CRM Suite Plus |
 | [MCP Connect][14] | Ansluter SuperOffice CRM som en aktuell datakälla för Claude, Microsoft Copilot eller ChatGPT, som kan läsa och uppdatera data. | CRM Suite Plus för att läsa, CRM Suite Super för att uppdatera |
-| [Reply Assist][8] | Föreslår ett svar på ett inkommande ärende baserat på ditt CRM-innehåll, som du kan granska och skicka. | CRM Suite Plus |
-| [Request Insight][1] | Analyserar sentimentet i ett inkommande ärende, så att du kan prioritera ditt svar. | Text Services eller CRM Suite Core |
+| [Reply Assist][8] | Föreslår ett svar på ett inkommande ärende baserat på ditt CRM-innehåll, som du kan granska och skicka. Öppnas från panelen **Egenskaper för ärende** på ärendekortet. | CRM Suite Plus |
+| [Request Insight][1] | Analyserar sentimentet i ett inkommande ärende, så att du kan prioritera ditt svar. Visas som en emoticon i meddelandets huvud på fliken **Meddelanden**. | Text Services eller CRM Suite Core |
 | [Sales Assistant Agent][19] (beta) | Bevakar dina öppna försäljningar och föreslår ett prioriterat nästa steg för dem som behöver uppmärksamhet, för godkännande av en person. | CRM Suite Plus |
-| [Summary Assist][15] | Sammanfattar meddelandena i ett ärende, så att du kan agera utan att läsa hela historiken. | Text Services eller CRM Suite Core |
+| [Summary Assist][15] | Sammanfattar meddelandena i ett ärende, så att du kan agera utan att läsa hela historiken. Finns på ärendekortet. | Text Services eller CRM Suite Core |
 | [SuperNotes][5] | AI-driven mötesassistent som spelar in, transkriberar och sammanfattar möten, och kopplar insikterna tillbaka till SuperOffice. | Separat integration (inte en del av AI Platform) |
-| [Translation Assist][16] | Identifierar språket i ett inkommande ärende och översätter det till ditt språk. | Text Services eller CRM Suite Core |
+| [Translation Assist][16] | Identifierar språket i ett inkommande ärende och översätter det till ditt språk. Visas under meddelandet på fliken **Meddelanden**. | Text Services eller CRM Suite Core |
 | [Workspace Assist][4] | Använder generativ AI för att hjälpa användare med innehållsskapande och uppgiftsvägledning. | CRM Suite Core eller AI Lab (delta eller avstå i Inställningar och underhåll) |
 | Writing Assist | Föreslår e-postmeddelanden, anteckningar och uppföljningar som du kan redigera och skicka. | CRM Suite Starter |
 
@@ -93,22 +93,22 @@ Vissa AI-åtgärder använder AI-krediter, särskilt åtgärder som utförs av a
 
 1. Fortsätt till [att välja, aktivera och konfigurera dina agenter][10].
 
-[1]: /sv/request/learn/handle-request-ai#sentiment
-[2]: /sv/request/learn/handle-request-ai#categorization
+[1]: /sv/request/learn/index#sentiment
+[2]: /sv/request/learn/index#categorization
 [3]: /sv/chat/admin/channel-create#chatbot
 [4]: /sv/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /sv/company/learn/create#company-insight
-[8]: /sv/request/learn/handle-request-ai#reply-assist
+[8]: /sv/request/learn/reply#reply-assist
 [9]: /sv/ai/learn/lead-agent
 [10]: /sv/ai/learn/set-up-ai-agents
 [12]: /sv/ai/learn/data-quality-agent
 [13]: /sv/ai/learn/duplicate-agent
 [14]: /sv/ai/learn/mcp
 
-[15]: /sv/request/learn/handle-request-ai#summary
-[16]: /sv/request/learn/handle-request-ai#translate
+[15]: /sv/request/learn/index#summary
+[16]: /sv/request/learn/index#translate
 [17]: /sv/ai/admin/index#enable-text-analysis
 [18]: /sv/ai/admin/set-up-categorization
 [19]: /sv/ai/learn/sales-assistant-agent

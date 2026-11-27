@@ -1522,7 +1522,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectGuide?$select=getAllRows,appointmentInstance/registeredBy,appointmentInstance/contact/contactExtra/y_organization/x_name,appointmentInstance/person/personAssociate/personId,appointmentInstance/sale/associate/usergroupId
+GET /api/v1/archive/ProjectGuide?$select=appointmentInstance/booking,appointmentInstance/intention,appointmentInstance/contact/registeredBy,appointmentInstance/contact/email/emailAddress,appointmentInstance/person/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

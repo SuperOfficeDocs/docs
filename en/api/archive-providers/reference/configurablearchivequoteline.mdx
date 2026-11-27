@@ -792,7 +792,7 @@ This is the archive Provider for the QuoteLine Archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveQuoteLine?$select=alternative/version/quote/sale/hasGuide,alternative/version/quote/sale/person/personExtra/x_person_longtext,alternative/version/quote/sale/contact/restrictionAddress/addressId,alternative/version/quote/sale/contact/contactExtra/x_contact_float,alternative/version/quote/sale/saleUdef/SuperOffice:4
+GET /api/v1/archive/ConfigurableArchiveQuoteLine?$select=registeredByFullName,productTypeKey,alternative/version/quote/sale/person/birthMonth,alternative/version/quote/sale/person/personUrl/URLDescription,alternative/version/quote/sale/person/personExtra/x_person_priority_relation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

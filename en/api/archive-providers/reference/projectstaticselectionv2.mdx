@@ -842,7 +842,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectStaticSelectionV2?$select=NumberOfNotCompletedActivitiesInPeriod,sale/personId,sale/projectId,sale/nextDueDate,sale/sale/textId
+GET /api/v1/archive/ProjectStaticSelectionV2?$select=projectUdef/SuperOffice:9,sale/associate/isActive,document/keywords,document/recordTypeText,projectMember/personExtra/y_rental/x_start
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

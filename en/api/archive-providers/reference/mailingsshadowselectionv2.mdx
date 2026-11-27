@@ -530,11 +530,11 @@ Shadow contact provider for the Mailings provider.
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
@@ -697,11 +697,12 @@ Shadow contact provider for the Mailings provider.
 |targetTableNumber| *None* || x |
 |targetRecordId| *None* || x |
 |sortName| *None* || x |
+|sortDefault| *None* || x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsShadowSelectionV2?$select=mailingAddr/contact/revenueBasecurrency,mailingAddr/contact/contactAssociate/contactCategory,mailingAddr/contact/contactUdef/SuperOffice:1,associate/associateDbId,associate/usergroup
+GET /api/v1/archive/MailingsShadowSelectionV2?$select=mailingAddr/person/personHasInterests,mailingAddr/person/correspondingAssociate/userName,mailingAddr/contact/SaintStatus1
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

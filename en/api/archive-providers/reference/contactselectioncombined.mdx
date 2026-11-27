@@ -1319,7 +1319,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactSelectionCombined?$select=NumberOfActivitiesInPeriod,SaintStatus2,sourceRelation/hasInterests,targetRelation/updatedDate,sale/registeredByFullName
+GET /api/v1/archive/ContactSelectionCombined?$select=selectionMemberId,mainContact,contactAssociate/isActiveText,saintActivityType,sourceRelation/csRelation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

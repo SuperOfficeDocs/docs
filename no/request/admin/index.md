@@ -4,7 +4,7 @@ title: Ulike innstillinger for Service
 description: System settings
 keywords: ['Service']
 author: digitaldiina
-date: 06.10.2026
+date: 11.24.2026
 so_version: 12.0
 content_type: reference
 license: serviceessentials
@@ -48,7 +48,7 @@ I denne delen kan du konfigurere innstillingene for Service for å skreddersy sy
 [11]: /no/admin/preferences/service-settings
 [12]: /no/admin/user-management/role/index
 [13]: /no/admin/user-management/index
-[7]: /no/request/learn/index#available
+[7]: /no/request/learn/personalize#available
 [15]: /no/ui/blogic/learn/index
 [16]: /no/ui/blogic/learn/profiles/index
 

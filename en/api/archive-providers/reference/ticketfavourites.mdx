@@ -177,7 +177,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Tick
 ## Sample
 
 ```http!
-GET /api/v1/archive/ticketfavourites?$select=ownedBy/portraitThumbnail,extra/x_ticket_datetime,content
+GET /api/v1/archive/ticketfavourites?$select=createdBy/contactName,content,createdBy/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

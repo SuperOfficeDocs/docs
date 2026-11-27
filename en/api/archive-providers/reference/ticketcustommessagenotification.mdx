@@ -32,11 +32,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Tick
 |updateType| *None* ||  |
 |category| *None* || x |
 |customUrl| *None* || x |
+|expires| *None* || x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketCustomMessageNotification?$select=associateId,originatorFullName
+GET /api/v1/archive/TicketCustomMessageNotification?$select=ticketId,notifyDateTime
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

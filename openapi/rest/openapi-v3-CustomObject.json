@@ -11,7 +11,7 @@
     }
   },
   "paths": {
-    "/api/v1/CustomObject/{definitionName}/{id}": {
+    "/api/v1/CustomObject/{objectName}/{id}": {
       "get": {
         "tags": [
           "CustomObject"
@@ -21,9 +21,9 @@
         "operationId": "v1CustomObject_GetCustomObject",
         "parameters": [
           {
-            "name": "definitionName",
+            "name": "objectName",
             "in": "path",
-            "description": "Database table name of the Custom Object Definition, e.g. 'y_equipment'.",
+            "description": "Database table name of the Custom Object, e.g. 'y_equipment'.",
             "required": true,
             "schema": {
               "type": "string"
@@ -83,6 +83,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -132,6 +141,176 @@
           }
         ]
       },
+      "put": {
+        "tags": [
+          "CustomObject"
+        ],
+        "summary": "Update Custom Object",
+        "description": "Updates an existing Custom Object row by primary key.\n\nNot implemented yet.",
+        "operationId": "v1CustomObject_UpdateCustomObject",
+        "parameters": [
+          {
+            "name": "objectName",
+            "in": "path",
+            "description": "Database table name of the Custom Object, e.g. 'y_equipment'.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Primary key of the row to update.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+              }
+            }
+          },
+          "description": "The Custom Object row with the new values.",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CustomObject"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. Entity to save is not in request body."
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      },
       "delete": {
         "tags": [
           "CustomObject"
@@ -141,9 +320,9 @@
         "operationId": "v1CustomObject_DeleteCustomObject",
         "parameters": [
           {
-            "name": "definitionName",
+            "name": "objectName",
             "in": "path",
-            "description": "Database table name of the Custom Object Definition, e.g. 'y_equipment'.",
+            "description": "Database table name of the Custom Object, e.g. 'y_equipment'.",
             "required": true,
             "schema": {
               "type": "string"
@@ -167,6 +346,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -182,19 +370,19 @@
         ]
       }
     },
-    "/api/v1/CustomObject/{definitionName}": {
-      "put": {
+    "/api/v1/CustomObject/{objectName}": {
+      "post": {
         "tags": [
           "CustomObject"
         ],
-        "summary": "Save Custom Object",
-        "description": "Saves a Custom Object row.\n\nIf the row has a primary key set it will be updated, otherwise a new row is inserted.",
-        "operationId": "v1CustomObject_SaveCustomObject",
+        "summary": "Create Custom Object",
+        "description": "Inserts a new Custom Object row.\n\nId in the row is ignored. Not implemented yet.",
+        "operationId": "v1CustomObject_CreateCustomObject",
         "parameters": [
           {
-            "name": "definitionName",
+            "name": "objectName",
             "in": "path",
-            "description": "Database table name of the Custom Object Definition, e.g. 'y_equipment'.",
+            "description": "Database table name of the Custom Object, e.g. 'y_equipment'.",
             "required": true,
             "schema": {
               "type": "string"
@@ -244,6 +432,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "SO-Impersonate",
+            "in": "header",
+            "description": "The user name or user id to impersonate for this request. Must be authenticated as a System user, otherwise request will fail. If set, the request will be executed as the impersonated user on behalf of the System user.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -284,7 +481,7 @@
               }
             }
           },
-          "description": "The Custom Object row to save.",
+          "description": "The Custom Object row to insert.",
           "required": true
         },
         "responses": {
@@ -340,10 +537,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:65002"
+      "url": "http://localhost:58622"
     },
     {
-      "url": "https://localhost:65002"
+      "url": "https://localhost:58622"
     }
   ],
   "components": {
@@ -369,8 +566,8 @@
         "description": "A single row in a Custom Object table.\r\n<para />\r\nCarrier object for CustomObject.\r\nServices for the CustomObject Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICustomObjectAgent\">CustomObject Agent</see>.",
         "type": "object",
         "properties": {
-          "DefinitionName": {
-            "description": "Database table name of the Custom Object Definition this row belongs to, e.g. 'y_equipment'.",
+          "ObjectName": {
+            "description": "Database table name of the Custom Object this row belongs to, e.g. 'y_equipment'.",
             "type": "string"
           },
           "Id": {

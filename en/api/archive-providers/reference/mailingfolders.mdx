@@ -32,11 +32,12 @@ folder_type = shipmentFolder. Mirrors [EmailFlowFolderProvider](./emailflowfolde
 |thumbnail| *None* ||  |
 |sortGroup| *None* || x |
 |sortName| *None* || x |
+|sortDefault| *None* || x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingFolders?$select=folderId,folderName
+GET /api/v1/archive/MailingFolders?$select=parentFolderId,folderName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

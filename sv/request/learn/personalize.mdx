@@ -1,0 +1,119 @@
+---
+title: Anpassa ärendehanteringen
+sidebarTitle: "Anpassa"
+description: Ändra vad fliken Översikt visar, ange dina inställningar för ärenden och din tillgänglighetsstatus och hitta de globala inställningarna för SuperOffice Service.
+keywords: ['inställningar för ärenden', 'personliga inställningar', 'redigera översikt', 'redigera fält', 'kolumner i översikten', 'fält på kort', 'tillgänglighetsstatus', 'närvarande', 'ej närvarande', 'frånvaromeddelande', 'globala inställningar', 'expanderade meddelanden']
+author: digitaldiina
+date: 11.25.2026
+so_version: 12.7
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice Service
+related:
+  - /sv/request/learn/index
+  - /sv/request/learn/assign
+  - /sv/learn/basics/overview-pages
+language: sv
+---
+
+Anpassa SuperOffice efter hur du arbetar. Ändra vad fliken **Översikt** visar, ange dina inställningar för ärenden och visa andra om du är tillgänglig för nya ärenden.
+
+## Ändra kolumnerna på fliken Översikt {#edit-overview}
+
+1. Klicka på pennan (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) i huvudet på fliken **Översikt** för att öppna **Redigera översikt**.
+
+1. Välj hur många kolumner du vill ha, från en till fyra. Med fyra kolumner kan du visa dem sida vid sida eller som ett 2 × 2-rutnät.
+
+1. Välj vad som fyller varje kolumn. Sök under **Urval** efter ett urval eller en standardlista och dra det till en kolumn. De urval som används visas först. Klicka på <i class="ph ph-x" aria-label="Close icon"></i> i kolumnrubriken för att tömma en kolumn, eller klicka på <i class="ph ph-x-circle" aria-label="Remove icon"></i> bredvid dess urval i listan.
+
+1. Kontrollera förhandsgranskningen och klicka sedan på **Spara**. Klicka på **Förkasta** för att förkasta ändringarna.
+
+Om du vill gå tillbaka till de kolumner du hade från början klickar du på **Återställ** längst ned i panelen **Redigera översikt**.
+
+![Fliken Översikt i redigeringsläge med panelen Redigera översikt för kolumner och urval -screenshot][img1]
+
+<Note>
+
+Konfigurationen av din flik **Översikt** sparas i den webbläsare du använder. Den följer inte med till en annan webbläsare eller enhet.
+
+</Note>
+
+## Ändra vad korten visar {#edit-fields}
+
+1. I **Redigera översikt** klickar du på pennan (<i class="ph ph-pencil-simple" aria-label="Pencil icon"></i>) i kolumnrubriken. Dialogrutan **Redigera fält** öppnas.
+
+1. Välj kortets **Rubrik**, och eventuellt ett **Märke**.
+
+1. Under **Fält** klickar du på **Lägg till fält** för att lägga till upp till sex fält på kortet. Klicka på <i class="ph ph-x-circle" aria-label="Remove icon"></i> för att ta bort ett fält.
+
+1. Klicka på **Klar** och sedan på **Spara** i huvudet. Klicka på **Återställ till standard** i dialogrutan för att återställa fälten för endast den här kolumnen.
+
+![Dialogrutan Redigera fält för kolumnen Senaste ärenden, med Rubrik, Märke och Fält -screenshot][img2]
+
+Förhandsgranskningspanelen stängs medan du redigerar.
+
+## Personliga inställningar {#preferences}
+
+Du kan anpassa ärenden så att de passar ditt arbetsflöde:
+
+1. Gå till <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Inställningar**.
+
+1. Välj **Ärende**, och justera inställningar som:
+    * Visa det senaste meddelandet högst upp.
+    * Använd det äldsta ärendet som huvudärende vid sammanfogning.
+    * Förhandsgranskning av bildbilaga i meddelanden.
+    * Antal expanderade meddelanden.
+    * Klistra in senaste meddelande automatiskt.
+    * Visa bara egna kategorier.
+    * Stäng automatiskt fliken när ett meddelande läggs till ärendet.
+    * Stäng fliken automatiskt när ärendestatusen ändras till stängt.
+    * Standardägare och -kategori för nya ärenden.
+    * Standardstatus för nytt ärende och Standardstatus för nytt meddelande. Se [ordning för standardstatus][1].
+
+1. Välj **E-postavisering**, och justera inställningar som:
+    * Nya ärenden eller meddelanden.
+    * Ärende eskalerat.
+
+1. Klicka på **Spara** för att tillämpa dina ändringar.
+
+## Din tillgänglighetsstatus {#available}
+
+Din tillgänglighetsstatus avgör om du tar emot ärenden via automatisk tilldelning. Den påverkar även tilldelningen av kontakter.
+
+Klicka på <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** i toppraden och välj **Din tillgänglighetsstatus** för att uppdatera din status.
+
+* **Närvarande:** Du är tillgänglig för automatisk tilldelning av ärenden och kontakter.
+* **Ej närvarande:** Inga nya ärenden tilldelas till dig. Ditt frånvaromeddelande visas bredvid ditt namn när någon manuellt tilldelar ett objekt.
+
+<Tip>
+Om en handläggare glömmer att uppdatera sin status eller är oväntat frånvarande kan en administratör ändra handläggarens tillgänglighetsstatus för dennes räkning i **Inställningar och underhåll** > **Användare**.
+</Tip>
+
+Hur ärenden omfördelas när en användare inte är tillgänglig beror på den [tilldelningsmetod][2] som har konfigurerats för kategorin.
+
+## Globala inställningar {#global}
+
+Administratörer kan anpassa Service för alla användare i Inställningar och underhåll.
+
+1. I **Inställningar och underhåll** väljer du <i class="ph ph-gear" aria-hidden="true"></i> **Inställningar** i navigatorn.
+1. Gå till fliken **Globala inställningar** och rulla ner till avsnittet **SuperOffice Service systeminställningar**.
+
+Några inställningar som påverkar supportagenter inkluderar:
+
+* Anonymisera användare vid svar
+* Standard Från-adress
+* Standardstil för utgående e-post
+* Extern åtkomstnivå som standard
+* Ny status vid acceptering av ärende
+* Skicka e-postavisering om öppna ärenden
+
+[Visa hela listan][3]
+
+[1]: /sv/request/admin/status/index#default
+[2]: /sv/request/learn/assign
+[3]: /sv/admin/preferences/service-settings
+
+[img1]: /media/loc/en/request/request-screen-edit-overview.png
+[img2]: /media/loc/en/request/request-screen-edit-fields.png

@@ -513,7 +513,7 @@ This is the archive Provider for the Selection archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationSelectionV2?$select=associate/ejUserId,person/personCountry,person/personActiveErpLinks,person/supportLanguage,person/personInfo/textId
+GET /api/v1/archive/ChatConversationSelectionV2?$select=person/personUrl/URLDescription,person/correspondingAssociate/isLocation,contact/contactUdef/SuperOffice:12
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

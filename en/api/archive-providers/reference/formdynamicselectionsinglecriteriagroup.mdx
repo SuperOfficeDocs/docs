@@ -59,11 +59,11 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 |emailFlow/workflowDefinitionStatusId|listAny|| x |
 |emailFlow/jumpToFinish|bool|| x |
 |emailFlow/startOnlyOnce|bool|| x |
-|emailFlow/workflowEnrolledCount| *None* ||  |
-|emailFlow/workflowInProgressCount| *None* ||  |
-|emailFlow/workflowCompletedCount| *None* ||  |
-|emailFlow/workflowSucceededCount| *None* ||  |
-|emailFlow/workflowSuccessRate| *None* ||  |
+|emailFlow/workflowEnrolledCount|int|| x |
+|emailFlow/workflowInProgressCount|int|| x |
+|emailFlow/workflowCompletedCount|int|| x |
+|emailFlow/workflowSucceededCount|int|| x |
+|emailFlow/workflowSuccessRate|decimal|| x |
 |emailFlow/workflowLastTriggeredDate| *None* ||  |
 |emailFlow/updatedBy|associate|| x |
 |emailFlow/updatedDate|date|| x |
@@ -107,7 +107,7 @@ on its [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormDynamicSelectionSingleCriteriaGroup?$select=emailFlow/workflowName,emailFlow/updatedBy
+GET /api/v1/archive/FormDynamicSelectionSingleCriteriaGroup?$select=associate/ejUserId,emailFlow/workflowName,emailFlow/updatedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

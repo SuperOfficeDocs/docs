@@ -1367,11 +1367,11 @@ This is the archive Provider for the Selection contact/person archive.
 |workflowInstance/emailFlow/workflowDefinitionStatusId| *None* || x |
 |workflowInstance/emailFlow/jumpToFinish| *None* || x |
 |workflowInstance/emailFlow/startOnlyOnce| *None* || x |
-|workflowInstance/emailFlow/workflowEnrolledCount| *None* ||  |
-|workflowInstance/emailFlow/workflowInProgressCount| *None* ||  |
-|workflowInstance/emailFlow/workflowCompletedCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSucceededCount| *None* ||  |
-|workflowInstance/emailFlow/workflowSuccessRate| *None* ||  |
+|workflowInstance/emailFlow/workflowEnrolledCount| *None* || x |
+|workflowInstance/emailFlow/workflowInProgressCount| *None* || x |
+|workflowInstance/emailFlow/workflowCompletedCount| *None* || x |
+|workflowInstance/emailFlow/workflowSucceededCount| *None* || x |
+|workflowInstance/emailFlow/workflowSuccessRate| *None* || x |
 |workflowInstance/emailFlow/workflowLastTriggeredDate| *None* ||  |
 |workflowInstance/emailFlow/updatedBy| *None* || x |
 |workflowInstance/emailFlow/updatedDate| *None* || x |
@@ -1511,7 +1511,7 @@ This is the archive Provider for the Selection contact/person archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonSelectionV2?$select=email/emailHasBounced,targetRelation/csRelation,sale/associateId,sale/hasQuote,appointment/associate/isLocation
+GET /api/v1/archive/ContactPersonSelectionV2?$select=contactAssociate/portraitThumbnail,sourceRelation/updatedBy,sale/associate/otherGroups,appointment/suggestedAppointmentId,document/subject
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
