@@ -2,7 +2,7 @@
 uid: dp-metric-performance
 title: Check application API performance
 description: How to check the API performance for your application.
-keywords: ['API metrics', 'metered services']
+keywords: ['API metrics', 'metered services', 'sampling', 'adaptive sampling']
 author: Anthony Yates
 date: 07.08.2024
 so_version: 1.24
@@ -66,34 +66,53 @@ When there are many rows, you can filter the list by typing in the search box. T
 
 * To return to the API Performance list, click the X in the upper-right corner.
 
-## Disable API request sampling
+## Log all API calls (turn off sampling)
 
-Starting from SuperOffice version 10.5.1, API request sampling was introduced to reduce the volume of logged data and improve performance monitoring. By default, only a subset of API requests is recorded.
-However, sampling can be temporarily disabled if you need full visibility into all API traffic. This is especially useful when:
+To keep telemetry manageable, SuperOffice samples the API calls your application makes. When there is a lot of traffic, only some calls are stored in full, and each stored call stands in for several similar ones. The totals on **API Performance** and [Failures][2] still show the real numbers, but a particular call may not show up in **Samples** or in the end-to-end transaction view.
 
-* You're troubleshooting specific performance issues.
-* You need to verify the exact timing and frequency of API calls.
-* You're analyzing detailed request patterns for optimization.
+When you're troubleshooting, you can turn sampling off for a limited time so that every API call your application makes is logged.
 
-To disable sampling:
+### When to use it
 
-1. Click the settings icon (cogwheel) to edit setting.
+* A customer reports a failing or slow request and you need to find that exact call.
+* You are checking a fix and want to see every call, not a sample.
+* You need exact numbers (call counts, durations, records returned) for a short period.
 
-    ![Disable API request sampling -screenshot][img4]
+### How to turn it on
 
-2. Set the end time for the period during which sampling should be disabled for a specific app.
+<GoToAppPage />
 
-3. During this period, every API request will be logged and visible in, you will see itemCount = 1.
+2. Select **API metrics**.
 
-<Note>
-Disabling sampling may increase the volume of logged data, so it's recommended to use this feature only when necessary and for limited timeframes.
-</Note>
+3. Click the **Settings** (cogwheel) button.
+
+4. For each environment (SOD, Stage, Production), choose the date and time when full logging should stop. Leave the field empty to keep normal sampling.
+
+    ![Turn off adaptive sampling of API calls -screenshot][img4]
+
+5. Click **Apply**.
+
+### Good to know
+
+* Full logging stops by itself at the time you chose, and normal sampling starts again. You can also stop it early by clearing the date.
+* You can turn it off for at most 2 weeks ahead.
+* It is set per environment and covers all tenants using your application in that environment.
+* It can take a few minutes after saving before full logging starts.
+* It does not change the [API Usage][1] numbers or anything you're billed for. Those are never sampled.
+* You need **Write** access to application usage to change it. Users with read access can only view the dates.
+
+<Tip>
+Turn it on just before you reproduce the problem, and only for as long as you need. Pick the environment you are testing in. Usually that's SOD or Stage, not Production.
+</Tip>
 
 ## Improve app performance
 
 <ImprovePerformance />
 
 During development, following the statistics in SOD day-by-day can provide valuable insight into the impact of your improvements.
+
+[1]: metered-services
+[2]: failures
 
 [img1]: /media/loc/en/developer-portal/metrics-performance-landing.png
 [img2]: /media/loc/en/developer-portal/metrics-performance-selected-row.png
