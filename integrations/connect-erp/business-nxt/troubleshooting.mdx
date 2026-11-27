@@ -1,0 +1,41 @@
+---
+title: Troubleshoot ConnectERP for Business NXT
+sidebarTitle: Troubleshooting
+description: Solutions for problems you can run into when you use ConnectERP with Visma Business NXT.
+keywords: ['troubleshooting', 'import', 'Prog ID', 'associate', 'customer', 'Business NXT', 'Visma Business NXT', 'error message']
+author: marcelspapens
+date: 11.25.2026
+content_type: reference
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related: false
+language: en
+userflow_index: true
+---
+
+## Import of an integration {#import}
+
+### DataBridge shows an error when you import an integration
+
+DataBridge shows warnings with a yellow background and errors with a red background while you import an integration. For a warning, read the message and follow its instructions. The warning that not all fields to create a company are mapped is expected for the person sync integrations.
+
+An error usually has one of these causes:
+
+* A user-defined field doesn't have the Prog ID from [Set up company sync][1], [Set up contact sync][2], or [Set up order sync][3].
+* The Business NXT fields aren't set up as described.
+* DataBridge doesn't know a user-defined field yet, because you created it only a few minutes ago. A new field can take some time to show up in DataBridge.
+
+To fix it, check the field definitions, delete the integration, and import it again. The messages disappear after a few seconds, so take a screenshot when they show.
+
+## Customers and suppliers {#associate}
+
+### Import a customer instead of an associate
+
+Business NXT has an associate entity as a generic base entity for other entities, such as customer and supplier. DataBridge offers the generic entity Associate to import any type.
+
+The downside of the Associate entity is that the fields that are specific to a customer or a supplier aren't available.
+
+[1]: ./set-up-company-sync#1-create-user-defined-fields-on-the-company-card
+[2]: ./set-up-contact-sync#1-create-user-defined-fields-on-the-contact-card
+[3]: ./set-up-order-sync#1-create-user-defined-fields-on-the-sale-card

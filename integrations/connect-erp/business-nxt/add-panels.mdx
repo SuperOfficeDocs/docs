@@ -1,0 +1,67 @@
+---
+title: Add panels
+description: How to add the Panels for SuperOffice for orders and invoices from Visma Business NXT.
+keywords: ['ConnectERP', 'Business NXT', 'Panels for SuperOffice', 'invoices', 'orders', 'archives', 'Visma Business NXT', 'web panel', 'Excel']
+author: marcelspapens
+date: 11.25.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related: false
+language: en
+userflow_index: true
+---
+
+Panels for SuperOffice display live order and invoice data from Business NXT directly on the Company card in SuperOffice, without copying the data into the SuperOffice database. The panels filter on the ERP customer number of the company. Panels are available in all CRM Suites.
+
+<Note>
+A **ConnectERP subscription** must be active for the SuperOffice tenant to have access to the Business NXT panels.
+</Note>
+
+## Initial panel setup
+
+Connect Panels for SuperOffice to SuperOffice before the implementation of the integration starts.
+
+1. Go to [Panels for SuperOffice][3] and sign up.
+1. Configure your timezone settings.
+1. Accept the terms and privacy documentation.
+1. Complete the registration to gain access to the panel configuration.
+
+## Adding the Orders panel
+
+1. Click **New panel**.
+1. Enter the label **Orders (Business NXT)**.
+1. Select the **Business NXT Order** panel template.
+1. Set **Company user-defined: ERP Cust. Number** as the identifier field.
+1. Connect to Business NXT: log in, accept the information on screen, and select your Business NXT company (administration).
+1. Click **Publish**.
+
+## Adding the Invoices panel
+
+{/* To confirm: the name of the invoice panel template in Panels for SuperOffice. */}
+
+1. Click **New panel**.
+1. Enter the label **Invoices (Business NXT)**.
+1. Select the **Business NXT Invoice** panel template.
+1. Set **Company user-defined: ERP Cust. Number** as the identifier field.
+1. Connect to Business NXT: log in, accept the information on screen, and select your Business NXT company (administration).
+1. Click **Publish**.
+
+The panels are now available on the Company card in SuperOffice. The **Orders (Business NXT)** tab shows the live sales orders with their status, and the **Invoices (Business NXT)** tab shows the invoices, including whether they are paid or unpaid, all directly from Business NXT. Users can filter, sort, and drill down to the details of an order or invoice.
+
+![SuperOffice Company card: ERP tab with key figures and Orders (Business NXT) panel showing live order data -screenshot][img1]
+
+<Tip>
+Panels that show a grid, such as Orders and Invoices, have an export button that downloads an *.xlsx* file. The file includes all rows that match the user's filters.
+</Tip>
+
+## Next step
+
+If companies already exist in both SuperOffice and Business NXT, continue with [Initial match of companies][2]. Otherwise, continue with [Verify and finalize][1].
+
+[1]: ./verify-finalize
+[2]: ./initial-match
+[3]: https://my-panels.infobridgeuniverse.com/
+
+[img1]: /media/loc/en/integrations/connect-erp/business-nxt-company-card-orders-panel.png

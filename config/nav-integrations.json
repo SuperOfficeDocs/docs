@@ -20,6 +20,24 @@
           "integrations/connect-erp/visma-net/verify-finalize",
           "integrations/connect-erp/visma-net/troubleshooting"
         ]
+      },
+      {
+        "group": "Business NXT",
+        "root": "integrations/connect-erp/business-nxt/index",
+        "pages": [
+          "integrations/connect-erp/business-nxt/requirements",
+          "integrations/connect-erp/business-nxt/plan-the-integration",
+          "integrations/connect-erp/business-nxt/set-up-business-nxt",
+          "integrations/connect-erp/business-nxt/set-up-company-sync",
+          "integrations/connect-erp/business-nxt/set-up-contact-sync",
+          "integrations/connect-erp/business-nxt/set-up-product-sync",
+          "integrations/connect-erp/business-nxt/set-up-order-sync",
+          "integrations/connect-erp/business-nxt/add-panels",
+          "integrations/connect-erp/business-nxt/initial-match",
+          "integrations/connect-erp/business-nxt/verify-finalize",
+          "integrations/connect-erp/business-nxt/troubleshooting",
+          "integrations/connect-erp/business-nxt/supported-fields"
+        ]
       }
     ]
   },

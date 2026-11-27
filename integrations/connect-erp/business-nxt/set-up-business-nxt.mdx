@@ -1,0 +1,57 @@
+---
+title: Set up Business NXT
+description: Business NXT preparations required before setting up the ConnectERP integration in SuperOffice, including the integration user, the authentication, and the company.
+keywords: ['ConnectERP', 'Business NXT', 'integration user', 'access groups', 'Visma Connect', 'company', 'administration', 'Visma Business NXT', 'prerequisites', 'authentication', 'Application access', 'client credentials', 'named user']
+author: marcelspapens
+date: 11.27.2026
+content_type: howto
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related: false
+language: en
+userflow_index: true
+---
+
+Complete these steps in Business NXT before you configure SuperOffice. They are one-time preparations that apply to all CRM Suites.
+
+## 1. Choose how DataBridge connects {#authentication}
+
+To connect DataBridge to Business NXT, you need a named user to set up the integration. Once the integration runs, it can keep using that same named user. This comes with a risk: if the named user leaves the company, or if the password or the access changes, the integration can stop working.
+
+To avoid this, use **Application access**, also known as client credentials. Application access is the best practice. It is a "user" that uses an access token with the *client credentials* grant type. This user takes care of the background processing through GraphQL instead of the named user. You only need the named user to set up or edit the integration.
+
+![DataBridge: Business NXT authorization with the Application access toggle and the Connect button -screenshot][img1]
+
+You can connect in two ways:
+
+1. **Connect with a named user only.** DataBridge uses this named user for both the configuration and the background processing.
+1. **Connect with Application access and a named user.** DataBridge uses the named user for the configuration, and the Application access for the background processing.
+
+<Tip>
+Use Application access for integrations that run in production. The integration then doesn't depend on one person's account.
+</Tip>
+
+Before you connect to Business NXT in DataBridge, set up the Application access. Follow the [guide from Visma][3]. You still need a named user to set up and edit the integration.
+
+Prepare a named user account, and give it the access groups **Standard** and **System**.
+
+<Warning>
+If you decide to not use Application access, don't use a personal named user account. If that employee leaves, the integration breaks.
+</Warning>
+
+You use this user to log in to Business NXT from DataBridge and from Panels for SuperOffice. The login goes through Visma Connect.
+
+## 2. Choose the Business NXT company
+
+Business NXT organizes the data per company (administration). When you import the DataBridge integrations and when you add the panels, you log in to Business NXT and then select the company that the integration connects to. Decide which company this is before you start, and keep the name with the other values for the setup, such as the value mappings from [Plan the integration][1].
+
+## Next step
+
+Continue with [Set up company sync][2].
+
+[1]: ./plan-the-integration#value-mappings
+[2]: ./set-up-company-sync
+[3]: https://docs.vismasoftware.no/businessnxtapi/authentication/service/user_setup/
+
+[img1]: /media/loc/en/integrations/connect-erp/business-nxt-databridge-authorization.png

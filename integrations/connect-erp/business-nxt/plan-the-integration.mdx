@@ -1,0 +1,57 @@
+---
+title: Plan the integration
+description: Value mappings and configuration decisions to prepare before you set up the ConnectERP integration with Visma Business NXT.
+keywords: ['ConnectERP', 'Business NXT', 'value mappings', 'field mapping', 'data flow', 'leading system', 'planning', 'Visma Business NXT', 'workshop', 'scoping']
+author: marcelspapens
+date: 11.25.2026
+content_type: concept
+category: integration
+topic: ConnectERP
+platform: Business NXT
+related: false
+language: en
+userflow_index: true
+---
+
+Prepare the value mappings and, in CRM Suite Growth and higher, agree on the configuration before the setup starts.
+
+## Value mappings {#value-mappings}
+
+Before starting the DataBridge configuration, map values used in Business NXT to the corresponding values in SuperOffice. You'll need these when you configure the transformations in the company sync and product sync integrations in DataBridge. In some cases the integration needs only one value, and you use a static value instead of a mapping. Check that each value matches an existing item.
+
+Collect the following mappings in a spreadsheet or document and bring them to the configuration session:
+
+| Mapping | Business NXT side | SuperOffice side | Needed in Core |
+|---|---|---|---|
+| Payment terms | Payment terms (customer) | Customer payment terms | Yes |
+| Customer category | Not mapped: one static value | Customer category | Yes |
+| Product categories | Product category 1 | Product categories | No |
+| Product types | Product type 1 | Product types | No |
+| VAT percentages | VAT and accounting group | VAT percentages in the price list | No |
+| Price list | Not mapped: one static value | Price list name | No |
+
+<Note>
+The product sync doesn't import products that have a price of zero in Business NXT.
+</Note>
+
+<Tip>
+Incomplete or incorrect value mappings are the most common cause of products being imported with the wrong VAT rate or into the wrong price list. Take time to prepare these before the configuration session.
+</Tip>
+
+## Pre-configuration session (Growth and higher only)
+
+In CRM Suite Growth and higher, the integration is customized to the customer's data model. Before the technical setup starts, the customer and the consultant hold a session to decide:
+
+* **Field mapping:** which Business NXT fields map to which SuperOffice fields for each entity
+* **Data flow direction:** per entity, is the data pushed, pulled, or synchronized in both directions?
+* **[Leading system][1]:** which system is the source of truth per entity in case of a conflict?
+* **Scope:** which entities should be synchronized, and which should remain separate?
+
+Document the outcomes of this session. The decisions made here directly determine how DataBridge integrations are configured.
+
+## Next step
+
+Continue with [Set up Business NXT][2].
+
+[1]: ../index#terminology
+[2]: ./set-up-business-nxt
